@@ -47,7 +47,7 @@ export default function TrustBadges() {
  Porquê Somos a Escolha #1 em Trás-os-Montes?
  </h2>
  <p className="text-lg font-semibold text-gray-700">
- Mais de 500 clientes já confiaram em nós. Agora é a sua vez.
+ Atendemos clientes em toda a região de Trás-os-Montes em nós. Agora é a sua vez.
  </p>
  </div>
 
