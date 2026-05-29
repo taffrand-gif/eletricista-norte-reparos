@@ -1,0 +1,679 @@
+Nível,Localidade,Distrito,Métier,Keyword,Intenção,Prioridade
+District,distrito de Bragança,Bragança,Canalizador,canalizador distrito de Bragança,Transacional,ALTA
+District,distrito de Bragança,Bragança,Canalizador,canalizador urgente distrito de Bragança,Transacional/Urgência,CRÍTICA
+District,distrito de Bragança,Bragança,Canalizador,canalizador 24 horas distrito de Bragança,Urgência,ALTA
+District,distrito de Bragança,Bragança,Canalizador,picheleiro distrito de Bragança,Transacional,ALTA
+District,distrito de Bragança,Bragança,Canalizador,desentupimento distrito de Bragança,Transacional,ALTA
+District,distrito de Bragança,Bragança,Canalizador,desentupir sanita distrito de Bragança,Urgência,MÉDIA
+District,distrito de Bragança,Bragança,Canalizador,fuga de água distrito de Bragança,Urgência,ALTA
+District,distrito de Bragança,Bragança,Canalizador,deteção de fugas distrito de Bragança,Transacional,MÉDIA
+District,distrito de Bragança,Bragança,Canalizador,reparação canalização distrito de Bragança,Transacional,MÉDIA
+District,distrito de Bragança,Bragança,Canalizador,assistência canalização distrito de Bragança,Transacional,MÉDIA
+District,distrito de Bragança,Bragança,Canalizador,esquentador distrito de Bragança,Transacional,MÉDIA
+District,distrito de Bragança,Bragança,Canalizador,cano rebentado distrito de Bragança,Urgência,MÉDIA
+District,distrito de Bragança,Bragança,Canalizador,bomba de água distrito de Bragança,Transacional,BAIXA
+District,distrito de Bragança,Bragança,Canalizador,canalizador ao domingo distrito de Bragança,Urgência,BAIXA
+District,distrito de Bragança,Bragança,Eletricista,eletricista distrito de Bragança,Transacional,ALTA
+District,distrito de Bragança,Bragança,Eletricista,eletricista urgente distrito de Bragança,Transacional/Urgência,CRÍTICA
+District,distrito de Bragança,Bragança,Eletricista,eletricista 24 horas distrito de Bragança,Urgência,ALTA
+District,distrito de Bragança,Bragança,Eletricista,avaria elétrica distrito de Bragança,Urgência,ALTA
+District,distrito de Bragança,Bragança,Eletricista,curto-circuito distrito de Bragança,Urgência,MÉDIA
+District,distrito de Bragança,Bragança,Eletricista,quadro elétrico distrito de Bragança,Transacional,ALTA
+District,distrito de Bragança,Bragança,Eletricista,disjuntor a disparar distrito de Bragança,Urgência,MÉDIA
+District,distrito de Bragança,Bragança,Eletricista,sem luz distrito de Bragança,Urgência,MÉDIA
+District,distrito de Bragança,Bragança,Eletricista,reparação elétrica distrito de Bragança,Transacional,MÉDIA
+District,distrito de Bragança,Bragança,Eletricista,assistência elétrica distrito de Bragança,Transacional,MÉDIA
+District,distrito de Bragança,Bragança,Eletricista,certificação elétrica distrito de Bragança,Transacional,ALTA
+District,distrito de Bragança,Bragança,Eletricista,instalação elétrica distrito de Bragança,Transacional,MÉDIA
+District,distrito de Bragança,Bragança,Eletricista,iluminação led distrito de Bragança,Transacional,BAIXA
+District,distrito de Bragança,Bragança,Eletricista,painéis solares distrito de Bragança,Transacional,BAIXA
+District,distrito de Bragança,Bragança,Eletricista,carregador carro elétrico distrito de Bragança,Transacional,BAIXA
+District,distrito de Bragança,Bragança,Eletricista,eletricista ao domingo distrito de Bragança,Urgência,BAIXA
+District,distrito de Vila Real,Vila Real,Canalizador,canalizador distrito de Vila Real,Transacional,ALTA
+District,distrito de Vila Real,Vila Real,Canalizador,canalizador urgente distrito de Vila Real,Transacional/Urgência,CRÍTICA
+District,distrito de Vila Real,Vila Real,Canalizador,canalizador 24 horas distrito de Vila Real,Urgência,ALTA
+District,distrito de Vila Real,Vila Real,Canalizador,picheleiro distrito de Vila Real,Transacional,ALTA
+District,distrito de Vila Real,Vila Real,Canalizador,desentupimento distrito de Vila Real,Transacional,ALTA
+District,distrito de Vila Real,Vila Real,Canalizador,desentupir sanita distrito de Vila Real,Urgência,MÉDIA
+District,distrito de Vila Real,Vila Real,Canalizador,fuga de água distrito de Vila Real,Urgência,ALTA
+District,distrito de Vila Real,Vila Real,Canalizador,deteção de fugas distrito de Vila Real,Transacional,MÉDIA
+District,distrito de Vila Real,Vila Real,Canalizador,reparação canalização distrito de Vila Real,Transacional,MÉDIA
+District,distrito de Vila Real,Vila Real,Canalizador,assistência canalização distrito de Vila Real,Transacional,MÉDIA
+District,distrito de Vila Real,Vila Real,Canalizador,esquentador distrito de Vila Real,Transacional,MÉDIA
+District,distrito de Vila Real,Vila Real,Canalizador,cano rebentado distrito de Vila Real,Urgência,MÉDIA
+District,distrito de Vila Real,Vila Real,Canalizador,bomba de água distrito de Vila Real,Transacional,BAIXA
+District,distrito de Vila Real,Vila Real,Canalizador,canalizador ao domingo distrito de Vila Real,Urgência,BAIXA
+District,distrito de Vila Real,Vila Real,Eletricista,eletricista distrito de Vila Real,Transacional,ALTA
+District,distrito de Vila Real,Vila Real,Eletricista,eletricista urgente distrito de Vila Real,Transacional/Urgência,CRÍTICA
+District,distrito de Vila Real,Vila Real,Eletricista,eletricista 24 horas distrito de Vila Real,Urgência,ALTA
+District,distrito de Vila Real,Vila Real,Eletricista,avaria elétrica distrito de Vila Real,Urgência,ALTA
+District,distrito de Vila Real,Vila Real,Eletricista,curto-circuito distrito de Vila Real,Urgência,MÉDIA
+District,distrito de Vila Real,Vila Real,Eletricista,quadro elétrico distrito de Vila Real,Transacional,ALTA
+District,distrito de Vila Real,Vila Real,Eletricista,disjuntor a disparar distrito de Vila Real,Urgência,MÉDIA
+District,distrito de Vila Real,Vila Real,Eletricista,sem luz distrito de Vila Real,Urgência,MÉDIA
+District,distrito de Vila Real,Vila Real,Eletricista,reparação elétrica distrito de Vila Real,Transacional,MÉDIA
+District,distrito de Vila Real,Vila Real,Eletricista,assistência elétrica distrito de Vila Real,Transacional,MÉDIA
+District,distrito de Vila Real,Vila Real,Eletricista,certificação elétrica distrito de Vila Real,Transacional,ALTA
+District,distrito de Vila Real,Vila Real,Eletricista,instalação elétrica distrito de Vila Real,Transacional,MÉDIA
+District,distrito de Vila Real,Vila Real,Eletricista,iluminação led distrito de Vila Real,Transacional,BAIXA
+District,distrito de Vila Real,Vila Real,Eletricista,painéis solares distrito de Vila Real,Transacional,BAIXA
+District,distrito de Vila Real,Vila Real,Eletricista,carregador carro elétrico distrito de Vila Real,Transacional,BAIXA
+District,distrito de Vila Real,Vila Real,Eletricista,eletricista ao domingo distrito de Vila Real,Urgência,BAIXA
+District,distrito de Guarda,Guarda,Canalizador,canalizador distrito de Guarda,Transacional,ALTA
+District,distrito de Guarda,Guarda,Canalizador,canalizador urgente distrito de Guarda,Transacional/Urgência,CRÍTICA
+District,distrito de Guarda,Guarda,Canalizador,canalizador 24 horas distrito de Guarda,Urgência,ALTA
+District,distrito de Guarda,Guarda,Canalizador,picheleiro distrito de Guarda,Transacional,ALTA
+District,distrito de Guarda,Guarda,Canalizador,desentupimento distrito de Guarda,Transacional,ALTA
+District,distrito de Guarda,Guarda,Canalizador,desentupir sanita distrito de Guarda,Urgência,MÉDIA
+District,distrito de Guarda,Guarda,Canalizador,fuga de água distrito de Guarda,Urgência,ALTA
+District,distrito de Guarda,Guarda,Canalizador,deteção de fugas distrito de Guarda,Transacional,MÉDIA
+District,distrito de Guarda,Guarda,Canalizador,reparação canalização distrito de Guarda,Transacional,MÉDIA
+District,distrito de Guarda,Guarda,Canalizador,assistência canalização distrito de Guarda,Transacional,MÉDIA
+District,distrito de Guarda,Guarda,Canalizador,esquentador distrito de Guarda,Transacional,MÉDIA
+District,distrito de Guarda,Guarda,Canalizador,cano rebentado distrito de Guarda,Urgência,MÉDIA
+District,distrito de Guarda,Guarda,Canalizador,bomba de água distrito de Guarda,Transacional,BAIXA
+District,distrito de Guarda,Guarda,Canalizador,canalizador ao domingo distrito de Guarda,Urgência,BAIXA
+District,distrito de Guarda,Guarda,Eletricista,eletricista distrito de Guarda,Transacional,ALTA
+District,distrito de Guarda,Guarda,Eletricista,eletricista urgente distrito de Guarda,Transacional/Urgência,CRÍTICA
+District,distrito de Guarda,Guarda,Eletricista,eletricista 24 horas distrito de Guarda,Urgência,ALTA
+District,distrito de Guarda,Guarda,Eletricista,avaria elétrica distrito de Guarda,Urgência,ALTA
+District,distrito de Guarda,Guarda,Eletricista,curto-circuito distrito de Guarda,Urgência,MÉDIA
+District,distrito de Guarda,Guarda,Eletricista,quadro elétrico distrito de Guarda,Transacional,ALTA
+District,distrito de Guarda,Guarda,Eletricista,disjuntor a disparar distrito de Guarda,Urgência,MÉDIA
+District,distrito de Guarda,Guarda,Eletricista,sem luz distrito de Guarda,Urgência,MÉDIA
+District,distrito de Guarda,Guarda,Eletricista,reparação elétrica distrito de Guarda,Transacional,MÉDIA
+District,distrito de Guarda,Guarda,Eletricista,assistência elétrica distrito de Guarda,Transacional,MÉDIA
+District,distrito de Guarda,Guarda,Eletricista,certificação elétrica distrito de Guarda,Transacional,ALTA
+District,distrito de Guarda,Guarda,Eletricista,instalação elétrica distrito de Guarda,Transacional,MÉDIA
+District,distrito de Guarda,Guarda,Eletricista,iluminação led distrito de Guarda,Transacional,BAIXA
+District,distrito de Guarda,Guarda,Eletricista,painéis solares distrito de Guarda,Transacional,BAIXA
+District,distrito de Guarda,Guarda,Eletricista,carregador carro elétrico distrito de Guarda,Transacional,BAIXA
+District,distrito de Guarda,Guarda,Eletricista,eletricista ao domingo distrito de Guarda,Urgência,BAIXA
+Cidade,Macedo de Cavaleiros,Bragança,Canalizador,canalizador Macedo de Cavaleiros,Transacional,ALTA
+Cidade,Macedo de Cavaleiros,Bragança,Canalizador,canalizador urgente Macedo de Cavaleiros,Transacional/Urgência,CRÍTICA
+Cidade,Macedo de Cavaleiros,Bragança,Canalizador,canalizador 24 horas Macedo de Cavaleiros,Urgência,ALTA
+Cidade,Macedo de Cavaleiros,Bragança,Canalizador,picheleiro Macedo de Cavaleiros,Transacional,ALTA
+Cidade,Macedo de Cavaleiros,Bragança,Canalizador,desentupimento Macedo de Cavaleiros,Transacional,ALTA
+Cidade,Macedo de Cavaleiros,Bragança,Canalizador,desentupir sanita Macedo de Cavaleiros,Urgência,MÉDIA
+Cidade,Macedo de Cavaleiros,Bragança,Canalizador,fuga de água Macedo de Cavaleiros,Urgência,ALTA
+Cidade,Macedo de Cavaleiros,Bragança,Canalizador,deteção de fugas Macedo de Cavaleiros,Transacional,MÉDIA
+Cidade,Macedo de Cavaleiros,Bragança,Canalizador,reparação canalização Macedo de Cavaleiros,Transacional,MÉDIA
+Cidade,Macedo de Cavaleiros,Bragança,Canalizador,assistência canalização Macedo de Cavaleiros,Transacional,MÉDIA
+Cidade,Macedo de Cavaleiros,Bragança,Canalizador,esquentador Macedo de Cavaleiros,Transacional,MÉDIA
+Cidade,Macedo de Cavaleiros,Bragança,Canalizador,cano rebentado Macedo de Cavaleiros,Urgência,MÉDIA
+Cidade,Macedo de Cavaleiros,Bragança,Canalizador,bomba de água Macedo de Cavaleiros,Transacional,BAIXA
+Cidade,Macedo de Cavaleiros,Bragança,Canalizador,canalizador ao domingo Macedo de Cavaleiros,Urgência,BAIXA
+Cidade,Macedo de Cavaleiros,Bragança,Eletricista,eletricista Macedo de Cavaleiros,Transacional,ALTA
+Cidade,Macedo de Cavaleiros,Bragança,Eletricista,eletricista urgente Macedo de Cavaleiros,Transacional/Urgência,CRÍTICA
+Cidade,Macedo de Cavaleiros,Bragança,Eletricista,eletricista 24 horas Macedo de Cavaleiros,Urgência,ALTA
+Cidade,Macedo de Cavaleiros,Bragança,Eletricista,avaria elétrica Macedo de Cavaleiros,Urgência,ALTA
+Cidade,Macedo de Cavaleiros,Bragança,Eletricista,curto-circuito Macedo de Cavaleiros,Urgência,MÉDIA
+Cidade,Macedo de Cavaleiros,Bragança,Eletricista,quadro elétrico Macedo de Cavaleiros,Transacional,ALTA
+Cidade,Macedo de Cavaleiros,Bragança,Eletricista,disjuntor a disparar Macedo de Cavaleiros,Urgência,MÉDIA
+Cidade,Macedo de Cavaleiros,Bragança,Eletricista,sem luz Macedo de Cavaleiros,Urgência,MÉDIA
+Cidade,Macedo de Cavaleiros,Bragança,Eletricista,reparação elétrica Macedo de Cavaleiros,Transacional,MÉDIA
+Cidade,Macedo de Cavaleiros,Bragança,Eletricista,assistência elétrica Macedo de Cavaleiros,Transacional,MÉDIA
+Cidade,Macedo de Cavaleiros,Bragança,Eletricista,certificação elétrica Macedo de Cavaleiros,Transacional,ALTA
+Cidade,Macedo de Cavaleiros,Bragança,Eletricista,instalação elétrica Macedo de Cavaleiros,Transacional,MÉDIA
+Cidade,Macedo de Cavaleiros,Bragança,Eletricista,iluminação led Macedo de Cavaleiros,Transacional,BAIXA
+Cidade,Macedo de Cavaleiros,Bragança,Eletricista,painéis solares Macedo de Cavaleiros,Transacional,BAIXA
+Cidade,Macedo de Cavaleiros,Bragança,Eletricista,carregador carro elétrico Macedo de Cavaleiros,Transacional,BAIXA
+Cidade,Macedo de Cavaleiros,Bragança,Eletricista,eletricista ao domingo Macedo de Cavaleiros,Urgência,BAIXA
+Aldeia,Podence,Bragança,Canalizador,canalizador Podence,Transacional,ALTA
+Aldeia,Podence,Bragança,Canalizador,canalizador urgente Podence,Transacional/Urgência,CRÍTICA
+Aldeia,Podence,Bragança,Canalizador,canalizador 24 horas Podence,Urgência,ALTA
+Aldeia,Podence,Bragança,Canalizador,picheleiro Podence,Transacional,ALTA
+Aldeia,Podence,Bragança,Canalizador,desentupimento Podence,Transacional,ALTA
+Aldeia,Podence,Bragança,Canalizador,fuga de água Podence,Urgência,ALTA
+Aldeia,Podence,Bragança,Eletricista,eletricista Podence,Transacional,ALTA
+Aldeia,Podence,Bragança,Eletricista,eletricista urgente Podence,Transacional/Urgência,CRÍTICA
+Aldeia,Podence,Bragança,Eletricista,eletricista 24 horas Podence,Urgência,ALTA
+Aldeia,Podence,Bragança,Eletricista,avaria elétrica Podence,Urgência,ALTA
+Aldeia,Podence,Bragança,Eletricista,quadro elétrico Podence,Transacional,ALTA
+Aldeia,Podence,Bragança,Eletricista,certificação elétrica Podence,Transacional,ALTA
+Aldeia,Morais,Bragança,Canalizador,canalizador Morais,Transacional,ALTA
+Aldeia,Morais,Bragança,Canalizador,canalizador urgente Morais,Transacional/Urgência,CRÍTICA
+Aldeia,Morais,Bragança,Canalizador,canalizador 24 horas Morais,Urgência,ALTA
+Aldeia,Morais,Bragança,Canalizador,picheleiro Morais,Transacional,ALTA
+Aldeia,Morais,Bragança,Canalizador,desentupimento Morais,Transacional,ALTA
+Aldeia,Morais,Bragança,Canalizador,fuga de água Morais,Urgência,ALTA
+Aldeia,Morais,Bragança,Eletricista,eletricista Morais,Transacional,ALTA
+Aldeia,Morais,Bragança,Eletricista,eletricista urgente Morais,Transacional/Urgência,CRÍTICA
+Aldeia,Morais,Bragança,Eletricista,eletricista 24 horas Morais,Urgência,ALTA
+Aldeia,Morais,Bragança,Eletricista,avaria elétrica Morais,Urgência,ALTA
+Aldeia,Morais,Bragança,Eletricista,quadro elétrico Morais,Transacional,ALTA
+Aldeia,Morais,Bragança,Eletricista,certificação elétrica Morais,Transacional,ALTA
+Aldeia,Chacim,Bragança,Canalizador,canalizador Chacim,Transacional,ALTA
+Aldeia,Chacim,Bragança,Canalizador,canalizador urgente Chacim,Transacional/Urgência,CRÍTICA
+Aldeia,Chacim,Bragança,Canalizador,canalizador 24 horas Chacim,Urgência,ALTA
+Aldeia,Chacim,Bragança,Canalizador,picheleiro Chacim,Transacional,ALTA
+Aldeia,Chacim,Bragança,Canalizador,desentupimento Chacim,Transacional,ALTA
+Aldeia,Chacim,Bragança,Canalizador,fuga de água Chacim,Urgência,ALTA
+Aldeia,Chacim,Bragança,Eletricista,eletricista Chacim,Transacional,ALTA
+Aldeia,Chacim,Bragança,Eletricista,eletricista urgente Chacim,Transacional/Urgência,CRÍTICA
+Aldeia,Chacim,Bragança,Eletricista,eletricista 24 horas Chacim,Urgência,ALTA
+Aldeia,Chacim,Bragança,Eletricista,avaria elétrica Chacim,Urgência,ALTA
+Aldeia,Chacim,Bragança,Eletricista,quadro elétrico Chacim,Transacional,ALTA
+Aldeia,Chacim,Bragança,Eletricista,certificação elétrica Chacim,Transacional,ALTA
+Aldeia,Bornes,Bragança,Canalizador,canalizador Bornes,Transacional,ALTA
+Aldeia,Bornes,Bragança,Canalizador,canalizador urgente Bornes,Transacional/Urgência,CRÍTICA
+Aldeia,Bornes,Bragança,Canalizador,canalizador 24 horas Bornes,Urgência,ALTA
+Aldeia,Bornes,Bragança,Canalizador,picheleiro Bornes,Transacional,ALTA
+Aldeia,Bornes,Bragança,Canalizador,desentupimento Bornes,Transacional,ALTA
+Aldeia,Bornes,Bragança,Canalizador,fuga de água Bornes,Urgência,ALTA
+Aldeia,Bornes,Bragança,Eletricista,eletricista Bornes,Transacional,ALTA
+Aldeia,Bornes,Bragança,Eletricista,eletricista urgente Bornes,Transacional/Urgência,CRÍTICA
+Aldeia,Bornes,Bragança,Eletricista,eletricista 24 horas Bornes,Urgência,ALTA
+Aldeia,Bornes,Bragança,Eletricista,avaria elétrica Bornes,Urgência,ALTA
+Aldeia,Bornes,Bragança,Eletricista,quadro elétrico Bornes,Transacional,ALTA
+Aldeia,Bornes,Bragança,Eletricista,certificação elétrica Bornes,Transacional,ALTA
+Aldeia,Lagoa,Bragança,Canalizador,canalizador Lagoa,Transacional,ALTA
+Aldeia,Lagoa,Bragança,Canalizador,canalizador urgente Lagoa,Transacional/Urgência,CRÍTICA
+Aldeia,Lagoa,Bragança,Canalizador,canalizador 24 horas Lagoa,Urgência,ALTA
+Aldeia,Lagoa,Bragança,Canalizador,picheleiro Lagoa,Transacional,ALTA
+Aldeia,Lagoa,Bragança,Canalizador,desentupimento Lagoa,Transacional,ALTA
+Aldeia,Lagoa,Bragança,Canalizador,fuga de água Lagoa,Urgência,ALTA
+Aldeia,Lagoa,Bragança,Eletricista,eletricista Lagoa,Transacional,ALTA
+Aldeia,Lagoa,Bragança,Eletricista,eletricista urgente Lagoa,Transacional/Urgência,CRÍTICA
+Aldeia,Lagoa,Bragança,Eletricista,eletricista 24 horas Lagoa,Urgência,ALTA
+Aldeia,Lagoa,Bragança,Eletricista,avaria elétrica Lagoa,Urgência,ALTA
+Aldeia,Lagoa,Bragança,Eletricista,quadro elétrico Lagoa,Transacional,ALTA
+Aldeia,Lagoa,Bragança,Eletricista,certificação elétrica Lagoa,Transacional,ALTA
+Cidade,Bragança,Bragança,Canalizador,canalizador Bragança,Transacional,ALTA
+Cidade,Bragança,Bragança,Canalizador,canalizador urgente Bragança,Transacional/Urgência,CRÍTICA
+Cidade,Bragança,Bragança,Canalizador,canalizador 24 horas Bragança,Urgência,ALTA
+Cidade,Bragança,Bragança,Canalizador,picheleiro Bragança,Transacional,ALTA
+Cidade,Bragança,Bragança,Canalizador,desentupimento Bragança,Transacional,ALTA
+Cidade,Bragança,Bragança,Canalizador,desentupir sanita Bragança,Urgência,MÉDIA
+Cidade,Bragança,Bragança,Canalizador,fuga de água Bragança,Urgência,ALTA
+Cidade,Bragança,Bragança,Canalizador,deteção de fugas Bragança,Transacional,MÉDIA
+Cidade,Bragança,Bragança,Canalizador,reparação canalização Bragança,Transacional,MÉDIA
+Cidade,Bragança,Bragança,Canalizador,assistência canalização Bragança,Transacional,MÉDIA
+Cidade,Bragança,Bragança,Canalizador,esquentador Bragança,Transacional,MÉDIA
+Cidade,Bragança,Bragança,Canalizador,cano rebentado Bragança,Urgência,MÉDIA
+Cidade,Bragança,Bragança,Canalizador,bomba de água Bragança,Transacional,BAIXA
+Cidade,Bragança,Bragança,Canalizador,canalizador ao domingo Bragança,Urgência,BAIXA
+Cidade,Bragança,Bragança,Eletricista,eletricista Bragança,Transacional,ALTA
+Cidade,Bragança,Bragança,Eletricista,eletricista urgente Bragança,Transacional/Urgência,CRÍTICA
+Cidade,Bragança,Bragança,Eletricista,eletricista 24 horas Bragança,Urgência,ALTA
+Cidade,Bragança,Bragança,Eletricista,avaria elétrica Bragança,Urgência,ALTA
+Cidade,Bragança,Bragança,Eletricista,curto-circuito Bragança,Urgência,MÉDIA
+Cidade,Bragança,Bragança,Eletricista,quadro elétrico Bragança,Transacional,ALTA
+Cidade,Bragança,Bragança,Eletricista,disjuntor a disparar Bragança,Urgência,MÉDIA
+Cidade,Bragança,Bragança,Eletricista,sem luz Bragança,Urgência,MÉDIA
+Cidade,Bragança,Bragança,Eletricista,reparação elétrica Bragança,Transacional,MÉDIA
+Cidade,Bragança,Bragança,Eletricista,assistência elétrica Bragança,Transacional,MÉDIA
+Cidade,Bragança,Bragança,Eletricista,certificação elétrica Bragança,Transacional,ALTA
+Cidade,Bragança,Bragança,Eletricista,instalação elétrica Bragança,Transacional,MÉDIA
+Cidade,Bragança,Bragança,Eletricista,iluminação led Bragança,Transacional,BAIXA
+Cidade,Bragança,Bragança,Eletricista,painéis solares Bragança,Transacional,BAIXA
+Cidade,Bragança,Bragança,Eletricista,carregador carro elétrico Bragança,Transacional,BAIXA
+Cidade,Bragança,Bragança,Eletricista,eletricista ao domingo Bragança,Urgência,BAIXA
+Aldeia,Samil,Bragança,Canalizador,canalizador Samil,Transacional,ALTA
+Aldeia,Samil,Bragança,Canalizador,canalizador urgente Samil,Transacional/Urgência,CRÍTICA
+Aldeia,Samil,Bragança,Canalizador,canalizador 24 horas Samil,Urgência,ALTA
+Aldeia,Samil,Bragança,Canalizador,picheleiro Samil,Transacional,ALTA
+Aldeia,Samil,Bragança,Canalizador,desentupimento Samil,Transacional,ALTA
+Aldeia,Samil,Bragança,Canalizador,fuga de água Samil,Urgência,ALTA
+Aldeia,Samil,Bragança,Eletricista,eletricista Samil,Transacional,ALTA
+Aldeia,Samil,Bragança,Eletricista,eletricista urgente Samil,Transacional/Urgência,CRÍTICA
+Aldeia,Samil,Bragança,Eletricista,eletricista 24 horas Samil,Urgência,ALTA
+Aldeia,Samil,Bragança,Eletricista,avaria elétrica Samil,Urgência,ALTA
+Aldeia,Samil,Bragança,Eletricista,quadro elétrico Samil,Transacional,ALTA
+Aldeia,Samil,Bragança,Eletricista,certificação elétrica Samil,Transacional,ALTA
+Aldeia,Gimonde,Bragança,Canalizador,canalizador Gimonde,Transacional,ALTA
+Aldeia,Gimonde,Bragança,Canalizador,canalizador urgente Gimonde,Transacional/Urgência,CRÍTICA
+Aldeia,Gimonde,Bragança,Canalizador,canalizador 24 horas Gimonde,Urgência,ALTA
+Aldeia,Gimonde,Bragança,Canalizador,picheleiro Gimonde,Transacional,ALTA
+Aldeia,Gimonde,Bragança,Canalizador,desentupimento Gimonde,Transacional,ALTA
+Aldeia,Gimonde,Bragança,Canalizador,fuga de água Gimonde,Urgência,ALTA
+Aldeia,Gimonde,Bragança,Eletricista,eletricista Gimonde,Transacional,ALTA
+Aldeia,Gimonde,Bragança,Eletricista,eletricista urgente Gimonde,Transacional/Urgência,CRÍTICA
+Aldeia,Gimonde,Bragança,Eletricista,eletricista 24 horas Gimonde,Urgência,ALTA
+Aldeia,Gimonde,Bragança,Eletricista,avaria elétrica Gimonde,Urgência,ALTA
+Aldeia,Gimonde,Bragança,Eletricista,quadro elétrico Gimonde,Transacional,ALTA
+Aldeia,Gimonde,Bragança,Eletricista,certificação elétrica Gimonde,Transacional,ALTA
+Aldeia,França,Bragança,Canalizador,canalizador França,Transacional,ALTA
+Aldeia,França,Bragança,Canalizador,canalizador urgente França,Transacional/Urgência,CRÍTICA
+Aldeia,França,Bragança,Canalizador,canalizador 24 horas França,Urgência,ALTA
+Aldeia,França,Bragança,Canalizador,picheleiro França,Transacional,ALTA
+Aldeia,França,Bragança,Canalizador,desentupimento França,Transacional,ALTA
+Aldeia,França,Bragança,Canalizador,fuga de água França,Urgência,ALTA
+Aldeia,França,Bragança,Eletricista,eletricista França,Transacional,ALTA
+Aldeia,França,Bragança,Eletricista,eletricista urgente França,Transacional/Urgência,CRÍTICA
+Aldeia,França,Bragança,Eletricista,eletricista 24 horas França,Urgência,ALTA
+Aldeia,França,Bragança,Eletricista,avaria elétrica França,Urgência,ALTA
+Aldeia,França,Bragança,Eletricista,quadro elétrico França,Transacional,ALTA
+Aldeia,França,Bragança,Eletricista,certificação elétrica França,Transacional,ALTA
+Aldeia,Sendim,Bragança,Canalizador,canalizador Sendim,Transacional,ALTA
+Aldeia,Sendim,Bragança,Canalizador,canalizador urgente Sendim,Transacional/Urgência,CRÍTICA
+Aldeia,Sendim,Bragança,Canalizador,canalizador 24 horas Sendim,Urgência,ALTA
+Aldeia,Sendim,Bragança,Canalizador,picheleiro Sendim,Transacional,ALTA
+Aldeia,Sendim,Bragança,Canalizador,desentupimento Sendim,Transacional,ALTA
+Aldeia,Sendim,Bragança,Canalizador,fuga de água Sendim,Urgência,ALTA
+Aldeia,Sendim,Bragança,Eletricista,eletricista Sendim,Transacional,ALTA
+Aldeia,Sendim,Bragança,Eletricista,eletricista urgente Sendim,Transacional/Urgência,CRÍTICA
+Aldeia,Sendim,Bragança,Eletricista,eletricista 24 horas Sendim,Urgência,ALTA
+Aldeia,Sendim,Bragança,Eletricista,avaria elétrica Sendim,Urgência,ALTA
+Aldeia,Sendim,Bragança,Eletricista,quadro elétrico Sendim,Transacional,ALTA
+Aldeia,Sendim,Bragança,Eletricista,certificação elétrica Sendim,Transacional,ALTA
+Aldeia,Rio de Onor,Bragança,Canalizador,canalizador Rio de Onor,Transacional,ALTA
+Aldeia,Rio de Onor,Bragança,Canalizador,canalizador urgente Rio de Onor,Transacional/Urgência,CRÍTICA
+Aldeia,Rio de Onor,Bragança,Canalizador,canalizador 24 horas Rio de Onor,Urgência,ALTA
+Aldeia,Rio de Onor,Bragança,Canalizador,picheleiro Rio de Onor,Transacional,ALTA
+Aldeia,Rio de Onor,Bragança,Canalizador,desentupimento Rio de Onor,Transacional,ALTA
+Aldeia,Rio de Onor,Bragança,Canalizador,fuga de água Rio de Onor,Urgência,ALTA
+Aldeia,Rio de Onor,Bragança,Eletricista,eletricista Rio de Onor,Transacional,ALTA
+Aldeia,Rio de Onor,Bragança,Eletricista,eletricista urgente Rio de Onor,Transacional/Urgência,CRÍTICA
+Aldeia,Rio de Onor,Bragança,Eletricista,eletricista 24 horas Rio de Onor,Urgência,ALTA
+Aldeia,Rio de Onor,Bragança,Eletricista,avaria elétrica Rio de Onor,Urgência,ALTA
+Aldeia,Rio de Onor,Bragança,Eletricista,quadro elétrico Rio de Onor,Transacional,ALTA
+Aldeia,Rio de Onor,Bragança,Eletricista,certificação elétrica Rio de Onor,Transacional,ALTA
+Cidade,Mirandela,Bragança,Canalizador,canalizador Mirandela,Transacional,ALTA
+Cidade,Mirandela,Bragança,Canalizador,canalizador urgente Mirandela,Transacional/Urgência,CRÍTICA
+Cidade,尾巴,Bragança,Canalizador,canalizador 24 horas Mirandela,Urgência,ALTA
+Cidade,Mirandela,Bragança,Canalizador,picheleiro Mirandela,Transacional,ALTA
+Cidade,Mirandela,Bragança,Canalizador,desentupimento Mirandela,Transacional,ALTA
+Cidade,Mirandela,Bragança,Canalizador,desentupir sanita Mirandela,Urgência,MÉDIA
+Cidade,Mirandela,Bragança,Canalizador,fuga de água Mirandela,Urgência,ALTA
+Cidade,Mirandela,Bragança,Canalizador,deteção de fugas Mirandela,Transacional,MÉDIA
+Cidade,Mirandela,Bragança,Canalizador,reparação canalização Mirandela,Transacional,MÉDIA
+Cidade,Mirandela,Bragança,Canalizador,assistência canalização Mirandela,Transacional,MÉDIA
+Cidade,Mirandela,Bragança,Canalizador,esquentador Mirandela,Transacional,MÉDIA
+Cidade,Mirandela,Bragança,Canalizador,cano rebentado Mirandela,Urgência,MÉDIA
+Cidade,Mirandela,Bragança,Canalizador,bomba de água Mirandela,Transacional,BAIXA
+Cidade,Mirandela,Bragança,Canalizador,canalizador ao domingo Mirandela,Urgência,BAIXA
+Cidade,Mirandela,Bragança,Eletricista,eletricista Mirandela,Transacional,ALTA
+Cidade,Mirandela,Bragança,Eletricista,eletricista urgente Mirandela,Transacional/Urgência,CRÍTICA
+Cidade,Mirandela,Bragança,Eletricista,eletricista 24 horas Mirandela,Urgência,ALTA
+Cidade,Mirandela,Bragança,Eletricista,avaria elétrica Mirandela,Urgência,ALTA
+Cidade,Mirandela,Bragança,Eletricista,curto-circuito Mirandela,Urgência,MÉDIA
+Cidade,Mirandela,Bragança,Eletricista,quadro elétrico Mirandela,Transacional,ALTA
+Cidade,Mirandela,Bragança,Eletricista,disjuntor a disparar Mirandela,Urgência,MÉDIA
+Cidade,Mirandela,Bragança,Eletricista,sem luz Mirandela,Urgência,MÉDIA
+Cidade,Mirandela,Bragança,Eletricista,reparação elétrica Mirandela,Transacional,MÉDIA
+Cidade,Mirandela,Bragança,Eletricista,assistência elétrica Mirandela,Transacional,MÉDIA
+Cidade,Mirandela,Bragança,Eletricista,certificação elétrica Mirandela,Transacional,ALTA
+Cidade,Mirandela,Bragança,Eletricista,instalação elétrica Mirandela,Transacional,MÉDIA
+Cidade,Mirandela,Bragança,Eletricista,iluminação led Mirandela,Transacional,BAIXA
+Cidade,Mirandela,Bragança,Eletricista,painéis solares Mirandela,Transacional,BAIXA
+Cidade,Mirandela,Bragança,Eletricista,carregador carro elétrico Mirandela,Transacional,BAIXA
+Cidade,Mirandela,Bragança,Eletricista,eletricista ao domingo Mirandela,Urgência,BAIXA
+Aldeia,Torre de Dona Chama,Bragança,Canalizador,canalizador Torre de Dona Chama,Transacional,ALTA
+Aldeia,Torre de Dona Chama,Bragança,Canalizador,canalizador urgente Torre de Dona Chama,Transacional/Urgência,CRÍTICA
+Aldeia,Torre de Dona Chama,Bragança,Canalizador,canalizador 24 horas Torre de Dona Chama,Urgência,ALTA
+Aldeia,Torre de Dona Chama,Bragança,Canalizador,picheleiro Torre de Dona Chama,Transacional,ALTA
+Aldeia,Torre de Dona Chama,Bragança,Canalizador,desentupimento Torre de Dona Chama,Transacional,ALTA
+Aldeia,Torre de Dona Chama,Bragança,Canalizador,fuga de água Torre de Dona Chama,Urgência,ALTA
+Aldeia,Torre de Dona Chama,Bragança,Eletricista,eletricista Torre de Dona Chama,Transacional,ALTA
+Aldeia,Torre de Dona Chama,Bragança,Eletricista,eletricista urgente Torre de Dona Chama,Transacional/Urgência,CRÍTICA
+Aldeia,Torre de Dona Chama,Bragança,Eletricista,eletricista 24 horas Torre de Dona Chama,Urgência,ALTA
+Aldeia,Torre de Dona Chama,Bragança,Eletricista,avaria elétrica Torre de Dona Chama,Urgência,ALTA
+Aldeia,Torre de Dona Chama,Bragança,Eletricista,quadro elétrico Torre de Dona Chama,Transacional,ALTA
+Aldeia,Torre de Dona Chama,Bragança,Eletricista,certificação elétrica Torre de Dona Chama,Transacional,ALTA
+Aldeia,Romeu,Bragança,Canalizador,canalizador Romeu,Transacional,ALTA
+Aldeia,Romeu,Bragança,Canalizador,canalizador urgente Romeu,Transacional/Urgência,CRÍTICA
+Aldeia,Romeu,Bragança,Canalizador,canalizador 24 horas Romeu,Urgência,ALTA
+Aldeia,Romeu,Bragança,Canalizador,picheleiro Romeu,Transacional,ALTA
+Aldeia,Romeu,Bragança,Canalizador,desentupimento Romeu,Transacional,ALTA
+Aldeia,Romeu,Bragança,Canalizador,fuga de água Romeu,Urgência,ALTA
+Aldeia,Romeu,Bragança,Eletricista,eletricista Romeu,Transacional,ALTA
+Aldeia,Romeu,Bragança,Eletricista,eletricista urgente Romeu,Transacional/Urgência,CRÍTICA
+Aldeia,Romeu,Bragança,Eletricista,eletricista 24 horas Romeu,Urgência,ALTA
+Aldeia,Romeu,Bragança,Eletricista,avaria elétrica Romeu,Urgência,ALTA
+Aldeia,Romeu,Bragança,Eletricista,quadro elétrico Romeu,Transacional,ALTA
+Aldeia,Romeu,Bragança,Electricista,certificação elétrica Romeu,Transacional,ALTA
+Aldeia,Carvalhais,Bragança,Canalizador,canalizador Carvalhais,Transacional,ALTA
+Aldeia,Carvalhais,Bragança,Canalizador,canalizador urgente Carvalhais,Transacional/Urgência,CRÍTICA
+Aldeia,Carvalhais,Bragança,Canalizador,canalizador 24 horas Carvalhais,Urgência,ALTA
+Aldeia,Carvalhais,Bragança,Canalizador,picheleiro Carvalhais,Transacional,ALTA
+Aldeia,Carvalhais,Bragança,Canalizador,desentupimento Carvalhais,Transacional,ALTA
+Aldeia,Carvalhais,Bragança,Canalizador,fuga de água Carvalhais,Urgência,ALTA
+Aldeia,Carvalhais,Bragança,Eletricista,eletricista Carvalhais,Transacional,ALTA
+Aldeia,Carvalhais,Bragança,Eletricista,eletricista urgente Carvalhais,Transacional/Urgência,CRÍTICA
+Aldeia,Carvalhais,Bragança,Eletricista,eletricista 24 horas Carvalhais,Urgência,ALTA
+Aldeia,Carvalhais,Bragança,Eletricista,avaria elétrica Carvalhais,Urgência,ALTA
+Aldeia,Carvalhais,Bragança,Eletricista,quadro elétrico Carvalhais,Transacional,ALTA
+Aldeia,Carvalhais,Bragança,Eletricista,certificação elétrica Carvalhais,Transacional,ALTA
+Aldeia,Abreiro,Bragança,Canalizador,canalizador Abreiro,Transacional,ALTA
+Aldeia,Abreiro,Bragança,Canalizador,canalizador urgente Abreiro,Transacional/Urgência,CRÍTICA
+Aldeia,Abreiro,Bragança,Canalizador,canalizador 24 horas Abreiro,Urgência,ALTA
+Aldeia,Abreiro,Bragança,Canalizador,picheleiro Abreiro,Transacional,ALTA
+Aldeia,Abreiro,Bragança,Canalizador,desentupimento Abreiro,Transacional,ALTA
+Aldeia,Abreiro,Bragança,Canalizador,fuga de água Abreiro,Urgência,ALTA
+Aldeia,Abreiro,Bragança,Eletricista,eletricista Abreiro,Transacional,ALTA
+Aldeia,Abreiro,Bragança,Eletricista,eletricista urgente Abreiro,Transacional/Urgência,CRÍTICA
+Aldeia,Abreiro,Bragança,Eletricista,eletricista 24 horas Abreiro,Urgência,ALTA
+Aldeia,Abreiro,Bragança,Eletricista,avaria elétrica Abreiro,Urgência,ALTA
+Aldeia,Abreiro,Bragança,Eletricista,quadro elétrico Abreiro,Transacional,ALTA
+Aldeia,Abreiro,Bragança,Eletricista,certificação elétrica Abreiro,Transacional,ALTA
+Cidade,Vinhais,Bragança,Canalizador,canalizador Vinhais,Transacional,ALTA
+Cidade,Vinhais,Bragança,Canalizador,canalizador urgente Vinhais,Transacional/Urgência,CRÍTICA
+Cidade,Vinhais,Bragança,Canalizador,canalizador 24 horas Vinhais,Urgência,ALTA
+Cidade,Vinhais,Bragança,Canalizador,picheleiro Vinhais,Transacional,ALTA
+Cidade,Vinhais,Bragança,Canalizador,desentupimento Vinhais,Transacional,ALTA
+Cidade,Vinhais,Bragança,Canalizador,desentupir sanita Vinhais,Urgência,MÉDIA
+Cidade,Vinhais,Bragança,Canalizador,fuga de água Vinhais,Urgência,ALTA
+Cidade,Vinhais,Bragança,Canalizador,deteção de fugas Vinhais,Transacional,MÉDIA
+Cidade,Vinhais,Bragança,Canalizador,reparação canalização Vinhais,Transacional,MÉDIA
+Cidade,Vinhais,Bragança,Canalizador,assistência canalização Vinhais,Transacional,MÉDIA
+Cidade,Vinhais,Bragança,Canalizador,esquentador Vinhais,Transacional,MÉDIA
+Cidade,Vinhais,Bragança,Canalizador,cano rebentado Vinhais,Urgência,MÉDIA
+Cidade,Vinhais,Bragança,Canalizador,bomba de água Vinhais,Transacional,BAIXA
+Cidade,Vinhais,Bragança,Canalizador,canalizador ao domingo Vinhais,Urgência,BAIXA
+Cidade,Vinhais,Bragança,Eletricista,eletricista Vinhais,Transacional,ALTA
+Cidade,Vinhais,Bragança,Eletricista,eletricista urgente Vinhais,Transacional/Urgência,CRÍTICA
+Cidade,Vinhais,Bragança,Eletricista,eletricista 24 horas Vinhais,Urgência,ALTA
+Cidade,Vinhais,Bragança,Eletricista,avaria elétrica Vinhais,Urgência,ALTA
+Cidade,Vinhais,Bragança,Eletricista,curto-circuito Vinhais,Urgência,MÉDIA
+Cidade,Vinhais,Bragança,Eletricista,quadro elétrico Vinhais,Transacional,ALTA
+Cidade,Vinhais,Bragança,Eletricista,disjuntor a disparar Vinhais,Urgência,MÉDIA
+Cidade,Vinhais,Bragança,Eletricista,sem luz Vinhais,Urgência,MÉDIA
+Cidade,Vinhais,Bragança,Eletricista,reparação elétrica Vinhais,Transacional,MÉDIA
+Cidade,Vinhais,Bragança,Eletricista,assistência elétrica Vinhais,Transacional,MÉDIA
+Cidade,Vinhais,Bragança,Eletricista,certificação elétrica Vinhais,Transacional,ALTA
+Cidade,Vinhais,Bragança,Eletricista,instalação elétrica Vinhais,Transacional,MÉDIA
+Cidade,Vinhais,Bragança,Eletricista,iluminação led Vinhais,Transacional,BAIXA
+Cidade,Vinhais,Bragança,Eletricista,painéis solares Vinhais,Transacional,BAIXA
+Cidade,Vinhais,Bragança,Eletricista,carregador carro elétrico Vinhais,Transacional,BAIXA
+Cidade,Vinhais,Bragança,Eletricista,eletricista ao domingo Vinhais,Urgência,BAIXA
+Aldeia,Tuizelo,Bragança,Canalizador,canalizador Tuizelo,Transacional,ALTA
+Aldeia,Tuizelo,Bragança,Canalizador,canalizador urgente Tuizelo,Transacional/Urgência,CRÍTICA
+Aldeia,Tuizelo,Bragança,Canalizador,canalizador 24 horas Tuizelo,Urgência,ALTA
+Aldeia,Tuizelo,Bragança,Canalizador,picheleiro Tuizelo,Transacional,ALTA
+Aldeia,Tuizelo,Bragança,Canalizador,desentupimento Tuizelo,Transacional,ALTA
+Aldeia,Tuizelo,Bragança,Canalizador,fuga de água Tuizelo,Urgência,ALTA
+Aldeia,Tuizelo,Bragança,Eletricista,eletricista Tuizelo,Transacional,ALTA
+Aldeia,Tuizelo,Bragança,Eletricista,eletricista urgente Tuizelo,Transacional/Urgência,CRÍTICA
+Aldeia,Tuizelo,Bragança,Eletricista,eletricista 24 horas Tuizelo,Urgência,ALTA
+Aldeia,Tuizelo,Bragança,Eletricista,avaria elétrica Tuizelo,Urgência,ALTA
+Aldeia,Tuizelo,Bragança,Eletricista,quadro elétrico Tuizelo,Transacional,ALTA
+Aldeia,Tuizelo,Bragança,Eletricista,certificação elétrica Tuizelo,Transacional,ALTA
+Aldeia,Rebordelo,Bragança,Canalizador,canalizador Rebordelo,Transacional,ALTA
+Aldeia,Rebordelo,Bragança,Canalizador,canalizador urgente Rebordelo,Transacional/Urgência,CRÍTICA
+Aldeia,Rebordelo,Bragança,Canalizador,canalizador 24 horas Rebordelo,Urgência,ALTA
+Aldeia,Rebordelo,Bragança,Canalizador,picheleiro Rebordelo,Transacional,ALTA
+Aldeia,Rebordelo,Bragança,Canalizador,desentupimento Rebordelo,Transacional,ALTA
+Aldeia,Rebordelo,Bragança,Canalizador,fuga de água Rebordelo,Urgência,ALTA
+Aldeia,Rebordelo,Bragança,Eletricista,eletricista Rebordelo,Transacional,ALTA
+Aldeia,Rebordelo,Bragança,Eletricista,eletricista urgente Rebordelo,Transacional/Urgência,CRÍTICA
+Aldeia,Rebordelo,Bragança,Eletricista,eletricista 24 horas Rebordelo,Urgência,ALTA
+Aldeia,Rebordelo,Bragança,Eletricista,avaria elétrica Rebordelo,Urgência,ALTA
+Aldeia,Rebordelo,Bragança,Eletricista,quadro elétrico Rebordelo,Transacional,ALTA
+Aldeia,Rebordelo,Bragança,Eletricista,certificação elétrica Rebordelo,Transacional,ALTA
+Aldeia,Edral,Bragança,Canalizador,canalizador Edral,Transacional,ALTA
+Aldeia,Edral,Bragança,Canalizador,canalizador urgente Edral,Transacional/Urgência,CRÍTICA
+Aldeia,Edral,Bragança,Canalizador,canalizador 24 horas Edral,Urgência,ALTA
+Aldeia,Edral,Bragança,Canalizador,picheleiro Edral,Transacional,ALTA
+Aldeia,Edral,Bragança,Canalizador,desentupimento Edral,Transacional,ALTA
+Aldeia,Edral,Bragança,Canalizador,fuga de água Edral,Urgência,ALTA
+Aldeia,Edral,Bragança,Eletricista,eletricista Edral,Transacional,ALTA
+Aldeia,Edral,Bragança,Eletricista,eletricista urgente Edral,Transacional/Urgência,CRÍTICA
+Aldeia,Edral,Bragança,Eletricista,eletricista 24 horas Edral,Urgência,ALTA
+Aldeia,Edral,Bragança,Eletricista,avaria elétrica Edral,Urgência,ALTA
+Aldeia,Edral,Bragança,Eletricista,quadro elétrico Edral,Transacional,ALTA
+Aldeia,Edral,Bragança,Eletricista,certificação elétrica Edral,Transacional,ALTA
+Cidade,Vimioso,Bragança,Canalizador,canalizador Vimioso,Transacional,ALTA
+Cidade,Vimioso,Bragança,Canalizador,canalizador urgente Vimioso,Transacional/Urgência,CRÍTICA
+Cidade,Vimioso,Bragança,Canalizador,canalizador 24 horas Vimioso,Urgência,ALTA
+Cidade,Vimioso,Bragança,Canalizador,picheleiro Vimioso,Transacional,ALTA
+Cidade,Vimioso,Bragança,Canalizador,desentupimento Vimioso,Transacional,ALTA
+Cidade,Vimioso,Bragança,Canalizador,desentupir sanita Vimioso,Urgência,MÉDIA
+Cidade,Vimioso,Bragança,Canalizador,fuga de água Vimioso,Urgência,ALTA
+Cidade,Vimioso,Bragança,Canalizador,deteção de fugas Vimioso,Transacional,MÉDIA
+Cidade,Vimioso,Bragança,Canalizador,reparação canalização Vimioso,Transacional,MÉDIA
+Cidade,Vimioso,Bragança,Canalizador,assistência canalização Vimioso,Transacional,MÉDIA
+Cidade,Vimioso,Bragança,Canalizador,esquentador Vimioso,Transacional,MÉDIA
+Cidade,Vimioso,Bragança,Canalizador,cano rebentado Vimioso,Urgência,MÉDIA
+Cidade,Vimioso,Bragança,Canalizador,bomba de água Vimioso,Transacional,BAIXA
+Cidade,Vimioso,Bragança,Canalizador,canalizador ao domingo Vimioso,Urgência,BAIXA
+Cidade,Vimioso,Bragança,Eletricista,eletricista Vimioso,Transacional,ALTA
+Cidade,Vimioso,Bragança,Eletricista,eletricista urgente Vimioso,Transacional/Urgência,CRÍTICA
+Cidade,Vimioso,Bragança,Eletricista,eletricista 24 horas Vimioso,Urgência,ALTA
+Cidade,Vimioso,Bragança,Eletricista,avaria elétrica Vimioso,Urgência,ALTA
+Cidade,Vimioso,Bragança,Eletricista,curto-circuito Vimioso,Urgência,MÉDIA
+Cidade,Vimioso,Bragança,Eletricista,quadro elétrico Vimioso,Transacional,ALTA
+Cidade,Vimioso,Bragança,Eletricista,disjuntor a disparar Vimioso,Urgência,MÉDIA
+Cidade,Vimioso,Bragança,Eletricista,sem luz Vimioso,Urgência,MÉDIA
+Cidade,Vimioso,Bragança,Eletricista,reparação elétrica Vimioso,Transacional,MÉDIA
+Cidade,Vimioso,Bragança,Eletricista,assistência elétrica Vimioso,Transacional,MÉDIA
+Cidade,Vimioso,Bragança,Eletricista,certificação elétrica Vimioso,Transacional,ALTA
+Cidade,Vimioso,Bragança,Eletricista,instalação elétrica Vimioso,Transacional,MÉDIA
+Cidade,Vimioso,Bragança,Eletricista,iluminação led Vimioso,Transacional,BAIXA
+Cidade,Vimioso,Bragança,Eletricista,painéis solares Vimioso,Transacional,BAIXA
+Cidade,Vimioso,Bragança,Eletricista,carregador carro elétrico Vimioso,Transacional,BAIXA
+Cidade,Vimioso,Bragança,Eletricista,eletricista ao domingo Vimioso,Urgência,BAIXA
+Aldeia,Argozelo,Bragança,Canalizador,canalizador Argozelo,Transacional,ALTA
+Aldeia,Argozelo,Bragança,Canalizador,canalizador urgente Argozelo,Transacional/Urgência,CRÍTICA
+Aldeia,Argozelo,Bragança,Canalizador,canalizador 24 horas Argozelo,Urgência,ALTA
+Aldeia,Argozelo,Bragança,Canalizador,picheleiro Argozelo,Transacional,ALTA
+Aldeia,Argozelo,Bragança,Canalizador,desentupimento Argozelo,Transacional,ALTA
+Aldeia,Argozelo,Bragança,Canalizador,fuga de água Argozelo,Urgência,ALTA
+Aldeia,Argozelo,Bragança,Eletricista,eletricista Argozelo,Transacional,ALTA
+Aldeia,Argozelo,Bragança,Eletricista,eletricista urgente Argozelo,Transacional/Urgência,CRÍTICA
+Aldeia,Argozelo,Bragança,Eletricista,eletricista 24 horas Argozelo,Urgência,ALTA
+Aldeia,Argozelo,Bragança,Eletricista,avaria elétrica Argozelo,Urgência,ALTA
+Aldeia,Argozelo,Bragança,Eletricista,quadro elétrico Argozelo,Transacional,ALTA
+Aldeia,Argozelo,Bragança,Eletricista,certificação elétrica Argozelo,Transacional,ALTA
+Aldeia,Carção,Bragança,Canalizador,canalizador Carção,Transacional,ALTA
+Aldeia,Carção,Bragança,Canalizador,canalizador urgente Carção,Transacional/Urgência,CRÍTICA
+Aldeia,Carção,Bragança,Canalizador,canalizador 24 horas Carção,Urgência,ALTA
+Aldeia,Carção,Bragança,Canalizador,picheleiro Carção,Transacional,ALTA
+Aldeia,Carção,Bragança,Canalizador,desentupimento Carção,Transacional,ALTA
+Aldeia,Carção,Bragança,Canalizador,fuga de água Carção,Urgência,ALTA
+Aldeia,Carção,Bragança,Eletricista,eletricista Carção,Transacional,ALTA
+Aldeia,Carção,Bragança,Eletricista,eletricista urgente Carção,Transacional/Urgência,CRÍTICA
+Aldeia,Carção,Bragança,Eletricista,eletricista 24 horas Carção,Urgência,ALTA
+Aldeia,Carção,Bragança,Eletricista,avaria elétrica Carção,Urgência,ALTA
+Aldeia,Carção,Bragança,Eletricista,quadro elétrico Carção,Transacional,ALTA
+Aldeia,Carção,Bragança,Eletricista,certificação elétrica Carção,Transacional,ALTA
+Aldeia,Pinelo,Bragança,Canalizador,canalizador Pinelo,Transacional,ALTA
+Aldeia,Pinelo,Bragança,Canalizador,canalizador urgente Pinelo,Transacional/Urgência,CRÍTICA
+Aldeia,Pinelo,Bragança,Canalizador,canalizador 24 horas Pinelo,Urgência,ALTA
+Aldeia,Pinelo,Bragança,Canalizador,picheleiro Pinelo,Transacional,ALTA
+Aldeia,Pinelo,Bragança,Canalizador,desentupimento Pinelo,Transacional,ALTA
+Aldeia,Pinelo,Bragança,Canalizador,fuga de água Pinelo,Urgência,ALTA
+Aldeia,Pinelo,Bragança,Eletricista,eletricista Pinelo,Transacional,ALTA
+Aldeia,Pinelo,Bragança,Eletricista,eletricista urgente Pinelo,Transacional/Urgência,CRÍTICA
+Aldeia,Pinelo,Bragança,Eletricista,eletricista 24 horas Pinelo,Urgência,ALTA
+Aldeia,Pinelo,Bragança,Eletricista,avaria elétrica Pinelo,Urgência,ALTA
+Aldeia,Pinelo,Bragança,Eletricista,quadro elétrico Pinelo,Transacional,ALTA
+Aldeia,Pinelo,Bragança,Eletricista,certificação elétrica Pinelo,Transacional,ALTA
+Aldeia,Duas Igrejas,Bragança,Canalizador,canalizador Duas Igrejas,Transacional,ALTA
+Aldeia,Duas Igrejas,Bragança,Canalizador,canalizador urgente Duas Igrejas,Transacional/Urgência,CRÍTICA
+Aldeia,Duas Igrejas,Bragança,Canalizador,canalizador 24 horas Duas Igrejas,Urgência,ALTA
+Aldeia,Duas Igrejas,Bragança,Canalizador,picheleiro Duas Igrejas,Transacional,ALTA
+Aldeia,Duas Igrejas,Bragança,Canalizador,desentupimento Duas Igrejas,Transacional,ALTA
+Aldeia,Duas Igrejas,Bragança,Canalizador,fuga de água Duas Igrejas,Urgência,ALTA
+Aldeia,Duas Igrejas,Bragança,Eletricista,eletricista Duas Igrejas,Transacional,ALTA
+Aldeia,Duas Igrejas,Bragança,Eletricista,eletricista urgente Duas Igrejas,Transacional/Urgência,CRÍTICA
+Aldeia,Duas Igrejas,Bragança,Eletricista,eletricista 24 horas Duas Igrejas,Urgência,ALTA
+Aldeia,Duas Igrejas,Bragança,Eletricista,avaria elétrica Duas Igrejas,Urgência,ALTA
+Aldeia,Duas Igrejas,Bragança,Eletricista,quadro elétrico Duas Igrejas,Transacional,ALTA
+Aldeia,Duas Igrejas,Bragança,Eletricista,certificação elétrica Duas Igrejas,Transacional,ALTA
+Cidade,Alfândega da Fé,Bragança,Canalizador,canalizador Alfândega da Fé,Transacional,ALTA
+Cidade,Alfândega da Fé,Bragança,Canalizador,canalizador urgente Alfândega da Fé,Transacional/Urgência,CRÍTICA
+Cidade,Alfândega da Fé,Bragança,Canalizador,canalizador 24 horas Alfândega da Fé,Urgência,ALTA
+Cidade,Alfândega da Fé,Bragança,Canalizador,picheleiro Alfândega da Fé,Transacional,ALTA
+Cidade,Alfândega da Fé,Bragança,Canalizador,desentupimento Alfândega da Fé,Transacional,ALTA
+Cidade,Alfândega da Fé,Bragança,Canalizador,desentupir sanita Alfândega da Fé,Urgência,MÉDIA
+Cidade,Alfândega da Fé,Bragança,Canalizador,fuga de água Alfândega da Fé,Urgência,ALTA
+Cidade,Alfândega da Fé,Bragança,Canalizador,deteção de fugas Alfândega da Fé,Transacional,MÉDIA
+Cidade,Alfândega da Fé,Bragança,Canalizador,reparação canalização Alfândega da Fé,Transacional,MÉDIA
+Cidade,Alfândega da Fé,Bragança,Canalizador,assistência canalização Alfândega da Fé,Transacional,MÉDIA
+Cidade,Alfândega da Fé,Bragança,Canalizador,esquentador Alfândega da Fé,Transacional,MÉDIA
+Cidade,Alfândega da Fé,Bragança,Canalizador,cano rebentado Alfândega da Fé,Urgência,MÉDIA
+Cidade,Alfândega da Fé,Bragança,Canalizador,bomba de água Alfândega da Fé,Transacional,BAIXA
+Cidade,Alfândega da Fé,Bragança,Canalizador,canalizador ao domingo Alfândega da Fé,Urgência,BAIXA
+Cidade,Alfândega da Fé,Bragança,Eletricista,eletricista Alfândega da Fé,Transacional,ALTA
+Cidade,Alfândega da Fé,Bragança,Eletricista,eletricista urgente Alfândega da Fé,Transacional/Urgência,CRÍTICA
+Cidade,Alfândega da Fé,Bragança,Eletricista,eletricista 24 horas Alfândega da Fé,Urgência,ALTA
+Cidade,Alfândega da Fé,Bragança,Eletricista,avaria elétrica Alfândega da Fé,Urgência,ALTA
+Cidade,Alfândega da Fé,Bragança,Eletricista,curto-circuito Alfândega da Fé,Urgência,MÉDIA
+Cidade,Alfândega da Fé,Bragança,Eletricista,quadro elétrico Alfândega da Fé,Transacional,ALTA
+Cidade,Alfândega da Fé,Bragança,Eletricista,disjuntor a disparar Alfândega da Fé,Urgência,MÉDIA
+Cidade,Alfândega da Fé,Bragança,Eletricista,sem luz Alfândega da Fé,Urgência,MÉDIA
+Cidade,Alfândega da Fé,Bragança,Eletricista,reparação elétrica Alfândega da Fé,Transacional,MÉDIA
+Cidade,Alfândega da Fé,Bragança,Eletricista,assistência elétrica Alfândega da Fé,Transacional,MÉDIA
+Cidade,Alfândega da Fé,Bragança,Eletricista,certificação elétrica Alfândega da Fé,Transacional,ALTA
+Cidade,Alfândega da Fé,Bragança,Eletricista,instalação elétrica Alfândega da Fé,Transacional,MÉDIA
+Cidade,Alfândega da Fé,Bragança,Eletricista,iluminação led Alfândega da Fé,Transacional,BAIXA
+Cidade,Alfândega da Fé,Bragança,Eletricista,painéis solares Alfândega da Fé,Transacional,BAIXA
+Cidade,Alfândega da Fé,Bragança,Eletricista,carregador carro elétrico Alfândega da Fé,Transacional,BAIXA
+Cidade,Alfândega da Fé,Bragança,Eletricista,eletricista ao domingo Alfândega da Fé,Urgência,BAIXA
+Aldeia,Sambade,Bragança,Canalizador,canalizador Sambade,Transacional,ALTA
+Aldeia,Sambade,Bragança,Canalizador,canalizador urgente Sambade,Transacional/Urgência,CRÍTICA
+Aldeia,Sambade,Bragança,Canalizador,canalizador 24 horas Sambade,Urgência,ALTA
+Aldeia,Sambade,Bragança,Canalizador,picheleiro Sambade,Transacional,ALTA
+Aldeia,Sambade,Bragança,Canalizador,desentupimento Sambade,Transacional,ALTA
+Aldeia,Sambade,Bragança,Canalizador,fuga de água Sambade,Urgência,ALTA
+Aldeia,Sambade,Bragança,Eletricista,eletricista Sambade,Transacional,ALTA
+Aldeia,Sambade,Bragança,Eletricista,eletricista urgente Sambade,Transacional/Urgência,CRÍTICA
+Aldeia,Sambade,Bragança,Eletricista,eletricista 24 horas Sambade,Urgência,ALTA
+Aldeia,Sambade,Bragança,Eletricista,avaria elétrica Sambade,Urgência,ALTA
+Aldeia,Sambade,Bragança,Eletricista,quadro elétrico Sambade,Transacional,ALTA
+Aldeia,Sambade,Bragança,Eletricista,certificação elétrica Sambade,Transacional,ALTA
+Aldeia,Vilarelhos,Bragança,Canalizador,canalizador Vilarelhos,Transacional,ALTA
+Aldeia,Vilarelhos,Bragança,Canalizador,canalizador urgente Vilarelhos,Transacional/Urgência,CRÍTICA
+Aldeia,Vilarelhos,Bragança,Canalizador,canalizador 24 horas Vilarelhos,Urgência,ALTA
+Aldeia,Vilarelhos,Bragança,Canalizador,picheleiro Vilarelhos,Transacional,ALTA
+Aldeia,Vilarelhos,Bragança,Canalizador,desentupimento Vilarelhos,Transacional,ALTA
+Aldeia,Vilarelhos,Bragança,Canalizador,fuga de água Vilarelhos,Urgência,ALTA
+Aldeia,Vilarelhos,Bragança,Eletricista,eletricista Vilarelhos,Transacional,ALTA
+Aldeia,Vilarelhos,Bragança,Eletricista,eletricista urgente Vilarelhos,Transacional/Urgência,CRÍTICA
+Aldeia,Vilarelhos,Bragança,Eletricista,eletricista 24 horas Vilarelhos,Urgência,ALTA
+Aldeia,Vilarelhos,Bragança,Eletricista,avaria elétrica Vilarelhos,Urgência,ALTA
+Aldeia,Vilarelhos,Bragança,Eletricista,quadro elétrico Vilarelhos,Transacional,ALTA
+Aldeia,Vilarelhos,Bragança,Eletricista,certificação elétrica Vilarelhos,Transacional,ALTA
+Aldeia,Cerejais,Bragança,Canalizador,canalizador Cerejais,Transacional,ALTA
+Aldeia,Cerejais,Bragança,Canalizador,canalizador urgente Cerejais,Transacional/Urgência,CRÍTICA
+Aldeia,Cerejais,Bragança,Canalizador,canalizador 24 horas Cerejais,Urgência,ALTA
+Aldeia,Cerejais,Bragança,Canalizador,picheleiro Cerejais,Transacional,ALTA
+Aldeia,Cerejais,Bragança,Canalizador,desentupimento Cerejais,Transacional,ALTA
+Aldeia,Cerejais,Bragança,Canalizador,fuga de água Cerejais,Urgência,ALTA
+Aldeia,Cerejais,Bragança,Eletricista,eletricista Cerejais,Transacional,ALTA
+Aldeia,Cerejais,Bragança,Eletricista,eletricista urgente Cerejais,Transacional/Urgência,CRÍTICA
+Aldeia,Cerejais,Bragança,Eletricista,eletricista 24 horas Cerejais,Urgência,ALTA
+Aldeia,Cerejais,Bragança,Eletricista,avaria elétrica Cerejais,Urgência,ALTA
+Aldeia,Cerejais,Bragança,Eletricista,quadro elétrico Cerejais,Transacional,ALTA
+Aldeia,Cerejais,Bragança,Eletricista,certificação elétrica Cerejais,Transacional,ALTA
+Cidade,Carrazeda de Anciães,Bragança,Canalizador,canalizador Carrazeda de Anciães,Transacional,ALTA
+Cidade,Carrazeda de Anciães,Bragança,Canalizador,canalizador urgente Carrazeda de Anciães,Transacional/Urgência,CRÍTICA
+Cidade,Carrazeda de Anciães,Bragança,Canalizador,canalizador 24 horas Carrazeda de Anciães,Urgência,ALTA
+Cidade,Carrazeda de Anciães,Bragança,Canalizador,picheleiro Carrazeda de Anciães,Transacional,ALTA
+Cidade,Carrazeda de Anciães,Bragança,Canalizador,desentupimento Carrazeda de Anciães,Transacional,ALTA
+Cidade,Carrazeda de Anciães,Bragança,Canalizador,desentupir sanita Carrazeda de Anciães,Urgência,MÉDIA
+Cidade,Carrazeda de Anciães,Bragança,Canalizador,fuga de água Carrazeda de Anciães,Urgência,ALTA
+Cidade,Carrazeda de Anciães,Bragança,Canalizador,deteção de fugas Carrazeda de Anciães,Transacional,MÉDIA
+Cidade,Carrazeda de Anciães,Bragança,Canalizador,reparação canalização Carrazeda de Anciães,Transacional,MÉDIA
+Cidade,Carrazeda de Anciães,Bragança,Canalizador,assistência canalização Carrazeda de Anciães,Transacional,MÉDIA
+Cidade,Carrazeda de Anciães,Bragança,Canalizador,esquentador Carrazeda de Anciães,Transacional,MÉDIA
+Cidade,Carrazeda de Anciães,Bragança,Canalizador,cano rebentado Carrazeda de Anciães,Urgência,MÉDIA
+Cidade,Carrazeda de Anciães,Bragança,Canalizador,bomba de água Carrazeda de Anciães,Transacional,BAIXA
+Cidade,Carrazeda de Anciães,Bragança,Canalizador,canalizador ao domingo Carrazeda de Anciães,Urgência,BAIXA
+Cidade,Carrazeda de Anciães,Bragança,Eletricista,eletricista Carrazeda de Anciães,Transacional,ALTA
+Cidade,Carrazeda de Anciães,Bragança,Eletricista,eletricista urgente Car...,Transacional/Urgência,CRÍTICA
+Cidade,Carrazeda de Anciães,Bragança,Eletricista,eletricista 24 horas Carrazeda de Anciães,Urgência,ALTA
+Cidade,Carrazeda de Anciães,Bragança,Eletricista,avaria elétrica Carrazeda de Anciães,Urgência,ALTA
+Cidade,Carrazeda de Anciães,Bragança,Eletricista,curto-circuito Carrazeda de Anciães,Urgência,MÉDIA
+Cidade,Carrazeda de Anciães,Bragança,Eletricista,quadro elétrico Carrazeda de Anciães,Transacional,ALTA
+Cidade,Carrazeda de Anciães,Bragança,Eletricista,disjuntor a disparar Carrazeda de Anciães,Urgência,MÉDIA
+Cidade,Carrazeda de Anciães,Bragança,Eletricista,sem luz Carrazeda de Anciães,BUGTRAP,MÉDIA
+Cidade,Carrazeda de Anciães,Bragança,Eletricista,reparação elétrica Carrazeda de Anciães,Transacional,MÉDIA
+Cidade,Carrazeda de Anciães,Bragança,Eletricista,assistência elétrica Carrazeda de Anciães,Transacional,MÉDIA
+Cidade,Carrazeda de Anciães,Bragança,Eletricista,certificação elétrica Carrazeda de Anciães,Transacional,ALTA
+Cidade,Carrazeda de Anciães,Bragança,Eletricista,instalação elétrica Carrazeda de Anciães,Transacional,MÉDIA
+Cidade,Carrazeda de Anciães,Bragança,Eletricista,iluminação led Carrazeda de Anciães,Transacional,BAIXA
+Cidade,Carrazeda de Anciães,Bragança,Eletricista,painéis solares Carrazeda de Anciães,Transacional,BAIXA
+Cidade,Carrazeda de Anciães,Bragança,Eletricista,carregador carro elétrico Carrazeda de Anciães,Transacional,BAIXA
+Cidade,Carrazeda de Anciães,Bragança,Eletricista,eletricista ao domingo Carrazeda de Anciães,Urgência,BAIXA
+Aldeia,Seixo de Ansiães,Bragança,Canalizador,canalizador Seixo de Ansiães,Transacional,ALTA
+Aldeia,Seixo de Ansiães,Bragança,Canalizador,canalizador urgente Seixo de Ansiães,Transacional/Urgência,CRÍTICA
+Aldeia,Seixo de Ansiães,Bragança,Canalizador,canalizador 24 horas Seixo de Ansiães,Urgência,ALTA
+Aldeia,Seixo de Ansiães,Bragança,Canalizador,picheleiro Seixo de Ansiães,Transacional,ALTA
+Aldeia,Seixo de Ansiães,Bragança,Canalizador,desentupimento Seixo de Ansiães,Transacional,ALTA
+Aldeia,Seixo de Anasiães,Bragança,Canalizador,fuga de água Seixo de Ansiães,Urgência,ALTA
+Aldeia,Seix0 de Ansiães,Bragança,Eletricista,eletricista Seixo de Ansiães,Transacional,ALTA
+Aldeia,Seixo de Ansiães,Bragança,Eletricista,eletricista urgente Seixo de Ansiães,Transacional/Urgência,CRÍTICA
+Aldeia,Seixo de Ansiães,Bragança,Eletricista,eletricista 24 horas Seixo de Ansiães,Urgência,ALTA
+Aldeia,Seixo de Ansiães,Bragança,Eletricista,avaria elétrica Seixo de Ansiães,Urgência,ALTA
+Aldeia,Seixo de Ansiães,Bragança,Eletricista,quadro elétrico Seixo de Ansiães,Transacional,ALTA
+Aldeia,Seixo de Ansiães,Bragança,Eletricista,certificação elétrica Seixo de Ansiães,Transacional,ALTA
+Aldeia,Marzagão,Bragança,Canalizador,canalizador Marzagão,Transacional,ALTA
+Aldeia,Marzagão,Bragança,Canalizador,canalizador urgente Marzagão,Transacional/Urgência,CRÍTICA
+Aldeia,Marzagão,Bragança,Canalizador,canalizador 24 horas Marzagão,Urgência,ALTA
+Aldeia,Marzagão,Bragança,Canalizador,picheleiro Marzagão,Transacional,ALTA
+Aldeia,Marzagão,Bragança,Canalizador,desentupimento Marzagão,Transacional,ALTA
+Aldeia,Marzagão,Bragança,Canalizador,fuga de água Marzagão,Urgência,ALTA
+Aldeia,Marzagão,Bragança,Eletricista,eletricista Marzagão,Transacional,ALTA
+Aldeia,Marzagão,Bragança,Eletricista,eletricista urgente Marzagão,Transacional/Urgência,CRÍTICA
+Aldeia,Marzagão,Bragança,Eletricista,eletricista 24 horas Marzagão,Urgência,ALTA
+Aldeia,Marzagão,Bragança,Eletricista,avaria elétrica Marzagão,Urgência,ALTA
+Aldeia,Marzagão,Bragança,Eletricista,quadro elétrico Marzagão,Transacional,ALTA
+Aldeia,Marzagão,Bragança,Eletricista,certificação elétrica Marzagão,Transacional,ALTA
+Cidade,Mogadouro,Bragança,Canalizador,canalizador Mogadouro,Transacional,ALTA
+Cidade,Mogadouro,Bragança,Canalizador,canalizador urgente Mogadouro,Transacional/Urgência,CRÍTICA
+Cidade,Mogadouro,Bragança,Canalizador,canalizador 24 horas Mogadouro,Urgência,ALTA
+Cidade,Mogadouro,Bragança,Canalizador,picheleiro Mogadouro,Transacional,ALTA
+Cidade,Mogadouro,Bragança,Canalizador,desentupimento Mogadouro,Transacional,ALTA
+Cidade,Mogadouro,Bragança,Canalizador,desentupir sanita Mogadouro,Urgência,MÉDIA
+Cidade,Mogadouro,Bragança,Canalizador,fuga de água Mogadouro,Urgência,ALTA
+Cidade,Mogadouro,Bragança,Canalizador,deteção de fugas Mogadouro,Transacional,MÉDIA
+Cidade,Mogadouro,Bragança,Canalizador,reparação canalização Mogadouro,Transacional,MÉDIA
+Cidade,Mogadouro,Bragança,Canalizador,assistência canalização Mogadouro,Transacional,MÉDIA
+Cidade,Mogadouro,Bragança,Canalizador,esquentador Mogadouro,Transacional,MÉDIA
+Cidade,Mogadouro,Bragança,Canalizador,cano rebentado Mogadouro,Urgência,MÉDIA
+Cidade,Mogadouro,Bragança,Canalizador,bomba de água Mogadouro,Transacional,BAIXA
+Cidade,Mogadouro,Bragança,Canalizador,canalizador ao domingo Mogadouro,Urgência,BAIXA
+Cidade,Mogadouro,Bragança,Eletricista,eletricista Mogadouro,Transacional,ALTA
+Cidade,Mogadouro,Bragança,Eletricista,eletricista urgente Mogadouro,Transacional/Urgência,CRÍTICA
+Cidade,Mogadouro,Bragança,Eletricista,eletricista 24 horas Mogadouro,Urgência,ALTA
+Cidade,Mogadouro,Bragança,Eletricista,avaria elétrica Mogadouro,Urgência,ALTA
+Cidade,Mogadouro,Bragança,Eletricista,curto-circuito Mogadouro,Urgência,MÉDIA
+Cidade,Mogadouro,Bragança,Eletricista,quadro elétrico Mogadouro,Transacional,ALTA
+Cidade,Mogadouro,Bragança,Eletricista,disjuntor a disparar Mogadouro,Urgência,MÉDIA
+Cidade,Mogadouro,Bragança,Eletricista,sem luz Mogadouro,Urgência,MÉDIA
+Cidade,Mogadouro,Bragança,Eletricista,reparação elétrica Mogadouro,Transacional,MÉDIA
+Cidade,Mogadouro,Bragança,Eletricista,assistência elétrica Mogadouro,Transacional,MÉDIA
+Cidade,Mogadouro,Bragança,Eletricista,certificação elétrica Mogadouro,Transacional,ALTA
+Cidade,Mogadouro,Bragança,Eletricista,instalação elétrica Mogadouro,Transacional,MÉDIA
+Cidade,Mogadouro,Bragança,Eletricista,iluminação led Mogadouro,Transacional,BAIXA
+Cidade,Mogadouro,Bragança,Eletricista,painéis solares Mogadouro,Transacional,BAIXA
+Cidade,Mogadouro,Bragança,Eletricista,carregador carro elétrico Mogadouro,Transacional,BAIXA
+Cidade,Mogadouro,Bragança,Eletricista,eletricista ao domingo Mogadouro,Urgência,BAIXA
+Aldeia,Meirinhos,Bragança,Canalizador,canalizador Meirinhos,Transacional,ALTA
+Aldeia,Meirinhos,Bragança,Canalizador,canalizador urgente Meirinhos,Transacional/Urgência,CRÍTICA
+Aldeia,Meirinhos,Bragança,Canalizador,canalizador 24 horas Meirinhos,Urgência,ALTA
+Aldeia,Meirinhos,Bragança,Canalizador,picheleiro Meirinhos,Transacional,ALTA
+Aldeia,Meirinhos,Bragança,Canalizador,desentupimento Meirinhos,Transacional,ALTA
+Aldeia,Meirinhos,Bragança,Canalizador,fuga de água Meirinhos,Urgência,ALTA
+Aldeia,Meirinhos,Bragança,Eletricista,eletricista Meirinhos,Transacional,ALTA
+Aldeia,Meirinhos,Bragança,Eletricista,eletricista urgente Meirinhos,Transacional/Urgência,CRÍTICA
+Aldeia,Meirinhos,Bragança,Eletricista,eletricista 24 horas Meirinhos,Urgência,ALTA
+Aldeia,Meirinhos,Bragança,Eletricista,avaria elétrica Meirinhos,Urgência,ALTA
+Aldeia,Meirinhos,Bragança,Eletricista,quadro elétrico Meirinhos,Transacional,ALTA
+Aldeia,Meirinhos,Bragança,Eletricista,certificação elétrica Meirinhos,Transacional,ALTA
+Aldeia,Azinhoso,Bragança,Canalizador,canalizador Azinhoso,Transacional,ALTA
+Aldeia,Azinhoso,Bragança,Canalizador,canalizador urgente Azinhoso,Transacional/Urgência,CRÍTICA
+Aldeia,Azinhoso,Bragança,Canalizador,canalizador 24 horas Azinhoso,Urgência,ALTA
+Aldeia,Azinhoso,Bragança,Canalizador,picheleiro Azinhoso,Transacional,ALTA
+Aldeia,Azinhoso,Bragança,Canalizador,desentupimento Azinhoso,Transacional,ALTA
+Aldeia,Azinhoso,Bragança,Canalizador,fuga de água Azinhoso,Urgência,ALTA
+Aldeia,Azinhoso,Bragança,Eletricista,eletricista Azinhoso,Transacional,ALTA
+Aldeia,Azinhoso,Bragança,Eletricista,eletricista urgente Azinhoso,Transacional/Urgência,CRÍTICA
+Aldeia,Azinhoso,Bragança,Eletricista,eletricista 24 horas Azinhoso,Urgência,ALTA
+Aldeia,Azinhoso,Bragança,Eletricista,avaria elétrica Azinhoso,Urgência,ALTA
+Aldeia,Azinhoso,Bragança,Eletricista,quadro elétrico Azinhoso,Transacional,ALTA
+Aldeia,Azinhoso,Bragança,Eletricista,certificação elétrica Azinhoso,Transacional,ALTA
+Aldeia,Castro Vicente,Bragança,Canalizador,canalizador Castro Vicente,Transacional,ALTA
+Aldeia,Castro Vicente,Bragança,Canalizador,canalizador urgente Castro Vicente,Transacional/Urgência,CRÍTICA
+Aldeia,Castro Vicente,Bragança,Canalizador,canalizador 24 horas Castro Vicente,Urgência,ALTA
+Aldeia,Castro Vicente,Bragança,Canalizador,picheleiro Castro Vicente,Transacional,ALTA
+Aldeia,Castro Vicente,Bragança,Canalizador,desentupimento Castro Vicente,Transacional,ALTA
+Aldeia,Castro Vicente,Bragança,Canalizador,fuga de água Castro Vicente,Urgência,ALTA
+Aldeia,Castro Vicente,Bragança,Eletricista,eletricista Castro Vicente,Transacional,ALTA
+Aldeia,Castro Vicente,Bragança,Eletricista,eletricista urgente Castro Vicente,Transacional/Urgência,CRÍTICA
+Aldeia,Castro Vicente,Bragança,Eletricista,eletricista 24 horas Castro Vicente,Urgência,ALTA
+Aldeia,Castro Vicente,Bragança,Eletricista,avaria elétrica Castro Vicente,Urgência,ALTA
+Aldeia,Castro Vicente,Bragança,Eletricista,quadro elétrico Castro Vicente,Transacional,ALTA
+Aldeia,Castro Vicente,Bragança,Eletricista,certificação elétrica Castro Vicente,Transacional,ALTA
