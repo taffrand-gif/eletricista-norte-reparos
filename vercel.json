@@ -71,6 +71,10 @@
       "destination": "/termos-condicoes.html"
     },
     {
+      "source": "/precos",
+      "destination": "/precos.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
