@@ -1,237 +1,237 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manutenção - Eletricista Profissional</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: linear-gradient(135deg, #c2410c 0%, #f97316 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-        
-        .container {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            max-width: 600px;
-            width: 100%;
-            padding: 60px 40px;
-            text-align: center;
-        }
-        
-        .icon {
-            width: 120px;
-            height: 120px;
-            margin: 0 auto 30px;
-            background: #f97316;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            animation: pulse 2s ease-in-out infinite;
-        }
-        
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-        }
-        
-        .icon svg {
-            width: 60px;
-            height: 60px;
-            fill: white;
-        }
-        
-        h1 {
-            font-size: 32px;
-            color: #1e293b;
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
-        
-        p {
-            font-size: 18px;
-            color: #64748b;
-            line-height: 1.6;
-            margin-bottom: 30px;
-        }
-        
-        .contact {
-            background: #f1f5f9;
-            border-radius: 12px;
-            padding: 30px;
-            margin-top: 30px;
-        }
-        
-        .contact h2 {
-            font-size: 20px;
-            color: #1e293b;
-            margin-bottom: 20px;
-        }
-        
-        .phone {
-            display: inline-flex;
-            align-items: center;
-            gap: 12px;
-            background: #f97316;
-            color: white;
-            padding: 16px 32px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-size: 24px;
-            font-weight: 700;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
-        }
-        
-        .phone:hover {
-            background: #ea580c;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(249, 115, 22, 0.4);
-        }
-        
-        .phone svg {
-            width: 24px;
-            height: 24px;
-            fill: white;
-        }
-        
-        .eta {
-            margin-top: 30px;
-            font-size: 14px;
-            color: #94a3b8;
-        }
-        
-        @media (max-width: 640px) {
-            .container {
-                padding: 40px 24px;
-            }
-            
-            h1 {
-                font-size: 24px;
-            }
-            
-            p {
-                font-size: 16px;
-            }
-            
-            .phone {
-                font-size: 20px;
-                padding: 14px 24px;
-            }
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Manutenção - Eletricista Profissional</title>
+ <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ 
+ body {
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+ background: linear-gradient(135deg, #c2410c 0%, #f97316 100%);
+ min-height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 20px;
+ }
+ 
+ .container {
+ background: white;
+ border-radius: 20px;
+ box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+ max-width: 600px;
+ width: 100%;
+ padding: 60px 40px;
+ text-align: center;
+ }
+ 
+ .icon {
+ width: 120px;
+ height: 120px;
+ margin: 0 auto 30px;
+ background: #f97316;
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ animation: pulse 2s ease-in-out infinite;
+ }
+ 
+ @keyframes pulse {
+ 0%, 100% { transform: scale(1); }
+ 50% { transform: scale(1.05); }
+ }
+ 
+ .icon svg {
+ width: 60px;
+ height: 60px;
+ fill: white;
+ }
+ 
+ h1 {
+ font-size: 32px;
+ color: #1e293b;
+ margin-bottom: 20px;
+ font-weight: 700;
+ }
+ 
+ p {
+ font-size: 18px;
+ color: #64748b;
+ line-height: 1.6;
+ margin-bottom: 30px;
+ }
+ 
+ .contact {
+ background: #f1f5f9;
+ border-radius: 12px;
+ padding: 30px;
+ margin-top: 30px;
+ }
+ 
+ .contact h2 {
+ font-size: 20px;
+ color: #1e293b;
+ margin-bottom: 20px;
+ }
+ 
+ .phone {
+ display: inline-flex;
+ align-items: center;
+ gap: 12px;
+ background: #f97316;
+ color: white;
+ padding: 16px 32px;
+ border-radius: 50px;
+ text-decoration: none;
+ font-size: 24px;
+ font-weight: 700;
+ transition: all 0.3s ease;
+ box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
+ }
+ 
+ .phone:hover {
+ background: #ea580c;
+ transform: translateY(-2px);
+ box-shadow: 0 6px 20px rgba(249, 115, 22, 0.4);
+ }
+ 
+ .phone svg {
+ width: 24px;
+ height: 24px;
+ fill: white;
+ }
+ 
+ .eta {
+ margin-top: 30px;
+ font-size: 14px;
+ color: #94a3b8;
+ }
+ 
+ @media (max-width: 640px) {
+ .container {
+ padding: 40px 24px;
+ }
+ 
+ h1 {
+ font-size: 24px;
+ }
+ 
+ p {
+ font-size: 16px;
+ }
+ 
+ .phone {
+ font-size: 20px;
+ padding: 14px 24px;
+ }
+ }
+ </style>
 <meta name="keywords" content="eletricista, eletricidade, trás-os-montes, eletricista urgente, eletricista 24 horas, reparação elétrica, avaria elétrica">
 
-    <style>
-      /* Critical CSS - Chargement prioritaire */
-      @font-face {
-        font-family: 'Montserrat Fallback';
-        src: local('Arial');
-        size-adjust: 105%;
-        ascent-override: 95%;
-        descent-override: 25%;
-        line-gap-override: 0%;
-      }
-      
-      body {
-        font-family: 'Montserrat Fallback', system-ui, -apple-system, sans-serif;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-      }
-      
-      .floating-call-btn, .zone-banner {
-        font-family: 'Montserrat Fallback', sans-serif;
-      }
-      
-      img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-      }
-      
-      /* Lazy loading pour images */
-      img:not([loading]) {
-        loading: lazy;
-      }
-    </style>
+ <style>
+ /* Critical CSS - Chargement prioritaire */
+ @font-face {
+ font-family: 'Montserrat Fallback';
+ src: local('Arial');
+ size-adjust: 105%;
+ ascent-override: 95%;
+ descent-override: 25%;
+ line-gap-override: 0%;
+ }
+ 
+ body {
+ font-family: 'Montserrat Fallback', system-ui, -apple-system, sans-serif;
+ margin: 0;
+ padding: 0;
+ overflow-x: hidden;
+ }
+ 
+ .floating-call-btn, .zone-banner {
+ font-family: 'Montserrat Fallback', sans-serif;
+ }
+ 
+ img {
+ max-width: 100%;
+ height: auto;
+ display: block;
+ }
+ 
+ /* Lazy loading pour images */
+ img:not([loading]) {
+ loading: lazy;
+ }
+ </style>
 
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="theme-color" content="#FF6B35" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="apple-mobile-web-app-title" content="eletricista-norte-reparos.pt" />
-    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+ <link rel="manifest" href="/manifest.json" />
+ <meta name="theme-color" content="#FF6B35" />
+ <meta name="apple-mobile-web-app-capable" content="yes" />
+ <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+ <meta name="apple-mobile-web-app-title" content="eletricista-norte-reparos.pt" />
+ <link rel="apple-touch-icon" href="/icons/icon-192.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" as="style" crossorigin />
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" as="style" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
-    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-    <link rel="dns-prefetch" href="https://wa.me" />
-    <link rel="dns-prefetch" href="https://images.unsplash.com" />
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+ <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" as="style" crossorigin />
+ <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" as="style" crossorigin />
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+ <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+ <link rel="dns-prefetch" href="https://wa.me" />
+ <link rel="dns-prefetch" href="https://images.unsplash.com" />
 </head>
 <body>
-    <div class="container">
-        <div class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-            </svg>
-        </div>
-        
-        <h1>Site em Manutenção</h1>
-        
-        <p>Estamos a melhorar o nosso site para lhe servir melhor. Voltaremos em breve com uma experiência ainda mais rápida e eficiente.</p>
-        
-        <div class="contact">
-            <h2>Precisa de Assistência Urgente?</h2>
-            <a href="tel:932321892" class="phone">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
-                </svg>
-                932 321 892
-            </a>
-            
-            <p class="eta">Disponível 24h/24 - 7 dias/7</p>
-        </div>
-    </div>
+ <div class="container">
+ <div class="icon">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+ <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+ </svg>
+ </div>
+ 
+ <h1>Site em Manutenção</h1>
+ 
+ <p>Estamos a melhorar o nosso site para lhe servir melhor. Voltaremos em breve com uma experiência ainda mais rápida e eficiente.</p>
+ 
+ <div class="contact">
+ <h2>Precisa de Assistência Urgente?</h2>
+ <a href="tel:932321892" class="phone">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+ <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+ </svg>
+ 932 321 892
+ </a>
+ 
+ <p class="eta">Disponível 24h/24 - 7 dias/7</p>
+ </div>
+ </div>
 
-    <script>
-      // Registration du Service Worker
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function() {
-          navigator.serviceWorker.register('/sw.js').then(function(registration) {
-            console.log('Service Worker enregistré avec succès:', registration.scope);
-          }).catch(function(error) {
-            console.log('Échec enregistrement Service Worker:', error);
-          });
-        });
-      }
-      
-      // Prefetch pour navigation
-      document.addEventListener('mouseover', function(e) {
-        const link = e.target.closest('a');
-        if (link && link.href && link.href.startsWith(window.location.origin)) {
-          const prefetchLink = document.createElement('link');
-          prefetchLink.rel = 'prefetch';
-          prefetchLink.href = link.href;
-          document.head.appendChild(prefetchLink);
-        }
-      });
-    </script>
+ <script>
+ // Registration du Service Worker
+ if ('serviceWorker' in navigator) {
+ window.addEventListener('load', function() {
+ navigator.serviceWorker.register('/sw.js').then(function(registration) {
+ console.log('Service Worker enregistré avec succès:', registration.scope);
+ }).catch(function(error) {
+ console.log('Échec enregistrement Service Worker:', error);
+ });
+ });
+ }
+ 
+ // Prefetch pour navigation
+ document.addEventListener('mouseover', function(e) {
+ const link = e.target.closest('a');
+ if (link && link.href && link.href.startsWith(window.location.origin)) {
+ const prefetchLink = document.createElement('link');
+ prefetchLink.rel = 'prefetch';
+ prefetchLink.href = link.href;
+ document.head.appendChild(prefetchLink);
+ }
+ });
+ </script>
 </body>
 </html>

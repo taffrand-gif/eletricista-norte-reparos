@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Test Simple React</title>
+ <meta charset="UTF-8">
+ <title>Test Simple React</title>
 </head>
 <body>
-  <div id="root"></div>
-  <script type="module">
-    import { createRoot } from 'https://esm.sh/react-dom@19.0.0/client';
-    import React from 'https://esm.sh/react@19.0.0';
+ <div id="root"></div>
+ <script type="module">
+ import { createRoot } from 'https://esm.sh/react-dom@19.0.0/client';
+ import React from 'https://esm.sh/react@19.0.0';
 
-    function App() {
-      return React.createElement('h1', null, 'React fonctionne!');
-    }
+ function App() {
+ return React.createElement('h1', null, 'React fonctionne!');
+ }
 
-    const root = document.getElementById('root');
-    if (root) {
-      createRoot(root).render(React.createElement(App));
-      console.log('React mounted successfully');
-    } else {
-      console.error('Root element not found');
-    }
-  </script>
+ const root = document.getElementById('root');
+ if (root) {
+ createRoot(root).render(React.createElement(App));
+ console.log('React mounted successfully');
+ } else {
+ console.error('Root element not found');
+ }
+ </script>
 </body>
 </html>

@@ -3,13 +3,13 @@
  * Throw this from route handlers to send specific HTTP errors.
  */
 export class HttpError extends Error {
-  constructor(
-    public statusCode: number,
-    message: string
-  ) {
-    super(message);
-    this.name = "HttpError";
-  }
+ constructor(
+ public statusCode: number,
+ message: string
+ ) {
+ super(message);
+ this.name = "HttpError";
+ }
 }
 
 // Convenience constructors

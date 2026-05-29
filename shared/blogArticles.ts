@@ -1,28 +1,28 @@
 export interface BlogArticle {
-  slug: string;
-  title: string;
-  excerpt: string;
-  content: string;
-  image: string;
-  date: string;
-  author: string;
-  readTime: string;
-  category: string;
-  tags: string[];
+ slug: string;
+ title: string;
+ excerpt: string;
+ content: string;
+ image: string;
+ date: string;
+ author: string;
+ readTime: string;
+ category: string;
+ tags: string[];
 }
 
 export const blogArticles: BlogArticle[] = [
-  {
-    slug: "sinais-problemas-eletricos-casa",
-    title: "7 Sinais de Problemas Elétricos na Sua Casa",
-    excerpt: "Identifique os sinais de alerta de problemas elétricos antes que se tornem perigosos. Guia de segurança essencial.",
-    image: "https://cdn.manus.space/webdev-assets/electrical-warning.jpg",
-    date: "2026-01-15",
-    author: "Eletricista Profissional",
-    readTime: "6 min",
-    category: "Segurança",
-    tags: ["segurança", "problemas", "prevenção"],
-    content: `
+ {
+ slug: "sinais-problemas-eletricos-casa",
+ title: "7 Sinais de Problemas Elétricos na Sua Casa",
+ excerpt: "Identifique os sinais de alerta de problemas elétricos antes que se tornem perigosos. Guia de segurança essencial.",
+ image: "https://cdn.manus.space/webdev-assets/electrical-warning.jpg",
+ date: "2026-01-15",
+ author: "Eletricista Profissional",
+ readTime: "6 min",
+ category: "Segurança",
+ tags: ["segurança", "problemas", "prevenção"],
+ content: `
 # 7 Sinais de Problemas Elétricos na Sua Casa
 
 Problemas elétricos não tratados podem causar incêndios, choques elétricos e danos em equipamentos. Neste artigo, vamos explorar os sete sinais mais comuns de que a sua instalação elétrica precisa de atenção profissional.
@@ -195,18 +195,18 @@ A **Eletricista Profissional** está disponível 24 horas para emergências elé
 
 **Ligue agora: 932 321 892**
 `
-  },
-  {
-    slug: "poupar-energia-eletrica-casa",
-    title: "10 Formas de Poupar Energia Elétrica em Casa",
-    excerpt: "Reduza a sua conta de eletricidade com estas dicas práticas e eficazes. Poupe dinheiro e ajude o ambiente.",
-    image: "https://cdn.manus.space/webdev-assets/energy-saving.jpg",
-    date: "2026-01-10",
-    author: "Eletricista Profissional",
-    readTime: "7 min",
-    category: "Poupança",
-    tags: ["poupança", "energia", "eficiência"],
-    content: `
+ },
+ {
+ slug: "poupar-energia-eletrica-casa",
+ title: "10 Formas de Poupar Energia Elétrica em Casa",
+ excerpt: "Reduza a sua conta de eletricidade com estas dicas práticas e eficazes. Poupe dinheiro e ajude o ambiente.",
+ image: "https://cdn.manus.space/webdev-assets/energy-saving.jpg",
+ date: "2026-01-10",
+ author: "Eletricista Profissional",
+ readTime: "7 min",
+ category: "Poupança",
+ tags: ["poupança", "energia", "eficiência"],
+ content: `
 # 10 Formas de Poupar Energia Elétrica em Casa
 
 Com o aumento constante dos preços da eletricidade, poupar energia tornou-se uma prioridade para muitas famílias portuguesas. Neste guia, vamos partilhar 10 formas comprovadas de reduzir o consumo elétrico e baixar a fatura no final do mês.
@@ -428,18 +428,18 @@ A **Eletricista Profissional** pode ajudá-lo a otimizar a sua instalação elé
 
 **Ligue agora: 932 321 892**
 `
-  },
-  {
-    slug: "certificacao-eletrica-portugal",
-    title: "Certificação Elétrica em Portugal: Guia Completo",
-    excerpt: "Tudo o que precisa saber sobre certificação elétrica: quando é obrigatória, como obter e quanto custa.",
-    image: "https://cdn.manus.space/webdev-assets/electrical-certificate.jpg",
-    date: "2026-01-05",
-    author: "Eletricista Profissional",
-    readTime: "8 min",
-    category: "Certificação",
-    tags: ["certificação", "legislação", "obrigações"],
-    content: `
+ },
+ {
+ slug: "certificacao-eletrica-portugal",
+ title: "Certificação Elétrica em Portugal: Guia Completo",
+ excerpt: "Tudo o que precisa saber sobre certificação elétrica: quando é obrigatória, como obter e quanto custa.",
+ image: "https://cdn.manus.space/webdev-assets/electrical-certificate.jpg",
+ date: "2026-01-05",
+ author: "Eletricista Profissional",
+ readTime: "8 min",
+ category: "Certificação",
+ tags: ["certificação", "legislação", "obrigações"],
+ content: `
 # Certificação Elétrica em Portugal: Guia Completo
 
 A certificação elétrica é um documento obrigatório em muitas situações em Portugal. Neste guia completo, vamos explicar tudo o que precisa saber sobre este processo essencial.
@@ -685,18 +685,18 @@ A **Eletricista Profissional** tem técnicos certificados pela DGEG prontos para
 
 **Agende a sua certificação: 932 321 892**
 `
-  },
-  {
-    slug: "instalar-paineis-solares-casa",
-    title: "Guia Completo para Instalar Painéis Solares em Casa",
-    excerpt: "Tudo o que precisa saber antes de instalar painéis solares: custos, poupança, processo e incentivos disponíveis.",
-    image: "https://cdn.manus.space/webdev-assets/solar-panels.jpg",
-    date: "2025-12-28",
-    author: "Eletricista Profissional",
-    readTime: "10 min",
-    category: "Energia Solar",
-    tags: ["painéis solares", "poupança", "sustentabilidade"],
-    content: `
+ },
+ {
+ slug: "instalar-paineis-solares-casa",
+ title: "Guia Completo para Instalar Painéis Solares em Casa",
+ excerpt: "Tudo o que precisa saber antes de instalar painéis solares: custos, poupança, processo e incentivos disponíveis.",
+ image: "https://cdn.manus.space/webdev-assets/solar-panels.jpg",
+ date: "2025-12-28",
+ author: "Eletricista Profissional",
+ readTime: "10 min",
+ category: "Energia Solar",
+ tags: ["painéis solares", "poupança", "sustentabilidade"],
+ content: `
 # Guia Completo para Instalar Painéis Solares em Casa
 
 Os painéis solares tornaram-se uma opção cada vez mais popular em Portugal. Neste guia completo, vamos explorar tudo o que precisa saber antes de investir em energia solar para a sua casa.
@@ -783,19 +783,19 @@ Os painéis solares tornaram-se uma opção cada vez mais popular em Portugal. N
 ### Fatores a Considerar:
 
 1. **Consumo Anual:**
-   - Analise faturas dos últimos 12 meses
-   - Identifique padrões de consumo
-   - Preveja consumos futuros
+ - Analise faturas dos últimos 12 meses
+ - Identifique padrões de consumo
+ - Preveja consumos futuros
 
 2. **Área Disponível:**
-   - Telhado: tipo, inclinação, orientação
-   - Espaço no solo (se aplicável)
-   - Sombreamentos
+ - Telhado: tipo, inclinação, orientação
+ - Espaço no solo (se aplicável)
+ - Sombreamentos
 
 3. **Orçamento:**
-   - Investimento inicial disponível
-   - Retorno esperado
-   - Financiamento necessário
+ - Investimento inicial disponível
+ - Retorno esperado
+ - Financiamento necessário
 
 ### Cálculo Básico:
 
@@ -850,61 +850,61 @@ Os painéis solares tornaram-se uma opção cada vez mais popular em Portugal. N
 ### Fase 1: Planeamento (1-2 semanas)
 
 1. **Avaliação inicial:**
-   - Análise de consumos
-   - Inspeção do local
-   - Verificação de viabilidade
+ - Análise de consumos
+ - Inspeção do local
+ - Verificação de viabilidade
 
 2. **Projeto:**
-   - Dimensionamento do sistema
-   - Escolha de equipamentos
-   - Orçamento detalhado
+ - Dimensionamento do sistema
+ - Escolha de equipamentos
+ - Orçamento detalhado
 
 3. **Aprovações:**
-   - Licenças municipais (se necessário)
-   - Aprovação da condomínio (se aplicável)
+ - Licenças municipais (se necessário)
+ - Aprovação da condomínio (se aplicável)
 
 ### Fase 2: Parranjo (1-2 semanas)
 
 4. **Encomenda de equipamentos:**
-   - Painéis solares
-   - Inversor
-   - Estruturas de montagem
-   - Cabos e proteções
+ - Painéis solares
+ - Inversor
+ - Estruturas de montagem
+ - Cabos e proteções
 
 5. **Registo na DGEG:**
-   - Unidade de Produção para Autoconsumo (UPAC)
-   - Documentação necessária
+ - Unidade de Produção para Autoconsumo (UPAC)
+ - Documentação necessária
 
 ### Fase 3: Instalação (2-5 dias)
 
 6. **Montagem:**
-   - Estruturas no telhado
-   - Painéis solares
-   - Inversor
-   - Cablagem
+ - Estruturas no telhado
+ - Painéis solares
+ - Inversor
+ - Cablagem
 
 7. **Ligações elétricas:**
-   - Quadro elétrico
-   - Proteções
-   - Contador (se aplicável)
+ - Quadro elétrico
+ - Proteções
+ - Contador (se aplicável)
 
 ### Fase 4: Ativação (1-4 semanas)
 
 8. **Inspeção:**
-   - Certificação elétrica
-   - Teste de funcionamento
+ - Certificação elétrica
+ - Teste de funcionamento
 
 9. **Ligação à rede:**
-   - Pedido à distribuidora
-   - Instalação de contador bidirecional
-   - Ativação do sistema
+ - Pedido à distribuidora
+ - Instalação de contador bidirecional
+ - Ativação do sistema
 
 ### Fase 5: Monitorização
 
 10. **Acompanhamento:**
-    - App de monitorização
-    - Verificação de produção
-    - Otimização de consumos
+ - App de monitorização
+ - Verificação de produção
+ - Otimização de consumos
 
 ## Incentivos e Apoios
 
@@ -997,18 +997,18 @@ A **Eletricista Profissional** é especialista em instalação de painéis solar
 
 **Ligue agora: 932 321 892**
 `
-  },
-  {
-    slug: "seguranca-eletrica-criancas",
-    title: "Segurança Elétrica em Casas com Crianças",
-    excerpt: "Guia essencial para proteger as crianças de acidentes elétricos. Dicas práticas e produtos de segurança.",
-    image: "https://cdn.manus.space/webdev-assets/child-safety.jpg",
-    date: "2025-12-20",
-    author: "Eletricista Profissional",
-    readTime: "7 min",
-    category: "Segurança",
-    tags: ["segurança", "crianças", "prevenção"],
-    content: `
+ },
+ {
+ slug: "seguranca-eletrica-criancas",
+ title: "Segurança Elétrica em Casas com Crianças",
+ excerpt: "Guia essencial para proteger as crianças de acidentes elétricos. Dicas práticas e produtos de segurança.",
+ image: "https://cdn.manus.space/webdev-assets/child-safety.jpg",
+ date: "2025-12-20",
+ author: "Eletricista Profissional",
+ readTime: "7 min",
+ category: "Segurança",
+ tags: ["segurança", "crianças", "prevenção"],
+ content: `
 # Segurança Elétrica em Casas com Crianças
 
 As crianças são naturalmente curiosas e não têm noção dos perigos da eletricidade. Neste guia, vamos explorar como tornar a sua casa eletricamente segura para os mais pequenos.
@@ -1018,24 +1018,24 @@ As crianças são naturalmente curiosas e não têm noção dos perigos da eletr
 ### Principais Riscos:
 
 1. **Tomadas expostas**
-   - Crianças inserem objetos metálicos
-   - Risco de choque elétrico grave
-   - Pode causar queimaduras
+ - Crianças inserem objetos metálicos
+ - Risco de choque elétrico grave
+ - Pode causar queimaduras
 
 2. **Cabos elétricos**
-   - Tentação para puxar
-   - Risco de morder (bebés)
-   - Aparelhos podem cair
+ - Tentação para puxar
+ - Risco de morder (bebés)
+ - Aparelhos podem cair
 
 3. **Aparelhos elétricos**
-   - Acesso a equipamentos perigosos
-   - Uso inadequado
-   - Água + eletricidade
+ - Acesso a equipamentos perigosos
+ - Uso inadequado
+ - Água + eletricidade
 
 4. **Extensões e réguas**
-   - Sobrecarga
-   - Tropeções
-   - Acesso fácil
+ - Sobrecarga
+ - Tropeções
+ - Acesso fácil
 
 ## Medidas de Proteção Essenciais
 
@@ -1296,5 +1296,5 @@ A **Eletricista Profissional** pode ajudá-lo a tornar a sua casa mais segura pa
 
 **Agende uma inspeção de segurança: 932 321 892**
 `
-  }
+ }
 ];

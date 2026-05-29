@@ -27,80 +27,80 @@ import { ScrollToTop } from '@/components/ScrollToTop';
 import { useSite } from '@/contexts/SiteContext';
 
 export default function OptimizedHome() {
-  const { config } = useSite();
-  const isPlumber = config.id === 'norte-reparos';
-  const accentColor = isPlumber ? 'text-blue-600' : 'text-amber-600';
-  const serviceLabel = isPlumber ? 'Canalização' : 'Serviços Elétricos';
+ const { config } = useSite();
+ const isPlumber = config.id === 'norte-reparos';
+ const accentColor = isPlumber ? 'text-blue-600' : 'text-amber-600';
+ const serviceLabel = isPlumber ? 'Canalização' : 'Serviços Elétricos';
 
-  return (
-    <>
-      <SEOHead />
-      
-      <Header />
-      <main>
-      <PremiumBar />
-      <InnovativeHero />
-      <TrustBanner />
-      <Diagnostico />
-      <OrcamentoGratuitoBadge />
-      <OptimizedServices />
-      <StatsCounters />
-      
-      <CalculadorPreco />
-      
-      {/* Secção tabela de preços */}
-      <PriceTable />
-      
-      {/* Secção Zona de Intervenção */}
-      <ZonaIntervencao />
-      
-      {/* Secção Equipa */}
-      <Equipa />
-      
-      <Garantias />
-      
-      {/* Secção Trabalhos */}
-      <Trabalhos />
-      
-      {/* Últimos Artigos do Blog */}
-      <LatestBlog />
-      
-      {/* Secção FAQ */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Perguntas Frequentes sobre <span className={accentColor}>{serviceLabel}</span>
-            </h2>
-            <p className="text-xl text-gray-600">
-              Tire as suas dúvidas sobre os nossos serviços
-            </p>
-          </div>
-          
-          <div className="max-w-4xl mx-auto">
-            <FAQ />
-          </div>
-        </div>
-      </section>
-      
-      {/* FAQ Local SEO */}
-      <FAQLocal />
-      
-      {/* Secção testemunhos */}
-      <Testimonials />
-      
-      {/* Avaliações Google */}
-      <GoogleReviews />
-      
-      {/* Secção Blog */}
-      <Blog />
-      
-      {/* Secção contactos */}
-      <Contactos />
-      </main>
-      <Footer />
-      
-      <ScrollToTop />
-    </>
-  );
+ return (
+ <>
+ <SEOHead />
+ 
+ <Header />
+ <main>
+ <PremiumBar />
+ <InnovativeHero />
+ <TrustBanner />
+ <Diagnostico />
+ <OrcamentoGratuitoBadge />
+ <OptimizedServices />
+ <StatsCounters />
+ 
+ <CalculadorPreco />
+ 
+ {/* Secção tabela de preços */}
+ <PriceTable />
+ 
+ {/* Secção Zona de Intervenção */}
+ <ZonaIntervencao />
+ 
+ {/* Secção Equipa */}
+ <Equipa />
+ 
+ <Garantias />
+ 
+ {/* Secção Trabalhos */}
+ <Trabalhos />
+ 
+ {/* Últimos Artigos do Blog */}
+ <LatestBlog />
+ 
+ {/* Secção FAQ */}
+ <section className="py-20 bg-white">
+ <div className="container mx-auto px-4">
+ <div className="text-center mb-12">
+ <h2 className="text-4xl font-bold text-gray-900 mb-4">
+ Perguntas Frequentes sobre <span className={accentColor}>{serviceLabel}</span>
+ </h2>
+ <p className="text-xl text-gray-600">
+ Tire as suas dúvidas sobre os nossos serviços
+ </p>
+ </div>
+ 
+ <div className="max-w-4xl mx-auto">
+ <FAQ />
+ </div>
+ </div>
+ </section>
+ 
+ {/* FAQ Local SEO */}
+ <FAQLocal />
+ 
+ {/* Secção testemunhos */}
+ <Testimonials />
+ 
+ {/* Avaliações Google */}
+ <GoogleReviews />
+ 
+ {/* Secção Blog */}
+ <Blog />
+ 
+ {/* Secção contactos */}
+ <Contactos />
+ </main>
+ <Footer />
+ 
+ <ScrollToTop />
+ </>
+ );
 }

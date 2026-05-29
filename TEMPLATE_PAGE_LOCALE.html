@@ -1,224 +1,224 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{SERVICE_NAME}} {{CITY_NAME}} | Serviço 24h/dia | {{PHONE}}</title>
-    <meta name="description" content="{{SERVICE_NAME}} em {{CITY_NAME}} com serviço 24h/dia. Deteção de fugas com câmaras termográficas, CCTV e detetores acústicos. Orçamento gratuito. Ligue {{PHONE}}">
-    <meta name="keywords" content="{{SERVICE_KEYWORD}} {{CITY_SLUG}}, {{SERVICE_KEYWORD}} {{CITY_NAME}}, fugas de água {{CITY_NAME}}, canalizações {{CITY_NAME}}, serviço 24h {{CITY_NAME}}">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="{{SERVICE_NAME}} {{CITY_NAME}} | Serviço 24h/dia">
-    <meta property="og:description" content="Serviço profissional de {{SERVICE_KEYWORD}} em {{CITY_NAME}}. Tecnologia avançada, orçamentos gratuitos, disponibilidade 24h/dia.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://{{DOMAIN}}/servicos/{{SERVICE_KEYWORD}}-{{CITY_SLUG}}.html">
-    
-    <!-- Schema.org LocalBusiness -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "{{BUSINESS_NAME}} - {{CITY_NAME}}",
-      "description": "{{SERVICE_NAME}} profissional em {{CITY_NAME}} com serviço 24h/dia",
-      "telephone": "{{PHONE}}",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "{{CITY_NAME}}",
-        "addressRegion": "{{DISTRICT}}",
-        "addressCountry": "PT"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "{{LAT}}",
-        "longitude": "{{LON}}"
-      },
-      "openingHours": "Mo-Su 00:00-23:59",
-      "priceRange": "€€",
-      "areaServed": {
-        "@type": "City",
-        "name": "{{CITY_NAME}}"
-      }
-    }
-    </script>
-    
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; }
-        .header { background: linear-gradient(135deg, {{COLOR_FROM}} 0%, {{COLOR_TO}} 100%); color: white; padding: 1rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        .header-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
-        .logo { font-size: 1.5rem; font-weight: bold; }
-        .phone-header { font-size: 1.3rem; font-weight: bold; text-decoration: none; color: white; background: rgba(255,255,255,0.2); padding: 0.5rem 1.5rem; border-radius: 50px; transition: all 0.3s; }
-        .phone-header:hover { background: rgba(255,255,255,0.3); transform: scale(1.05); }
-        .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; }
-        h1 { font-size: 2.5rem; margin-bottom: 1.5rem; color: {{ACCENT_COLOR}}; }
-        h2 { font-size: 2rem; margin: 2.5rem 0 1rem; color: {{ACCENT_COLOR}}; border-left: 4px solid {{ACCENT_COLOR}}; padding-left: 1rem; }
-        p { margin-bottom: 1rem; font-size: 1.1rem; }
-        .cta-box { background: linear-gradient(135deg, {{COLOR_FROM}} 0%, {{COLOR_TO}} 100%); color: white; padding: 2rem; border-radius: 10px; text-align: center; margin: 2rem 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        .cta-phone { font-size: 2rem; font-weight: bold; color: white; text-decoration: none; display: inline-block; margin: 1rem 0; transition: transform 0.3s; }
-        .cta-phone:hover { transform: scale(1.05); }
-        .services-list { background: #f8f9fa; padding: 2rem; border-radius: 10px; margin: 2rem 0; }
-        .services-list ul { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
-        .services-list li { padding: 0.5rem 0 0.5rem 2rem; position: relative; }
-        .services-list li:before { content: "✓"; position: absolute; left: 0; color: {{ACCENT_COLOR}}; font-weight: bold; font-size: 1.3rem; }
-        .reasons-box { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 2rem 0; }
-        .reason-card { background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border-top: 4px solid {{ACCENT_COLOR}}; }
-        .reason-card h3 { color: {{ACCENT_COLOR}}; margin-bottom: 0.5rem; }
-        .footer { background: #2c3e50; color: white; padding: 2rem 1rem; text-align: center; margin-top: 3rem; }
-        @media (max-width: 768px) {
-            h1 { font-size: 1.8rem; }
-            h2 { font-size: 1.5rem; }
-            .cta-phone { font-size: 1.5rem; }
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>{{SERVICE_NAME}} {{CITY_NAME}} | Serviço 24h/dia | {{PHONE}}</title>
+ <meta name="description" content="{{SERVICE_NAME}} em {{CITY_NAME}} com serviço 24h/dia. Deteção de fugas com câmaras termográficas, CCTV e detetores acústicos. Orçamento gratuito. Ligue {{PHONE}}">
+ <meta name="keywords" content="{{SERVICE_KEYWORD}} {{CITY_SLUG}}, {{SERVICE_KEYWORD}} {{CITY_NAME}}, fugas de água {{CITY_NAME}}, canalizações {{CITY_NAME}}, serviço 24h {{CITY_NAME}}">
+ 
+ <!-- Open Graph -->
+ <meta property="og:title" content="{{SERVICE_NAME}} {{CITY_NAME}} | Serviço 24h/dia">
+ <meta property="og:description" content="Serviço profissional de {{SERVICE_KEYWORD}} em {{CITY_NAME}}. Tecnologia avançada, orçamentos gratuitos, disponibilidade 24h/dia.">
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://{{DOMAIN}}/servicos/{{SERVICE_KEYWORD}}-{{CITY_SLUG}}.html">
+ 
+ <!-- Schema.org LocalBusiness -->
+ <script type="application/ld+json">
+ {
+ "@context": "https://schema.org",
+ "@type": "LocalBusiness",
+ "name": "{{BUSINESS_NAME}} - {{CITY_NAME}}",
+ "description": "{{SERVICE_NAME}} profissional em {{CITY_NAME}} com serviço 24h/dia",
+ "telephone": "{{PHONE}}",
+ "address": {
+ "@type": "PostalAddress",
+ "addressLocality": "{{CITY_NAME}}",
+ "addressRegion": "{{DISTRICT}}",
+ "addressCountry": "PT"
+ },
+ "geo": {
+ "@type": "GeoCoordinates",
+ "latitude": "{{LAT}}",
+ "longitude": "{{LON}}"
+ },
+ "openingHours": "Mo-Su 00:00-23:59",
+ "priceRange": "€€",
+ "areaServed": {
+ "@type": "City",
+ "name": "{{CITY_NAME}}"
+ }
+ }
+ </script>
+ 
+ <style>
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; }
+ .header { background: linear-gradient(135deg, {{COLOR_FROM}} 0%, {{COLOR_TO}} 100%); color: white; padding: 1rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+ .header-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+ .logo { font-size: 1.5rem; font-weight: bold; }
+ .phone-header { font-size: 1.3rem; font-weight: bold; text-decoration: none; color: white; background: rgba(255,255,255,0.2); padding: 0.5rem 1.5rem; border-radius: 50px; transition: all 0.3s; }
+ .phone-header:hover { background: rgba(255,255,255,0.3); transform: scale(1.05); }
+ .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; }
+ h1 { font-size: 2.5rem; margin-bottom: 1.5rem; color: {{ACCENT_COLOR}}; }
+ h2 { font-size: 2rem; margin: 2.5rem 0 1rem; color: {{ACCENT_COLOR}}; border-left: 4px solid {{ACCENT_COLOR}}; padding-left: 1rem; }
+ p { margin-bottom: 1rem; font-size: 1.1rem; }
+ .cta-box { background: linear-gradient(135deg, {{COLOR_FROM}} 0%, {{COLOR_TO}} 100%); color: white; padding: 2rem; border-radius: 10px; text-align: center; margin: 2rem 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+ .cta-phone { font-size: 2rem; font-weight: bold; color: white; text-decoration: none; display: inline-block; margin: 1rem 0; transition: transform 0.3s; }
+ .cta-phone:hover { transform: scale(1.05); }
+ .services-list { background: #f8f9fa; padding: 2rem; border-radius: 10px; margin: 2rem 0; }
+ .services-list ul { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+ .services-list li { padding: 0.5rem 0 0.5rem 2rem; position: relative; }
+ .services-list li:before { content: "✓"; position: absolute; left: 0; color: {{ACCENT_COLOR}}; font-weight: bold; font-size: 1.3rem; }
+ .reasons-box { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 2rem 0; }
+ .reason-card { background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border-top: 4px solid {{ACCENT_COLOR}}; }
+ .reason-card h3 { color: {{ACCENT_COLOR}}; margin-bottom: 0.5rem; }
+ .footer { background: #2c3e50; color: white; padding: 2rem 1rem; text-align: center; margin-top: 3rem; }
+ @media (max-width: 768px) {
+ h1 { font-size: 1.8rem; }
+ h2 { font-size: 1.5rem; }
+ .cta-phone { font-size: 1.5rem; }
+ }
+ </style>
 </head>
 <body>
-    <header class="header">
-        <div class="header-content">
-            <div class="logo">{{BUSINESS_NAME}}</div>
-            <a href="tel:{{PHONE}}" class="phone-header">📞 {{PHONE}}</a>
-        </div>
-    </header>
+ <header class="header">
+ <div class="header-content">
+ <div class="logo">{{BUSINESS_NAME}}</div>
+ <a href="tel:{{PHONE}}" class="phone-header">📞 {{PHONE}}</a>
+ </div>
+ </header>
 
-    <main class="container">
-        <h1>{{SERVICE_NAME}} {{CITY_NAME}}</h1>
-        
-        <p>Está a notar um mau odor nas suas canalizações em {{CITY_NAME}}? Não se preocupe. A nossa empresa dispõe de {{SERVICE_KEYWORD_PLURAL}} profissionais para realizar serviços de canalização (interior e exterior), deteção de fugas de água e solucionar entupimentos comuns em toda a região de {{CITY_NAME}}.</p>
+ <main class="container">
+ <h1>{{SERVICE_NAME}} {{CITY_NAME}}</h1>
+ 
+ <p>Está a notar um mau odor nas suas canalizações em {{CITY_NAME}}? Não se preocupe. A nossa empresa dispõe de {{SERVICE_KEYWORD_PLURAL}} profissionais para realizar serviços de canalização (interior e exterior), deteção de fugas de água e solucionar entupimentos comuns em toda a região de {{CITY_NAME}}.</p>
 
-        <p>Através de <strong>tecnologia avançada</strong>, como <strong>câmaras termográficas</strong>, <strong>sistemas acústicos</strong>, <strong>detetores de gás</strong>, <strong>manómetros</strong> e <strong>equipamentos de inspeção por vídeo (CCTV)</strong>, identificamos a origem do problema com precisão e avaliamos as necessidades dos clientes em {{CITY_NAME}} e arredores.</p>
+ <p>Através de <strong>tecnologia avançada</strong>, como <strong>câmaras termográficas</strong>, <strong>sistemas acústicos</strong>, <strong>detetores de gás</strong>, <strong>manómetros</strong> e <strong>equipamentos de inspeção por vídeo (CCTV)</strong>, identificamos a origem do problema com precisão e avaliamos as necessidades dos clientes em {{CITY_NAME}} e arredores.</p>
 
-        <p>Atuamos em residências (apartamentos e moradias) e empresas (restaurantes, escritórios, hotéis, hospitais, cabeleireiros, spas e lavandarias) em {{CITY_NAME}}. Independentemente da localização ou da complexidade do serviço, estamos prontos para intervir de forma eficaz.</p>
+ <p>Atuamos em residências (apartamentos e moradias) e empresas (restaurantes, escritórios, hotéis, hospitais, cabeleireiros, spas e lavandarias) em {{CITY_NAME}}. Independentemente da localização ou da complexidade do serviço, estamos prontos para intervir de forma eficaz.</p>
 
-        <p>Evite que os problemas com a sua canalização se agravem com o tempo. Entre em contacto connosco para contratar os nossos {{SERVICE_KEYWORD_PLURAL}} em {{CITY_NAME}}, com disponibilidade de horário para emergências (<strong>serviço 24h/dia</strong>).</p>
+ <p>Evite que os problemas com a sua canalização se agravem com o tempo. Entre em contacto connosco para contratar os nossos {{SERVICE_KEYWORD_PLURAL}} em {{CITY_NAME}}, com disponibilidade de horário para emergências (<strong>serviço 24h/dia</strong>).</p>
 
-        <div class="cta-box">
-            <p style="font-size: 1.3rem; margin-bottom: 0.5rem;">⚡ Serviço de Urgência 24h/dia em {{CITY_NAME}}</p>
-            <a href="tel:{{PHONE}}" class="cta-phone">📞 {{PHONE}}</a>
-            <p style="margin-top: 0.5rem;">Orçamento Gratuito | Deslocação Rápida</p>
-        </div>
+ <div class="cta-box">
+ <p style="font-size: 1.3rem; margin-bottom: 0.5rem;">⚡ Serviço de Urgência 24h/dia em {{CITY_NAME}}</p>
+ <a href="tel:{{PHONE}}" class="cta-phone">📞 {{PHONE}}</a>
+ <p style="margin-top: 0.5rem;">Orçamento Gratuito | Deslocação Rápida</p>
+ </div>
 
-        <h2>{{SERVICE_NAME_PLURAL}} para Deteção de Fugas de Água em {{CITY_NAME}}</h2>
-        
-        <p>Necessita de {{SERVICE_KEYWORD_PLURAL}} para deteção de fugas de água em {{CITY_NAME}}? Dispomos de profissionais experientes e qualificados para detetar fugas com a máxima exatidão. Com este trabalho, repomos a tranquilidade na sua casa e evitamos desperdícios de água.</p>
+ <h2>{{SERVICE_NAME_PLURAL}} para Deteção de Fugas de Água em {{CITY_NAME}}</h2>
+ 
+ <p>Necessita de {{SERVICE_KEYWORD_PLURAL}} para deteção de fugas de água em {{CITY_NAME}}? Dispomos de profissionais experientes e qualificados para detetar fugas com a máxima exatidão. Com este trabalho, repomos a tranquilidade na sua casa e evitamos desperdícios de água.</p>
 
-        <p>Por vezes as fugas são demasiado profundas e apenas as conseguimos detetar com recurso a <strong>tecnologia de ponta</strong>. Os <strong>detetores acústicos</strong>, as <strong>câmaras termográficas</strong> e os <strong>sistemas de inspeção por vídeo (CCTV)</strong> facilitam e agilizam todo o nosso trabalho em {{CITY_NAME}}.</p>
+ <p>Por vezes as fugas são demasiado profundas e apenas as conseguimos detetar com recurso a <strong>tecnologia de ponta</strong>. Os <strong>detetores acústicos</strong>, as <strong>câmaras termográficas</strong> e os <strong>sistemas de inspeção por vídeo (CCTV)</strong> facilitam e agilizam todo o nosso trabalho em {{CITY_NAME}}.</p>
 
-        <p>Assim que detetar uma fuga, por mais pequena que lhe pareça, entre logo em contacto connosco. Os nossos {{SERVICE_KEYWORD_PLURAL}} para deteção de fugas de água em {{CITY_NAME}} analisam de imediato a origem do problema, intervencionando-o de forma rápida e definitiva.</p>
+ <p>Assim que detetar uma fuga, por mais pequena que lhe pareça, entre logo em contacto connosco. Os nossos {{SERVICE_KEYWORD_PLURAL}} para deteção de fugas de água em {{CITY_NAME}} analisam de imediato a origem do problema, intervencionando-o de forma rápida e definitiva.</p>
 
-        <h2>{{SERVICE_NAME}} para Arranjo de Fugas de Água em {{CITY_NAME}}</h2>
+ <h2>{{SERVICE_NAME}} para Arranjo de Fugas de Água em {{CITY_NAME}}</h2>
 
-        <p>Tem uma torneira a pingar em {{CITY_NAME}}? Chame já o nosso {{SERVICE_KEYWORD}} para arranjo de fugas de água para intervir. Estamos disponíveis <strong>24h/dia</strong> para resolver qualquer fuga de água – doméstica ou industrial – em {{CITY_NAME}} e arredores.</p>
+ <p>Tem uma torneira a pingar em {{CITY_NAME}}? Chame já o nosso {{SERVICE_KEYWORD}} para arranjo de fugas de água para intervir. Estamos disponíveis <strong>24h/dia</strong> para resolver qualquer fuga de água – doméstica ou industrial – em {{CITY_NAME}} e arredores.</p>
 
-        <p>Estamos equipados com a mais recente <strong>tecnologia de pesquisa não destrutiva</strong> (acústica, termografia e gás traçador), pois só com a ajuda destes equipamentos conseguimos localizar o ponto exato da fuga em {{CITY_NAME}}, e repará-la rapidamente sem causar danos.</p>
+ <p>Estamos equipados com a mais recente <strong>tecnologia de pesquisa não destrutiva</strong> (acústica, termografia e gás traçador), pois só com a ajuda destes equipamentos conseguimos localizar o ponto exato da fuga em {{CITY_NAME}}, e repará-la rapidamente sem causar danos.</p>
 
-        <p>Esqueça a humidade e o cheiro a mofo na sua habitação ou local de trabalho em {{CITY_NAME}}. Conte com a eficácia do nosso {{SERVICE_KEYWORD}} para arranjo de fugas de água para atender a qualquer emergência e minimizar os prejuízos.</p>
+ <p>Esqueça a humidade e o cheiro a mofo na sua habitação ou local de trabalho em {{CITY_NAME}}. Conte com a eficácia do nosso {{SERVICE_KEYWORD}} para arranjo de fugas de água para atender a qualquer emergência e minimizar os prejuízos.</p>
 
-        <div class="cta-box">
-            <p style="font-size: 1.3rem; margin-bottom: 0.5rem;">🚨 Emergência em {{CITY_NAME}}? Ligamos em menos de 1 hora!</p>
-            <a href="tel:{{PHONE}}" class="cta-phone">📞 {{PHONE}}</a>
-        </div>
+ <div class="cta-box">
+ <p style="font-size: 1.3rem; margin-bottom: 0.5rem;">🚨 Emergência em {{CITY_NAME}}? Ligamos em menos de 1 hora!</p>
+ <a href="tel:{{PHONE}}" class="cta-phone">📞 {{PHONE}}</a>
+ </div>
 
-        <h2>{{SERVICE_NAME_PLURAL}} com Piquetes Serviço 24H em {{CITY_NAME}}</h2>
+ <h2>{{SERVICE_NAME_PLURAL}} com Piquetes Serviço 24H em {{CITY_NAME}}</h2>
 
-        <p>A nossa empresa tem {{SERVICE_KEYWORD_PLURAL}} com piquetes de serviço 24H em {{CITY_NAME}}. Estamos disponíveis <strong>7 dias por semana</strong> para ir ao local (em menos de 1h) e prestar assistência a redes de água quente e fria, fugas de água e infiltrações.</p>
+ <p>A nossa empresa tem {{SERVICE_KEYWORD_PLURAL}} com piquetes de serviço 24H em {{CITY_NAME}}. Estamos disponíveis <strong>7 dias por semana</strong> para ir ao local (em menos de 1h) e prestar assistência a redes de água quente e fria, fugas de água e infiltrações.</p>
 
-        <p>Independentemente da origem ou do grau de complexidade do problema em {{CITY_NAME}}, os nossos profissionais, com vários anos de experiência nesta atividade, fazem uso de tecnologia moderna para solucionar qualquer situação (doméstica ou empresarial).</p>
+ <p>Independentemente da origem ou do grau de complexidade do problema em {{CITY_NAME}}, os nossos profissionais, com vários anos de experiência nesta atividade, fazem uso de tecnologia moderna para solucionar qualquer situação (doméstica ou empresarial).</p>
 
-        <p>Porque as emergências com as canalizações não escolhem a hora nem o dia, recorra aos nossos {{SERVICE_KEYWORD_PLURAL}} com piquetes de serviço 24H em {{CITY_NAME}} para repor o normal funcionamento da sua rede hidráulica, sempre que precisar.</p>
+ <p>Porque as emergências com as canalizações não escolhem a hora nem o dia, recorra aos nossos {{SERVICE_KEYWORD_PLURAL}} com piquetes de serviço 24H em {{CITY_NAME}} para repor o normal funcionamento da sua rede hidráulica, sempre que precisar.</p>
 
-        <h2>{{SERVICE_NAME_PLURAL}} aos Melhores Preços em {{CITY_NAME}}</h2>
+ <h2>{{SERVICE_NAME_PLURAL}} aos Melhores Preços em {{CITY_NAME}}</h2>
 
-        <p>Aqui encontra {{SERVICE_KEYWORD_PLURAL}} aos melhores preços em {{CITY_NAME}}. Desde pequenas arranjos, como desentupimentos e conserto de fugas de água até instalações de canalização, realizamos qualquer serviço de {{SERVICE_TYPE}} em {{CITY_NAME}}.</p>
+ <p>Aqui encontra {{SERVICE_KEYWORD_PLURAL}} aos melhores preços em {{CITY_NAME}}. Desde pequenas arranjos, como desentupimentos e conserto de fugas de água até instalações de canalização, realizamos qualquer serviço de {{SERVICE_TYPE}} em {{CITY_NAME}}.</p>
 
-        <p>Com recurso a <strong>tecnologia moderna</strong>, oferecemos uma resposta imediata e eficaz, todos os dias do ano, intervindo tanto em espaços residenciais como empresariais (restaurantes, lojas, escolas, ginásios, cabeleireiros, hotéis e hospitais) em {{CITY_NAME}}.</p>
+ <p>Com recurso a <strong>tecnologia moderna</strong>, oferecemos uma resposta imediata e eficaz, todos os dias do ano, intervindo tanto em espaços residenciais como empresariais (restaurantes, lojas, escolas, ginásios, cabeleireiros, hotéis e hospitais) em {{CITY_NAME}}.</p>
 
-        <p>Já sabe. Sempre que necessitar de {{SERVICE_KEYWORD_PLURAL}} aos melhores preços em {{CITY_NAME}}, não hesite em entrar em contacto connosco. Somos a prova de que, por um valor justo, a sua canalização pode voltar a funcionar normalmente.</p>
+ <p>Já sabe. Sempre que necessitar de {{SERVICE_KEYWORD_PLURAL}} aos melhores preços em {{CITY_NAME}}, não hesite em entrar em contacto connosco. Somos a prova de que, por um valor justo, a sua canalização pode voltar a funcionar normalmente.</p>
 
-        <div class="cta-box">
-            <p style="font-size: 1.3rem; margin-bottom: 0.5rem;">💰 Orçamento Gratuito em {{CITY_NAME}}</p>
-            <a href="tel:{{PHONE}}" class="cta-phone">📞 {{PHONE}}</a>
-            <p style="margin-top: 0.5rem;">Preços Transparentes | Sem Surpresas</p>
-        </div>
+ <div class="cta-box">
+ <p style="font-size: 1.3rem; margin-bottom: 0.5rem;">💰 Orçamento Gratuito em {{CITY_NAME}}</p>
+ <a href="tel:{{PHONE}}" class="cta-phone">📞 {{PHONE}}</a>
+ <p style="margin-top: 0.5rem;">Preços Transparentes | Sem Surpresas</p>
+ </div>
 
-        <h2>Montagem e Arranjo de Canalizações em {{CITY_NAME}}</h2>
+ <h2>Montagem e Arranjo de Canalizações em {{CITY_NAME}}</h2>
 
-        <p>Pretende remodelar a sua cozinha ou casa de banho em {{CITY_NAME}}? Fale connosco. Temos {{SERVICE_KEYWORD_PLURAL}} qualificados e experientes, disponíveis 24h/dia, para fazer a montagem e arranjo de canalizações.</p>
+ <p>Pretende remodelar a sua cozinha ou casa de banho em {{CITY_NAME}}? Fale connosco. Temos {{SERVICE_KEYWORD_PLURAL}} qualificados e experientes, disponíveis 24h/dia, para fazer a montagem e arranjo de canalizações.</p>
 
-        <p>Trabalhamos com <strong>materiais resistentes</strong> e <strong>técnicas 100% fiáveis</strong> para assegurar um sistema de água eficiente e seguro em {{CITY_NAME}}. Quer seja para uma instalação nova, uma renovação ou uma arranjo urgente, propomos sempre as soluções mais rápidas e duradouras.</p>
+ <p>Trabalhamos com <strong>materiais resistentes</strong> e <strong>técnicas 100% fiáveis</strong> para assegurar um sistema de água eficiente e seguro em {{CITY_NAME}}. Quer seja para uma instalação nova, uma renovação ou uma arranjo urgente, propomos sempre as soluções mais rápidas e duradouras.</p>
 
-        <p>Quando mais precisar, contacte {{BUSINESS_NAME}} para a montagem e arranjo de canalizações em {{CITY_NAME}}. Fale connosco para agendar o nosso serviço e peça-nos um orçamento gratuito.</p>
+ <p>Quando mais precisar, contacte {{BUSINESS_NAME}} para a montagem e arranjo de canalizações em {{CITY_NAME}}. Fale connosco para agendar o nosso serviço e peça-nos um orçamento gratuito.</p>
 
-        <h2>Canalização Água e Gás em {{CITY_NAME}}</h2>
+ <h2>Canalização Água e Gás em {{CITY_NAME}}</h2>
 
-        <p>{{BUSINESS_NAME}} presta serviços de canalização de água e gás em {{CITY_NAME}}. O nosso trabalho abrange a instalação, manutenção e arranjo de sistemas hidráulicos e de gás, fundamentais para o bom funcionamento de residências, empresas e condomínios.</p>
+ <p>{{BUSINESS_NAME}} presta serviços de canalização de água e gás em {{CITY_NAME}}. O nosso trabalho abrange a instalação, manutenção e arranjo de sistemas hidráulicos e de gás, fundamentais para o bom funcionamento de residências, empresas e condomínios.</p>
 
-        <p>A este nível, efetuamos a instalação de canalizações, ligação a sistemas de abastecimento, arranjo de fugas de água, substituição de peças e inspeções de segurança em {{CITY_NAME}}, garantindo total conformidade com as normas em vigor.</p>
+ <p>A este nível, efetuamos a instalação de canalizações, ligação a sistemas de abastecimento, arranjo de fugas de água, substituição de peças e inspeções de segurança em {{CITY_NAME}}, garantindo total conformidade com as normas em vigor.</p>
 
-        <p>Com disponibilidade <strong>24 horas por dia, 7 dias por semana</strong>, estamos prontos para atender a emergências ou realizar serviços agendados em {{CITY_NAME}}. Confie na nossa equipa para todas as suas necessidades de canalização de água e gás.</p>
+ <p>Com disponibilidade <strong>24 horas por dia, 7 dias por semana</strong>, estamos prontos para atender a emergências ou realizar serviços agendados em {{CITY_NAME}}. Confie na nossa equipa para todas as suas necessidades de canalização de água e gás.</p>
 
-        <h2>Razões para Selecionar {{BUSINESS_NAME}} em {{CITY_NAME}}</h2>
+ <h2>Razões para Selecionar {{BUSINESS_NAME}} em {{CITY_NAME}}</h2>
 
-        <div class="reasons-box">
-            <div class="reason-card">
-                <h3>⏰ Serviço 24h/dia</h3>
-                <p>Disponíveis 365 dias por ano para emergências em {{CITY_NAME}}</p>
-            </div>
-            <div class="reason-card">
-                <h3>🚀 Deslocações Rápidas</h3>
-                <p>Chegamos em menos de 1 hora a {{CITY_NAME}}</p>
-            </div>
-            <div class="reason-card">
-                <h3>🔬 Tecnologia Avançada</h3>
-                <p>Câmaras termográficas, CCTV, detetores acústicos</p>
-            </div>
-            <div class="reason-card">
-                <h3>👨‍🔧 Técnicos Credenciados</h3>
-                <p>Profissionais qualificados e experientes</p>
-            </div>
-            <div class="reason-card">
-                <h3>💰 Orçamentos Gratuitos</h3>
-                <p>Sem compromisso e totalmente transparentes</p>
-            </div>
-            <div class="reason-card">
-                <h3>✅ Intervenções Não Destrutivas</h3>
-                <p>Arranjamos sem danificar paredes ou pavimentos</p>
-            </div>
-        </div>
+ <div class="reasons-box">
+ <div class="reason-card">
+ <h3>⏰ Serviço 24h/dia</h3>
+ <p>Disponíveis 365 dias por ano para emergências em {{CITY_NAME}}</p>
+ </div>
+ <div class="reason-card">
+ <h3>🚀 Deslocações Rápidas</h3>
+ <p>Chegamos em menos de 1 hora a {{CITY_NAME}}</p>
+ </div>
+ <div class="reason-card">
+ <h3>🔬 Tecnologia Avançada</h3>
+ <p>Câmaras termográficas, CCTV, detetores acústicos</p>
+ </div>
+ <div class="reason-card">
+ <h3>👨‍🔧 Técnicos Credenciados</h3>
+ <p>Profissionais qualificados e experientes</p>
+ </div>
+ <div class="reason-card">
+ <h3>💰 Orçamentos Gratuitos</h3>
+ <p>Sem compromisso e totalmente transparentes</p>
+ </div>
+ <div class="reason-card">
+ <h3>✅ Intervenções Não Destrutivas</h3>
+ <p>Arranjamos sem danificar paredes ou pavimentos</p>
+ </div>
+ </div>
 
-        <h2>Serviços de {{SERVICE_TYPE}} em {{CITY_NAME}}</h2>
+ <h2>Serviços de {{SERVICE_TYPE}} em {{CITY_NAME}}</h2>
 
-        <div class="services-list">
-            <ul>
-                <li>{{SERVICE_NAME_PLURAL}} de águas quentes e frias</li>
-                <li>{{SERVICE_NAME_PLURAL}} de gás</li>
-                <li>{{SERVICE_NAME_PLURAL}} de saneamento</li>
-                <li>Instalação de canalização completa</li>
-                <li>Instalação e arranjo de canos</li>
-                <li>Instalação e arranjo de torneiras</li>
-                <li>Instalação e arranjo de sanitas e banheiras</li>
-                <li>Substituição de tubagens antigas</li>
-                <li>Instalação e manutenção de válvulas e sifões</li>
-                <li>Instalação e substituição de louças sanitárias</li>
-                <li>Instalação e substituição de autoclismos</li>
-                <li>Arranjo de canalizações de água quente</li>
-                <li>Arranjo de canalizações de saneamento</li>
-                <li>Deteção de fugas com câmaras termográficas</li>
-                <li>Deteção de fugas com sistemas CCTV</li>
-                <li>Arranjo de infiltrações sem danificar paredes</li>
-                <li>Desentupimentos de canalizações</li>
-                <li>Piquetes de emergência 24h</li>
-            </ul>
-        </div>
+ <div class="services-list">
+ <ul>
+ <li>{{SERVICE_NAME_PLURAL}} de águas quentes e frias</li>
+ <li>{{SERVICE_NAME_PLURAL}} de gás</li>
+ <li>{{SERVICE_NAME_PLURAL}} de saneamento</li>
+ <li>Instalação de canalização completa</li>
+ <li>Instalação e arranjo de canos</li>
+ <li>Instalação e arranjo de torneiras</li>
+ <li>Instalação e arranjo de sanitas e banheiras</li>
+ <li>Substituição de tubagens antigas</li>
+ <li>Instalação e manutenção de válvulas e sifões</li>
+ <li>Instalação e substituição de louças sanitárias</li>
+ <li>Instalação e substituição de autoclismos</li>
+ <li>Arranjo de canalizações de água quente</li>
+ <li>Arranjo de canalizações de saneamento</li>
+ <li>Deteção de fugas com câmaras termográficas</li>
+ <li>Deteção de fugas com sistemas CCTV</li>
+ <li>Arranjo de infiltrações sem danificar paredes</li>
+ <li>Desentupimentos de canalizações</li>
+ <li>Piquetes de emergência 24h</li>
+ </ul>
+ </div>
 
-        <div class="cta-box">
-            <p style="font-size: 1.5rem; margin-bottom: 0.5rem;">🔧 Precisa de {{SERVICE_NAME}} em {{CITY_NAME}}?</p>
-            <a href="tel:{{PHONE}}" class="cta-phone">📞 {{PHONE}}</a>
-            <p style="margin-top: 0.5rem; font-size: 1.1rem;">Atendimento Imediato | Orçamento Gratuito | Serviço 24h/dia</p>
-        </div>
-    </main>
+ <div class="cta-box">
+ <p style="font-size: 1.5rem; margin-bottom: 0.5rem;">🔧 Precisa de {{SERVICE_NAME}} em {{CITY_NAME}}?</p>
+ <a href="tel:{{PHONE}}" class="cta-phone">📞 {{PHONE}}</a>
+ <p style="margin-top: 0.5rem; font-size: 1.1rem;">Atendimento Imediato | Orçamento Gratuito | Serviço 24h/dia</p>
+ </div>
+ </main>
 
-    <footer class="footer">
-        <p>&copy; 2026 {{BUSINESS_NAME}} - Serviços de {{SERVICE_TYPE}} em {{CITY_NAME}}</p>
-        <p>Disponível 24h/dia, 7 dias por semana | <a href="tel:{{PHONE}}" style="color: white;">{{PHONE}}</a></p>
-    </footer>
+ <footer class="footer">
+ <p>&copy; 2026 {{BUSINESS_NAME}} - Serviços de {{SERVICE_TYPE}} em {{CITY_NAME}}</p>
+ <p>Disponível 24h/dia, 7 dias por semana | <a href="tel:{{PHONE}}" style="color: white;">{{PHONE}}</a></p>
+ </footer>
 </body>
 </html>

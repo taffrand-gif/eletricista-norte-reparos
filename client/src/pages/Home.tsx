@@ -38,74 +38,74 @@ const BlogPreview = lazy(() => import('@/components/BlogPreview'));
 const CitiesGrid = lazy(() => import('@/components/CitiesGrid'));
 
 export default function Home() {
-  const { config } = useSite();
+ const { config } = useSite();
 
-  // Update document title and meta tags
-  useEffect(() => {
-    document.title = config.title;
-    
-    // Update meta description
-    let metaDescription = document.querySelector('meta[name="description"]');
-    if (!metaDescription) {
-      metaDescription = document.createElement('meta');
-      metaDescription.setAttribute('name', 'description');
-      document.head.appendChild(metaDescription);
-    }
-    metaDescription.setAttribute('content', config.description);
+ // Update document title and meta tags
+ useEffect(() => {
+ document.title = config.title;
+ 
+ // Update meta description
+ let metaDescription = document.querySelector('meta[name="description"]');
+ if (!metaDescription) {
+ metaDescription = document.createElement('meta');
+ metaDescription.setAttribute('name', 'description');
+ document.head.appendChild(metaDescription);
+ }
+ metaDescription.setAttribute('content', config.description);
 
 
-    // Update CSS custom properties for dynamic theming
-    document.documentElement.style.setProperty('--site-primary', config.colors.primary);
-    document.documentElement.style.setProperty('--site-primary-dark', config.colors.primaryDark);
-    document.documentElement.style.setProperty('--site-primary-light', config.colors.primaryLight);
-  }, [config]);
+ // Update CSS custom properties for dynamic theming
+ document.documentElement.style.setProperty('--site-primary', config.colors.primary);
+ document.documentElement.style.setProperty('--site-primary-dark', config.colors.primaryDark);
+ document.documentElement.style.setProperty('--site-primary-light', config.colors.primaryLight);
+ }, [config]);
 
-  return (
-    <>
-      {/* SEO Components - Don't render visible content */}
-      <StructuredData />
+ return (
+ <>
+ {/* SEO Components - Don't render visible content */}
+ <StructuredData />
 
-      <div className="min-h-screen flex flex-col">
-        <Header />
-        <main id="main-content">
-          {/* HOMEPAGE PREMIUM - 5 SECTIONS ONLY */}
+ <div className="min-h-screen flex flex-col">
+ <Header />
+ <main id="main-content">
+ {/* HOMEPAGE PREMIUM - 5 SECTIONS ONLY */}
 
-          {/* 1. HERO PREMIUM - CTA Direct */}
-          <Hero />
+ {/* 1. HERO PREMIUM - CTA Direct */}
+ <Hero />
 
-          {/* PHASE 3 - HOOKS MARKETING (Mars 2026) */}
-          <Suspense fallback={null}><EquipamentoProfissional /></Suspense>
-          <Suspense fallback={null}><TransparenciaTotal /></Suspense>
+ {/* PHASE 3 - HOOKS MARKETING (Mars 2026) */}
+ <Suspense fallback={null}><EquipamentoProfissional /></Suspense>
+ <Suspense fallback={null}><TransparenciaTotal /></Suspense>
 
-          {/* PHASE 2 - TRANSPARENCE PRIX */}
-          <Suspense fallback={null}><PriceCalculatorWidget /></Suspense>
-          <Suspense fallback={null}><PriceTransparency /></Suspense>
+ {/* PHASE 2 - TRANSPARENCE PRIX */}
+ <Suspense fallback={null}><PriceCalculatorWidget /></Suspense>
+ <Suspense fallback={null}><PriceTransparency /></Suspense>
 
-          {/* 2. VALEUR DIFFÉRENCIANTE - 10 problèmes résolus */}
-          <Suspense fallback={null}><WhyDifferent /></Suspense>
+ {/* 2. VALEUR DIFFÉRENCIANTE - 10 problèmes résolus */}
+ <Suspense fallback={null}><WhyDifferent /></Suspense>
 
-          {/* PHASE 2 - GARANTIES */}
-          <Suspense fallback={null}><GuaranteeSection /></Suspense>
-          <Suspense fallback={null}><TrustBadges /></Suspense>
+ {/* PHASE 2 - GARANTIES */}
+ <Suspense fallback={null}><GuaranteeSection /></Suspense>
+ <Suspense fallback={null}><TrustBadges /></Suspense>
 
-          {/* 3. CALCULATEUR ROI - 1 seul, optimisé */}
-          <Suspense fallback={null}><PriceCalculator /></Suspense>
+ {/* 3. CALCULATEUR ROI - 1 seul, optimisé */}
+ <Suspense fallback={null}><PriceCalculator /></Suspense>
 
-          {/* 4. PROVA SOCIAL - Témoignages + Before/After */}
-          <Suspense fallback={null}><Testimonials /></Suspense>
-          <Suspense fallback={null}><BeforeAfter /></Suspense>
+ {/* 4. PROVA SOCIAL - Témoignages + Before/After */}
+ <Suspense fallback={null}><Testimonials /></Suspense>
+ <Suspense fallback={null}><BeforeAfter /></Suspense>
 
-          {/* PHASE 4 - MAILLAGE INTERNE SEO */}
-          <Suspense fallback={null}><BlogPreview /></Suspense>
-          <Suspense fallback={null}><CitiesGrid /></Suspense>
+ {/* PHASE 4 - MAILLAGE INTERNE SEO */}
+ <Suspense fallback={null}><BlogPreview /></Suspense>
+ <Suspense fallback={null}><CitiesGrid /></Suspense>
 
-          {/* 5. CTA FINAL + FAQ - Conversion + Réassurance */}
-          <Suspense fallback={null}><FAQ /></Suspense>
-        </main>
-        <Footer />
-        <ScrollToTop />
-        <MobileBottomNav />
-      </div>
-    </>
-  );
+ {/* 5. CTA FINAL + FAQ - Conversion + Réassurance */}
+ <Suspense fallback={null}><FAQ /></Suspense>
+ </main>
+ <Footer />
+ <ScrollToTop />
+ <MobileBottomNav />
+ </div>
+ </>
+ );
 }

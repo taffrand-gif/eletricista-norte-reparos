@@ -2,439 +2,439 @@
 
 /* 1. HERO PREMIUM */
 .premium-hero {
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-  border-left: 6px solid #FFD700;
-  padding: 30px;
-  margin: 30px 0;
-  border-radius: 10px;
-  color: white;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+ background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+ border-left: 6px solid #FFD700;
+ padding: 30px;
+ margin: 30px 0;
+ border-radius: 10px;
+ color: white;
+ box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 .premium-hero h2 {
-  color: #FFD700;
-  font-size: 28px;
-  margin-bottom: 20px;
-  font-weight: bold;
+ color: #FFD700;
+ font-size: 28px;
+ margin-bottom: 20px;
+ font-weight: bold;
 }
 
 .premium-hero p {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 15px;
+ font-size: 16px;
+ line-height: 1.6;
+ margin-bottom: 15px;
 }
 
 .premium-hero .price-honesty {
-  margin-top: 20px;
-  padding-top: 20px;
-  border-top: 1px solid rgba(255,255,255,0.2);
-  font-size: 16px;
+ margin-top: 20px;
+ padding-top: 20px;
+ border-top: 1px solid rgba(255,255,255,0.2);
+ font-size: 16px;
 }
 
 /* 2. BADGE INTERVENÇÃO HOJE */
 .today-intervention {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  background: linear-gradient(135deg, #e65100 0%, #f57c00 100%);
-  color: white;
-  padding: 25px;
-  border-radius: 10px;
-  margin: 20px 0;
-  box-shadow: 0 4px 12px rgba(230,81,0,0.3);
+ display: flex;
+ align-items: center;
+ gap: 20px;
+ background: linear-gradient(135deg, #e65100 0%, #f57c00 100%);
+ color: white;
+ padding: 25px;
+ border-radius: 10px;
+ margin: 20px 0;
+ box-shadow: 0 4px 12px rgba(230,81,0,0.3);
 }
 
 .today-intervention .badge-icon {
-  font-size: 50px;
-  flex-shrink: 0;
+ font-size: 50px;
+ flex-shrink: 0;
 }
 
 .today-intervention .badge-content {
-  flex: 1;
+ flex: 1;
 }
 
 .today-intervention strong {
-  font-size: 22px;
-  display: block;
-  margin-bottom: 8px;
+ font-size: 22px;
+ display: block;
+ margin-bottom: 8px;
 }
 
 .today-intervention p {
-  margin: 0;
-  font-size: 15px;
-  opacity: 0.95;
+ margin: 0;
+ font-size: 15px;
+ opacity: 0.95;
 }
 
 /* 3. SECTION RESPEITO REAL */
 .real-respect {
-  background: #fff;
-  border: 3px solid #2193b0;
-  padding: 30px;
-  margin: 40px 0;
-  border-radius: 10px;
+ background: #fff;
+ border: 3px solid #2193b0;
+ padding: 30px;
+ margin: 40px 0;
+ border-radius: 10px;
 }
 
 .real-respect h3 {
-  color: #2193b0;
-  font-size: 24px;
-  margin-bottom: 25px;
-  font-weight: bold;
+ color: #2193b0;
+ font-size: 24px;
+ margin-bottom: 25px;
+ font-weight: bold;
 }
 
 .respect-comparison {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin: 30px 0;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 20px;
+ margin: 30px 0;
 }
 
 @media (max-width: 768px) {
-  .respect-comparison {
-    grid-template-columns: 1fr;
-  }
+ .respect-comparison {
+ grid-template-columns: 1fr;
+ }
 }
 
 .respect-comparison h4 {
-  font-size: 18px;
-  margin-bottom: 15px;
-  font-weight: bold;
+ font-size: 18px;
+ margin-bottom: 15px;
+ font-weight: bold;
 }
 
 .respect-comparison ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+ list-style: none;
+ padding: 0;
+ margin: 0;
 }
 
 .respect-comparison li {
-  padding: 10px 0;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
+ padding: 10px 0;
+ border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 .respect-comparison li:last-child {
-  border-bottom: none;
+ border-bottom: none;
 }
 
 .respect-comparison .others {
-  background: #ffebee;
-  border-left: 5px solid #c62828;
-  padding: 20px;
-  border-radius: 5px;
+ background: #ffebee;
+ border-left: 5px solid #c62828;
+ padding: 20px;
+ border-radius: 5px;
 }
 
 .respect-comparison .us {
-  background: #e8f5e9;
-  border-left: 5px solid #2e7d32;
-  padding: 20px;
-  border-radius: 5px;
+ background: #e8f5e9;
+ border-left: 5px solid #2e7d32;
+ padding: 20px;
+ border-radius: 5px;
 }
 
 .modern-standard {
-  background: #fff3e0;
-  border-left: 5px solid #e65100;
-  padding: 20px;
-  margin-top: 30px;
-  border-radius: 5px;
+ background: #fff3e0;
+ border-left: 5px solid #e65100;
+ padding: 20px;
+ margin-top: 30px;
+ border-radius: 5px;
 }
 
 .modern-standard p {
-  margin: 10px 0;
-  line-height: 1.6;
+ margin: 10px 0;
+ line-height: 1.6;
 }
 
 /* 4. SECTION EQUIPAMENTO PROFISSIONAL */
 .professional-equipment {
-  background: #f5f5f5;
-  padding: 30px;
-  margin: 40px 0;
-  border-radius: 10px;
+ background: #f5f5f5;
+ padding: 30px;
+ margin: 40px 0;
+ border-radius: 10px;
 }
 
 .professional-equipment h3 {
-  color: #1a1a1a;
-  font-size: 24px;
-  margin-bottom: 25px;
-  font-weight: bold;
+ color: #1a1a1a;
+ font-size: 24px;
+ margin-bottom: 25px;
+ font-weight: bold;
 }
 
 .equipment-reality {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin: 30px 0;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 20px;
+ margin: 30px 0;
 }
 
 @media (max-width: 768px) {
-  .equipment-reality {
-    grid-template-columns: 1fr;
-  }
+ .equipment-reality {
+ grid-template-columns: 1fr;
+ }
 }
 
 .equipment-reality h4 {
-  font-size: 18px;
-  margin-bottom: 15px;
-  font-weight: bold;
+ font-size: 18px;
+ margin-bottom: 15px;
+ font-weight: bold;
 }
 
 .equipment-reality ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+ list-style: none;
+ padding: 0;
+ margin: 0;
 }
 
 .equipment-reality li {
-  padding: 8px 0;
-  line-height: 1.5;
+ padding: 8px 0;
+ line-height: 1.5;
 }
 
 .cheap-tools {
-  background: #ffebee;
-  border-left: 5px solid #c62828;
-  padding: 20px;
-  border-radius: 5px;
+ background: #ffebee;
+ border-left: 5px solid #c62828;
+ padding: 20px;
+ border-radius: 5px;
 }
 
 .pro-tools {
-  background: #e3f2fd;
-  border-left: 5px solid #1976d2;
-  padding: 20px;
-  border-radius: 5px;
+ background: #e3f2fd;
+ border-left: 5px solid #1976d2;
+ padding: 20px;
+ border-radius: 5px;
 }
 
 .equipment-conclusion {
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 30px;
-  color: #1976d2;
-  line-height: 1.6;
+ font-size: 18px;
+ font-weight: bold;
+ text-align: center;
+ margin-top: 30px;
+ color: #1976d2;
+ line-height: 1.6;
 }
 
 /* 5. SECTION A VERDADE SOBRE OS PREÇOS */
 .price-truth {
-  background: #fff;
-  border: 3px solid #FFD700;
-  padding: 30px;
-  margin: 40px 0;
-  border-radius: 10px;
+ background: #fff;
+ border: 3px solid #FFD700;
+ padding: 30px;
+ margin: 40px 0;
+ border-radius: 10px;
 }
 
 .price-truth h3 {
-  color: #1a1a1a;
-  font-size: 24px;
-  margin-bottom: 20px;
-  font-weight: bold;
+ color: #1a1a1a;
+ font-size: 24px;
+ margin-bottom: 20px;
+ font-weight: bold;
 }
 
 .price-truth > p {
-  font-size: 18px;
-  margin: 15px 0;
-  line-height: 1.6;
+ font-size: 18px;
+ margin: 15px 0;
+ line-height: 1.6;
 }
 
 .price-truth ul {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0;
+ list-style: none;
+ padding: 0;
+ margin: 20px 0;
 }
 
 .price-truth li {
-  padding: 10px 0;
-  font-size: 16px;
-  line-height: 1.6;
+ padding: 10px 0;
+ font-size: 16px;
+ line-height: 1.6;
 }
 
 .final-question {
-  background: #1a1a1a;
-  color: white;
-  padding: 25px;
-  margin-top: 30px;
-  border-radius: 8px;
-  text-align: center;
+ background: #1a1a1a;
+ color: white;
+ padding: 25px;
+ margin-top: 30px;
+ border-radius: 8px;
+ text-align: center;
 }
 
 .final-question p {
-  margin: 10px 0;
-  font-size: 18px;
-  line-height: 1.6;
+ margin: 10px 0;
+ font-size: 18px;
+ line-height: 1.6;
 }
 
 .final-question .answer {
-  font-size: 24px;
-  color: #FFD700;
-  margin-top: 20px;
-  font-weight: bold;
+ font-size: 24px;
+ color: #FFD700;
+ margin-top: 20px;
+ font-weight: bold;
 }
 
 /* 6. BADGE PREÇO FIXO */
 .fixed-price-badge {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%);
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-  margin: 20px 0;
-  box-shadow: 0 4px 12px rgba(27,94,32,0.3);
+ display: flex;
+ align-items: center;
+ gap: 15px;
+ background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%);
+ color: white;
+ padding: 20px;
+ border-radius: 10px;
+ margin: 20px 0;
+ box-shadow: 0 4px 12px rgba(27,94,32,0.3);
 }
 
 .fixed-price-badge .badge-icon {
-  font-size: 40px;
-  flex-shrink: 0;
+ font-size: 40px;
+ flex-shrink: 0;
 }
 
 .fixed-price-badge .badge-text {
-  flex: 1;
+ flex: 1;
 }
 
 .fixed-price-badge strong {
-  font-size: 20px;
-  display: block;
-  margin-bottom: 5px;
+ font-size: 20px;
+ display: block;
+ margin-bottom: 5px;
 }
 
 .fixed-price-badge p {
-  font-size: 14px;
-  margin: 0;
-  opacity: 0.9;
+ font-size: 14px;
+ margin: 0;
+ opacity: 0.9;
 }
 
 /* 7. SECTION REALIDADE DO MERCADO */
 .market-reality {
-  background: #fff;
-  border: 3px solid #e65100;
-  padding: 30px;
-  margin: 40px 0;
-  border-radius: 10px;
+ background: #fff;
+ border: 3px solid #e65100;
+ padding: 30px;
+ margin: 40px 0;
+ border-radius: 10px;
 }
 
 .market-reality h3 {
-  color: #e65100;
-  font-size: 24px;
-  margin-bottom: 25px;
-  font-weight: bold;
+ color: #e65100;
+ font-size: 24px;
+ margin-bottom: 25px;
+ font-weight: bold;
 }
 
 .market-reality h4 {
-  font-size: 18px;
-  margin-bottom: 15px;
-  font-weight: bold;
+ font-size: 18px;
+ margin-bottom: 15px;
+ font-weight: bold;
 }
 
 .competitor-trap {
-  background: #fff3e0;
-  border-left: 5px solid #e65100;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 5px;
+ background: #fff3e0;
+ border-left: 5px solid #e65100;
+ padding: 20px;
+ margin: 20px 0;
+ border-radius: 5px;
 }
 
 .competitor-trap ul,
 .competitor-problems ul,
 .our-difference ul {
-  list-style: none;
-  padding: 0;
-  margin: 15px 0;
+ list-style: none;
+ padding: 0;
+ margin: 15px 0;
 }
 
 .competitor-trap li,
 .competitor-problems li,
 .our-difference li {
-  padding: 8px 0;
-  line-height: 1.6;
+ padding: 8px 0;
+ line-height: 1.6;
 }
 
 .competitor-problems {
-  background: #ffebee;
-  border-left: 5px solid #c62828;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 5px;
+ background: #ffebee;
+ border-left: 5px solid #c62828;
+ padding: 20px;
+ margin: 20px 0;
+ border-radius: 5px;
 }
 
 .our-difference {
-  background: #e8f5e9;
-  border-left: 5px solid #2e7d32;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 5px;
+ background: #e8f5e9;
+ border-left: 5px solid #2e7d32;
+ padding: 20px;
+ margin: 20px 0;
+ border-radius: 5px;
 }
 
 .final-choice {
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 30px;
-  color: #e65100;
-  line-height: 1.6;
+ font-size: 18px;
+ font-weight: bold;
+ text-align: center;
+ margin-top: 30px;
+ color: #e65100;
+ line-height: 1.6;
 }
 
 /* 8. SECTION PERGUNTAS HONESTAS */
 .honest-questions {
-  background: #f5f5f5;
-  padding: 30px;
-  margin: 40px 0;
-  border-radius: 10px;
+ background: #f5f5f5;
+ padding: 30px;
+ margin: 40px 0;
+ border-radius: 10px;
 }
 
 .honest-questions h3 {
-  color: #1a1a1a;
-  font-size: 24px;
-  margin-bottom: 20px;
-  font-weight: bold;
+ color: #1a1a1a;
+ font-size: 24px;
+ margin-bottom: 20px;
+ font-weight: bold;
 }
 
 .honest-questions details {
-  background: white;
-  padding: 15px;
-  margin: 15px 0;
-  border-radius: 5px;
-  border-left: 4px solid #2193b0;
-  cursor: pointer;
+ background: white;
+ padding: 15px;
+ margin: 15px 0;
+ border-radius: 5px;
+ border-left: 4px solid #2193b0;
+ cursor: pointer;
 }
 
 .honest-questions summary {
-  cursor: pointer;
-  font-weight: bold;
-  color: #2193b0;
-  font-size: 16px;
-  padding: 5px 0;
+ cursor: pointer;
+ font-weight: bold;
+ color: #2193b0;
+ font-size: 16px;
+ padding: 5px 0;
 }
 
 .honest-questions summary:hover {
-  color: #1976d2;
+ color: #1976d2;
 }
 
 .honest-questions details[open] summary {
-  margin-bottom: 15px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #e0e0e0;
+ margin-bottom: 15px;
+ padding-bottom: 15px;
+ border-bottom: 1px solid #e0e0e0;
 }
 
 .honest-questions p {
-  margin: 10px 0;
-  line-height: 1.6;
-  color: #333;
+ margin: 10px 0;
+ line-height: 1.6;
+ color: #333;
 }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .premium-hero h2 {
-    font-size: 22px;
-  }
-  
-  .today-intervention {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .today-intervention strong {
-    font-size: 18px;
-  }
-  
-  .fixed-price-badge {
-    flex-direction: column;
-    text-align: center;
-  }
+ .premium-hero h2 {
+ font-size: 22px;
+ }
+ 
+ .today-intervention {
+ flex-direction: column;
+ text-align: center;
+ }
+ 
+ .today-intervention strong {
+ font-size: 18px;
+ }
+ 
+ .fixed-price-badge {
+ flex-direction: column;
+ text-align: center;
+ }
 }

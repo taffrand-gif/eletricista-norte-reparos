@@ -7,10 +7,10 @@
  * const mapRef = useRef<google.maps.Map | null>(null);
  *
  * <MapView
- *   initialCenter={{ lat: 40.7128, lng: -74.0060 }}
- *   initialZoom={15}
- *   onMapReady={(map) => {
- *     mapRef.current = map; // Store to control map from parent anytime, google map itself is in charge of the re-rendering, not react state.
+ * initialCenter={{ lat: 40.7128, lng: -74.0060 }}
+ * initialZoom={15}
+ * onMapReady={(map) => {
+ * mapRef.current = map; // Store to control map from parent anytime, google map itself is in charge of the re-rendering, not react state.
  * </MapView>
  *
  * ======
@@ -19,9 +19,9 @@
  * 📍 MARKER (from `marker` library)
  * - Attaches to map using { map, position }
  * new google.maps.marker.AdvancedMarkerElement({
- *   map,
- *   position: { lat: 37.7749, lng: -122.4194 },
- *   title: "San Francisco",
+ * map,
+ * position: { lat: 37.7749, lng: -122.4194 },
+ * title: "San Francisco",
  * });
  *
  * -------------------------------
@@ -37,13 +37,13 @@
  * - Standalone service; manually apply results to map.
  * const geocoder = new google.maps.Geocoder();
  * geocoder.geocode({ address: "New York" }, (results, status) => {
- *   if (status === "OK" && results[0]) {
- *     map.setCenter(results[0].geometry.location);
- *     new google.maps.marker.AdvancedMarkerElement({
- *       map,
- *       position: results[0].geometry.location,
- *     });
- *   }
+ * if (status === "OK" && results[0]) {
+ * map.setCenter(results[0].geometry.location);
+ * new google.maps.marker.AdvancedMarkerElement({
+ * map,
+ * position: results[0].geometry.location,
+ * });
+ * }
  * });
  *
  * -------------------------------
@@ -57,8 +57,8 @@
  * const directionsService = new google.maps.DirectionsService();
  * const directionsRenderer = new google.maps.DirectionsRenderer({ map });
  * directionsService.route(
- *   { origin, destination, travelMode: "DRIVING" },
- *   (res, status) => status === "OK" && directionsRenderer.setDirections(res)
+ * { origin, destination, travelMode: "DRIVING" },
+ * (res, status) => status === "OK" && directionsRenderer.setDirections(res)
  * );
  *
  * -------------------------------
@@ -81,57 +81,55 @@ import { usePersistFn } from "@/hooks/usePersistFn";
 import { cn } from "@/lib/utils";
 
 declare global {
-  interface Window {
-    google?: typeof google;
-  }
+ interface Window {
+ google?: typeof google;
+ }
 }
 
 // Note: Google Maps integration requires API key configuration
 // This component is currently disabled until proper API keys are configured
 function loadMapScript() {
-  return Promise.reject(new Error("Google Maps API key not configured"));
+ return Promise.reject(new Error("Google Maps API key not configured"));
 }
 
 interface MapViewProps {
-  className?: string;
-  initialCenter?: google.maps.LatLngLiteral;
-  initialZoom?: number;
-  onMapReady?: (map: google.maps.Map) => void;
+ className?: string;
+ initialCenter?: google.maps.LatLngLiteral;
+ initialZoom?: number;
+ onMapReady?: (map: google.maps.Map) => void;
 }
 
 export function MapView({
-  className,
-  initialCenter = { lat: 37.7749, lng: -122.4194 },
-  initialZoom = 12,
-  onMapReady,
-}: MapViewProps) {
-  const mapContainer = useRef<HTMLDivElement>(null);
-  const map = useRef<google.maps.Map | null>(null);
+ className,
+ initialCenter = { lat: 37.7749, lng: -122.4194 },
+ initialZoom = 12,
+ onMapReady}: MapViewProps) {
+ const mapContainer = useRef<HTMLDivElement>(null);
+ const map = useRef<google.maps.Map | null>(null);
 
-  const init = usePersistFn(async () => {
-    await loadMapScript();
-    if (!mapContainer.current) {
-      return;
-    }
-    map.current = new window.google.maps.Map(mapContainer.current, {
-      zoom: initialZoom,
-      center: initialCenter,
-      mapTypeControl: true,
-      fullscreenControl: true,
-      zoomControl: true,
-      streetViewControl: true,
-      mapId: "DEMO_MAP_ID",
-    });
-    if (onMapReady) {
-      onMapReady(map.current);
-    }
-  });
+ const init = usePersistFn(async () => {
+ await loadMapScript();
+ if (!mapContainer.current) {
+ return;
+ }
+ map.current = new window.google.maps.Map(mapContainer.current, {
+ zoom: initialZoom,
+ center: initialCenter,
+ mapTypeControl: true,
+ fullscreenControl: true,
+ zoomControl: true,
+ streetViewControl: true,
+ mapId: "DEMO_MAP_ID"});
+ if (onMapReady) {
+ onMapReady(map.current);
+ }
+ });
 
-  useEffect(() => {
-    init();
-  }, [init]);
+ useEffect(() => {
+ init();
+ }, [init]);
 
-  return (
-    <div ref={mapContainer} className={cn("w-full h-[500px]", className)} />
-  );
+ return (
+ <div ref={mapContainer} className={cn("w-full h-[500px]", className)} />
+ );
 }
