@@ -31,7 +31,7 @@ export default function TrustBadges() {
  description: 'Menos de 1 hora'},
  {
  icon: '💯',
- title: '500+ Clientes',
+ title: '',
  description: 'Satisfeitos'},
  {
  icon: '🔒',

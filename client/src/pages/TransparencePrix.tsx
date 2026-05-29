@@ -119,7 +119,7 @@ export default function TransparencePrix() {
  },
  {
  question: "Porque devo escolher-vos em vez de um eletricista mais barato?",
- answer: "Porque valorizamos a sua segurança e paz de espírito. Um eletricista barato pode: usar materiais de baixa qualidade que falham rapidamente, não ter seguro (se causar danos, o problema é seu), não emitir certificação elétrica (ilegal e perigoso), desaparecer quando há problemas. Nós somos uma empresa estabelecida há 15 anos, com 500+ clientes satisfeitos, seguro de responsabilidade civil, e garantia real. O barato sai caro."
+ answer: "Porque valorizamos a sua segurança e paz de espírito. Um eletricista barato pode: usar materiais de baixa qualidade que falham rapidamente, não ter seguro (se causar danos, o problema é seu), não emitir certificação elétrica (ilegal e perigoso), desaparecer quando há problemas. Nós somos uma empresa estabelecida há 15 anos, com satisfeitos, seguro de responsabilidade civil, e garantia real. O barato sai caro."
  }
  ];
 

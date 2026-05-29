@@ -102,7 +102,6 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  },
  stats: {
  interventionsAnnuelles: "340+ intervenções em Mirandela",
- tauxSatisfaction: "98% clientes satisfeitos",
  tempsReponse: "Média 43 minutos"
  },
  specificites: [
@@ -207,7 +206,6 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  },
  stats: {
  interventionsAnnuelles: "450+ intervenções em Vila Real",
- tauxSatisfaction: "98% clientes satisfeitos",
  tempsReponse: "Média 51 minutos"
  },
  specificites: [
@@ -273,7 +271,6 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  },
  stats: {
  interventionsAnnuelles: "170+ intervenções em Miranda",
- tauxSatisfaction: "98% clientes satisfeitos",
  tempsReponse: "Média 61 minutos"
  },
  specificites: [
@@ -372,7 +369,6 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  },
  stats: {
  interventionsAnnuelles: "180+ intervenções em Vila Flor",
- tauxSatisfaction: "98% clientes satisfeitos",
  tempsReponse: "Média 57 minutos"
  },
  specificites: [
