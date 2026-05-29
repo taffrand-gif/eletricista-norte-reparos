@@ -136,7 +136,7 @@ export default function CertificacaoCertielGuiaCompleto() {
  Ligar: +351 932 321 892
  </a>
  <a
- href="https://wa.me/351932321892?text=Olá,%20preciso%20de%20certificação%20CERTIEL.%20Podem%20fazer%20orçamento?"
+ href="https://wa.me/351932321892?text=Olá,%20preciso%20de%20certificação%20elétrica.%20Podem%20fazer%20orçamento?"
  target="_blank"
  rel="noopener noreferrer"
  className="inline-flex items-center justify-center px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition"
@@ -333,7 +333,7 @@ export default function CertificacaoCertielGuiaCompleto() {
  Ligar: +351 932 321 892
  </a>
  <a
- href="https://wa.me/351932321892?text=Preciso%20de%20certificação%20CERTIEL.%20Podem%20fazer%20orçamento?"
+ href="https://wa.me/351932321892?text=Preciso%20de%20certificação%20elétrica.%20Podem%20fazer%20orçamento?"
  target="_blank"
  rel="noopener noreferrer"
  className="inline-flex items-center justify-center px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition"
@@ -491,7 +491,7 @@ export default function CertificacaoCertielGuiaCompleto() {
  Ligar Agora: +351 932 321 892
  </a>
  <a
- href="https://wa.me/351932321892?text=Olá,%20preciso%20de%20certificação%20CERTIEL.%20Podem%20fazer%20orçamento?"
+ href="https://wa.me/351932321892?text=Olá,%20preciso%20de%20certificação%20elétrica.%20Podem%20fazer%20orçamento?"
  target="_blank"
  rel="noopener noreferrer"
  className="inline-flex items-center justify-center px-8 py-4 bg-green-600 text-white text-lg font-bold rounded-lg hover:bg-green-700 transition shadow-lg"

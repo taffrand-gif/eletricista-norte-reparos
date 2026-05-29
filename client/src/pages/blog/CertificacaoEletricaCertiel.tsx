@@ -199,7 +199,7 @@ export default function CertificacaoEletricaCertiel() {
  <Phone className="w-6 h-6" />
  932 321 892
  </a>
- <a href="https://wa.me/351932321892?text=Olá,%20preciso%20de%20certificação%20CERTIEL.%20Podem%20dar-me%20um%20orçamento?" className="inline-flex items-center justify-center gap-2 bg-green-700 text-white px-8 py-4 rounded-lg text-xl font-bold hover:bg-green-800 transition-all shadow-lg">
+ <a href="https://wa.me/351932321892?text=Olá,%20preciso%20de%20certificação%20elétrica.%20Podem%20dar-me%20um%20orçamento?" className="inline-flex items-center justify-center gap-2 bg-green-700 text-white px-8 py-4 rounded-lg text-xl font-bold hover:bg-green-800 transition-all shadow-lg">
  💬 WhatsApp
  </a>
  </div>
