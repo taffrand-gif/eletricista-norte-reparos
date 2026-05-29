@@ -4,18 +4,7 @@
   "devCommand": "npm run dev",
   "installCommand": "npm install --legacy-peer-deps",
   "framework": "vite",
-  "redirects": [
-    {
-      "source": "https://staff-seekers.com/:path*",
-      "destination": "https://eletricista-norte-reparos.pt/:path*",
-      "permanent": true
-    },
-    {
-      "source": "http://staff-seekers.com/:path*",
-      "destination": "https://eletricista-norte-reparos.pt/:path*",
-      "permanent": true
-    }
-  ],
+  "redirects": [],
   "rewrites": [
     {
       "source": "/eletricista-:city",
