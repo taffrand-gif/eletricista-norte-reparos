@@ -108,7 +108,7 @@ export default function CityPage() {
  </p>
 
  <p className="text-lg leading-relaxed text-gray-700">
- Já realizámos mais de {interventionsCount} intervenções bem-sucedidas em {city.name}, conquistando a confiança de centenas de clientes satisfeitos. Seja qual for o problema que esteja a enfrentar, a nosso trabalho está parranjada para o resolver com rapidez e profissionalismo.
+ Já realizámos mais de {interventionsCount} intervenções bem-sucedidas em {city.name}, conquistando a confiança de centenas de clientes. Seja qual for o problema que esteja a enfrentar, a nosso trabalho está parranjada para o resolver com rapidez e profissionalismo.
  </p>
 
  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
