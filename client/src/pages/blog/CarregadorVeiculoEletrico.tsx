@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useEffect } from 'react';
 import { Phone, Zap, Car, CheckCircle, AlertTriangle } from 'lucide-react';
-
 export default function CarregadorVeiculoEletrico() {
  useEffect(() => {
  document.title = "Instalar Carregador de Veículo Elétrico em Casa: Guia Completo 2026 | Staff Seekers";
@@ -15,7 +14,6 @@ export default function CarregadorVeiculoEletrico() {
  document.head.appendChild(metaDescription);
  }
  metaDescription.setAttribute('content', 'Guia completo para instalar wallbox em casa. Tipos de carregadores, potência, custos, incentivos e instalação profissional em Trás-os-Montes.');
-
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');
@@ -23,7 +21,6 @@ export default function CarregadorVeiculoEletrico() {
  document.head.appendChild(canonical);
  }
  canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/blog/carregador-veiculo-eletrico-casa');
-
  // JSON-LD Article Schema
  const script = document.createElement('script');
  script.type = 'application/ld+json';
@@ -48,12 +45,10 @@ export default function CarregadorVeiculoEletrico() {
  "dateModified": "2026-02-19"
  });
  document.head.appendChild(script);
-
  return () => {
  document.head.removeChild(script);
  };
  }, []);
-
  const tiposCarregadores = [
  {
  tipo: "Wallbox 3,7 kW (Monofásico)",
@@ -84,7 +79,6 @@ export default function CarregadorVeiculoEletrico() {
  custo: "1.200€ - 2.500€"
  }
  ];
-
  return (
  <div className="min-h-screen flex flex-col">
  <Header />
@@ -105,7 +99,6 @@ export default function CarregadorVeiculoEletrico() {
  </div>
  </div>
  </section>
-
  {/* Intro */}
  <section className="py-12">
  <div className="container max-w-3xl">
@@ -123,7 +116,6 @@ export default function CarregadorVeiculoEletrico() {
  </div>
  </div>
  </section>
-
  {/* Porquê Wallbox */}
  <section className="py-12 bg-blue-50">
  <div className="container max-w-3xl">
@@ -158,7 +150,6 @@ export default function CarregadorVeiculoEletrico() {
  </div>
  </div>
  </section>
-
  {/* Tipos de Carregadores */}
  <section className="py-16">
  <div className="container max-w-3xl">
@@ -189,7 +180,6 @@ export default function CarregadorVeiculoEletrico() {
  </div>
  </div>
  </section>
-
  {/* Requisitos */}
  <section className="py-12 bg-gray-50">
  <div className="container max-w-3xl">
@@ -239,7 +229,6 @@ export default function CarregadorVeiculoEletrico() {
  </div>
  </div>
  </section>
-
  {/* Processo de Instalação */}
  <section className="py-12">
  <div className="container max-w-3xl">
@@ -293,7 +282,6 @@ export default function CarregadorVeiculoEletrico() {
  </div>
  </div>
  </section>
-
  {/* Incentivos */}
  <section className="py-12 bg-green-50">
  <div className="container max-w-3xl">
@@ -333,7 +321,6 @@ export default function CarregadorVeiculoEletrico() {
  </div>
  </div>
  </section>
-
  {/* Poupança */}
  <section className="py-12 bg-gray-50">
  <div className="container max-w-3xl">
@@ -389,7 +376,6 @@ export default function CarregadorVeiculoEletrico() {
  </div>
  </div>
  </section>
-
  {/* Perguntas Frequentes */}
  <section className="py-12">
  <div className="container max-w-3xl">
@@ -426,7 +412,6 @@ export default function CarregadorVeiculoEletrico() {
  </div>
  </div>
  </section>
-
  {/* CTA */}
  <section className="py-16 bg-orange-500 text-white">
  <div className="container text-center">
@@ -436,7 +421,7 @@ export default function CarregadorVeiculoEletrico() {
  </h2>
  <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
  Instalação profissional de carregadores de veículos elétricos em Trás-os-Montes. 
- Orçamento gratuito e apoio com incentivos.
+ Sem compromisso e apoio com incentivos.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a href="tel:+351932321892" className="inline-flex items-center justify-center gap-2 bg-white text-orange-500 px-8 py-4 rounded-lg text-xl font-bold hover:bg-gray-100 transition-all shadow-lg">
@@ -449,7 +434,6 @@ export default function CarregadorVeiculoEletrico() {
  </div>
  </div>
  </section>
-
  {/* Artigos Relacionados */}
  <section className="py-12 bg-gray-50">
  <div className="container max-w-3xl">

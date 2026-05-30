@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-
 import { Button } from "@/components/ui/button";
 import {
  Dialog,
@@ -7,7 +6,6 @@ import {
  DialogDescription,
  DialogFooter,
  DialogTitle} from "@/components/ui/dialog";
-
 interface ManusDialogProps {
  title?: string;
  logo?: string;
@@ -16,7 +14,6 @@ interface ManusDialogProps {
  onOpenChange?: (open: boolean) => void;
  onClose?: () => void;
 }
-
 export function ManusDialog({
  title,
  logo,
@@ -25,25 +22,21 @@ export function ManusDialog({
  onOpenChange,
  onClose}: ManusDialogProps) {
  const [internalOpen, setInternalOpen] = useState(open);
-
  useEffect(() => {
  if (!onOpenChange) {
  setInternalOpen(open);
  }
  }, [open, onOpenChange]);
-
  const handleOpenChange = (nextOpen: boolean) => {
  if (onOpenChange) {
  onOpenChange(nextOpen);
  } else {
  setInternalOpen(nextOpen);
  }
-
  if (!nextOpen) {
  onClose?.();
  }
  };
-
  return (
  <Dialog
  open={onOpenChange ? open : internalOpen}
@@ -56,7 +49,6 @@ export function ManusDialog({
  <img src={logo} alt="Staff Seekers eletricista profissional" className="w-10 h-10 rounded-md" width="40" height="40" />
  </div>
  ) : null}
-
  {/* Title and subtitle */}
  {title ? (
  <DialogTitle className="text-xl font-semibold text-[#34322d] leading-[26px] tracking-[-0.44px]">
@@ -67,7 +59,6 @@ export function ManusDialog({
  Please login with Manus to continue
  </DialogDescription>
  </div>
-
  <DialogFooter className="px-5 py-5">
  {/* Login button */}
  <Button

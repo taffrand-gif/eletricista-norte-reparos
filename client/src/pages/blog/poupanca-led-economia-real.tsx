@@ -414,7 +414,7 @@ export default function PoupancaLedEconomiaReal() {
  <ul className="space-y-2 mb-6 text-gray-800">
  <li className="flex items-start">
  <span className="text-orange-600 mr-2">✓</span>
- <span>Orçamento gratuito sem compromisso</span>
+ <span>Sem compromisso sem compromisso</span>
  </li>
  <li className="flex items-start">
  <span className="text-orange-600 mr-2">✓</span>
@@ -426,7 +426,7 @@ export default function PoupancaLedEconomiaReal() {
  </li>
  <li className="flex items-start">
  <span className="text-orange-600 mr-2">✓</span>
- <span>Garantia 2 anos peças e mão de obra</span>
+ <span>Garantia do serviço peças e mão de obra</span>
  </li>
  </ul>
  <div className="flex flex-col sm:flex-row gap-4">

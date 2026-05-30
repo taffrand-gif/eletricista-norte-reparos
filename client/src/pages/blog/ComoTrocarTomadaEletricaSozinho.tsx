@@ -1,14 +1,12 @@
 import React from 'react';
 import BlogLayout from '@/components/blog/BlogLayout';
 import { useSEO } from '@/hooks/useSEO';
-
 const ComoTrocarTomadaEletricaSozinho: React.FC = () => {
  useSEO({
  title: 'Como Trocar Tomada Elétrica Sozinho [Guia Seguro 2026]',
  description: 'Aprenda a trocar tomada elétrica sozinho com segurança. Guia passo a passo completo com fotos, materiais necessários e dicas profissionais.',
  keywords: 'trocar tomada, substituir tomada, tomada elétrica, instalação tomada, DIY elétrica, segurança elétrica'
  });
-
  return (
  <BlogLayout
  title="Como Trocar Tomada Elétrica Sozinho [Guia Seguro 2026]"
@@ -23,11 +21,9 @@ const ComoTrocarTomadaEletricaSozinho: React.FC = () => {
  <span>⏱️ 10 min de leitura</span>
  <span>📅 10 Mar 2026</span>
  </div>
-
  <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
  Como Trocar Tomada Elétrica Sozinho [Guia Seguro 2026]
  </h1>
-
  <div className="flex items-center gap-4">
  <div className="w-12 h-12 bg-cyan-200 rounded-full flex items-center justify-center">
  <span className="text-2xl">🔌</span>
@@ -38,21 +34,18 @@ const ComoTrocarTomadaEletricaSozinho: React.FC = () => {
  </div>
  </div>
  </div>
-
  <div className="prose prose-lg max-w-none mb-10">
  <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg mb-8">
  <p className="text-blue-900 font-semibold text-lg">
  ⚡ Trocar tomada elétrica é tarefa simples que demora 15 minutos. Siga regras de segurança e poupe 40-80€!
  </p>
  </div>
-
  <p className="text-xl text-gray-700 mb-6 leading-relaxed">
  Trocar tomada elétrica é uma das tarefas elétricas mais simples que pode fazer sozinho.
  Neste guia completo, vamos mostrar-lhe como trocar tomada com segurança total em apenas
  15 minutos, com ferramentas básicas que já tem em casa.
  </p>
  </div>
-
  <div className="bg-gray-50 rounded-2xl p-6 mb-10">
  <h2 className="text-2xl font-bold text-gray-900 mb-4">📋 Índice</h2>
  <ul className="space-y-2">
@@ -65,15 +58,12 @@ const ComoTrocarTomadaEletricaSozinho: React.FC = () => {
  <li><a href="#faq" className="text-cyan-600 hover:text-cyan-700 font-medium">7. Perguntas Frequentes</a></li>
  </ul>
  </div>
-
  <div className="prose prose-lg max-w-none">
  <section id="quando-trocar" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">🔍 Quando Trocar Tomada?</h2>
-
  <p className="mb-6">
  Reconheça os sinais que indicam necessidade de trocar tomada:
  </p>
-
  <div className="grid md:grid-cols-2 gap-6 mb-8">
  <div className="bg-red-50 p-6 rounded-xl border-2 border-red-200">
  <h3 className="font-bold text-red-900 mb-3 text-lg">🚨 Sinais Urgentes</h3>
@@ -85,7 +75,6 @@ const ComoTrocarTomadaEletricaSozinho: React.FC = () => {
  <li>• <strong>Plástico derretido:</strong> Dano térmico</li>
  </ul>
  </div>
-
  <div className="bg-orange-50 p-6 rounded-xl border-2 border-orange-200">
  <h3 className="font-bold text-orange-900 mb-3 text-lg">⚠️ Sinais de Desgaste</h3>
  <ul className="text-orange-800 space-y-2">
@@ -97,20 +86,16 @@ const ComoTrocarTomadaEletricaSozinho: React.FC = () => {
  </ul>
  </div>
  </div>
-
  <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-r-lg">
  <p className="text-yellow-900 font-semibold">
  💡 Dica: Troque todas as tomadas antigas ao mesmo tempo. Custo: 5-10€ por tomada vs 40-80€ eletricista.
  </p>
  </div>
  </section>
-
  <section id="materiais" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">🛠️ Materiais Necessários</h2>
-
  <div className="bg-green-50 p-6 rounded-xl border-2 border-green-200 mb-8">
  <h3 className="font-bold text-green-900 mb-4 text-xl">✅ Lista Completa (Total: 10-20€)</h3>
-
  <div className="grid md:grid-cols-2 gap-6">
  <div>
  <p className="font-bold text-green-900 mb-3">Materiais:</p>
@@ -133,23 +118,19 @@ const ComoTrocarTomadaEletricaSozinho: React.FC = () => {
  </div>
  </div>
  </div>
-
  <div className="bg-white p-6 rounded-xl border-2 border-gray-200 mb-8">
  <h3 className="font-bold text-gray-900 mb-4 text-xl">🔌 Tipos de Tomadas em Portugal</h3>
-
  <div className="space-y-4">
  <div className="bg-blue-50 p-4 rounded-lg">
  <h4 className="font-bold text-blue-900 mb-2">Tipo F (Schuko) - Mais Comum:</h4>
  <p className="text-blue-800 text-sm mb-2">2 pinos redondos + 2 contactos laterais de terra. Potência: até 3680W (16A).</p>
  <p className="text-blue-700 text-sm"><strong>Custo:</strong> 5-10€ | <strong>Uso:</strong> Eletrodomésticos gerais</p>
  </div>
-
  <div className="bg-green-50 p-4 rounded-lg">
  <h4 className="font-bold text-green-900 mb-2">Tipo E (Francesa):</h4>
  <p className="text-green-800 text-sm mb-2">2 pinos redondos + pino de terra central. Menos comum em Portugal.</p>
  <p className="text-green-700 text-sm"><strong>Custo:</strong> 6-12€ | <strong>Uso:</strong> Instalações antigas</p>
  </div>
-
  <div className="bg-purple-50 p-4 rounded-lg">
  <h4 className="font-bold text-purple-900 mb-2">USB + Tomada:</h4>
  <p className="text-purple-800 text-sm mb-2">Tomada Schuko + portas USB integradas. Moderna e prática.</p>
@@ -157,7 +138,6 @@ const ComoTrocarTomadaEletricaSozinho: React.FC = () => {
  </div>
  </div>
  </div>
-
  <div className="bg-cyan-50 p-6 rounded-xl">
  <h3 className="font-bold text-cyan-900 mb-3 text-lg">💡 Onde Comprar</h3>
  <ul className="text-cyan-800 space-y-2">
@@ -168,16 +148,13 @@ const ComoTrocarTomadaEletricaSozinho: React.FC = () => {
  </ul>
  </div>
  </section>
-
  <section id="seguranca" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">⚠️ Regras de Segurança OBRIGATÓRIAS</h2>
-
  <div className="bg-red-50 p-6 rounded-xl border-2 border-red-200 mb-8">
  <h3 className="font-bold text-red-900 mb-4 text-xl">🚨 REGRA #1: DESLIGUE SEMPRE A CORRENTE</h3>
  <p className="text-red-800 mb-4">
  Nunca trabalhe com corrente ligada. Choque elétrico pode ser fatal!
  </p>
-
  <div className="bg-white p-4 rounded-lg">
  <p className="font-bold text-gray-900 mb-2">Como Desligar Corretamente:</p>
  <ol className="text-gray-700 text-sm space-y-2 list-decimal pl-4">
@@ -189,7 +166,6 @@ const ComoTrocarTomadaEletricaSozinho: React.FC = () => {
  </ol>
  </div>
  </div>
-
  <div className="space-y-6">
  <div className="bg-white p-6 rounded-xl border-2 border-orange-200">
  <div className="flex items-start gap-4">
@@ -210,7 +186,6 @@ const ComoTrocarTomadaEletricaSozinho: React.FC = () => {
  </div>
  </div>
  </div>
-
  <div className="bg-white p-6 rounded-xl border-2 border-yellow-200">
  <div className="flex items-start gap-4">
  <div className="w-10 h-10 bg-yellow-500 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">
@@ -230,7 +205,6 @@ const ComoTrocarTomadaEletricaSozinho: React.FC = () => {
  </div>
  </div>
  </div>
-
  <div className="bg-white p-6 rounded-xl border-2 border-blue-200">
  <div className="flex items-start gap-4">
  <div className="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">
@@ -252,7 +226,6 @@ const ComoTrocarTomadaEletricaSozinho: React.FC = () => {
  </div>
  </div>
  </div>
-
  <div className="bg-white p-6 rounded-xl border-2 border-green-200">
  <div className="flex items-start gap-4">
  <div className="w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">
@@ -273,7 +246,6 @@ const ComoTrocarTomadaEletricaSozinho: React.FC = () => {
  </div>
  </div>
  </div>
-
  <div className="bg-red-50 p-6 rounded-xl border-2 border-red-200 mt-8">
  <h3 className="font-bold text-red-900 mb-3 text-lg">❌ Quando NÃO Fazer Sozinho</h3>
  <ul className="text-red-800 space-y-2">

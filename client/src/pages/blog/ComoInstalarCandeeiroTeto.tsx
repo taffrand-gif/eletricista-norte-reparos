@@ -2,14 +2,12 @@ import React from 'react';
 import BlogLayout from '@/components/blog/BlogLayout';
 import { useSEO } from '@/hooks/useSEO';
 import { ACTIVE_CONFIG } from '@/../../shared/serviceConfig';
-
 const ComoInstalarCandeeiroTeto: React.FC = () => {
  useSEO({
  title: 'Como Instalar um Candeeiro de Teto com Segurança: Guia Completo 2026',
  description: 'Guia passo a passo para instalar um candeeiro de teto de forma segura. Aprenda as normas de segurança, ferramentas necessárias e quando chamar um profissional.',
  keywords: 'instalar candeeiro teto, como ligar fios, eletricista DIY, segurança elétrica, instalação luminária'
  });
-
  return (
  <BlogLayout
  title="Como Instalar um Candeeiro de Teto com Segurança"
@@ -41,7 +39,6 @@ const ComoInstalarCandeeiroTeto: React.FC = () => {
  </div>
  </div>
  </div>
-
  {/* Featured image */}
  <div className="mb-10 rounded-2xl overflow-hidden">
  <img
@@ -56,7 +53,6 @@ const ComoInstalarCandeeiroTeto: React.FC = () => {
  Instalação segura requer ferramentas adequadas e conhecimento das normas
  </p>
  </div>
-
  {/* Introduction */}
  <div className="prose prose-lg max-w-none mb-10">
  <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg mb-8">
@@ -65,14 +61,12 @@ const ComoInstalarCandeeiroTeto: React.FC = () => {
  quadros elétricos antigos ou qualquer dúvida sobre segurança, contate sempre um eletricista certificado.
  </p>
  </div>
-
  <p className="text-xl text-gray-700 mb-6">
  Instalar um candeeiro de teto pode parecer uma tarefa simples, mas envolve riscos elétricos sérios 
  se não for feito corretamente. Neste guia completo, vamos percorrer cada passo da instalação, 
  desde a parranjo até ao teste final, sempre com foco na segurança.
  </p>
  </div>
-
  {/* Table of contents */}
  <div className="bg-gray-50 rounded-2xl p-6 mb-10">
  <h2 className="text-2xl font-bold text-gray-900 mb-4">📋 Neste Artigo</h2>
@@ -84,7 +78,6 @@ const ComoInstalarCandeeiroTeto: React.FC = () => {
  <li><a href="#quando-profissional" className="text-amber-600 hover:text-amber-700">5. Quando Chamar um Profissional</a></li>
  </ul>
  </div>
-
  {/* Content sections */}
  <div className="prose prose-lg max-w-none">
  <section id="ferramentas" className="mb-12">
@@ -115,7 +108,6 @@ const ComoInstalarCandeeiroTeto: React.FC = () => {
  </div>
  </div>
  </section>
-
  <section id="seguranca" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">2. ⚡ Medidas de Segurança Essenciais</h2>
  
@@ -128,7 +120,6 @@ const ComoInstalarCandeeiroTeto: React.FC = () => {
  <li>• Forçar conexões que não encaixam bem</li>
  </ul>
  </div>
-
  <h3 className="text-2xl font-bold text-gray-900 mb-4">Passos de Segurança Obrigatórios:</h3>
  <ol className="space-y-4">
  <li className="flex items-start gap-3">
@@ -154,9 +145,7 @@ const ComoInstalarCandeeiroTeto: React.FC = () => {
  </li>
  </ol>
  </section>
-
  {/* Continue with other sections... */}
-
  <section id="quando-profissional" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">5. 👨‍🔧 Quando Chamar um Eletricista Profissional</h2>
  
@@ -184,7 +173,6 @@ const ComoInstalarCandeeiroTeto: React.FC = () => {
  </ul>
  </div>
  </div>
-
  <div className="mt-8 text-center">
  <p className="text-xl text-gray-900 mb-6">
  Na dúvida, é sempre mais seguro chamar um eletricista certificado.
@@ -208,7 +196,6 @@ const ComoInstalarCandeeiroTeto: React.FC = () => {
  </div>
  </div>
  </section>
-
  {/* FAQ Section */}
  <section className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">❓ Perguntas Frequentes</h2>
@@ -234,7 +221,6 @@ const ComoInstalarCandeeiroTeto: React.FC = () => {
  </div>
  </section>
  </div>
-
  {/* Author bio */}
  <div className="bg-gray-50 rounded-2xl p-8 mt-12">
  <div className="flex flex-col md:flex-row gap-6 items-center">
@@ -260,5 +246,4 @@ const ComoInstalarCandeeiroTeto: React.FC = () => {
  </BlogLayout>
  );
 };
-
 export default ComoInstalarCandeeiroTeto;

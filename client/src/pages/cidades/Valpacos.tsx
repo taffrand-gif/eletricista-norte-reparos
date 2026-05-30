@@ -8,7 +8,6 @@ import { businessInfo, getCityAddress } from '@/../../shared/napConfig';
 import { getCidadesProximas } from '@/data/cidadesProximas';
 import { useEffect } from 'react';
 import { Phone, Clock, MapPin, Shield, Zap, CheckCircle } from 'lucide-react';
-
 export default function Valpacos() {
  useEffect(() => {
  document.title = "Eletricista Urgente Valpaços ⚡ 24h | 932 321 892";
@@ -20,7 +19,6 @@ export default function Valpacos() {
  document.head.appendChild(metaDescription);
  }
  metaDescription.setAttribute('content', 'Instalação elétrica em Valpaços? Especialistas em quadros agrícolas e domésticos. Orçamento sem compromisso. Ligue: 932 321 892');
-
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');
@@ -28,7 +26,6 @@ export default function Valpacos() {
  document.head.appendChild(canonical);
  }
  canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/eletricista-valpacos');
-
  const schemaScript = document.createElement('script');
  schemaScript.type = 'application/ld+json';
  schemaScript.id = 'schema-valpacos';
@@ -44,7 +41,6 @@ export default function Valpacos() {
  "priceRange": "€€"
  });
  document.head.appendChild(schemaScript);
-
  // FAQ Schema
  const faqSchema = document.createElement('script');
  faqSchema.type = 'application/ld+json';
@@ -62,15 +58,12 @@ export default function Valpacos() {
  }))
  });
  document.head.appendChild(faqSchema);
-
  return () => {
  const existingSchema = document.getElementById('schema-valpacos');
  if (existingSchema) existingSchema.remove();
  };
  }, []);
-
  const cidadesProximas = getCidadesProximas('valpacos');
-
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Valpaços desde Macedo de Cavaleiros?",
@@ -84,7 +77,6 @@ export default function Valpacos() {
  question: "Qual o custo de deslocação a Valpaços?",
  answer: "A deslocação é de 45€ (Zona 4). Chegamos em aproximadamente 50-60 minutos. Inclui todo o concelho."
  }];
-
  return (
  <div className="min-h-screen flex flex-col">
  <Header />
@@ -102,7 +94,6 @@ export default function Valpacos() {
  </div>
  </div>
  </section>
-
  <section className="py-16 bg-gray-50">
  <div className="container">
  <h2 className="text-3xl font-black text-center mb-12">Serviços Elétricos em Valpaços</h2>
@@ -126,14 +117,12 @@ export default function Valpacos() {
  </div>
  </div>
  </section>
-
  <section className="py-16">
  <div className="container max-w-4xl">
  <h2 className="text-3xl font-black text-center mb-12">Perguntas Frequentes - Valpaços</h2>
  <FAQSection faqs={faqs} />
  </div>
  </section>
-
  <section className="py-16 bg-orange-500 text-white">
  <div className="container text-center">
  <h2 className="text-3xl font-black mb-4">Precisa de Eletricista em Valpaços?</h2>
@@ -149,9 +138,7 @@ export default function Valpacos() {
  cidades={cidadesProximas}
  serviceType="eletricista"
  />
-
  
-
  <RelatedCities currentCity="Valpaços" currentCitySlug="eletricista-valpacos" />
  </main>
  <Footer />

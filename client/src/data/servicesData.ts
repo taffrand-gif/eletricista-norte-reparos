@@ -1,5 +1,4 @@
 // Services data for Eletricista Profissional (Electricidade)
-
 export interface Service {
  id: string;
  slug: string;
@@ -24,7 +23,6 @@ export interface Service {
  keywords: string[];
  };
 }
-
 export const SERVICES: Service[] = [
  // Service 1: Instalação Elétrica
  {
@@ -43,45 +41,33 @@ export const SERVICES: Service[] = [
  {
  title: 'Tipos de Instalações',
  content: `**Residenciais**: Casas novas, remodelações completas, ampliações, substituição de instalações antigas (sem terra → com terra), quadros elétricos monofásicos e trifásicos, iluminação interior e exterior, tomadas e interruptores, sistemas de aquecimento elétrico, portões automáticos, videoporteiros.
-
 **Comerciais**: Lojas, escritórios, restaurantes, hotéis, iluminação comercial (LED, spots, calhas), sistemas de climatização, redes informáticas, sistemas de segurança (alarmes, CCTV), sinalização de emergência.
-
 **Industriais**: Instalações trifásicas de alta potência, quadros elétricos industriais, motores e automatismos, iluminação industrial, sistemas de força, ligações de máquinas industriais.`
  },
  {
  title: 'Materiais e Certificações',
  content: `**Marcas Premium**: Legrand (tomadas, interruptores), Schneider Electric (quadros, disjuntores), Siemens (automação), Hager (proteções), ABB (industrial).
-
 **Cabos Certificados**: H07V-U/R (instalações fixas), H05VV-F (flexível), XV (enterrado), todos com marcação CE e certificação elétrica.
-
 **certificação elétrica Incluída**: Todas as instalações são certificadas pela (Associação Certificadora de Instalações Elétricas), obrigatório por lei. Certificado válido para venda/arrendamento de imóveis, seguros e inspeções.
-
 **Garantia 5 Anos**: Todas as instalações têm garantia de 5 anos (material + mão de obra), conforme legislação portuguesa.`
  },
  {
  title: 'Processo Profissional',
  content: `**FASE 1**: Visita técnica gratuita → Levantamento necessidades → Projeto elétrico (se necessário) → Orçamento detalhado.
-
 **FASE 2**: Compra materiais certificados → Parranjo obra → Proteção superfícies → Abertura roços (se necessário).
-
 **FASE 3**: Instalação tubagens e caixas → Passagem cabos → Montagem quadro elétrico → Ligação tomadas/interruptores/iluminação → Ligação terra.
-
 **FASE 4**: Testes elétricos (continuidade, isolamento, diferencial) → certificação elétrica → Entrega certificado + garantia → Limpeza completa.
-
 **Prazo**: 2-10 dias conforme dimensão (casa T3: 3-5 dias).`
  },
  {
  title: 'Preços Indicativos',
  content: `**Instalação Completa Casa Nova**: T1 desde 2.500€, T2 desde 3.500€, T3 desde 4.500€, T4+ desde 6.000€ (inclui materiais + mão de obra + certificação).
-
 **Remodelação Parcial**: Quarto 400€, Cozinha 600€, Casa de banho 500€, Sala 500€.
-
 **Serviços Avulsos**: Quadro elétrico 370-650€ (12 módulos), Tomada nova 138-182€, Tomada substituição 66-90€, Interruptor 58-78€, Ponto de luz 60-85€, Ligação máquina lavar 110-145€, Portão automático 280-420€.
-
 **Todos os preços incluem**: Materiais certificados, mão de obra, certificação elétrica, garantia 5 anos. Deslocação gratuita em Bragança e arredores.`
  }
  ],
- cta: 'Precisa de instalação elétrica? **Ligue já 932 321 892** para orçamento gratuito!'
+ cta: 'Precisa de instalação elétrica? **Ligue já 932 321 892** para sem compromisso!'
  },
  seo: {
  metaTitle: 'Instalação Elétrica Bragança | Certificada | Eletricista Profissional',
@@ -89,7 +75,6 @@ export const SERVICES: Service[] = [
  keywords: ['instalação elétrica bragança', 'eletricista bragança', 'certificação elétrica', 'quadro elétrico']
  }
  },
-
  // Service 2: Arranjo de Avarias
  {
  id: '2',
@@ -107,35 +92,24 @@ export const SERVICES: Service[] = [
  {
  title: 'Avarias Mais Comuns',
  content: `**Disjuntor que salta**: Sobrecarga (muitos aparelhos ligados), curto-circuito (cabo danificado), fuga de corrente (isolamento deficiente), disjuntor defeituoso.
-
 **Tomadas sem corrente**: Cabo partido, ligação solta, tomada queimada, problema no quadro.
-
 **Luzes que piscam**: Cabo solto, lâmpada defeituosa, problema transformador LED, mau contacto.
-
 **Cheiro a queimado**: URGENTE! Cabo sobreaquecido, tomada derretida, curto-circuito. Desligue o quadro e ligue imediatamente.
-
 **Choque elétrico**: Falta de ligação terra, aparelho defeituoso, isolamento danificado. Perigo de morte!`
  },
  {
  title: 'Equipamento de Diagnóstico',
  content: `**Multímetro Digital**: Mede tensão, corrente, resistência, continuidade. Identifica cabos partidos, ligações soltas.
-
 **Testador de Isolamento (Megger)**: Mede resistência de isolamento dos cabos. Deteta isolamento degradado (risco de choque/incêndio).
-
 **Detetor de Cabos**: Localiza cabos enterrados em paredes sem destruir. Evita furos acidentais.
-
 **Alicate Amperímetro**: Mede corrente sem interromper circuito. Identifica sobrecargas.
-
 **Testador Diferencial**: Verifica funcionamento do disjuntor diferencial (proteção contra choques).
-
 Diagnóstico preciso em 15-45 minutos. Orçamento antes de arranjar.`
  },
  {
  title: 'Arranjos Típicas',
  content: `**Substituição disjuntor**: 75-95€ (inclui disjuntor). **Arranjo tomada queimada**: 58-78€. **Substituição cabo danificado**: 110-160€ (até 10m). **Arranjo curto-circuito**: 150-210€. **Substituição quadro elétrico**: 370-650€ (12 módulos). **Ligação terra**: 180-250€.
-
 **Urgências 24h**: Acréscimo 50€ (noturno/fins de semana). Chegamos em 15-90 minutos conforme localização.
-
 **Garantia**: 12 meses em todas as arranjos. Se o problema voltar, arranjamos gratuitamente.`
  }
  ],
@@ -147,7 +121,6 @@ Diagnóstico preciso em 15-45 minutos. Orçamento antes de arranjar.`
  keywords: ['arranjo avaria elétrica', 'eletricista urgência bragança', 'disjuntor salta', 'curto-circuito']
  }
  },
-
  // Services 3-7 (condensed versions)
  {
  id: '3',
@@ -183,7 +156,6 @@ Diagnóstico preciso em 15-45 minutos. Orçamento antes de arranjar.`
  keywords: ['quadro elétrico bragança', 'modernização quadro', 'disjuntores', 'diferencial']
  }
  },
-
  {
  id: '4',
  slug: 'iluminacao-led',
@@ -218,7 +190,6 @@ Diagnóstico preciso em 15-45 minutos. Orçamento antes de arranjar.`
  keywords: ['iluminação led bragança', 'poupar eletricidade', 'lâmpadas led', 'spots led']
  }
  },
-
  {
  id: '5',
  slug: 'urgencias-24h',
@@ -253,7 +224,6 @@ Diagnóstico preciso em 15-45 minutos. Orçamento antes de arranjar.`
  keywords: ['eletricista urgência bragança', 'urgência 24h', 'avaria elétrica urgente', 'sem corrente']
  }
  },
-
  {
  id: '6',
  slug: 'inspecao-eletrica',
@@ -288,7 +258,6 @@ Diagnóstico preciso em 15-45 minutos. Orçamento antes de arranjar.`
  keywords: ['inspeção elétrica bragança', 'diagnóstico elétrico', 'teste isolamento', 'certificado elétrico']
  }
  },
-
  {
  id: '7',
  slug: 'certificacao-eletrica',
@@ -324,7 +293,6 @@ Diagnóstico preciso em 15-45 minutos. Orçamento antes de arranjar.`
  }
  }
 ];
-
 // Export categories for filtering
 export const SERVICE_CATEGORIES = [
  'Instalação',
@@ -335,12 +303,10 @@ export const SERVICE_CATEGORIES = [
  'Inspeção',
  'Certificação'
 ];
-
 // Export helper functions
 export const getServiceBySlug = (slug: string): Service | undefined => {
  return SERVICES.find(service => service.slug === slug);
 };
-
 export const getServicesByCategory = (category: string): Service[] => {
  if (category === 'Todos') return SERVICES;
  return SERVICES.filter(service => 

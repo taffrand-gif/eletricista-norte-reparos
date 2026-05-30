@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useEffect } from 'react';
 import { Phone, Snowflake, Lightbulb, ThermometerSnowflake, CheckCircle, TrendingDown } from 'lucide-react';
-
 export default function PoupancaEnergiaInverno() {
  useEffect(() => {
  document.title = "Poupar Energia no Inverno em Trás-os-Montes: 10 Dicas Práticas 2026 | Staff Seekers";
@@ -15,7 +14,6 @@ export default function PoupancaEnergiaInverno() {
  document.head.appendChild(metaDescription);
  }
  metaDescription.setAttribute('content', '10 dicas práticas para poupar energia no inverno transmontano. Aquecimento, iluminação, isolamento e soluções elétricas eficientes.');
-
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');
@@ -23,7 +21,6 @@ export default function PoupancaEnergiaInverno() {
  document.head.appendChild(canonical);
  }
  canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/blog/poupanca-energia-inverno-tras-os-montes');
-
  // JSON-LD Article Schema
  const script = document.createElement('script');
  script.type = 'application/ld+json';
@@ -48,12 +45,10 @@ export default function PoupancaEnergiaInverno() {
  "dateModified": "2026-02-19"
  });
  document.head.appendChild(script);
-
  return () => {
  document.head.removeChild(script);
  };
  }, []);
-
  const dicas = [
  {
  numero: 1,
@@ -126,7 +121,6 @@ export default function PoupancaEnergiaInverno() {
  investimento: "4.000€ - 8.000€ (sistema completo)"
  }
  ];
-
  return (
  <div className="min-h-screen flex flex-col">
  <Header />
@@ -147,7 +141,6 @@ export default function PoupancaEnergiaInverno() {
  </div>
  </div>
  </section>
-
  {/* Intro */}
  <section className="py-12">
  <div className="container max-w-3xl">
@@ -166,7 +159,6 @@ export default function PoupancaEnergiaInverno() {
  </div>
  </div>
  </section>
-
  {/* Contexto Trás-os-Montes */}
  <section className="py-12 bg-blue-50">
  <div className="container max-w-3xl">
@@ -203,7 +195,6 @@ export default function PoupancaEnergiaInverno() {
  </div>
  </div>
  </section>
-
  {/* 10 Dicas */}
  <section className="py-16">
  <div className="container max-w-3xl">
@@ -235,7 +226,6 @@ export default function PoupancaEnergiaInverno() {
  </div>
  </div>
  </section>
-
  {/* Comparação de Aquecimento */}
  <section className="py-12 bg-gray-50">
  <div className="container max-w-3xl">
@@ -296,7 +286,6 @@ export default function PoupancaEnergiaInverno() {
  </div>
  </div>
  </section>
-
  {/* Tarifa Bi-Horária */}
  <section className="py-12">
  <div className="container max-w-3xl">
@@ -337,7 +326,6 @@ export default function PoupancaEnergiaInverno() {
  </div>
  </div>
  </section>
-
  {/* Checklist */}
  <section className="py-12 bg-blue-50">
  <div className="container max-w-3xl">
@@ -381,7 +369,6 @@ export default function PoupancaEnergiaInverno() {
  </div>
  </div>
  </section>
-
  {/* Investimento vs Poupança */}
  <section className="py-12 bg-gray-50">
  <div className="container max-w-3xl">
@@ -438,7 +425,6 @@ export default function PoupancaEnergiaInverno() {
  </div>
  </div>
  </section>
-
  {/* CTA */}
  <section className="py-16 bg-orange-500 text-white">
  <div className="container text-center">
@@ -448,7 +434,7 @@ export default function PoupancaEnergiaInverno() {
  </h2>
  <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
  Instalação de LED, bombas de calor, sensores e otimização elétrica. 
- Orçamento gratuito em Trás-os-Montes.
+ Sem compromisso em Trás-os-Montes.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a href="tel:+351932321892" className="inline-flex items-center justify-center gap-2 bg-white text-orange-500 px-8 py-4 rounded-lg text-xl font-bold hover:bg-gray-100 transition-all shadow-lg">
@@ -461,7 +447,6 @@ export default function PoupancaEnergiaInverno() {
  </div>
  </div>
  </section>
-
  {/* Artigos Relacionados */}
  <section className="py-12 bg-gray-50">
  <div className="container max-w-3xl">

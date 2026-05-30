@@ -382,7 +382,7 @@ export default function QuadroEletricoDisparaCausas() {
  </li>
  <li className="flex items-start">
  <span className="text-orange-600 mr-2">✓</span>
- <span>Garantia 2 anos peças e mão de obra</span>
+ <span>Garantia do serviço peças e mão de obra</span>
  </li>
  <li className="flex items-start">
  <span className="text-orange-600 mr-2">✓</span>

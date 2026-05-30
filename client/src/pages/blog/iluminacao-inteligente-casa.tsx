@@ -1,7 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'wouter';
 import { Phone, MessageCircle, Lightbulb, Smartphone, TrendingDown, CheckCircle } from 'lucide-react';
-
 export default function IluminacaoInteligenteCasa() {
  return (
  <>
@@ -43,7 +42,6 @@ export default function IluminacaoInteligenteCasa() {
  })}
  </script>
  </Helmet>
-
  <article className="max-w-4xl mx-auto px-4 py-12">
  <header className="mb-8">
  <Link href="/blog">
@@ -58,14 +56,12 @@ export default function IluminacaoInteligenteCasa() {
  <span>13 min de leitura</span>
  </div>
  </header>
-
  <div className="prose prose-lg max-w-none mb-8">
  <p className="text-xl text-gray-700 leading-relaxed">
  Iluminação inteligente transforma sua casa com controlo por voz, automação e poupança de energia.
  Descubra tipos, vantagens, instalação, preços e como começar em 2026.
  </p>
  </div>
-
  {/* CTA */}
  <div className="bg-gradient-to-r from-purple-600 to-blue-600 rounded-xl p-6 mb-12 text-white">
  <div className="flex flex-col md:flex-row items-center justify-between">
@@ -85,15 +81,12 @@ export default function IluminacaoInteligenteCasa() {
  </div>
  </div>
  </div>
-
  <div className="prose prose-lg max-w-none">
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">O Que é Iluminação Inteligente?</h2>
-
  <p>
  Iluminação inteligente (smart lighting) são lâmpadas, interruptores e sistemas de iluminação controláveis remotamente
  por smartphone, tablet, voz (Alexa, Google Assistant) ou automação programada.
  </p>
-
  <p><strong>Funcionalidades principais:</strong></p>
  <ul>
  <li><strong>Controlo remoto:</strong> Ligar/desligar de qualquer lugar</li>
@@ -104,9 +97,7 @@ export default function IluminacaoInteligenteCasa() {
  <li><strong>Sensores:</strong> Movimento, luminosidade, presença</li>
  <li><strong>Integração:</strong> Alexa, Google Home, Apple HomeKit</li>
  </ul>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Tipos de Iluminação Inteligente</h2>
-
  <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">1. Lâmpadas Inteligentes</h3>
  <p>
  Lâmpadas LED com Wi-Fi/Bluetooth integrado. Substituem lâmpadas normais diretamente.
@@ -119,7 +110,6 @@ export default function IluminacaoInteligenteCasa() {
  <li><strong>Foco/Spot:</strong> GU10 para focos embutidos. 20-35€</li>
  </ul>
  <p><strong>Marcas populares:</strong> Philips Hue, IKEA Trådfri, TP-Link Tapo, Xiaomi Yeelight</p>
-
  <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">2. Interruptores Inteligentes</h3>
  <p>
  Substituem interruptores normais. Controlam lâmpadas normais (não precisam ser inteligentes).
@@ -132,7 +122,6 @@ export default function IluminacaoInteligenteCasa() {
  <li>Mantêm funcionalidade física (botão)</li>
  </ul>
  <p><strong>Preço:</strong> 25-60€ por interruptor + instalação 30-50€</p>
-
  <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">3. Fitas LED Inteligentes</h3>
  <p>
  Fitas LED RGB com controlo inteligente. Ideais para iluminação indireta (móveis, tetos, escadas).
@@ -145,14 +134,12 @@ export default function IluminacaoInteligenteCasa() {
  <li>Exterior (IP65)</li>
  </ul>
  <p><strong>Preço:</strong> 20-50€ por 5 metros</p>
-
  <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">4. Sensores de Movimento</h3>
  <p>
  Detetam movimento e ligam/desligam luzes automaticamente. Poupam energia e aumentam segurança.
  </p>
  <p><strong>Locais ideais:</strong> Corredores, escadas, WC, garagem, exterior</p>
  <p><strong>Preço:</strong> 15-40€ por sensor</p>
-
  <div className="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
  <div className="flex items-start gap-3">
  <Lightbulb className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
@@ -169,9 +156,7 @@ export default function IluminacaoInteligenteCasa() {
  </div>
  </div>
  </div>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Vantagens da Iluminação Inteligente</h2>
-
  <div className="grid md:grid-cols-2 gap-6 my-8">
  <div className="bg-green-50 border border-green-200 rounded-lg p-6">
  <h4 className="font-bold text-green-900 mb-3 flex items-center gap-2">
@@ -186,7 +171,6 @@ export default function IluminacaoInteligenteCasa() {
  <li><strong>Poupança: 20-30% (60-100€/ano)</strong></li>
  </ul>
  </div>
-
  <div className="bg-purple-50 border border-purple-200 rounded-lg p-6">
  <h4 className="font-bold text-purple-900 mb-3 flex items-center gap-2">
  <Smartphone className="w-5 h-5" />
@@ -200,7 +184,6 @@ export default function IluminacaoInteligenteCasa() {
  <li>✓ Não procurar interruptores no escuro</li>
  </ul>
  </div>
-
  <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
  <h4 className="font-bold text-blue-900 mb-3 flex items-center gap-2">
  <CheckCircle className="w-5 h-5" />
@@ -214,7 +197,6 @@ export default function IluminacaoInteligenteCasa() {
  <li>✓ Integração alarmes</li>
  </ul>
  </div>
-
  <div className="bg-orange-50 border border-orange-200 rounded-lg p-6">
  <h4 className="font-bold text-orange-900 mb-3">Valorização Imóvel</h4>
  <ul className="space-y-2 text-gray-700">
@@ -226,9 +208,7 @@ export default function IluminacaoInteligenteCasa() {
  </ul>
  </div>
  </div>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Preços e Investimento</h2>
-
  <div className="overflow-x-auto my-8">
  <table className="min-w-full bg-white border border-gray-300">
  <thead className="bg-gray-100">
@@ -272,13 +252,10 @@ export default function IluminacaoInteligenteCasa() {
  </tbody>
  </table>
  </div>
-
  <p className="text-sm text-gray-600 italic">
  * Preços válidos para Bragança e Trás-os-Montes em 2026. Instalação inclui configuração e programação.
  </p>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Como Começar</h2>
-
  <div className="space-y-6 my-8">
  <div className="flex gap-4">
  <div className="flex-shrink-0 w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold">1</div>
@@ -292,7 +269,6 @@ export default function IluminacaoInteligenteCasa() {
  </p>
  </div>
  </div>
-
  <div className="flex gap-4">
  <div className="flex-shrink-0 w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold">2</div>
  <div>
@@ -303,7 +279,6 @@ export default function IluminacaoInteligenteCasa() {
  </p>
  </div>
  </div>
-
  <div className="flex gap-4">
  <div className="flex-shrink-0 w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold">3</div>
  <div>
@@ -316,7 +291,6 @@ export default function IluminacaoInteligenteCasa() {
  </p>
  </div>
  </div>
-
  <div className="flex gap-4">
  <div className="flex-shrink-0 w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold">4</div>
  <div>
@@ -328,9 +302,7 @@ export default function IluminacaoInteligenteCasa() {
  </div>
  </div>
  </div>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Perguntas Frequentes</h2>
-
  <div className="space-y-6 my-8">
  <div className="bg-gray-50 rounded-lg p-6">
  <h4 className="font-bold text-gray-900 mb-2">Preciso de eletricista para instalar?</h4>
@@ -340,7 +312,6 @@ export default function IluminacaoInteligenteCasa() {
  <strong>Fitas LED:</strong> Não para instalação simples, sim para instalação embutida.
  </p>
  </div>
-
  <div className="bg-gray-50 rounded-lg p-6">
  <h4 className="font-bold text-gray-900 mb-2">Funciona sem internet?</h4>
  <p className="text-gray-700 mb-0">
@@ -349,7 +320,6 @@ export default function IluminacaoInteligenteCasa() {
  <strong>Automações:</strong> Sim, horários e sensores funcionam offline.
  </p>
  </div>
-
  <div className="bg-gray-50 rounded-lg p-6">
  <h4 className="font-bold text-gray-900 mb-2">Quanto poupa realmente?</h4>
  <p className="text-gray-700 mb-0">
@@ -357,7 +327,6 @@ export default function IluminacaoInteligenteCasa() {
  Com investimento 400-700€, retorno em 10-15 anos. Mas valor real está em conforto, segurança e valorização imóvel.
  </p>
  </div>
-
  <div className="bg-gray-50 rounded-lg p-6">
  <h4 className="font-bold text-gray-900 mb-2">Posso misturar marcas?</h4>
  <p className="text-gray-700 mb-0">
@@ -367,20 +336,16 @@ export default function IluminacaoInteligenteCasa() {
  </p>
  </div>
  </div>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Conclusão</h2>
-
  <p>
  Iluminação inteligente transforma sua casa com conforto, poupança e segurança. O investimento inicial de 400-700€
  para casa completa compensa em eficiência energética, valorização imóvel e qualidade de vida.
  </p>
-
  <p>
  Em Trás-os-Montes, com noites longas no inverno, iluminação inteligente otimiza consumo e cria ambientes acolhedores.
  Comece com kit inicial (80-150€) e expanda gradualmente conforme necessidades.
  </p>
  </div>
-
  {/* Final CTA */}
  <div className="bg-gradient-to-r from-purple-600 to-blue-600 rounded-xl p-8 mt-12 text-white text-center">
  <h3 className="text-2xl font-bold mb-4">Quer Instalar Iluminação Inteligente?</h3>
@@ -401,7 +366,6 @@ export default function IluminacaoInteligenteCasa() {
  ✓ Consultoria Gratuita ✓ Instalação Profissional ✓ Configuração Incluída
  </p>
  </div>
-
  {/* Related Articles */}
  <div className="mt-12 pt-8 border-t border-gray-200">
  <h3 className="text-2xl font-bold text-gray-900 mb-6">Artigos Relacionados</h3>

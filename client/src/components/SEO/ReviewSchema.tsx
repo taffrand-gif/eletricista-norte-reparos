@@ -1,6 +1,5 @@
 // Review Schema Component - Témoignages Individuels avec Rich Snippets
 // Affiche les étoiles dans Google Search Results
-
 interface ReviewData {
  author: string;
  rating: number;
@@ -8,13 +7,11 @@ interface ReviewData {
  text: string;
  city?: string;
 }
-
 interface ReviewSchemaProps {
  reviews: ReviewData[];
  businessName: string;
  businessUrl: string;
 }
-
 export function ReviewSchema({ reviews, businessName, businessUrl }: ReviewSchemaProps) {
  const schema = {
  "@context": "https://schema.org",
@@ -39,7 +36,6 @@ export function ReviewSchema({ reviews, businessName, businessUrl }: ReviewSchem
  "datePublished": review.date
  }))
  };
-
  return (
  <script
  type="application/ld+json"
@@ -47,7 +43,6 @@ export function ReviewSchema({ reviews, businessName, businessUrl }: ReviewSchem
  />
  );
 }
-
 // Témoignages Premium Eletricista
 export const eletricistaReviews: ReviewData[] = [
  {

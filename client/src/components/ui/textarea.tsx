@@ -2,7 +2,6 @@ import { useDialogComposition } from "@/components/ui/dialog";
 import { useComposition } from "@/hooks/useComposition";
 import { cn } from "@/lib/utils";
 import * as React from "react";
-
 function Textarea({
  className,
  onKeyDown,
@@ -12,7 +11,6 @@ function Textarea({
 }: React.ComponentProps<"textarea">) {
  // Get dialog composition context if available (will be no-op if not inside Dialog)
  const dialogComposition = useDialogComposition();
-
  // Add composition event handlers to support input method editor (IME) for CJK languages.
  const {
  onCompositionStart: handleCompositionStart,
@@ -21,14 +19,12 @@ function Textarea({
  onKeyDown: (e) => {
  // Check if this is an Enter key that should be blocked
  const isComposing = (e.nativeEvent as any).isComposing || dialogComposition.justEndedComposing();
-
  // If Enter key is pressed while composing or just after composition ended,
  // don't call the user's onKeyDown (this blocks the business logic)
  // Note: For textarea, Shift+Enter should still work for newlines
  if (e.key === "Enter" && !e.shiftKey && isComposing) {
  return;
  }
-
  // Otherwise, call the user's onKeyDown
  onKeyDown?.(e);
  },
@@ -46,7 +42,6 @@ function Textarea({
  }, 100);
  onCompositionEnd?.(e);
  }});
-
  return (
  <textarea
  data-slot="textarea"
@@ -61,5 +56,4 @@ function Textarea({
  />
  );
 }
-
 export { Textarea };

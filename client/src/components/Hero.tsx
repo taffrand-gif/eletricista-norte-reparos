@@ -4,30 +4,24 @@ import React from 'react';
 // - Hero de largura total com sobreposição
 // - Botão CTA grande com sombra dura
 // - Três badges de valor com bordas grossas
-
 import { useSite } from '@/contexts/SiteContext';
 import { useMemo } from 'react';
 import { Phone } from 'lucide-react';
 import { ServicesSlider } from './ServicesSlider';
 import { useAnalytics } from '@/hooks/useAnalytics';
 import { useLocationContent, usePersonalizedWhatsAppMessage } from '@/hooks/useLocationContent';
-
 function Hero() {
  const { config } = useSite();
  const { trackPhoneClick, trackWhatsAppClick } = useAnalytics();
  const { city, arrivalTime } = useLocationContent();
-
  // Título e subtítulo personalizados
  const personalizedTitle = useMemo(() => {
  return `${config.hero.title.split('—')[0]}— ${city}`;
  }, [config.hero.title, city]);
-
  const personalizedSubtitle = useMemo(() => {
  return `Serviço 24h/7d em ${city} • Chegamos em ${arrivalTime}`;
  }, [city, arrivalTime]);
-
  const whatsappMessage = usePersonalizedWhatsAppMessage(config.whatsappMessage);
-
  return (
  <section
  id="home"
@@ -41,30 +35,25 @@ function Hero() {
  className="absolute inset-0 w-full h-full object-cover"
  style={{ filter: 'brightness(0.35)' }}
  />
-
  <div className="container py-20 text-center text-white relative z-10">
  {/* Services Slider */}
  <div className="mb-12">
  <ServicesSlider />
  </div>
-
  {/* Título principal - Título massivo brutalista */}
  <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tight leading-none" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.5)' }}>
  {personalizedTitle}
  </h1>
-
  {/* Subtítulo */}
  <p className="text-xl md:text-2xl font-medium mb-12 max-w-3xl mx-auto">
  {personalizedSubtitle}
  </p>
-
  {/* Badge de urgência */}
  <div className="mb-6 inline-block">
  <div className="bg-red-600 text-white px-6 py-2 rounded-full font-bold text-sm animate-pulse">
  🚨 TÉCNICO DISPONÍVEL EM {city.toUpperCase()} • CHEGAMOS EM {arrivalTime.toUpperCase()}
  </div>
  </div>
-
  {/* Botões CTA — mobile: largura total empilhados, desktop: inline */}
  <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
  <a
@@ -93,7 +82,6 @@ function Hero() {
  💬 WhatsApp Grátis
  </a>
  </div>
-
  {/* Indicadores de confiança abaixo do CTA */}
  <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4 text-white text-sm">
  <div className="flex items-center gap-2">
@@ -113,5 +101,4 @@ function Hero() {
  </section>
  );
 }
-
 export default React.memo(Hero);

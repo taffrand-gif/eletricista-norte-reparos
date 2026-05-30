@@ -8,7 +8,6 @@ import { businessInfo, getCityAddress } from '@/../../shared/napConfig';
 import { getCidadesProximas } from '@/data/cidadesProximas';
 import { useEffect } from 'react';
 import { Phone, Clock, MapPin, Shield, Zap, CheckCircle } from 'lucide-react';
-
 export default function PesoDaRegua() {
  useEffect(() => {
  document.title = "Eletricista Peso da Régua 24h | 932 321 892";
@@ -19,8 +18,7 @@ export default function PesoDaRegua() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Eletricista em Peso da Régua, capital do Douro. Instalações para caves de vinho, museus, hotéis e comércio. Quadros elétricos, certificação. Orçamento gratuito.');
-
+ metaDescription.setAttribute('content', 'Eletricista em Peso da Régua, capital do Douro. Instalações para caves de vinho, museus, hotéis e comércio. Quadros elétricos, certificação. Sem compromisso.');
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');
@@ -28,7 +26,6 @@ export default function PesoDaRegua() {
  document.head.appendChild(canonical);
  }
  canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/eletricista-peso-da-regua');
-
  const schemaScript = document.createElement('script');
  schemaScript.type = 'application/ld+json';
  schemaScript.id = 'schema-regua';
@@ -44,7 +41,6 @@ export default function PesoDaRegua() {
  "priceRange": "€€"
  });
  document.head.appendChild(schemaScript);
-
  // FAQ Schema
  const faqSchema = document.createElement('script');
  faqSchema.type = 'application/ld+json';
@@ -62,15 +58,12 @@ export default function PesoDaRegua() {
  }))
  });
  document.head.appendChild(faqSchema);
-
  return () => {
  const existingSchema = document.getElementById('schema-regua');
  if (existingSchema) existingSchema.remove();
  };
  }, []);
-
  const cidadesProximas = getCidadesProximas('peso-regua');
-
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Peso da Régua?",
@@ -84,7 +77,6 @@ export default function PesoDaRegua() {
  question: "Qual o custo de deslocação a Peso da Régua?",
  answer: "A deslocação é de 45€ (Zona 4). Chegamos em aproximadamente 70-80 minutos. Inclui todo o concelho."
  }];
-
  return (
  <div className="min-h-screen flex flex-col">
  <Header />
@@ -102,7 +94,6 @@ export default function PesoDaRegua() {
  </div>
  </div>
  </section>
-
  <section className="py-16 bg-gray-50">
  <div className="container">
  <h2 className="text-3xl font-black text-center mb-12">Serviços Elétricos em Peso da Régua</h2>
@@ -126,14 +117,12 @@ export default function PesoDaRegua() {
  </div>
  </div>
  </section>
-
  <section className="py-16">
  <div className="container max-w-4xl">
  <h2 className="text-3xl font-black text-center mb-12">Perguntas Frequentes - Peso da Régua</h2>
  <FAQSection faqs={faqs} />
  </div>
  </section>
-
  <section className="py-16 bg-orange-500 text-white">
  <div className="container text-center">
  <h2 className="text-3xl font-black mb-4">Precisa de Eletricista em Peso da Régua?</h2>
@@ -149,9 +138,7 @@ export default function PesoDaRegua() {
  cidades={cidadesProximas}
  serviceType="eletricista"
  />
-
  
-
  <RelatedCities currentCity="Peso da Régua" currentCitySlug="eletricista-peso-da-regua" />
  </main>
  <Footer />

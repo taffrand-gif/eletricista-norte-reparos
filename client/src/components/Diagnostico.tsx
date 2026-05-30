@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useSite } from '@/contexts/SiteContext';
-
 const problems = {
  'staff-seekers': [
  { icon: '⚡', label: 'Sem Luz', value: 'sem-luz' },
@@ -16,13 +15,11 @@ const problems = {
  { icon: '🛁', label: 'Casa de Banho', value: 'casa-banho' },
  { icon: '🔧', label: 'Outro Problema', value: 'outro' },
  ]};
-
 const urgencies = [
  { icon: '🚨', label: 'É URGENTE — agora', value: 'urgente' },
  { icon: '📅', label: 'Esta semana', value: 'semana' },
  { icon: '🗓️', label: 'Sem pressa', value: 'sem-pressa' },
 ];
-
 const cities = [
  { label: 'Macedo de Cavaleiros', value: 'macedo', zone: 1, price: 15, time: '15 min' },
  { label: 'Mirandela', value: 'mirandela', zone: 2, price: 25, time: '25 min' },
@@ -31,7 +28,6 @@ const cities = [
  { label: 'Chaves', value: 'chaves', zone: 6, price: 65, time: '55 min' },
  { label: 'Outra cidade', value: 'outra', zone: 0, price: 0, time: '' },
 ];
-
 export default function Diagnostico() {
  const { config } = useSite();
  const isPlumber = config.id === 'norte-reparos';
@@ -39,14 +35,12 @@ export default function Diagnostico() {
  const [problem, setProblem] = useState('');
  const [urgency, setUrgency] = useState('');
  const [city, setCity] = useState('');
-
  const siteProblems = isPlumber ? problems['norte-reparos'] : problems['staff-seekers'];
  const phone = isPlumber ? '928484451' : '932321892';
  const whatsapp = isPlumber ? '351928484451' : '351932321892';
  const accentColor = isPlumber ? '#0e7490' : '#FF6B35';
  const selectedCity = cities.find(c => c.value === city);
  const selectedProblem = siteProblems.find(p => p.value === problem);
-
  const buildWhatsAppMsg = () => {
  const parts = [];
  parts.push('Olá!');
@@ -56,7 +50,6 @@ export default function Diagnostico() {
  parts.push('Podem vir?');
  return encodeURIComponent(parts.join(' '));
  };
-
  return (
  <section className="py-16 bg-gray-50">
  <div className="container mx-auto px-4 max-w-3xl">
@@ -68,7 +61,6 @@ export default function Diagnostico() {
  Responda em 3 passos — receba estimativa imediata
  </p>
  </div>
-
  <div className="bg-white rounded-2xl shadow-lg p-8">
  {/* Progress bar */}
  <div className="flex gap-2 mb-8">
@@ -80,13 +72,11 @@ export default function Diagnostico() {
  />
  ))}
  </div>
-
  <div className="text-center mb-6 text-sm text-gray-500 italic">
  {step === 1 && '💰 Preço combinado antes de começar. Sem surpresas.'}
  {step === 2 && '📋 Fatura com NIF sempre emitida. Garantia 12 meses.'}
  {step === 3 && '🤝 Sem pressões. Explicamos tudo com calma.'}
  </div>
-
  {/* Step 1: Problem */}
  {step === 1 && (
  <div>
@@ -108,7 +98,6 @@ export default function Diagnostico() {
  </div>
  </div>
  )}
-
  {/* Step 2: Urgency */}
  {step === 2 && (
  <div>
@@ -131,7 +120,6 @@ export default function Diagnostico() {
  <button onClick={() => setStep(1)} className="mt-4 text-sm text-gray-500 hover:text-gray-700">← Voltar</button>
  </div>
  )}
-
  {/* Step 3: City */}
  {step === 3 && (
  <div>
@@ -154,7 +142,6 @@ export default function Diagnostico() {
  <button onClick={() => setStep(2)} className="mt-4 text-sm text-gray-500 hover:text-gray-700">← Voltar</button>
  </div>
  )}
-
  {/* Result */}
  {step === 3 && city && (
  <div className="mt-8 p-6 rounded-xl border-2" style={{ borderColor: accentColor, backgroundColor: `${accentColor}08` }}>

@@ -1,15 +1,12 @@
 // FAQSchema - Featured Snippets pour Google
 // Affiche les FAQ directement dans les résultats (+10% visibilité)
-
 interface FAQ {
  question: string;
  answer: string;
 }
-
 interface FAQSchemaProps {
  faqs: FAQ[];
 }
-
 export function FAQSchema({ faqs }: FAQSchemaProps) {
  const schema = {
  "@context": "https://schema.org",
@@ -23,7 +20,6 @@ export function FAQSchema({ faqs }: FAQSchemaProps) {
  }
  }))
  };
-
  return (
  <script
  type="application/ld+json"
@@ -31,7 +27,6 @@ export function FAQSchema({ faqs }: FAQSchemaProps) {
  />
  );
 }
-
 // FAQ Premium pour Eletricista
 export const eletricistaFAQs: FAQ[] = [
  {
@@ -67,7 +62,7 @@ export const eletricistaFAQs: FAQ[] = [
  answer: "Sim, aceitamos dinheiro, cartão multibanco, transferência bancária e MBWay. Pagamento após conclusão do serviço."
  },
  {
- question: "Fazem orçamento gratuito?",
+ question: "Fazem sem compromisso?",
  answer: "Sim, o orçamento é sempre gratuito e sem compromisso. Só paga se aprovar o serviço."
  },
  {

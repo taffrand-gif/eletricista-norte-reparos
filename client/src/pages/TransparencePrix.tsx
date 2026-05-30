@@ -9,10 +9,8 @@ import {
  AccordionContent,
  AccordionItem,
  AccordionTrigger} from '@/components/ui/accordion';
-
 export default function TransparencePrix() {
  const { config } = useSite();
-
  // Prix détaillés par service
  const forfaits = [
  {
@@ -82,7 +80,6 @@ export default function TransparencePrix() {
  ]
  }
  ];
-
  // Taux horaire et majorations
  const tauxHoraire = {
  base: "70€/hora",
@@ -90,7 +87,6 @@ export default function TransparencePrix() {
  urgent: "+50% (noite/feriados)",
  deplacement: "15€ - 65€ (conforme zona)"
  };
-
  // FAQ Prix
  const faqPrix = [
  {
@@ -122,16 +118,13 @@ export default function TransparencePrix() {
  answer: "Porque valorizamos a sua segurança e paz de espírito. Um eletricista barato pode: usar materiais de baixa qualidade que falham rapidamente, não ter seguro (se causar danos, o problema é seu), não emitir certificação elétrica (ilegal e perigoso), desaparecer quando há problemas. Nós somos uma empresa estabelecida há 15 anos, com satisfeitos, seguro de responsabilidade civil, e garantia real. O barato sai caro."
  }
  ];
-
  return (
  <>
  <SEOHead
  title={`Transparência de Preços - O ÚNICO Eletricista de Trás-os-Montes que Publica os Seus Preços | ${config.name}`}
  description="Somos o ÚNICO eletricista em Trás-os-Montes com preços 100% transparentes publicados online. Veja todos os nossos preços, sem surpresas, sem letra pequena. Pequena arranjo desde 30€, quadros elétricos desde 150€. Garantia satisfeito ou reembolsado."
  />
-
  <Header />
-
  <main>
  {/* Hero Section */}
  <section className="py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white relative overflow-hidden">
@@ -139,24 +132,20 @@ export default function TransparencePrix() {
  <div className="absolute top-0 left-0 w-96 h-96 bg-[var(--site-primary)] rounded-full blur-3xl"></div>
  <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
  </div>
-
  <div className="container relative z-10">
  <div className="max-w-4xl mx-auto text-center">
  <div className="inline-block mb-6 px-6 py-2 bg-[var(--site-primary)] text-white font-bold rounded-full text-sm">
  🏆 TRANSPARÊNCIA TOTAL
  </div>
-
  <h1 className="text-5xl md:text-6xl font-black mb-6 leading-tight">
  O <span className="text-[var(--site-primary)]">ÚNICO</span> Eletricista de<br />
  Trás-os-Montes que<br />
  Publica os Seus Preços
  </h1>
-
  <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
  Enquanto a concorrência esconde os preços e dá "surpresas" na fatura,<br />
  nós publicamos TUDO online. Sem letra pequena. Sem truques.
  </p>
-
  <div className="flex flex-wrap justify-center gap-4 mb-12">
  <div className="flex items-center gap-2 bg-white/10 px-6 py-3 rounded-lg backdrop-blur-sm">
  <Check className="w-5 h-5 text-green-400" />
@@ -171,7 +160,6 @@ export default function TransparencePrix() {
  <span className="font-semibold">Garantia Escrita</span>
  </div>
  </div>
-
  <a
  href={`tel:+351${config.phone.replace(/\s/g, '')}`}
  className="inline-flex items-center gap-3 px-8 py-4 bg-[var(--site-primary)] text-white font-bold text-lg rounded-lg hover:bg-[var(--site-primary-dark)] transition-all shadow-2xl hover:scale-105"
@@ -182,7 +170,6 @@ export default function TransparencePrix() {
  </div>
  </div>
  </section>
-
  {/* Forfaits Grid */}
  <section className="py-20 bg-white">
  <div className="container">
@@ -194,7 +181,6 @@ export default function TransparencePrix() {
  Valores sem IVA (Art. 53º CIVA). O que vê é o que paga. Sempre.
  </p>
  </div>
-
  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
  {forfaits.map((forfait, idx) => (
  <div
@@ -206,14 +192,12 @@ export default function TransparencePrix() {
  <h3 className="text-xl font-bold text-gray-900">{forfait.title}</h3>
  <Clock className="w-5 h-5 text-gray-400" />
  </div>
-
  <div className="mb-4">
  <div className="text-3xl font-black text-[var(--site-primary)] mb-1">
  {forfait.price}
  </div>
  <div className="text-sm text-gray-500">{forfait.duration}</div>
  </div>
-
  <ul className="space-y-2">
  {forfait.includes.map((item, i) => (
  <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
@@ -227,7 +211,6 @@ export default function TransparencePrix() {
  </div>
  </div>
  </section>
-
  {/* Taxa Horária */}
  <section className="py-20 bg-gray-50">
  <div className="container">
@@ -235,7 +218,6 @@ export default function TransparencePrix() {
  <h2 className="text-4xl font-black mb-12 text-center">
  Taxa Horária & <span className="text-[var(--site-primary)]">Acréscimos</span>
  </h2>
-
  <div className="grid md:grid-cols-2 gap-6">
  <div className="bg-white p-8 rounded-xl border-4" style={{ borderColor: config.colors.primary }}>
  <div className="flex items-center gap-3 mb-4">
@@ -249,7 +231,6 @@ export default function TransparencePrix() {
  Para trabalhos que não se enquadram nos forfaits acima. Mínimo 1 hora.
  </p>
  </div>
-
  <div className="bg-white p-8 rounded-xl border-4 border-gray-200">
  <div className="flex items-center gap-3 mb-4">
  <Clock className="w-8 h-8 text-orange-600" />
@@ -262,7 +243,6 @@ export default function TransparencePrix() {
  Sábados 90€/h, Domingos/Feriados 100€/h. Mínimo 30 minutos.
  </p>
  </div>
-
  <div className="bg-white p-8 rounded-xl border-4 border-gray-200">
  <div className="flex items-center gap-3 mb-4">
  <Zap className="w-8 h-8 text-red-600" />
@@ -275,7 +255,6 @@ export default function TransparencePrix() {
  Noite (18h-08h) e feriados: +50% sobre tarifa base. Fração mínima 1h.
  </p>
  </div>
-
  <div className="bg-white p-8 rounded-xl border-4 border-gray-200">
  <div className="flex items-center gap-3 mb-4">
  <AlertCircle className="w-8 h-8 text-blue-600" />
@@ -292,7 +271,6 @@ export default function TransparencePrix() {
  </div>
  </div>
  </section>
-
  {/* Pourquoi Plus Cher */}
  <section className="py-20 bg-white">
  <div className="container">
@@ -306,7 +284,6 @@ export default function TransparencePrix() {
  Transparência total: eis onde vai o seu dinheiro
  </p>
  </div>
-
  <div className="grid md:grid-cols-2 gap-8">
  <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl border-2 border-blue-200">
  <Award className="w-12 h-12 text-blue-600 mb-4" />
@@ -316,7 +293,6 @@ export default function TransparencePrix() {
  Formação contínua obrigatória. Não contratamos "ajudantes" sem qualificação.
  </p>
  </div>
-
  <div className="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-xl border-2 border-green-200">
  <Shield className="w-12 h-12 text-green-600 mb-4" />
  <h3 className="text-xl font-bold mb-3 text-gray-900">Materiais Premium</h3>
@@ -325,7 +301,6 @@ export default function TransparencePrix() {
  Materiais baratos falham em 6 meses. Os nossos duram 10+ anos.
  </p>
  </div>
-
  <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-xl border-2 border-purple-200">
  <TrendingUp className="w-12 h-12 text-purple-600 mb-4" />
  <h3 className="text-xl font-bold mb-3 text-gray-900">Garantia Alargada</h3>
@@ -334,7 +309,6 @@ export default function TransparencePrix() {
  Voltamos gratuitamente se houver problemas.
  </p>
  </div>
-
  <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-8 rounded-xl border-2 border-orange-200">
  <Users className="w-12 h-12 text-orange-600 mb-4" />
  <h3 className="text-xl font-bold mb-3 text-gray-900">Seguro & Legalidade</h3>
@@ -344,7 +318,6 @@ export default function TransparencePrix() {
  </p>
  </div>
  </div>
-
  <div className="mt-12 bg-gray-900 text-white p-8 rounded-xl text-center">
  <p className="text-2xl font-bold mb-4">
  O Barato Sai Caro em Eletricidade
@@ -357,7 +330,6 @@ export default function TransparencePrix() {
  </div>
  </div>
  </section>
-
  {/* Garanties */}
  <section className="py-20 bg-gradient-to-br from-[var(--site-primary)] to-[var(--site-primary-dark)] text-white">
  <div className="container">
@@ -370,7 +342,6 @@ export default function TransparencePrix() {
  Se não ficar completamente satisfeito com o nosso trabalho, voltamos gratuitamente para corrigir.
  Se mesmo assim não resolver, devolvemos o valor pago. Sem perguntas, sem letra pequena.
  </p>
-
  <div className="grid md:grid-cols-3 gap-6 mb-12">
  <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
  <div className="text-3xl font-black mb-2">12 meses</div>
@@ -385,7 +356,6 @@ export default function TransparencePrix() {
  <div className="text-white/80">Seguro Responsabilidade</div>
  </div>
  </div>
-
  <p className="text-sm text-white/70 italic">
  Em 15 anos de atividade, apenas 2 clientes pediram reembolso.
  A nossa taxa de satisfação é de 99.6%.
@@ -393,7 +363,6 @@ export default function TransparencePrix() {
  </div>
  </div>
  </section>
-
  {/* FAQ Prix */}
  <section className="py-20 bg-white">
  <div className="container">
@@ -406,7 +375,6 @@ export default function TransparencePrix() {
  Transparência total. Sem dúvidas, sem surpresas.
  </p>
  </div>
-
  <Accordion type="single" collapsible className="space-y-4">
  {faqPrix.map((faq, index) => (
  <AccordionItem
@@ -427,7 +395,6 @@ export default function TransparencePrix() {
  </div>
  </div>
  </section>
-
  {/* CTA Final */}
  <section className="py-20 bg-gray-900 text-white">
  <div className="container">
@@ -440,7 +407,6 @@ export default function TransparencePrix() {
  Ligue agora. Diga-nos onde está e o que precisa.
  Damos-lhe o preço exato ao telefone. Sem surpresas na fatura.
  </p>
-
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a
  href={`tel:+351${config.phone.replace(/\s/g, '')}`}
@@ -449,7 +415,6 @@ export default function TransparencePrix() {
  <Phone className="w-6 h-6" />
  Ligar: {config.phone}
  </a>
-
  <a
  href={`https://wa.me/351${config.phone.replace(/\s/g, '')}?text=${encodeURIComponent('Olá, gostaria de um orçamento transparente para serviços elétricos.')}`}
  target="_blank"
@@ -463,7 +428,6 @@ export default function TransparencePrix() {
  </div>
  </section>
  </main>
-
  <Footer />
  </>
  );

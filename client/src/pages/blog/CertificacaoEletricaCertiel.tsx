@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useEffect } from 'react';
 import { Phone, FileCheck, CheckCircle, AlertTriangle, Euro } from 'lucide-react';
-
 export default function CertificacaoEletricaCertiel() {
  useEffect(() => {
  document.title = "Certificação Elétrica - Guia Completo 2026 | Preços e Prazos";
@@ -15,7 +14,6 @@ export default function CertificacaoEletricaCertiel() {
  document.head.appendChild(metaDescription);
  }
  metaDescription.setAttribute('content', 'Tudo sobre certificação elétrica em Portugal. Quando é obrigatória, quanto custa, prazos, documentos necessários. Guia atualizado 2026.');
-
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');
@@ -24,7 +22,6 @@ export default function CertificacaoEletricaCertiel() {
  }
  canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/blog/certificacao-eletrica--guia');
  }, []);
-
  return (
  <div className="min-h-screen flex flex-col">
  <Header />
@@ -45,7 +42,6 @@ export default function CertificacaoEletricaCertiel() {
  </div>
  </div>
  </section>
-
  {/* Content */}
  <article className="py-16">
  <div className="container max-w-3xl">
@@ -66,7 +62,6 @@ export default function CertificacaoEletricaCertiel() {
  instalações domésticas.
  </p>
  </section>
-
  {/* Quando é obrigatória */}
  <section className="mb-12">
  <h2 className="text-2xl font-black mb-4">Quando é Obrigatória?</h2>
@@ -88,7 +83,6 @@ export default function CertificacaoEletricaCertiel() {
  ))}
  </div>
  </section>
-
  {/* Preços */}
  <section className="mb-12">
  <h2 className="text-2xl font-black mb-4 flex items-center gap-2">
@@ -131,7 +125,6 @@ export default function CertificacaoEletricaCertiel() {
  </p>
  </div>
  </section>
-
  {/* Problemas comuns */}
  <section className="mb-12">
  <h2 className="text-2xl font-black mb-4 flex items-center gap-2">
@@ -159,7 +152,6 @@ export default function CertificacaoEletricaCertiel() {
  Fazemos a inspeção prévia, corrigimos o necessário, e emitimos o certificado.
  </p>
  </section>
-
  {/* Prazo */}
  <section className="mb-12">
  <h2 className="text-2xl font-black mb-4">Quanto Tempo Demora?</h2>
@@ -181,10 +173,8 @@ export default function CertificacaoEletricaCertiel() {
  <strong>Total:</strong> Em casos simples, pode ter o certificado em 4-5 dias úteis.
  </p>
  </section>
-
  </div>
  </article>
-
  {/* CTA */}
  <section className="py-16 bg-orange-500 text-white">
  <div className="container text-center">

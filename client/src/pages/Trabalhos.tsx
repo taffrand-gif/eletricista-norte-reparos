@@ -3,14 +3,12 @@ import Footer from "@/components/Footer";
 import { ACTIVE_CONFIG } from "../../../shared/serviceConfig";
 import { useSEO } from "@/hooks/useSEO";
 import { Card } from "@/components/ui/card";
-
 export default function Trabalhos() {
  const config = ACTIVE_CONFIG;
  
  useSEO({
  title: `Trabalhos Realizados - ${config.name}`,
  description: `Veja os nossos trabalhos de ${config.type === 'plomberie' ? 'canalização' : 'eletricidade'} em Bragança. Galeria antes/depois.`});
-
  const projects = Array.from({ length: 10 }, (_, i) => ({
  id: i + 1,
  title: config.type === 'plomberie' 
@@ -18,7 +16,6 @@ export default function Trabalhos() {
  : ['Substituição Quadro Elétrico', 'Instalação Tomadas', 'Arranjo Curto-Circuito', 'Iluminação LED'][i % 4],
  location: ['Bragança', 'Macedo de Cavaleiros', 'Mirandela', 'Vinhais'][i % 4],
  date: '2026'}));
-
  return (
  <div className="min-h-screen flex flex-col">
  <Header />
@@ -34,7 +31,6 @@ export default function Trabalhos() {
  </p>
  </div>
  </section>
-
  <section className="py-16">
  <div className="container">
  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -55,7 +51,6 @@ export default function Trabalhos() {
  </div>
  </div>
  </section>
-
  <section className="bg-gray-50 py-16">
  <div className="container text-center">
  <h2 className="text-3xl font-bold mb-4">Precisa de um Serviço?</h2>
@@ -65,7 +60,6 @@ export default function Trabalhos() {
  </div>
  </section>
  </main>
-
  <Footer />
 </div>
  );

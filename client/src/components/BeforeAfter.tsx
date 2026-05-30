@@ -2,10 +2,8 @@ import React from 'react';
 // Component: Before/After Showcase - Eletricista
 // Visual proof of transformations - builds trust and demonstrates value
 // Shows real electrical problems solved with dramatic before/after comparisons
-
 import { useSite } from '@/contexts/SiteContext';
 import { useState, useMemo } from 'react';
-
 interface Case {
  id: string;
  title: string;
@@ -17,11 +15,9 @@ interface Case {
  beforeEmoji: string;
  afterEmoji: string;
 }
-
 function BeforeAfter() {
  const { config } = useSite();
  const [activeCase, setActiveCase] = useState(0);
-
  const cases = useMemo<Case[]>(() => [
  {
  id: 'breaker',
@@ -64,9 +60,7 @@ function BeforeAfter() {
  beforeEmoji: '📄',
  afterEmoji: '✅'},
  ], []);
-
  const currentCase = cases[activeCase];
-
  return (
  <section className="py-20 bg-gradient-to-b from-white to-gray-50">
  <div className="container">
@@ -81,7 +75,6 @@ function BeforeAfter() {
  Veja como resolvemos definitivamente com certificação elétrica.
  </p>
  </div>
-
  {/* Case Selector */}
  <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
  {cases.map((c, index) => (
@@ -106,7 +99,6 @@ function BeforeAfter() {
  </button>
  ))}
  </div>
-
  {/* Before/After Comparison */}
  <div className="bg-white rounded-lg border-4 shadow-xl overflow-hidden" style={{ borderColor: config.colors.primary }}>
  <div className="grid md:grid-cols-2">
@@ -123,7 +115,6 @@ function BeforeAfter() {
  {currentCase.problem}
  </p>
  </div>
-
  {/* AFTER */}
  <div className="p-8 bg-green-50">
  <div className="flex items-center gap-3 mb-6">
@@ -136,7 +127,6 @@ function BeforeAfter() {
  <p className="text-lg text-gray-800 leading-relaxed mb-6">
  {currentCase.solution}
  </p>
-
  {/* Stats */}
  <div className="space-y-3">
  <div className="flex items-center gap-2">
@@ -160,7 +150,6 @@ function BeforeAfter() {
  </div>
  </div>
  </div>
-
  {/* Case Title */}
  <div className="p-6 text-center" style={{ backgroundColor: `${config.colors.primary}15` }}>
  <h4 className="text-2xl font-black" style={{ color: config.colors.primary }}>
@@ -168,7 +157,6 @@ function BeforeAfter() {
  </h4>
  </div>
  </div>
-
  {/* CTA */}
  <div className="mt-12 text-center">
  <p className="text-2xl font-black mb-6">
@@ -195,7 +183,6 @@ function BeforeAfter() {
  ✅ Inspeção grátis • ✅ certificação elétrica • ✅ Chegamos em 40min
  </p>
  </div>
-
  {/* Social Proof */}
  <div className="mt-12 p-6 bg-white rounded-lg border-2 border-gray-200">
  <p className="text-center text-gray-700">
@@ -208,5 +195,4 @@ function BeforeAfter() {
  </section>
  );
 }
-
 export default React.memo(BeforeAfter);

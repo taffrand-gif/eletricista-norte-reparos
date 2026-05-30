@@ -8,7 +8,6 @@ import { businessInfo, getCityAddress } from '@/../../shared/napConfig';
 import { getCidadesProximas } from '@/data/cidadesProximas';
 import { useEffect } from 'react';
 import { Phone, Clock, MapPin, Shield, Zap, CheckCircle } from 'lucide-react';
-
 export default function Montalegre() {
  useEffect(() => {
  document.title = "Eletricista Montalegre 24h | Barroso | 932 321 892";
@@ -19,8 +18,7 @@ export default function Montalegre() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Eletricista em Montalegre. Instalações para barragens, explorações pecuárias do Barroso e habitações de montanha. Veículo 4x4. Orçamento gratuito.');
-
+ metaDescription.setAttribute('content', 'Eletricista em Montalegre. Instalações para barragens, explorações pecuárias do Barroso e habitações de montanha. Veículo 4x4. Sem compromisso.');
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');
@@ -28,7 +26,6 @@ export default function Montalegre() {
  document.head.appendChild(canonical);
  }
  canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/eletricista-montalegre');
-
  const schemaScript = document.createElement('script');
  schemaScript.type = 'application/ld+json';
  schemaScript.id = 'schema-montalegre';
@@ -44,7 +41,6 @@ export default function Montalegre() {
  "priceRange": "€€"
  });
  document.head.appendChild(schemaScript);
-
  // FAQ Schema
  const faqSchema = document.createElement('script');
  faqSchema.type = 'application/ld+json';
@@ -62,15 +58,12 @@ export default function Montalegre() {
  }))
  });
  document.head.appendChild(faqSchema);
-
  return () => {
  const existingSchema = document.getElementById('schema-montalegre');
  if (existingSchema) existingSchema.remove();
  };
  }, []);
-
  const cidadesProximas = getCidadesProximas('montalegre');
-
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Montalegre?",
@@ -84,7 +77,6 @@ export default function Montalegre() {
  question: "Qual o custo de deslocação a Montalegre?",
  answer: "A deslocação é de 65€ (Zona 6), sob marcação prévia. Estamos a cerca de 110km de Macedo de Cavaleiros. Inclui todo o concelho."
  }];
-
  return (
  <div className="min-h-screen flex flex-col">
  <Header />
@@ -102,7 +94,6 @@ export default function Montalegre() {
  </div>
  </div>
  </section>
-
  <section className="py-16 bg-gray-50">
  <div className="container">
  <h2 className="text-3xl font-black text-center mb-12">Serviços Elétricos em Montalegre</h2>
@@ -126,14 +117,12 @@ export default function Montalegre() {
  </div>
  </div>
  </section>
-
  <section className="py-16">
  <div className="container max-w-4xl">
  <h2 className="text-3xl font-black text-center mb-12">Perguntas Frequentes - Montalegre</h2>
  <FAQSection faqs={faqs} />
  </div>
  </section>
-
  <section className="py-16 bg-orange-500 text-white">
  <div className="container text-center">
  <h2 className="text-3xl font-black mb-4">Precisa de Eletricista em Montalegre?</h2>
@@ -149,9 +138,7 @@ export default function Montalegre() {
  cidades={cidadesProximas}
  serviceType="eletricista"
  />
-
  
-
  <RelatedCities currentCity="Montalegre" currentCitySlug="eletricista-montalegre" />
  </main>
  <Footer />

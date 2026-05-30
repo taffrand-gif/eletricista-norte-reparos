@@ -14,12 +14,10 @@ import StructuredData from "./components/StructuredData";
 import OptimizedHome from "./pages/OptimizedHome";
 import SkipLink from '@/components/SkipLink';
 import UrgencyIndicator from '@/components/UrgencyIndicator';
-
 // Lazy load conversion widgets (below-fold)
 const ExitIntentPopup = lazy(() => import('@/components/ExitIntentPopup'));
 const QuoteCalculator = lazy(() => import('@/components/QuoteCalculator'));
 const LocationDetector = lazy(() => import('@/components/LocationDetector'));
-
 // Lazy load all pages except homepage for better LCP
 const Servicos = lazy(() => import("@/pages/Servicos"));
 const QuadrosEletricos = lazy(() => import("@/pages/QuadrosEletricos"));
@@ -85,21 +83,18 @@ const ServiceHub = lazy(() => import("@/pages/ServiceHub"));
 const TransparencePrix = lazy(() => import("@/pages/TransparencePrix"));
 const Tarifas = lazy(() => import("@/pages/Tarifas"));
 const TomadaFaisca = lazy(() => import("@/pages/TomadaFaisca"));
-
 // Commercial Intent Pages (SEO Premium) - Eletricista
 const ComoInstalarTomadaSozinho = lazy(() => import("@/pages/ComoInstalarTomadaSozinho"));
 const QuantoCustaArranjarQuadroEletrico = lazy(() => import("@/pages/QuantoCustaArranjarQuadroEletrico"));
 const QuantoTempoQuadro = lazy(() => import("@/pages/QuantoTempoDemoraT rocarQuadroEletrico"));
 const QuantoTempoDemoraInstalarTomada = lazy(() => import("@/pages/QuantoTempoDemoraInstalarTomada"));
 const QuantoTempoSemLuzCasa = lazy(() => import("@/pages/QuantoTempoSemLuzCasa"));
-
 // Simple loading fallback component
 const LoadingFallback = () => (
  <div className="flex items-center justify-center min-h-[400px]">
  <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#FF6B35]"></div>
  </div>
 );
-
 function Router() {
  return (
  <Suspense fallback={<LoadingFallback />}>
@@ -188,12 +183,10 @@ function Router() {
  </Suspense>
  );
 }
-
 // NOTE: About Theme
 // - First choose a default theme according to your design style (dark or light bg), than change color palette in index.css
 // to keep consistent foreground/background color across components
 // - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
-
 function App() {
  return (
  <ErrorBoundary>
@@ -223,6 +216,5 @@ function App() {
  </ErrorBoundary>
  );
 }
-
 export default App;
 // force rebuild 1772742742

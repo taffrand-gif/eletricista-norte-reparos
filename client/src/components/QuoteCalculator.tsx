@@ -2,14 +2,11 @@ import React from 'react';
 import { useState, memo } from 'react';
 import { ACTIVE_CONFIG } from '@/../../shared/serviceConfig';
 import { useAnalytics } from '@/hooks/useAnalytics';
-
 function QuoteCalculator() {
  const [isOpen, setIsOpen] = useState(false);
  const { trackQuoteCalculated, trackQuoteSentWhatsApp } = useAnalytics();
-
  const isPlumber = ACTIVE_CONFIG.type === 'plomberie';
  const accentColor = isPlumber ? '#0e7490' : '#D84315'; // Darker orange for better contrast
-
  const services = isPlumber ? [
  { id: 'fuga', name: 'Arranjo de Fuga de Água', base: 80, urgent: 120, icon: '💧' },
  { id: 'desentupimento', name: 'Desentupimento', base: 60, urgent: 90, icon: '🚿' },
@@ -25,20 +22,16 @@ function QuoteCalculator() {
  { id: 'certificacao', name: 'certificação elétrica', base: 120, urgent: 180, icon: '📋' },
  { id: 'instalacao', name: 'Instalação Elétrica Nova', base: 200, urgent: 280, icon: '🏗️' },
  ];
-
  const handleServiceClick = (selectedService: typeof services[0]) => {
  const basePrice = selectedService.base;
  const minPrice = Math.floor(basePrice * 0.9);
  const maxPrice = Math.ceil(basePrice * 1.3);
  const priceRange = `${minPrice}€ - ${maxPrice}€`;
-
  trackQuoteCalculated(selectedService.name, 'normal', priceRange);
  trackQuoteSentWhatsApp(selectedService.name);
-
  const message = `Olá! Vi o calculador no vosso site e preciso de:\n\nServiço: ${selectedService.name}\nOrçamento estimado: ${priceRange}\n\nPode confirmar o preço exato?`;
  window.open(`https://wa.me/${ACTIVE_CONFIG.whatsappNumber}?text=${encodeURIComponent(message)}`, '_blank');
  };
-
  if (!isOpen) {
  return (
  <button
@@ -52,7 +45,6 @@ function QuoteCalculator() {
  </button>
  );
  }
-
  return (
  <div className="fixed bottom-[152px] right-4 left-4 md:bottom-6 md:right-6 md:left-auto z-50 md:w-[480px] bg-white rounded-2xl shadow-2xl animate-slide-up max-h-[calc(100vh-120px)] overflow-y-auto">
  <div className="p-5 md:p-6">
@@ -69,17 +61,14 @@ function QuoteCalculator() {
  ×
  </button>
  </div>
-
  <p className="text-base md:text-sm text-gray-600 mb-4">
  Clique no serviço para pedir orçamento direto no WhatsApp
  </p>
-
  {/* Service Cards Grid */}
  <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-4">
  {services.map((service) => {
  const minPrice = Math.floor(service.base * 0.9);
  const maxPrice = Math.ceil(service.base * 1.3);
-
  return (
  <button
  key={service.id}
@@ -102,12 +91,11 @@ function QuoteCalculator() {
  );
  })}
  </div>
-
  {/* Trust Indicators */}
  <div className="bg-gray-50 rounded-xl p-4 space-y-2">
  <div className="flex items-center gap-2 text-base md:text-sm text-gray-700">
  <span className="text-green-600">✓</span>
- <span>Orçamento gratuito e sem compromisso</span>
+ <span>Sem compromisso e sem compromisso</span>
  </div>
  <div className="flex items-center gap-2 text-base md:text-sm text-gray-700">
  <span className="text-green-600">✓</span>
@@ -119,7 +107,6 @@ function QuoteCalculator() {
  </div>
  </div>
  </div>
-
  <style>{`
  @keyframes slide-up {
  from {
@@ -141,5 +128,4 @@ function QuoteCalculator() {
  </div>
  );
 }
-
 export default React.memo(QuoteCalculator);

@@ -1,7 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'wouter';
 import { Phone, MessageCircle, Zap, TrendingUp, CheckCircle, Euro } from 'lucide-react';
-
 export default function EconomiaEletricidadeCasaDicas() {
  return (
  <>
@@ -43,7 +42,6 @@ export default function EconomiaEletricidadeCasaDicas() {
  })}
  </script>
  </Helmet>
-
  <article className="max-w-4xl mx-auto px-4 py-12">
  <header className="mb-8">
  <Link href="/blog">
@@ -58,14 +56,12 @@ export default function EconomiaEletricidadeCasaDicas() {
  <span>12 min de leitura</span>
  </div>
  </header>
-
  <div className="prose prose-lg max-w-none mb-8">
  <p className="text-xl text-gray-700 leading-relaxed">
  Com preços de eletricidade em alta, poupar energia é essencial. Descubra 15 dicas práticas que reduzem
  a conta de luz em 30-50%, desde mudanças simples até investimentos que compensam rapidamente.
  </p>
  </div>
-
  {/* CTA */}
  <div className="bg-gradient-to-r from-green-600 to-green-700 rounded-xl p-6 mb-12 text-white">
  <div className="flex flex-col md:flex-row items-center justify-between">
@@ -85,15 +81,12 @@ export default function EconomiaEletricidadeCasaDicas() {
  </div>
  </div>
  </div>
-
  <div className="prose prose-lg max-w-none">
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Quanto Gasta uma Casa Média?</h2>
-
  <p>
  Em Portugal (2026), uma casa média consome <strong>3500-4500 kWh/ano</strong>, custando <strong>700-900€/ano</strong>
  (tarifa simples 0,20€/kWh). Em Trás-os-Montes, com inverno rigoroso, o consumo pode chegar a 5000-6000 kWh/ano (1000-1200€/ano).
  </p>
-
  <div className="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
  <h4 className="font-bold text-gray-900 mb-3">Distribuição Consumo Típico:</h4>
  <ul className="space-y-2 text-gray-700">
@@ -106,9 +99,7 @@ export default function EconomiaEletricidadeCasaDicas() {
  <li><strong>Standby/Outros:</strong> 5-10%</li>
  </ul>
  </div>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">15 Dicas de Economia</h2>
-
  <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">1. Substituir Todas as Lâmpadas por LED</h3>
  <p><strong>Poupança: 150-200€/ano | Investimento: 100-150€ | Retorno: 6-12 meses</strong></p>
  <p>
@@ -121,7 +112,6 @@ export default function EconomiaEletricidadeCasaDicas() {
  <li><strong>Poupança por lâmpada: 30€/ano</strong></li>
  <li><strong>Total 20 lâmpadas: 600€/ano → 150€/ano = 450€ poupados</strong></li>
  </ul>
-
  <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">2. Eliminar Consumo Standby</h3>
  <p><strong>Poupança: 50-80€/ano | Investimento: 20-40€ (réguas com interruptor) | Retorno: 3-6 meses</strong></p>
  <p>
@@ -129,7 +119,6 @@ export default function EconomiaEletricidadeCasaDicas() {
  Casa média desperdiça 300-400 kWh/ano (60-80€) em standby.
  </p>
  <p><strong>Solução:</strong> Réguas com interruptor para desligar tudo à noite e quando sai de casa.</p>
-
  <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">3. Frigorífico Eficiente (A+++)</h3>
  <p><strong>Poupança: 80-120€/ano | Investimento: 400-700€ | Retorno: 4-6 anos</strong></p>
  <p>
@@ -143,7 +132,6 @@ export default function EconomiaEletricidadeCasaDicas() {
  <li>Limpar grelhas traseiras 2x/ano</li>
  <li>Não colocar alimentos quentes</li>
  </ul>
-
  <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">4. Lavar Roupa em Água Fria</h3>
  <p><strong>Poupança: 60-100€/ano | Investimento: 0€ | Retorno: Imediato</strong></p>
  <p>
@@ -155,14 +143,12 @@ export default function EconomiaEletricidadeCasaDicas() {
  <li>Lavagem 30°C: 0,6 kWh = 0,12€</li>
  <li><strong>Poupança: 0,18€/lavagem × 3 lavagens/semana × 52 semanas = 28€/ano</strong></li>
  </ul>
-
  <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">5. Secar Roupa ao Ar (Não Usar Secadora)</h3>
  <p><strong>Poupança: 150-200€/ano | Investimento: 0€ | Retorno: Imediato</strong></p>
  <p>
  Secadora é um dos aparelhos mais gastadores: 3-4 kWh por ciclo (0,60-0,80€). Uso 3x/semana = 150-200€/ano.
  Em Trás-os-Montes, secar ao ar é viável 8-9 meses/ano.
  </p>
-
  <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">6. Termostato Programável</h3>
  <p><strong>Poupança: 100-200€/ano | Investimento: 80-150€ | Retorno: 6-12 meses</strong></p>
  <p>
@@ -175,7 +161,6 @@ export default function EconomiaEletricidadeCasaDicas() {
  <li>Noite (23h-7h): 16-17°C</li>
  <li>Ausente (9h-18h): 16-17°C</li>
  </ul>
-
  <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">7. Isolar Casa (Janelas + Telhado)</h3>
  <p><strong>Poupança: 200-400€/ano | Investimento: 2000-5000€ | Retorno: 5-12 anos</strong></p>
  <p>
@@ -187,7 +172,6 @@ export default function EconomiaEletricidadeCasaDicas() {
  <li>Isolamento telhado: 15-25€/m²</li>
  <li>Vedantes portas/janelas: 50-100€</li>
  </ul>
-
  <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">8. Painéis Solares Fotovoltaicos</h3>
  <p><strong>Poupança: 600-800€/ano | Investimento: 4000-6000€ | Retorno: 6-8 anos</strong></p>
  <p>
@@ -230,7 +214,6 @@ export default function EconomiaEletricidadeCasaDicas() {
  </tbody>
  </table>
  </div>
-
  <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">9. Esquentador a Gás (Não Elétrico)</h3>
  <p><strong>Poupança: 200-300€/ano | Investimento: 300-600€ | Retorno: 1-2 anos</strong></p>
  <p>
@@ -241,14 +224,12 @@ export default function EconomiaEletricidadeCasaDicas() {
  <li>Esquentador gás: 1500 kWh gás = 200€</li>
  <li><strong>Poupança: 300€/ano</strong></li>
  </ul>
-
  <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">10. Cozinhar com Tampa</h3>
  <p><strong>Poupança: 30-50€/ano | Investimento: 0€ | Retorno: Imediato</strong></p>
  <p>
  Cozinhar com tampa reduz tempo e energia em 30-40%. Panela pressão reduz 50-70%.
  Use tamanho correto de panela para placa (não desperdiçar calor).
  </p>
-
  <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">11-15. Outras Dicas Rápidas</h3>
  <ul className="space-y-3">
  <li><strong>11. Desligar luzes:</strong> Sair de divisão = desligar luz. Poupança: 20-40€/ano</li>
@@ -257,9 +238,7 @@ export default function EconomiaEletricidadeCasaDicas() {
  <li><strong>14. Cortinas térmicas:</strong> Reduzem perda calor 10-15%. Investimento: 200-400€. Poupança: 50-80€/ano</li>
  <li><strong>15. Tarifa bi-horária:</strong> Se tem aquecimento elétrico, use tarifa bi-horária e programe para horas vazio. Poupança: 100-200€/ano</li>
  </ul>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Poupança Total Possível</h2>
-
  <div className="bg-green-50 border-2 border-green-600 rounded-lg p-6 my-8">
  <h4 className="font-bold text-green-900 mb-4 text-xl">💰 Implementando Todas as Dicas:</h4>
  <div className="space-y-2 text-gray-800">
@@ -308,9 +287,7 @@ export default function EconomiaEletricidadeCasaDicas() {
  </p>
  </div>
  </div>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Perguntas Frequentes</h2>
-
  <div className="space-y-6 my-8">
  <div className="bg-gray-50 rounded-lg p-6">
  <h4 className="font-bold text-gray-900 mb-2">Qual a dica com melhor retorno?</h4>
@@ -319,7 +296,6 @@ export default function EconomiaEletricidadeCasaDicas() {
  Depois, <strong>lavar água fria e secar ar</strong> (retorno imediato, 0€ investimento).
  </p>
  </div>
-
  <div className="bg-gray-50 rounded-lg p-6">
  <h4 className="font-bold text-gray-900 mb-2">Painéis solares compensam em Trás-os-Montes?</h4>
  <p className="text-gray-700 mb-0">
@@ -327,7 +303,6 @@ export default function EconomiaEletricidadeCasaDicas() {
  depois produz eletricidade quase gratuita por 25+ anos. Poupança total 25 anos: 15.000-20.000€.
  </p>
  </div>
-
  <div className="bg-gray-50 rounded-lg p-6">
  <h4 className="font-bold text-gray-900 mb-2">Como saber se minha casa gasta muito?</h4>
  <p className="text-gray-700 mb-0">
@@ -335,7 +310,6 @@ export default function EconomiaEletricidadeCasaDicas() {
  Peça auditoria energética a eletricista certificado (100-150€) para identificar problemas.
  </p>
  </div>
-
  <div className="bg-gray-50 rounded-lg p-6">
  <h4 className="font-bold text-gray-900 mb-2">Tarifa bi-horária compensa?</h4>
  <p className="text-gray-700 mb-0">
@@ -344,20 +318,16 @@ export default function EconomiaEletricidadeCasaDicas() {
  </p>
  </div>
  </div>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Conclusão</h2>
-
  <p>
  Reduzir a conta de luz em 30-50% é perfeitamente possível com mudanças simples e investimentos inteligentes.
  Comece pelas dicas de retorno rápido (LED, standby, hábitos) e depois invista em soluções de longo prazo (painéis solares, isolamento).
  </p>
-
  <p>
  Em Trás-os-Montes, com inverno rigoroso e verão quente, eficiência energética é essencial para conforto e economia.
  O investimento inicial de 500-1000€ em melhorias básicas retorna em 1-2 anos e continua a poupar durante décadas.
  </p>
  </div>
-
  {/* Final CTA */}
  <div className="bg-gradient-to-r from-green-600 to-green-700 rounded-xl p-8 mt-12 text-white text-center">
  <h3 className="text-2xl font-bold mb-4">Quer Reduzir Conta de Luz em 30-50%?</h3>
@@ -378,7 +348,6 @@ export default function EconomiaEletricidadeCasaDicas() {
  ✓ Auditoria Energética ✓ LED + Painéis Solares ✓ certificação elétrica
  </p>
  </div>
-
  {/* Related Articles */}
  <div className="mt-12 pt-8 border-t border-gray-200">
  <h3 className="text-2xl font-bold text-gray-900 mb-6">Artigos Relacionados</h3>

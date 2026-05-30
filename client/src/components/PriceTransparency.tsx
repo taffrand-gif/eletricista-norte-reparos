@@ -35,7 +35,7 @@ function PriceTransparency() {
  items: [
  'Preço fixo ANTES de sair',
  'Orçamento grátis 2min telefone',
- 'Garantia 2 anos escrita',
+ 'Garantia do serviço escrita',
  'Sem surpresas garantido',
  'Preço = Preço combinado'
  ],
@@ -74,7 +74,7 @@ function PriceTransparency() {
  </h2>
  <p className="text-xl text-gray-600 max-w-3xl mx-auto">
  Saiba exatamente quanto vai pagar ANTES de começarmos.
- Orçamento gratuito em 2 minutos por telefone.
+ Sem compromisso em 2 minutos por telefone.
  </p>
  </div>
  {/* Comparison Grid */}
@@ -129,7 +129,7 @@ function PriceTransparency() {
  Ligue Agora — Saiba o Preço em 2 Minutos
  </h3>
  <p className="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
- Orçamento gratuito e sem compromisso. Preço fixo garantido antes de começarmos.
+ Sem compromisso e sem compromisso. Preço fixo garantido antes de começarmos.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a
@@ -143,7 +143,7 @@ function PriceTransparency() {
  Ligar: {config.phone}
  </a>
  <a
- href={`https://wa.me/${config.whatsapp}?text=${encodeURIComponent('Olá! Gostaria de um orçamento gratuito.')}`}
+ href={`https://wa.me/${config.whatsapp}?text=${encodeURIComponent('Olá! Gostaria de um sem compromisso.')}`}
  onClick={handleWhatsAppClick}
  target="_blank"
  rel="noopener noreferrer"
@@ -155,7 +155,7 @@ function PriceTransparency() {
  </a>
  </div>
  <p className="text-sm text-gray-500 mt-4">
- ✅ Orçamento gratuito • ✅ Sem compromisso • ✅ Preço fixo garantido
+ ✅ Sem compromisso • ✅ Sem compromisso • ✅ Preço fixo garantido
  </p>
  </div>
  {/* Social Proof */}

@@ -1,26 +1,21 @@
 import React, { useEffect, useState, useCallback, memo } from 'react';
 import { useSite } from '@/contexts/SiteContext';
-
 const citiesNorte = [
  'Bragança', 'Mirandela', 'Macedo de Cavaleiros', 'Vila Real', 'Chaves',
  'Lamego', 'Mogadouro', 'Torre de Moncorvo', 'Vinhais', 'Vila Flor',
 ];
-
 const citiesStaff = [
  'Bragança', 'Mirandela', 'Macedo de Cavaleiros', 'Vila Real', 'Chaves',
  'Lamego', 'Mogadouro', 'Torre de Moncorvo', 'Vinhais', 'Alfândega da Fé',
 ];
-
 const namesNorte = [
  'Maria S.', 'António F.', 'João M.', 'Ana R.', 'Manuel P.',
  'Rosa L.', 'Carlos D.', 'Teresa B.', 'José A.', 'Fernanda C.',
 ];
-
 const namesStaff = [
  'Pedro G.', 'Luísa M.', 'Ricardo S.', 'Helena F.', 'Miguel A.',
  'Carla T.', 'Nuno R.', 'Isabel P.', 'Tiago L.', 'Sofia D.',
 ];
-
 const actionsNorte = [
  'pediu orçamento para desentupimento de WC',
  'pediu orçamento para desentupimento de cozinha',
@@ -46,7 +41,6 @@ const actionsNorte = [
  'agendou instalação de máquina de lavar roupa',
  'pediu orçamento para arranjo de torneira com fuga',
 ];
-
 const actionsStaff = [
  'pediu orçamento para quadro elétrico',
  'ligou para curto-circuito urgente',
@@ -72,31 +66,25 @@ const actionsStaff = [
  'ligou para apagão parcial em casa',
  'pediu orçamento para proteção contra raios',
 ];
-
 function randomMinutes() {
  return Math.floor(Math.random() * 45) + 2;
 }
-
 const pickRandom = <T,>(arr: T[], exclude?: T): T => {
  const filtered = exclude ? arr.filter(item => item !== exclude) : arr;
  return filtered[Math.floor(Math.random() * filtered.length)];
 };
-
 function SocialProofTicker() {
  const { config } = useSite();
  const isPlumber = config.id === 'norte-reparos';
  const [notification, setNotification] = useState<{ name: string; city: string; action: string; minutes: number } | null>(null);
  const [visible, setVisible] = useState(false);
-
  const cities = isPlumber ? citiesNorte : citiesStaff;
  const names = isPlumber ? namesNorte : namesStaff;
  const actions = isPlumber ? actionsNorte : actionsStaff;
  const accentColor = isPlumber ? '#0e7490' : '#FF6B35';
-
  useEffect(() => {
  // First notification after 8-15 seconds
  const initialDelay = Math.floor(Math.random() * 7000) + 8000;
-
  const showNotification = () => {
  setNotification(prev => {
  const newName = pickRandom(names, prev?.name);
@@ -109,24 +97,18 @@ function SocialProofTicker() {
  minutes: randomMinutes()};
  });
  setVisible(true);
-
  // Hide after 5 seconds
  setTimeout(() => setVisible(false), 5000);
  };
-
  const firstTimeout = setTimeout(showNotification, initialDelay);
-
  // Then every 25-45 seconds
  const interval = setInterval(showNotification, Math.floor(Math.random() * 20000) + 25000);
-
  return () => {
  clearTimeout(firstTimeout);
  clearInterval(interval);
  };
  }, [names, cities, actions]);
-
  if (!notification || !visible) return null;
-
  return (
  <div
  className="fixed bottom-24 left-4 z-40 animate-slide-in-left"
@@ -166,5 +148,4 @@ function SocialProofTicker() {
  </div>
  );
 }
-
 export default React.memo(SocialProofTicker);

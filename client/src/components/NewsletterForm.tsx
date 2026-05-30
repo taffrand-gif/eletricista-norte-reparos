@@ -4,16 +4,13 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { toast } from 'sonner';
 import { trackEvent } from './FacebookPixel';
-
 interface NewsletterFormProps {
  source?: string;
  className?: string;
 }
-
 export function NewsletterForm({ source = 'footer_form', className = '' }: NewsletterFormProps) {
  const [email, setEmail] = useState('');
  const [isSubmitting, setIsSubmitting] = useState(false);
-
  const subscribe = trpc.newsletter.subscribe.useMutation({
  onSuccess: (data) => {
  if (data.success) {
@@ -33,7 +30,6 @@ export function NewsletterForm({ source = 'footer_form', className = '' }: Newsl
  description: error.message});
  setIsSubmitting(false);
  }});
-
  const handleSubmit = async (e: React.FormEvent) => {
  e.preventDefault();
  
@@ -41,11 +37,9 @@ export function NewsletterForm({ source = 'footer_form', className = '' }: Newsl
  toast.error('Por favor, insira o seu email');
  return;
  }
-
  setIsSubmitting(true);
  subscribe.mutate({ email, source });
  };
-
  return (
  <form onSubmit={handleSubmit} className={`flex flex-col sm:flex-row gap-2 ${className}`}>
  <Input

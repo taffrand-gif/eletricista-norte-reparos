@@ -2,10 +2,8 @@ import React from 'react';
 import { useSite } from '@/contexts/SiteContext';
 import { ACTIVE_CONFIG } from '@/../../shared/serviceConfig';
 import OptimizedImage from './OptimizedImage';
-
 const OptimizedHero: React.FC = () => {
  const { config } = useSite();
-
  return (
  <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-amber-500 via-amber-600 to-blue-900">
  {/* Background image avec overlay */}
@@ -95,5 +93,4 @@ const OptimizedHero: React.FC = () => {
  </section>
  );
 };
-
 export default OptimizedHero;

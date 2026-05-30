@@ -5,21 +5,17 @@ import { Button } from '../components/ui/button';
 import { Phone, MessageCircle, ArrowRight } from 'lucide-react';
 import { useState } from 'react';
 import { ACTIVE_CONFIG } from '@/../../shared/serviceConfig';
-
 export default function Services() {
  const [selectedCategory, setSelectedCategory] = useState<string>('Todos');
-
  const filteredServices = selectedCategory === 'Todos'
  ? SERVICES
  : SERVICES.filter(service => 
  service.title.toLowerCase().includes(selectedCategory.toLowerCase()) ||
  service.description.toLowerCase().includes(selectedCategory.toLowerCase())
  );
-
  const phoneDisplay = ACTIVE_CONFIG.phone.replace('+351', '');
  const phoneLink = ACTIVE_CONFIG.phone;
  const whatsappLink = `https://wa.me/${ACTIVE_CONFIG.whatsappNumber}?text=${encodeURIComponent("Olá, preciso de um eletricista em Trás-os-Montes. Podem dar-me um orçamento?")}`;
-
  return (
  <div className="min-h-screen">
  {/* Hero Section */}
@@ -51,7 +47,6 @@ export default function Services() {
  </div>
  </div>
  </section>
-
  {/* Filter Categories */}
  <section className="py-8 border-b">
  <div className="container">
@@ -76,7 +71,6 @@ export default function Services() {
  </div>
  </div>
  </section>
-
  {/* Services Grid */}
  <section className="py-16">
  <div className="container">
@@ -132,7 +126,6 @@ export default function Services() {
  </Card>
  ))}
  </div>
-
  {filteredServices.length === 0 && (
  <div className="text-center py-12">
  <p className="text-xl text-muted-foreground">
@@ -142,7 +135,6 @@ export default function Services() {
  )}
  </div>
  </section>
-
  {/* CTA Section */}
  <section className="bg-gradient-to-br from-red-50 to-red-100 py-16">
  <div className="container text-center">

@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useEffect } from 'react';
 import { Phone, AlertTriangle, Shield, Zap, CheckCircle, XCircle } from 'lucide-react';
-
 export default function ProtecaoSobrecargas() {
  useEffect(() => {
  document.title = "Como Proteger a Sua Casa de Sobrecargas Elétricas: Guia Completo 2026 | Staff Seekers";
@@ -15,7 +14,6 @@ export default function ProtecaoSobrecargas() {
  document.head.appendChild(metaDescription);
  }
  metaDescription.setAttribute('content', 'Aprenda a proteger a sua casa de sobrecargas elétricas. Disjuntores, DPS, réguas com proteção e dicas práticas para evitar danos em equipamentos.');
-
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');
@@ -23,7 +21,6 @@ export default function ProtecaoSobrecargas() {
  document.head.appendChild(canonical);
  }
  canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/blog/protecao-sobrecargas-eletricas-casa');
-
  // JSON-LD Article Schema
  const script = document.createElement('script');
  script.type = 'application/ld+json';
@@ -48,12 +45,10 @@ export default function ProtecaoSobrecargas() {
  "dateModified": "2026-02-19"
  });
  document.head.appendChild(script);
-
  return () => {
  document.head.removeChild(script);
  };
  }, []);
-
  const protecoes = [
  {
  tipo: "Disjuntor Diferencial",
@@ -80,7 +75,6 @@ export default function ProtecaoSobrecargas() {
  custo: "20€ - 60€"
  }
  ];
-
  const errosComuns = [
  {
  erro: "Ligar muitos aparelhos na mesma tomada",
@@ -103,7 +97,6 @@ export default function ProtecaoSobrecargas() {
  solucao: "Instale DPS no quadro elétrico"
  }
  ];
-
  return (
  <div className="min-h-screen flex flex-col">
  <Header />
@@ -124,7 +117,6 @@ export default function ProtecaoSobrecargas() {
  </div>
  </div>
  </section>
-
  {/* Intro */}
  <section className="py-12">
  <div className="container max-w-3xl">
@@ -142,7 +134,6 @@ export default function ProtecaoSobrecargas() {
  </div>
  </div>
  </section>
-
  {/* O Que São Sobrecargas */}
  <section className="py-12 bg-red-50">
  <div className="container max-w-3xl">
@@ -182,7 +173,6 @@ export default function ProtecaoSobrecargas() {
  </div>
  </div>
  </section>
-
  {/* Tipos de Proteção */}
  <section className="py-16">
  <div className="container max-w-3xl">
@@ -210,7 +200,6 @@ export default function ProtecaoSobrecargas() {
  </div>
  </div>
  </section>
-
  {/* Como Funciona o DPS */}
  <section className="py-12 bg-blue-50">
  <div className="container max-w-3xl">
@@ -243,7 +232,6 @@ export default function ProtecaoSobrecargas() {
  </div>
  </div>
  </section>
-
  {/* Erros Comuns */}
  <section className="py-16">
  <div className="container max-w-3xl">
@@ -271,7 +259,6 @@ export default function ProtecaoSobrecargas() {
  </div>
  </div>
  </section>
-
  {/* Dicas Práticas */}
  <section className="py-12 bg-gray-50">
  <div className="container max-w-3xl">
@@ -322,7 +309,6 @@ export default function ProtecaoSobrecargas() {
  </div>
  </div>
  </section>
-
  {/* CTA */}
  <section className="py-16 bg-orange-500 text-white">
  <div className="container text-center">
@@ -332,7 +318,7 @@ export default function ProtecaoSobrecargas() {
  </h2>
  <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
  Instalação de DPS, upgrade de quadro elétrico e inspeção completa. 
- Orçamento gratuito em Trás-os-Montes.
+ Sem compromisso em Trás-os-Montes.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a href="tel:+351932321892" className="inline-flex items-center justify-center gap-2 bg-white text-orange-500 px-8 py-4 rounded-lg text-xl font-bold hover:bg-gray-100 transition-all shadow-lg">
@@ -345,7 +331,6 @@ export default function ProtecaoSobrecargas() {
  </div>
  </div>
  </section>
-
  {/* Artigos Relacionados */}
  <section className="py-12 bg-gray-50">
  <div className="container max-w-3xl">

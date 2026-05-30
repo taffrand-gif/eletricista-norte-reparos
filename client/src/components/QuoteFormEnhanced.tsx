@@ -3,7 +3,6 @@ import { trpc } from "@/lib/trpc";
 import { toast } from "sonner";
 import { MapView } from "@/components/Map";
 import { ACTIVE_CONFIG } from "../../../shared/serviceConfig";
-
 interface QuoteFormData {
  name: string;
  email: string;
@@ -20,7 +19,6 @@ interface QuoteFormData {
  latitude?: string;
  longitude?: string;
 }
-
 export default function QuoteFormEnhanced() {
  const config = ACTIVE_CONFIG;
  
@@ -37,9 +35,7 @@ export default function QuoteFormEnhanced() {
  serviceType: config.services[0] || "",
  urgency: "normal",
  description: ""});
-
  const [showMap, setShowMap] = useState(false);
-
  const createQuote = trpc.quotes.create.useMutation({
  onSuccess: () => {
  toast.success("Pedido de orçamento enviado com sucesso! Entraremos em contacto em breve.");
@@ -62,30 +58,24 @@ export default function QuoteFormEnhanced() {
  onError: () => {
  toast.error("Erro ao enviar pedido. Por favor, ligue-nos diretamente.");
  }});
-
  const handleMapReady = (map: google.maps.Map) => {
  // Initialize Places Autocomplete
  const input = document.getElementById('street-input') as HTMLInputElement;
  if (!input) return;
-
  const autocomplete = new window.google.maps.places.Autocomplete(input, {
  componentRestrictions: { country: 'pt' },
  fields: ['address_components', 'geometry', 'formatted_address']});
-
  autocomplete.addListener('place_changed', () => {
  const place = autocomplete.getPlace();
-
  if (!place.geometry || !place.geometry.location) {
  toast.error("Endereço não encontrado. Por favor, selecione um endereço válido.");
  return;
  }
-
  // Extrair componentes do endereço
  let street = "";
  let streetNumber = "";
  let postalCode = "";
  let city = "";
-
  place.address_components?.forEach((component) => {
  const types = component.types;
  
@@ -102,7 +92,6 @@ export default function QuoteFormEnhanced() {
  city = component.long_name;
  }
  });
-
  // Atualizar formulário com dados extraídos
  setFormData({
  ...formData,
@@ -112,38 +101,30 @@ export default function QuoteFormEnhanced() {
  city,
  latitude: place.geometry.location.lat().toString(),
  longitude: place.geometry.location.lng().toString()});
-
  // Centrar mapa na localização selecionada
  map.setCenter(place.geometry.location);
  map.setZoom(17);
-
  // Adicionar marcador
  new window.google.maps.Marker({
  position: place.geometry.location,
  map: map,
  title: place.formatted_address});
-
  toast.success("Endereço preenchido automaticamente!");
  });
  };
-
  const handleSubmit = (e: React.FormEvent) => {
  e.preventDefault();
-
  // Construir endereço completo para campo legado
  const fullAddress = `${formData.street} ${formData.streetNumber}${formData.complement ? ', ' + formData.complement : ''}, ${formData.postalCode} ${formData.city}`;
-
  createQuote.mutate({
  ...formData,
  address: fullAddress});
  };
-
  return (
  <div className="bg-white rounded-lg shadow-lg p-6">
  <h2 className="text-2xl font-bold text-gray-900 mb-6">
  Pedir Orçamento Gratuito
  </h2>
-
  <form onSubmit={handleSubmit} className="space-y-4">
  {/* Nome */}
  <div>
@@ -161,7 +142,6 @@ export default function QuoteFormEnhanced() {
  aria-required="true"
  />
  </div>
-
  {/* Email */}
  <div>
  <label htmlFor="email-input" className="block text-sm font-medium text-gray-700 mb-2">
@@ -178,7 +158,6 @@ export default function QuoteFormEnhanced() {
  aria-required="true"
  />
  </div>
-
  {/* Telefone */}
  <div>
  <label htmlFor="phone-input" className="block text-sm font-medium text-gray-700 mb-2">
@@ -195,7 +174,6 @@ export default function QuoteFormEnhanced() {
  aria-required="true"
  />
  </div>
-
  {/* NIF */}
  <div>
  <label htmlFor="nif-input" className="block text-sm font-medium text-gray-700 mb-2">
@@ -213,7 +191,6 @@ export default function QuoteFormEnhanced() {
  />
  <p id="nif-description" className="text-xs text-gray-500 mt-1">Opcional - para faturação</p>
  </div>
-
  {/* Endereço - Google Maps Autocomplete */}
  <div>
  <label htmlFor="street-input" className="block text-sm font-medium text-gray-700 mb-2">
@@ -240,13 +217,11 @@ export default function QuoteFormEnhanced() {
  📍 Mapa
  </button>
  </div>
-
  {showMap && (
  <div className="h-64 rounded-lg overflow-hidden border border-gray-300">
  <MapView onMapReady={handleMapReady} />
  </div>
  )}
-
  <div className="grid grid-cols-2 gap-2">
  <input
  id="street-number-input"
@@ -269,7 +244,6 @@ export default function QuoteFormEnhanced() {
  aria-label="Complemento de morada"
  />
  </div>
-
  <div className="grid grid-cols-2 gap-2">
  <input
  id="postal-code-input"
@@ -296,7 +270,6 @@ export default function QuoteFormEnhanced() {
  </div>
  </div>
  </div>
-
  {/* Tipo de Serviço */}
  <div>
  <label htmlFor="service-type-select" className="block text-sm font-medium text-gray-700 mb-2">
@@ -317,7 +290,6 @@ export default function QuoteFormEnhanced() {
  ))}
  </select>
  </div>
-
  {/* Urgência */}
  <div>
  <label id="urgency-label" className="block text-sm font-medium text-gray-700 mb-2">
@@ -352,7 +324,6 @@ export default function QuoteFormEnhanced() {
  </button>
  </div>
  </div>
-
  {/* Descrição */}
  <div>
  <label htmlFor="description-textarea" className="block text-sm font-medium text-gray-700 mb-2">
@@ -369,7 +340,6 @@ export default function QuoteFormEnhanced() {
  aria-required="true"
  />
  </div>
-
  {/* Submit */}
  <button
  type="submit"
@@ -378,7 +348,6 @@ export default function QuoteFormEnhanced() {
  >
  {createQuote.isPending ? "A enviar..." : "📧 Enviar Pedido de Orçamento"}
  </button>
-
  <p className="text-xs text-gray-500 text-center">
  Responderemos em menos de 2 horas durante o horário comercial
  </p>

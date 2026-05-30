@@ -2,13 +2,10 @@ import React from 'react';
 // Component: Money-Back Guarantee - Eletricista
 // Risk reversal strategy - removes fear of trying the service
 // Shows confidence in quality and builds trust with certification
-
 import { useSite } from '@/contexts/SiteContext';
 // memo removed from 'react';
-
 function MoneyBackGuarantee() {
  const { config } = useSite();
-
  const guarantees = [
  {
  icon: '🎯',
@@ -31,7 +28,6 @@ function MoneyBackGuarantee() {
  description: 'Devolução 100% do dinheiro, sem perguntas.',
  badge: 'Satisfação Total'},
  ];
-
  return (
  <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
  <div className="container">
@@ -49,7 +45,6 @@ function MoneyBackGuarantee() {
  Se não ficar 100% satisfeito, não paga.
  </p>
  </div>
-
  {/* Guarantees Grid */}
  <div className="grid md:grid-cols-2 gap-6 mb-12">
  {guarantees.map((guarantee, index) => (
@@ -65,15 +60,12 @@ function MoneyBackGuarantee() {
  >
  {guarantee.badge}
  </div>
-
  {/* Icon */}
  <div className="text-6xl mb-4">{guarantee.icon}</div>
-
  {/* Title */}
  <h3 className="text-2xl font-black mb-3 text-gray-900">
  {guarantee.title}
  </h3>
-
  {/* Description */}
  <p className="text-lg text-gray-700 leading-relaxed">
  {guarantee.description}
@@ -81,7 +73,6 @@ function MoneyBackGuarantee() {
  </div>
  ))}
  </div>
-
  {/* Main Guarantee Box */}
  <div
  className="bg-white p-10 rounded-lg border-4 shadow-2xl text-center"
@@ -94,7 +85,6 @@ function MoneyBackGuarantee() {
  Não é conversa. Recebe certificado de garantia por escrito + certificação elétrica com todas estas condições.
  Sem letra pequena. Sem truques. Sem desculpas.
  </p>
-
  {/* Why We Can Offer This */}
  <div className="bg-green-50 border-4 border-green-500 rounded-lg p-8 mb-8">
  <h4 className="text-2xl font-black text-green-900 mb-4">
@@ -118,7 +108,6 @@ function MoneyBackGuarantee() {
  </div>
  </div>
  </div>
-
  {/* CTA */}
  <div>
  <p className="text-2xl font-black mb-6">
@@ -146,7 +135,6 @@ function MoneyBackGuarantee() {
  </p>
  </div>
  </div>
-
  {/* Trust Indicators */}
  <div className="mt-12 grid md:grid-cols-3 gap-6 text-center">
  <div className="p-6 bg-white rounded-lg border-2 border-gray-200">
@@ -170,5 +158,4 @@ function MoneyBackGuarantee() {
  </section>
  );
 }
-
 export default React.memo(MoneyBackGuarantee);

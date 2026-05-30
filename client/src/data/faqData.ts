@@ -1,18 +1,16 @@
 // Données FAQ partagées entre le composant FAQ (homepage) et la page FAQ dédiée
 // Le composant affiche les 8 premières, la page affiche toutes les 20
-
 export interface FAQItem {
  question: string;
  answer: string;
 }
-
 export const electricFaqs: FAQItem[] = [
  {
  question: "Quanto custa um eletricista em Trás-os-Montes?",
  answer: "Os preços variam conforme o serviço: diagnóstico 80-120€, instalação de tomada nova 138-182€, substituição tomada 66-90€, arranjo curto-circuito 150-210€, quadro elétrico 12 módulos 370-650€. Oferecemos preço fixo confirmado por telefone. Contacte-nos para orçamento sem compromisso."
  },
  {
- question: "Como funciona o orçamento gratuito?",
+ question: "Como funciona o sem compromisso?",
  answer: "Contacte-nos por telefone, WhatsApp ou formulário online. Deslocamo-nos gratuitamente para avaliar o problema, apresentamos um orçamento detalhado com preços transparentes e só avançamos após sua aprovação. Sem surpresas."
  },
  {
@@ -88,14 +86,13 @@ export const electricFaqs: FAQItem[] = [
  answer: "Trocar para LED, instalar painéis solares, usar termoacumulador com horário bi-horário, desligar standby dos aparelhos, escolher eletrodomésticos classe A+++, isolar bem a casa, usar cortinas térmicas no inverno."
  }
 ];
-
 export const plumberFaqs: FAQItem[] = [
  {
  question: "Quanto custa um canalizador em Trás-os-Montes?",
- answer: "Os preços variam conforme o serviço: desentupimento simples a partir de 50€, arranjo de fuga a partir de 60€, instalação de esquentador a partir de 150€. Oferecemos orçamento gratuito sem compromisso."
+ answer: "Os preços variam conforme o serviço: desentupimento simples a partir de 50€, arranjo de fuga a partir de 60€, instalação de esquentador a partir de 150€. Oferecemos sem compromisso sem compromisso."
  },
  {
- question: "Como funciona o orçamento gratuito?",
+ question: "Como funciona o sem compromisso?",
  answer: "Contacte-nos por telefone, WhatsApp ou formulário online. Deslocamo-nos gratuitamente para avaliar o problema, apresentamos um orçamento detalhado com preços transparentes e só avançamos após sua aprovação."
  },
  {

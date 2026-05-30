@@ -2,12 +2,10 @@ import React from 'react';
 import { Link } from 'wouter';
 import { MapPin } from 'lucide-react';
 import { CITIES } from '@/../../shared/serviceConfig';
-
 export default function CitiesGrid() {
  // Filtrer les villes principales (sans parentCity)
  const mainCities = CITIES.filter(c => !c.parentCity).slice(0, 12);
  const servicePrefix = 'eletricista';
-
  return (
  <section className="py-16 bg-white">
  <div className="container">
@@ -19,7 +17,6 @@ export default function CitiesGrid() {
  Serviço profissional em toda a região
  </p>
  </div>
-
  <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-4">
  {mainCities.map(city => (
  <Link
@@ -33,7 +30,6 @@ export default function CitiesGrid() {
  </Link>
  ))}
  </div>
-
  <div className="text-center mt-8">
  <Link
  to="/zonas"

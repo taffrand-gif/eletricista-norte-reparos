@@ -4,24 +4,20 @@ import { useSite } from '@/contexts/SiteContext';
 import { Phone, Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from './ui/button';
 import { useState, useRef, useEffect, memo, useMemo } from 'react';
-
 interface CityItem {
  name: string;
  href: string;
 }
-
 interface District {
  name: string;
  cities: CityItem[];
 }
-
 function Header() {
  const { config } = useSite();
  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
  const [citiesOpen, setCitiesOpen] = useState(false);
  const [mobileDistrictOpen, setMobileDistrictOpen] = useState<string | null>(null);
  const dropdownRef = useRef<HTMLDivElement>(null);
-
  // Memorizar distritos para evitar recriação a cada render
  const districts: District[] = useMemo(() => [
  {
@@ -69,9 +65,7 @@ function Header() {
  { name: 'Vila Nova de Foz Côa', href: '/eletricista-vila-nova-de-foz-coa' },
  ]},
  ], []);
-
  const totalCities = useMemo(() => districts.reduce((sum, d) => sum + d.cities.length, 0), [districts]);
-
  useEffect(() => {
  function handleClickOutside(event: MouseEvent) {
  if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
@@ -81,7 +75,6 @@ function Header() {
  document.addEventListener('mousedown', handleClickOutside);
  return () => document.removeEventListener('mousedown', handleClickOutside);
  }, []);
-
  const scrollToSection = (id: string) => {
  if (window.location.pathname !== '/') {
  window.location.href = `/#${id}`;
@@ -92,7 +85,6 @@ function Header() {
  element.scrollIntoView({ behavior: 'smooth' });
  }
  };
-
  const navItems = [
  { id: 'home', label: 'HOME', action: () => scrollToSection('home') },
  { id: 'servicos', label: 'SERVIÇOS', action: () => (window.location.href = '/servicos') },
@@ -102,7 +94,6 @@ function Header() {
  { id: 'precos', label: 'PREÇOS', action: () => (window.location.href = '/transparence-prix') },
  { id: 'contactos', label: 'CONTACTOS', action: () => scrollToSection('contactos') },
  ];
-
  return (
  <header
  className="sticky top-0 z-50 bg-white border-b-4 shadow-[0_4px_0_0_rgba(0,0,0,0.1)]"
@@ -117,7 +108,6 @@ function Header() {
  </a>
  </div>
  </div>
-
  {/* Main nav */}
  <div className="container py-4">
  <div className="flex items-center justify-between">
@@ -128,7 +118,6 @@ function Header() {
  >
  {config.name}
  </a>
-
  <nav className="hidden lg:flex items-center gap-5" role="navigation" aria-label="Menu principal">
  {navItems.map((item) => (
  <div key={item.id} className="relative" ref={item.dropdown ? dropdownRef : undefined}>
@@ -146,7 +135,6 @@ function Header() {
  </>
  )}
  </button>
-
  {/* Mega-menu desktop */}
  {item.dropdown && (
  <div
@@ -196,7 +184,6 @@ function Header() {
  </div>
  ))}
  </nav>
-
  {/* Mobile: phone button + hamburger */}
  <div className="flex items-center gap-2 lg:hidden">
  <a
@@ -215,7 +202,6 @@ function Header() {
  {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
  </button>
  </div>
-
  <Button
  onClick={() =>
  window.open(
@@ -229,14 +215,12 @@ function Header() {
  </Button>
  </div>
  </div>
-
  {/* Mobile menu */}
  {mobileMenuOpen && (
  <div className="lg:hidden border-t-2 bg-white max-h-[70vh] overflow-y-auto" style={{ borderTopColor: config.colors.primary }}>
  <nav className="container py-4 flex flex-col gap-1" role="navigation" aria-label="Menu mobile">
  <a href="/" className="text-base font-semibold py-2 px-4 rounded-lg hover:bg-gray-100">HOME</a>
  <a href="/servicos" className="text-base font-semibold py-2 px-4 rounded-lg hover:bg-gray-100">SERVIÇOS</a>
-
  {/* Mobile cities accordion */}
  <div>
  <button
@@ -247,7 +231,6 @@ function Header() {
  <span>CIDADES <span className="text-xs font-normal opacity-60">({totalCities})</span></span>
  <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${mobileDistrictOpen ? 'rotate-180' : ''}`} />
  </button>
-
  {mobileDistrictOpen && (
  <div className="pl-2 mt-1 space-y-2">
  {districts.map((district) => (
@@ -284,11 +267,9 @@ function Header() {
  </div>
  )}
  </div>
-
  <a href="/blog" className="text-base font-semibold py-2 px-4 rounded-lg hover:bg-gray-100">BLOG</a>
  <a href="/faq" className="text-base font-semibold py-2 px-4 rounded-lg hover:bg-gray-100">FAQ</a>
  <a href="/transparence-prix" className="text-base font-semibold py-2 px-4 rounded-lg hover:bg-gray-100">PREÇOS</a>
-
  <Button
  onClick={() => {
  window.open(
@@ -307,5 +288,4 @@ function Header() {
  </header>
  );
 }
-
 export default React.memo(Header);

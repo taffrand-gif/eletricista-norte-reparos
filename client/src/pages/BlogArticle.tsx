@@ -6,7 +6,6 @@ import { useSEO } from "@/hooks/useSEO";
 import { Calendar, Clock, ArrowLeft, Share2 } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-
 export default function BlogArticle() {
  const [, params] = useRoute("/blog/:id");
  const config = ACTIVE_CONFIG;
@@ -15,7 +14,6 @@ export default function BlogArticle() {
  useSEO({
  title: `Artigo - ${config.name}`,
  description: `Leia o artigo completo sobre ${config.type === 'plomberie' ? 'canalização' : 'eletricidade'}.`});
-
  const handleShare = () => {
  if (navigator.share) {
  navigator.share({
@@ -23,7 +21,6 @@ export default function BlogArticle() {
  url: window.location.href});
  }
  };
-
  return (
  <div className="min-h-screen flex flex-col">
  <Header />
@@ -37,7 +34,6 @@ export default function BlogArticle() {
  Voltar ao Blog
  </a>
  </Link>
-
  <div className="mb-8">
  <div className="inline-block bg-red-100 text-red-600 px-3 py-1 rounded-full text-sm font-semibold mb-4">
  {config.type === 'plomberie' ? 'Deteção de Fugas' : 'Segurança Elétrica'}
@@ -61,13 +57,11 @@ export default function BlogArticle() {
  </div>
  </div>
  </div>
-
  <div className="relative h-96 bg-gradient-to-br from-red-500 to-red-600 rounded-lg mb-12 flex items-center justify-center">
  <span className="text-white text-9xl opacity-20">
  {config.type === 'plomberie' ? '💧' : '⚡'}
  </span>
  </div>
-
  <div className="prose prose-lg max-w-none">
  <div className="bg-blue-50 border-l-4 border-blue-400 p-6 mb-8">
  <p className="text-lg font-semibold text-blue-800">
@@ -78,7 +72,6 @@ export default function BlogArticle() {
  </p>
  </div>
  </div>
-
  <div className="mt-12 bg-red-50 border-2 border-red-200 rounded-lg p-8">
  <h3 className="text-2xl font-bold mb-4">Precisa de Ajuda?</h3>
  <div className="flex flex-col sm:flex-row gap-4">
@@ -95,7 +88,6 @@ export default function BlogArticle() {
  </div>
  </article>
  </main>
-
  <Footer />
 </div>
  );

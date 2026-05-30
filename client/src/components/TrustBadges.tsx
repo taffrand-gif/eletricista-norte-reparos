@@ -1,9 +1,7 @@
 import { ACTIVE_CONFIG } from '@/../../shared/serviceConfig';
-
 export default function TrustBadges() {
  const isPlumber = ACTIVE_CONFIG.type === 'plomberie';
  const accentColor = isPlumber ? '#0e7490' : '#FF6B35';
-
  const badges = [
  {
  icon: '💰',
@@ -38,7 +36,6 @@ export default function TrustBadges() {
  title: 'Seguro',
  description: 'Totalmente segurado'},
  ];
-
  return (
  <section className="py-12 bg-gray-50">
  <div className="container mx-auto px-4">
@@ -50,7 +47,6 @@ export default function TrustBadges() {
  Atendemos clientes em toda a região de Trás-os-Montes em nós. Agora é a sua vez.
  </p>
  </div>
-
  <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
  {badges.map((badge, index) => (
  <div
@@ -67,7 +63,6 @@ export default function TrustBadges() {
  </div>
  ))}
  </div>
-
  {/* Money-back guarantee banner */}
  <div
  className="mt-8 max-w-4xl mx-auto rounded-2xl p-6 text-center text-white"
@@ -85,7 +80,6 @@ export default function TrustBadges() {
  </div>
  </div>
  </div>
-
  {/* Trust indicators */}
  <div className="mt-8 text-center space-y-2">
  <div className="flex items-center justify-center gap-2 text-gray-600">

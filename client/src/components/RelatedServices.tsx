@@ -2,11 +2,9 @@ import React from 'react';
 import { SERVICES_STAFF_SEEKERS } from '@/../../shared/cityServiceMatrix';
 // memo removed from 'react';
 import { ACTIVE_CONFIG } from '@/../../shared/serviceConfig';
-
 function RelatedServices({ currentService, city }: { currentService: string; city: string }) {
  const services = SERVICES_STAFF_SEEKERS.filter(s => s.slug !== currentService);
  const accentColor = '#FF6B35';
-
  return (
  <section className="bg-gray-50 py-12 px-4">
  <div className="max-w-6xl mx-auto">
@@ -34,5 +32,4 @@ function RelatedServices({ currentService, city }: { currentService: string; cit
  </section>
  );
 }
-
 export default React.memo(RelatedServices);

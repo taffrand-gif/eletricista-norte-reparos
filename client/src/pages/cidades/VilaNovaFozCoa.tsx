@@ -8,7 +8,6 @@ import { businessInfo, getCityAddress } from '@/../../shared/napConfig';
 import { getCidadesProximas } from '@/data/cidadesProximas';
 import { useEffect } from 'react';
 import { Phone, Clock, MapPin, Shield, Zap, CheckCircle } from 'lucide-react';
-
 export default function VilaNovaFozCoa() {
  useEffect(() => {
  document.title = "Eletricista Vila Nova Foz Côa 24h | 932 321 892";
@@ -19,8 +18,7 @@ export default function VilaNovaFozCoa() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Eletricista em Vila Nova de Foz Côa, Património UNESCO. Instalações para museus, quintas do Douro e turismo cultural. certificação elétrica. Orçamento gratuito.');
-
+ metaDescription.setAttribute('content', 'Eletricista em Vila Nova de Foz Côa, Património UNESCO. Instalações para museus, quintas do Douro e turismo cultural. certificação elétrica. Sem compromisso.');
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');
@@ -28,7 +26,6 @@ export default function VilaNovaFozCoa() {
  document.head.appendChild(canonical);
  }
  canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/eletricista-vila-nova-foz-coa');
-
  const schemaScript = document.createElement('script');
  schemaScript.type = 'application/ld+json';
  schemaScript.id = 'schema-fozcoa';
@@ -44,7 +41,6 @@ export default function VilaNovaFozCoa() {
  "priceRange": "€€"
  });
  document.head.appendChild(schemaScript);
-
  // FAQ Schema
  const faqSchema = document.createElement('script');
  faqSchema.type = 'application/ld+json';
@@ -62,15 +58,12 @@ export default function VilaNovaFozCoa() {
  }))
  });
  document.head.appendChild(faqSchema);
-
  return () => {
  const existingSchema = document.getElementById('schema-fozcoa');
  if (existingSchema) existingSchema.remove();
  };
  }, []);
-
  const cidadesProximas = getCidadesProximas('vila-nova-foz-coa');
-
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Vila Nova de Foz Côa?",
@@ -84,7 +77,6 @@ export default function VilaNovaFozCoa() {
  question: "Qual o custo de deslocação a Vila Nova de Foz Côa?",
  answer: "A deslocação é de 65€ (Zona 6). Chegamos em aproximadamente 50-60 minutos. Inclui todo o concelho."
  }];
-
  return (
  <div className="min-h-screen flex flex-col">
  <Header />
@@ -102,7 +94,6 @@ export default function VilaNovaFozCoa() {
  </div>
  </div>
  </section>
-
  <section className="py-16 bg-gray-50">
  <div className="container">
  <h2 className="text-3xl font-black text-center mb-12">Serviços Elétricos em Vila Nova de Foz Côa</h2>
@@ -126,14 +117,12 @@ export default function VilaNovaFozCoa() {
  </div>
  </div>
  </section>
-
  <section className="py-16">
  <div className="container max-w-4xl">
  <h2 className="text-3xl font-black text-center mb-12">Perguntas Frequentes - Vila Nova de Foz Côa</h2>
  <FAQSection faqs={faqs} />
  </div>
  </section>
-
  <section className="py-16 bg-orange-500 text-white">
  <div className="container text-center">
  <h2 className="text-3xl font-black mb-4">Precisa de Eletricista em Vila Nova de Foz Côa?</h2>
@@ -149,9 +138,7 @@ export default function VilaNovaFozCoa() {
  cidades={cidadesProximas}
  serviceType="eletricista"
  />
-
  
-
  <RelatedCities currentCity="Vila Nova de Foz Côa" currentCitySlug="eletricista-vila-nova-foz-coa" />
  </main>
  <Footer />

@@ -4,7 +4,6 @@ import React from 'react';
 // - Bold headings with thick borders
 // - Accordion with clear expand/collapse
 // - SEO-optimized Q&A content
-
 import { useSite } from '@/contexts/SiteContext';
 import { useEffect, useMemo } from 'react';
 import {
@@ -12,10 +11,8 @@ import {
  AccordionContent,
  AccordionItem,
  AccordionTrigger} from '@/components/ui/accordion';
-
 function FAQ() {
  const { config } = useSite();
-
  const faqs = useMemo(() => [
  {
  question: 'Quanto custa um eletricista urgente em Bragança?',
@@ -48,7 +45,6 @@ function FAQ() {
  question: 'Aceitam pagamento com cartão e MB WAY?',
  answer: 'Sim, aceitamos pagamento por multibanco, MB WAY, transferência bancária, e dinheiro. Pagamento apenas após conclusão do serviço e sua total satisfação. Fatura fornecida. Sem IVA (Art. 53º CIVA).'},
  ], []);
-
  // Inject FAQPage Schema
  useEffect(() => {
  const schemaId = 'faq-schema';
@@ -60,7 +56,6 @@ function FAQ() {
  script.type = 'application/ld+json';
  document.head.appendChild(script);
  }
-
  const faqSchema = {
  "@context": "https://schema.org",
  "@type": "FAQPage",
@@ -73,9 +68,7 @@ function FAQ() {
  }
  }))
  };
-
  script.textContent = JSON.stringify(faqSchema);
-
  return () => {
  const existingScript = document.getElementById(schemaId);
  if (existingScript) {
@@ -83,13 +76,11 @@ function FAQ() {
  }
  };
  }, [faqs]);
-
  return (
  <section id="faq" className="py-20 bg-gray-50">
  <div className="container">
  <div className="max-w-4xl mx-auto">
  {/* Header - Removed duplicate H2 (already in OptimizedHome.tsx) */}
-
  {/* Accordion */}
  <Accordion type="single" collapsible className="space-y-4">
  {faqs.map((faq, index) => (
@@ -108,7 +99,6 @@ function FAQ() {
  </AccordionItem>
  ))}
  </Accordion>
-
  {/* CTA */}
  <div className="mt-12 text-center p-8 border-4 bg-white" style={{ borderColor: config.colors.primary }}>
  <p className="text-lg font-bold mb-4">Não encontrou a resposta que procurava?</p>
@@ -128,5 +118,4 @@ function FAQ() {
  </section>
  );
 }
-
 export default React.memo(FAQ);

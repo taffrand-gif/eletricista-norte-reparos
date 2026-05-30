@@ -73,32 +73,26 @@
  * - “standalone” → Geocoder, DirectionsService, DistanceMatrixService, ElevationService.
  * - “data-only” → Place, Geometry utilities.
  */
-
 /// <reference types="@types/google.maps" />
-
 import { useEffect, useRef } from "react";
 import { usePersistFn } from "@/hooks/usePersistFn";
 import { cn } from "@/lib/utils";
-
 declare global {
  interface Window {
  google?: typeof google;
  }
 }
-
 // Note: Google Maps integration requires API key configuration
 // This component is currently disabled until proper API keys are configured
 function loadMapScript() {
  return Promise.reject(new Error("Google Maps API key not configured"));
 }
-
 interface MapViewProps {
  className?: string;
  initialCenter?: google.maps.LatLngLiteral;
  initialZoom?: number;
  onMapReady?: (map: google.maps.Map) => void;
 }
-
 export function MapView({
  className,
  initialCenter = { lat: 37.7749, lng: -122.4194 },
@@ -106,7 +100,6 @@ export function MapView({
  onMapReady}: MapViewProps) {
  const mapContainer = useRef<HTMLDivElement>(null);
  const map = useRef<google.maps.Map | null>(null);
-
  const init = usePersistFn(async () => {
  await loadMapScript();
  if (!mapContainer.current) {
@@ -124,11 +117,9 @@ export function MapView({
  onMapReady(map.current);
  }
  });
-
  useEffect(() => {
  init();
  }, [init]);
-
  return (
  <div ref={mapContainer} className={cn("w-full h-[500px]", className)} />
  );

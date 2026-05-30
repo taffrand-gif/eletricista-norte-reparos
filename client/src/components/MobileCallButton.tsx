@@ -1,13 +1,10 @@
 // Botão flutuante "Ligar Agora" para mobile
 // Aparece apenas em dispositivos móveis (md:hidden)
 // Click-to-call direto
-
 import { useSite } from '@/contexts/SiteContext';
 import { Phone } from 'lucide-react';
-
 export default function MobileCallButton() {
  const { config } = useSite();
-
  return (
  <a
  href={`tel:+351${config.phone.replace(/\s/g, '')}`}

@@ -4,14 +4,12 @@ import BlogLayout from '@/components/blog/BlogLayout';
 import { useSEO } from '@/hooks/useSEO';
 import { ACTIVE_CONFIG } from '@/../../shared/serviceConfig';
 import RelatedArticles from '@/components/RelatedArticles';
-
 const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  useSEO({
  title: 'Quanto Custa um Eletricista em Trás-os-Montes? Guia de Preços 2026',
  description: 'Tabela completa de preços para serviços elétricos em Trás-os-Montes. Instalações, arranjos, certificação e custos por hora.',
  keywords: 'preço eletricista, custo instalação elétrica, preços eletricista Trás-os-Montes, quanto custa eletricista, orçamento instalação elétrica'
  });
-
  return (
  <BlogLayout
  title="Quanto Custa um Eletricista em Trás-os-Montes? Guia de Preços 2026"
@@ -43,7 +41,6 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  </div>
  </div>
  </div>
-
  {/* Featured image */}
  <div className="mb-10 rounded-2xl overflow-hidden">
  <img
@@ -58,7 +55,6 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  Orçamentos transparentes e detalhados para serviços elétricos em toda a região
  </p>
  </div>
-
  {/* Introduction */}
  <div className="prose prose-lg max-w-none mb-10">
  <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-lg mb-8">
@@ -68,7 +64,6 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  especificidades das casas antigas e disponibilidade limitada de profissionais qualificados.
  </p>
  </div>
-
  <p className="text-xl text-gray-700 mb-6">
  Contratar um eletricista em <Link to="/servicos">Trás-os-Montes</Link> envolve variáveis únicas da região: distâncias grandes, 
  casas com décadas (ou séculos) de idade, condições climáticas rigorosas e menor disponibilidade 
@@ -77,7 +72,6 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  orçamentos justos e transparentes.
  </p>
  </div>
-
  {/* Table of contents */}
  <div className="bg-gray-50 rounded-2xl p-6 mb-10">
  <h2 className="text-2xl font-bold text-gray-900 mb-4">📋 Neste Artigo</h2>
@@ -90,7 +84,6 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <li><a href="#economizar" className="text-amber-600 hover:text-amber-700">Como Economizar sem Comprometer Segurança</a></li>
  </ul>
  </div>
-
  {/* Content sections */}
  <div className="prose prose-lg max-w-none">
  <section id="tabela-precos" className="mb-12">
@@ -174,7 +167,6 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  </tbody>
  </table>
  </div>
-
  <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-6 mt-6">
  <h3 className="font-bold text-yellow-800 text-lg mb-2">📝 Notas Importantes:</h3>
  <ul className="text-yellow-700 space-y-2">
@@ -186,7 +178,6 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  </ul>
  </div>
  </section>
-
  <section id="fatores-regiao" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">📍 Fatores Específicos de Trás-os-Montes que Influenciam Preços</h2>
  
@@ -212,7 +203,6 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  </p>
  <p className="text-amber-700 font-semibold mt-2">Acréscimo: 15-35%</p>
  </div>
-
  <div className="bg-white p-6 rounded-xl border border-gray-200">
  <h3 className="font-bold text-gray-900 mb-3">🏚️ Idade da Instalação</h3>
  <p className="text-gray-700">
@@ -221,7 +211,6 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  </p>
  <p className="text-amber-700 font-semibold mt-2">Acréscimo: 30-60%</p>
  </div>
-
  <div className="bg-white p-6 rounded-xl border border-gray-200">
  <h3 className="font-bold text-gray-900 mb-3">🌦️ Condições Climáticas</h3>
  <p className="text-gray-700">
@@ -231,7 +220,6 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <p className="text-amber-700 font-semibold mt-2">Acréscimo: 10-25% (trabalhos exteriores)</p>
  </div>
  </div>
-
  <div className="mt-8 bg-blue-50 border border-blue-200 rounded-xl p-6">
  <h3 className="font-bold text-blue-800 text-lg mb-2">📊 Comparativo Regional (Preços por Hora):</h3>
  <div className="overflow-x-auto">
@@ -274,7 +262,6 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  </div>
  </div>
  </section>
-
  <section id="instalacoes" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">🔌 Preços de Instalações Novas - Análise Detalhada</h2>
  
@@ -287,7 +274,6 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  e iluminação decorativa.
  </p>
  </div>
-
  <h3 className="text-2xl font-bold text-gray-900 mb-4">Exemplo: Casa T3 120m² em Trás-os-Montes</h3>
  <div className="overflow-x-auto">
  <table className="min-w-full bg-white border border-gray-300 rounded-xl">
@@ -346,7 +332,6 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  </tbody>
  </table>
  </div>
-
  <div className="mt-6 p-6 bg-green-50 border border-green-200 rounded-xl">
  <h4 className="font-bold text-green-800 text-lg mb-2">💡 Dica para Poupar:</h4>
  <p className="text-green-700">
@@ -356,7 +341,6 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  </p>
  </div>
  </section>
-
  <section id="economizar" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">💡 Como Economizar sem Comprometer a Segurança</h2>
  
@@ -375,7 +359,6 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  </p>
  </div>
  </div>
-
  <div className="flex items-start gap-4">
  <div className="bg-amber-100 text-amber-800 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">2</div>
  <div>
@@ -387,7 +370,6 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  </p>
  </div>
  </div>
-
  <div className="flex items-start gap-4">
  <div className="bg-amber-100 text-amber-800 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">3</div>
  <div>
@@ -399,7 +381,6 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  </p>
  </div>
  </div>
-
  <div className="flex items-start gap-4">
  <div className="bg-amber-100 text-amber-800 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">4</div>
  <div>
@@ -411,7 +392,6 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  </div>
  </div>
  </div>
-
  <div className="mt-8 text-center">
  <p className="text-xl text-gray-900 mb-6">
  Precisa de um orçamento detalhado e transparente para trabalhos elétricos?
@@ -438,7 +418,6 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  </div>
  </div>
  </section>
-
  {/* FAQ Section with JSON-LD Schema */}
  <section className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">❓ Perguntas Frequentes sobre Preços de Eletricista</h2>
@@ -474,7 +453,6 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  transparentes terão tabela clara para apresentar.
  </p>
  </div>
-
  <div className="bg-white p-6 rounded-xl border border-gray-200">
  <h3 className="font-bold text-gray-900 mb-2">Quanto custa a certificação elétrica (Boletim) em Trás-os-Montes?</h3>
  <p className="text-gray-700">
@@ -492,7 +470,6 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  </p>
  </div>
  </div>
-
  {/* JSON-LD Schema for FAQ */}
  <script type="application/ld+json">
  {JSON.stringify({
@@ -528,7 +505,6 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  </script>
  </section>
  </div>
-
  {/* Author bio */}
  <div className="bg-gray-50 rounded-2xl p-8 mt-12">
  <div className="flex flex-col md:flex-row gap-6 items-center">
@@ -551,7 +527,6 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  </div>
  </div>
  </div>
-
  {/* Internal links to city pages */}
  <div className="mt-12 bg-gradient-to-r from-amber-50 to-amber-100 rounded-2xl p-8">
  <h3 className="text-2xl font-bold text-gray-900 mb-6">📍 Preços por Localidade em Trás-os-Montes</h3>
@@ -599,22 +574,13 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  </Link>
  </div>
  </div>
-
  </article>
-
-
  {/* Related Articles - Maillage interno SEO */}
-
  <RelatedArticles 
-
  currentArticleSlug="custoeletricistatrasosmontesprecos" 
-
  />
-
  
-
  </BlogLayout>
  );
 };
-
 export default CustoEletricistaTrasOsMontesPrecos;

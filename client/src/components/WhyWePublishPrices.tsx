@@ -1,14 +1,11 @@
 import React from 'react';
 import { useSite } from '@/contexts/SiteContext';
-
 interface WhyWePublishPricesProps {
  className?: string;
 }
-
 function WhyWePublishPrices({ className = '' }: WhyWePublishPricesProps) {
  const { config } = useSite();
  const accentColor = config.id === 'norte-reparos' ? '#0e7490' : '#FF6B35';
-
  const reasons = [
  {
  icon: '🤝',
@@ -41,7 +38,6 @@ function WhyWePublishPrices({ className = '' }: WhyWePublishPricesProps) {
  description: 'Nous croyons que l\'honnêteté est la base d\'une relation client durable.'
  }
  ];
-
  return (
  <section className={`py-16 bg-gradient-to-br from-gray-50 to-gray-100 ${className}`}>
  <div className="container mx-auto px-4 max-w-6xl">
@@ -60,7 +56,6 @@ function WhyWePublishPrices({ className = '' }: WhyWePublishPricesProps) {
  <strong>avant</strong> de nous appeler. C'est aussi simple que ça.
  </p>
  </div>
-
  {/* Main Content */}
  <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12 mb-12">
  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -77,7 +72,6 @@ function WhyWePublishPrices({ className = '' }: WhyWePublishPricesProps) {
  ))}
  </div>
  </div>
-
  {/* Comparison Box */}
  <div className="grid md:grid-cols-2 gap-6 mb-12">
  {/* Autres Entreprises */}
@@ -105,7 +99,6 @@ function WhyWePublishPrices({ className = '' }: WhyWePublishPricesProps) {
  </li>
  </ul>
  </div>
-
  {/* Notre Approche */}
  <div className="bg-green-50 rounded-2xl p-8 border-2 border-green-200">
  <div className="text-center mb-6">
@@ -132,7 +125,6 @@ function WhyWePublishPrices({ className = '' }: WhyWePublishPricesProps) {
  </ul>
  </div>
  </div>
-
  {/* Testimonial Style Quote */}
  <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 border-l-8" style={{ borderColor: accentColor }}>
  <div className="flex flex-col md:flex-row items-center gap-6">
@@ -149,7 +141,6 @@ function WhyWePublishPrices({ className = '' }: WhyWePublishPricesProps) {
  </div>
  </div>
  </div>
-
  {/* Final CTA */}
  <div className="mt-12 text-center">
  <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 border-2 border-blue-200">
@@ -183,5 +174,4 @@ function WhyWePublishPrices({ className = '' }: WhyWePublishPricesProps) {
  </section>
  );
 }
-
 export default React.memo(WhyWePublishPrices);

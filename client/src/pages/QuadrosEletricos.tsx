@@ -2,13 +2,11 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ACTIVE_CONFIG } from '@/../../shared/serviceConfig';
 import { useEffect } from 'react';
-
 const faqItems = [
  { question: "Quando devo modernizar o quadro elétrico?", answer: "Se o seu quadro ainda tem fusíveis de porcelana, tem mais de 25 anos, ou dispara frequentemente, é hora de modernizar. Um quadro moderno com disjuntores e diferencial protege a sua família e os seus equipamentos." },
  { question: "Quanto custa modernizar um quadro elétrico?", answer: "A modernização de um quadro elétrico residencial custa entre €200 e €600, dependendo do número de circuitos e da complexidade da instalação. Inclui disjuntores, diferencial e certificação." },
  { question: "A modernização do quadro inclui certificação elétrica?", answer: "Sim, após a modernização emitimos o certificado de conformidade , obrigatório para contratos de eletricidade e seguros de habitação." }
 ];
-
 export default function QuadrosEletricos() {
  useEffect(() => {
  document.title = "Quadros Elétricos Trás-os-Montes | 932 321 892";
@@ -16,14 +14,12 @@ export default function QuadrosEletricos() {
  if (!meta) { meta = document.createElement('meta'); meta.setAttribute('name', 'description'); document.head.appendChild(meta); }
  meta.setAttribute('content', 'Instalação e modernização de quadros elétricos em Trás-os-Montes. Disjuntores, diferenciais, certificação elétrica. Eletricista certificado 24h. Ligue +351 932 321 892.');
  }, []);
-
  const serviceSchema = {
  "@context": "https://schema.org", "@type": "Service",
  "name": "Quadros Elétricos - Instalação e Modernização", "provider": { "@type": "Electrician", "name": "Staff Seekers", "telephone": ACTIVE_CONFIG.phone },
  "areaServed": { "@type": "GeoCircle", "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 41.4393, "longitude": -6.9603 }, "geoRadius": "100000" },
  "description": "Instalação e modernização profissional de quadros elétricos em Trás-os-Montes com certificação elétrica."
  };
-
  return (
  <>
  <Header />
@@ -32,7 +28,6 @@ export default function QuadrosEletricos() {
  "@context": "https://schema.org", "@type": "FAQPage",
  "mainEntity": faqItems.map(item => ({ "@type": "Question", "name": item.question, "acceptedAnswer": { "@type": "Answer", "text": item.answer } }))
  }) }} />
-
  <section className="bg-gradient-to-br from-orange-500 to-orange-700 text-white py-20 px-4">
  <div className="max-w-4xl mx-auto text-center">
  <h1 className="text-4xl md:text-5xl font-bold mb-6">Quadros Elétricos: Instalação e Modernização</h1>
@@ -43,7 +38,6 @@ export default function QuadrosEletricos() {
  </div>
  </div>
  </section>
-
  <section className="py-16 px-4 bg-white">
  <div className="max-w-4xl mx-auto">
  <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Os Nossos Serviços</h2>
@@ -63,7 +57,6 @@ export default function QuadrosEletricos() {
  </div>
  </div>
  </section>
-
  <section className="py-16 px-4 bg-gray-50">
  <div className="max-w-4xl mx-auto">
  <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Sinais de que Precisa Modernizar</h2>
@@ -84,7 +77,6 @@ export default function QuadrosEletricos() {
  </div>
  </div>
  </section>
-
  <section className="py-16 px-4 bg-white">
  <div className="max-w-4xl mx-auto">
  <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Preços Indicativos</h2>
@@ -103,7 +95,6 @@ export default function QuadrosEletricos() {
  <p className="text-center text-gray-500 mt-6 text-sm">* Preços indicativos. Orçamento final após inspeção.</p>
  </div>
  </section>
-
  <section className="py-16 px-4 bg-gray-50">
  <div className="max-w-4xl mx-auto">
  <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Perguntas Frequentes</h2>
@@ -117,18 +108,16 @@ export default function QuadrosEletricos() {
  </div>
  </div>
  </section>
-
  <section className="py-16 px-4 bg-gradient-to-r from-orange-500 to-orange-700 text-white">
  <div className="max-w-4xl mx-auto text-center">
  <h2 className="text-3xl font-bold mb-4">Precisa de Modernizar o Quadro Elétrico?</h2>
- <p className="text-xl mb-8">Orçamento gratuito e sem compromisso. Eletricista certificado.</p>
+ <p className="text-xl mb-8">Sem compromisso e sem compromisso. Eletricista certificado.</p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a href={`tel:${ACTIVE_CONFIG.phone}`} className="bg-white text-orange-700 hover:bg-gray-100 font-bold px-8 py-4 rounded-lg text-lg transition-colors">📞 {ACTIVE_CONFIG.phone}</a>
  <a href={`https://wa.me/${ACTIVE_CONFIG.whatsappNumber}`} className="bg-green-700 hover:bg-green-800 text-white font-bold px-8 py-4 rounded-lg text-lg transition-colors">💬 WhatsApp</a>
  </div>
  </div>
  </section>
-
  <section className="py-12 px-4 bg-white">
  <div className="max-w-4xl mx-auto">
  <h3 className="text-xl font-bold text-center mb-6 text-gray-900">Também servimos:</h3>

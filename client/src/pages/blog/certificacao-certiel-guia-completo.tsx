@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'wouter';
-
 export default function CertificacaoCertielGuiaCompleto() {
  return (
  <>
@@ -56,14 +55,12 @@ export default function CertificacaoCertielGuiaCompleto() {
  })}
  </script>
  </Helmet>
-
  <article className="max-w-4xl mx-auto px-4 py-12">
  <div className="mb-8">
  <Link href="/blog" className="text-orange-600 hover:text-orange-700 text-sm font-medium">
  ← Voltar ao Blog
  </Link>
  </div>
-
  <header className="mb-12">
  <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
  certificação elétrica: Guia Completo 2026
@@ -74,7 +71,6 @@ export default function CertificacaoCertielGuiaCompleto() {
  <span>12 min de leitura</span>
  </div>
  </header>
-
  <div className="prose prose-lg max-w-none">
  <div className="bg-orange-50 border-l-4 border-orange-600 p-6 mb-8">
  <p className="text-lg font-semibold text-gray-900 mb-2">
@@ -84,11 +80,9 @@ export default function CertificacaoCertielGuiaCompleto() {
  <strong></strong> é o certificado de conformidade da instalação elétrica, obrigatório em Portugal para ligação à rede. Emitido por eletricista certificado após inspeção e testes. Custo: 250-600€ conforme imóvel. Válido 25 anos. Obrigatório em instalações novas, alterações, compra/venda e instalações com +25 anos.
  </p>
  </div>
-
  <p className="lead text-xl text-gray-700 mb-8">
  Vai comprar casa, fazer obras ou ligar eletricidade? Precisa de certificação elétrica. Neste guia completo, explicamos tudo: o que é, quando é obrigatória, quanto custa, documentos necessários e como obter em Bragança e Trás-os-Montes.
  </p>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  O Que É a certificação elétrica?
  </h2>
@@ -101,7 +95,6 @@ export default function CertificacaoCertielGuiaCompleto() {
  <p>
  <strong>Validade:</strong> 25 anos para habitações, 15 anos para comércio/indústria, 10 anos para locais de risco (postos combustível, hospitais).
  </p>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  Quando É Obrigatória a certificação elétrica?
  </h2>
@@ -120,7 +113,6 @@ export default function CertificacaoCertielGuiaCompleto() {
  <p>
  <strong>Atenção:</strong> Mesmo que a sua instalação tenha mais de 25 anos, só é obrigatório renovar se houver mudança de titularidade, alterações ou pedido da distribuidora.
  </p>
-
  <div className="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
  <h3 className="text-xl font-bold text-gray-900 mb-3">
  Precisa de certificação elétrica em Bragança?
@@ -145,14 +137,12 @@ export default function CertificacaoCertielGuiaCompleto() {
  </a>
  </div>
  </div>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  Quanto Custa a certificação elétrica?
  </h2>
  <p>
  Os preços variam conforme o tipo e dimensão do imóvel. Em Bragança e Trás-os-Montes, os valores típicos são:
  </p>
-
  <div className="bg-gray-50 rounded-lg p-6 my-8">
  <h3 className="text-2xl font-bold text-gray-900 mb-4">
  Tabela de Preços em Bragança (2026)
@@ -210,7 +200,6 @@ export default function CertificacaoCertielGuiaCompleto() {
  * Preços incluem: inspeção, testes de conformidade, correções menores, emissão e registo do certificado. Correções maiores orçamentadas à parte.
  </p>
  </div>
-
  <p>
  <strong>O que está incluído no preço:</strong>
  </p>
@@ -222,7 +211,6 @@ export default function CertificacaoCertielGuiaCompleto() {
  <li>Emissão do Trabalho garantido por escrito</li>
  <li>Registo na plataforma DGEG</li>
  </ul>
-
  <p>
  <strong>Custos adicionais possíveis:</strong>
  </p>
@@ -232,14 +220,12 @@ export default function CertificacaoCertielGuiaCompleto() {
  <li>Substituição de cabos não conformes: +50-150€/circuito</li>
  <li>Atualização de tomadas sem terra: +15-25€/unidade</li>
  </ul>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  Processo de Certificação: Passo a Passo
  </h2>
  <p>
  Obter a certificação elétrica envolve 6 etapas principais:
  </p>
-
  <div className="space-y-6 my-8">
  <div className="bg-white border-l-4 border-orange-600 p-6 shadow-sm">
  <h3 className="text-xl font-bold text-gray-900 mb-2">
@@ -249,7 +235,6 @@ export default function CertificacaoCertielGuiaCompleto() {
  Contacte eletricista certificado DGEG. Forneça morada, tipo de imóvel e motivo da certificação (compra, obras, instalação nova). Agendamento em 24-48h.
  </p>
  </div>
-
  <div className="bg-white border-l-4 border-orange-600 p-6 shadow-sm">
  <h3 className="text-xl font-bold text-gray-900 mb-2">
  2. Inspeção Visual
@@ -258,7 +243,6 @@ export default function CertificacaoCertielGuiaCompleto() {
  Eletricista inspeciona quadro elétrico, circuitos, tomadas, interruptores, iluminação, ligação à terra. Identifica não conformidades. Duração: 1-3 horas conforme imóvel.
  </p>
  </div>
-
  <div className="bg-white border-l-4 border-orange-600 p-6 shadow-sm">
  <h3 className="text-xl font-bold text-gray-900 mb-2">
  3. Testes de Conformidade
@@ -267,7 +251,6 @@ export default function CertificacaoCertielGuiaCompleto() {
  Testes obrigatórios: continuidade de condutores, resistência de isolamento (mínimo 1MΩ), resistência de terra (máximo 100Ω), funcionamento de disjuntores diferenciais (30mA).
  </p>
  </div>
-
  <div className="bg-white border-l-4 border-orange-600 p-6 shadow-sm">
  <h3 className="text-xl font-bold text-gray-900 mb-2">
  4. Correções Necessárias
@@ -276,7 +259,6 @@ export default function CertificacaoCertielGuiaCompleto() {
  Se houver não conformidades, eletricista executa correções: substituição de componentes, aperto de ligações, etiquetagem de circuitos. Orçamento prévio para correções maiores.
  </p>
  </div>
-
  <div className="bg-white border-l-4 border-orange-600 p-6 shadow-sm">
  <h3 className="text-xl font-bold text-gray-900 mb-2">
  5. Emissão do Certificado
@@ -285,7 +267,6 @@ export default function CertificacaoCertielGuiaCompleto() {
  Após aprovação, eletricista emite Trabalho garantido por escrito em papel timbrado com número único. Inclui: dados do imóvel, potência instalada, esquema unifilar, resultados dos testes.
  </p>
  </div>
-
  <div className="bg-white border-l-4 border-orange-600 p-6 shadow-sm">
  <h3 className="text-xl font-bold text-gray-900 mb-2">
  6. Registo na DGEG
@@ -295,11 +276,9 @@ export default function CertificacaoCertielGuiaCompleto() {
  </p>
  </div>
  </div>
-
  <p>
  <strong>Prazo total:</strong> 3-5 dias úteis se instalação conforme. 7-15 dias se necessitar correções. Urgente: 24-48h (acréscimo 50-100%).
  </p>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  Documentos Necessários para 
  </h2>
@@ -317,7 +296,6 @@ export default function CertificacaoCertielGuiaCompleto() {
  <p>
  <strong>Nota:</strong> O eletricista certificado trata de toda a documentação técnica e registo na DGEG. Você apenas fornece os documentos de identificação do imóvel.
  </p>
-
  <div className="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
  <h3 className="text-xl font-bold text-gray-900 mb-3">
  certificação elétrica Rápida e Sem Complicações
@@ -342,7 +320,6 @@ export default function CertificacaoCertielGuiaCompleto() {
  </a>
  </div>
  </div>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  O Que Acontece Se Não Tiver ?
  </h2>
@@ -360,7 +337,6 @@ export default function CertificacaoCertielGuiaCompleto() {
  <p>
  <strong>Não vale a pena arriscar.</strong> O custo da certificação (250-600€) é insignificante comparado aos riscos e coimas.
  </p>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  Problemas Comuns em Instalações Antigas
  </h2>
@@ -378,7 +354,6 @@ export default function CertificacaoCertielGuiaCompleto() {
  <p>
  <strong>Boa notícia:</strong> A maioria das correções são simples e económicas. Raramente ultrapassa 500-800€ em casas antigas.
  </p>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  vs Inspeção Periódica
  </h2>
@@ -406,11 +381,9 @@ export default function CertificacaoCertielGuiaCompleto() {
  <p>
  <strong>Recomendação:</strong> Mesmo que o seu seja válido, faça inspeção preventiva a cada 10 anos, especialmente em casas antigas.
  </p>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  Perguntas Frequentes (FAQ)
  </h2>
-
  <div className="space-y-6">
  <div className="border-l-4 border-orange-600 pl-4">
  <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -420,7 +393,6 @@ export default function CertificacaoCertielGuiaCompleto() {
  é o certificado de conformidade da instalação elétrica emitido por entidade certificadora acreditada. Atesta que a instalação cumpre as normas de segurança portuguesas (RTIEBT). Obrigatório para ligação à rede elétrica.
  </p>
  </div>
-
  <div className="border-l-4 border-orange-600 pl-4">
  <h3 className="text-xl font-semibold text-gray-900 mb-2">
  Quando é obrigatória a certificação elétrica?
@@ -429,7 +401,6 @@ export default function CertificacaoCertielGuiaCompleto() {
  Obrigatória em: instalações novas, alterações/ampliações, mudança de titularidade (compra/venda), aumento de potência, instalações com +25 anos, e após obras que afetem a instalação elétrica.
  </p>
  </div>
-
  <div className="border-l-4 border-orange-600 pl-4">
  <h3 className="text-xl font-semibold text-gray-900 mb-2">
  Quanto custa a certificação elétrica em Bragança?
@@ -438,7 +409,6 @@ export default function CertificacaoCertielGuiaCompleto() {
  Apartamento T2: 250-400€. Moradia T3: 400-600€. Comércio pequeno: 500-800€. Inclui inspeção, testes, correções menores e emissão do certificado. Prazo: 3-7 dias úteis.
  </p>
  </div>
-
  <div className="border-l-4 border-orange-600 pl-4">
  <h3 className="text-xl font-semibold text-gray-900 mb-2">
  Quanto tempo demora a obter ?
@@ -447,7 +417,6 @@ export default function CertificacaoCertielGuiaCompleto() {
  Instalação conforme: 3-5 dias úteis. Com correções necessárias: 7-15 dias. Urgente: 24-48h (acréscimo 50-100%). Após emissão, válido por 25 anos para habitações.
  </p>
  </div>
-
  <div className="border-l-4 border-orange-600 pl-4">
  <h3 className="text-xl font-semibold text-gray-900 mb-2">
  O que acontece se não tiver ?
@@ -457,7 +426,6 @@ export default function CertificacaoCertielGuiaCompleto() {
  </p>
  </div>
  </div>
-
  <div className="bg-orange-50 border-2 border-orange-600 rounded-lg p-8 my-12">
  <h3 className="text-2xl font-bold text-gray-900 mb-4">
  Obtenha a Sua certificação elétrica Hoje!
@@ -500,7 +468,6 @@ export default function CertificacaoCertielGuiaCompleto() {
  </a>
  </div>
  </div>
-
  <div className="mt-12 pt-8 border-t border-gray-200">
  <h3 className="text-xl font-semibold text-gray-900 mb-4">
  Artigos Relacionados:

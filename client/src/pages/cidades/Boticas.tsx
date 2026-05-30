@@ -8,7 +8,6 @@ import { businessInfo, getCityAddress } from '@/../../shared/napConfig';
 import { getCidadesProximas } from '@/data/cidadesProximas';
 import { useEffect } from 'react';
 import { Phone, Clock, MapPin, Shield, Zap, CheckCircle } from 'lucide-react';
-
 export default function Boticas() {
  useEffect(() => {
  document.title = "Eletricista Boticas 24h | 932 321 892";
@@ -19,8 +18,7 @@ export default function Boticas() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Eletricista em Boticas. Instalações elétricas para adegas do Vinho dos Mortos, explorações agrícolas e habitações. Servimos todo o concelho. Orçamento gratuito.');
-
+ metaDescription.setAttribute('content', 'Eletricista em Boticas. Instalações elétricas para adegas do Vinho dos Mortos, explorações agrícolas e habitações. Servimos todo o concelho. Sem compromisso.');
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');
@@ -28,7 +26,6 @@ export default function Boticas() {
  document.head.appendChild(canonical);
  }
  canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/eletricista-boticas');
-
  const schemaScript = document.createElement('script');
  schemaScript.type = 'application/ld+json';
  schemaScript.id = 'schema-boticas';
@@ -44,7 +41,6 @@ export default function Boticas() {
  "priceRange": "€€"
  });
  document.head.appendChild(schemaScript);
-
  // FAQ Schema
  const faqSchema = document.createElement('script');
  faqSchema.type = 'application/ld+json';
@@ -62,15 +58,12 @@ export default function Boticas() {
  }))
  });
  document.head.appendChild(faqSchema);
-
  return () => {
  const existingSchema = document.getElementById('schema-boticas');
  if (existingSchema) existingSchema.remove();
  };
  }, []);
-
  const cidadesProximas = getCidadesProximas('boticas');
-
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Boticas?",
@@ -85,7 +78,6 @@ export default function Boticas() {
  answer: "A deslocação é de 65€ (Zona 6), sob marcação prévia. Estamos a cerca de 95km de Macedo de Cavaleiros. Inclui todo o concelho."
  }
  ];
-
  return (
  <div className="min-h-screen flex flex-col">
  <Header />
@@ -103,7 +95,6 @@ export default function Boticas() {
  </div>
  </div>
  </section>
-
  <section className="py-16 bg-gray-50">
  <div className="container">
  <h2 className="text-3xl font-black text-center mb-12">Serviços Elétricos em Boticas</h2>
@@ -127,14 +118,12 @@ export default function Boticas() {
  </div>
  </div>
  </section>
-
  <section className="py-16">
  <div className="container max-w-4xl">
  <h2 className="text-3xl font-black text-center mb-12">Perguntas Frequentes - Boticas</h2>
  <FAQSection faqs={faqs} />
  </div>
  </section>
-
  <section className="py-16 bg-orange-500 text-white">
  <div className="container text-center">
  <h2 className="text-3xl font-black mb-4">Precisa de Eletricista em Boticas?</h2>
@@ -150,9 +139,7 @@ export default function Boticas() {
  cidades={cidadesProximas}
  serviceType="eletricista"
  />
-
  
-
  <RelatedCities currentCity="Boticas" currentCitySlug="eletricista-boticas" />
  </main>
  <Footer />

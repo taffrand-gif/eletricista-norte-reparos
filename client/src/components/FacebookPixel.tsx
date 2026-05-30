@@ -1,9 +1,7 @@
 import { useEffect } from 'react';
-
 interface FacebookPixelProps {
  pixelId: string;
 }
-
 // Declaração TypeScript para fbq
 declare global {
  interface Window {
@@ -11,13 +9,11 @@ declare global {
  _fbq: any;
  }
 }
-
 export function FacebookPixel({ pixelId }: FacebookPixelProps) {
  useEffect(() => {
  if (!pixelId) {
  return;
  }
-
  // Inicializar Facebook Pixel
  (function(f: any, b: any, e: string, v: string, n?: any, t?: any, s?: any) {
  if (f.fbq) return;
@@ -40,14 +36,11 @@ export function FacebookPixel({ pixelId }: FacebookPixelProps) {
  'script',
  'https://connect.facebook.net/en_US/fbevents.js'
  );
-
  window.fbq('init', pixelId);
  window.fbq('track', 'PageView');
  }, [pixelId]);
-
  return null;
 }
-
 // Funções auxiliares para rastrear os eventos
 export const trackEvent = {
  // Lead: Formulário de orçamento submetido
@@ -58,7 +51,6 @@ export const trackEvent = {
  currency});
  }
  },
-
  // Contact: Clique em telefone ou WhatsApp
  contact: (method: 'phone' | 'whatsapp') => {
  if (window.fbq) {
@@ -66,7 +58,6 @@ export const trackEvent = {
  contact_method: method});
  }
  },
-
  // ViewContent: Visita de uma página de serviço
  viewContent: (contentName: string, contentCategory?: string) => {
  if (window.fbq) {
@@ -75,7 +66,6 @@ export const trackEvent = {
  content_category: contentCategory || 'service'});
  }
  },
-
  // CompleteRegistration: Inscrição newsletter
  completeRegistration: (method = 'newsletter') => {
  if (window.fbq) {
@@ -83,7 +73,6 @@ export const trackEvent = {
  registration_method: method});
  }
  },
-
  // Schedule: Reserva feita
  schedule: (value?: number) => {
  if (window.fbq) {
@@ -92,7 +81,6 @@ export const trackEvent = {
  currency: 'EUR'});
  }
  },
-
  // Custom event
  custom: (eventName: string, params?: Record<string, any>) => {
  if (window.fbq) {

@@ -4,14 +4,12 @@ import BlogLayout from '@/components/blog/BlogLayout';
 import { useSEO } from '@/hooks/useSEO';
 import { ACTIVE_CONFIG } from '@/../../shared/serviceConfig';
 import RelatedArticles from '@/components/RelatedArticles';
-
 const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  useSEO({
  title: 'Painéis Solares em Trás-os-Montes: Vale a Pena? Guia Completo 2026',
  description: 'Análise completa da rentabilidade de painéis solares em Trás-os-Montes. Custos, poupanças, incentivos e especificidades regionais.',
  keywords: 'painéis solares Trás-os-Montes, energia solar, painéis fotovoltaicos, autoconsumo, rentabilidade solar, instalação painéis solares'
  });
-
  return (
  <BlogLayout
  title="Painéis Solares em Trás-os-Montes: Vale a Pena? Guia Completo 2026"
@@ -43,7 +41,6 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  </div>
  </div>
  </div>
-
  {/* Featured image */}
  <div className="mb-10 rounded-2xl overflow-hidden">
  <img
@@ -58,7 +55,6 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  Instalação solar adaptada à arquitetura tradicional e condições climáticas da região
  </p>
  </div>
-
  {/* Introduction */}
  <div className="prose prose-lg max-w-none mb-10">
  <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-lg mb-8">
@@ -68,7 +64,6 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  torna a região excepcional para energia solar, apesar do clima frio no inverno.
  </p>
  </div>
-
  <p className="text-xl text-gray-700 mb-6">
  Quando se pensa em energia solar em Portugal, normalmente imagina-se o Algarve ou o Alentejo. 
  No entanto, <Link to="/servicos">Trás-os-Montes</Link> esconde um potencial solar surpreendente que muitos desconhecem. 
@@ -77,7 +72,6 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  tornam o investimento mais interessante do que se imagina.
  </p>
  </div>
-
  {/* Table of contents */}
  <div className="bg-gray-50 rounded-2xl p-6 mb-10">
  <h2 className="text-2xl font-bold text-gray-900 mb-4">📋 Neste Artigo</h2>
@@ -91,7 +85,6 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  <li><a href="#alternativas" className="text-amber-600 hover:text-amber-700">Alternativas mais Simples</a></li>
  </ul>
  </div>
-
  {/* Content sections */}
  <div className="prose prose-lg max-w-none">
  <section id="potencial-regiao" className="mb-12">
@@ -142,7 +135,6 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  </ul>
  </div>
  </div>
-
  <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mt-6">
  <h3 className="font-bold text-blue-800 text-lg mb-2">🎯 Mitos Desmontados:</h3>
  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -163,7 +155,6 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  </div>
  </div>
  </section>
-
  <section id="rentabilidade" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">💰 Rentabilidade: Quanto Pode Poupar Realmente em Trás-os-Montes</h2>
  
@@ -177,7 +168,6 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  <li>• <strong>Autoconsumo:</strong> 60-70% (restante injetado na rede)</li>
  </ul>
  </div>
-
  <h3 className="text-2xl font-bold text-gray-900 mb-4">Poupança Anual Detalhada:</h3>
  <div className="overflow-x-auto">
  <table className="min-w-full bg-white border border-gray-300 rounded-xl">
@@ -223,7 +213,6 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  </tbody>
  </table>
  </div>
-
  <div className="mt-6 p-6 bg-green-50 border border-green-200 rounded-xl">
  <h4 className="font-bold text-green-800 text-lg mb-2">📈 Retorno do Investimento (ROI):</h4>
  <p className="text-green-700">
@@ -236,7 +225,6 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  </p>
  </div>
  </section>
-
  <section id="custos-instalacao" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">🏗️ Custos de Instalação em Trás-os-Montes - Tabela Detalhada</h2>
  
@@ -288,7 +276,6 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  </tbody>
  </table>
  </div>
-
  <div className="mt-6 bg-yellow-50 border border-yellow-200 rounded-xl p-6">
  <h3 className="font-bold text-yellow-800 text-lg mb-2">📝 Custos Específicos de Trás-os-Montes:</h3>
  <ul className="text-yellow-700 space-y-2">
@@ -300,7 +287,6 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  </ul>
  </div>
  </section>
-
  <section id="desafios-especificos" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">⚠️ Desafios Específicos de Trás-os-Montes (e Soluções)</h2>
  
@@ -318,7 +304,6 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  </div>
  </div>
  </div>
-
  <div className="bg-white p-6 rounded-xl border border-gray-200">
  <div className="flex items-start gap-4">
  <div className="bg-red-100 text-red-800 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">2</div>
@@ -332,7 +317,6 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  </div>
  </div>
  </div>
-
  <div className="bg-white p-6 rounded-xl border border-gray-200">
  <div className="flex items-start gap-4">
  <div className="bg-red-100 text-red-800 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">3</div>
@@ -346,7 +330,6 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  </div>
  </div>
  </div>
-
  <div className="bg-white p-6 rounded-xl border border-gray-200">
  <div className="flex items-start gap-4">
  <div className="bg-red-100 text-red-800 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">4</div>
@@ -361,7 +344,6 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  </div>
  </div>
  </div>
-
  <div className="mt-8 bg-blue-50 border border-blue-200 rounded-xl p-6">
  <h3 className="font-bold text-blue-800 text-lg mb-2">✅ Boas Notícias para Trás-os-Montes:</h3>
  <ul className="text-blue-700 space-y-2">
@@ -372,7 +354,6 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  </ul>
  </div>
  </section>
-
  <section id="incentivos" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">🏛️ Incentivos e Apoios Disponíveis em 2026</h2>
  
@@ -421,7 +402,6 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  </ul>
  </div>
  </div>
-
  <div className="mt-6 bg-green-50 border border-green-200 rounded-xl p-6">
  <h3 className="font-bold text-green-800 text-lg mb-2">💡 Exemplo Real com Incentivos:</h3>
  <p className="text-green-700">
@@ -433,7 +413,6 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  <strong>Retorno do investimento:</strong> <strong>Menos de 2 anos!</strong>
  </p>
  </div>
-
  <div className="mt-6 text-center">
  <p className="text-xl text-gray-900 mb-6">
  Quer saber que incentivos se aplicam ao seu caso específico em <Link to="/servicos">Trás-os-Montes</Link>?
@@ -459,7 +438,6 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  </p>
  </div>
  </section>
-
  {/* FAQ Section with JSON-LD Schema */}
  <section className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">❓ Perguntas Frequentes sobre Solar em Trás-os-Montes</h2>
@@ -494,7 +472,6 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  por segurança em zonas rurais com rede instável. O retorno económico da bateria isolada é longo (8-12 anos).
  </p>
  </div>
-
  <div className="bg-white p-6 rounded-xl border border-gray-200">
  <h3 className="font-bold text-gray-900 mb-2">Quantos anos duram os painéis na nossa região?</h3>
  <p className="text-gray-700">
@@ -515,7 +492,6 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  </p>
  </div>
  </div>
-
  {/* JSON-LD Schema for FAQ */}
  <script type="application/ld+json">
  {JSON.stringify({
@@ -551,7 +527,6 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  </script>
  </section>
  </div>
-
  {/* Author bio */}
  <div className="bg-gray-50 rounded-2xl p-8 mt-12">
  <div className="flex flex-col md:flex-row gap-6 items-center">
@@ -575,7 +550,6 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  </div>
  </div>
  </div>
-
  {/* Internal links to city pages */}
  <div className="mt-12 bg-gradient-to-r from-amber-50 to-amber-100 rounded-2xl p-8">
  <h3 className="text-2xl font-bold text-gray-900 mb-6">📍 Especialistas em Solar na Sua Zona</h3>
@@ -623,22 +597,13 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  </Link>
  </div>
  </div>
-
  </article>
-
-
  {/* Related Articles - Maillage interno SEO */}
-
  <RelatedArticles 
-
  currentArticleSlug="paineissolarestrasosmontesguia" 
-
  />
-
  
-
  </BlogLayout>
  );
 };
-
 export default PaineisSolaresTrasOsMontesGuia;

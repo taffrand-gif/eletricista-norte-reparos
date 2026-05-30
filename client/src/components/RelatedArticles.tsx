@@ -1,10 +1,8 @@
 // Composant RelatedArticles - Affiche les articles connexes pour le maillage interno SEO
 import { Link } from 'wouter';
-
 interface RelatedArticlesProps {
  currentArticleSlug: string;
 }
-
 export default function RelatedArticles({ currentArticleSlug }: RelatedArticlesProps) {
  // Liste des articles avec leurs slugs et descriptions
  const allArticles = [
@@ -63,14 +61,11 @@ export default function RelatedArticles({ currentArticleSlug }: RelatedArticlesP
  category: 'Preços'
  },
  ];
-
  // Filtrer pour exclure l'article actuel
  const relatedArticles = allArticles
  .filter(article => article.slug !== currentArticleSlug)
  .slice(0, 3); // Prendre 3 articles maximum
-
  if (relatedArticles.length === 0) return null;
-
  return (
  <section className="py-12 bg-gray-50">
  <div className="container mx-auto px-4">
@@ -82,7 +77,6 @@ export default function RelatedArticles({ currentArticleSlug }: RelatedArticlesP
  Continue a aprender sobre eletricidade e segurança doméstica
  </p>
  </div>
-
  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
  {relatedArticles.map((article) => (
  <Link 
@@ -119,7 +113,6 @@ export default function RelatedArticles({ currentArticleSlug }: RelatedArticlesP
  </Link>
  ))}
  </div>
-
  <div className="text-center mt-8">
  <Link href="/blog">
  <button className="px-6 py-3 bg-orange-600 text-white font-medium rounded-lg hover:bg-orange-700 transition-colors">

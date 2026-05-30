@@ -2,7 +2,6 @@ import { useDialogComposition } from "@/components/ui/dialog";
 import { useComposition } from "@/hooks/useComposition";
 import { cn } from "@/lib/utils";
 import * as React from "react";
-
 function Input({
  className,
  type,
@@ -13,7 +12,6 @@ function Input({
 }: React.ComponentProps<"input">) {
  // Get dialog composition context if available (will be no-op if not inside Dialog)
  const dialogComposition = useDialogComposition();
-
  // Add composition event handlers to support input method editor (IME) for CJK languages.
  const {
  onCompositionStart: handleCompositionStart,
@@ -22,13 +20,11 @@ function Input({
  onKeyDown: (e) => {
  // Check if this is an Enter key that should be blocked
  const isComposing = (e.nativeEvent as any).isComposing || dialogComposition.justEndedComposing();
-
  // If Enter key is pressed while composing or just after composition ended,
  // don't call the user's onKeyDown (this blocks the business logic)
  if (e.key === "Enter" && isComposing) {
  return;
  }
-
  // Otherwise, call the user's onKeyDown
  onKeyDown?.(e);
  },
@@ -46,7 +42,6 @@ function Input({
  }, 100);
  onCompositionEnd?.(e);
  }});
-
  return (
  <input
  type={type}
@@ -64,5 +59,4 @@ function Input({
  />
  );
 }
-
 export { Input };

@@ -144,7 +144,7 @@ export default function QuantoCustaEletricistaBraganca() {
  Precisa de Eletricista em Bragança?
  </h3>
  <p className="text-gray-800 mb-4">
- Orçamento gratuito e transparente. Sem surpresas na fatura. Intervenção rápida em Bragança, Mirandela, Chaves e Vila Real.
+ Sem compromisso e transparente. Sem surpresas na fatura. Intervenção rápida em Bragança, Mirandela, Chaves e Vila Real.
  </p>
  <div className="flex flex-col sm:flex-row gap-3">
  <a
@@ -398,12 +398,12 @@ export default function QuantoCustaEletricistaBraganca() {
  Orçamento Gratuito e Transparente
  </h3>
  <p className="text-gray-800 mb-6">
- Eletricistas certificados em Bragança e Trás-os-Montes. Preços justos, sem surpresas. Orçamento detalhado antes de começar. Garantia 2 anos.
+ Eletricistas certificados em Bragança e Trás-os-Montes. Preços justos, sem surpresas. Orçamento detalhado antes de começar. Garantia do serviço.
  </p>
  <ul className="space-y-2 mb-6 text-gray-800">
  <li className="flex items-start">
  <span className="text-orange-600 mr-2">✓</span>
- <span>Orçamento gratuito em 24h</span>
+ <span>Sem compromisso em 24h</span>
  </li>
  <li className="flex items-start">
  <span className="text-orange-600 mr-2">✓</span>

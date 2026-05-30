@@ -21,17 +21,14 @@ import GoogleReviews from '@/components/GoogleReviews';
 import Blog from '@/components/Blog';
 import Contactos from '@/components/Contactos';
 import Footer from '@/components/Footer';
-
 import SEOHead from '@/components/SEOHead';
 import { ScrollToTop } from '@/components/ScrollToTop';
 import { useSite } from '@/contexts/SiteContext';
-
 export default function OptimizedHome() {
  const { config } = useSite();
  const isPlumber = config.id === 'norte-reparos';
  const accentColor = isPlumber ? 'text-blue-600' : 'text-amber-600';
  const serviceLabel = isPlumber ? 'Canalização' : 'Serviços Elétricos';
-
  return (
  <>
  <SEOHead />

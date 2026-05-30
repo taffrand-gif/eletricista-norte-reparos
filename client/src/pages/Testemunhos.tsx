@@ -11,7 +11,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { NORTE_REPAROS_TESTIMONIALS, STAFF_SEEKERS_TESTIMONIALS, type Testimonial } from "@/data/testimonialsData";
 import { CheckCircle } from "lucide-react";
-
 export default function Testemunhos() {
  const config = ACTIVE_CONFIG;
  const [showForm, setShowForm] = useState(false);
@@ -24,7 +23,6 @@ export default function Testemunhos() {
  city: "",
  comment: "",
  serviceType: ""});
-
  const { data: dbReviews = [], isLoading, refetch } = trpc.reviews.list.useQuery();
  
  // Combiner témoignages statiques + base de données
@@ -47,7 +45,6 @@ export default function Testemunhos() {
  const reviews = [...staticReviews, ...dbReviews].sort((a, b) => 
  new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
  );
-
  const createReview = trpc.reviews.create.useMutation({
  onSuccess: () => {
  setShowSuccess(true);
@@ -57,12 +54,10 @@ export default function Testemunhos() {
  setTimeout(() => setShowSuccess(false), 5000);
  refetch();
  }});
-
  useSEO({
  title: `Testemunhos de Clientes | ${config.businessName}`,
  description: `Veja o que os nossos clientes dizem sobre os serviços de ${config.name.toLowerCase()}. Centenas de clientes satisfeitos em todo o distrito de Bragança.`,
  canonical: `https://${config.domain}/testemunhos`});
-
  const handleSubmit = (e: React.FormEvent) => {
  e.preventDefault();
  if (rating === 0) {
@@ -73,11 +68,9 @@ export default function Testemunhos() {
  ...formData,
  rating});
  };
-
  const averageRating = reviews.length > 0 
  ? (reviews.reduce((acc, r) => acc + r.rating, 0) / reviews.length).toFixed(1)
  : "0.0";
-
  const StarRating = ({ rating: r, interactive = false, onRate }: { rating: number; interactive?: boolean; onRate?: (r: number) => void }) => {
  return (
  <div className="flex gap-1">
@@ -99,7 +92,6 @@ export default function Testemunhos() {
  </div>
  );
  };
-
  return (
  <>
  <Header />
@@ -128,7 +120,6 @@ export default function Testemunhos() {
  </div>
  </div>
  </div>
-
  <div className="mt-8">
  <Button
  onClick={() => setShowForm(!showForm)}
@@ -140,7 +131,6 @@ export default function Testemunhos() {
  </div>
  </div>
  </section>
-
  {/* Success Message */}
  {showSuccess && (
  <div className="container max-w-3xl mt-8">
@@ -150,7 +140,6 @@ export default function Testemunhos() {
  </div>
  </div>
  )}
-
  {/* Review Form */}
  {showForm && (
  <section className="py-8 bg-white">
@@ -165,7 +154,6 @@ export default function Testemunhos() {
  <Label>Classificação *</Label>
  <StarRating rating={rating} interactive onRate={setRating} />
  </div>
-
  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
  <div>
  <Label htmlFor="name">Nome *</Label>
@@ -176,7 +164,6 @@ export default function Testemunhos() {
  required
  />
  </div>
-
  <div>
  <Label htmlFor="email">Email (opcional)</Label>
  <Input
@@ -187,7 +174,6 @@ export default function Testemunhos() {
  />
  </div>
  </div>
-
  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
  <div>
  <Label htmlFor="city">Cidade *</Label>
@@ -198,7 +184,6 @@ export default function Testemunhos() {
  required
  />
  </div>
-
  <div>
  <Label htmlFor="serviceType">Tipo de Serviço (opcional)</Label>
  <Input
@@ -208,7 +193,6 @@ export default function Testemunhos() {
  />
  </div>
  </div>
-
  <div>
  <Label htmlFor="comment">Comentário *</Label>
  <Textarea
@@ -221,7 +205,6 @@ export default function Testemunhos() {
  placeholder="Conte-nos sobre a sua experiência..."
  />
  </div>
-
  <Button
  type="submit"
  className="w-full bg-red-600 hover:bg-red-700 text-lg py-6"
@@ -235,7 +218,6 @@ export default function Testemunhos() {
  </div>
  </section>
  )}
-
  {/* Reviews List */}
  <section className="py-16 bg-gray-50">
  <div className="container max-w-5xl">
@@ -265,9 +247,7 @@ export default function Testemunhos() {
  </div>
  <StarRating rating={review.rating} />
  </div>
-
  <p className="text-gray-700 mb-4">{review.comment}</p>
-
  <div className="flex items-center justify-between text-sm text-gray-500">
  {review.serviceType && (
  <span className="bg-red-100 text-red-800 px-3 py-1 rounded-full font-semibold">
@@ -283,7 +263,6 @@ export default function Testemunhos() {
  )}
  </div>
  </section>
-
  <Footer />
  </>
  );

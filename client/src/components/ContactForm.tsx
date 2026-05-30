@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import { Phone, MessageCircle, Send } from 'lucide-react';
-
 // Hook to detect mobile device
 function useIsMobile() {
  const [isMobile, setIsMobile] = React.useState(false);
-
  React.useEffect(() => {
  const checkMobile = () => {
  setIsMobile(window.innerWidth < 768);
@@ -13,16 +11,13 @@ function useIsMobile() {
  window.addEventListener('resize', checkMobile);
  return () => window.removeEventListener('resize', checkMobile);
  }, []);
-
  return isMobile;
 }
-
 function ContactForm() {
  const [nome, setNome] = useState('');
  const [telefone, setTelefone] = useState('');
  const [descricao, setDescricao] = useState('');
  const isMobile = useIsMobile();
-
  const handleWhatsApp = (e: React.FormEvent) => {
  e.preventDefault();
  const msg = encodeURIComponent(
@@ -30,11 +25,9 @@ function ContactForm() {
  );
  window.open(`https://wa.me/351932321892?text=${msg}`, '_blank');
  };
-
  const handleCall = () => {
  window.location.href = 'tel:+351932321892';
  };
-
  return (
  <section id="contacto-rapido" className="py-20 bg-gradient-to-br from-gray-900 to-gray-800">
  <div className="container mx-auto px-4">
@@ -47,7 +40,6 @@ function ContactForm() {
  Descreva o seu problema e a nossa equipa responde rapidamente via WhatsApp.
  </p>
  </div>
-
  <form onSubmit={handleWhatsApp} className="space-y-5">
  <div>
  <label htmlFor="cf-nome" className="block text-sm font-semibold text-gray-300 mb-1">Nome</label>
@@ -89,7 +81,6 @@ function ContactForm() {
  }`}
  />
  </div>
-
  <div className="flex flex-col sm:flex-row gap-4 pt-2">
  <button
  type="submit"
@@ -112,7 +103,6 @@ function ContactForm() {
  </button>
  </div>
  </form>
-
  <p className="text-center text-gray-500 text-sm mt-6">
  Orçamento sem compromisso. Resposta rápida garantida.
  </p>
@@ -121,5 +111,4 @@ function ContactForm() {
  </section>
  );
 }
-
 export default React.memo(ContactForm);

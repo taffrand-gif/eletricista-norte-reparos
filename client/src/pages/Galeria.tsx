@@ -4,26 +4,20 @@ import Footer from "@/components/Footer";
 import { ACTIVE_CONFIG } from "../../../shared/serviceConfig";
 import { useSEO } from "@/hooks/useSEO";
 import { trpc } from "@/lib/trpc";
-
 export default function Galeria() {
  const config = ACTIVE_CONFIG;
  const [selectedPhoto, setSelectedPhoto] = useState<{before: string, after: string, title: string} | null>(null);
  const [selectedCategory, setSelectedCategory] = useState<string>("Todas");
  const [showBefore, setShowBefore] = useState(true);
-
  useSEO({
  title: `Galeria de Trabalhos | ${config.businessName}`,
  description: `Veja a galeria de trabalhos realizados pela ${config.businessName}. Fotos antes e depois dos nossos serviços de ${config.name.toLowerCase()}.`,
  canonical: `https://${config.domain}/galeria`});
-
  const { data: photos = [], isLoading } = trpc.gallery.list.useQuery();
-
  const categories = ["Todas", ...Array.from(new Set(photos.map(p => p.category)))];
-
  const filteredPhotos = selectedCategory === "Todas" 
  ? photos 
  : photos.filter(p => p.category === selectedCategory);
-
  return (
  <>
  <Header />
@@ -40,7 +34,6 @@ export default function Galeria() {
  </div>
  </div>
  </section>
-
  {/* Category Filter */}
  <section className="py-8 bg-white">
  <div className="container">
@@ -61,7 +54,6 @@ export default function Galeria() {
  </div>
  </div>
  </section>
-
  {/* Gallery Grid */}
  <section className="py-16 bg-gray-50">
  <div className="container">
@@ -115,7 +107,6 @@ export default function Galeria() {
  </div>
  </div>
  </div>
-
  {/* Photo Info */}
  <div className="p-4">
  <h3 className="font-bold text-lg text-gray-900 mb-2">{photo.title}</h3>
@@ -137,7 +128,6 @@ export default function Galeria() {
  )}
  </div>
  </section>
-
  {/* Lightbox Modal */}
  {selectedPhoto && (
  <div
@@ -154,12 +144,10 @@ export default function Galeria() {
  >
  ×
  </button>
-
  <div className="max-w-6xl w-full">
  <h2 id="modal-title" className="text-white text-2xl font-bold mb-4 text-center">
  {selectedPhoto.title}
  </h2>
-
  {/* Toggle Button */}
  <div className="flex justify-center mb-4">
  <button
@@ -172,7 +160,6 @@ export default function Galeria() {
  {showBefore ? "Ver Depois →" : "← Ver Antes"}
  </button>
  </div>
-
  {/* Image Display */}
  <div className="relative">
  <img
@@ -187,7 +174,6 @@ export default function Galeria() {
  </div>
  </div>
  )}
-
  <Footer />
  </>
  );

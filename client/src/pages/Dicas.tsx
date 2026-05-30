@@ -2,22 +2,18 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ACTIVE_CONFIG } from "../../../shared/serviceConfig";
 import { useSEO } from "@/hooks/useSEO";
-
 interface Dica {
  title: string;
  content: string;
  icon: string;
 }
-
 export default function Dicas() {
  const config = ACTIVE_CONFIG;
  const dicas = getDicas('electricite');
-
  useSEO({
  title: `Dicas e Conselhos | ${config.businessName}`,
  description: `Dicas úteis para prevenir problemas de eletricidade. Conselhos de especialistas disponíveis 24h.`,
  canonical: `https://${config.domain}/dicas`});
-
  return (
  <>
  <Header />
@@ -34,7 +30,6 @@ export default function Dicas() {
  </div>
  </div>
  </section>
-
  {/* Dicas Grid */}
  <section className="py-16 bg-white">
  <div className="container">
@@ -55,12 +50,10 @@ export default function Dicas() {
  </div>
  </div>
  </section>
-
  <Footer />
  </>
  );
 }
-
 function getDicas(serviceType: 'electricite'): Dica[] {
  return [
  {

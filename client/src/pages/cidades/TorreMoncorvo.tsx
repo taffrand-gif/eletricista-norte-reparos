@@ -9,7 +9,6 @@ import { businessInfo, getCityAddress } from '@/../../shared/napConfig';
 import { getCidadesProximas } from '@/data/cidadesProximas';
 import { useEffect } from 'react';
 import { Phone, Zap, Shield, CheckCircle } from 'lucide-react';
-
 export default function TorreMoncorvo() {
  useEffect(() => {
  document.title = "Eletricista Torre Moncorvo ⚡ 24h | 932 321 892";
@@ -20,8 +19,7 @@ export default function TorreMoncorvo() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Tomada queimada em Torre de Moncorvo? Arranjo no próprio dia. certificação elétrica, orçamento gratuito. Ligue: 932 321 892');
-
+ metaDescription.setAttribute('content', 'Tomada queimada em Torre de Moncorvo? Arranjo no próprio dia. certificação elétrica, sem compromisso. Ligue: 932 321 892');
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');
@@ -29,7 +27,6 @@ export default function TorreMoncorvo() {
  document.head.appendChild(canonical);
  }
  canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/eletricista-torre-moncorvo');
-
  const schemaScript = document.createElement('script');
  schemaScript.type = 'application/ld+json';
  schemaScript.id = 'schema-torre';
@@ -45,7 +42,6 @@ export default function TorreMoncorvo() {
  "priceRange": "€€"
  });
  document.head.appendChild(schemaScript);
-
  // FAQ Schema
  const faqSchema = document.createElement('script');
  faqSchema.type = 'application/ld+json';
@@ -63,15 +59,12 @@ export default function TorreMoncorvo() {
  }))
  });
  document.head.appendChild(faqSchema);
-
  return () => {
  const existingSchema = document.getElementById('schema-torre');
  if (existingSchema) existingSchema.remove();
  };
  }, []);
-
  const cidadesProximas = getCidadesProximas('torre-moncorvo');
-
  const faqs = [
  { question: "Quanto tempo demora a chegar a Torre de Moncorvo?", answer: "Chegamos a Torre de Moncorvo em aproximadamente 50-60 minutos. Cobrimos todo o concelho." },
  {
@@ -80,7 +73,6 @@ export default function TorreMoncorvo() {
  },
  { question: "Fazem instalações para quintas e adegas?", answer: "Sim, temos experiência em instalações elétricas para quintas vinícolas e adegas da região do Douro." }
  ];
-
  return (
  <div className="min-h-screen flex flex-col">
  <Header />
@@ -96,7 +88,6 @@ export default function TorreMoncorvo() {
  </div>
  </div>
  </section>
-
  <section className="py-16 bg-gray-50">
  <div className="container">
  <h2 className="text-3xl font-black text-center mb-12">Serviços Elétricos em Torre de Moncorvo</h2>
@@ -115,9 +106,7 @@ export default function TorreMoncorvo() {
  </div>
  </div>
  </section>
-
  <section className="py-16"><div className="container max-w-4xl"><h2 className="text-3xl font-black text-center mb-12">Perguntas Frequentes - Torre de Moncorvo</h2><FAQSection faqs={faqs} /></div></section>
-
  <section className="py-16 bg-orange-500 text-white">
  <div className="container text-center">
  <h2 className="text-3xl font-black mb-4">Precisa de Eletricista em Torre de Moncorvo?</h2>
@@ -125,7 +114,6 @@ export default function TorreMoncorvo() {
  <a href={`tel:${businessInfo.phone}`} className="inline-flex items-center gap-2 bg-white text-orange-500 px-8 py-4 rounded-lg text-xl font-bold hover:bg-gray-100 transition-all shadow-lg"><Phone className="w-6 h-6" />{businessInfo.phoneFormatted}</a>
  </div>
  </section>
-
  {/* Related Cities - Maillage interno SEO */}
  {/* Cidades Próximas - Internal Linking */}
  <CidadesProximas
@@ -133,7 +121,6 @@ export default function TorreMoncorvo() {
  cidades={cidadesProximas}
  serviceType="eletricista"
  />
-
  
  <RelatedCities 
  currentCity="Torre de Moncorvo" 

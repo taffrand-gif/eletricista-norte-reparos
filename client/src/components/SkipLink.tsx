@@ -1,6 +1,5 @@
 // SkipLink - Composant pour navigation clavier accessible
 // Permet aux utilisateurs de clavier de sauter directement au contenu principal
-
 export default function SkipLink() {
  return (
  <a

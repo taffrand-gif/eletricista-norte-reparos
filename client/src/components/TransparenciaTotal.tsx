@@ -1,14 +1,11 @@
 import React from 'react';
 import { useSite } from '@/contexts/SiteContext';
-
 interface TransparenciaTotalProps {
  className?: string;
 }
-
 function TransparenciaTotal({ className = '' }: TransparenciaTotalProps) {
  const { config } = useSite();
  const accentColor = config.id === 'norte-reparos' ? '#0e7490' : '#FF6B35';
-
  return (
  <section className={`py-16 bg-gradient-to-br from-white to-gray-50 ${className}`}>
  <div className="container mx-auto px-4 max-w-6xl">
@@ -26,7 +23,6 @@ function TransparenciaTotal({ className = '' }: TransparenciaTotalProps) {
  Somos os únicos a mostrar TODOS os preços publicamente. Sem jogos. Sem surpresas.
  </p>
  </div>
-
  {/* Comparação Principal */}
  <div className="grid md:grid-cols-2 gap-8 mb-12">
  {/* O Que Mostramos */}
@@ -66,7 +62,6 @@ function TransparenciaTotal({ className = '' }: TransparenciaTotalProps) {
  </li>
  </ul>
  </div>
-
  {/* O Que Outros Escondem */}
  <div className="bg-gray-100 rounded-2xl shadow-xl p-8 border-2 border-gray-300">
  <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
@@ -105,7 +100,6 @@ function TransparenciaTotal({ className = '' }: TransparenciaTotalProps) {
  </ul>
  </div>
  </div>
-
  {/* Pergunta Provocadora */}
  <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 border-2 border-blue-200 mb-12">
  <div className="text-center">
@@ -121,7 +115,6 @@ function TransparenciaTotal({ className = '' }: TransparenciaTotalProps) {
  </p>
  </div>
  </div>
-
  {/* Razões para Transparência */}
  <div className="grid md:grid-cols-2 gap-6 mb-12">
  <div className="bg-white rounded-xl p-6 shadow-lg">
@@ -147,7 +140,6 @@ function TransparenciaTotal({ className = '' }: TransparenciaTotalProps) {
  </li>
  </ul>
  </div>
-
  <div className="bg-white rounded-xl p-6 shadow-lg border-2" style={{ borderColor: accentColor }}>
  <h4 className="text-lg font-bold text-gray-900 mb-4">
  Razões para MOSTRAR preços:
@@ -172,7 +164,6 @@ function TransparenciaTotal({ className = '' }: TransparenciaTotalProps) {
  </ul>
  </div>
  </div>
-
  {/* CTA */}
  <div className="text-center">
  <a
@@ -190,5 +181,4 @@ function TransparenciaTotal({ className = '' }: TransparenciaTotalProps) {
  </section>
  );
 }
-
 export default React.memo(TransparenciaTotal);

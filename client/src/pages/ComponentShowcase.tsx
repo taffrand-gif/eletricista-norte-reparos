@@ -151,7 +151,6 @@ import {
 import { useState } from "react";
 import { toast as sonnerToast } from "sonner";
 import { AIChatBox, type Message } from "@/components/AIChatBox";
-
 export default function ComponentsShowcase() {
  const { theme, toggleTheme } = useTheme();
  const [date, setDate] = useState<Date | undefined>(new Date());
@@ -165,13 +164,11 @@ export default function ComponentsShowcase() {
  const [selectedYear, setSelectedYear] = useState("");
  const [dialogInput, setDialogInput] = useState("");
  const [dialogOpen, setDialogOpen] = useState(false);
-
  // AI ChatBox demo state
  const [chatMessages, setChatMessages] = useState<Message[]>([
  { role: "system", content: "You are a helpful assistant." },
  ]);
  const [isChatLoading, setIsChatLoading] = useState(false);
-
  const handleDialogSubmit = () => {
  // console.log("Dialog submitted with value:", dialogInput);
  sonnerToast.success("Submitted successfully", {
@@ -179,19 +176,16 @@ export default function ComponentsShowcase() {
  setDialogInput("");
  setDialogOpen(false);
  };
-
  const handleDialogKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
  if (e.key === "Enter" && !e.nativeEvent.isComposing) {
  e.preventDefault();
  handleDialogSubmit();
  }
  };
-
  const handleChatSend = (content: string) => {
  // Add user message
  const newMessages: Message[] = [...chatMessages, { role: "user", content }];
  setChatMessages(newMessages);
-
  // Simulate AI response with delay
  setIsChatLoading(true);
  setTimeout(() => {
@@ -202,7 +196,6 @@ export default function ComponentsShowcase() {
  setIsChatLoading(false);
  }, 1500);
  };
-
  return (
  <div className="min-h-screen bg-background text-foreground">
  <main className="container max-w-6xl mx-auto">
@@ -218,7 +211,6 @@ export default function ComponentsShowcase() {
  )}
  </Button>
  </div>
-
  <div className="space-y-12">
  {/* Text Colors Section */}
  <section className="space-y-4">
@@ -298,7 +290,6 @@ export default function ComponentsShowcase() {
  </CardContent>
  </Card>
  </section>
-
  {/* Color Combinations Section */}
  <section className="space-y-4">
  <h3 className="text-2xl font-semibold">Color Combinations</h3>
@@ -357,7 +348,6 @@ export default function ComponentsShowcase() {
  </CardContent>
  </Card>
  </section>
-
  {/* Buttons Section */}
  <section className="space-y-4">
  <h3 className="text-2xl font-semibold">Buttons</h3>
@@ -379,7 +369,6 @@ export default function ComponentsShowcase() {
  </CardContent>
  </Card>
  </section>
-
  {/* Form Inputs Section */}
  <section className="space-y-4">
  <h3 className="text-2xl font-semibold">Form Inputs</h3>
@@ -652,7 +641,6 @@ export default function ComponentsShowcase() {
  </CardContent>
  </Card>
  </section>
-
  {/* Data Display Section */}
  <section className="space-y-4">
  <h3 className="text-2xl font-semibold">Data Display</h3>
@@ -841,7 +829,6 @@ export default function ComponentsShowcase() {
  </CardContent>
  </Card>
  </section>
-
  {/* Alerts Section */}
  <section className="space-y-4">
  <h3 className="text-2xl font-semibold">Alerts</h3>
@@ -862,7 +849,6 @@ export default function ComponentsShowcase() {
  </Alert>
  </div>
  </section>
-
  {/* Tabs Section */}
  <section className="space-y-4">
  <h3 className="text-2xl font-semibold">Tabs</h3>
@@ -931,7 +917,6 @@ export default function ComponentsShowcase() {
  </TabsContent>
  </Tabs>
  </section>
-
  {/* Accordion Section */}
  <section className="space-y-4">
  <h3 className="text-2xl font-semibold">Accordion</h3>
@@ -958,7 +943,6 @@ export default function ComponentsShowcase() {
  </AccordionItem>
  </Accordion>
  </section>
-
  {/* Collapsible Section */}
  <section className="space-y-4">
  <h3 className="text-2xl font-semibold">Collapsible</h3>
@@ -989,7 +973,6 @@ export default function ComponentsShowcase() {
  </Card>
  </Collapsible>
  </section>
-
  {/* Dialog, Sheet, Drawer Section */}
  <section className="space-y-4">
  <h3 className="text-2xl font-semibold">Overlays</h3>
@@ -1031,7 +1014,6 @@ export default function ComponentsShowcase() {
  </div>
  </DialogContent>
  </Dialog>
-
  <Sheet>
  <SheetTrigger asChild>
  <Button variant="outline">Open Sheet</Button>
@@ -1046,7 +1028,6 @@ export default function ComponentsShowcase() {
  </SheetHeader>
  </SheetContent>
  </Sheet>
-
  <Drawer>
  <DrawerTrigger asChild>
  <Button variant="outline">Open Drawer</Button>
@@ -1066,7 +1047,6 @@ export default function ComponentsShowcase() {
  </DrawerFooter>
  </DrawerContent>
  </Drawer>
-
  <Popover>
  <PopoverTrigger asChild>
  <Button variant="outline">Open Popover</Button>
@@ -1080,7 +1060,6 @@ export default function ComponentsShowcase() {
  </div>
  </PopoverContent>
  </Popover>
-
  <Tooltip>
  <TooltipTrigger asChild>
  <Button variant="outline">Hover me</Button>
@@ -1093,7 +1072,6 @@ export default function ComponentsShowcase() {
  </CardContent>
  </Card>
  </section>
-
  {/* Menus Section */}
  <section className="space-y-4">
  <h3 className="text-2xl font-semibold">Menus</h3>
@@ -1113,7 +1091,6 @@ export default function ComponentsShowcase() {
  <DropdownMenuItem>Subscription</DropdownMenuItem>
  </DropdownMenuContent>
  </DropdownMenu>
-
  <ContextMenu>
  <ContextMenuTrigger asChild>
  <Button variant="outline">Right Click Me</Button>
@@ -1125,7 +1102,6 @@ export default function ComponentsShowcase() {
  <ContextMenuItem>Subscription</ContextMenuItem>
  </ContextMenuContent>
  </ContextMenu>
-
  <HoverCard>
  <HoverCardTrigger asChild>
  <Button variant="outline">Hover Card</Button>
@@ -1144,7 +1120,6 @@ export default function ComponentsShowcase() {
  </CardContent>
  </Card>
  </section>
-
  {/* Calendar Section */}
  <section className="space-y-4">
  <h3 className="text-2xl font-semibold">Calendar</h3>
@@ -1159,7 +1134,6 @@ export default function ComponentsShowcase() {
  </CardContent>
  </Card>
  </section>
-
  {/* Carousel Section */}
  <section className="space-y-4">
  <h3 className="text-2xl font-semibold">Carousel</h3>
@@ -1187,7 +1161,6 @@ export default function ComponentsShowcase() {
  </CardContent>
  </Card>
  </section>
-
  {/* Toggle Section */}
  <section className="space-y-4">
  <h3 className="text-2xl font-semibold">Toggle</h3>
@@ -1228,7 +1201,6 @@ export default function ComponentsShowcase() {
  </CardContent>
  </Card>
  </section>
-
  {/* Aspect Ratio & Scroll Area Section */}
  <section className="space-y-4">
  <h3 className="text-2xl font-semibold">Layout Components</h3>
@@ -1260,7 +1232,6 @@ export default function ComponentsShowcase() {
  </CardContent>
  </Card>
  </section>
-
  {/* Resizable Section */}
  <section className="space-y-4">
  <h3 className="text-2xl font-semibold">Resizable Panels</h3>
@@ -1285,7 +1256,6 @@ export default function ComponentsShowcase() {
  </CardContent>
  </Card>
  </section>
-
  {/* Toast Section */}
  <section className="space-y-4">
  <h3 className="text-2xl font-semibold">Toast</h3>
@@ -1360,7 +1330,6 @@ export default function ComponentsShowcase() {
  </CardContent>
  </Card>
  </section>
-
  {/* AI ChatBox Section */}
  <section className="space-y-4">
  <h3 className="text-2xl font-semibold">AI ChatBox</h3>
@@ -1396,7 +1365,6 @@ export default function ComponentsShowcase() {
  </section>
  </div>
  </main>
-
  <footer className="border-t py-6 mt-12">
  <div className="container text-center text-sm text-muted-foreground">
  <p>Shadcn/ui Component Showcase</p>

@@ -1,6 +1,5 @@
 // Contenu unique par ville - Stratégie monopole SEO
 // Évite duplicate content et booste rankings locaux (+20%)
-
 export interface CityContent {
  name: string;
  slug: string;
@@ -26,7 +25,6 @@ export interface CityContent {
  };
  specificites: string[];
 }
-
 // 10 villes prioritaires avec contenu unique premium
 export const eletricistaCityContent: Record<string, CityContent> = {
  braganca: {

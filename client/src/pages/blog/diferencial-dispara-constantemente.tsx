@@ -1,7 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'wouter';
 import { Phone, MessageCircle, Zap, AlertTriangle, CheckCircle, TrendingDown } from 'lucide-react';
-
 export default function DiferencialDisparaConstantemente() {
  return (
  <>
@@ -43,7 +42,6 @@ export default function DiferencialDisparaConstantemente() {
  })}
  </script>
  </Helmet>
-
  <article className="max-w-4xl mx-auto px-4 py-12">
  <header className="mb-8">
  <Link href="/blog">
@@ -58,14 +56,12 @@ export default function DiferencialDisparaConstantemente() {
  <span>11 min de leitura</span>
  </div>
  </header>
-
  <div className="prose prose-lg max-w-none mb-8">
  <p className="text-xl text-gray-700 leading-relaxed">
  O diferencial que dispara constantemente é um dos problemas elétricos mais frustrantes e perigosos.
  Descubra as 7 causas principais, como identificar o culpado e quando é urgente chamar eletricista.
  </p>
  </div>
-
  {/* CTA */}
  <div className="bg-gradient-to-r from-red-600 to-orange-600 rounded-xl p-6 mb-12 text-white">
  <div className="flex flex-col md:flex-row items-center justify-between">
@@ -85,15 +81,12 @@ export default function DiferencialDisparaConstantemente() {
  </div>
  </div>
  </div>
-
  <div className="prose prose-lg max-w-none">
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">O Que é o Diferencial?</h2>
-
  <p>
  O <strong>disjuntor diferencial</strong> (ou interruptor diferencial) é o dispositivo de segurança mais importante da sua casa.
  Deteta fugas de corrente tão pequenas como 30mA (0,03A) e corta a eletricidade em milissegundos, prevenindo choques elétricos fatais.
  </p>
-
  <div className="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
  <div className="flex items-start gap-3">
  <Zap className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
@@ -106,9 +99,7 @@ export default function DiferencialDisparaConstantemente() {
  </div>
  </div>
  </div>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">7 Causas Principais</h2>
-
  <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">1. Aparelho Avariado (40% dos casos)</h3>
  <p>
  A causa mais comum. Aparelhos com isolamento danificado, resistências queimadas ou componentes em curto-circuito causam fugas de corrente.
@@ -122,7 +113,6 @@ export default function DiferencialDisparaConstantemente() {
  <li>Ferros de engomar - resistência em contacto com carcaça</li>
  </ul>
  <p><strong>Como identificar:</strong> Desligue todos os aparelhos, religue o diferencial e ligue aparelhos um a um. O culpado fará disparar.</p>
-
  <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">2. Humidade na Instalação (25% dos casos)</h3>
  <p>
  Água infiltrada em caixas de derivação, tomadas ou condutas causa fugas de corrente. Muito comum em Trás-os-Montes durante o inverno chuvoso.
@@ -135,7 +125,6 @@ export default function DiferencialDisparaConstantemente() {
  <li>WCs com humidade excessiva</li>
  </ul>
  <p><strong>Sintoma típico:</strong> Diferencial dispara mais em dias de chuva ou após usar água quente.</p>
-
  <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">3. Isolamento Deteriorado (20% dos casos)</h3>
  <p>
  Cabos elétricos antigos (mais de 30 anos) têm isolamento que se degrada com o tempo, calor e roedores.
@@ -148,7 +137,6 @@ export default function DiferencialDisparaConstantemente() {
  <li>Marcas de roedores em sótãos/caves</li>
  <li>Cheiro a queimado intermitente</li>
  </ul>
-
  <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">4. Diferencial Defeituoso (10% dos casos)</h3>
  <p>
  O próprio diferencial pode avariar, especialmente após 15-20 anos ou muitos disparos. Componentes internos desgastam-se e causam disparos falsos.
@@ -160,25 +148,21 @@ export default function DiferencialDisparaConstantemente() {
  <li>Se disparar sem carga alguma, pode estar hipersensível</li>
  </ul>
  <p><strong>Substituição:</strong> Diferencial novo custa 40-80€ + instalação 60-100€ = 100-180€ total.</p>
-
  <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">5. Sobrecarga de Circuito (3% dos casos)</h3>
  <p>
  Embora raro, circuitos sobrecarregados podem causar aquecimento que deteriora isolamento e cria fugas.
  </p>
  <p><strong>Exemplo:</strong> 10 aparelhos num circuito de 16A (3680W) causam aquecimento → isolamento derrete → fuga → diferencial dispara.</p>
-
  <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">6. Ligação Incorreta (1% dos casos)</h3>
  <p>
  Instalação mal feita por amadores: neutro e terra trocados, ligações soltas, cabos mal apertados.
  </p>
  <p><strong>Sintoma:</strong> Diferencial dispara desde instalação nova ou após "arranjo" feito por não-profissional.</p>
-
  <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">7. Trovoadas e Sobretensões (1% dos casos)</h3>
  <p>
  Trovoadas causam picos de tensão que danificam aparelhos e criam fugas. Comum em Trás-os-Montes no verão.
  </p>
  <p><strong>Prevenção:</strong> Instalar DPS (Dispositivo Proteção Sobretensões) no quadro - obrigatório desde 2023.</p>
-
  <div className="bg-red-50 border-l-4 border-red-600 p-6 my-8">
  <div className="flex items-start gap-3">
  <AlertTriangle className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
@@ -193,9 +177,7 @@ export default function DiferencialDisparaConstantemente() {
  </div>
  </div>
  </div>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Como Identificar o Problema</h2>
-
  <div className="space-y-6 my-8">
  <div className="flex gap-4">
  <div className="flex-shrink-0 w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">1</div>
@@ -206,7 +188,6 @@ export default function DiferencialDisparaConstantemente() {
  </p>
  </div>
  </div>
-
  <div className="flex gap-4">
  <div className="flex-shrink-0 w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">2</div>
  <div>
@@ -217,7 +198,6 @@ export default function DiferencialDisparaConstantemente() {
  </p>
  </div>
  </div>
-
  <div className="flex gap-4">
  <div className="flex-shrink-0 w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">3</div>
  <div>
@@ -228,7 +208,6 @@ export default function DiferencialDisparaConstantemente() {
  </p>
  </div>
  </div>
-
  <div className="flex gap-4">
  <div className="flex-shrink-0 w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">4</div>
  <div>
@@ -240,9 +219,7 @@ export default function DiferencialDisparaConstantemente() {
  </div>
  </div>
  </div>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Preços de Arranjo</h2>
-
  <div className="overflow-x-auto my-8">
  <table className="min-w-full bg-white border border-gray-300">
  <thead className="bg-gray-100">
@@ -281,9 +258,7 @@ export default function DiferencialDisparaConstantemente() {
  </tbody>
  </table>
  </div>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Quando Chamar Eletricista URGENTE</h2>
-
  <div className="bg-red-50 border-2 border-red-600 rounded-lg p-6 my-8">
  <h4 className="font-bold text-red-900 mb-4 text-xl">🚨 Situações de EMERGÊNCIA:</h4>
  <ul className="space-y-3 text-gray-800">
@@ -316,9 +291,7 @@ export default function DiferencialDisparaConstantemente() {
  ☎️ Contacte eletricista certificado 24h: 932 321 892
  </p>
  </div>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Perguntas Frequentes</h2>
-
  <div className="space-y-6 my-8">
  <div className="bg-gray-50 rounded-lg p-6">
  <h4 className="font-bold text-gray-900 mb-2">Posso usar a casa com o diferencial a disparar?</h4>
@@ -327,7 +300,6 @@ export default function DiferencialDisparaConstantemente() {
  e chame eletricista no mesmo dia. Não force o diferencial a ficar ligado.
  </p>
  </div>
-
  <div className="bg-gray-50 rounded-lg p-6">
  <h4 className="font-bold text-gray-900 mb-2">O diferencial dispara só à noite, porquê?</h4>
  <p className="text-gray-700 mb-0">
@@ -335,7 +307,6 @@ export default function DiferencialDisparaConstantemente() {
  (esquentador, aquecimento) estão avariados. Identifique o aparelho ou chame eletricista.
  </p>
  </div>
-
  <div className="bg-gray-50 rounded-lg p-6">
  <h4 className="font-bold text-gray-900 mb-2">Quanto tempo demora a arranjo?</h4>
  <p className="text-gray-700 mb-0">
@@ -343,7 +314,6 @@ export default function DiferencialDisparaConstantemente() {
  Substituição cabo: 2-4 horas. Urgências 24h disponíveis.
  </p>
  </div>
-
  <div className="bg-gray-50 rounded-lg p-6">
  <h4 className="font-bold text-gray-900 mb-2">Devo testar o diferencial regularmente?</h4>
  <p className="text-gray-700 mb-0">
@@ -352,20 +322,16 @@ export default function DiferencialDisparaConstantemente() {
  </p>
  </div>
  </div>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Conclusão</h2>
-
  <p>
  O diferencial que dispara constantemente não é apenas inconveniente - é um aviso de perigo real.
  Nunca ignore, force ou desative o diferencial. Identifique a causa seguindo os passos acima ou contacte eletricista certificado.
  </p>
-
  <p>
  O investimento de 100-250€ numa arranjo profissional previne choques elétricos fatais, incêndios e danos em aparelhos.
  Em Trás-os-Montes, com inverno húmido e instalações antigas, a manutenção elétrica preventiva é essencial.
  </p>
  </div>
-
  {/* Final CTA */}
  <div className="bg-gradient-to-r from-red-600 to-orange-600 rounded-xl p-8 mt-12 text-white text-center">
  <h3 className="text-2xl font-bold mb-4">Diferencial Dispara Constantemente?</h3>
@@ -386,7 +352,6 @@ export default function DiferencialDisparaConstantemente() {
  ✓ Intervenção Urgente ✓ Diagnóstico Rápido ✓ Disponível 24h/7d
  </p>
  </div>
-
  {/* Related Articles */}
  <div className="mt-12 pt-8 border-t border-gray-200">
  <h3 className="text-2xl font-bold text-gray-900 mb-6">Artigos Relacionados</h3>

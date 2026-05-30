@@ -1,16 +1,13 @@
 import React from 'react';
 // Breadcrumbs com Schema BreadcrumbList JSON-LD para SEO
 import { useEffect, memo } from 'react';
-
 interface BreadcrumbItem {
  label: string;
  href?: string;
 }
-
 interface BreadcrumbsProps {
  items: BreadcrumbItem[];
 }
-
 function Breadcrumbs({ items }: BreadcrumbsProps) {
  useEffect(() => {
  const schema = {
@@ -21,21 +18,17 @@ function Breadcrumbs({ items }: BreadcrumbsProps) {
  position: index + 1,
  name: item.label,
  ...(item.href ? { item: `${window.location.origin}${item.href}` } : {})}))};
-
  const script = document.createElement('script');
  script.type = 'application/ld+json';
  script.setAttribute('data-breadcrumbs', 'true');
  script.textContent = JSON.stringify(schema);
-
  // Remove existing breadcrumb schema
  document.querySelectorAll('script[data-breadcrumbs]').forEach((el) => el.remove());
  document.head.appendChild(script);
-
  return () => {
  script.remove();
  };
  }, [items]);
-
  return (
  <nav aria-label="Breadcrumb" className="container mx-auto px-4 py-2">
  <ol className="flex flex-wrap items-center gap-1 text-xs text-gray-500">
@@ -60,5 +53,4 @@ function Breadcrumbs({ items }: BreadcrumbsProps) {
  </nav>
  );
 }
-
 export default React.memo(Breadcrumbs);

@@ -1,6 +1,5 @@
 // Page SEO optimisée: "Como Instalar Tomada Sozinho" - Intention DIY/informational
 // Recherche fréquente: "como instalar tomada sozinho", "instalar tomada seguro", "posso instalar tomada"
-
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Header from '@/components/Header';
@@ -8,11 +7,8 @@ import Footer from '@/components/Footer';
 import FAQSection from '@/components/FAQSection';
 import { useSite } from '@/contexts/SiteContext';
 import { Phone, AlertTriangle, CheckCircle, XCircle, Zap, ShieldAlert } from 'lucide-react';
-
 export default function ComoInstalarTomadaSozinho() {
  const { config } = useSite();
-
-
  const faqs = [
  {
  question: "Posso instalar tomada sozinho em Portugal?",
@@ -31,7 +27,6 @@ export default function ComoInstalarTomadaSozinho() {
  answer: "NÃO. Mesmo trocar tomada partida requer eletricista certificado em Portugal. Parece simples mas envolve: desligar disjuntor correto, verificar ausência tensão, ligação correta fios (fase, neutro, terra). Erro = risco fatal."
  }
  ];
-
  const riscos = [
  {
  risco: "Choque Elétrico Fatal",
@@ -64,7 +59,6 @@ export default function ComoInstalarTomadaSozinho() {
  icon: XCircle
  }
  ];
-
  const porqueNao = [
  {
  razao: "É ILEGAL em Portugal",
@@ -92,7 +86,6 @@ export default function ComoInstalarTomadaSozinho() {
  icon: CheckCircle
  }
  ];
-
  const oqueFazEletricista = [
  "Verifica quadro elétrico e disjuntores",
  "Desliga circuito correto com segurança",
@@ -105,7 +98,6 @@ export default function ComoInstalarTomadaSozinho() {
  "Garante conformidade com normas portuguesas",
  "Dá garantia do trabalho (2 anos)"
  ];
-
  return (
  <>
  <Helmet>
@@ -113,7 +105,6 @@ export default function ComoInstalarTomadaSozinho() {
  <meta name="description" content="Posso instalar tomada sozinho? ATENÇÃO: é ilegal e perigoso sem certificação. Risco choque elétrico e incêndio. Eletricista certificado: 932 321 892" />
  </Helmet>
  <Header />
-
  <main className="min-h-screen bg-gradient-to-b from-white to-orange-50">
  {/* Hero Alerta */}
  <section className="bg-gradient-to-r from-red-600 to-orange-600 text-white py-16">
@@ -123,16 +114,13 @@ export default function ComoInstalarTomadaSozinho() {
  <ShieldAlert className="w-5 h-5" />
  PERIGO + ILEGAL
  </div>
-
  <h1 className="text-4xl md:text-5xl font-bold mb-6">
  Como Instalar Tomada Sozinho? <span className="text-yellow-300">NÃO FAÇA!</span>
  </h1>
-
  <p className="text-xl mb-8">
  É ILEGAL e PERIGOSO instalar tomadas sem certificação de eletricista.
  Risco de morte, incêndio e multa até 3740€. Seguro não cobre.
  </p>
-
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a
  href={`tel:${config.phone.replace(/\s/g, "")}`}
@@ -153,7 +141,6 @@ export default function ComoInstalarTomadaSozinho() {
  </div>
  </div>
  </section>
-
  {/* Riscos */}
  <section className="py-16 bg-white">
  <div className="container mx-auto px-4">
@@ -163,7 +150,6 @@ export default function ComoInstalarTomadaSozinho() {
  <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
  Não vale a pena arriscar. Eletricista custa 40-80€. Vida não tem preço.
  </p>
-
  <div className="max-w-5xl mx-auto space-y-4">
  {riscos.map((item, index) => (
  <div key={index} className={`p-6 rounded-xl shadow-lg border-l-4 ${
@@ -198,14 +184,12 @@ export default function ComoInstalarTomadaSozinho() {
  </div>
  </div>
  </section>
-
  {/* Porque NÃO Fazer */}
  <section className="py-16 bg-gray-50">
  <div className="container mx-auto px-4">
  <h2 className="text-3xl font-bold text-center mb-12">
  🚫 5 Razões para NÃO Instalar Tomada Sozinho
  </h2>
-
  <div className="max-w-4xl mx-auto space-y-6">
  {porqueNao.map((item, index) => (
  <div key={index} className="bg-white p-6 rounded-xl shadow-md border-l-4 border-red-500">
@@ -221,7 +205,6 @@ export default function ComoInstalarTomadaSozinho() {
  </div>
  </div>
  </section>
-
  {/* O Que Faz Eletricista */}
  <section className="py-16 bg-white">
  <div className="container mx-auto px-4">
@@ -231,7 +214,6 @@ export default function ComoInstalarTomadaSozinho() {
  <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
  Não é só "ligar 3 fios". É segurança, legalidade e garantia.
  </p>
-
  <div className="max-w-3xl mx-auto grid md:grid-cols-2 gap-4">
  {oqueFazEletricista.map((item, index) => (
  <div key={index} className="bg-green-50 p-4 rounded-lg border-l-4 border-green-500 flex items-start gap-3">
@@ -240,7 +222,6 @@ export default function ComoInstalarTomadaSozinho() {
  </div>
  ))}
  </div>
-
  <div className="mt-8 text-center">
  <p className="text-gray-600 mb-4">
  ✅ Preço: 40-80€ (instalação simples)<br />
@@ -258,7 +239,6 @@ export default function ComoInstalarTomadaSozinho() {
  </div>
  </div>
  </section>
-
  {/* Legalidade */}
  <section className="py-16 bg-red-50">
  <div className="container mx-auto px-4">
@@ -291,7 +271,6 @@ export default function ComoInstalarTomadaSozinho() {
  </div>
  </div>
  </section>
-
  {/* FAQ */}
  <section className="py-16 bg-white">
  <div className="container max-w-4xl">
@@ -301,7 +280,6 @@ export default function ComoInstalarTomadaSozinho() {
  <FAQSection faqs={faqs} />
  </div>
  </section>
-
  {/* CTA Final */}
  <section className="py-16 bg-gradient-to-r from-[#FF6B35] to-[#ff8c5a] text-white">
  <div className="container mx-auto px-4 text-center">
@@ -323,7 +301,6 @@ export default function ComoInstalarTomadaSozinho() {
  </div>
  </section>
  </main>
-
  <Footer />
  </>
  );

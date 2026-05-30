@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'wouter';
 import { ArrowRight } from 'lucide-react';
-
 const FEATURED_POSTS = [
  {
  slug: 'como-escolher-eletricista-certificado',
@@ -25,7 +24,6 @@ const FEATURED_POSTS = [
  readTime: '6 min'
  }
 ];
-
 export default function BlogPreview() {
  return (
  <section className="py-16 bg-gray-50">
@@ -38,7 +36,6 @@ export default function BlogPreview() {
  Aprenda com os nossos especialistas sobre instalações elétricas, segurança e manutenção
  </p>
  </div>
-
  <div className="grid md:grid-cols-3 gap-6 mb-8">
  {FEATURED_POSTS.map((post) => (
  <Link
@@ -64,7 +61,6 @@ export default function BlogPreview() {
  </Link>
  ))}
  </div>
-
  <div className="text-center">
  <Link
  to="/blog"

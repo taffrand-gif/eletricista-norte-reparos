@@ -384,7 +384,7 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  </li>
  <li className="flex items-start">
  <span className="text-orange-600 mr-2">✓</span>
- <span>Garantia 2 anos</span>
+ <span>Garantia do serviço</span>
  </li>
  </ul>
  <div className="flex flex-col sm:flex-row gap-4">

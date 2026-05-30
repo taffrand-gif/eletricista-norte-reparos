@@ -1,15 +1,13 @@
 import { ACTIVE_CONFIG } from "@shared/serviceConfig";
 import QuoteForm from "@/components/QuoteForm";
 import { useSEO } from "@/hooks/useSEO";
-
 export default function Orcamento() {
  const { businessName, phone } = ACTIVE_CONFIG;
  
  useSEO({
  title: `Pedir Orçamento Gratuito | ${businessName}`,
- description: `Peça um orçamento gratuito e sem compromisso. Resposta rápida e preços competitivos. Contacte-nos: ${phone}`,
- keywords: "orçamento gratuito, pedir orçamento, orçamento sem compromisso, preços competitivos"});
-
+ description: `Peça um sem compromisso e sem compromisso. Resposta rápida e preços competitivos. Contacte-nos: ${phone}`,
+ keywords: "sem compromisso, pedir orçamento, orçamento sem compromisso, preços competitivos"});
  return (
  <div className="min-h-screen bg-gray-50">
  {/* Hero Section */}
@@ -28,14 +26,12 @@ export default function Orcamento() {
  </div>
  </div>
  </section>
-
  {/* Formulário */}
  <section className="py-12">
  <div className="container">
  <QuoteForm />
  </div>
  </section>
-
  {/* Avantages */}
  <section className="py-12 bg-white">
  <div className="container">
@@ -50,15 +46,13 @@ export default function Orcamento() {
  Orçamento enviado em poucas horas
  </p>
  </div>
-
  <div className="text-center">
  <div className="text-5xl mb-4">💰</div>
  <h3 className="text-xl font-bold mb-2">Sem Compromisso</h3>
  <p className="text-gray-600">
- Orçamento gratuito e transparente
+ Sem compromisso e transparente
  </p>
  </div>
-
  <div className="text-center">
  <div className="text-5xl mb-4">👨‍🔧</div>
  <h3 className="text-xl font-bold mb-2">Profissionais</h3>
@@ -70,7 +64,6 @@ export default function Orcamento() {
  </div>
  </div>
  </section>
-
  {/* CTA Contact */}
  <section className="py-12 bg-gray-100">
  <div className="container">

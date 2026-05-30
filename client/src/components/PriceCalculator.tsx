@@ -4,7 +4,6 @@ import React from 'react';
 // - Clear visual hierarchy
 // - Instant price calculation
 // - Bold typography for results
-
 import { useSite } from '@/contexts/SiteContext';
 import { Calculator, Phone } from 'lucide-react';
 import { useState, memo, useCallback } from 'react';
@@ -17,13 +16,11 @@ import {
  SelectValue} from './ui/select';
 import { Label } from './ui/label';
 import { RadioGroup, RadioGroupItem } from './ui/radio-group';
-
 function PriceCalculator() {
  const { config } = useSite();
  const [selectedService, setSelectedService] = useState<string>('');
  const [urgency, setUrgency] = useState<'normal' | 'urgent'>('normal');
  const [calculatedPrice, setCalculatedPrice] = useState<number | null>(null);
-
  const handleCalculate = useCallback(() => {
  const service = config.services.find(s => s.id === selectedService);
  if (service) {
@@ -32,7 +29,6 @@ function PriceCalculator() {
  setCalculatedPrice(finalPrice);
  }
  }, [selectedService, urgency, config]);
-
  return (
  <section id="calculador-preco" className="py-20 bg-gray-50">
  <div className="container">
@@ -50,11 +46,9 @@ function PriceCalculator() {
  />
  <h2 className="text-3xl font-black">Calculador de Preços</h2>
  </div>
-
  <p className="text-gray-600 mb-8">
  Obtenha uma estimativa rápida do custo do serviço.
  </p>
-
  {/* Form */}
  <div className="space-y-6">
  {/* Service selector */}
@@ -78,7 +72,6 @@ function PriceCalculator() {
  </SelectContent>
  </Select>
  </div>
-
  {/* Urgency selector */}
  <div>
  <Label className="text-base font-bold mb-3 block">Urgência</Label>
@@ -97,7 +90,6 @@ function PriceCalculator() {
  </div>
  </RadioGroup>
  </div>
-
  {/* Calculate button */}
  <Button
  onClick={handleCalculate}
@@ -110,7 +102,6 @@ function PriceCalculator() {
  <Calculator className="w-5 h-5 mr-2" />
  Calcular Preço
  </Button>
-
  {/* Price display */}
  {calculatedPrice !== null && (
  <div 
@@ -124,7 +115,6 @@ function PriceCalculator() {
  <p className="text-xs text-gray-500 mt-2">*Valor aproximado, sujeito a confirmação</p>
  </div>
  )}
-
  {/* Secondary CTA */}
  <div className="mt-8 pt-6 border-t-2 border-gray-200 text-center">
  <p className="text-sm font-bold text-gray-600 mb-3">
@@ -145,5 +135,4 @@ function PriceCalculator() {
  </section>
  );
 }
-
 export default React.memo(PriceCalculator);

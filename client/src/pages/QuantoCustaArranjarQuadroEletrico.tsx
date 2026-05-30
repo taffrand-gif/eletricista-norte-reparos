@@ -130,7 +130,7 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  </h1>
  <p className="text-xl mb-8">
  Preços claros e honestos: 60-800€ (depende serviço).
- certificação elétrica incluída. Orçamento gratuito sem compromisso.
+ certificação elétrica incluída. Sem compromisso sem compromisso.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a
@@ -194,9 +194,9 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  </div>
  <div className="mt-8 text-center">
  <p className="text-gray-600 mb-4">
- ✅ Orçamento gratuito sem compromisso<br />
+ ✅ Sem compromisso sem compromisso<br />
  ✅ certificação elétrica incluída (obrigatória)<br />
- ✅ Garantia 2 anos<br />
+ ✅ Garantia do serviço<br />
  ✅ Atendimento urgente 24h disponível
  </p>
  <a
@@ -266,7 +266,7 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  "Instalação profissional",
  "Teste de todos os circuitos",
  "certificação elétrica (obrigatória)",
- "Garantia 2 anos",
+ "Garantia do serviço",
  "Limpeza após intervenção"
  ].map((item, index) => (
  <div key={index} className="flex items-start gap-3 bg-green-50 p-4 rounded-lg">
@@ -294,7 +294,7 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  Precisa Arranjar Quadro Elétrico?
  </h2>
  <p className="text-xl mb-8 max-w-2xl mx-auto">
- Orçamento gratuito sem compromisso. certificação elétrica incluída.
+ Sem compromisso sem compromisso. certificação elétrica incluída.
  Atendimento urgente 24h.
  </p>
  <a

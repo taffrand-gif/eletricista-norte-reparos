@@ -3,22 +3,18 @@ import { useState, useEffect, memo, useMemo } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useSite } from '@/contexts/SiteContext';
 import OptimizedImage from './OptimizedImage';
-
 interface Service {
  icon: string;
  title: string;
  description: string;
  image: string;
 }
-
 export function ServicesSlider() {
  const { config } = useSite();
  const [currentSlide, setCurrentSlide] = useState(0);
  const [touchStart, setTouchStart] = useState(0);
  const [touchEnd, setTouchEnd] = useState(0);
-
  const isPlumbing = config.name === 'norte-reparos';
-
  const services: Service[] = useMemo(() => isPlumbing ? [
  {
  icon: '🔧',
@@ -70,7 +66,6 @@ export function ServicesSlider() {
  image: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=80'
  }
  ], [isPlumbing]);
-
  // Auto-play
  useEffect(() => {
  const timer = setInterval(() => {
@@ -78,24 +73,19 @@ export function ServicesSlider() {
  }, 5000);
  return () => clearInterval(timer);
  }, [services.length]);
-
  const nextSlide = () => {
  setCurrentSlide((prev) => (prev + 1) % services.length);
  };
-
  const prevSlide = () => {
  setCurrentSlide((prev) => (prev - 1 + services.length) % services.length);
  };
-
  // Touch handlers for mobile swipe
  const handleTouchStart = (e: React.TouchEvent) => {
  setTouchStart(e.targetTouches[0].clientX);
  };
-
  const handleTouchMove = (e: React.TouchEvent) => {
  setTouchEnd(e.targetTouches[0].clientX);
  };
-
  const handleTouchEnd = () => {
  if (touchStart - touchEnd > 75) {
  nextSlide();
@@ -104,7 +94,6 @@ export function ServicesSlider() {
  prevSlide();
  }
  };
-
  return (
  <div className="relative w-full max-w-4xl mx-auto">
  {/* Slider Container */}
@@ -133,7 +122,6 @@ export function ServicesSlider() {
  sizes="100vw"
  />
  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-
  {/* Content */}
  <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
  <div className="text-5xl mb-4">{service.icon}</div>
@@ -144,7 +132,6 @@ export function ServicesSlider() {
  </div>
  ))}
  </div>
-
  {/* Navigation Arrows */}
  <button
  onClick={prevSlide}
@@ -161,7 +148,6 @@ export function ServicesSlider() {
  <ChevronRight className="w-6 h-6 text-white group-hover:scale-110 transition-transform" aria-hidden="true" />
  </button>
  </div>
-
  {/* Dots Indicator */}
  <div className="flex justify-center gap-2 mt-6">
  {services.map((_, index) => (
@@ -180,5 +166,4 @@ export function ServicesSlider() {
  </div>
  );
 }
-
 export default React.memo(ServicesSlider);

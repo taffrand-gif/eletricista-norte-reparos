@@ -9,7 +9,6 @@ import { businessInfo, getCityAddress } from '@/../../shared/napConfig';
 import { getCidadesProximas } from '@/data/cidadesProximas';
 import { useEffect } from 'react';
 import { Phone, Zap, Shield, CheckCircle } from 'lucide-react';
-
 export default function MirandaDouro() {
  useEffect(() => {
  document.title = "Eletricista Miranda do Douro ⚡ 24h | 932 321 892";
@@ -21,7 +20,6 @@ export default function MirandaDouro() {
  document.head.appendChild(metaDescription);
  }
  metaDescription.setAttribute('content', 'Sem eletricidade em Miranda do Douro? Estamos aí hoje. Arranjo urgente, orçamento sem compromisso. Ligue: 932 321 892');
-
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');
@@ -29,7 +27,6 @@ export default function MirandaDouro() {
  document.head.appendChild(canonical);
  }
  canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/eletricista-miranda-douro');
-
  const schemaScript = document.createElement('script');
  schemaScript.type = 'application/ld+json';
  schemaScript.id = 'schema-miranda';
@@ -45,7 +42,6 @@ export default function MirandaDouro() {
  "priceRange": "€€"
  });
  document.head.appendChild(schemaScript);
-
  // FAQ Schema
  const faqSchema = document.createElement('script');
  faqSchema.type = 'application/ld+json';
@@ -63,15 +59,12 @@ export default function MirandaDouro() {
  }))
  });
  document.head.appendChild(faqSchema);
-
  return () => {
  const existingSchema = document.getElementById('schema-miranda');
  if (existingSchema) existingSchema.remove();
  };
  }, []);
-
  const cidadesProximas = getCidadesProximas('miranda-douro');
-
  const faqs = [
  { question: "Quanto tempo demora a chegar a Miranda do Douro?", answer: "Chegamos a Miranda do Douro em aproximadamente 45-60 minutos. Cobrimos todo o concelho incluindo Sendim e Duas Igrejas." },
  {
@@ -80,7 +73,6 @@ export default function MirandaDouro() {
  },
  { question: "Falam mirandês?", answer: "Entendemos mirandês! Muitos dos nossos clientes na Terra de Miranda preferem falar na sua língua." }
  ];
-
  return (
  <div className="min-h-screen flex flex-col">
  <Header />
@@ -96,7 +88,6 @@ export default function MirandaDouro() {
  </div>
  </div>
  </section>
-
  <section className="py-16 bg-gray-50">
  <div className="container">
  <h2 className="text-3xl font-black text-center mb-12">Serviços Elétricos em Miranda do Douro</h2>
@@ -115,7 +106,6 @@ export default function MirandaDouro() {
  </div>
  </div>
  </section>
-
  <section className="py-16 bg-orange-50">
  <div className="container">
  <h2 className="text-3xl font-black text-center mb-8">Freguesias que Servimos</h2>
@@ -126,9 +116,7 @@ export default function MirandaDouro() {
  </div>
  </div>
  </section>
-
  <section className="py-16"><div className="container max-w-4xl"><h2 className="text-3xl font-black text-center mb-12">Perguntas Frequentes - Miranda do Douro</h2><FAQSection faqs={faqs} /></div></section>
-
  <section className="py-16 bg-orange-500 text-white">
  <div className="container text-center">
  <h2 className="text-3xl font-black mb-4">Precisa de Eletricista em Miranda do Douro?</h2>
@@ -136,7 +124,6 @@ export default function MirandaDouro() {
  <a href={`tel:${businessInfo.phone}`} className="inline-flex items-center gap-2 bg-white text-orange-500 px-8 py-4 rounded-lg text-xl font-bold hover:bg-gray-100 transition-all shadow-lg"><Phone className="w-6 h-6" />{businessInfo.phoneFormatted}</a>
  </div>
  </section>
-
  {/* Related Cities - Maillage interno SEO */}
  {/* Cidades Próximas - Internal Linking */}
  <CidadesProximas
@@ -144,7 +131,6 @@ export default function MirandaDouro() {
  cidades={cidadesProximas}
  serviceType="eletricista"
  />
-
  
  <RelatedCities 
  currentCity="Miranda do Douro" 

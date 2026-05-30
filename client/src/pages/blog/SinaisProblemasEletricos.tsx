@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useEffect } from 'react';
 import { Phone, AlertTriangle, CheckCircle, Zap } from 'lucide-react';
-
 export default function SinaisProblemasEletricos() {
  useEffect(() => {
  document.title = "7 Sinais de Problemas Elétricos em Casa - Quando Chamar Eletricista | Staff Seekers";
@@ -15,7 +14,6 @@ export default function SinaisProblemasEletricos() {
  document.head.appendChild(metaDescription);
  }
  metaDescription.setAttribute('content', 'Aprenda a identificar os 7 sinais de alerta de problemas elétricos em casa. Saiba quando é urgente chamar um eletricista profissional. Guia completo de segurança elétrica.');
-
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');
@@ -24,7 +22,6 @@ export default function SinaisProblemasEletricos() {
  }
  canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/blog/sinais-problemas-eletricos-casa');
  }, []);
-
  const sinais = [
  {
  titulo: "1. Disjuntor que Dispara Frequentemente",
@@ -69,7 +66,6 @@ export default function SinaisProblemasEletricos() {
  acao: "Peça uma inspeção para identificar consumos fantasma."
  }
  ];
-
  return (
  <div className="min-h-screen flex flex-col">
  <Header />
@@ -90,7 +86,6 @@ export default function SinaisProblemasEletricos() {
  </div>
  </div>
  </section>
-
  {/* Intro */}
  <section className="py-12 bg-red-50">
  <div className="container max-w-3xl">
@@ -106,7 +101,6 @@ export default function SinaisProblemasEletricos() {
  </div>
  </div>
  </section>
-
  {/* Lista de Sinais */}
  <section className="py-16">
  <div className="container max-w-3xl">
@@ -140,7 +134,6 @@ export default function SinaisProblemasEletricos() {
  </div>
  </div>
  </section>
-
  {/* CTA */}
  <section className="py-16 bg-orange-500 text-white">
  <div className="container text-center">
@@ -150,7 +143,7 @@ export default function SinaisProblemasEletricos() {
  </h2>
  <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
  Não arrisque. Uma inspeção elétrica pode salvar a sua casa e a sua família.
- Orçamento gratuito e sem compromisso.
+ Sem compromisso e sem compromisso.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a href="tel:+351932321892" className="inline-flex items-center justify-center gap-2 bg-white text-orange-500 px-8 py-4 rounded-lg text-xl font-bold hover:bg-gray-100 transition-all shadow-lg">

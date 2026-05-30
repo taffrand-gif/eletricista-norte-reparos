@@ -1,7 +1,6 @@
 // Seção Avaliações Google com Schema AggregateRating
 import { useSite } from '@/contexts/SiteContext';
 import { useEffect, useRef, useState } from 'react';
-
 interface Review {
  name: string;
  initial: string;
@@ -10,7 +9,6 @@ interface Review {
  text: string;
  date: string;
 }
-
 const reviews: Review[] = [
  {
  name: 'Manuel S.',
@@ -55,9 +53,7 @@ const reviews: Review[] = [
  text: 'Veio de longe mas chegou rápido. Resolveu a avaria em 30 minutos.',
  date: 'há 2 meses'},
 ];
-
 const avatarColors = ['#FF6B35', '#E53935', '#8E24AA', '#1E88E5', '#43A047', '#FB8C00'];
-
 function Stars({ count }: { count: number }) {
  return (
  <div className="flex gap-0.5" role="img" aria-label={`${count} de 5 estrelas`}>
@@ -69,7 +65,6 @@ function Stars({ count }: { count: number }) {
  </div>
  );
 }
-
 function GoogleLogo() {
  return (
  <svg className="w-16 h-6" viewBox="0 0 272 92" aria-label="Google">
@@ -82,12 +77,10 @@ function GoogleLogo() {
  </svg>
  );
 }
-
 export default function GoogleReviews() {
  const { config } = useSite();
  const sectionRef = useRef<HTMLElement>(null);
  const [visibleCards, setVisibleCards] = useState<boolean[]>(new Array(reviews.length).fill(false));
-
  useEffect(() => {
  const observer = new IntersectionObserver(
  (entries) => {
@@ -108,11 +101,9 @@ export default function GoogleReviews() {
  },
  { threshold: 0.15 }
  );
-
  if (sectionRef.current) observer.observe(sectionRef.current);
  return () => observer.disconnect();
  }, []);
-
  // Injetar schema AggregateRating
  useEffect(() => {
  const schema = {
@@ -133,7 +124,6 @@ export default function GoogleReviews() {
  document.head.appendChild(script);
  return () => { script.remove(); };
  }, [config.name]);
-
  return (
  <section ref={sectionRef} className="py-16 bg-gray-50" aria-label="Avaliações de clientes">
  <div className="container mx-auto px-4">
@@ -151,7 +141,6 @@ export default function GoogleReviews() {
  </div>
  </div>
  </div>
-
  {/* Review cards */}
  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto">
  {reviews.map((review, index) => (

@@ -3,13 +3,11 @@ import React from 'react';
 import { useSite } from '@/contexts/SiteContext';
 import { Star } from 'lucide-react';
 import { useLocalTestimonials } from '@/hooks/useLocationContent';
-
 function Testimonials() {
  const { config } = useSite();
  const localTestimonials = useLocalTestimonials(config.testimonials);
  const isPlumber = config.id === 'norte-reparos';
  const clientCount = isPlumber ? '500+' : '300+';
-
  // Generate Review schema for each testimonial
  const reviewSchemas = localTestimonials.map((testimonial) => ({
  "@type": "Review",
@@ -26,7 +24,6 @@ function Testimonials() {
  "reviewBody": testimonial.text,
  "datePublished": "2026-02-01"
  }));
-
  return (
  <>
  {/* Review Schema JSON-LD */}
@@ -36,7 +33,6 @@ function Testimonials() {
  __html: JSON.stringify(reviewSchemas)
  }}
  />
-
  <section id="testemunhos" className="py-20 bg-white">
  <div className="container">
  {/* Cabeçalho */}
@@ -52,7 +48,6 @@ function Testimonials() {
  ))}
  <span className="ml-2"></span>
  </div>
-
  <h2 className="text-4xl md:text-5xl font-black mb-4">
  O Que Dizem os Nossos Clientes
  </h2>
@@ -60,7 +55,6 @@ function Testimonials() {
  {clientCount} clientes satisfeitos confiam nos nossos serviços em Trás-os-Montes
  </p>
  </div>
-
  {/* Grelha de testemunhos */}
  <div className="grid md:grid-cols-3 gap-8 mb-12">
  {localTestimonials.map((testimonial) => (
@@ -78,12 +72,10 @@ function Testimonials() {
  />
  ))}
  </div>
-
  {/* Citação */}
  <p className="text-gray-700 mb-6 italic leading-relaxed">
  "{testimonial.text}"
  </p>
-
  {/* Autor */}
  <div className="flex items-center gap-3">
  <div
@@ -107,5 +99,4 @@ function Testimonials() {
  </>
  );
 }
-
 export default React.memo(Testimonials);

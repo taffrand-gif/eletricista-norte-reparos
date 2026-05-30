@@ -1,15 +1,12 @@
 import React from 'react';
 import { useSite } from '@/contexts/SiteContext';
-
 interface EquipamentoProfissionalProps {
  className?: string;
 }
-
 function EquipamentoProfissional({ className = '' }: EquipamentoProfissionalProps) {
  const { config } = useSite();
  const isPlumber = config.id === 'norte-reparos';
  const accentColor = isPlumber ? '#0e7490' : '#FF6B35';
-
  const equipmentPlumber = [
  {
  name: 'Ridgid K-9102 FlexShaft',
@@ -30,7 +27,6 @@ function EquipamentoProfissional({ className = '' }: EquipamentoProfissionalProp
  icon: '🌡️'
  }
  ];
-
  const equipmentElectrician = [
  {
  name: 'Fluke 1587 Megóhmetro',
@@ -51,10 +47,8 @@ function EquipamentoProfissional({ className = '' }: EquipamentoProfissionalProp
  icon: '🔧'
  }
  ];
-
  const equipment = isPlumber ? equipmentPlumber : equipmentElectrician;
  const totalInvestment = isPlumber ? '€20.000+' : '€10.000+';
-
  return (
  <section className={`py-16 bg-white ${className}`}>
  <div className="container mx-auto px-4 max-w-6xl">
@@ -72,7 +66,6 @@ function EquipamentoProfissional({ className = '' }: EquipamentoProfissionalProp
  Não é "exagero" — é para resolver o seu problema à primeira, sem voltar 3 vezes.
  </p>
  </div>
-
  {/* Equipment Cards */}
  <div className="grid md:grid-cols-3 gap-8 mb-12">
  {equipment.map((item, index) => (
@@ -93,13 +86,11 @@ function EquipamentoProfissional({ className = '' }: EquipamentoProfissionalProp
  </div>
  ))}
  </div>
-
  {/* Comparação Básico vs PRO */}
  <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 border-2 border-blue-200 mb-12">
  <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
  Equipamento Básico vs Equipamento Profissional
  </h3>
-
  <div className="overflow-x-auto">
  <table className="w-full">
  <thead>
@@ -158,7 +149,6 @@ function EquipamentoProfissional({ className = '' }: EquipamentoProfissionalProp
  </table>
  </div>
  </div>
-
  {/* Custo Real para Cliente */}
  <div className="grid md:grid-cols-2 gap-8 mb-12">
  {/* Cenário Básico */}
@@ -194,7 +184,6 @@ function EquipamentoProfissional({ className = '' }: EquipamentoProfissionalProp
  + 3 semanas de stress + casa danificada
  </p>
  </div>
-
  {/* Cenário PRO */}
  <div className="bg-green-50 rounded-xl p-6 border-2" style={{ borderColor: accentColor }}>
  <h4 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
@@ -229,7 +218,6 @@ function EquipamentoProfissional({ className = '' }: EquipamentoProfissionalProp
  </p>
  </div>
  </div>
-
  {/* Conclusão */}
  <div className="text-center bg-gradient-to-r from-gray-50 to-white rounded-2xl p-8 border-2 border-gray-200">
  <p className="text-2xl font-bold text-gray-900 mb-4">
@@ -260,5 +248,4 @@ function EquipamentoProfissional({ className = '' }: EquipamentoProfissionalProp
  </section>
  );
 }
-
 export default React.memo(EquipamentoProfissional);

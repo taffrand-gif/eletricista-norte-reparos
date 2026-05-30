@@ -1,6 +1,5 @@
 // Page dynamique pour freguesias (villages)
 // Gère toutes les freguesias via routing dynamique
-
 import { useParams } from 'wouter';
 import { useEffect } from 'react';
 import Header from '@/components/Header';
@@ -11,28 +10,22 @@ import RelatedCities from '@/components/RelatedCities';
 import { useSite } from '@/contexts/SiteContext';
 import { CITIES } from '@/../../shared/serviceConfig';
 import { Phone, MapPin, Clock } from 'lucide-react';
-
 export default function FreguesiasPage() {
  const { config } = useSite();
  const params = useParams();
-
  // Extraire freguesia et parentCity depuis l'URL
  // Format: /canalizador-izeda-braganca
  const pathParts = window.location.pathname.split('-');
  const freguesiaSlug = pathParts[1];
  const parentCitySlug = pathParts[2];
-
  // Trouver la freguesia dans CITIES
  const freguesia = CITIES.find(c => c.slug === freguesiaSlug && c.parentCity);
  const parentCity = CITIES.find(c => c.slug === parentCitySlug && !c.parentCity);
-
  if (!freguesia || !parentCity) {
  return <div>Freguesia não encontrada</div>;
  }
-
  useEffect(() => {
  document.title = `${config.serviceName} ${freguesia.name} (${parentCity.name}) 💧 24h | ${config.phone}`;
-
  // Meta description
  let metaDescription = document.querySelector('meta[name="description"]');
  if (!metaDescription) {
@@ -43,7 +36,6 @@ export default function FreguesiasPage() {
  metaDescription.setAttribute('content',
  `${config.serviceName} profissional em ${freguesia.name}, ${parentCity.name}. Serviço 24h, urgências. Ligue: ${config.phone}`
  );
-
  // Canonical URL
  const canonicalUrl = `https://${config.domain}/${config.serviceSlug}-${freguesiaSlug}-${parentCitySlug}`;
  let canonical = document.querySelector('link[rel="canonical"]');
@@ -53,7 +45,6 @@ export default function FreguesiasPage() {
  document.head.appendChild(canonical);
  }
  canonical.setAttribute('href', canonicalUrl);
-
  // Schema.org LocalBusiness
  const schemaScript = document.createElement('script');
  schemaScript.type = 'application/ld+json';
@@ -77,13 +68,11 @@ export default function FreguesiasPage() {
  }
  });
  document.head.appendChild(schemaScript);
-
  return () => {
  const existingSchema = document.getElementById('schema-freguesia');
  if (existingSchema) existingSchema.remove();
  };
  }, [freguesia, parentCity, config]);
-
  const faqs = [
  {
  question: `Atendem em ${freguesia.name}?`,
@@ -98,11 +87,9 @@ export default function FreguesiasPage() {
  answer: `Sim, atendemos urgências 24 horas por dia, 7 dias por semana em ${freguesia.name} e arredores.`
  }
  ];
-
  return (
  <>
  <Header />
-
  <main className="min-h-screen bg-gradient-to-b from-white to-blue-50">
  {/* Hero */}
  <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
@@ -113,16 +100,13 @@ export default function FreguesiasPage() {
  { label: parentCity.name, href: `/${config.serviceSlug}-${parentCitySlug}` },
  { label: freguesia.name, href: `/${config.serviceSlug}-${freguesiaSlug}-${parentCitySlug}` }
  ]} />
-
  <h1 className="text-4xl md:text-5xl font-bold mb-6">
  {config.serviceName} em <span className="text-orange-400">{freguesia.name}</span>
  </h1>
-
  <p className="text-xl mb-8">
  Serviço profissional em {freguesia.name}, {parentCity.name}.
  Atendimento 24h, urgências resolvidas no mesmo dia.
  </p>
-
  <div className="flex flex-col sm:flex-row gap-4">
  <a
  href={`tel:${config.phone.replace(/\s/g, "")}`}
@@ -142,7 +126,6 @@ export default function FreguesiasPage() {
  </div>
  </div>
  </section>
-
  {/* Sobre a Freguesia */}
  <section className="py-16 bg-white">
  <div className="container mx-auto px-4">
@@ -162,7 +145,6 @@ export default function FreguesiasPage() {
  </div>
  </div>
  </section>
-
  {/* Vantagens */}
  <section className="py-16 bg-gray-50">
  <div className="container mx-auto px-4">
@@ -200,7 +182,6 @@ export default function FreguesiasPage() {
  </div>
  </div>
  </section>
-
  {/* FAQ */}
  <section className="py-16">
  <div className="container max-w-4xl">
@@ -210,7 +191,6 @@ export default function FreguesiasPage() {
  <FAQSection faqs={faqs} />
  </div>
  </section>
-
  {/* CTA */}
  <section className="py-16 bg-gradient-to-r from-orange-500 to-blue-700 text-white">
  <div className="container mx-auto px-4 text-center">
@@ -228,14 +208,12 @@ export default function FreguesiasPage() {
  </a>
  </div>
  </section>
-
  {/* Related Cities */}
  <RelatedCities
  currentCity={freguesia.name}
  currentCitySlug={`${config.serviceSlug}-${freguesiaSlug}-${parentCitySlug}`}
  />
  </main>
-
  <Footer />
  </>
  );

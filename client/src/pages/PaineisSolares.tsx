@@ -1,6 +1,5 @@
 // Page Service Dédié: Painéis Solares Fotovoltaicos em Trás-os-Montes
 // Optimizada para SEO com keywords: painéis solares, energia solar
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SEOHeadEnhanced from '@/components/SEOHeadEnhanced';
@@ -9,10 +8,8 @@ import FAQSection from '@/components/FAQSection';
 import { useSite } from '@/contexts/SiteContext';
 import { ACTIVE_CONFIG } from '@/../../shared/serviceConfig';
 import { useEffect } from 'react';
-
 export default function PaineisSolares() {
  const { config } = useSite();
-
  useEffect(() => {
  document.title = "Painéis Solares Fotovoltaicos em Trás-os-Montes | Energia Solar | Instalação Profissional";
  
@@ -25,7 +22,6 @@ export default function PaineisSolares() {
  }
  metaDescription.setAttribute('content', 'Instalação de painéis solares fotovoltaicos em Trás-os-Montes: energia solar para casa, redução de faturas, independência energética. Instalação profissional, financiamento, manutenção.');
  }, [config]);
-
  // Schema.org Service JSON-LD
  const serviceSchema = {
  "@context": "https://schema.org",
@@ -85,7 +81,6 @@ export default function PaineisSolares() {
  ]
  }
  };
-
  return (
  <>
  <SEOHeadEnhanced pageType="service" />
@@ -122,7 +117,6 @@ export default function PaineisSolares() {
  </div>
  </div>
  </section>
-
  {/* Service details */}
  <section className="py-16">
  <div className="container mx-auto px-4">
@@ -295,7 +289,6 @@ export default function PaineisSolares() {
  </div>
  </div>
  </section>
-
  {/* FAQ Section with Schema.org */}
  <section className="py-16 bg-gray-50">
  <FAQSection
@@ -316,7 +309,6 @@ export default function PaineisSolares() {
  ]}
  />
  </section>
-
  {/* Internal links to city pages */}
  <section className="py-16">
  <div className="container mx-auto px-4">
@@ -347,7 +339,6 @@ export default function PaineisSolares() {
  </div>
  </div>
  </section>
-
  {/* CTA Final */}
  <section className="py-16 bg-gradient-to-r from-blue-900 to-amber-700 text-white">
  <div className="container mx-auto px-4 text-center">

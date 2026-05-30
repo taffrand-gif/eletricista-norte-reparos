@@ -2,14 +2,12 @@ import React from 'react';
 import BlogLayout from '@/components/blog/BlogLayout';
 import { useSEO } from '@/hooks/useSEO';
 import { ACTIVE_CONFIG } from '@/../../shared/serviceConfig';
-
 const PouparEnergiaEletricaDicas: React.FC = () => {
  useSEO({
  title: 'Como Poupar Energia Elétrica em Casa — 10 Dicas Práticas | 2026',
  description: 'Descubra 10 dicas práticas para poupar energia elétrica em casa e reduzir a fatura da luz. Guia completo de eficiência energética para Trás-os-Montes.',
  keywords: 'poupar energia, eficiência energética, dicas eletricidade casa, reduzir fatura luz, poupar eletricidade'
  });
-
  return (
  <BlogLayout
  title="Como Poupar Energia Elétrica em Casa — 10 Dicas Práticas"
@@ -39,7 +37,6 @@ const PouparEnergiaEletricaDicas: React.FC = () => {
  </div>
  </div>
  </div>
-
  {/* Featured image */}
  <div className="mb-10 rounded-2xl overflow-hidden">
  <img
@@ -68,7 +65,6 @@ const PouparEnergiaEletricaDicas: React.FC = () => {
  imediatamente para reduzir o consumo elétrico em casa, especialmente adaptadas à realidade de Trás-os-Montes.
  </p>
  </div>
-
  {/* Table of contents */}
  <div className="bg-gray-50 rounded-2xl p-6 mb-10">
  <h2 className="text-2xl font-bold text-gray-900 mb-4">📋 Neste Artigo</h2>
@@ -109,7 +105,6 @@ const PouparEnergiaEletricaDicas: React.FC = () => {
  </div>
  <p>Em Trás-os-Montes, onde os dias de inverno são curtos e a iluminação artificial é usada muitas horas, esta troca pode poupar entre 50€ e 100€ por ano.</p>
  </section>
-
  <section id="standby" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">2. 🔴 Eliminar o Consumo em Standby</h2>
  <p>Os aparelhos em standby (luz vermelha ligada) consomem energia 24 horas por dia. Televisões, consolas, carregadores e micro-ondas são os principais culpados.</p>
@@ -123,7 +118,6 @@ const PouparEnergiaEletricaDicas: React.FC = () => {
  </div>
  <p>Use extensões com interruptor para desligar vários aparelhos de uma vez. É a forma mais prática de eliminar este consumo fantasma.</p>
  </section>
-
  <section id="eletrodomesticos" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">3. 🧺 Usar Eletrodomésticos de Forma Eficiente</h2>
  <p>Pequenas mudanças na forma como usa os eletrodomésticos fazem grande diferença:</p>
@@ -165,7 +159,6 @@ const PouparEnergiaEletricaDicas: React.FC = () => {
  </ul>
  </div>
  </section>
-
  <section id="horarios" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">5. ⏰ Aproveitar as Tarifas Bi-Horárias</h2>
  <p>Se tem contrato bi-horário ou tri-horário, concentre os consumos maiores nas horas de vazio (geralmente das 22h às 8h nos dias úteis e fins de semana completos).</p>
@@ -190,7 +183,6 @@ const PouparEnergiaEletricaDicas: React.FC = () => {
  </div>
  </div>
  </section>
-
  <section id="isolamento" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">6-10. 🏠 Mais Dicas Essenciais</h2>
  <div className="space-y-6">
@@ -216,7 +208,6 @@ const PouparEnergiaEletricaDicas: React.FC = () => {
  </div>
  </div>
  </section>
-
  <section id="profissional" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">👨‍🔧 Quando Chamar um Eletricista</h2>
  <div className="bg-amber-50 border border-amber-200 rounded-2xl p-8">
@@ -280,7 +271,6 @@ const PouparEnergiaEletricaDicas: React.FC = () => {
  })}
  </script>
  </section>
-
  {/* Author bio */}
  <div className="bg-gray-50 rounded-2xl p-8 mt-12">
  <div className="flex flex-col md:flex-row gap-6 items-center">
@@ -302,5 +292,4 @@ const PouparEnergiaEletricaDicas: React.FC = () => {
  </BlogLayout>
  );
 };
-
 export default PouparEnergiaEletricaDicas;

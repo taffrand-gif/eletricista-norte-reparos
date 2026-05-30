@@ -1,6 +1,5 @@
 // SEO optimized page for "Eletricista Macedo de Cavaleiros"
 // 100% unique content, conforme às políticas Google
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import RelatedCities from '@/components/RelatedCities';
@@ -12,10 +11,8 @@ import { useSite } from '@/contexts/SiteContext';
 import { useEffect } from 'react';
 import { Phone, Clock, MapPin, Shield, Zap, CheckCircle } from 'lucide-react';
 import { getCidadesProximas } from '@/data/cidadesProximas';
-
 export default function MacedoCavaleiros() {
  const { config } = useSite();
-
  useEffect(() => {
  document.title = "Eletricista Macedo Cavaleiros ⚡ 24h | 932 321 892";
  
@@ -26,7 +23,6 @@ export default function MacedoCavaleiros() {
  document.head.appendChild(metaDescription);
  }
  metaDescription.setAttribute('content', 'Curto-circuito em Macedo de Cavaleiros? Estamos aí em menos de 30 min. Orçamento sem compromisso. Ligue: 932 321 892');
-
  let metaKeywords = document.querySelector('meta[name="keywords"]');
  if (!metaKeywords) {
  metaKeywords = document.createElement('meta');
@@ -34,7 +30,6 @@ export default function MacedoCavaleiros() {
  document.head.appendChild(metaKeywords);
  }
  metaKeywords.setAttribute('content', 'eletricista macedo de cavaleiros, eletricista urgente macedo, eletricista 24 horas macedo cavaleiros, avaria elétrica macedo, quadro elétrico macedo cavaleiros, curto circuito macedo');
-
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');
@@ -42,7 +37,6 @@ export default function MacedoCavaleiros() {
  document.head.appendChild(canonical);
  }
  canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/eletricista-macedo-cavaleiros');
-
  const schemaScript = document.createElement('script');
  schemaScript.type = 'application/ld+json';
  schemaScript.id = 'schema-macedo';
@@ -66,7 +60,6 @@ export default function MacedoCavaleiros() {
  }
  });
  document.head.appendChild(schemaScript);
-
  // FAQ Schema
  const faqSchema = document.createElement('script');
  faqSchema.type = 'application/ld+json';
@@ -84,16 +77,13 @@ export default function MacedoCavaleiros() {
  }))
  });
  document.head.appendChild(faqSchema);
-
  return () => {
  const existingSchema = document.getElementById('schema-macedo');
  if (existingSchema) existingSchema.remove();
  document.head.removeChild(faqSchema);
  };
  }, []);
-
  const cidadesProximas = getCidadesProximas('macedo-cavaleiros');
-
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Macedo de Cavaleiros?",
@@ -112,7 +102,6 @@ export default function MacedoCavaleiros() {
  answer: "Sim, fazemos certificação elétrica para todo o tipo de imóveis em Macedo de Cavaleiros e região."
  }
  ];
-
  return (
  <div className="min-h-screen flex flex-col">
  <Header />
@@ -156,7 +145,6 @@ export default function MacedoCavaleiros() {
  </div>
  </div>
  </section>
-
  {/* Vantagens Zona Local */}
  <section className="py-16 bg-gray-50">
  <div className="container">
@@ -194,7 +182,6 @@ export default function MacedoCavaleiros() {
  </div>
  </div>
  </section>
-
  {/* Serviços */}
  <section className="py-16">
  <div className="container">
@@ -221,7 +208,6 @@ export default function MacedoCavaleiros() {
  </div>
  </div>
  </section>
-
  {/* Zonas Cobertas */}
  <section className="py-16 bg-orange-50">
  <div className="container">
@@ -248,7 +234,6 @@ export default function MacedoCavaleiros() {
  </div>
  </div>
  </section>
-
  {/* FAQ */}
  <section className="py-16">
  <div className="container max-w-4xl">
@@ -258,7 +243,6 @@ export default function MacedoCavaleiros() {
  <FAQSection faqs={faqs} />
  </div>
  </section>
-
  {/* CTA Final */}
  <section className="py-16 bg-orange-500 text-white">
  <div className="container text-center">
@@ -277,21 +261,18 @@ export default function MacedoCavaleiros() {
  </a>
  </div>
  </section>
-
  {/* Cidades Próximas - Internal Linking */}
  <CidadesProximas
  currentCity="Macedo de Cavaleiros"
  cidades={cidadesProximas}
  serviceType="eletricista"
  />
-
  {/* Related Cities - Maillage interno SEO */}
  <RelatedCities
  currentCity="Macedo de Cavaleiros"
  currentCitySlug="eletricista-macedocavaleiros"
  />
  </main>
-
  <Footer />
  </div>
  );

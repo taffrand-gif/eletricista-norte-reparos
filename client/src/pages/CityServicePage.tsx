@@ -6,25 +6,18 @@ import Footer from '@/components/Footer';
 import RelatedServices from '@/components/RelatedServices';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { useEffect } from 'react';
-
 export default function CityServicePage() {
  const [, params] = useRoute('/:service-:city');
-
  if (!params) return null;
-
  const pageData = getCityServiceData(params.service, params.city);
-
  if (!pageData) {
  return <NotFoundContent />;
  }
-
  const { city, service } = pageData;
  const isPlumber = ACTIVE_CONFIG.type === 'plomberie';
  const accentColor = isPlumber ? '#0e7490' : '#FF6B35';
-
  useEffect(() => {
  document.title = `${service.name} em ${city.name} | ${ACTIVE_CONFIG.businessName}`;
-
  // Meta description
  let meta = document.querySelector('meta[name="description"]');
  if (!meta) {
@@ -32,8 +25,7 @@ export default function CityServicePage() {
  meta.setAttribute('name', 'description');
  document.head.appendChild(meta);
  }
- meta.setAttribute('content', `${service.name} em ${city.name}. Serviço profissional 24h. Orçamento gratuito. Ligue ${ACTIVE_CONFIG.phone}`);
-
+ meta.setAttribute('content', `${service.name} em ${city.name}. Serviço profissional 24h. Sem compromisso. Ligue ${ACTIVE_CONFIG.phone}`);
  // Canonical URL
  const canonicalUrl = `https://${ACTIVE_CONFIG.domain}/${params.service}-${params.city}`;
  let canonical = document.querySelector('link[rel="canonical"]');
@@ -44,7 +36,6 @@ export default function CityServicePage() {
  }
  canonical.setAttribute('href', canonicalUrl);
  }, [city.name, service.name, params.service, params.city]);
-
  const serviceSchema = {
  "@context": "https://schema.org",
  "@type": isPlumber ? "Plumber" : "Electrician",
@@ -61,16 +52,13 @@ export default function CityServicePage() {
  "priceRange": "€€",
  "description": `${service.description} em ${city.name}`
  };
-
  const faqItems = generateFAQs(service, city, isPlumber);
-
  // Breadcrumbs
  const breadcrumbItems = [
  { label: 'Home', href: '/' },
  { label: city.name, href: `/${params.city}` },
  { label: service.name }
  ];
-
  return (
  <>
  <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
@@ -83,10 +71,8 @@ export default function CityServicePage() {
  "acceptedAnswer": { "@type": "Answer", "text": item.answer }
  }))
  }) }} />
-
  <Header />
  <Breadcrumbs items={breadcrumbItems} />
-
  {/* Hero Section */}
  <section className="py-20 px-4" style={{ background: `linear-gradient(135deg, ${accentColor} 0%, ${accentColor}dd 100%)` }}>
  <div className="max-w-4xl mx-auto text-center text-white">
@@ -113,7 +99,6 @@ export default function CityServicePage() {
  </div>
  </div>
  </section>
-
  {/* Pricing Section */}
  <section className="py-16 px-4 bg-white">
  <div className="max-w-4xl mx-auto">
@@ -144,7 +129,6 @@ export default function CityServicePage() {
  </div>
  </div>
  </section>
-
  {/* City-Specific Content */}
  {getCitySpecificContent(city.slug, service.slug) && (
  <>
@@ -168,7 +152,6 @@ export default function CityServicePage() {
  </div>
  </section>
  )}
-
  {/* Neighborhoods Section */}
  {getCityNeighborhoods(city.slug) && (
  <section className="py-16 px-4 bg-gray-50">
@@ -186,7 +169,6 @@ export default function CityServicePage() {
  </div>
  </section>
  )}
-
  {/* Why Choose Us Section */}
  {getWhyChooseUs(city.slug, service.slug) && (
  <section className="py-16 px-4 bg-white">
@@ -208,7 +190,6 @@ export default function CityServicePage() {
  </div>
  </section>
  )}
-
  {/* Local Testimonials */}
  {getCityTestimonials(city.slug) && (
  <section className="py-16 px-4 bg-gray-50">
@@ -235,7 +216,6 @@ export default function CityServicePage() {
  )}
  </>
  )}
-
  {/* FAQ Section */}
  <section className="py-16 px-4 bg-gray-50">
  <div className="max-w-4xl mx-auto">
@@ -252,7 +232,6 @@ export default function CityServicePage() {
  </div>
  </div>
  </section>
-
  {/* CTA Section */}
  <section className="py-16 px-4 text-white" style={{ background: `linear-gradient(135deg, ${accentColor} 0%, ${accentColor}dd 100%)` }}>
  <div className="max-w-4xl mx-auto text-center">
@@ -260,7 +239,7 @@ export default function CityServicePage() {
  Precisa de {service.name} em {city.name}?
  </h2>
  <p className="text-xl mb-8">
- Contacte-nos agora. Orçamento gratuito e sem compromisso.
+ Contacte-nos agora. Sem compromisso e sem compromisso.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a
@@ -279,20 +258,17 @@ export default function CityServicePage() {
  </div>
  </div>
  </section>
-
  {/* Related Services */}
  <RelatedServices currentService={service.slug} city={city.name} />
-
  <Footer />
  </>
  );
 }
-
 function generateFAQs(service: any, city: any, isPlumber: boolean) {
  const baseFAQs = [
  {
  question: `Quanto custa ${service.name.toLowerCase()} em ${city.name}?`,
- answer: `O preço base para ${service.name.toLowerCase()} em ${city.name} é desde ${service.basePrice}€. O orçamento final depende da complexidade do trabalho e materiais necessários. Fazemos orçamento gratuito no local.`
+ answer: `O preço base para ${service.name.toLowerCase()} em ${city.name} é desde ${service.basePrice}€. O orçamento final depende da complexidade do trabalho e materiais necessários. Fazemos sem compromisso no local.`
  },
  {
  question: `Atendem em ${city.name} ao fim de semana?`,
@@ -303,16 +279,13 @@ function generateFAQs(service: any, city: any, isPlumber: boolean) {
  answer: `O tempo de resposta para ${city.name} é normalmente entre 30 a 90 minutos, dependendo da localização exata e disponibilidade. Para urgências, priorizamos sempre a rapidez.`
  }
  ];
-
  // Add city-specific FAQs
  const citySpecificFAQs = getCitySpecificFAQs(city.slug, service.slug);
  if (citySpecificFAQs.length > 0) {
  return [...baseFAQs, ...citySpecificFAQs];
  }
-
  return baseFAQs;
 }
-
 function getCitySpecificFAQs(citySlug: string, serviceSlug: string) {
  const faqData: Record<string, Record<string, any[]>> = {
  'mirandela': {
@@ -340,16 +313,13 @@ function getCitySpecificFAQs(citySlug: string, serviceSlug: string) {
  ]
  }
  };
-
  return faqData[citySlug]?.[serviceSlug] || [];
 }
-
 function getCitySpecificContent(citySlug: string, serviceSlug: string) {
  const supportedCities = ['mirandela', 'macedo-de-cavaleiros'];
  const supportedServices = ['avarias-urgentes'];
  return supportedCities.includes(citySlug) && supportedServices.includes(serviceSlug);
 }
-
 function getCityAboutSection(citySlug: string) {
  const aboutData: Record<string, JSX.Element> = {
  'mirandela': (
@@ -379,10 +349,8 @@ function getCityAboutSection(citySlug: string) {
  </>
  )
  };
-
  return aboutData[citySlug] || null;
 }
-
 function getCityNeighborhoods(citySlug: string) {
  const neighborhoodsData: Record<string, string[]> = {
  'mirandela': [
@@ -420,10 +388,8 @@ function getCityNeighborhoods(citySlug: string) {
  'Vilarinho do Monte'
  ]
  };
-
  return neighborhoodsData[citySlug] || null;
 }
-
 function getWhyChooseUs(citySlug: string, serviceSlug: string) {
  const reasonsData: Record<string, Record<string, any[]>> = {
  'mirandela': {
@@ -475,10 +441,8 @@ function getWhyChooseUs(citySlug: string, serviceSlug: string) {
  ]
  }
  };
-
  return reasonsData[citySlug]?.[serviceSlug] || null;
 }
-
 function getCityTestimonials(citySlug: string) {
  const testimonialsData: Record<string, any[]> = {
  'mirandela': [
@@ -526,10 +490,8 @@ function getCityTestimonials(citySlug: string) {
  }
  ]
  };
-
  return testimonialsData[citySlug] || null;
 }
-
 function NotFoundContent() {
  return (
  <div className="min-h-screen flex items-center justify-center">

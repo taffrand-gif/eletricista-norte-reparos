@@ -1,29 +1,24 @@
 import React from 'react';
 import { useState, useEffect, memo } from 'react';
 import { ACTIVE_CONFIG } from '@/../../shared/serviceConfig';
-
 function UrgencyIndicator() {
  const [viewersCount, setViewersCount] = useState(0);
  const [recentBooking, setRecentBooking] = useState('');
  const [showBooking, setShowBooking] = useState(false);
  const [isVisible, setIsVisible] = useState(true);
-
  useEffect(() => {
  // Simulate realistic viewer count (3-12 viewers)
  const baseViewers = Math.floor(Math.random() * 10) + 3;
  setViewersCount(baseViewers);
-
  // Auto-hide after 10 seconds on mobile to reduce clutter
  const hideTimer = setTimeout(() => {
  setIsVisible(false);
  }, 10000);
-
  // Update viewers count every 15-30 seconds
  const viewerInterval = setInterval(() => {
  const change = Math.random() > 0.5 ? 1 : -1;
  setViewersCount(prev => Math.max(2, Math.min(15, prev + change)));
  }, Math.random() * 15000 + 15000);
-
  // Show recent booking notification every 2-4 minutes
  const cities = ['Bragança', 'Mirandela', 'Macedo de Cavaleiros', 'Chaves', 'Vinhais', 'Mogadouro'];
  const bookingInterval = setInterval(() => {
@@ -31,21 +26,17 @@ function UrgencyIndicator() {
  const minutesAgo = Math.floor(Math.random() * 45) + 5;
  setRecentBooking(`Alguém de ${city} pediu orçamento há ${minutesAgo} minutos`);
  setShowBooking(true);
-
  // Hide after 8 seconds
  setTimeout(() => setShowBooking(false), 8000);
  }, Math.random() * 120000 + 120000); // 2-4 minutes
-
  return () => {
  clearInterval(viewerInterval);
  clearInterval(bookingInterval);
  clearTimeout(hideTimer);
  };
  }, []);
-
  const isPlumber = ACTIVE_CONFIG.type === 'plomberie';
  const accentColor = isPlumber ? '#0e7490' : '#FF6B35';
-
  return (
  <>
  {/* Live Viewers Indicator - Auto-hide after 10s on mobile */}
@@ -64,7 +55,6 @@ function UrgencyIndicator() {
  </div>
  </div>
  )}
-
  {/* Recent Booking Notification */}
  {showBooking && (
  <div
@@ -82,7 +72,6 @@ function UrgencyIndicator() {
  </div>
  </div>
  )}
-
  <style>{`
  @keyframes slide-in-left {
  from {
@@ -101,5 +90,4 @@ function UrgencyIndicator() {
  </>
  );
 }
-
 export default React.memo(UrgencyIndicator);

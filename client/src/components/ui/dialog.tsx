@@ -2,7 +2,6 @@ import { cn } from "@/lib/utils";
 import * as DialogPrimitive from "@radix-ui/react-dialog";
 import { XIcon } from "lucide-react";
 import * as React from "react";
-
 // Context to track composition state across dialog children
 const DialogCompositionContext = React.createContext<{
  isComposing: () => boolean;
@@ -14,17 +13,14 @@ const DialogCompositionContext = React.createContext<{
  setComposing: () => {},
  justEndedComposing: () => false,
  markCompositionEnd: () => {}});
-
 export const useDialogComposition = () =>
  React.useContext(DialogCompositionContext);
-
 function Dialog({
  ...props
 }: React.ComponentProps<typeof DialogPrimitive.Root>) {
  const composingRef = React.useRef(false);
  const justEndedRef = React.useRef(false);
  const endTimerRef = React.useRef<ReturnType<typeof setTimeout> | null>(null);
-
  const contextValue = React.useMemo(
  () => ({
  isComposing: () => composingRef.current,
@@ -43,32 +39,27 @@ function Dialog({
  }}),
  []
  );
-
  return (
  <DialogCompositionContext.Provider value={contextValue}>
  <DialogPrimitive.Root data-slot="dialog" {...props} />
  </DialogCompositionContext.Provider>
  );
 }
-
 function DialogTrigger({
  ...props
 }: React.ComponentProps<typeof DialogPrimitive.Trigger>) {
  return <DialogPrimitive.Trigger data-slot="dialog-trigger" {...props} />;
 }
-
 function DialogPortal({
  ...props
 }: React.ComponentProps<typeof DialogPrimitive.Portal>) {
  return <DialogPrimitive.Portal data-slot="dialog-portal" {...props} />;
 }
-
 function DialogClose({
  ...props
 }: React.ComponentProps<typeof DialogPrimitive.Close>) {
  return <DialogPrimitive.Close data-slot="dialog-close" {...props} />;
 }
-
 function DialogOverlay({
  className,
  ...props
@@ -84,9 +75,7 @@ function DialogOverlay({
  />
  );
 }
-
 DialogOverlay.displayName = "DialogOverlay";
-
 function DialogContent({
  className,
  children,
@@ -97,25 +86,21 @@ function DialogContent({
  showCloseButton?: boolean;
 }) {
  const { isComposing } = useDialogComposition();
-
  const handleEscapeKeyDown = React.useCallback(
  (e: KeyboardEvent) => {
  // Check both the native isComposing property and our context state
  // This handles Safari's timing issues with composition events
  const isCurrentlyComposing = (e as any).isComposing || isComposing();
-
  // If IME is composing, prevent dialog from closing
  if (isCurrentlyComposing) {
  e.preventDefault();
  return;
  }
-
  // Call user's onEscapeKeyDown if provided
  onEscapeKeyDown?.(e);
  },
  [isComposing, onEscapeKeyDown]
  );
-
  return (
  <DialogPortal data-slot="dialog-portal">
  <DialogOverlay />
@@ -142,7 +127,6 @@ function DialogContent({
  </DialogPortal>
  );
 }
-
 function DialogHeader({ className, ...props }: React.ComponentProps<"div">) {
  return (
  <div
@@ -152,7 +136,6 @@ function DialogHeader({ className, ...props }: React.ComponentProps<"div">) {
  />
  );
 }
-
 function DialogFooter({ className, ...props }: React.ComponentProps<"div">) {
  return (
  <div
@@ -165,7 +148,6 @@ function DialogFooter({ className, ...props }: React.ComponentProps<"div">) {
  />
  );
 }
-
 function DialogTitle({
  className,
  ...props
@@ -178,7 +160,6 @@ function DialogTitle({
  />
  );
 }
-
 function DialogDescription({
  className,
  ...props
@@ -191,7 +172,6 @@ function DialogDescription({
  />
  );
 }
-
 export {
  Dialog,
  DialogClose,
@@ -204,4 +184,3 @@ export {
  DialogTitle,
  DialogTrigger
 };
-

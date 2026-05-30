@@ -1,10 +1,8 @@
 import React from 'react';
 import { useSite } from '@/contexts/SiteContext';
-
 export default function PremiumBar() {
  const { config } = useSite();
  const isPlumber = config.id === 'norte-reparos';
-
  const items = isPlumber
  ? [
  { icon: '🔬', label: 'Câmara Térmica' },
@@ -18,7 +16,6 @@ export default function PremiumBar() {
  { icon: '🔍', label: 'Endoscópio Ridgid' },
  { icon: '📋', label: ' Certificado' },
  ];
-
  return (
  <div className="bg-gray-900 text-white py-3 overflow-hidden">
  <div className="container mx-auto px-4">

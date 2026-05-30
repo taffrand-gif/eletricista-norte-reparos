@@ -231,7 +231,7 @@ export default function QuantoTempoQuadro() {
  <ul className="text-sm text-gray-700 space-y-1">
  <li>• certificação elétrica</li>
  <li>• Teste todos circuitos</li>
- <li>• Garantia 2 anos</li>
+ <li>• Garantia do serviço</li>
  </ul>
  </div>
  </div>

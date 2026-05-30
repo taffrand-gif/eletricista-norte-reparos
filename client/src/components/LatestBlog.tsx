@@ -1,6 +1,5 @@
 import React from 'react';
 import { ArrowRight, BookOpen } from 'lucide-react';
-
 const articles = [
  {
  title: 'Como Instalar um Candeeiro de Teto com Segurança',
@@ -19,7 +18,6 @@ const articles = [
  desc: 'Saiba quando é hora de substituir o quadro elétrico antigo por um moderno com diferenciais.',
  href: '/blog/quadro-eletrico-antigo-fusiveis-trocar'},
 ];
-
 export default function LatestBlog() {
  return (
  <section className="py-20 bg-gray-50">
@@ -32,7 +30,6 @@ export default function LatestBlog() {
  Dicas e guias práticos da nossa equipa de eletricistas.
  </p>
  </div>
-
  <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
  {articles.map((a, i) => (
  <a
@@ -53,7 +50,6 @@ export default function LatestBlog() {
  </a>
  ))}
  </div>
-
  <div className="text-center mt-10">
  <a
  href="/blog"

@@ -38,7 +38,7 @@ export default function QuantoTempoDemoraInstalarTomada() {
  },
  {
  question: "Quanto tempo demora instalar várias tomadas?",
- answer: "2 tomadas: 2-3h. 3-4 tomadas: 3-5h. 5+ tomadas: 4-8h. Depende se cabos já existem ou precisam passar novos. Orçamento gratuito: 932 321 892"
+ answer: "2 tomadas: 2-3h. 3-4 tomadas: 3-5h. 5+ tomadas: 4-8h. Depende se cabos já existem ou precisam passar novos. Sem compromisso: 932 321 892"
  }
  ];
  const tempos = [
@@ -236,7 +236,7 @@ export default function QuantoTempoDemoraInstalarTomada() {
  <ul className="text-sm text-gray-700 space-y-1">
  <li>• certificação elétrica</li>
  <li>• Teste segurança</li>
- <li>• Garantia 2 anos</li>
+ <li>• Garantia do serviço</li>
  </ul>
  </div>
  </div>

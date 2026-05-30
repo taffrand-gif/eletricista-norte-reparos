@@ -4,19 +4,13 @@ import { CITIES, ACTIVE_CONFIG } from '@/../../shared/serviceConfig';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useEffect } from 'react';
-
 export default function ServiceHub() {
  const [, params] = useRoute('/:service');
-
  if (!params) return null;
-
  const service = SERVICES_STAFF_SEEKERS.find(s => s.slug === params.service);
-
  if (!service) return null;
-
  const accentColor = '#FF6B35';
  const mainCities = CITIES.filter(c => !c.parentCity);
-
  useEffect(() => {
  document.title = `${service.name} em Trás-os-Montes | ${ACTIVE_CONFIG.businessName}`;
  let meta = document.querySelector('meta[name="description"]');
@@ -25,13 +19,11 @@ export default function ServiceHub() {
  meta.setAttribute('name', 'description');
  document.head.appendChild(meta);
  }
- meta.setAttribute('content', `${service.name} em toda a região de Trás-os-Montes. Serviço profissional 24h em ${mainCities.length}+ cidades. Orçamento gratuito.`);
+ meta.setAttribute('content', `${service.name} em toda a região de Trás-os-Montes. Serviço profissional 24h em ${mainCities.length}+ cidades. Sem compromisso.`);
  }, [service.name]);
-
  return (
  <>
  <Header />
-
  {/* Hero */}
  <section className="py-20 px-4" style={{ background: `linear-gradient(135deg, ${accentColor} 0%, ${accentColor}dd 100%)` }}>
  <div className="max-w-6xl mx-auto text-center text-white">
@@ -59,7 +51,6 @@ export default function ServiceHub() {
  </div>
  </div>
  </section>
-
  {/* Main Cities Grid */}
  <section className="py-16 px-4 bg-white">
  <div className="max-w-6xl mx-auto">
@@ -87,7 +78,6 @@ export default function ServiceHub() {
  </div>
  </div>
  </section>
-
  {/* Pricing */}
  <section className="py-16 px-4 bg-gray-50">
  <div className="max-w-4xl mx-auto text-center">
@@ -111,7 +101,6 @@ export default function ServiceHub() {
  </div>
  </div>
  </section>
-
  {/* CTA */}
  <section className="py-16 px-4 text-white" style={{ background: `linear-gradient(135deg, ${accentColor} 0%, ${accentColor}dd 100%)` }}>
  <div className="max-w-4xl mx-auto text-center">
@@ -130,7 +119,6 @@ export default function ServiceHub() {
  </a>
  </div>
  </section>
-
  <Footer />
  </>
  );

@@ -8,7 +8,6 @@ import { businessInfo, getCityAddress } from '@/../../shared/napConfig';
 import { getCidadesProximas } from '@/data/cidadesProximas';
 import { useEffect } from 'react';
 import { Phone, Clock, MapPin, Shield, Zap, CheckCircle } from 'lucide-react';
-
 export default function CarrazedaDeAnsiaes() {
  useEffect(() => {
  document.title = "Eletricista Carrazeda Ansiães 24h | 932 321 892";
@@ -19,8 +18,7 @@ export default function CarrazedaDeAnsiaes() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Eletricista em Carrazeda de Ansiães. Instalações elétricas para quintas do Douro, produção de Vinho do Porto. Quadros elétricos, iluminação. Orçamento gratuito.');
-
+ metaDescription.setAttribute('content', 'Eletricista em Carrazeda de Ansiães. Instalações elétricas para quintas do Douro, produção de Vinho do Porto. Quadros elétricos, iluminação. Sem compromisso.');
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');
@@ -28,7 +26,6 @@ export default function CarrazedaDeAnsiaes() {
  document.head.appendChild(canonical);
  }
  canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/eletricista-carrazeda-de-ansiaes');
-
  const schemaScript = document.createElement('script');
  schemaScript.type = 'application/ld+json';
  schemaScript.id = 'schema-carrazeda';
@@ -44,7 +41,6 @@ export default function CarrazedaDeAnsiaes() {
  "priceRange": "€€"
  });
  document.head.appendChild(schemaScript);
-
  // FAQ Schema
  const faqSchema = document.createElement('script');
  faqSchema.type = 'application/ld+json';
@@ -62,15 +58,12 @@ export default function CarrazedaDeAnsiaes() {
  }))
  });
  document.head.appendChild(faqSchema);
-
  return () => {
  const existingSchema = document.getElementById('schema-carrazeda');
  if (existingSchema) existingSchema.remove();
  };
  }, []);
-
  const cidadesProximas = getCidadesProximas('carrazeda-ansiaes');
-
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Carrazeda de Ansiães?",
@@ -84,7 +77,6 @@ export default function CarrazedaDeAnsiaes() {
  question: "Qual o custo de deslocação a Carrazeda de Ansiães?",
  answer: "A deslocação é de 25€ (Zona 2). Chegamos em aproximadamente 35-40 minutos. Inclui todo o concelho."
  }];
-
  return (
  <div className="min-h-screen flex flex-col">
  <Header />
@@ -102,7 +94,6 @@ export default function CarrazedaDeAnsiaes() {
  </div>
  </div>
  </section>
-
  <section className="py-16 bg-gray-50">
  <div className="container">
  <h2 className="text-3xl font-black text-center mb-12">Serviços Elétricos em Carrazeda de Ansiães</h2>
@@ -126,14 +117,12 @@ export default function CarrazedaDeAnsiaes() {
  </div>
  </div>
  </section>
-
  <section className="py-16">
  <div className="container max-w-4xl">
  <h2 className="text-3xl font-black text-center mb-12">Perguntas Frequentes - Carrazeda de Ansiães</h2>
  <FAQSection faqs={faqs} />
  </div>
  </section>
-
  <section className="py-16 bg-orange-500 text-white">
  <div className="container text-center">
  <h2 className="text-3xl font-black mb-4">Precisa de Eletricista em Carrazeda de Ansiães?</h2>
@@ -149,9 +138,7 @@ export default function CarrazedaDeAnsiaes() {
  cidades={cidadesProximas}
  serviceType="eletricista"
  />
-
  
-
  <RelatedCities currentCity="Carrazeda de Ansiães" currentCitySlug="eletricista-carrazeda-de-ansiaes" />
  </main>
  <Footer />

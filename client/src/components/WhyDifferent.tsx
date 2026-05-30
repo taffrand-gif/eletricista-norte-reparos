@@ -2,10 +2,8 @@ import React from 'react';
 // Component: Why We're Different - Eletricista
 // Shows 10 common electrical problems and how we solve them differently
 // Builds trust by addressing customer pain points
-
 import { useSite } from '@/contexts/SiteContext';
 import { useMemo } from 'react';
-
 interface Problem {
  icon: string;
  title: string;
@@ -13,10 +11,8 @@ interface Problem {
  us: string;
  value: string;
 }
-
 function WhyDifferent() {
  const { config } = useSite();
-
  const problems = useMemo<Problem[]>(() => [
  {
  icon: '⚡',
@@ -79,7 +75,6 @@ function WhyDifferent() {
  us: 'Cálculo profissional + Proteção adequada',
  value: 'Economiza €300 (evita incêndio)'},
  ], []);
-
  return (
  <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
  <div className="container">
@@ -94,7 +89,6 @@ function WhyDifferent() {
  Por isso damos garantias e certificação elétrica que outros não dão.
  </p>
  </div>
-
  {/* Problems Grid */}
  <div className="grid md:grid-cols-2 gap-8 mb-12">
  {problems.map((problem, index) => (
@@ -110,7 +104,6 @@ function WhyDifferent() {
  {problem.title}
  </h3>
  </div>
-
  {/* Others vs Us */}
  <div className="space-y-3">
  <div className="flex items-start gap-3">
@@ -120,7 +113,6 @@ function WhyDifferent() {
  <p className="text-gray-700">{problem.others}</p>
  </div>
  </div>
-
  <div className="flex items-start gap-3">
  <span className="text-green-500 font-bold text-lg flex-shrink-0">✅</span>
  <div>
@@ -130,7 +122,6 @@ function WhyDifferent() {
  <p className="text-gray-900 font-semibold">{problem.us}</p>
  </div>
  </div>
-
  {/* Value */}
  <div
  className="mt-4 p-3 rounded-lg text-center font-bold"
@@ -143,7 +134,6 @@ function WhyDifferent() {
  </div>
  ))}
  </div>
-
  {/* Guarantee Box */}
  <div
  className="bg-white p-8 rounded-lg border-4 text-center"
@@ -177,7 +167,6 @@ function WhyDifferent() {
  Disponível 24h/7 dias • Chegamos em 40 minutos • certificação elétrica incluída
  </p>
  </div>
-
  {/* Social Proof */}
  <div className="mt-12 text-center">
  <div className="flex items-center justify-center gap-2 text-yellow-500 text-2xl mb-2">
@@ -193,5 +182,4 @@ function WhyDifferent() {
  </section>
  );
 }
-
 export default React.memo(WhyDifferent);

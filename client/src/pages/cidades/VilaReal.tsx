@@ -1,6 +1,5 @@
 // SEO optimized page for "Eletricista Vila Real"
 // 100% unique content, conforme aux politiques Google
-
 import Header from '@/components/Header';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import CidadesProximas from '@/components/CidadesProximas';
@@ -13,10 +12,8 @@ import { businessInfo, getCityAddress } from '@/../../shared/napConfig';
 import { getCidadesProximas } from '@/data/cidadesProximas';
 import { useSite } from '@/contexts/SiteContext';
 import { useEffect } from 'react';
-
 export default function VilaReal() {
  const { config } = useSite();
-
  useEffect(() => {
  document.title = "Eletricista Urgente Vila Real ⚡ 24h | 932 321 892";
  
@@ -27,7 +24,7 @@ export default function VilaReal() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Avaria elétrica em Vila Real? A nossa equipa responde em menos de 1h. certificação elétrica, orçamento gratuito. Ligue: 932 321 892');
+ metaDescription.setAttribute('content', 'Avaria elétrica em Vila Real? A nossa equipa responde em menos de 1h. certificação elétrica, sem compromisso. Ligue: 932 321 892');
  // SEO meta keywords
  let metaKeywords = document.querySelector('meta[name="keywords"]');
  if (!metaKeywords) {
@@ -74,7 +71,6 @@ export default function VilaReal() {
  ]
  });
  document.head.appendChild(schemaScript);
-
  // FAQ Schema
  const faqSchema = document.createElement('script');
  faqSchema.type = 'application/ld+json';
@@ -106,16 +102,13 @@ export default function VilaReal() {
  answer: "Sim, emitimos certificação elétrica para venda, arrendamento e legalização de imóveis em Vila Real e todo o concelho."
  }
  ];
-
  
  return () => {
  document.head.removeChild(schemaScript);
  document.head.removeChild(faqSchema);
  };
  }, [config]);
-
  const cidadesProximas = getCidadesProximas('vila-real');
-
  return (
  <>
  <SEOHead />
@@ -161,7 +154,6 @@ export default function VilaReal() {
  </div>
  </div>
  </section>
-
  {/* Contenu spécifique à Vila Real */}
  <section className="py-16">
  <div className="container mx-auto px-4">
@@ -256,7 +248,6 @@ export default function VilaReal() {
  </div>
  </div>
  </section>
-
  {/* FAQ Section with Schema.org - Vila Real Specific */}
  <section className="py-16 bg-gray-50">
  <FAQSection
@@ -289,7 +280,6 @@ export default function VilaReal() {
  ]}
  />
  </section>
-
  {/* CTA final avec localisation */}
  <section className="py-16 bg-gradient-to-r from-blue-900 to-amber-700 text-white">
  <div className="container mx-auto px-4 text-center">
@@ -297,7 +287,7 @@ export default function VilaReal() {
  Precisa de um Eletricista em <span className="text-amber-300">Vila Real</span>?
  </h2>
  <p className="text-xl mb-8 max-w-2xl mx-auto">
- Contacte-nos agora para um orçamento gratuito. 
+ Contacte-nos agora para um sem compromisso. 
  Atendemos toda a cidade de Vila Real e arredores.
  </p>
  
@@ -323,7 +313,6 @@ export default function VilaReal() {
  </p>
  </div>
  </section>
-
  {/* Related Cities - Maillage interno SEO */}
  
  <section className="py-16">
@@ -338,9 +327,7 @@ export default function VilaReal() {
  cidades={cidadesProximas}
  serviceType="eletricista"
  />
-
  
-
  <RelatedCities 
  currentCity="Vila Real" 
  currentCitySlug="eletricista-vilareal" 

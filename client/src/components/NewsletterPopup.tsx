@@ -6,16 +6,13 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } f
 import { X } from 'lucide-react';
 import { toast } from 'sonner';
 import { trackEvent } from './FacebookPixel';
-
 const COOKIE_NAME = 'newsletter_popup_shown';
 const COOKIE_DURATION_DAYS = 7;
-
 export function NewsletterPopup() {
  const [isOpen, setIsOpen] = useState(false);
  const [email, setEmail] = useState('');
  const [name, setName] = useState('');
  const [isSubmitting, setIsSubmitting] = useState(false);
-
  const subscribe = trpc.newsletter.subscribe.useMutation({
  onSuccess: (data) => {
  if (data.success) {
@@ -27,7 +24,6 @@ export function NewsletterPopup() {
  
  // Track Facebook Pixel event
  trackEvent.completeRegistration('newsletter_popup');
-
  // Definir cookie para não reexibir durante 7 dias
  setCookie(COOKIE_NAME, 'true', COOKIE_DURATION_DAYS);
  } else {
@@ -40,18 +36,15 @@ export function NewsletterPopup() {
  description: error.message});
  setIsSubmitting(false);
  }});
-
  useEffect(() => {
  // Verificar se o cookie existe
  if (getCookie(COOKIE_NAME)) {
  return;
  }
-
  // Timer para mostrar após 30 segundos
  const timer = setTimeout(() => {
  setIsOpen(true);
  }, 30000); // 30 segundos
-
  // Listener para scroll (mostrar a 50%)
  const handleScroll = () => {
  const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
@@ -60,21 +53,17 @@ export function NewsletterPopup() {
  window.removeEventListener('scroll', handleScroll);
  }
  };
-
  window.addEventListener('scroll', handleScroll);
-
  return () => {
  clearTimeout(timer);
  window.removeEventListener('scroll', handleScroll);
  };
  }, []);
-
  const handleClose = () => {
  setIsOpen(false);
  // Set cookie pour ne pas réafficher pendant 7 jours
  setCookie(COOKIE_NAME, 'true', COOKIE_DURATION_DAYS);
  };
-
  const handleSubmit = async (e: React.FormEvent) => {
  e.preventDefault();
  
@@ -82,7 +71,6 @@ export function NewsletterPopup() {
  toast.error('Por favor, insira o seu email');
  return;
  }
-
  setIsSubmitting(true);
  subscribe.mutate({ 
  email, 
@@ -90,7 +78,6 @@ export function NewsletterPopup() {
  source: 'popup' 
  });
  };
-
  return (
  <Dialog open={isOpen} onOpenChange={setIsOpen}>
  <DialogContent className="sm:max-w-md">
@@ -101,7 +88,6 @@ export function NewsletterPopup() {
  <X className="h-4 w-4" />
  <span className="sr-only">Fechar</span>
  </button>
-
  <DialogHeader>
  <DialogTitle className="text-2xl font-bold">
  📧 Receba Ofertas Exclusivas!
@@ -110,7 +96,6 @@ export function NewsletterPopup() {
  Subscreva a nossa newsletter e receba:
  </DialogDescription>
  </DialogHeader>
-
  <div className="space-y-4">
  <ul className="space-y-2 text-sm">
  <li className="flex items-start gap-2">
@@ -130,7 +115,6 @@ export function NewsletterPopup() {
  <span>Prioridade em agendamentos</span>
  </li>
  </ul>
-
  <form onSubmit={handleSubmit} className="space-y-3">
  <Input
  type="text"
@@ -155,7 +139,6 @@ export function NewsletterPopup() {
  {isSubmitting ? 'A enviar...' : '🎁 Quero Receber Ofertas'}
  </Button>
  </form>
-
  <p className="text-xs text-gray-500 text-center">
  Pode cancelar a subscrição a qualquer momento. Os seus dados estão protegidos.
  </p>
@@ -164,14 +147,12 @@ export function NewsletterPopup() {
  </Dialog>
  );
 }
-
 // Helper functions pour cookies
 function setCookie(name: string, value: string, days: number) {
  const expires = new Date();
  expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
  document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/`;
 }
-
 function getCookie(name: string): string | null {
  const nameEQ = name + '=';
  const ca = document.cookie.split(';');

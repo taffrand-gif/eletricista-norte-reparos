@@ -8,7 +8,6 @@ import { businessInfo, getCityAddress } from '@/../../shared/napConfig';
 import { getCidadesProximas } from '@/data/cidadesProximas';
 import { useEffect } from 'react';
 import { Phone, Clock, MapPin, Shield, Zap, CheckCircle } from 'lucide-react';
-
 export default function Tabuaco() {
  useEffect(() => {
  document.title = "Eletricista Tabuaço 24h | 932 321 892";
@@ -19,8 +18,7 @@ export default function Tabuaco() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Eletricista em Tabuaço, região do Douro. Instalações para quintas vinícolas, adegas e turismo rural. Quadros elétricos, iluminação. Orçamento gratuito.');
-
+ metaDescription.setAttribute('content', 'Eletricista em Tabuaço, região do Douro. Instalações para quintas vinícolas, adegas e turismo rural. Quadros elétricos, iluminação. Sem compromisso.');
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');
@@ -28,7 +26,6 @@ export default function Tabuaco() {
  document.head.appendChild(canonical);
  }
  canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/eletricista-tabuaco');
-
  const schemaScript = document.createElement('script');
  schemaScript.type = 'application/ld+json';
  schemaScript.id = 'schema-tabuaco';
@@ -44,7 +41,6 @@ export default function Tabuaco() {
  "priceRange": "€€"
  });
  document.head.appendChild(schemaScript);
-
  // FAQ Schema
  const faqSchema = document.createElement('script');
  faqSchema.type = 'application/ld+json';
@@ -62,15 +58,12 @@ export default function Tabuaco() {
  }))
  });
  document.head.appendChild(faqSchema);
-
  return () => {
  const existingSchema = document.getElementById('schema-tabuaco');
  if (existingSchema) existingSchema.remove();
  };
  }, []);
-
  const cidadesProximas = getCidadesProximas('tabuaco');
-
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Tabuaço?",
@@ -84,7 +77,6 @@ export default function Tabuaco() {
  question: "Qual o custo de deslocação a Tabuaço?",
  answer: "A deslocação é de 55€ (Zona 5). Chegamos em aproximadamente 70-80 minutos. Inclui todo o concelho."
  }];
-
  return (
  <div className="min-h-screen flex flex-col">
  <Header />
@@ -102,7 +94,6 @@ export default function Tabuaco() {
  </div>
  </div>
  </section>
-
  <section className="py-16 bg-gray-50">
  <div className="container">
  <h2 className="text-3xl font-black text-center mb-12">Serviços Elétricos em Tabuaço</h2>
@@ -126,14 +117,12 @@ export default function Tabuaco() {
  </div>
  </div>
  </section>
-
  <section className="py-16">
  <div className="container max-w-4xl">
  <h2 className="text-3xl font-black text-center mb-12">Perguntas Frequentes - Tabuaço</h2>
  <FAQSection faqs={faqs} />
  </div>
  </section>
-
  <section className="py-16 bg-orange-500 text-white">
  <div className="container text-center">
  <h2 className="text-3xl font-black mb-4">Precisa de Eletricista em Tabuaço?</h2>
@@ -149,9 +138,7 @@ export default function Tabuaco() {
  cidades={cidadesProximas}
  serviceType="eletricista"
  />
-
  
-
  <RelatedCities currentCity="Tabuaço" currentCitySlug="eletricista-tabuaco" />
  </main>
  <Footer />

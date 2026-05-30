@@ -1,12 +1,9 @@
 import { useEffect, useState } from 'react';
-
 export default function CookieConsent() {
  const [isVisible, setIsVisible] = useState(false);
-
  useEffect(() => {
  // Verificar se o consentimento já foi dado
  const consentStatus = localStorage.getItem('cookieConsent');
-
  if (!consentStatus) {
  // Mostrar o banner após 1 segundo
  setTimeout(() => {
@@ -17,25 +14,20 @@ export default function CookieConsent() {
  initializeGoogleTags();
  }
  }, []);
-
  const handleAccept = () => {
  localStorage.setItem('cookieConsent', 'accepted');
  setIsVisible(false);
  initializeGoogleTags();
  };
-
  const handleDecline = () => {
  localStorage.setItem('cookieConsent', 'declined');
  setIsVisible(false);
  };
-
  const handleSettings = () => {
  alert('Você será redirecionado para as configurações de cookies.');
  // TODO: Implementar uma modal de configurações detalhadas
  };
-
  if (!isVisible) return null;
-
  return (
  <div className="cookie-consent">
  <div className="max-w-7xl mx-auto">
@@ -58,7 +50,6 @@ export default function CookieConsent() {
  </div>
  );
 }
-
 // Fonction pour initialiser Google Tags avec consentement
 function initializeGoogleTags() {
  if (typeof window !== 'undefined' && (window as any).gtag) {

@@ -2,7 +2,6 @@ import React, { useState, useMemo } from 'react';
 import { useSite } from '@/contexts/SiteContext';
 import { useLocationContent, usePersonalizedWhatsAppMessage } from '@/hooks/useLocationContent';
 // memo removed from 'react';
-
 const zones = [
  { label: 'Macedo de Cavaleiros (Zona 1)', price: 15 },
  { label: 'Mirandela / Vila Flor (Zona 2)', price: 25 },
@@ -11,7 +10,6 @@ const zones = [
  { label: 'Vila Real / Lamego (Zona 5)', price: 55 },
  { label: 'Chaves / Montalegre (Zona 6)', price: 65 },
 ];
-
 const servicesElec = [
  { label: 'Tomada / Interruptor', min: 35, max: 70 },
  { label: 'Avaria / Diagnóstico', min: 70, max: 140 },
@@ -19,7 +17,6 @@ const servicesElec = [
  { label: 'certificação elétrica', min: 140, max: 280 },
  { label: 'Instalação Completa', min: 280, max: 700 },
 ];
-
 const servicesPlumb = [
  { label: 'Arranjo de Torneira', min: 60, max: 80 },
  { label: 'Deteção de Fuga', min: 100, max: 150 },
@@ -31,21 +28,18 @@ const servicesPlumb = [
  { label: 'Esquentador (arranjo)', min: 50, max: 120 },
  { label: 'Casa de Banho Completa', min: 800, max: 1800 },
 ];
-
 const examplesPlumb = [
  { icon: '🚰', label: 'Desentupimento de canalização', price: '60-120€' },
  { icon: '💧', label: 'Arranjo de torneira', price: '40-80€' },
  { icon: '🔥', label: 'Instalação de esquentador', price: '200-400€' },
  { icon: '🔍', label: 'Deteção de fuga', price: '150€ (FLIR: 280€)' },
 ];
-
 const examplesElec = [
  { icon: '🔌', label: 'Instalação de tomada', price: '50-105€' },
  { icon: '⚡', label: 'Arranjo de quadro elétrico', price: '105-210€' },
  { icon: '💡', label: 'Instalação de candeeiro', price: '50-105€' },
  { icon: '📋', label: 'Certificação elétrica', price: '150-350€' },
 ];
-
 function CalculadorPreco() {
  const { config } = useSite();
  const { city, priceAdjustment } = useLocationContent();
@@ -53,24 +47,20 @@ function CalculadorPreco() {
  const [zoneIdx, setZoneIdx] = useState(0);
  const [serviceIdx, setServiceIdx] = useState(0);
  const [isUrgent, setIsUrgent] = useState(false);
-
  const services = isPlumber ? servicesPlumb : servicesElec;
  const examples = isPlumber ? examplesPlumb : examplesElec;
  const phone = isPlumber ? '928 484 451' : '932 321 892';
  const whatsapp = isPlumber ? '351928484451' : '351932321892';
  const accentColor = isPlumber ? '#0e7490' : '#FF6B35';
-
  const result = useMemo(() => {
  const zone = zones[zoneIdx];
  const service = services[serviceIdx];
  const mult = isUrgent ? 1.5 : 1;
-
  // Apply location-based price adjustment
  const travelBase = zone.price + priceAdjustment;
  const travel = Math.round(travelBase * mult);
  const laborMin = Math.round(service.min * mult);
  const laborMax = Math.round(service.max * mult);
-
  return {
  travel,
  travelBase: zone.price,
@@ -82,11 +72,9 @@ function CalculadorPreco() {
  zoneName: zone.label,
  serviceName: service.label};
  }, [zoneIdx, serviceIdx, isUrgent, services, priceAdjustment]);
-
  const waMsg = encodeURIComponent(
  `Olá! Estou em ${city}. Preciso de ${result.serviceName} em ${result.zoneName}. Estimativa: ${result.totalMin}€-${result.totalMax}€. Podem vir?`
  );
-
  return (
  <section className="py-16 bg-white">
  <div className="container mx-auto px-4 max-w-2xl">
@@ -98,7 +86,6 @@ function CalculadorPreco() {
  Estimativa imediata — sem ter de falar com ninguém
  </p>
  </div>
-
  {/* Exemplos de Preços */}
  <div className="mb-10">
  <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
@@ -126,7 +113,6 @@ function CalculadorPreco() {
  * Preços indicativos. Valores finais dependem da complexidade e materiais necessários.
  </p>
  </div>
-
  <div className="bg-gray-50 rounded-2xl shadow-lg p-8">
  {/* Zone */}
  <div className="mb-6">
@@ -144,7 +130,6 @@ function CalculadorPreco() {
  ))}
  </select>
  </div>
-
  {/* Service */}
  <div className="mb-6">
  <label htmlFor="calc-service" className="block text-sm font-bold text-gray-700 mb-2">🔧 Que serviço precisa?</label>
@@ -161,7 +146,6 @@ function CalculadorPreco() {
  ))}
  </select>
  </div>
-
  {/* Urgency toggle */}
  <div className="mb-8">
  <label className="block text-sm font-bold text-gray-700 mb-2">🕐 É urgência noturna ou fim de semana?</label>
@@ -190,7 +174,6 @@ function CalculadorPreco() {
  </button>
  </div>
  </div>
-
  {/* Result */}
  <div className="bg-white rounded-xl p-6 border-2" style={{ borderColor: accentColor }}>
  <div className="space-y-3 mb-4">
@@ -239,5 +222,4 @@ function CalculadorPreco() {
  </section>
  );
 }
-
 export default React.memo(CalculadorPreco);

@@ -4,7 +4,6 @@
  * 15 témoignages crédibles
  * Détails crédibles : nom, ville, service, note, date
  */
-
 export interface Testimonial {
  id: number;
  name: string;
@@ -15,7 +14,6 @@ export interface Testimonial {
  text: string;
  verified: boolean;
 }
-
 export const TESTIMONIALS: Testimonial[] = [
  {
  id: 1,
@@ -168,7 +166,6 @@ export const TESTIMONIALS: Testimonial[] = [
  verified: true
  }
 ];
-
 // Statistiques globales
 export const TESTIMONIALS_STATS = {
  total: 15,

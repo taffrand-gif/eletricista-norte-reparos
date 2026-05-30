@@ -4,13 +4,11 @@ import { Phone, MessageCircle, ArrowLeft, CheckCircle } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { ACTIVE_CONFIG } from '@/../../shared/serviceConfig';
-
 export default function Service() {
  const params = useParams();
  const slug = params.slug;
  
  const service = slug ? getServiceBySlug(slug) : undefined;
-
  if (!service) {
  return (
  <div className="container py-20 text-center">
@@ -27,11 +25,9 @@ export default function Service() {
  </div>
  );
  }
-
  const phoneDisplay = ACTIVE_CONFIG.phone.replace('+351', '');
  const phoneLink = ACTIVE_CONFIG.phone;
  const whatsappLink = `https://wa.me/${ACTIVE_CONFIG.whatsappNumber}?text=${encodeURIComponent("Olá, preciso de um eletricista em Trás-os-Montes. Podem dar-me um orçamento?")}`;
-
  return (
  <div className="min-h-screen">
  {/* Hero Section */}
@@ -55,7 +51,6 @@ export default function Service() {
  </p>
  </div>
  </div>
-
  <div className="flex flex-wrap gap-4 mt-8">
  <Card className="bg-white/10 border-white/20 backdrop-blur">
  <CardContent className="p-4">
@@ -64,7 +59,6 @@ export default function Service() {
  <p className="text-xs text-red-100">{service.priceDetails}</p>
  </CardContent>
  </Card>
-
  <div className="flex gap-3">
  <a href={`tel:${phoneLink}`}>
  <Button size="lg" className="bg-white text-red-600 hover:bg-red-50">
@@ -87,7 +81,6 @@ export default function Service() {
  </div>
  </div>
  </section>
-
  {/* Content Section */}
  <section className="py-16">
  <div className="container max-w-4xl">
@@ -97,7 +90,6 @@ export default function Service() {
  {service.content.intro}
  </p>
  </div>
-
  {/* Sections */}
  {service.content.sections.map((section, index) => (
  <div key={index} className="mb-12">
@@ -117,7 +109,6 @@ export default function Service() {
  />
  </div>
  ))}
-
  {/* CTA Section */}
  <Card className="bg-gradient-to-br from-red-50 to-red-100 border-red-200 mt-16">
  <CardContent className="p-8 text-center">
@@ -145,7 +136,6 @@ export default function Service() {
  </div>
  </CardContent>
  </Card>
-
  {/* Other Services */}
  <div className="mt-16">
  <h3 className="text-2xl font-bold mb-6">Outros Serviços</h3>

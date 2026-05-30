@@ -4,14 +4,12 @@ import { ACTIVE_CONFIG } from "../../../shared/serviceConfig";
 import { useSEO } from "@/hooks/useSEO";
 import { Card } from "@/components/ui/card";
 import { Shield, Award, FileCheck } from "lucide-react";
-
 export default function Certificacoes() {
  const config = ACTIVE_CONFIG;
  
  useSEO({
  title: `Certificações - ${config.name}`,
  description: `Certificações profissionais e garantias. Trabalho certificado com garantia de 12 meses.`});
-
  return (
  <div className="min-h-screen flex flex-col">
  <Header />
@@ -27,7 +25,6 @@ export default function Certificacoes() {
  </p>
  </div>
  </section>
-
  <section className="py-16">
  <div className="container max-w-4xl">
  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
@@ -38,7 +35,6 @@ export default function Certificacoes() {
  {config.type === 'plomberie' ? 'Canalizador' : 'Eletricista'} certificado com mais de 10 anos de experiência
  </p>
  </Card>
-
  <Card className="p-8 text-center">
  <Award className="h-16 w-16 text-red-600 mx-auto mb-4" />
  <h3 className="font-bold text-xl mb-2">Garantia 12 Meses</h3>
@@ -46,7 +42,6 @@ export default function Certificacoes() {
  Todos os trabalhos com garantia por escrito de 12 meses
  </p>
  </Card>
-
  <Card className="p-8 text-center">
  <FileCheck className="h-16 w-16 text-red-600 mx-auto mb-4" />
  <h3 className="font-bold text-xl mb-2">Materiais Certificados</h3>
@@ -55,7 +50,6 @@ export default function Certificacoes() {
  </p>
  </Card>
  </div>
-
  <Card className="p-8 bg-blue-50 border-blue-200">
  <h2 className="text-2xl font-bold mb-4 text-blue-900">
  {config.type === 'plomberie' ? 'Certificação DGEG' : 'Certificação DGEG'}
@@ -67,7 +61,6 @@ export default function Certificacoes() {
  </Card>
  </div>
  </section>
-
  <section className="bg-gray-50 py-16">
  <div className="container text-center">
  <h2 className="text-3xl font-bold mb-4">Pedir Orçamento</h2>
@@ -77,7 +70,6 @@ export default function Certificacoes() {
  </div>
  </section>
  </main>
-
  <Footer />
 </div>
  );

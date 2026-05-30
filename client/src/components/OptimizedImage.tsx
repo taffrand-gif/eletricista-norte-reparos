@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from 'react';
-
 interface OptimizedImageProps {
  src: string;
  alt: string;
@@ -10,7 +9,6 @@ interface OptimizedImageProps {
  objectFit?: 'cover' | 'contain' | 'fill' | 'none' | 'scale-down';
  sizes?: string;
 }
-
 /**
  * Composant d'image optimisé avec:
  * - Lazy loading natif
@@ -31,10 +29,8 @@ export default function OptimizedImage({
  const [isLoaded, setIsLoaded] = useState(false);
  const [isInView, setIsInView] = useState(priority);
  const imgRef = useRef<HTMLImageElement>(null);
-
  useEffect(() => {
  if (priority) return;
-
  const observer = new IntersectionObserver(
  (entries) => {
  entries.forEach((entry) => {
@@ -47,43 +43,35 @@ export default function OptimizedImage({
  {
  rootMargin: '50px'}
  );
-
  if (imgRef.current) {
  observer.observe(imgRef.current);
  }
-
  return () => {
  observer.disconnect();
  };
  }, [priority]);
-
  // Générer srcset pour images locales
  const generateSrcSet = (imagePath: string): string => {
  // Si c'est une URL externe (CDN), pas de srcset
  if (imagePath.startsWith('http://') || imagePath.startsWith('https://')) {
  return '';
  }
-
  // Extraire le chemin et l'extension
  const pathParts = imagePath.split('.');
  const extension = pathParts.pop();
  const basePath = pathParts.join('.');
-
  // Vérifier si c'est une image optimisée (dans /images-optimized/)
  if (!imagePath.includes('/images-optimized/')) {
  return '';
  }
-
  // Générer srcset pour différentes tailles
  const widths = [320, 640, 1024, 1920];
  const srcsetEntries = widths.map(w => {
  // Pour les images optimisées, on suppose qu'elles existent en WebP
  return `${basePath}.webp ${w}w`;
  });
-
  return srcsetEntries.join(', ');
  };
-
  // Générer source WebP
  const getWebPSrc = (imagePath: string): string => {
  if (imagePath.startsWith('http://') || imagePath.startsWith('https://')) {
@@ -91,24 +79,20 @@ export default function OptimizedImage({
  }
  return imagePath.replace(/\.(jpg|jpeg|png)$/i, '.webp');
  };
-
  const containerStyle: React.CSSProperties = {
  position: 'relative',
  overflow: 'hidden',
  backgroundColor: '#f3f4f6',
  ...(width && height ? { aspectRatio: `${width} / ${height}` } : {})};
-
  const imgStyle: React.CSSProperties = {
  width: '100%',
  height: '100%',
  objectFit,
  transition: 'opacity 0.3s ease-in-out',
  opacity: isLoaded ? 1 : 0};
-
  const srcSet = generateSrcSet(src);
  const webpSrc = getWebPSrc(src);
  const isExternal = src.startsWith('http://') || src.startsWith('https://');
-
  return (
  <div ref={imgRef} style={containerStyle} className={className}>
  {isInView && (

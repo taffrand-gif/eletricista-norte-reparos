@@ -1,9 +1,7 @@
 // Secção Zona de Intervenção — Lista de cidades cobertas
 // Orienté SEO local pour améliorer le référencement
-
 import { useSite } from '@/contexts/SiteContext';
 import { MapPin } from 'lucide-react';
-
 const CIDADES_PRINCIPAIS = [
  { nome: 'Bragança', slug: 'braganca' },
  { nome: 'Mirandela', slug: 'mirandela' },
@@ -21,7 +19,6 @@ const CIDADES_PRINCIPAIS = [
  { nome: 'Miranda do Douro', slug: 'miranda-douro' },
  { nome: 'Freixo de Espada à Cinta', slug: 'freixo-espada-cinta' },
 ];
-
 export default function ZonaIntervencao() {
  const { config } = useSite();
  const isPlumber = config.id === 'norte-reparos';
@@ -30,9 +27,7 @@ export default function ZonaIntervencao() {
  const accentBg = isPlumber ? 'bg-blue-50' : 'bg-amber-50';
  const accentBorder = isPlumber ? 'border-blue-200' : 'border-amber-200';
  const iconColor = isPlumber ? 'text-blue-600' : 'text-amber-600';
-
  const serviceSlug = isPlumber ? 'canalizador' : 'eletricista';
-
  return (
  <section id="zona-intervencao" className="py-20 bg-white">
  <div className="container mx-auto px-4">
@@ -46,7 +41,6 @@ export default function ZonaIntervencao() {
  num raio de 100 km a partir de Macedo de Cavaleiros.
  </p>
  </div>
-
  {/* Grelha de cidades */}
  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mb-12">
  {CIDADES_PRINCIPAIS.map((cidade) => (
@@ -60,7 +54,6 @@ export default function ZonaIntervencao() {
  </a>
  ))}
  </div>
-
  {/* Informação adicional */}
  <div className={`max-w-4xl mx-auto ${accentBg} border-2 ${accentBorder} rounded-2xl p-8`}>
  <div className="text-center">

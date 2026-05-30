@@ -1,6 +1,5 @@
 // Page SEO optimizada para "Eletricista Mirandela"
 // 100% unique content, conforme políticas Google
-
 import Header from '@/components/Header';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import CidadesProximas from '@/components/CidadesProximas';
@@ -13,10 +12,8 @@ import { businessInfo, getCityAddress } from '@/../../shared/napConfig';
 import { getCidadesProximas } from '@/data/cidadesProximas';
 import { useEffect } from 'react';
 import FAQSection from '@/components/FAQSection';
-
 export default function Mirandela() {
  const { config } = useSite();
-
  useEffect(() => {
  document.title = "Eletricista Urgente Mirandela ⚡ 24h | 932 321 892";
  
@@ -83,7 +80,6 @@ export default function Mirandela() {
  ]
  });
  document.head.appendChild(schemaScript);
-
  // FAQ Schema
  const faqSchema = document.createElement('script');
  faqSchema.type = 'application/ld+json';
@@ -115,16 +111,13 @@ export default function Mirandela() {
  answer: "Sim, emitimos certificação elétrica para venda, arrendamento e legalização de imóveis em Mirandela e todo o concelho."
  }
  ];
-
  
  return () => {
  document.head.removeChild(schemaScript);
  document.head.removeChild(faqSchema);
  };
  }, [config]);
-
  const cidadesProximas = getCidadesProximas('mirandela');
-
  return (
  <>
  <SEOHead />
@@ -170,7 +163,6 @@ export default function Mirandela() {
  </div>
  </div>
  </section>
-
  {/* Conteúdo específico de Mirandela */}
  <section className="py-16">
  <div className="container mx-auto px-4">
@@ -252,7 +244,6 @@ export default function Mirandela() {
  </div>
  </div>
  </section>
-
  {/* FAQ específica de Mirandela */}
  <section className="py-16 bg-gray-50">
  <div className="container mx-auto px-4">
@@ -299,7 +290,6 @@ export default function Mirandela() {
  </div>
  </div>
  </section>
-
  {/* CTA final */}
  <section className="py-16 bg-gradient-to-r from-blue-900 to-amber-700 text-white">
  <div className="container mx-auto px-4 text-center">
@@ -343,7 +333,6 @@ export default function Mirandela() {
  </div>
  </div>
  </section>
-
  {/* Related Cities - Maillage interno SEO */}
  
  <section className="py-16">
@@ -358,9 +347,7 @@ export default function Mirandela() {
  cidades={cidadesProximas}
  serviceType="eletricista"
  />
-
  
-
  <RelatedCities 
  currentCity="Mirandela" 
  currentCitySlug="eletricista-mirandela" 

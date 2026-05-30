@@ -2,23 +2,19 @@ import React from 'react';
 // Componente Seção de Garantia - 4 cartões de garantia
 // Superar objeção #2 "Ele vai realmente resolver?"
 // Impacto: Confiança + Conversão
-
 import { useSite } from '@/contexts/SiteContext';
 import { useAnalytics } from '@/hooks/useAnalytics';
 // memo removed from 'react';
 import { Phone, MessageCircle } from 'lucide-react';
-
 interface Guarantee {
  icon: string;
  title: string;
  description: string;
  badge: string;
 }
-
 function GuaranteeSection() {
  const { config } = useSite();
  const { trackPhoneClick, trackWhatsAppClick } = useAnalytics();
-
  // Garanties spécifiques selon le site
  const guarantees: Guarantee[] = config.id === 'norte-reparos'
  ? [
@@ -73,15 +69,12 @@ function GuaranteeSection() {
  badge: 'Premium'
  }
  ];
-
  const handlePhoneClick = () => {
  trackPhoneClick(config.phone);
  };
-
  const handleWhatsAppClick = () => {
  trackWhatsAppClick('GuaranteeSection');
  };
-
  return (
  <section className="py-16 bg-green-50">
  <div className="container">
@@ -98,7 +91,6 @@ function GuaranteeSection() {
  Arranjo definitiva, não temporária. Por isso garantimos 2 anos.
  </p>
  </div>
-
  {/* Guarantees Grid */}
  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
  {guarantees.map((guarantee, index) => (
@@ -110,17 +102,14 @@ function GuaranteeSection() {
  <div className="text-5xl mb-4 group-hover:scale-110 transition-transform">
  {guarantee.icon}
  </div>
-
  {/* Badge */}
  <div className="inline-block px-3 py-1 bg-green-100 text-green-800 text-xs font-bold rounded-full mb-3">
  {guarantee.badge}
  </div>
-
  {/* Title */}
  <h3 className="text-xl font-black text-gray-900 mb-3">
  {guarantee.title}
  </h3>
-
  {/* Description */}
  <p className="text-gray-700 leading-relaxed">
  {guarantee.description}
@@ -128,7 +117,6 @@ function GuaranteeSection() {
  </article>
  ))}
  </div>
-
  {/* CTA Banner */}
  <div className="bg-white p-8 rounded-xl border-4 border-green-500 text-center">
  <h3 className="text-2xl font-black mb-4">
@@ -165,7 +153,6 @@ function GuaranteeSection() {
  ✅ Garantia escrita • ✅ Equipamento profissional • ✅ Técnico certificado
  </p>
  </div>
-
  {/* Social Proof */}
  <div className="mt-8 text-center">
  <p className="text-gray-600">
@@ -178,5 +165,4 @@ function GuaranteeSection() {
  </section>
  );
 }
-
 export default React.memo(GuaranteeSection);

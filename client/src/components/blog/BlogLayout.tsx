@@ -2,16 +2,13 @@ import React from 'react';
 import { Link } from 'wouter';
 import { useSite } from '@/contexts/SiteContext';
 import { ACTIVE_CONFIG } from '@/../../shared/serviceConfig';
-
 interface BlogLayoutProps {
  children: React.ReactNode;
  title?: string;
  description?: string;
 }
-
 const BlogLayout: React.FC<BlogLayoutProps> = ({ children, title, description }) => {
  const { config } = useSite();
-
  return (
  <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
  {/* Header du blog */}
@@ -36,7 +33,6 @@ const BlogLayout: React.FC<BlogLayoutProps> = ({ children, title, description })
  </div>
  </div>
  </header>
-
  {/* Navigation catégories */}
  <nav className="bg-white border-b border-gray-200 py-4">
  <div className="container mx-auto px-4">
@@ -59,12 +55,10 @@ const BlogLayout: React.FC<BlogLayoutProps> = ({ children, title, description })
  </div>
  </div>
  </nav>
-
  {/* Contenu principal */}
  <main className="container mx-auto px-4 py-12">
  {children}
  </main>
-
  {/* CTA footer */}
  <section className="bg-gradient-to-r from-amber-700 to-amber-900 text-white py-16">
  <div className="container mx-auto px-4 text-center">
@@ -90,7 +84,6 @@ const BlogLayout: React.FC<BlogLayoutProps> = ({ children, title, description })
  </div>
  </div>
  </section>
-
  {/* Footer */}
  <footer className="bg-gray-900 text-white py-8">
  <div className="container mx-auto px-4 text-center">
@@ -105,5 +98,4 @@ const BlogLayout: React.FC<BlogLayoutProps> = ({ children, title, description })
  </div>
  );
 };
-
 export default BlogLayout;

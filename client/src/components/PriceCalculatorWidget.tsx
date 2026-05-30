@@ -2,12 +2,10 @@ import React from 'react';
 // Price Calculator Widget - Transparence Prix avec VRAIS PRIX officiels
 // Calcul dynamique: Service + Zone + Urgence
 // Impact: +259K€/an attendu
-
 import { useSite } from '@/contexts/SiteContext';
 import { useAnalytics } from '@/hooks/useAnalytics';
 import { useState, useMemo, memo } from 'react';
 import { Calculator, Phone, MessageCircle } from 'lucide-react';
-
 interface ServicePrice {
  id: string;
  label: string;
@@ -15,13 +13,11 @@ interface ServicePrice {
  priceMax: number;
  nightMultiplier: number;
 }
-
 interface Zone {
  label: string;
  price: number;
  nightPrice: number;
 }
-
 // NORTE REPAROS - Grille tarifaire officielle 2026
 const servicesNorte: ServicePrice[] = [
  { id: 'sanita', label: 'Desentupimento Sanita', priceMin: 120, priceMax: 120, nightMultiplier: 1.5 },
@@ -30,7 +26,6 @@ const servicesNorte: ServicePrice[] = [
  { id: 'torneira', label: 'Arranjo Torneira', priceMin: 58, priceMax: 115, nightMultiplier: 1.5 },
  { id: 'autoclismo', label: 'Autoclismo', priceMin: 40, priceMax: 135, nightMultiplier: 1.5 }
 ];
-
 // STAFF SEEKERS - Grille tarifaire officielle 2026
 const servicesStaff: ServicePrice[] = [
  { id: 'tomada', label: 'Tomada Nova', priceMin: 66, priceMax: 90, nightMultiplier: 1.5 },
@@ -39,7 +34,6 @@ const servicesStaff: ServicePrice[] = [
  { id: 'ponto-luz', label: 'Ponto Luz Novo', priceMin: 134, priceMax: 170, nightMultiplier: 1.5 },
  { id: 'diagnostico', label: 'Diagnóstico Pane', priceMin: 80, priceMax: 120, nightMultiplier: 1.5 }
 ];
-
 // Zones déplacement (identiques pour les 2 sites)
 const zones: Zone[] = [
  { label: 'Z1 - Macedo (≤15km)', price: 15, nightPrice: 22.5 },
@@ -49,35 +43,26 @@ const zones: Zone[] = [
  { label: 'Z5 - Vila Real (75-90km)', price: 55, nightPrice: 82.5 },
  { label: 'Z6 - Chaves (90-110km)', price: 65, nightPrice: 97.5 }
 ];
-
 function PriceCalculatorWidget() {
  const { config } = useSite();
  const { trackPhoneClick, trackWhatsAppClick } = useAnalytics();
-
  const [selectedService, setSelectedService] = useState<string>('');
  const [urgency, setUrgency] = useState<'normal' | 'urgent'>('normal');
  const [zoneIndex, setZoneIndex] = useState<number>(2); // Default Z3 Bragança
-
  // Sélectionner services selon le site
  const services = config.id === 'norte-reparos' ? servicesNorte : servicesStaff;
-
  // Calcul prix avec useMemo pour performance
  const calculatedPrice = useMemo(() => {
  if (!selectedService) return null;
-
  const service = services.find(s => s.id === selectedService);
  const selectedZone = zones[zoneIndex];
-
  if (!service || !selectedZone) return null;
-
  // Calcul avec urgence
  const isNight = urgency === 'urgent';
  const multiplier = isNight ? service.nightMultiplier : 1;
-
  const laborMin = Math.round(service.priceMin * multiplier);
  const laborMax = Math.round(service.priceMax * multiplier);
  const travel = isNight ? selectedZone.nightPrice : selectedZone.price;
-
  return {
  laborMin,
  laborMax,
@@ -88,20 +73,16 @@ function PriceCalculatorWidget() {
  zoneName: selectedZone.label
  };
  }, [selectedService, urgency, zoneIndex, services]);
-
  const handlePhoneClick = () => {
  trackPhoneClick(config.phone);
  };
-
  const handleWhatsAppClick = () => {
  const message = calculatedPrice
  ? `Olá! Vi o calculador de preços. Preciso de: ${calculatedPrice.serviceName}. Zona: ${calculatedPrice.zoneName}. Preço estimado: ${calculatedPrice.totalMin}-${calculatedPrice.totalMax}€`
- : `Olá! Gostaria de um orçamento gratuito.`;
-
+ : `Olá! Gostaria de um sem compromisso.`;
  trackWhatsAppClick('PriceCalculatorWidget');
  window.open(`https://wa.me/${config.whatsapp}?text=${encodeURIComponent(message)}`, '_blank');
  };
-
  return (
  <section id="calculador-preco-widget" className="py-16 bg-white">
  <div className="container">
@@ -118,7 +99,6 @@ function PriceCalculatorWidget() {
  Preço fixo garantido. Sem surpresas. Orçamento confirmado em 2 minutos por telefone.
  </p>
  </div>
-
  {/* Calculator Card */}
  <div
  className="bg-gray-50 rounded-2xl shadow-lg p-8 border-4"
@@ -150,7 +130,6 @@ function PriceCalculatorWidget() {
  ))}
  </select>
  </div>
-
  {/* Urgency Selector */}
  <div className="mb-6">
  <label className="block text-lg font-bold text-gray-900 mb-3">
@@ -183,7 +162,6 @@ function PriceCalculatorWidget() {
  </button>
  </div>
  </div>
-
  {/* Zone Selector */}
  <div className="mb-8">
  <label htmlFor="zone-select" className="block text-lg font-bold text-gray-900 mb-3">
@@ -207,7 +185,6 @@ function PriceCalculatorWidget() {
  ))}
  </select>
  </div>
-
  {/* Result Box */}
  {calculatedPrice && (
  <div
@@ -252,7 +229,6 @@ function PriceCalculatorWidget() {
  </p>
  </div>
  )}
-
  {/* CTA Buttons */}
  <div className="space-y-4">
  <p className="text-center text-sm font-bold text-gray-600 mb-3">
@@ -276,11 +252,10 @@ function PriceCalculatorWidget() {
  </button>
  </div>
  <p className="text-center text-xs text-gray-500 mt-4">
- ✅ Orçamento gratuito • ✅ Sem compromisso • ✅ Resposta em 2 minutos
+ ✅ Sem compromisso • ✅ Sem compromisso • ✅ Resposta em 2 minutos
  </p>
  </div>
  </div>
-
  {/* Trust Indicators */}
  <div className="mt-8 text-center">
  <div className="inline-flex items-center gap-2 text-yellow-500 text-2xl mb-2">
@@ -296,5 +271,4 @@ function PriceCalculatorWidget() {
  </section>
  );
 }
-
 export default React.memo(PriceCalculatorWidget);

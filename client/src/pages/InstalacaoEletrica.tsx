@@ -1,6 +1,5 @@
 // Page Service Dédié: Instalação Elétrica Completa em Trás-os-Montes
 // Optimizada para SEO com keywords: instalação elétrica, eletricista instalação
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SEOHeadEnhanced from '@/components/SEOHeadEnhanced';
@@ -9,10 +8,8 @@ import FAQSection from '@/components/FAQSection';
 import { useSite } from '@/contexts/SiteContext';
 import { ACTIVE_CONFIG } from '@/../../shared/serviceConfig';
 import { useEffect } from 'react';
-
 export default function InstalacaoEletrica() {
  const { config } = useSite();
-
  useEffect(() => {
  document.title = "Instalação Elétrica Completa em Trás-os-Montes | Eletricista Profissional";
  
@@ -23,9 +20,8 @@ export default function InstalacaoEletrica() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Instalação elétrica completa em Trás-os-Montes: obra nova, remodelação, certificação. Eletricista profissional, materiais de qualidade, garantia no serviço. Orçamento gratuito.');
+ metaDescription.setAttribute('content', 'Instalação elétrica completa em Trás-os-Montes: obra nova, remodelação, certificação. Eletricista profissional, materiais de qualidade, garantia no serviço. Sem compromisso.');
  }, [config]);
-
  // Schema.org Service JSON-LD
  const serviceSchema = {
  "@context": "https://schema.org",
@@ -85,7 +81,6 @@ export default function InstalacaoEletrica() {
  ]
  }
  };
-
  return (
  <>
  <SEOHeadEnhanced pageType="service" />
@@ -122,7 +117,6 @@ export default function InstalacaoEletrica() {
  </div>
  </div>
  </section>
-
  {/* Service details */}
  <section className="py-16">
  <div className="container mx-auto px-4">
@@ -292,7 +286,6 @@ export default function InstalacaoEletrica() {
  </div>
  </div>
  </section>
-
  {/* FAQ Section with Schema.org */}
  <section className="py-16 bg-gray-50">
  <FAQSection
@@ -313,7 +306,6 @@ export default function InstalacaoEletrica() {
  ]}
  />
  </section>
-
  {/* Internal links to city pages */}
  <section className="py-16">
  <div className="container mx-auto px-4">
@@ -344,7 +336,6 @@ export default function InstalacaoEletrica() {
  </div>
  </div>
  </section>
-
  {/* CTA Final */}
  <section className="py-16 bg-gradient-to-r from-blue-900 to-amber-700 text-white">
  <div className="container mx-auto px-4 text-center">
@@ -352,7 +343,7 @@ export default function InstalacaoEletrica() {
  Precisa de Instalação Elétrica em Trás-os-Montes?
  </h2>
  <p className="text-xl mb-8 max-w-2xl mx-auto">
- Contacte-nos agora para um orçamento gratuito e sem compromisso. 
+ Contacte-nos agora para um sem compromisso e sem compromisso. 
  Trabalhamos em obras novas, remodelações e expansões elétricas.
  </p>
  <div className="flex flex-col sm:flex-row gap-6 justify-center">

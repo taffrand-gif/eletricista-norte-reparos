@@ -5,7 +5,6 @@ import { ACTIVE_CONFIG } from "../../../shared/serviceConfig";
 import { useSEO } from "@/hooks/useSEO";
 import { toast } from "sonner";
 import { trpc } from "@/lib/trpc";
-
 export default function Contactos() {
  const config = ACTIVE_CONFIG;
  const formattedPhone = `${config.phone.slice(0, 3)} ${config.phone.slice(3, 6)} ${config.phone.slice(6)}`;
@@ -35,12 +34,10 @@ export default function Contactos() {
  const handleDateChange = (date: string) => {
  setFormData({ ...formData, preferredDate: date, preferredTime: "" });
  };
-
  useSEO({
  title: `Contactos | ${config.businessName}`,
  description: `Entre em contacto connosco. ${config.name} profissional disponível 24h/dia. Ligue ${formattedPhone}`,
  canonical: `https://${config.domain}/contactos`});
-
  const handlePhoneClick = () => {
  if (typeof window !== 'undefined' && (window as any).gtag) {
  (window as any).gtag('event', 'conversion', {
@@ -53,7 +50,6 @@ export default function Contactos() {
  window.location.href = `tel:+351${config.phone.replace(/\s/g, "")}`;
  }
  };
-
  const sendMessage = trpc.contact.sendMessage.useMutation({
  onSuccess: () => {
  toast.success("Mensagem enviada com sucesso! Entraremos em contacto em breve.");
@@ -71,7 +67,6 @@ export default function Contactos() {
  onError: () => {
  toast.error("Erro ao enviar mensagem. Por favor, ligue-nos diretamente.");
  }});
-
  const createBooking = trpc.bookings.create.useMutation({
  onSuccess: () => {
  toast.success("Pedido de reserva enviado com sucesso! Entraremos em contacto para confirmar.");
@@ -89,7 +84,6 @@ export default function Contactos() {
  onError: () => {
  toast.error("Erro ao enviar pedido de reserva. Por favor, ligue-nos diretamente.");
  }});
-
  const handleSubmit = (e: React.FormEvent) => {
  e.preventDefault();
  
@@ -112,9 +106,7 @@ export default function Contactos() {
  description: formData.message});
  }
  };
-
  const isSubmitting = sendMessage.isPending || createBooking.isPending;
-
  return (
  <>
  <Header />
@@ -131,7 +123,6 @@ export default function Contactos() {
  </div>
  </div>
  </section>
-
  {/* Contact Info & Form */}
  <section className="py-12 sm:py-16 bg-white">
  <div className="container">
@@ -142,7 +133,6 @@ export default function Contactos() {
  <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 sm:mb-8">
  Informações de Contacto
  </h2>
-
  <div className="space-y-4 sm:space-y-6">
  {/* Phone */}
  <div className="flex items-start gap-3 sm:gap-4">
@@ -158,7 +148,6 @@ export default function Contactos() {
  <p className="text-gray-700 mt-1 text-sm sm:text-base">Disponível 24h/dia, 7 dias por semana</p>
  </div>
  </div>
-
  {/* WhatsApp */}
  <div className="flex items-start gap-3 sm:gap-4">
  <div className="text-2xl sm:text-3xl">💬</div>
@@ -178,7 +167,6 @@ export default function Contactos() {
  </button>
  </div>
  </div>
-
  {/* Service Area */}
  <div className="flex items-start gap-3 sm:gap-4">
  <div className="text-2xl sm:text-3xl">📍</div>
@@ -190,7 +178,6 @@ export default function Contactos() {
  </p>
  </div>
  </div>
-
  {/* Schedule */}
  <div className="flex items-start gap-3 sm:gap-4">
  <div className="text-2xl sm:text-3xl">⏰</div>
@@ -203,7 +190,6 @@ export default function Contactos() {
  </div>
  </div>
  </div>
-
  {/* CTA Box */}
  <div className="mt-6 sm:mt-8 bg-red-50 border-l-4 border-red-600 p-4 sm:p-6 rounded-lg">
  <h3 className="font-bold text-base sm:text-lg text-gray-900 mb-2">
@@ -220,13 +206,11 @@ export default function Contactos() {
  </button>
  </div>
  </div>
-
  {/* Contact/Booking Form */}
  <div>
  <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 sm:mb-8">
  Envie-nos uma Mensagem
  </h2>
-
  {/* Form Type Selector */}
  <div className="flex gap-2 sm:gap-4 mb-6 sm:mb-8">
  <button
@@ -252,7 +236,6 @@ export default function Contactos() {
  📅 Marcar Visita
  </button>
  </div>
-
  <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
  <div>
  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -268,7 +251,6 @@ export default function Contactos() {
  placeholder="O seu nome"
  />
  </div>
-
  <div>
  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
  Email *
@@ -283,7 +265,6 @@ export default function Contactos() {
  placeholder="o.seu.email@exemplo.com"
  />
  </div>
-
  <div>
  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
  Telefone *
@@ -298,7 +279,6 @@ export default function Contactos() {
  placeholder="912 345 678"
  />
  </div>
-
  {/* Booking-specific fields */}
  {formType === "booking" && (
  <>
@@ -316,7 +296,6 @@ export default function Contactos() {
  placeholder="Bragança"
  />
  </div>
-
  <div>
  <label htmlFor="serviceType" className="block text-sm font-medium text-gray-700 mb-2">
  Tipo de Serviço *
@@ -336,7 +315,6 @@ export default function Contactos() {
  ))}
  </select>
  </div>
-
  <div>
  <label htmlFor="address" className="block text-sm font-medium text-gray-700 mb-2">
  Morada *
@@ -351,7 +329,6 @@ export default function Contactos() {
  placeholder="Rua Principal, 123"
  />
  </div>
-
  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
  <div>
  <label htmlFor="preferredDate" className="block text-sm font-medium text-gray-700 mb-2">
@@ -367,7 +344,6 @@ export default function Contactos() {
  className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent text-sm sm:text-base"
  />
  </div>
-
  <div>
  <label htmlFor="preferredTime" className="block text-sm font-medium text-gray-700 mb-2">
  Hora Preferida *
@@ -407,7 +383,6 @@ export default function Contactos() {
  </div>
  </>
  )}
-
  <div>
  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
  {formType === "booking" ? "Descrição do Problema *" : "Mensagem *"}
@@ -422,7 +397,6 @@ export default function Contactos() {
  placeholder={formType === "booking" ? "Descreva o problema..." : "Descreva o seu pedido..."}
  />
  </div>
-
  <button
  type="submit"
  disabled={isSubmitting}
@@ -435,7 +409,6 @@ export default function Contactos() {
  : "💬 Enviar Mensagem"
  }
  </button>
-
  <p className="text-xs sm:text-sm text-gray-600 text-center">
  * Campos obrigatórios
  </p>
@@ -445,7 +418,6 @@ export default function Contactos() {
  </div>
  </div>
  </section>
-
  {/* Map Section (Placeholder) */}
  <section className="py-12 sm:py-16 bg-gray-50">
  <div className="container">
@@ -464,7 +436,6 @@ export default function Contactos() {
  </div>
  </div>
  </section>
-
  <Footer />
  </>
  );

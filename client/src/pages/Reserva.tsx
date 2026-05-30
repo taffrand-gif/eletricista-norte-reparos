@@ -11,9 +11,7 @@ import {
  SelectTrigger,
  SelectValue} from "@/components/ui/select";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-
 import { ACTIVE_CONFIG } from "../../../shared/serviceConfig";
-
 export default function Reserva() {
  const config = ACTIVE_CONFIG;
  const [showSuccess, setShowSuccess] = useState(false);
@@ -28,7 +26,6 @@ export default function Reserva() {
  preferredDate: "",
  preferredTime: "",
  description: ""});
-
  const createBooking = trpc.bookings.create.useMutation({
  onSuccess: () => {
  setShowSuccess(true);
@@ -48,16 +45,13 @@ export default function Reserva() {
  setShowError(true);
  setTimeout(() => setShowError(false), 5000);
  }});
-
  const handleSubmit = (e: React.FormEvent) => {
  e.preventDefault();
  createBooking.mutate(formData);
  };
-
  const handleChange = (field: string, value: string) => {
  setFormData((prev) => ({ ...prev, [field]: value }));
  };
-
  const timeSlots = [
  "08:00-09:00",
  "09:00-10:00",
@@ -68,7 +62,6 @@ export default function Reserva() {
  "16:00-17:00",
  "17:00-18:00",
  ];
-
  return (
  <div className="min-h-screen bg-gradient-to-b from-pink-50 to-white py-12">
  <div className="container max-w-3xl">
@@ -79,7 +72,6 @@ export default function Reserva() {
  <p>Entraremos em contacto consigo em breve para confirmar.</p>
  </div>
  )}
-
  {/* Error Alert */}
  {showError && (
  <div className="mb-6 bg-red-50 border border-red-200 text-red-800 px-6 py-4 rounded-lg">
@@ -87,7 +79,6 @@ export default function Reserva() {
  <p>Ocorreu um erro ao enviar a reserva. Tente novamente.</p>
  </div>
  )}
-
  <div className="text-center mb-12">
  <h1 className="text-4xl font-bold text-gray-900 mb-4">
  Reservar Serviço
@@ -96,7 +87,6 @@ export default function Reserva() {
  Preencha o formulário abaixo para agendar a sua intervenção
  </p>
  </div>
-
  <Card>
  <CardHeader>
  <CardTitle>Dados da Reserva</CardTitle>
@@ -121,7 +111,6 @@ export default function Reserva() {
  required
  />
  </div>
-
  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
  <div>
  <Label htmlFor="email">Email *</Label>
@@ -133,7 +122,6 @@ export default function Reserva() {
  required
  />
  </div>
-
  <div>
  <Label htmlFor="phone">Telefone *</Label>
  <Input
@@ -146,13 +134,11 @@ export default function Reserva() {
  </div>
  </div>
  </div>
-
  {/* Detalhes do Serviço */}
  <div className="space-y-4">
  <h3 className="text-lg font-semibold text-gray-900">
  Detalhes do Serviço
  </h3>
-
  <div>
  <Label htmlFor="serviceType">Tipo de Serviço *</Label>
  <Select
@@ -172,7 +158,6 @@ export default function Reserva() {
  </SelectContent>
  </Select>
  </div>
-
  <div>
  <Label htmlFor="address">Morada *</Label>
  <Input
@@ -183,7 +168,6 @@ export default function Reserva() {
  required
  />
  </div>
-
  <div>
  <Label htmlFor="city">Cidade *</Label>
  <Input
@@ -194,13 +178,11 @@ export default function Reserva() {
  />
  </div>
  </div>
-
  {/* Data e Hora */}
  <div className="space-y-4">
  <h3 className="text-lg font-semibold text-gray-900">
  Data e Hora Preferida
  </h3>
-
  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
  <div>
  <Label htmlFor="preferredDate">Data *</Label>
@@ -213,7 +195,6 @@ export default function Reserva() {
  required
  />
  </div>
-
  <div>
  <Label htmlFor="preferredTime">Horário *</Label>
  <Select
@@ -235,7 +216,6 @@ export default function Reserva() {
  </div>
  </div>
  </div>
-
  {/* Descrição */}
  <div>
  <Label htmlFor="description">
@@ -249,7 +229,6 @@ export default function Reserva() {
  rows={4}
  />
  </div>
-
  <Button
  type="submit"
  className="w-full bg-red-600 hover:bg-red-700 text-lg py-6"
@@ -260,7 +239,6 @@ export default function Reserva() {
  </form>
  </CardContent>
  </Card>
-
  {/* Informações Adicionais */}
  <div className="mt-8 bg-blue-50 border border-blue-200 rounded-lg p-6">
  <h3 className="text-lg font-semibold text-blue-900 mb-2">

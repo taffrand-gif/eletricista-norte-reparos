@@ -3,7 +3,6 @@
 // - Bold form with thick borders
 // - Direct contact information
 // - Map integration
-
 import { useSite } from '@/contexts/SiteContext';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { Button } from './ui/button';
@@ -12,7 +11,6 @@ import { Label } from './ui/label';
 import { Textarea } from './ui/textarea';
 import { useState } from 'react';
 import { toast } from 'sonner';
-
 export default function Contactos() {
  const { config } = useSite();
  const [formData, setFormData] = useState({
@@ -20,13 +18,10 @@ export default function Contactos() {
  phone: '',
  email: '',
  message: ''});
-
  const [isSubmitting, setIsSubmitting] = useState(false);
-
  const handleSubmit = async (e: React.FormEvent) => {
  e.preventDefault();
  setIsSubmitting(true);
-
  try {
  const res = await fetch("https://formsubmit.co/ajax/taff.rand@gmail.com", {
  method: "POST",
@@ -39,7 +34,6 @@ export default function Contactos() {
  _subject: "Novo contacto Staff-Seekers",
  _template: "table",
  _captcha: "false"})});
-
  if (res.ok) {
  toast.success('Mensagem enviada com sucesso! Entraremos em contacto em breve.');
  setFormData({ name: '', phone: '', email: '', message: '' });
@@ -52,14 +46,12 @@ export default function Contactos() {
  setIsSubmitting(false);
  }
  };
-
  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
  setFormData(prev => ({
  ...prev,
  [e.target.name]: e.target.value
  }));
  };
-
  return (
  <section id="contactos" className="py-20 bg-gray-50">
  <div className="container">
@@ -72,7 +64,6 @@ export default function Contactos() {
  Tem alguma dúvida ou precisa de um orçamento? Contacte-nos através do formulário ou ligue diretamente.
  </p>
  </div>
-
  <div className="grid md:grid-cols-2 gap-12">
  {/* Contact Form */}
  <div
@@ -80,7 +71,6 @@ export default function Contactos() {
  style={{ borderColor: config.colors.primary }}
  >
  <h3 className="text-2xl font-black mb-6">Envie-nos uma Mensagem</h3>
-
  <form onSubmit={handleSubmit} className="space-y-6">
  <div>
  <Label htmlFor="name" className="text-base font-bold mb-2 block">
@@ -97,7 +87,6 @@ export default function Contactos() {
  placeholder="O seu nome"
  />
  </div>
-
  <div>
  <Label htmlFor="phone" className="text-base font-bold mb-2 block">
  Telefone *
@@ -113,7 +102,6 @@ export default function Contactos() {
  placeholder="912 345 678"
  />
  </div>
-
  <div>
  <Label htmlFor="email" className="text-base font-bold mb-2 block">
  Email
@@ -128,7 +116,6 @@ export default function Contactos() {
  placeholder="seuemail@exemplo.com"
  />
  </div>
-
  <div>
  <Label htmlFor="message" className="text-base font-bold mb-2 block">
  Mensagem *
@@ -143,7 +130,6 @@ export default function Contactos() {
  placeholder="Descreva o seu problema ou pedido..."
  />
  </div>
-
  <Button
  type="submit"
  disabled={isSubmitting}
@@ -154,7 +140,6 @@ export default function Contactos() {
  </Button>
  </form>
  </div>
-
  {/* Contact Info */}
  <div className="space-y-6">
  {/* Direct contact cards */}
@@ -184,7 +169,6 @@ export default function Contactos() {
  </div>
  </div>
  </div>
-
  <div
  className="bg-white p-6 border-4"
  style={{ borderColor: config.colors.primary }}
@@ -211,7 +195,6 @@ export default function Contactos() {
  </div>
  </div>
  </div>
-
  <div
  className="bg-white p-6 border-4"
  style={{ borderColor: config.colors.primary }}
@@ -234,7 +217,6 @@ export default function Contactos() {
  </div>
  </div>
  </div>
-
  <div
  className="bg-white p-6 border-4"
  style={{ borderColor: config.colors.primary }}

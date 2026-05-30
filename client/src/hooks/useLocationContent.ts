@@ -1,7 +1,6 @@
 import { useMemo } from 'react';
 import { useLocation } from '@/contexts/LocationContext';
 import { CITIES } from '@/../../shared/serviceConfig';
-
 interface LocationContentConfig {
  city: string;
  distance: number;
@@ -9,11 +8,9 @@ interface LocationContentConfig {
  priceAdjustment: number;
  region: string;
 }
-
 // Base location (Macedo de Cavaleiros)
 const BASE_LAT = 41.5382;
 const BASE_LON = -6.9667;
-
 // City coordinates (approximate)
 const CITY_COORDINATES: Record<string, { lat: number; lon: number }> = {
  'Bragança': { lat: 41.8058, lon: -6.7570 },
@@ -31,7 +28,6 @@ const CITY_COORDINATES: Record<string, { lat: number; lon: number }> = {
  'Valpaços': { lat: 41.6083, lon: -7.3167 },
  'Murça': { lat: 41.4042, lon: -7.4500 },
  'Vila Nova de Foz Côa': { lat: 41.0833, lon: -7.1333 }};
-
 // Calculate distance using Haversine formula
 function calculateDistance(lat1: number, lon1: number, lat2: number, lon2: number): number {
  const R = 6371; // Earth radius in km
@@ -44,7 +40,6 @@ function calculateDistance(lat1: number, lon1: number, lat2: number, lon2: numbe
  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
  return R * c;
 }
-
 // Get distance from base to city
 function getDistanceToCity(cityName: string): number {
  const coords = CITY_COORDINATES[cityName];
@@ -54,7 +49,6 @@ function getDistanceToCity(cityName: string): number {
  }
  return Math.round(calculateDistance(BASE_LAT, BASE_LON, coords.lat, coords.lon));
 }
-
 // Calculate arrival time based on distance
 function getArrivalTime(distance: number): string {
  if (distance <= 20) return '30-40 minutos';
@@ -62,7 +56,6 @@ function getArrivalTime(distance: number): string {
  if (distance <= 60) return '50-60 minutos';
  return '60-90 minutos';
 }
-
 // Calculate price adjustment based on distance
 function getPriceAdjustment(distance: number): number {
  if (distance <= 20) return 0;
@@ -70,30 +63,24 @@ function getPriceAdjustment(distance: number): number {
  if (distance <= 100) return 20;
  return 30;
 }
-
 // Get region name
 function getRegion(cityName: string): string {
  const city = CITIES.find(c => c.name === cityName);
  if (!city) return 'Trás-os-Montes';
-
  // If it's a village, return parent city
  if (city.parentCity) {
  return city.parentCity;
  }
-
  return city.district;
 }
-
 export function useLocationContent(): LocationContentConfig {
  const { getCurrentCity } = useLocation();
-
  return useMemo(() => {
  const city = getCurrentCity();
  const distance = getDistanceToCity(city);
  const arrivalTime = getArrivalTime(distance);
  const priceAdjustment = getPriceAdjustment(distance);
  const region = getRegion(city);
-
  return {
  city,
  distance,
@@ -102,29 +89,24 @@ export function useLocationContent(): LocationContentConfig {
  region};
  }, [getCurrentCity]);
 }
-
 // Hook for personalized WhatsApp message
 export function usePersonalizedWhatsAppMessage(baseMessage: string): string {
  const { city } = useLocationContent();
-
  return useMemo(() => {
  return `Olá! Estou em ${city}. ${baseMessage}`;
  }, [city, baseMessage]);
 }
-
 // Hook for filtering testimonials by location
 export function useLocalTestimonials<T extends { location: string }>(
  testimonials: T[]
 ): T[] {
  const { city, region } = useLocationContent();
-
  return useMemo(() => {
  // First, try to find testimonials from the same city
  const sameCity = testimonials.filter(t => t.location === city);
  if (sameCity.length >= 3) {
  return sameCity.slice(0, 3);
  }
-
  // Then, try to find testimonials from the same region
  const sameRegion = testimonials.filter(t =>
  t.location.includes(region) || region.includes(t.location)
@@ -132,7 +114,6 @@ export function useLocalTestimonials<T extends { location: string }>(
  if (sameRegion.length >= 3) {
  return sameRegion.slice(0, 3);
  }
-
  // Fallback: return first 3 testimonials
  return testimonials.slice(0, 3);
  }, [testimonials, city, region]);

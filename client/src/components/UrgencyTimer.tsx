@@ -2,26 +2,21 @@ import React from 'react';
 // Component: Urgency Timer - Eletricista
 // Creates time-based urgency with limited-time offers
 // Psychological trigger: scarcity + FOMO + certification
-
 import { useSite } from '@/contexts/SiteContext';
 import { useState, useEffect } from 'react';
-
 function UrgencyTimer() {
  const { config } = useSite();
  const [timeLeft, setTimeLeft] = useState({
  hours: 0,
  minutes: 0,
  seconds: 0});
-
  useEffect(() => {
  // Calculate time until end of day (midnight)
  const calculateTimeLeft = () => {
  const now = new Date();
  const midnight = new Date();
  midnight.setHours(24, 0, 0, 0);
-
  const difference = midnight.getTime() - now.getTime();
-
  if (difference > 0) {
  setTimeLeft({
  hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
@@ -29,13 +24,10 @@ function UrgencyTimer() {
  seconds: Math.floor((difference / 1000) % 60)});
  }
  };
-
  calculateTimeLeft();
  const timer = setInterval(calculateTimeLeft, 1000);
-
  return () => clearInterval(timer);
  }, []);
-
  const offers = [
  {
  icon: '🎁',
@@ -53,14 +45,12 @@ function UrgencyTimer() {
  description: 'certificação elétrica incluída sem custo extra',
  value: '€150 valor'},
  ];
-
  return (
  <section className="py-16 bg-gradient-to-r from-red-600 to-orange-600 text-white relative overflow-hidden">
  {/* Animated background */}
  <div className="absolute inset-0 opacity-10">
  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent animate-pulse"></div>
  </div>
-
  <div className="container relative z-10">
  <div className="max-w-6xl mx-auto">
  {/* Header */}
@@ -72,7 +62,6 @@ function UrgencyTimer() {
  🔥 Promoção Termina em:
  </h2>
  </div>
-
  {/* Countdown Timer */}
  <div className="flex justify-center gap-4 mb-8">
  <div className="bg-white text-gray-900 rounded-lg p-6 min-w-[100px] text-center shadow-2xl">
@@ -96,7 +85,6 @@ function UrgencyTimer() {
  <div className="text-sm font-bold uppercase">Segundos</div>
  </div>
  </div>
-
  {/* Offers Grid */}
  <div className="grid md:grid-cols-3 gap-6 mb-8">
  {offers.map((offer, index) => (
@@ -115,7 +103,6 @@ function UrgencyTimer() {
  </div>
  ))}
  </div>
-
  {/* CTA */}
  <div className="text-center">
  <p className="text-2xl font-black mb-6">
@@ -142,7 +129,6 @@ function UrgencyTimer() {
  ✅ Válido apenas para chamadas feitas hoje • ✅ Mencione "promoção site"
  </p>
  </div>
-
  {/* Social Proof */}
  <div className="mt-8 text-center">
  <p className="text-lg font-bold">
@@ -154,5 +140,4 @@ function UrgencyTimer() {
  </section>
  );
 }
-
 export default React.memo(UrgencyTimer);

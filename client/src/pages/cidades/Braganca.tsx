@@ -1,6 +1,5 @@
 // SEO optimized page for "Eletricista Bragança"
 // 100% unique content, conforme aux politiques Google
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import RelatedCities from '@/components/RelatedCities';
@@ -13,10 +12,8 @@ import { useSite } from '@/contexts/SiteContext';
 import { businessInfo, getCityAddress } from '@/../../shared/napConfig';
 import { useEffect } from 'react';
 import { getCidadesProximas } from '@/data/cidadesProximas';
-
 export default function Braganca() {
  const { config } = useSite();
-
  useEffect(() => {
  document.title = "Eletricista Urgente Bragança ⚡ 24h | 932 321 892";
  
@@ -74,7 +71,6 @@ export default function Braganca() {
  ]
  });
  document.head.appendChild(schemaScript);
-
  // FAQ Schema
  const faqSchema = document.createElement('script');
  faqSchema.type = 'application/ld+json';
@@ -92,7 +88,6 @@ export default function Braganca() {
  }))
  });
  document.head.appendChild(faqSchema);
-
  const faqs = [
  {
  question: "Qual o custo de deslocação a Bragança?",
@@ -107,16 +102,12 @@ export default function Braganca() {
  answer: "Sim, emitimos certificação elétrica para venda, arrendamento e legalização de imóveis em Bragança e todo o concelho."
  }
  ];
-
-
  return () => {
  document.head.removeChild(schemaScript);
  document.head.removeChild(faqSchema);
  };
  }, [config]);
-
  const cidadesProximas = getCidadesProximas('braganca');
-
  return (
  <>
  <SEOHead />
@@ -163,7 +154,6 @@ export default function Braganca() {
  </div>
  </div>
  </section>
-
  {/* Contenu spécifique à Bragança */}
  <section className="py-16">
  <div className="container mx-auto px-4">
@@ -243,7 +233,6 @@ export default function Braganca() {
  </div>
  </div>
  </section>
-
  {/* FAQ spécifique à Bragança */}
  <section className="py-16 bg-gray-50">
  <div className="container mx-auto px-4">
@@ -288,7 +277,6 @@ export default function Braganca() {
  </div>
  </div>
  </section>
-
  {/* FAQ Section with Schema.org - Bragança Specific */}
  <section className="py-16 bg-gray-50">
  <FAQSection
@@ -313,7 +301,6 @@ export default function Braganca() {
  ]}
  />
  </section>
-
  {/* CTA final */}
  <section className="py-16 bg-gradient-to-r from-blue-900 to-amber-700 text-white">
  <div className="container mx-auto px-4 text-center">
@@ -347,7 +334,6 @@ export default function Braganca() {
  </p>
  </div>
  </section>
-
  {/* FAQ Schema Section */}
  <section className="py-16">
  <div className="container max-w-4xl">
@@ -355,14 +341,12 @@ export default function Braganca() {
  <FAQSection faqs={faqs} />
  </div>
  </section>
-
  {/* Cidades Próximas - Internal Linking */}
  <CidadesProximas
  currentCity="Bragança"
  cidades={cidadesProximas}
  serviceType="eletricista"
  />
-
  {/* Related Cities - Maillage interno SEO */}
  <RelatedCities
  currentCity="Braganca"

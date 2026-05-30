@@ -5,12 +5,10 @@ import { CheckCircle } from 'lucide-react';
 import OptimizedImage from './OptimizedImage';
 import { useAnalytics } from '@/hooks/useAnalytics';
 // memo removed from 'react';
-
 function Trabalhos() {
  const { config } = useSite();
  const { trackPhoneClick } = useAnalytics();
  const isPlumber = config.id === 'norte-reparos';
-
  const plumbProjects = [
  {
  title: 'Remodelação Completa de Casa de Banho',
@@ -43,7 +41,6 @@ function Trabalhos() {
  description: 'Renovação completa das instalações sanitárias de restaurante, incluindo canalização nova e equipamentos.',
  image: '/images-optimized/services/service-instalacao.jpg'},
  ];
-
  const electricProjects = [
  {
  title: 'Substituição de Quadro Elétrico',
@@ -76,9 +73,7 @@ function Trabalhos() {
  description: 'Instalação elétrica completa para novo espaço comercial, com quadro trifásico e iluminação profissional.',
  image: '/images-optimized/services/service-quadro-eletrico.jpg'},
  ];
-
  const projects = isPlumber ? plumbProjects : electricProjects;
-
  return (
  <section id="trabalhos" className="py-20 bg-white">
  <div className="container">
@@ -91,7 +86,6 @@ function Trabalhos() {
  Veja alguns dos nossos projetos concluídos com sucesso em Trás-os-Montes. Cada trabalho é realizado com o máximo rigor e profissionalismo.
  </p>
  </div>
-
  {/* Grelha de projetos */}
  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
  {projects.map((project, index) => (
@@ -111,7 +105,6 @@ function Trabalhos() {
  objectFit="cover"
  />
  </div>
-
  {/* Conteúdo */}
  <div className="p-6">
  <div className="flex items-start gap-2 mb-3">
@@ -135,7 +128,6 @@ function Trabalhos() {
  </div>
  ))}
  </div>
-
  {/* CTA */}
  <div className="mt-16 text-center">
  <div className="inline-block p-8 border-4 bg-gray-50" style={{ borderColor: config.colors.primary }}>
@@ -143,7 +135,7 @@ function Trabalhos() {
  Quer um trabalho com esta qualidade?
  </p>
  <p className="text-gray-600 mb-6">
- Contacte-nos para um orçamento gratuito e sem compromisso.
+ Contacte-nos para um sem compromisso e sem compromisso.
  </p>
  <a
  href={`tel:+351${config.phone.replace(/\s/g, '')}`}
@@ -160,5 +152,4 @@ function Trabalhos() {
  </section>
  );
 }
-
 export default React.memo(Trabalhos);

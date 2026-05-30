@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { ACTIVE_CONFIG } from '@/../../shared/serviceConfig';
-
 const faqItems = [
  {
  question: "Quanto custa uma instalação elétrica completa?",
- answer: "O custo varia conforme a dimensão do projeto. Fazemos orçamento gratuito e sem compromisso após visita ao local. Para uma casa média, o valor pode variar entre 800€ e 2.500€ (sem IVA), dependendo da complexidade e materiais necessários."
+ answer: "O custo varia conforme a dimensão do projeto. Fazemos sem compromisso e sem compromisso após visita ao local. Para uma casa média, o valor pode variar entre 800€ e 2.500€ (sem IVA), dependendo da complexidade e materiais necessários."
  },
  {
  question: "Fazem certificação elétrica para venda de imóvel?",
@@ -23,14 +22,11 @@ const faqItems = [
  answer: "Servimos toda a região de Trás-os-Montes num raio de 100 km: Bragança, Macedo de Cavaleiros, Mirandela, Miranda do Douro, Vinhais, Mogadouro, Vila Flor, Valpaços, Torre de Moncorvo, Alfândega da Fé e arredores."
  }
 ];
-
 const OptimizedFAQ: React.FC = () => {
  const [openIndex, setOpenIndex] = useState<number | null>(0);
-
  const toggleFAQ = (index: number) => {
  setOpenIndex(openIndex === index ? null : index);
  };
-
  return (
  <div className="space-y-4">
  {faqItems.map((item, index) => (
@@ -137,5 +133,4 @@ const OptimizedFAQ: React.FC = () => {
  </div>
  );
 };
-
 export default OptimizedFAQ;

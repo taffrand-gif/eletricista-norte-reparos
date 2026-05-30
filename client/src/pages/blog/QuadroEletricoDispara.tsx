@@ -1,14 +1,12 @@
 import React from 'react';
 import BlogLayout from '@/components/blog/BlogLayout';
 import { useSEO } from '@/hooks/useSEO';
-
 const QuadroEletricoDispara: React.FC = () => {
  useSEO({
  title: 'Quadro Elétrico Dispara: 7 Causas e Soluções [Guia 2026]',
  description: 'Quadro elétrico dispara constantemente? Descubra as 7 causas principais e soluções práticas para resolver o problema definitivamente.',
  keywords: 'quadro elétrico dispara, disjuntor dispara, luz vai abaixo, curto circuito, sobrecarga elétrica, eletricista'
  });
-
  return (
  <BlogLayout
  title="Quadro Elétrico Dispara: 7 Causas e Soluções [Guia 2026]"
@@ -23,11 +21,9 @@ const QuadroEletricoDispara: React.FC = () => {
  <span>⏱️ 12 min de leitura</span>
  <span>📅 10 Mar 2026</span>
  </div>
-
  <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
  Quadro Elétrico Dispara: 7 Causas e Soluções [Guia 2026]
  </h1>
-
  <div className="flex items-center gap-4">
  <div className="w-12 h-12 bg-cyan-200 rounded-full flex items-center justify-center">
  <span className="text-2xl">⚡</span>
@@ -38,21 +34,18 @@ const QuadroEletricoDispara: React.FC = () => {
  </div>
  </div>
  </div>
-
  <div className="prose prose-lg max-w-none mb-10">
  <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg mb-8">
  <p className="text-red-900 font-semibold text-lg">
  ⚠️ Quadro elétrico que dispara constantemente indica problema que precisa ser resolvido urgentemente por segurança!
  </p>
  </div>
-
  <p className="text-xl text-gray-700 mb-6 leading-relaxed">
  Quadro elétrico que dispara é problema comum mas muito frustrante. Neste guia completo,
  vamos identificar as 7 causas principais, ensinar como diagnosticar o problema e apresentar
  soluções práticas para resolver definitivamente.
  </p>
  </div>
-
  <div className="bg-gray-50 rounded-2xl p-6 mb-10">
  <h2 className="text-2xl font-bold text-gray-900 mb-4">📋 Índice</h2>
  <ul className="space-y-2">
@@ -65,43 +58,35 @@ const QuadroEletricoDispara: React.FC = () => {
  <li><a href="#faq" className="text-cyan-600 hover:text-cyan-700 font-medium">7. Perguntas Frequentes</a></li>
  </ul>
  </div>
-
  <div className="prose prose-lg max-w-none">
  <section id="o-que-e" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">🔌 O Que é o Quadro Elétrico?</h2>
-
  <p className="mb-6">
  O quadro elétrico é o centro de controlo de toda a instalação elétrica da sua casa.
  Contém disjuntores e dispositivos de proteção que desligam automaticamente a corrente
  quando detetam problemas, protegendo pessoas e equipamentos.
  </p>
-
  <div className="bg-white p-6 rounded-xl border-2 border-gray-200 mb-8">
  <h3 className="font-bold text-gray-900 mb-4 text-xl">🎯 Componentes Principais</h3>
-
  <div className="space-y-4">
  <div className="bg-blue-50 p-4 rounded-lg">
  <h4 className="font-bold text-blue-900 mb-2">Disjuntor Geral:</h4>
  <p className="text-blue-800 text-sm">Protege toda a instalação. Desliga tudo em caso de problema grave.</p>
  </div>
-
  <div className="bg-green-50 p-4 rounded-lg">
  <h4 className="font-bold text-green-900 mb-2">Disjuntores Parciais:</h4>
  <p className="text-green-800 text-sm">Protegem circuitos específicos (tomadas, iluminação, cozinha). Desligam apenas o circuito com problema.</p>
  </div>
-
  <div className="bg-purple-50 p-4 rounded-lg">
  <h4 className="font-bold text-purple-900 mb-2">Disjuntor Diferencial:</h4>
  <p className="text-purple-800 text-sm">Protege contra choques elétricos. Deteta fugas de corrente e desliga imediatamente (salva vidas!).</p>
  </div>
-
  <div className="bg-orange-50 p-4 rounded-lg">
  <h4 className="font-bold text-orange-900 mb-2">Contador:</h4>
  <p className="text-orange-800 text-sm">Mede consumo elétrico. Propriedade da empresa distribuidora.</p>
  </div>
  </div>
  </div>
-
  <div className="bg-cyan-50 p-6 rounded-xl">
  <h3 className="font-bold text-cyan-900 mb-3 text-lg">💡 Como Funciona a Proteção</h3>
  <p className="text-cyan-800 mb-3">
@@ -116,14 +101,11 @@ const QuadroEletricoDispara: React.FC = () => {
  </ul>
  </div>
  </section>
-
  <section id="causas" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">🔍 7 Causas Principais</h2>
-
  <p className="mb-6">
  Identificar a causa é essencial para resolver o problema corretamente:
  </p>
-
  <div className="space-y-6">
  <div className="bg-white p-6 rounded-xl border-2 border-red-200">
  <div className="flex items-start gap-4">
@@ -147,7 +129,6 @@ const QuadroEletricoDispara: React.FC = () => {
  </div>
  </div>
  </div>
-
  <div className="bg-white p-6 rounded-xl border-2 border-orange-200">
  <div className="flex items-start gap-4">
  <div className="w-10 h-10 bg-orange-500 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">
@@ -170,7 +151,6 @@ const QuadroEletricoDispara: React.FC = () => {
  </div>
  </div>
  </div>
-
  <div className="bg-white p-6 rounded-xl border-2 border-yellow-200">
  <div className="flex items-start gap-4">
  <div className="w-10 h-10 bg-yellow-500 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">
@@ -193,7 +173,6 @@ const QuadroEletricoDispara: React.FC = () => {
  </div>
  </div>
  </div>
-
  <div className="bg-white p-6 rounded-xl border-2 border-blue-200">
  <div className="flex items-start gap-4">
  <div className="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">
@@ -216,7 +195,6 @@ const QuadroEletricoDispara: React.FC = () => {
  </div>
  </div>
  </div>
-
  <div className="bg-white p-6 rounded-xl border-2 border-green-200">
  <div className="flex items-start gap-4">
  <div className="w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">
@@ -239,7 +217,6 @@ const QuadroEletricoDispara: React.FC = () => {
  </div>
  </div>
  </div>
-
  <div className="bg-white p-6 rounded-xl border-2 border-purple-200">
  <div className="flex items-start gap-4">
  <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">
@@ -262,7 +239,6 @@ const QuadroEletricoDispara: React.FC = () => {
  </div>
  </div>
  </div>
-
  <div className="bg-white p-6 rounded-xl border-2 border-pink-200">
  <div className="flex items-start gap-4">
  <div className="w-10 h-10 bg-pink-500 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">
@@ -287,19 +263,15 @@ const QuadroEletricoDispara: React.FC = () => {
  </div>
  </div>
  </section>
-
  <section id="diagnostico" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">🔎 Como Diagnosticar</h2>
-
  <p className="mb-6">
  Use este método sistemático para identificar a causa do disparo:
  </p>
-
  <div className="bg-white rounded-xl border-2 border-gray-200 overflow-hidden mb-8">
  <div className="bg-cyan-50 p-6">
  <h3 className="font-bold text-cyan-900 mb-3 text-xl">📝 Método de Diagnóstico Passo a Passo</h3>
  </div>
-
  <div className="p-6 space-y-6">
  <div className="border-l-4 border-cyan-500 pl-4">
  <h4 className="font-bold text-gray-900 mb-2">Passo 1: Identificar Qual Disjuntor Dispara</h4>
@@ -309,7 +281,6 @@ const QuadroEletricoDispara: React.FC = () => {
  <li>• Disjuntor parcial = problema num circuito específico</li>
  </ul>
  </div>
-
  <div className="border-l-4 border-cyan-500 pl-4">
  <h4 className="font-bold text-gray-900 mb-2">Passo 2: Quando Dispara?</h4>
  <ul className="text-gray-700 text-sm space-y-1">
@@ -319,7 +290,6 @@ const QuadroEletricoDispara: React.FC = () => {
  <li>• Após alguns minutos = sobrecarga ou sobreaquecimento</li>
  </ul>
  </div>
-
  <div className="border-l-4 border-cyan-500 pl-4">
  <h4 className="font-bold text-gray-900 mb-2">Passo 3: Teste de Isolamento</h4>
  <ol className="text-gray-700 text-sm space-y-1 list-decimal pl-4">
@@ -330,7 +300,6 @@ const QuadroEletricoDispara: React.FC = () => {
  <li>Se disparar = problema na instalação fixa</li>
  </ol>
  </div>
-
  <div className="border-l-4 border-cyan-500 pl-4">
  <h4 className="font-bold text-gray-900 mb-2">Passo 4: Identificar Aparelho Culpado</h4>
  <p className="text-gray-700 text-sm mb-2">Se não disparou no Passo 3:</p>
@@ -341,7 +310,6 @@ const QuadroEletricoDispara: React.FC = () => {
  <li>Desligue esse aparelho e teste outros</li>
  </ol>
  </div>
-
  <div className="border-l-4 border-cyan-500 pl-4">
  <h4 className="font-bold text-gray-900 mb-2">Passo 5: Verificar Sobrecarga</h4>
  <p className="text-gray-700 text-sm mb-2">Se dispara com vários aparelhos ligados:</p>
@@ -353,7 +321,6 @@ const QuadroEletricoDispara: React.FC = () => {
  </div>
  </div>
  </div>
-
  <div className="bg-yellow-50 p-6 rounded-xl border-2 border-yellow-200">
  <h3 className="font-bold text-yellow-900 mb-3 text-lg">⚠️ Tabela de Diagnóstico Rápido</h3>
  <table className="w-full text-sm">
@@ -399,14 +366,11 @@ const QuadroEletricoDispara: React.FC = () => {
  </table>
  </div>
  </section>
-
  <section id="solucoes" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">✅ Soluções Práticas</h2>
-
  <p className="mb-6">
  Depois de identificar a causa, aplique a solução adequada:
  </p>
-
  <div className="space-y-8">
  <div className="bg-white p-6 rounded-xl border-2 border-cyan-200">
  <div className="flex items-start gap-4 mb-4">
@@ -421,7 +385,6 @@ const QuadroEletricoDispara: React.FC = () => {
  </div>
  </div>
  </div>
-
  <h4 className="font-bold text-gray-900 mb-3">Soluções Imediatas:</h4>
  <ul className="list-disc pl-6 mb-4 space-y-2">
  <li>Distribua aparelhos potentes por circuitos diferentes</li>
@@ -429,7 +392,6 @@ const QuadroEletricoDispara: React.FC = () => {
  <li>Use tomadas de circuitos diferentes para aparelhos potentes</li>
  <li>Desligue aparelhos em standby (consomem corrente)</li>
  </ul>
-
  <h4 className="font-bold text-gray-900 mb-3">Solução Definitiva:</h4>
  <ul className="list-disc pl-6 mb-4 space-y-2">
  <li>Aumente potência contratada (se necessário)</li>
@@ -437,14 +399,12 @@ const QuadroEletricoDispara: React.FC = () => {
  <li>Substitua disjuntor por um de maior amperagem (se fios suportarem)</li>
  <li>Renove instalação elétrica (casos graves)</li>
  </ul>
-
  <div className="bg-blue-50 p-4 rounded-lg">
  <p className="text-blue-900 text-sm">
  <strong>💡 Cálculo Rápido:</strong> Disjuntor 16A suporta 3680W (230V × 16A). Some potência de todos os aparelhos no circuito.
  </p>
  </div>
  </div>
-
  <div className="bg-white p-6 rounded-xl border-2 border-cyan-200">
  <div className="flex items-start gap-4 mb-4">
  <div className="w-12 h-12 bg-cyan-500 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-xl">
@@ -458,14 +418,12 @@ const QuadroEletricoDispara: React.FC = () => {
  </div>
  </div>
  </div>
-
  <div className="bg-red-50 p-4 rounded-lg mb-4">
  <p className="text-red-900 font-semibold mb-2">⚠️ PERIGO - Não Tente Reparar Sozinho!</p>
  <p className="text-red-800 text-sm">
  Curto-circuito é perigoso. Chame eletricista certificado imediatamente.
  </p>
  </div>
-
  <h4 className="font-bold text-gray-900 mb-3">O Que o Eletricista Fará:</h4>
  <ol className="list-decimal pl-6 mb-4 space-y-2">
  <li>Localizar ponto exato do curto-circuito</li>
@@ -475,14 +433,12 @@ const QuadroEletricoDispara: React.FC = () => {
  <li>Testar instalação completa</li>
  <li>Emitir certificado de conformidade</li>
  </ol>
-
  <div className="bg-yellow-50 p-4 rounded-lg">
  <p className="text-yellow-900 text-sm">
  <strong>⚠️ Causas Comuns:</strong> Furo em parede atingiu fio, roedores, isolamento deteriorado, ligação mal feita.
  </p>
  </div>
  </div>
-
  <div className="bg-white p-6 rounded-xl border-2 border-cyan-200">
  <div className="flex items-start gap-4 mb-4">
  <div className="w-12 h-12 bg-cyan-500 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-xl">
@@ -496,7 +452,6 @@ const QuadroEletricoDispara: React.FC = () => {
  </div>
  </div>
  </div>
-
  <h4 className="font-bold text-gray-900 mb-3">Verificações DIY:</h4>
  <ul className="list-disc pl-6 mb-4 space-y-2">
  <li>Desligue todos os aparelhos e teste diferencial</li>
@@ -504,7 +459,6 @@ const QuadroEletricoDispara: React.FC = () => {
  <li>Verifique tomadas em zonas húmidas (casa banho, cozinha)</li>
  <li>Procure infiltrações perto de instalação elétrica</li>
  </ul>
-
  <h4 className="font-bold text-gray-900 mb-3">Solução Profissional:</h4>
  <ul className="list-disc pl-6 mb-4 space-y-2">
  <li>Teste de isolamento com megóhmetro</li>
@@ -513,14 +467,12 @@ const QuadroEletricoDispara: React.FC = () => {
  <li>Secagem de instalação húmida</li>
  <li>Substituição de cabos deteriorados</li>
  </ul>
-
  <div className="bg-red-50 p-4 rounded-lg">
  <p className="text-red-900 text-sm">
  <strong>🚨 Perigo de Vida:</strong> Fuga de corrente pode causar choque fatal. Não ignore diferencial que dispara!
  </p>
  </div>
  </div>
-
  <div className="bg-white p-6 rounded-xl border-2 border-cyan-200">
  <div className="flex items-start gap-4 mb-4">
  <div className="w-12 h-12 bg-cyan-500 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-xl">
@@ -534,7 +486,6 @@ const QuadroEletricoDispara: React.FC = () => {
  </div>
  </div>
  </div>
-
  <h4 className="font-bold text-gray-900 mb-3">Como Confirmar:</h4>
  <ol className="list-decimal pl-6 mb-4 space-y-2">
  <li>Identifique aparelho que causa disparo (método Passo 4)</li>
@@ -542,7 +493,6 @@ const QuadroEletricoDispara: React.FC = () => {
  <li>Se problema desaparecer = aparelho confirmado</li>
  <li>Leve aparelho a reparar ou substitua</li>
  </ol>
-
  <h4 className="font-bold text-gray-900 mb-3">Aparelhos Mais Problemáticos:</h4>
  <ul className="list-disc pl-6 mb-4 space-y-1">
  <li>Máquinas de lavar (resistência queimada)</li>
@@ -551,14 +501,12 @@ const QuadroEletricoDispara: React.FC = () => {
  <li>Ferros de engomar (cabo partido)</li>
  <li>Extensões elétricas baratas (má qualidade)</li>
  </ul>
-
  <div className="bg-green-50 p-4 rounded-lg">
  <p className="text-green-900 text-sm">
  <strong>✅ Prevenção:</strong> Substitua aparelhos com mais de 15 anos. Reparação muitas vezes não compensa.
  </p>
  </div>
  </div>
-
  <div className="bg-white p-6 rounded-xl border-2 border-cyan-200">
  <div className="flex items-start gap-4 mb-4">
  <div className="w-12 h-12 bg-cyan-500 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-xl">
@@ -572,7 +520,6 @@ const QuadroEletricoDispara: React.FC = () => {
  </div>
  </div>
  </div>
-
  <h4 className="font-bold text-gray-900 mb-3">Sinais de Disjuntor Defeituoso:</h4>
  <ul className="list-disc pl-6 mb-4 space-y-2">
  <li>Dispara sem motivo aparente (teste isolamento OK)</li>
@@ -581,14 +528,12 @@ const QuadroEletricoDispara: React.FC = () => {
  <li>Marcas de queimado ou derretido</li>
  <li>Disjuntor com mais de 15-20 anos</li>
  </ul>
-
  <div className="bg-yellow-50 p-4 rounded-lg mb-4">
  <p className="text-yellow-900 font-semibold mb-2">⚠️ Substituição por Eletricista</p>
  <p className="text-yellow-800 text-sm">
  Substituir disjuntor requer corte de corrente geral e conhecimento técnico. Contrate eletricista certificado.
  </p>
  </div>
-
  <h4 className="font-bold text-gray-900 mb-3">O Que Será Feito:</h4>
  <ol className="list-decimal pl-6 mb-4 space-y-1">
  <li>Corte de corrente geral (segurança)</li>
@@ -600,14 +545,11 @@ const QuadroEletricoDispara: React.FC = () => {
  </div>
  </div>
  </section>
-
  <section id="prevencao" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">🛡️ Prevenção</h2>
-
  <p className="mb-6">
  Prevenir disparos é mais fácil que resolver. Siga estas 8 regras de ouro:
  </p>
-
  <div className="space-y-6">
  <div className="bg-white p-6 rounded-xl border-2 border-gray-200 hover:border-cyan-500 transition-colors">
  <h3 className="font-bold text-gray-900 mb-3 text-lg">1. 📊 Distribua Carga Elétrica</h3>
@@ -621,7 +563,6 @@ const QuadroEletricoDispara: React.FC = () => {
  <li>• Use temporizador para escalonar uso de aparelhos</li>
  </ul>
  </div>
-
  <div className="bg-white p-6 rounded-xl border-2 border-gray-200 hover:border-cyan-500 transition-colors">
  <h3 className="font-bold text-gray-900 mb-3 text-lg">2. 🔌 Use Extensões com Proteção</h3>
  <p className="text-gray-700 mb-2">
@@ -634,7 +575,6 @@ const QuadroEletricoDispara: React.FC = () => {
  <li>• Substitua extensões com fios quentes ou danificados</li>
  </ul>
  </div>
-
  <div className="bg-white p-6 rounded-xl border-2 border-gray-200 hover:border-cyan-500 transition-colors">
  <h3 className="font-bold text-gray-900 mb-3 text-lg">3. 💧 Proteja de Humidade</h3>
  <p className="text-gray-700 mb-2">
@@ -647,7 +587,6 @@ const QuadroEletricoDispara: React.FC = () => {
  <li>• Mantenha quadro elétrico seco e ventilado</li>
  </ul>
  </div>
-
  <div className="bg-white p-6 rounded-xl border-2 border-gray-200 hover:border-cyan-500 transition-colors">
  <h3 className="font-bold text-gray-900 mb-3 text-lg">4. 🔧 Manutenção Anual</h3>
  <p className="text-gray-700 mb-2">
@@ -660,7 +599,6 @@ const QuadroEletricoDispara: React.FC = () => {
  <li>• Substitua componentes com mais de 20 anos</li>
  </ul>
  </div>
-
  <div className="bg-white p-6 rounded-xl border-2 border-gray-200 hover:border-cyan-500 transition-colors">
  <h3 className="font-bold text-gray-900 mb-3 text-lg">5. ⚡ Aumente Potência se Necessário</h3>
  <p className="text-gray-700 mb-2">
@@ -673,7 +611,6 @@ const QuadroEletricoDispara: React.FC = () => {
  <li>• Evita disparos constantes por sobrecarga</li>
  </ul>
  </div>
-
  <div className="bg-white p-6 rounded-xl border-2 border-gray-200 hover:border-cyan-500 transition-colors">
  <h3 className="font-bold text-gray-900 mb-3 text-lg">6. 🏠 Renove Instalação Antiga</h3>
  <p className="text-gray-700 mb-2">
@@ -686,7 +623,6 @@ const QuadroEletricoDispara: React.FC = () => {
  <li>• Invista 2000-5000€ para segurança total</li>
  </ul>
  </div>
-
  <div className="bg-white p-6 rounded-xl border-2 border-gray-200 hover:border-cyan-500 transition-colors">
  <h3 className="font-bold text-gray-900 mb-3 text-lg">7. 🔍 Cuidado ao Furar Paredes</h3>
  <p className="text-gray-700 mb-2">
@@ -699,7 +635,6 @@ const QuadroEletricoDispara: React.FC = () => {
  <li>• Se atingir fio, desligue quadro e chame eletricista</li>
  </ul>
  </div>
-
  <div className="bg-white p-6 rounded-xl border-2 border-gray-200 hover:border-cyan-500 transition-colors">
  <h3 className="font-bold text-gray-900 mb-3 text-lg">8. 📱 Monitorize Consumo</h3>
  <p className="text-gray-700 mb-2">
@@ -713,7 +648,6 @@ const QuadroEletricoDispara: React.FC = () => {
  </ul>
  </div>
  </div>
-
  <div className="bg-green-50 p-6 rounded-xl mt-8">
  <h3 className="font-bold text-green-900 mb-3 text-lg">✅ Benefícios da Prevenção</h3>
  <div className="grid md:grid-cols-2 gap-4">
@@ -732,14 +666,11 @@ const QuadroEletricoDispara: React.FC = () => {
  </div>
  </div>
  </section>
-
  <section id="quando-chamar" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">📞 Quando Chamar Eletricista</h2>
-
  <p className="mb-6">
  Algumas situações requerem intervenção profissional urgente:
  </p>
-
  <div className="grid md:grid-cols-2 gap-6 mb-8">
  <div className="bg-red-50 p-6 rounded-xl border-2 border-red-200">
  <h3 className="font-bold text-red-900 mb-3 text-lg">🚨 Urgente - Chame Já</h3>
@@ -751,7 +682,6 @@ const QuadroEletricoDispara: React.FC = () => {
  <li>• <strong>Quadro quente:</strong> Sobreaquecimento perigoso</li>
  </ul>
  </div>
-
  <div className="bg-orange-50 p-6 rounded-xl border-2 border-orange-200">
  <h3 className="font-bold text-orange-900 mb-3 text-lg">⚠️ Não Urgente - Agende</h3>
  <ul className="text-orange-800 space-y-2">
@@ -763,7 +693,6 @@ const QuadroEletricoDispara: React.FC = () => {
  </ul>
  </div>
  </div>
-
  <div className="bg-white p-6 rounded-xl border-2 border-gray-200 mb-8">
  <h3 className="font-bold text-gray-900 mb-4 text-xl">💰 Custos de Intervenção</h3>
  
@@ -802,7 +731,6 @@ const QuadroEletricoDispara: React.FC = () => {
  </tbody>
  </table>
  </div>
-
  <div className="bg-cyan-50 p-6 rounded-xl">
  <h3 className="font-bold text-cyan-900 mb-3 text-lg">✅ Vantagens de Chamar Profissional</h3>
  <div className="grid md:grid-cols-2 gap-4">
@@ -821,10 +749,8 @@ const QuadroEletricoDispara: React.FC = () => {
  </div>
  </div>
  </section>
-
  <section id="faq" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">❓ Perguntas Frequentes</h2>
-
  <div className="space-y-6">
  <div className="bg-gray-50 p-6 rounded-xl">
  <h3 className="font-bold text-gray-900 mb-3">Porque é que o quadro elétrico dispara constantemente?</h3>
@@ -840,7 +766,6 @@ const QuadroEletricoDispara: React.FC = () => {
  💡 Use método de diagnóstico passo a passo para identificar causa exata.
  </p>
  </div>
-
  <div className="bg-gray-50 p-6 rounded-xl">
  <h3 className="font-bold text-gray-900 mb-3">Posso religar o disjuntor várias vezes?</h3>
  <p className="text-gray-700 mb-2">
@@ -861,7 +786,6 @@ const QuadroEletricoDispara: React.FC = () => {
  ⚠️ Religar constantemente sem resolver causa pode causar incêndio!
  </p>
  </div>
-
  <div className="bg-gray-50 p-6 rounded-xl">
  <h3 className="font-bold text-gray-900 mb-3">Qual a diferença entre disjuntor e diferencial?</h3>
  <p className="text-gray-700 mb-2">
@@ -887,7 +811,6 @@ const QuadroEletricoDispara: React.FC = () => {
  💡 Diferencial é obrigatório por lei - salva vidas!
  </p>
  </div>
-
  <div className="bg-gray-50 p-6 rounded-xl">
  <h3 className="font-bold text-gray-900 mb-3">Como sei se é sobrecarga?</h3>
  <p className="text-gray-700 mb-2">
@@ -904,7 +827,6 @@ const QuadroEletricoDispara: React.FC = () => {
  ✅ Solução: Distribua aparelhos por circuitos diferentes ou aumente potência contratada.
  </p>
  </div>
-
  <div className="bg-gray-50 p-6 rounded-xl">
  <h3 className="font-bold text-gray-900 mb-3">Quanto custa resolver quadro que dispara?</h3>
  <p className="text-gray-700 mb-2">
@@ -938,7 +860,6 @@ const QuadroEletricoDispara: React.FC = () => {
  💡 Diagnóstico profissional: 40-80€ (identifica causa exata)
  </p>
  </div>
-
  <div className="bg-gray-50 p-6 rounded-xl">
  <h3 className="font-bold text-gray-900 mb-3">É perigoso quadro elétrico disparar?</h3>
  <p className="text-gray-700 mb-2">
@@ -962,7 +883,6 @@ const QuadroEletricoDispara: React.FC = () => {
  ⚠️ Nunca ignore problema recorrente - resolva a causa!
  </p>
  </div>
-
  <div className="bg-gray-50 p-6 rounded-xl">
  <h3 className="font-bold text-gray-900 mb-3">Posso aumentar amperagem do disjuntor?</h3>
  <p className="text-gray-700 mb-2">
@@ -986,7 +906,6 @@ const QuadroEletricoDispara: React.FC = () => {
  ⚠️ Nunca aumente amperagem sem consultar eletricista certificado!
  </p>
  </div>
-
  <div className="bg-gray-50 p-6 rounded-xl">
  <h3 className="font-bold text-gray-900 mb-3">Diferencial dispara quando chove. É normal?</h3>
  <p className="text-gray-700 mb-2">
@@ -1007,16 +926,13 @@ const QuadroEletricoDispara: React.FC = () => {
  </div>
  </div>
  </section>
-
  <div className="bg-gradient-to-r from-cyan-500 to-cyan-600 text-white p-8 rounded-2xl mb-12">
  <h2 className="text-3xl font-bold mb-4">📞 Quadro Elétrico Dispara? Ajuda Profissional</h2>
  <p className="text-xl mb-6">
  Se não consegue resolver sozinho, contacte eletricista certificado imediatamente.
  </p>
-
  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 mb-6">
  <h3 className="text-2xl font-bold mb-4">Staff Seekers - Eletricista em Bragança</h3>
-
  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
  <div className="flex items-start gap-3">
  <span className="text-2xl">✅</span>
@@ -1047,7 +963,6 @@ const QuadroEletricoDispara: React.FC = () => {
  </div>
  </div>
  </div>
-
  <div className="flex flex-col sm:flex-row gap-4">
  <a
  href="tel:+351932321892"
@@ -1063,12 +978,10 @@ const QuadroEletricoDispara: React.FC = () => {
  </a>
  </div>
  </div>
-
  <p className="text-center text-white/90">
  <strong>Zonas atendidas:</strong> Bragança, Vila Real, Macedo de Cavaleiros, Mirandela, Chaves, Lamego, Régua, Torre de Moncorvo, Mogadouro, Alfândega da Fé, Vila Flor, Valpaços
  </p>
  </div>
-
  <div className="bg-gray-50 p-6 rounded-xl">
  <h3 className="text-xl font-bold text-gray-900 mb-4">📚 Artigos Relacionados</h3>
  <ul className="space-y-2">
@@ -1099,5 +1012,4 @@ const QuadroEletricoDispara: React.FC = () => {
  </BlogLayout>
  );
 };
-
 export default QuadroEletricoDispara;

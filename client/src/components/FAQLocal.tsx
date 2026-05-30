@@ -1,7 +1,6 @@
 import React from 'react';
 // FAQ adicionais orientadas para SEO local
 // Perguntas direcionadas para pesquisas locais nas cidades de Trás-os-Montes
-
 import { useSite } from '@/contexts/SiteContext';
 // memo removed from 'react';
 import {
@@ -9,18 +8,16 @@ import {
  AccordionContent,
  AccordionItem,
  AccordionTrigger} from '@/components/ui/accordion';
-
 function FAQLocal() {
  const { config } = useSite();
  const isPlumber = config.id === 'norte-reparos';
-
  const localFaqs = isPlumber ? [
  {
  question: 'Existe canalizador disponível em Mirandela ao fim de semana?',
  answer: 'Sim, a Norte Reparos disponibiliza canalizador em Mirandela todos os dias da semana, incluindo sábados, domingos e feriados. O nosso serviço de urgência funciona 24 horas. Tempo de chegada a Mirandela: aproximadamente 30 minutos a partir de Macedo de Cavaleiros.'},
  {
  question: 'Quanto custa um canalizador em Bragança para desentupimento?',
- answer: 'O preço de um desentupimento em Bragança varia entre 50€ e 120€ (sem IVA), dependendo da complexidade. Desentupimentos simples de sanita ou lavatório: 50-80€. Desentupimentos de canalização principal: 80-120€. Incluímos deslocação e diagnóstico no preço. Orçamento gratuito por telefone.'},
+ answer: 'O preço de um desentupimento em Bragança varia entre 50€ e 120€ (sem IVA), dependendo da complexidade. Desentupimentos simples de sanita ou lavatório: 50-80€. Desentupimentos de canalização principal: 80-120€. Incluímos deslocação e diagnóstico no preço. Sem compromisso por telefone.'},
  {
  question: 'Fazem arranjo de fugas de água em Macedo de Cavaleiros?',
  answer: 'Sim, Macedo de Cavaleiros é a nossa base de operações. Arranjamos todo o tipo de fugas de água: torneiras, autoclismos, canalizações enterradas e tubagens visíveis. Tempo de resposta em Macedo: menos de 20 minutos para urgências. Preços a partir de 60€ (sem IVA).'},
@@ -32,14 +29,14 @@ function FAQLocal() {
  answer: 'Sim, fazemos instalação e substituição de esquentadores a gás em Vila Flor, Carrazeda de Ansiães e todas as localidades do distrito de Bragança. Preço de instalação: 100-200€ (sem IVA, sem equipamento). Incluímos certificação obrigatória e teste de segurança.'},
  {
  question: 'Qual o canalizador mais perto de Mogadouro?',
- answer: 'A Norte Reparos é o canalizador profissional mais próximo de Mogadouro, com base em Macedo de Cavaleiros (a cerca de 45 minutos). Cobrimos Mogadouro e todas as suas freguesias. Serviço disponível 24/7 com orçamento gratuito.'},
+ answer: 'A Norte Reparos é o canalizador profissional mais próximo de Mogadouro, com base em Macedo de Cavaleiros (a cerca de 45 minutos). Cobrimos Mogadouro e todas as suas freguesias. Serviço disponível 24/7 com sem compromisso.'},
  ] : [
  {
  question: 'Existe eletricista disponível em Mirandela ao fim de semana?',
  answer: 'Sim, a Eletricista Profissional disponibiliza eletricista certificado em Mirandela todos os dias da semana, incluindo sábados, domingos e feriados. O nosso serviço de urgência funciona 24 horas. Tempo de chegada a Mirandela: aproximadamente 30 minutos.'},
  {
  question: 'Quanto custa um eletricista em Bragança?',
- answer: 'O preço de um eletricista em Bragança varia conforme o serviço: diagnóstico (80-120€), arranjo urgente (150-210€), substituição de quadro elétrico 12 módulos (370-650€), certificação elétrica (150-300€). Todos os preços sem IVA. Orçamento gratuito e sem compromisso.'},
+ answer: 'O preço de um eletricista em Bragança varia conforme o serviço: diagnóstico (80-120€), arranjo urgente (150-210€), substituição de quadro elétrico 12 módulos (370-650€), certificação elétrica (150-300€). Todos os preços sem IVA. Sem compromisso e sem compromisso.'},
  {
  question: 'Fazem certificação elétrica em Macedo de Cavaleiros?',
  answer: 'Sim, Macedo de Cavaleiros é a nossa base. Fazemos certificação elétrica para venda de imóveis, arrendamento e instalações novas. Prazo: 3-5 dias úteis. Preço: a partir de 150€ (sem IVA). Tratamos de toda a documentação e submissão na plataforma DGEG.'},
@@ -51,9 +48,8 @@ function FAQLocal() {
  answer: 'Sim, fazemos substituição e modernização de quadros elétricos em Vila Flor, Torre de Moncorvo e todas as localidades do distrito de Bragança. Preço: 370-650€ para quadro 12 módulos (sem IVA). Inclui quadro novo, disjuntores diferenciais, instalação completa e certificação.'},
  {
  question: 'Qual o eletricista mais perto de Mogadouro?',
- answer: 'A Eletricista Profissional é o eletricista certificado mais próximo de Mogadouro, com base em Macedo de Cavaleiros (a cerca de 45 minutos). Cobrimos Mogadouro e todas as suas freguesias. Serviço disponível 24/7 com orçamento gratuito.'},
+ answer: 'A Eletricista Profissional é o eletricista certificado mais próximo de Mogadouro, com base em Macedo de Cavaleiros (a cerca de 45 minutos). Cobrimos Mogadouro e todas as suas freguesias. Serviço disponível 24/7 com sem compromisso.'},
  ];
-
  return (
  <section className="py-16 bg-white">
  <div className="container mx-auto px-4">
@@ -65,7 +61,6 @@ function FAQLocal() {
  Informações úteis sobre os nossos serviços nas principais cidades de Trás-os-Montes
  </p>
  </div>
-
  <div className="max-w-4xl mx-auto">
  <Accordion type="single" collapsible className="space-y-4">
  {localFaqs.map((faq, index) => (
@@ -89,5 +84,4 @@ function FAQLocal() {
  </section>
  );
 }
-
 export default React.memo(FAQLocal);

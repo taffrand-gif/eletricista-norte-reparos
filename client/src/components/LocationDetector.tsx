@@ -2,15 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { useLocation } from '@/contexts/LocationContext';
 import { CITIES } from '@/../../shared/serviceConfig';
 import { MapPin, X, Check } from 'lucide-react';
-
 export default function LocationDetector() {
  const { detectedCity, selectedCity, isLoading, setSelectedCity, getCurrentCity } = useLocation();
  const [isOpen, setIsOpen] = useState(false);
  const [showBanner, setShowBanner] = useState(false);
  const [searchQuery, setSearchQuery] = useState('');
-
  const currentCity = getCurrentCity();
-
  // Show banner on first visit if location detected
  useEffect(() => {
  const hasSeenBanner = sessionStorage.getItem('location_banner_seen');
@@ -18,24 +15,20 @@ export default function LocationDetector() {
  setShowBanner(true);
  }
  }, [detectedCity, selectedCity]);
-
  const handleConfirmLocation = () => {
  setSelectedCity(detectedCity!);
  setShowBanner(false);
  sessionStorage.setItem('location_banner_seen', 'true');
  };
-
  const handleDismissBanner = () => {
  setShowBanner(false);
  sessionStorage.setItem('location_banner_seen', 'true');
  };
-
  const handleSelectCity = (cityName: string) => {
  setSelectedCity(cityName);
  setIsOpen(false);
  setSearchQuery('');
  };
-
  // Filter cities based on search
  const mainCities = CITIES.filter(c => !c.parentCity);
  const filteredCities = searchQuery
@@ -43,7 +36,6 @@ export default function LocationDetector() {
  c.name.toLowerCase().includes(searchQuery.toLowerCase())
  )
  : mainCities;
-
  return (
  <>
  {/* Location Banner - shown on first visit */}
@@ -83,7 +75,6 @@ export default function LocationDetector() {
  </div>
  </div>
  )}
-
  {/* Location Badge - always visible */}
  <button
  onClick={() => setIsOpen(true)}
@@ -95,7 +86,6 @@ export default function LocationDetector() {
  {isLoading ? 'A detectar...' : currentCity}
  </span>
  </button>
-
  {/* City Selector Modal */}
  {isOpen && (
  <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50">
@@ -122,7 +112,6 @@ export default function LocationDetector() {
  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
  />
  </div>
-
  {/* City List */}
  <div className="flex-1 overflow-y-auto p-4">
  {filteredCities.length === 0 ? (
@@ -159,7 +148,6 @@ export default function LocationDetector() {
  </div>
  )}
  </div>
-
  {/* Footer */}
  <div className="p-4 border-t border-gray-200 bg-gray-50">
  <p className="text-xs text-gray-600 text-center">

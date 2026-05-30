@@ -1,6 +1,5 @@
 // Page SEO optimisée: "Tomada Faísca" - Intention urgence/panique
 // Recherche fréquente: "tomada faísca", "tomada faz faísca", "tomada faísca perigo"
-
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Header from '@/components/Header';
@@ -8,11 +7,8 @@ import Footer from '@/components/Footer';
 import FAQSection from '@/components/FAQSection';
 import { useSite } from '@/contexts/SiteContext';
 import { Phone, AlertTriangle, Zap, Shield, Clock } from 'lucide-react';
-
 export default function TomadaFaisca() {
  const { config } = useSite();
-
-
  const faqs = [
  {
  question: "É perigoso usar tomada que faz faísca?",
@@ -28,10 +24,9 @@ export default function TomadaFaisca() {
  },
  {
  question: "Quanto custa arranjar tomada que faz faísca?",
- answer: "Depende da causa: substituir tomada simples 25-40€, arranjar fios soltos 30-50€, substituir cablagem 80-150€. Inclui deslocação, mão-de-obra e material. Orçamento gratuito: 932 321 892"
+ answer: "Depende da causa: substituir tomada simples 25-40€, arranjar fios soltos 30-50€, substituir cablagem 80-150€. Inclui deslocação, mão-de-obra e material. Sem compromisso: 932 321 892"
  }
  ];
-
  return (
  <>
  <Helmet>
@@ -39,7 +34,6 @@ export default function TomadaFaisca() {
  <meta name="description" content="Tomada faz faísca? PERIGO DE INCÊNDIO! Não use mais. Eletricista urgente 24h em Trás-os-Montes. Ligue: 932 321 892" />
  </Helmet>
  <Header />
-
  <main className="min-h-screen bg-gradient-to-b from-white to-orange-50">
  {/* Hero Urgente */}
  <section className="bg-gradient-to-r from-red-600 to-orange-600 text-white py-16">
@@ -49,16 +43,13 @@ export default function TomadaFaisca() {
  <AlertTriangle className="w-5 h-5" />
  PERIGO DE INCÊNDIO
  </div>
-
  <h1 className="text-4xl md:text-5xl font-bold mb-6">
  Tomada Faz Faísca? <span className="text-yellow-300">NÃO USE!</span>
  </h1>
-
  <p className="text-xl mb-8">
  Tomada que faz faísca é PERIGO GRAVE de incêndio e choque elétrico.
  Desligue o disjuntor AGORA e ligue para eletricista urgente.
  </p>
-
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a
  href={`tel:${config.phone.replace(/\s/g, "")}`}
@@ -79,7 +70,6 @@ export default function TomadaFaisca() {
  </div>
  </div>
  </section>
-
  {/* O Que Fazer AGORA */}
  <section className="py-16 bg-white">
  <div className="container mx-auto px-4">
@@ -97,7 +87,6 @@ export default function TomadaFaisca() {
  Se não sabe qual é, desligue o disjuntor geral.
  </p>
  </div>
-
  <div className="bg-orange-50 border-l-4 border-orange-600 p-6 rounded-r-lg">
  <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
  <span className="bg-orange-600 text-white w-8 h-8 rounded-full flex items-center justify-center">2</span>
@@ -108,7 +97,6 @@ export default function TomadaFaisca() {
  Risco de choque elétrico ou incêndio.
  </p>
  </div>
-
  <div className="bg-green-50 border-l-4 border-green-600 p-6 rounded-r-lg">
  <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
  <span className="bg-green-600 text-white w-8 h-8 rounded-full flex items-center justify-center">3</span>
@@ -122,7 +110,6 @@ export default function TomadaFaisca() {
  </div>
  </div>
  </section>
-
  {/* Perigos */}
  <section className="py-16 bg-gray-50">
  <div className="container mx-auto px-4">
@@ -139,7 +126,6 @@ export default function TomadaFaisca() {
  Faísca pode incendiar materiais próximos. Risco GRAVE de incêndio doméstico.
  </p>
  </div>
-
  <div className="bg-white p-6 rounded-xl shadow-lg text-center">
  <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
  <AlertTriangle className="w-8 h-8 text-orange-600" />
@@ -149,7 +135,6 @@ export default function TomadaFaisca() {
  Fios expostos ou soltos podem causar choque elétrico fatal.
  </p>
  </div>
-
  <div className="bg-white p-6 rounded-xl shadow-lg text-center">
  <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
  <Shield className="w-8 h-8 text-yellow-600" />
@@ -162,7 +147,6 @@ export default function TomadaFaisca() {
  </div>
  </div>
  </section>
-
  {/* Causas */}
  <section className="py-16 bg-white">
  <div className="container mx-auto px-4">
@@ -185,7 +169,6 @@ export default function TomadaFaisca() {
  </div>
  </div>
  </section>
-
  {/* FAQ */}
  <section className="py-16 bg-gray-50">
  <div className="container max-w-4xl">
@@ -195,7 +178,6 @@ export default function TomadaFaisca() {
  <FAQSection faqs={faqs} />
  </div>
  </section>
-
  {/* CTA Final */}
  <section className="py-16 bg-gradient-to-r from-red-600 to-orange-600 text-white">
  <div className="container mx-auto px-4 text-center">
@@ -204,7 +186,7 @@ export default function TomadaFaisca() {
  Tomada Faz Faísca? Ligue AGORA
  </h2>
  <p className="text-xl mb-8 max-w-2xl mx-auto">
- Atendimento 24h. Chegamos em 30-45 minutos. Orçamento gratuito.
+ Atendimento 24h. Chegamos em 30-45 minutos. Sem compromisso.
  </p>
  <a
  href={`tel:${config.phone.replace(/\s/g, "")}`}
@@ -216,7 +198,6 @@ export default function TomadaFaisca() {
  </div>
  </section>
  </main>
-
  <Footer />
  </>
  );

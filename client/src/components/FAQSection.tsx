@@ -1,17 +1,14 @@
 import React from 'react';
 import { ACTIVE_CONFIG } from '@/../../shared/serviceConfig';
-
 interface FAQItem {
  question: string;
  answer: string;
 }
-
 interface FAQSectionProps {
  faqs: FAQItem[];
  title?: string;
  className?: string;
 }
-
 const FAQSection: React.FC<FAQSectionProps> = ({ 
  faqs, 
  title = "Perguntas Frequentes (FAQ)",
@@ -30,7 +27,6 @@ const FAQSection: React.FC<FAQSectionProps> = ({
  }
  }))
  };
-
  return (
  <section className={`${className}`}>
  {/* JSON-LD Schema */}
@@ -38,7 +34,6 @@ const FAQSection: React.FC<FAQSectionProps> = ({
  type="application/ld+json"
  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
  />
-
  {/* Visible FAQ Section */}
  <div className="max-w-4xl mx-auto">
  {title && (
@@ -46,7 +41,6 @@ const FAQSection: React.FC<FAQSectionProps> = ({
  {title}
  </h2>
  )}
-
  <div className="space-y-6">
  {faqs.map((faq, index) => (
  <div 
@@ -84,7 +78,6 @@ const FAQSection: React.FC<FAQSectionProps> = ({
  </div>
  ))}
  </div>
-
  {/* CTA */}
  <div className="mt-12 text-center">
  <p className="text-xl text-gray-700 mb-6">
@@ -111,6 +104,5 @@ const FAQSection: React.FC<FAQSectionProps> = ({
  </section>
  );
 };
-
 // For backward compatibility
 export default FAQSection;

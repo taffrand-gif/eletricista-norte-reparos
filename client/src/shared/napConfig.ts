@@ -2,7 +2,6 @@
  * NAP (Name, Address, Phone) Configuration
  * Centralized configuration for business information and city postal codes
  */
-
 export interface CityNAP {
  name: string;
  slug: string;
@@ -10,7 +9,6 @@ export interface CityNAP {
  district: string;
  addressRegion: string;
 }
-
 // Base business information
 export const businessInfo = {
  name: 'Norte Reparos',
@@ -20,7 +18,6 @@ export const businessInfo = {
  whatsapp: '351932321892',
  email: 'info@eletricista-norte-reparos.pt',
  domain: 'eletricista-norte-reparos.pt',
-
  // Base address (Macedo de Cavaleiros headquarters)
  baseAddress: {
  streetAddress: 'Macedo de Cavaleiros, Distrito de Bragança',
@@ -30,7 +27,6 @@ export const businessInfo = {
  addressCountry: 'PT'
  }
 };
-
 // Complete city mapping with postal codes (same as Norte Reparos)
 export const cityNAPData: Record<string, CityNAP> = {
  // Bragança District
@@ -47,7 +43,6 @@ export const cityNAPData: Record<string, CityNAP> = {
  'vila-flor': { name: 'Vila Flor', slug: 'vila-flor', postalCode: '5360-001', district: 'Bragança', addressRegion: 'Bragança' },
  'vimioso': { name: 'Vimioso', slug: 'vimioso', postalCode: '5230-001', district: 'Bragança', addressRegion: 'Bragança' },
  'vinhais': { name: 'Vinhais', slug: 'vinhais', postalCode: '5320-001', district: 'Bragança', addressRegion: 'Bragança' },
-
  // Villages - Bragança District
  'izeda': { name: 'Izeda', slug: 'izeda', postalCode: '5340-201', district: 'Bragança', addressRegion: 'Bragança' },
  'coelhoso': { name: 'Coelhoso', slug: 'coelhoso', postalCode: '5340-101', district: 'Bragança', addressRegion: 'Bragança' },
@@ -63,7 +58,6 @@ export const cityNAPData: Record<string, CityNAP> = {
  'vale-janeiro': { name: 'Vale de Janeiro', slug: 'vale-janeiro', postalCode: '5320-501', district: 'Bragança', addressRegion: 'Bragança' },
  'agrobom': { name: 'Agrobom', slug: 'agrobom', postalCode: '5320-021', district: 'Bragança', addressRegion: 'Bragança' },
  'cerejais': { name: 'Cerejais', slug: 'cerejais', postalCode: '5320-101', district: 'Bragança', addressRegion: 'Bragança' },
-
  // Vila Real District
  'alijo': { name: 'Alijó', slug: 'alijo', postalCode: '5070-001', district: 'Vila Real', addressRegion: 'Vila Real' },
  'armamar': { name: 'Armamar', slug: 'armamar', postalCode: '5110-001', district: 'Vila Real', addressRegion: 'Vila Real' },
@@ -84,14 +78,12 @@ export const cityNAPData: Record<string, CityNAP> = {
  'valpacos': { name: 'Valpaços', slug: 'valpacos', postalCode: '5430-001', district: 'Vila Real', addressRegion: 'Vila Real' },
  'vila-pouca-aguiar': { name: 'Vila Pouca de Aguiar', slug: 'vila-pouca-aguiar', postalCode: '5450-001', district: 'Vila Real', addressRegion: 'Vila Real' },
  'vila-real': { name: 'Vila Real', slug: 'vila-real', postalCode: '5000-001', district: 'Vila Real', addressRegion: 'Vila Real' },
-
  // Villages - Vila Real District
  'candedo': { name: 'Candedo', slug: 'candedo', postalCode: '5090-051', district: 'Vila Real', addressRegion: 'Vila Real' },
  'noura': { name: 'Noura', slug: 'noura', postalCode: '5090-201', district: 'Vila Real', addressRegion: 'Vila Real' },
  'palheiros': { name: 'Palheiros', slug: 'palheiros', postalCode: '5090-301', district: 'Vila Real', addressRegion: 'Vila Real' },
  'carrazedo-montenegro': { name: 'Carrazedo de Montenegro', slug: 'carrazedo-montenegro', postalCode: '5430-051', district: 'Vila Real', addressRegion: 'Vila Real' },
  'jou': { name: 'Jou', slug: 'jou', postalCode: '5430-201', district: 'Vila Real', addressRegion: 'Vila Real' },
-
  // Viseu District
  'moimenta-beira': { name: 'Moimenta da Beira', slug: 'moimenta-beira', postalCode: '3620-001', district: 'Viseu', addressRegion: 'Viseu' },
  'sernancelhe': { name: 'Sernancelhe', slug: 'sernancelhe', postalCode: '3640-001', district: 'Viseu', addressRegion: 'Viseu' },
@@ -101,28 +93,24 @@ export const cityNAPData: Record<string, CityNAP> = {
  'vales': { name: 'Vales', slug: 'vales', postalCode: '5430-601', district: 'Viseu', addressRegion: 'Viseu' },
  'gebelim': { name: 'Gebelim', slug: 'gebelim', postalCode: '5320-301', district: 'Viseu', addressRegion: 'Viseu' },
  'sambade': { name: 'Sambade', slug: 'sambade', postalCode: '5320-451', district: 'Viseu', addressRegion: 'Viseu' },
-
  // Guarda District
  'vila-nova-foz-coa': { name: 'Vila Nova de Foz Côa', slug: 'vila-nova-foz-coa', postalCode: '5150-610', district: 'Guarda', addressRegion: 'Guarda' },
  'almendra': { name: 'Almendra', slug: 'almendra', postalCode: '5150-011', district: 'Guarda', addressRegion: 'Guarda' },
  'castelo-melhor': { name: 'Castelo Melhor', slug: 'castelo-melhor', postalCode: '5150-101', district: 'Guarda', addressRegion: 'Guarda' },
  'cedovim': { name: 'Cedovim', slug: 'cedovim', postalCode: '5150-201', district: 'Guarda', addressRegion: 'Guarda' }
 };
-
 /**
  * Get NAP data for a specific city
  */
 export function getCityNAP(citySlug: string): CityNAP | null {
  return cityNAPData[citySlug] || null;
 }
-
 /**
  * Get complete address for a city
  */
 export function getCityAddress(citySlug: string) {
  const city = getCityNAP(citySlug);
  if (!city) return businessInfo.baseAddress;
-
  return {
  streetAddress: `${city.name}, Distrito de ${city.district}`,
  addressLocality: city.name,
@@ -131,7 +119,6 @@ export function getCityAddress(citySlug: string) {
  addressCountry: 'PT'
  };
 }
-
 /**
  * Get all cities by district
  */

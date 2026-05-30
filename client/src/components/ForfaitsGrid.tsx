@@ -1,6 +1,5 @@
 import React from 'react';
 import { useSite } from '@/contexts/SiteContext';
-
 interface Forfait {
  icon: string;
  title: string;
@@ -9,15 +8,12 @@ interface Forfait {
  details: string[];
  popular?: boolean;
 }
-
 interface ForfaitsGridProps {
  className?: string;
 }
-
 function ForfaitsGrid({ className = '' }: ForfaitsGridProps) {
  const { config } = useSite();
  const accentColor = config.id === 'norte-reparos' ? '#0e7490' : '#FF6B35';
-
  const forfaitsElectricien: Forfait[] = [
  {
  icon: '🔌',
@@ -118,7 +114,6 @@ function ForfaitsGrid({ className = '' }: ForfaitsGridProps) {
  ]
  }
  ];
-
  return (
  <section className={`py-16 bg-white ${className}`}>
  <div className="container mx-auto px-4 max-w-7xl">
@@ -131,7 +126,6 @@ function ForfaitsGrid({ className = '' }: ForfaitsGridProps) {
  Preços completos para as intervenções mais comuns. Material padrão incluído.
  </p>
  </div>
-
  {/* Grid */}
  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
  {forfaitsElectricien.map((forfait, idx) => (
@@ -151,21 +145,17 @@ function ForfaitsGrid({ className = '' }: ForfaitsGridProps) {
  ⭐ PLUS DEMANDÉ
  </div>
  )}
-
  <div className="p-6">
  {/* Icon */}
  <div className="text-5xl mb-4 text-center">{forfait.icon}</div>
-
  {/* Title */}
  <h3 className="text-xl font-bold text-gray-900 mb-2 text-center min-h-[56px]">
  {forfait.title}
  </h3>
-
  {/* Description */}
  <p className="text-sm text-gray-600 mb-4 text-center min-h-[40px]">
  {forfait.description}
  </p>
-
  {/* Price */}
  <div className="text-center mb-6">
  <div
@@ -176,7 +166,6 @@ function ForfaitsGrid({ className = '' }: ForfaitsGridProps) {
  </div>
  <p className="text-xs text-gray-500">Zone 1 - Matériel standard inclus</p>
  </div>
-
  {/* Details */}
  <ul className="space-y-2 mb-6">
  {forfait.details.map((detail, detailIdx) => (
@@ -186,7 +175,6 @@ function ForfaitsGrid({ className = '' }: ForfaitsGridProps) {
  </li>
  ))}
  </ul>
-
  {/* CTA Button */}
  <button
  className="w-full py-3 rounded-xl font-bold text-white transition-all hover:shadow-lg"
@@ -203,7 +191,6 @@ function ForfaitsGrid({ className = '' }: ForfaitsGridProps) {
  </div>
  ))}
  </div>
-
  {/* Important Notes */}
  <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 border-2 border-blue-200">
  <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
@@ -233,7 +220,6 @@ function ForfaitsGrid({ className = '' }: ForfaitsGridProps) {
  </div>
  </div>
  </div>
-
  {/* Guarantee Banner */}
  <div className="mt-8 text-center">
  <div className="inline-block bg-green-50 border-2 border-green-200 rounded-xl px-8 py-4">
@@ -249,5 +235,4 @@ function ForfaitsGrid({ className = '' }: ForfaitsGridProps) {
  </section>
  );
 }
-
 export default React.memo(ForfaitsGrid);

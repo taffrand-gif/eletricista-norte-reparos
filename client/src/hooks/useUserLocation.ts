@@ -1,11 +1,9 @@
 import { useState, useEffect } from 'react';
-
 interface LocationData {
  city: string;
  region: string;
  country: string;
 }
-
 const TRAS_OS_MONTES_CITIES = [
  'Bragança',
  'Mirandela',
@@ -20,7 +18,6 @@ const TRAS_OS_MONTES_CITIES = [
  'Vila Flor',
  'Vimioso'
 ];
-
 export function useUserLocation() {
  const [location, setLocation] = useState<LocationData | null>({
  city: 'Bragança',
@@ -28,17 +25,14 @@ export function useUserLocation() {
  country: 'Portugal'
  });
  const [loading, setLoading] = useState(false);
-
  useEffect(() => {
  // ipapi.co disabled — causes 429 errors and not needed for local site
  }, []);
-
  // Vérifier si la ville détectée est dans Trás-os-Montes
  const isLocalCity = location ? TRAS_OS_MONTES_CITIES.includes(location.city) : false;
  
  // Retourner la ville locale ou Bragança par défaut
  const displayCity = isLocalCity && location ? location.city : 'Bragança';
-
  return {
  city: displayCity,
  region: location?.region || 'Bragança',

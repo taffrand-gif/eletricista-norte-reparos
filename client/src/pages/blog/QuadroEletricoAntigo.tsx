@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useEffect } from 'react';
 import { Phone, AlertTriangle, CheckCircle, Zap } from 'lucide-react';
-
 export default function QuadroEletricoAntigo() {
  useEffect(() => {
  document.title = "Quadro Elétrico Antigo com Fusíveis - Quando e Porquê Trocar | Guia 2026";
@@ -15,7 +14,6 @@ export default function QuadroEletricoAntigo() {
  document.head.appendChild(metaDescription);
  }
  metaDescription.setAttribute('content', 'O seu quadro elétrico ainda tem fusíveis? Saiba porque deve trocar por disjuntores, quanto custa, e os riscos de manter uma instalação antiga.');
-
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');
@@ -24,7 +22,6 @@ export default function QuadroEletricoAntigo() {
  }
  canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/blog/quadro-eletrico-antigo-fusíveis-trocar');
  }, []);
-
  return (
  <div className="min-h-screen flex flex-col">
  <Header />
@@ -45,7 +42,6 @@ export default function QuadroEletricoAntigo() {
  </div>
  </div>
  </section>
-
  {/* Content */}
  <article className="py-16">
  <div className="container max-w-3xl">
@@ -64,7 +60,6 @@ export default function QuadroEletricoAntigo() {
  </div>
  </div>
  </div>
-
  {/* Sinais */}
  <section className="mb-12">
  <h2 className="text-2xl font-black mb-6">Sinais de que Precisa Trocar o Quadro</h2>
@@ -87,7 +82,6 @@ export default function QuadroEletricoAntigo() {
  ))}
  </div>
  </section>
-
  {/* Vantagens */}
  <section className="mb-12">
  <h2 className="text-2xl font-black mb-6">Vantagens de um Quadro Moderno</h2>
@@ -108,7 +102,6 @@ export default function QuadroEletricoAntigo() {
  ))}
  </div>
  </section>
-
  {/* Preços */}
  <section className="mb-12">
  <h2 className="text-2xl font-black mb-6">Quanto Custa Trocar o Quadro?</h2>
@@ -127,11 +120,10 @@ export default function QuadroEletricoAntigo() {
  </div>
  <p className="mt-4 text-sm text-gray-600">
  * Preços indicativos. Inclui quadro, disjuntores, diferencial 30mA, e mão de obra.
- Orçamento gratuito e sem compromisso.
+ Sem compromisso e sem compromisso.
  </p>
  </div>
  </section>
-
  {/* Processo */}
  <section className="mb-12">
  <h2 className="text-2xl font-black mb-6">Como Funciona a Substituição?</h2>
@@ -155,10 +147,8 @@ export default function QuadroEletricoAntigo() {
  ))}
  </div>
  </section>
-
  </div>
  </article>
-
  {/* CTA */}
  <section className="py-16 bg-orange-500 text-white">
  <div className="container text-center">

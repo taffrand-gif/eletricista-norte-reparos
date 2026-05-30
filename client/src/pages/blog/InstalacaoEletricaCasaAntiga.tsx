@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useEffect } from 'react';
 import { Phone, Home, AlertTriangle, CheckCircle, Zap } from 'lucide-react';
-
 export default function InstalacaoEletricaCasaAntiga() {
  useEffect(() => {
  document.title = "Renovação Elétrica em Casas Antigas de Trás-os-Montes: Guia Completo | Staff Seekers";
@@ -15,7 +14,6 @@ export default function InstalacaoEletricaCasaAntiga() {
  document.head.appendChild(metaDescription);
  }
  metaDescription.setAttribute('content', 'Guia completo para renovar a instalação elétrica em casas antigas de pedra e granito em Trás-os-Montes. Normas, custos e soluções práticas.');
-
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');
@@ -23,7 +21,6 @@ export default function InstalacaoEletricaCasaAntiga() {
  document.head.appendChild(canonical);
  }
  canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/blog/instalacao-eletrica-casa-antiga-renovacao');
-
  // JSON-LD Article Schema
  const script = document.createElement('script');
  script.type = 'application/ld+json';
@@ -48,12 +45,10 @@ export default function InstalacaoEletricaCasaAntiga() {
  "dateModified": "2026-02-19"
  });
  document.head.appendChild(script);
-
  return () => {
  document.head.removeChild(script);
  };
  }, []);
-
  const desafios = [
  {
  desafio: "Paredes de Pedra/Granito",
@@ -81,7 +76,6 @@ export default function InstalacaoEletricaCasaAntiga() {
  solucao: "Tratamento de humidades + material IP65 em zonas críticas"
  }
  ];
-
  return (
  <div className="min-h-screen flex flex-col">
  <Header />
@@ -102,7 +96,6 @@ export default function InstalacaoEletricaCasaAntiga() {
  </div>
  </div>
  </section>
-
  {/* Intro */}
  <section className="py-12">
  <div className="container max-w-3xl">
@@ -120,7 +113,6 @@ export default function InstalacaoEletricaCasaAntiga() {
  </div>
  </div>
  </section>
-
  {/* Sinais de Alerta */}
  <section className="py-12 bg-red-50">
  <div className="container max-w-3xl">
@@ -155,7 +147,6 @@ export default function InstalacaoEletricaCasaAntiga() {
  </div>
  </div>
  </section>
-
  {/* Desafios Específicos */}
  <section className="py-16">
  <div className="container max-w-3xl">
@@ -179,7 +170,6 @@ export default function InstalacaoEletricaCasaAntiga() {
  </div>
  </div>
  </section>
-
  {/* Soluções Discretas */}
  <section className="py-12 bg-gray-50">
  <div className="container max-w-3xl">
@@ -222,7 +212,6 @@ export default function InstalacaoEletricaCasaAntiga() {
  </div>
  </div>
  </section>
-
  {/* Etapas da Renovação */}
  <section className="py-12">
  <div className="container max-w-3xl">
@@ -285,7 +274,6 @@ export default function InstalacaoEletricaCasaAntiga() {
  </div>
  </div>
  </section>
-
  {/* Normas e Certificação */}
  <section className="py-12 bg-blue-50">
  <div className="container max-w-3xl">
@@ -326,7 +314,6 @@ export default function InstalacaoEletricaCasaAntiga() {
  </div>
  </div>
  </section>
-
  {/* Custos */}
  <section className="py-12 bg-gray-50">
  <div className="container max-w-3xl">
@@ -369,7 +356,6 @@ export default function InstalacaoEletricaCasaAntiga() {
  </div>
  </div>
  </section>
-
  {/* CTA */}
  <section className="py-16 bg-orange-500 text-white">
  <div className="container text-center">
@@ -379,7 +365,7 @@ export default function InstalacaoEletricaCasaAntiga() {
  </h2>
  <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
  Especialistas em renovação elétrica de casas antigas em Trás-os-Montes. 
- Orçamento gratuito e certificação incluída.
+ Sem compromisso e certificação incluída.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a href="tel:+351932321892" className="inline-flex items-center justify-center gap-2 bg-white text-orange-500 px-8 py-4 rounded-lg text-xl font-bold hover:bg-gray-100 transition-all shadow-lg">
@@ -392,7 +378,6 @@ export default function InstalacaoEletricaCasaAntiga() {
  </div>
  </div>
  </section>
-
  {/* Artigos Relacionados */}
  <section className="py-12 bg-gray-50">
  <div className="container max-w-3xl">

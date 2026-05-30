@@ -1,18 +1,15 @@
 // Página SEO: Zona de Intervenção - Eletricista em Trás-os-Montes
 // Lista completa das 34 cidades servidas com distâncias desde Macedo de Cavaleiros
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useSite } from '@/contexts/SiteContext';
 import { useEffect } from 'react';
 import { MapPin, Clock, Phone } from 'lucide-react';
-
 interface City {
  name: string;
  distance: string;
  slug: string;
 }
-
 const districts = {
  braganca: {
  name: 'Distrito de Bragança',
@@ -58,13 +55,10 @@ const districts = {
  { name: 'Penedono', distance: '75 km', slug: 'penedono' },
  { name: 'Vila Nova de Foz Côa', distance: '55 km', slug: 'vila-nova-foz-coa' },
  ] as City[]}};
-
 export default function Zonas() {
  const { config } = useSite();
-
  useEffect(() => {
  document.title = 'Zona de Intervenção - Eletricista em Trás-os-Montes | 34 Cidades Servidas';
-
  let metaDescription = document.querySelector('meta[name="description"]');
  if (!metaDescription) {
  metaDescription = document.createElement('meta');
@@ -75,7 +69,6 @@ export default function Zonas() {
  'content',
  'Eletricista profissional em 34 cidades de Trás-os-Montes. Raio de 100km desde Macedo de Cavaleiros. Serviço rápido em Bragança, Vila Real, Chaves, Mirandela e toda a região.'
  );
-
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');
@@ -83,7 +76,6 @@ export default function Zonas() {
  document.head.appendChild(canonical);
  }
  canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/zonas');
-
  // Schema.org ServiceArea
  const schemaScript = document.createElement('script');
  schemaScript.type = 'application/ld+json';
@@ -119,14 +111,12 @@ export default function Zonas() {
  description:
  'Serviços de electricidade profissional em 34 cidades de Trás-os-Montes, num raio de 100km desde Macedo de Cavaleiros.'});
  document.head.appendChild(schemaScript);
-
  return () => {
  if (schemaScript.parentNode) {
  document.head.removeChild(schemaScript);
  }
  };
  }, [config]);
-
  const CityCard = ({ city }: { city: City }) => (
  <a
  href={`/eletricista-${city.slug}`}
@@ -144,11 +134,9 @@ export default function Zonas() {
  </div>
  </a>
  );
-
  return (
  <>
  <Header />
-
  <main className="min-h-screen bg-gray-50">
  {/* Hero Section */}
  <section className="bg-gradient-to-br from-[#FF6B35] to-[#e55a25] text-white py-16">
@@ -178,7 +166,6 @@ export default function Zonas() {
  </div>
  </div>
  </section>
-
  {/* Districts Grid */}
  <section className="py-16">
  <div className="container mx-auto px-4">
@@ -196,7 +183,6 @@ export default function Zonas() {
  ))}
  </div>
  </div>
-
  {/* Distrito de Vila Real */}
  <div className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
@@ -210,7 +196,6 @@ export default function Zonas() {
  ))}
  </div>
  </div>
-
  {/* Distrito de Viseu / Guarda */}
  <div className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
@@ -227,14 +212,13 @@ export default function Zonas() {
  </div>
  </div>
  </section>
-
  {/* CTA Section */}
  <section className="bg-white py-16 border-t border-gray-200">
  <div className="container mx-auto px-4">
  <div className="max-w-3xl mx-auto text-center">
  <h2 className="text-3xl font-bold text-gray-900 mb-4">Precisa de um Eletricista?</h2>
  <p className="text-lg text-gray-600 mb-8">
- Atendemos toda a região de Trás-os-Montes com rapidez e profissionalismo. Orçamento gratuito e sem
+ Atendemos toda a região de Trás-os-Montes com rapidez e profissionalismo. Sem compromisso e sem
  compromisso.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -258,7 +242,6 @@ export default function Zonas() {
  </div>
  </section>
  </main>
-
  <Footer />
  </>
  );

@@ -2,7 +2,6 @@
 // 20 questions en portugais PT-PT avec Schema.org FAQPage JSON-LD
 // Design accordéon avec useState pour open/close
 // Utilise données partilhées de faqData.ts
-
 import { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -11,19 +10,15 @@ import { useSite } from '@/contexts/SiteContext';
 import { ChevronDown, ChevronUp, Phone, MessageCircle, Zap, Shield } from 'lucide-react';
 import { Link } from 'wouter';
 import { electricFaqs, plumberFaqs } from '@/data/faqData';
-
 export default function FAQPage() {
  const { config } = useSite();
  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
  const toggleAccordion = (index: number) => {
  setOpenIndex(openIndex === index ? null : index);
  };
-
  // Utilise toutes les 20 questions des FAQs partilhées
  const isPlumber = config.id === 'norte-reparos';
  const faqs = isPlumber ? plumberFaqs : electricFaqs;
-
  // Schema.org FAQPage JSON-LD
  const faqSchema = {
  "@context": "https://schema.org",
@@ -37,7 +32,6 @@ export default function FAQPage() {
  }
  }))
  };
-
  return (
  <>
  <SEOHead 
@@ -51,7 +45,6 @@ export default function FAQPage() {
  type="application/ld+json"
  dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
  />
-
  <Header />
  
  <main className="min-h-screen bg-gray-50">
@@ -89,7 +82,6 @@ export default function FAQPage() {
  </div>
  </div>
  </section>
-
  {/* Safety Warning */}
  <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4">
  <div className="container mx-auto px-4">
@@ -105,7 +97,6 @@ export default function FAQPage() {
  </div>
  </div>
  </div>
-
  {/* FAQ Accordion */}
  <section className="py-16">
  <div className="container mx-auto px-4">
@@ -118,7 +109,6 @@ export default function FAQPage() {
  Clique em cada pergunta para ver a resposta detalhada
  </p>
  </div>
-
  <div className="space-y-4">
  {faqs.map((faq, index) => (
  <div
@@ -154,7 +144,6 @@ export default function FAQPage() {
  </div>
  ))}
  </div>
-
  {/* Internal Links Section */}
  <div className="mt-16 bg-white rounded-xl shadow-lg p-8">
  <h3 className="text-2xl font-bold text-gray-900 mb-6">
@@ -183,7 +172,6 @@ export default function FAQPage() {
  </div>
  </div>
  </div>
-
  {/* CTA Section */}
  <div className="mt-12 bg-gradient-to-r from-orange-600 to-orange-700 text-white rounded-xl shadow-xl p-8 text-center">
  <div className="flex justify-center mb-4">
@@ -221,7 +209,6 @@ export default function FAQPage() {
  </div>
  </section>
  </main>
-
  <Footer />
  </>
  );

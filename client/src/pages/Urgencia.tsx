@@ -2,20 +2,17 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useSite } from '@/contexts/SiteContext';
 import { Phone, Clock, MapPin, AlertTriangle } from 'lucide-react';
-
 function Urgencia() {
  const { config } = useSite();
  const phone = '932 321 892';
  const phoneClean = '932321892';
  const whatsapp = '351932321892';
-
  return (
  <>
  <Helmet>
  <title>Urgência Eletricista — Intervenção Imediata 24h | Norte Reparos</title>
  <meta name="description" content="Urgência eletricista 24h em Trás-os-Montes. Sem luz? Curto-circuito? Cheiro queimado? Chegamos em 40 minutos. Certificação DGEG. 932 321 892" />
  </Helmet>
-
  {/* Hero Urgência */}
  <section className="relative bg-gradient-to-br from-orange-600 to-red-700 text-white py-20">
  <div className="container mx-auto px-4 max-w-5xl">
@@ -23,22 +20,18 @@ function Urgencia() {
  <div className="inline-block bg-yellow-400 text-red-900 px-6 py-2 rounded-full font-black text-sm mb-6 animate-pulse">
  ⚡ URGÊNCIA 24 HORAS
  </div>
-
  <h1 className="text-4xl md:text-6xl font-black mb-6">
  Eletricista Urgente<br />
  Chegamos em 40 Minutos
  </h1>
-
  <div className="flex flex-wrap justify-center gap-4 text-xl md:text-2xl font-bold mb-8">
  <span className="flex items-center gap-2">⚡ Sem Luz?</span>
  <span className="flex items-center gap-2">💥 Curto-Circuito?</span>
  <span className="flex items-center gap-2">🔥 Cheiro Queimado?</span>
  </div>
-
  <p className="text-2xl md:text-3xl font-bold mb-8">
  ⏱️ Não "Daqui a 1 Semana" — HOJE MESMO
  </p>
-
  <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
  <a
  href={`tel:+351${phoneClean}`}
@@ -56,7 +49,6 @@ function Urgencia() {
  💬 WhatsApp Urgente
  </a>
  </div>
-
  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 max-w-2xl mx-auto">
  <div className="grid grid-cols-3 gap-4 text-center">
  <div>
@@ -76,7 +68,6 @@ function Urgencia() {
  </div>
  </div>
  </section>
-
  {/* Problemas Urgentes */}
  <section className="py-16 bg-gray-50">
  <div className="container mx-auto px-4 max-w-6xl">
@@ -86,7 +77,6 @@ function Urgencia() {
  <p className="text-center text-gray-600 mb-12 text-lg">
  Risco de incêndio. Risco de choque. Não arrisque.
  </p>
-
  <div className="grid md:grid-cols-3 gap-8">
  {/* Sem Luz */}
  <div className="bg-white rounded-2xl p-8 shadow-xl border-l-4 border-orange-500">
@@ -94,7 +84,6 @@ function Urgencia() {
  <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">
  Sem Luz Total
  </h3>
-
  <div className="space-y-3 mb-6">
  <p className="text-gray-700"><strong>Casa às escuras:</strong></p>
  <ul className="space-y-2 text-gray-600">
@@ -116,14 +105,12 @@ function Urgencia() {
  </li>
  </ul>
  </div>
-
  <div className="bg-orange-50 rounded-lg p-4 mb-4">
  <p className="text-sm font-bold text-orange-900">
  💰 Cada dia sem luz:<br />
  €200+ em prejuízos
  </p>
  </div>
-
  <a
  href={`tel:+351${phoneClean}`}
  className="block w-full text-center bg-orange-600 text-white font-bold py-3 rounded-xl hover:bg-orange-700 transition-all"
@@ -131,14 +118,12 @@ function Urgencia() {
  RESOLVER AGORA
  </a>
  </div>
-
  {/* Curto-Circuito */}
  <div className="bg-white rounded-2xl p-8 shadow-xl border-l-4 border-red-600">
  <div className="text-5xl mb-4 text-center">💥</div>
  <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">
  Curto-Circuito
  </h3>
-
  <div className="space-y-3 mb-6">
  <p className="text-gray-700"><strong>Disjuntor salta constantemente:</strong></p>
  <ul className="space-y-2 text-gray-600">
@@ -160,14 +145,12 @@ function Urgencia() {
  </li>
  </ul>
  </div>
-
  <div className="bg-red-100 rounded-lg p-4 mb-4">
  <p className="text-sm font-bold text-red-900">
  🚨 NÃO force disjuntor<br />
  Risco de incêndio
  </p>
  </div>
-
  <a
  href={`tel:+351${phoneClean}`}
  className="block w-full text-center bg-red-600 text-white font-bold py-3 rounded-xl hover:bg-red-700 transition-all"
@@ -175,14 +158,12 @@ function Urgencia() {
  RESOLVER AGORA
  </a>
  </div>
-
  {/* Cheiro Queimado */}
  <div className="bg-white rounded-2xl p-8 shadow-xl border-l-4 border-red-800">
  <div className="text-5xl mb-4 text-center">🔥</div>
  <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">
  Cheiro Queimado
  </h3>
-
  <div className="space-y-3 mb-6">
  <p className="text-gray-700"><strong>Cheiro a plástico queimado:</strong></p>
  <ul className="space-y-2 text-gray-600">
@@ -204,14 +185,12 @@ function Urgencia() {
  </li>
  </ul>
  </div>
-
  <div className="bg-red-100 rounded-lg p-4 mb-4">
  <p className="text-sm font-bold text-red-900">
  🚨 Desligue quadro geral<br />
  Ligue IMEDIATAMENTE
  </p>
  </div>
-
  <a
  href={`tel:+351${phoneClean}`}
  className="block w-full text-center bg-red-800 text-white font-bold py-3 rounded-xl hover:bg-red-900 transition-all"
@@ -222,14 +201,12 @@ function Urgencia() {
  </div>
  </div>
  </section>
-
  {/* Porque Somos Diferentes */}
  <section className="py-16 bg-white">
  <div className="container mx-auto px-4 max-w-6xl">
  <h2 className="text-3xl md:text-4xl font-black text-center mb-12">
  ⚡ Porque Somos Diferentes em Urgências
  </h2>
-
  <div className="grid md:grid-cols-2 gap-8 mb-12">
  {/* Certificação DGEG */}
  <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 border-2 border-blue-200">
@@ -259,7 +236,6 @@ function Urgencia() {
  </div>
  </div>
  </div>
-
  {/* Equipamento Profissional */}
  <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8 border-2 border-orange-200">
  <div className="flex items-start gap-4">
@@ -288,7 +264,6 @@ function Urgencia() {
  </div>
  </div>
  </div>
-
  {/* Cobertura Rápida */}
  <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border-2 border-green-200">
  <div className="flex items-start gap-4">
@@ -319,7 +294,6 @@ function Urgencia() {
  </div>
  </div>
  </div>
-
  {/* Garantia */}
  <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 border-2 border-purple-200">
  <div className="flex items-start gap-4">
@@ -351,7 +325,6 @@ function Urgencia() {
  </div>
  </div>
  </section>
-
  {/* Preços Urgência */}
  <section className="py-16 bg-gray-50">
  <div className="container mx-auto px-4 max-w-4xl">
@@ -361,7 +334,6 @@ function Urgencia() {
  <p className="text-center text-gray-600 mb-12 text-lg">
  Preço comunicado ANTES de sair. Sem surpresas.
  </p>
-
  <div className="bg-white rounded-2xl p-8 shadow-xl">
  <div className="grid md:grid-cols-2 gap-6 mb-8">
  <div className="bg-gray-50 rounded-xl p-6">
@@ -369,26 +341,22 @@ function Urgencia() {
  <p className="text-3xl font-black text-orange-600">70€/h</p>
  <p className="text-sm text-gray-600">+ deslocação conforme zona</p>
  </div>
-
  <div className="bg-blue-50 rounded-xl p-6 border-2 border-blue-200">
  <h3 className="font-bold text-gray-900 mb-2">Sábado</h3>
  <p className="text-3xl font-black text-blue-600">90€/h</p>
  <p className="text-sm text-gray-600">+ deslocação conforme zona</p>
  </div>
-
  <div className="bg-red-50 rounded-xl p-6 border-2 border-red-200">
  <h3 className="font-bold text-gray-900 mb-2">Domingo/Feriado</h3>
  <p className="text-3xl font-black text-red-600">100€/h</p>
  <p className="text-sm text-gray-600">+ deslocação conforme zona</p>
  </div>
-
  <div className="bg-purple-50 rounded-xl p-6 border-2 border-purple-200">
  <h3 className="font-bold text-gray-900 mb-2">Noturno (18h-8h)</h3>
  <p className="text-3xl font-black text-purple-600">+50%</p>
  <p className="text-sm text-gray-600">Sobre mão de obra + deslocação</p>
  </div>
  </div>
-
  <div className="bg-gradient-to-r from-orange-50 to-red-50 rounded-xl p-6 border-2 border-orange-200">
  <h3 className="font-bold text-gray-900 mb-4">Exemplo: Urgência Domingo 22h em Bragança</h3>
  <div className="space-y-2 text-gray-700">
@@ -421,7 +389,6 @@ function Urgencia() {
  </div>
  </div>
  </section>
-
  {/* CTA Final */}
  <section className="py-16 bg-gradient-to-br from-orange-600 to-red-700 text-white">
  <div className="container mx-auto px-4 max-w-4xl text-center">
@@ -431,7 +398,6 @@ function Urgencia() {
  <p className="text-xl md:text-2xl mb-8">
  Risco de incêndio é REAL. Certificação DGEG. Chegamos em 40 minutos.
  </p>
-
  <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
  <a
  href={`tel:+351${phoneClean}`}
@@ -449,13 +415,11 @@ function Urgencia() {
  💬 WhatsApp
  </a>
  </div>
-
  <p className="text-lg">
  Disponível 24h/7 dias — Certificação DGEG incluída
  </p>
  </div>
  </section>
-
  {/* Sticky Bottom Bar Mobile */}
  <div className="fixed bottom-0 left-0 right-0 bg-orange-600 text-white p-4 shadow-2xl md:hidden z-50">
  <div className="flex gap-2">
@@ -478,5 +442,4 @@ function Urgencia() {
  </>
  );
 }
-
 export default Urgencia;

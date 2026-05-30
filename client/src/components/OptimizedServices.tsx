@@ -1,7 +1,6 @@
 import React from 'react';
 import { useSite } from '@/contexts/SiteContext';
 import OptimizedImage from './OptimizedImage';
-
 // Images de services pour électricité — utiliser les fichiers .jpg disponibles
 const electricServiceImages: Record<string, string> = {
  'Instalação Elétrica Completa': 'service-instalacao.jpg',
@@ -10,7 +9,6 @@ const electricServiceImages: Record<string, string> = {
  'Iluminação Interior/Exterior': 'service-iluminacao.jpg',
  'certificação elétrica': 'service-certificacao.jpg',
  'Urgências 24h': 'service-urgencia.jpg'};
-
 // Images de services pour plomberie
 const plumbServiceImages: Record<string, string> = {
  'Desentupimentos': 'service-desentupimentos.jpg',
@@ -19,7 +17,6 @@ const plumbServiceImages: Record<string, string> = {
  'Aquecimento Central': 'service-aquecimento.jpg',
  'Canalização Nova': 'service-instalacao.jpg',
  'Urgências 24h': 'service-urgencia.jpg'};
-
 // Descriptions pour électricité
 const electricDescriptions: Record<string, string> = {
  'Instalação Elétrica Completa': 'Instalação elétrica residencial e comercial completa, desde o quadro principal até às tomadas finais, com materiais de qualidade e cumprimento das normas de segurança.',
@@ -28,7 +25,6 @@ const electricDescriptions: Record<string, string> = {
  'Iluminação Interior/Exterior': 'Projeto e instalação de sistemas de iluminação interior e exterior, spots LED, iluminação decorativa, sensores de movimento e automatização.',
  'certificação elétrica': 'Inspeção e certificação elétrica obrigatória para venda e arrendamento de imóveis, com emissão de certificado válido e registado na .',
  'Urgências 24h': 'Atendimento de urgências elétricas 24 horas por dia, 7 dias por semana, para situações de perigo ou falta de energia.'};
-
 // Descriptions pour plomberie
 const plumbDescriptions: Record<string, string> = {
  'Desentupimentos': 'Desentupimento profissional de canalizações, WC, pias, ralos e redes de esgotos com equipamento especializado.',
@@ -37,7 +33,6 @@ const plumbDescriptions: Record<string, string> = {
  'Aquecimento Central': 'Instalação e manutenção de sistemas de aquecimento central, caldeiras, radiadores e sistemas de água quente.',
  'Canalização Nova': 'Instalação de canalização nova para construções, remodelações e ampliações, com materiais certificados.',
  'Urgências 24h': 'Atendimento de urgências de canalização 24 horas por dia, 7 dias por semana, para fugas graves e entupimentos.'};
-
 // Features pour électricité
 const electricFeatures: Record<string, string[]> = {
  'Instalação Elétrica Completa': [
@@ -71,7 +66,6 @@ const electricFeatures: Record<string, string[]> = {
  'Orçamento no local'
  ]
 };
-
 // Features pour plomberie
 const plumbFeatures: Record<string, string[]> = {
  'Desentupimentos': [
@@ -105,20 +99,16 @@ const plumbFeatures: Record<string, string[]> = {
  'Disponível todos os dias'
  ]
 };
-
 const OptimizedServices: React.FC = () => {
  const { config } = useSite();
  const isPlumber = config.id === 'norte-reparos';
-
  const serviceImages = isPlumber ? plumbServiceImages : electricServiceImages;
  const serviceDescriptions = isPlumber ? plumbDescriptions : electricDescriptions;
  const serviceFeatures = isPlumber ? plumbFeatures : electricFeatures;
-
  // Construire la liste des services à partir de serviceConfig
  const services = isPlumber
  ? ['Desentupimentos', 'Arranjo de Fugas de Água', 'Instalação Sanitários', 'Aquecimento Central', 'Canalização Nova', 'Urgências 24h']
  : ['Instalação Elétrica Completa', 'Arranjo de Avarias Elétricas', 'Quadros Elétricos Modernos', 'Iluminação Interior/Exterior', 'certificação elétrica', 'Urgências 24h'];
-
  const sectionTitle = isPlumber ? 'Canalização' : 'Eletricidade';
  const accentColor = isPlumber ? 'text-blue-600' : 'text-amber-600';
  const hoverBorder = isPlumber ? 'hover:border-blue-500' : 'hover:border-amber-500';
@@ -128,7 +118,6 @@ const OptimizedServices: React.FC = () => {
  const otherSiteLink = isPlumber
  ? { text: 'Precisa de um eletricista?', url: 'https://eletricista-norte-reparos.pt', label: 'eletricista-norte-reparos.pt' }
  : { text: 'Precisa de um canalizador?', url: 'https://canalizador-norte-reparos.pt', label: 'canalizador-norte-reparos.pt' };
-
  return (
  <section id="servicos" className="py-20 bg-gradient-to-b from-white to-gray-50">
  <div className="container mx-auto px-4">
@@ -141,14 +130,12 @@ const OptimizedServices: React.FC = () => {
  Serviços profissionais completos para residências, comércios e indústrias em toda a região de Trás-os-Montes.
  </p>
  </div>
-
  {/* Grelha de serviços */}
  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
  {services.map((service, index) => {
  const imageName = serviceImages[service] || 'service-instalacao.jpg';
  const description = serviceDescriptions[service] || 'Serviço profissional de qualidade.';
  const features = serviceFeatures[service] || ['Materiais de qualidade', 'Técnicos certificados', 'Garantia no serviço'];
-
  return (
  <div
  key={index}
@@ -165,18 +152,15 @@ const OptimizedServices: React.FC = () => {
  objectFit="cover"
  />
  </div>
-
  {/* Conteúdo do serviço */}
  <div className="p-6">
  <div className="flex items-center gap-3 mb-4">
  <div className={`text-2xl ${iconColor}`}>{serviceEmoji}</div>
  <h3 className="text-xl font-bold text-gray-900">{service}</h3>
  </div>
-
  <p className="text-gray-600 mb-6">
  {description}
  </p>
-
  <div className="space-y-3">
  {features.map((feature, idx) => (
  <div key={idx} className="flex items-center gap-2 text-gray-700">
@@ -185,7 +169,6 @@ const OptimizedServices: React.FC = () => {
  </div>
  ))}
  </div>
-
  <a
  href={`https://wa.me/${config.whatsapp || '351932321892'}?text=${encodeURIComponent(config.whatsappMessage)}`}
  target="_blank"
@@ -200,7 +183,6 @@ const OptimizedServices: React.FC = () => {
  );
  })}
  </div>
-
  {/* Secção adicional */}
  <div className="mt-16 bg-gradient-to-r from-amber-50 to-blue-50 rounded-2xl p-8 border border-amber-200">
  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
@@ -252,5 +234,4 @@ const OptimizedServices: React.FC = () => {
  </section>
  );
 };
-
 export default OptimizedServices;

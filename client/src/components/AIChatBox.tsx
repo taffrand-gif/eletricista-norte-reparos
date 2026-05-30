@@ -5,7 +5,6 @@ import { cn } from "@/lib/utils";
 import { Loader2, Send, User, Sparkles } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import { Streamdown } from "streamdown";
-
 /**
  * Message type matching server-side LLM Message interface
  */
@@ -13,52 +12,43 @@ export type Message = {
  role: "system" | "user" | "assistant";
  content: string;
 };
-
 export type AIChatBoxProps = {
  /**
  * Messages array to display in the chat.
  * Should match the format used by invokeLLM on the server.
  */
  messages: Message[];
-
  /**
  * Callback when user sends a message.
  * Typically you'll call a tRPC mutation here to invoke the LLM.
  */
  onSendMessage: (content: string) => void;
-
  /**
  * Whether the AI is currently generating a response
  */
  isLoading?: boolean;
-
  /**
  * Placeholder text for the input field
  */
  placeholder?: string;
-
  /**
  * Custom className for the container
  */
  className?: string;
-
  /**
  * Height of the chat box (default: 600px)
  */
  height?: string | number;
-
  /**
  * Empty state message to display when no messages
  */
  emptyStateMessage?: string;
-
  /**
  * Suggested prompts to display in empty state
  * Click to send directly
  */
  suggestedPrompts?: string[];
 };
-
 /**
  * A ready-to-use AI chat box component that integrates with the LLM system.
  *
@@ -124,36 +114,29 @@ export function AIChatBox({
  const containerRef = useRef<HTMLDivElement>(null);
  const inputAreaRef = useRef<HTMLFormElement>(null);
  const textareaRef = useRef<HTMLTextAreaElement>(null);
-
  // Filter out system messages
  const displayMessages = messages.filter((msg) => msg.role !== "system");
-
  // Calculate min-height for last assistant message to push user message to top
  const [minHeightForLastMessage, setMinHeightForLastMessage] = useState(0);
-
  useEffect(() => {
  if (containerRef.current && inputAreaRef.current) {
  const containerHeight = containerRef.current.offsetHeight;
  const inputHeight = inputAreaRef.current.offsetHeight;
  const scrollAreaHeight = containerHeight - inputHeight;
-
  // Reserve space for:
  // - padding (p-4 = 32px top+bottom)
  // - user message: 40px (item height) + 16px (margin-top from space-y-4) = 56px
  // Note: margin-bottom is not counted because it naturally pushes the assistant message down
  const userMessageReservedHeight = 56;
  const calculatedHeight = scrollAreaHeight - 32 - userMessageReservedHeight;
-
  setMinHeightForLastMessage(Math.max(0, calculatedHeight));
  }
  }, []);
-
  // Scroll to bottom helper function with smooth animation
  const scrollToBottom = () => {
  const viewport = scrollAreaRef.current?.querySelector(
  '[data-radix-scroll-area-viewport]'
  ) as HTMLDivElement;
-
  if (viewport) {
  requestAnimationFrame(() => {
  viewport.scrollTo({
@@ -163,29 +146,23 @@ export function AIChatBox({
  });
  }
  };
-
  const handleSubmit = (e: React.FormEvent) => {
  e.preventDefault();
  const trimmedInput = input.trim();
  if (!trimmedInput || isLoading) return;
-
  onSendMessage(trimmedInput);
  setInput("");
-
  // Scroll immediately after sending
  scrollToBottom();
-
  // Keep focus on input
  textareaRef.current?.focus();
  };
-
  const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
  if (e.key === "Enter" && !e.shiftKey) {
  e.preventDefault();
  handleSubmit(e);
  }
  };
-
  return (
  <div
  ref={containerRef}
@@ -204,7 +181,6 @@ export function AIChatBox({
  <Sparkles className="size-12 opacity-20" />
  <p className="text-sm">{emptyStateMessage}</p>
  </div>
-
  {suggestedPrompts && suggestedPrompts.length > 0 && (
  <div className="flex max-w-2xl flex-wrap justify-center gap-2">
  {suggestedPrompts.map((prompt, index) => (
@@ -229,7 +205,6 @@ export function AIChatBox({
  const isLastMessage = index === displayMessages.length - 1;
  const shouldApplyMinHeight =
  isLastMessage && !isLoading && minHeightForLastMessage > 0;
-
  return (
  <div
  key={index}
@@ -250,7 +225,6 @@ export function AIChatBox({
  <Sparkles className="size-4 text-primary" />
  </div>
  )}
-
  <div
  className={cn(
  "max-w-[80%] rounded-lg px-4 py-2.5",
@@ -269,7 +243,6 @@ export function AIChatBox({
  </p>
  )}
  </div>
-
  {message.role === "user" && (
  <div className="size-8 shrink-0 mt-1 rounded-full bg-secondary flex items-center justify-center">
  <User className="size-4 text-secondary-foreground" />
@@ -278,7 +251,6 @@ export function AIChatBox({
  </div>
  );
  })}
-
  {isLoading && (
  <div
  className="flex items-start gap-3"
@@ -300,7 +272,6 @@ export function AIChatBox({
  </ScrollArea>
  )}
  </div>
-
  {/* Input Area */}
  <form
  ref={inputAreaRef}

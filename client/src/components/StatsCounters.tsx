@@ -1,20 +1,16 @@
 'use client';
-
 import React, { useEffect, useRef, useState } from 'react';
 import { useSite } from '@/contexts/SiteContext';
-
 interface CounterProps {
  end: number;
  duration?: number;
  suffix?: string;
  prefix?: string;
 }
-
 function AnimatedCounter({ end, duration = 2000, suffix = '', prefix = '' }: CounterProps) {
  const [count, setCount] = useState(0);
  const [isVisible, setIsVisible] = useState(false);
  const ref = useRef<HTMLDivElement>(null);
-
  useEffect(() => {
  const observer = new IntersectionObserver(
  ([entry]) => {
@@ -24,17 +20,13 @@ function AnimatedCounter({ end, duration = 2000, suffix = '', prefix = '' }: Cou
  },
  { threshold: 0.3 }
  );
-
  if (ref.current) {
  observer.observe(ref.current);
  }
-
  return () => observer.disconnect();
  }, [isVisible]);
-
  useEffect(() => {
  if (!isVisible) return;
-
  let startTime: number | null = null;
  const animate = (currentTime: number) => {
  if (!startTime) startTime = currentTime;
@@ -43,27 +35,22 @@ function AnimatedCounter({ end, duration = 2000, suffix = '', prefix = '' }: Cou
  // Easing function (ease-out)
  const easeOut = 1 - Math.pow(1 - progress, 3);
  setCount(Math.floor(easeOut * end));
-
  if (progress < 1) {
  requestAnimationFrame(animate);
  }
  };
-
  requestAnimationFrame(animate);
  }, [isVisible, end, duration]);
-
  return (
  <div ref={ref} className="text-5xl md:text-6xl font-black text-gray-900">
  {prefix}{count}{suffix}
  </div>
  );
 }
-
 export default function StatsCounters() {
  const { config } = useSite();
  const isPlumber = config.id === 'norte-reparos';
  const accentColor = isPlumber ? '#0e7490' : '#FF6B35';
-
  const stats = isPlumber
  ? [
  { value: 500, suffix: '+', label: 'Canalizações Arranjadas', icon: '💧' },
@@ -77,7 +64,6 @@ export default function StatsCounters() {
  { value: 40, label: 'Min Chegada a Bragança', icon: '⏱️' },
  { value: 4.9, suffix: '/5', label: 'Avaliação Clientes', icon: '🌟' },
  ];
-
  return (
  <section className="py-16 bg-gradient-to-br from-gray-50 to-gray-100">
  <div className="container mx-auto px-4">
@@ -89,7 +75,6 @@ export default function StatsCounters() {
  Experiência comprovada em Trás-os-Montes
  </p>
  </div>
-
  <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
  {stats.map((stat, idx) => (
  <div
@@ -110,7 +95,6 @@ export default function StatsCounters() {
  </div>
  ))}
  </div>
-
  <div className="text-center mt-12">
  <p className="text-gray-600 text-sm max-w-2xl mx-auto">
  {isPlumber

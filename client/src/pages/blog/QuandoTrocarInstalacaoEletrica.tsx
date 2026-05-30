@@ -2,14 +2,12 @@ import React from 'react';
 import BlogLayout from '@/components/blog/BlogLayout';
 import { useSEO } from '@/hooks/useSEO';
 import { ACTIVE_CONFIG } from '@/../../shared/serviceConfig';
-
 const QuandoTrocarInstalacaoEletrica: React.FC = () => {
  useSEO({
  title: 'Quando Trocar a Instalação Elétrica? Sinais de Alerta | 2026',
  description: 'Descubra os sinais de alerta que indicam que a sua instalação elétrica precisa de ser renovada. Guia completo sobre segurança elétrica em casas antigas.',
  keywords: 'instalação elétrica antiga, sinais perigo eletricidade, renovar quadro elétrico, trocar instalação elétrica, segurança elétrica casa'
  });
-
  return (
  <BlogLayout
  title="Quando Trocar a Instalação Elétrica? Sinais de Alerta"
@@ -39,7 +37,6 @@ const QuandoTrocarInstalacaoEletrica: React.FC = () => {
  </div>
  </div>
  </div>
-
  {/* Featured image */}
  <div className="mb-10 rounded-2xl overflow-hidden">
  <img
@@ -69,7 +66,6 @@ const QuandoTrocarInstalacaoEletrica: React.FC = () => {
  de alerta que indicam que está na hora de renovar a instalação elétrica.
  </p>
  </div>
-
  {/* Table of contents */}
  <div className="bg-gray-50 rounded-2xl p-6 mb-10">
  <h2 className="text-2xl font-bold text-gray-900 mb-4">📋 Neste Artigo</h2>
@@ -167,7 +163,6 @@ const QuandoTrocarInstalacaoEletrica: React.FC = () => {
  </div>
  <p>Em Trás-os-Montes, muitas casas de aldeia e vilas têm instalações dos anos 70 e 80, projetadas para um consumo de 3.45 kVA — muito abaixo das necessidades atuais de 6.9 kVA ou mais.</p>
  </section>
-
  <section id="quadro" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">3. 🔧 Quadro Elétrico: Fusíveis vs. Disjuntores</h2>
  <p>O quadro elétrico é o coração da instalação. Se ainda tem fusíveis de porcelana ou de vidro, a renovação é urgente.</p>
@@ -192,7 +187,6 @@ const QuandoTrocarInstalacaoEletrica: React.FC = () => {
  </div>
  </div>
  </section>
-
  <section id="custos" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">4. 💰 Quanto Custa Renovar a Instalação</h2>
  <p>Os custos variam conforme o tamanho da casa e o estado da instalação existente:</p>
@@ -207,7 +201,6 @@ const QuandoTrocarInstalacaoEletrica: React.FC = () => {
  </div>
  <p>Estes valores incluem materiais e mão de obra. Um orçamento detalhado requer visita ao local para avaliar o estado real da instalação.</p>
  </section>
-
  <section id="profissional" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">5. 👨‍🔧 Porquê Contratar um Eletricista Certificado</h2>
  <div className="bg-amber-50 border border-amber-200 rounded-2xl p-8">
@@ -271,7 +264,6 @@ const QuandoTrocarInstalacaoEletrica: React.FC = () => {
  })}
  </script>
  </section>
-
  {/* Author bio */}
  <div className="bg-gray-50 rounded-2xl p-8 mt-12">
  <div className="flex flex-col md:flex-row gap-6 items-center">
@@ -293,5 +285,4 @@ const QuandoTrocarInstalacaoEletrica: React.FC = () => {
  </BlogLayout>
  );
 };
-
 export default QuandoTrocarInstalacaoEletrica;

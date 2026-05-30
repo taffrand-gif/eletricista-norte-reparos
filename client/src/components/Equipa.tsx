@@ -1,6 +1,5 @@
 import React from 'react';
 import { Award, Clock, Shield, Wrench } from 'lucide-react';
-
 export default function Equipa() {
  const badges = [
  {
@@ -24,7 +23,6 @@ export default function Equipa() {
  label: 'Certificado em 48h',
  desc: 'Trato de toda a papelada para venda ou arrendamento. Sem complicações.'},
  ];
-
  return (
  <section id="equipa" className="py-20 bg-white">
  <div className="container mx-auto px-4">
@@ -36,7 +34,6 @@ export default function Equipa() {
  Gente da terra, que conhece cada rua de Trás-os-Montes e trata a sua casa com respeito.
  </p>
  </div>
-
  <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
  {badges.map((b, i) => (
  <div

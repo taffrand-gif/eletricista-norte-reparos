@@ -1,10 +1,8 @@
 // Hero section profissional com design moderno
 import React from 'react';
 import { useSite } from '@/contexts/SiteContext';
-
 const InnovativeHero: React.FC = () => {
  const { config } = useSite();
-
  // Determinar dados conforme o site
  const isPlumber = config.id === 'norte-reparos';
  const statsData = isPlumber
@@ -20,28 +18,21 @@ const InnovativeHero: React.FC = () => {
  { icon: '⚡', value: '350+', label: 'Intervenções' },
  { icon: '📞', value: '40 min', label: 'Chegada Bragança' },
  ];
-
  const badgeText = isPlumber
  ? 'CANALIZADOR Atendimento 24h — RESPOSTA EM 2 MIN'
  : 'ELETRICISTA CERTIFICADO — CHEGAMOS EM 40 MINUTOS';
-
  const badgeEmoji = isPlumber ? '💧' : '⚡';
-
  const gradientFrom = isPlumber ? 'from-blue-600' : 'from-amber-500';
  const gradientVia = isPlumber ? 'via-blue-700' : 'via-amber-600';
  const gradientTo = isPlumber ? 'to-blue-900' : 'to-blue-900';
  const overlayFrom = isPlumber ? 'from-blue-900/40' : 'from-amber-900/40';
  const overlayTo = isPlumber ? 'to-blue-900/60' : 'to-blue-900/60';
-
  const ctaPrimaryBg = isPlumber
  ? 'bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600'
  : 'bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-500 hover:to-amber-600';
-
  const ctaSecondaryBorder = isPlumber ? 'border-blue-500' : 'border-amber-500';
  const ctaSecondaryText = isPlumber ? 'text-blue-900' : 'text-blue-900';
-
  const statBorderHover = isPlumber ? 'hover:border-blue-400' : 'hover:border-amber-400';
-
  return (
  <section
  id="home"
@@ -51,7 +42,6 @@ const InnovativeHero: React.FC = () => {
  >
  {/* LCP Image preload hint */}
  <link rel="preload" as="image" href={config.hero.backgroundImage} fetchPriority="high" />
-
  {/* Background overlay */}
  <div className={`absolute inset-0 bg-gradient-to-br ${overlayFrom} via-transparent ${overlayTo}`} />
  
@@ -130,5 +120,4 @@ const InnovativeHero: React.FC = () => {
  </section>
  );
 };
-
 export default InnovativeHero;

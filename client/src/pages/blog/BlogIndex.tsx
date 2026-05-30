@@ -2,14 +2,12 @@ import React from 'react';
 import BlogLayout from '@/components/blog/BlogLayout';
 import BlogCard from '@/components/blog/BlogCard';
 import { useSEO } from '@/hooks/useSEO';
-
 const BlogIndex: React.FC = () => {
  useSEO({
  title: 'Blog do Eletricista - Dicas e Guias para Eletricidade em Trás-os-Montes',
  description: 'Artigos informativos sobre eletricidade, segurança elétrica, manutenção e legislação para residências e empresas na região de Trás-os-Montes.',
  keywords: 'blog eletricista, dicas eletricidade, segurança elétrica, manutenção elétrica, Trás-os-Montes'
  });
-
  // Articles data - à remplacer par API/database plus tard
  const articles = [
  {
@@ -148,7 +146,6 @@ const BlogIndex: React.FC = () => {
  imageUrl: '/images-optimized/blog/paineis-solares.jpg'
  }
  ];
-
  return (
  <BlogLayout
  title="Blog do Eletricista Profissional"
@@ -163,7 +160,6 @@ const BlogIndex: React.FC = () => {
  Artigos escritos por eletricistas certificados para ajudar proprietários e empresas a entenderem melhor a eletricidade e tomarem decisões informadas.
  </p>
  </div>
-
  {/* Featured article */}
  <div className="mb-16">
  <div className="bg-gradient-to-r from-amber-50 to-amber-100 rounded-2xl p-8 border border-amber-200">
@@ -202,7 +198,6 @@ const BlogIndex: React.FC = () => {
  </div>
  </div>
  </div>
-
  {/* Articles grid */}
  <div>
  <h2 className="text-3xl font-bold text-gray-900 mb-8">Últimos Artigos</h2>
@@ -212,7 +207,6 @@ const BlogIndex: React.FC = () => {
  ))}
  </div>
  </div>
-
  {/* Newsletter */}
  <div className="mt-16 bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl p-8 border border-blue-200">
  <div className="text-center max-w-2xl mx-auto">
@@ -245,5 +239,4 @@ const BlogIndex: React.FC = () => {
  </BlogLayout>
  );
 };
-
 export default BlogIndex;

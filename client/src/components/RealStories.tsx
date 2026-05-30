@@ -1,12 +1,9 @@
 import React from 'react';
 import { useSite } from '@/contexts/SiteContext';
 import { MapPin, Quote } from 'lucide-react';
-
 export default function RealStories() {
  const { config } = useSite();
-
  if (!config.stories || config.stories.length === 0) return null;
-
  return (
  <section className="py-16 bg-gray-50">
  <div className="container mx-auto px-4">
@@ -16,7 +13,6 @@ export default function RealStories() {
  Histórias verdadeiras do nosso dia-a-dia em Trás-os-Montes. Sem filtros.
  </p>
  </div>
-
  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
  {config.stories.map((story, index) => (
  <div key={index} className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 flex flex-col h-full hover:shadow-md transition-shadow">
@@ -33,7 +29,6 @@ export default function RealStories() {
  <span className="font-semibold mr-2">Emoção:</span> {story.emotion}
  </div>
  </div>
-
  <div className="mt-auto pt-4 border-t border-gray-100">
  <p className="font-bold text-[var(--site-primary-dark)]">Solução:</p>
  <p className="text-gray-800">{story.solution}</p>

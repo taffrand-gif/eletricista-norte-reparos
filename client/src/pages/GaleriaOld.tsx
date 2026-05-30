@@ -4,30 +4,24 @@ import Footer from "@/components/Footer";
 import { ACTIVE_CONFIG } from "../../../shared/serviceConfig";
 import { IMAGES } from "../../../shared/images";
 import { useSEO } from "@/hooks/useSEO";
-
 interface GalleryImage {
  url: string;
  alt: string;
  category: string;
 }
-
 export default function Galeria() {
  const config = ACTIVE_CONFIG;
  const [selectedImage, setSelectedImage] = useState<string | null>(null);
  const [selectedCategory, setSelectedCategory] = useState<string>("Todas");
-
  useSEO({
  title: `Galeria de Trabalhos | ${config.businessName}`,
  description: `Veja a galeria de trabalhos realizados pela ${config.businessName}. Serviços de ${config.name.toLowerCase()} com qualidade e profissionalismo.`,
  canonical: `https://${config.domain}/galeria`});
-
  const images = getGalleryImages(config.type);
  const categories = ["Todas", ...Array.from(new Set(images.map(img => img.category)))];
-
  const filteredImages = selectedCategory === "Todas" 
  ? images 
  : images.filter(img => img.category === selectedCategory);
-
  return (
  <>
  <Header />
@@ -44,7 +38,6 @@ export default function Galeria() {
  </div>
  </div>
  </section>
-
  {/* Category Filter */}
  <section className="py-8 bg-white">
  <div className="container">
@@ -65,7 +58,6 @@ export default function Galeria() {
  </div>
  </div>
  </section>
-
  {/* Gallery Grid */}
  <section className="py-16 bg-gray-50">
  <div className="container">
@@ -95,7 +87,6 @@ export default function Galeria() {
  </div>
  </div>
  </section>
-
  {/* Lightbox Modal */}
  {selectedImage && (
  <div
@@ -116,12 +107,10 @@ export default function Galeria() {
  />
  </div>
  )}
-
  <Footer />
  </>
  );
 }
-
 // Fonction pour générer la galerie avec les vraies images
 function getGalleryImages(serviceType: 'plomberie' | 'electricite'): GalleryImage[] {
  if (serviceType === 'plomberie') {

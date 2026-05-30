@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useEffect } from 'react';
 import { Phone, Home, Lightbulb, Shield, Zap, CheckCircle } from 'lucide-react';
-
 export default function AutomacaoResidencialGuia() {
  useEffect(() => {
  document.title = "Automação Residencial em Trás-os-Montes: Guia Completo para Casa Inteligente 2026 | Staff Seekers";
@@ -15,7 +14,6 @@ export default function AutomacaoResidencialGuia() {
  document.head.appendChild(metaDescription);
  }
  metaDescription.setAttribute('content', 'Guia completo de automação residencial em Trás-os-Montes. Descubra como transformar a sua casa numa casa inteligente: iluminação, segurança, climatização e muito mais.');
-
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');
@@ -23,7 +21,6 @@ export default function AutomacaoResidencialGuia() {
  document.head.appendChild(canonical);
  }
  canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/blog/automacao-residencial-casa-inteligente');
-
  // JSON-LD Article Schema
  const script = document.createElement('script');
  script.type = 'application/ld+json';
@@ -48,12 +45,10 @@ export default function AutomacaoResidencialGuia() {
  "dateModified": "2026-02-19"
  });
  document.head.appendChild(script);
-
  return () => {
  document.head.removeChild(script);
  };
  }, []);
-
  const sistemas = [
  {
  titulo: "Iluminação Inteligente",
@@ -80,7 +75,6 @@ export default function AutomacaoResidencialGuia() {
  custo: "100€ - 400€ por janela"
  }
  ];
-
  return (
  <div className="min-h-screen flex flex-col">
  <Header />
@@ -101,7 +95,6 @@ export default function AutomacaoResidencialGuia() {
  </div>
  </div>
  </section>
-
  {/* Intro */}
  <section className="py-12">
  <div className="container max-w-3xl">
@@ -120,7 +113,6 @@ export default function AutomacaoResidencialGuia() {
  </div>
  </div>
  </section>
-
  {/* O Que É Automação Residencial */}
  <section className="py-12 bg-gray-50">
  <div className="container max-w-3xl">
@@ -143,7 +135,6 @@ export default function AutomacaoResidencialGuia() {
  </div>
  </div>
  </section>
-
  {/* Sistemas Principais */}
  <section className="py-16">
  <div className="container max-w-3xl">
@@ -175,7 +166,6 @@ export default function AutomacaoResidencialGuia() {
  </div>
  </div>
  </section>
-
  {/* Vantagens */}
  <section className="py-12 bg-blue-50">
  <div className="container max-w-3xl">
@@ -212,7 +202,6 @@ export default function AutomacaoResidencialGuia() {
  </div>
  </div>
  </section>
-
  {/* Instalação */}
  <section className="py-12">
  <div className="container max-w-3xl">
@@ -257,7 +246,6 @@ export default function AutomacaoResidencialGuia() {
  </div>
  </div>
  </section>
-
  {/* Custos */}
  <section className="py-12 bg-gray-50">
  <div className="container max-w-3xl">
@@ -300,7 +288,6 @@ export default function AutomacaoResidencialGuia() {
  </div>
  </div>
  </section>
-
  {/* CTA */}
  <section className="py-16 bg-orange-500 text-white">
  <div className="container text-center">
@@ -309,7 +296,7 @@ export default function AutomacaoResidencialGuia() {
  Pronto Para Uma Casa Inteligente?
  </h2>
  <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
- Peça um orçamento gratuito e descubra como podemos automatizar a sua casa em Trás-os-Montes.
+ Peça um sem compromisso e descubra como podemos automatizar a sua casa em Trás-os-Montes.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a href="tel:+351932321892" className="inline-flex items-center justify-center gap-2 bg-white text-orange-500 px-8 py-4 rounded-lg text-xl font-bold hover:bg-gray-100 transition-all shadow-lg">
@@ -322,7 +309,6 @@ export default function AutomacaoResidencialGuia() {
  </div>
  </div>
  </section>
-
  {/* Artigos Relacionados */}
  <section className="py-12 bg-gray-50">
  <div className="container max-w-3xl">

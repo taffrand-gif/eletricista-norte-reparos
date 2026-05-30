@@ -3,14 +3,12 @@ import Footer from "@/components/Footer";
 import { ACTIVE_CONFIG } from "../../../shared/serviceConfig";
 import { useSEO } from "@/hooks/useSEO";
 import { Card } from "@/components/ui/card";
-
 export default function Equipa() {
  const config = ACTIVE_CONFIG;
  
  useSEO({
  title: `Nossa Equipa - ${config.name}`,
  description: `Conheça a equipa profissional de ${config.type === 'plomberie' ? 'canalizadores' : 'eletricistas'} certificados.`});
-
  return (
  <div className="min-h-screen flex flex-col">
  <Header />
@@ -26,7 +24,6 @@ export default function Equipa() {
  </p>
  </div>
  </section>
-
  <section className="py-16">
  <div className="container max-w-4xl">
  <Card className="p-8 mb-8">
@@ -38,7 +35,6 @@ export default function Equipa() {
  Disponíveis 24 horas por dia, 7 dias por semana, garantimos um serviço rápido, profissional e com garantia de 12 meses.
  </p>
  </Card>
-
  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
  {['Profissionalismo', 'Rapidez', 'Garantia'].map((value) => (
  <Card key={value} className="p-6 text-center">
@@ -49,7 +45,6 @@ export default function Equipa() {
  </div>
  </div>
  </section>
-
  <section className="bg-gray-50 py-16">
  <div className="container text-center">
  <h2 className="text-3xl font-bold mb-4">Entre em Contacto</h2>
@@ -59,7 +54,6 @@ export default function Equipa() {
  </div>
  </section>
  </main>
-
  <Footer />
 </div>
  );

@@ -1,6 +1,5 @@
 // Page SEO optimisée para "Eletricista Chaves"
 // 100% unique content, conforme políticas Google
-
 import Header from '@/components/Header';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import CidadesProximas from '@/components/CidadesProximas';
@@ -13,10 +12,8 @@ import { businessInfo, getCityAddress } from '@/../../shared/napConfig';
 import { getCidadesProximas } from '@/data/cidadesProximas';
 import { useEffect } from 'react';
 import FAQSection from '@/components/FAQSection';
-
 export default function Chaves() {
  const { config } = useSite();
-
  useEffect(() => {
  document.title = "Eletricista Urgente Chaves ⚡ 24h | 932 321 892";
  
@@ -83,7 +80,6 @@ export default function Chaves() {
  ]
  });
  document.head.appendChild(schemaScript);
-
  // FAQ Schema
  const faqSchema = document.createElement('script');
  faqSchema.type = 'application/ld+json';
@@ -115,16 +111,13 @@ export default function Chaves() {
  answer: "Sim, emitimos certificação elétrica para venda, arrendamento e legalização de imóveis em Chaves e todo o concelho."
  }
  ];
-
  
  return () => {
  document.head.removeChild(schemaScript);
  document.head.removeChild(faqSchema);
  };
  }, [config]);
-
  const cidadesProximas = getCidadesProximas('chaves');
-
  return (
  <>
  <SEOHead />
@@ -170,7 +163,6 @@ export default function Chaves() {
  </div>
  </div>
  </section>
-
  {/* Conteúdo específico de Chaves */}
  <section className="py-16">
  <div className="container mx-auto px-4">
@@ -253,7 +245,6 @@ export default function Chaves() {
  </div>
  </div>
  </section>
-
  {/* FAQ específica de Chaves */}
  <section className="py-16 bg-gray-50">
  <div className="container mx-auto px-4">
@@ -300,7 +291,6 @@ export default function Chaves() {
  </div>
  </div>
  </section>
-
  {/* CTA final */}
  <section className="py-16 bg-gradient-to-r from-blue-900 to-amber-700 text-white">
  <div className="container mx-auto px-4 text-center">
@@ -344,7 +334,6 @@ export default function Chaves() {
  </div>
  </div>
  </section>
-
  {/* Related Cities - Maillage interno SEO */}
  
  <section className="py-16">
@@ -359,9 +348,7 @@ export default function Chaves() {
  cidades={cidadesProximas}
  serviceType="eletricista"
  />
-
  
-
  <RelatedCities 
  currentCity="Chaves" 
  currentCitySlug="eletricista-chaves" 

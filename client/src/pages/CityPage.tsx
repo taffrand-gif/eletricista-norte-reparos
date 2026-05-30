@@ -5,7 +5,6 @@ import CookieConsent from "@/components/CookieConsent";
 import { ACTIVE_CONFIG, CITIES } from "../../../shared/serviceConfig";
 import { IMAGES } from "../../../shared/images";
 import { useSEO, generateSEOTitle, generateMetaDescription, generateLocalBusinessSchema, generateKeywords, generateBreadcrumbSchema } from "@/hooks/useSEO";
-
 export default function CityPage() {
  const [, params] = useRoute("/servicos/:citySlug");
  const citySlug = params?.citySlug || "";
@@ -18,11 +17,9 @@ export default function CityPage() {
  window.location.href = "/404";
  return null;
  }
-
  const config = ACTIVE_CONFIG;
  const formattedPhone = `${config.phone.slice(0, 3)} ${config.phone.slice(3, 6)} ${config.phone.slice(6)}`;
  const interventionsCount = getInterventionsCount(city.name);
-
  // SEO optimisé pour les pages locales
  const cityUrl = `https://${config.domain}/servicos/${city.slug}`;
  const cityImage = `https://${config.domain}/og-image.jpg`;
@@ -48,7 +45,6 @@ export default function CityPage() {
  schema: combinedSchema,
  image: cityImage,
  ogType: 'website'});
-
  const handlePhoneClick = () => {
  if (typeof window !== 'undefined' && (window as any).gtag) {
  (window as any).gtag('event', 'conversion', {
@@ -61,9 +57,7 @@ export default function CityPage() {
  window.location.href = `tel:+351${config.phone.replace(/\s/g, "")}`;
  }
  };
-
  const heroImage = config.type === 'plomberie' ? IMAGES.plomberie.hero : IMAGES.electricite.hero;
-
  return (
  <>
  <Header />
@@ -94,7 +88,6 @@ export default function CityPage() {
  </div>
  </div>
  </section>
-
  {/* Main Content */}
  <section className="py-16 bg-white">
  <div className="container">
@@ -102,19 +95,15 @@ export default function CityPage() {
  <h2 className="text-3xl font-bold text-gray-900 mb-6">
  {config.name} profissional em {city.name}
  </h2>
-
  <p className="text-lg leading-relaxed text-gray-700">
  A <strong>{config.businessName}</strong> é a sua solução de confiança para serviços de {config.name.toLowerCase()} em {city.name}. Com uma equipa de técnicos altamente qualificados e certificados, garantimos intervenções rápidas e eficazes, 24 horas por dia, todos os dias do ano, incluindo fins de semana e feriados.
  </p>
-
  <p className="text-lg leading-relaxed text-gray-700">
  Já realizámos mais de {interventionsCount} intervenções bem-sucedidas em {city.name}, conquistando a confiança de centenas de clientes. Seja qual for o problema que esteja a enfrentar, a nosso trabalho está parranjada para o resolver com rapidez e profissionalismo.
  </p>
-
  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
  Serviços disponíveis em {city.name}
  </h3>
-
  <div className="grid md:grid-cols-2 gap-4 my-8">
  {config.services.map((service, index) => (
  <div key={index} className="flex items-start gap-3 bg-gray-50 p-4 rounded-lg">
@@ -123,11 +112,9 @@ export default function CityPage() {
  </div>
  ))}
  </div>
-
  <p className="text-lg leading-relaxed text-gray-700">
  Todos os nossos {config.name.toLowerCase()}s têm formação contínua e experiência comprovada na área. Utilizamos equipamento de última geração e trabalhamos sempre em conformidade com as normas de segurança mais rigorosas.
  </p>
-
  <div className="text-center my-12">
  <button
  onClick={handlePhoneClick}
@@ -139,7 +126,6 @@ export default function CityPage() {
  </div>
  </div>
  </section>
-
  {/* Coverage Area */}
  <section className="py-16 bg-gray-50">
  <div className="container">
@@ -147,11 +133,9 @@ export default function CityPage() {
  <h2 className="text-3xl font-bold text-gray-900 mb-8">
  Cobertura em {city.name}
  </h2>
-
  <p className="text-lg text-gray-700 mb-6">
  Atendemos em toda a área de {city.name}, incluindo:
  </p>
-
  <div className="bg-white rounded-lg p-8 shadow-md">
  <ul className="grid md:grid-cols-2 gap-4">
  <li className="flex items-start gap-2">
@@ -171,7 +155,6 @@ export default function CityPage() {
  <span className="text-gray-700">Zonas industriais e comerciais</span>
  </li>
  </ul>
-
  <div className="mt-6 p-4 bg-red-50 rounded-lg">
  <p className="text-gray-900">
  <strong>Tempo médio de chegada em {city.name}:</strong> 30-40 minutos após o seu contacto
@@ -181,7 +164,6 @@ export default function CityPage() {
  </div>
  </div>
  </section>
-
  {/* Why Choose Us */}
  <section className="py-16 bg-white">
  <div className="container">
@@ -189,7 +171,6 @@ export default function CityPage() {
  <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
  Porque escolher a {config.businessName} em {city.name}?
  </h2>
-
  <div className="grid md:grid-cols-2 gap-6">
  <div className="flex items-start gap-4">
  <div className="text-3xl">⚡</div>
@@ -198,7 +179,6 @@ export default function CityPage() {
  <p className="text-gray-700">Chegamos a {city.name} em 30-40 minutos, prontos para resolver o seu problema.</p>
  </div>
  </div>
-
  <div className="flex items-start gap-4">
  <div className="text-3xl">👨‍🔧</div>
  <div>
@@ -206,7 +186,6 @@ export default function CityPage() {
  <p className="text-gray-700">Equipa qualificada com anos de experiência em {city.name}.</p>
  </div>
  </div>
-
  <div className="flex items-start gap-4">
  <div className="text-3xl">💰</div>
  <div>
@@ -214,7 +193,6 @@ export default function CityPage() {
  <p className="text-gray-700">Preços competitivos e transparentes, sem surpresas.</p>
  </div>
  </div>
-
  <div className="flex items-start gap-4">
  <div className="text-3xl">🛡️</div>
  <div>
@@ -223,7 +201,6 @@ export default function CityPage() {
  </div>
  </div>
  </div>
-
  <div className="text-center mt-12">
  <button
  onClick={handlePhoneClick}
@@ -235,13 +212,11 @@ export default function CityPage() {
  </div>
  </div>
  </section>
-
  <Footer />
  <CookieConsent />
  </>
  );
 }
-
 // Fonction pour générer un nombre d'interventions fictif basé sur le nom de la ville
 function getInterventionsCount(cityName: string): number {
  const hash = cityName.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);

@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useEffect } from 'react';
 import { Phone, Lightbulb, Sun, Moon, Shield, CheckCircle } from 'lucide-react';
-
 export default function IluminacaoExteriorJardim() {
  useEffect(() => {
  document.title = "Iluminação Exterior e de Jardim: Guia Completo 2026 | Staff Seekers";
@@ -15,7 +14,6 @@ export default function IluminacaoExteriorJardim() {
  document.head.appendChild(metaDescription);
  }
  metaDescription.setAttribute('content', 'Guia completo de iluminação exterior e de jardim. LED, IP65, segurança, ambiance e economia de energia. Transforme o exterior da sua casa.');
-
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');
@@ -23,7 +21,6 @@ export default function IluminacaoExteriorJardim() {
  document.head.appendChild(canonical);
  }
  canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/blog/iluminacao-exterior-jardim-guia');
-
  // JSON-LD Article Schema
  const script = document.createElement('script');
  script.type = 'application/ld+json';
@@ -48,12 +45,10 @@ export default function IluminacaoExteriorJardim() {
  "dateModified": "2026-02-19"
  });
  document.head.appendChild(script);
-
  return () => {
  document.head.removeChild(script);
  };
  }, []);
-
  const tiposIluminacao = [
  {
  tipo: "Iluminação de Segurança",
@@ -84,7 +79,6 @@ export default function IluminacaoExteriorJardim() {
  custo: "20€ - 60€ por metro/unidade"
  }
  ];
-
  const vantagens = [
  "Segurança reforçada (dissuasão de intrusos)",
  "Valorização estética da propriedade",
@@ -93,7 +87,6 @@ export default function IluminacaoExteriorJardim() {
  "Durabilidade superior (20.000-50.000h)",
  "Baixa manutenção"
  ];
-
  return (
  <div className="min-h-screen flex flex-col">
  <Header />
@@ -114,7 +107,6 @@ export default function IluminacaoExteriorJardim() {
  </div>
  </div>
  </section>
-
  {/* Intro */}
  <section className="py-12">
  <div className="container max-w-3xl">
@@ -132,7 +124,6 @@ export default function IluminacaoExteriorJardim() {
  </div>
  </div>
  </section>
-
  {/* Porquê Investir */}
  <section className="py-12 bg-blue-50">
  <div className="container max-w-3xl">
@@ -149,7 +140,6 @@ export default function IluminacaoExteriorJardim() {
  </div>
  </div>
  </section>
-
  {/* Tipos de Iluminação */}
  <section className="py-16">
  <div className="container max-w-3xl">
@@ -181,7 +171,6 @@ export default function IluminacaoExteriorJardim() {
  </div>
  </div>
  </section>
-
  {/* Índice de Proteção IP */}
  <section className="py-12 bg-gray-50">
  <div className="container max-w-3xl">
@@ -231,7 +220,6 @@ export default function IluminacaoExteriorJardim() {
  </div>
  </div>
  </section>
-
  {/* LED vs Tradicional */}
  <section className="py-12">
  <div className="container max-w-3xl">
@@ -286,7 +274,6 @@ export default function IluminacaoExteriorJardim() {
  </div>
  </div>
  </section>
-
  {/* Temperatura de Cor */}
  <section className="py-12 bg-gray-50">
  <div className="container max-w-3xl">
@@ -321,7 +308,6 @@ export default function IluminacaoExteriorJardim() {
  </div>
  </div>
  </section>
-
  {/* Sensores e Automação */}
  <section className="py-12">
  <div className="container max-w-3xl">
@@ -362,7 +348,6 @@ export default function IluminacaoExteriorJardim() {
  </div>
  </div>
  </section>
-
  {/* Custos */}
  <section className="py-12 bg-blue-50">
  <div className="container max-w-3xl">
@@ -405,7 +390,6 @@ export default function IluminacaoExteriorJardim() {
  </div>
  </div>
  </section>
-
  {/* CTA */}
  <section className="py-16 bg-orange-500 text-white">
  <div className="container text-center">
@@ -415,7 +399,7 @@ export default function IluminacaoExteriorJardim() {
  </h2>
  <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
  Projeto personalizado de iluminação exterior em Trás-os-Montes. 
- Orçamento gratuito e sem compromisso.
+ Sem compromisso e sem compromisso.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a href="tel:+351932321892" className="inline-flex items-center justify-center gap-2 bg-white text-orange-500 px-8 py-4 rounded-lg text-xl font-bold hover:bg-gray-100 transition-all shadow-lg">
@@ -428,7 +412,6 @@ export default function IluminacaoExteriorJardim() {
  </div>
  </div>
  </section>
-
  {/* Artigos Relacionados */}
  <section className="py-12 bg-gray-50">
  <div className="container max-w-3xl">

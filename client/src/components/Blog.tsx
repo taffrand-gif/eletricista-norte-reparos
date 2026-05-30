@@ -2,11 +2,9 @@
 import { useSite } from '@/contexts/SiteContext';
 import { Calendar, ArrowRight } from 'lucide-react';
 import OptimizedImage from './OptimizedImage';
-
 export default function Blog() {
  const { config } = useSite();
  const isPlumber = config.id === 'norte-reparos';
-
  const plumbArticles = [
  {
  title: 'Como Detetar uma Fuga de Água em Casa',
@@ -30,7 +28,6 @@ export default function Blog() {
  image: '/images-optimized/services/service-desentupimentos.jpg',
  link: '/blog'},
  ];
-
  const electricArticles = [
  {
  title: 'Como Instalar um Candeeiro de Teto em Segurança',
@@ -54,9 +51,7 @@ export default function Blog() {
  image: '/images-optimized/blog/featured-electrician.jpg',
  link: '/blog/sinais-problemas-eletricos-casa'},
  ];
-
  const articles = isPlumber ? plumbArticles : electricArticles;
-
  return (
  <section id="blog" className="py-20 bg-white">
  <div className="container">
@@ -69,7 +64,6 @@ export default function Blog() {
  Conselhos profissionais, guias práticos e dicas para manter tudo em perfeito funcionamento na sua casa em Trás-os-Montes.
  </p>
  </div>
-
  {/* Grelha de artigos */}
  <div className="grid md:grid-cols-3 gap-8 mb-12">
  {articles.map((article, index) => (
@@ -90,7 +84,6 @@ export default function Blog() {
  objectFit="cover"
  />
  </div>
-
  {/* Conteúdo */}
  <div className="p-6">
  {/* Meta */}
@@ -102,17 +95,14 @@ export default function Blog() {
  <span>•</span>
  <span>{article.readTime} leitura</span>
  </div>
-
  {/* Título */}
  <h3 className="font-black text-xl mb-3 leading-tight">
  {article.title}
  </h3>
-
  {/* Excerto */}
  <p className="text-gray-700 mb-4 leading-relaxed">
  {article.excerpt}
  </p>
-
  {/* CTA */}
  <span
  className="inline-flex items-center gap-2 font-bold hover:gap-3 transition-all"
@@ -126,7 +116,6 @@ export default function Blog() {
  </article>
  ))}
  </div>
-
  {/* CTA inferior */}
  <div className="text-center">
  <a

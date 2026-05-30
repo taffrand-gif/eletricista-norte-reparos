@@ -1,21 +1,16 @@
 import { createRoot } from "react-dom/client";
 import App from "./App";
 import "./index.css";
-
 const isDev = import.meta.env.DEV;
-
 if (isDev) console.log('[MAIN] Script loaded, readyState:', document.readyState);
-
 function mountApp() {
  if (isDev) console.log('[MAIN] mountApp called');
  const rootElement = document.getElementById("root");
  if (isDev) console.log('[MAIN] rootElement:', rootElement);
-
  if (!rootElement) {
  console.error('[MAIN] Root element not found!');
  throw new Error('Root element not found');
  }
-
  if (isDev) console.log('[MAIN] Creating React root...');
  try {
  createRoot(rootElement).render(<App />);
@@ -25,7 +20,6 @@ function mountApp() {
  throw error;
  }
 }
-
 // Wait for DOM to be ready before mounting React
 if (isDev) console.log('[MAIN] Setting up mount logic...');
 if (document.readyState === 'loading') {

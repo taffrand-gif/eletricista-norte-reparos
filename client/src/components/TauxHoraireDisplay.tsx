@@ -1,14 +1,11 @@
 import React from 'react';
 import { useSite } from '@/contexts/SiteContext';
-
 interface TauxHoraireDisplayProps {
  className?: string;
 }
-
 function TauxHoraireDisplay({ className = '' }: TauxHoraireDisplayProps) {
  const { config } = useSite();
  const accentColor = config.id === 'norte-reparos' ? '#0e7490' : '#FF6B35';
-
  return (
  <section className={`py-16 bg-gradient-to-br from-gray-50 to-white ${className}`}>
  <div className="container mx-auto px-4 max-w-5xl">
@@ -21,13 +18,11 @@ function TauxHoraireDisplay({ className = '' }: TauxHoraireDisplayProps) {
  Sem surpresas. Preços claros comunicados antes de começar qualquer trabalho.
  </p>
  </div>
-
  {/* Taxa Horária Principal */}
  <div className="bg-white rounded-2xl shadow-xl p-8 mb-8 border-2" style={{ borderColor: accentColor }}>
  <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
  Taxa Horária de Mão de Obra
  </h3>
-
  <div className="grid md:grid-cols-3 gap-6 mb-8">
  {/* Normal */}
  <div className="bg-gray-50 rounded-xl p-6 text-center">
@@ -38,7 +33,6 @@ function TauxHoraireDisplay({ className = '' }: TauxHoraireDisplayProps) {
  70€<span className="text-xl text-gray-600">/h</span>
  </div>
  </div>
-
  {/* Sábado */}
  <div className="bg-blue-50 rounded-xl p-6 text-center border-2 border-blue-200">
  <div className="text-4xl mb-3">📅</div>
@@ -48,7 +42,6 @@ function TauxHoraireDisplay({ className = '' }: TauxHoraireDisplayProps) {
  90€<span className="text-xl text-gray-600">/h</span>
  </div>
  </div>
-
  {/* Domingo/Feriado */}
  <div className="bg-red-50 rounded-xl p-6 text-center border-2 border-red-200">
  <div className="text-4xl mb-3">🎉</div>
@@ -59,7 +52,6 @@ function TauxHoraireDisplay({ className = '' }: TauxHoraireDisplayProps) {
  </div>
  </div>
  </div>
-
  {/* Acréscimos Noturnos */}
  <div className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl p-6 border-2 border-indigo-200">
  <div className="flex items-start gap-4">
@@ -83,13 +75,11 @@ function TauxHoraireDisplay({ className = '' }: TauxHoraireDisplayProps) {
  </div>
  </div>
  </div>
-
  {/* Custos de Deslocação */}
  <div className="bg-white rounded-2xl shadow-xl p-8">
  <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
  Custos de Deslocação por Zona
  </h3>
-
  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
  {/* Zona 1 */}
  <div className="bg-green-50 rounded-xl p-5 border-2 border-green-200">
@@ -100,7 +90,6 @@ function TauxHoraireDisplay({ className = '' }: TauxHoraireDisplayProps) {
  <p className="text-sm text-gray-600">≤ 15 km</p>
  <p className="text-xs text-gray-500 mt-2">Macedo de Cavaleiros, centro</p>
  </div>
-
  {/* Zona 2 */}
  <div className="bg-blue-50 rounded-xl p-5 border-2 border-blue-200">
  <div className="flex justify-between items-center mb-2">
@@ -110,7 +99,6 @@ function TauxHoraireDisplay({ className = '' }: TauxHoraireDisplayProps) {
  <p className="text-sm text-gray-600">15-35 km</p>
  <p className="text-xs text-gray-500 mt-2">Mirandela, Vila Flor</p>
  </div>
-
  {/* Zona 3 */}
  <div className="bg-yellow-50 rounded-xl p-5 border-2 border-yellow-200">
  <div className="flex justify-between items-center mb-2">
@@ -120,7 +108,6 @@ function TauxHoraireDisplay({ className = '' }: TauxHoraireDisplayProps) {
  <p className="text-sm text-gray-600">35-60 km</p>
  <p className="text-xs text-gray-500 mt-2">Bragança, Vinhais</p>
  </div>
-
  {/* Zona 4 */}
  <div className="bg-orange-50 rounded-xl p-5 border-2 border-orange-200">
  <div className="flex justify-between items-center mb-2">
@@ -130,7 +117,6 @@ function TauxHoraireDisplay({ className = '' }: TauxHoraireDisplayProps) {
  <p className="text-sm text-gray-600">60-90 km</p>
  <p className="text-xs text-gray-500 mt-2">Miranda do Douro</p>
  </div>
-
  {/* Zona 5 */}
  <div className="bg-red-50 rounded-xl p-5 border-2 border-red-200">
  <div className="flex justify-between items-center mb-2">
@@ -140,7 +126,6 @@ function TauxHoraireDisplay({ className = '' }: TauxHoraireDisplayProps) {
  <p className="text-sm text-gray-600">90-120 km</p>
  <p className="text-xs text-gray-500 mt-2">Vila Real, Lamego</p>
  </div>
-
  {/* Zona 6 */}
  <div className="bg-purple-50 rounded-xl p-5 border-2 border-purple-200">
  <div className="flex justify-between items-center mb-2">
@@ -151,7 +136,6 @@ function TauxHoraireDisplay({ className = '' }: TauxHoraireDisplayProps) {
  <p className="text-xs text-gray-500 mt-2">Chaves, Montalegre</p>
  </div>
  </div>
-
  <div className="mt-6 bg-gray-50 rounded-xl p-4">
  <p className="text-sm text-gray-600 text-center">
  <strong>Nota:</strong> Os custos de deslocação são calculados em função da distância desde a nossa base em Macedo de Cavaleiros.
@@ -159,7 +143,6 @@ function TauxHoraireDisplay({ className = '' }: TauxHoraireDisplayProps) {
  </p>
  </div>
  </div>
-
  {/* Exemplo de Cálculo */}
  <div className="mt-8 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 border-2 border-blue-200">
  <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
@@ -194,5 +177,4 @@ function TauxHoraireDisplay({ className = '' }: TauxHoraireDisplayProps) {
  </section>
  );
 }
-
 export default React.memo(TauxHoraireDisplay);

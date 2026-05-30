@@ -1,12 +1,10 @@
 import React from 'react';
 import { useSite } from '@/contexts/SiteContext';
-
 export default function Garantias() {
  const { config } = useSite();
  const isPlumber = config.id === 'norte-reparos';
  const phone = isPlumber ? '928 484 451' : '932 321 892';
  const accentColor = isPlumber ? '#0e7490' : '#FF6B35';
-
  const guarantees = isPlumber
  ? [
  {
@@ -72,7 +70,6 @@ export default function Garantias() {
  desc: 'Arranjamos hoje e amanhã ainda atendemos o telefone. SMS de seguimento no dia seguinte.',
  pain: 'Se o nosso trabalho causar dano, assumimos a responsabilidade.'},
  ];
-
  return (
  <section className="py-16 bg-white">
  <div className="container mx-auto px-4 max-w-6xl">
@@ -86,7 +83,6 @@ export default function Garantias() {
  : 'Cansado de eletricistas que prometem e não cumprem, cobram sem orçamento e deixam a instalação pior? Nós fazemos diferente.'}
  </p>
  </div>
-
  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
  {guarantees.map((g, idx) => (
  <div
@@ -104,7 +100,6 @@ export default function Garantias() {
  </div>
  ))}
  </div>
-
  <div className="text-center mt-10">
  <p className="text-gray-700 text-lg font-semibold mb-4">
  {isPlumber

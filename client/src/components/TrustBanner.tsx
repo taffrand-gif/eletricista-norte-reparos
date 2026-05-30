@@ -1,22 +1,18 @@
 // Bandeau de confiance animé com compteur
 import { useSite } from '@/contexts/SiteContext';
 import { useEffect, useRef, useState } from 'react';
-
 const trustItems = [
  { icon: '🕐', label: 'Disponível 24/7' },
  { icon: '💰', label: 'Orçamento Gratuito' },
  { icon: '✅', label: 'Garantia de Serviço' },
  { icon: '📍', label: 'Toda Trás-os-Montes' },
 ];
-
 function useCountUp(target: number, duration: number = 2000, start: boolean = false) {
  const [count, setCount] = useState(0);
-
  useEffect(() => {
  if (!start) return;
  let startTime: number | null = null;
  let raf: number;
-
  const animate = (timestamp: number) => {
  if (!startTime) startTime = timestamp;
  const progress = Math.min((timestamp - startTime) / duration, 1);
@@ -27,14 +23,11 @@ function useCountUp(target: number, duration: number = 2000, start: boolean = fa
  raf = requestAnimationFrame(animate);
  }
  };
-
  raf = requestAnimationFrame(animate);
  return () => cancelAnimationFrame(raf);
  }, [target, duration, start]);
-
  return count;
 }
-
 export default function TrustBanner() {
  const { config } = useSite();
  const ref = useRef<HTMLElement>(null);
@@ -42,7 +35,6 @@ export default function TrustBanner() {
  const count = useCountUp(350, 2000, visible);
  // Show target value immediately for crawlers/noscript, animate only replaces it
  const displayCount = visible ? count : 350;
-
  useEffect(() => {
  const observer = new IntersectionObserver(
  ([entry]) => {
@@ -56,7 +48,6 @@ export default function TrustBanner() {
  if (ref.current) observer.observe(ref.current);
  return () => observer.disconnect();
  }, []);
-
  return (
  <section
  ref={ref}
@@ -79,7 +70,6 @@ export default function TrustBanner() {
  </div>
  ))}
  </div>
-
  {/* Counter */}
  <div className="text-center">
  <p className="text-lg font-bold text-gray-800">

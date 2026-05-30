@@ -1,38 +1,31 @@
 // Componente Structured Data (Schema.org)
 // Schema Markup LocalBusiness: Plumber para norte-reparos, Electrician para staff-seekers
-
 import { useEffect } from 'react';
 import { useSite } from '@/contexts/SiteContext';
 import { useLocation as useWouterLocation } from 'wouter';
 import { useLocation } from '@/contexts/LocationContext';
 import { businessInfo, getCityAddress } from '@/../../shared/napConfig';
-
 export default function StructuredData() {
  const { config } = useSite();
  const [location] = useWouterLocation();
  const { getCurrentCity } = useLocation();
-
  useEffect(() => {
  // Remover scripts existentes
  const existingScripts = document.querySelectorAll('script[type="application/ld+json"]');
  existingScripts.forEach(script => script.remove());
-
  const businessType = 'Electrician';
  const serviceName = 'Eletricista';
  const detectedCity = getCurrentCity();
-
  // Não adicionar FAQPage nas páginas cidade (CityServicePage já tem seu próprio FAQPage)
  // Pattern: /:service-:city (ex: /eletricista-lamego, /instalacao-eletrica-braganca)
  const isCityServicePage = location.match(/\/[a-z-]+-[a-z-]+$/);
  const shouldIncludeFAQ = !isCityServicePage;
-
  // Lista das 10 cidades servidas
  const citiesServed = [
  "Bragança", "Macedo de Cavaleiros", "Mirandela", "Chaves",
  "Vila Real", "Vinhais", "Miranda do Douro", "Mogadouro",
  "Torre de Moncorvo", "Freixo de Espada à Cinta", "Valpaços", "Alfândega da Fé"
  ];
-
  // LocalBusiness Schema enriquecido
  const localBusinessSchema = {
  "@context": "https://schema.org",
@@ -147,7 +140,6 @@ export default function StructuredData() {
  }
  }))
  };
-
  // Service Schema (geral)
  const serviceSchema = {
  "@context": "https://schema.org",
@@ -200,7 +192,6 @@ export default function StructuredData() {
  }
  }
  };
-
  // Service Schema específico para as páginas cidade
  const getCityServiceSchema = () => {
  const cityPages = [
@@ -215,15 +206,13 @@ export default function StructuredData() {
  { path: '/eletricista-torre-moncorvo', city: 'Torre de Moncorvo' },
  { path: '/eletricista-freixo-espada-cinta', city: 'Freixo de Espada à Cinta' }
  ];
-
  const currentCity = cityPages.find(page => location === page.path);
  if (!currentCity) return null;
-
  return {
  "@context": "https://schema.org",
  "@type": "Service",
  "name": `${serviceName} em ${currentCity.city}`,
- "description": `${serviceName} profissional em ${currentCity.city}, Trás-os-Montes. Serviço 24h, urgências, orçamento gratuito.`,
+ "description": `${serviceName} profissional em ${currentCity.city}, Trás-os-Montes. Serviço 24h, urgências, sem compromisso.`,
  "provider": {
  "@id": `https://${config.domain}/#organization`
  },
@@ -251,7 +240,6 @@ export default function StructuredData() {
  }
  };
  };
-
  // Reviews Schema melhorado
  const reviewsSchema = config.testimonials.map((testimonial, index) => ({
  "@context": "https://schema.org",
@@ -281,7 +269,6 @@ export default function StructuredData() {
  "name": config.name
  }
  }));
-
  // WebSite Schema
  const websiteSchema = {
  "@context": "https://schema.org",
@@ -294,7 +281,6 @@ export default function StructuredData() {
  "@id": `https://${config.domain}/#organization`
  }
  };
-
  // Organization Schema enrichi
  const organizationSchema = {
  "@context": "https://schema.org",
@@ -377,7 +363,6 @@ export default function StructuredData() {
  "knowsLanguage": ["pt-PT"],
  "slogan": "Serviço 24h/7d em Trás-os-Montes • certificação elétrica • Chegamos em 40 minutos"
  };
-
  // FAQ Schema enriquecido
  const faqSchema = {
  "@context": "https://schema.org",
@@ -412,7 +397,7 @@ export default function StructuredData() {
  "name": "Quanto custa uma intervenção?",
  "acceptedAnswer": {
  "@type": "Answer",
- "text": "Os preços variam conforme o serviço e a localização. Oferecemos orçamento gratuito e sem compromisso. Preços a partir de 50€ para instalação de tomadas."
+ "text": "Os preços variam conforme o serviço e a localização. Oferecemos sem compromisso e sem compromisso. Preços a partir de 50€ para instalação de tomadas."
  }
  },
  {
@@ -425,7 +410,6 @@ export default function StructuredData() {
  }
  ]
  };
-
  // BreadcrumbList Schema dinâmico
  const getBreadcrumbSchema = () => {
  const breadcrumbItems = [
@@ -436,7 +420,6 @@ export default function StructuredData() {
  "item": `https://${config.domain}`
  }
  ];
-
  // Páginas cidade
  const cityPages = [
  { path: '/eletricista-chaves', city: 'Chaves' },
@@ -450,9 +433,7 @@ export default function StructuredData() {
  { path: '/eletricista-torre-moncorvo', city: 'Torre de Moncorvo' },
  { path: '/eletricista-freixo-espada-cinta', city: 'Freixo de Espada à Cinta' }
  ];
-
  const currentCity = cityPages.find(page => location === page.path);
-
  if (currentCity) {
  breadcrumbItems.push({
  "@type": "ListItem",
@@ -478,7 +459,6 @@ export default function StructuredData() {
  '/sobre': 'Sobre Nós',
  '/blog': 'Blog'
  };
-
  const pageTitle = pageTitles[location] || location.split('/').pop()?.replace(/-/g, ' ');
  if (pageTitle) {
  breadcrumbItems.push({
@@ -489,16 +469,13 @@ export default function StructuredData() {
  });
  }
  }
-
  return {
  "@context": "https://schema.org",
  "@type": "BreadcrumbList",
  "itemListElement": breadcrumbItems
  };
  };
-
  const breadcrumbSchema = getBreadcrumbSchema();
-
  // Inserir todos os schemas
  const schemas = [
  localBusinessSchema,
@@ -508,18 +485,15 @@ export default function StructuredData() {
  breadcrumbSchema,
  ...reviewsSchema
  ];
-
  // Adicionar FAQPage apenas se não estiver numa página cidade (evitar duplicação)
  if (shouldIncludeFAQ) {
  schemas.push(faqSchema);
  }
-
  // Adicionar o schema específico da cidade se aplicável
  const cityServiceSchema = getCityServiceSchema();
  if (cityServiceSchema) {
  schemas.push(cityServiceSchema);
  }
-
  schemas.forEach(schema => {
  const script = document.createElement('script');
  script.type = 'application/ld+json';
@@ -527,6 +501,5 @@ export default function StructuredData() {
  document.head.appendChild(script);
  });
  }, [config, location, getCurrentCity]);
-
  return null;
 }

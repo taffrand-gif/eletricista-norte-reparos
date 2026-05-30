@@ -9,7 +9,6 @@ import { businessInfo, getCityAddress } from '@/../../shared/napConfig';
 import { getCidadesProximas } from '@/data/cidadesProximas';
 import { useEffect } from 'react';
 import { Phone, Zap, Shield, CheckCircle } from 'lucide-react';
-
 export default function FreixoEspadaCinta() {
  useEffect(() => {
  document.title = "Eletricista Freixo Espada à Cinta 24h | 932 321 892";
@@ -20,8 +19,7 @@ export default function FreixoEspadaCinta() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Eletricista em Freixo de Espada à Cinta disponível 24h. Arranjo de avarias elétricas, quadros elétricos. Servimos todo o concelho. Orçamento gratuito.');
-
+ metaDescription.setAttribute('content', 'Eletricista em Freixo de Espada à Cinta disponível 24h. Arranjo de avarias elétricas, quadros elétricos. Servimos todo o concelho. Sem compromisso.');
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');
@@ -29,7 +27,6 @@ export default function FreixoEspadaCinta() {
  document.head.appendChild(canonical);
  }
  canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/eletricista-freixo-espada-cinta');
-
  const schemaScript = document.createElement('script');
  schemaScript.type = 'application/ld+json';
  schemaScript.id = 'schema-freixo';
@@ -43,7 +40,6 @@ export default function FreixoEspadaCinta() {
  "openingHours": "Mo-Su 00:00-23:59"
  });
  document.head.appendChild(schemaScript);
-
  // FAQ Schema
  const faqSchema = document.createElement('script');
  faqSchema.type = 'application/ld+json';
@@ -61,15 +57,12 @@ export default function FreixoEspadaCinta() {
  }))
  });
  document.head.appendChild(faqSchema);
-
  return () => {
  const existingSchema = document.getElementById('schema-freixo');
  if (existingSchema) existingSchema.remove();
  };
  }, []);
-
  const cidadesProximas = getCidadesProximas('freixo-espada-cinta');
-
  const faqs = [
  { question: "Chegam a Freixo de Espada à Cinta?", answer: "Sim, cobrimos todo o concelho de Freixo de Espada à Cinta. Tempo de chegada: 60-70 minutos." },
  {
@@ -77,7 +70,6 @@ export default function FreixoEspadaCinta() {
  answer: "A deslocação é de 35€ (Zona 3). Chegamos em aproximadamente 55-60 minutos. Inclui todo o concelho."
  }
  ];
-
  return (
  <div className="min-h-screen flex flex-col">
  <Header />
@@ -93,7 +85,6 @@ export default function FreixoEspadaCinta() {
  </div>
  </div>
  </section>
-
  <section className="py-16 bg-gray-50">
  <div className="container">
  <h2 className="text-3xl font-black text-center mb-12">Serviços Elétricos em Freixo</h2>
@@ -112,16 +103,13 @@ export default function FreixoEspadaCinta() {
  </div>
  </div>
  </section>
-
  <section className="py-16"><div className="container max-w-4xl"><h2 className="text-3xl font-black text-center mb-12">Perguntas Frequentes</h2><FAQSection faqs={faqs} /></div></section>
-
  <section className="py-16 bg-orange-500 text-white">
  <div className="container text-center">
  <h2 className="text-3xl font-black mb-4">Precisa de Eletricista em Freixo?</h2>
  <a href={`tel:${businessInfo.phone}`} className="inline-flex items-center gap-2 bg-white text-orange-500 px-8 py-4 rounded-lg text-xl font-bold hover:bg-gray-100 transition-all shadow-lg"><Phone className="w-6 h-6" />{businessInfo.phoneFormatted}</a>
  </div>
  </section>
-
  {/* Related Cities - Maillage interno SEO */}
  {/* Cidades Próximas - Internal Linking */}
  <CidadesProximas
@@ -129,7 +117,6 @@ export default function FreixoEspadaCinta() {
  cidades={cidadesProximas}
  serviceType="eletricista"
  />
-
  
  <RelatedCities 
  currentCity="Freixo de Espada à Cinta" 

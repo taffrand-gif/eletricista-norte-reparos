@@ -1,12 +1,9 @@
 // Badge "Orçamento Gratuito" bem visível
 // Aparece abaixo do hero, acima dos serviços
-
 import { useSite } from '@/contexts/SiteContext';
 import { Shield, Phone } from 'lucide-react';
-
 export default function OrcamentoGratuitoBadge() {
  const { config } = useSite();
-
  return (
  <section className="py-6 bg-gradient-to-r from-green-500 to-green-600">
  <div className="container mx-auto px-4">

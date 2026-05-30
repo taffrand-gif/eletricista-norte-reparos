@@ -1,7 +1,6 @@
 import { TESTIMONIALS, Testimonial } from "@/data/testimonialsData";
 import { ACTIVE_CONFIG } from "../../../shared/serviceConfig";
 import { useState, useEffect } from "react";
-
 export function TestimonialsSection() {
  const { gradient } = ACTIVE_CONFIG;
  const config = ACTIVE_CONFIG;
@@ -9,7 +8,6 @@ export function TestimonialsSection() {
  const featured = testimonials.slice(0, 6); // Top 6 témoignages
  
  const [currentIndex, setCurrentIndex] = useState(0);
-
  // Auto-rotation carousel
  useEffect(() => {
  const timer = setInterval(() => {
@@ -18,9 +16,7 @@ export function TestimonialsSection() {
  
  return () => clearInterval(timer);
  }, [featured.length]);
-
  const visibleTestimonials = featured.slice(currentIndex * 3, currentIndex * 3 + 3);
-
  // Schema.org Review markup
  const reviewSchema = {
  "@context": "https://schema.org",
@@ -39,7 +35,6 @@ export function TestimonialsSection() {
  "reviewBody": t.text
  }))
  };
-
  return (
  <section className="py-16 bg-gradient-to-br from-red-50 to-orange-50">
  {/* Schema.org markup */}
@@ -59,7 +54,6 @@ export function TestimonialsSection() {
  Atendemos clientes em toda a região de Trás-os-Montes confiam nos nossos serviços
  </p>
  </div>
-
  {/* Testimonials Grid */}
  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
  {visibleTestimonials.map((testimonial: Testimonial, idx: number) => (
@@ -73,12 +67,10 @@ export function TestimonialsSection() {
  <span key={i} className="text-yellow-400 text-2xl">⭐</span>
  ))}
  </div>
-
  {/* Text */}
  <p className="text-gray-700 mb-6 italic leading-relaxed">
  "{testimonial.text}"
  </p>
-
  {/* Author */}
  <div className="flex items-center gap-4 pt-4 border-t border-gray-200">
  <div className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-xl" style={{backgroundColor: gradient.from}}>
@@ -94,7 +86,6 @@ export function TestimonialsSection() {
  </div>
  ))}
  </div>
-
  {/* Carousel Indicators */}
  <div className="flex justify-center gap-2">
  {[...Array(Math.ceil(featured.length / 3))].map((_, idx) => (
@@ -109,7 +100,6 @@ export function TestimonialsSection() {
  />
  ))}
  </div>
-
  {/* CTA */}
  <div className="text-center mt-12">
  <a

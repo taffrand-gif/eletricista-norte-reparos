@@ -1,7 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'wouter';
 import { Phone, MessageCircle, Shield, Zap, AlertTriangle, CheckCircle } from 'lucide-react';
-
 export default function InstalacaoTomadasSeguranca() {
  return (
  <>
@@ -43,7 +42,6 @@ export default function InstalacaoTomadasSeguranca() {
  })}
  </script>
  </Helmet>
-
  <article className="max-w-4xl mx-auto px-4 py-12">
  <header className="mb-8">
  <Link href="/blog">
@@ -58,14 +56,12 @@ export default function InstalacaoTomadasSeguranca() {
  <span>10 min de leitura</span>
  </div>
  </header>
-
  <div className="prose prose-lg max-w-none mb-8">
  <p className="text-xl text-gray-700 leading-relaxed">
  A instalação de tomadas elétricas parece simples, mas envolve riscos graves se mal executada.
  Descubra tudo sobre tipos de tomadas, normas de segurança, quantidades recomendadas e preços em 2026.
  </p>
  </div>
-
  {/* CTA */}
  <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl p-6 mb-12 text-white">
  <div className="flex flex-col md:flex-row items-center justify-between">
@@ -85,34 +81,28 @@ export default function InstalacaoTomadasSeguranca() {
  </div>
  </div>
  </div>
-
  <div className="prose prose-lg max-w-none">
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Tipos de Tomadas em Portugal</h2>
-
  <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">1. Tomada Schuko (Tipo F)</h3>
  <p>
  A tomada padrão em Portugal. Tem dois pinos redondos e dois contactos laterais para ligação à terra.
  Suporta até 16A (3680W). Usada para a maioria dos aparelhos domésticos.
  </p>
-
  <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">2. Tomada USB</h3>
  <p>
  Tomada moderna com portas USB integradas (USB-A ou USB-C). Permite carregar telemóveis e tablets sem adaptador.
  Cada porta fornece 2.4A (12W). Ideal para quartos e salas.
  </p>
-
  <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">3. Tomada Exterior (IP44/IP65)</h3>
  <p>
  Tomada resistente à água e pó. IP44 para áreas cobertas (alpendres), IP65 para exterior total (jardins).
  Obrigatória para uso exterior segundo normas RTIEBT.
  </p>
-
  <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">4. Tomada Industrial (CEE)</h3>
  <p>
  Tomada trifásica para equipamentos industriais. Suporta 16A, 32A ou 63A. Usada para máquinas pesadas,
  compressores e equipamentos profissionais.
  </p>
-
  <div className="bg-yellow-50 border-l-4 border-yellow-600 p-6 my-8">
  <div className="flex items-start gap-3">
  <AlertTriangle className="w-6 h-6 text-yellow-600 flex-shrink-0 mt-1" />
@@ -125,14 +115,11 @@ export default function InstalacaoTomadasSeguranca() {
  </div>
  </div>
  </div>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Quantas Tomadas Precisa?</h2>
-
  <p>
  As normas RTIEBT estabelecem quantidades mínimas por divisão para evitar uso excessivo de extensões
  (que causam sobrecargas e incêndios).
  </p>
-
  <div className="overflow-x-auto my-8">
  <table className="min-w-full bg-white border border-gray-300">
  <thead className="bg-gray-100">
@@ -177,9 +164,7 @@ export default function InstalacaoTomadasSeguranca() {
  </tbody>
  </table>
  </div>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Normas de Segurança RTIEBT</h2>
-
  <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Altura de Instalação</h3>
  <ul>
  <li><strong>Tomadas gerais:</strong> 30cm do chão (mínimo 20cm)</li>
@@ -187,7 +172,6 @@ export default function InstalacaoTomadasSeguranca() {
  <li><strong>Tomadas WC:</strong> Mínimo 60cm de banheira/duche</li>
  <li><strong>Tomadas exterior:</strong> Mínimo 40cm do chão</li>
  </ul>
-
  <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Distâncias Mínimas</h3>
  <ul>
  <li><strong>Entre tomadas sala:</strong> Máximo 3,5 metros</li>
@@ -195,7 +179,6 @@ export default function InstalacaoTomadasSeguranca() {
  <li><strong>De fontes de água:</strong> Mínimo 60cm</li>
  <li><strong>De fontes de calor:</strong> Mínimo 30cm</li>
  </ul>
-
  <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Circuitos Dedicados</h3>
  <p>
  Aparelhos de alta potência precisam de circuito dedicado (tomada exclusiva no quadro):
@@ -208,9 +191,7 @@ export default function InstalacaoTomadasSeguranca() {
  <li>Ar condicionado (16-20A)</li>
  <li>Esquentador elétrico (25A)</li>
  </ul>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Preços Instalação Tomadas 2026</h2>
-
  <div className="overflow-x-auto my-8">
  <table className="min-w-full bg-white border border-gray-300">
  <thead className="bg-gray-100">
@@ -255,13 +236,10 @@ export default function InstalacaoTomadasSeguranca() {
  </tbody>
  </table>
  </div>
-
  <p className="text-sm text-gray-600 italic">
  * Preços válidos para Bragança e Trás-os-Montes em 2026. Incluem IVA.
  </p>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Sinais de Tomadas Perigosas</h2>
-
  <div className="grid md:grid-cols-2 gap-6 my-8">
  <div className="bg-red-50 border border-red-200 rounded-lg p-6">
  <h4 className="font-bold text-red-900 mb-3 flex items-center gap-2">
@@ -280,7 +258,6 @@ export default function InstalacaoTomadasSeguranca() {
  → Desligue imediatamente e contacte eletricista
  </p>
  </div>
-
  <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
  <h4 className="font-bold text-yellow-900 mb-3 flex items-center gap-2">
  <AlertTriangle className="w-5 h-5" />
@@ -299,9 +276,7 @@ export default function InstalacaoTomadasSeguranca() {
  </p>
  </div>
  </div>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Perguntas Frequentes</h2>
-
  <div className="space-y-6 my-8">
  <div className="bg-gray-50 rounded-lg p-6">
  <h4 className="font-bold text-gray-900 mb-2">Posso usar extensões permanentemente?</h4>
@@ -310,7 +285,6 @@ export default function InstalacaoTomadasSeguranca() {
  Se precisa de mais tomadas, instale tomadas fixas com eletricista certificado.
  </p>
  </div>
-
  <div className="bg-gray-50 rounded-lg p-6">
  <h4 className="font-bold text-gray-900 mb-2">Tomadas antigas sem terra são perigosas?</h4>
  <p className="text-gray-700 mb-0">
@@ -318,7 +292,6 @@ export default function InstalacaoTomadasSeguranca() {
  (computadores, TVs). Substitua por tomadas Schuko com terra funcional.
  </p>
  </div>
-
  <div className="bg-gray-50 rounded-lg p-6">
  <h4 className="font-bold text-gray-900 mb-2">Quanto tempo demora instalar uma tomada?</h4>
  <p className="text-gray-700 mb-0">
@@ -326,7 +299,6 @@ export default function InstalacaoTomadasSeguranca() {
  Instalação de 5-10 tomadas numa renovação: 4-6 horas.
  </p>
  </div>
-
  <div className="bg-gray-50 rounded-lg p-6">
  <h4 className="font-bold text-gray-900 mb-2">Preciso de certificação elétrica?</h4>
  <p className="text-gray-700 mb-0">
@@ -335,20 +307,16 @@ export default function InstalacaoTomadasSeguranca() {
  </p>
  </div>
  </div>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Conclusão</h2>
-
  <p>
  A instalação correta de tomadas é essencial para segurança e conforto. Respeite as normas RTIEBT,
  instale quantidades adequadas por divisão e contrate sempre eletricista certificado.
  </p>
-
  <p>
  O investimento de 35-60€ por tomada previne choques elétricos, incêndios e danos em equipamentos.
  Não arrisque com instalações amadoras ou uso excessivo de extensões.
  </p>
  </div>
-
  {/* Final CTA */}
  <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl p-8 mt-12 text-white text-center">
  <h3 className="text-2xl font-bold mb-4">Precisa de Instalar ou Substituir Tomadas?</h3>
@@ -369,7 +337,6 @@ export default function InstalacaoTomadasSeguranca() {
  ✓ Orçamento Gratuito ✓ certificação elétrica Incluída ✓ Garantia 2 Anos
  </p>
  </div>
-
  {/* Related Articles */}
  <div className="mt-12 pt-8 border-t border-gray-200">
  <h3 className="text-2xl font-bold text-gray-900 mb-6">Artigos Relacionados</h3>

@@ -11,7 +11,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { toast } from "sonner";
-
 function QuoteForm() {
  const { gradient } = ACTIVE_CONFIG;
  const [isSubmitting, setIsSubmitting] = useState(false);
@@ -25,7 +24,6 @@ function QuoteForm() {
  serviceType: "",
  urgency: "normal" as "normal" | "urgent",
  description: ""});
-
  const createQuote = trpc.quotes.create.useMutation({
  onSuccess: () => {
  toast.success("✅ Pedido enviado com sucesso!", {
@@ -47,7 +45,6 @@ function QuoteForm() {
  description: error.message || "Por favor, tente novamente."});
  setIsSubmitting(false);
  }});
-
  const handleSubmit = async (e: React.FormEvent) => {
  e.preventDefault();
  
@@ -57,19 +54,15 @@ function QuoteForm() {
  description: "Por favor, preencha todos os campos obrigatórios."});
  return;
  }
-
  if (formData.description.length < 10) {
  toast.error("⚠️ Descrição muito curta", {
  description: "Por favor, descreva o seu problema com mais detalhe (mínimo 10 caracteres)."});
  return;
  }
-
  setIsSubmitting(true);
  createQuote.mutate(formData);
  };
-
  const { services } = ACTIVE_CONFIG;
-
  return (
  <Card className="w-full max-w-2xl mx-auto">
  <CardHeader>
@@ -95,7 +88,6 @@ function QuoteForm() {
  required
  />
  </div>
-
  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
  <div className="space-y-2">
  <Label htmlFor="email">Email *</Label>
@@ -108,7 +100,6 @@ function QuoteForm() {
  required
  />
  </div>
-
  <div className="space-y-2">
  <Label htmlFor="phone">Telefone *</Label>
  <Input
@@ -121,7 +112,6 @@ function QuoteForm() {
  />
  </div>
  </div>
-
  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
  <div className="space-y-2">
  <Label htmlFor="city">Cidade *</Label>
@@ -134,7 +124,6 @@ function QuoteForm() {
  required
  />
  </div>
-
  <div className="space-y-2">
  <Label htmlFor="address">Morada (opcional)</Label>
  <Input
@@ -147,11 +136,9 @@ function QuoteForm() {
  </div>
  </div>
  </div>
-
  {/* Detalhes do serviço */}
  <div className="space-y-4">
  <h3 className="font-semibold text-lg">Detalhes do Serviço</h3>
-
  <div className="space-y-2">
  <Label htmlFor="serviceType">Tipo de Serviço *</Label>
  <Select
@@ -170,7 +157,6 @@ function QuoteForm() {
  </SelectContent>
  </Select>
  </div>
-
  <div className="space-y-2">
  <Label>Urgência *</Label>
  <RadioGroup
@@ -192,7 +178,6 @@ function QuoteForm() {
  </div>
  </RadioGroup>
  </div>
-
  <div className="space-y-2">
  <Label htmlFor="description">Descrição do Problema *</Label>
  <Textarea
@@ -209,7 +194,6 @@ function QuoteForm() {
  </p>
  </div>
  </div>
-
  {/* Botão de submissão */}
  <Button
  type="submit"
@@ -218,7 +202,6 @@ function QuoteForm() {
  >
  {isSubmitting ? "A enviar..." : "📝 Pedir Orçamento Gratuito"}
  </Button>
-
  <p className="text-sm text-gray-500 text-center">
  Ao enviar este formulário, concorda com o processamento dos seus dados pessoais para efeitos de orçamento.
  </p>
@@ -227,5 +210,4 @@ function QuoteForm() {
  </Card>
  );
 }
-
 export default React.memo(QuoteForm);

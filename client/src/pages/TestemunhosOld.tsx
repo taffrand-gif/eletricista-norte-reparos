@@ -3,7 +3,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ACTIVE_CONFIG } from "../../../shared/serviceConfig";
 import { useSEO } from "@/hooks/useSEO";
-
 interface Testimonial {
  name: string;
  city: string;
@@ -12,32 +11,25 @@ interface Testimonial {
  text: string;
  service: string;
 }
-
 export default function Testemunhos() {
  const config = ACTIVE_CONFIG;
  const [currentIndex, setCurrentIndex] = useState(0);
  
  const testimonials = getTestimonials(config.type);
-
  useSEO({
  title: `Testemunhos de Clientes | ${config.businessName}`,
  description: `Veja o que os nossos clientes dizem sobre os serviços de ${config.name.toLowerCase()}. Centenas de clientes satisfeitos em todo o distrito de Bragança.`,
  canonical: `https://${config.domain}/testemunhos`});
-
  const nextTestimonial = () => {
  setCurrentIndex((prev) => (prev + 1) % testimonials.length);
  };
-
  const prevTestimonial = () => {
  setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
  };
-
  const goToTestimonial = (index: number) => {
  setCurrentIndex(index);
  };
-
  const averageRating = (testimonials.reduce((acc, t) => acc + t.rating, 0) / testimonials.length).toFixed(1);
-
  return (
  <>
  <Header />
@@ -69,7 +61,6 @@ export default function Testemunhos() {
  </div>
  </div>
  </section>
-
  {/* Carousel Section */}
  <section className="py-16 bg-white">
  <div className="container">
@@ -84,12 +75,10 @@ export default function Testemunhos() {
  <span key={i} className="text-yellow-400 text-3xl">★</span>
  ))}
  </div>
-
  {/* Quote */}
  <blockquote className="text-xl md:text-2xl text-gray-700 text-center mb-8 leading-relaxed">
  "{testimonials[currentIndex].text}"
  </blockquote>
-
  {/* Author Info */}
  <div className="text-center">
  <p className="font-bold text-lg text-gray-900">{testimonials[currentIndex].name}</p>
@@ -99,7 +88,6 @@ export default function Testemunhos() {
  </p>
  </div>
  </div>
-
  {/* Navigation Arrows */}
  <button
  onClick={prevTestimonial}
@@ -110,7 +98,6 @@ export default function Testemunhos() {
  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
  </svg>
  </button>
-
  <button
  onClick={nextTestimonial}
  className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 bg-white hover:bg-gray-100 rounded-full p-3 shadow-lg transition-colors"
@@ -121,7 +108,6 @@ export default function Testemunhos() {
  </svg>
  </button>
  </div>
-
  {/* Dots Navigation */}
  <div className="flex justify-center gap-2 mt-8">
  {testimonials.map((_, index) => (
@@ -138,7 +124,6 @@ export default function Testemunhos() {
  </div>
  </div>
  </section>
-
  {/* All Testimonials Grid */}
  <section className="py-16 bg-gray-50">
  <div className="container">
@@ -146,7 +131,6 @@ export default function Testemunhos() {
  <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
  Todos os Testemunhos
  </h2>
-
  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
  {testimonials.map((testimonial, index) => (
  <div key={index} className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
@@ -156,12 +140,10 @@ export default function Testemunhos() {
  <span key={i} className="text-yellow-400 text-xl">★</span>
  ))}
  </div>
-
  {/* Text */}
  <p className="text-gray-700 mb-4 leading-relaxed">
  "{testimonial.text}"
  </p>
-
  {/* Author */}
  <div className="border-t border-gray-200 pt-4">
  <p className="font-semibold text-gray-900">{testimonial.name}</p>
@@ -174,7 +156,6 @@ export default function Testemunhos() {
  </div>
  </div>
  </section>
-
  {/* CTA Section */}
  <section className="py-16 bg-white">
  <div className="container">
@@ -194,12 +175,10 @@ export default function Testemunhos() {
  </div>
  </div>
  </section>
-
  <Footer />
  </>
  );
 }
-
 function getTestimonials(serviceType: 'plomberie' | 'electricite'): Testimonial[] {
  if (serviceType === 'plomberie') {
  return [

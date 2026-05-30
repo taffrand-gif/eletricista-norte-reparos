@@ -1,7 +1,6 @@
 import React from 'react';
 import { useSite } from '@/contexts/SiteContext';
 import { Euro, Clock, Shield, Check, MapPin, AlertCircle } from 'lucide-react';
-
 export default function PriceTable() {
  const { config } = useSite();
  
@@ -23,9 +22,7 @@ export default function PriceTable() {
  price: "Sob Orçamento",
  details: ["Vistoria técnica", "Tratamos da papelada", "Garantia de aprovação"]}
  ];
-
  const interventionPrices = electricPrices;
-
  return (
  <section id="precos" className="py-16 bg-white">
  <div className="container mx-auto px-4">
@@ -39,7 +36,6 @@ export default function PriceTable() {
  "Não cobramos o tempo de viagem para enriquecer, mas para pagar o gasóleo e o desgaste da carrinha. É justo, é claro, é afixado."
  </blockquote>
  </div>
-
  {/* Zone Table */}
  {config.pricingZones && (
  <div className="mb-16">
@@ -72,7 +68,6 @@ export default function PriceTable() {
  <p className="text-xs text-gray-500 mt-2">* Valores sem IVA. O valor da deslocação é cobrado apenas uma vez por intervenção.</p>
  </div>
  )}
-
  <div className="grid md:grid-cols-2 gap-12">
  
  {/* Grelha de intervenções */}
@@ -100,7 +95,6 @@ export default function PriceTable() {
  ))}
  </div>
  </div>
-
  {/* Concrete Examples */}
  <div>
  <h3 className="text-2xl font-bold mb-6 flex items-center">
@@ -116,7 +110,6 @@ export default function PriceTable() {
  <li className="border-t border-blue-200 mt-2 pt-2 font-bold flex justify-between text-lg"><span>Total:</span> <span>50€</span></li>
  </ul>
  </div>
-
  <div className="bg-amber-50 p-6 rounded-lg border border-amber-100">
  <h4 className="font-bold text-amber-900 mb-2">"Urgência em Bragança num Domingo."</h4>
  <ul className="space-y-1 text-amber-800 text-sm">
@@ -127,7 +120,6 @@ export default function PriceTable() {
  <p className="text-xs text-amber-700 mt-2 italic">Preço anunciado ao telefone ANTES de sair.</p>
  </div>
  </div>
-
  <div className="mt-8 bg-gray-900 text-white p-6 rounded-lg text-center">
  <p className="font-bold text-lg mb-2">Dúvidas no preço?</p>
  <p className="text-gray-300 mb-4 text-sm">Ligue-nos, diga onde está e o que se passa. Damos o preço estimado na hora.</p>
@@ -136,7 +128,6 @@ export default function PriceTable() {
  </a>
  </div>
  </div>
-
  </div>
  </div>
  </section>
