@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'wouter';
-
 export default function SinaisCasaPrecisaEletricistaUrgente() {
  return (
  <>
@@ -56,14 +55,12 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  })}
  </script>
  </Helmet>
-
  <article className="max-w-4xl mx-auto px-4 py-12">
  <div className="mb-8">
  <Link href="/blog" className="text-orange-600 hover:text-orange-700 text-sm font-medium">
  ← Voltar ao Blog
  </Link>
  </div>
-
  <header className="mb-12">
  <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
  5 Sinais Que a Sua Casa Precisa de Eletricista Urgente
@@ -74,7 +71,6 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  <span>9 min de leitura</span>
  </div>
  </header>
-
  <div className="prose prose-lg max-w-none">
  <div className="bg-red-50 border-l-4 border-red-600 p-6 mb-8">
  <p className="text-lg font-semibold text-gray-900 mb-2">
@@ -84,11 +80,9 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  Se detetar <strong>cheiro a queimado, faíscas, choques elétricos ou fumo</strong>, desligue o quadro elétrico IMEDIATAMENTE e contacte eletricista urgente. Estes sinais indicam risco iminente de incêndio ou eletrocussão. Não até amanhã.
  </p>
  </div>
-
  <p className="lead text-xl text-gray-700 mb-8">
  A sua instalação elétrica pode estar a dar sinais de perigo que você ignora. Neste guia, revelamos os 5 sinais críticos que exigem eletricista urgente em Bragança e Trás-os-Montes. Proteja a sua família - saiba reconhecer os avisos.
  </p>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  1. Cheiro a Queimado ou Plástico Derretido
  </h2>
@@ -123,7 +117,6 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  <p>
  <strong>Estatística alarmante:</strong> 25% dos incêndios domésticos em Portugal têm origem elétrica. A maioria poderia ser evitada com intervenção atempada.
  </p>
-
  <div className="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
  <h3 className="text-xl font-bold text-gray-900 mb-3">
  Eletricista Urgente 24h em Bragança
@@ -148,7 +141,6 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  </a>
  </div>
  </div>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  2. Choques Elétricos ao Tocar em Aparelhos
  </h2>
@@ -182,7 +174,6 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  <li>Contacte eletricista urgente</li>
  <li>Não toque em torneiras metálicas até resolução</li>
  </ol>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  3. Disjuntor Dispara Constantemente
  </h2>
@@ -215,7 +206,6 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  <p>
  <strong>Solução:</strong> Eletricista certificado identifica causa (sobrecarga, curto-circuito, fuga, disjuntor defeituoso) e resolve definitivamente. Custo: 100-300€ conforme problema.
  </p>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  4. Faíscas em Tomadas ou Interruptores
  </h2>
@@ -250,7 +240,6 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  <p>
  <strong>Ação necessária:</strong> Não use essa tomada/interruptor. Desligue o circuito. Contacte eletricista para substituição urgente. Custo: 50-150€ conforme extensão do problema.
  </p>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  5. Luzes Piscam ou Variam de Intensidade
  </h2>
@@ -284,7 +273,6 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  <p>
  <strong>Diagnóstico:</strong> Eletricista mede tensões, verifica ligações, identifica se problema é interno ou da rede. Custo diagnóstico: 40-80€.
  </p>
-
  <div className="bg-gray-50 rounded-lg p-6 my-8">
  <h3 className="text-2xl font-bold text-gray-900 mb-4">
  Resumo: Quando Chamar Eletricista Urgente
@@ -313,7 +301,6 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  </div>
  </div>
  </div>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  Prevenção: Inspeção Anual Evita Emergências
  </h2>
@@ -330,11 +317,9 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  <p>
  <strong>Investimento vs Emergência:</strong> Inspeção preventiva 100€/ano vs emergência urgente 200-500€ + risco de incêndio. A escolha é óbvia.
  </p>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  Perguntas Frequentes (FAQ)
  </h2>
-
  <div className="space-y-6">
  <div className="border-l-4 border-orange-600 pl-4">
  <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -344,7 +329,6 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  Sinais urgentes: cheiro a queimado, disjuntor dispara frequentemente, choques elétricos ao tocar aparelhos, faíscas em tomadas/interruptores, luzes piscam constantemente. Contacte eletricista imediatamente.
  </p>
  </div>
-
  <div className="border-l-4 border-orange-600 pl-4">
  <h3 className="text-xl font-semibold text-gray-900 mb-2">
  É normal sentir choques elétricos em casa?
@@ -353,7 +337,6 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  NÃO. Choques elétricos indicam fuga de corrente grave, ligação à terra defeituosa ou isolamento danificado. Risco de eletrocussão. Desligue disjuntor e chame eletricista urgente.
  </p>
  </div>
-
  <div className="border-l-4 border-orange-600 pl-4">
  <h3 className="text-xl font-semibold text-gray-900 mb-2">
  Quando devo chamar eletricista urgente?
@@ -362,7 +345,6 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  Chame IMEDIATAMENTE se: cheiro a queimado, fumo, faíscas, choques elétricos, quadro muito quente, disjuntor não liga, ou após tempestade com sobretensão. Não , risco de incêndio.
  </p>
  </div>
-
  <div className="border-l-4 border-orange-600 pl-4">
  <h3 className="text-xl font-semibold text-gray-900 mb-2">
  Cheiro a queimado é perigoso?
@@ -371,7 +353,6 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  SIM, muito perigoso. Indica sobreaquecimento de cabos ou componentes. Precursor de incêndio elétrico. Desligue quadro imediatamente, não use instalação, chame eletricista urgente 24h.
  </p>
  </div>
-
  <div className="border-l-4 border-orange-600 pl-4">
  <h3 className="text-xl font-semibold text-gray-900 mb-2">
  Quanto custa eletricista urgente em Bragança?
@@ -381,7 +362,6 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  </p>
  </div>
  </div>
-
  <div className="bg-orange-50 border-2 border-orange-600 rounded-lg p-8 my-12">
  <h3 className="text-2xl font-bold text-gray-900 mb-4">
  Emergência Elétrica? Intervenção Rápida 24h
@@ -424,7 +404,6 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  </a>
  </div>
  </div>
-
  <div className="mt-12 pt-8 border-t border-gray-200">
  <h3 className="text-xl font-semibold text-gray-900 mb-4">
  Artigos Relacionados:

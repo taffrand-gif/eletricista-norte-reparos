@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'wouter';
-
 export default function QuadroEletricoDisparaCausas() {
  return (
  <>
@@ -56,14 +55,12 @@ export default function QuadroEletricoDisparaCausas() {
  })}
  </script>
  </Helmet>
-
  <article className="max-w-4xl mx-auto px-4 py-12">
  <div className="mb-8">
  <Link href="/blog" className="text-orange-600 hover:text-orange-700 text-sm font-medium">
  ← Voltar ao Blog
  </Link>
  </div>
-
  <header className="mb-12">
  <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
  Quadro Elétrico Dispara: 8 Causas Comuns e Como Resolver
@@ -74,7 +71,6 @@ export default function QuadroEletricoDisparaCausas() {
  <span>9 min de leitura</span>
  </div>
  </header>
-
  <div className="prose prose-lg max-w-none">
  <div className="bg-orange-50 border-l-4 border-orange-600 p-6 mb-8">
  <p className="text-lg font-semibold text-gray-900 mb-2">
@@ -84,11 +80,9 @@ export default function QuadroEletricoDisparaCausas() {
  O quadro elétrico dispara principalmente por <strong>sobrecarga</strong> (demasiados aparelhos ligados simultaneamente), <strong>curto-circuito</strong> (contacto direto entre fios), <strong>fuga de corrente</strong> (isolamento danificado) ou <strong>disjuntor defeituoso</strong>. É um mecanismo de segurança essencial que previne incêndios e choques elétricos. Se disparar frequentemente, contacte eletricista certificado.
  </p>
  </div>
-
  <p className="lead text-xl text-gray-700 mb-8">
  Está farto de ficar às escuras porque o quadro elétrico dispara constantemente? Este problema é mais comum do que pensa, especialmente em casas antigas em Trás-os-Montes. Neste guia completo, explicamos as 8 causas principais e quando deve chamar um eletricista profissional.
  </p>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  1. Sobrecarga Elétrica: A Causa Mais Comum
  </h2>
@@ -107,7 +101,6 @@ export default function QuadroEletricoDisparaCausas() {
  <p>
  <strong>Solução:</strong> Distribua aparelhos potentes (aquecedores, máquinas de lavar, fornos) por circuitos diferentes. Evite usar extensões múltiplas. Se o problema persistir, pode precisar de aumentar a potência contratada ou atualizar a instalação.
  </p>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  2. Curto-Circuito: Perigo Imediato
  </h2>
@@ -126,7 +119,6 @@ export default function QuadroEletricoDisparaCausas() {
  <p>
  <strong>Solução:</strong> NUNCA tente arranjar sozinho. Desligue o disjuntor, identifique o circuito afetado e contacte eletricista certificado imediatamente. Risco de incêndio é elevado.
  </p>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  3. Fuga de Corrente (Diferencial Dispara)
  </h2>
@@ -145,7 +137,6 @@ export default function QuadroEletricoDisparaCausas() {
  <p>
  <strong>Teste simples:</strong> Desligue todos os aparelhos. Se o diferencial continuar a disparar, o problema está na instalação fixa. Chame eletricista urgente.
  </p>
-
  <div className="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
  <h3 className="text-xl font-bold text-gray-900 mb-3">
  Precisa de Eletricista Certificado em Bragança?
@@ -170,7 +161,6 @@ export default function QuadroEletricoDisparaCausas() {
  </a>
  </div>
  </div>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  4. Disjuntor Defeituoso ou Antigo
  </h2>
@@ -189,7 +179,6 @@ export default function QuadroEletricoDisparaCausas() {
  <p>
  <strong>Solução:</strong> Substituição por eletricista. Custo: 80-150€ incluindo mão de obra. Nunca substitua por disjuntor de maior amperagem sem avaliar a instalação completa.
  </p>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  5. Instalação Elétrica Antiga e Subdimensionada
  </h2>
@@ -208,7 +197,6 @@ export default function QuadroEletricoDisparaCausas() {
  <p>
  <strong>Solução:</strong> Atualização completa da instalação. Investimento: 1.500-4.000€ conforme área. Valoriza o imóvel e elimina riscos. Financiamento disponível através de programas de eficiência energética.
  </p>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  6. Aparelho Elétrico Avariado
  </h2>
@@ -227,7 +215,6 @@ export default function QuadroEletricoDisparaCausas() {
  <p>
  <strong>Solução:</strong> Repare ou substitua o aparelho. Não continue a usar aparelhos que fazem disparar o quadro - risco de incêndio.
  </p>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  7. Humidade e Infiltrações
  </h2>
@@ -246,7 +233,6 @@ export default function QuadroEletricoDisparaCausas() {
  <p>
  <strong>Solução:</strong> Elimine a fonte de humidade primeiro. Depois, substitua componentes afetados. Use caixas estanques (IP65) em zonas húmidas.
  </p>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  8. Potência Contratada Insuficiente
  </h2>
@@ -264,7 +250,6 @@ export default function QuadroEletricoDisparaCausas() {
  <p>
  <strong>Solução:</strong> Aumente a potência contratada junto da EDP/Endesa. Custo adicional: 5-15€/mês. Alternativa: gira consumos para não usar tudo ao mesmo tempo.
  </p>
-
  <div className="bg-gray-50 rounded-lg p-6 my-8">
  <h3 className="text-2xl font-bold text-gray-900 mb-4">
  Tabela de Preços: Arranjos Quadro Elétrico em Bragança
@@ -317,7 +302,6 @@ export default function QuadroEletricoDisparaCausas() {
  * Preços incluem IVA e mão de obra. Material incluído conforme especificado. Válido para Bragança, Mirandela, Chaves, Vila Real e Macedo de Cavaleiros.
  </p>
  </div>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  Quando Chamar Eletricista Urgente?
  </h2>
@@ -335,11 +319,9 @@ export default function QuadroEletricoDisparaCausas() {
  <p>
  <strong>Não arrisque.</strong> Problemas elétricos são a 2ª causa de incêndios domésticos em Portugal. Um diagnóstico profissional custa 40-60€ e pode salvar a sua casa e família.
  </p>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  Perguntas Frequentes (FAQ)
  </h2>
-
  <div className="space-y-6">
  <div className="border-l-4 border-orange-600 pl-4">
  <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -349,7 +331,6 @@ export default function QuadroEletricoDisparaCausas() {
  O quadro dispara por sobrecarga elétrica (demasiados aparelhos ligados), curto-circuito, disjuntor defeituoso, fuga de corrente, instalação antiga ou aparelho avariado. É um mecanismo de segurança para evitar incêndios.
  </p>
  </div>
-
  <div className="border-l-4 border-orange-600 pl-4">
  <h3 className="text-xl font-semibold text-gray-900 mb-2">
  É perigoso o disjuntor disparar muitas vezes?
@@ -358,7 +339,6 @@ export default function QuadroEletricoDisparaCausas() {
  Sim. Disparos frequentes indicam problema elétrico grave que pode causar incêndio, choque elétrico ou danos em aparelhos. Nunca force o disjuntor a ficar ligado. Contacte eletricista certificado imediatamente.
  </p>
  </div>
-
  <div className="border-l-4 border-orange-600 pl-4">
  <h3 className="text-xl font-semibold text-gray-900 mb-2">
  Posso religar o quadro elétrico sozinho?
@@ -367,7 +347,6 @@ export default function QuadroEletricoDisparaCausas() {
  Pode religar uma vez, mas se disparar novamente, não insista. Desligue todos os aparelhos, religue o disjuntor e ligue aparelhos um a um para identificar o problema. Se persistir, chame eletricista.
  </p>
  </div>
-
  <div className="border-l-4 border-orange-600 pl-4">
  <h3 className="text-xl font-semibold text-gray-900 mb-2">
  Quanto custa arranjar quadro elétrico em Bragança?
@@ -376,7 +355,6 @@ export default function QuadroEletricoDisparaCausas() {
  Diagnóstico: 40-60€. Substituição disjuntor: 80-150€. Arranjo curto-circuito: 100-250€. Atualização quadro completo: 400-800€. Preços variam conforme complexidade e urgência.
  </p>
  </div>
-
  <div className="border-l-4 border-orange-600 pl-4">
  <h3 className="text-xl font-semibold text-gray-900 mb-2">
  Como evitar que o quadro dispare?
@@ -386,7 +364,6 @@ export default function QuadroEletricoDisparaCausas() {
  </p>
  </div>
  </div>
-
  <div className="bg-orange-50 border-2 border-orange-600 rounded-lg p-8 my-12">
  <h3 className="text-2xl font-bold text-gray-900 mb-4">
  Quadro Elétrico a Disparar? Resolvemos Hoje!
@@ -429,7 +406,6 @@ export default function QuadroEletricoDisparaCausas() {
  </a>
  </div>
  </div>
-
  <div className="mt-12 pt-8 border-t border-gray-200">
  <h3 className="text-xl font-semibold text-gray-900 mb-4">
  Artigos Relacionados:

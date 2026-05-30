@@ -84,16 +84,16 @@ function ExitIntentPopup() {
  {/* Benefits */}
  <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-4 mb-6 text-left border-2 border-green-200">
  <p className="text-xs font-bold text-green-700 mb-3 text-center">
- 🎁 OFERTA EXCLUSIVA PARA QUEM CONTACTAR AGORA
+ CONTACTAR-NOS
  </p>
  <ul className="space-y-2">
  <li className="flex items-center gap-2 text-sm font-semibold">
  <span className="text-green-600 text-lg">✓</span>
- <span>Orçamento 100% GRÁTIS (valor €50)</span>
+ <span>Sem compromisso</span>
  </li>
  <li className="flex items-center gap-2 text-sm font-semibold">
  <span className="text-green-600 text-lg">✓</span>
- <span>Resposta rápida ao seu contactos</span>
+ <span>Resposta rápida garantida</span>
  </li>
  <li className="flex items-center gap-2 text-sm font-semibold">
  <span className="text-green-600 text-lg">✓</span>
@@ -101,7 +101,7 @@ function ExitIntentPopup() {
  </li>
  <li className="flex items-center gap-2 text-sm font-semibold">
  <span className="text-green-600 text-lg">✓</span>
- <span>Garantia 2 anos + Trabalho garantido por escrito</span>
+ <span>Serviço com garantia</span>
  </li>
  </ul>
  </div>
@@ -117,7 +117,7 @@ function ExitIntentPopup() {
  setShowPopup(false);
  }}
  >
- 💬 SIM! QUERO ORÇAMENTO GRÁTIS
+ 💬 PEDIR ORÇAMENTO
  </a>
  <a
  href={`tel:${ACTIVE_CONFIG.phone}`}
@@ -128,7 +128,7 @@ function ExitIntentPopup() {
  setShowPopup(false);
  }}
  >
- 📞 Ou Ligar: {ACTIVE_CONFIG.phone}
+ 📞 Ou ligar: {ACTIVE_CONFIG.phone}
  </a>
  </div>
 

@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'wouter';
-
 export default function QuantoCustaEletricistaBraganca() {
  return (
  <>
@@ -56,14 +55,12 @@ export default function QuantoCustaEletricistaBraganca() {
  })}
  </script>
  </Helmet>
-
  <article className="max-w-4xl mx-auto px-4 py-12">
  <div className="mb-8">
  <Link href="/blog" className="text-orange-600 hover:text-orange-700 text-sm font-medium">
  ← Voltar ao Blog
  </Link>
  </div>
-
  <header className="mb-12">
  <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
  Quanto Custa Eletricista em Bragança? Preços 2026
@@ -74,7 +71,6 @@ export default function QuantoCustaEletricistaBraganca() {
  <span>8 min de leitura</span>
  </div>
  </header>
-
  <div className="prose prose-lg max-w-none">
  <div className="bg-orange-50 border-l-4 border-orange-600 p-6 mb-8">
  <p className="text-lg font-semibold text-gray-900 mb-2">
@@ -84,18 +80,15 @@ export default function QuantoCustaEletricistaBraganca() {
  Em Bragança, eletricista custa <strong>25-35€/hora</strong> em horário normal, <strong>45-65€/hora</strong> urgente. Chamada mínima: 50-80€. Serviços comuns: tomada 25-50€, interruptor 20-40€, quadro elétrico 400-800€, instalação completa T3 4.500-7.000€. certificação elétrica: 250-600€.
  </p>
  </div>
-
  <p className="lead text-xl text-gray-700 mb-8">
  Precisa de eletricista mas não sabe quanto vai custar? Neste guia completo, revelamos os preços reais praticados em Bragança e Trás-os-Montes em 2026. Tabelas detalhadas, dicas para poupar e como evitar surpresas na fatura.
  </p>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  Preço por Hora: Quanto Cobra um Eletricista?
  </h2>
  <p>
  O custo horário varia conforme horário, urgência e complexidade do trabalho:
  </p>
-
  <div className="bg-gray-50 rounded-lg p-6 my-8">
  <h3 className="text-2xl font-bold text-gray-900 mb-4">
  Tabela de Preços por Hora em Bragança (2026)
@@ -143,11 +136,9 @@ export default function QuantoCustaEletricistaBraganca() {
  * Chamada mínima inclui deslocação + 1-2h trabalho. Material não incluído.
  </p>
  </div>
-
  <p>
  <strong>Importante:</strong> A maioria dos eletricistas cobra chamada mínima de 50-80€, que inclui deslocação e 1-2 horas de trabalho. Trabalhos rápidos (trocar tomada, interruptor) normalmente cabem neste valor.
  </p>
-
  <div className="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
  <h3 className="text-xl font-bold text-gray-900 mb-3">
  Precisa de Eletricista em Bragança?
@@ -172,14 +163,12 @@ export default function QuantoCustaEletricistaBraganca() {
  </a>
  </div>
  </div>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  Preços de Serviços Comuns
  </h2>
  <p>
  Aqui estão os preços típicos dos serviços mais solicitados em Bragança:
  </p>
-
  <div className="bg-gray-50 rounded-lg p-6 my-8">
  <h3 className="text-2xl font-bold text-gray-900 mb-4">
  Tabela de Preços: Serviços Elétricos em Bragança
@@ -256,14 +245,12 @@ export default function QuantoCustaEletricistaBraganca() {
  * Preços incluem IVA, mão de obra e material standard. Trabalhos complexos ou materiais premium podem custar mais.
  </p>
  </div>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  Instalação Elétrica Completa: Preços por Tipologia
  </h2>
  <p>
  Para instalação elétrica completa (obra nova ou reabilitação total), os preços variam conforme área e complexidade:
  </p>
-
  <div className="space-y-4 my-8">
  <div className="bg-white border-l-4 border-orange-600 p-6 shadow-sm">
  <h3 className="text-xl font-bold text-gray-900 mb-2">
@@ -276,7 +263,6 @@ export default function QuantoCustaEletricistaBraganca() {
  Inclui: Quadro elétrico, 4-6 circuitos, 15-25 tomadas, 8-12 pontos luz, certificação elétrica.
  </p>
  </div>
-
  <div className="bg-white border-l-4 border-orange-600 p-6 shadow-sm">
  <h3 className="text-xl font-bold text-gray-900 mb-2">
  Apartamento T3 (80-120m²)
@@ -288,7 +274,6 @@ export default function QuantoCustaEletricistaBraganca() {
  Inclui: Quadro elétrico, 6-8 circuitos, 25-35 tomadas, 12-18 pontos luz, certificação elétrica.
  </p>
  </div>
-
  <div className="bg-white border-l-4 border-orange-600 p-6 shadow-sm">
  <h3 className="text-xl font-bold text-gray-900 mb-2">
  Moradia T3 (120-150m²)
@@ -300,7 +285,6 @@ export default function QuantoCustaEletricistaBraganca() {
  Inclui: Quadro elétrico, 8-10 circuitos, 35-50 tomadas, 18-25 pontos luz, iluminação exterior, certificação elétrica.
  </p>
  </div>
-
  <div className="bg-white border-l-4 border-orange-600 p-6 shadow-sm">
  <h3 className="text-xl font-bold text-gray-900 mb-2">
  Moradia T4/T5 (150-250m²)
@@ -313,7 +297,6 @@ export default function QuantoCustaEletricistaBraganca() {
  </p>
  </div>
  </div>
-
  <p>
  <strong>Extras comuns:</strong>
  </p>
@@ -324,7 +307,6 @@ export default function QuantoCustaEletricistaBraganca() {
  <li>Parranjo painéis solares: +500-1.000€</li>
  <li>Carregador veículo elétrico: +800-1.500€</li>
  </ul>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  Fatores Que Influenciam o Preço
  </h2>
@@ -340,7 +322,6 @@ export default function QuantoCustaEletricistaBraganca() {
  <li><strong>Certificação:</strong> Trabalhos que exigem têm custo adicional</li>
  <li><strong>Estado da instalação:</strong> Instalações antigas podem precisar mais correções</li>
  </ul>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  Como Poupar em Serviços de Eletricista
  </h2>
@@ -356,7 +337,6 @@ export default function QuantoCustaEletricistaBraganca() {
  <li><strong>Época baixa:</strong> Verão tem menos procura, preços mais flexíveis</li>
  <li><strong>Negociação:</strong> Para trabalhos grandes, há margem de negociação</li>
  </ol>
-
  <div className="bg-yellow-50 border-l-4 border-yellow-600 p-6 my-8">
  <h3 className="text-xl font-bold text-gray-900 mb-3">
  ⚠️ Cuidado com Preços Muito Baixos
@@ -368,11 +348,9 @@ export default function QuantoCustaEletricistaBraganca() {
  <strong>Exija sempre:</strong> Certificação DGEG, orçamento por escrito, garantia mínima 2 anos, fatura com IVA.
  </p>
  </div>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  Perguntas Frequentes (FAQ)
  </h2>
-
  <div className="space-y-6">
  <div className="border-l-4 border-orange-600 pl-4">
  <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -382,7 +360,6 @@ export default function QuantoCustaEletricistaBraganca() {
  Horário normal: 25-35€/hora. Urgente (noite/fim-de-semana): 45-65€/hora. Chamada mínima: 50-80€ (inclui 1-2h trabalho). Preços variam conforme complexidade e materiais necessários.
  </p>
  </div>
-
  <div className="border-l-4 border-orange-600 pl-4">
  <h3 className="text-xl font-semibold text-gray-900 mb-2">
  Quanto custa instalar tomada em Bragança?
@@ -391,7 +368,6 @@ export default function QuantoCustaEletricistaBraganca() {
  Tomada simples: 25-40€. Tomada com terra (Schuko): 30-50€. Tomada USB: 45-70€. Preços incluem material e mão de obra. Desconto para múltiplas tomadas.
  </p>
  </div>
-
  <div className="border-l-4 border-orange-600 pl-4">
  <h3 className="text-xl font-semibold text-gray-900 mb-2">
  Qual o preço de instalação elétrica completa?
@@ -400,7 +376,6 @@ export default function QuantoCustaEletricistaBraganca() {
  Apartamento T2: 2.500-4.000€. Moradia T3: 4.500-7.000€. Moradia T4: 6.500-10.000€. Inclui quadro, circuitos, tomadas, iluminação e certificação elétrica.
  </p>
  </div>
-
  <div className="border-l-4 border-orange-600 pl-4">
  <h3 className="text-xl font-semibold text-gray-900 mb-2">
  Eletricista urgente 24h custa mais?
@@ -409,7 +384,6 @@ export default function QuantoCustaEletricistaBraganca() {
  Sim. Urgente noite/fim-de-semana: +80-100% sobre preço normal. Chamada urgente: 80-120€ mínimo. Feriados: +100-150%. Mas resolve problema imediatamente.
  </p>
  </div>
-
  <div className="border-l-4 border-orange-600 pl-4">
  <h3 className="text-xl font-semibold text-gray-900 mb-2">
  Como poupar em serviços de eletricista?
@@ -419,7 +393,6 @@ export default function QuantoCustaEletricistaBraganca() {
  </p>
  </div>
  </div>
-
  <div className="bg-orange-50 border-2 border-orange-600 rounded-lg p-8 my-12">
  <h3 className="text-2xl font-bold text-gray-900 mb-4">
  Orçamento Gratuito e Transparente
@@ -462,7 +435,6 @@ export default function QuantoCustaEletricistaBraganca() {
  </a>
  </div>
  </div>
-
  <div className="mt-12 pt-8 border-t border-gray-200">
  <h3 className="text-xl font-semibold text-gray-900 mb-4">
  Artigos Relacionados:

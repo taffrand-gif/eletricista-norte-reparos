@@ -1,16 +1,13 @@
 // Page SEO optimisée: "Quanto Tempo Demora Instalar Tomada" - Intention planification
 // Recherche fréquente: "quanto tempo demora instalar tomada", "tempo instalar tomada", "quanto tempo eletricista"
-
 import { Helmet } from 'react-helmet-async';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FAQSection from '@/components/FAQSection';
 import { useSite } from '@/contexts/SiteContext';
 import { Phone, Clock, CheckCircle, Zap, AlertTriangle, Wrench } from 'lucide-react';
-
 export default function QuantoTempoDemoraInstalarTomada() {
  const { config } = useSite();
-
  const schemaData = {
  "@context": "https://schema.org",
  "@type": "Article",
@@ -26,7 +23,6 @@ export default function QuantoTempoDemoraInstalarTomada() {
  "telephone": config.phone
  }
  };
-
  const faqs = [
  {
  question: "Quanto tempo demora instalar tomada nova?",
@@ -45,7 +41,6 @@ export default function QuantoTempoDemoraInstalarTomada() {
  answer: "2 tomadas: 2-3h. 3-4 tomadas: 3-5h. 5+ tomadas: 4-8h. Depende se cabos já existem ou precisam passar novos. Orçamento gratuito: 932 321 892"
  }
  ];
-
  const tempos = [
  {
  tipo: "Tomada Simples",
@@ -115,7 +110,6 @@ export default function QuantoTempoDemoraInstalarTomada() {
  icon: AlertTriangle
  }
  ];
-
  const factores = [
  {
  factor: "Tipo de Instalação",
@@ -143,7 +137,6 @@ export default function QuantoTempoDemoraInstalarTomada() {
  tempo: "15-30 min"
  }
  ];
-
  return (
  <>
  <Helmet>
@@ -154,7 +147,6 @@ export default function QuantoTempoDemoraInstalarTomada() {
  </script>
  </Helmet>
  <Header />
-
  <main className="min-h-screen bg-gradient-to-b from-white to-orange-50">
  {/* Hero */}
  <section className="bg-gradient-to-r from-[#FF6B35] to-[#ff8c5a] text-white py-16">
@@ -164,16 +156,13 @@ export default function QuantoTempoDemoraInstalarTomada() {
  <Clock className="w-5 h-5" />
  TEMPOS REAIS 2026
  </div>
-
  <h1 className="text-4xl md:text-5xl font-bold mb-6">
  Quanto Tempo Demora Instalar Tomada?
  </h1>
-
  <p className="text-xl mb-8">
  Tempos reais: 1 a 5 horas (feito em 1 dia).
  Inclui instalação completa + certificação elétrica.
  </p>
-
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a
  href={`tel:${config.phone.replace(/\s/g, "")}`}
@@ -194,7 +183,6 @@ export default function QuantoTempoDemoraInstalarTomada() {
  </div>
  </div>
  </section>
-
  {/* Tabela de Tempos */}
  <section className="py-16 bg-white">
  <div className="container mx-auto px-4">
@@ -204,7 +192,6 @@ export default function QuantoTempoDemoraInstalarTomada() {
  <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
  Tempos incluem: avaliação + instalação + testes + certificação elétrica
  </p>
-
  <div className="max-w-5xl mx-auto space-y-6">
  {tempos.map((item, index) => (
  <div key={index} className="bg-gradient-to-r from-orange-50 to-white rounded-xl shadow-lg overflow-hidden border-2 border-orange-200">
@@ -223,7 +210,6 @@ export default function QuantoTempoDemoraInstalarTomada() {
  </div>
  </div>
  </div>
-
  <div className="p-6">
  <div className="grid md:grid-cols-2 gap-6">
  <div>
@@ -237,7 +223,6 @@ export default function QuantoTempoDemoraInstalarTomada() {
  ))}
  </ul>
  </div>
-
  <div className="space-y-4">
  <div className="bg-red-50 p-4 rounded-lg border-2 border-red-200">
  <div className="text-sm text-gray-600 mb-1">⚠️ Tempo sem luz (circuito):</div>
@@ -262,14 +247,12 @@ export default function QuantoTempoDemoraInstalarTomada() {
  </div>
  </div>
  </section>
-
  {/* Factores */}
  <section className="py-16 bg-gray-50">
  <div className="container mx-auto px-4">
  <h2 className="text-3xl font-bold text-center mb-12">
  ⚙️ Factores que Afectam o Tempo
  </h2>
-
  <div className="max-w-4xl mx-auto space-y-4">
  {factores.map((item, index) => (
  <div key={index} className="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#FF6B35]">
@@ -288,14 +271,12 @@ export default function QuantoTempoDemoraInstalarTomada() {
  </div>
  </div>
  </section>
-
  {/* Timeline */}
  <section className="py-16 bg-white">
  <div className="container mx-auto px-4">
  <h2 className="text-3xl font-bold text-center mb-12">
  📅 Timeline Típica (Tomada Nova com Cabos)
  </h2>
-
  <div className="max-w-3xl mx-auto">
  <div className="space-y-6">
  {[
@@ -331,7 +312,6 @@ export default function QuantoTempoDemoraInstalarTomada() {
  </div>
  </div>
  </section>
-
  {/* FAQ */}
  <section className="py-16 bg-gray-50">
  <div className="container max-w-4xl">
@@ -341,7 +321,6 @@ export default function QuantoTempoDemoraInstalarTomada() {
  <FAQSection faqs={faqs} />
  </div>
  </section>
-
  {/* CTA Final */}
  <section className="py-16 bg-gradient-to-r from-[#FF6B35] to-[#ff8c5a] text-white">
  <div className="container mx-auto px-4 text-center">
@@ -363,7 +342,6 @@ export default function QuantoTempoDemoraInstalarTomada() {
  </div>
  </section>
  </main>
-
  <Footer />
  </>
  );

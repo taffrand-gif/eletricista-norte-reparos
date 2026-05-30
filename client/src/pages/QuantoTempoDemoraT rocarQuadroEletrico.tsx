@@ -1,16 +1,13 @@
 // Page SEO optimisée: "Quanto Tempo Demora Trocar Quadro Elétrico" - Intention planification
 // Recherche fréquente: "quanto tempo demora trocar quadro elétrico", "tempo instalar quadro", "quanto tempo eletricista"
-
 import { Helmet } from 'react-helmet-async';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FAQSection from '@/components/FAQSection';
 import { useSite } from '@/contexts/SiteContext';
 import { Phone, Clock, CheckCircle, Zap, AlertTriangle, Wrench } from 'lucide-react';
-
 export default function QuantoTempoQuadro() {
  const { config } = useSite();
-
  const schemaData = {
  "@context": "https://schema.org",
  "@type": "Article",
@@ -26,7 +23,6 @@ export default function QuantoTempoQuadro() {
  "telephone": config.phone
  }
  };
-
  const faqs = [
  {
  question: "Quanto tempo demora trocar quadro elétrico completo?",
@@ -45,7 +41,6 @@ export default function QuantoTempoQuadro() {
  answer: "Substituir disjuntor: 1-2 horas. Inclui: chegada eletricista (30-45 min), desligar circuito (5 min), substituir disjuntor (15-30 min), testar (10-15 min), certificar (15-20 min). Urgente 24h disponível."
  }
  ];
-
  const tempos = [
  {
  tipo: "Substituir Disjuntor",
@@ -110,7 +105,6 @@ export default function QuantoTempoQuadro() {
  icon: AlertTriangle
  }
  ];
-
  const factores = [
  {
  factor: "Tamanho da Casa",
@@ -138,7 +132,6 @@ export default function QuantoTempoQuadro() {
  tempo: "20-45 min"
  }
  ];
-
  return (
  <>
  <Helmet>
@@ -149,7 +142,6 @@ export default function QuantoTempoQuadro() {
  </script>
  </Helmet>
  <Header />
-
  <main className="min-h-screen bg-gradient-to-b from-white to-orange-50">
  {/* Hero */}
  <section className="bg-gradient-to-r from-[#FF6B35] to-[#ff8c5a] text-white py-16">
@@ -159,16 +151,13 @@ export default function QuantoTempoQuadro() {
  <Clock className="w-5 h-5" />
  TEMPOS REAIS 2026
  </div>
-
  <h1 className="text-4xl md:text-5xl font-bold mb-6">
  Quanto Tempo Demora Trocar Quadro Elétrico?
  </h1>
-
  <p className="text-xl mb-8">
  Tempos reais: 3 a 8 horas (feito em 1 dia).
  Inclui instalação completa + certificação elétrica.
  </p>
-
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a
  href={`tel:${config.phone.replace(/\s/g, "")}`}
@@ -189,7 +178,6 @@ export default function QuantoTempoQuadro() {
  </div>
  </div>
  </section>
-
  {/* Tabela de Tempos */}
  <section className="py-16 bg-white">
  <div className="container mx-auto px-4">
@@ -199,7 +187,6 @@ export default function QuantoTempoQuadro() {
  <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
  Tempos incluem: avaliação + instalação + testes + certificação elétrica
  </p>
-
  <div className="max-w-5xl mx-auto space-y-6">
  {tempos.map((item, index) => (
  <div key={index} className="bg-gradient-to-r from-orange-50 to-white rounded-xl shadow-lg overflow-hidden border-2 border-orange-200">
@@ -218,7 +205,6 @@ export default function QuantoTempoQuadro() {
  </div>
  </div>
  </div>
-
  <div className="p-6">
  <div className="grid md:grid-cols-2 gap-6">
  <div>
@@ -232,7 +218,6 @@ export default function QuantoTempoQuadro() {
  ))}
  </ul>
  </div>
-
  <div className="space-y-4">
  <div className="bg-red-50 p-4 rounded-lg border-2 border-red-200">
  <div className="text-sm text-gray-600 mb-1">⚠️ Tempo sem luz:</div>
@@ -257,14 +242,12 @@ export default function QuantoTempoQuadro() {
  </div>
  </div>
  </section>
-
  {/* Factores */}
  <section className="py-16 bg-gray-50">
  <div className="container mx-auto px-4">
  <h2 className="text-3xl font-bold text-center mb-12">
  ⚙️ Factores que Afectam o Tempo
  </h2>
-
  <div className="max-w-4xl mx-auto space-y-4">
  {factores.map((item, index) => (
  <div key={index} className="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#FF6B35]">
@@ -283,14 +266,12 @@ export default function QuantoTempoQuadro() {
  </div>
  </div>
  </section>
-
  {/* Timeline */}
  <section className="py-16 bg-white">
  <div className="container mx-auto px-4">
  <h2 className="text-3xl font-bold text-center mb-12">
  📅 Timeline Típica (Quadro T3)
  </h2>
-
  <div className="max-w-3xl mx-auto">
  <div className="space-y-6">
  {[
@@ -327,7 +308,6 @@ export default function QuantoTempoQuadro() {
  </div>
  </div>
  </section>
-
  {/* Preparação */}
  <section className="py-16 bg-gray-50">
  <div className="container mx-auto px-4">
@@ -337,7 +317,6 @@ export default function QuantoTempoQuadro() {
  <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
  Preparação ajuda reduzir tempo instalação em 30-60 minutos
  </p>
-
  <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
  {[
  { titulo: "Libertar Acesso", descricao: "Remover móveis, caixas perto quadro (1m raio livre)", icon: "🚪" },
@@ -362,7 +341,6 @@ export default function QuantoTempoQuadro() {
  </div>
  </div>
  </section>
-
  {/* FAQ */}
  <section className="py-16 bg-white">
  <div className="container max-w-4xl">
@@ -372,7 +350,6 @@ export default function QuantoTempoQuadro() {
  <FAQSection faqs={faqs} />
  </div>
  </section>
-
  {/* CTA Final */}
  <section className="py-16 bg-gradient-to-r from-[#FF6B35] to-[#ff8c5a] text-white">
  <div className="container mx-auto px-4 text-center">
@@ -394,7 +371,6 @@ export default function QuantoTempoQuadro() {
  </div>
  </section>
  </main>
-
  <Footer />
  </>
  );

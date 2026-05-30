@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'wouter';
-
 export default function PoupancaLedEconomiaReal() {
  return (
  <>
@@ -56,14 +55,12 @@ export default function PoupancaLedEconomiaReal() {
  })}
  </script>
  </Helmet>
-
  <article className="max-w-4xl mx-auto px-4 py-12">
  <div className="mb-8">
  <Link href="/blog" className="text-orange-600 hover:text-orange-700 text-sm font-medium">
  ← Voltar ao Blog
  </Link>
  </div>
-
  <header className="mb-12">
  <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
  Poupança LED: Quanto Economiza Realmente?
@@ -74,7 +71,6 @@ export default function PoupancaLedEconomiaReal() {
  <span>10 min de leitura</span>
  </div>
  </header>
-
  <div className="prose prose-lg max-w-none">
  <div className="bg-orange-50 border-l-4 border-orange-600 p-6 mb-8">
  <p className="text-lg font-semibold text-gray-900 mb-2">
@@ -84,18 +80,15 @@ export default function PoupancaLedEconomiaReal() {
  LED poupa <strong>80-90% energia</strong> vs lâmpadas incandescentes, <strong>50-60%</strong> vs halogéneas. Casa T3 típica: poupança <strong>150-300€/ano</strong>. Investimento inicial 300-600€ recuperado em 1-2 anos. Depois, poupança líquida de 100-250€/ano durante 15-25 anos de vida útil do LED.
  </p>
  </div>
-
  <p className="lead text-xl text-gray-700 mb-8">
  Toda a gente fala em poupar com LED, mas quanto poupa REALMENTE? Neste guia completo, fazemos as contas à poupança real em casas de Bragança e Trás-os-Montes. Números concretos, sem exageros.
  </p>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  Comparação Real: LED vs Outras Lâmpadas
  </h2>
  <p>
  Vamos comparar o consumo real para obter a mesma quantidade de luz (800 lumens = luz de sala típica):
  </p>
-
  <div className="bg-gray-50 rounded-lg p-6 my-8">
  <h3 className="text-2xl font-bold text-gray-900 mb-4">
  Comparação de Consumo: 800 Lumens
@@ -150,20 +143,17 @@ export default function PoupancaLedEconomiaReal() {
  * Custo anual = energia (0,22€/kWh) para 1.000h uso/ano. Não inclui custo de compra da lâmpada.
  </p>
  </div>
-
  <p>
  <strong>Poupança anual por lâmpada LED vs incandescente:</strong> 11€/ano<br />
  <strong>Poupança anual por lâmpada LED vs halogénea:</strong> 7€/ano<br />
  <strong>Poupança anual por lâmpada LED vs fluorescente:</strong> 1,10€/ano
  </p>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  Quanto Poupa uma Casa Completa?
  </h2>
  <p>
  Vamos calcular a poupança real para diferentes tipologias de habitação em Trás-os-Montes:
  </p>
-
  <div className="space-y-6 my-8">
  <div className="bg-white border-l-4 border-orange-600 p-6 shadow-sm">
  <h3 className="text-xl font-bold text-gray-900 mb-3">
@@ -179,7 +169,6 @@ export default function PoupancaLedEconomiaReal() {
  <li>• Poupança 10 anos: 1.650€</li>
  </ul>
  </div>
-
  <div className="bg-white border-l-4 border-orange-600 p-6 shadow-sm">
  <h3 className="text-xl font-bold text-gray-900 mb-3">
  Moradia T3 (25 lâmpadas)
@@ -194,7 +183,6 @@ export default function PoupancaLedEconomiaReal() {
  <li>• Poupança 10 anos: 2.750€</li>
  </ul>
  </div>
-
  <div className="bg-white border-l-4 border-orange-600 p-6 shadow-sm">
  <h3 className="text-xl font-bold text-gray-900 mb-3">
  Moradia T4 (35 lâmpadas)
@@ -210,11 +198,9 @@ export default function PoupancaLedEconomiaReal() {
  </ul>
  </div>
  </div>
-
  <p>
  <strong>Nota importante:</strong> Estes cálculos assumem substituição de incandescentes (pior cenário). Se já tem halogéneas ou fluorescentes, a poupança é menor mas ainda significativa.
  </p>
-
  <div className="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
  <h3 className="text-xl font-bold text-gray-900 mb-3">
  Quer Mudar para LED em Bragança?
@@ -239,14 +225,12 @@ export default function PoupancaLedEconomiaReal() {
  </a>
  </div>
  </div>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  Cálculo Detalhado: Custo Total de Propriedade
  </h2>
  <p>
  Para perceber a poupança real, temos de considerar TODOS os custos ao longo de 10 anos:
  </p>
-
  <div className="bg-gray-50 rounded-lg p-6 my-8">
  <h3 className="text-2xl font-bold text-gray-900 mb-4">
  Custo Total 10 Anos (1 lâmpada, 1.000h/ano)
@@ -295,11 +279,9 @@ export default function PoupancaLedEconomiaReal() {
  </table>
  </div>
  </div>
-
  <p>
  <strong>Conclusão:</strong> Mesmo contando o custo inicial mais alto do LED, poupa 112€ por lâmpada em 10 anos. Numa casa com 25 lâmpadas, isso são <strong>2.800€ de poupança líquida</strong>.
  </p>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  Vantagens Além da Poupança
  </h2>
@@ -316,14 +298,12 @@ export default function PoupancaLedEconomiaReal() {
  <li><strong>Resistente:</strong> Não parte facilmente, ideal para crianças</li>
  <li><strong>Sem UV:</strong> Não atrai insetos, não desbota tecidos</li>
  </ul>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  Como Escolher LED de Qualidade
  </h2>
  <p>
  Nem todos os LED são iguais. Para garantir poupança e durabilidade:
  </p>
-
  <div className="bg-yellow-50 border-l-4 border-yellow-600 p-6 my-8">
  <h3 className="text-xl font-bold text-gray-900 mb-3">
  Checklist: LED de Qualidade
@@ -359,11 +339,9 @@ export default function PoupancaLedEconomiaReal() {
  </li>
  </ul>
  </div>
-
  <p>
  <strong>Evite:</strong> LED muito baratos (2-3€) de marcas desconhecidas. Duram pouco, luz fraca, podem não ter certificação. A poupança inicial não compensa.
  </p>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  Preços LED em Portugal (2026)
  </h2>
@@ -381,11 +359,9 @@ export default function PoupancaLedEconomiaReal() {
  <p>
  <strong>Dica:</strong> Compre em pack (10 unidades) para desconto 20-30%. Lojas online (Amazon, Worten) têm melhores preços que lojas físicas.
  </p>
-
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  Perguntas Frequentes (FAQ)
  </h2>
-
  <div className="space-y-6">
  <div className="border-l-4 border-orange-600 pl-4">
  <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -395,7 +371,6 @@ export default function PoupancaLedEconomiaReal() {
  LED poupa 80-90% energia vs incandescentes, 50-60% vs halogéneas, 30-40% vs fluorescentes. Casa típica T3: poupança 150-300€/ano. Investimento recuperado em 1-2 anos.
  </p>
  </div>
-
  <div className="border-l-4 border-orange-600 pl-4">
  <h3 className="text-xl font-semibold text-gray-900 mb-2">
  LED compensa mesmo o investimento?
@@ -404,7 +379,6 @@ export default function PoupancaLedEconomiaReal() {
  Sim. LED custa 3-15€/lâmpada mas dura 15-25 anos (vs 1 ano incandescente). Retorno investimento: 12-24 meses. Após isso, poupança líquida de 100-250€/ano em casa média.
  </p>
  </div>
-
  <div className="border-l-4 border-orange-600 pl-4">
  <h3 className="text-xl font-semibold text-gray-900 mb-2">
  Quanto custa mudar casa toda para LED?
@@ -413,7 +387,6 @@ export default function PoupancaLedEconomiaReal() {
  Apartamento T2: 150-300€. Moradia T3: 300-600€. Moradia T4: 500-900€. Inclui lâmpadas LED qualidade e instalação se necessário. Poupança anual compensa em 1-2 anos.
  </p>
  </div>
-
  <div className="border-l-4 border-orange-600 pl-4">
  <h3 className="text-xl font-semibold text-gray-900 mb-2">
  LED gasta mesmo menos que fluorescente?
@@ -422,7 +395,6 @@ export default function PoupancaLedEconomiaReal() {
  Sim. LED 10W = fluorescente 15W = mesma luz. Poupança 30-40% energia. LED não tem mercúrio, liga instantaneamente, não pisca, dura mais (25.000h vs 10.000h).
  </p>
  </div>
-
  <div className="border-l-4 border-orange-600 pl-4">
  <h3 className="text-xl font-semibold text-gray-900 mb-2">
  Qual a melhor marca de LED em Portugal?
@@ -432,7 +404,6 @@ export default function PoupancaLedEconomiaReal() {
  </p>
  </div>
  </div>
-
  <div className="bg-orange-50 border-2 border-orange-600 rounded-lg p-8 my-12">
  <h3 className="text-2xl font-bold text-gray-900 mb-4">
  Mude para LED e Comece a Poupar Hoje!
@@ -475,7 +446,6 @@ export default function PoupancaLedEconomiaReal() {
  </a>
  </div>
  </div>
-
  <div className="mt-12 pt-8 border-t border-gray-200">
  <h3 className="text-xl font-semibold text-gray-900 mb-4">
  Artigos Relacionados:

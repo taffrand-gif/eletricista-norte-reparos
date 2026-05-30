@@ -1,6 +1,5 @@
 // Page SEO optimisée: "Quanto Custa Arranjar Quadro Elétrico" - Intention commerciale
 // Recherche fréquente: "quanto custa arranjar quadro elétrico", "preço quadro elétrico", "substituir quadro preço"
-
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Header from '@/components/Header';
@@ -8,11 +7,8 @@ import Footer from '@/components/Footer';
 import FAQSection from '@/components/FAQSection';
 import { useSite } from '@/contexts/SiteContext';
 import { Phone, Euro, CheckCircle, AlertTriangle, Clock, Zap } from 'lucide-react';
-
 export default function QuantoCustaArranjarQuadroEletrico() {
  const { config } = useSite();
-
-
  const faqs = [
  {
  question: "Quanto custa substituir quadro elétrico completo?",
@@ -31,7 +27,6 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  answer: "SIM. Toda instalação elétrica em Portugal precisa certificação elétrica (Decreto-Lei 226/2005). Sem certificação = ilegal, seguro não cobre, não pode vender casa. Eletricista certificado emite certificado."
  }
  ];
-
  const precos = [
  {
  servico: "Substituir Disjuntor Simples",
@@ -76,7 +71,6 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  inclui: ["Quadro 18 módulos", "2 Diferenciais", "14-18 disjuntores", "Instalação", "certificação elétrica"]
  }
  ];
-
  const sinaisSubstituir = [
  {
  sinal: "Quadro com Fusíveis",
@@ -115,7 +109,6 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  icon: CheckCircle
  }
  ];
-
  return (
  <>
  <Helmet>
@@ -123,7 +116,6 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  <meta name="description" content="Quanto custa arranjar quadro elétrico? Preços 2026: substituir disjuntor 60-100€, quadro completo 300-800€. certificação elétrica incluída. Orçamento grátis: 932 321 892" />
  </Helmet>
  <Header />
-
  <main className="min-h-screen bg-gradient-to-b from-white to-orange-50">
  {/* Hero */}
  <section className="bg-gradient-to-r from-[#FF6B35] to-[#ff8c5a] text-white py-16">
@@ -133,16 +125,13 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  <Euro className="w-5 h-5" />
  PREÇOS TRANSPARENTES 2026
  </div>
-
  <h1 className="text-4xl md:text-5xl font-bold mb-6">
  Quanto Custa Arranjar Quadro Elétrico?
  </h1>
-
  <p className="text-xl mb-8">
  Preços claros e honestos: 60-800€ (depende serviço).
  certificação elétrica incluída. Orçamento gratuito sem compromisso.
  </p>
-
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a
  href={`tel:${config.phone.replace(/\s/g, "")}`}
@@ -163,7 +152,6 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  </div>
  </div>
  </section>
-
  {/* Tabela de Preços */}
  <section className="py-16 bg-white">
  <div className="container mx-auto px-4">
@@ -174,7 +162,6 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  Preços incluem: deslocação, material, instalação, certificação elétrica.
  Orçamento final após avaliação no local.
  </p>
-
  <div className="max-w-5xl mx-auto space-y-6">
  {precos.map((item, index) => (
  <div key={index} className="bg-gradient-to-r from-orange-50 to-white p-6 rounded-xl shadow-lg border border-orange-200">
@@ -205,7 +192,6 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  </div>
  ))}
  </div>
-
  <div className="mt-8 text-center">
  <p className="text-gray-600 mb-4">
  ✅ Orçamento gratuito sem compromisso<br />
@@ -223,7 +209,6 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  </div>
  </div>
  </section>
-
  {/* Sinais para Substituir */}
  <section className="py-16 bg-gray-50">
  <div className="container mx-auto px-4">
@@ -233,7 +218,6 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
  Se tem algum destes sinais, chame eletricista urgente
  </p>
-
  <div className="max-w-4xl mx-auto space-y-4">
  {sinaisSubstituir.map((item, index) => (
  <div key={index} className={`p-6 rounded-xl shadow-md border-l-4 ${
@@ -268,7 +252,6 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  </div>
  </div>
  </section>
-
  {/* O Que Está Incluído */}
  <section className="py-16 bg-white">
  <div className="container mx-auto px-4">
@@ -294,7 +277,6 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  </div>
  </div>
  </section>
-
  {/* FAQ */}
  <section className="py-16 bg-gray-50">
  <div className="container max-w-4xl">
@@ -304,7 +286,6 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  <FAQSection faqs={faqs} />
  </div>
  </section>
-
  {/* CTA Final */}
  <section className="py-16 bg-gradient-to-r from-[#FF6B35] to-[#ff8c5a] text-white">
  <div className="container mx-auto px-4 text-center">
@@ -326,7 +307,6 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  </div>
  </section>
  </main>
-
  <Footer />
  </>
  );

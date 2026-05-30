@@ -2,25 +2,20 @@ import React from 'react';
 // Price Transparency Component - Comparaison 3 colonnes
 // Outros vs Nós vs Você Economiza
 // Impact: Lever objection #1 "Combien ça coûte?"
-
 import { useSite } from '@/contexts/SiteContext';
 import { useAnalytics } from '@/hooks/useAnalytics';
 // memo removed from 'react';
 import { Phone, MessageCircle } from 'lucide-react';
-
 interface ComparisonColumn {
  title: string;
  icon: string;
  items: string[];
  highlight: boolean;
 }
-
 function PriceTransparency() {
  const { config } = useSite();
  const { trackPhoneClick, trackWhatsAppClick } = useAnalytics();
-
  const serviceType = config.id === 'norte-reparos' ? 'Canalizadores' : 'Eletricistas';
-
  const columns: ComparisonColumn[] = [
  {
  title: `Outros ${serviceType}`,
@@ -59,15 +54,12 @@ function PriceTransparency() {
  highlight: false
  }
  ];
-
  const handlePhoneClick = () => {
  trackPhoneClick(config.phone);
  };
-
  const handleWhatsAppClick = () => {
  trackWhatsAppClick('PriceTransparency');
  };
-
  return (
  <section className="py-16" style={{ backgroundColor: config.id === 'norte-reparos' ? '#f0f9ff' : '#fff7ed' }}>
  <div className="container">
@@ -85,7 +77,6 @@ function PriceTransparency() {
  Orçamento gratuito em 2 minutos por telefone.
  </p>
  </div>
-
  {/* Comparison Grid */}
  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
  {columns.map((column, index) => (
@@ -113,7 +104,6 @@ function PriceTransparency() {
  </div>
  )}
  </div>
-
  {/* Items List */}
  <ul className="space-y-3">
  {column.items.map((item, itemIndex) => (
@@ -130,7 +120,6 @@ function PriceTransparency() {
  </div>
  ))}
  </div>
-
  {/* CTA Banner */}
  <div
  className="bg-white p-8 rounded-xl border-4 text-center"
@@ -169,7 +158,6 @@ function PriceTransparency() {
  ✅ Orçamento gratuito • ✅ Sem compromisso • ✅ Preço fixo garantido
  </p>
  </div>
-
  {/* Social Proof */}
  <div className="mt-8 text-center">
  <div className="inline-flex items-center gap-2 text-yellow-500 text-2xl mb-2">
@@ -185,5 +173,4 @@ function PriceTransparency() {
  </section>
  );
 }
-
 export default React.memo(PriceTransparency);
