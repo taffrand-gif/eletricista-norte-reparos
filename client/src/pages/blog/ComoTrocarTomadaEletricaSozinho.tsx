@@ -1,4 +1,11 @@
 import React from 'react';
+useEffect(() => {
+  const meta = document.createElement('meta');
+  meta.name = 'robots';
+  meta.content = 'noindex';
+  document.head.appendChild(meta);
+}, []);
+
 import BlogLayout from '@/components/blog/BlogLayout';
 import { useSEO } from '@/hooks/useSEO';
 const ComoTrocarTomadaEletricaSozinho: React.FC = () => {

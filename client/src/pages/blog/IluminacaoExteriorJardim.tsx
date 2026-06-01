@@ -1,4 +1,11 @@
 // Blog article: "Iluminação Exterior e de Jardim: Guia Completo 2026"
+useEffect(() => {
+  const meta = document.createElement('meta');
+  meta.name = 'robots';
+  meta.content = 'noindex';
+  document.head.appendChild(meta);
+}, []);
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useEffect } from 'react';

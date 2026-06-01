@@ -1,8 +1,15 @@
 import React from 'react';
+import { useEffect } from 'react';
 import BlogLayout from '@/components/blog/BlogLayout';
 import BlogCard from '@/components/blog/BlogCard';
 import { useSEO } from '@/hooks/useSEO';
 const BlogIndex: React.FC = () => {
+ useEffect(() => {
+ const meta = document.createElement('meta');
+ meta.name = 'robots';
+ meta.content = 'noindex';
+ document.head.appendChild(meta);
+ }, []);
  useSEO({
  title: 'Blog do Eletricista - Dicas e Guias para Eletricidade em Trás-os-Montes',
  description: 'Artigos informativos sobre eletricidade, segurança elétrica, manutenção e legislação para residências e empresas na região de Trás-os-Montes.',
