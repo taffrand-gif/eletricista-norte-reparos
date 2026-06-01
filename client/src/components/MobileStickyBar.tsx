@@ -51,7 +51,7 @@ function MobileStickyBar() {
  <MessageCircle className="w-5 h-5" />
  <span className="text-base">WhatsApp</span>
  </div>
- <span className="text-xs font-normal opacity-90 mt-0.5">Resposta 5min</span>
+ 
  </a>
  </div>
  );

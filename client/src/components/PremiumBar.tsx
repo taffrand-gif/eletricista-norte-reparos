@@ -6,15 +6,13 @@ export default function PremiumBar() {
  const items = isPlumber
  ? [
  { icon: '🔬', label: 'Câmara Térmica' },
- { icon: '🔧', label: 'Ridgid K-6200' },
+ { icon: '🔧', label: 'Ridgid FlexShaft K9-204' },
  { icon: '🔍', label: 'Endoscópio HD' },
  { icon: '📡', label: 'Geofone Deteção' },
  ]
  : [
  { icon: '🔬', label: 'Câmara FLIR' },
- { icon: '📊', label: 'Fluke 87V MAX' },
- { icon: '🔍', label: 'Endoscópio Ridgid' },
- { icon: '📋', label: ' Certificado' },
+{ icon: '📊', label: 'Fluke T6-1000' },
  ];
  return (
  <div className="bg-gray-900 text-white py-3 overflow-hidden">

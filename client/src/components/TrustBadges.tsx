@@ -7,26 +7,26 @@ export default function TrustBadges() {
  icon: '💰',
  title: 'Preço Fixo Garantido',
  description: 'Sem surpresas na fatura'},
- {
- icon: '🛡️',
- title: 'Garantia 2 Anos',
- description: 'Intervenção gratuita'},
- {
- icon: '📞',
- title: 'Orçamento Grátis',
- description: '2 minutos por telefone'},
- {
- icon: '✅',
- title: 'Sem Taxas Escondidas',
- description: 'Transparência total'},
- {
- icon: '🏆',
- title: 'Certificado',
- description: isPlumber ? 'Profissionais certificados' : 'certificação elétrica'},
- {
- icon: '⚡',
- title: 'Resposta Rápida',
- description: 'Menos de 1 hora'},
+{
+  icon: '🛡️',
+  title: 'Garantia Escrita',
+  description: 'Intervenção gratuita'},
+  {
+  icon: '📞',
+  title: 'Orçamento Grátis',
+  description: '2 minutos por telefone'},
+  {
+  icon: '✅',
+  title: 'Sem Taxas Escondidas',
+  description: 'Transparência total'},
+  {
+  icon: '🏆',
+  title: 'Trabalho Garantido',
+  description: isPlumber ? 'Por escrito' : 'Por escrito'},
+  {
+  icon: '⚡',
+  title: 'Resposta Rápida',
+  description: 'Atendimento 24h'},
  {
  icon: '💯',
  title: '',

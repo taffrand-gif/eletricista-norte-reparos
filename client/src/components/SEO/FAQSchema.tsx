@@ -38,8 +38,8 @@ export const eletricistaFAQs: FAQ[] = [
  answer: "Chegamos em 40 minutos no centro de Bragança e até 60 minutos nas aldeias circundantes. Serviço 24h/7 dias incluindo feriados."
  },
  {
- question: "São certificados ?",
- answer: "Sim, somos eletricistas certificados . Todos os trabalhos incluem certificação elétrica obrigatória conforme legislação portuguesa."
+question: "São certificados ?",
+  answer: "Sim, temos técnicos experientes com formação profissional. Todos os trabalhos incluem documentação técnica conforme legislação portuguesa."
  },
  {
  question: "Trabalham 24 horas por dia?",

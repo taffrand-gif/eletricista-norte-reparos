@@ -35,7 +35,7 @@ export default function StructuredData() {
  "legalName": config.company.fullName,
  "alternateName": serviceName,
  "description": `${config.description} Atualmente a servir ${detectedCity} e região.`,
- "slogan": `Serviço 24h/7d em ${detectedCity} • certificação elétrica • Chegamos em 40 minutos`,
+ "slogan": `Serviço 24h/7d em ${detectedCity} • Trabalho garantido por escrito`,
  "url": `https://${config.domain}`,
  "telephone": businessInfo.phone,
  "email": config.email,
@@ -361,7 +361,7 @@ export default function StructuredData() {
  "currenciesAccepted": "EUR",
  "paymentAccepted": ["Cash", "Credit Card", "Bank Transfer", "MB WAY"],
  "knowsLanguage": ["pt-PT"],
- "slogan": "Serviço 24h/7d em Trás-os-Montes • certificação elétrica • Chegamos em 40 minutos"
+ "slogan": "Serviço 24h/7d em Trás-os-Montes • Trabalho garantido por escrito"
  };
  // FAQ Schema enriquecido
  const faqSchema = {

@@ -138,7 +138,7 @@ function GuaranteeSection() {
  Ligar: {config.phone}
  </a>
  <a
- href={`https://wa.me/${config.whatsapp}?text=${encodeURIComponent('Olá! Quero uma arranjo com garantia 2 anos.')}`}
+ href={`https://wa.me/${config.whatsapp}?text=${encodeURIComponent('Olá! Quero uma arranjo com garantia escrita.')}`}
  onClick={handleWhatsAppClick}
  target="_blank"
  rel="noopener noreferrer"

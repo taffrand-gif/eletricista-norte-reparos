@@ -206,7 +206,7 @@ export default function PoupancaLedEconomiaReal() {
  Quer Mudar para LED em Bragança?
  </h3>
  <p className="text-gray-800 mb-4">
- Instalação profissional de iluminação LED. Aconselhamento gratuito, lâmpadas de qualidade, garantia 2 anos. Poupança garantida desde o primeiro mês.
+ Instalação profissional de iluminação LED. Aconselhamento gratuito, lâmpadas de qualidade, garantia escrita. Poupança garantida desde o primeiro mês.
  </p>
  <div className="flex flex-col sm:flex-row gap-3">
  <a
