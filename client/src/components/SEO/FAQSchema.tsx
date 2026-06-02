@@ -71,11 +71,11 @@ question: "São certificados ?",
  },
  {
  question: "O que fazer em caso de curto-circuito?",
- answer: "1) Desligue o disjuntor geral 2) Não toque em fios expostos 3) Ligue-nos imediatamente: 932 321 892. Chegamos em 40 minutos para resolver a urgência."
+ answer: "1) Desligue o disjuntor geral 2) Não toque em fios expostos 3) Ligue-nos imediatamente: 932 321 892. A nossa equipa actua com rapidez para resolver a urgência."
  },
  {
  question: "Atendem em que cidades?",
- answer: "Atendemos em Bragança, Mirandela, Macedo de Cavaleiros, Chaves, Vila Real, Vinhais, Miranda do Douro, Mogadouro e todas as aldeias num raio de 100km."
+ answer: "Atendemos em Bragança, Mirandela, Macedo de Cavaleiros, Chaves, Vila Real, Vinhais, Miranda do Douro, Mogadouro e todas as aldeias num raio de 130km."
  },
  {
  question: "Fazem instalação de tomadas?",

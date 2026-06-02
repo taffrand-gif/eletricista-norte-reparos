@@ -19,10 +19,10 @@ function FAQ() {
  answer: 'O custo de um eletricista urgente em Bragança varia entre €80-200 dependendo do serviço. Arranjo de avarias elétricas custa €100-180, quadros elétricos €150-300, certificação elétrica €150. Deslocação urgente: €15. Orçamento grátis pelo 932 321 892.'},
  {
  question: 'Quanto tempo demora a chegar um eletricista urgente?',
- answer: 'Chegamos em menos de 40 minutos em Bragança, Mirandela e Macedo de Cavaleiros. Em Vila Real e Chaves, o tempo de chegada é de 60-90 minutos. Serviço disponível 24 horas por dia, 7 dias por semana, incluindo fins de semana e feriados.'},
+ answer: 'A nossa equipa actua rapidamente para urgência elétrica em Bragança e região. Serviço disponível 24 horas por dia, 7 dias por semana, incluindo fins de semana e feriados.'},
  {
  question: 'O que fazer em caso de curto-circuito perigoso?',
- answer: 'Em caso de curto-circuito: 1) Desligue o disjuntor geral imediatamente, 2) Não toque em fios expostos ou tomadas, 3) Afaste-se de cheiro a queimado, 4) Ligue imediatamente para 932 321 892. Chegamos em 40 minutos. Nunca tente arranjar sozinho - risco de eletrocussão.'},
+ answer: 'Em caso de curto-circuito: 1) Desligue o disjuntor geral imediatamente, 2) Não toque em fios expostos ou tomadas, 3) Afaste-se de cheiro a queimado, 4) Ligue imediatamente para 932 321 892. A nossa equipa actua com rapidez. Nunca tente arranjar sozinho - risco de eletrocussão.'},
  {
  question: 'Eletricista precisa de Trabalho garantido por escrito?',
  answer: 'Sim, para instalações elétricas em Portugal é obrigatório Trabalho garantido por escrito (Certificação de Instalações Elétricas). Todos os nossos eletricistas são certificados . Emitimos certificação após cada intervenção conforme legislação. Garantia 12 meses em instalações.'},

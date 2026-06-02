@@ -38,7 +38,7 @@ export default function ZonaIntervencao() {
  </h2>
  <p className="text-xl text-gray-600 max-w-3xl mx-auto">
  Prestamos serviços de {serviceLabel} profissional em toda a região de Trás-os-Montes, 
- num raio de 100 km a partir de Macedo de Cavaleiros.
+ num raio de 130 km em toda a região de Trás-os-Montes.
  </p>
  </div>
  {/* Grelha de cidades */}

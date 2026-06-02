@@ -220,7 +220,7 @@ const OptimizedServices: React.FC = () => {
  ))}
  </div>
  <p className="mt-4 text-gray-600 text-sm">
- Servimos toda a região de Trás-os-Montes num raio de 100 km.
+ Servimos toda a região de Trás-os-Montes num raio de 130 km.
  </p>
  <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
  <p className="text-blue-800 font-semibold">

@@ -52,7 +52,7 @@ export default function CidadesProximas({ currentCity, cidades, serviceType }: C
  </div>
  <div className="mt-8 text-center">
  <p className="text-gray-600">
- Cobrimos toda a região de Trás-os-Montes num raio de 100km
+ Cobrimos toda a região de Trás-os-Montes num raio de 130km
  </p>
  </div>
  </div>
