@@ -15,11 +15,11 @@ const faqItems = [
  },
  {
  question: "Fazem urgências elétricas em Trás-os-Montes?",
- answer: "Sim, estamos disponíveis para urgências elétricas 24 horas por dia, 7 dias por semana, em toda a região de Trás-os-Montes. Atendemos curtos-circuitos, falta de energia, disjuntores que não armam e outras emergências em Bragança, Macedo de Cavaleiros, Mirandela e região."
+ answer: "Sim, estamos disponíveis para urgências elétricas 24 horas por dia, 7 dias por semana, em toda a região de Trás-os-Montes. Atendemos curtos-circuitos, falta de energia, disjuntores que não armam e outras emergências em Bragança, Mirandela e toda a região."
  },
  {
  question: "Quais são as zonas que servem?",
- answer: "Servimos toda a região de Trás-os-Montes num raio de 100 km: Bragança, Macedo de Cavaleiros, Mirandela, Miranda do Douro, Vinhais, Mogadouro, Vila Flor, Valpaços, Torre de Moncorvo, Alfândega da Fé e arredores."
+ answer: "Servimos toda a região de Trás-os-Montes num raio de 130km: Bragança, Mirandela, Miranda do Douro, Vinhais, Mogadouro, Vila Flor, Valpaços, Torre de Moncorvo, Alfândega da Fé e arredores."
  }
 ];
 const OptimizedFAQ: React.FC = () => {
