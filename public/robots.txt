@@ -1,4 +1,9 @@
 User-agent: *
+Disallow: /*?
+Geo-target: only
+Servicedomain: eletricista-norte-reparos.pt
+Target: PT
+# Radius: 130km
 Allow: /
 Disallow: /admin/
 Disallow: /api/
