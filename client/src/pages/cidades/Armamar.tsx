@@ -67,16 +67,18 @@ export default function Armamar() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Armamar?",
- answer: "Chegamos a Armamar em aproximadamente 1h05  
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Fazem instalações para câmaras frigoríficas de cereja?",
- answer: "Sim, instalamos quadros trifásicos para câmaras frigoríficas de fruta, sistemas de refrigeração e armazéns de processamento de cereja."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Qual o custo de deslocação a Armamar?",
- answer: "A deslocação é de 55€ (Zona 5). Chegamos em aproximadamente 75-85 minutos. Inclui todo o concelho."
- }];
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
+];
+
  return (
  <div className="min-h-screen flex flex-col">
  <Header />

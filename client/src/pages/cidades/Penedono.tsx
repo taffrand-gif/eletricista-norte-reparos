@@ -67,16 +67,18 @@ export default function Penedono() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Penedono?",
- answer: "Chegamos a Penedono em aproximadamente 1h05  
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Fazem instalações em casas de granito antigas?",
- answer: "Sim, somos especialistas em remodelação elétrica de casas tradicionais em granito, com cablagem embutida na pedra e soluções que respeitam a arquitetura original."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Qual o custo de deslocação a Penedono?",
- answer: "A deslocação é de 65€ (Zona 6), sob marcação prévia. Estamos a cerca de 90km de Macedo de Cavaleiros. Inclui todo o concelho."
- }];
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
+];
+
  return (
  <div className="min-h-screen flex flex-col">
  <Header />

@@ -91,16 +91,16 @@ export default function Braganca() {
  const faqs = [
  {
  question: "Qual o custo de deslocação a Bragança?",
- answer: "A deslocação a Bragança é de 35€ (Zona 3). Chegamos em aproximadamente 40 minutos. Inclui todo o concelho."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Fazem urgências 24 horas em Bragança?",
- answer: "Sim, atendemos urgências elétricas 24 horas por dia, 7 dias por semana em Bragança. Ligue +351 932 321 892 para assistência imediata."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Fornecem certificação elétrica em Bragança?",
- answer: "Sim, emitimos certificação elétrica para venda, arrendamento e legalização de imóveis em Bragança e todo o concelho."
- }
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  ];
  return () => {
  document.head.removeChild(schemaScript);
@@ -284,20 +284,20 @@ export default function Braganca() {
  faqs={[
  {
  question: "Atendem zonas rurais e aldeias remotas do concelho de Bragança?",
- answer: "Sim, atendemos todo o concelho de Bragança, incluindo aldeias remotas e propriedades rurais. Temos experiência com as particularidades elétricas das zonas rurais da região."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Como lidam com o clima frio de Bragança nos sistemas de aquecimento elétrico?",
- answer: "Conhecemos bem as exigências do clima de Bragança. Instalamos e arranjamos sistemas de aquecimento elétrico dimensionados para temperaturas negativas, com isolamento adequado e proteções contra gelo."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Trabalham em edifícios históricos do centro de Bragança?",
- answer: "Sim, temos experiência em trabalhar em edifícios históricos e protegidos do centro de Bragança. Respeitamos as características arquitetónicas e utilizamos técnicas que preservam o património."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Qual o tempo de resposta para urgências em Bragança?",
- answer: "No centro da cidade: 40 minutos. Para aldeias circundantes: 45-60 minutos. Mantemos uma equipa sempre disponível para toda a região."
- }
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  ]}
  />
  </section>

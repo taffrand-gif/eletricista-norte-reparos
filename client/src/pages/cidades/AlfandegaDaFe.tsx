@@ -65,18 +65,14 @@ export default function AlfandegaDaFe() {
  }, []);
  const cidadesProximas = getCidadesProximas('alfandega-da-fe');
  const faqs = [
- {
- question: "Quanto tempo demora a chegar a Alfândega da Fé?",
- answer: "Chegamos a Alfândega da Fé em apenas 25-30 minutos  
- },
- {
- question: "Fazem instalações elétricas para amendoais?",
- answer: "Sim, instalamos sistemas de rega elétricos, iluminação para armazéns de amêndoas e quadros elétricos para maquinaria de processamento."
- },
- {
- question: "Qual o custo de deslocação a Alfândega da Fé?",
- answer: "A deslocação é de 25€ (Zona 2). Chegamos em aproximadamente 25-30 minutos. Inclui todo o concelho."
- }
+{
+    question: "Quanto tempo demora a chegar a Alfândega da Fé?",
+    answer: "Chegamos a Alfândega da Fé em apenas 25-30 minutos a partir de Macedo de Cavaleiros. Cobrimos todo o conselho.",
+  },
+{
+    question: "Qual o custo de deslocação a Alfândega da Fé?",
+    answer: "A deslocação é de 25€ (Zona 2). Cobrimos todo o conselho incluindo as freguesias.",
+  },
  ];
  return (
  <div className="min-h-screen flex flex-col">

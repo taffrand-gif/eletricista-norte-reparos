@@ -67,8 +67,8 @@ export default function FreixoEspadaCinta() {
  { question: "Chegam a Freixo de Espada à Cinta?", answer: "Sim, cobrimos todo o concelho de Freixo de Espada à Cinta. Tempo de chegada: 60-70 minutos." },
  {
  question: "Qual o custo de deslocação a Freixo de Espada à Cinta?",
- answer: "A deslocação é de 35€ (Zona 3). Chegamos em aproximadamente 55-60 minutos. Inclui todo o concelho."
- }
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  ];
  return (
  <div className="min-h-screen flex flex-col">

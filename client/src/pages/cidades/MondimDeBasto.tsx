@@ -67,16 +67,18 @@ export default function MondimDeBasto() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Mondim de Basto?",
- answer: "Chegamos a Mondim de Basto em aproximadamente 1h30  
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Fazem instalações para turismo de montanha?",
- answer: "Sim, instalamos sistemas elétricos para casas de montanha, refúgios, parques de campismo e alojamentos turísticos na Serra do Alvão e arredores."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Qual o custo de deslocação a Mondim de Basto?",
- answer: "A deslocação é de 65€ (Zona 6), sob marcação prévia. Estamos a cerca de 90km de Macedo de Cavaleiros. Inclui todo o concelho."
- }];
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
+];
+
  return (
  <div className="min-h-screen flex flex-col">
  <Header />

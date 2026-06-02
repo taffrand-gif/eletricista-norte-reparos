@@ -67,16 +67,18 @@ export default function Tabuaco() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Tabuaço?",
- answer: "Chegamos a Tabuaço em aproximadamente 55-65 minutos  
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Fazem instalações para quintas vinícolas em Tabuaço?",
- answer: "Sim, instalamos sistemas elétricos completos para quintas: adegas de vinificação, caves, sistemas de climatização, bombas e equipamentos de engarrafamento."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Qual o custo de deslocação a Tabuaço?",
- answer: "A deslocação é de 55€ (Zona 5). Chegamos em aproximadamente 70-80 minutos. Inclui todo o concelho."
- }];
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
+];
+
  return (
  <div className="min-h-screen flex flex-col">
  <Header />

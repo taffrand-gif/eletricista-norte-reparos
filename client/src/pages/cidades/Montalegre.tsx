@@ -67,16 +67,18 @@ export default function Montalegre() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Montalegre?",
- answer: "Chegamos a Montalegre em aproximadamente 1h30  
- },
+    answer: "Chegamos a Montalegre em aproximadamente 70-90 minutos a partir de Macedo de Cavaleiros. Cobrimos todo o conselho.",
+  },
  {
  question: "Trabalham nas zonas das barragens de Montalegre?",
- answer: "Sim, servimos todas as zonas do concelho incluindo as áreas próximas das barragens do Alto Rabagão e Paradela. Instalações para turismo e habitações."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Qual o custo de deslocação a Montalegre?",
- answer: "A deslocação é de 65€ (Zona 6), sob marcação prévia. Estamos a cerca de 110km de Macedo de Cavaleiros. Inclui todo o concelho."
- }];
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
+];
+
  return (
  <div className="min-h-screen flex flex-col">
  <Header />

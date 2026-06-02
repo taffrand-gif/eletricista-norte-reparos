@@ -67,16 +67,18 @@ export default function VilaFlor() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Vila Flor?",
- answer: "Chegamos a Vila Flor em apenas 20-25 minutos  
- },
+    answer: "Chegamos a Vila Flor em aproximadamente 35-45 minutos a partir de Macedo de Cavaleiros. Cobrimos todo o conselho.",
+  },
  {
  question: "Instalam sistemas elétricos em adegas e lagares?",
- answer: "Sim, somos especialistas em instalações para adegas vinícolas e lagares de azeite: quadros trifásicos, iluminação industrial, sistemas de refrigeração e controlo de temperatura."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Qual o custo de deslocação a Vila Flor?",
- answer: "A deslocação é de 25€ (Zona 2). Chegamos em aproximadamente 30-40 minutos. Inclui todo o concelho."
- }];
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
+];
+
  return (
  <div className="min-h-screen flex flex-col">
  <Header />

@@ -67,16 +67,18 @@ export default function Sabrosa() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Sabrosa?",
- answer: "Chegamos a Sabrosa em aproximadamente 1 hora  
- },
+    answer: "Chegamos a Sabrosa em aproximadamente 60-75 minutos a partir de Macedo de Cavaleiros. Cobrimos todo o conselho.",
+  },
  {
  question: "Fazem instalações para espaços culturais e museus em Sabrosa?",
- answer: "Sim, temos experiência em instalações elétricas para espaços culturais, museus e centros interpretativos, com iluminação técnica e sistemas de segurança."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Qual o custo de deslocação a Sabrosa?",
- answer: "A deslocação é de 55€ (Zona 5). Chegamos em aproximadamente 65-75 minutos. Inclui todo o concelho."
- }];
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
+];
+
  return (
  <div className="min-h-screen flex flex-col">
  <Header />

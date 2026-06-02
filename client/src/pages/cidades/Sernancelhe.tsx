@@ -67,16 +67,18 @@ export default function Sernancelhe() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Sernancelhe?",
- answer: "Chegamos a Sernancelhe em aproximadamente 1h10  
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Fazem instalações para secadores de castanha?",
- answer: "Sim, instalamos sistemas elétricos para secadores industriais de castanha, câmaras de fumeiro e armazéns de processamento com quadros trifásicos."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Qual o custo de deslocação a Sernancelhe?",
- answer: "A deslocação é de 65€ (Zona 6), sob marcação prévia. Estamos a cerca de 100km de Macedo de Cavaleiros. Inclui todo o concelho."
- }];
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
+];
+
  return (
  <div className="min-h-screen flex flex-col">
  <Header />

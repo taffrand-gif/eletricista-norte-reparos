@@ -68,16 +68,16 @@ export default function Vinhais() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Vinhais?",
- answer: "Chegamos a Vinhais em aproximadamente 45-60 minutos. Temos veículo 4x4 para aceder às aldeias mais isoladas do concelho."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Qual o custo de deslocação a Vinhais?",
- answer: "A deslocação é de 35€ (Zona 3). Chegamos em aproximadamente 55-60 minutos. Inclui todo o concelho."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Trabalham no Parque Natural de Montesinho?",
- answer: "Sim, cobrimos todas as aldeias do Parque Natural de Montesinho, incluindo as mais remotas."
- }
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  ];
  return (
  <div className="min-h-screen flex flex-col">

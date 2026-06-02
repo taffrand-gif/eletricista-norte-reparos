@@ -67,16 +67,18 @@ export default function SantaMartaDePenaguiao() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Santa Marta de Penaguião?",
- answer: "Chegamos a Santa Marta de Penaguião em aproximadamente 1h10  
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Fazem instalações para adegas de vinho verde?",
- answer: "Sim, instalamos sistemas elétricos para adegas de vinho verde e Douro: climatização, refrigeração, quadros trifásicos e linhas de engarrafamento."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Qual o custo de deslocação a Santa Marta de Penaguião?",
- answer: "A deslocação é de 55€ (Zona 5). Chegamos em aproximadamente 65-75 minutos. Inclui todo o concelho."
- }];
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
+];
+
  return (
  <div className="min-h-screen flex flex-col">
  <Header />

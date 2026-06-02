@@ -87,20 +87,20 @@ export default function MacedoCavaleiros() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Macedo de Cavaleiros?",
- answer: "Estamos sediados em Macedo de Cavaleiros, por isso chegamos em menos de 30 minutos na maioria dos casos. É a nossa zona principal de atuação."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Trabalham aos fins de semana em Macedo?",
- answer: "Sim, estamos disponíveis 24 horas por dia, 7 dias por semana, incluindo feriados. Macedo de Cavaleiros é a nossa base."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Qual o custo de deslocação a Macedo de Cavaleiros?",
- answer: "A deslocação a Macedo de Cavaleiros é de 15€ (Zona 1), pois é a nossa sede. Atendemos em menos de 30 minutos. Inclui todo o concelho."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Fazem certificação elétrica em Macedo?",
- answer: "Sim, fazemos certificação elétrica para todo o tipo de imóveis em Macedo de Cavaleiros e região."
- }
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  ];
  return (
  <div className="min-h-screen flex flex-col">

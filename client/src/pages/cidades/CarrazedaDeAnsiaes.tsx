@@ -67,16 +67,18 @@ export default function CarrazedaDeAnsiaes() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Carrazeda de Ansiães?",
- answer: "Chegamos a Carrazeda de Ansiães em aproximadamente 40-50 minutos  
- },
+    answer: "Chegamos a Carrazeda de Ansiaes em aproximadamente 30-40 minutos a partir de Macedo de Cavaleiros. Cobrimos todo o conselho.",
+  },
  {
  question: "Trabalham nas quintas do Douro em Carrazeda?",
- answer: "Sim, temos vasta experiência em instalações elétricas para quintas vinícolas do Douro: adegas, armazéns, sistemas de irrigação e alojamento turístico rural."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Qual o custo de deslocação a Carrazeda de Ansiães?",
- answer: "A deslocação é de 25€ (Zona 2). Chegamos em aproximadamente 35-40 minutos. Inclui todo o concelho."
- }];
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
+];
+
  return (
  <div className="min-h-screen flex flex-col">
  <Header />

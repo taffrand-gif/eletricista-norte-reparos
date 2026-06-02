@@ -100,16 +100,16 @@ export default function Mirandela() {
  const faqs = [
  {
  question: "Qual o custo de deslocação a Mirandela?",
- answer: "A deslocação é de 25€ (Zona 2). Chegamos em aproximadamente 30-35 minutos. Inclui todo o concelho."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Fazem urgências 24 horas em Mirandela?",
- answer: "Sim, atendemos urgências elétricas 24 horas por dia, 7 dias por semana em Mirandela. Ligue +351 932 321 892 para assistência imediata."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Fornecem certificação elétrica em Mirandela?",
- answer: "Sim, emitimos certificação elétrica para venda, arrendamento e legalização de imóveis em Mirandela e todo o concelho."
- }
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  ];
  
  return () => {

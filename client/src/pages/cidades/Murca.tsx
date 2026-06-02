@@ -67,16 +67,18 @@ export default function Murca() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Murça?",
- answer: "Chegamos a Murça em aproximadamente 45-55 minutos  
- },
+    answer: "Chegamos a Murca em aproximadamente 45-60 minutos a partir de Macedo de Cavaleiros. Cobrimos todo o conselho.",
+  },
  {
  question: "Instalam sistemas elétricos em lagares de azeite?",
- answer: "Sim, somos especialistas em instalações para lagares: quadros trifásicos para prensas, iluminação industrial, sistemas de aquecimento e bombas de transferência."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Qual o custo de deslocação a Murça?",
- answer: "A deslocação é de 45€ (Zona 4). Chegamos em aproximadamente 45-55 minutos. Inclui todo o concelho."
- }];
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
+];
+
  return (
  <div className="min-h-screen flex flex-col">
  <Header />

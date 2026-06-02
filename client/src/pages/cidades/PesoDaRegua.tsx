@@ -67,16 +67,18 @@ export default function PesoDaRegua() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Peso da Régua?",
- answer: "Chegamos a Peso da Régua em aproximadamente 1h15  
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Fazem instalações para caves de vinho do Porto?",
- answer: "Sim, somos especialistas em instalações para caves: climatização, iluminação técnica, sistemas de segurança e quadros de potência para equipamentos de vinificação."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Qual o custo de deslocação a Peso da Régua?",
- answer: "A deslocação é de 45€ (Zona 4). Chegamos em aproximadamente 70-80 minutos. Inclui todo o concelho."
- }];
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
+];
+
  return (
  <div className="min-h-screen flex flex-col">
  <Header />

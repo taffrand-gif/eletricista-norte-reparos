@@ -67,16 +67,18 @@ export default function VilaRealCity() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Vila Pouca de Aguiar?",
- answer: "Chegamos a Vila Pouca de Aguiar em aproximadamente 1h10  
- },
+    answer: "Chegamos a Vila Real em aproximadamente 70-90 minutos a partir de Macedo de Cavaleiros. Cobrimos todo o conselho.",
+  },
  {
  question: "Fazem instalações para complexos termais?",
- answer: "Sim, temos experiência em instalações elétricas para termas e spas: sistemas de aquecimento de água, bombas de circulação, iluminação ambiente e quadros de potência."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Qual o custo de deslocação a Vila Real?",
- answer: "A deslocação é de 55€ (Zona 5). Chegamos em aproximadamente 60-70 minutos. Inclui todo o concelho."
- }];
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
+];
+
  return (
  <div className="min-h-screen flex flex-col">
  <Header />

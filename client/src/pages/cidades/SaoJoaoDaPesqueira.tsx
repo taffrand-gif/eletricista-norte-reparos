@@ -67,16 +67,18 @@ export default function SaoJoaoDaPesqueira() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a São João da Pesqueira?",
- answer: "Chegamos a São João da Pesqueira em aproximadamente 45-55 minutos  
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Fazem instalações para quintas vinícolas no Douro?",
- answer: "Sim, somos especialistas em instalações para quintas: adegas de vinificação, caves de estágio, sistemas de climatização, bombas e linhas de engarrafamento."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Qual o custo de deslocação a São João da Pesqueira?",
- answer: "A deslocação é de 45€ (Zona 4). Chegamos em aproximadamente 60-70 minutos. Inclui todo o concelho."
- }];
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
+];
+
  return (
  <div className="min-h-screen flex flex-col">
  <Header />

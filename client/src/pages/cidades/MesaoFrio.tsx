@@ -67,16 +67,18 @@ export default function MesaoFrio() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Mesão Frio?",
- answer: "Chegamos a Mesão Frio em aproximadamente 1h15  
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Fazem instalações para infraestruturas de turismo fluvial?",
- answer: "Sim, instalamos sistemas elétricos para cais, marinas fluviais, restaurantes ribeirinhos e espaços de embarque no rio Douro."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Qual o custo de deslocação a Mesão Frio?",
- answer: "A deslocação é de 55€ (Zona 5). Chegamos em aproximadamente 70-80 minutos. Inclui todo o concelho."
- }];
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
+];
+
  return (
  <div className="min-h-screen flex flex-col">
  <Header />

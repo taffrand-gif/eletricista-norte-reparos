@@ -67,16 +67,18 @@ export default function Lamego() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Lamego?",
- answer: "Chegamos a Lamego em aproximadamente 1h15  
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Fazem instalações para caves de espumante em Lamego?",
- answer: "Sim, somos especialistas em instalações para caves: climatização controlada, iluminação técnica, sistemas de refrigeração e quadros de potência para linhas de engarrafamento."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Qual o custo de deslocação a Lamego?",
- answer: "A deslocação é de 55€ (Zona 5). Chegamos em aproximadamente 75-90 minutos. Inclui todo o concelho."
- }];
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
+];
+
  return (
  <div className="min-h-screen flex flex-col">
  <Header />

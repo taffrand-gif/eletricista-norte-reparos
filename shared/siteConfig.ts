@@ -95,8 +95,8 @@ export interface SiteConfig {
 export const siteConfig: SiteConfig = {
  id: 'staff-seekers',
  name: 'Eletricista Profissional',
- title: 'Eletricista Urgente Trás-os-Montes ⚡ 24h | 932 321 892',
- description: 'Problemas elétricos? Respondemos em menos de 1h em Bragança, Macedo, Mirandela e Vila Real. Orçamento sem compromisso. Ligue agora: 932 321 892',
+title: 'Eletricista em Trás-os-Montes | Staff Seekers — Serviço ao Domicílio 24h',
+  description: 'Eletricista certificado ao seu domicílio em Trás-os-Montes. Quadros elétricos, curto-circuito, urgências 24h. Orçamento gratuito. Ligue 932 321 892.',
  phone: '932 321 892',
  whatsapp: '351932321892',
  whatsappMessage: 'Olá, preciso de um eletricista em Trás-os-Montes. Podem dar-me um orçamento?',
@@ -111,11 +111,11 @@ export const siteConfig: SiteConfig = {
  accent: '#b91c1c', // Red 700 for urgent CTAs
  },
  
- hero: {
- title: 'Sem Luz em Casa? Chegamos em 40 Minutos.',
- subtitle: 'Avaria elétrica, disjuntor a disparar, curto-circuito. Diagnóstico gratuito. Preço fixo dito ao telefone antes de sair.',
- backgroundImage: '/images-optimized/hero/hero-electrician-portugal.jpg',
- ogImage: '/images-optimized/hero/hero-electrician-portugal.jpg'},
+hero: {
+    title: 'Problemas Elétricos? Resolvemos Agora.',
+    subtitle: 'Serviço ao domicílio em Trás-os-Montes — 24h/7d. Diagnóstico gratuito. Preço dito antes de sair.',
+    backgroundImage: '/images-optimized/hero/hero-electrician-portugal.jpg',
+    ogImage: '/images-optimized/hero/hero-electrician-portugal.jpg'},
  
  services: [
  { id: 'quadro-eletrico', label: 'Substituição Quadro Elétrico', basePrice: 200 },
@@ -157,14 +157,14 @@ export const siteConfig: SiteConfig = {
 
  team: [],
 
- pricingZones: [
- { name: "Zona 1 (Sede)", cities: "Macedo de Cavaleiros e concelho", price: "15€", time: "< 30 min" },
- { name: "Zona 2 (Próximo)", cities: "Vila Flor, Alfândega da Fé, Mirandela, Carrazeda de Ansiães", price: "25€", time: "< 40 min" },
- { name: "Zona 3 (Distrito Bragança)", cities: "Bragança, Vinhais, Vimioso, Torre de Moncorvo, Mogadouro, Freixo de Espada à Cinta", price: "35€", time: "< 60 min" },
- { name: "Zona 4 (Miranda / Douro)", cities: "Miranda do Douro, Vila Nova de Foz Côa, São João da Pesqueira, Murça, Valpaços", price: "45€", time: "45-75 min" },
- { name: "Zona 5 (Vila Real / Douro)", cities: "Vila Real, Alijó, Sabrosa, Tabuaço, Armamar, Peso da Régua, Lamego, Santa Marta de Penaguião, Mesão Frio", price: "55€", time: "60-90 min" },
- { name: "Zona 6 (Limite 100km)", cities: "Chaves, Vila Pouca de Aguiar, Boticas, Montalegre, Ribeira de Pena, Mondim de Basto, Moimenta da Beira, Sernancelhe, Penedono", price: "65€", time: "Sob marcação" },
- ],
+pricingZones: [
+    { name: "Zona 1", cities: "Macedo de Cavaleiros e sekitarnya", price: "15€", time: "< 30 min" },
+    { name: "Zona 2", cities: "Vila Flor, Alfândega da Fé, Mirandela, Carrazeda de Ansiães", price: "25€", time: "< 40 min" },
+    { name: "Zona 3", cities: "Bragança, Vinhais, Vimioso, Torre de Moncorvo, Mogadouro, Freixo de Espada à Cinta", price: "35€", time: "< 60 min" },
+    { name: "Zona 4", cities: "Miranda do Douro, Vila Nova de Foz Côa, São João da Pesqueira, Murça, Valpaços", price: "45€", time: "45-75 min" },
+    { name: "Zona 5", cities: "Vila Real, Alijó, Sabrosa, Tabuaço, Armamar, Peso da Régua, Lamego, Santa Marta de Penaguião, Mesão Frio", price: "55€", time: "60-90 min" },
+    { name: "Zona 6", cities: "Chaves, Vila Pouca de Aguiar, Boticas, Montalegre, Ribeira de Pena, Mondim de Basto, Moimenta da Beira, Sernancelhe, Penedono", price: "65€", time: "Sob marcação" },
+  ],
  
  testimonials: [
  {
@@ -190,12 +190,12 @@ export const siteConfig: SiteConfig = {
  rating: 5},
  ],
  
- company: {
- fullName: 'Eletricista Profissional — Eletricista Profissional',
- shortDescription: 'Eletricista certificado ao seu serviço em Trás-os-Montes.',
- longDescription: 'A Eletricista Profissional presta serviços de eletricidade profissional em toda a região de Trás-os-Montes. Instalação, assistência e manutenção técnica de sistemas elétricos, com deslocação ao domicílio dos clientes, todos os dias do ano, incluindo fins de semana e feriados.',
- coverage: 'Trás-os-Montes — Distrito de Bragança e região',
- yearEstablished: '2015'},
+company: {
+    fullName: 'Staff Seekers — Eletricista Certificado',
+    shortDescription: 'Serviço de eletricidade ao seu domicílio em Trás-os-Montes. Não temos loja — vamos até si.',
+    longDescription: 'A Staff Seekers é uma empresa de eletricidade que cobre toda a região de Trás-os-Montes e Norte de Portugal. Com mais de 15 anos de experiência em instalações e urgências elétricas, utilizamos equipamento profissional certificado — multímetro Fluke calibrado e câmara térmica FLIR para diagnósticos precisos. Deslocamo-nos até si. Rápido. Com garantia escrita.',
+    coverage: 'Trás-os-Montes — Distrito de Bragança, Vila Real, Guarda e Viseu',
+    yearEstablished: '2015'},
  
  seo: {
  keywords: [

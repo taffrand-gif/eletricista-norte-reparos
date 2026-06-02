@@ -67,16 +67,18 @@ export default function VilaNovaFozCoa() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Vila Nova de Foz Côa?",
- answer: "Chegamos a Vila Nova de Foz Côa em aproximadamente 45-55 minutos  
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Fazem instalações para o Museu do Côa e espaços culturais?",
- answer: "Sim, temos experiência em instalações para museus e centros interpretativos: iluminação técnica, sistemas de segurança, climatização e quadros de emergência."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Qual o custo de deslocação a Vila Nova de Foz Côa?",
- answer: "A deslocação é de 65€ (Zona 6). Chegamos em aproximadamente 50-60 minutos. Inclui todo o concelho."
- }];
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
+];
+
  return (
  <div className="min-h-screen flex flex-col">
  <Header />

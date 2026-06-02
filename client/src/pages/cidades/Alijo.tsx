@@ -67,17 +67,19 @@ export default function Alijo() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Alijó?",
- answer: "Chegamos a Alijó em aproximadamente 50-60 minutos  
- },
+    answer: "Chegamos a Alijo em aproximadamente 60-75 minutos a partir de Macedo de Cavaleiros. Cobrimos todo o conselho.",
+  },
  {
  question: "Trabalham nas quintas vinhateiras do Douro em Alijó?",
- answer: "Sim, temos ampla experiência em instalações para quintas do Douro: adegas de vinificação, caves de estágio, sistemas de irrigação por gotejamento e alojamento turístico."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Qual o custo de deslocação a Alijó?",
- answer: "A deslocação é de 55€ (Zona 5). Chegamos em aproximadamente 60-70 minutos. Inclui todo o concelho."
- }];
- return (
+answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
+];
+
+return (
  <div className="min-h-screen flex flex-col">
  <Header />
  <main className="flex-grow">

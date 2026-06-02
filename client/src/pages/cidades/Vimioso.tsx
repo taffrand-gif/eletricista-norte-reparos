@@ -67,16 +67,18 @@ export default function Vimioso() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Vimioso?",
- answer: "Chegamos a Vimioso em aproximadamente 45-55 minutos  
- },
+    answer: "Chegamos a Vimioso em aproximadamente 50-60 minutos a partir de Macedo de Cavaleiros. Cobrimos todo o conselho.",
+  },
  {
  question: "Servem as aldeias fronteiriças do concelho de Vimioso?",
- answer: "Sim, cobrimos todas as aldeias do concelho de Vimioso, incluindo as mais próximas da fronteira espanhola. Temos veículo parranjado para acessos rurais."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Qual o custo de deslocação a Vimioso?",
- answer: "A deslocação é de 35€ (Zona 3). Chegamos em aproximadamente 50-55 minutos. Inclui todo o concelho."
- }];
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
+];
+
  return (
  <div className="min-h-screen flex flex-col">
  <Header />

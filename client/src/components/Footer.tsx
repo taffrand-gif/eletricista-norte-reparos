@@ -95,8 +95,8 @@ function Footer() {
  <li className="flex items-start gap-3">
  <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
  <div>
- <p className="font-bold">Zona de Cobertura:</p>
- <p className="text-gray-200">Trás-os-Montes — Bragança, Macedo de Cavaleiros, Mirandela e região</p>
+<p className="font-bold">Zona de Cobertura:</p>
+  <p className="text-gray-200">Trás-os-Montes e Norte de Portugal</p>
  </div>
  </li>
  </ul>
@@ -150,7 +150,7 @@ function Footer() {
  <div className="pt-8 border-t-2 border-white/20 text-center text-gray-100 text-sm">
  © {new Date().getFullYear()} {config.name}. Todos os direitos reservados.
  <div className="mt-2 text-xs text-gray-200">
- Morada: Macedo de Cavaleiros, Trás-os-Montes, Portugal
+ Morada: Trás-os-Montes, Portugal
  </div>
  <div className="mt-3 text-xs text-gray-300">
  <strong>Outros serviços:</strong> Precisa de canalizador profissional? Visite <a href="https://canalizador-norte-reparos.pt" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">canalizador-norte-reparos.pt</a>

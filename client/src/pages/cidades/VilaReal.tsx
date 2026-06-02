@@ -91,16 +91,16 @@ export default function VilaReal() {
  const faqs = [
  {
  question: "Qual o custo de deslocação a Vila Real?",
- answer: "A deslocação é de 55€ (Zona 5). Chegamos em aproximadamente 60-70 minutos. Inclui todo o concelho."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Fazem urgências 24 horas em Vila Real?",
- answer: "Sim, atendemos urgências elétricas 24 horas por dia, 7 dias por semana em Vila Real. Ligue +351 932 321 892 para assistência imediata."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Fornecem certificação elétrica em Vila Real?",
- answer: "Sim, emitimos certificação elétrica para venda, arrendamento e legalização de imóveis em Vila Real e todo o concelho."
- }
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  ];
  
  return () => {
@@ -255,28 +255,28 @@ export default function VilaReal() {
  faqs={[
  {
  question: "Qual o tempo médio de resposta para urgências em Vila Real?",
- answer: "Em média, atendemos urgências no centro de Vila Real em 15-30 minutos. Para os bairros periféricos, o tempo é de 30-45 minutos. Mantemos uma equipa sempre disponível para a região."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Trabalham em edifícios históricos do centro de Vila Real?",
- answer: "Sim, temos experiência em trabalhar em edifícios históricos e protegidos. Conhecemos as regulamentações específicas e utilizamos técnicas que preservam a integridade dos imóveis históricos de Vila Real."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Oferecem serviço para empresas na Zona Industrial de Vila Real?",
- answer: "Sim, atendemos empresas na Zona Industrial e em todo o concelho. Serviços industriais, comerciais e residenciais. Trabalhamos com horários flexíveis para minimizar impactos na produção."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Atendem bairros como Corgo, Mateus ou Lordelo?",
- answer: "Sim, atendemos todos os bairros e freguesias de Vila Real, incluindo Corgo, Mateus, Lordelo, Vila Marim, Arroios e toda a área metropolitana."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Preciso de certificação elétrica para vender minha casa em Vila Real?",
- answer: "Sim, é obrigatório ter certificação elétrica válida (boletim DGEG) para venda ou arrendamento de imóveis em Portugal. O certificado tem validade de 8 anos."
- },
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  {
  question: "Fazem manutenção preventiva para condomínios em Vila Real?",
- answer: "Sim, oferecemos contratos de manutenção preventiva para condomínios, incluindo inspeção periódica de quadros elétricos, iluminação comum e sistemas de emergência."
- }
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+  },
  ]}
  />
  </section>
