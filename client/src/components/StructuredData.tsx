@@ -22,9 +22,17 @@ export default function StructuredData() {
  const shouldIncludeFAQ = !isCityServicePage;
  // Lista das 10 cidades servidas
  const citiesServed = [
- "Bragança", "Macedo de Cavaleiros", "Mirandela", "Chaves",
- "Vila Real", "Vinhais", "Miranda do Douro", "Mogadouro",
- "Torre de Moncorvo", "Freixo de Espada à Cinta", "Valpaços", "Alfândega da Fé"
+ // Proximidade Macedo (<20km)
+ "Macedo de Cavaleiros", "Alfândega da Fé", "Carrazeda de Ansiães", "Vila Flor",
+ // Raio 20-40km
+ "Mirandela", "Bragança", "Vimioso", "Valpaços", "Murça", "Torre de Moncorvo", "Mogadouro", "Vinhais",
+ // Raio 40-60km
+ "Freixo de Espada à Cinta", "Miranda do Douro",
+ // Raio 60-90km  
+ "Chaves", "Vila Real", "Montalegre", "Boticas", "Alijó", "Sabrosa", "Ribeira de Pena", "Vila Pouca de Aguiar",
+ // Raio 90-130km
+ "Lamego", "Peso da Régua", "Mesão Frio", "Tabuaço", "Armamar", "Moimenta da Beira",
+ "Vila Nova de Foz Côa", "Sernancelhe", "Penedono", "São João da Pesqueira", "Mondim de Basto"
  ];
  // LocalBusiness Schema enriquecido
  const localBusinessSchema = {
