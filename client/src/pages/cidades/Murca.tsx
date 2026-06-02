@@ -67,7 +67,7 @@ export default function Murca() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Murça?",
- answer: "Chegamos a Murça em aproximadamente 45-55 minutos desde Macedo de Cavaleiros, percorrendo cerca de 55km."
+ answer: "Chegamos a Murça em aproximadamente 45-55 minutos  
  },
  {
  question: "Instalam sistemas elétricos em lagares de azeite?",

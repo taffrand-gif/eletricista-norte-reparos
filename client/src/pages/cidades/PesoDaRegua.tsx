@@ -67,7 +67,7 @@ export default function PesoDaRegua() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Peso da Régua?",
- answer: "Chegamos a Peso da Régua em aproximadamente 1h15 desde Macedo de Cavaleiros, percorrendo cerca de 85km pela A4 e IP4."
+ answer: "Chegamos a Peso da Régua em aproximadamente 1h15  
  },
  {
  question: "Fazem instalações para caves de vinho do Porto?",

@@ -67,7 +67,7 @@ export default function MesaoFrio() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Mesão Frio?",
- answer: "Chegamos a Mesão Frio em aproximadamente 1h15 desde Macedo de Cavaleiros, percorrendo cerca de 90km pela A4 e A24."
+ answer: "Chegamos a Mesão Frio em aproximadamente 1h15  
  },
  {
  question: "Fazem instalações para infraestruturas de turismo fluvial?",

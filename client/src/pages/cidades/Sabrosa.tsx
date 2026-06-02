@@ -67,7 +67,7 @@ export default function Sabrosa() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Sabrosa?",
- answer: "Chegamos a Sabrosa em aproximadamente 1 hora desde Macedo de Cavaleiros, percorrendo cerca de 70km pela A4 e estradas nacionais."
+ answer: "Chegamos a Sabrosa em aproximadamente 1 hora  
  },
  {
  question: "Fazem instalações para espaços culturais e museus em Sabrosa?",

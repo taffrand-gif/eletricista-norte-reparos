@@ -67,7 +67,7 @@ export default function Penedono() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Penedono?",
- answer: "Chegamos a Penedono em aproximadamente 1h05 desde Macedo de Cavaleiros, percorrendo cerca de 75km pelas estradas nacionais."
+ answer: "Chegamos a Penedono em aproximadamente 1h05  
  },
  {
  question: "Fazem instalações em casas de granito antigas?",

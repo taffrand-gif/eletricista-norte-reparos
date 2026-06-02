@@ -67,7 +67,7 @@ export default function Armamar() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Armamar?",
- answer: "Chegamos a Armamar em aproximadamente 1h05 desde Macedo de Cavaleiros, percorrendo cerca de 75km pela A4 e estradas nacionais."
+ answer: "Chegamos a Armamar em aproximadamente 1h05  
  },
  {
  question: "Fazem instalações para câmaras frigoríficas de cereja?",

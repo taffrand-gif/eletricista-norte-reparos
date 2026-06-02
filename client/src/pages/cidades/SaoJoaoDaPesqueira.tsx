@@ -67,7 +67,7 @@ export default function SaoJoaoDaPesqueira() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a São João da Pesqueira?",
- answer: "Chegamos a São João da Pesqueira em aproximadamente 45-55 minutos desde Macedo de Cavaleiros, percorrendo cerca de 55km."
+ answer: "Chegamos a São João da Pesqueira em aproximadamente 45-55 minutos  
  },
  {
  question: "Fazem instalações para quintas vinícolas no Douro?",

@@ -67,7 +67,7 @@ export default function CarrazedaDeAnsiaes() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Carrazeda de Ansiães?",
- answer: "Chegamos a Carrazeda de Ansiães em aproximadamente 40-50 minutos desde Macedo de Cavaleiros, percorrendo cerca de 45km."
+ answer: "Chegamos a Carrazeda de Ansiães em aproximadamente 40-50 minutos  
  },
  {
  question: "Trabalham nas quintas do Douro em Carrazeda?",

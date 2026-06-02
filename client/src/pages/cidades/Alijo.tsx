@@ -67,7 +67,7 @@ export default function Alijo() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Alijó?",
- answer: "Chegamos a Alijó em aproximadamente 50-60 minutos desde Macedo de Cavaleiros, percorrendo cerca de 60km pela EN212."
+ answer: "Chegamos a Alijó em aproximadamente 50-60 minutos  
  },
  {
  question: "Trabalham nas quintas vinhateiras do Douro em Alijó?",

@@ -67,7 +67,7 @@ export default function AlfandegaDaFe() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Alfândega da Fé?",
- answer: "Chegamos a Alfândega da Fé em apenas 25-30 minutos desde Macedo de Cavaleiros. É uma das cidades mais próximas da nossa sede."
+ answer: "Chegamos a Alfândega da Fé em apenas 25-30 minutos  
  },
  {
  question: "Fazem instalações elétricas para amendoais?",

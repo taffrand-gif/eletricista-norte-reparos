@@ -67,7 +67,7 @@ export default function Tabuaco() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Tabuaço?",
- answer: "Chegamos a Tabuaço em aproximadamente 55-65 minutos desde Macedo de Cavaleiros, percorrendo cerca de 65km pelas estradas nacionais."
+ answer: "Chegamos a Tabuaço em aproximadamente 55-65 minutos  
  },
  {
  question: "Fazem instalações para quintas vinícolas em Tabuaço?",

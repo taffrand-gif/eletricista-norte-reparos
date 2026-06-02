@@ -67,7 +67,7 @@ export default function Sernancelhe() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Sernancelhe?",
- answer: "Chegamos a Sernancelhe em aproximadamente 1h10 desde Macedo de Cavaleiros, percorrendo cerca de 80km pelas estradas nacionais."
+ answer: "Chegamos a Sernancelhe em aproximadamente 1h10  
  },
  {
  question: "Fazem instalações para secadores de castanha?",

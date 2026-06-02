@@ -67,7 +67,7 @@ export default function Vimioso() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Vimioso?",
- answer: "Chegamos a Vimioso em aproximadamente 45-55 minutos desde Macedo de Cavaleiros, percorrendo cerca de 55km pela estrada nacional."
+ answer: "Chegamos a Vimioso em aproximadamente 45-55 minutos  
  },
  {
  question: "Servem as aldeias fronteiriças do concelho de Vimioso?",

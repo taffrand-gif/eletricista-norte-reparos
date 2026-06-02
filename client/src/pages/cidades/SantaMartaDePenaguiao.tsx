@@ -67,7 +67,7 @@ export default function SantaMartaDePenaguiao() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Santa Marta de Penaguião?",
- answer: "Chegamos a Santa Marta de Penaguião em aproximadamente 1h10 desde Macedo de Cavaleiros, percorrendo cerca de 80km pela A4 e A24."
+ answer: "Chegamos a Santa Marta de Penaguião em aproximadamente 1h10  
  },
  {
  question: "Fazem instalações para adegas de vinho verde?",

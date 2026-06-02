@@ -67,7 +67,7 @@ export default function Zonas() {
  }
  metaDescription.setAttribute(
  'content',
- 'Eletricista profissional em 34 cidades de Trás-os-Montes. Raio de 100km desde Macedo de Cavaleiros. Serviço rápido em Bragança, Vila Real, Chaves, Mirandela e toda a região.'
+ 'Eletricista profissional em 34 cidades de Trás-os-Montes. 130km de Cavaleiros. Serviço rápido em Bragança, Vila Real, Chaves, Mirandela e toda a região.'
  );
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
@@ -109,7 +109,7 @@ export default function Zonas() {
  ],
  serviceType: 'Eletricista',
  description:
- 'Serviços de electricidade profissional em 34 cidades de Trás-os-Montes, num raio de 100km desde Macedo de Cavaleiros.'});
+ 'Serviços de electricidade profissional em 34 cidades de Trás-os-Montes, 130km de Cavaleiros.'});
  document.head.appendChild(schemaScript);
  return () => {
  if (schemaScript.parentNode) {
@@ -146,7 +146,7 @@ export default function Zonas() {
  Zona de Intervenção — Eletricista em Trás-os-Montes
  </h1>
  <p className="text-xl text-orange-100 mb-8">
- Servimos 34 cidades num raio de 100km desde Macedo de Cavaleiros. Intervenção rápida em toda a região de
+ Servimos 34 cidades 130km de Cavaleiros. Intervenção rápida em toda a região de
  Trás-os-Montes.
  </p>
  <div className="flex flex-wrap justify-center gap-6 text-lg">

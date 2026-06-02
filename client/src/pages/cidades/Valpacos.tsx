@@ -66,7 +66,7 @@ export default function Valpacos() {
  const cidadesProximas = getCidadesProximas('valpacos');
  const faqs = [
  {
- question: "Quanto tempo demora a chegar a Valpaços desde Macedo de Cavaleiros?",
+ question: "Quanto tempo demora a chegar a Valpaços em toda a região.
  answer: "Chegamos a Valpaços em aproximadamente 50-60 minutos. Cobrimos todo o concelho incluindo as freguesias rurais dedicadas à olivicultura."
  },
  {

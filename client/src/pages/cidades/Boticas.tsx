@@ -67,7 +67,7 @@ export default function Boticas() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Boticas?",
- answer: "Chegamos a Boticas em aproximadamente 1h15 desde Macedo de Cavaleiros, percorrendo cerca de 90km. Cobrimos todo o concelho."
+ answer: "Chegamos a Boticas em aproximadamente 1h15  
  },
  {
  question: "Fazem instalações para adegas do Vinho dos Mortos?",

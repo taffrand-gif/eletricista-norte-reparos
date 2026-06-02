@@ -67,7 +67,7 @@ export default function MondimDeBasto() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Mondim de Basto?",
- answer: "Chegamos a Mondim de Basto em aproximadamente 1h30 desde Macedo de Cavaleiros, percorrendo cerca de 100km. Temos veículo 4x4 para a Serra do Alvão."
+ answer: "Chegamos a Mondim de Basto em aproximadamente 1h30  
  },
  {
  question: "Fazem instalações para turismo de montanha?",

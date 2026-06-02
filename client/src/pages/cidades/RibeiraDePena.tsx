@@ -67,7 +67,7 @@ export default function RibeiraDePena() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Ribeira de Pena?",
- answer: "Chegamos a Ribeira de Pena em aproximadamente 1h20 desde Macedo de Cavaleiros, percorrendo cerca de 95km. Temos veículo 4x4 para acessos de montanha."
+ answer: "Chegamos a Ribeira de Pena em aproximadamente 1h20  
  },
  {
  question: "Fazem instalações para casas junto à barragem?",

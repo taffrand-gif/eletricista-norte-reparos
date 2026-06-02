@@ -67,7 +67,7 @@ export default function Montalegre() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Montalegre?",
- answer: "Chegamos a Montalegre em aproximadamente 1h30 desde Macedo de Cavaleiros, percorrendo cerca de 100km. Temos veículo 4x4 para acessos de montanha."
+ answer: "Chegamos a Montalegre em aproximadamente 1h30  
  },
  {
  question: "Trabalham nas zonas das barragens de Montalegre?",

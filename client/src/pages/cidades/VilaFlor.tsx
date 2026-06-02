@@ -67,7 +67,7 @@ export default function VilaFlor() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Vila Flor?",
- answer: "Chegamos a Vila Flor em apenas 20-25 minutos desde Macedo de Cavaleiros. É uma das localidades mais próximas que servimos."
+ answer: "Chegamos a Vila Flor em apenas 20-25 minutos  
  },
  {
  question: "Instalam sistemas elétricos em adegas e lagares?",

@@ -67,7 +67,7 @@ export default function VilaNovaFozCoa() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Vila Nova de Foz Côa?",
- answer: "Chegamos a Vila Nova de Foz Côa em aproximadamente 45-55 minutos desde Macedo de Cavaleiros, percorrendo cerca de 55km."
+ answer: "Chegamos a Vila Nova de Foz Côa em aproximadamente 45-55 minutos  
  },
  {
  question: "Fazem instalações para o Museu do Côa e espaços culturais?",
