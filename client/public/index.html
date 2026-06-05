@@ -1,145 +1,193 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-PT">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
+<meta name="theme-color" content="#FF6B35" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="manifest" href="/site.webmanifest" />
 <title>Eletricista Profissional Trás-os-Montes | Norte Reparos</title>
-<meta name="description" content="Eletricista profissional em Trás-os-Montes. Avarías elétricas, quadros, iluminação LED, certificação. Orçamento por telefone. Ligue 932 321 892.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://eletricista-norte-reparos.pt/">
-<link rel="stylesheet" href="/styles.css">
+<meta name="description" content="Eletricista profissional em Trás-os-Montes. Quadros elétricos, iluminação LED, certificação, avarias elétricas. Atendimento 24h. Orçamento gratuito." />
+<meta name="keywords" content="eletricista bragança, eletricista mirandela, eletricista macedo de cavaleiros, eletricista urgente bragança, eletricista 24 horas mirandela, eletricista chaves, eletricista vila real, eletricista vinhais, eletricista miranda do douro, eletricista mogadouro, eletricista torre de moncorvo, eletricista trás-os-montes, quadro elétrico bragança, certificação elétrica bragança, certificação elétrica mirandela, curto circuito bragança, avaria elétrica mirandela, disjuntor a disparar, tomada não funciona, eletricista urgente 24h, eletricista profissional trás-os-montes" />
+<link rel="canonical" href="https://eletricista-norte-reparos.pt/" />
+
+<!-- Critical Schema.org JSON-LD for SEO (server-side) -->
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Electrician",
-  "name": "Norte Reparos — Eletricista Profissional",
-  "telephone": "+351932321892",
-  "email": "taff.rand@gmail.com",
-  "url": "https://eletricista-norte-reparos.pt/",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Macedo de Cavaleiros",
-    "addressRegion": "Bragança",
-    "postalCode": "5340-321",
-    "addressCountry": "PT"
-  },
-  "areaServed": [
-    {"@type": "State", "name": "Bragança"},
-    {"@type": "State", "name": "Vila Real"}
-  ],
-  "priceRange": "€€",
-  "paymentAccepted": "Dinheiro, Transferência Bancária",
-  "currenciesAccepted": "EUR"
+ "@context": "https://schema.org",
+ "@type": "Electrician",
+ "@id": "https://eletricista-norte-reparos.pt/#organization",
+ "name": "Norte Reparos - Eletricista Profissional",
+ "legalName": "Staff Seekers - Serviços de Eletricista Lda",
+ "telephone": "+351932321892",
+ "email": "geral@eletricista-norte-reparos.pt",
+ "url": "https://eletricista-norte-reparos.pt",
+ "priceRange": "€€",
+ "image": "https://eletricista-norte-reparos.pt/images-optimized/hero/og-electrician-portugal.jpg",
+ "logo": "https://eletricista-norte-reparos.pt/logo.png",
+ "address": {
+ "@type": "PostalAddress",
+ "streetAddress": "Rua Principal",
+ "addressLocality": "Trás-os-Montes",
+ "addressRegion": "Norte, Portugal",
+ "postalCode": "5300-000",
+ "addressCountry": "PT"
+ },
+ "geo": {
+ "@type": "GeoCoordinates",
+ "latitude": "41.5382",
+ "longitude": "-6.9667"
+ },
+ "areaServed": [
+ {"@type": "City", "name": "Bragança"},
+ {"@type": "City", "name": "Mirandela"},
+ {"@type": "City", "name": "Macedo de Cavaleiros"},
+ {"@type": "City", "name": "Vila Real"},
+ {"@type": "City", "name": "Chaves"},
+ {"@type": "City", "name": "Vinhais"},
+ {"@type": "City", "name": "Miranda do Douro"},
+ {"@type": "City", "name": "Mogadouro"},
+ {"@type": "City", "name": "Torre de Moncorvo"},
+ {"@type": "City", "name": "Freixo de Espada à Cinta"},
+ {"@type": "City", "name": "Valpaços"},
+ {"@type": "City", "name": "Alfândega da Fé"}
+ ],
+ "openingHoursSpecification": {
+ "@type": "OpeningHoursSpecification",
+ "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+ "opens": "00:00",
+ "closes": "23:59"
+ },
+ "sameAs": [
+ "https://eletricista-urgente.pt",
+ "https://www.facebook.com/staffseekers",
+ "https://www.instagram.com/staffseekers"
+ ]
 }
 </script>
+
+<!-- Additional schemas injected by StructuredData.tsx component -->
+
+<!-- Preconnect pour ressources externes (optimisation DNS + TLS) -->
+<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+<link rel="preconnect" href="https://www.google-analytics.com" crossorigin />
+<link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+<link rel="dns-prefetch" href="https://www.google-analytics.com" />
+<link rel="dns-prefetch" href="https://ipapi.co" />
+<link rel="dns-prefetch" href="https://nominatim.openstreetmap.org" />
+
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ELETRICISTA2026"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-ELETRICISTA2026', {
+'send_page_view': true,
+'anonymize_ip': true,
+'cookie_flags': 'SameSite=None;Secure'
+});
+window.trackPhoneClick = function(phone) {
+gtag('event', 'phone_click', {'event_category': 'conversion', 'event_label': phone, 'value': 1});
+};
+window.trackWhatsAppClick = function(source) {
+gtag('event', 'whatsapp_click', {'event_category': 'conversion', 'event_label': source, 'value': 1});
+};
+window.trackQuoteCalculated = function(service, price) {
+gtag('event', 'quote_calculated', {'event_category': 'engagement', 'event_label': service, 'value': price});
+};
+</script>
+
+<!-- Preload des ressources critiques -->
+<link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-600.woff2" crossorigin />
+<link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-700.woff2" crossorigin />
+<link rel="preload" as="image" href="/images-optimized/hero/hero-electrician-portugal.jpg" fetchpriority="high" />
+
+<style>
+@font-face { font-family: 'Poppins'; font-style: normal; font-weight: 400; font-display: optional; src: url('/fonts/poppins-400.woff2') format('woff2'); }
+@font-face { font-family: 'Poppins'; font-style: normal; font-weight: 600; font-display: swap; src: url('/fonts/poppins-600.woff2') format('woff2'); }
+@font-face { font-family: 'Poppins'; font-style: normal; font-weight: 700; font-display: swap; src: url('/fonts/poppins-700.woff2') format('woff2'); }
+@font-face { font-family: 'Poppins'; font-style: normal; font-weight: 900; font-display: optional; src: url('/fonts/poppins-900.woff2') format('woff2'); }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: optional; src: url('/fonts/inter-400.woff2') format('woff2'); }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 500; font-display: optional; src: url('/fonts/inter-500.woff2') format('woff2'); }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 600; font-display: optional; src: url('/fonts/inter-600.woff2') format('woff2'); }
+</style>
+<link rel="manifest" href="/manifest.json" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="pt_PT" />
+<meta property="og:site_name" content="Staff Seekers - Eletricista Profissional" />
+<meta property="og:title" content="Eletricista Profissional Trás-os-Montes | Norte Reparos" />
+<meta property="og:description" content="Eletricista profissional em Trás-os-Montes. Quadros, iluminação LED, certificação, avarias. Atendimento 24h. Ligue +351 932 321 892" />
+<meta property="og:url" content="https://eletricista-norte-reparos.pt" />
+<meta property="og:image" content="https://eletricista-norte-reparos.pt/images-optimized/hero/og-electrician-portugal.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Eletricista Profissional Trás-os-Montes | Norte Reparos" />
+<meta name="twitter:description" content="Eletricista profissional em Trás-os-Montes. Quadros, iluminação LED, certificação, avarias. Atendimento 24h. Ligue +351 932 321 892" />
+<meta name="twitter:image" content="https://eletricista-norte-reparos.pt/images-optimized/hero/og-electrician-portugal.jpg" />
+<style>
+body { margin: 0; font-family: 'Poppins', system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; }
+#root { min-height: 100vh; display: flex; flex-direction: column; }
+@keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+.floating-call-btn { position: fixed; bottom: 20px; right: 20px; background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%); color: white; padding: 18px 25px; border-radius: 50px; font-size: 18px; font-weight: bold; text-decoration: none; box-shadow: 0 6px 20px rgba(255,107,53,0.4); z-index: 9999; display: flex; align-items: center; gap: 10px; animation: pulse 2s infinite; }
+.zone-banner { background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%); padding: 20px; text-align: center; color: white; font-weight: bold; }
+</style>
+
+<link rel="alternate" hreflang="pt" href="https://eletricista-norte-reparos.pt/" />
+<link rel="alternate" hreflang="en" href="https://eletricista-norte-reparos.pt/electrician-tras-os-montes" />
+<link rel="alternate" hreflang="fr" href="https://eletricista-norte-reparos.pt/electricien-tras-os-montes" />
+<link rel="alternate" hreflang="x-default" href="https://eletricista-norte-reparos.pt/" />
 </head>
+
 <body>
-<a href="https://wa.me/351932321892?text=Olá,%20preciso%20de%20eletricista" class="whatsapp-float" aria-label="WhatsApp">💬</a>
-<a href="tel:+351932321892" class="phone-float" aria-label="Ligar">📞</a>
-
-<header class="header">
-  <div class="top-bar">
-    <div class="logo">Norte Reparos</div>
-    <div class="phone"><a href="tel:+351932321892">932 321 892</a></div>
-  </div>
-  <div class="hero">
-    <h1>Eletricista Profissional em Trás-os-Montes</h1>
-    <p class="subtitle">Avarías elétricas · Quadros · Iluminação LED · Certificação</p>
-    <a href="tel:+351932321892" class="cta-btn">📞 Ligar Agora</a>
-  </div>
-</header>
-
-<nav class="breadcrumb" style="max-width:900px;margin:0 auto;padding:12px 20px;font-size:0.85rem;color:#888;">
- <a href="/" style="color:#FF6B35;text-decoration:none">Início</a>
-</nav>
-
-<main class="content" style="max-width:900px;margin:0 auto;padding:20px">
-  <section style="margin-bottom:2rem">
-    <h2 style="color:#FF6B35;font-size:1.4rem;margin-bottom:1rem">Serviços de Eletricidade</h2>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem">
-      <div style="background:#fff;border-radius:10px;padding:1.2rem;box-shadow:0 2px 8px rgba(0,0,0,0.08);border-left:3px solid #FF6B35">
-        <h3 style="font-size:1rem;color:#1a1a2e;margin-bottom:0.5rem">⚡ Avaria Elétrica</h3>
-        <p style="font-size:0.9rem;color:#666;margin:0">Disjuntor a saltar, tomada sem corrente, cheiro a queimado. Diagnóstico rápido no local.</p>
-      </div>
-      <div style="background:#fff;border-radius:10px;padding:1.2rem;box-shadow:0 2px 8px rgba(0,0,0,0.08);border-left:3px solid #FF6B35">
-        <h3 style="font-size:1rem;color:#1a1a2e;margin-bottom:0.5rem">🔌 Quadro Elétrico</h3>
-        <p style="font-size:0.9rem;color:#666;margin:0">Inspeção, substituição de disjuntores, verificação de ligações. Relatório de segurança.</p>
-      </div>
-      <div style="background:#fff;border-radius:10px;padding:1.2rem;box-shadow:0 2px 8px rgba(0,0,0,0.08);border-left:3px solid #FF6B35">
-        <h3 style="font-size:1rem;color:#1a1a2e;margin-bottom:0.5rem">💡 Iluminação LED</h3>
-        <p style="font-size:0.9rem;color:#666;margin:0">Substituição por LED, regulação de brilho, economia de energia.</p>
-      </div>
-      <div style="background:#fff;border-radius:10px;padding:1.2rem;box-shadow:0 2px 8px rgba(0,0,0,0.08);border-left:3px solid #FF6B35">
-        <h3 style="font-size:1rem;color:#1a1a2e;margin-bottom:0.5rem">📋 Certificação</h3>
-        <p style="font-size:0.9rem;color:#666;margin:0">Inspeção e certificação de instalações elétricas. Relatório técnico conforme normas.</p>
-      </div>
-    </div>
-  </section>
-
-  <section style="background:#fff;border-radius:12px;padding:1.5rem;margin-bottom:1.5rem;box-shadow:0 2px 8px rgba(0,0,0,0.06)">
-    <h2 style="color:#FF6B35;font-size:1.3rem;margin-bottom:1rem;border-bottom:2px solid #fff3ee;padding-bottom:0.5rem">Zonas que Atendemos</h2>
-    <p style="font-size:0.95rem;color:#555;margin-bottom:1rem">Intervimos em todo o distrito de Bragança e Vila Real. Ligue-nos para confirmar se servimos a sua localidade.</p>
-    <div style="display:flex;flex-wrap:wrap;gap:0.5rem">
-      <span style="background:#fff3ee;color:#FF6B35;padding:0.3rem 0.7rem;border-radius:20px;font-size:0.85rem">Bragança</span>
-      <span style="background:#fff3ee;color:#FF6B35;padding:0.3rem 0.7rem;border-radius:20px;font-size:0.85rem">Mirandela</span>
-      <span style="background:#fff3ee;color:#FF6B35;padding:0.3rem 0.7rem;border-radius:20px;font-size:0.85rem">Vila Real</span>
-      <span style="background:#fff3ee;color:#FF6B35;padding:0.3rem 0.7rem;border-radius:20px;font-size:0.85rem">Chaves</span>
-      <span style="background:#fff3ee;color:#FF6B35;padding:0.3rem 0.7rem;border-radius:20px;font-size:0.85rem">Macedo de Cavaleiros</span>
-      <span style="background:#fff3ee;color:#FF6B35;padding:0.3rem 0.7rem;border-radius:20px;font-size:0.85rem">Valpaços</span>
-      <span style="background:#fff3ee;color:#FF6B35;padding:0.3rem 0.7rem;border-radius:20px;font-size:0.85rem">Vinhhais</span>
-      <span style="background:#fff3ee;color:#FF6B35;padding:0.3rem 0.7rem;border-radius:20px;font-size:0.85rem">Mogadouro</span>
-      <span style="background:#fff3ee;color:#FF6B35;padding:0.3rem 0.7rem;border-radius:20px;font-size:0.85rem">Lamego</span>
-      <span style="background:#fff3ee;color:#FF6B35;padding:0.3rem 0.7rem;border-radius:20px;font-size:0.85rem">Alfândega da Fé</span>
-      <span style="background:#fff3ee;color:#FF6B35;padding:0.3rem 0.7rem;border-radius:20px;font-size:0.85rem">+ outras localidades</span>
-    </div>
-  </section>
-
-  <section style="background:#fff;border-radius:12px;padding:1.5rem;margin-bottom:1.5rem;box-shadow:0 2px 8px rgba(0,0,0,0.06)">
-    <h2 style="color:#FF6B35;font-size:1.3rem;margin-bottom:1rem;border-bottom:2px solid #fff3ee;padding-bottom:0.5rem">Como Funciona</h2>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem">
-      <div style="text-align:center;padding:1rem">
-        <div style="font-size:2rem;margin-bottom:0.5rem">📞</div>
-        <h3 style="font-size:0.95rem;color:#1a1a2e;margin-bottom:0.3rem">1. Ligue</h3>
-        <p style="font-size:0.85rem;color:#666;margin:0">Descreva o problema. Damos-lhe orçamento por telefone.</p>
-      </div>
-      <div style="text-align:center;padding:1rem">
-        <div style="font-size:2rem;margin-bottom:0.5rem">🔧</div>
-        <h3 style="font-size:0.95rem;color:#1a1a2e;margin-bottom:0.3rem">2. Intervenção</h3>
-        <p style="font-size:0.85rem;color:#666;margin:0">Comparecemos ao local com o equipamento necessário.</p>
-      </div>
-      <div style="text-align:center;padding:1rem">
-        <div style="font-size:2rem;margin-bottom:0.5rem">✅</div>
-        <h3 style="font-size:0.95rem;color:#1a1a2e;margin-bottom:0.3rem">3. Resolvido</h3>
-        <p style="font-size:0.85rem;color:#666;margin:0">Trabalho feito, fatura detalhada, garantia incluída.</p>
-      </div>
-    </div>
-  </section>
-
-  <section style="background:#fff8f0;border-left:4px solid #FF6B35;padding:1.2rem;border-radius:0 8px 8px 0;margin:1.5rem 0">
-    <h2 style="color:#FF6B35;font-size:1.1rem;margin-bottom:0.5rem">Perguntas Frequentes</h2>
-    <div style="margin-bottom:0.8rem">
-      <h3 style="font-size:0.95rem;color:#1a1a2e;margin-bottom:0.2rem">Quanto custa um eletricista?</h3>
-      <p style="font-size:0.9rem;color:#555;margin:0">O orçamento é dado por telefone, sem compromisso. O valor que combinamos é o que paga — sem extras.</p>
-    </div>
-    <div style="margin-bottom:0.8rem">
-      <h3 style="font-size:0.95rem;color:#1a1a2e;margin-bottom:0.2rem">Têm garantia?</h3>
-      <p style="font-size:0.9rem;color:#555;margin:0">Sim. Garantia sobre o trabalho realizado. Em caso de problema, voltamos a resolver sem custo adicional.</p>
-    </div>
-  </section>
-
-  <div style="text-align:center;padding:2rem 0">
-    <a href="tel:+351932321892" class="cta-btn">📞 932 321 892</a>
-    <p style="font-size:0.9rem;color:#888;margin-top:1rem">Ligue-nos para orçamento sem compromisso</p>
-  </div>
-</main>
-
-<footer style="background:#1a1a2e;color:#888;text-align:center;padding:2rem 1rem;font-size:0.85rem">
-  <p>&copy; 2026 Norte Reparos | Eletricista Profissional em Trás-os-Montes</p>
-  <p style="margin-top:0.5rem">
-    <a href="/" style="color:#FF6B35;text-decoration:none">Início</a> ·
-    <a href="/precos.html" style="color:#FF6B35;text-decoration:none">Preços</a> ·
-    <a href="/contacto.html" style="color:#FF6B35;text-decoration:none">Contacto</a>
-  </p>
-</footer>
+<div style="background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%); padding: 20px; text-align: center; color: white; font-family: 'Poppins', sans-serif;">
+<div style="font-size: 24px; margin-bottom: 10px;">
+📞 URGÊNCIA 24H? LIGUE JÁ: <a href="tel:+351932321892" style="color: white; text-decoration: none;">+351 932 321 892</a>
+</div>
+<div style="font-size: 14px; margin-top: 8px;">
+✅ Atendimento 24h | ✅ Trabalho garantido por escrito | ✅ Orçamento gratuito
+</div>
+</div>
+<div id="root"></div>
+<script type="module" src="/src/main.tsx"></script>
+<script>
+let gtmLoaded = false;
+function loadGTM() {
+if (gtmLoaded) return;
+gtmLoaded = true;
+const script = document.createElement('script');
+script.async = true;
+script.src = 'https://www.googletagmanager.com/gtag/js?id=G-ELETRICISTA2026';
+document.head.appendChild(script);
+script.onload = function() {
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-ELETRICISTA2026');
+};
+}
+['scroll', 'click', 'touchstart', 'mousemove'].forEach(event => {
+window.addEventListener(event, loadGTM, { once: true, passive: true });
+});
+setTimeout(loadGTM, 5000);
+</script>
+<script>
+window.addEventListener('error', function(event) {
+console.error('Global error caught:', event.error);
+try { localStorage.setItem('last_js_error', JSON.stringify({message: event.error.message, stack: event.error.stack, timestamp: new Date().toISOString()})); } catch (e) {}
+});
+window.addEventListener('unhandledrejection', function(event) { console.error('Unhandled rejection:', event.reason); });
+</script>
 </body>
 </html>
+<!-- cache refresh Fri Jun  5 10:21:37 BST 2026 -->
