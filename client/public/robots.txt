@@ -54,7 +54,7 @@ User-agent: Bytespider
 Allow: /
 
 # Sitemaps
-Sitemap: https:///eletricista-norte-reparos.pt/sitemap.xml
+Sitemap: https://eletricista-norte-reparos.pt/sitemap.xml
 
 # Disallow admin/dev paths
 Disallow: /admin/
