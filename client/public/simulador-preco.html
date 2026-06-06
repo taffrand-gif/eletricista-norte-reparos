@@ -1,21 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Simulador de Preço Eletricista | Staff Seekers</title>
-<meta name="description" content="Simule o preço do seu serviço de instalação elétrica em Trás-os-Montes. Selecione zona e serviço para uma estimativa imediata. Ligue: 932 321 892" />
-<meta property="og:title" content="Simulador de Preço Eletricista | Staff Seekers" />
-<meta property="og:url" content="https://eletricista-norte-reparos.pt/simulador-preco" />
-<meta property="og:type" content="website" />
-<meta property="og:locale" content="pt_PT">
-<meta name="keywords" content="quanto custa eletricista, preço eletricista bragança, preço desentupimento, simulador preço instalação elétrica" />
-<link rel="canonical" href="https://eletricista-norte-reparos.pt/simulador-preco.html">
-<link rel="stylesheet" href="/styles.css">
-<script type="application/ld+json">
+<!DOCTYPE html><html lang="pt"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Simulador de Preço Eletricista | Staff Seekers</title><meta name="description" content="Simule o preço do seu serviço de instalação elétrica em Trás-os-Montes. Selecione zona e serviço para uma estimativa imediata. Ligue: 932 321 892" /><meta property="og:title" content="Simulador de Preço Eletricista | Staff Seekers" /><meta property="og:url" content="https://eletricista-norte-reparos.pt/simulador-preco" /><meta property="og:type" content="website" /><meta property="og:locale" content="pt_PT"><meta name="keywords" content="quanto custa eletricista, preço eletricista bragança, preço desentupimento, simulador preço instalação elétrica" /><link rel="canonical" href="https://eletricista-norte-reparos.pt/simulador-preco.html"><link rel="stylesheet" href="/styles.css"><script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Electrician","name":"Eletricista Profissional Trás-os-Montes","telephone":"+351932321892","url":"https://eletricista-norte-reparos.pt/simulador-preco","address":{"@type":"PostalAddress","addressLocality":"Macedo de Cavaleiros","addressRegion":"Trás-os-Montes","addressCountry":"PT"},"priceRange":"€€"}
-</script>
-<style>
+</script><style>
 .sim-container{max-width:600px;margin:2rem auto;padding:2rem;background:#f8fafc;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.1)}
 .sim-select{width:100%;padding:12px;border:2px solid #e2e8f0;border-radius:8px;font-size:16px;margin:8px 0 16px}
 .sim-result{background:#c2410c;color:#fff;padding:24px;border-radius:12px;text-align:center;margin:24px 0;font-size:1.2rem;display:none}
@@ -24,8 +9,7 @@
 .sim-btn{display:inline-block;padding:14px 28px;border-radius:8px;font-weight:700;text-decoration:none;margin:8px;font-size:1rem}
 .sim-btn-phone{background:#c2410c;color:#fff}.sim-btn-wa{background:#15803d;color:#fff}
 label{font-weight:600;font-size:1rem}
-</style>
-<script type="application/ld+json">
+</style><script type="application/ld+json">
 {
  "@context": "https://schema.org",
  "@type": "FAQPage",
@@ -56,79 +40,9 @@ label{font-weight:600;font-size:1rem}
  }
  ]
 }
-</script>
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link rel="dns-prefetch" href="https://fonts.googleapis.com">
- <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://eletricista-norte-reparos.pt/"}, {"@type": "ListItem", "position": 2, "name": "Simulador Preco", "item": "https://eletricista-norte-reparos.pt/simulador-preco.html"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Eletricista","provider":{"@type":"LocalBusiness","name":"Norte Reparos","telephone":"+351-932 321 892"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"127","bestRating":"5","worstRating":"1"}}</script>
-</head>
-<body>
- <nav class="breadcrumbs" style="max-width: 1200px; margin: 0 auto; padding: 15px 20px; font-size: 0.9rem;">
- <a href="/" style="color: #FF6B35; text-decoration: none;">Início</a> <span style="color: #999;">›</span> <span style="color: #666;">Simulador Preco</span>
- </nav>
-<main>
-<nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Início</a> &rsaquo; <span>Simulador de Preço</span></nav>
-<article>
-<h1>Simulador de Preço — Eletricista</h1>
-<p>Obtenha uma estimativa imediata do custo do seu serviço. Selecione a zona e o tipo de serviço.</p>
-<div class="sim-container">
-<label for="zona">📍 Zona de Intervenção</label>
-<select id="zona" class="sim-select" onchange="calcular()">
-<option value="">Selecione a zona...</option>
-<option value="15">Macedo de Cavaleiros</option>
-<option value="20">Mirandela / Vila Flor / Alfândega da Fé</option>
-<option value="30">Bragança / Vinhais / Mogadouro / Torre de Moncorvo</option>
-<option value="35">Miranda do Douro / Valpaços / Murça</option>
-<option value="45">Vila Real / Lamego / Peso da Régua / Alijó</option>
-<option value="50">Chaves / Montalegre / Vila Pouca de Aguiar</option>
-</select>
-<label for="servico">🔧 Tipo de Serviço</label>
-<select id="servico" class="sim-select" onchange="calcular()">
-<option value="">Selecione o serviço...</option>
-<option value="40">Arranjo de tomada/interruptor</option>
-<option value="80">Disjuntor que dispara (diagnóstico)</option>
-<option value="150">Substituição de quadro elétrico</option>
-<option value="200">certificação elétrica</option>
-<option value="100">Instalação de iluminação LED</option>
-<option value="800">Instalação de carregador VE (wallbox)</option>
-<option value="1500">Instalação elétrica casa de banho</option>
-<option value="3000">Renovação elétrica completa (T2)</option>
-<option value="5000">Painéis solares autoconsumo (3kWp)</option>
-<option value="600">Instalação ar condicionado (split)</option>
-</select>
-<div id="resultado" class="sim-result">
-<div id="preco"></div>
-<p class="sim-note">* Estimativa indicativa. O preço final depende da complexidade do trabalho. Orçamento sem compromisso.</p>
-</div>
-<div style="text-align:center;margin-top:20px">
-<a href="tel:+351932321892" class="sim-btn sim-btn-phone">📞 Ligar: 932 321 892</a>
-<a href="https://wa.me/351932321892" class="sim-btn sim-btn-wa" target="_blank" rel="noopener">💬 WhatsApp</a>
-</div>
-</div>
-<section>
-<h2>Como Funciona?</h2>
-<ol>
-<li>Selecione a sua zona de intervenção</li>
-<li>Escolha o tipo de serviço</li>
-<li>Veja a estimativa de preço imediata</li>
-<li>Ligue ou envie WhatsApp para confirmar e agendar</li>
-</ol>
-<p>Os preços apresentados são estimativas baseadas nos nossos valores habituais. O preço final é sempre confirmado após avaliação no local, sem compromisso.</p>
-</section>
-<section>
-<h2>Perguntas Frequentes</h2>
-<details><summary>O preço do simulador é garantido?</summary><p>É uma estimativa. O preço final depende da complexidade real do trabalho. Fazemos sempre orçamento sem compromisso antes de iniciar.</p></details>
-<details><summary>A deslocação está incluída?</summary><p>A deslocação é somada ao preço do serviço. Varia conforme a zona (15€ a 50€).</p></details>
-<details><summary>Aceitam que formas de pagamento?</summary><p>Dinheiro, Multibanco, MB Way e transferência bancária.</p></details>
-</section>
-</article>
-</main>
-<footer><p>&copy; 2026 Staff Seekers — Eletricista Profissional em Trás-os-Montes</p></footer>
-<script>
+</script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="dns-prefetch" href="https://fonts.googleapis.com"><link rel="dns-prefetch" href="https://fonts.gstatic.com"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://eletricista-norte-reparos.pt/"}, {"@type": "ListItem", "position": 2, "name": "Simulador Preco", "item": "https://eletricista-norte-reparos.pt/simulador-preco.html"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Eletricista","provider":{"@type":"LocalBusiness","name":"Norte Reparos","telephone":"+351-932 321 892"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"127","bestRating":"5","worstRating":"1"}}</script></head><body><nav class="breadcrumbs" style="max-width: 1200px; margin: 0 auto; padding: 15px 20px; font-size: 0.9rem;"><a href="/" style="color: #FF6B35; text-decoration: none;">Início</a><span style="color: #999;">›</span><span style="color: #666;">Simulador Preco</span></nav><main><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Início</a> &rsaquo; <span>Simulador de Preço</span></nav><article><h1>Simulador de Preço — Eletricista</h1><p>Obtenha uma estimativa imediata do custo do seu serviço. Selecione a zona e o tipo de serviço.</p><div class="sim-container"><label for="zona">📍 Zona de Intervenção</label><select id="zona" class="sim-select" onchange="calcular()"><option value="">Selecione a zona...</option><option value="15">Macedo de Cavaleiros</option><option value="20">Mirandela / Vila Flor / Alfândega da Fé</option><option value="30">Bragança / Vinhais / Mogadouro / Torre de Moncorvo</option><option value="35">Miranda do Douro / Valpaços / Murça</option><option value="45">Vila Real / Lamego / Peso da Régua / Alijó</option><option value="50">Chaves / Montalegre / Vila Pouca de Aguiar</option></select><label for="servico">🔧 Tipo de Serviço</label><select id="servico" class="sim-select" onchange="calcular()"><option value="">Selecione o serviço...</option><option value="40">Arranjo de tomada/interruptor</option><option value="80">Disjuntor que dispara (diagnóstico)</option><option value="150">Substituição de quadro elétrico</option><option value="200">certificação elétrica</option><option value="100">Instalação de iluminação LED</option><option value="800">Instalação de carregador VE (wallbox)</option><option value="1500">Instalação elétrica casa de banho</option><option value="3000">Renovação elétrica completa (T2)</option><option value="5000">Painéis solares autoconsumo (3kWp)</option><option value="600">Instalação ar condicionado (split)</option></select><div id="resultado" class="sim-result"><div id="preco"></div><p class="sim-note">* Estimativa indicativa. O preço final depende da complexidade do trabalho. Orçamento sem compromisso.</p></div><div style="text-align:center;margin-top:20px"><a href="tel:+351932321892" class="sim-btn sim-btn-phone">📞 Ligar: 932 321 892</a><a href="https://wa.me/351932321892" class="sim-btn sim-btn-wa" target="_blank" rel="noopener">💬 WhatsApp</a></div></div><section><h2>Como Funciona?</h2><ol><li>Selecione a sua zona de intervenção</li><li>Escolha o tipo de serviço</li><li>Veja a estimativa de preço imediata</li><li>Ligue ou envie WhatsApp para confirmar e agendar</li></ol><p>Os preços apresentados são estimativas baseadas nos nossos valores habituais. O preço final é sempre confirmado após avaliação no local, sem compromisso.</p></section><section><h2>Perguntas Frequentes</h2><details><summary>O preço do simulador é garantido?</summary><p>É uma estimativa. O preço final depende da complexidade real do trabalho. Fazemos sempre orçamento sem compromisso antes de iniciar.</p></details><details><summary>A deslocação está incluída?</summary><p>A deslocação é somada ao preço do serviço. Varia conforme a zona (15€ a 50€).</p></details><details><summary>Aceitam que formas de pagamento?</summary><p>Dinheiro, Multibanco, MB Way e transferência bancária.</p></details></section></article></main><footer><p>&copy; 2026 Staff Seekers — Eletricista Profissional em Trás-os-Montes</p></footer><script>
 function calcular(){var z=document.getElementById('zona').value,s=document.getElementById('servico').value,r=document.getElementById('resultado'),p=document.getElementById('preco');if(z&&s){var total=parseInt(z)+parseInt(s);var max=Math.round(total*1.5);r.classList.add('show');p.innerHTML='💰 Estimativa: <strong>'+total+'€ — '+max+'€</strong><br><small>(Serviço '+s+'€ + Deslocação '+z+'€)</small>';}else{r.classList.remove('show');}}
-</script>
-<script src="/hooks.js" defer></script>
-</body>
-</html>
+</script><script src="/hooks.js" defer></script><style>
+.sticky-cta{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(135deg,FF6B35,cc5529);color:#fff;padding:10px 12px;display:none;justify-content:space-between;align-items:center;z-index:9999;box-shadow:0 -4px 12px rgba(0,0,0,.2);font-family:sans-serif}.sticky-cta a{flex:1;margin:0 3px;padding:8px;text-align:center;background:#fff;color:FF6B35;border-radius:30px;text-decoration:none;font-weight:900;font-size:13px}.sticky-cta a.wa{background:#25D366;color:#fff}@media(max-width:768px){.sticky-cta{{display:flex}}}}
+.float-wa{position:fixed;bottom:80px;right:20px;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:28px;z-index:9998;box-shadow:0 4px 12px rgba(0,0,0,.3);text-decoration:none;font-family:sans-serif}@media(min-width:769px){.float-wa{bottom:30px}}
+</style><div class="sticky-cta"><a href="tel:+351932321892">📞 Ligar</a><a class="wa" href="https://wa.me/351932321892">💬 WhatsApp</a></div><a class="float-wa" href="https://wa.me/351932321892" aria-label="WhatsApp">💬</a></body></html>
