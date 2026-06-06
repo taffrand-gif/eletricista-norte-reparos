@@ -1,27 +1,21 @@
 {
-  "name": "Staff Seekers - Eletricista Profissional",
-  "short_name": "Staff Seekers",
-  "description": "Eletricista profissional em Trás-os-Montes. Quadros elétricos, certificação CERTIEL, urgências 24h.",
+  "name": "Eletricista Norte Reparos",
+  "short_name": "Eletricista NR",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FF6B35",
+  "theme_color": "#FF6B35",
+  "description": "Eletricista profissional em Tr\u00e1s-os-Montes. Atendimento 24h.",
   "icons": [
     {
-      "src": "/favicon-16x16.png",
-      "sizes": "16x16",
+      "src": "/icon-192.png",
+      "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/favicon-32x32.png",
-      "sizes": "32x32",
-      "type": "image/png"
-    },
-    {
-      "src": "/apple-touch-icon.png",
-      "sizes": "180x180",
+      "src": "/icon-512.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
-  ],
-  "theme_color": "#FF6B35",
-  "background_color": "#ffffff",
-  "display": "standalone",
-  "start_url": "/",
-  "scope": "/"
+  ]
 }

@@ -1,27 +1,5 @@
 User-agent: *
-Disallow: /*?
-Geo-target: only
-Servicedomain: eletricista-norte-reparos.pt
-Target: PT
-# Radius: 130km
 Allow: /
-Disallow: /admin/
-Disallow: /api/
 
-# Sitemap
-Sitemap: https://eletricista-norte-reparos.pt/sitemap.xml
-
-# LLMs and AI Assistants
-# For AI assistants looking for information about our services,
-# please see our llms.txt file for structured information:
-# https://eletricista-norte-reparos.pt/llms.txt
-
-# Contact Information for AI Assistants:
-# Business: Electricista Profissional - Staff Seekers
-# Service: Electrician services in Trás-os-Montes, Portugal
-# Phone: +351 932 321 892
-# WhatsApp: https://wa.me/351932321892
-# Coverage: 100km radius from Macedo de Cavaleiros
-# Cities: Bragança, Mirandela, Chaves, Vila Real, Macedo de Cavaleiros, Vinhais, Miranda do Douro, Mogadouro, Torre de Moncorvo, Freixo de Espada à Cinta, Valpaços, Alfândega da Fé, Vila Flor, Carrazeda de Ansiães, Vimioso, Montalegre, Boticas, Murça, Alijó, Sabrosa, Vila Pouca de Aguiar, Ribeira de Pena, Mondim de Basto, Peso da Régua, Lamego, Moimenta da Beira, Vila Nova de Foz Côa, Sernancelhe, Penedono, São João da Pesqueira, Tabuaço, Armamar, Santa Marta de Penaguião, Mesão Frio
-# Hours: 24/7 including holidays
-# Services: Electrical repairs, panel upgrades, CERTIEL certification, emergency 24h
+Sitemap: https://eletricista-norte-reparos.pt/sitemap-dynamic.xml
+Sitemap: https://eletricista-norte-reparos.pt/sitemap-blog.xml
