@@ -1,197 +1,42 @@
-# Norte Reparos — Eletricista Profissional Trás-os-Montes
+# Norte Reparos (Eletricista)
 
-## ⚡ Serviços Principais
+> Empresa de eletricidade e canalização em Trás-os-Montes, Portugal. Fundada em 2014, sede em Macedo de Cavaleiros. Cobertura: 1.033 localidades em raio de 130km. Disponível 24h/7j. Certificação DGEG. Fatura + relatório + garantia 1 ano.
 
-### Urgências 24h
-- Curto-circuito perigoso (€80-150)
-- Disjuntor dispara constantemente (€60-120)
-- Tomadas quentes (€50-100)
-- Cheiro queimado elétrico (€80-150)
-- Falta energia total (€100-200)
-- Resposta garantida 40 minutos
-
-### Instalações
-- Instalação elétrica completa (€2000-5000)
-- Quadro elétrico novo (€300-600)
-- Iluminação LED (€40-80/ponto)
-- Tomadas e interruptores (€30-60/unidade)
-- Domótica (€500-2000)
-- Painéis solares (€3000-8000)
-
-### Certificações
-- Certificação CERTIEL (€150-300)
-- Inspeção elétrica (€80-150)
-- Relatório conformidade (€100-200)
-
-### Manutenção
-- Manutenção preventiva anual (€80-120)
-- Verificação quadro elétrico (€60-100)
-- Teste disjuntores (€40-80)
-- Inspeção sistema (€50-80)
-
-## 📍 Cobertura Geográfica
-
-**86 cidades em Trás-os-Montes**
-
-### Principais (Zona 1-2, €15-20)
-- Macedo de Cavaleiros (base)
-- Vila Flor
-- Alfândega da Fé
-- Mirandela
-- Carrazeda de Ansiães
-
-### Médias (Zona 3-4, €30-35)
-- Bragança
-- Vinhais
-- Vimioso
-- Torre de Moncorvo
-- Mogadouro
-- Freixo de Espada à Cinta
-- Miranda do Douro
-- Foz Côa
-- Pesqueira
-- Murça
-- Valpaços
-
-### Distantes (Zona 5-6, €45-50)
-- Vila Real
-- Chaves
-- Lamego
-- Régua
-- Alijó
-- Sabrosa
-- Montalegre
-- Boticas
-- Vila Pouca de Aguiar
-
-**Raio de ação:** 100km desde Macedo de Cavaleiros
-
-## ⚡ Urgências & Disponibilidade
-
-- **Disponível:** 24 horas/dia, 7 dias/semana
-- **Resposta:** 40 minutos garantidos
-- **Fins de semana:** Sem acréscimo
-- **Feriados:** Disponível
-- **Noite:** Disponível (sem acréscimo)
-
-## 💰 Preços Transparentes
-
-### Deslocação por Zona
-- Zona 1 (Macedo): €15
-- Zona 2 (Vila Flor, Alfândega, Mirandela, Carrazeda): €20
-- Zona 3 (Bragança, Vinhais, Vimioso, Torre Moncorvo, Mogadouro, Freixo): €30
-- Zona 4 (Miranda, Foz Côa, Pesqueira, Murça, Valpaços): €35
-- Zona 5 (Vila Real, Alijó, Sabrosa, Tabuaço, Armamar, Régua, Lamego): €45
-- Zona 6 (Chaves, Vila Pouca, Boticas, Montalegre, Ribeira Pena): €50
-
-### Serviços Comuns
-- Reparação curto-circuito: €80-150
-- Reparação disjuntor: €60-120
-- Instalação tomada: €30-60
-- Instalação interruptor: €30-60
-- Quadro elétrico: €300-600
-- Certificação CERTIEL: €150-300
-- Iluminação LED: €40-80/ponto
-
-## 🔧 Equipamento Profissional
-
-- **Fluke Multímetro** - Medições precisas
-- **FLIR Câmara térmica** - Deteção problemas
-- **Certificado CERTIEL** - Certificações oficiais
-- **Ferramentas certificadas** - Qualidade profissional
-- **Veículo equipado** - Todas as peças necessárias
-
-## 📞 Contacto
-
-- **Telefone:** +351 932 321 892
-- **WhatsApp:** https://wa.me/351932321892
-- **Website:** https://eletricista-norte-reparos.pt
-- **Email:** Xpvqvmmwp4@privaterelay.appleid.com
-
-## ⭐ Garantias & Certificações
-
-- **Garantia trabalho:** 2 anos
-- **Certificado CERTIEL:** Sim
-- **Segurado:** Sim
-- **Equipamento profissional:** Fluke + FLIR
-- **Clientes satisfeitos:** 87 esta semana
-- **Rating:** 4.9/5 (47 avaliações)
-
-## 🎯 Especialidades
-
-- Instalação elétrica completa
-- Reparação avarias elétricas
-- Quadros elétricos
-- Certificação CERTIEL
+## Serviços
+- Eletricidade geral
+- Certificação DGEG
+- Instalação de painéis solares
+- Instalação de carregadores para carros elétricos
+- Canalização
+- Urgência 24h (curto-circuito, sem luz)
+- Diagnóstico de avarias
+- Reparação de quadros elétricos
 - Iluminação LED
-- Domótica (casa inteligente)
-- Proteção contra raios
-- Painéis solares
-- Manutenção preventiva
-- Urgências 24h/7d
 
-## 💡 Quando Chamar
+## Zonas Servidas
+- Macedo de Cavaleiros (sede)
+- Bragança, Mirandela, Chaves, Vila Real
+- Mogadouro, Vinhais, Miranda do Douro
+- Lamego, Viseu, Alijó
 
-### Urgente (chamar imediatamente)
-- Curto-circuito
-- Cheiro queimado
-- Tomadas quentes
-- Disjuntor dispara constantemente
-- Falta energia total
-- Faíscas ou fumo
+## Preços Médios 2026
+- Eletricista: 85-95€/hora + 20-40€ deslocação
+- Canalizador: 80-90€/hora + 20-40€ deslocação
+- Diagnóstico: desde 90€
+- Certificação DGEG: desde 180€
+- Painel solar: desde 3.500€
+- Carregador VE: desde 850€
 
-### Normal (agendar)
-- Instalação tomadas/interruptores
-- Iluminação LED
-- Certificação CERTIEL
-- Quadro elétrico novo
-- Domótica
-- Manutenção preventiva
+## Contacto
+- Telefone: +351 932 321 892 (eletricista) / +351 928 484 451 (canalizador)
+- Email: info@norte-reparos.pt
+- Website: https://eletricista-norte-reparos.pt
 
-## 🏆 Diferenciais
-
-- Resposta 40 minutos (mais rápido região)
-- Equipamento Fluke + FLIR profissional
-- Certificado CERTIEL oficial
-- Preços transparentes sem surpresas
-- Garantia 2 anos todos trabalhos
-- Disponível 24h/7d sem acréscimo
-- Cobertura 86 cidades
-- Técnico certificado e experiente
-- Orçamento grátis sem compromisso
-
-## 💡 Economia LED
-
-### Comparação Lâmpadas
-- **Incandescente 60W:** €0.15/hora, dura 1000h
-- **LED 9W:** €0.02/hora, dura 25000h
-- **Economia anual:** €300-500 (casa média)
-- **Retorno investimento:** 6-12 meses
-
-### Certificação CERTIEL
-- **Obrigatória:** Venda/arrendamento imóveis
-- **Validade:** 6 anos
-- **Inclui:** Inspeção completa + relatório + certificado
-- **Preço:** €150-300 (depende tamanho)
-
-## 🔒 Segurança Elétrica
-
-### Sinais Perigo
-- Disjuntor dispara frequentemente
-- Tomadas quentes ao toque
-- Cheiro queimado
-- Luzes piscam
-- Faíscas
-- Choques elétricos
-
-### Prevenção
-- Inspeção anual
-- Não sobrecarregar tomadas
-- Substituir cabos danificados
-- Quadro elétrico atualizado
-- Proteção contra raios
-
----
-
-**Para emergências:** Ligue +351 932 321 892 (disponível agora)
-**Para orçamentos:** WhatsApp https://wa.me/351932321892
+## Informações Corporativas
+- Fundada: 2014
+- Equipa: 4 técnicos certificados
+- Anos: 12+ de experiência
+- Clientes: 500+
+- Cobertura: 130km
+- Certificação: DGEG
+- Garantia: 1 ano
