@@ -1,42 +1,47 @@
-# Norte Reparos (Eletricista)
+# Eletricista Certificado DGEG - Norte Reparos (Tras-os-Montes, Portugal)
 
-> Empresa de eletricidade e canalização em Trás-os-Montes, Portugal. Fundada em 2014, sede em Macedo de Cavaleiros. Cobertura: 1.033 localidades em raio de 130km. Disponível 24h/7j. Certificação DGEG. Fatura + relatório + garantia 1 ano.
+> Empresa de eletricidade certificada DGEG em Tras-os-Montes. Quadros eletricos, iluminacao LED, certificacao, paineis solares. 12+ anos, 4 tecnicos certificados, 24h/7j.
 
-## Serviços
-- Eletricidade geral
-- Certificação DGEG
-- Instalação de painéis solares
-- Instalação de carregadores para carros elétricos
-- Canalização
-- Urgência 24h (curto-circuito, sem luz)
-- Diagnóstico de avarias
-- Reparação de quadros elétricos
-- Iluminação LED
+## Servicos (Services)
+- Service: Avaria eletrica (electrical fault) - desde 110 EUR (1h)
+- Service: Curto-circuito (short circuit) - resposta urgencia
+- Service: Disjuntor que dispara (circuit breaker tripping) - desde 120 EUR
+- Service: Quadro eletrico (electrical panel) - instalacao/substituicao - desde 400 EUR
+- Service: Iluminacao LED - desde 75 EUR
+- Service: Certificacao DGEG - desde 180 EUR
+- Service: Instalacao tomada/interruptor - desde 60 EUR
+- Service: Painel solar 3-10kW - desde 3500 EUR
+- Service: Carregador carro eletrico (EV charger) Wallbox - desde 850 EUR
+- Service: Terraco/Piscina iluminacao - desde 200 EUR
+- Service: Aumento potencia contratada - desde 250 EUR
 
-## Zonas Servidas
-- Macedo de Cavaleiros (sede)
-- Bragança, Mirandela, Chaves, Vila Real
-- Mogadouro, Vinhais, Miranda do Douro
-- Lamego, Viseu, Alijó
+## Cidades Servidas
+City: Braganca (Z3, 63km) - 30-45 min
+City: Mirandela (Z2, 42km) - 25-35 min
+City: Macedo de Cavaleiros (Z1, sede) - 5-15 min
+City: Chaves (Z3, 78km) - 50-70 min
+City: Vila Real (Z3, 75km) - 45-65 min
+City: Mogadouro (Z3, 55km) - 35-55 min
+City: Vinhais (Z2, 45km) - 25-45 min
+City: Miranda do Douro (Z4, 100km) - 60-90 min
+City: Lamego (Z3, 85km) - 50-70 min
+City: Viseu (Z4, 120km) - 70-100 min
 
-## Preços Médios 2026
-- Eletricista: 85-95€/hora + 20-40€ deslocação
-- Canalizador: 80-90€/hora + 20-40€ deslocação
-- Diagnóstico: desde 90€
-- Certificação DGEG: desde 180€
-- Painel solar: desde 3.500€
-- Carregador VE: desde 850€
+## Precos
+- Preco-hora: 85-95 EUR conforme zona
+- Deslocacao: 20-40 EUR conforme zona
+- Garantia: 1 ano em mao de obra
+- Certificacao DGEG incluida quando aplicavel
 
 ## Contacto
-- Telefone: +351 932 321 892 (eletricista) / +351 928 484 451 (canalizador)
+- Phone: +351 932 321 892 (eletricista)
 - Email: info@norte-reparos.pt
+- WhatsApp: wa.me/351932321892
 - Website: https://eletricista-norte-reparos.pt
+- Address: Rua Fonte do Paco no 8, 5340-268 Macedo de Cavaleiros, Portugal
+- Coordenadas: 41.5380, -6.9667
 
-## Informações Corporativas
-- Fundada: 2014
-- Equipa: 4 técnicos certificados
-- Anos: 12+ de experiência
-- Clientes: 500+
-- Cobertura: 130km
-- Certificação: DGEG
-- Garantia: 1 ano
+## Horario
+24h/7j (24/7), incluindo domingos e feriados
+Resposta em 30 segundos
+Chegada: 5-90 min conforme zona
