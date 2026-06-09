@@ -1,4 +1,51 @@
-<!doctype html><html lang="pt-PT"><head><meta charset="UTF-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" /><meta name="theme-color" content="#FF6B35" /><meta name="mobile-web-app-capable" content="yes" /><meta name="apple-mobile-web-app-capable" content="yes" /><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /><link rel="icon" type="image/svg+xml" href="/favicon.svg" /><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" /><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /><link rel="manifest" href="/site.webmanifest" /><title>Eletricista Profissional Trás-os-Montes | Norte Reparos</title><meta name="description" content="Eletricista profissional em Trás-os-Montes. Quadros elétricos, iluminação LED, certificação, avarias elétricas. Atendimento 24h. Orçamento gratuito." /><meta name="keywords" content="eletricista bragança, eletricista mirandela, eletricista macedo de cavaleiros, eletricista urgente bragança, eletricista 24 horas mirandela, eletricista chaves, eletricista vila real, eletricista vinhais, eletricista miranda do douro, eletricista mogadouro, eletricista torre de moncorvo, eletricista trás-os-montes, quadro elétrico bragança, certificação elétrica bragança, certificação elétrica mirandela, curto circuito bragança, avaria elétrica mirandela, disjuntor a disparar, tomada não funciona, eletricista urgente 24h, eletricista profissional trás-os-montes" /><link rel="canonical" href="https://eletricista-norte-reparos.pt/" /><script type="application/ld+json">
+<!doctype html><html lang="pt-PT"><head>
+
+<script>
+// A/B Testing: 50/50 split
+(function() {
+  const AB_KEY = 'nr_ab_home_2026';
+  const VARIANTS = ['A', 'B'];
+  let variant = localStorage.getItem(AB_KEY);
+  if (!variant) {
+    variant = VARIANTS[Math.floor(Math.random() * 2)];
+    localStorage.setItem(AB_KEY, variant);
+  }
+  document.documentElement.setAttribute('data-ab-variant', variant);
+  // Track impression
+  if (typeof fetch !== 'undefined') {
+    fetch('/admin/track', {
+      method: 'POST',
+      body: JSON.stringify({
+        event: 'ab_view',
+        variant: variant,
+        page: window.location.pathname,
+        ts: Date.now()
+      }),
+      headers: { 'Content-Type': 'application/json' }
+    }).catch(() => {});
+  }
+})();
+</script>
+<style>
+[data-ab-variant="B"] .hero-cta {
+  background: linear-gradient(135deg, #FF6B35, #ff8c5a) !important;
+  font-size: 1.4rem !important;
+  padding: 1.5rem 3rem !important;
+  box-shadow: 0 8px 24px rgba(255, 107, 53, .4) !important;
+  animation: pulse-b 2s infinite !important;
+}
+@keyframes pulse-b {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+[data-ab-variant="B"] .hero-title::after {
+  content: " ← RESPOSTA EM 30 MIN";
+  color: #FF6B35;
+  font-size: 0.6em;
+  font-weight: 700;
+}
+</style>
+<meta charset="UTF-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" /><meta name="theme-color" content="#FF6B35" /><meta name="mobile-web-app-capable" content="yes" /><meta name="apple-mobile-web-app-capable" content="yes" /><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /><link rel="icon" type="image/svg+xml" href="/favicon.svg" /><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" /><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /><link rel="manifest" href="/site.webmanifest" /><title>Eletricista Profissional Trás-os-Montes | Norte Reparos</title><meta name="description" content="Eletricista profissional em Trás-os-Montes. Quadros elétricos, iluminação LED, certificação, avarias elétricas. Atendimento 24h. Orçamento gratuito." /><meta name="keywords" content="eletricista bragança, eletricista mirandela, eletricista macedo de cavaleiros, eletricista urgente bragança, eletricista 24 horas mirandela, eletricista chaves, eletricista vila real, eletricista vinhais, eletricista miranda do douro, eletricista mogadouro, eletricista torre de moncorvo, eletricista trás-os-montes, quadro elétrico bragança, certificação elétrica bragança, certificação elétrica mirandela, curto circuito bragança, avaria elétrica mirandela, disjuntor a disparar, tomada não funciona, eletricista urgente 24h, eletricista profissional trás-os-montes" /><link rel="canonical" href="https://eletricista-norte-reparos.pt/" /><script type="application/ld+json">
 {
  "@context": "https://schema.org",
  "@type": "Electrician",
