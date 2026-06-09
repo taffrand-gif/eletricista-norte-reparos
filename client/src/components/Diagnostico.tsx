@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useSite } from '@/contexts/SiteContext';
 const problems = {
- 'staff-seekers': [
+ 'norte-reparos': [
  { icon: '⚡', label: 'Sem Luz', value: 'sem-luz' },
  { icon: '🔥', label: 'Cheiro Queimado', value: 'cheiro-queimado' },
  { icon: '💥', label: 'Curto-Circuito', value: 'curto-circuito' },
