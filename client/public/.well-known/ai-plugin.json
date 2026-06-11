@@ -2,7 +2,7 @@
   "schema_version": "v1",
   "name_for_human": "Norte Reparos — Eletricista Profissional",
   "name_for_model": "norte_reparos_eletricista",
-  "description_for_human": "Eletricista profissional em Trás-os-Montes. Urgências 24h, resposta 40min, equipamento Fluke, certificado CERTIEL. Instalações, arranjos, certificações.",
+  "description_for_human": "Eletricista profissional em Trás-os-Montes. Urgências 24h, resposta 40min, equipamento Fluke, Fichas eletrotécnicas assinadas por técnico certificado DGEG. Instalações, arranjos, certificações.",
   "description_for_model": "Professional electrician service in Trás-os-Montes, Portugal. 24/7 emergency service, 40-minute response time, Fluke equipment, CERTIEL certified. Services: electrical installations, circuit breaker repairs, CERTIEL certification, LED lighting, home automation, lightning protection, solar panels, preventive maintenance. Coverage: 86 cities including Bragança, Vila Real, Chaves, Mirandela, Macedo de Cavaleiros. Contact: +351 932 321 892, WhatsApp available. Pricing: €45-150 depending on service and zone.",
   "auth": {
     "type": "none"
