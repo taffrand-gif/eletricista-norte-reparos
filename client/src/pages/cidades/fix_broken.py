@@ -35,13 +35,13 @@ for fname in os.listdir('.'):
                 )
                 # Fix Macedo references
                 newline = re.sub(
-                    r'estamos sediados em Macedo de Cavaleiros[^"]*',
-                    'a nossa equipa actua em Macedo de Cavaleiros e regiao',
+                    r'estamos sediados em Trás-os-Montes[^"]*',
+                    'a nossa equipa actua em Trás-os-Montes e regiao',
                     newline
                 )
                 newline = re.sub(
-                    r'A deslocacao a Macedo de Cavaleiros[^"]*',
-                    'A deslocacao a Macedo de Cavaleiros varia conforme a zona',
+                    r'A deslocacao a Trás-os-Montes[^"]*',
+                    'A deslocacao a Trás-os-Montes varia conforme a zona',
                     newline
                 )
                 fixed_lines.append(newline)

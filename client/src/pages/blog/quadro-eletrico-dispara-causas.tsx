@@ -299,7 +299,7 @@ export default function QuadroEletricoDisparaCausas() {
  </table>
  </div>
  <p className="text-sm text-gray-600 mt-4">
- * Preços incluem IVA e mão de obra. Material incluído conforme especificado. Válido para Bragança, Mirandela, Chaves, Vila Real e Macedo de Cavaleiros.
+ * Preços incluem IVA e mão de obra. Material incluído conforme especificado. Válido para Bragança, Mirandela, Chaves, Vila Real e Trás-os-Montes.
  </p>
  </div>
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">

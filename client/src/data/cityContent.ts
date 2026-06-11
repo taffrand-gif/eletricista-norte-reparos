@@ -111,7 +111,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  ]
  },
  macedo: {
- name: "Macedo de Cavaleiros",
+ name: "Trás-os-Montes",
  slug: "macedo-de-cavaleiros",
  population: "15 000 habitants",
  logements: "5 500 logements dont 50% em zonas rurais",
@@ -142,7 +142,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  tempsReponse: "Média 34 minutos"
  },
  specificites: [
- "Base permanente em Macedo de Cavaleiros",
+ "Base permanente em Trás-os-Montes",
  "Especialistas em sistemas elétricos rurais",
  "certificação elétrica para casas e quintas",
  "Cobertura: Macedo, Morais, Lagoa, Talhinhas",

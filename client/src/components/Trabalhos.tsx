@@ -17,7 +17,7 @@ function Trabalhos() {
  image: '/images-optimized/services/service-sala-banho.jpg'},
  {
  title: 'Instalação de Esquentador a Gás',
- location: 'Macedo de Cavaleiros',
+ location: 'Trás-os-Montes',
  description: 'Substituição de esquentador antigo por modelo eficiente com certificação e ligação de gás completa.',
  image: '/images-optimized/services/service-aquecimento.jpg'},
  {
@@ -49,7 +49,7 @@ function Trabalhos() {
  image: '/images-optimized/services/service-quadro-eletrico.jpg'},
  {
  title: 'Instalação Elétrica Completa',
- location: 'Macedo de Cavaleiros',
+ location: 'Trás-os-Montes',
  description: 'Instalação elétrica completa numa moradia nova, desde o quadro principal até às tomadas e iluminação.',
  image: '/images-optimized/services/service-instalacao.jpg'},
  {

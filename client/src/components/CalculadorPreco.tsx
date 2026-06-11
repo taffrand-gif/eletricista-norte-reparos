@@ -3,7 +3,7 @@ import { useSite } from '@/contexts/SiteContext';
 import { useLocationContent, usePersonalizedWhatsAppMessage } from '@/hooks/useLocationContent';
 // memo removed from 'react';
 const zones = [
- { label: 'Macedo de Cavaleiros (Zona 1)', price: 15 },
+ { label: 'Trás-os-Montes (Zona 1)', price: 15 },
  { label: 'Mirandela / Vila Flor (Zona 2)', price: 25 },
  { label: 'Bragança / Vinhais (Zona 3)', price: 35 },
  { label: 'Miranda do Douro (Zona 4)', price: 45 },

@@ -18,10 +18,10 @@ export const businessInfo = {
  whatsapp: '351932321892',
  email: 'info@eletricista-norte-reparos.pt',
  domain: 'eletricista-norte-reparos.pt',
- // Base address (Macedo de Cavaleiros headquarters)
+ // Base address (Trás-os-Montes headquarters)
  baseAddress: {
- streetAddress: 'Macedo de Cavaleiros, Distrito de Bragança',
- addressLocality: 'Macedo de Cavaleiros',
+ streetAddress: 'Trás-os-Montes, Distrito de Bragança',
+ addressLocality: 'Trás-os-Montes',
  addressRegion: 'Bragança',
  postalCode: '5340-001',
  addressCountry: 'PT'
@@ -34,8 +34,8 @@ export const cityNAPData: Record<string, CityNAP> = {
  'braganca': { name: 'Bragança', slug: 'braganca', postalCode: '5300-001', district: 'Bragança', addressRegion: 'Bragança' },
  'carrazeda-de-ansiaes': { name: 'Carrazeda de Ansiães', slug: 'carrazeda-de-ansiaes', postalCode: '5150-001', district: 'Bragança', addressRegion: 'Bragança' },
  'freixo-espada-cinta': { name: 'Freixo de Espada à Cinta', slug: 'freixo-espada-cinta', postalCode: '5180-001', district: 'Bragança', addressRegion: 'Bragança' },
- 'macedo-cavaleiros': { name: 'Macedo de Cavaleiros', slug: 'macedo-cavaleiros', postalCode: '5340-001', district: 'Bragança', addressRegion: 'Bragança' },
- 'macedo-de-cavaleiros': { name: 'Macedo de Cavaleiros', slug: 'macedo-de-cavaleiros', postalCode: '5340-001', district: 'Bragança', addressRegion: 'Bragança' },
+ 'macedo-cavaleiros': { name: 'Trás-os-Montes', slug: 'macedo-cavaleiros', postalCode: '5340-001', district: 'Bragança', addressRegion: 'Bragança' },
+ 'macedo-de-cavaleiros': { name: 'Trás-os-Montes', slug: 'macedo-de-cavaleiros', postalCode: '5340-001', district: 'Bragança', addressRegion: 'Bragança' },
  'miranda-douro': { name: 'Miranda do Douro', slug: 'miranda-douro', postalCode: '5210-001', district: 'Bragança', addressRegion: 'Bragança' },
  'mirandela': { name: 'Mirandela', slug: 'mirandela', postalCode: '5370-001', district: 'Bragança', addressRegion: 'Bragança' },
  'mogadouro': { name: 'Mogadouro', slug: 'mogadouro', postalCode: '5200-001', district: 'Bragança', addressRegion: 'Bragança' },

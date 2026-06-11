@@ -24,7 +24,7 @@ function Header() {
  name: 'Distrito de Bragança',
  cities: [
  { name: 'Bragança', href: '/eletricista-braganca' },
- { name: 'Macedo de Cavaleiros', href: '/eletricista-macedo-de-cavaleiros' },
+ { name: 'Trás-os-Montes', href: '/eletricista-macedo-de-cavaleiros' },
  { name: 'Mirandela', href: '/eletricista-mirandela' },
  { name: 'Miranda do Douro', href: '/eletricista-miranda-do-douro' },
  { name: 'Mogadouro', href: '/eletricista-mogadouro' },

@@ -212,7 +212,7 @@ export default function Contactos() {
  {config.company.coverage}
  </p>
  <p className="text-sm text-gray-600 mt-1">
- Bragança, Mirandela, Macedo de Cavaleiros e arredores
+ Bragança, Mirandela, Trás-os-Montes e arredores
  </p>
  </div>
  </div>

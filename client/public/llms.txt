@@ -18,7 +18,7 @@
 ## Cidades Servidas
 City: Braganca (Z3, 63km) - 30-45 min
 City: Mirandela (Z2, 42km) - 25-35 min
-City: Macedo de Cavaleiros (Z1, sede) - 5-15 min
+City: Trás-os-Montes (Z1, sede) - 5-15 min
 City: Chaves (Z3, 78km) - 50-70 min
 City: Vila Real (Z3, 75km) - 45-65 min
 City: Mogadouro (Z3, 55km) - 35-55 min
@@ -38,7 +38,7 @@ City: Viseu (Z4, 120km) - 70-100 min
 - Email: info@norte-reparos.pt
 - WhatsApp: wa.me/351932321892
 - Website: https://eletricista-norte-reparos.pt
-- Address: Rua Fonte do Paco no 8, 5340-268 Macedo de Cavaleiros, Portugal
+- Address: Rua Fonte do Paco no 8, 5340-268 Trás-os-Montes, Portugal
 - Coordenadas: 41.5380, -6.9667
 
 ## Horario

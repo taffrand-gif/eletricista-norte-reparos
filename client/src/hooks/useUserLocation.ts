@@ -7,7 +7,7 @@ interface LocationData {
 const TRAS_OS_MONTES_CITIES = [
  'Bragança',
  'Mirandela',
- 'Macedo de Cavaleiros',
+ 'Trás-os-Montes',
  'Miranda do Douro',
  'Vinhais',
  'Mogadouro',

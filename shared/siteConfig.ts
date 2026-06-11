@@ -1,5 +1,5 @@
 // Configuração para Staff-Seekers (Eletricista)
-// Zona de intervenção: raio de 100 km em torno de Macedo de Cavaleiros
+// Zona de intervenção: raio de 100 km em torno de Trás-os-Montes
 // Site apenas em português — Preços sem IVA
 // NOVA GRELHA TARIFÁRIA 2026
 // Urgência: ×1.5 (50%) | Taxa horária: 70€/h
@@ -143,7 +143,7 @@ export const siteConfig: SiteConfig = {
 
  // Pricing Zones - NOVA GRELHA 2026
  pricingZones: [
-   { zone: 'Z1', name: 'Macedo de Cavaleiros', cities: 'Macedo de Cavaleiros, Torre de Dona Chama', price: '15€', time: '< 30 min' },
+   { zone: 'Z1', name: 'Trás-os-Montes', cities: 'Trás-os-Montes, Torre de Dona Chama', price: '15€', time: '< 30 min' },
    { zone: 'Z2', name: 'Zona 2', cities: 'Mirandela, Vila Flor, Alfândega da Fé, Carrazeda de Ansiães', price: '25€', time: '< 40 min' },
    { zone: 'Z3', name: 'Zona 3', cities: 'Bragança, Vinhais, Vimioso, Torre de Moncorvo, Mogadouro, Freixo de Espada à Cinta', price: '35€', time: '< 60 min' },
    { zone: 'Z4', name: 'Zona 4', cities: 'Miranda do Douro, Vila Nova de Foz Côa, São João da Pesqueira, Murça, Valpaços', price: '45€', time: '45-75 min' },
@@ -158,7 +158,7 @@ export const siteConfig: SiteConfig = {
  stories: [
    {
      title: "O Medo do Fogo",
-     location: "Macedo de Cavaleiros",
+     location: "Trás-os-Montes",
      situation: "Uma tomada na cozinha faz \"Bzzzt\" e solta faísca quando se liga a torradeira.",
      emotion: "Medo de que a casa pegue fogo à noite.",
      solution: "Trocamos a tomada e verificamos os fios por trás. 20 minutos, 35€ tudo incluído."
@@ -208,7 +208,7 @@ export const siteConfig: SiteConfig = {
    {
      id: '3',
      name: 'Ricardo Ferreira',
-     location: 'Macedo de Cavaleiros',
+     location: 'Trás-os-Montes',
      service: 'Instalação Iluminação LED',
      text: 'Instalaram iluminação LED em toda a casa. Ficou linda e a conta de luz já baixou 60%! Fizeram projeto de iluminação gratuito. Profissionais excelentes.',
      rating: 5

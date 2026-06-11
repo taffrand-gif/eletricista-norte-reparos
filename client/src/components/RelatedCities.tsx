@@ -13,7 +13,7 @@ function RelatedCities({ currentCity, currentCitySlug }: RelatedCitiesProps) {
  { name: 'Chaves', slug: 'eletricista-chaves', region: 'Vila Real' },
  { name: 'Mirandela', slug: 'eletricista-mirandela', region: 'Bragança' },
  { name: 'Vila Real', slug: 'eletricista-vila-real', region: 'Vila Real' },
- { name: 'Macedo de Cavaleiros', slug: 'eletricista-macedo-cavaleiros', region: 'Bragança' },
+ { name: 'Trás-os-Montes', slug: 'eletricista-macedo-cavaleiros', region: 'Bragança' },
  { name: 'Valpaços', slug: 'eletricista-valpacos', region: 'Vila Real' },
  { name: 'Mogadouro', slug: 'eletricista-mogadouro', region: 'Bragança' },
  { name: 'Torre de Moncorvo', slug: 'eletricista-torre-moncorvo', region: 'Bragança' },

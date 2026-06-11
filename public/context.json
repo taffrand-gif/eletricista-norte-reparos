@@ -3,7 +3,7 @@
     "name": " - Electricista Profissional",
     "type": "Electrician Services",
     "region": "Trás-os-Montes, Portugal",
-    "headquarters": "Macedo de Cavaleiros",
+    "headquarters": "Trás-os-Montes",
     "coverage_radius_km": 100
   },
   "contact": {
@@ -26,7 +26,7 @@
       "url": "https://eletricista-norte-reparos.pt/electricista-mirandela"
     },
     {
-      "name": "Macedo de Cavaleiros",
+      "name": "Trás-os-Montes",
       "type": "headquarters",
       "url": "https://eletricista-norte-reparos.pt/electricista-macedo-de-cavaleiros"
     },

@@ -18,7 +18,7 @@ export default function VilaFlor() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Eletricista em Vila Flor especializado em instalações para adegas e lagares de azeite. Quadros elétricos, iluminação industrial. A 25km de Macedo de Cavaleiros.');
+ metaDescription.setAttribute('content', 'Eletricista em Vila Flor especializado em instalações para adegas e lagares de azeite. Quadros elétricos, iluminação industrial. A 25km de Trás-os-Montes.');
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');
@@ -67,7 +67,7 @@ export default function VilaFlor() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Vila Flor?",
-    answer: "Chegamos a Vila Flor em aproximadamente 35-45 minutos a partir de Macedo de Cavaleiros. Cobrimos todo o conselho.",
+    answer: "Chegamos a Vila Flor em aproximadamente 35-45 minutos a partir de Trás-os-Montes. Cobrimos todo o conselho.",
   },
  {
  question: "Instalam sistemas elétricos em adegas e lagares?",
@@ -87,7 +87,7 @@ export default function VilaFlor() {
  <div className="container text-center text-white">
  <span className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-bold mb-4">⚡ VILA FLOR - TERRA DO VINHO E AZEITE</span>
  <h1 className="text-4xl md:text-6xl font-black mb-6">Eletricista em Vila Flor</h1>
- <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Servimos todo o concelho de Vila Flor com instalações elétricas para adegas, lagares de azeite e habitações. A apenas 25km da nossa sede em Macedo de Cavaleiros.</p>
+ <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Servimos todo o concelho de Vila Flor com instalações elétricas para adegas, lagares de azeite e habitações. A apenas 25km da nossa sede em Trás-os-Montes.</p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a href={`tel:${businessInfo.phone}`} className="inline-flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg text-xl font-bold transition-all shadow-lg">
  <Phone className="w-6 h-6" />932 321 892

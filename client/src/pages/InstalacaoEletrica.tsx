@@ -273,7 +273,7 @@ export default function InstalacaoEletrica() {
  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Zonas de Atuação</h3>
  <div className="grid grid-cols-2 gap-3">
  {[
- "Macedo de Cavaleiros", "Bragança", "Mirandela", "Chaves",
+ "Trás-os-Montes", "Bragança", "Mirandela", "Chaves",
  "Valpaços", "Vinhais", "Miranda do Douro", "Mogadouro",
  "Torre de Moncorvo", "Freixo de Espada à Cinta"
  ].map((city, idx) => (
@@ -314,7 +314,7 @@ export default function InstalacaoEletrica() {
  </h2>
  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
  <a href="/eletricista-macedo-cavaleiros" className="bg-white hover:bg-amber-50 border border-gray-300 rounded-lg p-4 text-center transition-colors">
- <div className="text-amber-600 font-bold">Macedo de Cavaleiros</div>
+ <div className="text-amber-600 font-bold">Trás-os-Montes</div>
  <div className="text-sm text-gray-600">Obra nova</div>
  </a>
  <a href="/eletricista-braganca" className="bg-white hover:bg-amber-50 border border-gray-300 rounded-lg p-4 text-center transition-colors">

@@ -53,7 +53,7 @@ function Footer() {
  <ul className="space-y-2 text-sm">
  <li><a href="/eletricista-braganca" className="text-gray-200 hover:text-white transition-colors">Bragança</a></li>
  <li><a href="/eletricista-mirandela" className="text-gray-200 hover:text-white transition-colors">Mirandela</a></li>
- <li><a href="/eletricista-macedo-cavaleiros" className="text-gray-200 hover:text-white transition-colors">Macedo de Cavaleiros</a></li>
+ <li><a href="/eletricista-macedo-cavaleiros" className="text-gray-200 hover:text-white transition-colors">Trás-os-Montes</a></li>
  <li><a href="/eletricista-mogadouro" className="text-gray-200 hover:text-white transition-colors">Mogadouro</a></li>
  <li><a href="/eletricista-miranda-douro" className="text-gray-200 hover:text-white transition-colors">Miranda do Douro</a></li>
  <li><a href="/zonas" className="text-gray-200 hover:text-white transition-colors font-semibold">Ver todas →</a></li>

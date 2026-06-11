@@ -23,7 +23,7 @@
  'boticas':'Boticas','braganca':'Bragança','carrazeda-ansiaes':'Carrazeda de Ansiães',
  'carrazeda-de-ansiaes':'Carrazeda de Ansiães','chaves':'Chaves','foz-coa':'Foz Côa',
  'freixo-espada-cinta':'Freixo de Espada à Cinta','freixo-de-espada-a-cinta':'Freixo de Espada à Cinta',
- 'lamego':'Lamego','macedo-cavaleiros':'Macedo de Cavaleiros','macedo-de-cavaleiros':'Macedo de Cavaleiros',
+ 'lamego':'Lamego','macedo-cavaleiros':'Trás-os-Montes','macedo-de-cavaleiros':'Trás-os-Montes',
  'mesao-frio':'Mesão Frio','miranda-douro':'Miranda do Douro','miranda-do-douro':'Miranda do Douro',
  'mirandela':'Mirandela','mogadouro':'Mogadouro','moimenta-beira':'Moimenta da Beira',
  'mondim-basto':'Mondim de Basto','montalegre':'Montalegre','murca':'Murça','penedono':'Penedono',

@@ -5,7 +5,7 @@ import { MapPin } from 'lucide-react';
 const CIDADES_PRINCIPAIS = [
  { nome: 'Bragança', slug: 'braganca' },
  { nome: 'Mirandela', slug: 'mirandela' },
- { nome: 'Macedo de Cavaleiros', slug: 'macedo-cavaleiros' },
+ { nome: 'Trás-os-Montes', slug: 'macedo-cavaleiros' },
  { nome: 'Vila Real', slug: 'vila-real' },
  { nome: 'Chaves', slug: 'chaves' },
  { nome: 'Lamego', slug: 'lamego' },

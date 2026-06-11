@@ -89,36 +89,36 @@ District,distrito de Guarda,Guarda,Eletricista,iluminação led distrito de Guar
 District,distrito de Guarda,Guarda,Eletricista,painéis solares distrito de Guarda,Transacional,BAIXA
 District,distrito de Guarda,Guarda,Eletricista,carregador carro elétrico distrito de Guarda,Transacional,BAIXA
 District,distrito de Guarda,Guarda,Eletricista,eletricista ao domingo distrito de Guarda,Urgência,BAIXA
-Cidade,Macedo de Cavaleiros,Bragança,Canalizador,canalizador Macedo de Cavaleiros,Transacional,ALTA
-Cidade,Macedo de Cavaleiros,Bragança,Canalizador,canalizador urgente Macedo de Cavaleiros,Transacional/Urgência,CRÍTICA
-Cidade,Macedo de Cavaleiros,Bragança,Canalizador,canalizador Atendimento 24h/7d Macedo de Cavaleiros,Urgência,ALTA
-Cidade,Macedo de Cavaleiros,Bragança,Canalizador,picheleiro Macedo de Cavaleiros,Transacional,ALTA
-Cidade,Macedo de Cavaleiros,Bragança,Canalizador,desentupimento Macedo de Cavaleiros,Transacional,ALTA
-Cidade,Macedo de Cavaleiros,Bragança,Canalizador,desentupir sanita Macedo de Cavaleiros,Urgência,MÉDIA
-Cidade,Macedo de Cavaleiros,Bragança,Canalizador,fuga de água Macedo de Cavaleiros,Urgência,ALTA
-Cidade,Macedo de Cavaleiros,Bragança,Canalizador,deteção de fugas Macedo de Cavaleiros,Transacional,MÉDIA
-Cidade,Macedo de Cavaleiros,Bragança,Canalizador,reparação canalização Macedo de Cavaleiros,Transacional,MÉDIA
-Cidade,Macedo de Cavaleiros,Bragança,Canalizador,assistência canalização Macedo de Cavaleiros,Transacional,MÉDIA
-Cidade,Macedo de Cavaleiros,Bragança,Canalizador,esquentador Macedo de Cavaleiros,Transacional,MÉDIA
-Cidade,Macedo de Cavaleiros,Bragança,Canalizador,cano rebentado Macedo de Cavaleiros,Urgência,MÉDIA
-Cidade,Macedo de Cavaleiros,Bragança,Canalizador,bomba de água Macedo de Cavaleiros,Transacional,BAIXA
-Cidade,Macedo de Cavaleiros,Bragança,Canalizador,canalizador ao domingo Macedo de Cavaleiros,Urgência,BAIXA
-Cidade,Macedo de Cavaleiros,Bragança,Eletricista,eletricista Macedo de Cavaleiros,Transacional,ALTA
-Cidade,Macedo de Cavaleiros,Bragança,Eletricista,eletricista urgente Macedo de Cavaleiros,Transacional/Urgência,CRÍTICA
-Cidade,Macedo de Cavaleiros,Bragança,Eletricista,eletricista Atendimento 24h/7d Macedo de Cavaleiros,Urgência,ALTA
-Cidade,Macedo de Cavaleiros,Bragança,Eletricista,avaria elétrica Macedo de Cavaleiros,Urgência,ALTA
-Cidade,Macedo de Cavaleiros,Bragança,Eletricista,curto-circuito Macedo de Cavaleiros,Urgência,MÉDIA
-Cidade,Macedo de Cavaleiros,Bragança,Eletricista,quadro elétrico Macedo de Cavaleiros,Transacional,ALTA
-Cidade,Macedo de Cavaleiros,Bragança,Eletricista,disjuntor a disparar Macedo de Cavaleiros,Urgência,MÉDIA
-Cidade,Macedo de Cavaleiros,Bragança,Eletricista,sem luz Macedo de Cavaleiros,Urgência,MÉDIA
-Cidade,Macedo de Cavaleiros,Bragança,Eletricista,reparação elétrica Macedo de Cavaleiros,Transacional,MÉDIA
-Cidade,Macedo de Cavaleiros,Bragança,Eletricista,assistência elétrica Macedo de Cavaleiros,Transacional,MÉDIA
-Cidade,Macedo de Cavaleiros,Bragança,Eletricista,certificação elétrica Macedo de Cavaleiros,Transacional,ALTA
-Cidade,Macedo de Cavaleiros,Bragança,Eletricista,instalação elétrica Macedo de Cavaleiros,Transacional,MÉDIA
-Cidade,Macedo de Cavaleiros,Bragança,Eletricista,iluminação led Macedo de Cavaleiros,Transacional,BAIXA
-Cidade,Macedo de Cavaleiros,Bragança,Eletricista,painéis solares Macedo de Cavaleiros,Transacional,BAIXA
-Cidade,Macedo de Cavaleiros,Bragança,Eletricista,carregador carro elétrico Macedo de Cavaleiros,Transacional,BAIXA
-Cidade,Macedo de Cavaleiros,Bragança,Eletricista,eletricista ao domingo Macedo de Cavaleiros,Urgência,BAIXA
+Cidade,Trás-os-Montes,Bragança,Canalizador,canalizador Trás-os-Montes,Transacional,ALTA
+Cidade,Trás-os-Montes,Bragança,Canalizador,canalizador urgente Trás-os-Montes,Transacional/Urgência,CRÍTICA
+Cidade,Trás-os-Montes,Bragança,Canalizador,canalizador Atendimento 24h/7d Trás-os-Montes,Urgência,ALTA
+Cidade,Trás-os-Montes,Bragança,Canalizador,picheleiro Trás-os-Montes,Transacional,ALTA
+Cidade,Trás-os-Montes,Bragança,Canalizador,desentupimento Trás-os-Montes,Transacional,ALTA
+Cidade,Trás-os-Montes,Bragança,Canalizador,desentupir sanita Trás-os-Montes,Urgência,MÉDIA
+Cidade,Trás-os-Montes,Bragança,Canalizador,fuga de água Trás-os-Montes,Urgência,ALTA
+Cidade,Trás-os-Montes,Bragança,Canalizador,deteção de fugas Trás-os-Montes,Transacional,MÉDIA
+Cidade,Trás-os-Montes,Bragança,Canalizador,reparação canalização Trás-os-Montes,Transacional,MÉDIA
+Cidade,Trás-os-Montes,Bragança,Canalizador,assistência canalização Trás-os-Montes,Transacional,MÉDIA
+Cidade,Trás-os-Montes,Bragança,Canalizador,esquentador Trás-os-Montes,Transacional,MÉDIA
+Cidade,Trás-os-Montes,Bragança,Canalizador,cano rebentado Trás-os-Montes,Urgência,MÉDIA
+Cidade,Trás-os-Montes,Bragança,Canalizador,bomba de água Trás-os-Montes,Transacional,BAIXA
+Cidade,Trás-os-Montes,Bragança,Canalizador,canalizador ao domingo Trás-os-Montes,Urgência,BAIXA
+Cidade,Trás-os-Montes,Bragança,Eletricista,eletricista Trás-os-Montes,Transacional,ALTA
+Cidade,Trás-os-Montes,Bragança,Eletricista,eletricista urgente Trás-os-Montes,Transacional/Urgência,CRÍTICA
+Cidade,Trás-os-Montes,Bragança,Eletricista,eletricista Atendimento 24h/7d Trás-os-Montes,Urgência,ALTA
+Cidade,Trás-os-Montes,Bragança,Eletricista,avaria elétrica Trás-os-Montes,Urgência,ALTA
+Cidade,Trás-os-Montes,Bragança,Eletricista,curto-circuito Trás-os-Montes,Urgência,MÉDIA
+Cidade,Trás-os-Montes,Bragança,Eletricista,quadro elétrico Trás-os-Montes,Transacional,ALTA
+Cidade,Trás-os-Montes,Bragança,Eletricista,disjuntor a disparar Trás-os-Montes,Urgência,MÉDIA
+Cidade,Trás-os-Montes,Bragança,Eletricista,sem luz Trás-os-Montes,Urgência,MÉDIA
+Cidade,Trás-os-Montes,Bragança,Eletricista,reparação elétrica Trás-os-Montes,Transacional,MÉDIA
+Cidade,Trás-os-Montes,Bragança,Eletricista,assistência elétrica Trás-os-Montes,Transacional,MÉDIA
+Cidade,Trás-os-Montes,Bragança,Eletricista,certificação elétrica Trás-os-Montes,Transacional,ALTA
+Cidade,Trás-os-Montes,Bragança,Eletricista,instalação elétrica Trás-os-Montes,Transacional,MÉDIA
+Cidade,Trás-os-Montes,Bragança,Eletricista,iluminação led Trás-os-Montes,Transacional,BAIXA
+Cidade,Trás-os-Montes,Bragança,Eletricista,painéis solares Trás-os-Montes,Transacional,BAIXA
+Cidade,Trás-os-Montes,Bragança,Eletricista,carregador carro elétrico Trás-os-Montes,Transacional,BAIXA
+Cidade,Trás-os-Montes,Bragança,Eletricista,eletricista ao domingo Trás-os-Montes,Urgência,BAIXA
 Aldeia,Podence,Bragança,Canalizador,canalizador Podence,Transacional,ALTA
 Aldeia,Podence,Bragança,Canalizador,canalizador urgente Podence,Transacional/Urgência,CRÍTICA
 Aldeia,Podence,Bragança,Canalizador,canalizador Atendimento 24h/7d Podence,Urgência,ALTA

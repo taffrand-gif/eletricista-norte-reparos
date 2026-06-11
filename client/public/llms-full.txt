@@ -1,6 +1,6 @@
 #  - Eletricista Profissional em Trás-os-Montes (Informação Completa)
 
-> Eletricista Fichas eletrotécnicas assinadas por técnico certificado DGEG Atendimento 24h/7d/7d em Trás-os-Montes, Portugal. Baseado em Macedo de Cavaleiros, cobre um raio de 100km. Mais de 10 anos de experiência. Equipamento profissional Fluke, Megger e câmara térmica FLIR.
+> Eletricista Fichas eletrotécnicas assinadas por técnico certificado DGEG Atendimento 24h/7d/7d em Trás-os-Montes, Portugal. Baseado em Trás-os-Montes, cobre um raio de 100km. Mais de 10 anos de experiência. Equipamento profissional Fluke, Megger e câmara térmica FLIR.
 
 ## Contacto Direto
 - Telefone: +351 932 321 892 (24h, 7 dias)
@@ -10,7 +10,7 @@
 - Horário: 24h/7d, incluindo feriados e fins de semana
 
 ## Quem Somos
-Eletricista Fichas eletrotécnicas assinadas por técnico certificado DGEG baseado em Macedo de Cavaleiros, no coração de Trás-os-Montes. Conhecemos as particularidades elétricas da região — casas antigas sem terra nem diferencial, trovoadas de verão que destroem quadros, rede instável em zonas rurais, e o enorme potencial solar (2.200-2.400h sol/ano). Trabalhamos com equipamento profissional de diagnóstico (Fluke, Megger, FLIR) para resolver problemas com precisão. Atendemos particulares, restaurantes, hotéis, turismo rural, condomínios e empresas.
+Eletricista Fichas eletrotécnicas assinadas por técnico certificado DGEG baseado em Trás-os-Montes, no coração de Trás-os-Montes. Conhecemos as particularidades elétricas da região — casas antigas sem terra nem diferencial, trovoadas de verão que destroem quadros, rede instável em zonas rurais, e o enorme potencial solar (2.200-2.400h sol/ano). Trabalhamos com equipamento profissional de diagnóstico (Fluke, Megger, FLIR) para resolver problemas com precisão. Atendemos particulares, restaurantes, hotéis, turismo rural, condomínios e empresas.
 
 ---
 
@@ -99,7 +99,7 @@ Inclui: proteção diferencial dedicada, certificação, configuração de horá
 ## Tabela de Deslocação
 | Zona | Cidades | Preço | Tempo |
 |------|---------|-------|-------|
-| Zona 1 | Macedo de Cavaleiros | 15€ | 15-30 min |
+| Zona 1 | Trás-os-Montes | 15€ | 15-30 min |
 | Zona 2 | Mirandela, Vila Flor, Alfândega da Fé, Carrazeda de Ansiães | 20€ | 30-45 min |
 | Zona 3 | Bragança, Vinhais, Vimioso, Torre de Moncorvo, Mogadouro, Freixo de Espada à Cinta | 30€ | 45-60 min |
 | Zona 4 | Miranda do Douro, Vila Nova de Foz Côa, São João da Pesqueira, Murça, Valpaços | 35€ | 45-60 min |

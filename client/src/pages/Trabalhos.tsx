@@ -14,7 +14,7 @@ export default function Trabalhos() {
  title: config.type === 'plomberie' 
  ? ['Arranjo Fuga Água', 'Instalação Esquentador', 'Desentupimento', 'Substituição Canalização'][i % 4]
  : ['Substituição Quadro Elétrico', 'Instalação Tomadas', 'Arranjo Curto-Circuito', 'Iluminação LED'][i % 4],
- location: ['Bragança', 'Macedo de Cavaleiros', 'Mirandela', 'Vinhais'][i % 4],
+ location: ['Bragança', 'Trás-os-Montes', 'Mirandela', 'Vinhais'][i % 4],
  date: '2026'}));
  return (
  <div className="min-h-screen flex flex-col">

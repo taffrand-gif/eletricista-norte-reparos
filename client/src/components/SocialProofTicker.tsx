@@ -1,11 +1,11 @@
 import React, { useEffect, useState, useCallback, memo } from 'react';
 import { useSite } from '@/contexts/SiteContext';
 const citiesNorte = [
- 'Bragança', 'Mirandela', 'Macedo de Cavaleiros', 'Vila Real', 'Chaves',
+ 'Bragança', 'Mirandela', 'Trás-os-Montes', 'Vila Real', 'Chaves',
  'Lamego', 'Mogadouro', 'Torre de Moncorvo', 'Vinhais', 'Vila Flor',
 ];
 const citiesStaff = [
- 'Bragança', 'Mirandela', 'Macedo de Cavaleiros', 'Vila Real', 'Chaves',
+ 'Bragança', 'Mirandela', 'Trás-os-Montes', 'Vila Real', 'Chaves',
  'Lamego', 'Mogadouro', 'Torre de Moncorvo', 'Vinhais', 'Alfândega da Fé',
 ];
 const namesNorte = [

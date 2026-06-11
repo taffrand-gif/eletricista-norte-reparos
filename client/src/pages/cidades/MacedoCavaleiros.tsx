@@ -120,7 +120,7 @@ export default function MacedoCavaleiros() {
  { label: 'Macedo de Cavaleiros', href: '/eletricista-macedo-cavaleiros' }
  ]} />
  <span className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-bold mb-4">
- ⚡ SEDE EM MACEDO DE CAVALEIROS
+ ⚡ sede no norte de Portugal
  </span>
  <h1 className="text-4xl md:text-6xl font-black mb-6">
  Eletricista em Macedo de Cavaleiros

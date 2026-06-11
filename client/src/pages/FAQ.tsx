@@ -156,7 +156,7 @@ export default function FAQPage() {
  <li><Link href="/eletricista-vila-real" className="text-orange-600 hover:underline">Eletricista Vila Real</Link></li>
  <li><Link href="/eletricista-braganca" className="text-orange-600 hover:underline">Eletricista Bragança</Link></li>
  <li><Link href="/eletricista-mirandela" className="text-orange-600 hover:underline">Eletricista Mirandela</Link></li>
- <li><Link href="/eletricista-macedo-cavaleiros" className="text-orange-600 hover:underline">Eletricista Macedo de Cavaleiros</Link></li>
+ <li><Link href="/eletricista-macedo-cavaleiros" className="text-orange-600 hover:underline">Eletricista Trás-os-Montes</Link></li>
  <li><Link href="/eletricista-chaves" className="text-orange-600 hover:underline">Eletricista Chaves</Link></li>
  </ul>
  </div>

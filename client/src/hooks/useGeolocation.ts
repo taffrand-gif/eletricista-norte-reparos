@@ -7,7 +7,7 @@ interface GeolocationResult {
 }
 // Liste des villes couvertes par district
 const COVERED_CITIES = [
- 'Bragança', 'Mirandela', 'Macedo de Cavaleiros', 'Vinhais', 'Mogadouro',
+ 'Bragança', 'Mirandela', 'Trás-os-Montes', 'Vinhais', 'Mogadouro',
  'Alfândega da Fé', 'Carrazeda de Ansiães', 'Freixo de Espada à Cinta',
  'Miranda do Douro', 'Torre de Moncorvo', 'Vila Flor', 'Vimioso'
 ];

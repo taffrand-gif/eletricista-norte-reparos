@@ -124,7 +124,7 @@ export default function CertificacaoEletrica() {
  <h3 className="text-xl font-bold text-center mb-6 text-gray-900">Também servimos:</h3>
  <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
  {[
- { name: "Macedo de Cavaleiros", href: "/eletricista-macedo-cavaleiros" },
+ { name: "Trás-os-Montes", href: "/eletricista-macedo-cavaleiros" },
  { name: "Bragança", href: "/eletricista-braganca" },
  { name: "Chaves", href: "/eletricista-chaves" },
  { name: "Torre de Moncorvo", href: "/eletricista-torre-moncorvo" },

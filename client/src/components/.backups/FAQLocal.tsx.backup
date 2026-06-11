@@ -18,15 +18,15 @@ function FAQLocal() {
   const localFaqs = isPlumber ? [
     {
       question: 'Existe canalizador disponível em Mirandela ao fim de semana?',
-      answer: 'Sim, a Norte Reparos disponibiliza canalizador em Mirandela todos os dias da semana, incluindo sábados, domingos e feriados. O nosso serviço de urgência funciona Atendimento 24h/7d. Tempo de chegada a Mirandela: aproximadamente 30 minutos a partir de Macedo de Cavaleiros.',
+      answer: 'Sim, a Norte Reparos disponibiliza canalizador em Mirandela todos os dias da semana, incluindo sábados, domingos e feriados. O nosso serviço de urgência funciona Atendimento 24h/7d. Tempo de chegada a Mirandela: aproximadamente 30 minutos a partir de Trás-os-Montes.',
     },
     {
       question: 'Quanto custa um canalizador em Bragança para desentupimento?',
       answer: 'O preço de um desentupimento em Bragança varia entre 50€ e 120€ (sem IVA), dependendo da complexidade. Desentupimentos simples de sanita ou lavatório: 50-80€. Desentupimentos de canalização principal: 80-120€. Incluímos deslocação e diagnóstico no preço. Orçamento gratuito por telefone.',
     },
     {
-      question: 'Fazem reparação de fugas de água em Macedo de Cavaleiros?',
-      answer: 'Sim, Macedo de Cavaleiros é a nossa base de operações. Reparamos todo o tipo de fugas de água: torneiras, autoclismos, canalizações enterradas e tubagens visíveis. Tempo de resposta em Macedo: menos de 20 minutos para urgências. Preços a partir de 60€ (sem IVA).',
+      question: 'Fazem reparação de fugas de água em Trás-os-Montes?',
+      answer: 'Sim, Trás-os-Montes é a nossa base de operações. Reparamos todo o tipo de fugas de água: torneiras, autoclismos, canalizações enterradas e tubagens visíveis. Tempo de resposta em Macedo: menos de 20 minutos para urgências. Preços a partir de 60€ (sem IVA).',
     },
     {
       question: 'Há canalizador de urgência em Miranda do Douro?',
@@ -38,7 +38,7 @@ function FAQLocal() {
     },
     {
       question: 'Qual o canalizador mais perto de Mogadouro?',
-      answer: 'A Norte Reparos é o canalizador profissional mais próximo de Mogadouro, com base em Macedo de Cavaleiros (a cerca de 45 minutos). Cobrimos Mogadouro e todas as suas freguesias. Serviço disponível Atendimento 24h/7d com orçamento gratuito.',
+      answer: 'A Norte Reparos é o canalizador profissional mais próximo de Mogadouro, com base em Trás-os-Montes (a cerca de 45 minutos). Cobrimos Mogadouro e todas as suas freguesias. Serviço disponível Atendimento 24h/7d com orçamento gratuito.',
     },
   ] : [
     {
@@ -50,8 +50,8 @@ function FAQLocal() {
       answer: 'O preço de um eletricista em Bragança varia conforme o serviço: diagnóstico (40-55€), reparação de curto-circuito (70-120€), substituição de quadro elétrico (250-450€), Fichas eletrotécnicas assinadas por técnico certificado DGEG (150-300€). Todos os preços sem IVA. Orçamento gratuito e sem compromisso.',
     },
     {
-      question: 'Fazem Fichas eletrotécnicas assinadas por técnico certificado DGEG em Macedo de Cavaleiros?',
-      answer: 'Sim, Macedo de Cavaleiros é a nossa base. Fazemos Fichas eletrotécnicas assinadas por técnico certificado DGEG para venda de imóveis, arrendamento e instalações novas. Prazo: 3-5 dias úteis. Preço: a partir de 150€ (sem IVA). Tratamos de toda a documentação e submissão na plataforma DGEG.',
+      question: 'Fazem Fichas eletrotécnicas assinadas por técnico certificado DGEG em Trás-os-Montes?',
+      answer: 'Sim, Trás-os-Montes é a nossa base. Fazemos Fichas eletrotécnicas assinadas por técnico certificado DGEG para venda de imóveis, arrendamento e instalações novas. Prazo: 3-5 dias úteis. Preço: a partir de 150€ (sem IVA). Tratamos de toda a documentação e submissão na plataforma DGEG.',
     },
     {
       question: 'Há eletricista de urgência em Miranda do Douro?',
@@ -63,7 +63,7 @@ function FAQLocal() {
     },
     {
       question: 'Qual o eletricista mais perto de Mogadouro?',
-      answer: 'A Eletricista Profissional é o eletricista certificado mais próximo de Mogadouro, com base em Macedo de Cavaleiros (a cerca de 45 minutos). Cobrimos Mogadouro e todas as suas freguesias. Serviço disponível Atendimento 24h/7d com orçamento gratuito.',
+      answer: 'A Eletricista Profissional é o eletricista certificado mais próximo de Mogadouro, com base em Trás-os-Montes (a cerca de 45 minutos). Cobrimos Mogadouro e todas as suas freguesias. Serviço disponível Atendimento 24h/7d com orçamento gratuito.',
     },
   ];
 

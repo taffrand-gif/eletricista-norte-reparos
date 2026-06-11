@@ -547,7 +547,7 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <p className="text-sm text-gray-600 mt-1">Desde 45€/hora</p>
  </a>
  <a href="/eletricista-macedo-cavaleiros" className="bg-white p-4 rounded-xl text-center hover:shadow-md transition-shadow">
- <span className="font-semibold text-amber-700">Macedo de Cavaleiros</span>
+ <span className="font-semibold text-amber-700">Trás-os-Montes</span>
  <p className="text-sm text-gray-600 mt-1">Desde 42€/hora</p>
  </a>
  </div>
@@ -570,7 +570,7 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <span className="font-semibold text-orange-700">Chaves</span>
  </Link>
  <Link to="/eletricista-macedo-cavaleiros" className="bg-white p-3 rounded-lg text-center hover:shadow transition-shadow">
- <span className="font-semibold text-orange-700">Macedo de Cavaleiros</span>
+ <span className="font-semibold text-orange-700">Trás-os-Montes</span>
  </Link>
  </div>
  </div>

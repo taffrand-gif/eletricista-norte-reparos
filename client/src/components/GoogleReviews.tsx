@@ -41,7 +41,7 @@ const reviews: Review[] = [
  {
  name: 'João P.',
  initial: 'J',
- city: 'Macedo de Cavaleiros',
+ city: 'Trás-os-Montes',
  rating: 5,
  text: 'O melhor eletricista da região. Sempre disponível e preços honestos.',
  date: 'há 1 mês'},

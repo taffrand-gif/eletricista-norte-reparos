@@ -67,7 +67,7 @@ export default function Sabrosa() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Sabrosa?",
-    answer: "Chegamos a Sabrosa em aproximadamente 60-75 minutos a partir de Macedo de Cavaleiros. Cobrimos todo o conselho.",
+    answer: "Chegamos a Sabrosa em aproximadamente 60-75 minutos a partir de Trás-os-Montes. Cobrimos todo o conselho.",
   },
  {
  question: "Fazem instalações para espaços culturais e museus em Sabrosa?",

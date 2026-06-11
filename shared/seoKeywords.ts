@@ -13,9 +13,9 @@ export interface CitySEOConfig {
 
 export const staffSeekersCitySEO: Record<string, CitySEOConfig> = {
  'macedo-de-cavaleiros': {
- cityName: 'Macedo de Cavaleiros',
- title: 'Eletricista em Macedo de Cavaleiros |  | 24h Urgências',
- description: 'Eletricista certificado em Macedo de Cavaleiros. Instalação elétrica, quadro elétrico, certificação elétrica. Urgências 24h. Orçamento gratuito: 932 321 892',
+ cityName: 'Trás-os-Montes',
+ title: 'Eletricista em Trás-os-Montes |  | 24h Urgências',
+ description: 'Eletricista certificado em Trás-os-Montes. Instalação elétrica, quadro elétrico, certificação elétrica. Urgências 24h. Orçamento gratuito: 932 321 892',
  keywords: [
  'eletricista macedo de cavaleiros',
  'eletricista urgente macedo de cavaleiros',

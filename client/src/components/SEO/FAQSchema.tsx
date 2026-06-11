@@ -75,7 +75,7 @@ question: "São certificados ?",
  },
  {
  question: "Atendem em que cidades?",
- answer: "Atendemos em Bragança, Mirandela, Macedo de Cavaleiros, Chaves, Vila Real, Vinhais, Miranda do Douro, Mogadouro e todas as aldeias num raio de 130km."
+ answer: "Atendemos em Bragança, Mirandela, Trás-os-Montes, Chaves, Vila Real, Vinhais, Miranda do Douro, Mogadouro e todas as aldeias num raio de 130km."
  },
  {
  question: "Fazem instalação de tomadas?",

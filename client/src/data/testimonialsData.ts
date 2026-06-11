@@ -38,7 +38,7 @@ export const TESTIMONIALS: Testimonial[] = [
  {
  id: 3,
  name: "Ricardo Ferreira",
- city: "Macedo de Cavaleiros",
+ city: "Trás-os-Montes",
  service: "Instalação Iluminação LED",
  rating: 5,
  date: "2025-12-30",
@@ -138,7 +138,7 @@ export const TESTIMONIALS: Testimonial[] = [
  {
  id: 13,
  name: "Fernando Costa",
- city: "Macedo de Cavaleiros",
+ city: "Trás-os-Montes",
  service: "Inspeção Elétrica",
  rating: 5,
  date: "2025-08-25",

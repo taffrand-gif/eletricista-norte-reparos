@@ -212,7 +212,7 @@ const OptimizedServices: React.FC = () => {
  <div className="bg-white p-6 rounded-xl shadow-lg">
  <h4 className="text-xl font-bold text-gray-900 mb-4">Áreas de Atuação</h4>
  <div className="grid grid-cols-2 gap-3">
- {['Bragança', 'Macedo de Cavaleiros', 'Mirandela', 'Miranda do Douro', 'Vinhais', 'Mogadouro', 'Vila Flor', 'Valpaços', 'Torre de Moncorvo', 'Alfândega da Fé'].map((city) => (
+ {['Bragança', 'Trás-os-Montes', 'Mirandela', 'Miranda do Douro', 'Vinhais', 'Mogadouro', 'Vila Flor', 'Valpaços', 'Torre de Moncorvo', 'Alfândega da Fé'].map((city) => (
  <div key={city} className="flex items-center gap-2 text-gray-700">
  <span className={iconColor}>📍</span>
  <span>{city}</span>

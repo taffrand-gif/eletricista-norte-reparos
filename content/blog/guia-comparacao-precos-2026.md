@@ -58,7 +58,7 @@ Existem várias categorias a considerar antes de avançar:
 - Domingo/Feriado: 90-95€/h
 
 **C. Por zona geográfica**
-- Z1 (0-30 km de Macedo de Cavaleiros): 20€ deslocação
+- Z1 (0-30 km de Trás-os-Montes): 20€ deslocação
 - Z2 (31-50 km): 25€ deslocação
 - Z3 (51-90 km): 30€ deslocação
 - Z4 (91-130 km): 40€ deslocação
@@ -302,7 +302,7 @@ Quanto custam serviços.
 
 ## 📞 Contacto Norte Reparos
 
-**Servimos Trás-os-Montes (raio 130 km de Macedo de Cavaleiros):**
+**Servimos Trás-os-Montes (raio 130 km de Trás-os-Montes):**
 - 17 cidades principais
 - 68 vilas
 - 948 aldeias
@@ -314,7 +314,7 @@ Quanto custam serviços.
 - 💬 **WhatsApp:** https://wa.me/351928484451
 - 🌐 **Site:** https://canalizador-norte-reparos.pt
 - 📧 **Email:** info@norte-reparos.pt
-- 📍 **Sede:** Macedo de Cavaleiros
+- 📍 **Sede:** Trás-os-Montes
 
 **Preços tabelados por zona — sem surpresas.**
 **Orçamento grátis por telefone — sem compromisso.**

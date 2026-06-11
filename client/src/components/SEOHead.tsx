@@ -36,7 +36,7 @@ export default function SEOHead() {
  updateMetaTag('meta[name="language"]', 'content', 'pt-PT');
  // Geo tags para SEO local
  updateMetaTag('meta[name="geo.region"]', 'content', 'PT-04');
- updateMetaTag('meta[name="geo.placename"]', 'content', 'Macedo de Cavaleiros');
+ updateMetaTag('meta[name="geo.placename"]', 'content', 'Trás-os-Montes');
  updateMetaTag('meta[name="geo.position"]', 'content', '41.5382;-6.9667');
  updateMetaTag('meta[name="ICBM"]', 'content', '41.5382, -6.9667');
  // Open Graph tags

@@ -90,7 +90,7 @@ export default function SEOHeadEnhanced({
  // Geo-targeting meta tags
  updateMetaTag('meta[name="geo.region"]', 'content', 'PT');
  updateMetaTag('meta[name="geo.position"]', 'content', '41.5362124;-6.9560267');
- updateMetaTag('meta[name="geo.placename"]', 'content', 'Macedo de Cavaleiros, Trás-os-Montes, Portugal');
+ updateMetaTag('meta[name="geo.placename"]', 'content', 'Trás-os-Montes, Trás-os-Montes, Portugal');
  updateMetaTag('meta[name="ICBM"]', 'content', '41.5362124, -6.9560267');
  // Open Graph tags
  updateMetaTag('meta[property="og:type"]', 'content', 'website');

@@ -1,5 +1,5 @@
 // Página SEO: Zona de Intervenção - Eletricista em Trás-os-Montes
-// Lista completa das 34 cidades servidas com distâncias desde Macedo de Cavaleiros
+// Lista completa das 34 cidades servidas com distâncias desde Trás-os-Montes
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useSite } from '@/contexts/SiteContext';
@@ -15,7 +15,7 @@ const districts = {
  name: 'Distrito de Bragança',
  cities: [
  { name: 'Bragança', distance: '45 km', slug: 'braganca' },
- { name: 'Macedo de Cavaleiros', distance: '0 km', slug: 'macedo-cavaleiros' },
+ { name: 'Trás-os-Montes', distance: '0 km', slug: 'macedo-cavaleiros' },
  { name: 'Mirandela', distance: '35 km', slug: 'mirandela' },
  { name: 'Miranda do Douro', distance: '60 km', slug: 'miranda-douro' },
  { name: 'Mogadouro', distance: '60 km', slug: 'mogadouro' },

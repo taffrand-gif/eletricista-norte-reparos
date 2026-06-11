@@ -200,7 +200,7 @@ function getTestimonials(serviceType: 'plomberie' | 'electricite'): Testimonial[
  },
  {
  name: "Ana Costa",
- city: "Macedo de Cavaleiros",
+ city: "Trás-os-Montes",
  rating: 5,
  date: "Novembro 2025",
  service: "certificação elétrica",
@@ -275,7 +275,7 @@ function getTestimonials(serviceType: 'plomberie' | 'electricite'): Testimonial[
  },
  {
  name: "Francisco Lopes",
- city: "Macedo de Cavaleiros",
+ city: "Trás-os-Montes",
  rating: 5,
  date: "Novembro 2025",
  service: "Certificação elétrica",

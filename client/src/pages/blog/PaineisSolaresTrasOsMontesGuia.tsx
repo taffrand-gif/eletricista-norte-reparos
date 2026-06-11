@@ -593,7 +593,7 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  <span className="font-semibold text-orange-700">Chaves</span>
  </Link>
  <Link to="/eletricista-macedo-cavaleiros" className="bg-white p-3 rounded-lg text-center hover:shadow transition-shadow">
- <span className="font-semibold text-orange-700">Macedo de Cavaleiros</span>
+ <span className="font-semibold text-orange-700">Trás-os-Montes</span>
  </Link>
  </div>
  </div>

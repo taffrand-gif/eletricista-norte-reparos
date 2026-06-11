@@ -67,7 +67,7 @@ export default function VilaRealCity() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Vila Pouca de Aguiar?",
-    answer: "Chegamos a Vila Real em aproximadamente 70-90 minutos a partir de Macedo de Cavaleiros. Cobrimos todo o conselho.",
+    answer: "Chegamos a Vila Real em aproximadamente 70-90 minutos a partir de Trás-os-Montes. Cobrimos todo o conselho.",
   },
  {
  question: "Fazem instalações para complexos termais?",

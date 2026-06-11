@@ -3,7 +3,7 @@
 export const cidadesProximasBraganca = [
  { name: 'Vinhais', slug: 'vinhais', distance: '30km', zona: 2 },
  { name: 'Vimioso', slug: 'vimioso', distance: '35km', zona: 3 },
- { name: 'Macedo de Cavaleiros', slug: 'macedo-cavaleiros', distance: '40km', zona: 3 },
+ { name: 'Trás-os-Montes', slug: 'macedo-cavaleiros', distance: '40km', zona: 3 },
  { name: 'Miranda do Douro', slug: 'miranda-douro', distance: '75km', zona: 5 },
  { name: 'Mogadouro', slug: 'mogadouro', distance: '60km', zona: 4 },
  { name: 'Mirandela', slug: 'mirandela', distance: '65km', zona: 4 }
@@ -17,7 +17,7 @@ export const cidadesProximasMacedo = [
  { name: 'Torre de Moncorvo', slug: 'torre-moncorvo', distance: '45km', zona: 3 }
 ];
 export const cidadesProximasMirandela = [
- { name: 'Macedo de Cavaleiros', slug: 'macedo-cavaleiros', distance: '25km', zona: 2 },
+ { name: 'Trás-os-Montes', slug: 'macedo-cavaleiros', distance: '25km', zona: 2 },
  { name: 'Vila Flor', slug: 'vila-flor', distance: '30km', zona: 2 },
  { name: 'Bragança', slug: 'braganca', distance: '65km', zona: 4 },
  { name: 'Murça', slug: 'murca', distance: '35km', zona: 3 },
@@ -42,7 +42,7 @@ export const cidadesProximasChaves = [
 ];
 export const cidadesProximasVinhais = [
  { name: 'Bragança', slug: 'braganca', distance: '30km', zona: 2 },
- { name: 'Macedo de Cavaleiros', slug: 'macedo-cavaleiros', distance: '50km', zona: 3 },
+ { name: 'Trás-os-Montes', slug: 'macedo-cavaleiros', distance: '50km', zona: 3 },
  { name: 'Chaves', slug: 'chaves', distance: '70km', zona: 5 },
  { name: 'Vimioso', slug: 'vimioso', distance: '55km', zona: 4 },
  { name: 'Montalegre', slug: 'montalegre', distance: '65km', zona: 4 },
@@ -50,7 +50,7 @@ export const cidadesProximasVinhais = [
 ];
 export const cidadesProximasMogadouro = [
  { name: 'Torre de Moncorvo', slug: 'torre-moncorvo', distance: '25km', zona: 2 },
- { name: 'Macedo de Cavaleiros', slug: 'macedo-cavaleiros', distance: '35km', zona: 3 },
+ { name: 'Trás-os-Montes', slug: 'macedo-cavaleiros', distance: '35km', zona: 3 },
  { name: 'Miranda do Douro', slug: 'miranda-douro', distance: '40km', zona: 3 },
  { name: 'Bragança', slug: 'braganca', distance: '60km', zona: 4 },
  { name: 'Freixo de Espada à Cinta', slug: 'freixo-espada-cinta', distance: '30km', zona: 2 },
@@ -62,7 +62,7 @@ export const cidadesProximasTorreMoncorvo = [
  { name: 'Freixo de Espada à Cinta', slug: 'freixo-espada-cinta', distance: '20km', zona: 2 },
  { name: 'Carrazeda de Ansiães', slug: 'carrazeda-ansiaes', distance: '35km', zona: 3 },
  { name: 'Vila Flor', slug: 'vila-flor', distance: '40km', zona: 3 },
- { name: 'Macedo de Cavaleiros', slug: 'macedo-cavaleiros', distance: '45km', zona: 3 }
+ { name: 'Trás-os-Montes', slug: 'macedo-cavaleiros', distance: '45km', zona: 3 }
 ];
 export const cidadesProximasLamego = [
  { name: 'Peso da Régua', slug: 'peso-regua', distance: '12km', zona: 1 },
@@ -81,7 +81,7 @@ export const cidadesProximasPesoRegua = [
  { name: 'Alijó', slug: 'alijo', distance: '30km', zona: 2 }
 ];
 export const cidadesProximasAlfandegaFe = [
- { name: 'Macedo de Cavaleiros', slug: 'macedo-cavaleiros', distance: '30km', zona: 2 },
+ { name: 'Trás-os-Montes', slug: 'macedo-cavaleiros', distance: '30km', zona: 2 },
  { name: 'Torre de Moncorvo', slug: 'torre-moncorvo', distance: '30km', zona: 2 },
  { name: 'Mogadouro', slug: 'mogadouro', distance: '45km', zona: 3 },
  { name: 'Mirandela', slug: 'mirandela', distance: '40km', zona: 3 },
@@ -91,7 +91,7 @@ export const cidadesProximasAlfandegaFe = [
 export const cidadesProximasVilaFlor = [
  { name: 'Mirandela', slug: 'mirandela', distance: '30km', zona: 2 },
  { name: 'Alfândega da Fé', slug: 'alfandega-da-fe', distance: '25km', zona: 2 },
- { name: 'Macedo de Cavaleiros', slug: 'macedo-cavaleiros', distance: '45km', zona: 3 },
+ { name: 'Trás-os-Montes', slug: 'macedo-cavaleiros', distance: '45km', zona: 3 },
  { name: 'Torre de Moncorvo', slug: 'torre-moncorvo', distance: '40km', zona: 3 },
  { name: 'Carrazeda de Ansiães', slug: 'carrazeda-ansiaes', distance: '20km', zona: 2 },
  { name: 'Murça', slug: 'murca', distance: '35km', zona: 3 }
@@ -100,7 +100,7 @@ export const cidadesProximasVimioso = [
  { name: 'Bragança', slug: 'braganca', distance: '35km', zona: 3 },
  { name: 'Miranda do Douro', slug: 'miranda-douro', distance: '40km', zona: 3 },
  { name: 'Mogadouro', slug: 'mogadouro', distance: '50km', zona: 3 },
- { name: 'Macedo de Cavaleiros', slug: 'macedo-cavaleiros', distance: '60km', zona: 4 },
+ { name: 'Trás-os-Montes', slug: 'macedo-cavaleiros', distance: '60km', zona: 4 },
  { name: 'Vinhais', slug: 'vinhais', distance: '55km', zona: 4 },
  { name: 'Torre de Moncorvo', slug: 'torre-moncorvo', distance: '70km', zona: 5 }
 ];
@@ -110,7 +110,7 @@ export const cidadesProximasMirandaDouro = [
  { name: 'Bragança', slug: 'braganca', distance: '75km', zona: 5 },
  { name: 'Freixo de Espada à Cinta', slug: 'freixo-espada-cinta', distance: '60km', zona: 4 },
  { name: 'Torre de Moncorvo', slug: 'torre-moncorvo', distance: '55km', zona: 4 },
- { name: 'Macedo de Cavaleiros', slug: 'macedo-cavaleiros', distance: '70km', zona: 5 }
+ { name: 'Trás-os-Montes', slug: 'macedo-cavaleiros', distance: '70km', zona: 5 }
 ];
 export const cidadesProximasFreixoEspadaCinta = [
  { name: 'Torre de Moncorvo', slug: 'torre-moncorvo', distance: '20km', zona: 2 },

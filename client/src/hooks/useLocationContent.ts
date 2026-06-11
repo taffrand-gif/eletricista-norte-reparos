@@ -8,13 +8,13 @@ interface LocationContentConfig {
  priceAdjustment: number;
  region: string;
 }
-// Base location (Macedo de Cavaleiros)
+// Base location (Trás-os-Montes)
 const BASE_LAT = 41.5382;
 const BASE_LON = -6.9667;
 // City coordinates (approximate)
 const CITY_COORDINATES: Record<string, { lat: number; lon: number }> = {
  'Bragança': { lat: 41.8058, lon: -6.7570 },
- 'Macedo de Cavaleiros': { lat: 41.5382, lon: -6.9667 },
+ 'Trás-os-Montes': { lat: 41.5382, lon: -6.9667 },
  'Mirandela': { lat: 41.4867, lon: -7.1867 },
  'Vinhais': { lat: 41.8333, lon: -7.0000 },
  'Miranda do Douro': { lat: 41.4975, lon: -6.2742 },

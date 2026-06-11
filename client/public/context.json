@@ -6,7 +6,7 @@
     "founded": "2026",
     "owner": "Profissional independente",
     "location": {
-      "base": "Macedo de Cavaleiros",
+      "base": "Trás-os-Montes",
       "region": "Trás-os-Montes",
       "district": "Bragança",
       "country": "Portugal",
@@ -29,7 +29,7 @@
     ],
     "equipment": ["Ridgid Professional", "Multímetros Fluke", "Câmara Térmica FLIR", "Testadores certificados"],
     "cities_served": [
-      {"name": "Macedo de Cavaleiros", "distance_km": 0, "time_min": 0},
+      {"name": "Trás-os-Montes", "distance_km": 0, "time_min": 0},
       {"name": "Bragança", "distance_km": 27, "time_min": 25},
       {"name": "Mirandela", "distance_km": 30, "time_min": 25},
       {"name": "Chaves", "distance_km": 75, "time_min": 55},

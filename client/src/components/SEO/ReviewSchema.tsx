@@ -80,14 +80,14 @@ export const eletricistaReviews: ReviewData[] = [
  rating: 5,
  date: "2026-02-19",
  text: "Bomba de água sem funcionar. Identificaram problema elétrico e resolveram no mesmo dia. Perfeito!",
- city: "Macedo de Cavaleiros"
+ city: "Trás-os-Montes"
  },
  {
  author: "Isabel C.",
  rating: 5,
  date: "2026-02-26",
  text: "certificação elétrica para casa nova. Serviço impecável e preço combinado antes. Obrigada!",
- city: "Macedo de Cavaleiros"
+ city: "Trás-os-Montes"
  },
  {
  author: "Rui A.",

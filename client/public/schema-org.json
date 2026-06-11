@@ -7,8 +7,8 @@
   "description": "Serviços de eletricista profissional",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Macedo de Cavaleiros, Trás-os-Montes, Portugal",
-    "addressLocality": "Macedo de Cavaleiros",
+    "streetAddress": "Trás-os-Montes, Trás-os-Montes, Portugal",
+    "addressLocality": "Trás-os-Montes",
     "addressRegion": "Trás-os-Montes",
     "addressCountry": "PT",
     "postalCode": "5340"

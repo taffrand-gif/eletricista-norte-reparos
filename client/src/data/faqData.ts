@@ -19,7 +19,7 @@ export const electricFaqs: FAQItem[] = [
  },
  {
  question: "Quanto tempo demora a chegar em caso de urgência?",
- answer: "Na zona de Macedo de Cavaleiros e arredores (até 20km): 30-45 minutos. Para outras localidades do distrito: 45 minutos a 1 hora. Temos veículos equipados com ferramentas e material para deslocações rápidas."
+ answer: "Na zona de Trás-os-Montes e arredores (até 20km): 30-45 minutos. Para outras localidades do distrito: 45 minutos a 1 hora. Temos veículos equipados com ferramentas e material para deslocações rápidas."
  },
  {
  question: "Atendem urgências à noite ou fim de semana?",
@@ -39,11 +39,11 @@ export const electricFaqs: FAQItem[] = [
  },
  {
  question: "Quais cidades servem no distrito de Bragança?",
- answer: "Servimos todo o distrito: Bragança, Mirandela, Macedo de Cavaleiros, Chaves, Vila Real, Vinhais, Miranda do Douro, Mogadouro, Torre de Moncorvo, Alfândega da Fé, Freixo de Espada à Cinta, e todas as aldeias circundantes."
+ answer: "Servimos todo o distrito: Bragança, Mirandela, Trás-os-Montes, Chaves, Vila Real, Vinhais, Miranda do Douro, Mogadouro, Torre de Moncorvo, Alfândega da Fé, Freixo de Espada à Cinta, e todas as aldeias circundantes."
  },
  {
  question: "Qual é o raio de ação máximo?",
- answer: "Atendemos num raio de 100km a partir de Macedo de Cavaleiros. Para localidades mais distantes, aplicamos uma taxa de deslocação adicional (consultar). Cobrimos praticamente todo o Nordeste Transmontano."
+ answer: "Atendemos num raio de 100km a partir de Trás-os-Montes. Para localidades mais distantes, aplicamos uma taxa de deslocação adicional (consultar). Cobrimos praticamente todo o Nordeste Transmontano."
  },
  {
  question: "Quanto tempo demora uma instalação elétrica nova?",
@@ -101,7 +101,7 @@ export const plumberFaqs: FAQItem[] = [
  },
  {
  question: "Quanto tempo demora a chegar em caso de urgência?",
- answer: "Na zona de Macedo de Cavaleiros e arredores: 30-45 minutos. Para outras localidades do distrito: 45 minutos a 1 hora. Temos veículos equipados com ferramentas e material para deslocações rápidas."
+ answer: "Na zona de Trás-os-Montes e arredores: 30-45 minutos. Para outras localidades do distrito: 45 minutos a 1 hora. Temos veículos equipados com ferramentas e material para deslocações rápidas."
  },
  {
  question: "Atendem urgências à noite ou fim de semana?",
@@ -117,6 +117,6 @@ export const plumberFaqs: FAQItem[] = [
  },
  {
  question: "Quais cidades servem no distrito de Bragança?",
- answer: "Servimos todo o distrito: Bragança, Mirandela, Macedo de Cavaleiros, Chaves, Vila Real, Vinhais, Miranda do Douro, Mogadouro, Torre de Moncorvo e todas as aldeias circundantes."
+ answer: "Servimos todo o distrito: Bragança, Mirandela, Trás-os-Montes, Chaves, Vila Real, Vinhais, Miranda do Douro, Mogadouro, Torre de Moncorvo e todas as aldeias circundantes."
  }
 ];

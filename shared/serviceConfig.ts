@@ -106,7 +106,7 @@ export const CITIES = [
  slug: 'freixo-de-espada-a-cinta',
  district: 'Bragança'},
  {
- name: 'Macedo de Cavaleiros',
+ name: 'Trás-os-Montes',
  slug: 'macedo-de-cavaleiros',
  district: 'Bragança'},
  {

@@ -20,7 +20,7 @@ function UrgencyIndicator() {
  setViewersCount(prev => Math.max(2, Math.min(15, prev + change)));
  }, Math.random() * 15000 + 15000);
  // Show recent booking notification every 2-4 minutes
- const cities = ['Bragança', 'Mirandela', 'Macedo de Cavaleiros', 'Chaves', 'Vinhais', 'Mogadouro'];
+ const cities = ['Bragança', 'Mirandela', 'Trás-os-Montes', 'Chaves', 'Vinhais', 'Mogadouro'];
  const bookingInterval = setInterval(() => {
  const city = cities[Math.floor(Math.random() * cities.length)];
  const minutesAgo = Math.floor(Math.random() * 45) + 5;

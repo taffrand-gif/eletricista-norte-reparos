@@ -157,7 +157,7 @@ export function generateLocalBusinessSchema(ville?: string) {
  "priceRange": "€€",
  "address": {
  "@type": "PostalAddress",
- "addressLocality": ville || "Macedo de Cavaleiros",
+ "addressLocality": ville || "Trás-os-Montes",
  "addressRegion": "Bragança",
  "addressCountry": "PT"
  },
@@ -289,7 +289,7 @@ function getCityCoordinates(ville: string): { lat: number; lng: number } {
  "Bragança": { lat: 41.8058, lng: -6.7567 },
  "Carrazeda de Ansiães": { lat: 41.2422, lng: -7.3056 },
  "Freixo de Espada à Cinta": { lat: 41.0892, lng: -6.8061 },
- "Macedo de Cavaleiros": { lat: 41.5382, lng: -6.9667 },
+ "Trás-os-Montes": { lat: 41.5382, lng: -6.9667 },
  "Miranda do Douro": { lat: 41.4972, lng: -6.2739 },
  "Mirandela": { lat: 41.4867, lng: -7.1858 },
  "Mogadouro": { lat: 41.3403, lng: -6.7128 },

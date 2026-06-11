@@ -23,7 +23,7 @@ export default function StructuredData() {
  // Lista das 10 cidades servidas
  const citiesServed = [
  // Proximidade Macedo (<20km)
- "Macedo de Cavaleiros", "Alfândega da Fé", "Carrazeda de Ansiães", "Vila Flor",
+ "Trás-os-Montes", "Alfândega da Fé", "Carrazeda de Ansiães", "Vila Flor",
  // Raio 20-40km
  "Mirandela", "Bragança", "Vimioso", "Valpaços", "Murça", "Torre de Moncorvo", "Mogadouro", "Vinhais",
  // Raio 40-60km
@@ -206,7 +206,7 @@ export default function StructuredData() {
  { path: '/eletricista-chaves', city: 'Chaves' },
  { path: '/eletricista-braganca', city: 'Bragança' },
  { path: '/eletricista-mirandela', city: 'Mirandela' },
- { path: '/eletricista-macedo-de-cavaleiros', city: 'Macedo de Cavaleiros' },
+ { path: '/eletricista-macedo-de-cavaleiros', city: 'Trás-os-Montes' },
  { path: '/eletricista-valpacos', city: 'Valpaços' },
  { path: '/eletricista-vinhais', city: 'Vinhais' },
  { path: '/eletricista-miranda-douro', city: 'Miranda do Douro' },
@@ -397,7 +397,7 @@ export default function StructuredData() {
  "name": "Qual é a zona de cobertura?",
  "acceptedAnswer": {
  "@type": "Answer",
- "text": "Cobrimos toda a região de Trás-os-Montes num raio de 130 km, incluindo Bragança, Mirandela, Macedo de Cavaleiros, Miranda do Douro, Vinhais, Chaves, Vila Real, Mogadouro, Torre de Moncorvo, Freixo de Espada à Cinta, Valpaços e Alfândega da Fé."
+ "text": "Cobrimos toda a região de Trás-os-Montes num raio de 130 km, incluindo Bragança, Mirandela, Trás-os-Montes, Miranda do Douro, Vinhais, Chaves, Vila Real, Mogadouro, Torre de Moncorvo, Freixo de Espada à Cinta, Valpaços e Alfândega da Fé."
  }
  },
  {
@@ -433,7 +433,7 @@ export default function StructuredData() {
  { path: '/eletricista-chaves', city: 'Chaves' },
  { path: '/eletricista-braganca', city: 'Bragança' },
  { path: '/eletricista-mirandela', city: 'Mirandela' },
- { path: '/eletricista-macedo-de-cavaleiros', city: 'Macedo de Cavaleiros' },
+ { path: '/eletricista-macedo-de-cavaleiros', city: 'Trás-os-Montes' },
  { path: '/eletricista-valpacos', city: 'Valpaços' },
  { path: '/eletricista-vinhais', city: 'Vinhais' },
  { path: '/eletricista-miranda-douro', city: 'Miranda do Douro' },

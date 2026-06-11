@@ -88,7 +88,7 @@ function TauxHoraireDisplay({ className = '' }: TauxHoraireDisplayProps) {
  <span className="text-2xl font-black text-green-600">15€</span>
  </div>
  <p className="text-sm text-gray-600">≤ 15 km</p>
- <p className="text-xs text-gray-500 mt-2">Macedo de Cavaleiros, centro</p>
+ <p className="text-xs text-gray-500 mt-2">Trás-os-Montes, centro</p>
  </div>
  {/* Zona 2 */}
  <div className="bg-blue-50 rounded-xl p-5 border-2 border-blue-200">
@@ -138,7 +138,7 @@ function TauxHoraireDisplay({ className = '' }: TauxHoraireDisplayProps) {
  </div>
  <div className="mt-6 bg-gray-50 rounded-xl p-4">
  <p className="text-sm text-gray-600 text-center">
- <strong>Nota:</strong> Os custos de deslocação são calculados em função da distância desde a nossa base em Macedo de Cavaleiros.
+ <strong>Nota:</strong> Os custos de deslocação são calculados em função da distância desde a nossa base em Trás-os-Montes.
  Os acréscimos noturnos aplicam-se também aos custos de deslocação.
  </p>
  </div>

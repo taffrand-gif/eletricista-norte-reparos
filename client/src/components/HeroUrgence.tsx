@@ -37,7 +37,7 @@ export default function HeroUrgence({ ville, interventionsCount = 480 }: HeroUrg
  <div className="trust-grid">
  <div className="trust-item">
  <strong>30-40min</strong>
- <span>Tempo chegada desde Macedo</span>
+ <span>Tempo chegada desde a nossa base</span>
  </div>
  <div className="trust-item">
  <strong>Atendimento 24h/7d</strong>

@@ -146,7 +146,7 @@ export default function CityServicePage() {
  Servimos também as cidades próximas: {' '}
  <a href="/eletricista-braganca" className="text-blue-600 hover:underline">Bragança</a>,{' '}
  <a href="/eletricista-mirandela" className="text-blue-600 hover:underline">Mirandela</a>,{' '}
- <a href="/eletricista-macedo-de-cavaleiros" className="text-blue-600 hover:underline">Macedo de Cavaleiros</a>.
+ <a href="/eletricista-macedo-de-cavaleiros" className="text-blue-600 hover:underline">Trás-os-Montes</a>.
  </p>
  </div>
  </div>
@@ -303,12 +303,12 @@ function getCitySpecificFAQs(citySlug: string, serviceSlug: string) {
  'macedo-de-cavaleiros': {
  'avarias-urgentes': [
  {
- question: 'Atendem em Macedo de Cavaleiros durante a noite?',
- answer: 'Sim, o nosso serviço de urgências em Macedo de Cavaleiros está Atendimento 24h/7d/7d. Sabemos que avarias elétricas não escolhem hora, por isso garantimos resposta rápida mesmo de madrugada ou ao fim de semana.'
+ question: 'Atendem em Trás-os-Montes durante a noite?',
+ answer: 'Sim, o nosso serviço de urgências em Trás-os-Montes está Atendimento 24h/7d/7d. Sabemos que avarias elétricas não escolhem hora, por isso garantimos resposta rápida mesmo de madrugada ou ao fim de semana.'
  },
  {
- question: 'Trabalham com instalações trifásicas em Macedo de Cavaleiros?',
- answer: 'Sim, temos equipamento e certificação para trabalhar com instalações trifásicas, comuns em explorações agrícolas e pequenas indústrias na região de Macedo de Cavaleiros. Fazemos manutenção preventiva e arranjos urgentes.'
+ question: 'Trabalham com instalações trifásicas em Trás-os-Montes?',
+ answer: 'Sim, temos equipamento e certificação para trabalhar com instalações trifásicas, comuns em explorações agrícolas e pequenas indústrias na região de Trás-os-Montes. Fazemos manutenção preventiva e arranjos urgentes.'
  }
  ]
  }
@@ -338,13 +338,13 @@ function getCityAboutSection(citySlug: string) {
  'macedo-de-cavaleiros': (
  <>
  <p className="mb-4">
- Macedo de Cavaleiros é uma cidade vibrante no nordeste transmontano, capital do concelho com o mesmo nome e porta de entrada para a região do Parque Natural de Montesinho. Com cerca de 6.000 habitantes na cidade e 15.000 no concelho, Macedo de Cavaleiros é conhecida pela sua Albufeira do Azibo, considerada uma das melhores praias fluviais de Portugal, e pela forte tradição agrícola e pecuária.
+ Trás-os-Montes é uma cidade vibrante no nordeste transmontano, capital do concelho com o mesmo nome e porta de entrada para a região do Parque Natural de Montesinho. Com cerca de 6.000 habitantes na cidade e 15.000 no concelho, Trás-os-Montes é conhecida pela sua Albufeira do Azibo, considerada uma das melhores praias fluviais de Portugal, e pela forte tradição agrícola e pecuária.
  </p>
  <p className="mb-4">
  A economia local baseia-se fortemente na agricultura, pecuária e pequena indústria, o que significa que muitas instalações elétricas na região são trifásicas e de maior complexidade. Explorações agrícolas, adegas, lagares de azeite e unidades de transformação alimentar requerem sistemas elétricos robustos e fiáveis. A nossa equipa tem experiência especializada em instalações industriais e agrícolas, garantindo segurança e eficiência energética.
  </p>
  <p>
- Conhecemos bem as particularidades de Macedo de Cavaleiros e das suas aldeias circundantes. Desde o centro urbano até às zonas mais rurais, garantimos resposta rápida a qualquer emergência elétrica. Trabalhamos regularmente com bombas de água para rega, sistemas de refrigeração para armazéns agrícolas, e instalações elétricas em edifícios de turismo rural, sempre com certificação elétrica e cumprimento rigoroso das normas de segurança.
+ Conhecemos bem as particularidades de Trás-os-Montes e das suas aldeias circundantes. Desde o centro urbano até às zonas mais rurais, garantimos resposta rápida a qualquer emergência elétrica. Trabalhamos regularmente com bombas de água para rega, sistemas de refrigeração para armazéns agrícolas, e instalações elétricas em edifícios de turismo rural, sempre com certificação elétrica e cumprimento rigoroso das normas de segurança.
  </p>
  </>
  )
@@ -471,22 +471,22 @@ function getCityTestimonials(citySlug: string) {
  {
  text: 'Temos uma exploração agrícola e o quadro elétrico da bomba de água avariou. Vieram no mesmo dia, substituíram tudo e ainda otimizaram o sistema. Profissionais que conhecem bem o trabalho agrícola!',
  name: 'Manuel Costa',
- location: 'Morais, Macedo de Cavaleiros'
+ location: 'Morais, Trás-os-Montes'
  },
  {
  text: 'Precisávamos de instalação trifásica nova para o lagar de azeite. Fizeram um trabalho perfeito, com certificação elétrica e tudo explicado. Desde então funciona sem falhas. Muito bom!',
  name: 'Carlos Pinto',
- location: 'Podence, Macedo de Cavaleiros'
+ location: 'Podence, Trás-os-Montes'
  },
  {
  text: 'Avaria elétrica às 2h da manhã no nosso turismo rural. Atenderam o telefone, vieram Atendimento prioritário e resolveram. Salvaram-nos de cancelar reservas. Serviço 5 estrelas!',
  name: 'Ana Ribeiro',
- location: 'Zona da Albufeira, Macedo de Cavaleiros'
+ location: 'Zona da Albufeira, Trás-os-Montes'
  },
  {
  text: 'Modernizaram toda a instalação elétrica da nossa casa antiga no centro de Macedo. Trabalho limpo, rápido e com garantia. O preço foi justo e agora temos tudo seguro e certificado.',
  name: 'José Martins',
- location: 'Centro Urbano, Macedo de Cavaleiros'
+ location: 'Centro Urbano, Trás-os-Montes'
  }
  ]
  };
