@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { useSite } from '@/contexts/SiteContext';
 const problems = {
- 'norte-reparos': [
+ eletricista: [
  { icon: '⚡', label: 'Sem Luz', value: 'sem-luz' },
  { icon: '🔥', label: 'Cheiro Queimado', value: 'cheiro-queimado' },
  { icon: '💥', label: 'Curto-Circuito', value: 'curto-circuito' },
  { icon: '📋', label: 'certificação elétrica', value: '' },
  { icon: '🔧', label: 'Outro Problema', value: 'outro' },
  ],
- 'norte-reparos': [
+ canalizador: [
  { icon: '💧', label: 'Fuga de Água', value: 'fuga-agua' },
  { icon: '🚽', label: 'Entupimento', value: 'entupimento' },
  { icon: '🔥', label: 'Esquentador', value: 'esquentador' },
@@ -35,7 +35,7 @@ export default function Diagnostico() {
  const [problem, setProblem] = useState('');
  const [urgency, setUrgency] = useState('');
  const [city, setCity] = useState('');
- const siteProblems = problems['norte-reparos'];
+ const siteProblems = isPlumber ? problems.canalizador : problems.eletricista;
  const phone = isPlumber ? '928484451' : '932321892';
  const whatsapp = isPlumber ? '351928484451' : '351932321892';
  const accentColor = isPlumber ? '#0e7490' : '#FF6B35';
