@@ -176,7 +176,7 @@ export default function FreguesiasPage() {
  </div>
  <h3 className="text-xl font-bold mb-2">Atendimento 24h/7d</h3>
  <p className="text-gray-600">
- Atendimento Atendimento 24h/7d, 7 dias por semana
+ Atendimento 24h/7d, 7 dias por semana
  </p>
  </div>
  </div>

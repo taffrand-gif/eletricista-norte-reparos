@@ -398,7 +398,7 @@ A **Norte Reparos** é especializada em canalização e eletricidade em Trás-os
 **Servimos:**
 - Bragança, Vila Real, Guarda e arredores (raio 130 km)
 - 17 cidades + 68 vilas + 948 aldeias
-- 24h/7j incluindo domingos e feriados
+- 24h/7d incluindo domingos e feriados
 
 **Contactos:**
 - 💧 **Canalizador:** +351 928 484 451

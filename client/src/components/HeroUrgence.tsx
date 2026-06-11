@@ -13,7 +13,7 @@ export default function HeroUrgence({ ville, interventionsCount = 480 }: HeroUrg
  {/* Status disponible */}
  <div className="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full font-semibold text-sm mb-5">
  <span className="pulse-dot"></span>
- ATENDIMENTO Atendimento 24h
+ Atendimento 24h
  </div>
  {/* Titre principal */}
  <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">

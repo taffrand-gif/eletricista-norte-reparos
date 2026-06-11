@@ -306,7 +306,7 @@ Compra, instalação.
 - 17 cidades principais
 - 68 vilas
 - 948 aldeias
-- 24h/7j, incluindo domingos e feriados
+- 24h/7d, incluindo domingos e feriados
 
 **Contactos:**
 - 💧 **Canalizador:** +351 928 484 451

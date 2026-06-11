@@ -180,7 +180,7 @@ function BeforeAfter() {
  </a>
  </div>
  <p className="text-sm text-gray-500 mt-4">
- ✅ Inspeção grátis • ✅ certificação elétrica • ✅ Resposta rápida garantidamin
+ ✅ Inspeção grátis • ✅ certificação elétrica • ✅ Resposta rápida garantida, em minutos
  </p>
  </div>
  {/* Social Proof */}

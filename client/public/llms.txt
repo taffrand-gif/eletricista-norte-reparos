@@ -1,6 +1,6 @@
 # Eletricista Certificado DGEG - Norte Reparos (Tras-os-Montes, Portugal)
 
-> Empresa de eletricidade certificada DGEG em Tras-os-Montes. Quadros eletricos, iluminacao LED, certificacao, paineis solares. 12+ anos, 4 tecnicos certificados, 24h/7j.
+> Empresa de eletricidade certificada DGEG em Tras-os-Montes. Quadros eletricos, iluminacao LED, certificacao, paineis solares. 12+ anos, 4 tecnicos certificados, 24h/7d.
 
 ## Servicos (Services)
 - Service: Avaria eletrica (electrical fault) - desde 110 EUR (1h)
@@ -42,6 +42,6 @@ City: Viseu (Z4, 120km) - 70-100 min
 - Coordenadas: 41.5380, -6.9667
 
 ## Horario
-24h/7j (Atendimento 24h/7d), incluindo domingos e feriados
+24h/7d (Atendimento 24h/7d), incluindo domingos e feriados
 Resposta em 30 segundos
 Chegada: 5-90 min conforme zona
