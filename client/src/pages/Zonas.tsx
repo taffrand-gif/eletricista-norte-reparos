@@ -1,5 +1,5 @@
 // Página SEO: Zona de Intervenção - Eletricista em Trás-os-Montes
-// Lista completa das 34 cidades servidas com distâncias desde Trás-os-Montes
+// Lista completa das 34 cidades servidas com distâncias desde a nossa base
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useSite } from '@/contexts/SiteContext';

@@ -138,7 +138,7 @@ function TauxHoraireDisplay({ className = '' }: TauxHoraireDisplayProps) {
  </div>
  <div className="mt-6 bg-gray-50 rounded-xl p-4">
  <p className="text-sm text-gray-600 text-center">
- <strong>Nota:</strong> Os custos de deslocação são calculados em função da distância desde a nossa base em Trás-os-Montes.
+ <strong>Nota:</strong> Os custos de deslocação são calculados em função da distância desde a nossa base na região.
  Os acréscimos noturnos aplicam-se também aos custos de deslocação.
  </p>
  </div>

@@ -426,7 +426,7 @@ export default function Contactos() {
  Nossa Localização
  </h2>
  <p className="text-base sm:text-lg text-gray-700 mb-6 sm:mb-8">
- Base em Trás-os-Montes, com cobertura em todo o distrito de Bragança
+ base na região, com cobertura em todo o distrito de Bragança
  </p>
  <div className="bg-gray-200 rounded-lg h-64 sm:h-96 flex items-center justify-center">
  <p className="text-gray-600 text-sm sm:text-base">

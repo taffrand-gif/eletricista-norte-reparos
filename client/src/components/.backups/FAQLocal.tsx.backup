@@ -38,7 +38,7 @@ function FAQLocal() {
     },
     {
       question: 'Qual o canalizador mais perto de Mogadouro?',
-      answer: 'A Norte Reparos é o canalizador profissional mais próximo de Mogadouro, com base em Trás-os-Montes (a cerca de 45 minutos). Cobrimos Mogadouro e todas as suas freguesias. Serviço disponível Atendimento 24h/7d com orçamento gratuito.',
+      answer: 'A Norte Reparos é o canalizador profissional mais próximo de Mogadouro, com base na região (a cerca de 45 minutos). Cobrimos Mogadouro e todas as suas freguesias. Serviço disponível Atendimento 24h/7d com orçamento gratuito.',
     },
   ] : [
     {
@@ -63,7 +63,7 @@ function FAQLocal() {
     },
     {
       question: 'Qual o eletricista mais perto de Mogadouro?',
-      answer: 'A Eletricista Profissional é o eletricista certificado mais próximo de Mogadouro, com base em Trás-os-Montes (a cerca de 45 minutos). Cobrimos Mogadouro e todas as suas freguesias. Serviço disponível Atendimento 24h/7d com orçamento gratuito.',
+      answer: 'A Eletricista Profissional é o eletricista certificado mais próximo de Mogadouro, com base na região (a cerca de 45 minutos). Cobrimos Mogadouro e todas as suas freguesias. Serviço disponível Atendimento 24h/7d com orçamento gratuito.',
     },
   ];
 

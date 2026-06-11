@@ -285,7 +285,7 @@ function Urgencia() {
  </div>
  <p className="flex items-center gap-2 text-gray-700">
  <span className="text-green-500 font-bold">✓</span>
- Base em Trás-os-Montes
+ base na região
  </p>
  <p className="flex items-center gap-2 text-gray-700">
  <span className="text-green-500 font-bold">✓</span>
