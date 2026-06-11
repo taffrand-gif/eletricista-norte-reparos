@@ -3,7 +3,7 @@ title: "Como Escolher um Electricista Certificado - Guia 2026"
 description: "Aprenda a escolher um electricista certificado e confiável. Checklist com perguntas essenciais e sinais de alerta."
 slug: como-escolher-electricista-certificado
 date: 2026-02-23
-author: Staff Seekers
+author: 
 category: Dicas
 tags: ['escolher electricista', 'certificado', 'guia', 'dicas', 'profissional']
 ---
@@ -74,7 +74,7 @@ Investir em serviços profissionais de escolher electricista não é apenas uma 
 
 ---
 
-*Este artigo foi escrito pela equipa da **Staff Seekers - Electricista Profissional**. Especialistas em dicas na região de Trás-os-Montes, com anos de experiência e equipamento de última geração.*
+*Este artigo foi escrito pela equipa da ** - Electricista Profissional**. Especialistas em dicas na região de Trás-os-Montes, com anos de experiência e equipamento de última geração.*
 
 **Artigos Relacionados:**
 - [Título artigo relacionado 1](/slug-artigo-1)

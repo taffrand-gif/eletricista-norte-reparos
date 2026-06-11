@@ -16,7 +16,7 @@ export default function QuadrosEletricos() {
  }, []);
  const serviceSchema = {
  "@context": "https://schema.org", "@type": "Service",
- "name": "Quadros Elétricos - Instalação e Modernização", "provider": { "@type": "Electrician", "name": "Staff Seekers", "telephone": ACTIVE_CONFIG.phone },
+ "name": "Quadros Elétricos - Instalação e Modernização", "provider": { "@type": "Electrician", "name": "", "telephone": ACTIVE_CONFIG.phone },
  "areaServed": { "@type": "GeoCircle", "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 41.4393, "longitude": -6.9603 }, "geoRadius": "100000" },
  "description": "Instalação e modernização profissional de quadros elétricos em Trás-os-Montes com certificação elétrica."
  };

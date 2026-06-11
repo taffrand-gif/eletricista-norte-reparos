@@ -4,7 +4,7 @@ export default function CertificacaoCertielGuiaCompleto() {
  return (
  <>
  <Helmet>
- <title>certificação elétrica: Guia Completo 2026 | Staff Seekers</title>
+ <title>certificação elétrica: Guia Completo 2026 | </title>
  <meta name="description" content="Tudo sobre certificação elétrica em Portugal. Quando é obrigatória, preços, documentos necessários e como obter em Bragança e Trás-os-Montes." />
  <script type="application/ld+json">
  {JSON.stringify({

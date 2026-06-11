@@ -4,7 +4,7 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  return (
  <>
  <Helmet>
- <title>5 Sinais Que a Sua Casa Precisa de Eletricista Urgente | Staff Seekers</title>
+ <title>5 Sinais Que a Sua Casa Precisa de Eletricista Urgente | </title>
  <meta name="description" content="Identifique os 5 sinais de perigo elétrico que exigem eletricista urgente. Proteja a sua família em Bragança. Guia completo de segurança elétrica 2026." />
  <script type="application/ld+json">
  {JSON.stringify({

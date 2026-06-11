@@ -3,7 +3,7 @@ title: "Custo Instalação Elétrica Completa 2026 - Tabela Preços Atualizada"
 description: "Quanto custa uma instalação elétrica completa em 2026? Tabela de preços detalhada por m², divisões e materiais. Orçamento grátis."
 slug: custo-instalacao-eletrica-completa-2026
 date: 2026-02-18
-author: Staff Seekers
+author: 
 category: Instalações Elétricas
 tags: [instalação elétrica, preços, custo, 2026, quadro eléctrico]
 ---
@@ -153,7 +153,7 @@ Uma instalação elétrica completa e bem executada não é apenas uma despesa, 
 
 ---
 
-*Este artigo foi escrito pela equipa da **Staff Seekers - Electricista Profissional**. Especialistas em instalações elétricas completas, renovações e certificações na região de Trás-os-Montes.*
+*Este artigo foi escrito pela equipa da ** - Electricista Profissional**. Especialistas em instalações elétricas completas, renovações e certificações na região de Trás-os-Montes.*
 
 **Artigos Relacionados:**
 - [Electricista 24h em Bragança - Preços + Contacto](/electricista-24h-braganca)

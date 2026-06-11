@@ -3,7 +3,7 @@ title: "Electricista 24h em Bragança - Preços + Contacto Urgente"
 description: "Precisa de electricista urgente em Bragança? Serviço 24h com resposta em 1h. Orçamento grátis e preços transparentes. Ligue já!"
 slug: electricista-24h-braganca
 date: 2026-02-18
-author: Staff Seekers
+author: 
 category: Urgências Elétricas
 tags: [electricista, bragança, urgente, 24h, arranjo]
 ---
@@ -106,7 +106,7 @@ Quando a electricidade falha, cada minuto conta. Com o nosso serviço **electric
 
 ---
 
-*Este artigo foi escrito pela equipa da **Staff Seekers - Electricista Profissional em Bragança**. Especialistas em urgências eléctricas, instalações completas e manutenção preventiva na região de Trás-os-Montes.*
+*Este artigo foi escrito pela equipa da ** - Electricista Profissional em Bragança**. Especialistas em urgências eléctricas, instalações completas e manutenção preventiva na região de Trás-os-Montes.*
 
 **Artigos Relacionados:**
 - [Custo Instalação Elétrica Completa 2026 - Tabela Preços](/instalacao-eletrica-completa-precos)

@@ -4,7 +4,7 @@ export default function QuadroEletricoDisparaCausas() {
  return (
  <>
  <Helmet>
- <title>Quadro Elétrico Dispara: 8 Causas Comuns e Soluções | Staff Seekers</title>
+ <title>Quadro Elétrico Dispara: 8 Causas Comuns e Soluções | </title>
  <meta name="description" content="Descubra porque o quadro elétrico dispara constantemente. 8 causas comuns, soluções práticas e quando chamar eletricista em Bragança e Trás-os-Montes." />
  <script type="application/ld+json">
  {JSON.stringify({

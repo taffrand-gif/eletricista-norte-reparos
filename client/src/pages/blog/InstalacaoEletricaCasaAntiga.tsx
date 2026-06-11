@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 import { Phone, Home, AlertTriangle, CheckCircle, Zap } from 'lucide-react';
 export default function InstalacaoEletricaCasaAntiga() {
  useEffect(() => {
- document.title = "Renovação Elétrica em Casas Antigas de Trás-os-Montes: Guia Completo | Staff Seekers";
+ document.title = "Renovação Elétrica em Casas Antigas de Trás-os-Montes: Guia Completo | ";
  
  let metaDescription = document.querySelector('meta[name="description"]');
  if (!metaDescription) {
@@ -31,11 +31,11 @@ export default function InstalacaoEletricaCasaAntiga() {
  "description": "Guia para renovar instalação elétrica em casas antigas de pedra: normas, custos e soluções.",
  "author": {
  "@type": "Organization",
- "name": "Staff Seekers"
+ "name": ""
  },
  "publisher": {
  "@type": "Organization",
- "name": "Staff Seekers",
+ "name": "",
  "logo": {
  "@type": "ImageObject",
  "url": "https://eletricista-norte-reparos.pt/logo.png"

@@ -29,7 +29,7 @@ const QuadroEletricoDispara: React.FC = () => {
  <span className="text-2xl">⚡</span>
  </div>
  <div>
- <p className="font-semibold text-gray-900">Equipa Staff Seekers</p>
+ <p className="font-semibold text-gray-900">Equipa </p>
  <p className="text-gray-600">Eletricistas Certificados</p>
  </div>
  </div>
@@ -932,7 +932,7 @@ const QuadroEletricoDispara: React.FC = () => {
  Se não consegue resolver sozinho, contacte eletricista certificado imediatamente.
  </p>
  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 mb-6">
- <h3 className="text-2xl font-bold mb-4">Staff Seekers - Eletricista em Bragança</h3>
+ <h3 className="text-2xl font-bold mb-4"> - Eletricista em Bragança</h3>
  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
  <div className="flex items-start gap-3">
  <span className="text-2xl">✅</span>

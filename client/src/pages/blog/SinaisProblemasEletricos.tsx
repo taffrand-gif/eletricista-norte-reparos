@@ -12,7 +12,7 @@ import { useEffect } from 'react';
 import { Phone, AlertTriangle, CheckCircle, Zap } from 'lucide-react';
 export default function SinaisProblemasEletricos() {
  useEffect(() => {
- document.title = "7 Sinais de Problemas Elétricos em Casa - Quando Chamar Eletricista | Staff Seekers";
+ document.title = "7 Sinais de Problemas Elétricos em Casa - Quando Chamar Eletricista | ";
  
  let metaDescription = document.querySelector('meta[name="description"]');
  if (!metaDescription) {

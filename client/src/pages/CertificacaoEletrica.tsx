@@ -16,7 +16,7 @@ export default function CertificacaoEletrica() {
  }, []);
  const serviceSchema = {
  "@context": "https://schema.org", "@type": "Service",
- "name": "Certificação Elétrica ", "provider": { "@type": "Electrician", "name": "Staff Seekers", "telephone": ACTIVE_CONFIG.phone },
+ "name": "Certificação Elétrica ", "provider": { "@type": "Electrician", "name": "", "telephone": ACTIVE_CONFIG.phone },
  "areaServed": { "@type": "GeoCircle", "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 41.4393, "longitude": -6.9603 }, "geoRadius": "100000" },
  "description": "Certificação elétrica profissional em Trás-os-Montes. Inspeção, correção e emissão de certificado de conformidade."
  };

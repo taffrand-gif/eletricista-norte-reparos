@@ -4,7 +4,7 @@ export default function QuantoCustaEletricistaBraganca() {
  return (
  <>
  <Helmet>
- <title>Quanto Custa Eletricista em Bragança? Preços 2026 | Staff Seekers</title>
+ <title>Quanto Custa Eletricista em Bragança? Preços 2026 | </title>
  <meta name="description" content="Preços reais de eletricista em Bragança 2026. Tabela completa de serviços, custos por hora, urgências 24h. Compare e poupe em Trás-os-Montes." />
  <script type="application/ld+json">
  {JSON.stringify({

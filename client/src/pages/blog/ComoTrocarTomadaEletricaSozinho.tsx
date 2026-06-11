@@ -36,7 +36,7 @@ const ComoTrocarTomadaEletricaSozinho: React.FC = () => {
  <span className="text-2xl">🔌</span>
  </div>
  <div>
- <p className="font-semibold text-gray-900">Equipa Staff Seekers</p>
+ <p className="font-semibold text-gray-900">Equipa </p>
  <p className="text-gray-600">Eletricistas Certificados</p>
  </div>
  </div>

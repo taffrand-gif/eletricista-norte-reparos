@@ -3,7 +3,7 @@ title: "Iluminação LED - Economia até 80% na Fatura de Luz"
 description: "Descubra como a iluminação LED pode reduzir até 80% na fatura de luz. Tipos, preços e instalação profissional."
 slug: iluminacao-led-economia
 date: 2026-03-03
-author: Staff Seekers
+author: 
 category: Iluminação
 tags: ['iluminação led', 'economia', 'luz', 'instalação', 'poupança']
 ---
@@ -79,7 +79,7 @@ Investir em serviços profissionais de iluminação led não é apenas uma quest
 
 ---
 
-*Este artigo foi escrito pela equipa da **Staff Seekers - Electricista Profissional**. Especialistas em iluminação na região de Trás-os-Montes, com anos de experiência e equipamento de última geração.*
+*Este artigo foi escrito pela equipa da ** - Electricista Profissional**. Especialistas em iluminação na região de Trás-os-Montes, com anos de experiência e equipamento de última geração.*
 
 **Artigos Relacionados:**
 - [Título artigo relacionado 1](/slug-artigo-1)

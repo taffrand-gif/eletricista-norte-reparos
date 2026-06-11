@@ -26,7 +26,7 @@ const servicesNorte: ServicePrice[] = [
  { id: 'torneira', label: 'Arranjo Torneira', priceMin: 58, priceMax: 115, nightMultiplier: 1.5 },
  { id: 'autoclismo', label: 'Autoclismo', priceMin: 40, priceMax: 135, nightMultiplier: 1.5 }
 ];
-// STAFF SEEKERS - Grille tarifaire officielle 2026
+//  - Grille tarifaire officielle 2026
 const servicesStaff: ServicePrice[] = [
  { id: 'tomada', label: 'Tomada Nova', priceMin: 66, priceMax: 90, nightMultiplier: 1.5 },
  { id: 'disjuntor', label: 'Disjuntor', priceMin: 75, priceMax: 95, nightMultiplier: 1.5 },

@@ -3,7 +3,7 @@ title: "Quadros Elétricos - Quando Trocar? Sinais e Soluções"
 description: "Saiba quando deve trocar o quadro elétrico da sua casa. Sinais de alerta, preços e processo de substituição."
 slug: quadros-eletricos-quando-trocar
 date: 2026-03-02
-author: Staff Seekers
+author: 
 category: Quadros Elétricos
 tags: ['quadros elétricos', 'trocar', 'sinais', 'substituição', 'segurança']
 ---
@@ -68,7 +68,7 @@ Investir em serviços profissionais de quadros elétricos não é apenas uma que
 
 ---
 
-*Este artigo foi escrito pela equipa da **Staff Seekers - Electricista Profissional**. Especialistas em quadros elétricos na região de Trás-os-Montes, com anos de experiência e equipamento de última geração.*
+*Este artigo foi escrito pela equipa da ** - Electricista Profissional**. Especialistas em quadros elétricos na região de Trás-os-Montes, com anos de experiência e equipamento de última geração.*
 
 **Artigos Relacionados:**
 - [Título artigo relacionado 1](/slug-artigo-1)

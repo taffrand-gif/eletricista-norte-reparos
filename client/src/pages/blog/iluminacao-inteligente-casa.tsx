@@ -5,7 +5,7 @@ export default function IluminacaoInteligenteCasa() {
  return (
  <>
  <Helmet>
- <title>Iluminação Inteligente em Casa: Guia Completo 2026 | Staff Seekers</title>
+ <title>Iluminação Inteligente em Casa: Guia Completo 2026 | </title>
  <meta name="description" content="Guia completo sobre iluminação inteligente: tipos, vantagens, instalação, preços e poupança. Transforme sua casa em Trás-os-Montes." />
  <meta name="keywords" content="iluminação inteligente, smart home, lâmpadas inteligentes, eletricista Bragança, automação casa" />
  <link rel="canonical" href="https://eletricista-norte-reparos.pt/blog/iluminacao-inteligente-casa" />

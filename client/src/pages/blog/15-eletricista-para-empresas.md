@@ -3,7 +3,7 @@ title: "Electricista para Empresas - Contrato Manutenção 2026"
 description: "Soluções elétricas para empresas em Trás-os-Montes. Contratos de manutenção, urgências 24h e instalações industriais."
 slug: electricista-para-empresas
 date: 2026-03-05
-author: Staff Seekers
+author: 
 category: Empresas
 tags: ['electricista empresas', 'contrato manutenção', 'industrial', 'comercial', '24h']
 ---
@@ -84,7 +84,7 @@ Investir em serviços profissionais de electricista empresas não é apenas uma 
 
 ---
 
-*Este artigo foi escrito pela equipa da **Staff Seekers - Electricista Profissional**. Especialistas em empresas na região de Trás-os-Montes, com anos de experiência e equipamento de última geração.*
+*Este artigo foi escrito pela equipa da ** - Electricista Profissional**. Especialistas em empresas na região de Trás-os-Montes, com anos de experiência e equipamento de última geração.*
 
 **Artigos Relacionados:**
 - [Título artigo relacionado 1](/slug-artigo-1)

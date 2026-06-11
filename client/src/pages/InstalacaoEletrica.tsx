@@ -30,7 +30,7 @@ export default function InstalacaoEletrica() {
  "description": "Serviço profissional de instalação elétrica completa para residências, comércios e indústrias em Trás-os-Montes.",
  "provider": {
  "@type": "LocalBusiness",
- "name": "Staff Seekers - Eletricista Profissional",
+ "name": " - Eletricista Profissional",
  "telephone": ACTIVE_CONFIG.phone,
  "address": {
  "@type": "PostalAddress",

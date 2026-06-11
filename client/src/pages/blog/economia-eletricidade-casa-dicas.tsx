@@ -5,7 +5,7 @@ export default function EconomiaEletricidadeCasaDicas() {
  return (
  <>
  <Helmet>
- <title>Economia de Eletricidade em Casa: 15 Dicas Práticas 2026 | Staff Seekers</title>
+ <title>Economia de Eletricidade em Casa: 15 Dicas Práticas 2026 | </title>
  <meta name="description" content="15 dicas práticas para reduzir conta de luz em 30-50%. Aparelhos eficientes, hábitos simples e investimentos que compensam em Trás-os-Montes." />
  <meta name="keywords" content="poupar eletricidade, reduzir conta luz, economia energia, eletricista Bragança, eficiência energética" />
  <link rel="canonical" href="https://eletricista-norte-reparos.pt/blog/economia-eletricidade-casa-dicas" />

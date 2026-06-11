@@ -4,7 +4,7 @@ export default function PoupancaLedEconomiaReal() {
  return (
  <>
  <Helmet>
- <title>Poupança LED: Quanto Economiza Realmente em 2026? | Staff Seekers</title>
+ <title>Poupança LED: Quanto Economiza Realmente em 2026? | </title>
  <meta name="description" content="Descubra a poupança real com iluminação LED. Cálculos práticos, comparação com lâmpadas antigas, retorno do investimento. Guia completo Bragança 2026." />
  <script type="application/ld+json">
  {JSON.stringify({

@@ -3,7 +3,7 @@ title: "Electricista em Chaves - Zona de Intervenção e Serviços"
 description: "Electricista profissional em Chaves e arredores. Serviços 24h, instalações e manutenção. Orçamento grátis e rápido."
 slug: electricista-em-chaves
 date: 2026-03-01
-author: Staff Seekers
+author: 
 category: Zonas de Atuação
 tags: ['electricista', 'chaves', 'serviços', 'intervenção', '24h']
 ---
@@ -69,7 +69,7 @@ Investir em serviços profissionais de electricista não é apenas uma questão 
 
 ---
 
-*Este artigo foi escrito pela equipa da **Staff Seekers - Electricista Profissional**. Especialistas em zonas de atuação na região de Trás-os-Montes, com anos de experiência e equipamento de última geração.*
+*Este artigo foi escrito pela equipa da ** - Electricista Profissional**. Especialistas em zonas de atuação na região de Trás-os-Montes, com anos de experiência e equipamento de última geração.*
 
 **Artigos Relacionados:**
 - [Título artigo relacionado 1](/slug-artigo-1)

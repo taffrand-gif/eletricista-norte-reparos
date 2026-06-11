@@ -12,7 +12,7 @@ import { useEffect } from 'react';
 import { Phone, Snowflake, Lightbulb, ThermometerSnowflake, CheckCircle, TrendingDown } from 'lucide-react';
 export default function PoupancaEnergiaInverno() {
  useEffect(() => {
- document.title = "Poupar Energia no Inverno em Trás-os-Montes: 10 Dicas Práticas 2026 | Staff Seekers";
+ document.title = "Poupar Energia no Inverno em Trás-os-Montes: 10 Dicas Práticas 2026 | ";
  
  let metaDescription = document.querySelector('meta[name="description"]');
  if (!metaDescription) {
@@ -38,11 +38,11 @@ export default function PoupancaEnergiaInverno() {
  "description": "10 dicas práticas para poupar energia no inverno: aquecimento, iluminação e isolamento.",
  "author": {
  "@type": "Organization",
- "name": "Staff Seekers"
+ "name": ""
  },
  "publisher": {
  "@type": "Organization",
- "name": "Staff Seekers",
+ "name": "",
  "logo": {
  "@type": "ImageObject",
  "url": "https://eletricista-norte-reparos.pt/logo.png"

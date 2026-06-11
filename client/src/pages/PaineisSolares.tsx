@@ -30,7 +30,7 @@ export default function PaineisSolares() {
  "description": "Serviço profissional de instalação de painéis solares fotovoltaicos para produção de energia elétrica em Trás-os-Montes.",
  "provider": {
  "@type": "LocalBusiness",
- "name": "Staff Seekers - Eletricista Profissional",
+ "name": " - Eletricista Profissional",
  "telephone": ACTIVE_CONFIG.phone,
  "address": {
  "@type": "PostalAddress",

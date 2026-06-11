@@ -3,7 +3,7 @@ title: "Problemas Elétricos Comuns no Inverno - Soluções Profissionais"
 description: "Descubra os problemas elétricos mais comuns no inverno e como resolvê-los com segurança. Dicas de prevenção e manutenção em Trás-os-Montes."
 slug: problemas-eletricos-comuns-inverno
 date: 2026-02-19
-author: Staff Seekers
+author: 
 category: Manutenção
 tags: [problemas elétricos, inverno, soluções, manutenção, segurança]
 ---
@@ -160,7 +160,7 @@ Os problemas elétricos no inverno em Trás-os-Montes não são inevitáveis. Co
 
 ---
 
-*Este artigo foi escrito pela equipa da **Staff Seekers - Electricista Profissional em Trás-os-Montes**. Especialistas em soluções elétricas para condições invernais extremas, com experiência em centenas de habitações na região.*
+*Este artigo foi escrito pela equipa da ** - Electricista Profissional em Trás-os-Montes**. Especialistas em soluções elétricas para condições invernais extremas, com experiência em centenas de habitações na região.*
 
 **Artigos Relacionados:**
 - [Electricista 24h em Bragança - Preços + Contacto](/electricista-24h-braganca)

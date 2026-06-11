@@ -85,7 +85,7 @@ export default function Zonas() {
  name: 'Eletricista Profissional em Trás-os-Montes',
  provider: {
  '@type': 'LocalBusiness',
- name: 'Staff Seekers',
+ name: '',
  telephone: config.phone},
  areaServed: [
  ...districts.braganca.cities.map((city) => ({

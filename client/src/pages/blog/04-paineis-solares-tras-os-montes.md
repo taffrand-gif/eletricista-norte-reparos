@@ -3,7 +3,7 @@ title: "Painéis Solares em Trás-os-Montes - Guia Completo 2026"
 description: "Tudo sobre painéis solares em Trás-os-Montes: preços, incentivos, instalação e retorno do investimento. Guia atualizado 2026."
 slug: paineis-solares-tras-os-montes
 date: 2026-02-22
-author: Staff Seekers
+author: 
 category: Energia Solar
 tags: ['painéis solares', 'energia solar', 'trás-os-montes', 'instalação', 'preços']
 ---
@@ -90,7 +90,7 @@ Investir em serviços profissionais de painéis solares não é apenas uma quest
 
 ---
 
-*Este artigo foi escrito pela equipa da **Staff Seekers - Electricista Profissional**. Especialistas em energia solar na região de Trás-os-Montes, com anos de experiência e equipamento de última geração.*
+*Este artigo foi escrito pela equipa da ** - Electricista Profissional**. Especialistas em energia solar na região de Trás-os-Montes, com anos de experiência e equipamento de última geração.*
 
 **Artigos Relacionados:**
 - [Título artigo relacionado 1](/slug-artigo-1)

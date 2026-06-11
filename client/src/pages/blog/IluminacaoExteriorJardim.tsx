@@ -12,7 +12,7 @@ import { useEffect } from 'react';
 import { Phone, Lightbulb, Sun, Moon, Shield, CheckCircle } from 'lucide-react';
 export default function IluminacaoExteriorJardim() {
  useEffect(() => {
- document.title = "Iluminação Exterior e de Jardim: Guia Completo 2026 | Staff Seekers";
+ document.title = "Iluminação Exterior e de Jardim: Guia Completo 2026 | ";
  
  let metaDescription = document.querySelector('meta[name="description"]');
  if (!metaDescription) {
@@ -38,11 +38,11 @@ export default function IluminacaoExteriorJardim() {
  "description": "Guia completo de iluminação exterior: LED, IP65, segurança, ambiance e economia de energia.",
  "author": {
  "@type": "Organization",
- "name": "Staff Seekers"
+ "name": ""
  },
  "publisher": {
  "@type": "Organization",
- "name": "Staff Seekers",
+ "name": "",
  "logo": {
  "@type": "ImageObject",
  "url": "https://eletricista-norte-reparos.pt/logo.png"

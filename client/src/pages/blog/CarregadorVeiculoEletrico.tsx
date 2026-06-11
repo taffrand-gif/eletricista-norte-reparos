@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 import { Phone, Zap, Car, CheckCircle, AlertTriangle } from 'lucide-react';
 export default function CarregadorVeiculoEletrico() {
  useEffect(() => {
- document.title = "Instalar Carregador de Veículo Elétrico em Casa: Guia Completo 2026 | Staff Seekers";
+ document.title = "Instalar Carregador de Veículo Elétrico em Casa: Guia Completo 2026 | ";
  
  let metaDescription = document.querySelector('meta[name="description"]');
  if (!metaDescription) {
@@ -31,11 +31,11 @@ export default function CarregadorVeiculoEletrico() {
  "description": "Guia completo para instalar wallbox: tipos, potência, custos e instalação profissional.",
  "author": {
  "@type": "Organization",
- "name": "Staff Seekers"
+ "name": ""
  },
  "publisher": {
  "@type": "Organization",
- "name": "Staff Seekers",
+ "name": "",
  "logo": {
  "@type": "ImageObject",
  "url": "https://eletricista-norte-reparos.pt/logo.png"

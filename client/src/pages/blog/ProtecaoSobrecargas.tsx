@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 import { Phone, AlertTriangle, Shield, Zap, CheckCircle, XCircle } from 'lucide-react';
 export default function ProtecaoSobrecargas() {
  useEffect(() => {
- document.title = "Como Proteger a Sua Casa de Sobrecargas Elétricas: Guia Completo 2026 | Staff Seekers";
+ document.title = "Como Proteger a Sua Casa de Sobrecargas Elétricas: Guia Completo 2026 | ";
  
  let metaDescription = document.querySelector('meta[name="description"]');
  if (!metaDescription) {
@@ -31,11 +31,11 @@ export default function ProtecaoSobrecargas() {
  "description": "Guia completo sobre proteção contra sobrecargas elétricas: disjuntores, DPS, réguas e dicas práticas.",
  "author": {
  "@type": "Organization",
- "name": "Staff Seekers"
+ "name": ""
  },
  "publisher": {
  "@type": "Organization",
- "name": "Staff Seekers",
+ "name": "",
  "logo": {
  "@type": "ImageObject",
  "url": "https://eletricista-norte-reparos.pt/logo.png"

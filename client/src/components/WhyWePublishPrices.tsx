@@ -136,7 +136,7 @@ function WhyWePublishPrices({ className = '' }: WhyWePublishPricesProps) {
  tant pis. Nous préférons travailler avec des clients qui apprécient notre honnêteté."
  </p>
  <p className="text-lg font-bold text-gray-900">
- — L'équipe {config.id === 'norte-reparos' ? 'Norte Reparos' : 'Staff Seekers'}
+ — L'équipe {config.id === 'norte-reparos' ? 'Norte Reparos' : ''}
  </p>
  </div>
  </div>

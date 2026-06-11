@@ -3,7 +3,7 @@ title: "Certificação Elétrica - Documentos Necessários e Processo"
 description: "Tudo sobre certificação elétrica: documentos necessários, processo completo e validade. Esclareça todas as dúvidas."
 slug: certificacao-eletrica-documentos
 date: 2026-03-04
-author: Staff Seekers
+author: 
 category: Certificações
 tags: ['certificação elétrica', 'documentos', 'processo', 'legal', 'segurança']
 ---
@@ -84,7 +84,7 @@ Investir em serviços profissionais de certificação elétrica não é apenas u
 
 ---
 
-*Este artigo foi escrito pela equipa da **Staff Seekers - Electricista Profissional**. Especialistas em certificações na região de Trás-os-Montes, com anos de experiência e equipamento de última geração.*
+*Este artigo foi escrito pela equipa da ** - Electricista Profissional**. Especialistas em certificações na região de Trás-os-Montes, com anos de experiência e equipamento de última geração.*
 
 **Artigos Relacionados:**
 - [Título artigo relacionado 1](/slug-artigo-1)
