@@ -14,7 +14,7 @@ const sites = [
     name: 'Norte-Reparos',
   },
   {
-    domain: 'staff-seekers.com',
+    domain: '',
     name: 'Staff-Seekers',
   },
 ];
