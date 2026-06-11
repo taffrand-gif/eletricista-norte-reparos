@@ -24,4 +24,4 @@ Sitemap: https://eletricista-norte-reparos.pt/sitemap.xml
 # Coverage: 100km radius from Trás-os-Montes
 # Cities: Bragança, Mirandela, Chaves, Vila Real, Trás-os-Montes, Vinhais, Miranda do Douro, Mogadouro, Torre de Moncorvo, Freixo de Espada à Cinta, Valpaços, Alfândega da Fé, Vila Flor, Carrazeda de Ansiães, Vimioso, Montalegre, Boticas, Murça, Alijó, Sabrosa, Vila Pouca de Aguiar, Ribeira de Pena, Mondim de Basto, Peso da Régua, Lamego, Moimenta da Beira, Vila Nova de Foz Côa, Sernancelhe, Penedono, São João da Pesqueira, Tabuaço, Armamar, Santa Marta de Penaguião, Mesão Frio
 # Hours: Atendimento 24h/7d including holidays
-# Services: Electrical repairs, panel upgrades, CERTIEL certification, emergency 24h
+# Services: Electrical repairs, panel upgrades, DGEG certification, emergency 24h

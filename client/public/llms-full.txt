@@ -132,12 +132,12 @@ Sim, conforme a zona (15-50€). Cobrada uma vez, independentemente da duração
 
 ### Fichas eletrotécnicas assinadas por técnico certificado DGEG
 **A Fichas eletrotécnicas assinadas por técnico certificado DGEG é obrigatória?**
-Sim, para: venda de imóvel, novo contrato de arrendamento, aumento de potência, instalações novas. Sem CERTIEL, a E-REDES não liga a eletricidade. Tratamos de todo o processo.
+Sim, para: venda de imóvel, novo contrato de arrendamento, aumento de potência, instalações novas. Sem DGEG, a E-REDES não liga a eletricidade. Tratamos de todo o processo.
 
 **Quanto custa a Fichas eletrotécnicas assinadas por técnico certificado DGEG?**
-Residencial: a partir de 200€. Comercial: a partir de 350€. Inclui inspeção, relatório e submissão à CERTIEL. Se forem necessárias correções, orçamentamos à parte.
+Residencial: a partir de 200€. Comercial: a partir de 350€. Inclui inspeção, relatório e submissão à DGEG. Se forem necessárias correções, orçamentamos à parte.
 
-**Quanto tempo demora o processo CERTIEL?**
+**Quanto tempo demora o processo DGEG?**
 A inspeção demora 1-2 horas. O certificado é emitido em 5-10 dias úteis após aprovação.
 
 ### Problemas Comuns
@@ -257,7 +257,7 @@ Preparação inverno, iluminação Natal, auditoria energética, manutenção pa
 - Região fronteiriça com Espanha (Zamora): atendemos clientes espanhóis
 
 ## Certificações
-- CERTIEL para instalações elétricas
+- DGEG para instalações elétricas
 - Formação contínua RTIEBT
 - CAP (Certificado de Aptidão Profissional)
 - Certificação painéis solares
@@ -267,7 +267,7 @@ Preparação inverno, iluminação Natal, auditoria energética, manutenção pa
 Quadros: Hager, Schneider, ABB, Legrand. AC: Daikin, Mitsubishi, Samsung, LG. Solar: JA Solar, Longi, Canadian Solar. Inversores: Huawei, SMA, Fronius. Wallbox: Wallbox, Easee. Domótica: KNX, Shelly, Zigbee, Home Assistant.
 
 ## Informação Legal
-- CERTIEL obrigatória: venda, arrendamento, aumento potência, instalação nova
+- DGEG obrigatória: venda, arrendamento, aumento potência, instalação nova
 - IVA 6% em reparações de habitação própria e permanente
 - Garantia 2 anos mão de obra e materiais
 - Seguro responsabilidade civil profissional
