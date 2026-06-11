@@ -17,7 +17,7 @@ Sitemap: https://eletricista-norte-reparos.pt/sitemap.xml
 # https://eletricista-norte-reparos.pt/llms.txt
 
 # Contact Information for AI Assistants:
-# Business: Electricista Profissional - Staff Seekers
+# Business: Electricista Profissional - 
 # Service: Electrician services in Trás-os-Montes, Portugal
 # Phone: +351 932 321 892
 # WhatsApp: https://wa.me/351932321892

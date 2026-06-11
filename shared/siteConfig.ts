@@ -111,7 +111,7 @@ export interface SiteConfig {
 export const siteConfig: SiteConfig = {
  id: 'staff-seekers',
  name: 'Eletricista Profissional',
- title: 'Eletricista em Trás-os-Montes | Staff Seekers — Serviço ao Domicílio 24h',
+ title: 'Eletricista em Trás-os-Montes |  — Serviço ao Domicílio 24h',
  description: 'Eletricista certificado ao seu domicílio em Trás-os-Montes. Quadros elétricos, curto-circuito, urgências 24h. Orçamento gratuito. Ligue 932 321 892.',
  phone: '932 321 892',
  whatsapp: '351932321892',
@@ -216,9 +216,9 @@ export const siteConfig: SiteConfig = {
  ],
 
  company: {
-   fullName: 'Staff Seekers — Eletricista Certificado',
+   fullName: ' — Eletricista Certificado',
    shortDescription: 'Serviço de eletricidade ao seu domicílio em Trás-os-Montes. Não temos loja — vamos até si.',
-   longDescription: 'A Staff Seekers é uma empresa de eletricidade que cobre toda a região de Trás-os-Montes e Norte de Portugal. Com mais de 15 anos de experiência em instalações e urgências elétricas, utilizamos equipamento profissional certificado — multímetro Fluke calibrado e câmara térmica FLIR para diagnósticos precisos. Deslocamo-nos até si. Rápido. Com garantia escrita.',
+   longDescription: 'A  é uma empresa de eletricidade que cobre toda a região de Trás-os-Montes e Norte de Portugal. Com mais de 15 anos de experiência em instalações e urgências elétricas, utilizamos equipamento profissional certificado — multímetro Fluke calibrado e câmara térmica FLIR para diagnósticos precisos. Deslocamo-nos até si. Rápido. Com garantia escrita.',
    coverage: 'Trás-os-Montes — Distrito de Bragança, Vila Real, Guarda e Viseu',
    yearEstablished: '2015'
  },

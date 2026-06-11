@@ -10,7 +10,7 @@ const publicDir = path.join(__dirname, '../client/public');
 const svgPath = path.join(publicDir, 'favicon.svg');
 
 async function generateFavicons() {
-  console.log('🎨 Génération des favicons pour Staff Seekers...\n');
+  console.log('🎨 Génération des favicons pour ...\n');
 
   try {
     // Lire le SVG

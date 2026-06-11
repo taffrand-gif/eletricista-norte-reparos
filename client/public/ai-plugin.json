@@ -1,6 +1,6 @@
 {
   "schema_version": "v1",
-  "name_for_human": "Staff Seekers - Eletricista Profissional",
+  "name_for_human": " - Eletricista Profissional",
   "name_for_model": "staff_seekers_eletricista",
   "description_for_human": "Eletricista certificado 24h em Trás-os-Montes. Serviços de arranjo elétrica, quadros elétricos, Fichas eletrotécnicas assinadas por técnico certificado DGEG, painéis solares.",
   "description_for_model": "Plugin para acessar informações sobre serviços de eletricista profissional em Trás-os-Montes, Portugal. Inclui instalação elétrica, arranjo de avarias, Fichas eletrotécnicas assinadas por técnico certificado DGEG, painéis solares, urgências 24h. Cobre 10 cidades na região.",

@@ -14,7 +14,7 @@ export interface CitySEOConfig {
 export const staffSeekersCitySEO: Record<string, CitySEOConfig> = {
  'macedo-de-cavaleiros': {
  cityName: 'Macedo de Cavaleiros',
- title: 'Eletricista em Macedo de Cavaleiros | Staff Seekers | 24h Urgências',
+ title: 'Eletricista em Macedo de Cavaleiros |  | 24h Urgências',
  description: 'Eletricista certificado em Macedo de Cavaleiros. Instalação elétrica, quadro elétrico, certificação elétrica. Urgências 24h. Orçamento gratuito: 932 321 892',
  keywords: [
  'eletricista macedo de cavaleiros',
@@ -30,7 +30,7 @@ export const staffSeekersCitySEO: Record<string, CitySEOConfig> = {
  },
  'braganca': {
  cityName: 'Bragança',
- title: 'Eletricista em Bragança | Staff Seekers | 24h Urgências',
+ title: 'Eletricista em Bragança |  | 24h Urgências',
  description: 'Eletricista certificado em Bragança. Instalação elétrica, quadro elétrico, certificação elétrica. Urgências 24h. Orçamento gratuito: 932 321 892',
  keywords: [
  'eletricista bragança',
@@ -46,7 +46,7 @@ export const staffSeekersCitySEO: Record<string, CitySEOConfig> = {
  },
  'mirandela': {
  cityName: 'Mirandela',
- title: 'Eletricista em Mirandela | Staff Seekers | 24h Urgências',
+ title: 'Eletricista em Mirandela |  | 24h Urgências',
  description: 'Eletricista certificado em Mirandela. Instalação elétrica, quadro elétrico, certificação elétrica. Urgências 24h. Orçamento gratuito: 932 321 892',
  keywords: [
  'eletricista mirandela',
@@ -62,7 +62,7 @@ export const staffSeekersCitySEO: Record<string, CitySEOConfig> = {
  },
  'chaves': {
  cityName: 'Chaves',
- title: 'Eletricista em Chaves | Staff Seekers | 24h Urgências',
+ title: 'Eletricista em Chaves |  | 24h Urgências',
  description: 'Eletricista certificado em Chaves. Instalação elétrica, quadro elétrico, certificação elétrica. Urgências 24h. Orçamento gratuito: 932 321 892',
  keywords: [
  'eletricista chaves',
@@ -78,7 +78,7 @@ export const staffSeekersCitySEO: Record<string, CitySEOConfig> = {
  },
  'valpacos': {
  cityName: 'Valpaços',
- title: 'Eletricista em Valpaços | Staff Seekers | 24h Urgências',
+ title: 'Eletricista em Valpaços |  | 24h Urgências',
  description: 'Eletricista certificado em Valpaços. Instalação elétrica, quadro elétrico, certificação elétrica. Urgências 24h. Orçamento gratuito: 932 321 892',
  keywords: [
  'eletricista valpaços',
@@ -94,7 +94,7 @@ export const staffSeekersCitySEO: Record<string, CitySEOConfig> = {
  },
  'vinhais': {
  cityName: 'Vinhais',
- title: 'Eletricista em Vinhais | Staff Seekers | 24h Urgências',
+ title: 'Eletricista em Vinhais |  | 24h Urgências',
  description: 'Eletricista certificado em Vinhais. Instalação elétrica, quadro elétrico, certificação elétrica. Urgências 24h. Orçamento gratuito: 932 321 892',
  keywords: [
  'eletricista vinhais',
@@ -110,7 +110,7 @@ export const staffSeekersCitySEO: Record<string, CitySEOConfig> = {
  },
  'miranda-do-douro': {
  cityName: 'Miranda do Douro',
- title: 'Eletricista em Miranda do Douro | Staff Seekers | 24h Urgências',
+ title: 'Eletricista em Miranda do Douro |  | 24h Urgências',
  description: 'Eletricista certificado em Miranda do Douro. Instalação elétrica, quadro elétrico, certificação elétrica. Urgências 24h. Orçamento gratuito: 932 321 892',
  keywords: [
  'eletricista miranda do douro',
@@ -126,7 +126,7 @@ export const staffSeekersCitySEO: Record<string, CitySEOConfig> = {
  },
  'mogadouro': {
  cityName: 'Mogadouro',
- title: 'Eletricista em Mogadouro | Staff Seekers | 24h Urgências',
+ title: 'Eletricista em Mogadouro |  | 24h Urgências',
  description: 'Eletricista certificado em Mogadouro. Instalação elétrica, quadro elétrico, certificação elétrica. Urgências 24h. Orçamento gratuito: 932 321 892',
  keywords: [
  'eletricista mogadouro',
@@ -142,7 +142,7 @@ export const staffSeekersCitySEO: Record<string, CitySEOConfig> = {
  },
  'torre-de-moncorvo': {
  cityName: 'Torre de Moncorvo',
- title: 'Eletricista em Torre de Moncorvo | Staff Seekers | 24h Urgências',
+ title: 'Eletricista em Torre de Moncorvo |  | 24h Urgências',
  description: 'Eletricista certificado em Torre de Moncorvo. Instalação elétrica, quadro elétrico, certificação elétrica. Urgências 24h. Orçamento gratuito: 932 321 892',
  keywords: [
  'eletricista torre de moncorvo',
@@ -158,7 +158,7 @@ export const staffSeekersCitySEO: Record<string, CitySEOConfig> = {
  },
  'freixo-de-espada-a-cinta': {
  cityName: 'Freixo de Espada à Cinta',
- title: 'Eletricista em Freixo de Espada à Cinta | Staff Seekers | 24h Urgências',
+ title: 'Eletricista em Freixo de Espada à Cinta |  | 24h Urgências',
  description: 'Eletricista certificado em Freixo de Espada à Cinta. Instalação elétrica, quadro elétrico, certificação elétrica. Urgências 24h. Orçamento gratuito: 932 321 892',
  keywords: [
  'eletricista freixo de espada à cinta',
