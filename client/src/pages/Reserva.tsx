@@ -248,7 +248,7 @@ export default function Reserva() {
  <li>• Entraremos em contacto em até 2 horas para confirmar a sua reserva</li>
  <li>• O horário está sujeito a disponibilidade</li>
  <li>• Para urgências, ligue diretamente: {config.phone}</li>
- <li>• Serviço disponível 24 horas por dia, 7 dias por semana</li>
+ <li>• Serviço disponível Atendimento 24h/7d, 7 dias por semana</li>
  </ul>
  </div>
  </div>

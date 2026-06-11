@@ -34,7 +34,7 @@ tags: ['electricista', 'chaves', 'serviços', 'intervenção', '24h']
 
 ## Serviços Disponíveis em Chaves
 
-### Emergências 24/7
+### Emergências Atendimento 24h/7d
 - **electricista urgente 24h** com resposta imediata
 - **Diagnóstico rápido** no local
 - **Soluções temporárias** para situações críticas

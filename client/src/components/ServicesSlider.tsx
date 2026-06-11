@@ -36,7 +36,7 @@ export function ServicesSlider() {
  },
  {
  icon: '💧',
- title: 'Resposta Rápida 24/7',
+ title: 'Resposta Rápida Atendimento 24h/7d',
  description: 'Chegamos em média 25 minutos após o seu contacto',
  image: 'https://private-us-east-1.manuscdn.com/sessionFile/RsLgvajqRJaxpcBIQSqPn3/sandbox/yEILT6e5vYHZPIaCO8mEe5-img-4_1770645649000_na1fn_cGx1bWJlci1iYXRocm9vbS1yZXBhaXI.jpg?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvUnNMZ3ZhanFSSmF4cGNCSVFTcVBuMy9zYW5kYm94L3lFSUxUNmU1dllIWlBJYUNPOG1FZTUtaW1nLTRfMTc3MDY0NTY0OTAwMF9uYTFmbl9jR3gxYldKbGNpMWlZWFJvY205dmJTMXlaWEJoYVhJLmpwZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=tkWv2-hMxcQczSIKGmNuG6cYMCTxfRF3EhDe8GwoZSpgtUx4~txVXNde4tHFgvecRSW3I5akmWffGEozX-auigAx0mqU5X1RNQeQD5Mbm9B58G4~ADldkmzV4nl2SWlI5MgrdZstxl3-N3CRFvhXN0iDkLqyGCrfBo-rpqYRx79rUJJvU8c6fJ97HiwF~M8kQ6WkwosS0oB4Cncliu2DXjwToo0xymHAFB12uY6QnGlgtRt9lI5Fs8qnYZA7ddukwWQZnal7mKasBFVDlBIC0UrQ3Ddhmx7~XsG5FivLv2NpUS06RN12VSHQVv2r2bc8~HVBo4mY0v~w1C4~Ojv3xg__'
  }
@@ -61,7 +61,7 @@ export function ServicesSlider() {
  },
  {
  icon: '🔌',
- title: 'Resposta Rápida 24/7',
+ title: 'Resposta Rápida Atendimento 24h/7d',
  description: 'Chegamos em média 25 minutos após o seu contacto',
  image: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=80'
  }

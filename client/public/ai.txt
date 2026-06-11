@@ -11,7 +11,7 @@ PrimaryPhone: +351-932-321-892
 Email: info@norte-reparos.pt
 Website: https://eletricista-norte-reparos.pt
 Address: Rua Fonte do Paço nº 8, 5340-268 Macedo de Cavaleiros
-Hours: 24/7
+Hours: Atendimento 24h/7d
 EmergencyService: true
 Certifications: DGEG
 Experience: 12+ years

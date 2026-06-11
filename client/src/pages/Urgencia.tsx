@@ -11,18 +11,18 @@ function Urgencia() {
  <>
  <Helmet>
  <title>Urgência Eletricista — Intervenção Imediata 24h | Norte Reparos</title>
- <meta name="description" content="Urgência eletricista 24h em Trás-os-Montes. Sem luz? Curto-circuito? Cheiro queimado? Chegamos em 40 minutos. Certificação DGEG. 932 321 892" />
+ <meta name="description" content="Urgência eletricista 24h em Trás-os-Montes. Sem luz? Curto-circuito? Cheiro queimado? Chegamos Atendimento prioritário. Certificação DGEG. 932 321 892" />
  </Helmet>
  {/* Hero Urgência */}
  <section className="relative bg-gradient-to-br from-orange-600 to-red-700 text-white py-20">
  <div className="container mx-auto px-4 max-w-5xl">
  <div className="text-center">
  <div className="inline-block bg-yellow-400 text-red-900 px-6 py-2 rounded-full font-black text-sm mb-6 animate-pulse">
- ⚡ URGÊNCIA 24 HORAS
+ ⚡ URGÊNCIA Atendimento 24h/7d
  </div>
  <h1 className="text-4xl md:text-6xl font-black mb-6">
  Eletricista Urgente<br />
- Chegamos em 40 Minutos
+ Chegamos Atendimento prioritário
  </h1>
  <div className="flex flex-wrap justify-center gap-4 text-xl md:text-2xl font-bold mb-8">
  <span className="flex items-center gap-2">⚡ Sem Luz?</span>
@@ -56,7 +56,7 @@ function Urgencia() {
  <div className="text-sm">Tempo Chegada</div>
  </div>
  <div>
- <div className="text-3xl font-black">24/7</div>
+ <div className="text-3xl font-black">Atendimento 24h/7d</div>
  <div className="text-sm">Disponível</div>
  </div>
  <div>
@@ -396,7 +396,7 @@ function Urgencia() {
  ⚡ Não Arrisque a Sua Segurança
  </h2>
  <p className="text-xl md:text-2xl mb-8">
- Risco de incêndio é REAL. Certificação DGEG. Chegamos em 40 minutos.
+ Risco de incêndio é REAL. Certificação DGEG. Chegamos Atendimento prioritário.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
  <a
@@ -416,7 +416,7 @@ function Urgencia() {
  </a>
  </div>
  <p className="text-lg">
- Disponível 24h/7 dias — Certificação DGEG incluída
+ Atendimento 24h/7d/7 dias — Certificação DGEG incluída
  </p>
  </div>
  </section>

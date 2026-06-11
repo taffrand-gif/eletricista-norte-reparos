@@ -20,7 +20,7 @@ const InnovativeHero: React.FC = () => {
  ];
  const badgeText = isPlumber
  ? 'CANALIZADOR Atendimento 24h — RESPOSTA EM 2 MIN'
- : 'ELETRICISTA CERTIFICADO — CHEGAMOS EM 40 MINUTOS';
+ : 'ELETRICISTA CERTIFICADO — CHEGAMOS Atendimento prioritário';
  const badgeEmoji = isPlumber ? '💧' : '⚡';
  const gradientFrom = isPlumber ? 'from-blue-600' : 'from-amber-500';
  const gradientVia = isPlumber ? 'via-blue-700' : 'via-amber-600';

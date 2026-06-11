@@ -14,8 +14,8 @@ export const electricFaqs: FAQItem[] = [
  answer: "Contacte-nos por telefone, WhatsApp ou formulário online. Deslocamo-nos gratuitamente para avaliar o problema, apresentamos um orçamento detalhado com preços transparentes e só avançamos após sua aprovação. Sem surpresas."
  },
  {
- question: "Tem eletricista urgente disponível 24h?",
- answer: "Sim! Serviço de urgência 24 horas por dia, 7 dias por semana, incluindo fins de semana e feriados. Em caso de curto-circuito, falta de luz ou situação de perigo elétrico, ligue +351 932 321 892 para intervenção imediata."
+ question: "Tem eletricista urgente Atendimento 24h/7d?",
+ answer: "Sim! Serviço de urgência Atendimento 24h/7d, 7 dias por semana, incluindo fins de semana e feriados. Em caso de curto-circuito, falta de luz ou situação de perigo elétrico, ligue +351 932 321 892 para intervenção imediata."
  },
  {
  question: "Quanto tempo demora a chegar em caso de urgência?",
@@ -23,7 +23,7 @@ export const electricFaqs: FAQItem[] = [
  },
  {
  question: "Atendem urgências à noite ou fim de semana?",
- answer: "Sim, trabalhamos 24/7. Não importa se é meia-noite, domingo ou feriado - temos equipas de piquete sempre disponíveis para emergências elétricas. O preço de urgência aplica-se fora do horário comercial."
+ answer: "Sim, trabalhamos Atendimento 24h/7d. Não importa se é meia-noite, domingo ou feriado - temos equipas de piquete sempre disponíveis para emergências elétricas. O preço de urgência aplica-se fora do horário comercial."
  },
  {
  question: "Quais os serviços elétricos que oferecem?",
@@ -96,8 +96,8 @@ export const plumberFaqs: FAQItem[] = [
  answer: "Contacte-nos por telefone, WhatsApp ou formulário online. Deslocamo-nos gratuitamente para avaliar o problema, apresentamos um orçamento detalhado com preços transparentes e só avançamos após sua aprovação."
  },
  {
- question: "Tem eletricista urgente disponível 24h?",
- answer: "Sim! Serviço de urgência 24 horas por dia, 7 dias por semana, incluindo fins de semana e feriados. Em caso de curto-circuito, falha de energia ou situação de perigo elétrico, ligue +351 932 321 892 para intervenção imediata."
+ question: "Tem eletricista urgente Atendimento 24h/7d?",
+ answer: "Sim! Serviço de urgência Atendimento 24h/7d, 7 dias por semana, incluindo fins de semana e feriados. Em caso de curto-circuito, falha de energia ou situação de perigo elétrico, ligue +351 932 321 892 para intervenção imediata."
  },
  {
  question: "Quanto tempo demora a chegar em caso de urgência?",
@@ -105,7 +105,7 @@ export const plumberFaqs: FAQItem[] = [
  },
  {
  question: "Atendem urgências à noite ou fim de semana?",
- answer: "Sim, trabalhamos 24/7. Não importa se é meia-noite, domingo ou feriado - temos equipas de piquete sempre disponíveis para emergências de canalização."
+ answer: "Sim, trabalhamos Atendimento 24h/7d. Não importa se é meia-noite, domingo ou feriado - temos equipas de piquete sempre disponíveis para emergências de canalização."
  },
  {
  question: "Quais os serviços de canalização que oferecem?",

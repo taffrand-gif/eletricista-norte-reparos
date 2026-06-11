@@ -44,7 +44,7 @@ export const eletricistaReviews: ReviewData[] = [
  author: "Paulo R.",
  rating: 5,
  date: "2026-02-16",
- text: "Curto-circuito às 2h da manhã. Chegaram em 35 minutos e resolveram tudo com segurança. certificação elétrica incluída!",
+ text: "Curto-circuito às 2h da manhã. Chegaram Atendimento prioritário e resolveram tudo com segurança. certificação elétrica incluída!",
  city: "Bragança"
  },
  {

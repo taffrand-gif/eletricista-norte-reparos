@@ -50,7 +50,7 @@
  if (isDay) {
  widget.style.background = 'linear-gradient(90deg,#1b8a2e,#25a33a)';
  widget.style.color = 'white';
- widget.innerHTML = '🟢 Atendimento 24h — Resposta em menos de 2 min | <a href="tel:+351' + PHONE + '" style="color:white;text-decoration:underline">Ligar: ' + PHONE.replace(/(\d{3})(\d{3})(\d{3})/, '$1 $2 $3') + '</a>';
+ widget.innerHTML = '🟢 Atendimento 24h — Resposta rápida garantida | <a href="tel:+351' + PHONE + '" style="color:white;text-decoration:underline">Ligar: ' + PHONE.replace(/(\d{3})(\d{3})(\d{3})/, '$1 $2 $3') + '</a>';
  } else {
  widget.style.background = 'linear-gradient(90deg,#e65100,#f57c00)';
  widget.style.color = 'white';
@@ -206,7 +206,7 @@
  popup.style.cssText = 'background:white;border-radius:16px;padding:30px;max-width:400px;width:100%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.3);position:relative;';
  popup.innerHTML = '<div style="font-size:40px;margin-bottom:10px">⚡</div>' +
  '<h3 style="margin:0 0 10px;font-size:20px;color:#333">Problema elétrico urgente?</h3>' +
- '<p style="color:#666;margin:0 0 20px;font-size:15px">Ligue agora — respondemos em 2 minutos!</p>' +
+ '<p style="color:#666;margin:0 0 20px;font-size:15px">Ligue agora — respondemos Atendimento prioritário!</p>' +
  '<a href="tel:+351' + PHONE + '" style="display:block;background:#FF6B35;color:white;padding:15px;border-radius:50px;font-size:18px;font-weight:bold;text-decoration:none;margin:8px 0">📞 ' + PHONE.replace(/(\d{3})(\d{3})(\d{3})/, '$1 $2 $3') + '</a>' +
  '<a href="https://wa.me/' + WA + '?text=' + encodeURIComponent('Olá! Preciso de ajuda urgente.') + '" target="_blank" rel="noopener" style="display:block;background:#25D366;color:white;padding:15px;border-radius:50px;font-size:18px;font-weight:bold;text-decoration:none;margin:8px 0">💬 WhatsApp</a>' +
  '<button id="exit-close" style="position:absolute;top:10px;right:15px;background:none;border:none;font-size:24px;color:#999;cursor:pointer">✕</button>';

@@ -65,7 +65,7 @@ export default function AutomacaoResidencialGuia() {
  {
  titulo: "Segurança e Vigilância",
  descricao: "Câmaras, sensores de movimento, fechaduras inteligentes e alarmes conectados.",
- beneficios: ["Monitorização 24/7", "Alertas em tempo real", "Gravação na nuvem"],
+ beneficios: ["Monitorização Atendimento 24h/7d", "Alertas em tempo real", "Gravação na nuvem"],
  custo: "300€ - 1.500€"
  },
  {

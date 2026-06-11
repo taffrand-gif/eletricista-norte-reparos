@@ -70,7 +70,7 @@ export default function Orcamento() {
  <div className="max-w-3xl mx-auto text-center">
  <h2 className="text-3xl font-bold mb-4">Prefere Falar Connosco?</h2>
  <p className="text-xl text-gray-600 mb-8">
- Estamos disponíveis 24 horas por dia, 7 dias por semana
+ Estamos disponíveis Atendimento 24h/7d, 7 dias por semana
  </p>
  <a
  href={`tel:${phone}`}

@@ -190,8 +190,8 @@ export default function Servicos() {
  answer: "Sim, oferecemos garantia escrita em todos os serviços de mão de obra e garantia do fabricante nos materiais fornecidos por nós."
  },
  {
- question: "Trabalham com urgências 24 horas?",
- answer: "Sim, temos serviço de urgência 24 horas para situações críticas como falta total de energia, curtos-circuitos ou perigo iminente."
+ question: "Trabalham com urgências Atendimento 24h/7d?",
+ answer: "Sim, temos serviço de urgência Atendimento 24h/7d para situações críticas como falta total de energia, curtos-circuitos ou perigo iminente."
  },
  {
  question: "Quais são os documentos necessários para certificação elétrica?",
@@ -212,7 +212,7 @@ export default function Servicos() {
  </h2>
  <p className="text-xl mb-8 max-w-2xl mx-auto">
  Contacte-nos agora para um sem compromisso e sem compromisso. 
- Atendemos urgências 24 horas por dia.
+ Atendemos urgências Atendimento 24h/7d.
  </p>
  <div className="flex flex-col sm:flex-row gap-6 justify-center">
  <a

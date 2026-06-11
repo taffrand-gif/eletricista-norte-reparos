@@ -66,7 +66,7 @@ function UrgencyIndicator() {
  <div className="flex-1">
  <p className="font-bold text-gray-900 text-base md:text-sm">{recentBooking}</p>
  <p className="text-sm md:text-xs font-semibold text-green-700 mt-1">
- ⚡ Técnico chegou em 25 minutos
+ ⚡ Técnico chegou Atendimento prioritário
  </p>
  </div>
  </div>

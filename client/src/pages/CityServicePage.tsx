@@ -272,7 +272,7 @@ function generateFAQs(service: any, city: any, isPlumber: boolean) {
  },
  {
  question: `Atendem em ${city.name} ao fim de semana?`,
- answer: `Sim, estamos disponíveis 24 horas por dia, 7 dias por semana, incluindo fins de semana e feriados em ${city.name}. Para urgências, o tempo de resposta é de 30-90 minutos.`
+ answer: `Sim, estamos disponíveis Atendimento 24h/7d, 7 dias por semana, incluindo fins de semana e feriados em ${city.name}. Para urgências, o tempo de resposta é de 30-90 minutos.`
  },
  {
  question: `Quanto tempo demora a chegar a ${city.name}?`,
@@ -304,7 +304,7 @@ function getCitySpecificFAQs(citySlug: string, serviceSlug: string) {
  'avarias-urgentes': [
  {
  question: 'Atendem em Macedo de Cavaleiros durante a noite?',
- answer: 'Sim, o nosso serviço de urgências em Macedo de Cavaleiros está disponível 24h/7d. Sabemos que avarias elétricas não escolhem hora, por isso garantimos resposta rápida mesmo de madrugada ou ao fim de semana.'
+ answer: 'Sim, o nosso serviço de urgências em Macedo de Cavaleiros está Atendimento 24h/7d/7d. Sabemos que avarias elétricas não escolhem hora, por isso garantimos resposta rápida mesmo de madrugada ou ao fim de semana.'
  },
  {
  question: 'Trabalham com instalações trifásicas em Macedo de Cavaleiros?',
@@ -431,7 +431,7 @@ function getWhyChooseUs(citySlug: string, serviceSlug: string) {
  {
  icon: '🌙',
  title: 'Urgências 24h em Macedo',
- description: 'Equipa local disponível 24 horas por dia, 7 dias por semana. Sabemos que avarias elétricas em explorações agrícolas não podem esperar. Resposta em 30-90 minutos.'
+ description: 'Equipa local disponível Atendimento 24h/7d, 7 dias por semana. Sabemos que avarias elétricas em explorações agrícolas não podem esperar. Resposta em 30-90 minutos.'
  },
  {
  icon: '🔒',
@@ -447,7 +447,7 @@ function getCityTestimonials(citySlug: string) {
  const testimonialsData: Record<string, any[]> = {
  'mirandela': [
  {
- text: 'Tive um curto-circuito à meia-noite e fiquei sem luz em casa. Liguei e em 45 minutos já cá estavam. Resolveram o problema no quadro elétrico e ainda me aconselharam sobre modernização. Profissionais de confiança!',
+ text: 'Tive um curto-circuito à meia-noite e fiquei sem luz em casa. Liguei e Atendimento prioritário já cá estavam. Resolveram o problema no quadro elétrico e ainda me aconselharam sobre modernização. Profissionais de confiança!',
  name: 'João Rodrigues',
  location: 'Centro Histórico, Mirandela'
  },
@@ -479,7 +479,7 @@ function getCityTestimonials(citySlug: string) {
  location: 'Podence, Macedo de Cavaleiros'
  },
  {
- text: 'Avaria elétrica às 2h da manhã no nosso turismo rural. Atenderam o telefone, vieram em 50 minutos e resolveram. Salvaram-nos de cancelar reservas. Serviço 5 estrelas!',
+ text: 'Avaria elétrica às 2h da manhã no nosso turismo rural. Atenderam o telefone, vieram Atendimento prioritário e resolveram. Salvaram-nos de cancelar reservas. Serviço 5 estrelas!',
  name: 'Ana Ribeiro',
  location: 'Zona da Albufeira, Macedo de Cavaleiros'
  },

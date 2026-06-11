@@ -19,7 +19,7 @@ export default function CompanyInfo() {
  title: 'Vamos a Todas as Aldeias',
  description: 'Se há estrada, nós vamos. Seja no centro da cidade ou na aldeia mais isolada da serra.'},
  {
- title: 'Disponibilidade 24/7',
+ title: 'Disponibilidade Atendimento 24h/7d',
  description: 'Estamos cá para si nos feriados, fins-de-semana e no meio da noite. O problema não escolhe hora.'},
  ];
  return (

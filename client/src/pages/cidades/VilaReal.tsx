@@ -32,7 +32,7 @@ export default function VilaReal() {
  metaKeywords.setAttribute('name', 'keywords');
  document.head.appendChild(metaKeywords);
  }
- metaKeywords.setAttribute('content', 'eletricista urgente vila real, eletricista 24 horas vila real, eletricista vila real, eletricista profissional vila real, instalação elétrica vila real, quadro elétrico vila real, certificação elétrica vila real, arranjo elétrica vila real, eletricista trás-os-montes');
+ metaKeywords.setAttribute('content', 'eletricista urgente vila real, eletricista Atendimento 24h/7d vila real, eletricista vila real, eletricista profissional vila real, instalação elétrica vila real, quadro elétrico vila real, certificação elétrica vila real, arranjo elétrica vila real, eletricista trás-os-montes');
  
  
  // Canonical URL
@@ -94,7 +94,7 @@ export default function VilaReal() {
     answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
   },
  {
- question: "Fazem urgências 24 horas em Vila Real?",
+ question: "Fazem urgências Atendimento 24h/7d em Vila Real?",
     answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
   },
  {

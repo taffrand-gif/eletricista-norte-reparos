@@ -1,6 +1,6 @@
 # Trás-os-Montes Services - Multi-Site Platform
 
-Plateforme multi-sites pour services de plomberie et électricité 24h/24 dans la région de Trás-os-Montes, Portugal.
+Plateforme multi-sites pour services de plomberie et électricité Atendimento 24h/7d dans la région de Trás-os-Montes, Portugal.
 
 ## Sites inclus
 

@@ -32,7 +32,7 @@ export default function Mirandela() {
  metaKeywords.setAttribute('name', 'keywords');
  document.head.appendChild(metaKeywords);
  }
- metaKeywords.setAttribute('content', 'eletricista urgente mirandela, eletricista 24 horas mirandela, eletricista mirandela, eletricista profissional mirandela, instalação elétrica mirandela, quadro elétrico mirandela, certificação elétrica mirandela, arranjo elétrica mirandela, eletricista trás-os-montes');
+ metaKeywords.setAttribute('content', 'eletricista urgente mirandela, eletricista Atendimento 24h/7d mirandela, eletricista mirandela, eletricista profissional mirandela, instalação elétrica mirandela, quadro elétrico mirandela, certificação elétrica mirandela, arranjo elétrica mirandela, eletricista trás-os-montes');
  
  
  // Canonical URL
@@ -103,7 +103,7 @@ export default function Mirandela() {
     answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
   },
  {
- question: "Fazem urgências 24 horas em Mirandela?",
+ question: "Fazem urgências Atendimento 24h/7d em Mirandela?",
     answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
   },
  {

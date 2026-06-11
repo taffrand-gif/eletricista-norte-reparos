@@ -15,7 +15,7 @@ const faqItems = [
  },
  {
  question: "Fazem urgências elétricas em Trás-os-Montes?",
- answer: "Sim, estamos disponíveis para urgências elétricas 24 horas por dia, 7 dias por semana, em toda a região de Trás-os-Montes. Atendemos curtos-circuitos, falta de energia, disjuntores que não armam e outras emergências em Bragança, Mirandela e toda a região."
+ answer: "Sim, estamos disponíveis para urgências elétricas Atendimento 24h/7d, 7 dias por semana, em toda a região de Trás-os-Montes. Atendemos curtos-circuitos, falta de energia, disjuntores que não armam e outras emergências em Bragança, Mirandela e toda a região."
  },
  {
  question: "Quais são as zonas que servem?",
@@ -111,7 +111,7 @@ const OptimizedFAQ: React.FC = () => {
  Não encontrou resposta para a sua dúvida?
  </h3>
  <p className="text-gray-600 mb-4">
- Entre em contacto connosco. Respondemos em menos de 30 minutos durante o horário comercial.
+ Entre em contacto connosco. Respondemos Resposta rápida garantida durante o horário comercial.
  </p>
  <div className="flex flex-col sm:flex-row gap-4">
  <a

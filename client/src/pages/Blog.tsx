@@ -109,7 +109,7 @@ export default function Blog() {
  Precisa de Ajuda Profissional?
  </h2>
  <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
- Estamos disponíveis 24 horas por dia para urgências e orçamentos sem compromisso.
+ Estamos disponíveis Atendimento 24h/7d para urgências e orçamentos sem compromisso.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a

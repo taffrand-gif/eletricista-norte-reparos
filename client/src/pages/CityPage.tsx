@@ -73,7 +73,7 @@ export default function CityPage() {
  {config.name} em {city.name} 24H
  </h1>
  <p className="text-xl mb-8">
- Serviço de urgência disponível 24 horas por dia em {city.name} e arredores
+ Serviço de urgência disponível Atendimento 24h/7d em {city.name} e arredores
  </p>
  <button
  onClick={handlePhoneClick}
@@ -96,7 +96,7 @@ export default function CityPage() {
  {config.name} profissional em {city.name}
  </h2>
  <p className="text-lg leading-relaxed text-gray-700">
- A <strong>{config.businessName}</strong> é a sua solução de confiança para serviços de {config.name.toLowerCase()} em {city.name}. Com uma equipa de técnicos altamente qualificados e certificados, garantimos intervenções rápidas e eficazes, 24 horas por dia, todos os dias do ano, incluindo fins de semana e feriados.
+ A <strong>{config.businessName}</strong> é a sua solução de confiança para serviços de {config.name.toLowerCase()} em {city.name}. Com uma equipa de técnicos altamente qualificados e certificados, garantimos intervenções rápidas e eficazes, Atendimento 24h/7d, todos os dias do ano, incluindo fins de semana e feriados.
  </p>
  <p className="text-lg leading-relaxed text-gray-700">
  Já realizámos mais de {interventionsCount} intervenções bem-sucedidas em {city.name}, conquistando a confiança de centenas de clientes. Seja qual for o problema que esteja a enfrentar, a nosso trabalho está parranjada para o resolver com rapidez e profissionalismo.

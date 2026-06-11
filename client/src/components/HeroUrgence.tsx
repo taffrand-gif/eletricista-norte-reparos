@@ -40,7 +40,7 @@ export default function HeroUrgence({ ville, interventionsCount = 480 }: HeroUrg
  <span>Tempo chegada desde Macedo</span>
  </div>
  <div className="trust-item">
- <strong>24/7</strong>
+ <strong>Atendimento 24h/7d</strong>
  <span>Urgências incluindo fins-de-semana</span>
  </div>
  <div className="trust-item">

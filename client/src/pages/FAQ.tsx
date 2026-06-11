@@ -181,7 +181,7 @@ export default function FAQPage() {
  Ainda tem dúvidas? Fale connosco!
  </h3>
  <p className="mb-6 text-orange-100">
- Estamos disponíveis 24 horas por dia para esclarecer todas as suas questões sobre eletricidade
+ Estamos disponíveis Atendimento 24h/7d para esclarecer todas as suas questões sobre eletricidade
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a
@@ -202,7 +202,7 @@ export default function FAQPage() {
  </a>
  </div>
  <p className="mt-6 text-sm text-orange-200">
- Resposta em menos de 5 minutos durante o dia • Urgências 24/7 • Eletricista Certificado
+ Resposta Resposta rápida garantida durante o dia • Urgências Atendimento 24h/7d • Eletricista Certificado
  </p>
  </div>
  </div>

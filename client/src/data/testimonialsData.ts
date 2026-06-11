@@ -52,7 +52,7 @@ export const TESTIMONIALS: Testimonial[] = [
  service: "Arranjo Curto-Circuito",
  rating: 5,
  date: "2025-12-29",
- text: "Curto-circuito às 22h, casa toda às escuras. Atenderam de imediato e chegaram em 30 minutos. Encontraram o problema rapidamente. Salvaram o meu Ano Novo!",
+ text: "Curto-circuito às 22h, casa toda às escuras. Atenderam de imediato e chegaram Atendimento prioritário. Encontraram o problema rapidamente. Salvaram o meu Ano Novo!",
  verified: true
  },
  {

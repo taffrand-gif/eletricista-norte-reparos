@@ -22,7 +22,7 @@ export const staffSeekersCitySEO: Record<string, CitySEOConfig> = {
  'instalação elétrica macedo de cavaleiros',
  'quadro elétrico macedo de cavaleiros',
  'certificação elétrica macedo de cavaleiros',
- 'eletricista 24 horas macedo de cavaleiros',
+ 'eletricista Atendimento 24h/7d macedo de cavaleiros',
  'preço eletricista macedo de cavaleiros',
  'arranjo elétrica macedo de cavaleiros'
  ],
@@ -38,7 +38,7 @@ export const staffSeekersCitySEO: Record<string, CitySEOConfig> = {
  'instalação elétrica bragança',
  'quadro elétrico bragança',
  'certificação elétrica bragança',
- 'eletricista 24 horas bragança',
+ 'eletricista Atendimento 24h/7d bragança',
  'preço eletricista bragança',
  'arranjo elétrica bragança'
  ],
@@ -54,7 +54,7 @@ export const staffSeekersCitySEO: Record<string, CitySEOConfig> = {
  'instalação elétrica mirandela',
  'quadro elétrico mirandela',
  'certificação elétrica mirandela',
- 'eletricista 24 horas mirandela',
+ 'eletricista Atendimento 24h/7d mirandela',
  'preço eletricista mirandela',
  'arranjo elétrica mirandela'
  ],
@@ -70,7 +70,7 @@ export const staffSeekersCitySEO: Record<string, CitySEOConfig> = {
  'instalação elétrica chaves',
  'quadro elétrico chaves',
  'certificação elétrica chaves',
- 'eletricista 24 horas chaves',
+ 'eletricista Atendimento 24h/7d chaves',
  'preço eletricista chaves',
  'arranjo elétrica chaves'
  ],
@@ -86,7 +86,7 @@ export const staffSeekersCitySEO: Record<string, CitySEOConfig> = {
  'instalação elétrica valpaços',
  'quadro elétrico valpaços',
  'certificação elétrica valpaços',
- 'eletricista 24 horas valpaços',
+ 'eletricista Atendimento 24h/7d valpaços',
  'preço eletricista valpaços',
  'arranjo elétrica valpaços'
  ],
@@ -102,7 +102,7 @@ export const staffSeekersCitySEO: Record<string, CitySEOConfig> = {
  'instalação elétrica vinhais',
  'quadro elétrico vinhais',
  'certificação elétrica vinhais',
- 'eletricista 24 horas vinhais',
+ 'eletricista Atendimento 24h/7d vinhais',
  'preço eletricista vinhais',
  'arranjo elétrica vinhais'
  ],
@@ -118,7 +118,7 @@ export const staffSeekersCitySEO: Record<string, CitySEOConfig> = {
  'instalação elétrica miranda do douro',
  'quadro elétrico miranda do douro',
  'certificação elétrica miranda do douro',
- 'eletricista 24 horas miranda do douro',
+ 'eletricista Atendimento 24h/7d miranda do douro',
  'preço eletricista miranda do douro',
  'arranjo elétrica miranda do douro'
  ],
@@ -134,7 +134,7 @@ export const staffSeekersCitySEO: Record<string, CitySEOConfig> = {
  'instalação elétrica mogadouro',
  'quadro elétrico mogadouro',
  'certificação elétrica mogadouro',
- 'eletricista 24 horas mogadouro',
+ 'eletricista Atendimento 24h/7d mogadouro',
  'preço eletricista mogadouro',
  'arranjo elétrica mogadouro'
  ],
@@ -150,7 +150,7 @@ export const staffSeekersCitySEO: Record<string, CitySEOConfig> = {
  'instalação elétrica torre de moncorvo',
  'quadro elétrico torre de moncorvo',
  'certificação elétrica torre de moncorvo',
- 'eletricista 24 horas torre de moncorvo',
+ 'eletricista Atendimento 24h/7d torre de moncorvo',
  'preço eletricista torre de moncorvo',
  'arranjo elétrica torre de moncorvo'
  ],
@@ -166,7 +166,7 @@ export const staffSeekersCitySEO: Record<string, CitySEOConfig> = {
  'instalação elétrica freixo de espada à cinta',
  'quadro elétrico freixo de espada à cinta',
  'certificação elétrica freixo de espada à cinta',
- 'eletricista 24 horas freixo de espada à cinta',
+ 'eletricista Atendimento 24h/7d freixo de espada à cinta',
  'preço eletricista freixo de espada à cinta',
  'arranjo elétrica freixo de espada à cinta'
  ],

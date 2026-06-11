@@ -113,7 +113,7 @@ function getDicas(serviceType: 'plomberie' | 'electricite'): Dica[] {
       {
         icon: '📞',
         title: 'Tenha sempre um contacto de emergência',
-        content: 'Guarde o número de um canalizador de confiança disponível 24h. Em caso de fuga grave, cada minuto conta para minimizar os danos.',
+        content: 'Guarde o número de um canalizador de confiança Atendimento 24h/7d. Em caso de fuga grave, cada minuto conta para minimizar os danos.',
       },
     ];
   } else {
@@ -166,7 +166,7 @@ function getDicas(serviceType: 'plomberie' | 'electricite'): Dica[] {
       {
         icon: '📞',
         title: 'Tenha sempre um contacto de emergência',
-        content: 'Guarde o número de um electricista de confiança disponível 24h. Problemas elétricos podem ser perigosos e requerem intervenção imediata.',
+        content: 'Guarde o número de um electricista de confiança Atendimento 24h/7d. Problemas elétricos podem ser perigosos e requerem intervenção imediata.',
       },
     ];
   }

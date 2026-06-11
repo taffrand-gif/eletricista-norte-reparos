@@ -42,6 +42,6 @@ City: Viseu (Z4, 120km) - 70-100 min
 - Coordenadas: 41.5380, -6.9667
 
 ## Horario
-24h/7j (24/7), incluindo domingos e feriados
+24h/7j (Atendimento 24h/7d), incluindo domingos e feriados
 Resposta em 30 segundos
 Chegada: 5-90 min conforme zona

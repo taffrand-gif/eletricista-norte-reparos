@@ -19,7 +19,7 @@ export default function FreixoEspadaCinta() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Eletricista em Freixo de Espada à Cinta disponível 24h. Arranjo de avarias elétricas, quadros elétricos. Servimos todo o concelho. Sem compromisso.');
+ metaDescription.setAttribute('content', 'Eletricista em Freixo de Espada à Cinta Atendimento 24h/7d. Arranjo de avarias elétricas, quadros elétricos. Servimos todo o concelho. Sem compromisso.');
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');

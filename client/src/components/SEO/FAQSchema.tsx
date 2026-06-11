@@ -35,14 +35,14 @@ export const eletricistaFAQs: FAQ[] = [
  },
  {
  question: "Quanto tempo demora a chegar em caso de urgência elétrica?",
- answer: "Chegamos em 40 minutos no centro de Bragança e até 60 minutos nas aldeias circundantes. Serviço 24h/7 dias incluindo feriados."
+ answer: "Chegamos Atendimento prioritário no centro de Bragança e até 60 minutos nas aldeias circundantes. Serviço 24h/7 dias incluindo feriados."
  },
  {
 question: "São certificados ?",
   answer: "Sim, temos técnicos experientes com formação profissional. Todos os trabalhos incluem documentação técnica conforme legislação portuguesa."
  },
  {
- question: "Trabalham 24 horas por dia?",
+ question: "Trabalham Atendimento 24h/7d?",
  answer: "Sim, trabalhamos 24h/7 dias por semana, incluindo fins de semana e feriados. Ligue 932 321 892 a qualquer hora."
  },
  {

@@ -83,8 +83,8 @@ export default function FreguesiasPage() {
  answer: `A deslocação a ${freguesia.name} depende da zona. Contacte-nos para orçamento sem compromisso: ${config.phone}`
  },
  {
- question: `Fazem urgências 24 horas em ${freguesia.name}?`,
- answer: `Sim, atendemos urgências 24 horas por dia, 7 dias por semana em ${freguesia.name} e arredores.`
+ question: `Fazem urgências Atendimento 24h/7d em ${freguesia.name}?`,
+ answer: `Sim, atendemos urgências Atendimento 24h/7d, 7 dias por semana em ${freguesia.name} e arredores.`
  }
  ];
  return (
@@ -140,7 +140,7 @@ export default function FreguesiasPage() {
  </p>
  <p className="text-gray-700">
  Com base em {parentCity.name}, chegamos rapidamente a {freguesia.name}
- para resolver qualquer urgência. Disponíveis 24 horas por dia, 7 dias por semana.
+ para resolver qualquer urgência. Disponíveis Atendimento 24h/7d, 7 dias por semana.
  </p>
  </div>
  </div>
@@ -174,9 +174,9 @@ export default function FreguesiasPage() {
  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
  <Phone className="w-8 h-8 text-blue-600" />
  </div>
- <h3 className="text-xl font-bold mb-2">Disponível 24h</h3>
+ <h3 className="text-xl font-bold mb-2">Atendimento 24h/7d</h3>
  <p className="text-gray-600">
- Atendimento 24 horas, 7 dias por semana
+ Atendimento Atendimento 24h/7d, 7 dias por semana
  </p>
  </div>
  </div>

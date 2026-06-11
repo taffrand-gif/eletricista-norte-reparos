@@ -77,7 +77,7 @@ function Tarifas() {
  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
  <div className="text-4xl mb-3">⚡</div>
  <h3 className="font-bold mb-2">Resposta Rápida</h3>
- <p className="text-sm text-gray-300">Atendemos em menos de 2 minutos</p>
+ <p className="text-sm text-gray-300">Atendemos Resposta rápida garantida</p>
  </div>
  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
  <div className="text-4xl mb-3">✅</div>

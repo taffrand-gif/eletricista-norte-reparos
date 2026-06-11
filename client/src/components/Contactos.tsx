@@ -164,7 +164,7 @@ export default function Contactos() {
  {config.phone}
  </a>
  <p className="text-sm text-gray-600 mt-1">
- Disponível 24/7
+ Disponível Atendimento 24h/7d
  </p>
  </div>
  </div>
@@ -231,7 +231,7 @@ export default function Contactos() {
  <div>
  <h4 className="font-black text-lg mb-2">Horário</h4>
  <p className="text-lg font-bold">
- 24 Horas por Dia
+ Atendimento 24h/7d
  </p>
  <p className="text-sm text-gray-600 mt-1">
  7 dias por semana, incluindo feriados

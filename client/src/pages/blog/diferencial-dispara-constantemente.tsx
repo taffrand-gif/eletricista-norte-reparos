@@ -349,7 +349,7 @@ export default function DiferencialDisparaConstantemente() {
  </a>
  </div>
  <p className="text-red-100 text-sm mt-4">
- ✓ Intervenção Urgente ✓ Diagnóstico Rápido ✓ Disponível 24h/7d
+ ✓ Intervenção Urgente ✓ Diagnóstico Rápido ✓ Atendimento 24h/7d/7d
  </p>
  </div>
  {/* Related Articles */}

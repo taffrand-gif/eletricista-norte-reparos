@@ -36,7 +36,7 @@ export default function Contactos() {
  };
  useSEO({
  title: `Contactos | ${config.businessName}`,
- description: `Entre em contacto connosco. ${config.name} profissional disponível 24h/dia. Ligue ${formattedPhone}`,
+ description: `Entre em contacto connosco. ${config.name} profissional Atendimento 24h/7d/dia. Ligue ${formattedPhone}`,
  canonical: `https://${config.domain}/contactos`});
  const handlePhoneClick = () => {
  if (typeof window !== 'undefined' && (window as any).gtag) {
@@ -118,7 +118,7 @@ export default function Contactos() {
  Contactos
  </h1>
  <p className="text-lg sm:text-xl text-gray-700">
- Estamos disponíveis 24 horas por dia, 7 dias por semana
+ Estamos disponíveis Atendimento 24h/7d, 7 dias por semana
  </p>
  </div>
  </div>
@@ -145,7 +145,7 @@ export default function Contactos() {
  >
  {formattedPhone}
  </button>
- <p className="text-gray-700 mt-1 text-sm sm:text-base">Disponível 24h/dia, 7 dias por semana</p>
+ <p className="text-gray-700 mt-1 text-sm sm:text-base">Atendimento 24h/7d/dia, 7 dias por semana</p>
  </div>
  </div>
  {/* WhatsApp */}
@@ -184,7 +184,7 @@ export default function Contactos() {
  <div>
  <h3 className="font-bold text-base sm:text-lg text-gray-900 mb-2">Horário</h3>
  <p className="text-gray-700 text-sm sm:text-base">
- <strong>Urgências:</strong> 24 horas por dia<br />
+ <strong>Urgências:</strong> Atendimento 24h/7d<br />
  <strong>Incluindo:</strong> Fins de semana e feriados
  </p>
  </div>

@@ -95,6 +95,6 @@ function getDicas(serviceType: 'electricite'): Dica[] {
  {
  icon: '📞',
  title: 'Tenha sempre um contacto de emergência',
- content: 'Guarde o número de um eletricista de confiança disponível 24h. Problemas elétricos podem ser perigosos e requerem intervenção imediata.'},
+ content: 'Guarde o número de um eletricista de confiança Atendimento 24h/7d. Problemas elétricos podem ser perigosos e requerem intervenção imediata.'},
  ];
 }

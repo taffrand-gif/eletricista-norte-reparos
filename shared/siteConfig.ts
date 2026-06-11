@@ -226,7 +226,7 @@ export const siteConfig: SiteConfig = {
  seo: {
    keywords: [
      'eletricista bragança', 'eletricista mirandela', 'eletricista macedo de cavaleiros',
-     'eletricista urgente bragança', 'eletricista 24 horas mirandela', 'eletricista chaves',
+     'eletricista urgente bragança', 'eletricista Atendimento 24h/7d mirandela', 'eletricista chaves',
      'eletricista vila real', 'eletricista vinhais', 'eletricista miranda do douro',
      'eletricista mogadouro', 'eletricista torre de moncorvo', 'eletricista trás-os-montes',
      'quadro elétrico bragança', 'quadro elétrico mirandela', 'certificação elétrica bragança',

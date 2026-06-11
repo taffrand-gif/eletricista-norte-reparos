@@ -107,7 +107,7 @@ const PouparEnergiaEletricaDicas: React.FC = () => {
  </section>
  <section id="standby" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">2. 🔴 Eliminar o Consumo em Standby</h2>
- <p>Os aparelhos em standby (luz vermelha ligada) consomem energia 24 horas por dia. Televisões, consolas, carregadores e micro-ondas são os principais culpados.</p>
+ <p>Os aparelhos em standby (luz vermelha ligada) consomem energia Atendimento 24h/7d. Televisões, consolas, carregadores e micro-ondas são os principais culpados.</p>
  <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg mb-6">
  <h3 className="font-bold text-red-800 text-lg mb-2">O custo invisível do standby:</h3>
  <ul className="text-red-700 space-y-1">

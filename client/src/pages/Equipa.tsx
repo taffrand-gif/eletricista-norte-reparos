@@ -32,7 +32,7 @@ export default function Equipa() {
  Somos uma equipa de {config.type === 'plomberie' ? 'canalizadores' : 'eletricistas'} certificados com mais de 10 anos de experiência na região de Bragança e Trás-os-Montes.
  </p>
  <p className="text-gray-700">
- Disponíveis 24 horas por dia, 7 dias por semana, garantimos um serviço rápido, profissional e com garantia de 12 meses.
+ Disponíveis Atendimento 24h/7d, 7 dias por semana, garantimos um serviço rápido, profissional e com garantia de 12 meses.
  </p>
  </Card>
  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

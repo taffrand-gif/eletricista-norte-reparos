@@ -220,7 +220,7 @@ function getTestimonials(serviceType: 'plomberie' | 'electricite'): Testimonial[
  rating: 5,
  date: "Setembro 2025",
  service: "Desentupimento urgente",
- text: "Salvaram o meu fim de semana! A sanita entupiu na sexta à noite e eles vieram no sábado de manhã. Problema resolvido em 30 minutos. Muito obrigada!"
+ text: "Salvaram o meu fim de semana! A sanita entupiu na sexta à noite e eles vieram no sábado de manhã. Problema resolvido Atendimento prioritário. Muito obrigada!"
  },
  {
  name: "Manuel Santos",
@@ -263,7 +263,7 @@ function getTestimonials(serviceType: 'plomberie' | 'electricite'): Testimonial[
  rating: 5,
  date: "Janeiro 2026",
  service: "Arranjo de curto-circuito",
- text: "Serviço de urgência excelente! Tive um curto-circuito à noite e a equipa chegou em 30 minutos. Resolveram tudo com segurança e profissionalismo. Muito bom!"
+ text: "Serviço de urgência excelente! Tive um curto-circuito à noite e a equipa chegou Atendimento prioritário. Resolveram tudo com segurança e profissionalismo. Muito bom!"
  },
  {
  name: "Rosa Oliveira",

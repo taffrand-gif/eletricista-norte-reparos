@@ -21,7 +21,7 @@ const OptimizedHero: React.FC = () => {
  {/* Badge urgence */}
  <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-3 mb-8">
  <span className="text-2xl">⚡</span>
- <span className="text-white font-semibold text-lg">ELETRICISTA CERTIFICADO — CHEGAMOS EM 40 MINUTOS</span>
+ <span className="text-white font-semibold text-lg">ELETRICISTA CERTIFICADO — CHEGAMOS Atendimento prioritário</span>
  </div>
  
  {/* Titre principal */}

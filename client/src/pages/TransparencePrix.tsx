@@ -73,8 +73,8 @@ export default function TransparencePrix() {
  price: "90€ - 120€",
  duration: "Imediato",
  includes: [
- "Chegada em 40 minutos",
- "Disponível 24/7",
+ "Chegada Atendimento prioritário",
+ "Disponível Atendimento 24h/7d",
  "Fins de semana e feriados",
  "Resolução no local"
  ]
@@ -91,7 +91,7 @@ export default function TransparencePrix() {
  const faqPrix = [
  {
  question: "Porque os vossos preços são 15-20% mais elevados que a concorrência?",
- answer: "Os nossos preços refletem a qualidade superior do serviço: eletricistas certificados com 10+ anos de experiência, materiais de marcas premium (Legrand, Schneider), garantia alargada de 12 meses, chegada garantida em 40 minutos, e certificação incluída. Não fazemos trabalhos 'baratos' que falham em 6 meses. Investimos em formação contínua e equipamento profissional. O barato sai caro em eletricidade - um trabalho mal feito pode causar incêndios."
+ answer: "Os nossos preços refletem a qualidade superior do serviço: eletricistas certificados com 10+ anos de experiência, materiais de marcas premium (Legrand, Schneider), garantia alargada de 12 meses, chegada garantida Atendimento prioritário, e certificação incluída. Não fazemos trabalhos 'baratos' que falham em 6 meses. Investimos em formação contínua e equipamento profissional. O barato sai caro em eletricidade - um trabalho mal feito pode causar incêndios."
  },
  {
  question: "O preço final pode ser diferente do orçamento?",

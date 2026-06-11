@@ -24,7 +24,7 @@ export default function Braganca() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Problemas elétricos em Bragança? Respondemos em 40 minutos. Diagnóstico rápido, orçamento sem compromisso. Ligue agora: 932 321 892');
+ metaDescription.setAttribute('content', 'Problemas elétricos em Bragança? Respondemos Atendimento prioritário. Diagnóstico rápido, orçamento sem compromisso. Ligue agora: 932 321 892');
  // SEO meta keywords
  let metaKeywords = document.querySelector('meta[name="keywords"]');
  if (!metaKeywords) {
@@ -32,7 +32,7 @@ export default function Braganca() {
  metaKeywords.setAttribute('name', 'keywords');
  document.head.appendChild(metaKeywords);
  }
- metaKeywords.setAttribute('content', 'eletricista urgente bragança, eletricista 24 horas bragança, eletricista bragança, eletricista profissional bragança, instalação elétrica bragança, quadro elétrico bragança, certificação elétrica bragança, arranjo elétrica bragança, eletricista trás-os-montes');
+ metaKeywords.setAttribute('content', 'eletricista urgente bragança, eletricista Atendimento 24h/7d bragança, eletricista bragança, eletricista profissional bragança, instalação elétrica bragança, quadro elétrico bragança, certificação elétrica bragança, arranjo elétrica bragança, eletricista trás-os-montes');
  
  
  // Canonical URL
@@ -94,7 +94,7 @@ export default function Braganca() {
     answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
   },
  {
- question: "Fazem urgências 24 horas em Bragança?",
+ question: "Fazem urgências Atendimento 24h/7d em Bragança?",
     answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
   },
  {
@@ -269,7 +269,7 @@ export default function Braganca() {
  Qual a disponibilidade durante o inverno rigoroso de Bragança?
  </h3>
  <p className="text-gray-600">
- Mantemos serviço 24 horas durante todo o ano, incluindo os meses mais frios.
+ Mantemos serviço Atendimento 24h/7d durante todo o ano, incluindo os meses mais frios.
  Temos equipamento especializado para condições de neve e gelo, garantindo
  que possamos chegar a qualquer localidade do concelho em qualquer condição.
  </p>

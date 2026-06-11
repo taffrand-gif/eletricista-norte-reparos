@@ -24,7 +24,7 @@ const electricDescriptions: Record<string, string> = {
  'Quadros Elétricos Modernos': 'Substituição e modernização de quadros elétricos antigos, instalação de disjuntores diferenciais, organização e identificação de circuitos.',
  'Iluminação Interior/Exterior': 'Projeto e instalação de sistemas de iluminação interior e exterior, spots LED, iluminação decorativa, sensores de movimento e automatização.',
  'certificação elétrica': 'Inspeção e certificação elétrica obrigatória para venda e arrendamento de imóveis, com emissão de certificado válido e registado na .',
- 'Urgências 24h': 'Atendimento de urgências elétricas 24 horas por dia, 7 dias por semana, para situações de perigo ou falta de energia.'};
+ 'Urgências 24h': 'Atendimento de urgências elétricas Atendimento 24h/7d, 7 dias por semana, para situações de perigo ou falta de energia.'};
 // Descriptions pour plomberie
 const plumbDescriptions: Record<string, string> = {
  'Desentupimentos': 'Desentupimento profissional de canalizações, WC, pias, ralos e redes de esgotos com equipamento especializado.',
@@ -32,7 +32,7 @@ const plumbDescriptions: Record<string, string> = {
  'Instalação Sanitários': 'Instalação completa de equipamentos sanitários: sanitas, lavatórios, banheiras, bases de duche e acessórios de casa de banho.',
  'Aquecimento Central': 'Instalação e manutenção de sistemas de aquecimento central, caldeiras, radiadores e sistemas de água quente.',
  'Canalização Nova': 'Instalação de canalização nova para construções, remodelações e ampliações, com materiais certificados.',
- 'Urgências 24h': 'Atendimento de urgências de canalização 24 horas por dia, 7 dias por semana, para fugas graves e entupimentos.'};
+ 'Urgências 24h': 'Atendimento de urgências de canalização Atendimento 24h/7d, 7 dias por semana, para fugas graves e entupimentos.'};
 // Features pour électricité
 const electricFeatures: Record<string, string[]> = {
  'Instalação Elétrica Completa': [

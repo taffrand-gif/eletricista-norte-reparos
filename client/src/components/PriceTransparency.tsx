@@ -74,7 +74,7 @@ function PriceTransparency() {
  </h2>
  <p className="text-xl text-gray-600 max-w-3xl mx-auto">
  Saiba exatamente quanto vai pagar ANTES de começarmos.
- Sem compromisso em 2 minutos por telefone.
+ Sem compromisso Atendimento prioritário por telefone.
  </p>
  </div>
  {/* Comparison Grid */}
@@ -126,7 +126,7 @@ function PriceTransparency() {
  style={{ borderColor: config.colors.primary }}
  >
  <h3 className="text-2xl font-black mb-4">
- Ligue Agora — Saiba o Preço em 2 Minutos
+ Ligue Agora — Saiba o Preço Atendimento prioritário
  </h3>
  <p className="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
  Sem compromisso e sem compromisso. Preço fixo garantido antes de começarmos.

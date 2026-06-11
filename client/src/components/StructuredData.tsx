@@ -381,7 +381,7 @@ export default function StructuredData() {
  "name": `Qual é o horário de atendimento do ${config.serviceType}?`,
  "acceptedAnswer": {
  "@type": "Answer",
- "text": "Estamos disponíveis 24 horas por dia, 7 dias por semana, incluindo fins de semana e feriados. Serviço de urgência permanente."
+ "text": "Estamos disponíveis Atendimento 24h/7d, 7 dias por semana, incluindo fins de semana e feriados. Serviço de urgência permanente."
  }
  },
  {

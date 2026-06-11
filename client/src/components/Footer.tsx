@@ -89,7 +89,7 @@ function Footer() {
  <Clock className="w-5 h-5 mt-1 flex-shrink-0" />
  <div>
  <p className="font-bold">Horário:</p>
- <p className="text-gray-200">24 horas por dia, 7 dias por semana</p>
+ <p className="text-gray-200">Atendimento 24h/7d, 7 dias por semana</p>
  </div>
  </li>
  <li className="flex items-start gap-3">

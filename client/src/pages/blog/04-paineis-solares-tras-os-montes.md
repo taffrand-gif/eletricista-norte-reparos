@@ -58,7 +58,7 @@ tags: ['painéis solares', 'energia solar', 'trás-os-montes', 'instalação', '
 ### Fase 4: Manutenção e Monitorização
 - Limpeza semestral dos painéis
 - Verificação anual do sistema
-- Monitorização remota 24/7
+- Monitorização remota Atendimento 24h/7d
 - Garantia de 25 anos nos painéis
 
 ## Perguntas Frequentes

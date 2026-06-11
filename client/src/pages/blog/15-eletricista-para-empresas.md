@@ -44,8 +44,8 @@ tags: ['electricista empresas', 'contrato manutenção', 'industrial', 'comercia
 ### Contrato Premium (a partir de €500/mês)
 - **2 visitas mensais** de manutenção
 - **20% desconto** em serviços extras
-- **Resposta urgente** em 1 hora
-- **Monitorização avançada** 24/7
+- **Resposta urgente** Atendimento rápido
+- **Monitorização avançada** Atendimento 24h/7d
 - **Plano de renovação** trienal
 - **Gestor dedicado** de conta
 

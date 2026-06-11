@@ -52,7 +52,7 @@ export const electriciteConfig: ServiceConfig = {
  to: '#FF8F00'},
  accentColor: '#1A237E',
  
- heroTitle: 'Sem Luz em Casa? Chegamos em 40 Minutos.',
+ heroTitle: 'Sem Luz em Casa? Chegamos Atendimento prioritário.',
  heroSubtitle: 'Avaria elétrica, disjuntor a disparar, curto-circuito. Diagnóstico gratuito. Preço fixo dito ao telefone antes de sair.',
  heroEmoji: '⚡',
  serviceEmoji: '🔌',

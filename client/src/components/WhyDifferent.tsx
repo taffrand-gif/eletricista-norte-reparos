@@ -164,7 +164,7 @@ function WhyDifferent() {
  </a>
  </div>
  <p className="text-sm text-gray-500 mt-4">
- Disponível 24h/7 dias • Chegamos em 40 minutos • certificação elétrica incluída
+ Atendimento 24h/7d/7 dias • Chegamos Atendimento prioritário • certificação elétrica incluída
  </p>
  </div>
  {/* Social Proof */}

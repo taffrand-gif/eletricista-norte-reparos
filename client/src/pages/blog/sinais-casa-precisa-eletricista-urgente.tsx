@@ -372,7 +372,7 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  <ul className="space-y-2 mb-6 text-gray-800">
  <li className="flex items-start">
  <span className="text-orange-600 mr-2">✓</span>
- <span>Disponível 24h/7 dias</span>
+ <span>Atendimento 24h/7d/7 dias</span>
  </li>
  <li className="flex items-start">
  <span className="text-orange-600 mr-2">✓</span>

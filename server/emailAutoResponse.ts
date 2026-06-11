@@ -90,7 +90,7 @@ Um dos o nosso serviço irá contactá-lo brevemente para:
 📞 Ligue agora: ${companyPhone}
 💬 WhatsApp: https://wa.me/${whatsappNumber}?text=Olá%2C+preciso+de+um+eletricista+em+Trás-os-Montes.+Podem+dar-me+um+orçamento%3F
 
-Estamos disponíveis 24/7 para emergências.
+Estamos disponíveis Atendimento 24h/7d para emergências.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -150,7 +150,7 @@ Telefone: ${companyPhone}
 WhatsApp: https://wa.me/${whatsappNumber}?text=Olá%2C+preciso+de+um+eletricista+em+Trás-os-Montes.+Podem+dar-me+um+orçamento%3F
 
 Horário: Segunda a Sexta, 8h-19h
-Urgências 24/7: Sempre disponível
+Urgências Atendimento 24h/7d: Sempre disponível
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 

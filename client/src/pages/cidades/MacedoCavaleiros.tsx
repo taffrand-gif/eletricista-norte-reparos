@@ -29,7 +29,7 @@ export default function MacedoCavaleiros() {
  metaKeywords.setAttribute('name', 'keywords');
  document.head.appendChild(metaKeywords);
  }
- metaKeywords.setAttribute('content', 'eletricista macedo de cavaleiros, eletricista urgente macedo, eletricista 24 horas macedo cavaleiros, avaria elétrica macedo, quadro elétrico macedo cavaleiros, curto circuito macedo');
+ metaKeywords.setAttribute('content', 'eletricista macedo de cavaleiros, eletricista urgente macedo, eletricista Atendimento 24h/7d macedo cavaleiros, avaria elétrica macedo, quadro elétrico macedo cavaleiros, curto circuito macedo');
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');
@@ -126,7 +126,7 @@ export default function MacedoCavaleiros() {
  Eletricista em Macedo de Cavaleiros
  </h1>
  <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
- A nossa base é aqui. Chegamos em menos de 30 minutos. Serviço 24h para urgências elétricas.
+ A nossa base é aqui. Chegamos Resposta rápida garantida. Serviço 24h para urgências elétricas.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a

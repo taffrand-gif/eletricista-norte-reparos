@@ -32,7 +32,7 @@ export default function Chaves() {
  metaKeywords.setAttribute('name', 'keywords');
  document.head.appendChild(metaKeywords);
  }
- metaKeywords.setAttribute('content', 'eletricista urgente chaves, eletricista 24 horas chaves, eletricista chaves, eletricista profissional chaves, instalação elétrica chaves, quadro elétrico chaves, certificação elétrica chaves, arranjo elétrica chaves, eletricista trás-os-montes');
+ metaKeywords.setAttribute('content', 'eletricista urgente chaves, eletricista Atendimento 24h/7d chaves, eletricista chaves, eletricista profissional chaves, instalação elétrica chaves, quadro elétrico chaves, certificação elétrica chaves, arranjo elétrica chaves, eletricista trás-os-montes');
  
  
  // Canonical URL
@@ -103,7 +103,7 @@ export default function Chaves() {
     answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
   },
  {
- question: "Fazem urgências 24 horas em Chaves?",
+ question: "Fazem urgências Atendimento 24h/7d em Chaves?",
     answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
   },
  {

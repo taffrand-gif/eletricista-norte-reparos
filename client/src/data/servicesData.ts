@@ -201,7 +201,7 @@ Diagnóstico preciso em 15-45 minutos. Orçamento antes de arranjar.`
  priceDetails: 'Acréscimo 50€ horário noturno',
  image: '/images-optimized/services/service-urgencia.jpg',
  content: {
- intro: 'Urgências elétricas requerem intervenção imediata para evitar incêndios, choques elétricos e danos em equipamentos. Eletricista Profissional disponível 24h/dia, 365 dias/ano.',
+ intro: 'Urgências elétricas requerem intervenção imediata para evitar incêndios, choques elétricos e danos em equipamentos. Eletricista Profissional Atendimento 24h/7d/dia, 365 dias/ano.',
  sections: [
  {
  title: 'Situações de Urgência',

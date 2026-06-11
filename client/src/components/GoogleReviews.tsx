@@ -50,7 +50,7 @@ const reviews: Review[] = [
  initial: 'T',
  city: 'Mogadouro',
  rating: 5,
- text: 'Veio de longe mas chegou rápido. Resolveu a avaria em 30 minutos.',
+ text: 'Veio de longe mas chegou rápido. Resolveu a avaria Atendimento prioritário.',
  date: 'há 2 meses'},
 ];
 const avatarColors = ['#FF6B35', '#E53935', '#8E24AA', '#1E88E5', '#43A047', '#FB8C00'];
