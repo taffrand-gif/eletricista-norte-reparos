@@ -444,53 +444,9 @@ function getWhyChooseUs(citySlug: string, serviceSlug: string) {
  return reasonsData[citySlug]?.[serviceSlug] || null;
 }
 function getCityTestimonials(citySlug: string) {
- const testimonialsData: Record<string, any[]> = {
- 'mirandela': [
- {
- text: 'Tive um curto-circuito à meia-noite e fiquei sem luz em casa. Liguei e Atendimento prioritário já cá estavam. Resolveram o problema no quadro elétrico e ainda me aconselharam sobre modernização. Profissionais de confiança!',
- name: 'João Rodrigues',
- location: 'Centro Histórico, Mirandela'
- },
- {
- text: 'Precisava de certificação elétrica urgente para vender a casa da minha avó em Fradizela. Fizeram a inspeção, regularizaram as instalações antigas e emitiram o certificado em 3 dias. Excelente serviço!',
- name: 'Maria Santos',
- location: 'Fradizela, Mirandela'
- },
- {
- text: 'Na nossa quinta em Torre de Dona Chama tínhamos problemas constantes com o quadro elétrico da adega. Instalaram um sistema novo trifásico e desde então zero problemas. Muito competentes!',
- name: 'António Ferreira',
- location: 'Torre de Dona Chama, Mirandela'
- },
- {
- text: 'Recomendo! Instalaram iluminação LED em todo o nosso restaurante no centro de Mirandela. Ficou moderno, poupa energia e o trabalho foi impecável. Preço justo e rápidos.',
- name: 'Sofia Alves',
- location: 'Zona da Ponte Romana, Mirandela'
- }
- ],
- 'macedo-de-cavaleiros': [
- {
- text: 'Temos uma exploração agrícola e o quadro elétrico da bomba de água avariou. Vieram no mesmo dia, substituíram tudo e ainda otimizaram o sistema. Profissionais que conhecem bem o trabalho agrícola!',
- name: 'Manuel Costa',
- location: 'Morais, Trás-os-Montes'
- },
- {
- text: 'Precisávamos de instalação trifásica nova para o lagar de azeite. Fizeram um trabalho perfeito, com certificação elétrica e tudo explicado. Desde então funciona sem falhas. Muito bom!',
- name: 'Carlos Pinto',
- location: 'Podence, Trás-os-Montes'
- },
- {
- text: 'Avaria elétrica às 2h da manhã no nosso turismo rural. Atenderam o telefone, vieram Atendimento prioritário e resolveram. Salvaram-nos de cancelar reservas. Serviço 5 estrelas!',
- name: 'Ana Ribeiro',
- location: 'Zona da Albufeira, Trás-os-Montes'
- },
- {
- text: 'Modernizaram toda a instalação elétrica da nossa casa antiga no centro de Macedo. Trabalho limpo, rápido e com garantia. O preço foi justo e agora temos tudo seguro e certificado.',
- name: 'José Martins',
- location: 'Centro Urbano, Trás-os-Montes'
- }
- ]
- };
- return testimonialsData[citySlug] || null;
+ // LOT 5 RÈGLE 72 : témoignages inventés supprimés. Section vide par défaut.
+ // Espace réservé pour témoignages réels de clients (à venir).
+ return null;
 }
 function NotFoundContent() {
  return (
