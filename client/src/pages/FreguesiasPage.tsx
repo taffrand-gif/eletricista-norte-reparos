@@ -167,7 +167,7 @@ export default function FreguesiasPage() {
  </div>
  <h3 className="text-xl font-bold mb-2">Resposta Rápida</h3>
  <p className="text-gray-600">
- Chegamos em 30-45 minutos para urgências
+ Resposta rápida garantida-45 minutos para urgências
  </p>
  </div>
  <div className="bg-white p-6 rounded-xl shadow-lg text-center">

@@ -19,7 +19,7 @@ const InnovativeHero: React.FC = () => {
  { icon: '📞', value: '40 min', label: 'Chegada Bragança' },
  ];
  const badgeText = isPlumber
- ? 'CANALIZADOR Atendimento 24h — RESPOSTA EM 2 MIN'
+ ? 'CANALIZADOR Atendimento 24h — Resposta rápida garantida'
  : 'ELETRICISTA CERTIFICADO — CHEGAMOS Atendimento prioritário';
  const badgeEmoji = isPlumber ? '💧' : '⚡';
  const gradientFrom = isPlumber ? 'from-blue-600' : 'from-amber-500';

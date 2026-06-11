@@ -952,7 +952,7 @@ const QuadroEletricoDispara: React.FC = () => {
  <span className="text-2xl">✅</span>
  <div>
  <p className="font-bold">Intervenção Rápida</p>
- <p className="text-sm text-white/80">Chegamos em 30-60 minutos</p>
+ <p className="text-sm text-white/80">Resposta rápida garantida-60 minutos</p>
  </div>
  </div>
  <div className="flex items-start gap-3">
