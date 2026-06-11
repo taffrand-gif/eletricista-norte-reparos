@@ -39,7 +39,7 @@ export interface ServiceConfig {
 export const electriciteConfig: ServiceConfig = {
  type: 'electricite',
  name: 'Eletricista',
- businessName: 'Eletricista Profissional 24h',
+ businessName: 'Norte Reparos - Eletricista Profissional',
  phone: '+351932321892',
  whatsappNumber: '351932321892',
  domain: 'eletricista-norte-reparos.pt',

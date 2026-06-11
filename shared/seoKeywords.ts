@@ -1,4 +1,4 @@
-// SEO Keywords configuration for Staff-Seekers (Eletricista)
+// SEO Keywords configuration for Norte Reparos (Eletricista)
 // Mots-clés longue traîne en portugais PT-PT pour 10 villes
 
 export interface CitySEOConfig {

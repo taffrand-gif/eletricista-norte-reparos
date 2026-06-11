@@ -1,10 +1,10 @@
-// Configuração para Staff-Seekers (Eletricista)
+// Configuração para Norte Reparos (Eletricista)
 // Zona de intervenção: raio de 100 km em torno de Trás-os-Montes
 // Site apenas em português — Preços sem IVA
 // NOVA GRELHA TARIFÁRIA 2026
 // Urgência: ×1.5 (50%) | Taxa horária: 70€/h
 
-export type SiteId = 'staff-seekers';
+export type SiteId = 'norte-reparos';
 
 export interface SiteConfig {
  id: SiteId;
@@ -108,9 +108,9 @@ export interface SiteConfig {
 // Urgência: ×1.5 (50% supplement)
 
 export const siteConfig: SiteConfig = {
- id: 'staff-seekers',
+ id: 'norte-reparos',
  name: 'Eletricista Profissional',
- title: 'Eletricista em Trás-os-Montes |  — Serviço ao Domicílio 24h',
+ title: 'Eletricista em Trás-os-Montes | Norte Reparos — Serviço ao Domicílio 24h/7d',
  description: 'Eletricista certificado ao seu domicílio em Trás-os-Montes. Quadros elétricos, curto-circuito, urgências 24h. Orçamento gratuito. Ligue 932 321 892.',
  phone: '932 321 892',
  whatsapp: '351932321892',

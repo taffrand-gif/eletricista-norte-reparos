@@ -14,19 +14,19 @@ export interface CityNAP {
 // Base business information
 export const businessInfo = {
  name: '',
- fullName: ' - Eletricista Profissional',
+ fullName: 'Norte Reparos - Eletricista Profissional',
  phone: '+351 932 321 892',
  phoneFormatted: '932 321 892',
  whatsapp: '351932321892',
  email: 'info@eletricista-norte-reparos.pt',
  domain: 'eletricista-norte-reparos.pt',
 
- // Base address (Trás-os-Montes headquarters)
+ // Base address (géo-neutre, R74 : jamais l'adresse précise)
  baseAddress: {
- streetAddress: 'Trás-os-Montes, Distrito de Bragança',
+ streetAddress: 'Trás-os-Montes',
  addressLocality: 'Trás-os-Montes',
- addressRegion: 'Bragança',
- postalCode: '5340-001',
+ addressRegion: 'Trás-os-Montes',
+ postalCode: '',
  addressCountry: 'PT'
  }
 };
