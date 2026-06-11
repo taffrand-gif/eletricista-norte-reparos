@@ -19,6 +19,24 @@
   ],
   "headers": [
     {
+      "source": "/(.*)electrician(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)electricien(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
       "source": "/client/public/eletricista-viana-do-bolo",
       "headers": [
         {
@@ -1423,33 +1441,7 @@
       ]
     },
     {
-      "source": "/client/public/electrician-tras-os-montes",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
       "source": "/client/public/fr",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/client/public/electricien-tras-os-montes",
       "headers": [
         {
           "key": "X-Robots-Tag",
