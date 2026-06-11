@@ -37,7 +37,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-viana-do-bolo",
+      "source": "/eletricista-viana-do-bolo",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -50,7 +50,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-urgente-viana-do-bolo",
+      "source": "/eletricista-urgente-viana-do-bolo",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -63,7 +63,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-vitigudino",
+      "source": "/eletricista-vitigudino",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -76,7 +76,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-urgente-vitigudino",
+      "source": "/eletricista-urgente-vitigudino",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -89,7 +89,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-puebla-de-sanabria",
+      "source": "/eletricista-puebla-de-sanabria",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -102,7 +102,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-urgente-puebla-de-sanabria",
+      "source": "/eletricista-urgente-puebla-de-sanabria",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -115,7 +115,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-sanchón-de-la-ribera",
+      "source": "/eletricista-sanchón-de-la-ribera",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -128,7 +128,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-justel",
+      "source": "/eletricista-justel",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -141,7 +141,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-la-peña",
+      "source": "/eletricista-la-peña",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -154,7 +154,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-san-vicente-de-la-cabeza",
+      "source": "/eletricista-san-vicente-de-la-cabeza",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -167,7 +167,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-galende",
+      "source": "/eletricista-galende",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -180,7 +180,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-asturianos",
+      "source": "/eletricista-asturianos",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -193,7 +193,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-lumbrales",
+      "source": "/eletricista-lumbrales",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -206,7 +206,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-lubián",
+      "source": "/eletricista-lubián",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -219,7 +219,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-muelas-de-los-caballeros",
+      "source": "/eletricista-muelas-de-los-caballeros",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -232,7 +232,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-trabazos",
+      "source": "/eletricista-trabazos",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -245,7 +245,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-villadepera",
+      "source": "/eletricista-villadepera",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -258,7 +258,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-la-vídola",
+      "source": "/eletricista-la-vídola",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -271,7 +271,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-sobradillo",
+      "source": "/eletricista-sobradillo",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -284,7 +284,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-cualedro",
+      "source": "/eletricista-cualedro",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -297,7 +297,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-videmala",
+      "source": "/eletricista-videmala",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -310,7 +310,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-riofrío-de-aliste",
+      "source": "/eletricista-riofrío-de-aliste",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -323,7 +323,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-sardon-de-los-frailes",
+      "source": "/eletricista-sardon-de-los-frailes",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -336,7 +336,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-viñas",
+      "source": "/eletricista-viñas",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -349,7 +349,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-masueco",
+      "source": "/eletricista-masueco",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -362,7 +362,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-almeida-de-sayago",
+      "source": "/eletricista-almeida-de-sayago",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -375,7 +375,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-manzanal-del-barco",
+      "source": "/eletricista-manzanal-del-barco",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -388,7 +388,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-verín",
+      "source": "/eletricista-verín",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -401,7 +401,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-vilvestre",
+      "source": "/eletricista-vilvestre",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -414,7 +414,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-almaraz-de-duero",
+      "source": "/eletricista-almaraz-de-duero",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -427,7 +427,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-fermoselle",
+      "source": "/eletricista-fermoselle",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -440,7 +440,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-san-vitero",
+      "source": "/eletricista-san-vitero",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -453,7 +453,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-barruecopardo",
+      "source": "/eletricista-barruecopardo",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -466,7 +466,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-laza",
+      "source": "/eletricista-laza",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -479,7 +479,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-luelmo",
+      "source": "/eletricista-luelmo",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -492,7 +492,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-trefacio",
+      "source": "/eletricista-trefacio",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -505,7 +505,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-pereña-de-la-ribera",
+      "source": "/eletricista-pereña-de-la-ribera",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -518,7 +518,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-aldeadavila-de-la-ribera",
+      "source": "/eletricista-aldeadavila-de-la-ribera",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -531,7 +531,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-muga-de-sayago",
+      "source": "/eletricista-muga-de-sayago",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -544,7 +544,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-santa-eufemia-del-barco",
+      "source": "/eletricista-santa-eufemia-del-barco",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -557,7 +557,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-alcañices",
+      "source": "/eletricista-alcañices",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -570,7 +570,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-palacios-de-sanabria",
+      "source": "/eletricista-palacios-de-sanabria",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -583,7 +583,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-manzanal-de-arriba",
+      "source": "/eletricista-manzanal-de-arriba",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -596,7 +596,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-villar-del-buey",
+      "source": "/eletricista-villar-del-buey",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -609,7 +609,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-mahíde",
+      "source": "/eletricista-mahíde",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -622,7 +622,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-mombuey",
+      "source": "/eletricista-mombuey",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -635,7 +635,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-villar-de-samaniego",
+      "source": "/eletricista-villar-de-samaniego",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -648,7 +648,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-rionegro-del-puente",
+      "source": "/eletricista-rionegro-del-puente",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -661,7 +661,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-aldeadávila-de-la-ribera",
+      "source": "/eletricista-aldeadávila-de-la-ribera",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -674,7 +674,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-gallegos-del-río",
+      "source": "/eletricista-gallegos-del-río",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -687,7 +687,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-salce",
+      "source": "/eletricista-salce",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -700,7 +700,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-losacio",
+      "source": "/eletricista-losacio",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -713,7 +713,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-pino-del-oro",
+      "source": "/eletricista-pino-del-oro",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -726,7 +726,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-robleda",
+      "source": "/eletricista-robleda",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -739,7 +739,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-roelos-de-sayago",
+      "source": "/eletricista-roelos-de-sayago",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -752,7 +752,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-sardón-de-los-frailes",
+      "source": "/eletricista-sardón-de-los-frailes",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -765,7 +765,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-monleras",
+      "source": "/eletricista-monleras",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -778,7 +778,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-villasbuenas",
+      "source": "/eletricista-villasbuenas",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -791,7 +791,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-villarmuerto",
+      "source": "/eletricista-villarmuerto",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -804,7 +804,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-olmillos-de-castro",
+      "source": "/eletricista-olmillos-de-castro",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -817,7 +817,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-losacino",
+      "source": "/eletricista-losacino",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -830,7 +830,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-peque",
+      "source": "/eletricista-peque",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -843,7 +843,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-villaseco-de-los-reyes",
+      "source": "/eletricista-villaseco-de-los-reyes",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -856,7 +856,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-argañín",
+      "source": "/eletricista-argañín",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -869,7 +869,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-sanchon-de-la-ribera",
+      "source": "/eletricista-sanchon-de-la-ribera",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -882,7 +882,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-hinojosa-de-duero",
+      "source": "/eletricista-hinojosa-de-duero",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -895,7 +895,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-manzanal-de-los-infantes",
+      "source": "/eletricista-manzanal-de-los-infantes",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -908,7 +908,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-figueruela-de-arriba",
+      "source": "/eletricista-figueruela-de-arriba",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -921,7 +921,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-fresno-de-sayago",
+      "source": "/eletricista-fresno-de-sayago",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -934,7 +934,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-trasmiras",
+      "source": "/eletricista-trasmiras",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -947,7 +947,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-puertas",
+      "source": "/eletricista-puertas",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -960,7 +960,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-samir-de-los-caños",
+      "source": "/eletricista-samir-de-los-caños",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -973,7 +973,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-moral-de-sayago",
+      "source": "/eletricista-moral-de-sayago",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -986,7 +986,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-trabanca",
+      "source": "/eletricista-trabanca",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -999,7 +999,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-oímbra",
+      "source": "/eletricista-oímbra",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1012,7 +1012,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-rosinos-de-la-requejada",
+      "source": "/eletricista-rosinos-de-la-requejada",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1025,7 +1025,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-carbellino",
+      "source": "/eletricista-carbellino",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1038,7 +1038,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-torregamones",
+      "source": "/eletricista-torregamones",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1051,7 +1051,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-saucelle",
+      "source": "/eletricista-saucelle",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1064,7 +1064,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-palacios-del-pan",
+      "source": "/eletricista-palacios-del-pan",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1077,7 +1077,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-villaseco-del-pan",
+      "source": "/eletricista-villaseco-del-pan",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1090,7 +1090,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-fonfría",
+      "source": "/eletricista-fonfría",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1103,7 +1103,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-carbajales-de-alba",
+      "source": "/eletricista-carbajales-de-alba",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1116,7 +1116,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-rabanales",
+      "source": "/eletricista-rabanales",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1129,7 +1129,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-muelas-del-pan",
+      "source": "/eletricista-muelas-del-pan",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1142,7 +1142,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-puerto-seguro",
+      "source": "/eletricista-puerto-seguro",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1155,7 +1155,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-villalcampo",
+      "source": "/eletricista-villalcampo",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1168,7 +1168,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-el-milano",
+      "source": "/eletricista-el-milano",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1181,7 +1181,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-villarino-de-los-aires",
+      "source": "/eletricista-villarino-de-los-aires",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1194,7 +1194,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-pedralba-de-la-pradería",
+      "source": "/eletricista-pedralba-de-la-pradería",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1207,7 +1207,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-villardiegua-de-la-ribera",
+      "source": "/eletricista-villardiegua-de-la-ribera",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1220,7 +1220,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-vegalatrave",
+      "source": "/eletricista-vegalatrave",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1233,7 +1233,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-san-justo",
+      "source": "/eletricista-san-justo",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1246,7 +1246,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-hermisende",
+      "source": "/eletricista-hermisende",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1259,7 +1259,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-rábano-de-aliste",
+      "source": "/eletricista-rábano-de-aliste",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1272,7 +1272,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-saldeana",
+      "source": "/eletricista-saldeana",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1285,7 +1285,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-rabano-de-aliste",
+      "source": "/eletricista-rabano-de-aliste",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1298,7 +1298,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-gamones",
+      "source": "/eletricista-gamones",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1311,7 +1311,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-malpartida",
+      "source": "/eletricista-malpartida",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1324,7 +1324,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-la-fregeneda",
+      "source": "/eletricista-la-fregeneda",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1337,7 +1337,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-bermillo-de-sayago",
+      "source": "/eletricista-bermillo-de-sayago",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1350,7 +1350,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-ahigal-de-villarino",
+      "source": "/eletricista-ahigal-de-villarino",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1363,7 +1363,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-lubian",
+      "source": "/eletricista-lubian",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1376,7 +1376,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-cobreros",
+      "source": "/eletricista-cobreros",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1389,7 +1389,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-cerezal-de-peñahorcada",
+      "source": "/eletricista-cerezal-de-peñahorcada",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1402,7 +1402,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-ferreras-de-arriba",
+      "source": "/eletricista-ferreras-de-arriba",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1415,7 +1415,7 @@
       ]
     },
     {
-      "source": "/client/public/eletricista-villardeciervos",
+      "source": "/eletricista-villardeciervos",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1428,7 +1428,7 @@
       ]
     },
     {
-      "source": "/client/public/es",
+      "source": "/es",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1441,7 +1441,7 @@
       ]
     },
     {
-      "source": "/client/public/fr",
+      "source": "/fr",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -1454,7 +1454,7 @@
       ]
     },
     {
-      "source": "/client/public/en",
+      "source": "/en",
       "headers": [
         {
           "key": "X-Robots-Tag",
