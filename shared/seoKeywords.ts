@@ -1,5 +1,5 @@
-// SEO Keywords configuration for Norte Reparos (Eletricista)
-// Mots-clés longue traîne en portugais PT-PT pour 10 villes
+// Configuração de palavras-chave SEO para Norte-Reparos (Canalizador)
+// Palavras-chave de cauda longa em português PT-PT para 10 cidades
 
 export interface CitySEOConfig {
  cityName: string;
@@ -11,175 +11,175 @@ export interface CitySEOConfig {
  ogDescription?: string;
 }
 
-export const CitySEO: Record<string, CitySEOConfig> = {
+export const norteReparosCitySEO: Record<string, CitySEOConfig> = {
  'macedo-de-cavaleiros': {
- cityName: 'Trás-os-Montes',
- title: 'Eletricista em Trás-os-Montes |  | 24h Urgências',
- description: 'Eletricista certificado em Trás-os-Montes. Instalação elétrica, quadro elétrico, certificação elétrica. Urgências 24h. Orçamento gratuito: 932 321 892',
+ cityName: 'Macedo de Cavaleiros',
+ title: 'Canalizador Macedo Cavaleiros 💧 24h | 928 484 451',
+ description: 'Cano rebentado em Macedo de Cavaleiros? Estamos aí em menos de 30 min. Desentupimentos urgentes, orçamento gratuito. Ligue: 928 484 451',
  keywords: [
- 'eletricista macedo de cavaleiros',
- 'eletricista urgente macedo de cavaleiros',
- 'instalação elétrica macedo de cavaleiros',
- 'quadro elétrico macedo de cavaleiros',
- 'certificação elétrica macedo de cavaleiros',
- 'eletricista Atendimento 24h/7d macedo de cavaleiros',
- 'preço eletricista macedo de cavaleiros',
- 'arranjo elétrica macedo de cavaleiros'
+ 'canalizador macedo de cavaleiros',
+ 'canalizador urgente macedo de cavaleiros',
+ 'desentupimentos macedo de cavaleiros',
+ 'arranjo fugas água macedo de cavaleiros',
+ 'canalizador 24 horas macedo de cavaleiros',
+ 'preço canalizador macedo de cavaleiros',
+ 'canalização nova macedo de cavaleiros',
+ 'arranjo esquentador macedo de cavaleiros'
  ],
- canonicalUrl: 'https://eletricista-norte-reparos.pt/eletricista-macedo-de-cavaleiros'
+ canonicalUrl: 'https://canalizador-norte-reparos.pt/canalizador-macedo-de-cavaleiros'
  },
  'braganca': {
  cityName: 'Bragança',
- title: 'Eletricista em Bragança |  | 24h Urgências',
- description: 'Eletricista certificado em Bragança. Instalação elétrica, quadro elétrico, certificação elétrica. Urgências 24h. Orçamento gratuito: 932 321 892',
+ title: 'Canalizador em Bragança | Canalizador Profissional | 24h Urgências',
+ description: 'Canalizador profissional em Bragança. Desentupimentos, arranjo fugas água, instalação sanitários. Urgências 24h. Orçamento gratuito: 928 484 451',
  keywords: [
- 'eletricista bragança',
- 'eletricista urgente bragança',
- 'instalação elétrica bragança',
- 'quadro elétrico bragança',
- 'certificação elétrica bragança',
- 'eletricista Atendimento 24h/7d bragança',
- 'preço eletricista bragança',
- 'arranjo elétrica bragança'
+ 'canalizador bragança',
+ 'canalizador urgente bragança',
+ 'desentupimentos bragança',
+ 'arranjo fugas água bragança',
+ 'canalizador 24 horas bragança',
+ 'preço canalizador bragança',
+ 'canalização nova bragança',
+ 'arranjo esquentador bragança'
  ],
- canonicalUrl: 'https://eletricista-norte-reparos.pt/eletricista-braganca'
+ canonicalUrl: 'https://canalizador-norte-reparos.pt/canalizador-braganca'
  },
  'mirandela': {
  cityName: 'Mirandela',
- title: 'Eletricista em Mirandela |  | 24h Urgências',
- description: 'Eletricista certificado em Mirandela. Instalação elétrica, quadro elétrico, certificação elétrica. Urgências 24h. Orçamento gratuito: 932 321 892',
+ title: 'Canalizador em Mirandela | Canalizador Profissional | 24h Urgências',
+ description: 'Canalizador profissional em Mirandela. Desentupimentos, arranjo fugas água, instalação sanitários. Urgências 24h. Orçamento gratuito: 928 484 451',
  keywords: [
- 'eletricista mirandela',
- 'eletricista urgente mirandela',
- 'instalação elétrica mirandela',
- 'quadro elétrico mirandela',
- 'certificação elétrica mirandela',
- 'eletricista Atendimento 24h/7d mirandela',
- 'preço eletricista mirandela',
- 'arranjo elétrica mirandela'
+ 'canalizador mirandela',
+ 'canalizador urgente mirandela',
+ 'desentupimentos mirandela',
+ 'arranjo fugas água mirandela',
+ 'canalizador 24 horas mirandela',
+ 'preço canalizador mirandela',
+ 'canalização nova mirandela',
+ 'arranjo esquentador mirandela'
  ],
- canonicalUrl: 'https://eletricista-norte-reparos.pt/eletricista-mirandela'
+ canonicalUrl: 'https://canalizador-norte-reparos.pt/canalizador-mirandela'
  },
  'chaves': {
  cityName: 'Chaves',
- title: 'Eletricista em Chaves |  | 24h Urgências',
- description: 'Eletricista certificado em Chaves. Instalação elétrica, quadro elétrico, certificação elétrica. Urgências 24h. Orçamento gratuito: 932 321 892',
+ title: 'Canalizador em Chaves | Canalizador Profissional | 24h Urgências',
+ description: 'Canalizador profissional em Chaves. Desentupimentos, arranjo fugas água, instalação sanitários. Urgências 24h. Orçamento gratuito: 928 484 451',
  keywords: [
- 'eletricista chaves',
- 'eletricista urgente chaves',
- 'instalação elétrica chaves',
- 'quadro elétrico chaves',
- 'certificação elétrica chaves',
- 'eletricista Atendimento 24h/7d chaves',
- 'preço eletricista chaves',
- 'arranjo elétrica chaves'
+ 'canalizador chaves',
+ 'canalizador urgente chaves',
+ 'desentupimentos chaves',
+ 'arranjo fugas água chaves',
+ 'canalizador 24 horas chaves',
+ 'preço canalizador chaves',
+ 'canalização nova chaves',
+ 'arranjo esquentador chaves'
  ],
- canonicalUrl: 'https://eletricista-norte-reparos.pt/eletricista-chaves'
+ canonicalUrl: 'https://canalizador-norte-reparos.pt/canalizador-chaves'
  },
  'valpacos': {
  cityName: 'Valpaços',
- title: 'Eletricista em Valpaços |  | 24h Urgências',
- description: 'Eletricista certificado em Valpaços. Instalação elétrica, quadro elétrico, certificação elétrica. Urgências 24h. Orçamento gratuito: 932 321 892',
+ title: 'Canalizador em Valpaços | Canalizador Profissional | 24h Urgências',
+ description: 'Canalizador profissional em Valpaços. Desentupimentos, arranjo fugas água, instalação sanitários. Urgências 24h. Orçamento gratuito: 928 484 451',
  keywords: [
- 'eletricista valpaços',
- 'eletricista urgente valpaços',
- 'instalação elétrica valpaços',
- 'quadro elétrico valpaços',
- 'certificação elétrica valpaços',
- 'eletricista Atendimento 24h/7d valpaços',
- 'preço eletricista valpaços',
- 'arranjo elétrica valpaços'
+ 'canalizador valpaços',
+ 'canalizador urgente valpaços',
+ 'desentupimentos valpaços',
+ 'arranjo fugas água valpaços',
+ 'canalizador 24 horas valpaços',
+ 'preço canalizador valpaços',
+ 'canalização nova valpaços',
+ 'arranjo esquentador valpaços'
  ],
- canonicalUrl: 'https://eletricista-norte-reparos.pt/eletricista-valpacos'
+ canonicalUrl: 'https://canalizador-norte-reparos.pt/canalizador-valpacos'
  },
  'vinhais': {
  cityName: 'Vinhais',
- title: 'Eletricista em Vinhais |  | 24h Urgências',
- description: 'Eletricista certificado em Vinhais. Instalação elétrica, quadro elétrico, certificação elétrica. Urgências 24h. Orçamento gratuito: 932 321 892',
+ title: 'Canalizador em Vinhais | Canalizador Profissional | 24h Urgências',
+ description: 'Canalizador profissional em Vinhais. Desentupimentos, arranjo fugas água, instalação sanitários. Urgências 24h. Orçamento gratuito: 928 484 451',
  keywords: [
- 'eletricista vinhais',
- 'eletricista urgente vinhais',
- 'instalação elétrica vinhais',
- 'quadro elétrico vinhais',
- 'certificação elétrica vinhais',
- 'eletricista Atendimento 24h/7d vinhais',
- 'preço eletricista vinhais',
- 'arranjo elétrica vinhais'
+ 'canalizador vinhais',
+ 'canalizador urgente vinhais',
+ 'desentupimentos vinhais',
+ 'arranjo fugas água vinhais',
+ 'canalizador 24 horas vinhais',
+ 'preço canalizador vinhais',
+ 'canalização nova vinhais',
+ 'arranjo esquentador vinhais'
  ],
- canonicalUrl: 'https://eletricista-norte-reparos.pt/eletricista-vinhais'
+ canonicalUrl: 'https://canalizador-norte-reparos.pt/canalizador-vinhais'
  },
  'miranda-do-douro': {
  cityName: 'Miranda do Douro',
- title: 'Eletricista em Miranda do Douro |  | 24h Urgências',
- description: 'Eletricista certificado em Miranda do Douro. Instalação elétrica, quadro elétrico, certificação elétrica. Urgências 24h. Orçamento gratuito: 932 321 892',
+ title: 'Canalizador em Miranda do Douro | Canalizador Profissional | 24h Urgências',
+ description: 'Canalizador profissional em Miranda do Douro. Desentupimentos, arranjo fugas água, instalação sanitários. Urgências 24h. Orçamento gratuito: 928 484 451',
  keywords: [
- 'eletricista miranda do douro',
- 'eletricista urgente miranda do douro',
- 'instalação elétrica miranda do douro',
- 'quadro elétrico miranda do douro',
- 'certificação elétrica miranda do douro',
- 'eletricista Atendimento 24h/7d miranda do douro',
- 'preço eletricista miranda do douro',
- 'arranjo elétrica miranda do douro'
+ 'canalizador miranda do douro',
+ 'canalizador urgente miranda do douro',
+ 'desentupimentos miranda do douro',
+ 'arranjo fugas água miranda do douro',
+ 'canalizador 24 horas miranda do douro',
+ 'preço canalizador miranda do douro',
+ 'canalização nova miranda do douro',
+ 'arranjo esquentador miranda do douro'
  ],
- canonicalUrl: 'https://eletricista-norte-reparos.pt/eletricista-miranda-do-douro'
+ canonicalUrl: 'https://canalizador-norte-reparos.pt/canalizador-miranda-do-douro'
  },
  'mogadouro': {
  cityName: 'Mogadouro',
- title: 'Eletricista em Mogadouro |  | 24h Urgências',
- description: 'Eletricista certificado em Mogadouro. Instalação elétrica, quadro elétrico, certificação elétrica. Urgências 24h. Orçamento gratuito: 932 321 892',
+ title: 'Canalizador em Mogadouro | Canalizador Profissional | 24h Urgências',
+ description: 'Canalizador profissional em Mogadouro. Desentupimentos, arranjo fugas água, instalação sanitários. Urgências 24h. Orçamento gratuito: 928 484 451',
  keywords: [
- 'eletricista mogadouro',
- 'eletricista urgente mogadouro',
- 'instalação elétrica mogadouro',
- 'quadro elétrico mogadouro',
- 'certificação elétrica mogadouro',
- 'eletricista Atendimento 24h/7d mogadouro',
- 'preço eletricista mogadouro',
- 'arranjo elétrica mogadouro'
+ 'canalizador mogadouro',
+ 'canalizador urgente mogadouro',
+ 'desentupimentos mogadouro',
+ 'arranjo fugas água mogadouro',
+ 'canalizador 24 horas mogadouro',
+ 'preço canalizador mogadouro',
+ 'canalização nova mogadouro',
+ 'arranjo esquentador mogadouro'
  ],
- canonicalUrl: 'https://eletricista-norte-reparos.pt/eletricista-mogadouro'
+ canonicalUrl: 'https://canalizador-norte-reparos.pt/canalizador-mogadouro'
  },
  'torre-de-moncorvo': {
  cityName: 'Torre de Moncorvo',
- title: 'Eletricista em Torre de Moncorvo |  | 24h Urgências',
- description: 'Eletricista certificado em Torre de Moncorvo. Instalação elétrica, quadro elétrico, certificação elétrica. Urgências 24h. Orçamento gratuito: 932 321 892',
+ title: 'Canalizador em Torre de Moncorvo | Canalizador Profissional | 24h Urgências',
+ description: 'Canalizador profissional em Torre de Moncorvo. Desentupimentos, arranjo fugas água, instalação sanitários. Urgências 24h. Orçamento gratuito: 928 484 451',
  keywords: [
- 'eletricista torre de moncorvo',
- 'eletricista urgente torre de moncorvo',
- 'instalação elétrica torre de moncorvo',
- 'quadro elétrico torre de moncorvo',
- 'certificação elétrica torre de moncorvo',
- 'eletricista Atendimento 24h/7d torre de moncorvo',
- 'preço eletricista torre de moncorvo',
- 'arranjo elétrica torre de moncorvo'
+ 'canalizador torre de moncorvo',
+ 'canalizador urgente torre de moncorvo',
+ 'desentupimentos torre de moncorvo',
+ 'arranjo fugas água torre de moncorvo',
+ 'canalizador 24 horas torre de moncorvo',
+ 'preço canalizador torre de moncorvo',
+ 'canalização nova torre de moncorvo',
+ 'arranjo esquentador torre de moncorvo'
  ],
- canonicalUrl: 'https://eletricista-norte-reparos.pt/eletricista-torre-de-moncorvo'
+ canonicalUrl: 'https://canalizador-norte-reparos.pt/canalizador-torre-de-moncorvo'
  },
  'freixo-de-espada-a-cinta': {
  cityName: 'Freixo de Espada à Cinta',
- title: 'Eletricista em Freixo de Espada à Cinta |  | 24h Urgências',
- description: 'Eletricista certificado em Freixo de Espada à Cinta. Instalação elétrica, quadro elétrico, certificação elétrica. Urgências 24h. Orçamento gratuito: 932 321 892',
+ title: 'Canalizador em Freixo de Espada à Cinta | Canalizador Profissional | 24h Urgências',
+ description: 'Canalizador profissional em Freixo de Espada à Cinta. Desentupimentos, arranjo fugas água, instalação sanitários. Urgências 24h. Orçamento gratuito: 928 484 451',
  keywords: [
- 'eletricista freixo de espada à cinta',
- 'eletricista urgente freixo de espada à cinta',
- 'instalação elétrica freixo de espada à cinta',
- 'quadro elétrico freixo de espada à cinta',
- 'certificação elétrica freixo de espada à cinta',
- 'eletricista Atendimento 24h/7d freixo de espada à cinta',
- 'preço eletricista freixo de espada à cinta',
- 'arranjo elétrica freixo de espada à cinta'
+ 'canalizador freixo de espada à cinta',
+ 'canalizador urgente freixo de espada à cinta',
+ 'desentupimentos freixo de espada à cinta',
+ 'arranjo fugas água freixo de espada à cinta',
+ 'canalizador 24 horas freixo de espada à cinta',
+ 'preço canalizador freixo de espada à cinta',
+ 'canalização nova freixo de espada à cinta',
+ 'arranjo esquentador freixo de espada à cinta'
  ],
- canonicalUrl: 'https://eletricista-norte-reparos.pt/eletricista-freixo-de-espada-a-cinta'
+ canonicalUrl: 'https://canalizador-norte-reparos.pt/canalizador-freixo-de-espada-a-cinta'
  }
 };
 
 // Helper function to get SEO config for a city
 export function getCitySEOConfig(citySlug: string): CitySEOConfig | null {
- return CitySEO[citySlug] || null;
+ return norteReparosCitySEO[citySlug] || null;
 }
 
 // Get all city slugs
 export function getAllCitySlugs(): string[] {
- return Object.keys(CitySEO);
+ return Object.keys(norteReparosCitySEO);
 }

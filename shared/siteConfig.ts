@@ -1,101 +1,94 @@
-// Configuração para Norte Reparos (Eletricista)
-// Zona de intervenção: raio de 100 km em torno de Trás-os-Montes
-// Site apenas em português — Preços sem IVA
-// NOVA GRELHA TARIFÁRIA 2026
-// Urgência: ×1.5 (50%) | Taxa horária: 70€/h
+// Configuração para Norte-Reparos - Canalizador
+// Site canalizador-norte-reparos.pt
+// Preços sem IVA - NOVA GRELHA TARIFÁRIA 2026
+// Z1-Z6 com preços de deslocação + taxa horária 70€/h
+// Surcharge urgência: 50% (×1.5)
 
 export type SiteId = 'norte-reparos';
 
 export interface SiteConfig {
- id: SiteId;
- name: string;
- title: string;
- description: string;
- phone: string;
- whatsapp: string;
- whatsappMessage: string;
- email: string;
- serviceType: string;
- domain: string;
- 
- // Design tokens
- colors: {
-   primary: string;
-   primaryDark: string;
-   primaryLight: string;
-   accent: string;
- };
- 
- // Hero section
- hero: {
-   title: string;
-   subtitle: string;
-   backgroundImage: string;
-   ogImage: string;
- };
- 
- // Services for calculator
- services: Array<{
-   id: string;
-   label: string;
-   basePrice: number;
- }>;
+  id: SiteId;
+  name: string;
+  title: string;
+  description: string;
+  phone: string;
+  whatsapp: string;
+  whatsappMessage: string;
+  email: string;
+  serviceType: string;
+  domain: string;
 
- // Pricing Zones - NOVA GRELHA 2026
- pricingZones: Array<{
-   zone: string;
-   name: string;
-   cities: string;
-   price: string;
-   time: string;
- }>;
+  // Design tokens
+  colors: {
+    primary: string;
+    primaryDark: string;
+    primaryLight: string;
+    accent: string;
+  };
 
- // Pricing config
- urgencyMultiplier: number;  // 1.5 = +50% pour urgência
- hourlyRate: number;           // 70€/h
+  // Hero section
+  hero: {
+    title: string;
+    subtitle: string;
+    backgroundImage: string;
+    ogImage: string;
+  };
 
- // Real Stories (Interventions)
- stories: Array<{
-   title: string;
-   location: string;
-   situation: string;
-   emotion: string;
-   solution: string;
- }>;
+  // Services for calculator
+  services: Array<{
+    id: string;
+    label: string;
+    basePrice: number;
+  }>;
 
- // Team / Avatars
- team: Array<{
-   name: string;
-   role: string;
-   location: string;
-   bio: string;
-   quote: string;
-   image: string;
- }>;
+  // Pricing Zones - NOVA GRELHA 2026
+  pricingZones: Array<{
+    zone: string;
+    name: string;
+    cities: string;
+    price: string;
+    time: string;
+  }>;
 
- // Testimonials
- testimonials: Array<{
-   id: string;
-   name: string;
-   location: string;
-   service: string;
-   text: string;
-   rating: number;
- }>;
+  // Pricing config
+  urgencyMultiplier: number;   // 1.5 = +50% pour urgence
+  hourlyRate: number;         // 70€/h
 
- // Company info
- company: {
-   shortDescription: string;
-   longDescription: string;
-   coverage: string;
-   yearEstablished: string;
- };
+  // Company info
+  company: {
+    fullName: string;
+    shortDescription: string;
+    longDescription: string;
+    coverage: string;
+    yearEstablished: string;
+  };
 
- // SEO
- seo: {
-   keywords: string[];
-   ogImage: string;
- };
+  // SEO
+  seo: {
+    keywords: string[];
+    ogImage: string;
+  };
+
+  // Testimonials for social proof
+  testimonials: Array<{
+    id: string;
+    name: string;
+    location: string;
+    service: string;
+    rating: number;
+    text: string;
+  }>;
+  // Real stories / case studies
+  stories: Array<{
+    title: string;
+    location: string;
+    situation: string;
+    emotion: string;
+    solution: string;
+  }>;
+  // Service metadata for dynamic routing
+  serviceName: string;
+  serviceSlug: string;
 }
 
 // GRELHA TARIFÁRIA 2026
@@ -106,137 +99,162 @@ export interface SiteConfig {
 // Z5: 55€ — Vila Real, Alijó, Sabrosa, Tabuaço, Armamar, Régua, Lamego, Sta Marta, Mesão Frio — 60-90 min
 // Z6: 65€ — Chaves, Vila Pouca, Boticas, Montalegre, Ribeira de Pena, Mondim, Moimenta, Sernancelhe, Penedono — sob marcação
 // Urgência: ×1.5 (50% supplement)
+// Taxa horária: 70€/h
 
 export const siteConfig: SiteConfig = {
- id: 'norte-reparos',
- name: 'Eletricista Profissional',
- title: 'Eletricista em Trás-os-Montes | Norte Reparos — Serviço ao Domicílio 24h/7d',
- description: 'Eletricista certificado ao seu domicílio em Trás-os-Montes. Quadros elétricos, curto-circuito, urgências 24h. Orçamento gratuito. Ligue 932 321 892.',
- phone: '932 321 892',
- whatsapp: '351932321892',
- whatsappMessage: 'Olá, preciso de um eletricista em Trás-os-Montes. Podem dar-me um orçamento?',
- email: 'info@eletricista-norte-reparos.pt',
- serviceType: 'Eletricista',
- domain: 'eletricista-norte-reparos.pt',
+  id: 'norte-reparos',
+  name: 'Canalizador Profissional',
+  title: 'Canalizador em Trás-os-Montes | Norte Reparos — Serviço ao Domicílio 24h',
+  description: 'Canalizador profissional ao seu domicílio em Trás-os-Montes. Fugas de água, desentupimentos, urgências 24h. Orçamento gratuito. Ligue 928 484 451.',
+  phone: '928 484 451',
+  whatsapp: '351928484451',
+  whatsappMessage: 'Olá, preciso de um canalizador em Trás-os-Montes. Podem dar-me um orçamento?',
+  email: 'info@canalizador-norte-reparos.pt',
+  serviceType: 'Canalizador',
+  domain: 'canalizador-norte-reparos.pt',
+  colors: {
+    primary: '#1e3a8a',
+    primaryDark: '#1e293b',
+    primaryLight: '#1e40af',
+    accent: '#b91c1c',
+  },
 
- colors: {
-   primary: '#9a3412',
-   primaryDark: '#7c2d12',
-   primaryLight: '#c2410c',
-   accent: '#b91c1c',
- },
+  hero: {
+    title: 'Água a Pingar? Cano Rebentado?',
+    subtitle: 'Serviço ao domicílio em Trás-os-Montes — 24h/7d. Sem quebrar azulejos. Preço dito antes de sair.',
+    backgroundImage: '/images-optimized/hero/hero-plumber-portugal.jpg',
+    ogImage: '/images-optimized/hero/hero-plumber-portugal.jpg'
+  },
 
- hero: {
-   title: 'Problemas Elétricos? Resolvemos Agora.',
-   subtitle: 'Serviço ao domicílio em Trás-os-Montes — 24h/7d. Diagnóstico gratuito. Preço dito antes de sair.',
-   backgroundImage: '/images-optimized/hero/hero-electrician-portugal.jpg',
-   ogImage: '/images-optimized/hero/hero-electrician-portugal.jpg'
- },
+  services: [
+    { id: 'fuga-agua', label: 'Arranjo Fuga Água', basePrice: 80 },
+    { id: 'desentupimento', label: 'Desentupimento', basePrice: 60 },
+    { id: 'esquentador', label: 'Instalação Esquentador', basePrice: 150 },
+    { id: 'substituicao', label: 'Substituição Canalização', basePrice: 120 },
+  ],
 
- services: [
-   { id: 'quadro-eletrico', label: 'Substituição Quadro Elétrico', basePrice: 200 },
-   { id: 'tomadas', label: 'Instalação Tomadas', basePrice: 50 },
-   { id: 'curto-circuito', label: 'Arranjo Curto-Circuito', basePrice: 90 },
-   { id: 'certificacao', label: 'Certificação elétrica', basePrice: 180 },
- ],
+  // Pricing Zones - NOVA GRELHA 2026
+  pricingZones: [
+    // Z1 - Macedo de Cavaleiros + redor
+    { zone: 'Z1', name: 'Macedo de Cavaleiros', cities: 'Macedo de Cavaleiros, Torre de Dona Chama', price: '15€', time: '< 30 min' },
+    // Z2 - Mirandela, Vila Flor, Alfândega, Carrazeda
+    { zone: 'Z2', name: 'Zona 2', cities: 'Mirandela, Vila Flor, Alfândega da Fé, Carrazeda de Ansiães', price: '25€', time: '< 40 min' },
+    // Z3 - Bragança, Vinhais, Vimioso, Torre Moncorvo, Mogadouro, Freixo
+    { zone: 'Z3', name: 'Zona 3', cities: 'Bragança, Vinhais, Vimioso, Torre de Moncorvo, Mogadouro, Freixo de Espada à Cinta', price: '35€', time: '< 60 min' },
+    // Z4 - Miranda do Douro, Foz Côa, S.João Pesqueira, Murça, Valpaços
+    { zone: 'Z4', name: 'Zona 4', cities: 'Miranda do Douro, Vila Nova de Foz Côa, São João da Pesqueira, Murça, Valpaços', price: '45€', time: '45-75 min' },
+    // Z5 - Vila Real, Alijó, Sabrosa, Tabuaço, Armamar, Régua, Lamego, Sta Marta, Mesão Frio
+    { zone: 'Z5', name: 'Zona 5', cities: 'Vila Real, Alijó, Sabrosa, Tabuaço, Armamar, Peso da Régua, Lamego, Santa Marta de Penaguião, Mesão Frio', price: '55€', time: '60-90 min' },
+    // Z6 - Chaves, Vila Pouca, Boticas, Montalegre, Ribeira de Pena, Mondim, Moimenta, Sernancelhe, Penedono
+    { zone: 'Z6', name: 'Zona 6', cities: 'Chaves, Vila Pouca de Aguiar, Boticas, Montalegre, Ribeira de Pena, Mondim de Basto, Moimenta da Beira, Sernancelhe, Penedono', price: '65€', time: 'Sob marcação' },
+  ],
 
- // Pricing Zones - NOVA GRELHA 2026
- pricingZones: [
-   { zone: 'Z1', name: 'Trás-os-Montes', cities: 'Trás-os-Montes, Torre de Dona Chama', price: '15€', time: '< 30 min' },
-   { zone: 'Z2', name: 'Zona 2', cities: 'Mirandela, Vila Flor, Alfândega da Fé, Carrazeda de Ansiães', price: '25€', time: '< 40 min' },
-   { zone: 'Z3', name: 'Zona 3', cities: 'Bragança, Vinhais, Vimioso, Torre de Moncorvo, Mogadouro, Freixo de Espada à Cinta', price: '35€', time: '< 60 min' },
-   { zone: 'Z4', name: 'Zona 4', cities: 'Miranda do Douro, Vila Nova de Foz Côa, São João da Pesqueira, Murça, Valpaços', price: '45€', time: '45-75 min' },
-   { zone: 'Z5', name: 'Zona 5', cities: 'Vila Real, Alijó, Sabrosa, Tabuaço, Armamar, Peso da Régua, Lamego, Santa Marta de Penaguião, Mesão Frio', price: '55€', time: '60-90 min' },
-   { zone: 'Z6', name: 'Zona 6', cities: 'Chaves, Vila Pouca de Aguiar, Boticas, Montalegre, Ribeira de Pena, Mondim de Basto, Moimenta da Beira, Sernancelhe, Penedono', price: '65€', time: 'Sob marcação' },
- ],
+  // NOVO: Urgência + Taxa Horária
+  urgencyMultiplier: 1.5,  // +50% pour urgence / fim de semana
+  hourlyRate: 70,            // 70€/h
 
- // NOVO: Urgência + Taxa Horária
- urgencyMultiplier: 1.5,  // +50% pour urgência / fim de semana
- hourlyRate: 70,           // 70€/h
+  company: {
+    fullName: 'Canalizador Profissional',
+    shortDescription: 'Serviço de canalização ao seu domicílio em Trás-os-Montes. Não temos loja — vamos até si.',
+    longDescription: 'A Norte Reparos é uma empresa de canalizações que serve toda a região de Trás-os-Montes e Norte de Portugal. Com mais de 10 anos de experiência no terreno, intervimos ao seu domicílio com equipamento profissional de diagnóstico — câmara térmica FLIR, câmara endoscópica de 30 metros e ferramentas calibradas Ridgid. Não temos loja — vamos até si. A sua zona é a nossa zona de trabalho.',
+    coverage: 'Trás-os-Montes — Distrito de Bragança, Vila Real, Guarda e Viseu',
+    yearEstablished: '2015'
+  },
 
- stories: [
-   {
-     title: "O Medo do Fogo",
-     location: "Trás-os-Montes",
-     situation: "Uma tomada na cozinha faz \"Bzzzt\" e solta faísca quando se liga a torradeira.",
-     emotion: "Medo de que a casa pegue fogo à noite.",
-     solution: "Trocamos a tomada e verificamos os fios por trás. 20 minutos, 35€ tudo incluído."
-   },
-   {
-     title: "O Forno que Dispara",
-     location: "Vila Real",
-     situation: "O Natal aproxima-se, o Sr. António quer assar o cabrito, mas o disjuntor dispara assim que o forno aquece.",
-     emotion: "Frustração, medo de estragar a ceia de Natal.",
-     solution: "Diagnóstico potência contador vs consumo forno. Reequilíbrio do quadro."
-   },
-   {
-     title: "O Interruptor Quente",
-     location: "Bragança - Centro Histórico",
-     situation: "Edifício antigo. O interruptor do corredor está quente ao toque.",
-     emotion: "Preocupação difusa, perigo invisível.",
-     solution: "Substituição imediata do mecanismo defeituoso (risco real de incêndio)."
-   },
-   {
-     title: "O Apagão Total",
-     location: "Aldeia isolada perto de Vinhais",
-     situation: "Trovoada, toda a aldeia tem luz menos a casa do Sr. José.",
-     emotion: "Isolamento total, arca cheia de carne que se vai estragar.",
-     solution: "Intervenção 4x4, arranjo do disjuntor diferencial que \"queimou\" com o raio."
-   }
- ],
+  seo: {
+    keywords: [
+      'canalizador bragança', 'canalizador mirandela', 'canalizador macedo de cavaleiros',
+      'canalizador urgente bragança', 'canalizador 24 horas mirandela', 'canalizador chaves',
+      'canalizador vila real', 'canalizador vinhais', 'canalizador miranda do douro',
+      'canalizador mogadouro', 'canalizador torre de moncorvo', 'canalizador trás-os-montes',
+      'desentupimento bragança', 'desentupimento mirandela', 'desentupir sanita bragança',
+      'desentupir wc mirandela', 'fuga de água bragança', 'fuga água urgente mirandela',
+      'esquentador bragança', 'esquentador mirandela', 'sanita entupida', 'wc entupido',
+      'cano rebentado', 'canalizador profissional trás-os-montes',
+      'desentupimento urgente bragança', 'canalizador 24 horas mirandela', 'fuga de água urgente',
+      'cano entupido macedo de cavaleiros', 'arranjo caldeira trás-os-montes',
+      'desentupir sanita preço', 'canalizador perto de mim bragança',
+      'desentupimento esgotos bragança', 'arranjo autoclismo',
+      'canalizador urgente chaves', 'desentupimento sanitário mirandela',
+      'fuga água parede bragança', 'arranjo esquentador vila real',
+      'canalizador emergência 24h', 'desentupimento urgente domingo',
+      'canalizador barato trás-os-montes', 'arranjo canalização antiga',
+      'desentupimento pia cozinha', 'canalizador para aldeias remotas'
+    ],
+    ogImage: '/images-optimized/hero/hero-plumber-portugal.jpg'
+  },
+  // Service routing metadata
+  serviceName: 'Canalizador',
+  serviceSlug: 'canalizador',
 
- team: [],
+  // Testimonials for Testimonials component
+  testimonials: [
+    { id: '1', name: 'António Santos', location: 'Bragança', service: 'Desentupimento', rating: 5, text: 'Resolveu o entupimento rapidamente. Profissional e eficiente.' },
+    { id: '2', name: 'Maria Ferreira', location: 'Mirandela', service: 'Arranjo Fuga', rating: 5, text: 'Fuga de água resolvida no mesmo dia. Muito satisfeito.' },
+    { id: '3', name: 'João Costa', location: 'Vila Real', service: 'Esquentador', rating: 5, text: 'Instalou o esquentador novo. Trabalho limpo e preço justo.' },
+    { id: '4', name: 'Rosa Marques', location: 'Chaves', service: 'Canalização', rating: 5, text: 'Profissional confiável. Já recorri várias vezes.' },
+    { id: '5', name: 'Pedro Almeida', location: 'Macedo de Cavaleiros', service: 'Urgência', rating: 5, text: 'Cano rebentou à meia-noite e veio rapidamente. Excelente serviço.' },
+    { id: '6', name: 'Ana Rodrigues', location: 'Valpaços', service: 'Manutenção', rating: 5, text: 'Manutenção preventiva bem feita. Recomendo.' },
+  ],
 
- testimonials: [
-   {
-     id: '1',
-     name: 'Paulo Mendes',
-     location: 'Bragança',
-     service: 'Substituição Quadro Elétrico',
-     text: 'Quadro elétrico antigo com fusíveis. Substituíram por um moderno com diferenciais. Trabalho impecável, tudo certificado. Agora sinto-me muito mais seguro em casa.',
-     rating: 5
-   },
-   {
-     id: '2',
-     name: 'Sandra Nunes',
-     location: 'Mirandela',
-     service: 'Certificação Elétrica',
-     text: 'Precisava de certificação para vender a casa. Fizeram inspeção completa, corrigiram pequenos problemas e emitiram certificado em 4 dias. Processo super rápido!',
-     rating: 5
-   },
-   {
-     id: '3',
-     name: 'Ricardo Ferreira',
-     location: 'Trás-os-Montes',
-     service: 'Instalação Iluminação LED',
-     text: 'Instalaram iluminação LED em toda a casa. Ficou linda e a conta de luz já baixou 60%! Fizeram projeto de iluminação gratuito. Profissionais excelentes.',
-     rating: 5
-   },
- ],
-
- company: {
-   shortDescription: 'Serviço de eletricidade ao seu domicílio em Trás-os-Montes. Não temos loja — vamos até si.',
-   longDescription: 'A  é uma empresa de eletricidade que cobre toda a região de Trás-os-Montes e Norte de Portugal. Com mais de 15 anos de experiência em instalações e urgências elétricas, utilizamos equipamento profissional certificado — multímetro Fluke calibrado e câmara térmica FLIR para diagnósticos precisos. Deslocamo-nos até si. Rápido. Com garantia escrita.',
-   coverage: 'Trás-os-Montes — Distrito de Bragança, Vila Real, Guarda e Viseu',
-   yearEstablished: '2015'
- },
-
- seo: {
-   keywords: [
-     'eletricista bragança', 'eletricista mirandela', 'eletricista macedo de cavaleiros',
-     'eletricista urgente bragança', 'eletricista Atendimento 24h/7d mirandela', 'eletricista chaves',
-     'eletricista vila real', 'eletricista vinhais', 'eletricista miranda do douro',
-     'eletricista mogadouro', 'eletricista torre de moncorvo', 'eletricista trás-os-montes',
-     'quadro elétrico bragança', 'quadro elétrico mirandela', 'certificação elétrica bragança',
-     'certificação elétrica mirandela', 'curto circuito bragança', 'avaria elétrica mirandela',
-     'disjuntor a disparar', 'tomada não funciona', 'eletricista urgente 24h',
-     'eletricista profissional', 'certificação elétrica trás-os-montes'
-   ],
-   ogImage: '/images-optimized/hero/hero-electrician-portugal.jpg'
- }
+  // Real stories for RealStories component
+  stories: [
+    {
+      title: 'Fuga de água às 3h da manhã',
+      location: 'Bragança',
+      situation: 'Cliente acordou com água a inundar a cozinha. Não sabia onde estava a fuga.',
+      emotion: 'Pânico total às 3h da manhã',
+      solution: 'Chegámos em 40 minutos, detetámos a fuga com câmara e reparámos sem quebrar azulejos.'
+    },
+    {
+      title: 'Esquentador parado em pleno inverno',
+      location: 'Mirandela',
+      situation: 'Família de 4 pessoas sem água quente a -5°C.',
+      emotion: 'Urgência extrema com crianças pequenas',
+      solution: 'Diagnóstico rápido, peça substituída e água quente restaurada em 2 horas.'
+    },
+    {
+      title: 'Entupimento crítico no restaurante',
+      location: 'Vila Real',
+      situation: 'Canos da cozinha totalmente entupidos. Restaurante encerrado.',
+      emotion: 'Prejuízo enorme a cada hora fechada',
+      solution: 'Máquina profissional Ridgid utilizada. Cano desobstruído em 1h. Restaurante abriu no dia seguinte.'
+    }
+  ]
 };
 
-// Helper function to get current site config
+// Helper function to get local price by zone
+export function getLocalPrice(zone: string): string {
+  const zoneData = siteConfig.pricingZones.find(z => z.zone === zone);
+  return zoneData ? zoneData.price : '15€';
+}
+
+// Helper function to get zone for a city
+export function getZoneForCity(cityName: string): string {
+  const lowerCity = cityName.toLowerCase();
+  const zoneMap: Record<string, string> = {
+    // Z1
+    'macedo de cavaleiros': 'Z1', 'torre de dona chama': 'Z1',
+    // Z2
+    'mirandela': 'Z2', 'vila flor': 'Z2', 'alfândega da fé': 'Z2', 'carrazeda de ansiães': 'Z2',
+    // Z3
+    'bragança': 'Z3', 'vinhais': 'Z3', 'vimioso': 'Z3', 'torre de moncorvo': 'Z3',
+    'mogadouro': 'Z3', 'freixo de espada à cinta': 'Z3',
+    // Z4
+    'miranda do douro': 'Z4', 'vila nova de foz côa': 'Z4', 'são joão da pesqueira': 'Z4',
+    'murça': 'Z4', 'valpaços': 'Z4',
+    // Z5
+    'vila real': 'Z5', 'alijó': 'Z5', 'sabrosa': 'Z5', 'tabuaço': 'Z5',
+    'armamar': 'Z5', 'peso da régua': 'Z5', 'lamego': 'Z5',
+    'santa marta de penaguião': 'Z5', 'mesão frio': 'Z5',
+    // Z6
+    'chaves': 'Z6', 'vila pouca de aguiar': 'Z6', 'boticas': 'Z6', 'montalegre': 'Z6',
+    'ribeira de pena': 'Z6', 'mondim de basto': 'Z6', 'moimenta da beira': 'Z6',
+    'sernancelhe': 'Z6', 'penedono': 'Z6',
+  };
+  return zoneMap[lowerCity] || 'Z3';
+}
+
 export function getCurrentSiteConfig(): SiteConfig {
- return siteConfig;
+  return siteConfig;
 }

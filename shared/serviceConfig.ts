@@ -1,9 +1,9 @@
 /**
- * Configuração do serviço (Eletricidade)
- * Modificar estas variáveis para personalizar o site
+ * Configuration du service Plomberie
+ * Modifier ces variables pour personnaliser le site
  */
 
-export type ServiceType = 'electricite';
+export type ServiceType = 'plomberie';
 
 export interface ServiceConfig {
  type: ServiceType;
@@ -15,79 +15,106 @@ export interface ServiceConfig {
  googleAdsId: string;
  googleAdsConversionLabel: string;
  
- // Cores e design
+ // Couleurs et design
  gradient: {
  from: string;
  to: string;
  };
  accentColor: string;
  
- // Conteúdo
+ // Contenu
  heroTitle: string;
  heroSubtitle: string;
  heroEmoji: string;
  serviceEmoji: string;
  
- // Serviços oferecidos
+ // Services offerts
  services: string[];
  
- // Problemas típicos (para geração dinâmica)
+ // Problèmes typiques (pour génération dynamique)
  commonProblems: string[];
 }
 
-// Configuração Eletricidade (Eletricista Profissional)
-export const electriciteConfig: ServiceConfig = {
- type: 'electricite',
- name: 'Eletricista',
- businessName: 'Norte Reparos - Eletricista Profissional',
- phone: '+351932321892',
- whatsappNumber: '351932321892',
- domain: 'eletricista-norte-reparos.pt',
+// Configuration Plomberie (Canalizador Profissional)
+export const plumberieConfig: ServiceConfig = {
+ type: 'plomberie',
+ name: 'Canalizador',
+ businessName: 'Norte Reparos - Canalizador Profissional',
+ phone: '+351928484451',
+ whatsappNumber: '351928484451',
+ domain: 'canalizador-norte-reparos.pt',
  googleAdsId: 'AW-17915870228',
  googleAdsConversionLabel: '+Lk1CO3R64gZEKvwk8c9',
  
- // Cores: ÂMBAR (#FFA000) + azul escuro (#1A237E) + branco
+ // Couleurs: BLEU (#1E88E5) + blanc + ORANGE (#FF6D00 pour CTA)
  gradient: {
- from: '#FFA000',
- to: '#FF8F00'},
- accentColor: '#1A237E',
+ from: '#1E88E5', // Bleu principal
+ to: '#0d47a1', // Bleu foncé
+ },
+ accentColor: '#FF6D00', // Orange pour CTA
  
- heroTitle: 'Sem Luz em Casa? Chegamos Atendimento prioritário.',
- heroSubtitle: 'Avaria elétrica, disjuntor a disparar, curto-circuito. Diagnóstico gratuito. Preço fixo dito ao telefone antes de sair.',
- heroEmoji: '⚡',
- serviceEmoji: '🔌',
+ heroTitle: 'Água a Pingar? Cano Rebentado?',
+ heroSubtitle: 'Canalizador em Bragança em 40 Minutos — 24h/7d. Sem quebrar azulejos. Preço dito antes de sair.',
+ heroEmoji: '💧',
+ serviceEmoji: '🔧',
  
  services: [
- 'Instalação Elétrica Completa',
- 'Arranjo de Avarias Elétricas',
- 'Quadros Elétricos Modernos',
- 'Iluminação Interior/Exterior',
- 'certificação elétrica',
+ 'Desentupimentos',
+ 'Arranjo de Fugas de Água',
+ 'Instalação Sanitários',
+ 'Aquecimento Central',
+ 'Canalização Nova',
  'Urgências 24h',
  ],
  
  commonProblems: [
- 'curto-circuito',
- 'disjuntor salta',
- 'sem luz',
- 'quadro avariado',
- 'tomada com problemas',
- 'fiação defeituosa',
- 'interruptor não funciona',
- 'curto na cozinha',
- 'tomada a aquecer',
- 'fiação exposta',
- 'falha elétrica geral',
- 'curto no chuveiro',
- 'disjuntor não arma',
- 'fiação a cheirar a queimado',
- 'tomada sem energia',
+ 'fuga de água',
+ 'entupimento WC',
+ 'torneira quebrada',
+ 'cano rebentado',
+ 'autoclismo avariado',
+ 'fuga cozinha',
+ 'entupimento pia',
+ 'caldeira sem água quente',
+ 'fuga casa de banho',
+ 'canalização entupida',
+ 'torneira a pingar',
+ 'fuga no teto',
+ 'entupimento ralo',
+ 'esquentador avariado',
+ 'fuga tubagem',
+ // Termes de recherche plomberie supplémentaires
+ 'desentupimento urgente',
+ 'canalizador 24 horas',
+ 'fuga água parede',
+ 'cano entupido',
+ 'arranjo caldeira',
+ 'desentupir sanita',
+ 'canalizador perto de mim',
+ 'desentupimento esgotos',
+ 'arranjo autoclismo',
+ 'entupimento sanitário',
+ 'fuga água chão',
+ 'arranjo esquentador',
+ 'canalizador emergência',
+ 'desentupimento domingo',
+ 'canalizador barato',
+ 'arranjo canalização antiga',
+ 'desentupimento pia cozinha',
+ 'canalizador aldeias remotas',
+ 'fuga água jardim',
+ 'entupimento banheira',
+ 'arranjo torneira misturadora',
+ 'desentupimento lavatório',
+ 'fuga água piscina',
+ 'arranjo sistema aquecimento',
+ 'entupimento canalização exterior',
  ]};
 
-// Configuração fixa para Staff-Seekers (Eletricidade)
-export const ACTIVE_CONFIG = electriciteConfig;
+// Configuration fixe para Norte-Reparos (Plomberie)
+export const ACTIVE_CONFIG = plumberieConfig;
 
-// Lista das cidades prioritárias
+// Liste des 12 villes prioritaires
 export const CITIES = [
  {
  name: 'Alfândega da Fé',
@@ -106,7 +133,7 @@ export const CITIES = [
  slug: 'freixo-de-espada-a-cinta',
  district: 'Bragança'},
  {
- name: 'Trás-os-Montes',
+ name: 'Macedo de Cavaleiros',
  slug: 'macedo-de-cavaleiros',
  district: 'Bragança'},
  {
@@ -214,7 +241,7 @@ export const CITIES = [
  { name: 'Linhares', slug: 'linhares', district: 'Bragança', parentCity: 'Carrazeda de Ansiães' },
  { name: 'Parambos', slug: 'parambos', district: 'Bragança', parentCity: 'Carrazeda de Ansiães' },
  { name: 'Seixo de Ansiães', slug: 'seixo-de-ansiaes', district: 'Bragança', parentCity: 'Carrazeda de Ansiães' },
- // Novas cidades principais
+ // Nouvelles villes principales
  { name: 'Valpaços', slug: 'valpacos', district: 'Vila Real' },
  { name: 'Murça', slug: 'murca', district: 'Vila Real' },
  { name: 'Vila Nova de Foz Côa', slug: 'vila-nova-de-foz-coa', district: 'Guarda' },
