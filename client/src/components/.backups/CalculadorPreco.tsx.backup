@@ -17,7 +17,7 @@ const servicesElec = [
   { label: 'Avaria / Diagnóstico', min: 50, max: 80 },
   { label: 'Modernização Quadro Simples', min: 200, max: 300 },
   { label: 'Quadro Elétrico Completo', min: 400, max: 600 },
-  { label: 'Certificação CERTIEL', min: 150, max: 200 },
+  { label: 'Fichas eletrotécnicas assinadas por técnico certificado DGEG', min: 150, max: 200 },
   { label: 'Instalação de Candeeiro', min: 35, max: 60 },
   { label: 'Reparação Quadro (dispara)', min: 80, max: 150 },
   { label: 'Instalação Elétrica Completa', min: 200, max: 500 },
