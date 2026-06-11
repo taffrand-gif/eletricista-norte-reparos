@@ -17,7 +17,7 @@ export interface CityServicePage {
  priority: number;
 }
 
-export const SERVICES_STAFF_SEEKERS: Service[] = [
+export const SERVICES_: Service[] = [
  {
  slug: 'quadros-eletricos',
  name: 'Quadros Elétricos',
@@ -60,7 +60,7 @@ export function generateCityServiceMatrix(): CityServicePage[] {
  const matrix: CityServicePage[] = [];
 
  CITIES.forEach(city => {
- SERVICES_STAFF_SEEKERS.forEach(service => {
+ SERVICES_.forEach(service => {
  matrix.push({
  citySlug: city.slug,
  cityName: city.name,
@@ -97,7 +97,7 @@ function calculatePriority(city: any, service: Service): number {
 
 export function getCityServiceData(serviceSlug: string, citySlug: string) {
  const city = CITIES.find(c => c.slug === citySlug);
- const service = SERVICES_STAFF_SEEKERS.find(s => s.slug === serviceSlug);
+ const service = SERVICES_.find(s => s.slug === serviceSlug);
 
  if (!city || !service) return null;
 

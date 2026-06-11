@@ -1,5 +1,5 @@
 import { useRoute } from 'wouter';
-import { SERVICES_STAFF_SEEKERS } from '@/../../shared/cityServiceMatrix';
+import { SERVICES_ } from '@/../../shared/cityServiceMatrix';
 import { CITIES, ACTIVE_CONFIG } from '@/../../shared/serviceConfig';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 export default function ServiceHub() {
  const [, params] = useRoute('/:service');
  if (!params) return null;
- const service = SERVICES_STAFF_SEEKERS.find(s => s.slug === params.service);
+ const service = SERVICES_.find(s => s.slug === params.service);
  if (!service) return null;
  const accentColor = '#FF6B35';
  const mainCities = CITIES.filter(c => !c.parentCity);

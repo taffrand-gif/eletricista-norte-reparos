@@ -363,7 +363,7 @@ export default function StructuredData() {
  ],
  "sameAs": [
  `https://wa.me/${config.whatsapp || '351932321892'}?text=${encodeURIComponent(config.whatsappMessage)}`,
- "https://www.facebook.com/staffseekers"
+ "https://www.facebook.com/"
  ],
  "priceRange": "€€",
  "currenciesAccepted": "EUR",

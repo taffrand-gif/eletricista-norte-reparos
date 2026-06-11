@@ -11,7 +11,7 @@ export interface CitySEOConfig {
  ogDescription?: string;
 }
 
-export const staffSeekersCitySEO: Record<string, CitySEOConfig> = {
+export const CitySEO: Record<string, CitySEOConfig> = {
  'macedo-de-cavaleiros': {
  cityName: 'Trás-os-Montes',
  title: 'Eletricista em Trás-os-Montes |  | 24h Urgências',
@@ -176,10 +176,10 @@ export const staffSeekersCitySEO: Record<string, CitySEOConfig> = {
 
 // Helper function to get SEO config for a city
 export function getCitySEOConfig(citySlug: string): CitySEOConfig | null {
- return staffSeekersCitySEO[citySlug] || null;
+ return CitySEO[citySlug] || null;
 }
 
 // Get all city slugs
 export function getAllCitySlugs(): string[] {
- return Object.keys(staffSeekersCitySEO);
+ return Object.keys(CitySEO);
 }
