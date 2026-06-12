@@ -62,7 +62,7 @@ export const eletricistaReviews: ReviewData[] = [
  city: "Bragança"
  },
  {
- author: "Fernando L.",
+ author: "Cliente",
  rating: 5,
  date: "2026-02-21",
  text: "Quadro elétrico completamente queimado. Substituíram tudo em 3h com certificação. Excelente trabalho!",
@@ -83,7 +83,7 @@ export const eletricistaReviews: ReviewData[] = [
  city: "Trás-os-Montes"
  },
  {
- author: "Isabel C.",
+ author: "Cliente",
  rating: 5,
  date: "2026-02-26",
  text: "certificação elétrica para casa nova. Serviço impecável e preço combinado antes. Obrigada!",

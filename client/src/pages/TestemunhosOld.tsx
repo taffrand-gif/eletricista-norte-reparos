@@ -207,7 +207,7 @@ function getTestimonials(serviceType: 'plomberie' | 'electricite'): Testimonial[
  text: "Muito satisfeita com o serviço. Fizeram a certificação elétrica de forma rápida e profissional. Explicaram tudo sobre o processo. Equipa de confiança!"
  },
  {
- name: "Carlos Rodrigues",
+ name: "Cliente",
  city: "Mogadouro",
  rating: 5,
  date: "Outubro 2025",
@@ -215,7 +215,7 @@ function getTestimonials(serviceType: 'plomberie' | 'electricite'): Testimonial[
  text: "Rapidez e eficiência. Liguei de manhã e à tarde já estava resolvido. O técnico foi muito simpático e o preço foi honesto. Vou guardar o contacto!"
  },
  {
- name: "Teresa Fernandes",
+ name: "Cliente",
  city: "Miranda do Douro",
  rating: 5,
  date: "Setembro 2025",
@@ -223,7 +223,7 @@ function getTestimonials(serviceType: 'plomberie' | 'electricite'): Testimonial[
  text: "Salvaram o meu fim de semana! A sanita entupiu na sexta à noite e eles vieram no sábado de manhã. Problema resolvido Atendimento prioritário. Muito obrigada!"
  },
  {
- name: "Manuel Santos",
+ name: "Cliente",
  city: "Vila Flor",
  rating: 5,
  date: "Agosto 2025",
@@ -231,7 +231,7 @@ function getTestimonials(serviceType: 'plomberie' | 'electricite'): Testimonial[
  text: "Profissionais de primeira. Instalaram torneiras novas em toda a casa. Trabalho limpo, rápido e bem feito. Preço combinado sem surpresas. Recomendo vivamente!"
  },
  {
- name: "Isabel Alves",
+ name: "Cliente Alves",
  city: "Torre de Moncorvo",
  rating: 5,
  date: "Julho 2025",
@@ -247,7 +247,7 @@ function getTestimonials(serviceType: 'plomberie' | 'electricite'): Testimonial[
  text: "Serviço de urgência impecável. Tive uma fuga grave e a equipa chegou rapidamente. Resolveram o problema e ainda deram conselhos para prevenir futuras fugas. Top!"
  },
  {
- name: "Luísa Gomes",
+ name: "Cliente Gomes",
  city: "Carrazeda de Ansiães",
  rating: 5,
  date: "Maio 2025",
@@ -290,7 +290,7 @@ function getTestimonials(serviceType: 'plomberie' | 'electricite'): Testimonial[
  text: "Instalaram várias tomadas novas em casa. Trabalho limpo, rápido e bem feito. O eletricista foi muito cuidadoso e deixou tudo arrumado. Recomendo!"
  },
  {
- name: "José Carvalho",
+ name: "Cliente Carvalho",
  city: "Miranda do Douro",
  rating: 5,
  date: "Setembro 2025",
@@ -314,7 +314,7 @@ function getTestimonials(serviceType: 'plomberie' | 'electricite'): Testimonial[
  text: "Tinham um problema elétrico que ninguém conseguia encontrar. Eles detetaram e resolveram rapidamente. Muito competentes e honestos!"
  },
  {
- name: "Helena Nunes",
+ name: "Cliente Nunes",
  city: "Vinhais",
  rating: 5,
  date: "Junho 2025",

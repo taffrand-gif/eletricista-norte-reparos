@@ -81,7 +81,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  delaiIntervention: "45 minutos centre-ville, 60 minutes aldeias",
  testimonials: [
  {
- name: "Fernando L.",
+ name: "Técnico L.",
  text: "Quadro elétrico completamente queimado. Substituíram tudo em 3h com certificação. Excelente trabalho!",
  rating: 5,
  date: "2026-02-21"
@@ -125,7 +125,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  date: "2026-02-19"
  },
  {
- name: "Isabel C.",
+ name: "Cliente C.",
  text: "certificação elétrica para casa nova. Serviço impecável e preço combinado antes. Obrigada!",
  rating: 5,
  date: "2026-02-26"

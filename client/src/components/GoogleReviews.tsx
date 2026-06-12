@@ -11,7 +11,7 @@ interface Review {
 }
 const reviews: Review[] = [
  {
- name: 'Manuel S.',
+ name: 'Cliente',
  initial: 'M',
  city: 'Bragança',
  rating: 5,
@@ -25,7 +25,7 @@ const reviews: Review[] = [
  text: 'Instalou o quadro elétrico novo em meio dia. Preço justo e trabalho impecável.',
  date: 'há 2 semanas'},
  {
- name: 'Carlos M.',
+ name: 'Cliente',
  initial: 'C',
  city: 'Vila Real',
  rating: 5,
@@ -46,7 +46,7 @@ const reviews: Review[] = [
  text: 'O melhor eletricista da região. Sempre disponível e preços honestos.',
  date: 'há 1 mês'},
  {
- name: 'Teresa F.',
+ name: 'Cliente',
  initial: 'T',
  city: 'Mogadouro',
  rating: 5,

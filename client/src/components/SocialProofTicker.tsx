@@ -9,12 +9,12 @@ const citiesStaff = [
  'Lamego', 'Mogadouro', 'Torre de Moncorvo', 'Vinhais', 'Alfândega da Fé',
 ];
 const namesNorte = [
- 'Maria S.', 'António F.', 'João M.', 'Ana R.', 'Manuel P.',
- 'Rosa L.', 'Carlos D.', 'Teresa B.', 'José A.', 'Fernanda C.',
+ 'Maria S.', 'António F.', 'João M.', 'Ana R.', "Cliente",
+ 'Rosa L.', "Cliente", "Cliente", "Cliente", 'Fernanda C.',
 ];
 const namesStaff = [
- 'Pedro G.', 'Luísa M.', 'Ricardo S.', 'Helena F.', 'Miguel A.',
- 'Carla T.', 'Nuno R.', 'Isabel P.', 'Tiago L.', 'Sofia D.',
+ 'Pedro G.', "Cliente", 'Ricardo S.', "Cliente", 'Miguel A.',
+ 'Carla T.', 'Nuno R.', "Cliente", 'Tiago L.', 'Sofia D.',
 ];
 const actionsNorte = [
  'pediu orçamento para desentupimento de WC',

@@ -36,7 +36,7 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <span className="text-2xl">💰</span>
  </div>
  <div>
- <p className="font-semibold text-gray-900">Carlos Mendes</p>
+ <p className="font-semibold text-gray-900">Técnico Mendes</p>
  <p className="text-gray-600">Gestor de Projetos Elétricos com 10+ anos na região</p>
  </div>
  </div>
@@ -516,7 +516,7 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <div className="md:w-3/4">
  <h3 className="text-2xl font-bold text-gray-900 mb-2">Sobre o Autor</h3>
  <p className="text-gray-700 mb-4">
- <strong>Carlos Mendes</strong> é gestor de projetos elétricos com mais de 10 anos de experiência 
+ <strong>Técnico Mendes</strong> é gestor de projetos elétricos com mais de 10 anos de experiência 
  na região de <Link to="/servicos">Trás-os-Montes</Link>. Já coordenou mais de 300 projetos de instalação e renovação elétrica, 
  desde pequenas arranjos a instalações completas em casas centenárias. Especialista em 
  orçamentação transparente e adaptação de soluções técnicas à realidade económica regional.
