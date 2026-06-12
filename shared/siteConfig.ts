@@ -1,5 +1,5 @@
-// Configuração para Norte-Reparos - Canalizador
-// Site canalizador-norte-reparos.pt
+// Configuração para Norte-Reparos - Eletricista
+// Site eletricista-norte-reparos.pt
 // Preços sem IVA - NOVA GRELHA TARIFÁRIA 2026
 // Z1-Z6 com preços de deslocação + taxa horária 70€/h
 // Surcharge urgência: 50% (×1.5)
@@ -103,15 +103,15 @@ export interface SiteConfig {
 
 export const siteConfig: SiteConfig = {
   id: 'norte-reparos',
-  name: 'Canalizador Profissional',
-  title: 'Canalizador em Trás-os-Montes | Norte Reparos — Serviço ao Domicílio 24h',
-  description: 'Canalizador profissional ao seu domicílio em Trás-os-Montes. Fugas de água, desentupimentos, urgências 24h. Orçamento gratuito. Ligue 928 484 451.',
-  phone: '928 484 451',
-  whatsapp: '351928484451',
-  whatsappMessage: 'Olá, preciso de um canalizador em Trás-os-Montes. Podem dar-me um orçamento?',
-  email: 'info@canalizador-norte-reparos.pt',
-  serviceType: 'Canalizador',
-  domain: 'canalizador-norte-reparos.pt',
+  name: 'Eletricista Profissional',
+  title: 'Eletricista em Trás-os-Montes | Norte Reparos — Serviço ao Domicílio 24h',
+  description: 'Eletricista profissional ao seu domicílio em Trás-os-Montes. Avaria elétrica, instalação, certificação, urgências 24h. Orçamento gratuito. Ligue 932 321 892.',
+  phone: '932 321 892',
+  whatsapp: '351932321892',
+  whatsappMessage: 'Olá, preciso de um eletricista em Trás-os-Montes. Podem dar-me um orçamento?',
+  email: 'info@eletricista-norte-reparos.pt',
+  serviceType: 'Eletricista',
+  domain: 'eletricista-norte-reparos.pt',
   colors: {
     primary: '#1e3a8a',
     primaryDark: '#1e293b',
@@ -120,17 +120,17 @@ export const siteConfig: SiteConfig = {
   },
 
   hero: {
-    title: 'Água a Pingar? Cano Rebentado?',
-    subtitle: 'Serviço ao domicílio em Trás-os-Montes — 24h/7d. Sem quebrar azulejos. Preço dito antes de sair.',
-    backgroundImage: '/images-optimized/hero/hero-plumber-portugal.jpg',
-    ogImage: '/images-optimized/hero/hero-plumber-portugal.jpg'
+    title: 'Avaria Elétrica? Curto-Circuito?',
+    subtitle: 'Serviço ao domicílio em Trás-os-Montes — 24h/7d. Orçamento gratuito antes de iniciar. Diagnóstico com multímetro certificado.',
+    backgroundImage: '/images-optimized/hero/hero-electrician-portugal.jpg',
+    ogImage: '/images-optimized/hero/hero-electrician-portugal.jpg'
   },
 
   services: [
-    { id: 'fuga-agua', label: 'Arranjo Fuga Água', basePrice: 80 },
-    { id: 'desentupimento', label: 'Desentupimento', basePrice: 60 },
-    { id: 'esquentador', label: 'Instalação Esquentador', basePrice: 150 },
-    { id: 'substituicao', label: 'Substituição Canalização', basePrice: 120 },
+    { id: 'avaria-eletrica', label: 'Reparação Avaria Elétrica', basePrice: 80 },
+    { id: 'quadro-eletrico', label: 'Quadro Elétrico', basePrice: 250 },
+    { id: 'instalacao-eletrica', label: 'Instalação Elétrica', basePrice: 200 },
+    { id: 'certificacao', label: 'Certificação Elétrica', basePrice: 180 },
   ],
 
   // Pricing Zones - NOVA GRELHA 2026
@@ -154,72 +154,47 @@ export const siteConfig: SiteConfig = {
   hourlyRate: 70,            // 70€/h
 
   company: {
-    fullName: 'Canalizador Profissional',
-    shortDescription: 'Serviço de canalização ao seu domicílio em Trás-os-Montes. Não temos loja — vamos até si.',
-    longDescription: 'A Norte Reparos é uma empresa de canalizações que serve toda a região de Trás-os-Montes e Norte de Portugal. Com mais de 10 anos de experiência no terreno, intervimos ao seu domicílio com equipamento profissional de diagnóstico — câmara térmica FLIR, câmara endoscópica de 30 metros e ferramentas calibradas Ridgid. Não temos loja — vamos até si. A sua zona é a nossa zona de trabalho.',
+    fullName: 'Eletricista Profissional',
+    shortDescription: 'Serviço de eletricidade ao seu domicílio em Trás-os-Montes. Não temos loja — vamos até si.',
+    longDescription: 'A Norte Reparos é uma empresa de instalações elétricas que serve toda a região de Trás-os-Montes e Norte de Portugal. Com mais de 10 anos de experiência no terreno, intervimos ao seu domicílio com equipamento profissional de diagnóstico — multímetro Fluke, câmara térmica FLIR, ferramentas calibradas e certificado DGEG. Não temos loja — vamos até si. A sua zona é a nossa zona de trabalho.',
     coverage: 'Trás-os-Montes — Distrito de Bragança, Vila Real, Guarda e Viseu',
     yearEstablished: '2015'
   },
 
   seo: {
     keywords: [
-      'canalizador bragança', 'canalizador mirandela', 'canalizador macedo de cavaleiros',
-      'canalizador urgente bragança', 'canalizador 24 horas mirandela', 'canalizador chaves',
-      'canalizador vila real', 'canalizador vinhais', 'canalizador miranda do douro',
-      'canalizador mogadouro', 'canalizador torre de moncorvo', 'canalizador trás-os-montes',
-      'desentupimento bragança', 'desentupimento mirandela', 'desentupir sanita bragança',
-      'desentupir wc mirandela', 'fuga de água bragança', 'fuga água urgente mirandela',
-      'esquentador bragança', 'esquentador mirandela', 'sanita entupida', 'wc entupido',
-      'cano rebentado', 'canalizador profissional trás-os-montes',
-      'desentupimento urgente bragança', 'canalizador 24 horas mirandela', 'fuga de água urgente',
-      'cano entupido macedo de cavaleiros', 'arranjo caldeira trás-os-montes',
-      'desentupir sanita preço', 'canalizador perto de mim bragança',
-      'desentupimento esgotos bragança', 'arranjo autoclismo',
-      'canalizador urgente chaves', 'desentupimento sanitário mirandela',
-      'fuga água parede bragança', 'arranjo esquentador vila real',
-      'canalizador emergência 24h', 'desentupimento urgente domingo',
-      'canalizador barato trás-os-montes', 'arranjo canalização antiga',
-      'desentupimento pia cozinha', 'canalizador para aldeias remotas'
+      'eletricista bragança', 'eletricista mirandela', 'eletricista macedo de cavaleiros',
+      'eletricista urgente bragança', 'eletricista 24 horas mirandela', 'eletricista chaves',
+      'eletricista vila real', 'eletricista vinhais', 'eletricista miranda do douro',
+      'eletricista mogadouro', 'eletricista torre de moncorvo', 'eletricista trás-os-montes',
+      'avaria elétrica bragança', 'avaria elétrica mirandela', 'disjuntor dispara bragança',
+      'quadro elétrico mirandela', 'curto-circuito urgente',
+      'instalação elétrica bragança', 'instalação elétrica mirandela', 'tomada avariada',
+      'eletricista profissional trás-os-montes',
+      'avaria elétrica urgente bragança', 'eletricista 24 horas mirandela',
+      'certificação elétrica macedo de cavaleiros', 'arranjo quadro elétrico trás-os-montes',
+      'preço eletricista bragança', 'eletricista perto de mim bragança',
+      'substituição quadro elétrico bragança', 'certificação CERTIEL',
+      'eletricista urgente chaves', 'instalação elétrica mirandela',
+      'avaria quadro elétrico bragança', 'arranjo disjuntor vila real',
+      'eletricista emergência 24h', 'avaria elétrica urgente domingo',
+      'eletricista barato trás-os-montes', 'instalação elétrica antiga',
+      'iluminação LED cozinha', 'eletricista para aldeias remotas',
+      'eletricista certificado CERTIEL', 'quadro elétrico dispara',
+      'instalação elétrica casa antiga', 'tomadas e interruptores'
     ],
-    ogImage: '/images-optimized/hero/hero-plumber-portugal.jpg'
+    ogImage: '/images-optimized/hero/hero-electrician-portugal.jpg'
   },
   // Service routing metadata
-  serviceName: 'Canalizador',
-  serviceSlug: 'canalizador',
+  serviceName: 'Eletricista',
+  serviceSlug: 'eletricista',
 
   // Testimonials for Testimonials component
   testimonials: [
-    { id: '1', name: 'António Santos', location: 'Bragança', service: 'Desentupimento', rating: 5, text: 'Resolveu o entupimento rapidamente. Profissional e eficiente.' },
-    { id: '2', name: 'Maria Ferreira', location: 'Mirandela', service: 'Arranjo Fuga', rating: 5, text: 'Fuga de água resolvida no mesmo dia. Muito satisfeito.' },
-    { id: '3', name: 'João Costa', location: 'Vila Real', service: 'Esquentador', rating: 5, text: 'Instalou o esquentador novo. Trabalho limpo e preço justo.' },
-    { id: '4', name: 'Rosa Marques', location: 'Chaves', service: 'Canalização', rating: 5, text: 'Profissional confiável. Já recorri várias vezes.' },
-    { id: '5', name: 'Pedro Almeida', location: 'Macedo de Cavaleiros', service: 'Urgência', rating: 5, text: 'Cano rebentou à meia-noite e veio rapidamente. Excelente serviço.' },
-    { id: '6', name: 'Ana Rodrigues', location: 'Valpaços', service: 'Manutenção', rating: 5, text: 'Manutenção preventiva bem feita. Recomendo.' },
   ],
 
   // Real stories for RealStories component
   stories: [
-    {
-      title: 'Fuga de água às 3h da manhã',
-      location: 'Bragança',
-      situation: 'Cliente acordou com água a inundar a cozinha. Não sabia onde estava a fuga.',
-      emotion: 'Pânico total às 3h da manhã',
-      solution: 'Chegámos em 40 minutos, detetámos a fuga com câmara e reparámos sem quebrar azulejos.'
-    },
-    {
-      title: 'Esquentador parado em pleno inverno',
-      location: 'Mirandela',
-      situation: 'Família de 4 pessoas sem água quente a -5°C.',
-      emotion: 'Urgência extrema com crianças pequenas',
-      solution: 'Diagnóstico rápido, peça substituída e água quente restaurada em 2 horas.'
-    },
-    {
-      title: 'Entupimento crítico no restaurante',
-      location: 'Vila Real',
-      situation: 'Canos da cozinha totalmente entupidos. Restaurante encerrado.',
-      emotion: 'Prejuízo enorme a cada hora fechada',
-      solution: 'Máquina profissional Ridgid utilizada. Cano desobstruído em 1h. Restaurante abriu no dia seguinte.'
-    }
   ]
 };
 
