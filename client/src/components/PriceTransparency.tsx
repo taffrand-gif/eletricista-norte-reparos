@@ -164,8 +164,8 @@ function PriceTransparency() {
  ★★★★★
  </div>
  <p className="text-gray-600">
- <strong className="text-gray-900"></strong> baseado em{' '}
- <strong className="text-gray-900"> que apreciaram a transparência
+ <strong className="text-gray-900">baseado em{' '}
+ que apreciaram a transparência</strong>
  </p>
  </div>
  </div>

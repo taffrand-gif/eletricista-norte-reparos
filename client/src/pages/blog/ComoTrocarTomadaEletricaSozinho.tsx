@@ -268,3 +268,9 @@ const ComoTrocarTomadaEletricaSozinho: React.FC = () => {
  </p>
  </div>
  </section>
+ </div>
+ </article>
+ </BlogLayout>
+ );
+}
+
