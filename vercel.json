@@ -2056,8 +2056,8 @@
     }
   ],
   "redirects": [
-    { "source": "/blog/contratar-eletricista-2026.html", "destination": "/top-10-razoes-contratar-eletricista.html", "statusCode": 301 },
-    { "source": "/blog/guia-completo-instalacao-eletrica-casa-antiga.html", "destination": "/instalacao-eletrica-antiga-perigos.html", "statusCode": 301 },
+    { "source": "/blog/contratar-canalizador-2026.html", "destination": "/top-10-razoes-contratar-canalizador.html", "statusCode": 301 },
+    { "source": "/blog/guia-completo-canalizacao-casa-antiga.html", "destination": "/guia-completo-canalizacao-casa-antiga-portugal.html", "statusCode": 301 },
     { "source": "/amazon.html", "destination": "/", "statusCode": 301 },
     { "source": "/zonas-de-intervencao.html", "destination": "/zona-intervencao.html", "statusCode": 301 },
     { "source": "/fugas-agua.html", "destination": "/fuga-agua.html", "statusCode": 301 },
@@ -2087,8 +2087,6 @@
     { "source": "/blog/certificacao--monforte-rio-livre.html", "destination": "/blog/certificacao-monforte-rio-livre.html", "statusCode": 301 },
     { "source": "/blog/certificacao--moncorvo.html", "destination": "/blog/certificacao-moncorvo.html", "statusCode": 301 },
     { "source": "/blog/certificacao--ribeira-pena.html", "destination": "/blog/certificacao-ribeira-pena.html", "statusCode": 301 },
-    { "source": "/blog/certificacao--vimioso-guia.html", "destination": "/blog/certificacao-vimioso-guia.html", "statusCode": 301 },
-    { "source": "/blog/certificacao-eletrica-mirandela.html", "destination": "/blog/certificacao-eletrica-mirandela-guia.html", "statusCode": 301 },
-    { "source": "/blog/certificacao-mirandela.html", "destination": "/blog/certificacao-mirandela-guia.html", "statusCode": 301 }
+    { "source": "/blog/certificacao--vimioso-guia.html", "destination": "/blog/certificacao-vimioso-guia.html", "statusCode": 301 }
   ]
 }
