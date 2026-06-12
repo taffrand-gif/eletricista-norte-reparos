@@ -422,7 +422,7 @@ export default function QuadroEletricoDisparaCausas() {
  </Link>
  </li>
  <li>
- <Link href="/blog/certificacao--guia-completo" className="text-orange-600 hover:text-orange-700">
+ <Link href="/blog/certificacao-guia-completo" className="text-orange-600 hover:text-orange-700">
  → certificação elétrica: Guia Completo 2026
  </Link>
  </li>

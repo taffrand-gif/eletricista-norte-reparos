@@ -117,7 +117,7 @@ const BlogIndex: React.FC = () => {
  imageUrl: '/images-optimized/blog/quadro-antigo.jpg'
  },
  {
- slug: 'certificacao-eletrica--guia',
+ slug: 'certificacao-eletrica-guia',
  title: 'Certificação Elétrica : Guia Completo 2026',
  excerpt: 'Tudo sobre a certificação elétrica em Portugal: quando é obrigatória, como obter, custos e validade.',
  category: 'Legislação',

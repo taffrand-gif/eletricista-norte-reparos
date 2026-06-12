@@ -27,7 +27,7 @@ export default function CertificacaoEletricaCertiel() {
  canonical.setAttribute('rel', 'canonical');
  document.head.appendChild(canonical);
  }
- canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/blog/certificacao-eletrica--guia');
+ canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/blog/certificacao-eletrica-guia');
  }, []);
  return (
  <div className="min-h-screen flex flex-col">

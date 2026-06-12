@@ -65,7 +65,7 @@ function Footer() {
  <ul className="space-y-2 text-sm">
  <li><a href="/blog/como-escolher-eletricista-certificado" className="text-gray-200 hover:text-white transition-colors">Como Escolher Eletricista</a></li>
  <li><a href="/blog/quadro-eletrico-disjuntores-disparar" className="text-gray-200 hover:text-white transition-colors">Disjuntores Disparam</a></li>
- <li><a href="/blog/certificacao--obrigatoria" className="text-gray-200 hover:text-white transition-colors">certificação elétrica</a></li>
+ <li><a href="/blog/certificacao-obrigatoria" className="text-gray-200 hover:text-white transition-colors">certificação elétrica</a></li>
  <li><a href="/blog" className="text-gray-200 hover:text-white transition-colors font-semibold">Ver todos →</a></li>
  </ul>
  </div>

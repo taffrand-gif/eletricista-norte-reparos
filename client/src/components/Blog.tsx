@@ -42,7 +42,7 @@ export default function Blog() {
  date: '10 Jan 2026',
  readTime: '7 min',
  image: '/images-optimized/blog/electrical-panel-certification.jpg',
- link: '/blog/certificacao--tudo-saber'},
+ link: '/blog/certificacao-tudo-saber'},
  {
  title: 'Sinais de Problemas Elétricos em Casa',
  excerpt: 'Conheça os sinais de alerta que indicam problemas na instalação elétrica e saiba quando chamar um eletricista urgente.',

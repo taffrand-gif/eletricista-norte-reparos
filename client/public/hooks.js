@@ -10,7 +10,7 @@
  var path = window.location.pathname.replace(/\.html$/, '').replace(/^\//, '');
  var citySlug = '';
  var cityName = '';
- var prefixes = ['eletricista-perto-de-mim-','urgencia-eletricista-','quadros-eletricos-','iluminacao-led-','certificacao--','alarme-','eletricista-'];
+ var prefixes = ['eletricista-perto-de-mim-','urgencia-eletricista-','quadros-eletricos-','iluminacao-led-','certificacao-','alarme-','eletricista-'];
  for (var i = 0; i < prefixes.length; i++) {
  if (path.indexOf(prefixes[i]) === 0) {
  citySlug = path.replace(prefixes[i], '');

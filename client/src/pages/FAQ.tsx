@@ -165,7 +165,7 @@ export default function FAQPage() {
  <ul className="space-y-2">
  <li><Link href="/servicos" className="text-orange-600 hover:underline">Todos os Serviços</Link></li>
  <li><Link href="/blog/custo-eletricista-tras-os-montes-precos" className="text-orange-600 hover:underline">Preços Eletricista</Link></li>
- <li><Link href="/blog/certificacao-eletrica--guia" className="text-orange-600 hover:underline">certificação elétrica</Link></li>
+ <li><Link href="/blog/certificacao-eletrica-guia" className="text-orange-600 hover:underline">certificação elétrica</Link></li>
  <li><Link href="/blog/paineis-solares-tras-os-montes-guia" className="text-orange-600 hover:underline">Painéis Solares</Link></li>
  <li><Link href="/blog" className="text-orange-600 hover:underline">Blog com Dicas</Link></li>
  </ul>

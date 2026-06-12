@@ -17,7 +17,7 @@ const FEATURED_POSTS = [
  readTime: '4 min'
  },
  {
- slug: 'certificacao--obrigatoria',
+ slug: 'certificacao-obrigatoria',
  title: 'certificação elétrica: É Obrigatória?',
  excerpt: 'Tudo sobre a certificação elétrica obrigatória em Portugal.',
  date: '2026-02-25',

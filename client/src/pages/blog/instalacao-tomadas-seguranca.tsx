@@ -347,7 +347,7 @@ export default function InstalacaoTomadasSeguranca() {
  <p className="text-sm text-gray-600">Descubra porque o quadro dispara</p>
  </a>
  </Link>
- <Link href="/blog/certificacao--guia-completo">
+ <Link href="/blog/certificacao-guia-completo">
  <a className="block p-4 border border-gray-200 rounded-lg hover:border-blue-600 transition">
  <h4 className="font-bold text-gray-900 mb-2">certificação elétrica: Guia Completo</h4>
  <p className="text-sm text-gray-600">Tudo sobre certificação elétrica</p>

@@ -33,7 +33,7 @@ export const SERVICES_: Service[] = [
  description: 'Instalação e arranjo de tomadas e interruptores'
  },
  {
- slug: 'certificacao-',
+ slug: 'certificacao',
  name: 'certificação elétrica',
  basePrice: 175,
  icon: '📋',
@@ -83,7 +83,7 @@ function calculatePriority(city: any, service: Service): number {
  }
 
  // Boost for high-demand services
- if (['avarias-urgentes', 'certificacao-'].includes(service.slug)) {
+ if (['avarias-urgentes', 'certificacao'].includes(service.slug)) {
  priority += 0.05;
  }
 
