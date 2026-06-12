@@ -1,4 +1,4 @@
-/* hooks.js — Conversion hooks for Staff-Seekers
+/* hooks.js — Conversion hooks for Norte Reparos
  1. WhatsApp buttons by problem type
  2. Dynamic "Atendimento 24h" widget
  3. "Último trabalho" badge

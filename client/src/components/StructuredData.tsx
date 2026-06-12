@@ -1,5 +1,5 @@
 // Componente Structured Data (Schema.org)
-// Schema Markup LocalBusiness: Plumber para norte-reparos, Electrician para staff-seekers
+// Schema Markup LocalBusiness: Plumber para norte-reparos, Electrician para norte-reparos
 import { useEffect } from 'react';
 import { useSite } from '@/contexts/SiteContext';
 import { useLocation as useWouterLocation } from 'wouter';

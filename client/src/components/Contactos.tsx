@@ -31,7 +31,7 @@ export default function Contactos() {
  phone: formData.phone,
  email: formData.email,
  message: formData.message,
- _subject: "Novo contacto Staff-Seekers",
+ _subject: "Novo contacto Norte Reparos",
  _template: "table",
  _captcha: "false"})});
  if (res.ok) {

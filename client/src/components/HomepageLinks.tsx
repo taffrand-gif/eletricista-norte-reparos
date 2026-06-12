@@ -1,4 +1,4 @@
-// SEO Internal Links section for Staff-Seekers homepage
+// SEO Internal Links section for Norte Reparos homepage
 // Adds 15+ internal links to services, cities, urgency pages, and blog articles
 export default function HomepageLinks() {
  return (
