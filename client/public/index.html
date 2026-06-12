@@ -3,46 +3,46 @@
 <script>
 // A/B Testing: 50/50 split
 (function() {
-  const AB_KEY = 'nr_ab_home_2026';
-  const VARIANTS = ['A', 'B'];
-  let variant = localStorage.getItem(AB_KEY);
-  if (!variant) {
-    variant = VARIANTS[Math.floor(Math.random() * 2)];
-    localStorage.setItem(AB_KEY, variant);
-  }
-  document.documentElement.setAttribute('data-ab-variant', variant);
-  // Track impression
-  if (typeof fetch !== 'undefined') {
-    fetch('/admin/track', {
-      method: 'POST',
-      body: JSON.stringify({
-        event: 'ab_view',
-        variant: variant,
-        page: window.location.pathname,
-        ts: Date.now()
-      }),
-      headers: { 'Content-Type': 'application/json' }
-    }).catch(() => {});
-  }
+ const AB_KEY = 'nr_ab_home_2026';
+ const VARIANTS = ['A', 'B'];
+ let variant = localStorage.getItem(AB_KEY);
+ if (!variant) {
+ variant = VARIANTS[Math.floor(Math.random() * 2)];
+ localStorage.setItem(AB_KEY, variant);
+ }
+ document.documentElement.setAttribute('data-ab-variant', variant);
+ // Track impression
+ if (typeof fetch !== 'undefined') {
+ fetch('/admin/track', {
+ method: 'POST',
+ body: JSON.stringify({
+ event: 'ab_view',
+ variant: variant,
+ page: window.location.pathname,
+ ts: Date.now()
+ }),
+ headers: { 'Content-Type': 'application/json' }
+ }).catch(() => {});
+ }
 })();
 </script>
 <style>
 [data-ab-variant="B"] .hero-cta {
-  background: linear-gradient(135deg, #FF6B35, #ff8c5a) !important;
-  font-size: 1.4rem !important;
-  padding: 1.5rem 3rem !important;
-  box-shadow: 0 8px 24px rgba(255, 107, 53, .4) !important;
-  animation: pulse-b 2s infinite !important;
+ background: linear-gradient(135deg, #FF6B35, #ff8c5a) !important;
+ font-size: 1.4rem !important;
+ padding: 1.5rem 3rem !important;
+ box-shadow: 0 8px 24px rgba(255, 107, 53, .4) !important;
+ animation: pulse-b 2s infinite !important;
 }
 @keyframes pulse-b {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
+ 0%, 100% { transform: scale(1); }
+ 50% { transform: scale(1.05); }
 }
 [data-ab-variant="B"] .hero-title::after {
-  content: " ← Resposta rápida garantida";
-  color: #FF6B35;
-  font-size: 0.6em;
-  font-weight: 700;
+ content: " ← Resposta rápida garantida";
+ color: #FF6B35;
+ font-size: 0.6em;
+ font-weight: 700;
 }
 </style>
 <meta charset="UTF-8" /><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" /><meta name="theme-color" content="#FF6B35" /><meta name="mobile-web-app-capable" content="yes" /><meta name="apple-mobile-web-app-capable" content="yes" /><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /><link rel="icon" type="image/svg+xml" href="/favicon.svg" /><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" /><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /><link rel="manifest" href="/site.webmanifest" /><title>Eletricista Profissional Trás-os-Montes | Norte Reparos</title><meta name="description" content="Eletricista profissional em Trás-os-Montes. Quadros elétricos, iluminação LED, certificação, avarias elétricas. Atendimento 24h. Orçamento gratuito." /><meta name="keywords" content="eletricista bragança, eletricista mirandela, eletricista macedo de cavaleiros, eletricista urgente bragança, eletricista Atendimento 24h/7d mirandela, eletricista chaves, eletricista vila real, eletricista vinhais, eletricista miranda do douro, eletricista mogadouro, eletricista torre de moncorvo, eletricista trás-os-montes, quadro elétrico bragança, certificação elétrica bragança, certificação elétrica mirandela, curto circuito bragança, avaria elétrica mirandela, disjuntor a disparar, tomada não funciona, eletricista urgente 24h, eletricista profissional trás-os-montes" /><link rel="canonical" href="https://eletricista-norte-reparos.pt/" /><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin /><link rel="preconnect" href="https://www.google-analytics.com" crossorigin /><link rel="dns-prefetch" href="https://www.googletagmanager.com" /><link rel="dns-prefetch" href="https://www.google-analytics.com" /><link rel="dns-prefetch" href="https://ipapi.co" /><link rel="dns-prefetch" href="https://nominatim.openstreetmap.org" /><script async src="https://www.googletagmanager.com/gtag/js?id=G-ELETRICISTA2026"></script><script>
@@ -148,36 +148,36 @@ if(typeof localStorage!=='undefined'&&localStorage.getItem('exitShown')){
 </section>
 
 <section class="services-complementares" style="background: #f8f9fa; padding: 2rem; border-radius: 8px; margin: 2rem 0;">
-  <h2 style="color: #2193b0; margin-top: 0;">Serviços complementares em Trás-os-Montes</h2>
-  <p>Além do serviço principal que descrevemos nesta página, a <strong>Norte Reparos</strong> oferece uma gama completa de serviços técnicos em Trás-os-Montes e arredores. Estamos disponíveis Atendimento 24h/7d, 7 dias por semana, incluindo fins de semana e feriados, sem qualquer custo adicional.</p>
-  
-  <h3>Tipos de intervenção que realizamos</h3>
-  <p>A nossa equipa de técnicos certificados trata qualquer problema de canalização ou eletricidade numa só deslocação. Para casos mais complexos, fazemos um diagnóstico detalhado no local e apresentamos um orçamento gratuito antes de qualquer trabalho. O preço de deslocação é fixo e comunicado antes da nossa chegada, sem surpresas.</p>
+ <h2 style="color: #2193b0; margin-top: 0;">Serviços complementares em Trás-os-Montes</h2>
+ <p>Além do serviço principal que descrevemos nesta página, a <strong>Norte Reparos</strong> oferece uma gama completa de serviços técnicos em Trás-os-Montes e arredores. Estamos disponíveis Atendimento 24h/7d, 7 dias por semana, incluindo fins de semana e feriados, sem qualquer custo adicional.</p>
+ 
+ <h3>Tipos de intervenção que realizamos</h3>
+ <p>A nossa equipa de técnicos certificados trata qualquer problema de canalização ou eletricidade numa só deslocação. Para casos mais complexos, fazemos um diagnóstico detalhado no local e apresentamos um orçamento gratuito antes de qualquer trabalho. O preço de deslocação é fixo e comunicado antes da nossa chegada, sem surpresas.</p>
 
-  <h3>Zonas servidas em redor de Trás-os-Montes</h3>
-  <p>Servimos toda a região transmontana, com tempos de resposta rápidos para Trás-os-Montes e todas as aldeias vizinhas. A nossa base na região permite-nos deslocar-nos rapidamente a Bragança, Mirandela, Vinhais, Mogadouro, Vimioso, Miranda do Douro, Valpaços, Chaves, Vila Real, Lamego, Peso da Régua e muitas outras localidades.</p>
+ <h3>Zonas servidas em redor de Trás-os-Montes</h3>
+ <p>Servimos toda a região transmontana, com tempos de resposta rápidos para Trás-os-Montes e todas as aldeias vizinhas. A nossa base na região permite-nos deslocar-nos rapidamente a Bragança, Mirandela, Vinhais, Mogadouro, Vimioso, Miranda do Douro, Valpaços, Chaves, Vila Real, Lamego, Peso da Régua e muitas outras localidades.</p>
 
-  <h3>Porquê escolher a Norte Reparos</h3>
-  <p>Empresa registada com mais de 12 anos de experiência no setor. Todos os nossos técnicos são certificados e formados regularmente. Emitimos fatura com NIF, oferecemos garantia de 2 anos sobre todos os trabalhos realizados e temos seguro de responsabilidade civil. Trabalhamos com as melhores marcas do mercado (Grohe, Roca, Sanindusa, Schneider Electric, ABB, entre outras) para garantir a qualidade e durabilidade das nossas instalações.</p>
+ <h3>Porquê escolher a Norte Reparos</h3>
+ <p>Empresa registada com mais de 12 anos de experiência no setor. Todos os nossos técnicos são certificados e formados regularmente. Emitimos fatura com NIF, oferecemos garantia de 2 anos sobre todos os trabalhos realizados e temos seguro de responsabilidade civil. Trabalhamos com as melhores marcas do mercado (Grohe, Roca, Sanindusa, Schneider Electric, ABB, entre outras) para garantir a qualidade e durabilidade das nossas instalações.</p>
 
-  <h3>Como agendar uma intervenção</h3>
-  <p>Pode contactar-nos por telefone, WhatsApp ou email. Para emergências, atendemos imediatamente. Para serviços programados, agendamos para a data e hora que melhor lhe convier, incluindo fins de semana e feriados. O orçamento é sempre gratuito e sem compromisso.</p>
+ <h3>Como agendar uma intervenção</h3>
+ <p>Pode contactar-nos por telefone, WhatsApp ou email. Para emergências, atendemos imediatamente. Para serviços programados, agendamos para a data e hora que melhor lhe convier, incluindo fins de semana e feriados. O orçamento é sempre gratuito e sem compromisso.</p>
 </section>
 
 <section class="faq-extra" style="background: #fff; padding: 2rem; border-radius: 8px; margin: 2rem 0; border: 1px solid #e0e0e0;">
-  <h2 style="color: #2193b0; margin-top: 0;">Perguntas Frequentes - Norte Reparos Trás-os-Montes</h2>
-  
-  <h3>Qual o horário de funcionamento em Trás-os-Montes?</h3>
-  <p>Atendemos Atendimento 24h/7d, 7 dias por semana, incluindo fins de semana, feriados nacionais e locais. Não fechamos em época alguma.</p>
-  
-  <h3>Quanto tempo demora a chegar a Trás-os-Montes?</h3>
-  <p>Para Trás-os-Montes, o tempo médio de resposta é inferior a 60 minutos após a chamada. Para casos urgentes (fuga de água, curto-circuito, etc.), priorizamos a chegada no tempo mais curto possível.</p>
-  
-  <h3>Posso pagar com cartão ou MB Way?</h3>
-  <p>Sim, aceitamos pagamento em numerário, multibanco, MB Way, transferência bancária e cartão de débito ou crédito. A fatura é sempre emitida com o seu NIF.</p>
-  
-  <h3>Os preços são fixos ou podem variar?</h3>
-  <p>O preço de deslocação é fixo e comunicado antes da nossa chegada. A mão de obra é cobrada à hora, com tarifário claro. Após o diagnóstico, apresentamos orçamento detalhado e só iniciamos o trabalho após a sua aprovação.</p>
+ <h2 style="color: #2193b0; margin-top: 0;">Perguntas Frequentes - Norte Reparos Trás-os-Montes</h2>
+ 
+ <h3>Qual o horário de funcionamento em Trás-os-Montes?</h3>
+ <p>Atendemos Atendimento 24h/7d, 7 dias por semana, incluindo fins de semana, feriados nacionais e locais. Não fechamos em época alguma.</p>
+ 
+ <h3>Quanto tempo demora a chegar a Trás-os-Montes?</h3>
+ <p>Para Trás-os-Montes, o tempo médio de resposta é inferior a 60 minutos após a chamada. Para casos urgentes (fuga de água, curto-circuito, etc.), priorizamos a chegada no tempo mais curto possível.</p>
+ 
+ <h3>Posso pagar com cartão ou MB Way?</h3>
+ <p>Sim, aceitamos pagamento em numerário, multibanco, MB Way, transferência bancária e cartão de débito ou crédito. A fatura é sempre emitida com o seu NIF.</p>
+ 
+ <h3>Os preços são fixos ou podem variar?</h3>
+ <p>O preço de deslocação é fixo e comunicado antes da nossa chegada. A mão de obra é cobrada à hora, com tarifário claro. Após o diagnóstico, apresentamos orçamento detalhado e só iniciamos o trabalho após a sua aprovação.</p>
 </section>
 
 </body></html>
