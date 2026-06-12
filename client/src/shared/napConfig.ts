@@ -14,12 +14,12 @@ export interface CityNAP {
 // Base business information
 export const businessInfo = {
   name: 'Norte Reparos',
-  fullName: 'Norte Reparos - Canalizador Profissional',
-  phone: '+351 928 484 451',
-  phoneFormatted: '928 484 451',
-  whatsapp: '351928484451',
-  email: 'info@canalizador-norte-reparos.pt',
-  domain: 'canalizador-norte-reparos.pt',
+  fullName: 'Norte Reparos - Eletricista Profissional',
+  phone: '+351 932 321 892',
+  phoneFormatted: '932 321 892',
+  whatsapp: '351932321892',
+  email: 'info@eletricista-norte-reparos.pt',
+  domain: 'eletricista-norte-reparos.pt',
 
   // Base address (géo-neutre, R74 : jamais l'adresse précise)
   baseAddress: {

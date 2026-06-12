@@ -326,7 +326,7 @@ export default function Contactos() {
  value={formData.address}
  onChange={(e) => setFormData({ ...formData, address: e.target.value })}
  className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent text-sm sm:text-base"
- placeholder="Rua Principal, 123"
+ placeholder="Ex: Trás-os-Montes"
  />
  </div>
  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
