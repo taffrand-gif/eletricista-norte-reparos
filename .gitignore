@@ -110,3 +110,14 @@ temp/
 .webdev/
 .vercel
 .env*.local
+
+# Backups (local only)
+client/src/components/.backups/
+**/.backups/
+
+# Mac
+.DS_Store
+
+# Archives
+*.tar.gz
+*.zip
