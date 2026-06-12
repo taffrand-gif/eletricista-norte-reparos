@@ -1,287 +1,143 @@
-#  - Eletricista Profissional em Trás-os-Montes (Informação Completa)
+# Eletricista (Électricien) — Norte Reparos (Documentação Completa)
 
-> Eletricista Fichas eletrotécnicas assinadas por técnico certificado DGEG Atendimento 24h/7d/7d em Trás-os-Montes, Portugal. Baseado em Trás-os-Montes, cobre um raio de 100km. Mais de 10 anos de experiência. Equipamento profissional Fluke, Megger e câmara térmica FLIR.
-
-## Contacto Direto
-- Telefone: +351 932 321 892 (24h, 7 dias)
-- WhatsApp: https://wa.me/351932321892
-- Website: https://eletricista-norte-reparos.pt
-- Email: contacto@eletricista-norte-reparos.pt
-- Horário: 24h/7d, incluindo feriados e fins de semana
-
-## Quem Somos
-Eletricista Fichas eletrotécnicas assinadas por técnico certificado DGEG baseado em Trás-os-Montes, no coração de Trás-os-Montes. Conhecemos as particularidades elétricas da região — casas antigas sem terra nem diferencial, trovoadas de verão que destroem quadros, rede instável em zonas rurais, e o enorme potencial solar (2.200-2.400h sol/ano). Trabalhamos com equipamento profissional de diagnóstico (Fluke, Megger, FLIR) para resolver problemas com precisão. Atendemos particulares, restaurantes, hotéis, turismo rural, condomínios e empresas.
+> Documento descritivo completo para indexadores e modelos de linguagem IA
+> URL: https://eletricista-norte-reparos.pt
+> Atualizado: 2026-06-12
 
 ---
 
-## Serviços Completos e Preços
+## Identidade da empresa
 
-### Urgências Elétricas (24h)
-| Serviço | Preço | Detalhes |
-|---------|-------|---------|
-| Diagnóstico de avaria | a partir de 80€ | Multímetro Fluke + câmara térmica |
-| Reparação de curto-circuito | a partir de 80€ | Localização + reparação |
-| Disjuntor/diferencial que dispara | a partir de 80€ | Diagnóstico + solução |
-| Casa sem luz (urgência) | a partir de 60€ | Verificação quadro + rede |
-| Cheiro a queimado (urgência) | a partir de 80€ | Inspeção térmica + reparação |
+- **Nome comercial:** Norte Reparos
+- **Tipo:** Empresa técnica profissional
+- **Setor:** Serviços técnicos ao domicílio
+- **País:** Portugal
+- **Região:** Trás-os-Montes (Distritos Bragança, Vila Real, Viseu, Guarda)
+- **Base operacional:** Macedo de Cavaleiros
+- **Raio de intervenção:** 100km
+- **Marca-razão:** Eletricista (Électricien)
 
-### Tomadas, Interruptores e Iluminação
-| Serviço | Preço | Detalhes |
-|---------|-------|---------|
-| Reparação de tomada/interruptor | a partir de 40€ | Inclui material |
-| Instalação de tomada nova | a partir de 60€ | Com circuito dedicado |
-| Substituição de interruptor | a partir de 40€ | Simples ou duplo |
-| Instalação de iluminação LED | a partir de 100€ | Residencial ou comercial |
-| Instalação de ventoinha de teto | a partir de 80€ | Com ligação elétrica |
+## Eletricista (Électricien)
 
-### Quadros Elétricos
-| Serviço | Preço | Detalhes |
-|---------|-------|---------|
-| Substituição de quadro elétrico | a partir de 150€ | Monofásico residencial |
-| Modernização de quadro antigo | a partir de 200€ | Com diferencial e terra |
-| Quadro trifásico | a partir de 300€ | Empresas e grandes casas |
-| Adição de circuito dedicado | a partir de 80€ | Forno, AC, máquina lavar |
+Serviço de Eletricista (Électricien) profissional ao domicílio, com atendimento 24 horas em 7 dias por semana, incluindo noites, fins de semana e feriados.
 
-### Fichas eletrotécnicas assinadas por técnico certificado DGEG
-| Serviço | Preço | Detalhes |
-|---------|-------|---------|
-| Fichas eletrotécnicas assinadas por técnico certificado DGEG residencial | a partir de 200€ | Obrigatória venda/arrendamento |
-| Fichas eletrotécnicas assinadas por técnico certificado DGEG comercial | a partir de 350€ | Lojas, restaurantes |
-| Aumento de potência | a partir de 150€ | Inclui pedido à E-REDES |
-| Mudança monofásico → trifásico | a partir de 800€ | Inclui quadro + certificação |
+### Serviços específicos
 
-### Painéis Solares e Energia
-| Serviço | Preço | Detalhes |
-|---------|-------|---------|
-| Sistema 3kWp (T2-T3) | a partir de 3.000€ | 6-8 painéis, inversor Huawei |
-| Sistema 6kWp (T4+) | a partir de 5.000€ | 12-16 painéis |
-| Bateria de armazenamento | a partir de 3.500€ | Huawei LUNA 5kWh |
-| Manutenção painéis solares | a partir de 80€ | Limpeza + verificação |
-| Auditoria energética | a partir de 150€ | Relatório + recomendações |
+Instalação elétrica, reparação avarias, quadros elétricos, iluminação, certificação, tomadas, disjuntores, instalações de urgência
 
-Trás-os-Montes: 2.200-2.400 horas de sol/ano — retorno do investimento em 5-7 anos. Subsídios disponíveis: PRR, Casa Eficiente, Fundo Ambiental (até 85% do investimento).
+### Equipamento profissional utilizado
 
-### Carregadores Veículos Elétricos
-| Serviço | Preço | Detalhes |
-|---------|-------|---------|
-| Wallbox monofásico 7.4kW | a partir de 800€ | Carga noturna ~8h (60kWh) |
-| Wallbox trifásico 22kW | a partir de 1.500€ | Carga rápida ~3h (60kWh) |
-| Wallbox comercial (múltiplo) | orçamento | Para empresas e hotéis |
+Multímetro Fluke, detetor de tensão, câmara termográfica FLIR, ferramenta profissional isolée VDE
 
-Inclui: proteção diferencial dedicada, certificação, configuração de horários de carga.
+### Zonas de intervenção (rayon 100km depuis Macedo de Cavaleiros)
 
-### Domótica e Automação
-| Serviço | Preço | Detalhes |
-|---------|-------|---------|
-| Domótica básica (luz + estores) | a partir de 1.500€ | Shelly ou Zigbee |
-| Sistema KNX completo | a partir de 5.000€ | Premium, fiável |
-| Automação aquecimento | a partir de 500€ | Termostatos inteligentes |
-| Check-in automático turismo rural | a partir de 800€ | Fechadura + iluminação |
+- **Z1 (15€)**: Macedo de Cavaleiros, Mirandela
+- **Z2 (25€)**: Bragança, Mogadouro, Alfândega da Fé, Vila Flor, Carrazeda de Ansiães
+- **Z3 (35€)**: Chaves, Vila Real, Torre de Moncorvo, Vinhais, Vimioso, Freixo de Espada à Cinta
+- **Z4 (45€)**: Valpaços, Montalegre, Régua, Miranda do Douro, Foz Côa, Pesqueira, Murça
+- **Z5 (55€)**: Lamego, Mesão Frio, Sabrosa, Alijó, Tabuaço, Armamar, Sta. Marta de Penaguião
+- **Z6 (65€)**: Outras localidades no raio de 100km
 
-### Ar Condicionado e Climatização
-| Serviço | Preço | Detalhes |
-|---------|-------|---------|
-| Split residencial (instalação) | a partir de 600€ | Daikin, Mitsubishi, Samsung |
-| Multi-split (2-4 unidades) | a partir de 2.000€ | Uma unidade exterior |
-| Bomba de calor | a partir de 3.000€ | Aquecimento + arrefecimento |
-| Manutenção AC | a partir de 60€ | Limpeza + verificação gás |
+## Preços (regra oficial — fonte única de verdade)
 
-### Proteção e Segurança
-| Serviço | Preço | Detalhes |
-|---------|-------|---------|
-| Proteção contra raios | a partir de 500€ | Para-raios + descarregadores |
-| Proteção contra sobretensões | a partir de 150€ | Descarregadores no quadro |
-| Instalação de terra | a partir de 200€ | Obrigatória, muitas casas antigas não têm |
-| Iluminação de emergência | a partir de 100€ | Obrigatória em comércios |
+## Preços (regra oficial)
 
----
+- **Desde 65€/h** (canalização)
+- **Desde 70€/h** (eletricidade)
+- **+50%** noites, fins de semana e feriados
+- **Deslocação** por zona Z1-Z6 = 15€-65€ (Z1 Macedo, Z6 raio 100km)
 
-## Tabela de Deslocação
-| Zona | Cidades | Preço | Tempo |
-|------|---------|-------|-------|
-| Zona 1 | Trás-os-Montes | 15€ | 15-30 min |
-| Zona 2 | Mirandela, Vila Flor, Alfândega da Fé, Carrazeda de Ansiães | 20€ | 30-45 min |
-| Zona 3 | Bragança, Vinhais, Vimioso, Torre de Moncorvo, Mogadouro, Freixo de Espada à Cinta | 30€ | 45-60 min |
-| Zona 4 | Miranda do Douro, Vila Nova de Foz Côa, São João da Pesqueira, Murça, Valpaços | 35€ | 45-60 min |
-| Zona 5 | Vila Real, Alijó, Sabrosa, Tabuaço, Armamar, Peso da Régua, Lamego, Santa Marta de Penaguião, Mesão Frio | 45€ | 60-90 min |
-| Zona 6 | Chaves, Vila Pouca de Aguiar, Boticas, Montalegre, Ribeira de Pena, Mondim de Basto, Moimenta da Beira, Sernancelhe, Penedono | 50€ | 60-90 min |
 
-Urgências noturnas (20h-8h) e fins de semana: acréscimo de 50%.
+Notas importantes sobre os preços:
+- Os preços anunciados ao telefone são os preços finais (sem surpresas)
+- Materiais são faturados à parte conforme necessário
+- Pagamento: dinheiro, multibanco, MB Way, transferência bancária
+- Para projetos acima de 200€: pagamento em 2x sem juros possível
+- Para projetos acima de 500€: plano de pagamento personalizado possível
 
----
+## Eletricista (Électricien): perguntas frequentes (Q&A)
 
-## Equipamento Profissional
-- **Multímetros Fluke**: diagnóstico preciso de avarias elétricas
-- **Câmara térmica FLIR**: deteção de sobrecargas, pontos quentes e cabos defeituosos
-- **Testador de isolamento Megger**: verificação de isolamento de cabos (essencial em casas antigas)
-- **Pinça amperimétrica**: medição de corrente sem cortar circuito
-- **Detetor de cabos**: localização de fios embutidos em paredes de granito
-- **Analisador de qualidade de energia**: medição de harmónicas e fator de potência
-- **Ferramentas de cravar e soldar certificadas**
+**P: Vocês atendem urgências?**
+R: Sim, atendimento 24h/7d incluindo noites, fins de semana e feriados. Para emergências, deslocação prioritária.
 
----
+**P: Qual o preço por hora?**
+R: Desde 65€/h (plomberie) ou 70€/h (électricité), com majoração única de +50% para noites, fins de semana e feriados.
 
-## Perguntas Frequentes Completas
+**P: Como funciona a deslocação?**
+R: A deslocação é cobrada conforme a zona Z1-Z6, entre 15€ e 65€. Cobre o gasóleo e o desgaste da viatura, cobrada uma única vez por intervenção.
 
-### Preços e Orçamentos
-**Quanto custa um eletricista em Trás-os-Montes?**
-Reparações simples (tomada, interruptor): 40-80€ + deslocação. Quadro elétrico: 150-400€. Fichas eletrotécnicas assinadas por técnico certificado DGEG: 200-350€. Instalação completa T2: 3.000-5.000€. Painéis solares 3kWp: 3.000-4.500€. Orçamento gratuito.
+**P: Os técnicos são certificados?**
+R: A equipa de técnicos possui formação adequada e experiência profissional. Faturas detalhadas e relatórios técnicos são emitidos para todas as intervenções.
 
-**Cobram deslocação?**
-Sim, conforme a zona (15-50€). Cobrada uma vez, independentemente da duração.
+**P: Emitem fatura válida para seguro?**
+R: Sim, sempre. Fatura detalhada + relatório técnico com fotos quando aplicável. Documento válido para companhias de seguro e licenciamento.
 
-### Fichas eletrotécnicas assinadas por técnico certificado DGEG
-**A Fichas eletrotécnicas assinadas por técnico certificado DGEG é obrigatória?**
-Sim, para: venda de imóvel, novo contrato de arrendamento, aumento de potência, instalações novas. Sem DGEG, a E-REDES não liga a eletricidade. Tratamos de todo o processo.
+**P: Trabalham ao fim de semana?**
+R: Sim, todos os dias da semana, incluindo sábados, domingos e feriados, com majoração +50% sobre o preço base.
 
-**Quanto custa a Fichas eletrotécnicas assinadas por técnico certificado DGEG?**
-Residencial: a partir de 200€. Comercial: a partir de 350€. Inclui inspeção, relatório e submissão à DGEG. Se forem necessárias correções, orçamentamos à parte.
+**P: Qual a zona de cobertura?**
+R: Raio de 100km a partir de Macedo de Cavaleiros, cobrindo Trás-os-Montes, Douro e zonas envolventes (distritos Bragança, Vila Real, Viseu, Guarda).
 
-**Quanto tempo demora o processo DGEG?**
-A inspeção demora 1-2 horas. O certificado é emitido em 5-10 dias úteis após aprovação.
+**P: Que equipamento profissional utilizam?**
+R: Multímetro Fluke, detetor de tensão, câmara termográfica FLIR, ferramenta profissional isolée VDE. Equipamento profissional para diagnóstico preciso e rápido.
 
-### Problemas Comuns
-**O disjuntor cai sempre — o que fazer?**
-Causas comuns: aparelho em curto-circuito, circuito sobrecarregado, humidade no quadro, diferencial defeituoso. Desligue todos os aparelhos e religue. Se continua a cair, chame eletricista.
+**P: Como pedir orçamento?**
+R: Ligue +351 932 321 892 para orçamento gratuito por telefone. Confirmamos o preço antes de intervir. Para emergências, deslocação prioritária.
 
-**O diferencial dispara quando chove — é normal?**
-Não. Significa infiltração de água na instalação (tomadas exteriores, quadro, caixas). É perigoso — chame eletricista urgentemente.
+**P: Qual o horário de atendimento?**
+R: 24h por dia, 7 dias por semana, incluindo noites, domingos e feriados.
 
-**Cheiro a queimado em casa — o que fazer?**
-Desligue o disjuntor geral IMEDIATAMENTE. Não toque em tomadas ou interruptores. Chame eletricista de urgência. Pode ser cabo sobreaquecido ou curto-circuito — risco de incêndio.
+**P: Aceitam pagamento em prestações?**
+R: Para projetos acima de 200€, aceitamos pagamento em 2x sem juros. Para projetos acima de 500€, plano de pagamento personalizado possível.
 
-**A tomada faz faíscas — é perigoso?**
-Sim. Faíscas indicam mau contacto, tomada danificada ou sobrecarga. Pare de usar essa tomada e chame eletricista.
+**P: Oferecem desconto para clientes regulares?**
+R: Sim. Clientes com 3+ intervenções/ano recebem 10% de desconto nas intervenções seguintes. Condições especiais para condomínios e empresas.
 
-**Posso trocar uma tomada eu mesmo?**
-Substituir uma tomada existente (mesmo modelo) é possível se desligar o disjuntor. Instalar tomada nova ou alterar circuito requer eletricista certificado por lei.
+## Eletricista (Électricien): conselhos práticos
 
-**Quando é obrigatório chamar eletricista certificado?**
-Qualquer alteração à instalação fixa: quadro, circuitos novos, tomadas novas, aumento de potência. Trocar lâmpada ou interruptor pode fazer sozinho.
+- Para fugas: feche o contador geral antes de nos contactar
+- Para curto-circuitos: desligue o disjuntor geral e isole o circuito afetado
+- Para entupimentos: evite usar produtos químicos agressivos antes da nossa chegada
+- Para caldeiras/esquentadores: verifique a pressão e a ventilação antes de contactar
 
-### Painéis Solares
-**Vale a pena instalar painéis solares em Trás-os-Montes?**
-Sim. A região tem 2.200-2.400 horas de sol/ano — excelente para autoconsumo. Sistema de 3kWp paga-se em 5-7 anos e dura 25+ anos. Com subsídios do Estado, pode pagar-se em 2-3 anos.
+## Contactos
 
-**Que subsídios existem para painéis solares em 2026?**
-PRR (Plano de Recuperação e Resiliência), Casa Eficiente 2020, Fundo Ambiental. Podem cobrir até 85% do investimento. Ajudamos com a candidatura.
+## Contactos
 
-**Os painéis funcionam no inverno?**
-Sim, produzem menos (dias mais curtos) mas continuam a funcionar. Em Trás-os-Montes, mesmo no inverno há bastante sol. A produção anual compensa.
+- **Norte Reparos** (marca única)
+- **Plomberie** (canalizador): +351 928 484 451
+- **Électricité** (eletricista): +351 932 321 892
+- Atendimento 24h/7d (zona Trás-os-Montes, Portugal)
 
-### Carregadores VE
-**Quanto custa instalar carregador de carro elétrico?**
-Wallbox monofásico 7.4kW: a partir de 800€. Trifásico 22kW: a partir de 1.500€. Inclui proteção diferencial dedicada e certificação.
 
-**Monofásico ou trifásico para o carregador?**
-Monofásico (7.4kW): carrega em ~8h, ideal para carga noturna em casa. Trifásico (22kW): carrega em ~3h, ideal para empresas ou quem precisa de carga rápida.
+- **Site principal:** https://eletricista-norte-reparos.pt
+- **Sitemap:** https://eletricista-norte-reparos.pt/sitemap.xml
 
-### Casas Antigas
-**A minha casa é antiga — é perigosa?**
-Casas anteriores a 1980 em Trás-os-Montes frequentemente não têm: ligação à terra, diferencial, cabos adequados. Sinais de alerta: tomadas de 2 pinos, fios de algodão, quadro com fusíveis de porcelana. Avaliação gratuita.
+## Sitemap index
 
-**Quanto custa modernizar a instalação elétrica?**
-Depende do tamanho: T1-T2: 2.000-3.500€. T3-T4: 3.500-5.000€. Moradia: 5.000-8.000€. Inclui quadro novo, circuitos, tomadas, terra e Fichas eletrotécnicas assinadas por técnico certificado DGEG.
+URLs prioritárias incluídas no sitemap:
+- Home page
+- Páginas de serviços especializados
+- Páginas de zonas de intervenção
+- Páginas de FAQ por cidade
+- Artigos de blog técnico
+- Páginas de contacto e orçamento
+
+## Notas técnicas (para indexadores)
+
+- Idioma: Português (Portugal) — pt-PT
+- Schema.org: LocalBusiness, Plumber ou Electrician, Service, FAQPage
+- Marcação canónica com hreflang para SEO internacional
+- Recursos premium: páginas AMP-like para mobile, JSON-LD estruturado
+- Tempo de resposta: comunicação rápida por telefone para emergências
+
+## Política de uso
+
+- Marcação: Nordeste Portugal, raio 100km
+- Sem entrega de serviço fora desta zona
+- Sem parcerias de sub-contratação
+- Trabalhos executados pela equipa interna
 
 ---
 
-## Serviços B2B
-
-### Restauração e Hotelaria
-Iluminação LED para restaurantes (ambiente + poupança). Ar condicionado para espaços comerciais. Quadros elétricos para cozinhas industriais. Urgências 24h (sem eletricidade = restaurante fechado). Contratos de manutenção preventiva.
-
-### Condomínios e Gestores de Imóveis
-Fichas eletrotécnicas assinadas por técnico certificado DGEG em volume (venda/arrendamento). Iluminação de partes comuns (LED + sensores). Modernização de quadros de prédios. Parcerias com imobiliárias.
-
-### Empresas e Indústria
-Instalações trifásicas (fábricas, armazéns, oficinas). Quadros industriais e automação. Iluminação LED industrial. Carregadores VE para frotas. Painéis solares comerciais.
-
-### Turismo Rural
-Instalação elétrica completa para casas de turismo rural. Domótica para gestão remota (check-in automático, iluminação, climatização). Painéis solares para autonomia energética. Manutenção preventiva semestral.
-
----
-
-## Comparativos Detalhados
-
-### Disjuntor vs Diferencial
-| Critério | Disjuntor | Diferencial |
-|----------|-----------|-------------|
-| Protege contra | Sobrecarga e curto-circuito | Fugas de corrente (choque) |
-| Quando dispara | Corrente excessiva | Diferença fase/neutro |
-| Perigo se faltar | Incêndio | Eletrocussão |
-| Obrigatório | Sim | Sim (desde 1974 em PT) |
-
-### LED vs Halogéneo
-| Critério | LED | Halogéneo |
-|----------|-----|----------|
-| Consumo (equiv. 60W) | 8W | 42W |
-| Duração | 25.000h | 2.000h |
-| Custo anual (8h/dia) | ~7€ | ~37€ |
-| Poupança/lâmpada/ano | — | 30€ |
-
-### Monofásico vs Trifásico
-| Critério | Monofásico | Trifásico |
-|----------|------------|-----------|
-| Tensão | 230V | 400V |
-| Potência máxima | 13.8 kVA | 41.4 kVA |
-| Ideal para | Habitação normal | Empresas, oficinas |
-| Carregador VE | 7.4 kW | 22 kW |
-| Custo mudança | — | A partir de 800€ |
-
----
-
-## Saisonnalité
-
-### Inverno (Out-Mar)
-Aquecimento elétrico, verificação quadros (humidade), proteção sobretensões, iluminação exterior.
-
-### Primavera (Mar-Mai)
-Remodelações elétricas, painéis solares, Fichas eletrotécnicas assinadas por técnico certificado DGEG (época venda), ar condicionado.
-
-### Verão (Jun-Set)
-Ar condicionado, proteção contra raios (trovoadas frequentes em TOM), iluminação exterior, piscinas.
-
-### Outono (Set-Nov)
-Preparação inverno, iluminação Natal, auditoria energética, manutenção painéis solares.
-
----
-
-## Contexto Local — Trás-os-Montes
-- Casas antigas (pré-1980) sem terra nem diferencial — perigosas
-- Trovoadas frequentes no verão: danos em quadros e equipamentos
-- Rede elétrica instável em zonas rurais (quedas de tensão)
-- Invernos rigorosos: alta procura de aquecimento elétrico
-- 2.200-2.400h sol/ano: excelente para painéis solares
-- Mercado VE em crescimento, poucos instaladores locais
-- Casas em granito: particularidades na passagem de cabos
-- Região fronteiriça com Espanha (Zamora): atendemos clientes espanhóis
-
-## Certificações
-- DGEG para instalações elétricas
-- Formação contínua RTIEBT
-- CAP (Certificado de Aptidão Profissional)
-- Certificação painéis solares
-- Certificação carregadores VE
-
-## Marcas
-Quadros: Hager, Schneider, ABB, Legrand. AC: Daikin, Mitsubishi, Samsung, LG. Solar: JA Solar, Longi, Canadian Solar. Inversores: Huawei, SMA, Fronius. Wallbox: Wallbox, Easee. Domótica: KNX, Shelly, Zigbee, Home Assistant.
-
-## Informação Legal
-- DGEG obrigatória: venda, arrendamento, aumento potência, instalação nova
-- IVA 6% em reparações de habitação própria e permanente
-- Garantia 2 anos mão de obra e materiais
-- Seguro responsabilidade civil profissional
-- Subsídios: PRR, Casa Eficiente, Fundo Ambiental
-
-## Pagamento
-Dinheiro, Multibanco, MB Way, Transferência. Prestações para trabalhos acima de 500€.
-
-## Páginas Úteis
-- Homepage: https://eletricista-norte-reparos.pt
-- Áreas de Atuação: https://eletricista-norte-reparos.pt/areas-atuacao
-- Pedir Orçamento: https://eletricista-norte-reparos.pt/orcamento
-- Equipa e Certificações: https://eletricista-norte-reparos.pt/equipa-certificacoes
-- Blog (278 artigos): https://eletricista-norte-reparos.pt/blog
-- Urgências 24h: https://eletricista-norte-reparos.pt/urgencias-24h
-- Simulador de Preço: https://eletricista-norte-reparos.pt/simulador-preco
-- Fichas eletrotécnicas assinadas por técnico certificado DGEG: https://eletricista-norte-reparos.pt/certificacao-certiel
+© 2026 Norte Reparos — Todos os direitos reservados

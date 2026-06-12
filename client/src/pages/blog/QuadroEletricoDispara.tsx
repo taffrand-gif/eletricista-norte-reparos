@@ -18,7 +18,7 @@ const QuadroEletricoDispara: React.FC = () => {
  <span className="px-3 py-1 bg-red-100 text-red-800 font-semibold rounded-full">
  Problema Urgente
  </span>
- <span>⏱️ 12 min de leitura</span>
+ <span>⏱️ resposta prioritária de leitura</span>
  <span>📅 10 Mar 2026</span>
  </div>
  <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -305,7 +305,7 @@ const QuadroEletricoDispara: React.FC = () => {
  <p className="text-gray-700 text-sm mb-2">Se não disparou no Passo 3:</p>
  <ol className="text-gray-700 text-sm space-y-1 list-decimal pl-4">
  <li>Ligue aparelhos um a um</li>
- <li>Aguarde 2-3 minutos entre cada</li>
+ <li>Aguarde 2-resposta prioritária entre cada</li>
  <li>Quando disparar = aparelho culpado identificado</li>
  <li>Desligue esse aparelho e teste outros</li>
  </ol>
@@ -516,7 +516,7 @@ const QuadroEletricoDispara: React.FC = () => {
  <h3 className="text-2xl font-bold text-gray-900 mb-3">Substituir Disjuntor Defeituoso</h3>
  <div className="bg-cyan-50 p-4 rounded-lg mb-4">
  <p className="font-bold text-cyan-900 mb-2">Eficácia: ⭐⭐⭐⭐⭐ (Solução definitiva)</p>
- <p className="text-cyan-800 text-sm">Resolve 5% dos casos | Custo: 40-100€ | Tempo: 30-60 min</p>
+ <p className="text-cyan-800 text-sm">Resolve 5% dos casos | Custo: 40-100€ | Tempo: 30-resposta prioritária</p>
  </div>
  </div>
  </div>
@@ -952,7 +952,7 @@ const QuadroEletricoDispara: React.FC = () => {
  <span className="text-2xl">✅</span>
  <div>
  <p className="font-bold">Intervenção Rápida</p>
- <p className="text-sm text-white/80">Resposta rápida garantida-60 minutos</p>
+ <p className="text-sm text-white/80">Resposta rápida garantida-resposta prioritária</p>
  </div>
  </div>
  <div className="flex items-start gap-3">

@@ -66,7 +66,7 @@ export default function TorreMoncorvo() {
  }, []);
  const cidadesProximas = getCidadesProximas('torre-moncorvo');
  const faqs = [
- { question: "Quanto tempo demora a chegar a Torre de Moncorvo?", answer: "Chegamos a Torre de Moncorvo em aproximadamente 50-60 minutos. Cobrimos todo o concelho." },
+ { question: "Quanto tempo demora a chegar a Torre de Moncorvo?", answer: "Chegamos a Torre de Moncorvo em aproximadamente 50-resposta prioritária. Cobrimos todo o concelho." },
  {
  question: "Qual o custo de deslocação a Torre de Moncorvo?",
     answer: "Chegamos rapidamente. Cobrimos todo o conselho.",

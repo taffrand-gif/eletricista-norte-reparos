@@ -22,7 +22,7 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  <span className="px-3 py-1 bg-amber-100 text-amber-800 font-semibold rounded-full">
  Guia do Consumidor
  </span>
- <span>⏱️ 10 min de leitura</span>
+ <span>⏱️ resposta prioritária de leitura</span>
  <span>📅 18 Fev 2026</span>
  <span>👁️ 2.5K visualizações</span>
  </div>

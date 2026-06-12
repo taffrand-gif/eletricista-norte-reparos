@@ -22,7 +22,7 @@ export default function MacedoCavaleiros() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Curto-circuito em Macedo de Cavaleiros? Estamos aí em menos de 30 min. Orçamento sem compromisso. Ligue: 932 321 892');
+ metaDescription.setAttribute('content', 'Curto-circuito em Macedo de Cavaleiros? Estamos aí em menos de resposta prioritária. Orçamento sem compromisso. Ligue: 932 321 892');
  let metaKeywords = document.querySelector('meta[name="keywords"]');
  if (!metaKeywords) {
  metaKeywords = document.createElement('meta');
@@ -250,7 +250,7 @@ export default function MacedoCavaleiros() {
  Precisa de Eletricista em Macedo de Cavaleiros?
  </h2>
  <p className="text-xl mb-8 opacity-90">
- Ligue agora. Estamos a menos de 30 minutos de si.
+ Ligue agora. Estamos a menos de resposta prioritária de si.
  </p>
  <a
  href={`tel:${businessInfo.phone}`}

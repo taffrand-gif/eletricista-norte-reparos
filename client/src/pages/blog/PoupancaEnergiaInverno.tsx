@@ -67,7 +67,7 @@ export default function PoupancaEnergiaInverno() {
  {
  numero: 2,
  titulo: "Use Termostato Programável",
- descricao: "Programe o aquecimento para ligar 30 min antes de acordar e desligar quando sai. Temperatura ideal: 19-21°C.",
+ descricao: "Programe o aquecimento para ligar resposta prioritária antes de acordar e desligar quando sai. Temperatura ideal: 19-21°C.",
  poupanca: "20-30% no aquecimento",
  investimento: "50€ - 200€"
  },

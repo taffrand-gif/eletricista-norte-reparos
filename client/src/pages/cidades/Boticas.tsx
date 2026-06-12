@@ -67,7 +67,7 @@ export default function Boticas() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Boticas?",
-    answer: "Chegamos a Boticas em aproximadamente 70-90 minutos a partir de Trás-os-Montes. Cobrimos todo o conselho.",
+    answer: "Chegamos a Boticas em aproximadamente 70-resposta prioritária a partir de Trás-os-Montes. Cobrimos todo o conselho.",
   },
  {
  question: "Fazem instalações para adegas do Vinho dos Mortos?",

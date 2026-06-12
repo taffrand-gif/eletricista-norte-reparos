@@ -17,7 +17,7 @@ export default function Blog() {
  title: '10 Sinais Que Precisa Trocar o Quadro Elétrico',
  excerpt: 'Quadros antigos são responsáveis por 25% dos incêndios domésticos. Descubra os 10 sinais de alerta e quando substituir o seu quadro elétrico.',
  date: '7 de fevereiro de 2026',
- readTime: '8 min',
+ readTime: 'resposta prioritária',
  image: '/blog/quadro-eletrico.jpg',
  category: 'Segurança Elétrica'
  }

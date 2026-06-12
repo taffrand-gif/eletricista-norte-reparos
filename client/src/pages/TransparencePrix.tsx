@@ -16,7 +16,7 @@ export default function TransparencePrix() {
  {
  title: "Pequena Arranjo",
  price: "30€ - 45€",
- duration: "30 min",
+ duration: "resposta prioritária",
  includes: [
  "Troca de tomadas ou interruptores",
  "Instalação de pontos de luz",
@@ -80,11 +80,10 @@ export default function TransparencePrix() {
  ]
  }
  ];
- // Taux horaire et majorations
+ // Taux horaire et majorations (RÈGLE OFFICIELLE Philippe)
  const tauxHoraire = {
  base: "70€/hora",
- weekend: "90€/hora (sábados) | 100€/hora (domingos)",
- urgent: "+50% (noite/feriados)",
+ majoracao: "+50% (noites, fins de semana e feriados)",
  deplacement: "15€ - 65€ (conforme zona)"
  };
  // FAQ Prix
@@ -240,7 +239,7 @@ export default function TransparencePrix() {
  </div>
  </div>
  <p className="text-sm text-gray-600">
- Sábados 90€/h, Domingos/Feriados 100€/h. Mínimo 30 minutos.
+ Majoração única +50% (noites, fins de semana e feriados). Mínimo 30 minutos.
  </p>
  </div>
  <div className="bg-white p-8 rounded-xl border-4 border-gray-200">

@@ -188,7 +188,7 @@ function Header() {
  <div className="flex items-center gap-2 lg:hidden">
  <a
  href={`tel:+351${config.phone.replace(/\s/g, '')}`}
- className="p-3 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg text-white transition-colors"
+ className="p-resposta prioritária-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg text-white transition-colors"
  style={{ backgroundColor: config.colors.primary }}
  aria-label={`Ligar para ${config.phone}`}
  >
@@ -196,7 +196,7 @@ function Header() {
  </a>
  <button
  onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
- className="p-3 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg hover:bg-gray-100 transition-colors"
+ className="p-resposta prioritária-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg hover:bg-gray-100 transition-colors"
  aria-label="Abrir menu"
  >
  {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}

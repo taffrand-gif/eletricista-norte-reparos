@@ -202,7 +202,7 @@ export const appRouter = router({
  const urgencyEmoji = input.urgency === "urgent" ? "🚨" : "📝";
  await notifyOwner({
  title: `${urgencyEmoji} Nouvelle demande de devis - ${input.name}`,
- content: `**Nom:** ${input.name}\n**Email:** ${input.email}\n**Téléphone:** ${input.phone}\n**Ville:** ${input.city}\n**Service:** ${input.serviceType}\n**Urgence:** ${input.urgency === "urgent" ? "🚨 URGENT" : "Normale"}\n\n**Description:**\n${input.description}${input.photoUrls && input.photoUrls.length > 0 ? `\n\n**Photos jointes:** ${input.photoUrls.length}` : ""}\n\n**Action:** ${input.urgency === "urgent" ? "⚠️ Contactar em 15-30 min!" : "Contactar em 2-4h"}`});
+ content: `**Nom:** ${input.name}\n**Email:** ${input.email}\n**Téléphone:** ${input.phone}\n**Ville:** ${input.city}\n**Service:** ${input.serviceType}\n**Urgence:** ${input.urgency === "urgent" ? "🚨 URGENT" : "Normale"}\n\n**Description:**\n${input.description}${input.photoUrls && input.photoUrls.length > 0 ? `\n\n**Photos jointes:** ${input.photoUrls.length}` : ""}\n\n**Action:** ${input.urgency === "urgent" ? "⚠️ Contactar resposta prioritária!" : "Contactar em 2-4h"}`});
  
  return { success: true };
  }),

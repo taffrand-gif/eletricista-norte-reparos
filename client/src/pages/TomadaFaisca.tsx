@@ -104,7 +104,7 @@ export default function TomadaFaisca() {
  </h3>
  <p className="text-gray-700 ml-10">
  Ligue agora: <a href={`tel:${config.phone.replace(/\s/g, "")}`} className="font-bold text-green-600 underline">{config.phone}</a>
- <br />Atendemos 24h. Resposta rápida garantida-45 minutos.
+ <br />Atendemos 24h. Resposta rápida garantida-resposta prioritária.
  </p>
  </div>
  </div>
@@ -186,7 +186,7 @@ export default function TomadaFaisca() {
  Tomada Faz Faísca? Ligue AGORA
  </h2>
  <p className="text-xl mb-8 max-w-2xl mx-auto">
- Atendimento 24h. Resposta rápida garantida-45 minutos. Sem compromisso.
+ Atendimento 24h. Resposta rápida garantida-resposta prioritária. Sem compromisso.
  </p>
  <a
  href={`tel:${config.phone.replace(/\s/g, "")}`}

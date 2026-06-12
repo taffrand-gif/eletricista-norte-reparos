@@ -22,7 +22,7 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <span className="px-3 py-1 bg-amber-100 text-amber-800 font-semibold rounded-full">
  Guia de Preços
  </span>
- <span>⏱️ 12 min de leitura</span>
+ <span>⏱️ resposta prioritária de leitura</span>
  <span>📅 18 Fev 2026</span>
  <span>👁️ 3.5K visualizações</span>
  </div>
@@ -113,14 +113,14 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <td className="py-4 px-6">40€</td>
  <td className="py-4 px-6">55€</td>
  <td className="py-4 px-6">80€</td>
- <td className="py-4 px-6">45-75 min</td>
+ <td className="py-4 px-6">45-resposta prioritária</td>
  </tr>
  <tr className="border-b border-gray-200 hover:bg-amber-50">
  <td className="py-4 px-6 font-semibold">Instalação interruptor</td>
  <td className="py-4 px-6">35€</td>
  <td className="py-4 px-6">50€</td>
  <td className="py-4 px-6">70€</td>
- <td className="py-4 px-6">30-60 min</td>
+ <td className="py-4 px-6">30-resposta prioritária</td>
  </tr>
  <tr className="border-b border-gray-200 hover:bg-amber-50">
  <td className="py-4 px-6 font-semibold">Substituição quadro elétrico completo</td>
@@ -228,7 +228,7 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <tr className="bg-blue-100">
  <th className="py-3 px-4 text-left font-bold">Região/Zona</th>
  <th className="py-3 px-4 text-left font-bold">Preço/hora (normal)</th>
- <th className="py-3 px-4 text-left font-bold">Preço/hora (emergência)</th>
+ <th className="py-3 px-4 text-left font-bold">Majoração (regra)</th>
  <th className="py-3 px-4 text-left font-bold">Deslocação incluída</th>
  </tr>
  </thead>
@@ -236,13 +236,13 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <tr className="border-b border-gray-200">
  <td className="py-3 px-4 font-semibold">Vila Real cidade</td>
  <td className="py-3 px-4">70€</td>
- <td className="py-3 px-4">105€</td>
+ <td className="py-3 px-4">+50%</td>
  <td className="py-3 px-4">Até 15km</td>
  </tr>
  <tr className="border-b border-gray-200">
  <td className="py-3 px-4 font-semibold">Bragança cidade</td>
  <td className="py-3 px-4">70€</td>
- <td className="py-3 px-4">105€</td>
+ <td className="py-3 px-4">+50%</td>
  <td className="py-3 px-4">Até 20km</td>
  </tr>
  <tr className="border-b border-gray-200">

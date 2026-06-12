@@ -53,7 +53,7 @@ export default function IluminacaoInteligenteCasa() {
  <div className="flex items-center text-gray-600 text-sm">
  <time dateTime="2026-03-03">3 de Março, 2026</time>
  <span className="mx-2">•</span>
- <span>13 min de leitura</span>
+ <span>resposta prioritária de leitura</span>
  </div>
  </header>
  <div className="prose prose-lg max-w-none mb-8">
@@ -287,7 +287,7 @@ export default function IluminacaoInteligenteCasa() {
  <strong>Lâmpadas:</strong> Substituir diretamente (DIY)<br/>
  <strong>Interruptores:</strong> Eletricista certificado (30-50€/interruptor)<br/>
  <strong>Fitas LED:</strong> DIY ou profissional (50-100€)<br/>
- <strong>Configuração app:</strong> 15-30 minutos
+ <strong>Configuração app:</strong> 15-resposta prioritária
  </p>
  </div>
  </div>

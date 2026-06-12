@@ -10,13 +10,13 @@ const InnovativeHero: React.FC = () => {
  { icon: '💧', value: 'Certificado', label: 'Seguro Ativo' },
  { icon: '🔬', value: 'Ridgid', label: 'Câmara Inspeção' },
  { icon: '🛡️', value: '500+', label: 'Intervenções' },
- { icon: '📞', value: '40 min', label: 'Chegada Bragança' },
+ { icon: '📞', value: 'resposta prioritária', label: 'Chegada Bragança' },
  ]
  : [
  { icon: '✅', value: '', label: 'Certificado' },
  { icon: '🔬', value: 'Fluke & FLIR', label: 'Diagnóstico Pro' },
  { icon: '⚡', value: '350+', label: 'Intervenções' },
- { icon: '📞', value: '40 min', label: 'Chegada Bragança' },
+ { icon: '📞', value: 'resposta prioritária', label: 'Chegada Bragança' },
  ];
  const badgeText = isPlumber
  ? 'CANALIZADOR Atendimento 24h — Resposta rápida garantida'

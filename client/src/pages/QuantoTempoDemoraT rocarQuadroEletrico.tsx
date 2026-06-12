@@ -38,7 +38,7 @@ export default function QuantoTempoQuadro() {
  },
  {
  question: "Quanto tempo demora substituir só um disjuntor?",
- answer: "Substituir disjuntor: 1-2 horas. Inclui: chegada eletricista (30-45 min), desligar circuito (5 min), substituir disjuntor (15-30 min), testar (10-15 min), certificar (15-20 min). Urgente 24h disponível."
+ answer: "Substituir disjuntor: 1-2 horas. Inclui: chegada eletricista (30-resposta prioritária), desligar circuito (resposta prioritária), substituir disjuntor (15-resposta prioritária), testar (10-resposta prioritária), certificar (15-resposta prioritária). Urgente 24h disponível."
  }
  ];
  const tempos = [
@@ -46,13 +46,13 @@ export default function QuantoTempoQuadro() {
  tipo: "Substituir Disjuntor",
  tamanho: "1 disjuntor",
  tempo: "1-2h",
- semLuz: "30-60 min",
+ semLuz: "30-resposta prioritária",
  detalhes: [
- "Avaliação: 10 min",
- "Desligar circuito: 5 min",
- "Substituir: 15-30 min",
- "Testar: 10-15 min",
- "Certificar: 15-20 min"
+ "Avaliação: resposta prioritária",
+ "Desligar circuito: resposta prioritária",
+ "Substituir: 15-resposta prioritária",
+ "Testar: 10-resposta prioritária",
+ "Certificar: 15-resposta prioritária"
  ],
  icon: Wrench
  },
@@ -62,13 +62,13 @@ export default function QuantoTempoQuadro() {
  tempo: "3-5h",
  semLuz: "3-5 horas",
  detalhes: [
- "Avaliação: 30 min",
- "Desligar tudo: 15 min",
- "Remover antigo: 30-45 min",
- "Instalar novo: 90-120 min",
- "Ligar circuitos: 45-60 min",
- "Testar tudo: 30-45 min",
- "Certificação: 20-30 min"
+ "Avaliação: resposta prioritária",
+ "Desligar tudo: resposta prioritária",
+ "Remover antigo: 30-resposta prioritária",
+ "Instalar novo: 90-resposta prioritária",
+ "Ligar circuitos: 45-resposta prioritária",
+ "Testar tudo: 30-resposta prioritária",
+ "Certificação: 20-resposta prioritária"
  ],
  icon: CheckCircle
  },
@@ -78,13 +78,13 @@ export default function QuantoTempoQuadro() {
  tempo: "4-6h",
  semLuz: "4-6 horas",
  detalhes: [
- "Avaliação: 30-45 min",
- "Desligar tudo: 20 min",
- "Remover antigo: 45-60 min",
- "Instalar novo: 120-150 min",
- "Ligar circuitos: 60-90 min",
- "Testar tudo: 45-60 min",
- "Certificação: 30 min"
+ "Avaliação: 30-resposta prioritária",
+ "Desligar tudo: resposta prioritária",
+ "Remover antigo: 45-resposta prioritária",
+ "Instalar novo: 120-resposta prioritária",
+ "Ligar circuitos: 60-resposta prioritária",
+ "Testar tudo: 45-resposta prioritária",
+ "Certificação: resposta prioritária"
  ],
  icon: Zap
  },
@@ -94,13 +94,13 @@ export default function QuantoTempoQuadro() {
  tempo: "5-8h",
  semLuz: "5-8 horas",
  detalhes: [
- "Avaliação: 45-60 min",
- "Desligar tudo: 30 min",
- "Remover antigo: 60-90 min",
- "Instalar novo: 150-210 min",
- "Ligar circuitos: 90-120 min",
- "Testar tudo: 60-90 min",
- "Certificação: 30-45 min"
+ "Avaliação: 45-resposta prioritária",
+ "Desligar tudo: resposta prioritária",
+ "Remover antigo: 60-resposta prioritária",
+ "Instalar novo: 150-resposta prioritária",
+ "Ligar circuitos: 90-resposta prioritária",
+ "Testar tudo: 60-resposta prioritária",
+ "Certificação: 30-resposta prioritária"
  ],
  icon: AlertTriangle
  }
@@ -114,12 +114,12 @@ export default function QuantoTempoQuadro() {
  {
  factor: "Estado Quadro Antigo",
  impacto: "Quadro muito antigo (fusíveis) demora mais remover",
- tempo: "+30min a +1h"
+ tempo: "+resposta prioritária a +1h"
  },
  {
  factor: "Acessibilidade",
  impacto: "Quadro em local difícil acesso demora mais trabalhar",
- tempo: "+30min a +1h30"
+ tempo: "+resposta prioritária a +1h30"
  },
  {
  factor: "Cablagem Existente",
@@ -129,7 +129,7 @@ export default function QuantoTempoQuadro() {
  {
  factor: "Certificação",
  impacto: "certificação elétrica obrigatória, incluída no tempo",
- tempo: "20-45 min"
+ tempo: "20-resposta prioritária"
  }
  ];
  return (
@@ -279,7 +279,7 @@ export default function QuantoTempoQuadro() {
  { tempo: "09:30", acao: "Desligar electricidade", descricao: "Corte seguro de todos os circuitos" },
  { tempo: "09:50", acao: "Remover quadro antigo", descricao: "Desmontagem cuidadosa, identificação cabos" },
  { tempo: "10:45", acao: "Instalar quadro novo", descricao: "Montagem, ligação diferencial e disjuntores" },
- { tempo: "12:30", acao: "Pausa almoço", descricao: "30-45 minutos" },
+ { tempo: "12:30", acao: "Pausa almoço", descricao: "30-resposta prioritária" },
  { tempo: "13:15", acao: "Ligar circuitos", descricao: "Ligação ordenada: iluminação, tomadas, cozinha, aquecimento" },
  { tempo: "14:45", acao: "Testes completos", descricao: "Teste cada circuito, verificação diferencial, medição corrente" },
  { tempo: "15:45", acao: "certificação elétrica", descricao: "Emissão certificado conformidade obrigatório" },
@@ -315,7 +315,7 @@ export default function QuantoTempoQuadro() {
  📋 Como Preparar para Trocar Quadro
  </h2>
  <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
- Preparação ajuda reduzir tempo instalação em 30-60 minutos
+ Preparação ajuda reduzir tempo instalação resposta prioritária
  </p>
  <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
  {[

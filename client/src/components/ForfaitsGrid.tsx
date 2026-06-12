@@ -215,7 +215,7 @@ function ForfaitsGrid({ className = '' }: ForfaitsGridProps) {
  <div className="text-3xl mb-2">⏰</div>
  <h4 className="font-bold text-gray-900 mb-1">Acréscimos</h4>
  <p className="text-sm text-gray-600">
- Sábado +29%, Domingo/Feriado +43%, Noturno (18h-8h) +50%
+ +50% (noites, fins de semana e feriados)
  </p>
  </div>
  </div>

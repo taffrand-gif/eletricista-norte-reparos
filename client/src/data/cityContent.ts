@@ -33,7 +33,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  population: "35 000 habitants",
  logements: "12 000 logements dont 60% construits avant 1990",
  problemesFrequents: "Avarias elétricas em instalações antigas (180+ casos/ano), quadros elétricos obsoletos, curto-circuitos",
- delaiIntervention: "40 minutos centre-ville, 50 minutes périphérie",
+ delaiIntervention: "resposta prioritária centre-ville, 50 minutes périphérie",
  testimonials: [
  {
  name: "Paulo R.",
@@ -62,7 +62,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  stats: {
  interventionsAnnuelles: "480+ intervenções em Bragança",
  tauxSatisfaction: "99% clientes satisfeitos",
- tempsReponse: "Média 37 minutos"
+ tempsReponse: "Média resposta prioritária"
  },
  specificites: [
  "Certificados - Todas as intervenções legalizadas",
@@ -78,7 +78,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  population: "23 000 habitants",
  logements: "8 500 logements dont 55% construits avant 1985",
  problemesFrequents: "Quadros elétricos antigos (140+ casos/ano), avarias em aquecimento elétrico, tomadas sem terra",
- delaiIntervention: "45 minutos centre-ville, 60 minutes aldeias",
+ delaiIntervention: "resposta prioritária centre-ville, 60 minutes aldeias",
  testimonials: [
  {
  name: "Técnico L.",
@@ -100,7 +100,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  },
  stats: {
  interventionsAnnuelles: "340+ intervenções em Mirandela",
- tempsReponse: "Média 43 minutos"
+ tempsReponse: "Média resposta prioritária"
  },
  specificites: [
  "certificação elétrica obrigatória incluída",
@@ -116,7 +116,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  population: "15 000 habitants",
  logements: "5 500 logements dont 50% em zonas rurais",
  problemesFrequents: "Avarias em bombas de água elétricas (110+ casos/ano), instalações sem certificação, problemas de tensão",
- delaiIntervention: "35 minutos centre-ville, 55 minutes aldeias",
+ delaiIntervention: "resposta prioritária centre-ville, 55 minutes aldeias",
  testimonials: [
  {
  name: "Armando S.",
@@ -139,7 +139,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  stats: {
  interventionsAnnuelles: "290+ intervenções em Macedo",
  tauxSatisfaction: "99% clientes satisfeitos",
- tempsReponse: "Média 34 minutos"
+ tempsReponse: "Média resposta prioritária"
  },
  specificites: [
  "Base permanente em Trás-os-Montes",
@@ -155,7 +155,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  population: "41 000 habitants",
  logements: "14 000 logements dont 65% construits avant 1995",
  problemesFrequents: "Avarias em aquecimento central elétrico (160+ casos/ano), quadros obsoletos, problemas de potência",
- delaiIntervention: "50 minutos centre-ville, 70 minutes aldeias",
+ delaiIntervention: "resposta prioritária centre-ville, 70 minutes aldeias",
  testimonials: [
  {
  name: "Rui A.",
@@ -172,7 +172,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  stats: {
  interventionsAnnuelles: "400+ intervenções em Chaves",
  tauxSatisfaction: "97% clientes satisfeitos",
- tempsReponse: "Média 47 minutos"
+ tempsReponse: "Média resposta prioritária"
  },
  specificites: [
  "Especialistas em aquecimento elétrico",
@@ -188,7 +188,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  population: "51 000 habitants",
  logements: "18 000 logements dont 70% em zona urbana",
  problemesFrequents: "Avarias em prédios (200+ casos/ano), quadros elétricos sobrecarregados, problemas de iluminação",
- delaiIntervention: "55 minutos centre-ville, 75 minutes aldeias",
+ delaiIntervention: "resposta prioritária centre-ville, 75 minutes aldeias",
  testimonials: [
  {
  name: "Nuno M.",
@@ -204,7 +204,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  },
  stats: {
  interventionsAnnuelles: "450+ intervenções em Vila Real",
- tempsReponse: "Média 51 minutos"
+ tempsReponse: "Média resposta prioritária"
  },
  specificites: [
  "Equipamento para prédios altos",
@@ -220,7 +220,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  population: "9 000 habitants",
  logements: "3 500 logements maioritariamente rurais",
  problemesFrequents: "Avarias em casas isoladas (75+ casos/ano), instalações antigas sem terra, geradores",
- delaiIntervention: "60 minutos centre-ville, 80 minutes aldeias remotas",
+ delaiIntervention: "resposta prioritária centre-ville, 80 minutes aldeias remotas",
  testimonials: [
  {
  name: "Alberto B.",
@@ -237,7 +237,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  stats: {
  interventionsAnnuelles: "190+ intervenções em Vinhais",
  tauxSatisfaction: "99% clientes satisfeitos",
- tempsReponse: "Média 57 minutos"
+ tempsReponse: "Média resposta prioritária"
  },
  specificites: [
  "Especialistas em zonas rurais remotas",
@@ -253,7 +253,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  population: "7 500 habitants",
  logements: "2 800 logements em zona fronteiriça",
  problemesFrequents: "Avarias em casas antigas (65+ casos/ano), instalações obsoletas, problemas de tensão",
- delaiIntervention: "65 minutos centre-ville, 85 minutes aldeias",
+ delaiIntervention: "resposta prioritária centre-ville, 85 minutes aldeias",
  testimonials: [
  {
  name: "Vítor L.",
@@ -269,7 +269,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  },
  stats: {
  interventionsAnnuelles: "170+ intervenções em Miranda",
- tempsReponse: "Média 61 minutos"
+ tempsReponse: "Média resposta prioritária"
  },
  specificites: [
  "Cobertura zona fronteiriça",
@@ -285,7 +285,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  population: "9 500 habitants",
  logements: "3 800 logements em zona rural",
  problemesFrequents: "Avarias em quintas (85+ casos/ano), instalações agrícolas, bombas elétricas",
- delaiIntervention: "60 minutos centre-ville, 80 minutes aldeias",
+ delaiIntervention: "resposta prioritária centre-ville, 80 minutes aldeias",
  testimonials: [
  {
  name: "Henrique C.",
@@ -302,7 +302,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  stats: {
  interventionsAnnuelles: "210+ intervenções em Mogadouro",
  tauxSatisfaction: "99% clientes satisfeitos",
- tempsReponse: "Média 57 minutos"
+ tempsReponse: "Média resposta prioritária"
  },
  specificites: [
  "Especialistas em instalações agrícolas",
@@ -318,7 +318,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  population: "5 000 habitants",
  logements: "2 000 logements rurais",
  problemesFrequents: "Avarias em casas antigas (55+ casos/ano), instalações sem certificação, bombas elétricas",
- delaiIntervention: "55 minutos centre-ville, 75 minutes aldeias",
+ delaiIntervention: "resposta prioritária centre-ville, 75 minutes aldeias",
  testimonials: [
  {
  name: "Margarida P.",
@@ -335,7 +335,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  stats: {
  interventionsAnnuelles: "150+ intervenções em Alfândega",
  tauxSatisfaction: "99% clientes satisfeitos",
- tempsReponse: "Média 52 minutos"
+ tempsReponse: "Média resposta prioritária"
  },
  specificites: [
  "Especialistas em bombas elétricas",
@@ -351,7 +351,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  population: "7 000 habitants",
  logements: "2 700 logements",
  problemesFrequents: "Avarias elétricas (70+ casos/ano), quadros obsoletos, instalações antigas",
- delaiIntervention: "60 minutos centre-ville, 80 minutes aldeias",
+ delaiIntervention: "resposta prioritária centre-ville, 80 minutes aldeias",
  testimonials: [
  {
  name: "Gonçalo T.",
@@ -367,7 +367,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  },
  stats: {
  interventionsAnnuelles: "180+ intervenções em Vila Flor",
- tempsReponse: "Média 57 minutos"
+ tempsReponse: "Média resposta prioritária"
  },
  specificites: [
  "Cobertura completa concelho",

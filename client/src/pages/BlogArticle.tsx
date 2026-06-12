@@ -53,7 +53,7 @@ export default function BlogArticle() {
  </div>
  <div className="flex items-center gap-2">
  <Clock className="h-5 w-5" />
- <span>8 min</span>
+ <span>resposta prioritária</span>
  </div>
  </div>
  </div>

@@ -188,7 +188,7 @@ ${params.description}
 
 **Ação necessária:**
 ${params.urgency === 'urgent' 
- ? '⚠️ Contactar em 15-30 minutos!' 
+ ? '⚠️ Contactar resposta prioritária!' 
  : 'Contactar em 2-4 horas'}
  `.trim()});
 }

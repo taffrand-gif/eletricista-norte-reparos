@@ -52,7 +52,7 @@ function Urgencia() {
  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 max-w-2xl mx-auto">
  <div className="grid grid-cols-3 gap-4 text-center">
  <div>
- <div className="text-3xl font-black">40min</div>
+ <div className="text-3xl font-black">resposta prioritária</div>
  <div className="text-sm">Tempo Chegada</div>
  </div>
  <div>
@@ -274,10 +274,10 @@ function Urgencia() {
  </h3>
  <div className="space-y-2 mb-4">
  <p className="text-gray-700">
- <strong>Macedo:</strong> 15 minutos
+ <strong>Macedo:</strong> resposta prioritária
  </p>
  <p className="text-gray-700">
- <strong>Bragança:</strong> 40 minutos
+ <strong>Bragança:</strong> resposta prioritária
  </p>
  <p className="text-gray-700">
  <strong>Vila Real:</strong> 1 hora

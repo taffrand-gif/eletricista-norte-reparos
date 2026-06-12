@@ -136,10 +136,10 @@ export default function QuadroEletricoAntigo() {
  <h2 className="text-2xl font-black mb-6">Como Funciona a Substituição?</h2>
  <div className="space-y-4">
  {[
- { passo: "1", titulo: "Inspeção", desc: "Avaliamos o estado atual e dimensionamos o novo quadro", tempo: "30 min" },
+ { passo: "1", titulo: "Inspeção", desc: "Avaliamos o estado atual e dimensionamos o novo quadro", tempo: "resposta prioritária" },
  { passo: "2", titulo: "Orçamento", desc: "Preço fechado, sem surpresas", tempo: "Imediato" },
  { passo: "3", titulo: "Instalação", desc: "Substituição do quadro com mínima interrupção", tempo: "3-5 horas" },
- { passo: "4", titulo: "Teste e Certificação", desc: "Testamos tudo e emitimos declaração de conformidade", tempo: "30 min" },
+ { passo: "4", titulo: "Teste e Certificação", desc: "Testamos tudo e emitimos declaração de conformidade", tempo: "resposta prioritária" },
  ].map((item, i) => (
  <div key={i} className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg">
  <div className="w-10 h-10 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold">

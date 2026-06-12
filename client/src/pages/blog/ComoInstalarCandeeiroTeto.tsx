@@ -20,7 +20,7 @@ const ComoInstalarCandeeiroTeto: React.FC = () => {
  <span className="px-3 py-1 bg-amber-100 text-amber-800 font-semibold rounded-full">
  Dicas Práticas
  </span>
- <span>⏱️ 8 min de leitura</span>
+ <span>⏱️ resposta prioritária de leitura</span>
  <span>📅 13 Fev 2026</span>
  <span>👁️ 1.2K visualizações</span>
  </div>

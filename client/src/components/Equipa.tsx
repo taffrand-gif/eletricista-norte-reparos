@@ -14,7 +14,7 @@ export default function Equipa() {
  desc: 'Deteto sobrecargas antes de queimar. O que outros não veem, eu vejo.'},
  {
  icon: <Clock className="w-10 h-10" />,
- stat: '40 min',
+ stat: 'resposta prioritária',
  label: 'Chegada a Bragança',
  desc: 'Preço dito ao telefone antes de sair. Se disser 80€, são 80€. Nunca mais.'},
  {

@@ -78,7 +78,7 @@ export default function LocationDetector() {
  {/* Location Badge - always visible */}
  <button
  onClick={() => setIsOpen(true)}
- className="fixed bottom-24 right-4 md:bottom-6 md:right-6 z-40 bg-white shadow-lg rounded-full px-4 py-3 flex items-center gap-2 hover:shadow-xl transition-shadow border border-gray-200 min-h-[48px] min-w-[48px]"
+ className="fixed bottom-24 right-4 md:bottom-6 md:right-6 z-40 bg-white shadow-lg rounded-full px-4 py-3 flex items-center gap-2 hover:shadow-xl transition-shadow border border-gray-resposta prioritária-h-[48px] min-w-[48px]"
  aria-label="Alterar localização"
  >
  <MapPin className="w-4 h-4 text-blue-600" />

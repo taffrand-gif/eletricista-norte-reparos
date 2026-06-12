@@ -67,7 +67,7 @@ export default function Valpacos() {
  const faqs = [
 {
     question: "Quanto tempo demora a chegar a Valpaços?",
-    answer: "Chegamos a Valpaços em aproximadamente 50-60 minutos. Cobrimos todo o conselho incluindo as freguesias rurais dedicadas à olivicultura.",
+    answer: "Chegamos a Valpaços em aproximadamente 50-resposta prioritária. Cobrimos todo o conselho incluindo as freguesias rurais dedicadas à olivicultura.",
   },
  {
  question: "Fazem instalações elétricas para explorações agrícolas em Valpaços?",

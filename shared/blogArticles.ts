@@ -19,7 +19,7 @@ export const blogArticles: BlogArticle[] = [
  image: "https://cdn.manus.space/webdev-assets/electrical-warning.jpg",
  date: "2026-01-15",
  author: "Eletricista Profissional",
- readTime: "6 min",
+ readTime: "resposta prioritária",
  category: "Segurança",
  tags: ["segurança", "problemas", "prevenção"],
  content: `
@@ -203,7 +203,7 @@ A **Eletricista Profissional** está disponível Atendimento 24h/7d para emergê
  image: "https://cdn.manus.space/webdev-assets/energy-saving.jpg",
  date: "2026-01-10",
  author: "Eletricista Profissional",
- readTime: "7 min",
+ readTime: "resposta prioritária",
  category: "Poupança",
  tags: ["poupança", "energia", "eficiência"],
  content: `
@@ -436,7 +436,7 @@ A **Eletricista Profissional** pode ajudá-lo a otimizar a sua instalação elé
  image: "https://cdn.manus.space/webdev-assets/electrical-certificate.jpg",
  date: "2026-01-05",
  author: "Eletricista Profissional",
- readTime: "8 min",
+ readTime: "resposta prioritária",
  category: "Certificação",
  tags: ["certificação", "legislação", "obrigações"],
  content: `
@@ -693,7 +693,7 @@ A **Eletricista Profissional** tem técnicos certificados pela DGEG prontos para
  image: "https://cdn.manus.space/webdev-assets/solar-panels.jpg",
  date: "2025-12-28",
  author: "Eletricista Profissional",
- readTime: "10 min",
+ readTime: "resposta prioritária",
  category: "Energia Solar",
  tags: ["painéis solares", "poupança", "sustentabilidade"],
  content: `
@@ -1005,7 +1005,7 @@ A **Eletricista Profissional** é especialista em instalação de painéis solar
  image: "https://cdn.manus.space/webdev-assets/child-safety.jpg",
  date: "2025-12-20",
  author: "Eletricista Profissional",
- readTime: "7 min",
+ readTime: "resposta prioritária",
  category: "Segurança",
  tags: ["segurança", "crianças", "prevenção"],
  content: `
@@ -1231,7 +1231,7 @@ As crianças são naturalmente curiosas e não têm noção dos perigos da eletr
 
 ### Em Caso de Queimadura:
 
-1. Arrefeça com água fria (10-20 min)
+1. Arrefeça com água fria (10-resposta prioritária)
 2. Não use gelo
 3. Cubra com pano limpo
 4. Não aplique cremes

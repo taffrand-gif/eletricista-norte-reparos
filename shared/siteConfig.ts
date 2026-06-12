@@ -92,11 +92,11 @@ export interface SiteConfig {
 }
 
 // GRELHA TARIFÁRIA 2026
-// Z1: 15€ — Macedo e conselho — < 30 min
-// Z2: 25€ — Mirandela, Vila Flor, Alfândega, Carrazeda — < 40 min
-// Z3: 35€ — Bragança, Vinhais, Vimioso, Torre Moncorvo, Mogadouro, Freixo — < 60 min
-// Z4: 45€ — Miranda do Douro, Foz Côa, S.João Pesqueira, Murça, Valpaços — 45-75 min
-// Z5: 55€ — Vila Real, Alijó, Sabrosa, Tabuaço, Armamar, Régua, Lamego, Sta Marta, Mesão Frio — 60-90 min
+// Z1: 15€ — Macedo e conselho — < resposta prioritária
+// Z2: 25€ — Mirandela, Vila Flor, Alfândega, Carrazeda — < resposta prioritária
+// Z3: 35€ — Bragança, Vinhais, Vimioso, Torre Moncorvo, Mogadouro, Freixo — < resposta prioritária
+// Z4: 45€ — Miranda do Douro, Foz Côa, S.João Pesqueira, Murça, Valpaços — 45-resposta prioritária
+// Z5: 55€ — Vila Real, Alijó, Sabrosa, Tabuaço, Armamar, Régua, Lamego, Sta Marta, Mesão Frio — 60-resposta prioritária
 // Z6: 65€ — Chaves, Vila Pouca, Boticas, Montalegre, Ribeira de Pena, Mondim, Moimenta, Sernancelhe, Penedono — sob marcação
 // Urgência: ×1.5 (50% supplement)
 // Taxa horária: 70€/h
@@ -136,15 +136,15 @@ export const siteConfig: SiteConfig = {
   // Pricing Zones - NOVA GRELHA 2026
   pricingZones: [
     // Z1 - Macedo de Cavaleiros + redor
-    { zone: 'Z1', name: 'Macedo de Cavaleiros', cities: 'Macedo de Cavaleiros, Torre de Dona Chama', price: '15€', time: '< 30 min' },
+    { zone: 'Z1', name: 'Macedo de Cavaleiros', cities: 'Macedo de Cavaleiros, Torre de Dona Chama', price: '15€', time: '< resposta prioritária' },
     // Z2 - Mirandela, Vila Flor, Alfândega, Carrazeda
-    { zone: 'Z2', name: 'Zona 2', cities: 'Mirandela, Vila Flor, Alfândega da Fé, Carrazeda de Ansiães', price: '25€', time: '< 40 min' },
+    { zone: 'Z2', name: 'Zona 2', cities: 'Mirandela, Vila Flor, Alfândega da Fé, Carrazeda de Ansiães', price: '25€', time: '< resposta prioritária' },
     // Z3 - Bragança, Vinhais, Vimioso, Torre Moncorvo, Mogadouro, Freixo
-    { zone: 'Z3', name: 'Zona 3', cities: 'Bragança, Vinhais, Vimioso, Torre de Moncorvo, Mogadouro, Freixo de Espada à Cinta', price: '35€', time: '< 60 min' },
+    { zone: 'Z3', name: 'Zona 3', cities: 'Bragança, Vinhais, Vimioso, Torre de Moncorvo, Mogadouro, Freixo de Espada à Cinta', price: '35€', time: '< resposta prioritária' },
     // Z4 - Miranda do Douro, Foz Côa, S.João Pesqueira, Murça, Valpaços
-    { zone: 'Z4', name: 'Zona 4', cities: 'Miranda do Douro, Vila Nova de Foz Côa, São João da Pesqueira, Murça, Valpaços', price: '45€', time: '45-75 min' },
+    { zone: 'Z4', name: 'Zona 4', cities: 'Miranda do Douro, Vila Nova de Foz Côa, São João da Pesqueira, Murça, Valpaços', price: '45€', time: '45-resposta prioritária' },
     // Z5 - Vila Real, Alijó, Sabrosa, Tabuaço, Armamar, Régua, Lamego, Sta Marta, Mesão Frio
-    { zone: 'Z5', name: 'Zona 5', cities: 'Vila Real, Alijó, Sabrosa, Tabuaço, Armamar, Peso da Régua, Lamego, Santa Marta de Penaguião, Mesão Frio', price: '55€', time: '60-90 min' },
+    { zone: 'Z5', name: 'Zona 5', cities: 'Vila Real, Alijó, Sabrosa, Tabuaço, Armamar, Peso da Régua, Lamego, Santa Marta de Penaguião, Mesão Frio', price: '55€', time: '60-resposta prioritária' },
     // Z6 - Chaves, Vila Pouca, Boticas, Montalegre, Ribeira de Pena, Mondim, Moimenta, Sernancelhe, Penedono
     { zone: 'Z6', name: 'Zona 6', cities: 'Chaves, Vila Pouca de Aguiar, Boticas, Montalegre, Ribeira de Pena, Mondim de Basto, Moimenta da Beira, Sernancelhe, Penedono', price: '65€', time: 'Sob marcação' },
   ],

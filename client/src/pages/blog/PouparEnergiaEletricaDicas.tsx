@@ -20,7 +20,7 @@ const PouparEnergiaEletricaDicas: React.FC = () => {
  <span className="px-3 py-1 bg-amber-100 text-amber-800 font-semibold rounded-full">
  Eficiência Energética
  </span>
- <span>⏱️ 10 min de leitura</span>
+ <span>⏱️ resposta prioritária de leitura</span>
  <span>📅 14 Fev 2026</span>
  <span>👁️ 890 visualizações</span>
  </div>
@@ -140,7 +140,7 @@ const PouparEnergiaEletricaDicas: React.FC = () => {
  <span className="bg-amber-600 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">3</span>
  <div>
  <p className="font-semibold">Forno elétrico com pré-aquecimento curto</p>
- <p className="text-gray-600">Desligue o forno 10 minutos antes do fim — o calor residual termina a cozedura.</p>
+ <p className="text-gray-600">Desligue o forno resposta prioritária antes do fim — o calor residual termina a cozedura.</p>
  </div>
  </li>
  </ol>

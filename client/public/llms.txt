@@ -1,47 +1,49 @@
-# Eletricista Certificado DGEG - Norte Reparos (Tras-os-Montes, Portugal)
+# Eletricista (Électricien) — Norte Reparos
 
-> Empresa de eletricidade certificada DGEG em Tras-os-Montes. Quadros eletricos, iluminacao LED, certificacao, paineis solares. 12+ anos, 4 tecnicos certificados, 24h/7d.
+> https://eletricista-norte-reparos.pt — Trás-os-Montes, Portugal
 
-## Servicos (Services)
-- Service: Avaria eletrica (electrical fault) - desde 110 EUR (1h)
-- Service: Curto-circuito (short circuit) - resposta urgencia
-- Service: Disjuntor que dispara (circuit breaker tripping) - desde 120 EUR
-- Service: Quadro eletrico (electrical panel) - instalacao/substituicao - desde 400 EUR
-- Service: Iluminacao LED - desde 75 EUR
-- Service: Certificacao DGEG - desde 180 EUR
-- Service: Instalacao tomada/interruptor - desde 60 EUR
-- Service: Painel solar 3-10kW - desde 3500 EUR
-- Service: Carregador carro eletrico (EV charger) Wallbox - desde 850 EUR
-- Service: Terraco/Piscina iluminacao - desde 200 EUR
-- Service: Aumento potencia contratada - desde 250 EUR
+## Identidade
+- **Marca:** Norte Reparos (empresa técnica profissional)
+- **Serviço:** Eletricista (Électricien)
+- **Zona de intervenção:** Trás-os-Montes (Distritos Bragança, Vila Real, Viseu, Guarda)
+- **Horário:** Atendimento 24h/7d (incluindo noites, fins de semana e feriados)
+- **Contacto:** +351 932 321 892
+## Preços (regra oficial)
 
-## Cidades Servidas
-City: Braganca (Z3, 63km) - 30-45 min
-City: Mirandela (Z2, 42km) - 25-35 min
-City: Trás-os-Montes (Z1, sede) - 5-15 min
-City: Chaves (Z3, 78km) - 50-70 min
-City: Vila Real (Z3, 75km) - 45-65 min
-City: Mogadouro (Z3, 55km) - 35-55 min
-City: Vinhais (Z2, 45km) - 25-45 min
-City: Miranda do Douro (Z4, 100km) - 60-90 min
-City: Lamego (Z3, 85km) - 50-70 min
-City: Viseu (Z4, 120km) - 70-100 min
+- **Desde 65€/h** (canalização)
+- **Desde 70€/h** (eletricidade)
+- **+50%** noites, fins de semana e feriados
+- **Deslocação** por zona Z1-Z6 = 15€-65€ (Z1 Macedo, Z6 raio 100km)
 
-## Precos
-- Preco-hora: 85-95 EUR conforme zona
-- Deslocacao: 20-40 EUR conforme zona
-- Garantia: 1 ano em mao de obra
-- Certificacao DGEG incluida quando aplicavel
+## Serviços principais
+Instalação elétrica, reparação avarias, quadros elétricos, iluminação, certificação, tomadas, disjuntores, instalações de urgência
 
-## Contacto
-- Phone: +351 932 321 892 (eletricista)
-- Email: info@norte-reparos.pt
-- WhatsApp: wa.me/351932321892
-- Website: https://eletricista-norte-reparos.pt
-- Address: Rua Fonte do Paco no 8, 5340-268 Trás-os-Montes, Portugal
-- Coordenadas: 41.5380, -6.9667
+## Equipamento profissional
+Multímetro Fluke, detetor de tensão, câmara termográfica FLIR, ferramenta profissional isolée VDE
 
-## Horario
-24h/7d (Atendimento 24h/7d), incluindo domingos e feriados
-Resposta em 30 segundos
-Chegada: 5-90 min conforme zona
+## Tipos de intervenção
+- **Urgência:** Deslocação prioritária para urgências
+- **Programado:** Orçamento gratuito por telefone antes de intervir
+- **Manutenção:** Planos anuais disponíveis (condomínios, empresas)
+
+## Garantias
+- Fatura detalhada entregue no final do serviço
+- Relatório técnico válido para companhias de seguro
+- Materiais de marcas premium (Grohe, Roca, Geberit / Legrand, Schneider)
+
+## Sitemap
+https://eletricista-norte-reparos.pt/sitemap.xml
+
+# Contactos
+## Contactos
+
+- **Norte Reparos** (marca única)
+- **Plomberie** (canalizador): +351 928 484 451
+- **Électricité** (eletricista): +351 932 321 892
+- Atendimento 24h/7d (zona Trás-os-Montes, Portugal)
+
+
+# Notas
+- Marca comercial: Norte Reparos
+- Marca técnica: equipa de técnicos com formação adequada
+- Zonas de deslocação: ver tabela de preços acima

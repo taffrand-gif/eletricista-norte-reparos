@@ -25,7 +25,7 @@ const ComoTrocarTomadaEletricaSozinho: React.FC = () => {
  <span className="px-3 py-1 bg-blue-100 text-blue-800 font-semibold rounded-full">
  DIY Seguro
  </span>
- <span>⏱️ 10 min de leitura</span>
+ <span>⏱️ resposta prioritária de leitura</span>
  <span>📅 10 Mar 2026</span>
  </div>
  <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -44,13 +44,13 @@ const ComoTrocarTomadaEletricaSozinho: React.FC = () => {
  <div className="prose prose-lg max-w-none mb-10">
  <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg mb-8">
  <p className="text-blue-900 font-semibold text-lg">
- ⚡ Trocar tomada elétrica é tarefa simples que demora 15 minutos. Siga regras de segurança e poupe 40-80€!
+ ⚡ Trocar tomada elétrica é tarefa simples que demora resposta prioritária. Siga regras de segurança e poupe 40-80€!
  </p>
  </div>
  <p className="text-xl text-gray-700 mb-6 leading-relaxed">
  Trocar tomada elétrica é uma das tarefas elétricas mais simples que pode fazer sozinho.
  Neste guia completo, vamos mostrar-lhe como trocar tomada com segurança total em apenas
- 15 minutos, com ferramentas básicas que já tem em casa.
+ resposta prioritária, com ferramentas básicas que já tem em casa.
  </p>
  </div>
  <div className="bg-gray-50 rounded-2xl p-6 mb-10">

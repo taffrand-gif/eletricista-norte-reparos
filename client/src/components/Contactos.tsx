@@ -126,7 +126,7 @@ export default function Contactos() {
  required
  value={formData.message}
  onChange={handleChange}
- className="border-2 min-h-32 text-base"
+ className="border-resposta prioritária-h-32 text-base"
  placeholder="Descreva o seu problema ou pedido..."
  />
  </div>

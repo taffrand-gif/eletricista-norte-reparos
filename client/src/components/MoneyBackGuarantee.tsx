@@ -149,7 +149,7 @@ function MoneyBackGuarantee() {
  </div>
  <div className="p-6 bg-white rounded-lg border-2 border-gray-200">
  <div className="text-4xl mb-2">⚡</div>
- <p className="font-bold text-gray-900">Resposta {'<'}5min</p>
+ <p className="font-bold text-gray-900">Resposta {'<'}resposta prioritária</p>
  <p className="text-gray-600 text-sm">Atendimento 24h real</p>
  </div>
  </div>

@@ -128,7 +128,7 @@ function EquipamentoProfissional({ className = '' }: EquipamentoProfissionalProp
  <td className="py-4 px-4 font-semibold">Tempo Médio</td>
  <td className="py-4 px-4 text-center text-gray-600">1-3 horas</td>
  <td className="py-4 px-4 text-center font-bold" style={{ color: accentColor }}>
- 15-45 minutos
+ 15-resposta prioritária
  </td>
  </tr>
  <tr className="border-b border-gray-200">

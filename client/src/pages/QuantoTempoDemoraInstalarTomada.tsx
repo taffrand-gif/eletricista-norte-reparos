@@ -30,7 +30,7 @@ export default function QuantoTempoDemoraInstalarTomada() {
  },
  {
  question: "Quanto tempo fico sem luz ao instalar tomada?",
- answer: "Sem luz no circuito: 30-90 minutos (só circuito afectado). Resto da casa mantém luz. Desligamos apenas circuito necessário para segurança. Avisamos antes de cortar."
+ answer: "Sem luz no circuito: 30-resposta prioritária (só circuito afectado). Resto da casa mantém luz. Desligamos apenas circuito necessário para segurança. Avisamos antes de cortar."
  },
  {
  question: "Posso instalar tomada em 1 dia?",
@@ -46,15 +46,15 @@ export default function QuantoTempoDemoraInstalarTomada() {
  tipo: "Tomada Simples",
  descricao: "Substituir tomada existente",
  tempo: "1-2h",
- semLuz: "30-60 min",
+ semLuz: "30-resposta prioritária",
  detalhes: [
- "Avaliação: 10 min",
- "Desligar circuito: 5 min",
- "Remover antiga: 10 min",
- "Instalar nova: 20-30 min",
- "Ligar quadro: 10 min",
- "Testar: 10-15 min",
- "Certificar: 15-20 min"
+ "Avaliação: resposta prioritária",
+ "Desligar circuito: resposta prioritária",
+ "Remover antiga: resposta prioritária",
+ "Instalar nova: 20-resposta prioritária",
+ "Ligar quadro: resposta prioritária",
+ "Testar: 10-resposta prioritária",
+ "Certificar: 15-resposta prioritária"
  ],
  icon: CheckCircle
  },
@@ -62,16 +62,16 @@ export default function QuantoTempoDemoraInstalarTomada() {
  tipo: "Tomada Nova (Cabos Existem)",
  descricao: "Adicionar tomada em parede com cabos",
  tempo: "2-3h",
- semLuz: "60-90 min",
+ semLuz: "60-resposta prioritária",
  detalhes: [
- "Avaliação: 15 min",
- "Desligar circuito: 5 min",
- "Abrir parede: 20-30 min",
- "Ligar cabos: 30-45 min",
- "Instalar tomada: 20-30 min",
- "Fechar parede: 30-45 min",
- "Testar: 15 min",
- "Certificar: 20 min"
+ "Avaliação: resposta prioritária",
+ "Desligar circuito: resposta prioritária",
+ "Abrir parede: 20-resposta prioritária",
+ "Ligar cabos: 30-resposta prioritária",
+ "Instalar tomada: 20-resposta prioritária",
+ "Fechar parede: 30-resposta prioritária",
+ "Testar: resposta prioritária",
+ "Certificar: resposta prioritária"
  ],
  icon: Wrench
  },
@@ -79,16 +79,16 @@ export default function QuantoTempoDemoraInstalarTomada() {
  tipo: "Tomada Nova (Cabos Novos)",
  descricao: "Passar cabos desde quadro",
  tempo: "3-5h",
- semLuz: "90-120 min",
+ semLuz: "90-resposta prioritária",
  detalhes: [
- "Avaliação: 20 min",
- "Desligar circuito: 5 min",
- "Passar cabos: 90-150 min",
- "Ligar quadro: 30-45 min",
- "Instalar tomada: 20-30 min",
- "Fechar parede: 30-60 min",
- "Testar: 20 min",
- "Certificar: 20-30 min"
+ "Avaliação: resposta prioritária",
+ "Desligar circuito: resposta prioritária",
+ "Passar cabos: 90-resposta prioritária",
+ "Ligar quadro: 30-resposta prioritária",
+ "Instalar tomada: 20-resposta prioritária",
+ "Fechar parede: 30-resposta prioritária",
+ "Testar: resposta prioritária",
+ "Certificar: 20-resposta prioritária"
  ],
  icon: Zap
  },
@@ -98,14 +98,14 @@ export default function QuantoTempoDemoraInstalarTomada() {
  tempo: "4-8h",
  semLuz: "2-4 horas",
  detalhes: [
- "Avaliação: 30 min",
- "Desligar circuitos: 10 min",
- "Passar cabos: 120-240 min",
- "Ligar quadro: 45-90 min",
- "Instalar tomadas: 60-120 min",
- "Fechar paredes: 60-120 min",
- "Testar todas: 30-45 min",
- "Certificar: 30-45 min"
+ "Avaliação: resposta prioritária",
+ "Desligar circuitos: resposta prioritária",
+ "Passar cabos: 120-resposta prioritária",
+ "Ligar quadro: 45-resposta prioritária",
+ "Instalar tomadas: 60-resposta prioritária",
+ "Fechar paredes: 60-resposta prioritária",
+ "Testar todas: 30-resposta prioritária",
+ "Certificar: 30-resposta prioritária"
  ],
  icon: AlertTriangle
  }
@@ -114,27 +114,27 @@ export default function QuantoTempoDemoraInstalarTomada() {
  {
  factor: "Tipo de Instalação",
  impacto: "Substituir: rápido. Nova com cabos: médio. Nova sem cabos: longo",
- tempo: "+30min a +3h"
+ tempo: "+resposta prioritária a +3h"
  },
  {
  factor: "Distância ao Quadro",
  impacto: "Perto quadro: rápido. Longe quadro: precisa passar mais cabo",
- tempo: "+30min a +2h"
+ tempo: "+resposta prioritária a +2h"
  },
  {
  factor: "Tipo de Parede",
  impacato: "Pladur: rápido. Tijolo: médio. Betão: mais tempo",
- tempo: "+20min a +1h30"
+ tempo: "+resposta prioritária a +1h30"
  },
  {
  factor: "Acessibilidade Cabos",
  impacto: "Calha vista: rápido. Calha escondida: médio. Sem calha: longo",
- tempo: "+30min a +2h"
+ tempo: "+resposta prioritária a +2h"
  },
  {
  factor: "certificação elétrica",
  impacto: "Certificação obrigatória, incluída no tempo",
- tempo: "15-30 min"
+ tempo: "15-resposta prioritária"
  }
  ];
  return (

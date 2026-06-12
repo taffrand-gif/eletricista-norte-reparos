@@ -19,7 +19,7 @@ export const electricFaqs: FAQItem[] = [
  },
  {
  question: "Quanto tempo demora a chegar em caso de urgência?",
- answer: "Na zona de Trás-os-Montes e arredores (até 20km): 30-45 minutos. Para outras localidades do distrito: 45 minutos a 1 hora. Temos veículos equipados com ferramentas e material para deslocações rápidas."
+ answer: "Na zona de Trás-os-Montes e arredores (até 20km): 30-resposta prioritária. Para outras localidades do distrito: resposta prioritária a 1 hora. Temos veículos equipados com ferramentas e material para deslocações rápidas."
  },
  {
  question: "Atendem urgências à noite ou fim de semana?",
@@ -101,7 +101,7 @@ export const plumberFaqs: FAQItem[] = [
  },
  {
  question: "Quanto tempo demora a chegar em caso de urgência?",
- answer: "Na zona de Trás-os-Montes e arredores: 30-45 minutos. Para outras localidades do distrito: 45 minutos a 1 hora. Temos veículos equipados com ferramentas e material para deslocações rápidas."
+ answer: "Na zona de Trás-os-Montes e arredores: 30-resposta prioritária. Para outras localidades do distrito: resposta prioritária a 1 hora. Temos veículos equipados com ferramentas e material para deslocações rápidas."
  },
  {
  question: "Atendem urgências à noite ou fim de semana?",

@@ -35,7 +35,7 @@ export const eletricistaFAQs: FAQ[] = [
  },
  {
  question: "Quanto tempo demora a chegar em caso de urgência elétrica?",
- answer: "Chegamos Atendimento prioritário no centro de Bragança e até 60 minutos nas aldeias circundantes. Serviço 24h/7 dias incluindo feriados."
+ answer: "Chegamos Atendimento prioritário no centro de Bragança e até resposta prioritária nas aldeias circundantes. Serviço 24h/7 dias incluindo feriados."
  },
  {
 question: "São certificados ?",

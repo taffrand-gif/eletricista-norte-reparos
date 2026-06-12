@@ -10,7 +10,7 @@ export default function PriceTable() {
  service: "Pequena Arranjo",
  description: "Tomadas, interruptores, pontos de luz",
  price: "35€ - 70€",
- details: ["30 min - 1h de trabalho", "Pequeno material incluído", "Deslocação à parte"]},
+ details: ["resposta prioritária - 1h de trabalho", "Pequeno material incluído", "Deslocação à parte"]},
  {
  service: "Intervenção Standard",
  description: "Avarias, quadros, curto-circuitos",
@@ -106,7 +106,7 @@ export default function PriceTable() {
  <h4 className="font-bold text-blue-900 mb-2">"Moro em Macedo e preciso trocar um disjuntor."</h4>
  <ul className="space-y-1 text-blue-800 text-sm">
  <li className="flex justify-between"><span>Deslocação (Zona 1):</span> <span>15€</span></li>
- <li className="flex justify-between"><span>Mão de Obra (30min):</span> <span>35€</span></li>
+ <li className="flex justify-between"><span>Mão de Obra (resposta prioritária):</span> <span>35€</span></li>
  <li className="border-t border-blue-200 mt-2 pt-2 font-bold flex justify-between text-lg"><span>Total:</span> <span>50€</span></li>
  </ul>
  </div>
