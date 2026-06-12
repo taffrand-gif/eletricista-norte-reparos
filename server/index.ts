@@ -55,10 +55,63 @@ async function startServer() {
  }
  }));
 
- // Handle client-side routing - serve index.html for all routes
- app.get("*", (_req, res) => {
+ // Handle client-side routing - serve index.html with SSR-friendly title injection
+ // pour les routes SPA critiques (Google ne devrait jamais dépendre de l'hydratation
+ // pour un title). Le useSEO() côté client prend le relais après hydratation.
+ const ROUTE_TITLES: Record<string, { title: string; description: string; canonical: string }> = {
+ "/contactos": {
+ title: "Contactos | Norte Reparos - Eletricista Profissional",
+ description: "Entre em contacto connosco. Eletricista profissional Atendimento 24h/7d/dia. Ligue 932 321 892. Orçamento gratuito.",
+ canonical: "https://eletricista-norte-reparos.pt/contactos"
+ },
+ "/equipa": {
+ title: "Equipa | Norte Reparos - Eletricista Profissional Trás-os-Montes",
+ description: "Conheça a nossa equipa de eletricistas profissionais em Trás-os-Montes. Formação contínua DGEG, equipamento profissional, certificação CERTIEL.",
+ canonical: "https://eletricista-norte-reparos.pt/equipa"
+ },
+ "/precos-eletricista": {
+ title: "Preços Eletricista | Norte Reparos - Tabela Trás-os-Montes",
+ description: "Tabela de preços do eletricista em Trás-os-Montes. Desde 70€/h, majoração +50% noites/fins de semana/feriados, deslocação por zona Z1-Z6 (15-65€).",
+ canonical: "https://eletricista-norte-reparos.pt/precos-eletricista"
+ },
+ "/areas-atuacao": {
+ title: "Áreas de Atuação | Norte Reparos - Eletricista Trás-os-Montes",
+ description: "Zonas de intervenção do eletricista Norte Reparos. Raio 100km desde Macedo de Cavaleiros, cobrindo Bragança, Vila Real, Viseu, Guarda.",
+ canonical: "https://eletricista-norte-reparos.pt/areas-atuacao"
+ },
+ "/transparencia-precos": {
+ title: "Transparência de Preços | Norte Reparos - Eletricista",
+ description: "Explicação detalhada dos nossos preços: mão-de-obra, materiais, deslocação, garantias. Sem surpresas na fatura.",
+ canonical: "https://eletricista-norte-reparos.pt/transparencia-precos"
+ }
+ };
+
+ app.get("*", (req, res) => {
  res.setHeader('Cache-Control', 'no-cache, must-revalidate');
+ const route = req.path;
+ const seo = ROUTE_TITLES[route];
+ if (!seo) {
  res.sendFile(path.join(staticPath, "index.html"));
+ return;
+ }
+ const fs = require('fs');
+ const indexPath = path.join(staticPath, "index.html");
+ fs.readFile(indexPath, 'utf8', (err: NodeJS.ErrnoException | null, html: string) => {
+ if (err) {
+ res.sendFile(indexPath);
+ return;
+ }
+ let out = html.replace(/<title>[^<]*<\/title>/, `<title>${seo.title}</title>`);
+ out = out.replace(/<meta name="description" content="[^"]*"/, `<meta name="description" content="${seo.description}"`);
+ out = out.replace(/<meta property="og:title" content="[^"]*"/, `<meta property="og:title" content="${seo.title}"`);
+ out = out.replace(/<meta property="og:description" content="[^"]*"/, `<meta property="og:description" content="${seo.description}"`);
+ out = out.replace(/<link rel="canonical" href="[^"]*"/, `<link rel="canonical" href="${seo.canonical}"`);
+ out = out.replace(/<meta property="og:url" content="[^"]*"/, `<meta property="og:url" content="${seo.canonical}"`);
+ out = out.replace(/<meta name="twitter:title" content="[^"]*"/, `<meta name="twitter:title" content="${seo.title}"`);
+ out = out.replace(/<meta name="twitter:description" content="[^"]*"/, `<meta name="twitter:description" content="${seo.description}"`);
+ res.setHeader('Content-Type', 'text/html; charset=utf-8');
+ res.send(out);
+ });
  });
 
  const port = process.env.PORT || 3000;
