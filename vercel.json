@@ -74,6 +74,54 @@
       "destination": "/precos.html"
     },
     {
+      "source": "/indice-a-z",
+      "destination": "/indice-a-z.html"
+    },
+    {
+      "source": "/indice-a-z-p1",
+      "destination": "/indice-a-z-p1.html"
+    },
+    {
+      "source": "/indice-a-z-p2",
+      "destination": "/indice-a-z-p2.html"
+    },
+    {
+      "source": "/indice-a-z-p3",
+      "destination": "/indice-a-z-p3.html"
+    },
+    {
+      "source": "/indice-a-z-p4",
+      "destination": "/indice-a-z-p4.html"
+    },
+    {
+      "source": "/indice-a-z-p5",
+      "destination": "/indice-a-z-p5.html"
+    },
+    {
+      "source": "/indice-a-z-p6",
+      "destination": "/indice-a-z-p6.html"
+    },
+    {
+      "source": "/indice-a-z-p7",
+      "destination": "/indice-a-z-p7.html"
+    },
+    {
+      "source": "/indice-a-z-p8",
+      "destination": "/indice-a-z-p8.html"
+    },
+    {
+      "source": "/indice-a-z-p9",
+      "destination": "/indice-a-z-p9.html"
+    },
+    {
+      "source": "/indice-a-z-p10",
+      "destination": "/indice-a-z-p10.html"
+    },
+    {
+      "source": "/indice-a-z-p11",
+      "destination": "/indice-a-z-p11.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
