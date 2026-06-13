@@ -14,7 +14,7 @@ import { getCidadesProximas } from '@/data/cidadesProximas';
 export default function MacedoCavaleiros() {
  const { config } = useSite();
  useEffect(() => {
- document.title = "Eletricista Macedo Cavaleiros ⚡ 24h | 932 321 892";
+ document.title = "⚡ Eletricista Macedo Cavaleiros — Orçamento Grátis | Garantia Escrita";
  
  let metaDescription = document.querySelector('meta[name="description"]');
  if (!metaDescription) {
@@ -22,7 +22,7 @@ export default function MacedoCavaleiros() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Curto-circuito em Macedo de Cavaleiros? Estamos aí em menos de resposta prioritária. Orçamento sem compromisso. Ligue: 932 321 892');
+ metaDescription.setAttribute('content', 'Eletricista em Macedo de Cavaleiros e arredores. Técnicos certificados, fichas eletrotécnicas assinadas, equipamento profissional. Orçamento grátis. Ligue 932 321 892.');
  let metaKeywords = document.querySelector('meta[name="keywords"]');
  if (!metaKeywords) {
  metaKeywords = document.createElement('meta');

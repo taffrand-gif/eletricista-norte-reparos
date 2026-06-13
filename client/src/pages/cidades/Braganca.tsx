@@ -15,7 +15,7 @@ import { getCidadesProximas } from '@/data/cidadesProximas';
 export default function Braganca() {
  const { config } = useSite();
  useEffect(() => {
- document.title = "Eletricista Urgente Bragança ⚡ 24h | 932 321 892";
+ document.title = "⚡ Eletricista Bragança — Orçamento Grátis | Garantia Escrita";
  
  // Optimized meta description
  let metaDescription = document.querySelector('meta[name="description"]');
@@ -24,7 +24,7 @@ export default function Braganca() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Problemas elétricos em Bragança? Respondemos Atendimento prioritário. Diagnóstico rápido, orçamento sem compromisso. Ligue agora: 932 321 892');
+ metaDescription.setAttribute('content', 'Eletricista em Bragança e arredores. Técnicos certificados, fichas eletrotécnicas assinadas, equipamento profissional. Orçamento grátis. Ligue 932 321 892.');
  // SEO meta keywords
  let metaKeywords = document.querySelector('meta[name="keywords"]');
  if (!metaKeywords) {

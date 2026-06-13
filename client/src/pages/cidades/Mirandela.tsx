@@ -15,7 +15,7 @@ import FAQSection from '@/components/FAQSection';
 export default function Mirandela() {
  const { config } = useSite();
  useEffect(() => {
- document.title = "Eletricista Urgente Mirandela ⚡ 24h | 932 321 892";
+ document.title = "⚡ Eletricista Mirandela — Orçamento Grátis | Garantia Escrita";
  
  // Optimized meta description
  let metaDescription = document.querySelector('meta[name="description"]');
@@ -24,7 +24,7 @@ export default function Mirandela() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Disjuntor a disparar em Mirandela? Diagnóstico rápido e orçamento sem compromisso. Respondemos em menos de 1h. Ligue: 932 321 892');
+ metaDescription.setAttribute('content', 'Eletricista em Mirandela e arredores. Técnicos certificados, fichas eletrotécnicas assinadas, equipamento profissional. Orçamento grátis. Ligue 932 321 892.');
  // SEO meta keywords
  let metaKeywords = document.querySelector('meta[name="keywords"]');
  if (!metaKeywords) {

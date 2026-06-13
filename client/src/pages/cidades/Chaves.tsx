@@ -15,7 +15,7 @@ import FAQSection from '@/components/FAQSection';
 export default function Chaves() {
  const { config } = useSite();
  useEffect(() => {
- document.title = "Eletricista Urgente Chaves ⚡ 24h | 932 321 892";
+ document.title = "⚡ Eletricista Chaves — Orçamento Grátis | Garantia Escrita";
  
  // Optimized meta description
  let metaDescription = document.querySelector('meta[name="description"]');
@@ -24,7 +24,7 @@ export default function Chaves() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Ficou sem luz em Chaves? Resolvemos hoje. Intervenção rápida, orçamento sem compromisso. Ligue agora: 932 321 892');
+ metaDescription.setAttribute('content', 'Eletricista em Chaves e arredores. Técnicos certificados, fichas eletrotécnicas assinadas, equipamento profissional. Orçamento grátis. Ligue 932 321 892.');
  // SEO meta keywords
  let metaKeywords = document.querySelector('meta[name="keywords"]');
  if (!metaKeywords) {

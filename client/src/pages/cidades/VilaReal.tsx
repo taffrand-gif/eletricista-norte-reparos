@@ -15,7 +15,7 @@ import { useEffect } from 'react';
 export default function VilaReal() {
  const { config } = useSite();
  useEffect(() => {
- document.title = "Eletricista Urgente Vila Real ⚡ 24h | 932 321 892";
+ document.title = "⚡ Eletricista Vila Real — Orçamento Grátis | Garantia Escrita";
  
  // Optimized meta description
  let metaDescription = document.querySelector('meta[name="description"]');
@@ -24,7 +24,7 @@ export default function VilaReal() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Avaria elétrica em Vila Real? A nossa equipa responde em menos de 1h. certificação elétrica, sem compromisso. Ligue: 932 321 892');
+ metaDescription.setAttribute('content', 'Eletricista em Vila Real e arredores. Técnicos certificados, fichas eletrotécnicas assinadas, equipamento profissional. Orçamento grátis. Ligue 932 321 892.');
  // SEO meta keywords
  let metaKeywords = document.querySelector('meta[name="keywords"]');
  if (!metaKeywords) {
