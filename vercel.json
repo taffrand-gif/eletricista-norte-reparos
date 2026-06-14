@@ -2114,6 +2114,16 @@
   ],
   "redirects": [
     {
+      "source": "/imprensa",
+      "destination": "/sobre.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/imprensa.html",
+      "destination": "/sobre.html",
+      "statusCode": 301
+    },
+    {
       "source": "/blog/contratar-canalizador-2026.html",
       "destination": "/top-10-razoes-contratar-canalizador.html",
       "statusCode": 301
