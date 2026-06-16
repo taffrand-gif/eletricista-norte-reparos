@@ -276,7 +276,7 @@ function Urgencia() {
  <strong>Bragança:</strong> A confirmar
  </p>
  <p className="text-gray-700">
- <strong>Vila Real:</strong> 1 hora
+ <strong>Vila Real:</strong> A confirmar
  </p>
  </div>
  <p className="flex items-center gap-2 text-gray-700">
