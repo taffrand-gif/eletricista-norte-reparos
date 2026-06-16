@@ -126,7 +126,7 @@ export function generateMetaDescription(ville?: string): string {
  
  if (ville) {
  // Meta descriptions optimisées par ville (<160 chars, mots-clés locaux, CTA, )
- return `Eletricista Trabalho garantido por escrito em ${ville} 24h/7d. Avarias, disjuntores, quadros elétricos. Chegamos resposta prioritária. ☎️ ${config.phone}`;
+ return `Eletricista Trabalho garantido por escrito em ${ville} 24h/7d. Avarias, disjuntores, quadros elétricos. Chegamos assim que possível. ☎️ ${config.phone}`;
  }
  
  // Page d'accueil
@@ -184,11 +184,7 @@ export function generateLocalBusinessSchema(ville?: string) {
  "areaServed": {
  "@type": "City",
  "name": ville || "Bragança"
- },
- "sameAs": [
- `https://www.facebook.com/${(config.businessName || "").toLowerCase().replace(/\s+/g, '')}`,
- `https://www.instagram.com/${(config.businessName || "").toLowerCase().replace(/\s+/g, '')}`
- ]
+ }
  };
 }
 // Fonction pour générer le schema Organization
@@ -207,11 +203,7 @@ export function generateOrganizationSchema() {
  "contactType": "customer service",
  "areaServed": "PT",
  "availableLanguage": ["Portuguese"]
- },
- "sameAs": [
- `https://www.facebook.com/${(config.businessName || "").toLowerCase().replace(/\s+/g, '')}`,
- `https://www.instagram.com/${(config.businessName || "").toLowerCase().replace(/\s+/g, '')}`
- ]
+ }
  };
 }
 // Fonction pour générer le schema FAQPage

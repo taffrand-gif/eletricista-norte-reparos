@@ -33,8 +33,8 @@ function GuaranteeSection() {
  {
  icon: '👨‍🔧',
  title: 'Técnico Certificado',
- description: '15 anos experiência — Sabe o que faz',
- badge: '15 anos'
+ description: '12+ anos de experiência — Sabe o que faz',
+ badge: '12+ anos'
  },
  {
  icon: '✅',
@@ -59,7 +59,7 @@ function GuaranteeSection() {
  {
  icon: '👨‍🔧',
  title: 'Técnico Certificado',
- description: '15 anos experiência + — Sabe o que faz',
+ description: '12+ anos de experiência + — Sabe o que faz',
  badge: ''
  },
  {

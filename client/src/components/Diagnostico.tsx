@@ -21,11 +21,11 @@ const urgencies = [
  { icon: '🗓️', label: 'Sem pressa', value: 'sem-pressa' },
 ];
 const cities = [
- { label: 'Trás-os-Montes', value: 'macedo', zone: 1, price: 15, time: 'resposta prioritária' },
- { label: 'Mirandela', value: 'mirandela', zone: 2, price: 25, time: 'resposta prioritária' },
- { label: 'Bragança', value: 'braganca', zone: 3, price: 35, time: 'resposta prioritária' },
- { label: 'Vila Real', value: 'vila-real', zone: 5, price: 55, time: 'resposta prioritária' },
- { label: 'Chaves', value: 'chaves', zone: 6, price: 65, time: 'resposta prioritária' },
+ { label: 'Trás-os-Montes', value: 'macedo', zone: 1, price: 15, time: 'A confirmar' },
+ { label: 'Mirandela', value: 'mirandela', zone: 2, price: 25, time: 'A confirmar' },
+ { label: 'Bragança', value: 'braganca', zone: 3, price: 35, time: 'A confirmar' },
+ { label: 'Vila Real', value: 'vila-real', zone: 5, price: 55, time: 'A confirmar' },
+ { label: 'Chaves', value: 'chaves', zone: 6, price: 65, time: 'A confirmar' },
  { label: 'Outra cidade', value: 'outra', zone: 0, price: 0, time: '' },
 ];
 export default function Diagnostico() {
