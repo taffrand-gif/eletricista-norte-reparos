@@ -360,8 +360,7 @@ export default function StructuredData() {
  }
  ],
  "sameAs": [
- `https://wa.me/${config.whatsapp || '351932321892'}?text=${encodeURIComponent(config.whatsappMessage)}`,
- "https://www.facebook.com/"
+ `https://wa.me/${config.whatsapp || '351932321892'}?text=${encodeURIComponent(config.whatsappMessage)}`
  ],
  "priceRange": "€€",
  "currenciesAccepted": "EUR",

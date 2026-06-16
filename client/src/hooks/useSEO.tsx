@@ -184,11 +184,7 @@ export function generateLocalBusinessSchema(ville?: string) {
  "areaServed": {
  "@type": "City",
  "name": ville || "Bragança"
- },
- "sameAs": [
- `https://www.facebook.com/${(config.businessName || "").toLowerCase().replace(/\s+/g, '')}`,
- `https://www.instagram.com/${(config.businessName || "").toLowerCase().replace(/\s+/g, '')}`
- ]
+ }
  };
 }
 // Fonction pour générer le schema Organization
@@ -207,11 +203,7 @@ export function generateOrganizationSchema() {
  "contactType": "customer service",
  "areaServed": "PT",
  "availableLanguage": ["Portuguese"]
- },
- "sameAs": [
- `https://www.facebook.com/${(config.businessName || "").toLowerCase().replace(/\s+/g, '')}`,
- `https://www.instagram.com/${(config.businessName || "").toLowerCase().replace(/\s+/g, '')}`
- ]
+ }
  };
 }
 // Fonction pour générer le schema FAQPage

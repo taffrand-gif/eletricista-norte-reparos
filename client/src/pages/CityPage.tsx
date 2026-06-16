@@ -157,7 +157,7 @@ export default function CityPage() {
  </ul>
  <div className="mt-6 p-4 bg-red-50 rounded-lg">
  <p className="text-gray-900">
- <strong>Tempo médio de chegada em {city.name}:</strong> 30-resposta prioritária após o seu contacto
+ <strong>Tempo médio de chegada em {city.name}:</strong> a confirmar após o seu contacto
  </p>
  </div>
  </div>
@@ -175,8 +175,7 @@ export default function CityPage() {
  <div className="flex items-start gap-4">
  <div className="text-3xl">⚡</div>
  <div>
- <h3 className="font-bold text-lg text-gray-900 mb-2">Resposta Rápida</h3>
- <p className="text-gray-700">Chegamos a {city.name} resposta prioritária, prontos para resolver o seu problema.</p>
+ <p className="text-gray-700">Chegamos a {city.name} assim que possível, prontos para resolver o seu problema.</p>
  </div>
  </div>
  <div className="flex items-start gap-4">

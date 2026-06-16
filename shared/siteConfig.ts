@@ -174,13 +174,13 @@ export const siteConfig: SiteConfig = {
       'avaria elétrica urgente bragança', 'eletricista 24 horas mirandela',
       'certificação elétrica macedo de cavaleiros', 'arranjo quadro elétrico trás-os-montes',
       'preço eletricista bragança', 'eletricista perto de mim bragança',
-      'substituição quadro elétrico bragança', 'certificação CERTIEL',
+      'substituição quadro elétrico bragança',
       'eletricista urgente chaves', 'instalação elétrica mirandela',
       'avaria quadro elétrico bragança', 'arranjo disjuntor vila real',
       'eletricista emergência 24h', 'avaria elétrica urgente domingo',
       'eletricista barato trás-os-montes', 'instalação elétrica antiga',
       'iluminação LED cozinha', 'eletricista para aldeias remotas',
-      'eletricista certificado CERTIEL', 'quadro elétrico dispara',
+      'quadro elétrico dispara',
       'instalação elétrica casa antiga', 'tomadas e interruptores'
     ],
     ogImage: '/images-optimized/hero/hero-electrician-portugal.jpg'
