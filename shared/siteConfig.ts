@@ -136,15 +136,15 @@ export const siteConfig: SiteConfig = {
   // Pricing Zones - NOVA GRELHA 2026
   pricingZones: [
     // Z1 - Macedo de Cavaleiros + redor
-    { zone: 'Z1', name: 'Macedo de Cavaleiros', cities: 'Macedo de Cavaleiros, Torre de Dona Chama', price: '15€', time: '< resposta prioritária' },
+    { zone: 'Z1', name: 'Macedo de Cavaleiros', cities: 'Macedo de Cavaleiros, Torre de Dona Chama', price: '15€', time: 'A confirmar' },
     // Z2 - Mirandela, Vila Flor, Alfândega, Carrazeda
-    { zone: 'Z2', name: 'Zona 2', cities: 'Mirandela, Vila Flor, Alfândega da Fé, Carrazeda de Ansiães', price: '25€', time: '< resposta prioritária' },
+    { zone: 'Z2', name: 'Zona 2', cities: 'Mirandela, Vila Flor, Alfândega da Fé, Carrazeda de Ansiães', price: '25€', time: 'A confirmar' },
     // Z3 - Bragança, Vinhais, Vimioso, Torre Moncorvo, Mogadouro, Freixo
-    { zone: 'Z3', name: 'Zona 3', cities: 'Bragança, Vinhais, Vimioso, Torre de Moncorvo, Mogadouro, Freixo de Espada à Cinta', price: '35€', time: '< resposta prioritária' },
+    { zone: 'Z3', name: 'Zona 3', cities: 'Bragança, Vinhais, Vimioso, Torre de Moncorvo, Mogadouro, Freixo de Espada à Cinta', price: '35€', time: 'A confirmar' },
     // Z4 - Miranda do Douro, Foz Côa, S.João Pesqueira, Murça, Valpaços
-    { zone: 'Z4', name: 'Zona 4', cities: 'Miranda do Douro, Vila Nova de Foz Côa, São João da Pesqueira, Murça, Valpaços', price: '45€', time: '45-resposta prioritária' },
+    { zone: 'Z4', name: 'Zona 4', cities: 'Miranda do Douro, Vila Nova de Foz Côa, São João da Pesqueira, Murça, Valpaços', price: '45€', time: 'A confirmar' },
     // Z5 - Vila Real, Alijó, Sabrosa, Tabuaço, Armamar, Régua, Lamego, Sta Marta, Mesão Frio
-    { zone: 'Z5', name: 'Zona 5', cities: 'Vila Real, Alijó, Sabrosa, Tabuaço, Armamar, Peso da Régua, Lamego, Santa Marta de Penaguião, Mesão Frio', price: '55€', time: '60-resposta prioritária' },
+    { zone: 'Z5', name: 'Zona 5', cities: 'Vila Real, Alijó, Sabrosa, Tabuaço, Armamar, Peso da Régua, Lamego, Santa Marta de Penaguião, Mesão Frio', price: '55€', time: 'A confirmar' },
     // Z6 - Chaves, Vila Pouca, Boticas, Montalegre, Ribeira de Pena, Mondim, Moimenta, Sernancelhe, Penedono
     { zone: 'Z6', name: 'Zona 6', cities: 'Chaves, Vila Pouca de Aguiar, Boticas, Montalegre, Ribeira de Pena, Mondim de Basto, Moimenta da Beira, Sernancelhe, Penedono', price: '65€', time: 'Sob marcação' },
   ],
