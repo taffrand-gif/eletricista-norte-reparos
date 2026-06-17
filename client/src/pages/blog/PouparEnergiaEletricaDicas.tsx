@@ -1,12 +1,21 @@
 import React from 'react';
 import BlogLayout from '@/components/blog/BlogLayout';
-import { useSEO } from '@/hooks/useSEO';
+import { useSEO, generateArticleSchema } from '@/hooks/useSEO';
 import { ACTIVE_CONFIG } from '@/../../shared/serviceConfig';
 const PouparEnergiaEletricaDicas: React.FC = () => {
  useSEO({
  title: 'Como Poupar Energia Elétrica em Casa — 10 Dicas Práticas | 2026',
  description: 'Descubra 10 dicas práticas para poupar energia elétrica em casa e reduzir a fatura da luz. Guia completo de eficiência energética para Trás-os-Montes.',
- keywords: 'poupar energia, eficiência energética, dicas eletricidade casa, reduzir fatura luz, poupar eletricidade'
+ keywords: 'poupar energia, eficiência energética, dicas eletricidade casa, reduzir fatura luz, poupar eletricidade',
+ schema: generateArticleSchema({
+   title: 'Como Poupar Energia Elétrica em Casa — 10 Dicas Práticas | 2026',
+   description: 'Descubra 10 dicas práticas para poupar energia elétrica em casa e reduzir a fatura da luz. Guia completo de eficiência energética para Trás-os-Montes.',
+   author: 'Norte Reparos',
+   publishedTime: '2026-02-14',
+   modifiedTime: '2026-06-17',
+   image: 'https://eletricista-norte-reparos.pt/images-optimized/blog/poupar-energia-detail.jpg',
+   url: 'https://eletricista-norte-reparos.pt/blog/poupar-energia-eletrica-dicas'
+ })
  });
  return (
  <BlogLayout

@@ -27,7 +27,36 @@ export default function QuadroEletricoAntigo() {
  canonical.setAttribute('rel', 'canonical');
  document.head.appendChild(canonical);
  }
- canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/blog/quadro-eletrico-antigo-fusíveis-trocar');
+ canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/blog/quadro-eletrico-antigo-fusiveis-trocar');
+ const articleSchema = document.createElement('script');
+ articleSchema.type = 'application/ld+json';
+ articleSchema.id = 'schema-article-quadro-eletrico-antigo';
+ articleSchema.text = JSON.stringify({
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "Quadro Elétrico Antigo com Fusíveis - Quando e Porquê Trocar | Guia 2026",
+ "description": "O seu quadro elétrico ainda tem fusíveis? Saiba porque deve trocar por disjuntores, quanto custa, e os riscos de manter uma instalação antiga.",
+ "author": {
+ "@type": "Person",
+ "name": "Norte Reparos"
+ },
+ "publisher": {
+ "@type": "Organization",
+ "name": "Norte Reparos",
+ "url": "https://eletricista-norte-reparos.pt"
+ },
+ "datePublished": "2024-01-01",
+ "dateModified": "2026-06-17",
+ "mainEntityOfPage": {
+ "@type": "WebPage",
+ "@id": "https://eletricista-norte-reparos.pt/blog/quadro-eletrico-antigo-fusiveis-trocar"
+ }
+ });
+ document.head.appendChild(articleSchema);
+ return () => {
+ const el = document.getElementById('schema-article-quadro-eletrico-antigo');
+ if (el) document.head.removeChild(el);
+ };
  }, []);
  return (
  <div className="min-h-screen flex flex-col">

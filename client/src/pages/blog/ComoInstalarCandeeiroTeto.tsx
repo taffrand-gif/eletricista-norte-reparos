@@ -1,12 +1,21 @@
 import React from 'react';
 import BlogLayout from '@/components/blog/BlogLayout';
-import { useSEO } from '@/hooks/useSEO';
+import { useSEO, generateArticleSchema } from '@/hooks/useSEO';
 import { ACTIVE_CONFIG } from '@/../../shared/serviceConfig';
 const ComoInstalarCandeeiroTeto: React.FC = () => {
  useSEO({
  title: 'Como Instalar um Candeeiro de Teto com Segurança: Guia Completo 2026',
  description: 'Guia passo a passo para instalar um candeeiro de teto de forma segura. Aprenda as normas de segurança, ferramentas necessárias e quando chamar um profissional.',
- keywords: 'instalar candeeiro teto, como ligar fios, eletricista DIY, segurança elétrica, instalação luminária'
+ keywords: 'instalar candeeiro teto, como ligar fios, eletricista DIY, segurança elétrica, instalação luminária',
+ schema: generateArticleSchema({
+   title: 'Como Instalar um Candeeiro de Teto com Segurança: Guia Completo 2026',
+   description: 'Guia passo a passo para instalar um candeeiro de teto de forma segura. Aprenda as normas de segurança, ferramentas necessárias e quando chamar um profissional.',
+   author: 'Norte Reparos',
+   publishedTime: '2024-01-01',
+   modifiedTime: '2026-06-17',
+   image: 'https://eletricista-norte-reparos.pt/og-image.jpg',
+   url: 'https://eletricista-norte-reparos.pt/blog/como-instalar-candeeiro-teto-seguranca'
+ })
  });
  return (
  <BlogLayout

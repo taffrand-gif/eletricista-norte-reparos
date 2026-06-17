@@ -28,6 +28,35 @@ export default function CertificacaoEletricaCertiel() {
  document.head.appendChild(canonical);
  }
  canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/blog/certificacao-eletrica-guia');
+ const articleSchema = document.createElement('script');
+ articleSchema.type = 'application/ld+json';
+ articleSchema.id = 'schema-article-certificacao-eletrica-guia';
+ articleSchema.text = JSON.stringify({
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "Certificação Elétrica - Guia Completo 2026 | Preços e Prazos",
+ "description": "Tudo sobre certificação elétrica em Portugal. Quando é obrigatória, quanto custa, prazos, documentos necessários. Guia atualizado 2026.",
+ "author": {
+ "@type": "Person",
+ "name": "Norte Reparos"
+ },
+ "publisher": {
+ "@type": "Organization",
+ "name": "Norte Reparos",
+ "url": "https://eletricista-norte-reparos.pt"
+ },
+ "datePublished": "2024-01-01",
+ "dateModified": "2026-06-17",
+ "mainEntityOfPage": {
+ "@type": "WebPage",
+ "@id": "https://eletricista-norte-reparos.pt/blog/certificacao-eletrica-guia"
+ }
+ });
+ document.head.appendChild(articleSchema);
+ return () => {
+ const el = document.getElementById('schema-article-certificacao-eletrica-guia');
+ if (el) document.head.removeChild(el);
+ };
  }, []);
  return (
  <div className="min-h-screen flex flex-col">

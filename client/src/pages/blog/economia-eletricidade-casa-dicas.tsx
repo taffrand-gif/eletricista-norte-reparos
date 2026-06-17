@@ -41,6 +41,20 @@ export default function EconomiaEletricidadeCasaDicas() {
  ]
  })}
  </script>
+ <script type="application/ld+json">
+ {JSON.stringify({
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "Economia de Eletricidade em Casa: 15 Dicas Práticas 2026",
+ "description": "15 dicas práticas para reduzir conta de luz em 30-50%. Aparelhos eficientes, hábitos simples e investimentos que compensam em Trás-os-Montes.",
+ "author": { "@type": "Organization", "name": "Norte Reparos" },
+ "publisher": { "@type": "Organization", "name": "Norte Reparos", "url": "https://eletricista-norte-reparos.pt" },
+ "datePublished": "2026-03-03",
+ "dateModified": "2026-06-17",
+ "url": "https://eletricista-norte-reparos.pt/blog/economia-eletricidade-casa-dicas",
+ "mainEntityOfPage": { "@type": "WebPage", "@id": "https://eletricista-norte-reparos.pt/blog/economia-eletricidade-casa-dicas" }
+ })}
+ </script>
  </Helmet>
  <article className="max-w-4xl mx-auto px-4 py-12">
  <header className="mb-8">

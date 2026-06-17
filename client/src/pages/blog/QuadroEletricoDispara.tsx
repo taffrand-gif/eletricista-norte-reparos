@@ -1,11 +1,20 @@
 import React from 'react';
 import BlogLayout from '@/components/blog/BlogLayout';
-import { useSEO } from '@/hooks/useSEO';
+import { useSEO, generateArticleSchema } from '@/hooks/useSEO';
 const QuadroEletricoDispara: React.FC = () => {
  useSEO({
  title: 'Quadro Elétrico Dispara: 7 Causas e Soluções [Guia 2026]',
  description: 'Quadro elétrico dispara constantemente? Descubra as 7 causas principais e soluções práticas para resolver o problema definitivamente.',
- keywords: 'quadro elétrico dispara, disjuntor dispara, luz vai abaixo, curto circuito, sobrecarga elétrica, eletricista'
+ keywords: 'quadro elétrico dispara, disjuntor dispara, luz vai abaixo, curto circuito, sobrecarga elétrica, eletricista',
+ schema: generateArticleSchema({
+   title: 'Quadro Elétrico Dispara: 7 Causas e Soluções [Guia 2026]',
+   description: 'Quadro elétrico dispara constantemente? Descubra as 7 causas principais e soluções práticas para resolver o problema definitivamente.',
+   author: 'Norte Reparos',
+   publishedTime: '2026-03-10',
+   modifiedTime: '2026-06-17',
+   image: 'https://eletricista-norte-reparos.pt/og-image.jpg',
+   url: 'https://eletricista-norte-reparos.pt/blog/quadro-eletrico-dispara'
+ })
  });
  return (
  <BlogLayout

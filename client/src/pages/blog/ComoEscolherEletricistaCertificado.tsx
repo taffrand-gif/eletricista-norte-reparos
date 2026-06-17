@@ -1,14 +1,23 @@
 import React from 'react';
 import { Link } from 'wouter';
 import BlogLayout from '@/components/blog/BlogLayout';
-import { useSEO } from '@/hooks/useSEO';
+import { useSEO, generateArticleSchema } from '@/hooks/useSEO';
 import { ACTIVE_CONFIG } from '@/../../shared/serviceConfig';
 import RelatedArticles from '@/components/RelatedArticles';
 const ComoEscolherEletricistaCertificado: React.FC = () => {
  useSEO({
  title: 'Como Escolher um Eletricista Certificado em Trás-os-Montes - Guia 2026',
  description: 'Guia completo para escolher o eletricista certo em Trás-os-Montes. Critérios de seleção, perguntas essenciais e sinais de alerta.',
- keywords: 'eletricista certificado, escolher eletricista, eletricista de confiança, certificação eletricista, eletricista Trás-os-Montes'
+ keywords: 'eletricista certificado, escolher eletricista, eletricista de confiança, certificação eletricista, eletricista Trás-os-Montes',
+ schema: generateArticleSchema({
+   title: 'Como Escolher um Eletricista Certificado em Trás-os-Montes - Guia 2026',
+   description: 'Guia completo para escolher o eletricista certo em Trás-os-Montes. Critérios de seleção, perguntas essenciais e sinais de alerta.',
+   author: 'Norte Reparos',
+   publishedTime: '2024-01-01',
+   modifiedTime: '2026-06-17',
+   image: 'https://eletricista-norte-reparos.pt/og-image.jpg',
+   url: 'https://eletricista-norte-reparos.pt/blog/como-escolher-eletricista-certificado'
+ })
  });
  return (
  <BlogLayout

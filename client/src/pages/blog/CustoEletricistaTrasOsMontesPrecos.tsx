@@ -1,14 +1,23 @@
 import React from 'react';
 import { Link } from 'wouter';
 import BlogLayout from '@/components/blog/BlogLayout';
-import { useSEO } from '@/hooks/useSEO';
+import { useSEO, generateArticleSchema } from '@/hooks/useSEO';
 import { ACTIVE_CONFIG } from '@/../../shared/serviceConfig';
 import RelatedArticles from '@/components/RelatedArticles';
 const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  useSEO({
  title: 'Quanto Custa um Eletricista em Trás-os-Montes? Guia de Preços 2026',
  description: 'Tabela completa de preços para serviços elétricos em Trás-os-Montes. Instalações, arranjos, certificação e custos por hora.',
- keywords: 'preço eletricista, custo instalação elétrica, preços eletricista Trás-os-Montes, quanto custa eletricista, orçamento instalação elétrica'
+ keywords: 'preço eletricista, custo instalação elétrica, preços eletricista Trás-os-Montes, quanto custa eletricista, orçamento instalação elétrica',
+ schema: generateArticleSchema({
+   title: 'Quanto Custa um Eletricista em Trás-os-Montes? Guia de Preços 2026',
+   description: 'Tabela completa de preços para serviços elétricos em Trás-os-Montes. Instalações, arranjos, certificação e custos por hora.',
+   author: 'Norte Reparos',
+   publishedTime: '2026-02-18',
+   modifiedTime: '2026-06-17',
+   image: 'https://eletricista-norte-reparos.pt/images-optimized/blog/precos-eletricista-guia.jpg',
+   url: 'https://eletricista-norte-reparos.pt/blog/custo-eletricista-tras-os-montes-precos'
+ })
  });
  return (
  <BlogLayout

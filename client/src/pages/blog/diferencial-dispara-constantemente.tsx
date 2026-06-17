@@ -41,6 +41,20 @@ export default function DiferencialDisparaConstantemente() {
  ]
  })}
  </script>
+ <script type="application/ld+json">
+ {JSON.stringify({
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "Diferencial Dispara Constantemente: 7 Causas e Soluções",
+ "description": "Diferencial dispara sempre? Descubra as 7 causas principais, como identificar o problema e quando chamar eletricista em Bragança e Trás-os-Montes.",
+ "author": { "@type": "Organization", "name": "Norte Reparos" },
+ "publisher": { "@type": "Organization", "name": "Norte Reparos", "url": "https://eletricista-norte-reparos.pt" },
+ "datePublished": "2026-03-03",
+ "dateModified": "2026-06-17",
+ "url": "https://eletricista-norte-reparos.pt/blog/diferencial-dispara-constantemente",
+ "mainEntityOfPage": { "@type": "WebPage", "@id": "https://eletricista-norte-reparos.pt/blog/diferencial-dispara-constantemente" }
+ })}
+ </script>
  </Helmet>
  <article className="max-w-4xl mx-auto px-4 py-12">
  <header className="mb-8">

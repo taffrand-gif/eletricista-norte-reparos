@@ -41,6 +41,20 @@ export default function InstalacaoTomadasSeguranca() {
  ]
  })}
  </script>
+ <script type="application/ld+json">
+ {JSON.stringify({
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "Instalação de Tomadas: Guia de Segurança 2026",
+ "description": "Guia completo sobre instalação segura de tomadas elétricas. Normas, tipos, preços e quando chamar eletricista em Trás-os-Montes.",
+ "author": { "@type": "Organization", "name": "Norte Reparos" },
+ "publisher": { "@type": "Organization", "name": "Norte Reparos", "url": "https://eletricista-norte-reparos.pt" },
+ "datePublished": "2026-03-03",
+ "dateModified": "2026-06-17",
+ "url": "https://eletricista-norte-reparos.pt/blog/instalacao-tomadas-seguranca",
+ "mainEntityOfPage": { "@type": "WebPage", "@id": "https://eletricista-norte-reparos.pt/blog/instalacao-tomadas-seguranca" }
+ })}
+ </script>
  </Helmet>
  <article className="max-w-4xl mx-auto px-4 py-12">
  <header className="mb-8">

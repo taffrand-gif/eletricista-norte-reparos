@@ -1,12 +1,21 @@
 import React from 'react';
 import BlogLayout from '@/components/blog/BlogLayout';
-import { useSEO } from '@/hooks/useSEO';
+import { useSEO, generateArticleSchema } from '@/hooks/useSEO';
 import { ACTIVE_CONFIG } from '@/../../shared/serviceConfig';
 const QuandoTrocarInstalacaoEletrica: React.FC = () => {
  useSEO({
  title: 'Quando Trocar a Instalação Elétrica? Sinais de Alerta | 2026',
  description: 'Descubra os sinais de alerta que indicam que a sua instalação elétrica precisa de ser renovada. Guia completo sobre segurança elétrica em casas antigas.',
- keywords: 'instalação elétrica antiga, sinais perigo eletricidade, renovar quadro elétrico, trocar instalação elétrica, segurança elétrica casa'
+ keywords: 'instalação elétrica antiga, sinais perigo eletricidade, renovar quadro elétrico, trocar instalação elétrica, segurança elétrica casa',
+ schema: generateArticleSchema({
+   title: 'Quando Trocar a Instalação Elétrica? Sinais de Alerta | 2026',
+   description: 'Descubra os sinais de alerta que indicam que a sua instalação elétrica precisa de ser renovada. Guia completo sobre segurança elétrica em casas antigas.',
+   author: 'Norte Reparos',
+   publishedTime: '2026-02-14',
+   modifiedTime: '2026-06-17',
+   image: 'https://eletricista-norte-reparos.pt/images-optimized/blog/instalacao-eletrica-detail.jpg',
+   url: 'https://eletricista-norte-reparos.pt/blog/quando-trocar-instalacao-eletrica'
+ })
  });
  return (
  <BlogLayout

@@ -7,12 +7,21 @@ useEffect(() => {
 }, []);
 
 import BlogLayout from '@/components/blog/BlogLayout';
-import { useSEO } from '@/hooks/useSEO';
+import { useSEO, generateArticleSchema } from '@/hooks/useSEO';
 const ComoTrocarTomadaEletricaSozinho: React.FC = () => {
  useSEO({
  title: 'Como Trocar Tomada Elétrica Sozinho [Guia Seguro 2026]',
  description: 'Aprenda a trocar tomada elétrica sozinho com segurança. Guia passo a passo completo com fotos, materiais necessários e dicas profissionais.',
- keywords: 'trocar tomada, substituir tomada, tomada elétrica, instalação tomada, DIY elétrica, segurança elétrica'
+ keywords: 'trocar tomada, substituir tomada, tomada elétrica, instalação tomada, DIY elétrica, segurança elétrica',
+ schema: generateArticleSchema({
+   title: 'Como Trocar Tomada Elétrica Sozinho [Guia Seguro 2026]',
+   description: 'Aprenda a trocar tomada elétrica sozinho com segurança. Guia passo a passo completo com fotos, materiais necessários e dicas profissionais.',
+   author: 'Norte Reparos',
+   publishedTime: '2026-03-10',
+   modifiedTime: '2026-06-17',
+   image: 'https://eletricista-norte-reparos.pt/og-image.jpg',
+   url: 'https://eletricista-norte-reparos.pt/blog/como-trocar-tomada-eletrica-sozinho'
+ })
  });
  return (
  <BlogLayout

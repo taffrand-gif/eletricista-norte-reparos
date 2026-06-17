@@ -54,6 +54,20 @@ export default function CertificacaoCertielGuiaCompleto() {
  ]
  })}
  </script>
+ <script type="application/ld+json">
+ {JSON.stringify({
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "Certificação Elétrica: Guia Completo 2026",
+ "description": "Tudo sobre certificação elétrica em Portugal. Quando é obrigatória, preços, documentos necessários e como obter em Bragança e Trás-os-Montes.",
+ "author": { "@type": "Organization", "name": "Norte Reparos" },
+ "publisher": { "@type": "Organization", "name": "Norte Reparos", "url": "https://eletricista-norte-reparos.pt" },
+ "datePublished": "2024-01-01",
+ "dateModified": "2026-06-17",
+ "url": "https://eletricista-norte-reparos.pt/blog/certificacao-certiel-guia-completo",
+ "mainEntityOfPage": { "@type": "WebPage", "@id": "https://eletricista-norte-reparos.pt/blog/certificacao-certiel-guia-completo" }
+ })}
+ </script>
  </Helmet>
  <article className="max-w-4xl mx-auto px-4 py-12">
  <div className="mb-8">

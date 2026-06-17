@@ -41,6 +41,20 @@ export default function IluminacaoInteligenteCasa() {
  ]
  })}
  </script>
+ <script type="application/ld+json">
+ {JSON.stringify({
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "Iluminação Inteligente em Casa: Guia Completo 2026",
+ "description": "Guia completo sobre iluminação inteligente: tipos, vantagens, instalação, preços e poupança. Transforme sua casa em Trás-os-Montes.",
+ "author": { "@type": "Organization", "name": "Norte Reparos" },
+ "publisher": { "@type": "Organization", "name": "Norte Reparos", "url": "https://eletricista-norte-reparos.pt" },
+ "datePublished": "2026-03-03",
+ "dateModified": "2026-06-17",
+ "url": "https://eletricista-norte-reparos.pt/blog/iluminacao-inteligente-casa",
+ "mainEntityOfPage": { "@type": "WebPage", "@id": "https://eletricista-norte-reparos.pt/blog/iluminacao-inteligente-casa" }
+ })}
+ </script>
  </Helmet>
  <article className="max-w-4xl mx-auto px-4 py-12">
  <header className="mb-8">

@@ -54,6 +54,20 @@ export default function QuantoCustaEletricistaBraganca() {
  ]
  })}
  </script>
+ <script type="application/ld+json">
+ {JSON.stringify({
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "Quanto Custa Eletricista em Bragança? Preços 2026",
+ "description": "Preços reais de eletricista em Bragança 2026. Tabela completa de serviços, custos por hora, urgências 24h. Compare e poupe em Trás-os-Montes.",
+ "author": { "@type": "Organization", "name": "Norte Reparos" },
+ "publisher": { "@type": "Organization", "name": "Norte Reparos", "url": "https://eletricista-norte-reparos.pt" },
+ "datePublished": "2026-03-03",
+ "dateModified": "2026-06-17",
+ "url": "https://eletricista-norte-reparos.pt/blog/quanto-custa-eletricista-braganca",
+ "mainEntityOfPage": { "@type": "WebPage", "@id": "https://eletricista-norte-reparos.pt/blog/quanto-custa-eletricista-braganca" }
+ })}
+ </script>
  </Helmet>
  <article className="max-w-4xl mx-auto px-4 py-12">
  <div className="mb-8">

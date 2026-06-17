@@ -28,6 +28,38 @@ export default function SinaisProblemasEletricos() {
  document.head.appendChild(canonical);
  }
  canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/blog/sinais-problemas-eletricos-casa');
+ // JSON-LD Article Schema
+ const script = document.createElement('script');
+ script.type = 'application/ld+json';
+ script.text = JSON.stringify({
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "7 Sinais de Problemas Elétricos em Casa - Quando Chamar Eletricista",
+ "description": "Aprenda a identificar os 7 sinais de alerta de problemas elétricos em casa. Saiba quando é urgente chamar um eletricista profissional. Guia completo de segurança elétrica.",
+ "author": {
+ "@type": "Organization",
+ "name": "Norte Reparos"
+ },
+ "publisher": {
+ "@type": "Organization",
+ "name": "Norte Reparos",
+ "logo": {
+ "@type": "ImageObject",
+ "url": "https://eletricista-norte-reparos.pt/logo.png"
+ }
+ },
+ "datePublished": "2026-01-01",
+ "dateModified": "2026-06-17",
+ "url": "https://eletricista-norte-reparos.pt/blog/sinais-problemas-eletricos-casa",
+ "mainEntityOfPage": {
+ "@type": "WebPage",
+ "@id": "https://eletricista-norte-reparos.pt/blog/sinais-problemas-eletricos-casa"
+ }
+ });
+ document.head.appendChild(script);
+ return () => {
+ document.head.removeChild(script);
+ };
  }, []);
  const sinais = [
  {

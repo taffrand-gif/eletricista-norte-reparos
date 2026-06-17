@@ -54,6 +54,20 @@ export default function PoupancaLedEconomiaReal() {
  ]
  })}
  </script>
+ <script type="application/ld+json">
+ {JSON.stringify({
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "Poupança LED: Quanto Economiza Realmente em 2026?",
+ "description": "Descubra a poupança real com iluminação LED. Cálculos práticos, comparação com lâmpadas antigas, retorno do investimento. Guia completo Bragança 2026.",
+ "author": { "@type": "Organization", "name": "Norte Reparos" },
+ "publisher": { "@type": "Organization", "name": "Norte Reparos", "url": "https://eletricista-norte-reparos.pt" },
+ "datePublished": "2026-03-03",
+ "dateModified": "2026-06-17",
+ "url": "https://eletricista-norte-reparos.pt/blog/poupanca-led-economia-real",
+ "mainEntityOfPage": { "@type": "WebPage", "@id": "https://eletricista-norte-reparos.pt/blog/poupanca-led-economia-real" }
+ })}
+ </script>
  </Helmet>
  <article className="max-w-4xl mx-auto px-4 py-12">
  <div className="mb-8">

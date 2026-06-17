@@ -1,14 +1,23 @@
 import React from 'react';
 import { Link } from 'wouter';
 import BlogLayout from '@/components/blog/BlogLayout';
-import { useSEO } from '@/hooks/useSEO';
+import { useSEO, generateArticleSchema } from '@/hooks/useSEO';
 import { ACTIVE_CONFIG } from '@/../../shared/serviceConfig';
 import RelatedArticles from '@/components/RelatedArticles';
 const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  useSEO({
  title: 'Painéis Solares em Trás-os-Montes: Vale a Pena? Guia Completo 2026',
  description: 'Análise completa da rentabilidade de painéis solares em Trás-os-Montes. Custos, poupanças, incentivos e especificidades regionais.',
- keywords: 'painéis solares Trás-os-Montes, energia solar, painéis fotovoltaicos, autoconsumo, rentabilidade solar, instalação painéis solares'
+ keywords: 'painéis solares Trás-os-Montes, energia solar, painéis fotovoltaicos, autoconsumo, rentabilidade solar, instalação painéis solares',
+ schema: generateArticleSchema({
+   title: 'Painéis Solares em Trás-os-Montes: Vale a Pena? Guia Completo 2026',
+   description: 'Análise completa da rentabilidade de painéis solares em Trás-os-Montes. Custos, poupanças, incentivos e especificidades regionais.',
+   author: 'Norte Reparos',
+   publishedTime: '2024-01-01',
+   modifiedTime: '2026-06-17',
+   image: 'https://eletricista-norte-reparos.pt/og-image.jpg',
+   url: 'https://eletricista-norte-reparos.pt/blog/paineis-solares-tras-os-montes-guia'
+ })
  });
  return (
  <BlogLayout

@@ -54,6 +54,20 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  ]
  })}
  </script>
+ <script type="application/ld+json">
+ {JSON.stringify({
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "5 Sinais Que a Sua Casa Precisa de Eletricista Urgente",
+ "description": "Identifique os 5 sinais de perigo elétrico que exigem eletricista urgente. Proteja a sua família em Bragança. Guia completo de segurança elétrica 2026.",
+ "author": { "@type": "Organization", "name": "Norte Reparos" },
+ "publisher": { "@type": "Organization", "name": "Norte Reparos", "url": "https://eletricista-norte-reparos.pt" },
+ "datePublished": "2026-03-03",
+ "dateModified": "2026-06-17",
+ "url": "https://eletricista-norte-reparos.pt/blog/sinais-casa-precisa-eletricista-urgente",
+ "mainEntityOfPage": { "@type": "WebPage", "@id": "https://eletricista-norte-reparos.pt/blog/sinais-casa-precisa-eletricista-urgente" }
+ })}
+ </script>
  </Helmet>
  <article className="max-w-4xl mx-auto px-4 py-12">
  <div className="mb-8">
