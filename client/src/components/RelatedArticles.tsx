@@ -13,12 +13,6 @@ export default function RelatedArticles({ currentArticleSlug }: RelatedArticlesP
  category: 'Instalação'
  },
  { 
- slug: 'certificacao-eletrica-obrigatoria', 
- title: 'Certificação Elétrica Obrigatória', 
- excerpt: 'Tudo sobre a certificação energética obrigatória para imóveis na região norte.',
- category: 'Legal'
- },
- { 
  slug: 'arranjacao-avarias-eletricas-comuns', 
  title: 'Arranjo de Avarías Elétricas Comuns', 
  excerpt: 'Soluções para os problemas elétricos mais frequentes em habitações antigas.',
@@ -41,12 +35,6 @@ export default function RelatedArticles({ currentArticleSlug }: RelatedArticlesP
  title: 'Tomadas e Interruptores Inteligentes', 
  excerpt: 'Automatize a sua casa com dispositivos inteligentes controlados por smartphone.',
  category: 'Tecnologia'
- },
- { 
- slug: 'energia-solar-casas-tras-os-montes', 
- title: 'Energia Solar para Casas em Trás-os-Montes', 
- excerpt: 'Viabilidade e vantagens da instalação de painéis solares na região norte.',
- category: 'Energia'
  },
  { 
  slug: 'protecao-contra-sobrecargas', 

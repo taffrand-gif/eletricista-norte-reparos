@@ -20,7 +20,7 @@ export default function Servicos() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Serviços completos de eletricista em Trás-os-Montes: instalação elétrica, arranjo de avarias, quadros elétricos, iluminação, certificação DGEG. Profissionais certificados, sem compromisso.');
+ metaDescription.setAttribute('content', 'Serviços completos de eletricista em Trás-os-Montes: instalação elétrica, arranjo de avarias, quadros elétricos, iluminação, urgências 24h. Profissionais experientes, orçamento sem compromisso.');
  }, [config]);
  const servicesDetails = [
  {

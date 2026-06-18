@@ -32,7 +32,7 @@ function GuaranteeSection() {
  },
  {
  icon: '👨‍🔧',
- title: 'Técnico Certificado',
+ title: 'Técnico Qualificado',
  description: '12+ anos de experiência — Sabe o que faz',
  badge: '12+ anos'
  },
@@ -58,7 +58,7 @@ function GuaranteeSection() {
  },
  {
  icon: '👨‍🔧',
- title: 'Técnico Certificado',
+ title: 'Técnico Qualificado',
  description: '12+ anos de experiência + — Sabe o que faz',
  badge: ''
  },
@@ -150,7 +150,7 @@ function GuaranteeSection() {
  </a>
  </div>
  <p className="text-sm text-gray-500 mt-4">
- ✅ Garantia escrita • ✅ Equipamento profissional • ✅ Técnico certificado
+ ✅ Garantia escrita • ✅ Equipamento profissional • ✅ Técnico qualificado
  </p>
  </div>
  {/* Social Proof */}

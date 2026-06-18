@@ -25,20 +25,6 @@ const reviews: Review[] = [
  text: 'Instalou o quadro elétrico novo em meio dia. Preço justo e trabalho impecável.',
  date: 'há 2 semanas'},
  {
- name: 'Cliente',
- initial: 'C',
- city: 'Vila Real',
- rating: 5,
- text: 'certificação elétrica feita rapidamente. Recomendo a 100%.',
- date: 'há 3 semanas'},
- {
- name: 'Maria L.',
- initial: 'M',
- city: 'Chaves',
- rating: 4,
- text: 'Bom trabalho na instalação dos painéis solares. Só demorou um pouco mais que o previsto.',
- date: 'há 1 mês'},
- {
  name: 'João P.',
  initial: 'J',
  city: 'Trás-os-Montes',

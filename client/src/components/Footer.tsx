@@ -108,8 +108,8 @@ function Footer() {
  {/* Badge DGEG */}
  <div className="bg-white/10 backdrop-blur-sm rounded-xl px-6 py-4 border-2 border-white/30 hover:bg-white/20 transition-all">
  <div className="text-2xl mb-2">⚡</div>
- <div className="text-sm font-bold text-white">Certificação DGEG</div>
- <div className="text-xs text-gray-100">Instalações Legais</div>
+ <div className="text-sm font-bold text-white">Garantia por Escrito</div>
+ <div className="text-xs text-gray-100">Em todos os trabalhos</div>
  </div>
  {/* Badge */}
  <div className="bg-white/10 backdrop-blur-sm rounded-xl px-6 py-4 border-2 border-white/30 hover:bg-white/20 transition-all">
