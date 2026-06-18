@@ -23,7 +23,7 @@ export const SERVICES_: Service[] = [
  name: 'Quadros Elétricos',
  basePrice: 250,
  icon: '⚡',
- description: 'Modernização e instalação de quadros elétricos com certificação elétrica'
+ description: 'Modernização e instalação de quadros elétricos'
  },
  {
  slug: 'tomadas-interruptores',
@@ -31,13 +31,6 @@ export const SERVICES_: Service[] = [
  basePrice: 35,
  icon: '🔌',
  description: 'Instalação e arranjo de tomadas e interruptores'
- },
- {
- slug: 'certificacao',
- name: 'certificação elétrica',
- basePrice: 175,
- icon: '📋',
- description: 'Certificação elétrica obrigatória para venda e arrendamento'
  },
  {
  slug: 'iluminacao',
@@ -83,7 +76,7 @@ function calculatePriority(city: any, service: Service): number {
  }
 
  // Boost for high-demand services
- if (['avarias-urgentes', 'certificacao'].includes(service.slug)) {
+ if (['avarias-urgentes'].includes(service.slug)) {
  priority += 0.05;
  }
 

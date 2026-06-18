@@ -257,40 +257,6 @@ Diagnóstico preciso resposta prioritária. Orçamento antes de arranjar.`
  metaDescription: 'Inspeção elétrica completa em Bragança. Testes, relatório técnico. Identifica problemas de segurança. Desde 150€. Ligue 932 321 892!',
  keywords: ['inspeção elétrica bragança', 'diagnóstico elétrico', 'teste isolamento', 'certificado elétrico']
  }
- },
- {
- id: '7',
- slug: 'certificacao-eletrica',
- title: 'Certificação Elétrica ',
- subtitle: 'Certificado Obrigatório para Venda e Arrendamento',
- description: 'certificação elétrica de instalações elétricas. Obrigatório por lei para venda, arrendamento e seguros. Processo rápido.',
- icon: '📜',
- price: 'Desde 200€',
- priceDetails: 'Inclui inspeção e certificado',
- image: '/images-optimized/services/service-certificacao.jpg',
- content: {
- intro: 'certificação elétrica é obrigatória por lei (DL 226/2005) para venda, arrendamento e seguros de imóveis. Eletricista Profissional é instalador Trabalho garantido por escrito.',
- sections: [
- {
- title: 'Quando é Obrigatória',
- content: `Venda de imóvel (obrigatório), Arrendamento (obrigatório), Seguro habitação (algumas seguradoras exigem), Instalação nova ou remodelação, Ampliação potência contratada, Ligação de equipamentos de alta potência. Validade: Indefinida (mas recomenda-se renovar a cada 10 anos).`
- },
- {
- title: 'Processo de Certificação',
- content: `Inspeção visual da instalação → Testes elétricos (isolamento, terra, diferencial) → Correção de não conformidades (se necessário) → Emissão Trabalho garantido por escrito → Registo na plataforma → Entrega certificado ao cliente. Prazo: 2-5 dias úteis (se instalação conforme). Válido para todo o território nacional.`
- },
- {
- title: 'Preços',
- content: `Apartamento T1-T2: 200€, Casa T3-T4: 280€, Casa T4+: 350€, Comércio: desde 400€. Inclui inspeção, testes, correções menores, certificado, registo . Se instalação não conforme: orçamento separado para correções.`
- }
- ],
- cta: 'Precisa de certificação? **Ligue 932 321 892** para agendar!'
- },
- seo: {
- metaTitle: 'certificação elétrica Bragança | Certificado Elétrico | Eletricista Profissional',
- metaDescription: 'certificação elétrica em Bragança. Obrigatória para venda e arrendamento. Processo rápido. Desde 200€. Ligue 932 321 892!',
- keywords: ['certificação elétrica bragança', 'certificado elétrico', ' obrigatório', 'venda imóvel']
- }
  }
 ];
 // Export categories for filtering
@@ -301,7 +267,6 @@ export const SERVICE_CATEGORIES = [
  'Iluminação',
  'Urgências',
  'Inspeção',
- 'Certificação'
 ];
 // Export helper functions
 export const getServiceBySlug = (slug: string): Service | undefined => {

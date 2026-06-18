@@ -20,9 +20,7 @@ const LocationDetector = lazy(() => import('@/components/LocationDetector'));
 // Lazy load all pages except homepage for better LCP
 const Servicos = lazy(() => import("@/pages/Servicos"));
 const QuadrosEletricos = lazy(() => import("@/pages/QuadrosEletricos"));
-const CertificacaoEletrica = lazy(() => import("@/pages/CertificacaoEletrica"));
 const InstalacaoEletrica = lazy(() => import("@/pages/InstalacaoEletrica"));
-const PaineisSolares = lazy(() => import("@/pages/PaineisSolares"));
 const NotFound = lazy(() => import("@/pages/NotFound"));
 const FAQPage = lazy(() => import("@/pages/FAQ"));
 const VilaReal = lazy(() => import("@/pages/cidades/VilaReal"));
@@ -100,9 +98,7 @@ function Router() {
  <Route path={"/"} component={OptimizedHome} />
  <Route path={"/servicos"} component={Servicos} />
  <Route path={"/quadros-eletricos"} component={QuadrosEletricos} />
- <Route path={"/certificacao-eletrica"} component={CertificacaoEletrica} />
  <Route path={"/instalacao-eletrica"} component={InstalacaoEletrica} />
- <Route path={"/paineis-solares"} component={PaineisSolares} />
  <Route path={"/eletricista-vila-real"} component={VilaReal} />
  <Route path={"/eletricista-braganca"} component={Braganca} />
  <Route path={"/eletricista-chaves"} component={Chaves} />
