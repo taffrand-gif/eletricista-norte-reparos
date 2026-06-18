@@ -37,7 +37,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  testimonials: [
  {
  name: "Paulo R.",
- text: "Curto-circuito às 2h da manhã. Chegaram Atendimento prioritário e resolveram tudo com segurança. certificação elétrica incluída!",
+ text: "Curto-circuito às 2h da manhã. Chegaram Atendimento prioritário e resolveram tudo com segurança. instalação elétrica incluída!",
  rating: 5,
  date: "2026-02-16"
  },
@@ -49,7 +49,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  },
  {
  name: "Ricardo F.",
- text: "certificação elétrica para apartamento. Serviço rápido, preço justo e entrega em 48h. Recomendo!",
+ text: "instalação elétrica para apartamento. Serviço rápido, preço justo e entrega em 48h. Recomendo!",
  rating: 5,
  date: "2026-03-06"
  }
@@ -65,7 +65,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  tempsReponse: "Média resposta prioritária"
  },
  specificites: [
- "Certificados - Todas as intervenções legalizadas",
+ "Trabalho conforme as normas técnicas (RTIEBT)",
  "Especialistas em instalações antigas do centro histórico",
  "Equipamento de termografia para detetar problemas ocultos",
  "Parceiros de 20+ condomínios na cidade",
@@ -103,7 +103,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  tempsReponse: "Média resposta prioritária"
  },
  specificites: [
- "certificação elétrica obrigatória incluída",
+ "instalação elétrica obrigatória incluída",
  "Especialistas em aquecimento elétrico",
  "Cobertura completa: Mirandela, Frechas, Abreiro, Cabanelas",
  "Parceiros de quintas e turismo rural",
@@ -126,7 +126,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  },
  {
  name: "Cliente C.",
- text: "certificação elétrica para casa nova. Serviço impecável e preço combinado antes. Obrigada!",
+ text: "instalação elétrica para casa nova. Serviço impecável e preço combinado antes. Obrigada!",
  rating: 5,
  date: "2026-02-26"
  }
@@ -144,9 +144,9 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  specificites: [
  "Base permanente em Trás-os-Montes",
  "Especialistas em sistemas elétricos rurais",
- "certificação elétrica para casas e quintas",
+ "instalação elétrica para casas e quintas",
  "Cobertura: Macedo, Morais, Lagoa, Talhinhas",
- "Experiência com painéis solares e geradores"
+ "Experiência com geradores"
  ]
  },
  chaves: {
@@ -176,7 +176,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  },
  specificites: [
  "Especialistas em aquecimento elétrico",
- "certificação elétrica para hotéis e termas",
+ "instalação elétrica para hotéis e termas",
  "Conhecimento das instalações de Chaves e Vidago",
  "Cobertura: Chaves, Vidago, Pedras Salgadas",
  "Parceiros de estabelecimentos turísticos"
@@ -208,7 +208,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  },
  specificites: [
  "Equipamento para prédios altos",
- "certificação elétrica para condomínios",
+ "instalação elétrica para condomínios",
  "Experiência em instalações urbanas complexas",
  "Cobertura: Vila Real, Constantim, Mateus",
  "Parceiros de administrações de condomínios"
@@ -241,10 +241,10 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  },
  specificites: [
  "Especialistas em zonas rurais remotas",
- "certificação elétrica para casas isoladas",
+ "instalação elétrica para casas isoladas",
  "Equipamento móvel completo",
  "Cobertura: Vinhais, Ervedosa, Moimenta",
- "Experiência com geradores e painéis solares"
+ "Experiência com geradores"
  ]
  },
  mirandadodouro: {
@@ -257,7 +257,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  testimonials: [
  {
  name: "Vítor L.",
- text: "Serviço rápido mesmo estando longe. certificação elétrica incluída. Preço justo!",
+ text: "Serviço rápido mesmo estando longe. instalação elétrica incluída. Preço justo!",
  rating: 5,
  date: "2026-02-25"
  }
@@ -273,7 +273,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  },
  specificites: [
  "Cobertura zona fronteiriça",
- "certificação elétrica para casas históricas",
+ "instalação elétrica para casas históricas",
  "Conhecimento de instalações antigas",
  "Cobertura: Miranda, Sendim, Palaçoulo",
  "Parceiros de turismo local"
@@ -306,7 +306,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  },
  specificites: [
  "Especialistas em instalações agrícolas",
- "certificação elétrica para quintas",
+ "instalação elétrica para quintas",
  "Equipamento para propriedades rurais",
  "Cobertura: Mogadouro, Castelo Branco, Azinhoso",
  "Experiência com bombas e sistemas de rega"
@@ -339,7 +339,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  },
  specificites: [
  "Especialistas em bombas elétricas",
- "certificação elétrica para zona rural",
+ "instalação elétrica para zona rural",
  "Cobertura zona rural completa",
  "Cobertura: Alfândega, Sambade, Valpereiro",
  "Experiência com casas isoladas"
@@ -355,7 +355,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  testimonials: [
  {
  name: "Gonçalo T.",
- text: "Avaria resolvida em 1h com certificação elétrica. Preço combinado antes, sem surpresas!",
+ text: "Avaria resolvida em 1h com instalação elétrica. Preço combinado antes, sem surpresas!",
  rating: 5,
  date: "2026-03-05"
  }
@@ -371,7 +371,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  },
  specificites: [
  "Cobertura completa concelho",
- "certificação elétrica incluída",
+ "instalação elétrica incluída",
  "Equipamento profissional",
  "Cobertura: Vila Flor, Candoso, Freixiel",
  "Parceiros locais estabelecidos"
