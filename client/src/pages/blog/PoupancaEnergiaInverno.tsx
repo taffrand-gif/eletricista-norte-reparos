@@ -38,22 +38,39 @@ export default function PoupancaEnergiaInverno() {
  "description": "10 dicas práticas para poupar energia no inverno: aquecimento, iluminação e isolamento.",
  "author": {
  "@type": "Organization",
- "name": ""
+ "name": "Norte Reparos"
  },
  "publisher": {
  "@type": "Organization",
- "name": "",
+ "name": "Norte Reparos",
  "logo": {
  "@type": "ImageObject",
  "url": "https://eletricista-norte-reparos.pt/logo.png"
  }
  },
  "datePublished": "2026-02-19",
- "dateModified": "2026-02-19"
+ "dateModified": "2026-06-18"
  });
  document.head.appendChild(script);
+ const faqScript = document.createElement('script');
+ faqScript.type = 'application/ld+json';
+ faqScript.id = 'schema-faq-poupanca-energia-inverno';
+ faqScript.text = JSON.stringify({
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+ { "@type": "Question", "name": "Qual o método mais eficaz para poupar no aquecimento?", "acceptedAnswer": { "@type": "Answer", "text": "Substituir aquecedores antigos por bomba de calor (ar condicionado inverter). São 3-4x mais eficientes e podem poupar até 60% na conta de aquecimento. Investimento: 600€-1.500€ por unidade." } },
+ { "@type": "Question", "name": "Quanto poupo ao substituir lâmpadas por LED?", "acceptedAnswer": { "@type": "Answer", "text": "LED consome 80% menos que incandescentes e dura 15-20 anos. Poupança: 50-80% na iluminação. Como no inverno as luzes ficam acesas mais tempo, o retorno é ainda mais rápido. Cada lâmpada custa entre 5€ e 15€." } },
+ { "@type": "Question", "name": "Vale a pena mudar para tarifa bi-horária de eletricidade?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. Ao usar máquinas de roupa, louça e carregamentos no período noturno (mais barato), pode poupar 20-30% na conta de luz. A mudança de tarifa é gratuita junto da sua comercializadora de energia." } },
+ { "@type": "Question", "name": "Quanto consomem os aparelhos elétricos em standby?", "acceptedAnswer": { "@type": "Answer", "text": "TV, computador e consolas em standby consomem 10-15W cada continuamente, representando 5-10% do consumo total. Solução simples: use réguas de tomadas com interruptor (10€-30€) para desligar completamente." } },
+ { "@type": "Question", "name": "Qual a poupança ao usar termostato programável?", "acceptedAnswer": { "@type": "Answer", "text": "Um termostato programável pode poupar 20-30% no aquecimento ao regular automaticamente a temperatura. Programar para 19-21°C e desligar quando sai de casa. Investimento: 50€-200€." } }
+ ]
+ });
+ document.head.appendChild(faqScript);
  return () => {
  document.head.removeChild(script);
+ const faqEl = document.getElementById('schema-faq-poupanca-energia-inverno');
+ if (faqEl) document.head.removeChild(faqEl);
  };
  }, []);
  const dicas = [

@@ -31,22 +31,39 @@ export default function ProtecaoSobrecargas() {
  "description": "Guia completo sobre proteção contra sobrecargas elétricas: disjuntores, DPS, réguas e dicas práticas.",
  "author": {
  "@type": "Organization",
- "name": ""
+ "name": "Norte Reparos"
  },
  "publisher": {
  "@type": "Organization",
- "name": "",
+ "name": "Norte Reparos",
  "logo": {
  "@type": "ImageObject",
  "url": "https://eletricista-norte-reparos.pt/logo.png"
  }
  },
  "datePublished": "2026-02-19",
- "dateModified": "2026-02-19"
+ "dateModified": "2026-06-18"
  });
  document.head.appendChild(script);
+ const faqScript = document.createElement('script');
+ faqScript.type = 'application/ld+json';
+ faqScript.id = 'schema-faq-protecao-sobrecargas';
+ faqScript.text = JSON.stringify({
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+ { "@type": "Question", "name": "O que é uma sobrecarga elétrica?", "acceptedAnswer": { "@type": "Answer", "text": "Uma sobrecarga ocorre quando a corrente num circuito excede a capacidade dos fios. Por exemplo: aquecedor (2.000W) + micro-ondas (1.200W) num circuito de 10A (2.300W) = 3.200W de sobrecarga, causando aquecimento dos fios e risco de incêndio." } },
+ { "@type": "Question", "name": "O disjuntor diferencial é obrigatório em casa?", "acceptedAnswer": { "@type": "Answer", "text": "Sim, o disjuntor diferencial é obrigatório em instalações domésticas. Custa entre 80€ e 150€ e protege contra fugas de corrente e risco de eletrocussão." } },
+ { "@type": "Question", "name": "O que é um DPS e preciso de um?", "acceptedAnswer": { "@type": "Answer", "text": "O DPS (Dispositivo de Proteção contra Sobretensões) protege equipamentos contra picos de tensão causados por trovoadas ou falhas na rede elétrica. Não é obrigatório, mas é muito recomendado em zonas rurais de Trás-os-Montes. Custo: 50€ a 120€." } },
+ { "@type": "Question", "name": "Posso ligar várias extensões em série (margarida)?", "acceptedAnswer": { "@type": "Answer", "text": "Não. Ligar extensões em cadeia causa sobrecarga extrema e risco de incêndio por derretimento dos plásticos. Use apenas uma extensão por tomada e distribua os aparelhos por diferentes circuitos." } },
+ { "@type": "Question", "name": "Quanto custa proteger a casa contra sobrecargas elétricas?", "acceptedAnswer": { "@type": "Answer", "text": "As proteções obrigatórias (disjuntores) já estão incluídas em instalações novas. Para adicionar proteções extra: DPS 50-120€, régua com proteção 20-60€. Instalação de DPS com mão de obra: aproximadamente 150-250€. Chame um eletricista certificado para avaliação gratuita." } }
+ ]
+ });
+ document.head.appendChild(faqScript);
  return () => {
  document.head.removeChild(script);
+ const faqEl = document.getElementById('schema-faq-protecao-sobrecargas');
+ if (faqEl) document.head.removeChild(faqEl);
  };
  }, []);
  const protecoes = [
