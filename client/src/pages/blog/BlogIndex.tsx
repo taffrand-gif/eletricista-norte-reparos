@@ -54,15 +54,6 @@ const BlogIndex: React.FC = () => {
  imageUrl: '/images-optimized/blog/casa-antiga.jpg'
  },
  {
- slug: 'carregador-veiculo-eletrico-casa',
- title: 'Instalar Carregador de Veículo Elétrico em Casa: Guia 2026',
- excerpt: 'Guia completo para instalar wallbox em casa. Tipos de carregadores, potência, custos, incentivos e instalação profissional.',
- category: 'Veículos Elétricos',
- readTime: '14',
- date: '19 Fev 2026',
- imageUrl: '/images-optimized/blog/carregador-ev.jpg'
- },
- {
  slug: 'poupanca-energia-inverno-tras-os-montes',
  title: 'Poupar Energia no Inverno em Trás-os-Montes: 10 Dicas Práticas',
  excerpt: '10 dicas práticas para poupar energia no inverno transmontano. Aquecimento, iluminação, isolamento e soluções elétricas eficientes.',
@@ -117,15 +108,6 @@ const BlogIndex: React.FC = () => {
  imageUrl: '/images-optimized/blog/quadro-antigo.jpg'
  },
  {
- slug: 'certificacao-eletrica-guia',
- title: 'Certificação Elétrica : Guia Completo 2026',
- excerpt: 'Tudo sobre a certificação elétrica em Portugal: quando é obrigatória, como obter, custos e validade.',
- category: 'Legislação',
- readTime: '11',
- date: '17 Fev 2026',
- imageUrl: '/images-optimized/blog/.jpg'
- },
- {
  slug: 'como-escolher-eletricista-certificado',
  title: 'Como Escolher um Eletricista Certificado: 7 Critérios Essenciais',
  excerpt: 'Guia completo para escolher um eletricista certificado de confiança. 7 critérios essenciais para não errar na escolha.',
@@ -143,15 +125,6 @@ const BlogIndex: React.FC = () => {
  date: '18 Fev 2026',
  imageUrl: '/images-optimized/blog/precos.jpg'
  },
- {
- slug: 'paineis-solares-tras-os-montes-guia',
- title: 'Painéis Solares em Trás-os-Montes: Guia Completo 2026',
- excerpt: 'Guia completo sobre painéis solares em Trás-os-Montes: custos, incentivos, instalação e retorno do investimento.',
- category: 'Energia Solar',
- readTime: '15',
- date: '18 Fev 2026',
- imageUrl: '/images-optimized/blog/paineis-solares.jpg'
- }
  ];
  return (
  <BlogLayout
