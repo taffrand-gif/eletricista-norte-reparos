@@ -31,18 +31,18 @@ export default function IluminacaoExteriorJardim() {
  "description": "Guia completo de iluminação exterior: LED, IP65, segurança, ambiance e economia de energia.",
  "author": {
  "@type": "Organization",
- "name": ""
+ "name": "Norte Reparos"
  },
  "publisher": {
  "@type": "Organization",
- "name": "",
+ "name": "Norte Reparos",
  "logo": {
  "@type": "ImageObject",
  "url": "https://eletricista-norte-reparos.pt/logo.png"
  }
  },
  "datePublished": "2026-02-19",
- "dateModified": "2026-02-19"
+ "dateModified": "2026-06-18"
  });
  document.head.appendChild(script);
  const faqScript = document.createElement('script');
