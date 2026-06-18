@@ -681,7 +681,7 @@ Sim, fica associado ao imóvel.
 
 A certificação elétrica é um documento essencial que garante a segurança da sua instalação elétrica. Não deixe para a última hora - se precisa de certificação, contacte um profissionais qualificados o quanto antes.
 
-A **Eletricista Profissional** tem técnicos certificados pela DGEG prontos para inspecionar e certificar a sua instalação elétrica em Bragança e arredores. Processo rápido, preços transparentes e certificado válido.
+A **Eletricista Profissional** tem técnicos com formação adequada prontos para inspecionar a sua instalação elétrica em Bragança e arredores. Processo rápido, preços transparentes e relatório técnico detalhado.
 
 **Agende a sua certificação: 932 321 892**
 `

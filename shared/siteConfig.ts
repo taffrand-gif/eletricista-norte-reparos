@@ -156,7 +156,7 @@ export const siteConfig: SiteConfig = {
   company: {
     fullName: 'Eletricista Profissional',
     shortDescription: 'Serviço de eletricidade ao seu domicílio em Trás-os-Montes. Não temos loja — vamos até si.',
-    longDescription: 'A Norte Reparos é uma empresa de instalações elétricas que serve toda a região de Trás-os-Montes e Norte de Portugal. Com mais de 10 anos de experiência no terreno, intervimos ao seu domicílio com equipamento profissional de diagnóstico — multímetro Fluke, câmara térmica FLIR, ferramentas calibradas e certificado DGEG. Não temos loja — vamos até si. A sua zona é a nossa zona de trabalho.',
+    longDescription: 'A Norte Reparos é uma empresa de instalações elétricas que serve toda a região de Trás-os-Montes e Norte de Portugal. Com mais de 10 anos de experiência no terreno, intervimos ao seu domicílio com equipamento profissional de diagnóstico — multímetro Fluke, câmara térmica FLIR, ferramentas calibradas e formação adequada. Não temos loja — vamos até si. A sua zona é a nossa zona de trabalho.',
     coverage: 'Trás-os-Montes — Distrito de Bragança, Vila Real, Guarda e Viseu',
     yearEstablished: '2015'
   },
