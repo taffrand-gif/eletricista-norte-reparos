@@ -45,8 +45,29 @@ export default function InstalacaoEletricaCasaAntiga() {
  "dateModified": "2026-02-19"
  });
  document.head.appendChild(script);
+
+ const howtoScript = document.createElement('script');
+ howtoScript.type = 'application/ld+json';
+ howtoScript.text = JSON.stringify({
+ "@context": "https://schema.org",
+ "@type": "HowTo",
+ "name": "Como Renovar a Instalação Elétrica de uma Casa Antiga",
+ "description": "Guia passo a passo para renovar a instalação elétrica de casas antigas de pedra em Trás-os-Montes, respeitando a arquitetura e cumprindo as normas NP.",
+ "totalTime": "P3D",
+ "step": [
+  { "@type": "HowToStep", "position": 1, "name": "Inspeção e Diagnóstico", "text": "Avalie o estado da instalação, identifique perigos e planeie a intervenção. Um eletricista profissional inspeciona quadro, cabos e tomadas." },
+  { "@type": "HowToStep", "position": 2, "name": "Projeto Elétrico", "text": "Desenhe o novo layout respeitando a arquitetura e minimizando o impacto visual. Defina os circuitos e a localização do novo quadro." },
+  { "@type": "HowToStep", "position": 3, "name": "Instalação de Terra", "text": "Crave vareta de terra no exterior e ligue a todos os circuitos. A ligação à terra é obrigatória pela norma NP elétrica portuguesa." },
+  { "@type": "HowToStep", "position": 4, "name": "Substituição de Cabos", "text": "Instale novos cabos de cobre em calhas ou tubagem, sem destruir paredes. Use calhas técnicas ou rodapés elétricos em casas de pedra ou granito." },
+  { "@type": "HowToStep", "position": 5, "name": "Instalação do Quadro Elétrico Moderno", "text": "Instale quadro com disjuntores magnetotérmicos e diferencial 30mA para proteção completa contra sobrecargas e fugas à terra." },
+  { "@type": "HowToStep", "position": 6, "name": "Certificação Elétrica", "text": "Emita e entregue a declaração de trabalho garantido por escrito, obrigatória para legalização da instalação." }
+ ]
+ });
+ document.head.appendChild(howtoScript);
+
  return () => {
  document.head.removeChild(script);
+ if (howtoScript.parentNode) document.head.removeChild(howtoScript);
  };
  }, []);
  const desafios = [

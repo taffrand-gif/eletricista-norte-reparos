@@ -52,6 +52,23 @@ const QuadroEletricoDispara: React.FC = () => {
           "mainEntityOfPage": { "@type": "WebPage", "@id": "https://eletricista-norte-reparos.pt/blog/quadro-eletrico-dispara" }
         }) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "HowTo",
+          "name": "Como Diagnosticar Porque o Quadro Elétrico Dispara",
+          "description": "Método de diagnóstico passo a passo para identificar a causa do disjuntor que dispara com frequência.",
+          "totalTime": "PT30M",
+          "step": [
+            { "@type": "HowToStep", "position": 1, "name": "Identificar Qual Disjuntor Dispara", "text": "Verifique se é o disjuntor geral (problema grave em toda a instalação), o diferencial (fuga de corrente) ou um disjuntor parcial (problema num circuito específico)." },
+            { "@type": "HowToStep", "position": 2, "name": "Verificar Quando Dispara", "text": "Anote quando acontece: ao ligar aparelho específico (aparelho avariado), aleatoriamente (fuga de corrente), imediatamente ao religar (curto-circuito) ou após alguns minutos (sobrecarga)." },
+            { "@type": "HowToStep", "position": 3, "name": "Teste de Isolamento", "text": "Desligue TODOS os aparelhos das tomadas e todos os interruptores. Ligue o disjuntor. Se não disparar o problema está num aparelho; se disparar o problema é na instalação fixa." },
+            { "@type": "HowToStep", "position": 4, "name": "Identificar o Aparelho Culpado", "text": "Se passou o Passo 3, ligue aparelhos um a um e aguarde 2-3 minutos entre cada. Quando disparar, o aparelho ligado nesse momento é o culpado." },
+            { "@type": "HowToStep", "position": 5, "name": "Verificar Sobrecarga", "text": "Some a potência de todos os aparelhos no circuito e compare com a capacidade do disjuntor (ex: 16A = 3680W). Se ultrapassar, redistribua os aparelhos por outros circuitos ou chame eletricista." }
+          ]
+        }) }}
+      />
       <article className="max-w-4xl mx-auto">
  <div className="mb-8">
  <div className="flex flex-wrap items-center gap-4 text-gray-600 mb-4">
