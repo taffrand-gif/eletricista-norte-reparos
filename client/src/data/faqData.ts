@@ -27,15 +27,15 @@ export const electricFaqs: FAQItem[] = [
  },
  {
  question: "Quais os serviços elétricos que oferecem?",
- answer: "Instalação elétrica completa, arranjo de avarias, quadros elétricos novos, certificação elétrica, painéis solares, iluminação interior/exterior, tomadas e interruptores, automação residencial, instalação de ar condicionado, urgências elétricas."
+ answer: "Instalação elétrica completa, arranjo de avarias, quadros elétricos novos, iluminação interior/exterior, tomadas e interruptores, automação residencial, urgências elétricas."
  },
  {
  question: "Fazem certificação elétrica ?",
- answer: "Sim, somos eletricistas certificados para emitir certificados obrigatórios para venda/arrendamento de imóveis. Fazemos a vistoria completa, emissão do certificado e registo no sistema oficial."
+ answer: "De momento não emitimos o certificado oficial. Fazemos a inspeção e o relatório técnico da instalação elétrica para identificar o que precisa de ser corrigido."
  },
  {
  question: "Instalam painéis solares na região?",
- answer: "Sim, somos especialistas em instalação de painéis solares fotovoltaicos para autoconsumo. Fazemos estudo gratuito de viabilidade, projeto, instalação, legalização e manutenção. Ajudamos a reduzir a fatura da luz em até 70%."
+ answer: "De momento não fazemos instalação de painéis solares."
  },
  {
  question: "Quais cidades servem no distrito de Bragança?",
@@ -47,7 +47,7 @@ export const electricFaqs: FAQItem[] = [
  },
  {
  question: "Quanto tempo demora uma instalação elétrica nova?",
- answer: "Uma instalação completa numa casa média (T3) leva 3-5 dias. Instalação de quadro elétrico: 1 dia. Arranjo de avaria simples: 1-2 horas. Projetos complexos (painéis solares, automação) podem levar 1-2 semanas."
+ answer: "Uma instalação completa numa casa média (T3) leva 3-5 dias. Instalação de quadro elétrico: 1 dia. Arranjo de avaria simples: 1-2 horas. Projetos complexos (automação) podem levar 1-2 semanas."
  },
  {
  question: "Dão garantia no trabalho realizado?",
@@ -74,8 +74,8 @@ export const electricFaqs: FAQItem[] = [
  answer: "Sim, trabalhamos com equipamento de última geração: analisadores de redes Fluke, detetores de cabos, câmaras térmicas FLIR, ferramentas isoladas 1000V, testadores de continuidade, máquinas de furar profissionais."
  },
  {
- question: "São eletricistas certificados?",
- answer: "Sim, temos certificação profissional (curso de eletricista de instalações) e formação contínua. Trabalhamos de acordo com as normas NP EN 60364 (instalações elétricas) e legislação portuguesa. Todos os técnicos têm habilitações legais."
+ question: "Que formação têm os eletricistas?",
+ answer: "Temos formação profissional (curso de eletricista de instalações) e formação contínua. Trabalhamos de acordo com as normas NP EN 60364 (instalações elétricas) e a legislação portuguesa."
  },
  {
  question: "Fazem serviços para empresas e indústrias?",
@@ -113,7 +113,7 @@ export const plumberFaqs: FAQItem[] = [
  },
  {
  question: "Fazem certificação de gás?",
- answer: "Sim, somos canalizadores certificados para instalação e manutenção de sistemas de gás. Emitimos certificados obrigatórios para instalações de gás natural e GPL."
+ answer: "De momento não fazemos instalação nem certificação de sistemas de gás."
  },
  {
  question: "Quais cidades servem no distrito de Bragança?",
