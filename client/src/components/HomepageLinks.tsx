@@ -10,10 +10,8 @@ export default function HomepageLinks() {
  A nossa equipa oferece serviços elétricos completos em Trás-os-Montes. Desde{' '}
  <a href="/instalacao-eletrica-completa" className="text-[#c2410c] font-bold hover:underline">instalação elétrica completa</a> para construções e renovações, até{' '}
  <a href="/quadros-eletricos-modernizacao" className="text-[#c2410c] font-bold hover:underline">modernização de quadros elétricos</a>. Realizamos{' '}
- <a href="/certificacao-eletrica-tras-os-montes" className="text-[#c2410c] font-bold hover:underline">certificação elétrica </a>,{' '}
  <a href="/arranjacao-avarias-eletricas" className="text-[#c2410c] font-bold hover:underline">arranjo de avarias elétricas</a>,{' '}
  <a href="/iluminacao-led-profissional" className="text-[#c2410c] font-bold hover:underline">iluminação LED profissional</a>,{' '}
- <a href="/instalacao-paineis-solares-tras-os-montes" className="text-[#c2410c] font-bold hover:underline">instalação de painéis solares</a>,{' '}
  <a href="/protecao-contra-raios" className="text-[#c2410c] font-bold hover:underline">proteção contra raios</a> e{' '}
  <a href="/automacao-residencial-domotica" className="text-[#c2410c] font-bold hover:underline">automação residencial</a>. Veja a nossa{' '}
  <a href="/tecnologia-premium" className="text-[#c2410c] font-bold hover:underline">tecnologia premium</a> e{' '}
@@ -71,9 +69,6 @@ export default function HomepageLinks() {
  <a href="/quadros-eletricos-braganca" className="text-[#c2410c] hover:underline">Quadros Elétricos Bragança</a> •{' '}
  <a href="/quadros-eletricos-vila-real" className="text-[#c2410c] hover:underline">Quadros Elétricos Vila Real</a> •{' '}
  <a href="/quadros-eletricos-mirandela" className="text-[#c2410c] hover:underline">Quadros Elétricos Mirandela</a> •{' '}
- <a href="/certificacao-eletrica-braganca" className="text-[#c2410c] hover:underline">Certificação Bragança</a> •{' '}
- <a href="/certificacao-eletrica-vila-real" className="text-[#c2410c] hover:underline">Certificação Vila Real</a> •{' '}
- <a href="/certificacao-eletrica-mirandela" className="text-[#c2410c] hover:underline">Certificação Mirandela</a> •{' '}
  <a href="/iluminacao-led-braganca" className="text-[#c2410c] hover:underline">LED Bragança</a> •{' '}
  <a href="/iluminacao-led-vila-real" className="text-[#c2410c] hover:underline">LED Vila Real</a> •{' '}
  <a href="/iluminacao-led-mirandela" className="text-[#c2410c] hover:underline">LED Mirandela</a> •{' '}
