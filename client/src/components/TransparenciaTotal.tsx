@@ -49,8 +49,8 @@ function TransparenciaTotal({ className = '' }: TransparenciaTotalProps) {
  <li className="flex items-start gap-3">
  <span className="text-green-500 text-xl mt-1">✓</span>
  <div>
- <p className="font-bold text-gray-900">Certificações Verificáveis</p>
- <p className="text-sm text-gray-600">DGEG, com links de verificação</p>
+ <p className="font-bold text-gray-900">Preço Transparente</p>
+ <p className="text-sm text-gray-600">Orçamento fechado antes de iniciar o trabalho</p>
  </div>
  </li>
  <li className="flex items-start gap-3">
