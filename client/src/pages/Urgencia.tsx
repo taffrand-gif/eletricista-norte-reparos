@@ -11,7 +11,7 @@ function Urgencia() {
  <>
  <Helmet>
  <title>Urgência Eletricista — Intervenção Imediata 24h | Norte Reparos</title>
- <meta name="description" content="Urgência eletricista 24h em Trás-os-Montes. Sem luz? Curto-circuito? Cheiro queimado? Chegamos Atendimento prioritário. Certificação DGEG. 932 321 892" />
+ <meta name="description" content="Urgência eletricista 24h em Trás-os-Montes. Sem luz? Curto-circuito? Cheiro queimado? Resposta rápida ao domicílio. 932 321 892" />
  </Helmet>
  {/* Hero Urgência */}
  <section className="relative bg-gradient-to-br from-orange-600 to-red-700 text-white py-20">
@@ -56,8 +56,8 @@ function Urgencia() {
  <div className="text-sm">Disponível</div>
  </div>
  <div>
- <div className="text-3xl font-black">DGEG</div>
- <div className="text-sm">Certificado</div>
+ <div className="text-3xl font-black">Rápida</div>
+ <div className="text-sm">Intervenção</div>
  </div>
  </div>
  </div>
@@ -204,13 +204,13 @@ function Urgencia() {
  ⚡ Porque Somos Diferentes em Urgências
  </h2>
  <div className="grid md:grid-cols-2 gap-8 mb-12">
- {/* Certificação DGEG */}
+ {/* Seguro e Garantia */}
  <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 border-2 border-blue-200">
  <div className="flex items-start gap-4">
  <div className="text-5xl">📋</div>
  <div>
  <h3 className="text-2xl font-bold text-gray-900 mb-3">
- Certificação DGEG
+ Seguro e Garantia
  </h3>
  <p className="text-gray-700 mb-4">
  Instalações legais e seguras. Seguro cobre em caso de incêndio.
@@ -218,7 +218,7 @@ function Urgencia() {
  <div className="space-y-2">
  <p className="flex items-center gap-2 text-gray-700">
  <span className="text-green-500 font-bold">✓</span>
- Trabalho legal e certificado
+ Trabalho com garantia por escrito
  </p>
  <p className="flex items-center gap-2 text-gray-700">
  <span className="text-green-500 font-bold">✓</span>
@@ -392,7 +392,7 @@ function Urgencia() {
  ⚡ Não Arrisque a Sua Segurança
  </h2>
  <p className="text-xl md:text-2xl mb-8">
- Risco de incêndio é REAL. Certificação DGEG. Chegamos Atendimento prioritário.
+ Risco de incêndio é REAL. Resposta rápida ao domicílio.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
  <a
@@ -412,7 +412,7 @@ function Urgencia() {
  </a>
  </div>
  <p className="text-lg">
- Atendimento 24h/7d/7 dias — Certificação DGEG incluída
+ Atendimento 24h/7 dias — serviço com garantia
  </p>
  </div>
  </section>

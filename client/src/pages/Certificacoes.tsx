@@ -8,8 +8,8 @@ export default function Certificacoes() {
  const config = ACTIVE_CONFIG;
  
  useSEO({
- title: `Certificações - ${config.name}`,
- description: `Certificações profissionais e garantias. Trabalho certificado com garantia de 12 meses.`});
+ title: `Garantias e Confiança - ${config.name}`,
+ description: `Garantias e trabalho profissional com garantia por escrito de 12 meses.`});
  return (
  <div className="min-h-screen flex flex-col">
  <Header />
@@ -18,10 +18,10 @@ export default function Certificacoes() {
  <section className="bg-gradient-to-br from-red-600 to-red-700 text-white py-16">
  <div className="container">
  <h1 className="text-4xl md:text-5xl font-bold mb-4">
- Certificações e Garantias
+ Garantias e Confiança
  </h1>
  <p className="text-xl text-red-100">
- Trabalho profissional certificado com garantia de 12 meses.
+ Trabalho profissional com garantia por escrito de 12 meses.
  </p>
  </div>
  </section>
@@ -30,9 +30,9 @@ export default function Certificacoes() {
  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
  <Card className="p-8 text-center">
  <Shield className="h-16 w-16 text-red-600 mx-auto mb-4" />
- <h3 className="font-bold text-xl mb-2">Certificação Profissional</h3>
+ <h3 className="font-bold text-xl mb-2">Experiência Profissional</h3>
  <p className="text-gray-600">
- {config.type === 'plomberie' ? 'Canalizador' : 'Eletricista'} certificado com mais de 10 anos de experiência
+ {config.type === 'plomberie' ? 'Canalizador' : 'Eletricista'} com mais de 10 anos de experiência
  </p>
  </Card>
  <Card className="p-8 text-center">
@@ -52,11 +52,11 @@ export default function Certificacoes() {
  </div>
  <Card className="p-8 bg-blue-50 border-blue-200">
  <h2 className="text-2xl font-bold mb-4 text-blue-900">
- {config.type === 'plomberie' ? 'Certificação DGEG' : 'Certificação DGEG'}
+ Normas e Segurança
  </h2>
  <p className="text-blue-800">
- Todos os nossos trabalhos são certificados e cumprem rigorosamente as normas técnicas portuguesas.
- {config.type === 'electricite' && ' Emitimos certificado DGEG obrigatório para venda/arrendamento.'}
+ Todos os nossos trabalhos cumprem rigorosamente as normas técnicas portuguesas (RTIEBT).
+ {config.type === 'electricite' && ' Fazemos inspeção e relatório técnico da instalação elétrica.'}
  </p>
  </Card>
  </div>
