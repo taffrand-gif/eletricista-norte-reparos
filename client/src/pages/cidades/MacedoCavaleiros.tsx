@@ -22,7 +22,7 @@ export default function MacedoCavaleiros() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Eletricista em Macedo de Cavaleiros e arredores. Técnicos certificados, fichas eletrotécnicas assinadas, equipamento profissional. Orçamento grátis. Ligue 932 321 892.');
+ metaDescription.setAttribute('content', 'Eletricista em Macedo de Cavaleiros e arredores. Técnicos qualificados e equipamento profissional. Orçamento grátis. Ligue 932 321 892.');
  let metaKeywords = document.querySelector('meta[name="keywords"]');
  if (!metaKeywords) {
  metaKeywords = document.createElement('meta');

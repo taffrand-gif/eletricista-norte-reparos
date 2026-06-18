@@ -24,7 +24,7 @@ export default function VilaReal() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Eletricista em Vila Real e arredores. Técnicos certificados, fichas eletrotécnicas assinadas, equipamento profissional. Orçamento grátis. Ligue 932 321 892.');
+ metaDescription.setAttribute('content', 'Eletricista em Vila Real e arredores. Técnicos qualificados e equipamento profissional. Orçamento grátis. Ligue 932 321 892.');
  // SEO meta keywords
  let metaKeywords = document.querySelector('meta[name="keywords"]');
  if (!metaKeywords) {
@@ -131,7 +131,7 @@ export default function VilaReal() {
  </h1>
  
  <p className="text-xl mb-8">
- Serviços de eletricista certificado em Vila Real e arredores. 
+ Serviços de eletricista em Vila Real e arredores. 
  Mais de 15 anos de experiência a servir a região de Trás-os-Montes.
  </p>
  

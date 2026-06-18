@@ -104,7 +104,6 @@ export default function Montalegre() {
  { icon: Zap, title: "Explorações Pecuárias", desc: "Instalações para estábulos, ordenha mecânica e armazéns agrícolas" },
  { icon: Shield, title: "Habitações de Montanha", desc: "Aquecimento elétrico, proteção contra raios e instalações robustas" },
  { icon: CheckCircle, title: "Turismo Rural", desc: "Sistemas elétricos para casas de turismo e alojamento local" },
- { icon: Zap, title: "Painéis Solares", desc: "Instalação de painéis fotovoltaicos para autoconsumo em zonas remotas" },
  ].map((service, index) => (
  <div key={index} className="flex items-start gap-4 p-6 bg-white rounded-xl shadow">
  <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">

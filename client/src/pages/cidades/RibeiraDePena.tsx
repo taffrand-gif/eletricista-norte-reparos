@@ -103,7 +103,6 @@ export default function RibeiraDePena() {
  {[
  { icon: Zap, title: "Turismo Rural", desc: "Instalações para casas de campo, alojamento local e hotéis rurais" },
  { icon: Shield, title: "Casas de Montanha", desc: "Aquecimento elétrico, proteção contra raios e instalações robustas" },
- { icon: CheckCircle, title: "Painéis Solares", desc: "Sistemas fotovoltaicos para autoconsumo em zonas remotas" },
  { icon: Zap, title: "Urgências 24h", desc: "Assistência elétrica urgente com veículo 4x4 para acessos difíceis" },
  ].map((service, index) => (
  <div key={index} className="flex items-start gap-4 p-6 bg-white rounded-xl shadow">

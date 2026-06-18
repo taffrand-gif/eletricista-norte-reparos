@@ -104,7 +104,6 @@ export default function MondimDeBasto() {
  { icon: Zap, title: "Turismo de Montanha", desc: "Instalações para refúgios, casas de montanha e parques de campismo" },
  { icon: Shield, title: "Proteção Contra Raios", desc: "Para-raios e descarregadores de sobretensão para zonas de altitude" },
  { icon: CheckCircle, title: "Casas Rurais", desc: "Remodelação elétrica de casas tradicionais com materiais modernos" },
- { icon: Zap, title: "Painéis Solares", desc: "Energia fotovoltaica para habitações e alojamentos de montanha" },
  ].map((service, index) => (
  <div key={index} className="flex items-start gap-4 p-6 bg-white rounded-xl shadow">
  <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
