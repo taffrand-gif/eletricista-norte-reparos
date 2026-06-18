@@ -105,7 +105,7 @@ export const siteConfig: SiteConfig = {
   id: 'norte-reparos',
   name: 'Eletricista Profissional',
   title: 'Eletricista em Trás-os-Montes | Norte Reparos — Serviço ao Domicílio 24h',
-  description: 'Eletricista profissional ao seu domicílio em Trás-os-Montes. Avaria elétrica, instalação, certificação, urgências 24h. Orçamento gratuito. Ligue 932 321 892.',
+  description: 'Eletricista profissional ao seu domicílio em Trás-os-Montes. Avaria elétrica, instalação, iluminação, urgências 24h. Orçamento gratuito. Ligue 932 321 892.',
   phone: '932 321 892',
   whatsapp: '351932321892',
   whatsappMessage: 'Olá, preciso de um eletricista em Trás-os-Montes. Podem dar-me um orçamento?',
@@ -130,7 +130,7 @@ export const siteConfig: SiteConfig = {
     { id: 'avaria-eletrica', label: 'Reparação Avaria Elétrica', basePrice: 80 },
     { id: 'quadro-eletrico', label: 'Quadro Elétrico', basePrice: 250 },
     { id: 'instalacao-eletrica', label: 'Instalação Elétrica', basePrice: 200 },
-    { id: 'certificacao', label: 'Certificação Elétrica', basePrice: 180 },
+    { id: 'iluminacao-led', label: 'Iluminação LED', basePrice: 75 },
   ],
 
   // Pricing Zones - NOVA GRELHA 2026
@@ -172,7 +172,7 @@ export const siteConfig: SiteConfig = {
       'instalação elétrica bragança', 'instalação elétrica mirandela', 'tomada avariada',
       'eletricista profissional trás-os-montes',
       'avaria elétrica urgente bragança', 'eletricista 24 horas mirandela',
-      'certificação elétrica macedo de cavaleiros', 'arranjo quadro elétrico trás-os-montes',
+      'eletricista urgente macedo de cavaleiros', 'arranjo quadro elétrico trás-os-montes',
       'preço eletricista bragança', 'eletricista perto de mim bragança',
       'substituição quadro elétrico bragança',
       'eletricista urgente chaves', 'instalação elétrica mirandela',
