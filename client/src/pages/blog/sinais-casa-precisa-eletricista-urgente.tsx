@@ -394,7 +394,7 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  </li>
  <li className="flex items-start">
  <span className="text-orange-600 mr-2">✓</span>
- <span>Eletricistas certificados DGEG</span>
+ <span>Eletricistas qualificados</span>
  </li>
  <li className="flex items-start">
  <span className="text-orange-600 mr-2">✓</span>

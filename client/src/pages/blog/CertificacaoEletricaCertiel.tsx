@@ -58,6 +58,7 @@ export default function CertificacaoEletricaCertiel() {
  if (el) document.head.removeChild(el);
  };
  }, []);
+ useEffect(() => { let m = document.querySelector('meta[name="robots"]'); if (!m) { m = document.createElement('meta'); m.setAttribute('name','robots'); document.head.appendChild(m); } m.setAttribute('content','noindex, nofollow'); }, []);
  return (
  <div className="min-h-screen flex flex-col">
  <Header />
