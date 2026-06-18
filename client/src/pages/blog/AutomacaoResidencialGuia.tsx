@@ -31,11 +31,11 @@ export default function AutomacaoResidencialGuia() {
  "description": "Guia completo de automação residencial em Trás-os-Montes. Descubra como transformar a sua casa numa casa inteligente.",
  "author": {
  "@type": "Organization",
- "name": ""
+ "name": "Norte Reparos"
  },
  "publisher": {
  "@type": "Organization",
- "name": "",
+ "name": "Norte Reparos",
  "logo": {
  "@type": "ImageObject",
  "url": "https://eletricista-norte-reparos.pt/logo.png"
@@ -45,8 +45,50 @@ export default function AutomacaoResidencialGuia() {
  "dateModified": "2026-02-19"
  });
  document.head.appendChild(script);
+ const faqScript = document.createElement('script');
+ faqScript.type = 'application/ld+json';
+ faqScript.text = JSON.stringify({
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+ {
+ "@type": "Question",
+ "name": "O que é automação residencial?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "Automação residencial é a integração de tecnologia na sua casa para controlar automaticamente sistemas como iluminação, climatização, segurança, entretenimento e eletrodomésticos. Através de uma central de controlo (smartphone, tablet ou assistente de voz), pode gerir toda a casa de forma remota ou programada."
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "Quanto custa automatizar uma casa?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "Uma automação básica de iluminação inteligente (3-4 divisões) custa entre 500€ e 1.000€. Um sistema intermédio com iluminação, climatização e estores fica entre 2.000€ e 4.000€. Um sistema avançado completo e integrado varia entre 5.000€ e 10.000€. Os valores incluem equipamento e instalação."
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "Quanto posso poupar com uma casa inteligente?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "Com gestão inteligente de iluminação e climatização pode reduzir a conta de luz em 20-40%. Só na iluminação, a poupança pode chegar aos 60%."
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "Quem deve instalar a automação?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "A instalação deve ser feita por um eletricista certificado para garantir segurança e funcionamento correto. O processo começa com a avaliação da instalação elétrica existente, seguida da escolha do sistema, instalação profissional e configuração com formação de utilização."
+ }
+ }
+ ]
+ });
+ document.head.appendChild(faqScript);
  return () => {
  document.head.removeChild(script);
+ document.head.removeChild(faqScript);
  };
  }, []);
  const sistemas = [

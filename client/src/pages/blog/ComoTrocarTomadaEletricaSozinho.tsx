@@ -1,11 +1,4 @@
 import React from 'react';
-useEffect(() => {
-  const meta = document.createElement('meta');
-  meta.name = 'robots';
-  meta.content = 'noindex';
-  document.head.appendChild(meta);
-}, []);
-
 import BlogLayout from '@/components/blog/BlogLayout';
 import { useSEO, generateArticleSchema } from '@/hooks/useSEO';
 const ComoTrocarTomadaEletricaSozinho: React.FC = () => {
@@ -64,13 +57,20 @@ const ComoTrocarTomadaEletricaSozinho: React.FC = () => {
           "mainEntityOfPage": { "@type": "WebPage", "@id": "https://eletricista-norte-reparos.pt/blog/como-trocar-tomada-eletrica-sozinho" }
         }) }}
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+        {"@type":"Question","name":"Quando devo trocar uma tomada elétrica?","acceptedAnswer":{"@type":"Answer","text":"Troque a tomada se notar faísca ao ligar um aparelho, cheiro a queimado, tomada quente ao toque, choque elétrico, plástico derretido ou rachado, ficha que não encaixa bem, tomada solta na parede ou com mais de 20 anos."}},
+        {"@type":"Question","name":"Que materiais preciso para trocar uma tomada?","acceptedAnswer":{"@type":"Answer","text":"Precisa de uma tomada nova (5-15€), testador de tensão (5€), chave de fendas plana e estrela, alicate, fita isoladora e, se necessário, caixa de encastrar (2-3€). Total aproximado de 10-20€."}},
+        {"@type":"Question","name":"Como desligar a corrente em segurança antes de trocar a tomada?","acceptedAnswer":{"@type":"Answer","text":"Vá ao quadro elétrico, identifique o disjuntor do circuito da tomada e desligue-o (não precisa desligar tudo). Cole um aviso 'NÃO LIGAR - TRABALHOS' e confirme com o testador de tensão que a tomada está a 0V antes de tocar nos fios."}},
+        {"@type":"Question","name":"Qual o código de cores dos fios em Portugal?","acceptedAnswer":{"@type":"Answer","text":"Castanho ou preto é a fase (corrente ativa, perigoso), azul é o neutro e verde/amarelo é a terra (proteção contra choques). Ligue a fase ao terminal L, o neutro ao N e a terra ao terminal de terra."}},
+        {"@type":"Question","name":"Quando NÃO devo trocar a tomada sozinho?","acceptedAnswer":{"@type":"Answer","text":"Chame um eletricista certificado se a tomada tiver mais de 3 fios, não houver ligação à terra, os fios forem de alumínio, a caixa estiver danificada ou inexistente, não tiver experiência com eletricidade, ou a tomada estiver numa zona húmida sem proteção IP."}}
+      ] }) }} />
       <article className="max-w-4xl mx-auto">
  <div className="mb-8">
  <div className="flex flex-wrap items-center gap-4 text-gray-600 mb-4">
  <span className="px-3 py-1 bg-blue-100 text-blue-800 font-semibold rounded-full">
  DIY Seguro
  </span>
- <span>⏱️ resposta prioritária de leitura</span>
+ <span>⏱️ Leitura rápida</span>
  <span>📅 10 Mar 2026</span>
  </div>
  <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -89,13 +89,13 @@ const ComoTrocarTomadaEletricaSozinho: React.FC = () => {
  <div className="prose prose-lg max-w-none mb-10">
  <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg mb-8">
  <p className="text-blue-900 font-semibold text-lg">
- ⚡ Trocar tomada elétrica é tarefa simples que demora resposta prioritária. Siga regras de segurança e poupe 40-80€!
+ ⚡ Trocar tomada elétrica é tarefa simples que demora poucos minutos. Siga regras de segurança e poupe 40-80€!
  </p>
  </div>
  <p className="text-xl text-gray-700 mb-6 leading-relaxed">
  Trocar tomada elétrica é uma das tarefas elétricas mais simples que pode fazer sozinho.
  Neste guia completo, vamos mostrar-lhe como trocar tomada com segurança total em apenas
- resposta prioritária, com ferramentas básicas que já tem em casa.
+ alguns minutos, com ferramentas básicas que já tem em casa.
  </p>
  </div>
  <div className="bg-gray-50 rounded-2xl p-6 mb-10">
@@ -317,5 +317,6 @@ const ComoTrocarTomadaEletricaSozinho: React.FC = () => {
  </article>
  </BlogLayout>
  );
-}
+};
+export default ComoTrocarTomadaEletricaSozinho;
 

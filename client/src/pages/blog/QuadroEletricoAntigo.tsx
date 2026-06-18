@@ -1,11 +1,4 @@
 // Blog article: "Quadro Elétrico Antigo - Quando Trocar"
-useEffect(() => {
-  const meta = document.createElement('meta');
-  meta.name = 'robots';
-  meta.content = 'noindex';
-  document.head.appendChild(meta);
-}, []);
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useEffect } from 'react';
@@ -70,11 +63,28 @@ export default function QuadroEletricoAntigo() {
  ]
  });
  document.head.appendChild(howtoScript);
+ const faqScript = document.createElement('script');
+ faqScript.type = 'application/ld+json';
+ faqScript.id = 'schema-faq-quadro-eletrico-antigo';
+ faqScript.text = JSON.stringify({
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+ { "@type": "Question", "name": "Quais os sinais de que preciso trocar o quadro elétrico?", "acceptedAnswer": { "@type": "Answer", "text": "Fusíveis de porcelana ou vidro, quadro de madeira ou baquelite, fios de alumínio, fusíveis que saltam frequentemente, cheiro a queimado no quadro ou mais de 25 anos sem intervenção são sinais de que deve trocar o quadro." } },
+ { "@type": "Question", "name": "Quanto custa trocar o quadro elétrico?", "acceptedAnswer": { "@type": "Answer", "text": "Num apartamento (T1-T3) o quadro de 8-12 módulos com instalação custa entre 200€ e 350€. Numa moradia, um quadro de 18-24 módulos com instalação custa entre 350€ e 600€. Valores indicativos que incluem quadro, disjuntores, diferencial 30mA e mão de obra." } },
+ { "@type": "Question", "name": "Quais as vantagens de um quadro elétrico moderno?", "acceptedAnswer": { "@type": "Answer", "text": "Um quadro moderno tem proteção diferencial que corta a corrente em 30ms se houver fuga, disjuntores rearmáveis em vez de fusíveis queimados, circuitos separados por zona da casa e está preparado para o futuro (carregador de carro elétrico, ar condicionado)." } },
+ { "@type": "Question", "name": "Os fusíveis antigos protegem contra eletrocussão?", "acceptedAnswer": { "@type": "Answer", "text": "Não. Os fusíveis antigos não protegem contra fugas de corrente, que são o maior risco de eletrocussão. Quadros com mais de 30 anos estão associados a uma parte significativa dos incêndios domésticos de origem elétrica em Portugal." } },
+ { "@type": "Question", "name": "Quanto tempo demora a substituição do quadro?", "acceptedAnswer": { "@type": "Answer", "text": "A instalação do novo quadro demora habitualmente 3 a 5 horas, com mínima interrupção de corrente. Inclui inspeção, orçamento fechado, instalação e testes com declaração de conformidade." } }
+ ]
+ });
+ document.head.appendChild(faqScript);
  return () => {
  const el = document.getElementById('schema-article-quadro-eletrico-antigo');
  if (el) document.head.removeChild(el);
  const el2 = document.getElementById('schema-howto-quadro-eletrico-antigo');
  if (el2) document.head.removeChild(el2);
+ const el3 = document.getElementById('schema-faq-quadro-eletrico-antigo');
+ if (el3) document.head.removeChild(el3);
  };
  }, []);
  return (
@@ -184,10 +194,10 @@ export default function QuadroEletricoAntigo() {
  <h2 className="text-2xl font-black mb-6">Como Funciona a Substituição?</h2>
  <div className="space-y-4">
  {[
- { passo: "1", titulo: "Inspeção", desc: "Avaliamos o estado atual e dimensionamos o novo quadro", tempo: "resposta prioritária" },
+ { passo: "1", titulo: "Inspeção", desc: "Avaliamos o estado atual e dimensionamos o novo quadro", tempo: "Sem compromisso" },
  { passo: "2", titulo: "Orçamento", desc: "Preço fechado, sem surpresas", tempo: "Imediato" },
  { passo: "3", titulo: "Instalação", desc: "Substituição do quadro com mínima interrupção", tempo: "3-5 horas" },
- { passo: "4", titulo: "Teste e Certificação", desc: "Testamos tudo e emitimos declaração de conformidade", tempo: "resposta prioritária" },
+ { passo: "4", titulo: "Teste e Certificação", desc: "Testamos tudo e emitimos declaração de conformidade", tempo: "Incluído" },
  ].map((item, i) => (
  <div key={i} className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg">
  <div className="w-10 h-10 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold">

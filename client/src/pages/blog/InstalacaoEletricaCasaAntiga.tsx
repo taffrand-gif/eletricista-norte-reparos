@@ -31,11 +31,11 @@ export default function InstalacaoEletricaCasaAntiga() {
  "description": "Guia para renovar instalação elétrica em casas antigas de pedra: normas, custos e soluções.",
  "author": {
  "@type": "Organization",
- "name": ""
+ "name": "Norte Reparos"
  },
  "publisher": {
  "@type": "Organization",
- "name": "",
+ "name": "Norte Reparos",
  "logo": {
  "@type": "ImageObject",
  "url": "https://eletricista-norte-reparos.pt/logo.png"
@@ -65,9 +65,52 @@ export default function InstalacaoEletricaCasaAntiga() {
  });
  document.head.appendChild(howtoScript);
 
+ const faqScript = document.createElement('script');
+ faqScript.type = 'application/ld+json';
+ faqScript.text = JSON.stringify({
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+ {
+ "@type": "Question",
+ "name": "Como sei que preciso de renovar a instalação elétrica?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "Os principais sinais são: instalação com mais de 30 anos sem renovação, fios de alumínio ou tecido, ausência de fio de terra (tomadas de 2 pinos), quadro elétrico com fusíveis cerâmicos, tomadas e interruptores partidos ou queimados, e disjuntores que disparam frequentemente."
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "Quanto custa renovar a instalação elétrica de uma casa antiga?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "Uma renovação parcial (quadro, terra e circuitos críticos) custa entre 1.500€ e 3.000€. Uma renovação completa de um T2 com certificação fica entre 3.500€ e 6.000€. Para casas grandes (T3/T4) com múltiplos circuitos, o valor varia entre 6.000€ e 10.000€. Os valores incluem material, mão-de-obra e certificação."
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "É possível renovar sem destruir as paredes de pedra?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "Sim. Existem soluções discretas que preservam a estética: calhas técnicas em PVC que seguem rodapés e cantos, rodapés elétricos com canal interno para cabos, tubagem à vista de estilo industrial e furação mínima com broca diamante quando é necessário perfurar granito."
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "A certificação elétrica é obrigatória após a renovação?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "Sim. Qualquer renovação elétrica em Portugal deve cumprir as Regras Técnicas das Instalações Elétricas (RTIEBT). Após a renovação é obrigatório obter o certificado emitido por eletricista certificado. Sem ele, não pode vender nem arrendar o imóvel."
+ }
+ }
+ ]
+ });
+ document.head.appendChild(faqScript);
+
  return () => {
  document.head.removeChild(script);
  if (howtoScript.parentNode) document.head.removeChild(howtoScript);
+ if (faqScript.parentNode) document.head.removeChild(faqScript);
  };
  }, []);
  const desafios = [

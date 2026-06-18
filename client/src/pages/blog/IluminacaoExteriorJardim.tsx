@@ -1,11 +1,4 @@
 // Blog article: "Iluminação Exterior e de Jardim: Guia Completo 2026"
-useEffect(() => {
-  const meta = document.createElement('meta');
-  meta.name = 'robots';
-  meta.content = 'noindex';
-  document.head.appendChild(meta);
-}, []);
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useEffect } from 'react';
@@ -52,8 +45,25 @@ export default function IluminacaoExteriorJardim() {
  "dateModified": "2026-02-19"
  });
  document.head.appendChild(script);
+ const faqScript = document.createElement('script');
+ faqScript.type = 'application/ld+json';
+ faqScript.id = 'schema-faq-iluminacao-exterior';
+ faqScript.text = JSON.stringify({
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+ { "@type": "Question", "name": "Que índice de proteção IP devo usar na iluminação exterior?", "acceptedAnswer": { "@type": "Answer", "text": "Para exterior exposto (jardim, fachada) use IP65, que resiste a jatos de água. Em zonas cobertas (alpendre, varanda) basta IP44; perto de fontes ou piscinas use IP67 e, para iluminação submersa de piscina, IP68. Em Trás-os-Montes, com chuva, neve e geada, use sempre IP65 ou superior." } },
+ { "@type": "Question", "name": "Vale a pena usar LED na iluminação exterior?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. O LED consome cerca de 80% menos que o halogéneo ou incandescente, dura entre 20.000 e 50.000 horas, é resistente a vibrações, acende instantaneamente e não contém mercúrio. É a opção recomendada para iluminação exterior." } },
+ { "@type": "Question", "name": "Que temperatura de cor escolher para o exterior?", "acceptedAnswer": { "@type": "Answer", "text": "Branco quente (2700K-3000K) é acolhedor, ideal para terraços e zonas de estar. Branco neutro (4000K-4500K) é equilibrado, ideal para caminhos e entradas. Branco frio (5000K-6500K) é intenso, ideal para segurança e garagens." } },
+ { "@type": "Question", "name": "Quanto custa iluminar o exterior da casa?", "acceptedAnswer": { "@type": "Answer", "text": "Um projeto básico (2 focos de segurança e 4 balizas de caminho) custa entre 300€ e 500€. Um projeto intermédio com destaque de árvores e fachada custa entre 800€ e 1.500€. Um projeto completo com automação e sensores custa entre 2.000€ e 4.000€, incluindo material e instalação." } },
+ { "@type": "Question", "name": "Que sensores posso usar na iluminação exterior?", "acceptedAnswer": { "@type": "Answer", "text": "O sensor de movimento acende ao detetar presença e poupa até 70% na iluminação de segurança. O sensor crepuscular acende ao anoitecer e apaga ao amanhecer, ideal para iluminação ambiente. O temporizador permite programar horários e simular presença quando está fora." } }
+ ]
+ });
+ document.head.appendChild(faqScript);
  return () => {
  document.head.removeChild(script);
+ const faqEl = document.getElementById('schema-faq-iluminacao-exterior');
+ if (faqEl) document.head.removeChild(faqEl);
  };
  }, []);
  const tiposIluminacao = [
