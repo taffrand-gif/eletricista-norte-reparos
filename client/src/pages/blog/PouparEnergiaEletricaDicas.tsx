@@ -48,7 +48,7 @@ const PouparEnergiaEletricaDicas: React.FC = () => {
  <span className="px-3 py-1 bg-amber-100 text-amber-800 font-semibold rounded-full">
  Eficiência Energética
  </span>
- <span>⏱️ resposta prioritária de leitura</span>
+ <span>⏱️ Leitura rápida</span>
  <span>📅 14 Fev 2026</span>
  <span>👁️ 890 visualizações</span>
  </div>
@@ -135,7 +135,7 @@ const PouparEnergiaEletricaDicas: React.FC = () => {
  </section>
  <section id="standby" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">2. 🔴 Eliminar o Consumo em Standby</h2>
- <p>Os aparelhos em standby (luz vermelha ligada) consomem energia Atendimento 24h/7d. Televisões, consolas, carregadores e micro-ondas são os principais culpados.</p>
+ <p>Os aparelhos em standby (luz vermelha ligada) consomem energia continuamente. Televisões, consolas, carregadores e micro-ondas são os principais culpados.</p>
  <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg mb-6">
  <h3 className="font-bold text-red-800 text-lg mb-2">O custo invisível do standby:</h3>
  <ul className="text-red-700 space-y-1">
@@ -168,7 +168,7 @@ const PouparEnergiaEletricaDicas: React.FC = () => {
  <span className="bg-amber-600 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">3</span>
  <div>
  <p className="font-semibold">Forno elétrico com pré-aquecimento curto</p>
- <p className="text-gray-600">Desligue o forno resposta prioritária antes do fim — o calor residual termina a cozedura.</p>
+ <p className="text-gray-600">Desligue o forno um pouco antes do fim — o calor residual termina a cozedura.</p>
  </div>
  </li>
  </ol>

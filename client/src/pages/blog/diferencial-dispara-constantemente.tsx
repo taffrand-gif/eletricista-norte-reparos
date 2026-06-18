@@ -67,7 +67,7 @@ export default function DiferencialDisparaConstantemente() {
  <div className="flex items-center text-gray-600 text-sm">
  <time dateTime="2026-03-03">3 de Março, 2026</time>
  <span className="mx-2">•</span>
- <span>resposta prioritária de leitura</span>
+ <span>Leitura rápida</span>
  </div>
  </header>
  <div className="prose prose-lg max-w-none mb-8">
@@ -324,7 +324,7 @@ export default function DiferencialDisparaConstantemente() {
  <div className="bg-gray-50 rounded-lg p-6">
  <h4 className="font-bold text-gray-900 mb-2">Quanto tempo demora a arranjo?</h4>
  <p className="text-gray-700 mb-0">
- Diagnóstico: 30-resposta prioritária. Substituição diferencial: resposta prioritária. Arranjo fuga instalação: 1-3 horas.
+ Diagnóstico: rápido. Substituição diferencial: rápida. Arranjo fuga instalação: 1-3 horas.
  Substituição cabo: 2-4 horas. Urgências 24h disponíveis.
  </p>
  </div>

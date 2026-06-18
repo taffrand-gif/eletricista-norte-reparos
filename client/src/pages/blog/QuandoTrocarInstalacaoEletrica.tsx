@@ -48,7 +48,7 @@ const QuandoTrocarInstalacaoEletrica: React.FC = () => {
  <span className="px-3 py-1 bg-amber-100 text-amber-800 font-semibold rounded-full">
  Segurança Elétrica
  </span>
- <span>⏱️ resposta prioritária de leitura</span>
+ <span>⏱️ Leitura rápida</span>
  <span>📅 14 Fev 2026</span>
  <span>👁️ 750 visualizações</span>
  </div>
