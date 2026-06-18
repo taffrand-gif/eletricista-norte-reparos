@@ -39,6 +39,16 @@ const ComoInstalarCandeeiroTeto: React.FC = () => {
           {"@type": "HowToStep", "name": "Restaure a corrente e teste", "text": "Ligue o disjuntor no quadro. Teste o candeeiro. Se o diferencial disparar ou a luz não acender, desligue e reveja as ligações."}
         ]
       }) }} />
+       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "url": "https://eletricista-norte-reparos.pt/blog/como-instalar-candeeiro-teto-seguranca",
+        "mainEntity": [
+          {"@type": "Question", "name": "Posso instalar um candeeiro de teto se não tenho experiência?", "acceptedAnswer": {"@type": "Answer", "text": "Para instalações simples em casas com instalação elétrica moderna e em bom estado, sim, seguindo rigorosamente as medidas de segurança. Se tem dúvidas ou a casa tem mais de 20 anos, recomenda-se chamar um profissional."}},
+          {"@type": "Question", "name": "Quanto custa a instalação de candeeiro por um eletricista em Trás-os-Montes?", "acceptedAnswer": {"@type": "Answer", "text": "Em Trás-os-Montes, o preço médio para instalação de um candeeiro simples varia entre 25€ e 50€, dependendo da complexidade e deslocação. Para instalações múltiplas ou sistemas complexos, o preço pode ser superior."}},
+          {"@type": "Question", "name": "É obrigatório desligar a corrente para instalar candeeiro?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, é absolutamente obrigatório. Desligue o disjuntor correspondente no quadro elétrico e confirme com detetor de tensão que não há corrente antes de tocar em qualquer fio."}}
+        ]
+      }) }} />
  <article className="max-w-4xl mx-auto">
  {/* Meta info */}
  <div className="mb-8">

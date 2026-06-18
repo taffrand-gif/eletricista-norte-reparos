@@ -21,6 +21,18 @@ const QuadroEletricoDispara: React.FC = () => {
  title="Quadro Elétrico Dispara: 7 Causas e Soluções [Guia 2026]"
  description="Guia completo para identificar porque o quadro elétrico dispara e resolver o problema de forma segura"
  >
+       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "url": "https://eletricista-norte-reparos.pt/blog/quadro-eletrico-dispara",
+        "mainEntity": [
+          {"@type": "Question", "name": "Porque é que o quadro elétrico dispara constantemente?", "acceptedAnswer": {"@type": "Answer", "text": "As 3 causas mais comuns: Sobrecarga (40%): demasiados aparelhos ligados ao mesmo circuito; Curto-circuito (25%): fio danificado ou ligação mal feita; Fuga de corrente (15%): isolamento danificado ou humidade."}},
+          {"@type": "Question", "name": "Posso religar o disjuntor várias vezes?", "acceptedAnswer": {"@type": "Answer", "text": "Pode religar 1-2 vezes se disparou por sobrecarga pontual. Não religue repetidamente se dispara imediatamente ou há cheiro a queimado. Nunca force a alavanca se não sobe facilmente — o disjuntor pode estar danificado."}},
+          {"@type": "Question", "name": "Como sei se é sobrecarga no quadro elétrico?", "acceptedAnswer": {"@type": "Answer", "text": "Sinais de sobrecarga: dispara quando liga aparelho potente (forno, aquecedor, máquina lavar), dispara sempre no mesmo circuito, tomadas ou fios ficam quentes, luzes diminuem intensidade ao ligar um aparelho."}},
+          {"@type": "Question", "name": "Quanto custa resolver quadro elétrico que dispara?", "acceptedAnswer": {"@type": "Answer", "text": "Custos típicos em Trás-os-Montes: substituir disjuntor defeituoso 40-100€, reparar curto-circuito 80-200€, resolver fuga de corrente 60-150€. Diagnóstico profissional: 40-80€."}},
+          {"@type": "Question", "name": "É perigoso o quadro elétrico disparar?", "acceptedAnswer": {"@type": "Answer", "text": "Sobrecarga ocasional não é perigosa se resolver rapidamente. Curto-circuito é perigoso — pode causar incêndio. Fuga de corrente é muito perigosa — risco de choque fatal. Nunca ignore problema recorrente."}}
+        ]
+      }) }} />
  <article className="max-w-4xl mx-auto">
  <div className="mb-8">
  <div className="flex flex-wrap items-center gap-4 text-gray-600 mb-4">
