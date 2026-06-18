@@ -22,6 +22,23 @@ const ComoInstalarCandeeiroTeto: React.FC = () => {
  title="Como Instalar um Candeeiro de Teto com Segurança"
  description="Guia completo para instalação segura de candeeiros de teto - passo a passo com imagens e dicas de segurança"
  >
+       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Como Instalar um Candeeiro de Teto com Segurança",
+        "description": "Guia passo a passo para instalar um candeeiro de teto de forma segura, desde as ferramentas necessárias até ao teste final.",
+        "totalTime": "PT45M",
+        "url": "https://eletricista-norte-reparos.pt/blog/como-instalar-candeeiro-teto-seguranca",
+        "step": [
+          {"@type": "HowToStep", "name": "Reúna as ferramentas necessárias", "text": "Prepare chave de fendas isolada, alicate de eletricista, detetor de tensão, fita isoladora e escada estável."},
+          {"@type": "HowToStep", "name": "Desligue a corrente no quadro elétrico", "text": "Vá ao quadro elétrico e desligue o disjuntor do circuito de iluminação. Confirme a ausência de tensão com detetor."},
+          {"@type": "HowToStep", "name": "Remova o candeeiro existente", "text": "Desenrosque o candeeiro antigo com cuidado. Suporte o peso para não danificar os fios durante a remoção."},
+          {"@type": "HowToStep", "name": "Identifique e prepare os fios", "text": "Identifique fase (castanho/vermelho), neutro (azul) e terra (verde-amarelo). Descasque 1cm de cada fio se necessário."},
+          {"@type": "HowToStep", "name": "Ligue os fios ao novo candeeiro", "text": "Conecte fase ao terminal L, neutro ao N, e terra ao símbolo de terra. Aperte bem os terminais sem deixar fio exposto."},
+          {"@type": "HowToStep", "name": "Fixe o suporte ao teto e monte o candeeiro", "text": "Prenda o suporte com os parafusos fornecidos. Encaixe o candeeiro com segurança e verifique que está firme."},
+          {"@type": "HowToStep", "name": "Restaure a corrente e teste", "text": "Ligue o disjuntor no quadro. Teste o candeeiro. Se o diferencial disparar ou a luz não acender, desligue e reveja as ligações."}
+        ]
+      }) }} />
  <article className="max-w-4xl mx-auto">
  {/* Meta info */}
  <div className="mb-8">

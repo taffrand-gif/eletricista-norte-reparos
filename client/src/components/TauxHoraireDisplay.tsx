@@ -39,7 +39,7 @@ function TauxHoraireDisplay({ className = '' }: TauxHoraireDisplayProps) {
  <h4 className="font-bold text-gray-900 mb-2">Sábado</h4>
  <p className="text-sm text-gray-600 mb-3">Todo o dia</p>
  <div className="text-4xl font-black text-blue-600">
- 90€<span className="text-xl text-gray-600">/h</span>
+ 105€<span className="text-xl text-gray-600">/h</span>
  </div>
  </div>
  {/* Domingo/Feriado */}
@@ -48,7 +48,7 @@ function TauxHoraireDisplay({ className = '' }: TauxHoraireDisplayProps) {
  <h4 className="font-bold text-gray-900 mb-2">Domingo & Feriado</h4>
  <p className="text-sm text-gray-600 mb-3">Dias feriados</p>
  <div className="text-4xl font-black text-red-600">
- 100€<span className="text-xl text-gray-600">/h</span>
+ 105€<span className="text-xl text-gray-600">/h</span>
  </div>
  </div>
  </div>

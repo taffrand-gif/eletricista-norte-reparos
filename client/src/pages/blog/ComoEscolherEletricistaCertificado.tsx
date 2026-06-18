@@ -24,6 +24,22 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  title="Como Escolher um Eletricista Certificado em Trás-os-Montes"
  description="Guia completo com critérios essenciais para selecionar um eletricista qualificado e de confiança na região de Trás-os-Montes"
  >
+       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Como Escolher um Eletricista Certificado em Trás-os-Montes",
+        "description": "Guia completo com critérios de seleção, perguntas essenciais e sinais de alerta para escolher o eletricista certo.",
+        "totalTime": "PT15M",
+        "url": "https://eletricista-norte-reparos.pt/blog/como-escolher-eletricista-certificado",
+        "step": [
+          {"@type": "HowToStep", "name": "Verifique o registo na DGEG", "text": "Todo eletricista certificado em Portugal deve estar registado na DGEG. Peça o número de registo e confirme no portal da DGEG."},
+          {"@type": "HowToStep", "name": "Peça referências e avaliações", "text": "Solicite contactos de clientes anteriores. Pesquise avaliações no Google Maps e em plataformas como Fixando ou Zaask."},
+          {"@type": "HowToStep", "name": "Solicite orçamento detalhado por escrito", "text": "Um profissional sério dá orçamento escrito com descrição dos trabalhos, materiais incluídos, mão de obra e prazo. Recuse orçamentos verbais."},
+          {"@type": "HowToStep", "name": "Confirme seguro de responsabilidade civil", "text": "Peça comprovativo do seguro de responsabilidade civil. Este seguro cobre danos causados durante a obra."},
+          {"@type": "HowToStep", "name": "Verifique o prazo e condições de garantia", "text": "Exija garantia mínima de 12 meses nos trabalhos. Confirme o que está coberto e o processo para reclamar."},
+          {"@type": "HowToStep", "name": "Compare preços com contexto regional", "text": "Em Trás-os-Montes, a deslocação tem custo (15-65€ conforme zona). Preços muito baixos sem deslocação são sinal de alerta."}
+        ]
+      }) }} />
  <article className="max-w-4xl mx-auto">
  {/* Meta info */}
  <div className="mb-8">

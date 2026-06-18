@@ -28,6 +28,23 @@ const ComoTrocarTomadaEletricaSozinho: React.FC = () => {
  title="Como Trocar Tomada Elétrica Sozinho [Guia Seguro 2026]"
  description="Guia completo e seguro para trocar tomada elétrica sem chamar eletricista"
  >
+       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Como Trocar Tomada Elétrica Sozinho em Segurança",
+        "description": "Guia seguro e passo a passo para substituir uma tomada elétrica em casa, com todas as precauções de segurança necessárias.",
+        "totalTime": "PT30M",
+        "url": "https://eletricista-norte-reparos.pt/blog/como-trocar-tomada-eletrica-sozinho",
+        "step": [
+          {"@type": "HowToStep", "name": "Confirme a necessidade de troca", "text": "Verifique sinais como faíscas ao ligar, cheiro a queimado, tomada quente ao toque, plástico rachado ou tomada solta na parede."},
+          {"@type": "HowToStep", "name": "Reúna os materiais", "text": "Separe a tomada nova (5-15€), testador de tensão, chave de fendas plana e estrela, alicate e fita isoladora."},
+          {"@type": "HowToStep", "name": "Desligue o disjuntor específico no quadro", "text": "Identifique o disjuntor do circuito da tomada. Desligue-o e cole um aviso 'NÃO LIGAR'. Nunca trabalhe com corrente."},
+          {"@type": "HowToStep", "name": "Confirme ausência de tensão", "text": "Use o testador de tensão na tomada antes de tocar nos fios. Deve marcar 0V. Só avance se confirmar tensão zero."},
+          {"@type": "HowToStep", "name": "Remova a tomada antiga e identifique os fios", "text": "Desenrosque a tomada da caixa. Fotografe as ligações antes de desconectar. Identifique fase, neutro e terra."},
+          {"@type": "HowToStep", "name": "Ligue os fios à nova tomada", "text": "Conecte fase (castanho) ao terminal L, neutro (azul) ao N, terra (verde-amarelo) ao terminal de terra. Aperte bem."},
+          {"@type": "HowToStep", "name": "Monte e teste a nova tomada", "text": "Encaixe a tomada na caixa e aperte os parafusos. Restaure a corrente e teste com um aparelho de baixa potência."}
+        ]
+      }) }} />
  <article className="max-w-4xl mx-auto">
  <div className="mb-8">
  <div className="flex flex-wrap items-center gap-4 text-gray-600 mb-4">
