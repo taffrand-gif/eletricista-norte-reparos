@@ -22,7 +22,26 @@ const PouparEnergiaEletricaDicas: React.FC = () => {
  title="Como Poupar Energia Elétrica em Casa — 10 Dicas Práticas"
  description="Guia completo para reduzir o consumo de eletricidade e poupar na fatura da luz"
  >
- <article className="max-w-4xl mx-auto">
+       <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Como Poupar Energia Elétrica em Casa — 10 Dicas Práticas | 2026",
+          "author": { "@type": "Organization", "name": "Norte Reparos" },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Norte Reparos",
+            "url": "https://eletricista-norte-reparos.pt",
+            "logo": { "@type": "ImageObject", "url": "https://eletricista-norte-reparos.pt/logo.png" }
+          },
+          "datePublished": "2026-01-01",
+          "dateModified": "2026-06-18",
+          "url": "https://eletricista-norte-reparos.pt/blog/poupar-energia-eletrica-dicas",
+          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://eletricista-norte-reparos.pt/blog/poupar-energia-eletrica-dicas" }
+        }) }}
+      />
+      <article className="max-w-4xl mx-auto">
  {/* Meta info */}
  <div className="mb-8">
  <div className="flex flex-wrap items-center gap-4 text-gray-600 mb-4">

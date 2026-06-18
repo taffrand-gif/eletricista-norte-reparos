@@ -40,7 +40,26 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
           {"@type": "HowToStep", "name": "Compare preços com contexto regional", "text": "Em Trás-os-Montes, a deslocação tem custo (15-65€ conforme zona). Preços muito baixos sem deslocação são sinal de alerta."}
         ]
       }) }} />
- <article className="max-w-4xl mx-auto">
+       <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Como Escolher um Eletricista Certificado em Trás-os-Montes - Guia 2026",
+          "author": { "@type": "Organization", "name": "Norte Reparos" },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Norte Reparos",
+            "url": "https://eletricista-norte-reparos.pt",
+            "logo": { "@type": "ImageObject", "url": "https://eletricista-norte-reparos.pt/logo.png" }
+          },
+          "datePublished": "2026-01-01",
+          "dateModified": "2026-06-18",
+          "url": "https://eletricista-norte-reparos.pt/blog/como-escolher-eletricista-certificado",
+          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://eletricista-norte-reparos.pt/blog/como-escolher-eletricista-certificado" }
+        }) }}
+      />
+      <article className="max-w-4xl mx-auto">
  {/* Meta info */}
  <div className="mb-8">
  <div className="flex flex-wrap items-center gap-4 text-gray-600 mb-4">

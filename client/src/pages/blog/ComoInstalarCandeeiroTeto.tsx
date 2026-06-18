@@ -49,7 +49,26 @@ const ComoInstalarCandeeiroTeto: React.FC = () => {
           {"@type": "Question", "name": "É obrigatório desligar a corrente para instalar candeeiro?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, é absolutamente obrigatório. Desligue o disjuntor correspondente no quadro elétrico e confirme com detetor de tensão que não há corrente antes de tocar em qualquer fio."}}
         ]
       }) }} />
- <article className="max-w-4xl mx-auto">
+       <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Como Instalar um Candeeiro de Teto com Segurança: Guia Completo 2026",
+          "author": { "@type": "Organization", "name": "Norte Reparos" },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Norte Reparos",
+            "url": "https://eletricista-norte-reparos.pt",
+            "logo": { "@type": "ImageObject", "url": "https://eletricista-norte-reparos.pt/logo.png" }
+          },
+          "datePublished": "2026-01-01",
+          "dateModified": "2026-06-18",
+          "url": "https://eletricista-norte-reparos.pt/blog/como-instalar-candeeiro-teto",
+          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://eletricista-norte-reparos.pt/blog/como-instalar-candeeiro-teto" }
+        }) }}
+      />
+      <article className="max-w-4xl mx-auto">
  {/* Meta info */}
  <div className="mb-8">
  <div className="flex flex-wrap items-center gap-4 text-gray-600 mb-4">

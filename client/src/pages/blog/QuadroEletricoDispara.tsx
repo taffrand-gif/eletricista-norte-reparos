@@ -33,7 +33,26 @@ const QuadroEletricoDispara: React.FC = () => {
           {"@type": "Question", "name": "É perigoso o quadro elétrico disparar?", "acceptedAnswer": {"@type": "Answer", "text": "Sobrecarga ocasional não é perigosa se resolver rapidamente. Curto-circuito é perigoso — pode causar incêndio. Fuga de corrente é muito perigosa — risco de choque fatal. Nunca ignore problema recorrente."}}
         ]
       }) }} />
- <article className="max-w-4xl mx-auto">
+       <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Quadro Elétrico Dispara: 7 Causas e Soluções [Guia 2026]",
+          "author": { "@type": "Organization", "name": "Norte Reparos" },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Norte Reparos",
+            "url": "https://eletricista-norte-reparos.pt",
+            "logo": { "@type": "ImageObject", "url": "https://eletricista-norte-reparos.pt/logo.png" }
+          },
+          "datePublished": "2026-01-01",
+          "dateModified": "2026-06-18",
+          "url": "https://eletricista-norte-reparos.pt/blog/quadro-eletrico-dispara",
+          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://eletricista-norte-reparos.pt/blog/quadro-eletrico-dispara" }
+        }) }}
+      />
+      <article className="max-w-4xl mx-auto">
  <div className="mb-8">
  <div className="flex flex-wrap items-center gap-4 text-gray-600 mb-4">
  <span className="px-3 py-1 bg-red-100 text-red-800 font-semibold rounded-full">
