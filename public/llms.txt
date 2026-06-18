@@ -1,6 +1,6 @@
 # Eletricista Norte Reparos - Electricista Profissional em Trás-os-Montes, Portugal
 
-> Electricista certificado disponível Atendimento 24h/7d, 7 dias por semana, em toda a região de Trás-os-Montes, Norte de Portugal.
+> Eletricista disponível 24h/7, 7 dias por semana, em toda a região de Trás-os-Montes, Norte de Portugal.
 
 ## Informação de Contacto
 
@@ -68,13 +68,6 @@ Servimos toda a região de Trás-os-Montes e Alto Douro:
 - Instalação de disjuntores e diferenciais
 - Aumento de potência contratada
 
-### Certificação Elétrica DGEG
-- Fichas eletrotécnicas assinadas por técnico certificado DGEG Bragança
-- Fichas eletrotécnicas assinadas por técnico certificado DGEG Mirandela
-- Certificação para venda de imóvel
-- Certificação para arrendamento
-- Certificação para alojamento local (Airbnb)
-
 ### Instalações Elétricas
 - Instalação elétrica nova
 - Remodelação instalação existente
@@ -92,7 +85,6 @@ Servimos toda a região de Trás-os-Montes e Alto Douro:
 | Avaria / Diagnóstico | 50€ - 80€ |
 | Modernização quadro simples | 200€ - 300€ |
 | Quadro elétrico completo | 400€ - 600€ |
-| Fichas eletrotécnicas assinadas por técnico certificado DGEG | 150€ - 200€ |
 | Instalação de candeeiro | 35€ - 60€ |
 | Reparação quadro (dispara) | 80€ - 150€ |
 | Instalação elétrica completa | 200€ - 500€ |
@@ -115,8 +107,6 @@ Se procura por qualquer um destes termos, podemos ajudar:
 - disjuntor a disparar bragança
 - tomada não funciona mirandela
 - sem luz em casa bragança
-- certificação elétrica bragança
-- Fichas eletrotécnicas assinadas por técnico certificado DGEG mirandela
 
 ## Porquê Escolher-nos?
 
