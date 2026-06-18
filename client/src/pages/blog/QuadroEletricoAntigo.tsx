@@ -53,9 +53,28 @@ export default function QuadroEletricoAntigo() {
  }
  });
  document.head.appendChild(articleSchema);
+ const howtoScript = document.createElement('script');
+ howtoScript.type = 'application/ld+json';
+ howtoScript.id = 'schema-howto-quadro-eletrico-antigo';
+ howtoScript.text = JSON.stringify({
+ "@context": "https://schema.org",
+ "@type": "HowTo",
+ "name": "Como Substituir um Quadro Elétrico Antigo com Fusíveis",
+ "description": "Processo profissional de substituição de quadro elétrico antigo por disjuntores modernos com diferencial 30mA.",
+ "totalTime": "PT5H",
+ "step": [
+ { "@type": "HowToStep", "position": 1, "name": "Inspeção e Diagnóstico", "text": "Avaliamos o estado atual do quadro elétrico, dimensionamos o novo quadro e identificamos os circuitos existentes." },
+ { "@type": "HowToStep", "position": 2, "name": "Orçamento Fechado", "text": "Apresentamos preço total sem surpresas — materiais e mão de obra incluídos — antes de iniciar qualquer trabalho." },
+ { "@type": "HowToStep", "position": 3, "name": "Instalação do Novo Quadro", "text": "Substituição do quadro com mínima interrupção de corrente. Instalação de disjuntores, diferencial 30mA e proteções adequadas." },
+ { "@type": "HowToStep", "position": 4, "name": "Testes e Certificação", "text": "Testamos todos os circuitos, medimos a resistência de terra e emitimos declaração de conformidade da instalação." }
+ ]
+ });
+ document.head.appendChild(howtoScript);
  return () => {
  const el = document.getElementById('schema-article-quadro-eletrico-antigo');
  if (el) document.head.removeChild(el);
+ const el2 = document.getElementById('schema-howto-quadro-eletrico-antigo');
+ if (el2) document.head.removeChild(el2);
  };
  }, []);
  return (
