@@ -158,7 +158,7 @@ export default function CertificacaoEletricaCertiel() {
  </tbody>
  </table>
  <p className="text-sm text-gray-500 mt-4">
- * Preços incluem inspeção e emissão do certificado. Não incluem eventuais arranjos necessárias.
+ * Valores de mercado indicativos para a certificação em Portugal. O certificado é emitido por técnico responsável inscrito na DGEG ou entidade acreditada.
  </p>
  </div>
  </section>
@@ -186,7 +186,7 @@ export default function CertificacaoEletricaCertiel() {
  </ul>
  <p className="mt-4 p-4 bg-green-50 rounded-lg text-green-800">
  <strong>Boa notícia:</strong> A maioria destes problemas pode ser corrigida em 1-2 dias de trabalho. 
- Fazemos a inspeção prévia, corrigimos o necessário, e emitimos o certificado.
+ Como eletricistas, fazemos o diagnóstico e corrigimos as não conformidades para a sua instalação ficar pronta para a certificação.
  </p>
  </section>
  {/* Prazo */}
@@ -203,11 +203,11 @@ export default function CertificacaoEletricaCertiel() {
  </div>
  <div className="bg-orange-50 p-4 rounded-lg text-center">
  <div className="text-3xl font-black text-orange-500">2-4 dias</div>
- <div className="text-sm text-gray-600">Emissão certificado</div>
+ <div className="text-sm text-gray-600">Emissão pelo técnico DGEG</div>
  </div>
  </div>
  <p className="mt-4 text-gray-600">
- <strong>Total:</strong> Em casos simples, pode ter o certificado em 4-5 dias úteis.
+ <strong>Total:</strong> Em casos simples, todo o processo (diagnóstico, correções e emissão pelo técnico DGEG) demora 4-5 dias úteis.
  </p>
  </section>
  </div>
@@ -216,17 +216,17 @@ export default function CertificacaoEletricaCertiel() {
  <section className="py-16 bg-orange-500 text-white">
  <div className="container text-center">
  <h2 className="text-3xl font-black mb-4">
- Precisa de certificação elétrica?
+ Precisa de um eletricista para preparar a certificação?
  </h2>
  <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
- Fazemos inspeção, correções e emissão do certificado. Processo rápido e preço justo.
+ Fazemos o diagnóstico e corrigimos as não conformidades da sua instalação. O certificado é emitido por técnico inscrito na DGEG.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a href="tel:+351932321892" className="inline-flex items-center justify-center gap-2 bg-white text-orange-500 px-8 py-4 rounded-lg text-xl font-bold hover:bg-gray-100 transition-all shadow-lg">
  <Phone className="w-6 h-6" />
  932 321 892
  </a>
- <a href="https://wa.me/351932321892?text=Olá,%20preciso%20de%20certificação%20elétrica.%20Podem%20dar-me%20um%20orçamento?" className="inline-flex items-center justify-center gap-2 bg-green-700 text-white px-8 py-4 rounded-lg text-xl font-bold hover:bg-green-800 transition-all shadow-lg">
+ <a href="https://wa.me/351932321892?text=Olá,%20preciso%20de%20um%20eletricista%20para%20a%20minha%20instalação." className="inline-flex items-center justify-center gap-2 bg-green-700 text-white px-8 py-4 rounded-lg text-xl font-bold hover:bg-green-800 transition-all shadow-lg">
  💬 WhatsApp
  </a>
  </div>

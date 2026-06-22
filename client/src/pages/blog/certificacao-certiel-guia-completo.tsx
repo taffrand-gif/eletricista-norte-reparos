@@ -6,6 +6,7 @@ export default function CertificacaoCertielGuiaCompleto() {
  <Helmet>
  <title>certificação elétrica: Guia Completo 2026 | </title>
  <meta name="description" content="Tudo sobre certificação elétrica em Portugal. Quando é obrigatória, preços, documentos necessários e como obter em Bragança e Trás-os-Montes." />
+ <meta name="robots" content="noindex, follow" />
  <script type="application/ld+json">
  {JSON.stringify({
  "@context": "https://schema.org",
@@ -129,10 +130,10 @@ export default function CertificacaoCertielGuiaCompleto() {
  </p>
  <div className="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
  <h3 className="text-xl font-bold text-gray-900 mb-3">
- Precisa de certificação elétrica em Bragança?
+ Tem dúvidas sobre a certificação elétrica?
  </h3>
  <p className="text-gray-800 mb-4">
- Eletricistas certificados DGEG. Inspeção completa, testes de conformidade, correções incluídas. Certificado em 3-5 dias úteis.
+ A certificação é emitida por um técnico responsável inscrito na DGEG ou entidade acreditada. Como eletricistas, podemos ajudar a diagnosticar a sua instalação e corrigir não conformidades antes da inspeção.
  </p>
  <div className="flex flex-col sm:flex-row gap-3">
  <a
@@ -142,7 +143,7 @@ export default function CertificacaoCertielGuiaCompleto() {
  Ligar: +351 932 321 892
  </a>
  <a
- href="https://wa.me/351932321892?text=Olá,%20preciso%20de%20certificação%20elétrica.%20Podem%20fazer%20orçamento?"
+ href="https://wa.me/351932321892?text=Olá,%20tenho%20uma%20dúvida%20sobre%20a%20minha%20instalação%20elétrica."
  target="_blank"
  rel="noopener noreferrer"
  className="inline-flex items-center justify-center px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition"
@@ -312,10 +313,10 @@ export default function CertificacaoCertielGuiaCompleto() {
  </p>
  <div className="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
  <h3 className="text-xl font-bold text-gray-900 mb-3">
- certificação elétrica Rápida e Sem Complicações
+ Precisa de apoio com a sua instalação elétrica?
  </h3>
  <p className="text-gray-800 mb-4">
- Eletricistas certificados DGEG em Bragança, Mirandela, Chaves e Vila Real. Inspeção, testes, correções e certificado em 3-5 dias. Preços transparentes.
+ Atuamos como eletricistas em Bragança, Mirandela, Chaves e Vila Real: diagnóstico, testes e correção de não conformidades. A emissão do certificado é feita por técnico inscrito na DGEG.
  </p>
  <div className="flex flex-col sm:flex-row gap-3">
  <a
@@ -442,27 +443,23 @@ export default function CertificacaoCertielGuiaCompleto() {
  </div>
  <div className="bg-orange-50 border-2 border-orange-600 rounded-lg p-8 my-12">
  <h3 className="text-2xl font-bold text-gray-900 mb-4">
- Obtenha a Sua certificação elétrica Hoje!
+ Precisa de um eletricista em Trás-os-Montes?
  </h3>
  <p className="text-gray-800 mb-6">
- Eletricistas certificados DGEG em Bragança e Trás-os-Montes. Inspeção completa, testes de conformidade, correções incluídas. Certificado em 3-5 dias úteis. Preços transparentes, sem surpresas.
+ Diagnosticamos a sua instalação elétrica e corrigimos não conformidades. A certificação legal é emitida por um técnico inscrito na DGEG ou entidade acreditada.
  </p>
  <ul className="space-y-2 mb-6 text-gray-800">
  <li className="flex items-start">
  <span className="text-orange-600 mr-2">✓</span>
- <span>Certificação completa: 250-600€</span>
+ <span>Diagnóstico da instalação elétrica</span>
  </li>
  <li className="flex items-start">
  <span className="text-orange-600 mr-2">✓</span>
- <span>Registo DGEG incluído</span>
+ <span>Correção de não conformidades</span>
  </li>
  <li className="flex items-start">
  <span className="text-orange-600 mr-2">✓</span>
- <span>Correções menores sem custo extra</span>
- </li>
- <li className="flex items-start">
- <span className="text-orange-600 mr-2">✓</span>
- <span>Válido 25 anos</span>
+ <span>Orçamento sem compromisso</span>
  </li>
  </ul>
  <div className="flex flex-col sm:flex-row gap-4">
@@ -473,7 +470,7 @@ export default function CertificacaoCertielGuiaCompleto() {
  Ligar Agora: +351 932 321 892
  </a>
  <a
- href="https://wa.me/351932321892?text=Olá,%20preciso%20de%20certificação%20elétrica.%20Podem%20fazer%20orçamento?"
+ href="https://wa.me/351932321892?text=Olá,%20tenho%20uma%20dúvida%20sobre%20a%20minha%20instalação%20elétrica."
  target="_blank"
  rel="noopener noreferrer"
  className="inline-flex items-center justify-center px-8 py-4 bg-green-600 text-white text-lg font-bold rounded-lg hover:bg-green-700 transition shadow-lg"
