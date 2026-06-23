@@ -30,7 +30,7 @@
 - Site principal : `eletricista-norte-reparos.pt` (déployé via push Git)
 - Sites à NE PAS toucher : `staff-seekers.com`, `norte-reparos.com` (résidus morts)
 - Branche de travail : `main` (production), branches feature pour le dev
-- Token GitHub : `ghp_irpO6…` (scopes à restreindre — voir tâche en cours)
+- Token GitHub : stocké dans le Keychain macOS (osxkeychain), jamais en clair dans le repo
 
 ## Sécurité credentials
 
