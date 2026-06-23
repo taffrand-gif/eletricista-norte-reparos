@@ -3,7 +3,6 @@
 import { useEffect, useMemo } from 'react';
 import { useSite } from '@/contexts/SiteContext';
 import { useLocation } from 'wouter';
-import { getCitySEOConfig } from '../../../shared/seoKeywords';
 interface SEOHeadEnhancedProps {
  citySlug?: string; // Slug de la ville (ex: 'macedo-de-cavaleiros')
  pageType?: 'home' | 'city' | 'service' | 'blog' | 'gallery';
@@ -22,8 +21,6 @@ export default function SEOHeadEnhanced({
 }: SEOHeadEnhancedProps) {
  const { config } = useSite();
  const [location] = useLocation();
- // Récupérer la configuration SEO pour la ville
- const citySEO = citySlug ? getCitySEOConfig(citySlug) : null;
  // Déterminer les meta tags en fonction du type de page
  const seoConfig = useMemo(() => {
  // Configuration par défaut (page d'accueil)
@@ -32,13 +29,6 @@ export default function SEOHeadEnhanced({
  let keywords = customKeywords || config.seo.keywords;
  let canonicalUrl = `https://${config.domain}${location}`;
  let ogImage = customImage || config.seo.ogImage;
- // Page ville
- if (pageType === 'city' && citySEO) {
- title = citySEO.title;
- description = citySEO.description;
- keywords = citySEO.keywords;
- canonicalUrl = citySEO.canonicalUrl;
- }
  // Page service
  if (pageType === 'service') {
  title = `${config.serviceType} - ${customTitle || 'Serviços'} | ${config.name}`;
@@ -55,10 +45,10 @@ export default function SEOHeadEnhanced({
  keywords: keywords.join(', '),
  canonicalUrl,
  ogImage,
- ogTitle: citySEO?.ogTitle || title,
- ogDescription: citySEO?.ogDescription || description.substring(0, 160)
+ ogTitle: title,
+ ogDescription: description.substring(0, 160)
  };
- }, [config, citySlug, pageType, location, customTitle, customDescription, customKeywords, customImage, citySEO]);
+ }, [config, pageType, location, customTitle, customDescription, customKeywords, customImage]);
  useEffect(() => {
  // Mettre à jour le titre du document
  document.title = seoConfig.title;
@@ -163,48 +153,13 @@ export default function SEOHeadEnhanced({
  "priceRange": "€€",
  "areaServed": {
  "@type": "City",
- "name": citySEO?.cityName || "Trás-os-Montes"
+ "name": "Trás-os-Montes"
  },
  "sameAs": [
  `https://wa.me/${config.whatsapp}?text=${encodeURIComponent(config.whatsappMessage)}`
  ]
  };
- // Ajouter les coordonnées géographiques si c'est une page ville
- if (pageType === 'city' && citySEO) {
- // Coordonnées approximatives pour chaque ville
- const cityCoordinates: Record<string, { lat: number, lng: number }> = {
- 'macedo-de-cavaleiros': { lat: 41.5386, lng: -6.9611 },
- 'braganca': { lat: 41.8061, lng: -6.7572 },
- 'mirandela': { lat: 41.4875, lng: -7.1869 },
- 'chaves': { lat: 41.7403, lng: -7.4686 },
- 'valpacos': { lat: 41.6078, lng: -7.3108 },
- 'vinhais': { lat: 41.8353, lng: -7.0036 },
- 'miranda-do-douro': { lat: 41.4939, lng: -6.2733 },
- 'mogadouro': { lat: 41.3403, lng: -6.7119 },
- 'torre-de-moncorvo': { lat: 41.1742, lng: -7.0533 },
- 'freixo-de-espada-a-cinta': { lat: 41.0911, lng: -6.8069 }
- };
- const coords = cityCoordinates[citySlug || ''];
- if (coords) {
- Object.assign(schemaData, {
- "geo": {
- "@type": "GeoCoordinates",
- "latitude": coords.lat,
- "longitude": coords.lng
- },
- "serviceArea": {
- "@type": "GeoCircle",
- "geoMidpoint": {
- "@type": "GeoCoordinates",
- "latitude": coords.lat,
- "longitude": coords.lng
- },
- "geoRadius": "20000" // 20km radius
- }
- });
- }
- }
- schemaScript.text = JSON.stringify(schemaData);
+  schemaScript.text = JSON.stringify(schemaData);
  
  // Supprimer l'ancien script schema s'il existe
  const oldSchema = document.querySelector('script[type="application/ld+json"]');
