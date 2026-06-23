@@ -9,7 +9,7 @@ Disallow: /admin/
 Disallow: /api/
 
 # Sitemap
-Sitemap: https://eletricista-norte-reparos.pt/sitemap.xml
+Sitemap: https://eletricista-norte-reparos.pt/sitemap-index.xml
 
 # LLMs and AI Assistants
 # For AI assistants looking for information about our services,
