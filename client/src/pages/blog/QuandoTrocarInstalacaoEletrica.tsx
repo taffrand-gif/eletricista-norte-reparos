@@ -246,7 +246,7 @@ const QuandoTrocarInstalacaoEletrica: React.FC = () => {
  <div className="bg-white p-6 rounded-xl">
  <h4 className="font-bold text-gray-900 mb-3">📋 Legalidade</h4>
  <ul className="space-y-2 text-gray-700">
- <li>• Emissão de certificado DGEG</li>
+ <li>• Fichas eletrotécnicas em conformidade com a DGEG (registo em curso)</li>
  <li>• Necessário para venda/arrendamento</li>
  <li>• Exigido pelo seguro habitação</li>
  <li>• Obrigatório para aumento de potência</li>
