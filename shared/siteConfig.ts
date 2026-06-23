@@ -4,7 +4,7 @@
 // Z1-Z6 com preços de deslocação + taxa horária 70€/h
 // Surcharge urgência: 50% (×1.5)
 
-export type SiteId = 'norte-reparos';
+export type SiteId = 'norte-reparos' | 'eletricista-norte-reparos';
 
 export interface SiteConfig {
   id: SiteId;
@@ -102,7 +102,7 @@ export interface SiteConfig {
 // Taxa horária: 70€/h
 
 export const siteConfig: SiteConfig = {
-  id: 'norte-reparos',
+  id: 'eletricista-norte-reparos',
   name: 'Eletricista Profissional',
   title: 'Eletricista em Trás-os-Montes | Norte Reparos — Serviço ao Domicílio 24h',
   description: 'Eletricista profissional ao seu domicílio em Trás-os-Montes. Avaria elétrica, instalação, iluminação, urgências 24h. Orçamento gratuito. Ligue 932 321 892.',

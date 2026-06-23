@@ -3,7 +3,7 @@
  * Modifier ces variables pour personnaliser le site
  */
 
-export type ServiceType = 'plomberie';
+export type ServiceType = 'plomberie' | 'electricite';
 
 export interface ServiceConfig {
  type: ServiceType;
@@ -111,8 +111,48 @@ export const plumberieConfig: ServiceConfig = {
  'entupimento canalização exterior',
  ]};
 
-// Configuration fixe para Norte-Reparos (Plomberie)
-export const ACTIVE_CONFIG = plumberieConfig;
+// Configuration Electricidade (Eletricista Profissional)
+// Alinhado com shared/siteConfig.ts e branches élec dos ternários
+// (WhyWePublishPrices, PriceCalculatorWidget, etc. → cor #FF6B35, tel 932)
+export const electriciteConfig: ServiceConfig = {
+ type: 'electricite',
+ name: 'Eletricista',
+ businessName: 'Norte Reparos - Eletricista Profissional',
+ phone: '+351932321892',
+ whatsappNumber: '351932321892',
+ domain: 'eletricista-norte-reparos.pt',
+ googleAdsId: 'AW-17915870228',
+ googleAdsConversionLabel: '+Lk1CO3R64gZEKvwk8c9',
+ // Couleurs: ORANGE (#FF6B35) — alinhado com WhyWePublishPrices.tsx:8
+ gradient: {
+ from: '#FF6B35', // Orange principal
+ to: '#cc4a1f', // Orange foncé
+ },
+ accentColor: '#FF6B35',
+ heroTitle: 'Avaria Elétrica? Curto-Circuito?',
+ heroSubtitle: 'Eletricista em Trás-os-Montes — 24h/7d. Orçamento por escrito antes de qualquer intervenção.',
+ heroEmoji: '⚡',
+ serviceEmoji: '🔌',
+ services: [
+ 'Reparação Avaria Elétrica',
+ 'Quadro Elétrico',
+ 'Instalação Elétrica',
+ 'Iluminação LED',
+ 'Certificação CERTIEL',
+ 'Urgências 24h',
+ ],
+ commonProblems: [
+ 'avaria elétrica',
+ 'disjuntor dispara',
+ 'curto-circuito',
+ 'quadro elétrico avariado',
+ 'tomada avariada',
+ 'sem luz',
+ ],
+};
+
+// Configuration fixe para Norte-Reparos (Eletricidade - este repo)
+export const ACTIVE_CONFIG = electriciteConfig;
 
 // Liste des 12 villes prioritaires
 export const CITIES = [
