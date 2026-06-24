@@ -71,11 +71,11 @@ export default function Vimioso() {
   },
  {
  question: "Servem as aldeias fronteiriças do concelho de Vimioso?",
-    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
   },
  {
  question: "Qual o custo de deslocação a Vimioso?",
-    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
   },
 ];
 

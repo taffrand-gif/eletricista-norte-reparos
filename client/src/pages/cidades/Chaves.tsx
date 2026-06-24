@@ -100,15 +100,15 @@ export default function Chaves() {
  const faqs = [
  {
  question: "Qual o custo de deslocação a Chaves?",
-    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
   },
  {
  question: "Fazem urgências Atendimento 24h/7d em Chaves?",
-    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
   },
  {
  question: "Fornecem certificação elétrica em Chaves?",
-    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
   },
  ];
  

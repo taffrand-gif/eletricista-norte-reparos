@@ -91,15 +91,15 @@ export default function VilaReal() {
  const faqs = [
  {
  question: "Qual o custo de deslocação a Vila Real?",
-    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
   },
  {
  question: "Fazem urgências Atendimento 24h/7d em Vila Real?",
-    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
   },
  {
  question: "Fornecem certificação elétrica em Vila Real?",
-    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
   },
  ];
  
@@ -255,27 +255,27 @@ export default function VilaReal() {
  faqs={[
  {
  question: "Qual o tempo médio de resposta para urgências em Vila Real?",
-    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
   },
  {
  question: "Trabalham em edifícios históricos do centro de Vila Real?",
-    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
   },
  {
  question: "Oferecem serviço para empresas na Zona Industrial de Vila Real?",
-    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
   },
  {
  question: "Atendem bairros como Corgo, Mateus ou Lordelo?",
-    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
   },
  {
  question: "Preciso de certificação elétrica para vender minha casa em Vila Real?",
-    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
   },
  {
  question: "Fazem manutenção preventiva para condomínios em Vila Real?",
-    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
   },
  ]}
  />

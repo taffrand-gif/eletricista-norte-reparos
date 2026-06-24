@@ -71,11 +71,11 @@ export default function CarrazedaDeAnsiaes() {
   },
  {
  question: "Trabalham nas quintas do Douro em Carrazeda?",
-    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
   },
  {
  question: "Qual o custo de deslocação a Carrazeda de Ansiães?",
-    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
   },
 ];
 

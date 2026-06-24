@@ -71,11 +71,11 @@ export default function VilaFlor() {
   },
  {
  question: "Instalam sistemas elétricos em adegas e lagares?",
-    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
   },
  {
  question: "Qual o custo de deslocação a Vila Flor?",
-    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
   },
 ];
 
