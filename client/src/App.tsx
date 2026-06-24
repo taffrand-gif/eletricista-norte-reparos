@@ -62,7 +62,6 @@ const PouparEnergiaEletricaDicas = lazy(() => import("@/pages/blog/PouparEnergia
 const QuandoTrocarInstalacaoEletrica = lazy(() => import("@/pages/blog/QuandoTrocarInstalacaoEletrica"));
 const SinaisProblemasEletricos = lazy(() => import("@/pages/blog/SinaisProblemasEletricos"));
 const QuadroEletricoAntigo = lazy(() => import("@/pages/blog/QuadroEletricoAntigo"));
-const CertificacaoEletricaCertiel = lazy(() => import("@/pages/blog/CertificacaoEletricaCertiel"));
 const ComoEscolherEletricistaCertificado = lazy(() => import("@/pages/blog/ComoEscolherEletricistaCertificado"));
 const CustoEletricistaTrasOsMontesPrecos = lazy(() => import("@/pages/blog/CustoEletricistaTrasOsMontesPrecos"));
 const PaineisSolaresTrasOsMontesGuia = lazy(() => import("@/pages/blog/PaineisSolaresTrasOsMontesGuia"));
@@ -138,7 +137,6 @@ function Router() {
  <Route path={"/blog/quando-trocar-instalacao-eletrica"} component={QuandoTrocarInstalacaoEletrica} />
  <Route path={"/blog/sinais-problemas-eletricos-casa"} component={SinaisProblemasEletricos} />
  <Route path={"/blog/quadro-eletrico-antigo-fusiveis-trocar"} component={QuadroEletricoAntigo} />
- <Route path={"/blog/certificacao-eletrica-guia"} component={CertificacaoEletricaCertiel} />
  <Route path={"/blog/como-escolher-eletricista-certificado"} component={ComoEscolherEletricistaCertificado} />
  <Route path={"/blog/custo-eletricista-tras-os-montes-precos"} component={CustoEletricistaTrasOsMontesPrecos} />
  <Route path={"/blog/paineis-solares-tras-os-montes-guia"} component={PaineisSolaresTrasOsMontesGuia} />

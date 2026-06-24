@@ -60,8 +60,8 @@ const QuandoTrocarInstalacaoEletrica: React.FC = () => {
  <span className="text-2xl">🔌</span>
  </div>
  <div>
- <p className="font-semibold text-gray-900">João Silva</p>
- <p className="text-gray-600">Eletricista Certificado com 15+ anos de experiência</p>
+ <p className="font-semibold text-gray-900">A equipa Norte Reparos</p>
+ <p className="text-gray-600">12 anos de atividade na região</p>
  </div>
  </div>
  </div>
@@ -83,7 +83,7 @@ const QuandoTrocarInstalacaoEletrica: React.FC = () => {
  <div className="prose prose-lg max-w-none mb-10">
  <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg mb-8">
  <p className="text-red-800 font-semibold text-lg">
- 🚨 Atenção: Em Portugal, cerca de 25% dos incêndios domésticos têm origem em problemas elétricos.
+ 🚨 Atenção: Em Portugal, uma parte significativa dos incêndios domésticos têm origem em problemas elétricos.
  Uma instalação antiga ou mal mantida é um risco real para a sua família.
  </p>
  </div>
@@ -246,7 +246,6 @@ const QuandoTrocarInstalacaoEletrica: React.FC = () => {
  <div className="bg-white p-6 rounded-xl">
  <h4 className="font-bold text-gray-900 mb-3">📋 Legalidade</h4>
  <ul className="space-y-2 text-gray-700">
- <li>• Fichas eletrotécnicas em conformidade com a DGEG (registo em curso)</li>
  <li>• Necessário para venda/arrendamento</li>
  <li>• Exigido pelo seguro habitação</li>
  <li>• Obrigatório para aumento de potência</li>
@@ -303,7 +302,7 @@ const QuandoTrocarInstalacaoEletrica: React.FC = () => {
  <div className="md:w-3/4">
  <h3 className="text-2xl font-bold text-gray-900 mb-2">Sobre o Autor</h3>
  <p className="text-gray-700 mb-4">
- <strong>João Silva</strong> é eletricista certificado com mais de 15 anos de experiência em Trás-os-Montes. Especialista em renovação de instalações elétricas e certificação DGEG, já modernizou mais de 300 instalações na região.
+ A equipa Norte Reparos, com 12 anos de atividade na região, é especializada em renovação de instalações elétricas. Realizamos diagnóstico, testes e correção de não conformidades para garantir a segurança e conformidade da sua instalação.
  </p>
  <p className="text-gray-600">Para questões técnicas ou orçamentos, contacte através do telefone ou WhatsApp acima.</p>
  </div>
