@@ -103,7 +103,7 @@ export const useTimeOnPageTracking = () => {
  const { trackTimeOnPage } = useAnalytics();
  const tracked = useRef<Set<number>>(new Set());
  useEffect(() => {
- const milestones = [30, 60, 120, 300]; // 30s, resposta prioritária, resposta prioritária, resposta prioritária
+ const milestones = [30, 60, 120, 300]; // 30s, 1min, 2min, 5min
  const timers: NodeJS.Timeout[] = [];
  milestones.forEach(seconds => {
  const timer = setTimeout(() => {

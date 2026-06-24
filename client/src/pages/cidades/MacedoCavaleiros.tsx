@@ -250,7 +250,7 @@ export default function MacedoCavaleiros() {
  Precisa de Eletricista em Macedo de Cavaleiros?
  </h2>
  <p className="text-xl mb-8 opacity-90">
- Ligue agora. Estamos a menos de resposta prioritária de si.
+ Ligue agora. Estamos a menos de 30 minutos de si.
  </p>
  <a
  href={`tel:${businessInfo.phone}`}

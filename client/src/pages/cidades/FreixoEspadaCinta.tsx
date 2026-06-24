@@ -64,7 +64,7 @@ export default function FreixoEspadaCinta() {
  }, []);
  const cidadesProximas = getCidadesProximas('freixo-espada-cinta');
  const faqs = [
- { question: "Chegam a Freixo de Espada à Cinta?", answer: "Sim, cobrimos todo o concelho de Freixo de Espada à Cinta. Tempo de chegada: 60-resposta prioritária." },
+ { question: "Chegam a Freixo de Espada à Cinta?", answer: "Sim, cobrimos todo o concelho de Freixo de Espada à Cinta. Tempo de chegada: 60-70 minutos." },
  {
  question: "Qual o custo de deslocação a Freixo de Espada à Cinta?",
     answer: "Chegamos rapidamente. Cobrimos todo o conselho.",

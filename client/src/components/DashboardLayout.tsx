@@ -148,7 +148,7 @@ function DashboardLayoutContent({
  <PanelLeft className="h-4 w-4 text-muted-foreground" />
  </button>
  {!isCollapsed ? (
- <div className="flex items-center gap-resposta prioritária-w-0">
+ <div className="flex items-center gap-2 min-w-0">
  <span className="font-semibold tracking-tight truncate">
  Navigation
  </span>
@@ -187,7 +187,7 @@ function DashboardLayoutContent({
  {user?.name?.charAt(0).toUpperCase()}
  </AvatarFallback>
  </Avatar>
- <div className="flex-resposta prioritária-w-0 group-data-[collapsible=icon]:hidden">
+ <div className="flex-1 min-w-0 group-data-[collapsible=icon]:hidden">
  <p className="text-sm font-medium truncate leading-none">
  {user?.name || "-"}
  </p>

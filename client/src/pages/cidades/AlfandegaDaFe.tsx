@@ -67,7 +67,7 @@ export default function AlfandegaDaFe() {
  const faqs = [
 {
     question: "Quanto tempo demora a chegar a Alfândega da Fé?",
-    answer: "Chegamos a Alfândega da Fé em apenas 25-resposta prioritária a partir de Trás-os-Montes. Cobrimos todo o conselho.",
+    answer: "Chegamos a Alfândega da Fé em apenas 25-30 minutos a partir de Trás-os-Montes. Cobrimos todo o conselho.",
   },
 {
     question: "Qual o custo de deslocação a Alfândega da Fé?",
@@ -99,7 +99,7 @@ export default function AlfandegaDaFe() {
  { icon: Zap, title: "Instalações para Amendoais", desc: "Sistemas de rega elétricos, iluminação de armazéns e processamento" },
  { icon: Shield, title: "Quadros Elétricos Agrícolas", desc: "Quadros trifásicos para lagares de azeite e maquinaria" },
  { icon: CheckCircle, title: "Remodelação Habitacional", desc: "Atualização de instalações elétricas em casas antigas do concelho" },
- { icon: Zap, title: "Urgências 24h", desc: "Resposta rápida a resposta prioritária de Trás-os-Montes" },
+ { icon: Zap, title: "Urgências 24h", desc: "Resposta rápida a 30 minutos de Trás-os-Montes" },
  ].map((service, index) => (
  <div key={index} className="flex items-start gap-4 p-6 bg-white rounded-xl shadow">
  <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -123,7 +123,7 @@ export default function AlfandegaDaFe() {
  <section className="py-16 bg-orange-500 text-white">
  <div className="container text-center">
  <h2 className="text-3xl font-black mb-4">Precisa de Eletricista em Alfândega da Fé?</h2>
- <p className="text-xl mb-8 opacity-90">Ligue agora. Estamos a apenas resposta prioritária de distância.</p>
+ <p className="text-xl mb-8 opacity-90">Ligue agora. Estamos a apenas 30 minutos de distância.</p>
  <a href={`tel:${businessInfo.phone}`} className="inline-flex items-center gap-2 bg-white text-orange-500 px-8 py-4 rounded-lg text-xl font-bold hover:bg-gray-100 transition-all shadow-lg">
  <Phone className="w-6 h-6" />932 321 892
  </a>

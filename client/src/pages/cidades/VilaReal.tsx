@@ -231,15 +231,15 @@ export default function VilaReal() {
  <ul className="space-y-2 text-gray-600">
  <li className="flex items-center justify-between">
  <span>Centro de Vila Real</span>
- <span className="font-bold text-amber-600">15-resposta prioritária</span>
+ <span className="font-bold text-amber-600">15-30 min</span>
  </li>
  <li className="flex items-center justify-between">
  <span>Bairros periféricos</span>
- <span className="font-bold text-amber-600">30-resposta prioritária</span>
+ <span className="font-bold text-amber-600">30-45 min</span>
  </li>
  <li className="flex items-center justify-between">
  <span>Zona Industrial</span>
- <span className="font-bold text-amber-600">45-resposta prioritária</span>
+ <span className="font-bold text-amber-600">45-60 min</span>
  </li>
  </ul>
  </div>

@@ -64,21 +64,21 @@ function UrgencyTimer() {
  </div>
  {/* Countdown Timer */}
  <div className="flex justify-center gap-4 mb-8">
- <div className="bg-white text-gray-900 rounded-lg p-resposta prioritária-w-[100px] text-center shadow-2xl">
+ <div className="bg-white text-gray-900 rounded-lg p-6 min-w-[100px] text-center shadow-2xl">
  <div className="text-5xl font-black mb-2" style={{ color: config.colors.primary }}>
  {String(timeLeft.hours).padStart(2, '0')}
  </div>
  <div className="text-sm font-bold uppercase">Horas</div>
  </div>
  <div className="flex items-center text-4xl font-black">:</div>
- <div className="bg-white text-gray-900 rounded-lg p-resposta prioritária-w-[100px] text-center shadow-2xl">
+ <div className="bg-white text-gray-900 rounded-lg p-6 min-w-[100px] text-center shadow-2xl">
  <div className="text-5xl font-black mb-2" style={{ color: config.colors.primary }}>
  {String(timeLeft.minutes).padStart(2, '0')}
  </div>
  <div className="text-sm font-bold uppercase">Minutos</div>
  </div>
  <div className="flex items-center text-4xl font-black">:</div>
- <div className="bg-white text-gray-900 rounded-lg p-resposta prioritária-w-[100px] text-center shadow-2xl">
+ <div className="bg-white text-gray-900 rounded-lg p-6 min-w-[100px] text-center shadow-2xl">
  <div className="text-5xl font-black mb-2" style={{ color: config.colors.primary }}>
  {String(timeLeft.seconds).padStart(2, '0')}
  </div>
