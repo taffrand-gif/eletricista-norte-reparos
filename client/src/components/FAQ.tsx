@@ -19,7 +19,7 @@ function FAQ() {
  answer: 'O custo de um eletricista urgente em Bragança varia entre €80-200 dependendo do serviço. Arranjo de avarias elétricas custa €100-180, quadros elétricos €150-300, certificação elétrica €150. Deslocação urgente: €15. Orçamento grátis pelo 932 321 892.'},
  {
  question: 'Quanto tempo demora a chegar um eletricista urgente?',
- answer: 'A nossa equipa actua rapidamente para urgência elétrica em Bragança e região. Serviço disponível Atendimento 24h/7d, 7 dias por semana, incluindo fins de semana e feriados.'},
+ answer: 'A nossa equipa confirma a deslocação por telefone para urgência elétrica em Bragança e região. Serviço disponível 24h/7d, 7 dias por semana, incluindo fins de semana e feriados.'},
  {
  question: 'O que fazer em caso de curto-circuito perigoso?',
  answer: 'Em caso de curto-circuito: 1) Desligue o disjuntor geral imediatamente, 2) Não toque em fios expostos ou tomadas, 3) Afaste-se de cheiro a queimado, 4) Ligue imediatamente para 932 321 892. A nossa equipa actua com rapidez. Nunca tente arranjar sozinho - risco de eletrocussão.'},

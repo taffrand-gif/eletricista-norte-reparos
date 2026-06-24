@@ -10,17 +10,17 @@ const InnovativeHero: React.FC = () => {
  { icon: '💧', value: 'Certificado', label: 'Seguro Ativo' },
  { icon: '🔬', value: 'Ridgid', label: 'Câmara Inspeção' },
  { icon: '🛡️', value: '500+', label: 'Intervenções' },
- { icon: '📞', value: 'resposta prioritária', label: 'Chegada Bragança' },
+ { icon: '📞', value: 'em minutos', label: 'Chegada Bragança' },
  ]
  : [
  { icon: '✅', value: '', label: 'Certificado' },
  { icon: '🔬', value: 'Fluke & FLIR', label: 'Diagnóstico Pro' },
  { icon: '⚡', value: '350+', label: 'Intervenções' },
- { icon: '📞', value: 'resposta prioritária', label: 'Chegada Bragança' },
+ { icon: '📞', value: 'em minutos', label: 'Chegada Bragança' },
  ];
  const badgeText = isPlumber
- ? 'CANALIZADOR Atendimento 24h — Resposta rápida garantida'
- : 'ELETRICISTA CERTIFICADO — CHEGAMOS Atendimento prioritário';
+ ? 'CANALIZADOR — DISPONÍVEL 24H/7D'
+ : 'ELETRICISTA CERTIFICADO — DISPONÍVEL 24H/7D';
  const badgeEmoji = isPlumber ? '💧' : '⚡';
  const gradientFrom = isPlumber ? 'from-blue-600' : 'from-amber-500';
  const gradientVia = isPlumber ? 'via-blue-700' : 'via-amber-600';

@@ -7,21 +7,21 @@ const FEATURED_POSTS = [
  title: 'Como Escolher um Eletricista Trabalho garantido por escrito',
  excerpt: 'Guia completo para contratar um eletricista profissional em Trás-os-Montes.',
  date: '2026-03-01',
- readTime: 'resposta prioritária'
+ readTime: 'alguns minutos'
  },
  {
  slug: 'quadro-eletrico-disjuntores-disparar',
  title: 'Quadro Elétrico: Porque os Disjuntores Disparam?',
  excerpt: 'Descubra as causas mais comuns e como resolver problemas elétricos.',
  date: '2026-02-28',
- readTime: 'resposta prioritária'
+ readTime: 'alguns minutos'
  },
  {
  slug: 'certificacao-obrigatoria',
  title: 'certificação elétrica: É Obrigatória?',
  excerpt: 'Tudo sobre a certificação elétrica obrigatória em Portugal.',
  date: '2026-02-25',
- readTime: 'resposta prioritária'
+ readTime: 'alguns minutos'
  }
 ];
 export default function BlogPreview() {

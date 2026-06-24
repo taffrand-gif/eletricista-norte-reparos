@@ -37,7 +37,7 @@ function ContactForm() {
  Pedir Orçamento <span className="text-[#c2410c]">Grátis</span>
  </h2>
  <p className="text-lg text-gray-300">
- Descreva o seu problema e a nossa equipa responde rapidamente via WhatsApp.
+ Descreva o seu problema e a nossa equipa confirma a deslocação por WhatsApp.
  </p>
  </div>
  <form onSubmit={handleWhatsApp} className="space-y-5">
@@ -104,7 +104,7 @@ function ContactForm() {
  </div>
  </form>
  <p className="text-center text-gray-500 text-sm mt-6">
- Orçamento sem compromisso. Resposta rápida garantida.
+ Orçamento sem compromisso. Orçamento por escrito antes de intervir.
  </p>
  </div>
  </div>

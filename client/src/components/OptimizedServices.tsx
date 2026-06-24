@@ -61,7 +61,7 @@ const electricFeatures: Record<string, string[]> = {
  'Registo na plataforma '
  ],
  'Urgências 24h': [
- 'Resposta rápida',
+ 'Disponível 24h/7d',
  'Técnicos equipados para emergências',
  'Orçamento no local'
  ]
@@ -94,7 +94,7 @@ const plumbFeatures: Record<string, string[]> = {
  'Garantia na instalação'
  ],
  'Urgências 24h': [
- 'Resposta rápida',
+ 'Disponível 24h/7d',
  'Técnicos equipados',
  'Disponível todos os dias'
  ]

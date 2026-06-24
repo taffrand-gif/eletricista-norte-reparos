@@ -111,7 +111,7 @@ const OptimizedFAQ: React.FC = () => {
  Não encontrou resposta para a sua dúvida?
  </h3>
  <p className="text-gray-600 mb-4">
- Entre em contacto connosco. Respondemos Resposta rápida garantida durante o horário comercial.
+ Entre em contacto connosco. Estamos disponíveis durante o horário comercial.
  </p>
  <div className="flex flex-col sm:flex-row gap-4">
  <a

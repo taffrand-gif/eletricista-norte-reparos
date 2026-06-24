@@ -81,7 +81,7 @@ function ExitIntentPopup() {
  </li>
  <li className="flex items-center gap-2 text-sm font-semibold">
  <span className="text-green-600 text-lg">✓</span>
- <span>Resposta rápida garantida</span>
+ <span>Disponível 24h/7d</span>
  </li>
  <li className="flex items-center gap-2 text-sm font-semibold">
  <span className="text-green-600 text-lg">✓</span>

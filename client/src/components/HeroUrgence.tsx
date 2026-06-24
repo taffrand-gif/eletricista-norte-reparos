@@ -23,7 +23,7 @@ export default function HeroUrgence({ ville, interventionsCount = 480 }: HeroUrg
  <p className=" text-lg md:text-xl font-bold mb-6" style={{color: gradient.from}}>
  {config.heroSubtitle}
  <br />
- <strong>Atendo já e chego resposta prioritária</strong>
+ <strong>Atendo já e confirmo a deslocação</strong>
  </p>
  {/* Bouton téléphone principal */}
  <a href={phoneLink} className="btn-urgence" onClick={() => trackPhoneClick()}>
@@ -36,7 +36,7 @@ export default function HeroUrgence({ ville, interventionsCount = 480 }: HeroUrg
  {/* Trust signals */}
  <div className="trust-grid">
  <div className="trust-item">
- <strong>30-resposta prioritária</strong>
+ <strong>30 minutos</strong>
  <span>Tempo chegada desde a nossa base</span>
  </div>
  <div className="trust-item">
