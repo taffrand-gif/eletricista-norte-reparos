@@ -35,7 +35,7 @@ export const eletricistaFAQs: FAQ[] = [
  },
  {
  question: "Quanto tempo demora a chegar em caso de urgência elétrica?",
- answer: "Chegamos Atendimento prioritário no centro de Bragança e até resposta prioritária nas aldeias circundantes. Serviço 24h/7 dias incluindo feriados."
+ answer: "Confirmamos a deslocação antes de intervir — Bragança (Z3, 35 €) e aldeias circundantes. Serviço 24h/7 dias incluindo feriados, orçamento por escrito."
  },
  {
 question: "São certificados ?",

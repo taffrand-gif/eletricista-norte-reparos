@@ -14,7 +14,7 @@ export default function TrustBadges() {
   {
   icon: '📞',
   title: 'Orçamento Grátis',
-  description: 'resposta prioritária por telefone'},
+  description: 'Confirmação imediata por telefone'},
   {
   icon: '✅',
   title: 'Sem Taxas Escondidas',

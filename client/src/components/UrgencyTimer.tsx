@@ -38,7 +38,7 @@ function UrgencyTimer() {
  icon: '🚀',
  title: 'Prioridade Urgente',
  description: 'Clientes que ligam hoje têm prioridade máxima',
- value: 'Resposta rápida garantida, em minutos'},
+ value: 'Disponível 24h/7d, em minutos'},
  {
  icon: '📜',
  title: ' Grátis',

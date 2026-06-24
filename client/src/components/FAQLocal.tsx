@@ -14,7 +14,7 @@ function FAQLocal() {
  const localFaqs = isPlumber ? [
  {
  question: 'Existe canalizador disponível em Mirandela ao fim de semana?',
- answer: 'Sim, a Norte Reparos disponibiliza canalizador em Mirandela todos os dias da semana, incluindo sábados, domingos e feriados. O nosso serviço de urgência funciona Atendimento 24h/7d. Tempo de chegada a Mirandela: aproximadamente resposta prioritária.'},
+ answer: 'Sim, a Norte Reparos disponibiliza canalizador em Mirandela todos os dias da semana, incluindo sábados, domingos e feriados. O nosso serviço de urgência funciona Atendimento 24h/7d. Tempo de chegada a Mirandela: a confirmar por telefone.'},
  {
  question: 'Quanto custa um canalizador em Bragança para desentupimento?',
  answer: 'O preço de um desentupimento em Bragança varia entre 50€ e 120€ (sem IVA), dependendo da complexidade. Desentupimentos simples de sanita ou lavatório: 50-80€. Desentupimentos de canalização principal: 80-120€. Incluímos deslocação e diagnóstico no preço. Sem compromisso por telefone.'},
@@ -23,7 +23,7 @@ function FAQLocal() {
  answer: 'Sim, estamos disponíveis em toda a zona de Bragança. Arranjamos todo o tipo de fugas de água: torneiras, autoclismos, canalizações enterradas e tubagens visíveis. Tempo de resposta rápido para urgências. Preços a partir de 60€ (sem IVA).'},
  {
  question: 'Há eletricista de urgência em Miranda do Douro?',
- answer: 'Sim, prestamos serviço de eletricidade de urgência em Miranda do Douro e toda a zona raiana. Tempo de chegada: aproximadamente 50-resposta prioritária. Disponível Atendimento 24h/7d para emergências como curtos-circuitos, falhas de energia ou situações de perigo. Ligue 932 321 892.'},
+ answer: 'Sim, prestamos serviço de eletricidade de urgência em Miranda do Douro e toda a zona raiana. Tempo de chegada: confirmamos por telefone. Disponível Atendimento 24h/7d para emergências como curtos-circuitos, falhas de energia ou situações de perigo. Ligue 932 321 892.'},
  {
  question: 'Instalam esquentadores em Vila Flor e Carrazeda de Ansiães?',
  answer: 'Sim, fazemos instalação e substituição de esquentadores a gás em Vila Flor, Carrazeda de Ansiães e todas as localidades do distrito de Bragança. Preço de instalação: 100-200€ (sem IVA, sem equipamento). Incluímos certificação obrigatória e teste de segurança.'},
@@ -33,7 +33,7 @@ function FAQLocal() {
  ] : [
  {
  question: 'Existe eletricista disponível em Mirandela ao fim de semana?',
- answer: 'Sim, a Eletricista Profissional disponibiliza eletricista certificado em Mirandela todos os dias da semana, incluindo sábados, domingos e feriados. O nosso serviço de urgência funciona Atendimento 24h/7d. Tempo de chegada a Mirandela: aproximadamente resposta prioritária.'},
+ answer: 'Sim, a Eletricista Profissional disponibiliza eletricista certificado em Mirandela todos os dias da semana, incluindo sábados, domingos e feriados. O nosso serviço de urgência funciona Atendimento 24h/7d. Tempo de chegada a Mirandela: a confirmar por telefone.'},
  {
  question: 'Quanto custa um eletricista em Bragança?',
  answer: 'O preço de um eletricista em Bragança varia conforme o serviço: diagnóstico (80-120€), arranjo urgente (150-210€), substituição de quadro elétrico 12 módulos (370-650€), certificação elétrica (150-300€). Todos os preços sem IVA. Sem compromisso e sem compromisso.'},
@@ -42,7 +42,7 @@ function FAQLocal() {
  answer: 'Sim, fazemos certificação elétrica para venda de imóveis, arrendamento e instalações novas na zona de Bragança. Fazemos certificação elétrica para venda de imóveis, arrendamento e instalações novas. Prazo: 3-5 dias úteis. Preço: a partir de 150€ (sem IVA). Tratamos de toda a documentação e submissão na plataforma DGEG.'},
  {
  question: 'Há eletricista de urgência em Miranda do Douro?',
- answer: 'Sim, prestamos serviço de eletricidade de urgência em Miranda do Douro e toda a zona raiana. Tempo de chegada: aproximadamente 50-resposta prioritária. Disponível Atendimento 24h/7d para emergências como curtos-circuitos, falhas de energia ou situações de perigo. Ligue 932 321 892.'},
+ answer: 'Sim, prestamos serviço de eletricidade de urgência em Miranda do Douro e toda a zona raiana. Tempo de chegada: confirmamos por telefone. Disponível Atendimento 24h/7d para emergências como curtos-circuitos, falhas de energia ou situações de perigo. Ligue 932 321 892.'},
  {
  question: 'Instalam quadros elétricos em Vila Flor e Torre de Moncorvo?',
  answer: 'Sim, fazemos substituição e modernização de quadros elétricos em Vila Flor, Torre de Moncorvo e todas as localidades do distrito de Bragança. Preço: 370-650€ para quadro 12 módulos (sem IVA). Inclui quadro novo, disjuntores diferenciais, instalação completa e certificação.'},
