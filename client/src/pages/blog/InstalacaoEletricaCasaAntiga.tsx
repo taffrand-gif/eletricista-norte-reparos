@@ -455,10 +455,6 @@ export default function InstalacaoEletricaCasaAntiga() {
  <h3 className="font-bold text-orange-500 mb-1">Quadro Elétrico Antigo</h3>
  <p className="text-sm text-gray-600">Modernize o quadro elétrico da sua casa.</p>
  </a>
- <a href="/blog/certificacao-eletrica-guia" className="bg-white p-4 rounded-lg shadow hover:shadow-lg transition-shadow">
- <h3 className="font-bold text-orange-500 mb-1">Certificação Elétrica </h3>
- <p className="text-sm text-gray-600">Tudo sobre o certificado elétrico obrigatório.</p>
- </a>
  <a href="/blog/protecao-sobrecargas-eletricas-casa" className="bg-white p-4 rounded-lg shadow hover:shadow-lg transition-shadow">
  <h3 className="font-bold text-orange-500 mb-1">Proteção Contra Sobrecargas</h3>
  <p className="text-sm text-gray-600">Como proteger a sua casa de sobrecargas elétricas.</p>

@@ -32,7 +32,6 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
         "totalTime": "PT15M",
         "url": "https://eletricista-norte-reparos.pt/blog/como-escolher-eletricista-certificado",
         "step": [
-          {"@type": "HowToStep", "name": "Verifique o registo na DGEG", "text": "Todo eletricista certificado em Portugal deve estar registado na DGEG. Peça o número de registo e confirme no portal da DGEG."},
           {"@type": "HowToStep", "name": "Peça referências e avaliações", "text": "Solicite contactos de clientes anteriores. Pesquise avaliações no Google Maps e em plataformas como Fixando ou Zaask."},
           {"@type": "HowToStep", "name": "Solicite orçamento detalhado por escrito", "text": "Um profissional sério dá orçamento escrito com descrição dos trabalhos, materiais incluídos, mão de obra e prazo. Recuse orçamentos verbais."},
           {"@type": "HowToStep", "name": "Confirme seguro de responsabilidade civil", "text": "Peça comprovativo do seguro de responsabilidade civil. Este seguro cobre danos causados durante a obra."},
@@ -80,8 +79,8 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  <span className="text-2xl">⚡</span>
  </div>
  <div>
- <p className="font-semibold text-gray-900">Maria Fernandes</p>
- <p className="text-gray-600">Consultora em Segurança Elétrica com 12+ anos na região</p>
+ <p className="font-semibold text-gray-900">A equipa Norte Reparos</p>
+ <p className="text-gray-600">12 anos de atividade na região</p>
  </div>
  </div>
  </div>
@@ -103,7 +102,7 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  <div className="prose prose-lg max-w-none mb-10">
  <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-lg mb-8">
  <p className="text-amber-800 font-semibold text-lg">
- ⚠️ Atenção: Em <Link to="/servicos">Trás-os-Montes</Link>, 35% dos acidentes elétricos domésticos são causados por 
+ ⚠️ Atenção: Em <Link to="/servicos">Trás-os-Montes</Link>, uma parte significativa dos acidentes elétricos domésticos são causados por 
  intervenções de eletricistas não qualificados. Escolher mal pode custar muito mais 
  do que o preço do serviço - pode custar vidas ou danos patrimoniais irreparáveis.
  </p>
@@ -278,7 +277,7 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  <div>
  <h3 className="font-bold text-gray-900 mb-2">Preço muito abaixo do mercado</h3>
  <p className="text-gray-700">
- Em <Link to="/servicos">Trás-os-Montes</Link>, um serviço de qualidade tem custos. Desconfie de preços 30-40% 
+ Em <Link to="/servicos">Trás-os-Montes</Link>, um serviço de qualidade tem custos. Desconfie de preços muito abaixo 
  abaixo da média. Geralmente compensam com materiais de baixa qualidade, 
  mão-de-obra não qualificada ou cortes na segurança.
  </p>
@@ -484,10 +483,7 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  <div className="md:w-3/4">
  <h3 className="text-2xl font-bold text-gray-900 mb-2">Sobre a Autora</h3>
  <p className="text-gray-700 mb-4">
- <strong>Maria Fernandes</strong> é consultora especializada em segurança elétrica com mais de 12 anos 
- de experiência na região de <Link to="/servicos">Trás-os-Montes</Link>. Já avaliou mais de 500 profissionais e empresas do setor, 
- tendo desenvolvido metodologias específicas para a avaliação de competências em contexto regional. 
- Ministra formação sobre seleção de prestadores de serviços elétricos para associações de moradores.
+ A equipa Norte Reparos, com 12 anos de atividade na região de <Link to="/servicos">Trás-os-Montes</Link>, é especializada em segurança elétrica. Partilhamos critérios práticos para ajudar os clientes a avaliar prestadores de serviços elétricos e a fazer escolhas informadas.
  </p>
  <p className="text-gray-600">
  Para avaliação de eletricistas ou dúvidas sobre certificações, contacte através do telefone ou WhatsApp acima.
@@ -508,7 +504,7 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  </a>
  <a href="/eletricista-braganca" className="bg-white p-4 rounded-xl text-center hover:shadow-md transition-shadow">
  <span className="font-semibold text-amber-700">Bragança</span>
- <p className="text-sm text-gray-600 mt-1">15+ anos experiência</p>
+ <p className="text-sm text-gray-600 mt-1">12 anos de atividade</p>
  </a>
  <a href="/eletricista-chaves" className="bg-white p-4 rounded-xl text-center hover:shadow-md transition-shadow">
  <span className="font-semibold text-amber-700">Chaves</span>

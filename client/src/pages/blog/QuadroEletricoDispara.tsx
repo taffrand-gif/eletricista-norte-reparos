@@ -26,7 +26,7 @@ const QuadroEletricoDispara: React.FC = () => {
         "@type": "FAQPage",
         "url": "https://eletricista-norte-reparos.pt/blog/quadro-eletrico-dispara",
         "mainEntity": [
-          {"@type": "Question", "name": "Porque é que o quadro elétrico dispara constantemente?", "acceptedAnswer": {"@type": "Answer", "text": "As 3 causas mais comuns: Sobrecarga (40%): demasiados aparelhos ligados ao mesmo circuito; Curto-circuito (25%): fio danificado ou ligação mal feita; Fuga de corrente (15%): isolamento danificado ou humidade."}},
+          {"@type": "Question", "name": "Porque é que o quadro elétrico dispara constantemente?", "acceptedAnswer": {"@type": "Answer", "text": "As 3 causas mais comuns: Sobrecarga: demasiados aparelhos ligados ao mesmo circuito; Curto-circuito: fio danificado ou ligação mal feita; Fuga de corrente: isolamento danificado ou humidade."}},
           {"@type": "Question", "name": "Posso religar o disjuntor várias vezes?", "acceptedAnswer": {"@type": "Answer", "text": "Pode religar 1-2 vezes se disparou por sobrecarga pontual. Não religue repetidamente se dispara imediatamente ou há cheiro a queimado. Nunca force a alavanca se não sobe facilmente — o disjuntor pode estar danificado."}},
           {"@type": "Question", "name": "Como sei se é sobrecarga no quadro elétrico?", "acceptedAnswer": {"@type": "Answer", "text": "Sinais de sobrecarga: dispara quando liga aparelho potente (forno, aquecedor, máquina lavar), dispara sempre no mesmo circuito, tomadas ou fios ficam quentes, luzes diminuem intensidade ao ligar um aparelho."}},
           {"@type": "Question", "name": "Quanto custa resolver quadro elétrico que dispara?", "acceptedAnswer": {"@type": "Answer", "text": "Custos típicos em Trás-os-Montes: substituir disjuntor defeituoso 40-100€, reparar curto-circuito 80-200€, resolver fuga de corrente 60-150€. Diagnóstico profissional: 40-80€."}},
@@ -170,7 +170,7 @@ const QuadroEletricoDispara: React.FC = () => {
  1
  </div>
  <div className="flex-1">
- <h3 className="text-xl font-bold text-gray-900 mb-3">Sobrecarga Elétrica (Causa #1 - 40%)</h3>
+ <h3 className="text-xl font-bold text-gray-900 mb-3">Sobrecarga Elétrica (Causa #1)</h3>
  <p className="text-gray-700 mb-3">
  Demasiados aparelhos ligados ao mesmo tempo ultrapassam capacidade do circuito.
  </p>
@@ -192,7 +192,7 @@ const QuadroEletricoDispara: React.FC = () => {
  2
  </div>
  <div className="flex-1">
- <h3 className="text-xl font-bold text-gray-900 mb-3">Curto-Circuito (Causa #2 - 25%)</h3>
+ <h3 className="text-xl font-bold text-gray-900 mb-3">Curto-Circuito (Causa #2)</h3>
  <p className="text-gray-700 mb-3">
  Contacto direto entre fase e neutro causa pico de corrente instantâneo.
  </p>
@@ -214,7 +214,7 @@ const QuadroEletricoDispara: React.FC = () => {
  3
  </div>
  <div className="flex-1">
- <h3 className="text-xl font-bold text-gray-900 mb-3">Fuga de Corrente (Causa #3 - 15%)</h3>
+ <h3 className="text-xl font-bold text-gray-900 mb-3">Fuga de Corrente (Causa #3)</h3>
  <p className="text-gray-700 mb-3">
  Corrente escapa para terra através de isolamento danificado ou humidade.
  </p>
@@ -236,7 +236,7 @@ const QuadroEletricoDispara: React.FC = () => {
  4
  </div>
  <div className="flex-1">
- <h3 className="text-xl font-bold text-gray-900 mb-3">Aparelho Avariado (Causa #4 - 10%)</h3>
+ <h3 className="text-xl font-bold text-gray-900 mb-3">Aparelho Avariado (Causa #4)</h3>
  <p className="text-gray-700 mb-3">
  Equipamento com problema interno causa disparo ao ser ligado.
  </p>
@@ -258,7 +258,7 @@ const QuadroEletricoDispara: React.FC = () => {
  5
  </div>
  <div className="flex-1">
- <h3 className="text-xl font-bold text-gray-900 mb-3">Disjuntor Defeituoso (Causa #5 - 5%)</h3>
+ <h3 className="text-xl font-bold text-gray-900 mb-3">Disjuntor Defeituoso (Causa #5)</h3>
  <p className="text-gray-700 mb-3">
  Disjuntor velho ou danificado dispara sem motivo aparente.
  </p>
@@ -280,7 +280,7 @@ const QuadroEletricoDispara: React.FC = () => {
  6
  </div>
  <div className="flex-1">
- <h3 className="text-xl font-bold text-gray-900 mb-3">Instalação Antiga (Causa #6 - 3%)</h3>
+ <h3 className="text-xl font-bold text-gray-900 mb-3">Instalação Antiga (Causa #6)</h3>
  <p className="text-gray-700 mb-3">
  Fios deteriorados, isolamento rachado ou ligações oxidadas.
  </p>
@@ -302,7 +302,7 @@ const QuadroEletricoDispara: React.FC = () => {
  7
  </div>
  <div className="flex-1">
- <h3 className="text-xl font-bold text-gray-900 mb-3">Humidade e Infiltrações (Causa #7 - 2%)</h3>
+ <h3 className="text-xl font-bold text-gray-900 mb-3">Humidade e Infiltrações (Causa #7)</h3>
  <p className="text-gray-700 mb-3">
  Água em contacto com instalação elétrica causa fugas de corrente.
  </p>
@@ -437,12 +437,12 @@ const QuadroEletricoDispara: React.FC = () => {
  <div className="flex-1">
  <h3 className="text-2xl font-bold text-gray-900 mb-3">Resolver Sobrecarga</h3>
  <div className="bg-cyan-50 p-4 rounded-lg mb-4">
- <p className="font-bold text-cyan-900 mb-2">Eficácia: ⭐⭐⭐⭐⭐ (Solução imediata)</p>
- <p className="text-cyan-800 text-sm">Resolve 40% dos casos | Custo: 0€ | Tempo: Imediato</p>
+ <p className="font-bold text-cyan-900 mb-2">Eficácia: ⭐⭐⭐⭐⭐ (Solução prática)</p>
+ <p className="text-cyan-800 text-sm">Resolve uma parte dos casos | Custo: 0€ | Tempo: variável</p>
  </div>
  </div>
  </div>
- <h4 className="font-bold text-gray-900 mb-3">Soluções Imediatas:</h4>
+ <h4 className="font-bold text-gray-900 mb-3">Soluções práticas:</h4>
  <ul className="list-disc pl-6 mb-4 space-y-2">
  <li>Distribua aparelhos potentes por circuitos diferentes</li>
  <li>Não ligue forno + máquina lavar + aquecedor ao mesmo tempo</li>
@@ -471,7 +471,7 @@ const QuadroEletricoDispara: React.FC = () => {
  <h3 className="text-2xl font-bold text-gray-900 mb-3">Resolver Curto-Circuito</h3>
  <div className="bg-cyan-50 p-4 rounded-lg mb-4">
  <p className="font-bold text-cyan-900 mb-2">Eficácia: ⭐⭐⭐⭐⭐ (Requer eletricista)</p>
- <p className="text-cyan-800 text-sm">Resolve 25% dos casos | Custo: 80-200€ | Tempo: 1-2 horas</p>
+ <p className="text-cyan-800 text-sm">Resolve uma parte dos casos | Custo: 80-200€ | Tempo: 1-2 horas</p>
  </div>
  </div>
  </div>
@@ -505,7 +505,7 @@ const QuadroEletricoDispara: React.FC = () => {
  <h3 className="text-2xl font-bold text-gray-900 mb-3">Resolver Fuga de Corrente</h3>
  <div className="bg-cyan-50 p-4 rounded-lg mb-4">
  <p className="font-bold text-cyan-900 mb-2">Eficácia: ⭐⭐⭐⭐ (Requer inspeção)</p>
- <p className="text-cyan-800 text-sm">Resolve 15% dos casos | Custo: 60-150€ | Tempo: 1-3 horas</p>
+ <p className="text-cyan-800 text-sm">Resolve uma parte dos casos | Custo: 60-150€ | Tempo: 1-3 horas</p>
  </div>
  </div>
  </div>
@@ -539,7 +539,7 @@ const QuadroEletricoDispara: React.FC = () => {
  <h3 className="text-2xl font-bold text-gray-900 mb-3">Substituir Aparelho Avariado</h3>
  <div className="bg-cyan-50 p-4 rounded-lg mb-4">
  <p className="font-bold text-cyan-900 mb-2">Eficácia: ⭐⭐⭐⭐⭐ (Solução simples)</p>
- <p className="text-cyan-800 text-sm">Resolve 10% dos casos | Custo: Variável | Tempo: Imediato</p>
+ <p className="text-cyan-800 text-sm">Resolve uma parte dos casos | Custo: Variável | Tempo: variável</p>
  </div>
  </div>
  </div>
@@ -573,7 +573,7 @@ const QuadroEletricoDispara: React.FC = () => {
  <h3 className="text-2xl font-bold text-gray-900 mb-3">Substituir Disjuntor Defeituoso</h3>
  <div className="bg-cyan-50 p-4 rounded-lg mb-4">
  <p className="font-bold text-cyan-900 mb-2">Eficácia: ⭐⭐⭐⭐⭐ (Solução definitiva)</p>
- <p className="text-cyan-800 text-sm">Resolve 5% dos casos | Custo: 40-100€ | Tempo: rápido</p>
+ <p className="text-cyan-800 text-sm">Resolve uma parte dos casos | Custo: 40-100€ | Tempo: variável</p>
  </div>
  </div>
  </div>
@@ -683,7 +683,7 @@ const QuadroEletricoDispara: React.FC = () => {
  <div className="bg-white p-6 rounded-xl border-2 border-gray-200 hover:border-cyan-500 transition-colors">
  <h3 className="font-bold text-gray-900 mb-3 text-lg">7. 🔍 Cuidado ao Furar Paredes</h3>
  <p className="text-gray-700 mb-2">
- Furar fio elétrico causa curto-circuito imediato.
+ Furar fio elétrico causa curto-circuito.
  </p>
  <ul className="text-gray-600 text-sm space-y-1">
  <li>• Use detetor de metais/fios antes de furar</li>
@@ -812,12 +812,12 @@ const QuadroEletricoDispara: React.FC = () => {
  <div className="bg-gray-50 p-6 rounded-xl">
  <h3 className="font-bold text-gray-900 mb-3">Porque é que o quadro elétrico dispara constantemente?</h3>
  <p className="text-gray-700 mb-2">
- <strong>As 3 causas mais comuns (80% dos casos):</strong>
+ <strong>As 3 causas mais comuns:</strong>
  </p>
  <ul className="text-gray-600 space-y-1 ml-4">
- <li>• <strong>Sobrecarga (40%):</strong> Demasiados aparelhos ligados ao mesmo tempo</li>
- <li>• <strong>Curto-circuito (25%):</strong> Fio danificado ou ligação mal feita</li>
- <li>• <strong>Fuga de corrente (15%):</strong> Isolamento danificado ou humidade</li>
+ <li>• <strong>Sobrecarga:</strong> Demasiados aparelhos ligados ao mesmo tempo</li>
+ <li>• <strong>Curto-circuito:</strong> Fio danificado ou ligação mal feita</li>
+ <li>• <strong>Fuga de corrente:</strong> Isolamento danificado ou humidade</li>
  </ul>
  <p className="text-cyan-700 font-semibold mt-3">
  💡 Use método de diagnóstico passo a passo para identificar causa exata.

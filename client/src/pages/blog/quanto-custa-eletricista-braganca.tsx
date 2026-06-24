@@ -40,7 +40,7 @@ export default function QuantoCustaEletricistaBraganca() {
  "name": "Eletricista urgente 24h custa mais?",
  "acceptedAnswer": {
  "@type": "Answer",
- "text": "Sim. Urgente noite/fim-de-semana: +80-100% sobre preço normal. Chamada urgente: 80-120€ mínimo. Feriados: +100-150%. Mas resolve problema imediatamente."
+ "text": "Sim. Urgente noite/fim-de-semana tem acréscimo sobre o preço normal. Chamada urgente tem valor mínimo. Feriados têm acréscimo suplementar."
  }
  },
  {
@@ -328,7 +328,7 @@ export default function QuantoCustaEletricistaBraganca() {
  Vários fatores afetam o custo final do serviço:
  </p>
  <ul>
- <li><strong>Urgência:</strong> Trabalhos urgentes custam +80-150%</li>
+ <li><strong>Urgência:</strong> Trabalhos urgentes têm acréscimo de preço</li>
  <li><strong>Complexidade:</strong> Diagnósticos difíceis demoram mais tempo</li>
  <li><strong>Acessibilidade:</strong> Trabalhos em altura ou locais difíceis custam mais</li>
  <li><strong>Materiais:</strong> Componentes premium (Legrand, Schneider) vs económicos</li>
@@ -344,9 +344,9 @@ export default function QuantoCustaEletricistaBraganca() {
  </p>
  <ol>
  <li><strong>Agrupe trabalhos:</strong> Faça várias tarefas numa única visita para amortizar chamada mínima</li>
- <li><strong>Evite urgências:</strong> Planeie trabalhos com antecedência (poupa 50-100%)</li>
+ <li><strong>Evite urgências:</strong> Planeie trabalhos com antecedência para poupar</li>
  <li><strong>Compare orçamentos:</strong> Peça 2-3 orçamentos detalhados por escrito</li>
- <li><strong>Forneça materiais:</strong> Compre você mesmo (desconto 20-30% na mão de obra)</li>
+ <li><strong>Forneça materiais:</strong> Compre você mesmo para reduzir o custo da mão de obra</li>
  <li><strong>Manutenção preventiva:</strong> Inspeção anual evita avarias caras</li>
  <li><strong>Época baixa:</strong> Verão tem menos procura, preços mais flexíveis</li>
  <li><strong>Negociação:</strong> Para trabalhos grandes, há margem de negociação</li>
@@ -359,7 +359,7 @@ export default function QuantoCustaEletricistaBraganca() {
  Eletricistas muito baratos podem não ser certificados, usar materiais de má qualidade, ou não emitir válido. Problemas elétricos mal resolvidos custam muito mais a longo prazo e põem em risco a sua segurança.
  </p>
  <p className="text-gray-800 mt-2">
- <strong>Exija sempre:</strong> Certificação DGEG, orçamento por escrito, garantia mínima 2 anos, fatura com IVA.
+ <strong>Exija sempre:</strong> Orçamento por escrito, garantia mínima 2 anos, fatura com IVA.
  </p>
  </div>
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
@@ -395,7 +395,7 @@ export default function QuantoCustaEletricistaBraganca() {
  Eletricista urgente 24h custa mais?
  </h3>
  <p className="text-gray-700">
- Sim. Urgente noite/fim-de-semana: +80-100% sobre preço normal. Chamada urgente: 80-120€ mínimo. Feriados: +100-150%. Mas resolve problema imediatamente.
+ Sim. Urgente noite/fim-de-semana tem acréscimo sobre o preço normal. Chamada urgente tem valor mínimo. Feriados têm acréscimo suplementar.
  </p>
  </div>
  <div className="border-l-4 border-orange-600 pl-4">
@@ -422,10 +422,6 @@ export default function QuantoCustaEletricistaBraganca() {
  <li className="flex items-start">
  <span className="text-orange-600 mr-2">✓</span>
  <span>Preços transparentes por escrito</span>
- </li>
- <li className="flex items-start">
- <span className="text-orange-600 mr-2">✓</span>
- <span>Certificação DGEG garantida</span>
  </li>
  <li className="flex items-start">
  <span className="text-orange-600 mr-2">✓</span>
