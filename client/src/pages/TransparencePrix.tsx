@@ -16,7 +16,7 @@ export default function TransparencePrix() {
  {
  title: "Pequena Arranjo",
  price: "30€ - 45€",
- duration: "resposta prioritária",
+ duration: "30 min",
  includes: [
  "Troca de tomadas ou interruptores",
  "Instalação de pontos de luz",

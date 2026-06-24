@@ -67,7 +67,7 @@ export default function VilaFlor() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Vila Flor?",
-    answer: "Chegamos a Vila Flor em aproximadamente 35-resposta prioritária a partir de Trás-os-Montes. Cobrimos todo o conselho.",
+    answer: "Chegamos a Vila Flor em aproximadamente 35-45 minutos a partir de Trás-os-Montes. Cobrimos todo o conselho.",
   },
  {
  question: "Instalam sistemas elétricos em adegas e lagares?",
@@ -128,7 +128,7 @@ export default function VilaFlor() {
  <section className="py-16 bg-orange-500 text-white">
  <div className="container text-center">
  <h2 className="text-3xl font-black mb-4">Precisa de Eletricista em Vila Flor?</h2>
- <p className="text-xl mb-8 opacity-90">Ligue agora. Estamos a apenas resposta prioritária de distância.</p>
+ <p className="text-xl mb-8 opacity-90">Ligue agora. Estamos a apenas 25 minutos de distância.</p>
  <a href={`tel:${businessInfo.phone}`} className="inline-flex items-center gap-2 bg-white text-orange-500 px-8 py-4 rounded-lg text-xl font-bold hover:bg-gray-100 transition-all shadow-lg">
  <Phone className="w-6 h-6" />932 321 892
  </a>

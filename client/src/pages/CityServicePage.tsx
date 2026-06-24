@@ -272,11 +272,11 @@ function generateFAQs(service: any, city: any, isPlumber: boolean) {
  },
  {
  question: `Atendem em ${city.name} ao fim de semana?`,
- answer: `Sim, estamos disponíveis Atendimento 24h/7d, 7 dias por semana, incluindo fins de semana e feriados em ${city.name}. Para urgências, o tempo de resposta é de 30-resposta prioritária.`
+ answer: `Sim, estamos disponíveis Atendimento 24h/7d, 7 dias por semana, incluindo fins de semana e feriados em ${city.name}. Para urgências, o tempo de resposta é de 30-90 minutos.`
  },
  {
  question: `Quanto tempo demora a chegar a ${city.name}?`,
- answer: `O tempo de resposta para ${city.name} é normalmente entre 30 a resposta prioritária, dependendo da localização exata e disponibilidade. Para urgências, priorizamos sempre a rapidez.`
+ answer: `O tempo de resposta para ${city.name} é normalmente entre 30 a 90 minutos, dependendo da localização exata e disponibilidade. Para urgências, priorizamos sempre a rapidez.`
  }
  ];
  // Add city-specific FAQs
@@ -292,7 +292,7 @@ function getCitySpecificFAQs(citySlug: string, serviceSlug: string) {
  'avarias-urgentes': [
  {
  question: 'Atendem nas aldeias de Mirandela como Fradizela ou Torre de Dona Chama?',
- answer: 'Sim, atendemos em todas as freguesias de Mirandela, incluindo Fradizela, Torre de Dona Chama, Cobro, Mascarenhas e todas as aldeias circundantes. O tempo de resposta pode variar entre 40-resposta prioritária dependendo da localização.'
+ answer: 'Sim, atendemos em todas as freguesias de Mirandela, incluindo Fradizela, Torre de Dona Chama, Cobro, Mascarenhas e todas as aldeias circundantes. O tempo de resposta pode variar entre 40-90 minutos dependendo da localização.'
  },
  {
  question: 'Têm experiência com instalações elétricas antigas no centro histórico de Mirandela?',
@@ -407,7 +407,7 @@ function getWhyChooseUs(citySlug: string, serviceSlug: string) {
  {
  icon: '⚡',
  title: 'Resposta Rápida 24h',
- description: 'Equipa local baseada em Mirandela com tempo de resposta de 30-resposta prioritária no centro urbano e 60-resposta prioritária nas freguesias rurais. Disponíveis todos os dias do ano.'
+ description: 'Equipa local baseada em Mirandela com tempo de resposta de 30-60 minutos no centro urbano e 60-90 minutos nas freguesias rurais. Disponíveis todos os dias do ano.'
  },
  {
  icon: '📋',
@@ -431,7 +431,7 @@ function getWhyChooseUs(citySlug: string, serviceSlug: string) {
  {
  icon: '🌙',
  title: 'Urgências 24h em Macedo',
- description: 'Equipa local disponível Atendimento 24h/7d, 7 dias por semana. Sabemos que avarias elétricas em explorações agrícolas não podem esperar. Resposta resposta prioritária.'
+ description: 'Equipa local disponível Atendimento 24h/7d, 7 dias por semana. Sabemos que avarias elétricas em explorações agrícolas não podem esperar. Resposta em 30-90 minutos.'
  },
  {
  icon: '🔒',

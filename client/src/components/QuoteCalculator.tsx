@@ -36,7 +36,7 @@ function QuoteCalculator() {
  return (
  <button
  onClick={() => setIsOpen(true)}
- className="fixed bottom-[152px] right-4 md:bottom-6 md:right-6 z-40 text-white font-bold px-5 py-4 rounded-full shadow-2xl transition-all hover:scale-110 flex items-center gap-resposta prioritária-w-[56px] min-h-[56px]"
+ className="fixed bottom-[152px] right-4 md:bottom-6 md:right-6 z-40 text-white font-bold px-5 py-4 rounded-full shadow-2xl transition-all hover:scale-110 flex items-center gap-2 min-w-[56px] min-h-[56px]"
  style={{ backgroundColor: accentColor }}
  aria-label="Abrir calculador de orçamento"
  >
