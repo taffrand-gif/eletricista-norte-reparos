@@ -4,8 +4,8 @@
 > URGÊNCIAS ELÉTRICAS 24 HORAS, 7 dias por semana, incluindo fins de semana e feriados.
 > Site: eletricista-norte-reparos.pt · Telefone / WhatsApp: +351 932 321 892
 
-## Urgência elétrica 24h (resposta rápida)
-Atendemos avarias elétricas urgentes 24h/7 em toda a região de Trás-os-Montes: falhas de energia, curto-circuitos, quadro elétrico que dispara, disjuntor que salta, cheiro a queimado, faíscas em tomadas, falta de luz em casa. Resposta rápida ao domicílio. Ligue já: +351 932 321 892.
+## Urgência elétrica 24h
+Atendemos avarias elétricas urgentes 24h/7 em toda a região de Trás-os-Montes: falhas de energia, curto-circuitos, quadro elétrico que dispara, disjuntor que salta, cheiro a queimado, faíscas em tomadas, falta de luz em casa. Atendimento por telefone. Ligue já: +351 932 321 892.
 
 ## Serviços de eletricista
 - Instalação elétrica completa (residencial e comercial)
@@ -22,7 +22,7 @@ A Norte Reparos é um serviço de eletricista ao domicílio com técnicos com fo
 ## Perguntas frequentes
 - Eletricista de urgência em Bragança? — Sim, atendemos urgências elétricas 24h em Bragança e região. Ligue +351 932 321 892.
 - Eletricista perto de mim em Trás-os-Montes? — Cobrimos Macedo de Cavaleiros, Mirandela, Bragança, Chaves, Vila Real, Mogadouro, Torre de Moncorvo, Alfândega da Fé, Vinhais e dezenas de freguesias.
-- Eletricista em Macedo de Cavaleiros? — Sim, é a nossa base. Resposta rápida ao domicílio.
+- Eletricista em Macedo de Cavaleiros? — Sim, é a nossa base. Atendimento por telefone.
 - Quanto custa um eletricista? — 70€/h de mão de obra mais deslocação por zona (15€ a 65€); majoração de +50% à noite, fins de semana e feriados.
 - Trabalham ao fim de semana e feriados? — Sim, serviço disponível 24h/7, incluindo fins de semana e feriados.
 
@@ -31,30 +31,41 @@ A Norte Reparos é um serviço de eletricista ao domicílio com técnicos com fo
 - Majoração +50% à noite, fins de semana e feriados
 - Deslocação por zona: Z1=15€, Z2=25€, Z3=35€, Z4=45€, Z5=55€, Z6=65€
 
-## Localidades atendidas (zona e deslocação)
-- Macedo de Cavaleiros (Z1, 0.0 km, 15€)
-- Torre de Dona Chama (Z2, 25.0 km, 25€)
-- Mirandela (Z2, 27.4 km, 25€)
-- Alfândega da Fé (Z2, 31.1 km, 25€)
-- Izeda (Z2, 37.2 km, 25€)
-- Vila Flor (Z3, 40.1 km, 35€)
-- Bragança (Z3, 42.4 km, 35€)
-- Valpaços (Z3, 48.0 km, 35€)
-- Mogadouro (Z3, 48.5 km, 35€)
-- Vinhais (Z3, 48.8 km, 35€)
-- Carrazeda de Ansiães (Z3, 51.5 km, 35€)
-- Torre de Moncorvo (Z3, 52.2 km, 35€)
-- Murça (Z3, 53.7 km, 35€)
-- Vila Nova de Foz Coa (Z4, 63.0 km, 45€)
-- Vimioso (Z4, 64.0 km, 45€)
-- Alijó (Z4, 73.9 km, 45€)
-- Chaves (Z4, 74.7 km, 45€)
-- Vila Real (Z5, 85.7 km, 55€)
-- Miranda do Douro (Z5, 92.2 km, 55€)
-- Peso da Régua (Z5, 98.4 km, 55€)
-- Freixo de Espada à Cinta (Z5, 94.0 km, 55€)
-- Lamego (Z6, 110.7 km, 65€)
-- Montalegre (Z6, 112.6 km, 65€)
+## Localidades atendidas (zona e deslocação) — concelhos oficiais
+- Macedo de Cavaleiros (Z1, 15€)
+- Torre de Dona Chama (Z2, 25€)
+- Mirandela (Z2, 25€)
+- Alfândega da Fé (Z2, 25€)
+- Carrazeda de Ansiães (Z2, 25€)
+- Bragança (Z3, 35€)
+- Vinhais (Z3, 35€)
+- Vimioso (Z3, 35€)
+- Torre de Moncorvo (Z3, 35€)
+- Mogadouro (Z3, 35€)
+- Freixo de Espada à Cinta (Z3, 35€)
+- Miranda do Douro (Z4, 45€)
+- Vila Nova de Foz Côa (Z4, 45€)
+- São João da Pesqueira (Z4, 45€)
+- Murça (Z4, 45€)
+- Valpaços (Z4, 45€)
+- Vila Real (Z5, 55€)
+- Alijó (Z5, 55€)
+- Sabrosa (Z5, 55€)
+- Tabuaço (Z5, 55€)
+- Armamar (Z5, 55€)
+- Peso da Régua (Z5, 55€)
+- Lamego (Z5, 55€)
+- Santa Marta de Penaguião (Z5, 55€)
+- Mesão Frio (Z5, 55€)
+- Chaves (Z6, 65€)
+- Vila Pouca de Aguiar (Z6, 65€)
+- Boticas (Z6, 65€)
+- Montalegre (Z6, 65€)
+- Ribeira de Pena (Z6, 65€)
+- Mondim de Basto (Z6, 65€)
+- Moimenta da Beira (Z6, 65€)
+- Sernancelhe (Z6, 65€)
+- Penedono (Z6, 65€)
 - (e dezenas de outras freguesias do Nordeste Transmontano — ver o site)
 
 ## Contacto
