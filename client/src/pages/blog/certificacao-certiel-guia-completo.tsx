@@ -247,7 +247,7 @@ export default function CertificacaoCertielGuiaCompleto() {
  1. Contacto e Agendamento
  </h3>
  <p className="text-gray-700">
- Contacte eletricista certificado DGEG. Forneça morada, tipo de imóvel e motivo da certificação (compra, obras, instalação nova). Agendamento em 24-48h.
+ Contacte-nos para inspeção e diagnóstico. Trabalhamos com fichas eletrotécnicas em conformidade com a DGEG (registo em curso); o certificado de conformidade, quando aplicável, é emitido por técnico responsável inscrito na DGEG ou entidade acreditada.
  </p>
  </div>
  <div className="bg-white border-l-4 border-orange-600 p-6 shadow-sm">
