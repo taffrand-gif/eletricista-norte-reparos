@@ -7,102 +7,21 @@
 - Majoração +50% noites/fins/feriados
 - Deslocação: Z1=15€, Z2=25€, Z3=35€, Z4=45€, Z5=55€, Z6=65€
 
-## 41 Páginas Niveau A
-- Macedo de Cavaleiros (Z1, 0.0 km, 15€)
-- Torre de Dona Chama (Z2, 25.0 km, 25€)
-- Mirandela (Z2, 27.4 km, 25€)
-- Alfândega da Fé (Z2, 31.1 km, 25€)
-- Izeda (Z2, 37.2 km, 25€)
-- Vila Flor (Z3, 40.1 km, 35€)
-- Bragança (Z3, 42.4 km, 35€)
-- Valpaços (Z3, 48.0 km, 35€)
-- Mogadouro (Z3, 48.5 km, 35€)
-- Vinhais (Z3, 48.8 km, 35€)
-- Carrazeda de Ansiães (Z3, 51.5 km, 35€)
-- Torre de Moncorvo (Z3, 52.2 km, 35€)
-- Murça (Z3, 53.7 km, 35€)
-- Vilarandelo (Z3, 55.4 km, 35€)
-- Vila Nova de Foz Coa (Z4, 63.0 km, 45€)
-- Vimioso (Z4, 64.0 km, 45€)
-- Carrazedo de Montenegro (Z4, 64.6 km, 45€)
-- Argozelo (Z4, 64.8 km, 45€)
-- Vilar de Maçada (Z4, 68.9 km, 45€)
-- Freixo de Numão (Z4, 73.0 km, 45€)
-- Alijó (Z4, 73.9 km, 45€)
-- Chaves (Z4, 74.7 km, 45€)
-- Sanfins do Douro (Z4, 74.8 km, 45€)
-- Sendim (Z4, 74.9 km, 45€)
-- Santo Estêvão (Z4, 77.3 km, 45€)
-- Favaios (Z4, 77.7 km, 45€)
-- Mouçós (Z4, 79.8 km, 45€)
-- São João da Pesqueira (Z4, 79.8 km, 45€)
-- Sabrosa (Z4, 81.6 km, 45€)
-- Almendra (Z4, 83.1 km, 45€)
-- Vidago (Z4, 84.0 km, 45€)
-- Mêda (Z4, 84.1 km, 45€)
-- Vila Real (Z5, 85.7 km, 55€)
-- Miranda do Douro (Z5, 92.2 km, 55€)
-- Peso da Régua (Z5, 98.4 km, 55€)
-- Pinhel (Z5, 108.2 km, 55€)
-- Lamego (Z6, 110.7 km, 65€)
-- Tarouca (Z6, 117.0 km, 65€)
-- Amarante (Z6, 117.7 km, 65€)
-- Lixa (Z6, 128.2 km, 65€)
-- Marco de Canaveses (Z6, 129.7 km, 65€)
+## 34 Concelhos oficiais (grille tarifaire)
 
-## 52 Páginas Niveau B
-- Travanca (Z1, 3.2 km, 15€)
-- Nogueirinha (Z1, 3.3 km, 15€)
-- Vale de Prados (Z1, 4.4 km, 15€)
-- Amendoeira (Z1, 5.1 km, 15€)
-- Grijó (Z1, 5.9 km, 15€)
-- Vimieiro (Z1, 11.9 km, 15€)
-- Açoreira (Z1, 12.0 km, 15€)
-- Burga (Z1, 18.6 km, 15€)
-- Vilarinho do Monte (Z1, 19.3 km, 15€)
-- Pombares (Z1, 19.8 km, 15€)
-- Gebelim (Z1, 19.9 km, 15€)
-- Salsas (Z2, 20.6 km, 25€)
-- Lombo (Z2, 21.1 km, 25€)
-- Vale de Asnes (Z2, 21.5 km, 25€)
-- Sambade (Z2, 22.6 km, 25€)
-- Soeima (Z2, 24.4 km, 25€)
-- Rebordainhos (Z2, 25.1 km, 25€)
-- Benlhevai (Z2, 25.1 km, 25€)
-- Celas (Z2, 26.2 km, 25€)
-- Castro Vicente (Z2, 26.3 km, 25€)
-- Serapicos (Z2, 26.9 km, 25€)
-- Vales (Z2, 28.2 km, 25€)
-- Mós (Z2, 29.4 km, 25€)
-- Abambres (Z2, 29.6 km, 25€)
-- Vila Verde (Z2, 29.6 km, 25€)
-- Vale Frechoso (Z2, 30.2 km, 25€)
-- Valverde (Z2, 35.1 km, 25€)
-- Roios (Z2, 36.2 km, 25€)
-- São Pedro de Sarracenos (Z2, 38.6 km, 25€)
-- Vilas Boas (Z2, 39.3 km, 25€)
-- Lordelo (Z5, 86.1 km, 55€)
-- Marialva (Z5, 86.5 km, 55€)
-- Cedovim (Z5, 86.6 km, 55€)
-- Vila Pouca de Aguiar (Z5, 88.7 km, 55€)
-- São Martinho de Anta (Z5, 89.1 km, 55€)
-- Pinhão (Z5, 90.6 km, 55€)
-- Cumieira (Z5, 93.5 km, 55€)
-- Freixo de Espada à Cinta (Z5, 94.0 km, 55€)
-- Pedras Salgadas (Z5, 94.4 km, 55€)
-- Penedono (Z5, 98.1 km, 55€)
-- Boticas (Z5, 99.4 km, 55€)
-- Santa Marta de Penaguião (Z5, 102.8 km, 55€)
-- Ervedosa do Douro (Z5, 103.7 km, 55€)
-- Cambres (Z5, 104.2 km, 55€)
-- Tabuaço (Z5, 105.6 km, 55€)
-- Britiande (Z6, 110.2 km, 65€)
-- Armamar (Z6, 111.9 km, 65€)
-- Montalegre (Z6, 112.6 km, 65€)
-- Mesão Frio (Z6, 112.7 km, 65€)
-- Sernancelhe (Z6, 113.5 km, 65€)
-- Resende (Z6, 123.3 km, 65€)
-- Mondim de Basto (Z6, 128.7 km, 65€)
+Z1 (15€) — Macedo de Cavaleiros.
+
+Z2 (25€) — Mirandela · Vila Flor · Alfândega da Fé · Carrazeda de Ansiães.
+
+Z3 (35€) — Bragança · Vinhais · Vimioso · Torre de Moncorvo · Mogadouro · Freixo de Espada à Cinta.
+
+Z4 (45€) — Miranda do Douro · Vila Nova de Foz Côa · São João da Pesqueira · Murça · Valpaços.
+
+Z5 (55€) — Vila Real · Alijó · Sabrosa · Tabuaço · Armamar · Peso da Régua · Lamego · Santa Marta de Penaguião · Mesão Frio.
+
+Z6 (65€) — Chaves · Vila Pouca de Aguiar · Boticas · Montalegre · Ribeira de Pena · Mondim de Basto · Moimenta da Beira · Sernancelhe · Penedono.
+
+Cobertura adicional : dezenas de freguesias e aldeias do Nordeste Transmontano — confirmar cobertura por telefone avant chaque deslocação.
 
 ## Contacto
 +351 932 321 892
