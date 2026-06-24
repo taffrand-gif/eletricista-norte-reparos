@@ -1008,8 +1008,8 @@ const QuadroEletricoDispara: React.FC = () => {
  <div className="flex items-start gap-3">
  <span className="text-2xl">✅</span>
  <div>
- <p className="font-bold">Intervenção Rápida</p>
- <p className="text-sm text-white/80">Resposta rápida garantida</p>
+ <p className="font-bold">Atendimento 24h/7d</p>
+ <p className="text-sm text-white/80">Confirme a deslocação por telefone</p>
  </div>
  </div>
  <div className="flex items-start gap-3">
