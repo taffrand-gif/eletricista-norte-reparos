@@ -93,7 +93,7 @@ Trabalhamos apenas com equipamento de marcas reconhecidas:
 
 ## Conclusão: A Solução Confiável para Emergências em Bragança
 
-Quando a electricidade falha, cada minuto conta. Com o nosso serviço **electricista 24h em Bragança**, tem a garantia de uma resposta rápida, profissional e transparente. Trabalhamos com equipamento de última geração e técnicos certificados para resolver qualquer emergência eléctrica na sua casa ou empresa.
+Quando a electricidade falha, cada minuto conta. Com o nosso serviço **electricista 24h em Bragança**, tem a garantia de uma mensagem direta, profissional e transparente. Trabalhamos com equipamento de última geração e técnicos certificados para resolver qualquer emergência eléctrica na sua casa ou empresa.
 
 **Não arrisque com soluções improvisadas.** Problemas eléctricos mal resolvidos podem causar incêndios, danos em aparelhos eletrónicos ou situações de perigo para a sua família.
 

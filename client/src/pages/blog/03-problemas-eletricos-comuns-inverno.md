@@ -101,7 +101,7 @@ tags: [problemas elétricos, inverno, soluções, manutenção, segurança]
 1. **Monitorização mensal** do consumo elétrico
 2. **Verificação visual** de tomadas e interruptores
 3. **Teste de funcionamento** de sistemas de segurança
-4. **Resposta rápida** a qualquer anomalia detetada
+4. **Mensagem direta** a qualquer anomalia detetada
 
 ### Após o Inverno
 1. **Avaliação pós-inverno** dos sistemas
