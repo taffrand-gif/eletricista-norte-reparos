@@ -174,7 +174,7 @@ export default function MacedoCavaleiros() {
  <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
  <Shield className="w-8 h-8 text-orange-500" />
  </div>
- <h3 className="text-xl font-bold mb-2">Deslocação 10€</h3>
+ <h3 className="text-xl font-bold mb-2">Deslocação 15€ (Z1)</h3>
  <p className="text-gray-600">
  Taxa de deslocação mais baixa para Macedo e arredores. Sem surpresas no orçamento.
  </p>
