@@ -109,7 +109,7 @@ Diagnóstico preciso em 15-45 minutos. Orçamento antes de arranjar.`
  {
  title: 'Arranjos Típicas',
  content: `**Substituição disjuntor**: 75-95€ (inclui disjuntor). **Arranjo tomada queimada**: 58-78€. **Substituição cabo danificado**: 110-160€ (até 10m). **Arranjo curto-circuito**: 150-210€. **Substituição quadro elétrico**: 370-650€ (12 módulos). **Ligação terra**: 180-250€.
-**Urgências 24h**: Acréscimo 50€ (noturno/fins de semana). Resposta rápida garantida-90 minutos conforme localização.
+**Urgências 24h**: Acréscimo 50€ (noturno/fins de semana). Mensagem direta garantida-90 minutos conforme localização.
 **Garantia**: 12 meses em todas as arranjos. Se o problema voltar, arranjamos gratuitamente.`
  }
  ],
@@ -195,7 +195,7 @@ Diagnóstico preciso em 15-45 minutos. Orçamento antes de arranjar.`
  slug: 'urgencias-24h',
  title: 'Urgências Elétricas 24h',
  subtitle: 'Eletricista de Urgência em Toda a Região',
- description: 'Serviço urgência 24h/7 dias para avarias graves, curto-circuitos, quedas de corrente. Resposta rápida garantida-90 minutos.',
+ description: 'Serviço urgência 24h/7 dias para avarias graves, curto-circuitos, quedas de corrente. Mensagem direta garantida-90 minutos.',
  icon: '🚨',
  price: 'Desde 100€',
  priceDetails: 'Acréscimo 50€ horário noturno',
