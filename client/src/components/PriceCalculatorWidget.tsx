@@ -96,7 +96,7 @@ function PriceCalculatorWidget() {
  Calcule o Preço da Sua Arranjo
  </h2>
  <p className="text-xl text-gray-600">
- Preço fixo garantido. Sem surpresas. Orçamento confirmado por telefone antes de intervir.
+ Preço combinado antes da deslocação. Sem surpresas. Orçamento confirmado por telefone.
  </p>
  </div>
  {/* Calculator Card */}
