@@ -71,7 +71,7 @@ question: "São certificados ?",
  },
  {
  question: "O que fazer em caso de curto-circuito?",
- answer: "1) Desligue o disjuntor geral 2) Não toque em fios expostos 3) Ligue-nos imediatamente: 932 321 892. A nossa equipa actua com rapidez para resolver a urgência."
+ answer: "1) Desligue o disjuntor geral 2) Não toque em fios expostos 3) Ligue-nos mediante confirmação: 932 321 892. A nossa equipa actua com rapidez para resolver a urgência."
  },
  {
  question: "Atendem em que cidades?",

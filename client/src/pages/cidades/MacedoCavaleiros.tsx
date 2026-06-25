@@ -87,19 +87,19 @@ export default function MacedoCavaleiros() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Macedo de Cavaleiros?",
-    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
   },
  {
  question: "Trabalham aos fins de semana em Macedo?",
-    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
   },
  {
  question: "Qual o custo de deslocação a Macedo de Cavaleiros?",
-    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
   },
  {
  question: "Fazem certificação elétrica em Macedo?",
-    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
   },
  ];
  return (
@@ -126,7 +126,7 @@ export default function MacedoCavaleiros() {
  Eletricista em Macedo de Cavaleiros
  </h1>
  <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
- A nossa base é aqui. Chegamos Atendimento 24h/7d garantida. Serviço 24h para urgências elétricas.
+ A nossa base é aqui. Chegamos Resposta mediante contacto garantida. Serviço 24h para urgências elétricas.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a
@@ -174,7 +174,7 @@ export default function MacedoCavaleiros() {
  <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
  <Shield className="w-8 h-8 text-orange-500" />
  </div>
- <h3 className="text-xl font-bold mb-2">Deslocação 15€ (Z1)</h3>
+ <h3 className="text-xl font-bold mb-2">Deslocação 10€</h3>
  <p className="text-gray-600">
  Taxa de deslocação mais baixa para Macedo e arredores. Sem surpresas no orçamento.
  </p>
@@ -250,7 +250,7 @@ export default function MacedoCavaleiros() {
  Precisa de Eletricista em Macedo de Cavaleiros?
  </h2>
  <p className="text-xl mb-8 opacity-90">
- Ligue agora. Estamos a menos de mediante confirmação de si.
+ Ligue agora. Estamos a menos de 30 minutos de si.
  </p>
  <a
  href={`tel:${businessInfo.phone}`}

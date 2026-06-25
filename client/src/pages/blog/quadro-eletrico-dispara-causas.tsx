@@ -24,7 +24,7 @@ export default function QuadroEletricoDisparaCausas() {
  "name": "É perigoso o disjuntor disparar muitas vezes?",
  "acceptedAnswer": {
  "@type": "Answer",
- "text": "Sim. Disparos frequentes indicam problema elétrico grave que pode causar incêndio, choque elétrico ou danos em aparelhos. Nunca force o disjuntor a ficar ligado. Contacte eletricista certificado imediatamente."
+ "text": "Sim. Disparos frequentes indicam problema elétrico grave que pode causar incêndio, choque elétrico ou danos em aparelhos. Nunca force o disjuntor a ficar ligado. Contacte eletricista certificado mediante confirmação."
  }
  },
  {
@@ -88,7 +88,7 @@ export default function QuadroEletricoDisparaCausas() {
  <div className="prose prose-lg max-w-none">
  <div className="bg-orange-50 border-l-4 border-orange-600 p-6 mb-8">
  <p className="text-lg font-semibold text-gray-900 mb-2">
- Resposta Rápida:
+ Resposta mediante contacto:
  </p>
  <p className="text-gray-800">
  O quadro elétrico dispara principalmente por <strong>sobrecarga</strong> (demasiados aparelhos ligados simultaneamente), <strong>curto-circuito</strong> (contacto direto entre fios), <strong>fuga de corrente</strong> (isolamento danificado) ou <strong>disjuntor defeituoso</strong>. É um mecanismo de segurança essencial que previne incêndios e choques elétricos. Se disparar frequentemente, contacte eletricista certificado.
@@ -131,7 +131,7 @@ export default function QuadroEletricoDisparaCausas() {
  <li>Aparelhos com fios internos danificados</li>
  </ul>
  <p>
- <strong>Solução:</strong> NUNCA tente arranjar sozinho. Desligue o disjuntor, identifique o circuito afetado e contacte eletricista certificado imediatamente. Risco de incêndio é elevado.
+ <strong>Solução:</strong> NUNCA tente arranjar sozinho. Desligue o disjuntor, identifique o circuito afetado e contacte eletricista certificado mediante confirmação. Risco de incêndio é elevado.
  </p>
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  3. Fuga de Corrente (Diferencial Dispara)
@@ -320,7 +320,7 @@ export default function QuadroEletricoDisparaCausas() {
  Quando Chamar Eletricista Urgente?
  </h2>
  <p>
- Contacte profissional certificado IMEDIATAMENTE se:
+ Contacte profissional certificado mediante confirmação se:
  </p>
  <ul>
  <li>Cheiro a queimado ou fumo no quadro elétrico</li>
@@ -350,7 +350,7 @@ export default function QuadroEletricoDisparaCausas() {
  É perigoso o disjuntor disparar muitas vezes?
  </h3>
  <p className="text-gray-700">
- Sim. Disparos frequentes indicam problema elétrico grave que pode causar incêndio, choque elétrico ou danos em aparelhos. Nunca force o disjuntor a ficar ligado. Contacte eletricista certificado imediatamente.
+ Sim. Disparos frequentes indicam problema elétrico grave que pode causar incêndio, choque elétrico ou danos em aparelhos. Nunca force o disjuntor a ficar ligado. Contacte eletricista certificado mediante confirmação.
  </p>
  </div>
  <div className="border-l-4 border-orange-600 pl-4">

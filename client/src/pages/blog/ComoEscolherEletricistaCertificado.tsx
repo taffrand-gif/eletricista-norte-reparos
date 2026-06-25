@@ -243,7 +243,7 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  </div>
  </section>
  <section id="sinais-alerta" className="mb-12">
- <h2 className="text-3xl font-bold text-gray-900 mb-6">🚩 6. 5 Sinais de Alerta para Fugir Imediatamente</h2>
+ <h2 className="text-3xl font-bold text-gray-900 mb-6">🚩 6. 5 Sinais de Alerta para Fugir mediante confirmação</h2>
  
  <div className="space-y-6">
  <div className="bg-white p-6 rounded-xl border border-red-200">
@@ -288,7 +288,7 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  <div className="flex items-start gap-4">
  <div className="bg-red-100 text-red-800 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">4</div>
  <div>
- <h3 className="font-bold text-gray-900 mb-2">Pressão para decidir imediatamente</h3>
+ <h3 className="font-bold text-gray-900 mb-2">Pressão para decidir mediante confirmação</h3>
  <p className="text-gray-700">
  "Só hoje está este preço", "Se não fechar agora não volto", "Tenho outra obra à espera" 
  são táticas de venda agressiva. Profissionais sérios dão tempo para decisão e 
@@ -360,7 +360,7 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  <div>
  <h3 className="text-xl font-bold text-gray-900 mb-3">10. "Como lida com imprevistos durante a obra?"</h3>
  <p className="text-gray-700">
- <strong>Resposta esperada:</strong> Comunicamos imediatamente, apresentamos solução e orçamento adicional se necessário.
+ <strong>Resposta esperada:</strong> Comunicamos mediante confirmação, apresentamos solução e orçamento adicional se necessário.
  <br/>
  <strong>Sinal de alerta:</strong> "Nunca tenho imprevistos" (mentira).
  </p>

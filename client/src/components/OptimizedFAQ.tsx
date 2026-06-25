@@ -77,7 +77,7 @@ const OptimizedFAQ: React.FC = () => {
  {index === 3 && (
  <div className="mt-4 p-4 bg-red-50 rounded-lg border border-red-200">
  <p className="text-sm text-red-800">
- <strong>Emergência:</strong> Em caso de cheiro a queimado, faíscas ou choques elétricos, desligue o quadro geral e ligue-nos imediatamente.
+ <strong>Emergência:</strong> Em caso de cheiro a queimado, faíscas ou choques elétricos, desligue o quadro geral e ligue-nos mediante confirmação.
  </p>
  </div>
  )}

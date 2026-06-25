@@ -102,7 +102,7 @@ export default function TransparencePrix() {
  },
  {
  question: "A deslocação está incluída no preço?",
- answer: "Não. A deslocação é cobrada à parte conforme a zona: Zona 1 (Macedo, Mirandela) = 15€, Zona 2 (Bragança, Vinhais) = 20€, Zona 3 (Vila Real, Chaves) = 30€. Este valor cobre apenas o gasóleo e desgaste da carrinha. É cobrado uma única vez por intervenção, mesmo que demore vários dias."
+ answer: "Não. A deslocação é cobrada à parte conforme a zona: Zona 1 = 15€, Zona 2 = 25€, Zona 3 = 35€. Este valor cobre apenas o gasóleo e desgaste da carrinha. É cobrado uma única vez por intervenção, mesmo que demore vários dias."
  },
  {
  question: "Oferecem desconto para clientes regulares?",
@@ -120,8 +120,8 @@ export default function TransparencePrix() {
  return (
  <>
  <SEOHead
- title={`Transparência de Preços - O eletricista profissional de Trás-os-Montes que Publica os Seus Preços | ${config.name}`}
- description="Somos o eletricista profissional em Trás-os-Montes com preços 100% transparentes publicados online. Veja todos os nossos preços, sem surpresas, sem letra pequena. Pequena arranjo desde 30€, quadros elétricos desde 150€. Garantia satisfeito ou reembolsado."
+ title={`Transparência de Preços - Um eletricista profissional de Trás-os-Montes que Publica os Seus Preços | ${config.name}`}
+ description="Somos Um eletricista profissional em Trás-os-Montes com preços 100% transparentes publicados online. Veja todos os nossos preços, sem surpresas, sem letra pequena. Pequena arranjo desde 30€, quadros elétricos desde 150€. Garantia satisfeito ou reembolsado."
  />
  <Header />
  <main>
@@ -357,7 +357,7 @@ export default function TransparencePrix() {
  </div>
  <p className="text-sm text-white/70 italic">
  Em 15 anos de atividade, apenas 2 clientes pediram reembolso.
- A nossa taxa de satisfação mediante pedido.6%.
+ A nossa taxa de satisfação é de 99.6%.
  </p>
  </div>
  </div>

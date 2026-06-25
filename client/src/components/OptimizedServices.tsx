@@ -193,7 +193,7 @@ const OptimizedServices: React.FC = () => {
  <ul className="space-y-3">
  <li className="flex items-center gap-3">
  <div className="bg-amber-100 text-amber-600 p-2 rounded-full">🏆</div>
- <span className="text-gray-700">12+ anos de experiência na região</span>
+ <span className="text-gray-700">experiência em Trás-os-Montes na região</span>
  </li>
  <li className="flex items-center gap-3">
  <div className="bg-amber-100 text-amber-600 p-2 rounded-full">🔧</div>

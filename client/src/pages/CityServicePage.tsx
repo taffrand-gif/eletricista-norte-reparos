@@ -304,7 +304,7 @@ function getCitySpecificFAQs(citySlug: string, serviceSlug: string) {
  'avarias-urgentes': [
  {
  question: 'Atendem em Trás-os-Montes durante a noite?',
- answer: 'Sim, o nosso serviço de urgências em Trás-os-Montes está Atendimento 24h/7d/7d. Sabemos que avarias elétricas não escolhem hora, por isso garantimos resposta rápida mesmo de madrugada ou ao fim de semana.'
+ answer: 'Sim, o nosso serviço de urgências em Trás-os-Montes está Atendimento 24h/7d/7d. Sabemos que avarias elétricas não escolhem hora, por isso garantimos Resposta mediante contacto mesmo de madrugada ou ao fim de semana.'
  },
  {
  question: 'Trabalham com instalações trifásicas em Trás-os-Montes?',
@@ -344,7 +344,7 @@ function getCityAboutSection(citySlug: string) {
  A economia local baseia-se fortemente na agricultura, pecuária e pequena indústria, o que significa que muitas instalações elétricas na região são trifásicas e de maior complexidade. Explorações agrícolas, adegas, lagares de azeite e unidades de transformação alimentar requerem sistemas elétricos robustos e fiáveis. A nossa equipa tem experiência especializada em instalações industriais e agrícolas, garantindo segurança e eficiência energética.
  </p>
  <p>
- Conhecemos bem as particularidades de Trás-os-Montes e das suas aldeias circundantes. Desde o centro urbano até às zonas mais rurais, garantimos resposta rápida a qualquer emergência elétrica. Trabalhamos regularmente com bombas de água para rega, sistemas de refrigeração para armazéns agrícolas, e instalações elétricas em edifícios de turismo rural, sempre com certificação elétrica e cumprimento rigoroso das normas de segurança.
+ Conhecemos bem as particularidades de Trás-os-Montes e das suas aldeias circundantes. Desde o centro urbano até às zonas mais rurais, garantimos Resposta mediante contacto a qualquer emergência elétrica. Trabalhamos regularmente com bombas de água para rega, sistemas de refrigeração para armazéns agrícolas, e instalações elétricas em edifícios de turismo rural, sempre com certificação elétrica e cumprimento rigoroso das normas de segurança.
  </p>
  </>
  )
@@ -406,7 +406,7 @@ function getWhyChooseUs(citySlug: string, serviceSlug: string) {
  },
  {
  icon: '⚡',
- title: 'Resposta Rápida 24h',
+ title: 'Resposta mediante contacto 24h',
  description: 'Equipa local baseada em Mirandela com tempo de resposta de 30-60 minutos no centro urbano e 60-90 minutos nas freguesias rurais. Disponíveis todos os dias do ano.'
  },
  {
@@ -431,7 +431,7 @@ function getWhyChooseUs(citySlug: string, serviceSlug: string) {
  {
  icon: '🌙',
  title: 'Urgências 24h em Macedo',
- description: 'Equipa local disponível Atendimento 24h/7d, 7 dias por semana. Sabemos que avarias elétricas em explorações agrícolas não podem esperar. Resposta em 30-90 minutos.'
+ description: 'Equipa local disponível Atendimento 24h/7d, 7 dias por semana. Sabemos que avarias elétricas em explorações agrícolas não podem esperar. Resposta mediante confirmação por telefone.'
  },
  {
  icon: '🔒',

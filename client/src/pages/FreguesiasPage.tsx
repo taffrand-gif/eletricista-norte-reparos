@@ -139,7 +139,7 @@ export default function FreguesiasPage() {
  profissional em toda a freguesia e arredores.
  </p>
  <p className="text-gray-700">
- Com base em {parentCity.name}, Confirmamos a deslocação por telefone a {freguesia.name}
+ Com base em {parentCity.name}, chegamos rapidamente a {freguesia.name}
  para resolver qualquer urgência. Disponíveis Atendimento 24h/7d, 7 dias por semana.
  </p>
  </div>
@@ -165,9 +165,9 @@ export default function FreguesiasPage() {
  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
  <Clock className="w-8 h-8 text-blue-600" />
  </div>
- <h3 className="text-xl font-bold mb-2">Atendimento 24h/7d</h3>
+ <h3 className="text-xl font-bold mb-2">Resposta mediante contacto</h3>
  <p className="text-gray-600">
- Atendimento 24h/7d garantida-45 minutos para urgências
+ Resposta mediante contacto garantida-45 minutos para urgências
  </p>
  </div>
  <div className="bg-white p-6 rounded-xl shadow-lg text-center">

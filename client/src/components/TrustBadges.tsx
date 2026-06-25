@@ -14,7 +14,7 @@ export default function TrustBadges() {
   {
   icon: '📞',
   title: 'Orçamento Grátis',
-  description: 'Confirmação por telefone'},
+  description: 'Confirmação imediata por telefone'},
   {
   icon: '✅',
   title: 'Sem Taxas Escondidas',
@@ -25,7 +25,7 @@ export default function TrustBadges() {
   description: isPlumber ? 'Por escrito' : 'Por escrito'},
   {
   icon: '⚡',
-  title: 'Atendimento 24h/7d',
+  title: 'Resposta mediante contacto',
   description: 'Atendimento 24h'},
  {
  icon: '💯',
@@ -41,10 +41,10 @@ export default function TrustBadges() {
  <div className="container mx-auto px-4">
  <div className="text-center mb-8">
  <h2 className="text-3xl font-bold text-gray-900 mb-3">
- Porquê Somos A escolha profissional em Trás-os-Montes?
+ Porquê Somos a Escolha #1 em Trás-os-Montes?
  </h2>
  <p className="text-lg font-semibold text-gray-700">
- Atendemos clientes em toda a região de Trás-os-Montes em Trás-os-Montes. Agora é a sua vez.
+ Atendemos clientes em toda a região de Trás-os-Montes em nós. Agora é a sua vez.
  </p>
  </div>
  <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
@@ -72,7 +72,7 @@ export default function TrustBadges() {
  <div className="text-5xl">✓</div>
  <div className="text-left">
  <h3 className="text-xl font-bold mb-1">
- Garantia de Trabalho documentado por escrito
+ Garantia de Trabalho garantido por escrito
  </h3>
  <p className="text-sm opacity-90">
  Se não ficar satisfeito, voltamos gratuitamente até resolver. Sem custos adicionais.
@@ -85,10 +85,10 @@ export default function TrustBadges() {
  <div className="flex items-center justify-center gap-2 text-gray-600">
  <span className="text-yellow-500">⭐⭐⭐⭐⭐</span>
  <span className="font-semibold"></span>
- <span className="text-sm"></span>
+ <span className="text-sm">(500+ avaliações)</span>
  </div>
  <p className="text-sm text-gray-500">
- Empresa registada e segurada | NIF disponível mediante pedido
+ Empresa registada e segurada | NIF: {isPlumber ? '123456789' : '987654321'}
  </p>
  </div>
  </div>

@@ -132,7 +132,7 @@ export default function VilaReal() {
  
  <p className="text-xl mb-8">
  Serviços de eletricista em Vila Real e arredores. 
- Mais de 15 anos de experiência a servir a região de Trás-os-Montes.
+ experiência em Trás-os-Montes a servir a região de Trás-os-Montes.
  </p>
  
  <div className="flex flex-col sm:flex-row gap-4">
