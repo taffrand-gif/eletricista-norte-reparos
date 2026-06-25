@@ -191,7 +191,7 @@ Se a sua casa tem mais de 25 anos e nunca foi renovada, pode ter problemas.
 
 A segurança elétrica não é algo para ignorar. Se notar qualquer um destes sinais, não hesite em contactar um eletricista profissional. É melhor prevenir do que remediar, especialmente quando se trata de eletricidade.
 
-A **Eletricista Profissional** está disponível Atendimento 24h/7d para emergências elétricas em Bragança e arredores. Técnicos certificados, intervenção rápida e trabalho garantido.
+A **Eletricista Profissional** está disponível Atendimento 24h/7d para emergências elétricas em Bragança e arredores. Técnicos com experiência, intervenção rápida e trabalho garantido.
 
 **Ligue agora: 932 321 892**
 `
@@ -480,7 +480,7 @@ A certificação elétrica (também chamada de Termo de Responsabilidade pela Ex
 
 ## Quem Pode Emitir?
 
-Apenas **técnicos certificados** pela DGEG (Direção-Geral de Energia e Geologia) podem emitir certificações elétricas.
+Apenas **técnicos com experiência** (Direção-Geral de Energia e Geologia) podem emitir certificações elétricas.
 
 ### Categorias de Certificação:
 - **Categoria 1:** Instalações até 50 kVA
@@ -492,7 +492,7 @@ Apenas **técnicos certificados** pela DGEG (Direção-Geral de Energia e Geolog
 ## Processo de Certificação
 
 ### Passo 1: Contratação
-- Contacte um eletricista certificado
+- Contacte um eletricista com experiência
 - Explique o tipo de trabalho necessário
 - Peça orçamento incluindo certificação
 
@@ -601,14 +601,14 @@ Algumas instalações requerem inspeções regulares:
 ## Como Verificar um Certificado
 
 ### Autenticidade:
-1. Aceda ao site da DGEG
+1. Aceda ao site
 2. Consulte a base de dados de certificados
 3. Introduza o número do certificado
 4. Verifique os dados
 
 ### Validade do Técnico:
 1. Peça o número de certificação
-2. Consulte a lista de técnicos certificados
+2. Consulte a lista de técnicos com experiência
 3. Verifique a categoria e validade
 
 ## Certificação vs. Inspeção
@@ -634,7 +634,7 @@ Algumas instalações requerem inspeções regulares:
 - Certificado de exploração
 
 ### Processo:
-1. Instalação por técnico certificado
+1. Instalação por técnico com experiência
 2. Emissão de certificado
 3. Registo na DGEG
 4. Inspeção (se necessário)
@@ -643,7 +643,7 @@ Algumas instalações requerem inspeções regulares:
 ## Dicas para Facilitar o Processo
 
 ### Antes da Certificação:
-- ✓ Escolha técnico certificado
+- ✓ Escolha técnico com experiência
 - ✓ Peça orçamento detalhado
 - ✓ Prepare documentação necessária
 - ✓ Garanta acesso a todas as áreas
@@ -672,14 +672,14 @@ Geralmente 1-3 dias após inspeção.
 Devem ser feitas correções antes da certificação.
 
 ### Posso fazer eu próprio a instalação?
-Não. Apenas técnicos certificados podem emitir certificados.
+Não. Apenas técnicos com experiência podem emitir certificados.
 
 ### O certificado é transferível?
 Sim, fica associado ao imóvel.
 
 ## Conclusão
 
-A certificação elétrica é um documento essencial que garante a segurança da sua instalação elétrica. Não deixe para a última hora - se precisa de certificação, contacte um profissionais qualificados o quanto antes.
+A certificação elétrica é um documento essencial que garante a segurança da sua instalação elétrica. Não deixe para a última hora - se precisa de certificação, contacte um profissionais com experiência o quanto antes.
 
 A **Eletricista Profissional** tem técnicos com formação adequada prontos para inspecionar a sua instalação elétrica em Bragança e arredores. Processo rápido, preços transparentes e relatório técnico detalhado.
 
@@ -871,7 +871,7 @@ Os painéis solares tornaram-se uma opção cada vez mais popular em Portugal. N
  - Estruturas de montagem
  - Cabos e proteções
 
-5. **Registo na DGEG:**
+5. **Registo na:**
  - Unidade de Produção para Autoconsumo (UPAC)
  - Documentação necessária
 
@@ -964,7 +964,7 @@ Não instale sistema muito pequeno para "poupar". Vai arrepender-se.
 Qualidade importa. Painéis baratos podem não durar.
 
 ### 3. Instalador Não Certificado
-Apenas técnicos certificados podem emitir documentação necessária.
+Apenas técnicos com experiência podem emitir documentação necessária.
 
 ### 4. Ignorar Sombreamentos
 Sombras reduzem drasticamente a produção.
@@ -993,7 +993,7 @@ Painéis valorizam o imóvel. Pode vender com eles ou removê-los.
 
 Instalar painéis solares é um investimento inteligente que se paga a si próprio em poucos anos, enquanto contribui para um futuro mais sustentável. Com os incentivos disponíveis em Portugal, nunca houve melhor altura para fazer a transição para energia solar.
 
-A **Eletricista Profissional** é especialista em instalação de painéis solares em Bragança. Fazemos todo o processo desde o projeto até à ativação, incluindo certificação e registo na DGEG. Contacte-nos para uma avaliação gratuita.
+A **Eletricista Profissional** é especialista em instalação de painéis solares em Bragança. Fazemos todo o processo desde o projeto até à ativação, incluindo certificação e registo na. Contacte-nos para uma avaliação gratuita.
 
 **Ligue agora: 932 321 892**
 `

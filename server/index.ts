@@ -66,7 +66,7 @@ async function startServer() {
  },
  "/equipa": {
  title: "Equipa | Norte Reparos - Eletricista Profissional Trás-os-Montes",
- description: "Conheça a nossa equipa de eletricistas profissionais em Trás-os-Montes. Formação contínua DGEG, equipamento profissional, certificação CERTIEL.",
+ description: "Conheça a nossa equipa de eletricistas profissionais em Trás-os-Montes. Formação contínua, equipamento profissional, certificação profissional.",
  canonical: "https://eletricista-norte-reparos.pt/equipa"
  },
  "/precos-eletricista": {
