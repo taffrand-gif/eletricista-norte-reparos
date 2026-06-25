@@ -46,6 +46,10 @@
  "destination": "/disjuntores-:city.html"
  },
  {
+ "source": "/disjuntor-disparar-:city",
+ "destination": "/disjuntor-disparar-:city.html"
+ },
+ {
  "source": "/blog/:slug",
  "destination": "/blog/:slug.html"
  },
