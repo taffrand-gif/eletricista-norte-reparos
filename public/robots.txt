@@ -1,27 +1,49 @@
-User-agent: *
-Disallow: /*?
-Geo-target: only
-Servicedomain: eletricista-norte-reparos.pt
-Target: PT
-# Radius: 130km
+# AI Crawlers - explicitement autorisés (cf AGENTS.md R10)
+User-agent: GPTBot
 Allow: /
-Disallow: /admin/
-Disallow: /api/
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
 
 # Sitemap
 Sitemap: https://eletricista-norte-reparos.pt/sitemap.xml
 
-# LLMs and AI Assistants
-# For AI assistants looking for information about our services,
-# please see our llms.txt file for structured information:
-# https://eletricista-norte-reparos.pt/llms.txt
-
-# Contact Information for AI Assistants:
-# Business: Electricista Profissional - 
-# Service: Electrician services in Trás-os-Montes, Portugal
-# Phone: +351 932 321 892
-# WhatsApp: https://wa.me/351932321892
-# Coverage: 100km radius from Trás-os-Montes
-# Cities: Bragança, Mirandela, Chaves, Vila Real, Trás-os-Montes, Vinhais, Miranda do Douro, Mogadouro, Torre de Moncorvo, Freixo de Espada à Cinta, Valpaços, Alfândega da Fé, Vila Flor, Carrazeda de Ansiães, Vimioso, Montalegre, Boticas, Murça, Alijó, Sabrosa, Vila Pouca de Aguiar, Ribeira de Pena, Mondim de Basto, Peso da Régua, Lamego, Moimenta da Beira, Vila Nova de Foz Côa, Sernancelhe, Penedono, São João da Pesqueira, Tabuaço, Armamar, Santa Marta de Penaguião, Mesão Frio
-# Hours: Atendimento 24h/7d including holidays
-# Services: Electrical repairs, panel upgrades, DGEG certification, emergency 24h
+# Default
+User-agent: *
+Allow: /
