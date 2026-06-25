@@ -105,9 +105,9 @@ export default function IluminacaoInteligenteCasa() {
  <ul>
  <li><strong>Controlo remoto:</strong> Ligar/desligar de qualquer lugar</li>
  <li><strong>Ajuste intensidade:</strong> Dimmer 0-100%</li>
- <li><strong>Mudança cor:</strong> 16 milhões de cores (RGB)</li>
+ <li><strong>Mudança cor:</strong> 16 milhões de cores (RGB</li>
  <li><strong>Horários:</strong> Automação por hora/dia</li>
- <li><strong>Cenas:</strong> Configurações pré-definidas (cinema, jantar, leitura)</li>
+ <li><strong>Cenas:</strong> Configurações pré-definidas (cinema, jantar, leitura</li>
  <li><strong>Sensores:</strong> Movimento, luminosidade, presença</li>
  <li><strong>Integração:</strong> Alexa, Google Home, Apple HomeKit</li>
  </ul>
@@ -131,9 +131,9 @@ export default function IluminacaoInteligenteCasa() {
  </p>
  <p><strong>Vantagens:</strong></p>
  <ul>
- <li>Funcionam com lâmpadas normais (mais baratas)</li>
+ <li>Funcionam com lâmpadas normais (mais baratas</li>
  <li>Controlo múltiplas lâmpadas com 1 interruptor</li>
- <li>Mantêm funcionalidade física (botão)</li>
+ <li>Mantêm funcionalidade física (botão</li>
  </ul>
  <p><strong>Preço:</strong> 25-60€ por interruptor + instalação 30-50€</p>
  <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">3. Fitas LED Inteligentes</h3>
@@ -143,9 +143,9 @@ export default function IluminacaoInteligenteCasa() {
  <p><strong>Aplicações:</strong></p>
  <ul>
  <li>Iluminação ambiente sala/quarto</li>
- <li>Cozinha (sob armários)</li>
+ <li>Cozinha (sob armários</li>
  <li>Escadas/corredores</li>
- <li>Exterior (IP65)</li>
+ <li>Exterior (IP65</li>
  </ul>
  <p><strong>Preço:</strong> 20-50€ por 5 metros</p>
  <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">4. Sensores de Movimento</h3>
@@ -191,10 +191,10 @@ export default function IluminacaoInteligenteCasa() {
  Conforto e Conveniência
  </h4>
  <ul className="space-y-2 text-gray-700">
- <li>✓ Controlo remoto (fora de casa)</li>
- <li>✓ Comando voz (mãos livres)</li>
+ <li>✓ Controlo remoto (fora de casa</li>
+ <li>✓ Comando voz (mãos livres</li>
  <li>✓ Cenas personalizadas</li>
- <li>✓ Acordar gradual (simulação nascer sol)</li>
+ <li>✓ Acordar gradual (simulação nascer sol</li>
  <li>✓ Não procurar interruptores no escuro</li>
  </ul>
  </div>
@@ -204,7 +204,7 @@ export default function IluminacaoInteligenteCasa() {
  Segurança
  </h4>
  <ul className="space-y-2 text-gray-700">
- <li>✓ Simulação presença (férias)</li>
+ <li>✓ Simulação presença (férias</li>
  <li>✓ Iluminação automática exterior</li>
  <li>✓ Alertas movimento suspeito</li>
  <li>✓ Iluminação emergência</li>

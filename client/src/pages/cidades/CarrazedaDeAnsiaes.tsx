@@ -67,16 +67,16 @@ export default function CarrazedaDeAnsiaes() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Carrazeda de Ansiães?",
-    answer: "Chegamos a Carrazeda de Ansiaes em aproximadamente 30-40 minutos a partir de Trás-os-Montes. Cobrimos todo o conselho.",
-  },
+ answer: "Chegamos a Carrazeda de Ansiaes em aproximadamente 30-40 minutos a partir de Trás-os-Montes. Cobrimos todo o conselho.",
+ },
  {
  question: "Trabalham nas quintas do Douro em Carrazeda?",
-    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
-  },
+ answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ },
  {
  question: "Qual o custo de deslocação a Carrazeda de Ansiães?",
-    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
-  },
+ answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ },
 ];
 
  return (

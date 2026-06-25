@@ -16,7 +16,7 @@ tags: ['painéis solares', 'energia solar', 'trás-os-montes', 'instalação', '
 
 ### Condições Climáticas Ideais
 - **Horas de sol anuais:** 2.800-3.000 horas
-- **Radiação solar média:** 1.600 kWh/m²/ano  
+- **Radiação solar média:** 1.600 kWh/m²/ano 
 - **Temperaturas moderadas:** Aumentam eficiência dos painéis
 - **Pouca poluição luminosa:** Céus limpos na maior parte do ano
 

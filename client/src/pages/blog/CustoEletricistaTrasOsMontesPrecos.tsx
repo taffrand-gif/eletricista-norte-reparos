@@ -10,13 +10,13 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  description: 'Tabela completa de preços para serviços elétricos em Trás-os-Montes. Instalações, arranjos, certificação e custos por hora.',
  keywords: 'preço eletricista, custo instalação elétrica, preços eletricista Trás-os-Montes, quanto custa eletricista, orçamento instalação elétrica',
  schema: generateArticleSchema({
-   title: 'Quanto Custa um Eletricista em Trás-os-Montes? Guia de Preços 2026',
-   description: 'Tabela completa de preços para serviços elétricos em Trás-os-Montes. Instalações, arranjos, certificação e custos por hora.',
-   author: 'Norte Reparos',
-   publishedTime: '2026-02-18',
-   modifiedTime: '2026-06-17',
-   image: 'https://eletricista-norte-reparos.pt/images-optimized/blog/precos-eletricista-guia.jpg',
-   url: 'https://eletricista-norte-reparos.pt/blog/custo-eletricista-tras-os-montes-precos'
+ title: 'Quanto Custa um Eletricista em Trás-os-Montes? Guia de Preços 2026',
+ description: 'Tabela completa de preços para serviços elétricos em Trás-os-Montes. Instalações, arranjos, certificação e custos por hora.',
+ author: 'Norte Reparos',
+ publishedTime: '2026-02-18',
+ modifiedTime: '2026-06-17',
+ image: 'https://eletricista-norte-reparos.pt/images-optimized/blog/precos-eletricista-guia.jpg',
+ url: 'https://eletricista-norte-reparos.pt/blog/custo-eletricista-tras-os-montes-precos'
  })
  });
  return (
@@ -24,26 +24,26 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  title="Quanto Custa um Eletricista em Trás-os-Montes? Guia de Preços 2026"
  description="Tabela detalhada e transparente de preços para todos os serviços elétricos na região de Trás-os-Montes"
  >
-       <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Article",
-          "headline": "Quanto Custa um Eletricista em Trás-os-Montes? Guia de Preços 2026",
-          "author": { "@type": "Organization", "name": "Norte Reparos" },
-          "publisher": {
-            "@type": "Organization",
-            "name": "Norte Reparos",
-            "url": "https://eletricista-norte-reparos.pt",
-            "logo": { "@type": "ImageObject", "url": "https://eletricista-norte-reparos.pt/logo.png" }
-          },
-          "datePublished": "2026-01-01",
-          "dateModified": "2026-06-18",
-          "url": "https://eletricista-norte-reparos.pt/blog/custo-eletricista-tras-os-montes-precos",
-          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://eletricista-norte-reparos.pt/blog/custo-eletricista-tras-os-montes-precos" }
-        }) }}
-      />
-      <article className="max-w-4xl mx-auto">
+ <script
+ type="application/ld+json"
+ dangerouslySetInnerHTML={{ __html: JSON.stringify({
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "Quanto Custa um Eletricista em Trás-os-Montes? Guia de Preços 2026",
+ "author": { "@type": "Organization", "name": "Norte Reparos" },
+ "publisher": {
+ "@type": "Organization",
+ "name": "Norte Reparos",
+ "url": "https://eletricista-norte-reparos.pt",
+ "logo": { "@type": "ImageObject", "url": "https://eletricista-norte-reparos.pt/logo.png" }
+ },
+ "datePublished": "2026-01-01",
+ "dateModified": "2026-06-18",
+ "url": "https://eletricista-norte-reparos.pt/blog/custo-eletricista-tras-os-montes-precos",
+ "mainEntityOfPage": { "@type": "WebPage", "@id": "https://eletricista-norte-reparos.pt/blog/custo-eletricista-tras-os-montes-precos" }
+ }) }}
+ />
+ <article className="max-w-4xl mx-auto">
  {/* Meta info */}
  <div className="mb-8">
  <div className="flex flex-wrap items-center gap-4 text-gray-600 mb-4">
@@ -198,9 +198,9 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-6 mt-6">
  <h3 className="font-bold text-yellow-800 text-lg mb-2">📝 Notas Importantes:</h3>
  <ul className="text-yellow-700 space-y-2">
- <li>• <strong>Todos os preços incluem IVA a 23%</strong> (salvo indicação contrária)</li>
- <li>• <strong>Deslocação:</strong> Incluída até 30km. Acima: +0,60€/km (ida e volta)</li>
- <li>• <strong>Materiais:</strong> Não incluídos (ver tabela de materiais abaixo)</li>
+ <li>• <strong>Todos os preços incluem IVA a 23%</strong> (salvo indicação contrária</li>
+ <li>• <strong>Deslocação:</strong> Incluída até 30km. Acima: +0,60€/km (ida e volta</li>
+ <li>• <strong>Materiais:</strong> Não incluídos (ver tabela de materiais abaixo</li>
  <li>• <strong>Emergências:</strong> Fora horário comercial: +40-60% sobre preço base</li>
  <li>• <strong>Casas anteriores a 1980:</strong> +20-40% devido a complexidade</li>
  </ul>

@@ -8,25 +8,25 @@ export default function TrustBadges() {
  title: 'Preço Fixo Garantido',
  description: 'Sem surpresas na fatura'},
 {
-  icon: '🛡️',
-  title: 'Garantia Escrita',
-  description: 'Intervenção gratuita'},
-  {
-  icon: '📞',
-  title: 'Orçamento Grátis',
-  description: 'Confirmação imediata por telefone'},
-  {
-  icon: '✅',
-  title: 'Sem Taxas Escondidas',
-  description: 'Transparência total'},
-  {
-  icon: '🏆',
-  title: 'Trabalho Garantido',
-  description: isPlumber ? 'Por escrito' : 'Por escrito'},
-  {
-  icon: '⚡',
-  title: 'Resposta mediante contacto',
-  description: 'Atendimento 24h'},
+ icon: '🛡️',
+ title: 'Garantia Escrita',
+ description: 'Intervenção gratuita'},
+ {
+ icon: '📞',
+ title: 'Orçamento Grátis',
+ description: 'Confirmação imediata por telefone'},
+ {
+ icon: '✅',
+ title: 'Sem Taxas Escondidas',
+ description: 'Transparência total'},
+ {
+ icon: '🏆',
+ title: 'Trabalho Garantido',
+ description: isPlumber ? 'Por escrito' : 'Por escrito'},
+ {
+ icon: '⚡',
+ title: 'Resposta mediante contacto',
+ description: 'Atendimento 24h'},
  {
  icon: '💯',
  title: '',

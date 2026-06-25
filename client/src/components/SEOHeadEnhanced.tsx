@@ -159,7 +159,7 @@ export default function SEOHeadEnhanced({
  `https://wa.me/${config.whatsapp}?text=${encodeURIComponent(config.whatsappMessage)}`
  ]
  };
-  schemaScript.text = JSON.stringify(schemaData);
+ schemaScript.text = JSON.stringify(schemaData);
  
  // Supprimer l'ancien script schema s'il existe
  const oldSchema = document.querySelector('script[type="application/ld+json"]');

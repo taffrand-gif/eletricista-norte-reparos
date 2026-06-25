@@ -50,12 +50,12 @@ export default function Servicos() {
  priceRange: 'A partir de €80'
  },
  {
- title: 'Certificação Elétrica DGEG',
+ title: 'Certificação Elétrica ',
  description: 'Inspeção e certificação elétrica obrigatória para venda e arrendamento de imóveis. Emissão de certificado válido e registado, cumprindo todas as exigências legais.',
  features: [
  'Inspeção completa da instalação elétrica',
  'Testes de segurança e funcionamento',
- 'Emissão de certificado oficial DGEG',
+ 'Emissão de certificado oficial ',
  'Registo no sistema nacional',
  'Validade legal garantida'
  ],

@@ -188,8 +188,8 @@ function App() {
  <TooltipProvider>
  <SkipLink />
 <Toaster />
-  <StructuredData />
-  <Suspense fallback={null}>
+ <StructuredData />
+ <Suspense fallback={null}>
  <ExitIntentPopup />
  <QuoteCalculator />
  <LocationDetector />

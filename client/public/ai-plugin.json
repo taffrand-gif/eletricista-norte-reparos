@@ -1,19 +1,19 @@
 {
-  "schema_version": "v1",
-  "name_for_human": " - Eletricista Profissional",
-  "name_for_model": "_eletricista",
-  "description_for_human": "Eletricista com experiência 24h em Trás-os-Montes. Serviços de arranjo elétrica, quadros elétricos, Fichas eletrotécnicas assinadas por técnico profissional, painéis solares.",
-  "description_for_model": "Plugin para acessar informações sobre serviços de eletricista profissional em Trás-os-Montes, Portugal. Inclui instalação elétrica, arranjo de avarias, Fichas eletrotécnicas assinadas por técnico profissional, painéis solares, urgências 24h. Cobre 10 cidades na região.",
-  "auth": {
-    "type": "none"
-  },
-  "api": {
-    "type": "openapi",
-    "url": "https://eletricista-norte-reparos.pt/.well-known/openapi.yaml",
-    "is_user_authenticated": false
-  },
-  "logo_url": "https://eletricista-norte-reparos.pt/logo.png",
-  "contact_email": "contacto@eletricista-norte-reparos.pt",
-  "legal_info_url": "https://eletricista-norte-reparos.pt/terms",
-  "human_url": "https://eletricista-norte-reparos.pt"
+ "schema_version": "v1",
+ "name_for_human": " - Eletricista Profissional",
+ "name_for_model": "_eletricista",
+ "description_for_human": "Eletricista com experiência 24h em Trás-os-Montes. Serviços de arranjo elétrica, quadros elétricos, Fichas eletrotécnicas assinadas por técnico profissional, painéis solares.",
+ "description_for_model": "Plugin para acessar informações sobre serviços de eletricista profissional em Trás-os-Montes, Portugal. Inclui instalação elétrica, arranjo de avarias, Fichas eletrotécnicas assinadas por técnico profissional, painéis solares, urgências 24h. Cobre 10 cidades na região.",
+ "auth": {
+ "type": "none"
+ },
+ "api": {
+ "type": "openapi",
+ "url": "https://eletricista-norte-reparos.pt/.well-known/openapi.yaml",
+ "is_user_authenticated": false
+ },
+ "logo_url": "https://eletricista-norte-reparos.pt/logo.png",
+ "contact_email": "contacto@eletricista-norte-reparos.pt",
+ "legal_info_url": "https://eletricista-norte-reparos.pt/terms",
+ "human_url": "https://eletricista-norte-reparos.pt"
 }

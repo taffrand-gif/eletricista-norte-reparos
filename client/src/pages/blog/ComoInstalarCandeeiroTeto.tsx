@@ -8,13 +8,13 @@ const ComoInstalarCandeeiroTeto: React.FC = () => {
  description: 'Guia passo a passo para instalar um candeeiro de teto de forma segura. Aprenda as normas de segurança, ferramentas necessárias e quando chamar um profissional.',
  keywords: 'instalar candeeiro teto, como ligar fios, eletricista DIY, segurança elétrica, instalação luminária',
  schema: generateArticleSchema({
-   title: 'Como Instalar um Candeeiro de Teto com Segurança: Guia Completo 2026',
-   description: 'Guia passo a passo para instalar um candeeiro de teto de forma segura. Aprenda as normas de segurança, ferramentas necessárias e quando chamar um profissional.',
-   author: 'Norte Reparos',
-   publishedTime: '2024-01-01',
-   modifiedTime: '2026-06-17',
-   image: 'https://eletricista-norte-reparos.pt/og-image.jpg',
-   url: 'https://eletricista-norte-reparos.pt/blog/como-instalar-candeeiro-teto-seguranca'
+ title: 'Como Instalar um Candeeiro de Teto com Segurança: Guia Completo 2026',
+ description: 'Guia passo a passo para instalar um candeeiro de teto de forma segura. Aprenda as normas de segurança, ferramentas necessárias e quando chamar um profissional.',
+ author: 'Norte Reparos',
+ publishedTime: '2024-01-01',
+ modifiedTime: '2026-06-17',
+ image: 'https://eletricista-norte-reparos.pt/og-image.jpg',
+ url: 'https://eletricista-norte-reparos.pt/blog/como-instalar-candeeiro-teto-seguranca'
  })
  });
  return (
@@ -22,53 +22,53 @@ const ComoInstalarCandeeiroTeto: React.FC = () => {
  title="Como Instalar um Candeeiro de Teto com Segurança"
  description="Guia completo para instalação segura de candeeiros de teto - passo a passo com imagens e dicas de segurança"
  >
-       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "HowTo",
-        "name": "Como Instalar um Candeeiro de Teto com Segurança",
-        "description": "Guia passo a passo para instalar um candeeiro de teto de forma segura, desde as ferramentas necessárias até ao teste final.",
-        "totalTime": "PT45M",
-        "url": "https://eletricista-norte-reparos.pt/blog/como-instalar-candeeiro-teto-seguranca",
-        "step": [
-          {"@type": "HowToStep", "name": "Reúna as ferramentas necessárias", "text": "Prepare chave de fendas isolada, alicate de eletricista, detetor de tensão, fita isoladora e escada estável."},
-          {"@type": "HowToStep", "name": "Desligue a corrente no quadro elétrico", "text": "Vá ao quadro elétrico e desligue o disjuntor do circuito de iluminação. Confirme a ausência de tensão com detetor."},
-          {"@type": "HowToStep", "name": "Remova o candeeiro existente", "text": "Desenrosque o candeeiro antigo com cuidado. Suporte o peso para não danificar os fios durante a remoção."},
-          {"@type": "HowToStep", "name": "Identifique e prepare os fios", "text": "Identifique fase (castanho/vermelho), neutro (azul) e terra (verde-amarelo). Descasque 1cm de cada fio se necessário."},
-          {"@type": "HowToStep", "name": "Ligue os fios ao novo candeeiro", "text": "Conecte fase ao terminal L, neutro ao N, e terra ao símbolo de terra. Aperte bem os terminais sem deixar fio exposto."},
-          {"@type": "HowToStep", "name": "Fixe o suporte ao teto e monte o candeeiro", "text": "Prenda o suporte com os parafusos fornecidos. Encaixe o candeeiro com segurança e verifique que está firme."},
-          {"@type": "HowToStep", "name": "Restaure a corrente e teste", "text": "Ligue o disjuntor no quadro. Teste o candeeiro. Se o diferencial disparar ou a luz não acender, desligue e reveja as ligações."}
-        ]
-      }) }} />
-       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "url": "https://eletricista-norte-reparos.pt/blog/como-instalar-candeeiro-teto-seguranca",
-        "mainEntity": [
-          {"@type": "Question", "name": "Posso instalar um candeeiro de teto se não tenho experiência?", "acceptedAnswer": {"@type": "Answer", "text": "Para instalações simples em casas com instalação elétrica moderna e em bom estado, sim, seguindo rigorosamente as medidas de segurança. Se tem dúvidas ou a casa tem mais de 20 anos, recomenda-se chamar um profissional."}},
-          {"@type": "Question", "name": "Quanto custa a instalação de candeeiro por um eletricista em Trás-os-Montes?", "acceptedAnswer": {"@type": "Answer", "text": "Em Trás-os-Montes, o preço médio para instalação de um candeeiro simples varia entre 25€ e 50€, dependendo da complexidade e deslocação. Para instalações múltiplas ou sistemas complexos, o preço pode ser superior."}},
-          {"@type": "Question", "name": "É obrigatório desligar a corrente para instalar candeeiro?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, é absolutamente obrigatório. Desligue o disjuntor correspondente no quadro elétrico e confirme com detetor de tensão que não há corrente antes de tocar em qualquer fio."}}
-        ]
-      }) }} />
-       <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Article",
-          "headline": "Como Instalar um Candeeiro de Teto com Segurança: Guia Completo 2026",
-          "author": { "@type": "Organization", "name": "Norte Reparos" },
-          "publisher": {
-            "@type": "Organization",
-            "name": "Norte Reparos",
-            "url": "https://eletricista-norte-reparos.pt",
-            "logo": { "@type": "ImageObject", "url": "https://eletricista-norte-reparos.pt/logo.png" }
-          },
-          "datePublished": "2026-01-01",
-          "dateModified": "2026-06-18",
-          "url": "https://eletricista-norte-reparos.pt/blog/como-instalar-candeeiro-teto",
-          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://eletricista-norte-reparos.pt/blog/como-instalar-candeeiro-teto" }
-        }) }}
-      />
-      <article className="max-w-4xl mx-auto">
+ <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+ "@context": "https://schema.org",
+ "@type": "HowTo",
+ "name": "Como Instalar um Candeeiro de Teto com Segurança",
+ "description": "Guia passo a passo para instalar um candeeiro de teto de forma segura, desde as ferramentas necessárias até ao teste final.",
+ "totalTime": "PT45M",
+ "url": "https://eletricista-norte-reparos.pt/blog/como-instalar-candeeiro-teto-seguranca",
+ "step": [
+ {"@type": "HowToStep", "name": "Reúna as ferramentas necessárias", "text": "Prepare chave de fendas isolada, alicate de eletricista, detetor de tensão, fita isoladora e escada estável."},
+ {"@type": "HowToStep", "name": "Desligue a corrente no quadro elétrico", "text": "Vá ao quadro elétrico e desligue o disjuntor do circuito de iluminação. Confirme a ausência de tensão com detetor."},
+ {"@type": "HowToStep", "name": "Remova o candeeiro existente", "text": "Desenrosque o candeeiro antigo com cuidado. Suporte o peso para não danificar os fios durante a remoção."},
+ {"@type": "HowToStep", "name": "Identifique e prepare os fios", "text": "Identifique fase (castanho/vermelho), neutro (azul) e terra (verde-amarelo). Descasque 1cm de cada fio se necessário."},
+ {"@type": "HowToStep", "name": "Ligue os fios ao novo candeeiro", "text": "Conecte fase ao terminal L, neutro ao N, e terra ao símbolo de terra. Aperte bem os terminais sem deixar fio exposto."},
+ {"@type": "HowToStep", "name": "Fixe o suporte ao teto e monte o candeeiro", "text": "Prenda o suporte com os parafusos fornecidos. Encaixe o candeeiro com segurança e verifique que está firme."},
+ {"@type": "HowToStep", "name": "Restaure a corrente e teste", "text": "Ligue o disjuntor no quadro. Teste o candeeiro. Se o diferencial disparar ou a luz não acender, desligue e reveja as ligações."}
+ ]
+ }) }} />
+ <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "url": "https://eletricista-norte-reparos.pt/blog/como-instalar-candeeiro-teto-seguranca",
+ "mainEntity": [
+ {"@type": "Question", "name": "Posso instalar um candeeiro de teto se não tenho experiência?", "acceptedAnswer": {"@type": "Answer", "text": "Para instalações simples em casas com instalação elétrica moderna e em bom estado, sim, seguindo rigorosamente as medidas de segurança. Se tem dúvidas ou a casa tem mais de 20 anos, recomenda-se chamar um profissional."}},
+ {"@type": "Question", "name": "Quanto custa a instalação de candeeiro por um eletricista em Trás-os-Montes?", "acceptedAnswer": {"@type": "Answer", "text": "Em Trás-os-Montes, o preço médio para instalação de um candeeiro simples varia entre 25€ e 50€, dependendo da complexidade e deslocação. Para instalações múltiplas ou sistemas complexos, o preço pode ser superior."}},
+ {"@type": "Question", "name": "É obrigatório desligar a corrente para instalar candeeiro?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, é absolutamente obrigatório. Desligue o disjuntor correspondente no quadro elétrico e confirme com detetor de tensão que não há corrente antes de tocar em qualquer fio."}}
+ ]
+ }) }} />
+ <script
+ type="application/ld+json"
+ dangerouslySetInnerHTML={{ __html: JSON.stringify({
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "Como Instalar um Candeeiro de Teto com Segurança: Guia Completo 2026",
+ "author": { "@type": "Organization", "name": "Norte Reparos" },
+ "publisher": {
+ "@type": "Organization",
+ "name": "Norte Reparos",
+ "url": "https://eletricista-norte-reparos.pt",
+ "logo": { "@type": "ImageObject", "url": "https://eletricista-norte-reparos.pt/logo.png" }
+ },
+ "datePublished": "2026-01-01",
+ "dateModified": "2026-06-18",
+ "url": "https://eletricista-norte-reparos.pt/blog/como-instalar-candeeiro-teto",
+ "mainEntityOfPage": { "@type": "WebPage", "@id": "https://eletricista-norte-reparos.pt/blog/como-instalar-candeeiro-teto" }
+ }) }}
+ />
+ <article className="max-w-4xl mx-auto">
  {/* Meta info */}
  <div className="mb-8">
  <div className="flex flex-wrap items-center gap-4 text-gray-600 mb-4">
@@ -155,7 +155,7 @@ const ComoInstalarCandeeiroTeto: React.FC = () => {
  <h3 className="font-bold text-gray-900 mb-3">Materiais</h3>
  <ul className="space-y-2">
  <li className="flex items-center gap-2">✅ Candeeiro novo</li>
- <li className="flex items-center gap-2">✅ Suporte de teto (se necessário)</li>
+ <li className="flex items-center gap-2">✅ Suporte de teto (se necessário</li>
  <li className="flex items-center gap-2">✅ Bornes de ligação</li>
  <li className="flex items-center gap-2">✅ Parafusos adequados</li>
  <li className="flex items-center gap-2">✅ Luvas de proteção</li>

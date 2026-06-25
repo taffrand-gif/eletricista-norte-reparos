@@ -15,12 +15,12 @@ function Hero() {
  const { trackPhoneClick, trackWhatsAppClick } = useAnalytics();
  const { city, arrivalTime } = useLocationContent();
 // Título e subtítulo personalizados
-  const personalizedTitle = useMemo(() => {
-    return config.hero.title;
-  }, [config.hero.title]);
-  const personalizedSubtitle = useMemo(() => {
-    return `Ao seu domicílio em Trás-os-Montes — 24h/7d. Sem surpresas.`;
-  }, []);
+ const personalizedTitle = useMemo(() => {
+ return config.hero.title;
+ }, [config.hero.title]);
+ const personalizedSubtitle = useMemo(() => {
+ return `Ao seu domicílio em Trás-os-Montes — 24h/7d. Sem surpresas.`;
+ }, []);
  const whatsappMessage = usePersonalizedWhatsAppMessage(config.whatsappMessage);
  return (
  <section
@@ -51,8 +51,8 @@ function Hero() {
  {/* Badge de urgência */}
  <div className="mb-6 inline-block">
 <div className="bg-red-600 text-white px-6 py-2 rounded-full font-bold text-sm animate-pulse">
-    ⚡ TÉCNICO DISPONÍVEL EM {city.toUpperCase()} • SERVIÇO AO DOMICÍLIO
-  </div>
+ ⚡ TÉCNICO DISPONÍVEL EM {city.toUpperCase()} • SERVIÇO AO DOMICÍLIO
+ </div>
  </div>
  {/* Botões CTA — mobile: largura total empilhados, desktop: inline */}
  <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

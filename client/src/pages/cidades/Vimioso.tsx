@@ -67,16 +67,16 @@ export default function Vimioso() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Vimioso?",
-    answer: "Chegamos a Vimioso em aproximadamente 50-60 minutos a partir de Trás-os-Montes. Cobrimos todo o conselho.",
-  },
+ answer: "Chegamos a Vimioso em aproximadamente 50-60 minutos a partir de Trás-os-Montes. Cobrimos todo o conselho.",
+ },
  {
  question: "Servem as aldeias fronteiriças do concelho de Vimioso?",
-    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
-  },
+ answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ },
  {
  question: "Qual o custo de deslocação a Vimioso?",
-    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
-  },
+ answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ },
 ];
 
  return (

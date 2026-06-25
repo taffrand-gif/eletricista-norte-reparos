@@ -39,7 +39,7 @@ export const eletricistaFAQs: FAQ[] = [
  },
  {
 question: "têm experiência ?",
-  answer: "Sim, temos técnicos experientes com formação profissional. Todos os trabalhos incluem documentação técnica conforme legislação portuguesa."
+ answer: "Sim, temos técnicos experientes com formação profissional. Todos os trabalhos incluem documentação técnica conforme legislação portuguesa."
  },
  {
  question: "Trabalham Atendimento 24h/7d?",

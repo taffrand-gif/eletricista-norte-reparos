@@ -29,30 +29,30 @@ de Trás-os-Montes, Portugal.
 
 ```
 .
-├── client/                 # Code source front-end (templates + assets)
-│   ├── public/             # Fichiers statiques servis en prod (HTML, CSS, images, sitemap)
-│   │   ├── *.html          # Pages individuelles (≈ 10 000+)
-│   │   ├── styles.css      # CSS global
-│   │   └── sitemap*.xml    # Sitemaps
-│   └── src/                # Templates, composants React, configurations partagées
-│       ├── components/     # Composants UI (Header, Footer, Hero, etc.)
-│       ├── pages/          # Templates de pages (CityPage, ServicePage, etc.)
-│       └── contexts/       # Contextes React (SiteContext, etc.)
-├── shared/                 # Configuration partagée (services, villes, SEO, topics)
-│   ├── siteConfig.ts       # Branding (téléphone, couleurs, NAP)
-│   ├── serviceConfig.ts    # Catalogue de services
-│   ├── cityServiceMatrix.ts# Matrice villes × services
-│   ├── seoKeywords.ts      # Mots-clés SEO
-│   └── topicClusters.ts    # Clusters de sujets pour le blog
-├── scripts/                # Scripts de génération et maintenance
-│   ├── generate-sitemap.ts # Génération sitemaps
-│   ├── generate-favicons.* # Génération favicons multi-formats
-│   ├── optimize-images.js  # Optimisation images (WebP, compression)
-│   └── archive/            # Scripts one-shot archivés (Lot 1+)
-├── vercel.json             # Configuration Vercel (redirects, rewrites, headers)
-├── robots.txt              # Directives crawlers
-├── package.json            # Dépendances npm
-└── README.md               # Ce fichier
+├── client/ # Code source front-end (templates + assets)
+│ ├── public/ # Fichiers statiques servis en prod (HTML, CSS, images, sitemap)
+│ │ ├── *.html # Pages individuelles (≈ 10 000+)
+│ │ ├── styles.css # CSS global
+│ │ └── sitemap*.xml # Sitemaps
+│ └── src/ # Templates, composants React, configurations partagées
+│ ├── components/ # Composants UI (Header, Footer, Hero, etc.)
+│ ├── pages/ # Templates de pages (CityPage, ServicePage, etc.)
+│ └── contexts/ # Contextes React (SiteContext, etc.)
+├── shared/ # Configuration partagée (services, villes, SEO, topics)
+│ ├── siteConfig.ts # Branding (téléphone, couleurs, NAP)
+│ ├── serviceConfig.ts # Catalogue de services
+│ ├── cityServiceMatrix.ts# Matrice villes × services
+│ ├── seoKeywords.ts # Mots-clés SEO
+│ └── topicClusters.ts # Clusters de sujets pour le blog
+├── scripts/ # Scripts de génération et maintenance
+│ ├── generate-sitemap.ts # Génération sitemaps
+│ ├── generate-favicons.* # Génération favicons multi-formats
+│ ├── optimize-images.js # Optimisation images (WebP, compression)
+│ └── archive/ # Scripts one-shot archivés (Lot 1+)
+├── vercel.json # Configuration Vercel (redirects, rewrites, headers)
+├── robots.txt # Directives crawlers
+├── package.json # Dépendances npm
+└── README.md # Ce fichier
 ```
 
 ## Maintenance courante

@@ -28,7 +28,7 @@ export default function StructuredData() {
  "Mirandela", "Bragança", "Vimioso", "Valpaços", "Murça", "Torre de Moncorvo", "Mogadouro", "Vinhais",
  // Raio 40-60km
  "Freixo de Espada à Cinta", "Miranda do Douro",
- // Raio 60-90km  
+ // Raio 60-90km 
  "Chaves", "Vila Real", "Montalegre", "Boticas", "Alijó", "Sabrosa", "Ribeira de Pena", "Vila Pouca de Aguiar",
  // Raio 90-130km
  "Lamego", "Peso da Régua", "Mesão Frio", "Tabuaço", "Armamar", "Moimenta da Beira",

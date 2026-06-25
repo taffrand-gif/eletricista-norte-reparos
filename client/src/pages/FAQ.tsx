@@ -1,4 +1,4 @@
-// Page FAQ dédiée -  (Eletricista)
+// Page FAQ dédiée - (Eletricista)
 // 20 questions en portugais PT-PT avec Schema.org FAQPage JSON-LD
 // Design accordéon avec useState pour open/close
 // Utilise données partilhées de faqData.ts
@@ -35,7 +35,7 @@ export default function FAQPage() {
  return (
  <>
  <SEOHead 
- title="Perguntas Frequentes |  | Eletricista Trás-os-Montes"
+ title="Perguntas Frequentes | | Eletricista Trás-os-Montes"
  description="Respostas às 20 perguntas mais comuns sobre serviços elétricos: preços, urgências 24h, iluminação, zonas servidas. Eletricista em Bragança."
  canonical="/faq"
  />

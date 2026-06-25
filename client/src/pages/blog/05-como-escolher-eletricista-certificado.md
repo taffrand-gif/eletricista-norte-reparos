@@ -17,7 +17,7 @@ tags: ['escolher electricista', 'certificado', 'guia', 'dicas', 'profissional']
 ### ✅ Documentação Obrigatória
 1. **Cédula profissional** atualizada
 2. **Seguro de responsabilidade civil** válido
-3. **Registo na DGEG** para certificação
+3. **Registo na ** para certificação
 4. **NIF empresarial** regularizado
 5. **Comprovativo de formação** contínua
 

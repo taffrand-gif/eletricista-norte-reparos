@@ -66,13 +66,13 @@ export default function AlfandegaDaFe() {
  const cidadesProximas = getCidadesProximas('alfandega-da-fe');
  const faqs = [
 {
-    question: "Quanto tempo demora a chegar a Alfândega da Fé?",
-    answer: "Chegamos a Alfândega da Fé mediante confirmação por telefone a partir de Trás-os-Montes. Cobrimos todo o conselho.",
-  },
+ question: "Quanto tempo demora a chegar a Alfândega da Fé?",
+ answer: "Chegamos a Alfândega da Fé mediante confirmação por telefone a partir de Trás-os-Montes. Cobrimos todo o conselho.",
+ },
 {
-    question: "Qual o custo de deslocação a Alfândega da Fé?",
-    answer: "A deslocação é de 25€ (Zona 2). Cobrimos todo o conselho incluindo as freguesias.",
-  },
+ question: "Qual o custo de deslocação a Alfândega da Fé?",
+ answer: "A deslocação é de 25€ (Zona 2). Cobrimos todo o conselho incluindo as freguesias.",
+ },
  ];
  return (
  <div className="min-h-screen flex flex-col">

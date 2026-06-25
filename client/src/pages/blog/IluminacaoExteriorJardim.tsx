@@ -282,7 +282,7 @@ export default function IluminacaoExteriorJardim() {
  <ul className="space-y-2 text-sm text-gray-600">
  <li>❌ Consumo elevado</li>
  <li>❌ Duração: 1.000-2.000h</li>
- <li>❌ Frágil (quebra facilmente)</li>
+ <li>❌ Frágil (quebra facilmente</li>
  <li>❌ Aquecimento lento</li>
  <li>❌ Contém gases/mercúrio</li>
  <li>❌ Temperatura fixa</li>

@@ -305,7 +305,7 @@ export default function PoupancaLedEconomiaReal() {
  <ul>
  <li><strong>Durabilidade:</strong> 15-25 anos vs 1 ano (incandescente). Menos substituições, menos trabalho</li>
  <li><strong>Menos calor:</strong> LED não aquece. Reduz carga de ar condicionado no verão</li>
- <li><strong>Ligar instantâneo:</strong> Luz máxima mediante confirmação (vs fluorescente que demora)</li>
+ <li><strong>Ligar instantâneo:</strong> Luz máxima mediante confirmação (vs fluorescente que demora</li>
  <li><strong>Sem mercúrio:</strong> Ecológico, não contamina se partir</li>
  <li><strong>Variedade de cores:</strong> Branco quente, neutro, frio. Escolha conforme ambiente</li>
  <li><strong>Regulável:</strong> LED dimerizável permite ajustar intensidade</li>

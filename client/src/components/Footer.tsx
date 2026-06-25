@@ -94,7 +94,7 @@ function Footer() {
  <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
  <div>
 <p className="font-bold">Zona de Cobertura:</p>
-  <p className="text-gray-200">Trás-os-Montes e Norte de Portugal</p>
+ <p className="text-gray-200">Trás-os-Montes e Norte de Portugal</p>
  </div>
  </li>
  </ul>

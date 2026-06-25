@@ -66,17 +66,17 @@ export default function Valpacos() {
  const cidadesProximas = getCidadesProximas('valpacos');
  const faqs = [
 {
-    question: "Quanto tempo demora a chegar a Valpaços?",
-    answer: "Chegamos a Valpaços em aproximadamente 50-60 minutos. Cobrimos todo o conselho incluindo as freguesias rurais dedicadas à olivicultura.",
-  },
+ question: "Quanto tempo demora a chegar a Valpaços?",
+ answer: "Chegamos a Valpaços em aproximadamente 50-60 minutos. Cobrimos todo o conselho incluindo as freguesias rurais dedicadas à olivicultura.",
+ },
  {
  question: "Fazem instalações elétricas para explorações agrícolas em Valpaços?",
-    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
-  },
+ answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ },
  {
  question: "Qual o custo de deslocação a Valpaços?",
 answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
-  },
+ },
 ];
 
 return (

@@ -7,13 +7,13 @@ const QuadroEletricoDispara: React.FC = () => {
  description: 'Quadro elétrico dispara constantemente? Descubra as 7 causas principais e soluções práticas para resolver o problema definitivamente.',
  keywords: 'quadro elétrico dispara, disjuntor dispara, luz vai abaixo, curto circuito, sobrecarga elétrica, eletricista',
  schema: generateArticleSchema({
-   title: 'Quadro Elétrico Dispara: 7 Causas e Soluções [Guia 2026]',
-   description: 'Quadro elétrico dispara constantemente? Descubra as 7 causas principais e soluções práticas para resolver o problema definitivamente.',
-   author: 'Norte Reparos',
-   publishedTime: '2026-03-10',
-   modifiedTime: '2026-06-17',
-   image: 'https://eletricista-norte-reparos.pt/og-image.jpg',
-   url: 'https://eletricista-norte-reparos.pt/blog/quadro-eletrico-dispara'
+ title: 'Quadro Elétrico Dispara: 7 Causas e Soluções [Guia 2026]',
+ description: 'Quadro elétrico dispara constantemente? Descubra as 7 causas principais e soluções práticas para resolver o problema definitivamente.',
+ author: 'Norte Reparos',
+ publishedTime: '2026-03-10',
+ modifiedTime: '2026-06-17',
+ image: 'https://eletricista-norte-reparos.pt/og-image.jpg',
+ url: 'https://eletricista-norte-reparos.pt/blog/quadro-eletrico-dispara'
  })
  });
  return (
@@ -21,55 +21,55 @@ const QuadroEletricoDispara: React.FC = () => {
  title="Quadro Elétrico Dispara: 7 Causas e Soluções [Guia 2026]"
  description="Guia completo para identificar porque o quadro elétrico dispara e resolver o problema de forma segura"
  >
-       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "url": "https://eletricista-norte-reparos.pt/blog/quadro-eletrico-dispara",
-        "mainEntity": [
-          {"@type": "Question", "name": "Porque é que o quadro elétrico dispara constantemente?", "acceptedAnswer": {"@type": "Answer", "text": "As 3 causas mais comuns: Sobrecarga: demasiados aparelhos ligados ao mesmo circuito; Curto-circuito: fio danificado ou ligação mal feita; Fuga de corrente: isolamento danificado ou humidade."}},
-          {"@type": "Question", "name": "Posso religar o disjuntor várias vezes?", "acceptedAnswer": {"@type": "Answer", "text": "Pode religar 1-2 vezes se disparou por sobrecarga pontual. Não religue repetidamente se dispara mediante confirmação ou há cheiro a queimado. Nunca force a alavanca se não sobe facilmente — o disjuntor pode estar danificado."}},
-          {"@type": "Question", "name": "Como sei se é sobrecarga no quadro elétrico?", "acceptedAnswer": {"@type": "Answer", "text": "Sinais de sobrecarga: dispara quando liga aparelho potente (forno, aquecedor, máquina lavar), dispara sempre no mesmo circuito, tomadas ou fios ficam quentes, luzes diminuem intensidade ao ligar um aparelho."}},
-          {"@type": "Question", "name": "Quanto custa resolver quadro elétrico que dispara?", "acceptedAnswer": {"@type": "Answer", "text": "Custos típicos em Trás-os-Montes: substituir disjuntor defeituoso 40-100€, reparar curto-circuito 80-200€, resolver fuga de corrente 60-150€. Diagnóstico profissional: 40-80€."}},
-          {"@type": "Question", "name": "É perigoso o quadro elétrico disparar?", "acceptedAnswer": {"@type": "Answer", "text": "Sobrecarga ocasional não é perigosa se resolver rapidamente. Curto-circuito é perigoso — pode causar incêndio. Fuga de corrente é muito perigosa — risco de choque fatal. Nunca ignore problema recorrente."}}
-        ]
-      }) }} />
-       <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Article",
-          "headline": "Quadro Elétrico Dispara: 7 Causas e Soluções [Guia 2026]",
-          "author": { "@type": "Organization", "name": "Norte Reparos" },
-          "publisher": {
-            "@type": "Organization",
-            "name": "Norte Reparos",
-            "url": "https://eletricista-norte-reparos.pt",
-            "logo": { "@type": "ImageObject", "url": "https://eletricista-norte-reparos.pt/logo.png" }
-          },
-          "datePublished": "2026-01-01",
-          "dateModified": "2026-06-18",
-          "url": "https://eletricista-norte-reparos.pt/blog/quadro-eletrico-dispara",
-          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://eletricista-norte-reparos.pt/blog/quadro-eletrico-dispara" }
-        }) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "HowTo",
-          "name": "Como Diagnosticar Porque o Quadro Elétrico Dispara",
-          "description": "Método de diagnóstico passo a passo para identificar a causa do disjuntor que dispara com frequência.",
-          "totalTime": "PT30M",
-          "step": [
-            { "@type": "HowToStep", "position": 1, "name": "Identificar Qual Disjuntor Dispara", "text": "Verifique se é o disjuntor geral (problema grave em toda a instalação), o diferencial (fuga de corrente) ou um disjuntor parcial (problema num circuito específico)." },
-            { "@type": "HowToStep", "position": 2, "name": "Verificar Quando Dispara", "text": "Anote quando acontece: ao ligar aparelho específico (aparelho avariado), aleatoriamente (fuga de corrente), mediante confirmação ao religar (curto-circuito) ou após alguns minutos (sobrecarga)." },
-            { "@type": "HowToStep", "position": 3, "name": "Teste de Isolamento", "text": "Desligue TODOS os aparelhos das tomadas e todos os interruptores. Ligue o disjuntor. Se não disparar o problema está num aparelho; se disparar o problema é na instalação fixa." },
-            { "@type": "HowToStep", "position": 4, "name": "Identificar o Aparelho Culpado", "text": "Se passou o Passo 3, ligue aparelhos um a um e aguarde 2-3 minutos entre cada. Quando disparar, o aparelho ligado nesse momento é o culpado." },
-            { "@type": "HowToStep", "position": 5, "name": "Verificar Sobrecarga", "text": "Some a potência de todos os aparelhos no circuito e compare com a capacidade do disjuntor (ex: 16A = 3680W). Se ultrapassar, redistribua os aparelhos por outros circuitos ou chame eletricista." }
-          ]
-        }) }}
-      />
-      <article className="max-w-4xl mx-auto">
+ <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "url": "https://eletricista-norte-reparos.pt/blog/quadro-eletrico-dispara",
+ "mainEntity": [
+ {"@type": "Question", "name": "Porque é que o quadro elétrico dispara constantemente?", "acceptedAnswer": {"@type": "Answer", "text": "As 3 causas mais comuns: Sobrecarga: demasiados aparelhos ligados ao mesmo circuito; Curto-circuito: fio danificado ou ligação mal feita; Fuga de corrente: isolamento danificado ou humidade."}},
+ {"@type": "Question", "name": "Posso religar o disjuntor várias vezes?", "acceptedAnswer": {"@type": "Answer", "text": "Pode religar 1-2 vezes se disparou por sobrecarga pontual. Não religue repetidamente se dispara mediante confirmação ou há cheiro a queimado. Nunca force a alavanca se não sobe facilmente — o disjuntor pode estar danificado."}},
+ {"@type": "Question", "name": "Como sei se é sobrecarga no quadro elétrico?", "acceptedAnswer": {"@type": "Answer", "text": "Sinais de sobrecarga: dispara quando liga aparelho potente (forno, aquecedor, máquina lavar), dispara sempre no mesmo circuito, tomadas ou fios ficam quentes, luzes diminuem intensidade ao ligar um aparelho."}},
+ {"@type": "Question", "name": "Quanto custa resolver quadro elétrico que dispara?", "acceptedAnswer": {"@type": "Answer", "text": "Custos típicos em Trás-os-Montes: substituir disjuntor defeituoso 40-100€, reparar curto-circuito 80-200€, resolver fuga de corrente 60-150€. Diagnóstico profissional: 40-80€."}},
+ {"@type": "Question", "name": "É perigoso o quadro elétrico disparar?", "acceptedAnswer": {"@type": "Answer", "text": "Sobrecarga ocasional não é perigosa se resolver rapidamente. Curto-circuito é perigoso — pode causar incêndio. Fuga de corrente é muito perigosa — risco de choque fatal. Nunca ignore problema recorrente."}}
+ ]
+ }) }} />
+ <script
+ type="application/ld+json"
+ dangerouslySetInnerHTML={{ __html: JSON.stringify({
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "Quadro Elétrico Dispara: 7 Causas e Soluções [Guia 2026]",
+ "author": { "@type": "Organization", "name": "Norte Reparos" },
+ "publisher": {
+ "@type": "Organization",
+ "name": "Norte Reparos",
+ "url": "https://eletricista-norte-reparos.pt",
+ "logo": { "@type": "ImageObject", "url": "https://eletricista-norte-reparos.pt/logo.png" }
+ },
+ "datePublished": "2026-01-01",
+ "dateModified": "2026-06-18",
+ "url": "https://eletricista-norte-reparos.pt/blog/quadro-eletrico-dispara",
+ "mainEntityOfPage": { "@type": "WebPage", "@id": "https://eletricista-norte-reparos.pt/blog/quadro-eletrico-dispara" }
+ }) }}
+ />
+ <script
+ type="application/ld+json"
+ dangerouslySetInnerHTML={{ __html: JSON.stringify({
+ "@context": "https://schema.org",
+ "@type": "HowTo",
+ "name": "Como Diagnosticar Porque o Quadro Elétrico Dispara",
+ "description": "Método de diagnóstico passo a passo para identificar a causa do disjuntor que dispara com frequência.",
+ "totalTime": "PT30M",
+ "step": [
+ { "@type": "HowToStep", "position": 1, "name": "Identificar Qual Disjuntor Dispara", "text": "Verifique se é o disjuntor geral (problema grave em toda a instalação), o diferencial (fuga de corrente) ou um disjuntor parcial (problema num circuito específico)." },
+ { "@type": "HowToStep", "position": 2, "name": "Verificar Quando Dispara", "text": "Anote quando acontece: ao ligar aparelho específico (aparelho avariado), aleatoriamente (fuga de corrente), mediante confirmação ao religar (curto-circuito) ou após alguns minutos (sobrecarga)." },
+ { "@type": "HowToStep", "position": 3, "name": "Teste de Isolamento", "text": "Desligue TODOS os aparelhos das tomadas e todos os interruptores. Ligue o disjuntor. Se não disparar o problema está num aparelho; se disparar o problema é na instalação fixa." },
+ { "@type": "HowToStep", "position": 4, "name": "Identificar o Aparelho Culpado", "text": "Se passou o Passo 3, ligue aparelhos um a um e aguarde 2-3 minutos entre cada. Quando disparar, o aparelho ligado nesse momento é o culpado." },
+ { "@type": "HowToStep", "position": 5, "name": "Verificar Sobrecarga", "text": "Some a potência de todos os aparelhos no circuito e compare com a capacidade do disjuntor (ex: 16A = 3680W). Se ultrapassar, redistribua os aparelhos por outros circuitos ou chame eletricista." }
+ ]
+ }) }}
+ />
+ <article className="max-w-4xl mx-auto">
  <div className="mb-8">
  <div className="flex flex-wrap items-center gap-4 text-gray-600 mb-4">
  <span className="px-3 py-1 bg-red-100 text-red-800 font-semibold rounded-full">
@@ -177,9 +177,9 @@ const QuadroEletricoDispara: React.FC = () => {
  <div className="bg-red-50 p-4 rounded-lg">
  <p className="font-bold text-red-900 mb-2">Sinais Típicos:</p>
  <ul className="text-red-800 text-sm space-y-1">
- <li>• Dispara quando liga aparelho potente (forno, máquina lavar, aquecedor)</li>
+ <li>• Dispara quando liga aparelho potente (forno, máquina lavar, aquecedor</li>
  <li>• Dispara sempre no mesmo circuito</li>
- <li>• Acontece mais no inverno (aquecedores ligados)</li>
+ <li>• Acontece mais no inverno (aquecedores ligados</li>
  <li>• Tomadas ou fios ficam quentes</li>
  </ul>
  </div>
@@ -221,7 +221,7 @@ const QuadroEletricoDispara: React.FC = () => {
  <div className="bg-yellow-50 p-4 rounded-lg">
  <p className="font-bold text-yellow-900 mb-2">Sinais Típicos:</p>
  <ul className="text-yellow-800 text-sm space-y-1">
- <li>• Disjuntor diferencial dispara (não os parciais)</li>
+ <li>• Disjuntor diferencial dispara (não os parciais</li>
  <li>• Dispara em dias de chuva ou humidade</li>
  <li>• Dispara ao tocar em aparelho metálico</li>
  <li>• Formigueiro ao tocar equipamentos</li>
@@ -288,8 +288,8 @@ const QuadroEletricoDispara: React.FC = () => {
  <p className="font-bold text-purple-900 mb-2">Características:</p>
  <ul className="text-purple-800 text-sm space-y-1">
  <li>• Casa com mais de 30 anos sem renovação elétrica</li>
- <li>• Fios de alumínio (antigos, perigosos)</li>
- <li>• Tomadas de 2 pinos (sem terra)</li>
+ <li>• Fios de alumínio (antigos, perigosos</li>
+ <li>• Tomadas de 2 pinos (sem terra</li>
  <li>• Quadro elétrico antigo sem diferencial</li>
  </ul>
  </div>
@@ -334,7 +334,7 @@ const QuadroEletricoDispara: React.FC = () => {
  <h4 className="font-bold text-gray-900 mb-2">Passo 1: Identificar Qual Disjuntor Dispara</h4>
  <ul className="text-gray-700 text-sm space-y-1">
  <li>• Disjuntor geral = problema grave em toda a instalação</li>
- <li>• Disjuntor diferencial = fuga de corrente (perigo choque)</li>
+ <li>• Disjuntor diferencial = fuga de corrente (perigo choque</li>
  <li>• Disjuntor parcial = problema num circuito específico</li>
  </ul>
  </div>
@@ -372,7 +372,7 @@ const QuadroEletricoDispara: React.FC = () => {
  <p className="text-gray-700 text-sm mb-2">Se dispara com vários aparelhos ligados:</p>
  <ul className="text-gray-700 text-sm space-y-1">
  <li>• Some potência de todos os aparelhos no circuito</li>
- <li>• Compare com capacidade do disjuntor (ex: 16A = 3680W)</li>
+ <li>• Compare com capacidade do disjuntor (ex: 16A = 3680W</li>
  <li>• Se ultrapassar = sobrecarga confirmada</li>
  </ul>
  </div>
@@ -447,14 +447,14 @@ const QuadroEletricoDispara: React.FC = () => {
  <li>Distribua aparelhos potentes por circuitos diferentes</li>
  <li>Não ligue forno + máquina lavar + aquecedor ao mesmo tempo</li>
  <li>Use tomadas de circuitos diferentes para aparelhos potentes</li>
- <li>Desligue aparelhos em standby (consomem corrente)</li>
+ <li>Desligue aparelhos em standby (consomem corrente</li>
  </ul>
  <h4 className="font-bold text-gray-900 mb-3">Solução Definitiva:</h4>
  <ul className="list-disc pl-6 mb-4 space-y-2">
- <li>Aumente potência contratada (se necessário)</li>
+ <li>Aumente potência contratada (se necessário</li>
  <li>Instale circuito dedicado para aparelhos potentes</li>
- <li>Substitua disjuntor por um de maior amperagem (se fios suportarem)</li>
- <li>Renove instalação elétrica (casos graves)</li>
+ <li>Substitua disjuntor por um de maior amperagem (se fios suportarem</li>
+ <li>Renove instalação elétrica (casos graves</li>
  </ul>
  <div className="bg-blue-50 p-4 rounded-lg">
  <p className="text-blue-900 text-sm">
@@ -513,7 +513,7 @@ const QuadroEletricoDispara: React.FC = () => {
  <ul className="list-disc pl-6 mb-4 space-y-2">
  <li>Desligue todos os aparelhos e teste diferencial</li>
  <li>Ligue aparelhos um a um para identificar culpado</li>
- <li>Verifique tomadas em zonas húmidas (casa banho, cozinha)</li>
+ <li>Verifique tomadas em zonas húmidas (casa banho, cozinha</li>
  <li>Procure infiltrações perto de instalação elétrica</li>
  </ul>
  <h4 className="font-bold text-gray-900 mb-3">Solução Profissional:</h4>
@@ -545,18 +545,18 @@ const QuadroEletricoDispara: React.FC = () => {
  </div>
  <h4 className="font-bold text-gray-900 mb-3">Como Confirmar:</h4>
  <ol className="list-decimal pl-6 mb-4 space-y-2">
- <li>Identifique aparelho que causa disparo (método Passo 4)</li>
+ <li>Identifique aparelho que causa disparo (método Passo 4</li>
  <li>Desligue esse aparelho permanentemente</li>
  <li>Se problema desaparecer = aparelho confirmado</li>
  <li>Leve aparelho a reparar ou substitua</li>
  </ol>
  <h4 className="font-bold text-gray-900 mb-3">Aparelhos Mais Problemáticos:</h4>
  <ul className="list-disc pl-6 mb-4 space-y-1">
- <li>Máquinas de lavar (resistência queimada)</li>
- <li>Aquecedores elétricos (isolamento danificado)</li>
- <li>Frigoríficos antigos (compressor com fuga)</li>
- <li>Ferros de engomar (cabo partido)</li>
- <li>Extensões elétricas baratas (má qualidade)</li>
+ <li>Máquinas de lavar (resistência queimada</li>
+ <li>Aquecedores elétricos (isolamento danificado</li>
+ <li>Frigoríficos antigos (compressor com fuga</li>
+ <li>Ferros de engomar (cabo partido</li>
+ <li>Extensões elétricas baratas (má qualidade</li>
  </ul>
  <div className="bg-green-50 p-4 rounded-lg">
  <p className="text-green-900 text-sm">
@@ -579,7 +579,7 @@ const QuadroEletricoDispara: React.FC = () => {
  </div>
  <h4 className="font-bold text-gray-900 mb-3">Sinais de Disjuntor Defeituoso:</h4>
  <ul className="list-disc pl-6 mb-4 space-y-2">
- <li>Dispara sem motivo aparente (teste isolamento OK)</li>
+ <li>Dispara sem motivo aparente (teste isolamento OK</li>
  <li>Disjuntor quente ao toque</li>
  <li>Alavanca não fica bem fixa</li>
  <li>Marcas de queimado ou derretido</li>
@@ -593,9 +593,9 @@ const QuadroEletricoDispara: React.FC = () => {
  </div>
  <h4 className="font-bold text-gray-900 mb-3">O Que Será Feito:</h4>
  <ol className="list-decimal pl-6 mb-4 space-y-1">
- <li>Corte de corrente geral (segurança)</li>
+ <li>Corte de corrente geral (segurança</li>
  <li>Remoção de disjuntor antigo</li>
- <li>Instalação de disjuntor novo (mesma amperagem)</li>
+ <li>Instalação de disjuntor novo (mesma amperagem</li>
  <li>Verificação de aperto de ligações</li>
  <li>Teste de funcionamento</li>
  </ol>
@@ -627,8 +627,8 @@ const QuadroEletricoDispara: React.FC = () => {
  </p>
  <ul className="text-gray-600 text-sm space-y-1">
  <li>• Compre extensões com proteção contra sobrecarga</li>
- <li>• Verifique capacidade máxima (normalmente 3680W)</li>
- <li>• Nunca ligue extensão em extensão (cascata perigosa)</li>
+ <li>• Verifique capacidade máxima (normalmente 3680W</li>
+ <li>• Nunca ligue extensão em extensão (cascata perigosa</li>
  <li>• Substitua extensões com fios quentes ou danificados</li>
  </ul>
  </div>
@@ -652,7 +652,7 @@ const QuadroEletricoDispara: React.FC = () => {
  <ul className="text-gray-600 text-sm space-y-1">
  <li>• Contrate eletricista para inspeção anual</li>
  <li>• Verifique aperto de ligações no quadro</li>
- <li>• Teste funcionamento de disjuntor diferencial (botão teste)</li>
+ <li>• Teste funcionamento de disjuntor diferencial (botão teste</li>
  <li>• Substitua componentes com mais de 20 anos</li>
  </ul>
  </div>
@@ -675,7 +675,7 @@ const QuadroEletricoDispara: React.FC = () => {
  </p>
  <ul className="text-gray-600 text-sm space-y-1">
  <li>• Substitua fios de alumínio por cobre</li>
- <li>• Instale disjuntor diferencial (obrigatório)</li>
+ <li>• Instale disjuntor diferencial (obrigatório</li>
  <li>• Adicione ligação à terra em todas as tomadas</li>
  <li>• Invista 2000-5000€ para segurança total</li>
  </ul>
@@ -793,12 +793,12 @@ const QuadroEletricoDispara: React.FC = () => {
  <div className="grid md:grid-cols-2 gap-4">
  <ul className="text-cyan-800 space-y-2">
  <li>• Diagnóstico preciso com equipamento especializado</li>
- <li>• Solução definitiva (não temporária)</li>
+ <li>• Solução definitiva (não temporária</li>
  <li>• Certificado de conformidade</li>
  <li>• Garantia do trabalho realizado</li>
  </ul>
  <ul className="text-cyan-800 space-y-2">
- <li>• Segurança total (sem risco choque)</li>
+ <li>• Segurança total (sem risco choque</li>
  <li>• Identifica problemas ocultos</li>
  <li>• Aconselhamento preventivo</li>
  <li>• Evita danos maiores e mais caros</li>
@@ -874,7 +874,7 @@ const QuadroEletricoDispara: React.FC = () => {
  <strong>Sinais claros de sobrecarga:</strong>
  </p>
  <ul className="text-gray-600 space-y-1 ml-4">
- <li>• Dispara quando liga aparelho potente (forno, aquecedor, máquina lavar)</li>
+ <li>• Dispara quando liga aparelho potente (forno, aquecedor, máquina lavar</li>
  <li>• Dispara sempre no mesmo circuito</li>
  <li>• Acontece mais quando vários aparelhos ligados</li>
  <li>• Tomadas ou fios ficam quentes</li>

@@ -13,7 +13,7 @@ Website: https://eletricista-norte-reparos.pt
 Address: Rua Fonte do Paço nº 8, 5340-268 Trás-os-Montes
 Hours: Atendimento 24h/7d
 EmergencyService: true
-Certifications: DGEG
+Certifications: 
 Experience: 12+ years
 CustomersServed: 500+
 Warranty: 1 ano

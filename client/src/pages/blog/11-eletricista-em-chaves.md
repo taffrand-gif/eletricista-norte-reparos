@@ -16,7 +16,7 @@ tags: ['electricista', 'chaves', 'serviços', 'intervenção', '24h']
 
 ### Área Urbana (Resposta 1h)
 - **Centro histórico** e áreas comerciais
-- **Bairros residenciais** principais  
+- **Bairros residenciais** principais 
 - **Zona industrial** e áreas empresariais
 - **Instituições públicas** e educacionais
 

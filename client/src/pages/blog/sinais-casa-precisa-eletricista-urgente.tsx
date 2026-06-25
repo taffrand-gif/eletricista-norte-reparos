@@ -112,7 +112,7 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  <strong>Causas comuns:</strong>
  </p>
  <ul>
- <li>Sobrecarga de circuito (demasiados aparelhos ligados)</li>
+ <li>Sobrecarga de circuito (demasiados aparelhos ligados</li>
  <li>Ligações mal apertadas que criam resistência e calor</li>
  <li>Cabos subdimensionados para a carga</li>
  <li>Curto-circuito em desenvolvimento</li>
@@ -204,7 +204,7 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  </p>
  <ul>
  <li><strong>Disjuntor geral dispara:</strong> Sobrecarga total ou curto-circuito grave</li>
- <li><strong>Diferencial dispara:</strong> Fuga de corrente (risco eletrocussão)</li>
+ <li><strong>Diferencial dispara:</strong> Fuga de corrente (risco eletrocussão</li>
  <li><strong>Disjuntor específico dispara:</strong> Problema naquele circuito</li>
  <li><strong>Dispara ao ligar aparelho:</strong> Aparelho avariado ou circuito sobrecarregado</li>
  </ul>
@@ -279,9 +279,9 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  <strong>Quando é urgente:</strong>
  </p>
  <ul>
- <li>Luzes piscam constantemente (várias vezes por hora)</li>
+ <li>Luzes piscam constantemente (várias vezes por hora</li>
  <li>Todas as luzes da casa afetadas simultaneamente</li>
- <li>Acompanhado de outros sinais (cheiro, calor, ruídos)</li>
+ <li>Acompanhado de outros sinais (cheiro, calor, ruídos</li>
  <li>Aparelhos eletrónicos desligam-se sozinhos</li>
  </ul>
  <p>
@@ -322,10 +322,10 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  A maioria das emergências elétricas pode ser evitada com manutenção preventiva:
  </p>
  <ul>
- <li><strong>Inspeção anual:</strong> Eletricista verifica quadro, ligações, circuitos (80-150€)</li>
+ <li><strong>Inspeção anual:</strong> Eletricista verifica quadro, ligações, circuitos (80-150€</li>
  <li><strong>Teste de disjuntores:</strong> Verificar se disparam corretamente</li>
  <li><strong>Medição de resistência de terra:</strong> Garantir proteção contra choques</li>
- <li><strong>Termografia:</strong> Detetar pontos quentes antes de problemas (150-300€)</li>
+ <li><strong>Termografia:</strong> Detetar pontos quentes antes de problemas (150-300€</li>
  <li><strong>Atualização preventiva:</strong> Substituir componentes com +20 anos</li>
  </ul>
  <p>

@@ -8,13 +8,13 @@ const PouparEnergiaEletricaDicas: React.FC = () => {
  description: 'Descubra 10 dicas práticas para poupar energia elétrica em casa e reduzir a fatura da luz. Guia completo de eficiência energética para Trás-os-Montes.',
  keywords: 'poupar energia, eficiência energética, dicas eletricidade casa, reduzir fatura luz, poupar eletricidade',
  schema: generateArticleSchema({
-   title: 'Como Poupar Energia Elétrica em Casa — 10 Dicas Práticas | 2026',
-   description: 'Descubra 10 dicas práticas para poupar energia elétrica em casa e reduzir a fatura da luz. Guia completo de eficiência energética para Trás-os-Montes.',
-   author: 'Norte Reparos',
-   publishedTime: '2026-02-14',
-   modifiedTime: '2026-06-17',
-   image: 'https://eletricista-norte-reparos.pt/images-optimized/blog/poupar-energia-detail.jpg',
-   url: 'https://eletricista-norte-reparos.pt/blog/poupar-energia-eletrica-dicas'
+ title: 'Como Poupar Energia Elétrica em Casa — 10 Dicas Práticas | 2026',
+ description: 'Descubra 10 dicas práticas para poupar energia elétrica em casa e reduzir a fatura da luz. Guia completo de eficiência energética para Trás-os-Montes.',
+ author: 'Norte Reparos',
+ publishedTime: '2026-02-14',
+ modifiedTime: '2026-06-17',
+ image: 'https://eletricista-norte-reparos.pt/images-optimized/blog/poupar-energia-detail.jpg',
+ url: 'https://eletricista-norte-reparos.pt/blog/poupar-energia-eletrica-dicas'
  })
  });
  return (
@@ -22,26 +22,26 @@ const PouparEnergiaEletricaDicas: React.FC = () => {
  title="Como Poupar Energia Elétrica em Casa — 10 Dicas Práticas"
  description="Guia completo para reduzir o consumo de eletricidade e poupar na fatura da luz"
  >
-       <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Article",
-          "headline": "Como Poupar Energia Elétrica em Casa — 10 Dicas Práticas | 2026",
-          "author": { "@type": "Organization", "name": "Norte Reparos" },
-          "publisher": {
-            "@type": "Organization",
-            "name": "Norte Reparos",
-            "url": "https://eletricista-norte-reparos.pt",
-            "logo": { "@type": "ImageObject", "url": "https://eletricista-norte-reparos.pt/logo.png" }
-          },
-          "datePublished": "2026-01-01",
-          "dateModified": "2026-06-18",
-          "url": "https://eletricista-norte-reparos.pt/blog/poupar-energia-eletrica-dicas",
-          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://eletricista-norte-reparos.pt/blog/poupar-energia-eletrica-dicas" }
-        }) }}
-      />
-      <article className="max-w-4xl mx-auto">
+ <script
+ type="application/ld+json"
+ dangerouslySetInnerHTML={{ __html: JSON.stringify({
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "Como Poupar Energia Elétrica em Casa — 10 Dicas Práticas | 2026",
+ "author": { "@type": "Organization", "name": "Norte Reparos" },
+ "publisher": {
+ "@type": "Organization",
+ "name": "Norte Reparos",
+ "url": "https://eletricista-norte-reparos.pt",
+ "logo": { "@type": "ImageObject", "url": "https://eletricista-norte-reparos.pt/logo.png" }
+ },
+ "datePublished": "2026-01-01",
+ "dateModified": "2026-06-18",
+ "url": "https://eletricista-norte-reparos.pt/blog/poupar-energia-eletrica-dicas",
+ "mainEntityOfPage": { "@type": "WebPage", "@id": "https://eletricista-norte-reparos.pt/blog/poupar-energia-eletrica-dicas" }
+ }) }}
+ />
+ <article className="max-w-4xl mx-auto">
  {/* Meta info */}
  <div className="mb-8">
  <div className="flex flex-wrap items-center gap-4 text-gray-600 mb-4">
@@ -139,7 +139,7 @@ const PouparEnergiaEletricaDicas: React.FC = () => {
  <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg mb-6">
  <h3 className="font-bold text-red-800 text-lg mb-2">O custo invisível do standby:</h3>
  <ul className="text-red-700 space-y-1">
- <li>• Uma TV em standby consome ~5W (cerca de 8€/ano)</li>
+ <li>• Uma TV em standby consome ~5W (cerca de 8€/ano</li>
  <li>• Um carregador ligado sem telemóvel consome ~0.5W</li>
  <li>• No total, o standby pode representar 10% da fatura</li>
  </ul>
@@ -182,7 +182,7 @@ const PouparEnergiaEletricaDicas: React.FC = () => {
  <li className="flex items-center gap-2">✅ Use termostato programável — reduza 2°C à noite</li>
  <li className="flex items-center gap-2">✅ Aqueça apenas as divisões que usa</li>
  <li className="flex items-center gap-2">✅ Mantenha portas e janelas bem vedadas</li>
- <li className="flex items-center gap-2">✅ Considere bomba de calor (COP 3-4x mais eficiente)</li>
+ <li className="flex items-center gap-2">✅ Considere bomba de calor (COP 3-4x mais eficiente</li>
  <li className="flex items-center gap-2">✅ Coloque película refletora atrás dos radiadores</li>
  </ul>
  </div>
@@ -197,7 +197,7 @@ const PouparEnergiaEletricaDicas: React.FC = () => {
  <li>✅ Máquina de lavar roupa</li>
  <li>✅ Máquina de lavar loiça</li>
  <li>✅ Carregar veículo elétrico</li>
- <li>✅ Aquecer água (termoacumulador)</li>
+ <li>✅ Aquecer água (termoacumulador</li>
  </ul>
  </div>
  <div className="bg-white p-6 rounded-xl border border-gray-200">
