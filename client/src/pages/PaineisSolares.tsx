@@ -140,7 +140,7 @@ export default function PaineisSolares() {
  <li><strong>Instalação:</strong> Montagem dos painéis, inversores e equipamentos</li>
  <li><strong>Ligação:</strong> Conexão ao quadro elétrico e sistema existente</li>
  <li><strong>Testes:</strong> Verificação de produção e segurança</li>
- <li><strong>Legalização:</strong> Registo na DGEG e comercializadora</li>
+ <li><strong>Legalização:</strong> Documentação em conformidade com a DGEG (registo em curso); contrato com comercializadora</li>
  </ol>
  
  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Componentes do Sistema</h3>
@@ -215,7 +215,7 @@ export default function PaineisSolares() {
  <h4 className="text-lg font-semibold text-gray-900">Kit Solar 5kW (Com Injeção)</h4>
  <span className="bg-amber-100 text-amber-800 font-bold px-4 py-2 rounded-full">€6.500 - €8.500</span>
  </div>
- <p className="text-gray-600">13 painéis, inversor bidirecional, legalização DGEG</p>
+ <p className="text-gray-600">13 painéis, inversor bidirecional, documentação conforme DGEG (registo em curso)</p>
  </div>
  
  <div className="border-b pb-4">
@@ -300,7 +300,7 @@ export default function PaineisSolares() {
  },
  {
  question: "Preciso de licença para instalar painéis solares?",
- answer: "Sim, para sistemas acima de 350W ou com injeção na rede. Nós tratamos de toda a burocracia: projeto, licenciamento na câmara, registo na DGEG e contrato com comercializadora."
+ answer: "Sim, para sistemas acima de 350W ou com injeção na rede. Acompanhamos a documentação em conformidade com a DGEG (registo em curso); o licenciamento na câmara e o contrato com a comercializadora são tratados com técnico responsável inscrito na DGEG ou entidade acreditada."
  },
  {
  question: "Os painéis funcionam em dias nublados?",
