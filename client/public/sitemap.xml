@@ -16,7 +16,7 @@
   <url><loc>https://eletricista-norte-reparos.pt/certificacao-certiel-lamego</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/certificacao-certiel-macedo-cavaleiros</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/certificacao-certiel-macedo-de-cavaleiros</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://eletricista-norte-reparos.pt/certificacao-certiel-meda</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/certificacao-certiel-mesao-frio</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/certificacao-certiel-miranda-douro</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/certificacao-certiel-mirandela</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -159,7 +159,7 @@
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-avaria-eletrica-macedo-de-cavaleiros</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-avaria-eletrica-marco-de-canaveses</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-avaria-eletrica-marialva</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://eletricista-norte-reparos.pt/eletricista-avaria-eletrica-meda</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-avaria-eletrica-mesao-frio</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-avaria-eletrica-miranda-do-douro</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-avaria-eletrica-mirandela</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -173,7 +173,7 @@
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-avaria-eletrica-penedono</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-avaria-eletrica-peso-da-regua</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-avaria-eletrica-pinhao</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://eletricista-norte-reparos.pt/eletricista-avaria-eletrica-pinhel</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-avaria-eletrica-resende</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-avaria-eletrica-ribeira-de-pena</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-avaria-eletrica-sabrosa</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -555,7 +555,7 @@
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-fuga-corrente-macedo-de-cavaleiros</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-fuga-corrente-marco-de-canaveses</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-fuga-corrente-marialva</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://eletricista-norte-reparos.pt/eletricista-fuga-corrente-meda</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-fuga-corrente-mesao-frio</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-fuga-corrente-miranda-do-douro</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-fuga-corrente-mirandela</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -569,7 +569,7 @@
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-fuga-corrente-penedono</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-fuga-corrente-peso-da-regua</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-fuga-corrente-pinhao</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://eletricista-norte-reparos.pt/eletricista-fuga-corrente-pinhel</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-fuga-corrente-resende</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-fuga-corrente-ribeira-de-pena</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-fuga-corrente-sabrosa</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -683,7 +683,7 @@
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-iluminacao-exterior-macedo-de-cavaleiros</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-iluminacao-exterior-marco-de-canaveses</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-iluminacao-exterior-marialva</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://eletricista-norte-reparos.pt/eletricista-iluminacao-exterior-meda</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-iluminacao-exterior-mesao-frio</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-iluminacao-exterior-miranda-do-douro</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-iluminacao-exterior-mirandela</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -697,7 +697,7 @@
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-iluminacao-exterior-penedono</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-iluminacao-exterior-peso-da-regua</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-iluminacao-exterior-pinhao</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://eletricista-norte-reparos.pt/eletricista-iluminacao-exterior-pinhel</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-iluminacao-exterior-resende</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-iluminacao-exterior-ribeira-de-pena</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-iluminacao-exterior-sabrosa</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -765,7 +765,7 @@
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-iluminacao-led-macedo-de-cavaleiros</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-iluminacao-led-marco-de-canaveses</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-iluminacao-led-marialva</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://eletricista-norte-reparos.pt/eletricista-iluminacao-led-meda</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-iluminacao-led-mesao-frio</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-iluminacao-led-miranda-do-douro</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-iluminacao-led-mirandela</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -779,7 +779,7 @@
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-iluminacao-led-penedono</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-iluminacao-led-peso-da-regua</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-iluminacao-led-pinhao</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://eletricista-norte-reparos.pt/eletricista-iluminacao-led-pinhel</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-iluminacao-led-resende</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-iluminacao-led-ribeira-de-pena</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-iluminacao-led-sabrosa</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -895,7 +895,7 @@
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-mateus</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-mazouco</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-maçores</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://eletricista-norte-reparos.pt/eletricista-meda</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-medroes</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-meijinhos</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-meireles</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -1051,7 +1051,7 @@
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-pinhao</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-pinheiro-novo</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-pinheiros</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://eletricista-norte-reparos.pt/eletricista-pinhel</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-pinho</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-pinhovelo</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-poco-do-canto</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -1115,7 +1115,7 @@
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-quadro-eletrico-macedo-de-cavaleiros</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-quadro-eletrico-marco-de-canaveses</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-quadro-eletrico-marialva</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://eletricista-norte-reparos.pt/eletricista-quadro-eletrico-meda</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-quadro-eletrico-mesao-frio</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-quadro-eletrico-miranda-do-douro</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-quadro-eletrico-mirandela</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -1129,7 +1129,7 @@
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-quadro-eletrico-penedono</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-quadro-eletrico-peso-da-regua</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-quadro-eletrico-pinhao</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://eletricista-norte-reparos.pt/eletricista-quadro-eletrico-pinhel</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-quadro-eletrico-resende</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-quadro-eletrico-ribeira-de-pena</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-quadro-eletrico-sabrosa</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -1428,7 +1428,7 @@
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-tomada-interruptor-macedo-de-cavaleiros</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-tomada-interruptor-marco-de-canaveses</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-tomada-interruptor-marialva</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://eletricista-norte-reparos.pt/eletricista-tomada-interruptor-meda</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-tomada-interruptor-mesao-frio</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-tomada-interruptor-miranda-do-douro</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-tomada-interruptor-mirandela</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -1442,7 +1442,7 @@
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-tomada-interruptor-penedono</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-tomada-interruptor-peso-da-regua</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-tomada-interruptor-pinhao</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://eletricista-norte-reparos.pt/eletricista-tomada-interruptor-pinhel</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-tomada-interruptor-resende</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-tomada-interruptor-ribeira-de-pena</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-tomada-interruptor-sabrosa</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -1530,7 +1530,7 @@
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-urgente-macedo-de-cavaleiros</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-urgente-marco-de-canaveses</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-urgente-marialva</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://eletricista-norte-reparos.pt/eletricista-urgente-meda</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-urgente-mesao-frio</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-urgente-miranda-do-douro</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-urgente-mirandela</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
@@ -1544,7 +1544,7 @@
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-urgente-penedono</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-urgente-peso-da-regua</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-urgente-pinhao</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://eletricista-norte-reparos.pt/eletricista-urgente-pinhel</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-urgente-resende</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-urgente-ribeira-de-pena</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/eletricista-urgente-sabrosa</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
@@ -1774,7 +1774,7 @@
   <url><loc>https://eletricista-norte-reparos.pt/iluminacao-lordelo</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/iluminacao-macedo-de-cavaleiros</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/iluminacao-marialva</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://eletricista-norte-reparos.pt/iluminacao-meda</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/iluminacao-mesao-frio</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/iluminacao-miranda-do-douro</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/iluminacao-mirandela</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -1787,7 +1787,7 @@
   <url><loc>https://eletricista-norte-reparos.pt/iluminacao-penedono</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/iluminacao-peso-da-regua</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/iluminacao-pinhao</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://eletricista-norte-reparos.pt/iluminacao-pinhel</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/iluminacao-ribeira-de-pena</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/iluminacao-sabrosa</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/iluminacao-salzedas</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -1863,7 +1863,7 @@
   <url><loc>https://eletricista-norte-reparos.pt/instalacao-led-lagoaca</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/instalacao-led-lamego</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/instalacao-led-macedo-cavaleiros</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://eletricista-norte-reparos.pt/instalacao-led-meda</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/instalacao-led-mesao-frio</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/instalacao-led-miranda-douro</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/instalacao-led-mirandela</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -1909,7 +1909,7 @@
   <url><loc>https://eletricista-norte-reparos.pt/quadro-antigo-lagoaca</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/quadro-antigo-lamego</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/quadro-antigo-macedo-cavaleiros</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://eletricista-norte-reparos.pt/quadro-antigo-meda</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/quadro-antigo-mesao-frio</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/quadro-antigo-miranda-douro</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/quadro-antigo-mirandela</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -1964,7 +1964,7 @@
   <url><loc>https://eletricista-norte-reparos.pt/quadro-eletrico-lordelo</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/quadro-eletrico-macedo-de-cavaleiros</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/quadro-eletrico-marialva</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://eletricista-norte-reparos.pt/quadro-eletrico-meda</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/quadro-eletrico-mesao-frio</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/quadro-eletrico-miranda-do-douro</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/quadro-eletrico-mirandela</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -1977,7 +1977,7 @@
   <url><loc>https://eletricista-norte-reparos.pt/quadro-eletrico-penedono</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/quadro-eletrico-peso-da-regua</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/quadro-eletrico-pinhao</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://eletricista-norte-reparos.pt/quadro-eletrico-pinhel</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/quadro-eletrico-ribeira-de-pena</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/quadro-eletrico-sabrosa</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/quadro-eletrico-salzedas</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -2034,7 +2034,7 @@
   <url><loc>https://eletricista-norte-reparos.pt/urgencia-eletricista-freixo-de-espada-a-cinta</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/urgencia-eletricista-lagoaca</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/urgencia-eletricista-macedo-de-cavaleiros</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://eletricista-norte-reparos.pt/urgencia-eletricista-meda</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/urgencia-eletricista-mesao-frio</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/urgencia-eletricista-miranda-do-douro</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eletricista-norte-reparos.pt/urgencia-eletricista-mirandela</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
