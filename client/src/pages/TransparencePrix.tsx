@@ -90,7 +90,7 @@ export default function TransparencePrix() {
  const faqPrix = [
  {
  question: "Porque os vossos preços são 15-20% mais elevados que a concorrência?",
- answer: "Os nossos preços refletem a qualidade superior do serviço: eletricistas certificados com 10+ anos de experiência, materiais de marcas premium (Legrand, Schneider), garantia alargada de 12 meses, chegada garantida Atendimento prioritário, e certificação incluída. Não fazemos trabalhos 'baratos' que falham em 6 meses. Investimos em formação contínua e equipamento profissional. O barato sai caro em eletricidade - um trabalho mal feito pode causar incêndios."
+ answer: "Os nossos preços refletem a qualidade superior do serviço: eletricistas certificados com experiência em Trás-os-Montes, materiais de marcas premium (Legrand, Schneider), garantia alargada de 12 meses, chegada garantida Atendimento prioritário, e certificação incluída. Não fazemos trabalhos 'baratos' que falham em 6 meses. Investimos em formação contínua e equipamento profissional. O barato sai caro em eletricidade - um trabalho mal feito pode causar incêndios."
  },
  {
  question: "O preço final pode ser diferente do orçamento?",
@@ -120,8 +120,8 @@ export default function TransparencePrix() {
  return (
  <>
  <SEOHead
- title={`Transparência de Preços - O ÚNICO Eletricista de Trás-os-Montes que Publica os Seus Preços | ${config.name}`}
- description="Somos o ÚNICO eletricista em Trás-os-Montes com preços 100% transparentes publicados online. Veja todos os nossos preços, sem surpresas, sem letra pequena. Pequena arranjo desde 30€, quadros elétricos desde 150€. Garantia satisfeito ou reembolsado."
+ title={`Transparência de Preços - O eletricista profissional de Trás-os-Montes que Publica os Seus Preços | ${config.name}`}
+ description="Somos o eletricista profissional em Trás-os-Montes com preços 100% transparentes publicados online. Veja todos os nossos preços, sem surpresas, sem letra pequena. Pequena arranjo desde 30€, quadros elétricos desde 150€. Garantia satisfeito ou reembolsado."
  />
  <Header />
  <main>
@@ -288,7 +288,7 @@ export default function TransparencePrix() {
  <Award className="w-12 h-12 text-blue-600 mb-4" />
  <h3 className="text-xl font-bold mb-3 text-gray-900">Eletricistas Certificados</h3>
  <p className="text-gray-700 leading-relaxed">
- Todos os nossos técnicos têm certificação elétrica e 10+ anos de experiência.
+ Todos os nossos técnicos têm certificação elétrica e experiência em Trás-os-Montes.
  Formação contínua obrigatória. Não contratamos "ajudantes" sem qualificação.
  </p>
  </div>
@@ -357,7 +357,7 @@ export default function TransparencePrix() {
  </div>
  <p className="text-sm text-white/70 italic">
  Em 15 anos de atividade, apenas 2 clientes pediram reembolso.
- A nossa taxa de satisfação é de 99.6%.
+ A nossa taxa de satisfação mediante pedido.6%.
  </p>
  </div>
  </div>

@@ -301,7 +301,7 @@ export default function InstalacaoEletrica() {
  },
  {
  question: "Oferecem garantia na instalação elétrica?",
- answer: "Sim, oferecemos garantia de 3 anos na mão de obra e 1 ano nos materiais fornecidos. Para materiais com garantia de fábrica superior, aplicamos essa garantia."
+ answer: "Sim, oferecemos garantia mediante pedido na mão de obra e 1 ano nos materiais fornecidos. Para materiais com garantia de fábrica superior, aplicamos essa garantia."
  }
  ]}
  />
