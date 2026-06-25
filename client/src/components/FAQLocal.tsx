@@ -33,13 +33,13 @@ function FAQLocal() {
  ] : [
  {
  question: 'Existe eletricista disponível em Mirandela ao fim de semana?',
- answer: 'Sim, a Eletricista Profissional disponibiliza eletricista certificado em Mirandela todos os dias da semana, incluindo sábados, domingos e feriados. O nosso serviço de urgência funciona Atendimento 24h/7d. Tempo de chegada a Mirandela: a confirmar por telefone.'},
+ answer: 'Sim, a Eletricista Profissional disponibiliza eletricista com experiência em Mirandela todos os dias da semana, incluindo sábados, domingos e feriados. O nosso serviço de urgência funciona Atendimento 24h/7d. Tempo de chegada a Mirandela: a confirmar por telefone.'},
  {
  question: 'Quanto custa um eletricista em Bragança?',
  answer: 'O preço de um eletricista em Bragança varia conforme o serviço: diagnóstico (80-120€), arranjo urgente (150-210€), substituição de quadro elétrico 12 módulos (370-650€), certificação elétrica (150-300€). Todos os preços sem IVA. Sem compromisso e sem compromisso.'},
  {
  question: 'Fazem certificação elétrica na zona de Bragança?',
- answer: 'Sim, fazemos certificação elétrica para venda de imóveis, arrendamento e instalações novas na zona de Bragança. Fazemos certificação elétrica para venda de imóveis, arrendamento e instalações novas. Prazo: 3-5 dias úteis. Preço: a partir de 150€ (sem IVA). Tratamos de toda a documentação e submissão na plataforma DGEG.'},
+ answer: 'Sim, fazemos certificação elétrica para venda de imóveis, arrendamento e instalações novas na zona de Bragança. Fazemos certificação elétrica para venda de imóveis, arrendamento e instalações novas. Prazo: 3-5 dias úteis. Preço: a partir de 150€ (sem IVA). Tratamos de toda a documentação e submissão na plataforma.'},
  {
  question: 'Há eletricista de urgência em Miranda do Douro?',
  answer: 'Sim, prestamos serviço de eletricidade de urgência em Miranda do Douro e toda a zona raiana. Tempo de chegada: confirmamos por telefone. Disponível Atendimento 24h/7d para emergências como curtos-circuitos, falhas de energia ou situações de perigo. Ligue 932 321 892.'},
@@ -48,7 +48,7 @@ function FAQLocal() {
  answer: 'Sim, fazemos substituição e modernização de quadros elétricos em Vila Flor, Torre de Moncorvo e todas as localidades do distrito de Bragança. Preço: 370-650€ para quadro 12 módulos (sem IVA). Inclui quadro novo, disjuntores diferenciais, instalação completa e certificação.'},
  {
  question: 'Qual o eletricista mais perto de Mogadouro?',
- answer: 'A Eletricista Profissional é o eletricista certificado mais próximo de Mogadouro, com tempo de resposta rápido. Cobrimos Mogadouro e todas as suas freguesias. Serviço disponível Atendimento 24h/7d com sem compromisso.'},
+ answer: 'A Eletricista Profissional é o eletricista com experiência mais próximo de Mogadouro, com tempo de resposta rápido. Cobrimos Mogadouro e todas as suas freguesias. Serviço disponível Atendimento 24h/7d com sem compromisso.'},
  ];
  return (
  <section className="py-16 bg-white">

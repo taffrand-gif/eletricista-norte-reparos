@@ -150,7 +150,7 @@ function GuaranteeSection() {
  </a>
  </div>
  <p className="text-sm text-gray-500 mt-4">
- ✅ Garantia escrita • ✅ Equipamento profissional • ✅ Técnico qualificado
+ ✅ Garantia escrita • ✅ Equipamento profissional • ✅ Técnico com experiência
  </p>
  </div>
  {/* Social Proof */}

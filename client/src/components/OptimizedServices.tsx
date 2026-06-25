@@ -135,7 +135,7 @@ const OptimizedServices: React.FC = () => {
  {services.map((service, index) => {
  const imageName = serviceImages[service] || 'service-instalacao.jpg';
  const description = serviceDescriptions[service] || 'Serviço profissional de qualidade.';
- const features = serviceFeatures[service] || ['Materiais de qualidade', 'Técnicos certificados', 'Garantia no serviço'];
+ const features = serviceFeatures[service] || ['Materiais de qualidade', 'Técnicos com experiência', 'Garantia no serviço'];
  return (
  <div
  key={index}

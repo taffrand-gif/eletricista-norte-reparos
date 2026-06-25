@@ -57,7 +57,7 @@ export default function Garantias() {
  {
  icon: '📄',
  title: 'certificação elétrica Completa',
- desc: 'Tratamos de toda a papelada: Termo de Responsabilidade, registo DGEG, acompanhamento até aprovação.',
+ desc: 'Tratamos de toda a papelada: Termo de Responsabilidade, registo, acompanhamento até aprovação.',
  pain: 'Sem dores de cabeça com aumentos de potência ou certificados.'},
  {
  icon: '🤝',

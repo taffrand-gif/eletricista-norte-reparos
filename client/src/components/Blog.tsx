@@ -31,7 +31,7 @@ export default function Blog() {
  const electricArticles = [
  {
  title: 'Como Instalar um Candeeiro de Teto em Segurança',
- excerpt: 'Guia completo sobre a instalação segura de candeeiros de teto, com dicas de um eletricista certificado em Trás-os-Montes.',
+ excerpt: 'Guia completo sobre a instalação segura de candeeiros de teto, com dicas de um eletricista com experiência em Trás-os-Montes.',
  date: '15 Jan 2026',
  readTime: 'alguns minutos',
  image: '/images-optimized/blog/installing-ceiling-light.jpg',
