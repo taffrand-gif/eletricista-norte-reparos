@@ -451,7 +451,7 @@ Disjuntor que desarma constantemente é **sinal de problema elétrico** que prec
 
 ### 🚨 Disjuntor Desarma Constantemente? Ajuda Urgente
 
-** — Eletricista Certificado em Bragança**
+** — eletricista com experiência em Bragança**
 
 📞 **Ligue agora: [932 321 892](tel:+351932321892)**  
 💬 **WhatsApp: [Clique aqui](https://wa.me/351932321892?text=Olá%2C%20o%20meu%20disjuntor%20desarma%20constantemente.%20Preciso%20de%20ajuda%20urgente!)**

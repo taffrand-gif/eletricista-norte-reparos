@@ -405,7 +405,7 @@ Escolher o cabo elétrico correto é **essencial para segurança e eficiência**
 
 ### 🚨 Precisa de Instalação Elétrica Profissional?
 
-** — Eletricista Certificado em Bragança**
+** — eletricista com experiência em Bragança**
 
 📞 **Ligue agora: [932 321 892](tel:+351932321892)**  
 💬 **WhatsApp: [Clique aqui](https://wa.me/351932321892?text=Olá%2C%20preciso%20de%20instalação%20elétrica.%20Pode%20ajudar%3F)**

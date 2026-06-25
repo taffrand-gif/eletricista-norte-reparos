@@ -517,4 +517,4 @@ O inverno em Trás-os-Montes não precisa significar faturas astronómicas. Com 
 
 ---
 
-* - Eletricista Certificado em Trás-os-Montes | Eficiência Energética | 932 321 892*
+* - eletricista com experiência em Trás-os-Montes | Eficiência Energética | 932 321 892*

@@ -528,4 +528,4 @@ Curto-circuito é um **perigo real e grave**, responsável por **30-40% dos inc�
 
 ---
 
-* - Eletricista Certificado em Trás-os-Montes | Segurança Elétrica | 932 321 892*
+* - eletricista com experiência em Trás-os-Montes | Segurança Elétrica | 932 321 892*

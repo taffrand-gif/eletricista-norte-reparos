@@ -23,7 +23,7 @@ Em Trás-os-Montes, onde a rede de carregamento público ainda está em expansã
 - ✅ Incentivos e apoios (até €500)
 - ✅ Quanto poupa vs gasolina
 
-**📞 Eletricista Certificado para Wallbox:** [932 321 892](tel:+351932321892)  
+**📞 eletricista com experiência para Wallbox:** [932 321 892](tel:+351932321892)  
 **💬 WhatsApp:** [Clique aqui](https://wa.me/351932321892?text=Olá%2C%20quero%20instalar%20wallbox%20para%20carro%20elétrico!)
 
 ---
@@ -380,7 +380,7 @@ Em Trás-os-Montes, onde a rede de carregamento público ainda está em expansã
 
 ### 📞 Quer Instalar Wallbox?
 
-**** - Eletricista Certificado para Mobilidade Elétrica  
+**** - eletricista com experiência para Mobilidade Elétrica  
 ✅ Instalação de wallbox (todas as marcas)  
 ✅ Upgrade elétrico para VE  
 ✅ Fichas eletrotécnicas assinadas por técnico profissional  

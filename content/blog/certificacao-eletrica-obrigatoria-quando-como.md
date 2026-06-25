@@ -217,7 +217,7 @@ Instalação com +20 anos sem certificado.
 
 ## Processo Completo Certificação
 
-### PASSO 1: Contactar Eletricista Certificado (Dia 0)
+### PASSO 1: Contactar eletricista com experiência (Dia 0)
 
 **Como encontrar:**
 - Consultar lista em certiel.pt

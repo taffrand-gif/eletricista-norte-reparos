@@ -200,7 +200,7 @@ priority: "HIGH DEMAND"
 
 ### Método: Derivar de Tomada Existente
 
-**⚠️ APENAS ELETRICISTA CERTIFICADO DEVE FAZER!**
+**⚠️ APENAS eletricista com experiência DEVE FAZER!**
 
 **Material necessário:**
 - Tomada nova (€5-15)
@@ -346,7 +346,7 @@ priority: "HIGH DEMAND"
 
 **Conclusão:** Diferença €20-100 não justifica risco de vida!
 
-## Quando Chamar Eletricista Certificado?
+## Quando Chamar eletricista com experiência?
 
 ### SEMPRE chame profissional para:
 
@@ -465,7 +465,7 @@ R: Instalar 1 tomada €50-100, 2-3 tomadas €100-190. Urgente 24h: +50%. : **9
 
 ### 🚨 Precisa de Mais Tomadas? Ligue JÁ!
 
-** - Eletricista Certificado em Trás-os-Montes**
+** - eletricista com experiência em Trás-os-Montes**
 
 📞 **Ligue Agora: 932 321 892**
 - ✅ Instalação de tomadas €50-100/unidade

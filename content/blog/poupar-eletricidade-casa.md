@@ -433,7 +433,7 @@ Poupar eletricidade não é difícil e **compensa financeiramente**:
 
 ### 🚨 Quer Otimizar Consumo Elétrico? Ajuda Profissional
 
-** — Eletricista Certificado em Bragança**
+** — eletricista com experiência em Bragança**
 
 📞 **Ligue agora: [932 321 892](tel:+351932321892)**  
 💬 **WhatsApp: [Clique aqui](https://wa.me/351932321892?text=Olá%2C%20quero%20reduzir%20o%20consumo%20elétrico.%20Pode%20ajudar%3F)**

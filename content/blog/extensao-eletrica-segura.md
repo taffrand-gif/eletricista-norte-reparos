@@ -405,7 +405,7 @@ Em Trás-os-Montes, onde muitas casas têm poucas tomadas (construções antigas
 
 ### 📞 Precisa de Instalar Tomadas Adicionais?
 
-**** - Eletricista Certificado em Trás-os-Montes  
+**** - eletricista com experiência em Trás-os-Montes  
 ✅ Instalação de tomadas adicionais  
 ✅ Upgrade de quadro elétrico  
 ✅ Fichas eletrotécnicas assinadas por técnico profissional  

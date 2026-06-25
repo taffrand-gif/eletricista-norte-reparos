@@ -504,4 +504,4 @@ Instalar uma campainha é **simples e acessível**, especialmente modelos sem fi
 
 ---
 
-* - Eletricista Certificado em Trás-os-Montes | Instalações Profissionais | 932 321 892*
+* - eletricista com experiência em Trás-os-Montes | Instalações Profissionais | 932 321 892*

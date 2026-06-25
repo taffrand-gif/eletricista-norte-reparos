@@ -441,7 +441,7 @@ Em Trás-os-Montes, onde muitas casas têm instalações antigas (30-40 anos) e 
 
 ### 📞 Precisa de Substituir Cabo Danificado?
 
-**** - Eletricista Certificado em Trás-os-Montes  
+**** - eletricista com experiência em Trás-os-Montes  
 ✅ Emergências 24h/7 dias  
 ✅ Substituição de cabos danificados  
 ✅ Inspeção de instalações elétricas  

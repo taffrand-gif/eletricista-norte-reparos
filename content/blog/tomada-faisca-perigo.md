@@ -204,7 +204,7 @@ Uma tomada a fazer faíscas **não é um problema pequeno** que pode esperar. É
 
 ### 📞 Precisa de Ajuda URGENTE?
 
-**** - Eletricista Certificado em Trás-os-Montes  
+**** - eletricista com experiência em Trás-os-Montes  
 ✅ Emergências 24h/7 dias  
 ✅ Fichas eletrotécnicas assinadas por técnico profissional  
 ✅ Orçamento grátis sem compromisso  

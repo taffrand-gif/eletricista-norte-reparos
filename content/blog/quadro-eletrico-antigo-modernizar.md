@@ -23,7 +23,7 @@ Em Trás-os-Montes, onde muitas casas têm 30-40 anos, quadros elétricos antigo
 - ✅ Custos em Trás-os-Montes (€300-800)
 - ✅ Fichas eletrotécnicas assinadas por técnico profissional obrigatória
 
-**📞 Eletricista Certificado 24h:** [932 321 892](tel:+351932321892)  
+**📞 eletricista com experiência 24h:** [932 321 892](tel:+351932321892)  
 **💬 WhatsApp:** [Clique aqui](https://wa.me/351932321892?text=Olá%2C%20preciso%20de%20modernizar%20o%20quadro%20elétrico!)
 
 ---
@@ -413,7 +413,7 @@ Em Trás-os-Montes, onde muitas casas têm 30-40 anos, quadros elétricos antigo
 
 ### 📞 Precisa de Modernizar Quadro Elétrico?
 
-**** - Eletricista Certificado em Trás-os-Montes  
+**** - eletricista com experiência em Trás-os-Montes  
 ✅ Inspeção gratuita  
 ✅ Modernização completa de quadros  
 ✅ Fichas eletrotécnicas assinadas por técnico profissional incluída  

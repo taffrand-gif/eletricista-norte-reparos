@@ -466,7 +466,7 @@ Na maioria dos casos, tomada que não funciona tem **causa identificável e solu
 
 ### 🚨 Tomada Não Funciona? Ajuda Profissional em Trás-os-Montes
 
-** — Eletricista Certificado em Bragança**
+** — eletricista com experiência em Bragança**
 
 📞 **Ligue agora: [932 321 892](tel:+351932321892)**  
 💬 **WhatsApp: [Clique aqui](https://wa.me/351932321892?text=Olá%2C%20tenho%20uma%20tomada%20que%20não%20funciona.%20Pode%20ajudar%3F)**

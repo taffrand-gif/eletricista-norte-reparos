@@ -479,7 +479,7 @@ Em Trás-os-Montes, onde muitas casas usam aquecimento a lenha, esquentadores a 
 
 ### 📞 Quer Instalar Sistema de Alarme?
 
-**** - Eletricista Certificado em Trás-os-Montes  
+**** - eletricista com experiência em Trás-os-Montes  
 ✅ Instalação de detetores de incêndio  
 ✅ Sistemas interligados  
 ✅ Consultoria de segurança  

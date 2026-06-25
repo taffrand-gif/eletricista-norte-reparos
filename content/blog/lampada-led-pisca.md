@@ -335,9 +335,9 @@ Na maioria dos casos, lâmpadas LED a piscar têm **solução simples e barata**
 - Problema persiste após trocar lâmpada e interruptor
 - Não tem experiência com eletricidade
 
-### 🚨 Precisa de Eletricista Certificado em Trás-os-Montes?
+### 🚨 Precisa de eletricista com experiência em Trás-os-Montes?
 
-** — Eletricista Certificado em Bragança**
+** — eletricista com experiência em Bragança**
 
 📞 **Ligue agora: [932 321 892](tel:+351932321892)**  
 💬 **WhatsApp: [Clique aqui](https://wa.me/351932321892?text=Olá%2C%20tenho%20lâmpadas%20LED%20a%20piscar.%20Pode%20ajudar%3F)**

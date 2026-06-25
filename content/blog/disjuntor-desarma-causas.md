@@ -519,7 +519,7 @@ R: SIM! 20+ anos = desgaste, pode não proteger adequadamente. Substitua por seg
 
 ### 🚨 Disjuntor Desarma Constantemente? Ligue JÁ!
 
-** - Eletricista Certificado em Trás-os-Montes**
+** - eletricista com experiência em Trás-os-Montes**
 
 📞 **Ligue Agora: 932 321 892**
 - ✅ Atendimento 24h/7d (emergências elétricas)

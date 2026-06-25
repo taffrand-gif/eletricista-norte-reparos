@@ -385,4 +385,4 @@ Um quadro elétrico que dispara constantemente não é apenas um incómodo — �
 
 ---
 
-* - Eletricista Certificado em Trás-os-Montes | Urgências Atendimento 24h/7d | 932 321 892*
+* - eletricista com experiência em Trás-os-Montes | Urgências Atendimento 24h/7d | 932 321 892*

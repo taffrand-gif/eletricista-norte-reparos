@@ -556,7 +556,7 @@ Neste guia completo, vou mostrar-lhe:
 
 ## 📍 Instalação de Detetores de Fumo em Trás-os-Montes
 
-** — Eletricista Certificado**
+** — eletricista com experiência**
 
 ✅ Instalação de detetores de fumo e CO  
 ✅ Sistemas interligados (wireless ou cabo)  

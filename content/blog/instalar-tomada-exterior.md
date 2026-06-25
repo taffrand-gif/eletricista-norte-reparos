@@ -344,9 +344,9 @@ A instalação de tomada no exterior requer **cuidados especiais de segurança**
 **DIY:** Possível se tiver experiência, mas sem certificado (€130-300)  
 **Profissional:** Recomendado, com certificado e garantia (€120-300)
 
-### 🚨 Precisa de Eletricista Certificado em Trás-os-Montes?
+### 🚨 Precisa de eletricista com experiência em Trás-os-Montes?
 
-** — Eletricista Certificado em Bragança**
+** — eletricista com experiência em Bragança**
 
 📞 **Ligue agora: [932 321 892](tel:+351932321892)**  
 💬 **WhatsApp: [Clique aqui](https://wa.me/351932321892?text=Olá%2C%20preciso%20de%20instalar%20uma%20tomada%20exterior.%20Pode%20ajudar%3F)**

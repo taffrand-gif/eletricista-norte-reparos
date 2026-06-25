@@ -25,7 +25,7 @@ Em Trás-os-Montes, onde muitas casas têm instalações elétricas antigas (mon
 
 **⚠️ AVISO:** Instalação elétrica deve ser feita por eletricista com experiência. Este guia é informativo.
 
-**📞 Eletricista Certificado:** [932 321 892](tel:+351932321892)  
+**📞 eletricista com experiência:** [932 321 892](tel:+351932321892)  
 **💬 WhatsApp:** [Clique aqui](https://wa.me/351932321892?text=Olá%2C%20preciso%20de%20instalar%20placa%20de%20indução!)
 
 ---
@@ -434,7 +434,7 @@ Em Trás-os-Montes, onde muitas casas têm instalações elétricas antigas (mon
 
 ### 📞 Precisa de Instalar Placa de Indução?
 
-**** - Eletricista Certificado em Trás-os-Montes  
+**** - eletricista com experiência em Trás-os-Montes  
 ✅ Especialistas em placas de indução  
 ✅ Avaliação gratuita (potência necessária)  
 ✅ Instalação completa + Fichas eletrotécnicas assinadas por técnico profissional  

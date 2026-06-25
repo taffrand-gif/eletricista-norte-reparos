@@ -516,7 +516,7 @@ R: Diagnóstico €60-120, arranjo €100-500. Urgente 24h: +50-100%. : **932 32
 
 ### 🚨 Problema Elétrico? Ligue JÁ!
 
-** - Eletricista Certificado em Trás-os-Montes**
+** - eletricista com experiência em Trás-os-Montes**
 
 📞 **Ligue Agora: 932 321 892**
 - ✅ Atendimento 24h/7d (emergências elétricas)

@@ -299,7 +299,7 @@ priority: "HIGH DEMAND"
 - Inspeção + arranjo urgente
 - Custo: €100-1.200
 
-## Quando Chamar Eletricista Certificado?
+## Quando Chamar eletricista com experiência?
 
 ### Situações que EXIGEM profissional:
 
@@ -433,7 +433,7 @@ R: SIM, mas verifique: potência máxima, se tem dimmer (use LED regulável), es
 
 ### 🚨 Precisa Ajuda Profissional?
 
-** - Eletricista Certificado em Trás-os-Montes**
+** - eletricista com experiência em Trás-os-Montes**
 
 📞 **Ligue Agora: 932 321 892**
 - ✅ Atendimento 24h/7d (urgências elétricas)

@@ -485,4 +485,4 @@ Instalar uma ventoinha de teto é um **investimento inteligente** que proporcion
 
 ---
 
-* - Eletricista Certificado em Trás-os-Montes | Instalações Seguras | 932 321 892*
+* - eletricista com experiência em Trás-os-Montes | Instalações Seguras | 932 321 892*

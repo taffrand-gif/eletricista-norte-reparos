@@ -587,7 +587,7 @@ Neste guia completo, vou explicar:
 
 ## 📍 Instalação de Videovigilância em Trás-os-Montes
 
-** — Eletricista Certificado**
+** — eletricista com experiência**
 
 ✅ Avaliação e orçamento grátis  
 ✅ Instalação de sistemas IP, analógicos, híbridos  

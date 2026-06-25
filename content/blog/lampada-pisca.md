@@ -480,4 +480,4 @@ Uma lâmpada que pisca não é apenas irritante — pode indicar **problemas el�
 
 ---
 
-* - Eletricista Certificado em Trás-os-Montes | Urgências Atendimento 24h/7d | 932 321 892*
+* - eletricista com experiência em Trás-os-Montes | Urgências Atendimento 24h/7d | 932 321 892*

@@ -436,4 +436,4 @@ Protetor de sobretensão é **investimento pequeno** (€230-640) que protege **
 
 ---
 
-* - Eletricista Certificado em Trás-os-Montes | Proteção Elétrica | 932 321 892*
+* - eletricista com experiência em Trás-os-Montes | Proteção Elétrica | 932 321 892*

@@ -436,7 +436,7 @@ O quadro elétrico é **essencial para segurança** da sua casa:
 
 ### 🚨 Quadro Elétrico com Problemas? Ajuda Profissional
 
-** — Eletricista Certificado em Bragança**
+** — eletricista com experiência em Bragança**
 
 📞 **Ligue agora: [932 321 892](tel:+351932321892)**  
 💬 **WhatsApp: [Clique aqui](https://wa.me/351932321892?text=Olá%2C%20preciso%20de%20inspeção%2Fmanutenção%20do%20quadro%20elétrico.%20Pode%20ajudar%3F)**

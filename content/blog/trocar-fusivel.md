@@ -464,4 +464,4 @@ Trocar um fusível é uma tarefa **simples mas que requer atenção absoluta à 
 
 ---
 
-* - Eletricista Certificado em Trás-os-Montes | Segurança Elétrica | 932 321 892*
+* - eletricista com experiência em Trás-os-Montes | Segurança Elétrica | 932 321 892*

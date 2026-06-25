@@ -497,7 +497,7 @@ R: Diagnóstico €60-120, upgrade quadro €400-1.200. : **932 321 892**
 
 ### 🚨 Fusível Queima Constantemente? Ligue JÁ!
 
-** - Eletricista Certificado em Trás-os-Montes**
+** - eletricista com experiência em Trás-os-Montes**
 
 📞 **Ligue Agora: 932 321 892**
 - ✅ Diagnóstico problema elétrico €60-120
