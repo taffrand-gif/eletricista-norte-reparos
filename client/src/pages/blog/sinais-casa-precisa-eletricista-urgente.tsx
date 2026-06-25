@@ -218,7 +218,7 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  <li>❌ Desligar o diferencial "porque dispara muito"</li>
  </ul>
  <p>
- <strong>Solução:</strong> Eletricista certificado identifica causa (sobrecarga, curto-circuito, fuga, disjuntor defeituoso) e resolve definitivamente. Custo: 100-300€ conforme problema.
+ <strong>Solução:</strong> Eletricista com experiência identifica causa (sobrecarga, curto-circuito, fuga, disjuntor defeituoso) e resolve definitivamente. Custo: 100-300€ conforme problema.
  </p>
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  4. Faíscas em Tomadas ou Interruptores
@@ -381,7 +381,7 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  Emergência Elétrica? Intervenção Rápida 24h
  </h3>
  <p className="text-gray-800 mb-6">
- Eletricistas certificados disponíveis 24h em Bragança e Trás-os-Montes. Intervenção urgente em 2-4 horas. Diagnóstico rápido, arranjo profissional. Proteja a sua família.
+ Eletricistas com experiência disponíveis 24h em Bragança e Trás-os-Montes. Intervenção urgente em 2-4 horas. Diagnóstico rápido, arranjo profissional. Proteja a sua família.
  </p>
  <ul className="space-y-2 mb-6 text-gray-800">
  <li className="flex items-start">
@@ -394,7 +394,7 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  </li>
  <li className="flex items-start">
  <span className="text-orange-600 mr-2">✓</span>
- <span>Eletricistas qualificados</span>
+ <span>Eletricistas com experiência</span>
  </li>
  <li className="flex items-start">
  <span className="text-orange-600 mr-2">✓</span>

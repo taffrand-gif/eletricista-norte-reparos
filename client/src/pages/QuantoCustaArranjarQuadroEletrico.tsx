@@ -24,7 +24,7 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  },
  {
  question: "Quadro elétrico precisa certificação?",
- answer: "SIM. Toda instalação elétrica em Portugal precisa certificação elétrica (Decreto-Lei 226/2005). Sem certificação = ilegal, seguro não cobre, não pode vender casa. Eletricista certificado emite certificado."
+ answer: "SIM. Toda instalação elétrica em Portugal precisa certificação elétrica (Decreto-Lei 226/2005). Sem certificação = ilegal, seguro não cobre, não pode vender casa. Eletricista com experiência emite certificado."
  }
  ];
  const precos = [

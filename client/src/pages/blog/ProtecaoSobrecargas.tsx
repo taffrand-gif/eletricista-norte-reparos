@@ -56,7 +56,7 @@ export default function ProtecaoSobrecargas() {
  { "@type": "Question", "name": "O disjuntor diferencial é obrigatório em casa?", "acceptedAnswer": { "@type": "Answer", "text": "Sim, o disjuntor diferencial é obrigatório em instalações domésticas. Custa entre 80€ e 150€ e protege contra fugas de corrente e risco de eletrocussão." } },
  { "@type": "Question", "name": "O que é um DPS e preciso de um?", "acceptedAnswer": { "@type": "Answer", "text": "O DPS (Dispositivo de Proteção contra Sobretensões) protege equipamentos contra picos de tensão causados por trovoadas ou falhas na rede elétrica. Não é obrigatório, mas é muito recomendado em zonas rurais de Trás-os-Montes. Custo: 50€ a 120€." } },
  { "@type": "Question", "name": "Posso ligar várias extensões em série (margarida)?", "acceptedAnswer": { "@type": "Answer", "text": "Não. Ligar extensões em cadeia causa sobrecarga extrema e risco de incêndio por derretimento dos plásticos. Use apenas uma extensão por tomada e distribua os aparelhos por diferentes circuitos." } },
- { "@type": "Question", "name": "Quanto custa proteger a casa contra sobrecargas elétricas?", "acceptedAnswer": { "@type": "Answer", "text": "As proteções obrigatórias (disjuntores) já estão incluídas em instalações novas. Para adicionar proteções extra: DPS 50-120€, régua com proteção 20-60€. Instalação de DPS com mão de obra: aproximadamente 150-250€. Chame um eletricista certificado para avaliação gratuita." } }
+ { "@type": "Question", "name": "Quanto custa proteger a casa contra sobrecargas elétricas?", "acceptedAnswer": { "@type": "Answer", "text": "As proteções obrigatórias (disjuntores) já estão incluídas em instalações novas. Para adicionar proteções extra: DPS 50-120€, régua com proteção 20-60€. Instalação de DPS com mão de obra: aproximadamente 150-250€. Chame um eletricista com experiência para avaliação gratuita." } }
  ]
  });
  document.head.appendChild(faqScript);
@@ -320,7 +320,7 @@ export default function ProtecaoSobrecargas() {
  </li>
  <li className="flex items-start gap-3">
  <span className="bg-orange-500 text-white w-7 h-7 rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0">10</span>
- <p className="text-gray-700">Contrate sempre um eletricista certificado para alterações</p>
+ <p className="text-gray-700">Contrate sempre um eletricista com experiência para alterações</p>
  </li>
  </ol>
  </div>

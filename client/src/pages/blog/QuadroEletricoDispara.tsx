@@ -87,7 +87,7 @@ const QuadroEletricoDispara: React.FC = () => {
  </div>
  <div>
  <p className="font-semibold text-gray-900">Equipa </p>
- <p className="text-gray-600">Eletricistas Certificados</p>
+ <p className="text-gray-600">eletricistas com experiência</p>
  </div>
  </div>
  </div>
@@ -478,7 +478,7 @@ const QuadroEletricoDispara: React.FC = () => {
  <div className="bg-red-50 p-4 rounded-lg mb-4">
  <p className="text-red-900 font-semibold mb-2">⚠️ PERIGO - Não Tente Reparar Sozinho!</p>
  <p className="text-red-800 text-sm">
- Curto-circuito é perigoso. Chame eletricista certificado mediante confirmação.
+ Curto-circuito é perigoso. Chame eletricista com experiência mediante confirmação.
  </p>
  </div>
  <h4 className="font-bold text-gray-900 mb-3">O Que o Eletricista Fará:</h4>
@@ -588,7 +588,7 @@ const QuadroEletricoDispara: React.FC = () => {
  <div className="bg-yellow-50 p-4 rounded-lg mb-4">
  <p className="text-yellow-900 font-semibold mb-2">⚠️ Substituição por Eletricista</p>
  <p className="text-yellow-800 text-sm">
- Substituir disjuntor requer corte de corrente geral e conhecimento técnico. Contrate eletricista certificado.
+ Substituir disjuntor requer corte de corrente geral e conhecimento técnico. Contrate eletricista com experiência.
  </p>
  </div>
  <h4 className="font-bold text-gray-900 mb-3">O Que Será Feito:</h4>
@@ -960,7 +960,7 @@ const QuadroEletricoDispara: React.FC = () => {
  </li>
  </ul>
  <p className="text-yellow-700 font-semibold mt-3">
- ⚠️ Nunca aumente amperagem sem consultar eletricista certificado!
+ ⚠️ Nunca aumente amperagem sem consultar eletricista com experiência!
  </p>
  </div>
  <div className="bg-gray-50 p-6 rounded-xl">
@@ -986,7 +986,7 @@ const QuadroEletricoDispara: React.FC = () => {
  <div className="bg-gradient-to-r from-cyan-500 to-cyan-600 text-white p-8 rounded-2xl mb-12">
  <h2 className="text-3xl font-bold mb-4">📞 Quadro Elétrico Dispara? Ajuda Profissional</h2>
  <p className="text-xl mb-6">
- Se não consegue resolver sozinho, contacte eletricista certificado mediante confirmação.
+ Se não consegue resolver sozinho, contacte eletricista com experiência mediante confirmação.
  </p>
  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 mb-6">
  <h3 className="text-2xl font-bold mb-4"> - Eletricista em Bragança</h3>

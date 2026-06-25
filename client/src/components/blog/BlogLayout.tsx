@@ -91,7 +91,7 @@ const BlogLayout: React.FC<BlogLayoutProps> = ({ children, title, description })
  © {new Date().getFullYear()} {config.name} - Eletricista Profissional em Trás-os-Montes
  </p>
  <p className="text-gray-500 text-sm mt-2">
- Todos os artigos são informativos. Para intervenções elétricas, consulte sempre um profissional certificado.
+ Todos os artigos são informativos. Para intervenções elétricas, consulte sempre um profissional com experiência.
  </p>
  </div>
  </footer>

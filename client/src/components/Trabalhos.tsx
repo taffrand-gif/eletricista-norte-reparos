@@ -98,7 +98,7 @@ function Trabalhos() {
  <div className="aspect-[4/3] overflow-hidden">
  <OptimizedImage
  src={project.image}
- alt={`${project.title} em ${project.location} - Trabalho realizado por ${isPlumber ? 'canalizador' : 'eletricista'} profissional certificado`}
+ alt={`${project.title} em ${project.location} - Trabalho realizado por ${isPlumber ? 'canalizador' : 'eletricista'} profissional com experiência`}
  className="w-full h-full hover:scale-105 transition-transform duration-300"
  width={400}
  height={300}

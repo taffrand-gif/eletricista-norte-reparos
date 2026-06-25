@@ -181,7 +181,7 @@ export default function CityPage() {
  <div className="flex items-start gap-4">
  <div className="text-3xl">👨‍🔧</div>
  <div>
- <h3 className="font-bold text-lg text-gray-900 mb-2">Técnicos Certificados</h3>
+ <h3 className="font-bold text-lg text-gray-900 mb-2">técnicos com experiência</h3>
  <p className="text-gray-700">Equipa qualificada com anos de experiência em {city.name}.</p>
  </div>
  </div>

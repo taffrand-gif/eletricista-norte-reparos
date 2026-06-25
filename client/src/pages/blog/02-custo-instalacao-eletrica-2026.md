@@ -122,7 +122,7 @@ O preço de uma instalação elétrica completa varia significativamente conform
 2. **Escolha materiais equilibrados** - Qualidade sem excessos desnecessários
 3. **Opte por instalação faseada** - Priorize circuitos essenciais primeiro
 4. **Aproveite promoções** - Compre materiais em épocas de desconto
-5. **Contrate um profissional certificado** - Evita retrabalhos e problemas futuros
+5. **Contrate um profissional com experiência** - Evita retrabalhos e problemas futuros
 
 ## Perguntas Frequentes sobre Custos
 

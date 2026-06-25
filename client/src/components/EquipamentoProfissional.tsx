@@ -31,7 +31,7 @@ function EquipamentoProfissional({ className = '' }: EquipamentoProfissionalProp
  {
  name: 'Fluke 1587 Megóhmetro',
  price: '€800',
- description: 'Teste de isolamento profissional certificado',
+ description: 'Teste de isolamento profissional com experiência',
  icon: '⚡'
  },
  {

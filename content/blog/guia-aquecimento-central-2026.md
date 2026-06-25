@@ -243,9 +243,9 @@ Sim, com inteligência. Negoceia escopo (não preço unitário), pagamento, timi
 
 Depende da idade do equipamento, custo da reparação vs substituição, e frequência de problemas. Análise no caso específico.
 
-**Como sei se um profissional é certificado?**
+**Como sei se um profissional tem experiência?**
 
-Verifica na DGEG (elétrico), ADENE (certificação energética),行业协会 do setor.
+Verifica na (elétrico), ADENE (certificação energética),行业协会 do setor.
 
 **Quanto tempo demora a obra?**
 
@@ -257,7 +257,7 @@ Normalmente: mão de obra, materiais, deslocação, IVA. SEMPRE peça discrimina
 
 **Posso fazer eu a parte elétrica?**
 
-Em Portugal, NÃO. É obrigatório eletricista certificado DGEG para instalações > 230V.
+Em Portugal, NÃO. É obrigatório eletricista profissional para instalações > 230V.
 
 **Vale a pena esperar pelo preço baixar?**
 
@@ -293,7 +293,7 @@ Tipos e custos.
 **Recursos úteis:**
 
 - Portal da ERSE (tarifas energia)
-- DGEG (lista técnicos certificados)
+- (lista técnicos com experiência)
 - ADENE (certificação energética)
 - Portal das Finanças
 - Câmara Municipal local (licenciamentos)

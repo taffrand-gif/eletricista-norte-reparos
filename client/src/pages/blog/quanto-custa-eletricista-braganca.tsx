@@ -412,7 +412,7 @@ export default function QuantoCustaEletricistaBraganca() {
  Orçamento Gratuito e Transparente
  </h3>
  <p className="text-gray-800 mb-6">
- Eletricistas certificados em Bragança e Trás-os-Montes. Preços justos, sem surpresas. Orçamento detalhado antes de começar. Garantia do serviço.
+ Eletricistas com experiência em Bragança e Trás-os-Montes. Preços justos, sem surpresas. Orçamento detalhado antes de começar. Garantia do serviço.
  </p>
  <ul className="space-y-2 mb-6 text-gray-800">
  <li className="flex items-start">

@@ -91,7 +91,7 @@ export default function FAQPage() {
  <p className="font-bold text-yellow-800">⚠️ Segurança Elétrica Primeiro!</p>
  <p className="text-yellow-700">
  Nunca tente arranjar problemas elétricos sozinho. Risco de eletrocussão e incêndio. 
- Contacte sempre um eletricista certificado para qualquer intervenção.
+ Contacte sempre um eletricista com experiência para qualquer intervenção.
  </p>
  </div>
  </div>
@@ -200,7 +200,7 @@ export default function FAQPage() {
  </a>
  </div>
  <p className="mt-6 text-sm text-orange-200">
- Resposta mediante contacto garantida durante o dia • Urgências Atendimento 24h/7d • Eletricista Certificado
+ Resposta mediante contacto garantida durante o dia • Urgências Atendimento 24h/7d • eletricista com experiência
  </p>
  </div>
  </div>

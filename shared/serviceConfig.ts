@@ -138,7 +138,7 @@ export const electriciteConfig: ServiceConfig = {
  'Quadro Elétrico',
  'Instalação Elétrica',
  'Iluminação LED',
- 'Certificação CERTIEL',
+ 'certificação profissional',
  'Urgências 24h',
  ],
  commonProblems: [

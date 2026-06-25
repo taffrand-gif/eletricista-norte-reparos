@@ -14,7 +14,7 @@
 | 1 | **OpenClaw gère l'infra (Cloudflare/Vercel/GitHub) via API sous double confirmation obligatoire (4 étapes : plan → GO → exec → preuve)**. Déploiement de CODE reste исключ (push Git uniquement). Confirmation RENFORCÉE sur toute opération destructive/irréversible (Philippe répète le nom de la cible). Tokens Telegram = canal LÉGITIME (verrouillé 13/06/2026 16h46). Vercel en ERROR = STOP + rapport, jamais itération corrective solo sur main. |
 | 2 | **Tokens = scope approprié, écriture activée** (R2 V2). Vercel = `Full Access`. Cloudflare = `API Token` avec scopes DNS/Page Rules/Redirect Rules. GitHub = `repo` + `admin:org` + `delete_repo`. |
 | 3 | **STOP validation Philippe** avant chaque étape modifiante (config, deploy, Git, contenu). |
-| 4 | **Zéro faux contenu** : pas d'avis/prix/délais/marques/claims DGEG inventés. |
+| 4 | **Zéro faux contenu** : pas d'avis/prix/délais/marques/claims inventés. |
 | 5 | **Géo-neutre** : pas de `streetAddress` précise, pas de claims locaux non vérifiables. |
 | 6 | **Pas de réécriture d'historique Git** : pas de `push --force` sur `main`/branche partagée. |
 | 7 | **Pas de merge sans validation explicite de Philippe.** Jamais d'auto-merge. |

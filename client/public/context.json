@@ -2,7 +2,7 @@
   "business": {
     "name": " - Eletricista Profissional",
     "type": "Electrician",
-    "description": "Eletricista profissional certificado em Trás-os-Montes, Portugal. Atendimento 24h/7d/7d para urgências elétricas, Fichas eletrotécnicas assinadas por técnico certificado DGEG, quadros elétricos e instalações completas.",
+    "description": "Eletricista profissional com experiência em Trás-os-Montes, Portugal. Atendimento 24h/7d/7d para urgências elétricas, Fichas eletrotécnicas assinadas por técnico profissional, quadros elétricos e instalações completas.",
     "founded": "2026",
     "owner": "Profissional independente",
     "location": {
@@ -21,7 +21,7 @@
     "services": [
       {"name": "Urgências elétricas 24h", "price_range": "50€-150€"},
       {"name": "Quadro elétrico (instalação/upgrade)", "price_range": "200€-600€"},
-      {"name": "Fichas eletrotécnicas assinadas por técnico certificado DGEG", "price_range": "150€-300€"},
+      {"name": "Fichas eletrotécnicas assinadas por técnico profissional", "price_range": "150€-300€"},
       {"name": "Instalação elétrica completa", "price_range": "1500€-5000€"},
       {"name": "Arranjo tomadas/interruptores", "price_range": "30€-60€"},
       {"name": "Iluminação interior/exterior", "price_range": "50€-200€"},

@@ -130,13 +130,13 @@ export function generateMetaDescription(ville?: string): string {
  }
  
  // Page d'accueil
- return `${config.name} 24h - instalação, arranjo e manutenção de sistemas elétricos. Equipa de eletricistas profissionais certificados. Ligue ${config.phone}`;
+ return `${config.name} 24h - instalação, arranjo e manutenção de sistemas elétricos. Equipa de eletricistas profissionais com experiência. Ligue ${config.phone}`;
 }
 // Fonction pour générer les mots-clés SEO
 export function generateKeywords(ville?: string): string {
  const config = ACTIVE_CONFIG;
  
- const baseKeywords = ['eletricista', 'eletricista certificado', 'curto-circuito', 'quadro elétrico', 'instalação elétrica', 'urgência 24h', 'certificação elétrica'];
+ const baseKeywords = ['eletricista', 'eletricista com experiência', 'curto-circuito', 'quadro elétrico', 'instalação elétrica', 'urgência 24h', 'certificação elétrica'];
  
  if (ville) {
  return [...baseKeywords, ville, `${config.name} ${ville}`, `urgência ${ville}`].join(', ');

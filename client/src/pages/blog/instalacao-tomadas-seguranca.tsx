@@ -19,7 +19,7 @@ export default function InstalacaoTomadasSeguranca() {
  "name": "Posso instalar tomadas sozinho?",
  "acceptedAnswer": {
  "@type": "Answer",
- "text": "Não é recomendado. A instalação de tomadas envolve trabalho com eletricidade e deve ser feita por eletricista certificado. Instalações incorretas causam choques elétricos, curto-circuitos e incêndios. Multas por instalações não certificadas chegam a 3.740€."
+ "text": "Não é recomendado. A instalação de tomadas envolve trabalho com eletricidade e deve ser feita por eletricista com experiência. Instalações incorretas causam choques elétricos, curto-circuitos e incêndios. Multas por instalações não certificadas chegam a 3.740€."
  }
  },
  {
@@ -81,7 +81,7 @@ export default function InstalacaoTomadasSeguranca() {
  <div className="flex flex-col md:flex-row items-center justify-between">
  <div className="mb-4 md:mb-0">
  <h3 className="text-xl font-bold mb-2">Precisa de Instalar Tomadas?</h3>
- <p className="text-blue-100">Eletricistas certificados em Bragança e Trás-os-Montes</p>
+ <p className="text-blue-100">Eletricistas com experiência em Bragança e Trás-os-Montes</p>
  </div>
  <div className="flex gap-3">
  <a href="tel:+351932321892" className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition flex items-center gap-2">
@@ -296,7 +296,7 @@ export default function InstalacaoTomadasSeguranca() {
  <h4 className="font-bold text-gray-900 mb-2">Posso usar extensões permanentemente?</h4>
  <p className="text-gray-700 mb-0">
  <strong>Não.</strong> Extensões são para uso temporário. Uso permanente causa sobrecargas, aquecimento e incêndios.
- Se precisa de mais tomadas, instale tomadas fixas com eletricista certificado.
+ Se precisa de mais tomadas, instale tomadas fixas com eletricista com experiência.
  </p>
  </div>
  <div className="bg-gray-50 rounded-lg p-6">
@@ -324,7 +324,7 @@ export default function InstalacaoTomadasSeguranca() {
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Conclusão</h2>
  <p>
  A instalação correta de tomadas é essencial para segurança e conforto. Respeite as normas RTIEBT,
- instale quantidades adequadas por divisão e contrate sempre eletricista certificado.
+ instale quantidades adequadas por divisão e contrate sempre eletricista com experiência.
  </p>
  <p>
  O investimento de 35-60€ por tomada previne choques elétricos, incêndios e danos em equipamentos.
@@ -335,7 +335,7 @@ export default function InstalacaoTomadasSeguranca() {
  <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl p-8 mt-12 text-white text-center">
  <h3 className="text-2xl font-bold mb-4">Precisa de Instalar ou Substituir Tomadas?</h3>
  <p className="text-blue-100 mb-6 text-lg">
- Eletricistas certificados em Bragança, Mirandela, Trás-os-Montes e toda a região de Trás-os-Montes
+ Eletricistas com experiência em Bragança, Mirandela, Trás-os-Montes e toda a região de Trás-os-Montes
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a href="tel:+351932321892" className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition flex items-center justify-center gap-2">

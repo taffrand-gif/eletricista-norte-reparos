@@ -321,7 +321,7 @@ export default function EconomiaEletricidadeCasaDicas() {
  <h4 className="font-bold text-gray-900 mb-2">Como saber se minha casa gasta muito?</h4>
  <p className="text-gray-700 mb-0">
  Compare com média: 3500-4500 kWh/ano (700-900€). Se gasta mais de 5000 kWh/ano (1000€+), há desperdício.
- Peça auditoria energética a eletricista certificado (100-150€) para identificar problemas.
+ Peça auditoria energética a eletricista com experiência (100-150€) para identificar problemas.
  </p>
  </div>
  <div className="bg-gray-50 rounded-lg p-6">

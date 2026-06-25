@@ -24,7 +24,7 @@ export default function QuadroEletricoDisparaCausas() {
  "name": "É perigoso o disjuntor disparar muitas vezes?",
  "acceptedAnswer": {
  "@type": "Answer",
- "text": "Sim. Disparos frequentes indicam problema elétrico grave que pode causar incêndio, choque elétrico ou danos em aparelhos. Nunca force o disjuntor a ficar ligado. Contacte eletricista certificado mediante confirmação."
+ "text": "Sim. Disparos frequentes indicam problema elétrico grave que pode causar incêndio, choque elétrico ou danos em aparelhos. Nunca force o disjuntor a ficar ligado. Contacte eletricista com experiência mediante confirmação."
  }
  },
  {
@@ -91,7 +91,7 @@ export default function QuadroEletricoDisparaCausas() {
  Resposta mediante contacto:
  </p>
  <p className="text-gray-800">
- O quadro elétrico dispara principalmente por <strong>sobrecarga</strong> (demasiados aparelhos ligados simultaneamente), <strong>curto-circuito</strong> (contacto direto entre fios), <strong>fuga de corrente</strong> (isolamento danificado) ou <strong>disjuntor defeituoso</strong>. É um mecanismo de segurança essencial que previne incêndios e choques elétricos. Se disparar frequentemente, contacte eletricista certificado.
+ O quadro elétrico dispara principalmente por <strong>sobrecarga</strong> (demasiados aparelhos ligados simultaneamente), <strong>curto-circuito</strong> (contacto direto entre fios), <strong>fuga de corrente</strong> (isolamento danificado) ou <strong>disjuntor defeituoso</strong>. É um mecanismo de segurança essencial que previne incêndios e choques elétricos. Se disparar frequentemente, contacte eletricista com experiência.
  </p>
  </div>
  <p className="lead text-xl text-gray-700 mb-8">
@@ -131,7 +131,7 @@ export default function QuadroEletricoDisparaCausas() {
  <li>Aparelhos com fios internos danificados</li>
  </ul>
  <p>
- <strong>Solução:</strong> NUNCA tente arranjar sozinho. Desligue o disjuntor, identifique o circuito afetado e contacte eletricista certificado mediante confirmação. Risco de incêndio é elevado.
+ <strong>Solução:</strong> NUNCA tente arranjar sozinho. Desligue o disjuntor, identifique o circuito afetado e contacte eletricista com experiência mediante confirmação. Risco de incêndio é elevado.
  </p>
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
  3. Fuga de Corrente (Diferencial Dispara)
@@ -153,7 +153,7 @@ export default function QuadroEletricoDisparaCausas() {
  </p>
  <div className="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
  <h3 className="text-xl font-bold text-gray-900 mb-3">
- Precisa de Eletricista Certificado em Bragança?
+ Precisa de eletricista com experiência em Bragança?
  </h3>
  <p className="text-gray-800 mb-4">
  Diagnóstico rápido e arranjo profissional. Intervenção em 2-4 horas. certificação elétrica garantida.
@@ -320,7 +320,7 @@ export default function QuadroEletricoDisparaCausas() {
  Quando Chamar Eletricista Urgente?
  </h2>
  <p>
- Contacte profissional certificado mediante confirmação se:
+ Contacte profissional com experiência mediante confirmação se:
  </p>
  <ul>
  <li>Cheiro a queimado ou fumo no quadro elétrico</li>
@@ -350,7 +350,7 @@ export default function QuadroEletricoDisparaCausas() {
  É perigoso o disjuntor disparar muitas vezes?
  </h3>
  <p className="text-gray-700">
- Sim. Disparos frequentes indicam problema elétrico grave que pode causar incêndio, choque elétrico ou danos em aparelhos. Nunca force o disjuntor a ficar ligado. Contacte eletricista certificado mediante confirmação.
+ Sim. Disparos frequentes indicam problema elétrico grave que pode causar incêndio, choque elétrico ou danos em aparelhos. Nunca force o disjuntor a ficar ligado. Contacte eletricista com experiência mediante confirmação.
  </p>
  </div>
  <div className="border-l-4 border-orange-600 pl-4">
@@ -383,7 +383,7 @@ export default function QuadroEletricoDisparaCausas() {
  Quadro Elétrico a Disparar? Resolvemos Hoje!
  </h3>
  <p className="text-gray-800 mb-6">
- Eletricistas certificados em Bragança e Trás-os-Montes. Diagnóstico rápido, arranjo profissional, garantia escrita. Intervenção urgente em 2-4 horas.
+ Eletricistas com experiência em Bragança e Trás-os-Montes. Diagnóstico rápido, arranjo profissional, garantia escrita. Intervenção urgente em 2-4 horas.
  </p>
  <ul className="space-y-2 mb-6 text-gray-800">
  <li className="flex items-start">

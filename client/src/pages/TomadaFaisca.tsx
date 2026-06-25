@@ -12,7 +12,7 @@ export default function TomadaFaisca() {
  const faqs = [
  {
  question: "É perigoso usar tomada que faz faísca?",
- answer: "SIM, é MUITO PERIGOSO. Tomada que faz faísca pode causar incêndio, choque elétrico ou danificar aparelhos. Desligue o disjuntor dessa tomada mediante confirmação e não use até ser arranjada por eletricista certificado."
+ answer: "SIM, é MUITO PERIGOSO. Tomada que faz faísca pode causar incêndio, choque elétrico ou danificar aparelhos. Desligue o disjuntor dessa tomada mediante confirmação e não use até ser arranjada por eletricista com experiência."
  },
  {
  question: "Porque é que a tomada faz faísca?",
@@ -20,7 +20,7 @@ export default function TomadaFaisca() {
  },
  {
  question: "Posso arranjar tomada que faz faísca sozinho?",
- answer: "NÃO. Trabalhar com eletricidade é perigoso e ilegal sem certificação. Tomada com faísca indica problema grave que pode causar incêndio. Chame eletricista certificado urgente."
+ answer: "NÃO. Trabalhar com eletricidade é perigoso e ilegal sem certificação. Tomada com faísca indica problema grave que pode causar incêndio. Chame eletricista com experiência urgente."
  },
  {
  question: "Quanto custa arranjar tomada que faz faísca?",

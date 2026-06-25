@@ -24,8 +24,8 @@ export function ServicesSlider() {
  },
  {
  icon: '👷',
- title: 'Canalizadores Certificados',
- description: 'Profissionais qualificados com equipamento profissional',
+ title: 'canalizadores com experiência',
+ description: 'Profissionais com experiência com equipamento profissional',
  image: 'https://private-us-east-1.manuscdn.com/sessionFile/RsLgvajqRJaxpcBIQSqPn3/sandbox/yEILT6e5vYHZPIaCO8mEe5-img-2_1770645652000_na1fn_cGx1bWJlci1maXhpbmctc2luaw.jpg?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvUnNMZ3ZhanFSSmF4cGNCSVFTcVBuMy9zYW5kYm94L3lFSUxUNmU1dllIWlBJYUNPOG1FZTUtaW1nLTJfMTc3MDY0NTY1MjAwMF9uYTFmbl9jR3gxYldKbGNpMW1hWGhwYm1jdGMybHVhdy5qcGc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=tkqQQm1AMXjf3C1pjeaWwZBJch33oXYSrmx0ojouK8FlgaqJwjFBJ9dnio7P2GZ5umPZtvOzPAvIZpiKpPYeS18yB8xJI2KxlBEtNqP3kwWTTqN0Ctnp-LbDQ0SymXcqs1sM5Xpvf0v-WW7IdFJLINIqlv1ytA3xEoNoBMowqLhSTqw9VyQOCSp2ZfWItiYQ1eQcMIcV7M8n6T~jzk1Pnlf5~Rf7ZPnc9DluG0beXs4r4xg72s~biss7JqHETuv1SQmOTTqF6s9s1wgfxBKlFggoLHzgR~wpDKHgpwNfpSSV9ptTHxn~e0gIUHE7Pk7g9YQAam7tZ8eDD2EfUYQ6CA__'
  },
  {
@@ -49,8 +49,8 @@ export function ServicesSlider() {
  },
  {
  icon: '👷',
- title: 'Eletricistas Certificados',
- description: 'Profissionais qualificados com formação adequada',
+ title: 'eletricistas com experiência',
+ description: 'Profissionais com experiência com formação adequada',
  image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80'
  },
  {

@@ -25,7 +25,7 @@ function FAQ() {
  answer: 'Em caso de curto-circuito: 1) Desligue o disjuntor geral mediante confirmação, 2) Não toque em fios expostos ou tomadas, 3) Afaste-se de cheiro a queimado, 4) Ligue mediante confirmação para 932 321 892. A nossa equipa actua com rapidez. Nunca tente arranjar sozinho - risco de eletrocussão.'},
  {
  question: 'Eletricista precisa de Orçamento por escrito?',
- answer: 'Sim, para instalações elétricas em Portugal é obrigatório Orçamento por escrito (Certificação de Instalações Elétricas). Todos os nossos eletricistas são certificados . Emitimos certificação após cada intervenção conforme legislação. Garantia 12 meses em instalações.'},
+ answer: 'Sim, para instalações elétricas em Portugal é obrigatório Orçamento por escrito (Certificação de Instalações Elétricas). Todos os nossos eletricistas têm experiência . Emitimos certificação após cada intervenção conforme legislação. Garantia 12 meses em instalações.'},
  {
  question: 'Eletricista trabalha aos fins de semana e feriados?',
  answer: 'Sim, o serviço de eletricista urgente está disponível Atendimento 24h/7d, 7 dias por semana, incluindo sábados, domingos e feriados. Não há majoração de preço aos fins de semana. Ligue 932 321 892 a qualquer hora.'},

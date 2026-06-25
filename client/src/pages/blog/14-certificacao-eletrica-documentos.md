@@ -42,7 +42,7 @@ tags: ['certificação elétrica', 'documentos', 'processo', 'legal', 'seguranç
 
 ### Fase 3: Emissão do Certificado
 1. **Elaboração do relatório** técnico
-2. **Registo no sistema** da DGEG
+2. **Registo no sistema**
 3. **Emissão do certificado** de conformidade
 4. **Entrega ao cliente** com explicação
 
@@ -58,7 +58,7 @@ tags: ['certificação elétrica', 'documentos', 'processo', 'legal', 'seguranç
 ## Perguntas Frequentes
 
 ### Quem pode emitir certificado elétrico?
-**Resposta:** Apenas electricistas registados na DGEG com habilitação específica para certificação.
+**Resposta:** Apenas electricistas registados na com habilitação específica para certificação.
 
 ### Qual a validade do certificado?
 **Resposta:** 5 anos para habitações, 2 anos para estabelecimentos comerciais.

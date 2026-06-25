@@ -80,7 +80,7 @@ export default function AutomacaoResidencialGuia() {
  "name": "Quem deve instalar a automação?",
  "acceptedAnswer": {
  "@type": "Answer",
- "text": "A instalação deve ser feita por um eletricista certificado para garantir segurança e funcionamento correto. O processo começa com a avaliação da instalação elétrica existente, seguida da escolha do sistema, instalação profissional e configuração com formação de utilização."
+ "text": "A instalação deve ser feita por um eletricista com experiência para garantir segurança e funcionamento correto. O processo começa com a avaliação da instalação elétrica existente, seguida da escolha do sistema, instalação profissional e configuração com formação de utilização."
  }
  }
  ]
@@ -272,7 +272,7 @@ export default function AutomacaoResidencialGuia() {
  <div>
  <h3 className="font-bold mb-1">Instalação Profissional</h3>
  <p className="text-sm text-gray-700">
- A instalação deve ser feita por um eletricista certificado para garantir segurança e funcionamento correto.
+ A instalação deve ser feita por um eletricista com experiência para garantir segurança e funcionamento correto.
  </p>
  </div>
  </div>

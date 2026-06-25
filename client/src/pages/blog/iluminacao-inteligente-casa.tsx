@@ -299,7 +299,7 @@ export default function IluminacaoInteligenteCasa() {
  <h4 className="font-bold text-gray-900 mb-2">Instalar e Configurar</h4>
  <p className="text-gray-700">
  <strong>Lâmpadas:</strong> Substituir diretamente (DIY)<br/>
- <strong>Interruptores:</strong> Eletricista certificado (30-50€/interruptor)<br/>
+ <strong>Interruptores:</strong> Eletricista com experiência (30-50€/interruptor)<br/>
  <strong>Fitas LED:</strong> DIY ou profissional (50-100€)<br/>
  <strong>Configuração app:</strong> alguns minutos
  </p>
@@ -322,7 +322,7 @@ export default function IluminacaoInteligenteCasa() {
  <h4 className="font-bold text-gray-900 mb-2">Preciso de eletricista para instalar?</h4>
  <p className="text-gray-700 mb-0">
  <strong>Lâmpadas inteligentes:</strong> Não, substitui como lâmpada normal.<br/>
- <strong>Interruptores inteligentes:</strong> Sim, requer eletricista certificado (trabalho com 230V).<br/>
+ <strong>Interruptores inteligentes:</strong> Sim, requer eletricista com experiência (trabalho com 230V).<br/>
  <strong>Fitas LED:</strong> Não para instalação simples, sim para instalação embutida.
  </p>
  </div>

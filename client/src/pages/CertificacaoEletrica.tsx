@@ -9,10 +9,10 @@ const faqItems = [
 ];
 export default function CertificacaoEletrica() {
  useEffect(() => {
- document.title = "Certificação Elétrica em Trás-os-Montes | Eletricista Certificado";
+ document.title = "Certificação Elétrica em Trás-os-Montes | eletricista com experiência";
  let meta = document.querySelector('meta[name="description"]');
  if (!meta) { meta = document.createElement('meta'); meta.setAttribute('name', 'description'); document.head.appendChild(meta); }
- meta.setAttribute('content', 'Certificação elétrica em Trás-os-Montes. Inspeção, correção e emissão de certificado. Eletricista certificado. Ligue +351 932 321 892.');
+ meta.setAttribute('content', 'Certificação elétrica em Trás-os-Montes. Inspeção, correção e emissão de certificado. Eletricista com experiência. Ligue +351 932 321 892.');
  }, []);
  const serviceSchema = {
  "@context": "https://schema.org", "@type": "Service",

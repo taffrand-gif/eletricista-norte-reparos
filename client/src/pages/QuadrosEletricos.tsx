@@ -12,7 +12,7 @@ export default function QuadrosEletricos() {
  document.title = "Quadros Elétricos Trás-os-Montes | 932 321 892";
  let meta = document.querySelector('meta[name="description"]');
  if (!meta) { meta = document.createElement('meta'); meta.setAttribute('name', 'description'); document.head.appendChild(meta); }
- meta.setAttribute('content', 'Instalação e modernização de quadros elétricos em Trás-os-Montes. Disjuntores, diferenciais, certificação elétrica. Eletricista certificado 24h. Ligue +351 932 321 892.');
+ meta.setAttribute('content', 'Instalação e modernização de quadros elétricos em Trás-os-Montes. Disjuntores, diferenciais, certificação elétrica. Eletricista com experiência 24h. Ligue +351 932 321 892.');
  }, []);
  const serviceSchema = {
  "@context": "https://schema.org", "@type": "Service",
@@ -31,7 +31,7 @@ export default function QuadrosEletricos() {
  <section className="bg-gradient-to-br from-orange-500 to-orange-700 text-white py-20 px-4">
  <div className="max-w-4xl mx-auto text-center">
  <h1 className="text-4xl md:text-5xl font-bold mb-6">Quadros Elétricos: Instalação e Modernização</h1>
- <p className="text-xl mb-8 max-w-2xl mx-auto">Modernize o seu quadro elétrico para maior segurança e eficiência. Eletricista certificado em Trás-os-Montes.</p>
+ <p className="text-xl mb-8 max-w-2xl mx-auto">Modernize o seu quadro elétrico para maior segurança e eficiência. Eletricista com experiência em Trás-os-Montes.</p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a href={`tel:${ACTIVE_CONFIG.phone}`} className="bg-white text-orange-700 hover:bg-gray-100 font-bold px-8 py-4 rounded-lg text-lg transition-colors">📞 Ligar Agora</a>
  <a href={`https://wa.me/${ACTIVE_CONFIG.whatsappNumber}`} className="bg-green-700 hover:bg-green-800 text-white font-bold px-8 py-4 rounded-lg text-lg transition-colors">💬 WhatsApp</a>
@@ -111,7 +111,7 @@ export default function QuadrosEletricos() {
  <section className="py-16 px-4 bg-gradient-to-r from-orange-500 to-orange-700 text-white">
  <div className="max-w-4xl mx-auto text-center">
  <h2 className="text-3xl font-bold mb-4">Precisa de Modernizar o Quadro Elétrico?</h2>
- <p className="text-xl mb-8">Sem compromisso e sem compromisso. Eletricista certificado.</p>
+ <p className="text-xl mb-8">Sem compromisso e sem compromisso. Eletricista com experiência.</p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a href={`tel:${ACTIVE_CONFIG.phone}`} className="bg-white text-orange-700 hover:bg-gray-100 font-bold px-8 py-4 rounded-lg text-lg transition-colors">📞 {ACTIVE_CONFIG.phone}</a>
  <a href={`https://wa.me/${ACTIVE_CONFIG.whatsappNumber}`} className="bg-green-700 hover:bg-green-800 text-white font-bold px-8 py-4 rounded-lg text-lg transition-colors">💬 WhatsApp</a>
