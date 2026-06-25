@@ -1,44 +1,44 @@
 {
-  "business": {
-    "name": " - Eletricista Profissional",
-    "type": "Electrician",
-    "description": "Eletricista profissional com experiência em Trás-os-Montes, Portugal. Atendimento 24h/7d/7d para urgências elétricas, Fichas eletrotécnicas assinadas por técnico profissional, quadros elétricos e instalações completas.",
-    "founded": "2026",
-    "owner": "Profissional independente",
-    "location": {
-      "base": "Trás-os-Montes",
-      "region": "Trás-os-Montes",
-      "district": "Bragança",
-      "country": "Portugal",
-      "radius_km": 100
-    },
-    "contact": {
-      "phone": "+351 932 321 892",
-      "whatsapp": "https://wa.me/351932321892",
-      "website": "https://eletricista-norte-reparos.pt"
-    },
-    "hours": "Atendimento 24h/7d incluindo feriados",
-    "services": [
-      {"name": "Urgências elétricas 24h", "price_range": "50€-150€"},
-      {"name": "Quadro elétrico (instalação/upgrade)", "price_range": "200€-600€"},
-      {"name": "Fichas eletrotécnicas assinadas por técnico profissional", "price_range": "150€-300€"},
-      {"name": "Instalação elétrica completa", "price_range": "1500€-5000€"},
-      {"name": "Arranjo tomadas/interruptores", "price_range": "30€-60€"},
-      {"name": "Iluminação interior/exterior", "price_range": "50€-200€"},
-      {"name": "Aquecimento elétrico", "price_range": "100€-500€"}
-    ],
-    "equipment": ["Ridgid Professional", "Multímetros Fluke", "Câmara Térmica FLIR", "Testadores certificados"],
-    "cities_served": [
-      {"name": "Trás-os-Montes", "distance_km": 0, "time_min": 0},
-      {"name": "Bragança", "distance_km": 27, "time_min": 25},
-      {"name": "Mirandela", "distance_km": 30, "time_min": 25},
-      {"name": "Chaves", "distance_km": 75, "time_min": 55},
-      {"name": "Vila Real", "distance_km": 95, "time_min": 70},
-      {"name": "Vinhais", "distance_km": 50, "time_min": 40},
-      {"name": "Miranda do Douro", "distance_km": 80, "time_min": 65},
-      {"name": "Mogadouro", "distance_km": 55, "time_min": 45},
-      {"name": "Torre de Moncorvo", "distance_km": 65, "time_min": 50},
-      {"name": "Freixo de Espada à Cinta", "distance_km": 90, "time_min": 70}
-    ]
-  }
+ "business": {
+ "name": " - Eletricista Profissional",
+ "type": "Electrician",
+ "description": "Eletricista profissional com experiência em Trás-os-Montes, Portugal. Atendimento 24h/7d/7d para urgências elétricas, Fichas eletrotécnicas assinadas por técnico profissional, quadros elétricos e instalações completas.",
+ "founded": "2026",
+ "owner": "Profissional independente",
+ "location": {
+ "base": "Trás-os-Montes",
+ "region": "Trás-os-Montes",
+ "district": "Bragança",
+ "country": "Portugal",
+ "radius_km": 100
+ },
+ "contact": {
+ "phone": "+351 932 321 892",
+ "whatsapp": "https://wa.me/351932321892",
+ "website": "https://eletricista-norte-reparos.pt"
+ },
+ "hours": "Atendimento 24h/7d incluindo feriados",
+ "services": [
+ {"name": "Urgências elétricas 24h", "price_range": "50€-150€"},
+ {"name": "Quadro elétrico (instalação/upgrade)", "price_range": "200€-600€"},
+ {"name": "Fichas eletrotécnicas assinadas por técnico profissional", "price_range": "150€-300€"},
+ {"name": "Instalação elétrica completa", "price_range": "1500€-5000€"},
+ {"name": "Arranjo tomadas/interruptores", "price_range": "30€-60€"},
+ {"name": "Iluminação interior/exterior", "price_range": "50€-200€"},
+ {"name": "Aquecimento elétrico", "price_range": "100€-500€"}
+ ],
+ "equipment": ["Ridgid Professional", "Multímetros Fluke", "Câmara Térmica FLIR", "Testadores certificados"],
+ "cities_served": [
+ {"name": "Trás-os-Montes", "distance_km": 0, "time_min": 0},
+ {"name": "Bragança", "distance_km": 27, "time_min": 25},
+ {"name": "Mirandela", "distance_km": 30, "time_min": 25},
+ {"name": "Chaves", "distance_km": 75, "time_min": 55},
+ {"name": "Vila Real", "distance_km": 95, "time_min": 70},
+ {"name": "Vinhais", "distance_km": 50, "time_min": 40},
+ {"name": "Miranda do Douro", "distance_km": 80, "time_min": 65},
+ {"name": "Mogadouro", "distance_km": 55, "time_min": 45},
+ {"name": "Torre de Moncorvo", "distance_km": 65, "time_min": 50},
+ {"name": "Freixo de Espada à Cinta", "distance_km": 90, "time_min": 70}
+ ]
+ }
 }
