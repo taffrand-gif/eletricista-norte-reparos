@@ -10,8 +10,8 @@ function Urgencia() {
  return (
  <>
  <Helmet>
- <title>Urgência Eletricista — Intervenção Imediata 24h | Norte Reparos</title>
- <meta name="description" content="Urgência eletricista 24h em Trás-os-Montes. Sem luz? Curto-circuito? Cheiro queimado? Resposta rápida ao domicílio. 932 321 892" />
+ <title>Urgência Eletricista — Intervenção 24h em Trás-os-Montes | Norte Reparos</title>
+ <meta name="description" content="Urgência eletricista 24h em Trás-os-Montes. Sem luz? Curto-circuito? Cheiro queimado? Atendimento ao domicílio. 932 321 892" />
  </Helmet>
  {/* Hero Urgência */}
  <section className="relative bg-gradient-to-br from-orange-600 to-red-700 text-white py-20">
@@ -22,7 +22,7 @@ function Urgencia() {
  </div>
  <h1 className="text-4xl md:text-6xl font-black mb-6">
  Eletricista Urgente<br />
- Chegamos Atendimento prioritário
+ Confirmamos a deslocação por telefone
  </h1>
  <div className="flex flex-wrap justify-center gap-4 text-xl md:text-2xl font-bold mb-8">
  <span className="flex items-center gap-2">⚡ Sem Luz?</span>
@@ -56,7 +56,7 @@ function Urgencia() {
  <div className="text-sm">Disponível</div>
  </div>
  <div>
- <div className="text-3xl font-black">Rápida</div>
+ <div className="text-3xl font-black">24h/7d</div>
  <div className="text-sm">Intervenção</div>
  </div>
  </div>
@@ -184,7 +184,7 @@ function Urgencia() {
  <div className="bg-red-100 rounded-lg p-4 mb-4">
  <p className="text-sm font-bold text-red-900">
  🚨 Desligue quadro geral<br />
- Ligue IMEDIATAMENTE
+ Ligue agora
  </p>
  </div>
  <a
@@ -260,13 +260,13 @@ function Urgencia() {
  </div>
  </div>
  </div>
- {/* Cobertura Rápida */}
+ {/* Cobertura Regional */}
  <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border-2 border-green-200">
  <div className="flex items-start gap-4">
  <div className="text-5xl">📍</div>
  <div>
  <h3 className="text-2xl font-bold text-gray-900 mb-3">
- Cobertura Regional Rápida
+ Cobertura Regional em Trás-os-Montes
  </h3>
  <div className="space-y-2 mb-4">
  <p className="text-gray-700">
@@ -392,7 +392,7 @@ function Urgencia() {
  ⚡ Não Arrisque a Sua Segurança
  </h2>
  <p className="text-xl md:text-2xl mb-8">
- Risco de incêndio é REAL. Resposta rápida ao domicílio.
+ Risco de incêndio é REAL. Atendimento ao domicílio por telefone.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
  <a
