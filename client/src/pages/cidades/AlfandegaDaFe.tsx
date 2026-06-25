@@ -18,7 +18,7 @@ export default function AlfandegaDaFe() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Problema elétrico em Alfândega da Fé? A 30km de Macedo, chegamos rápido. Orçamento sem compromisso. Ligue: 932 321 892');
+ metaDescription.setAttribute('content', 'Problema elétrico em Alfândega da Fé? na zona de Trás-os-Montes, confirmamos a deslocação por telefone. Orçamento sem compromisso. Ligue: 932 321 892');
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');
@@ -67,7 +67,7 @@ export default function AlfandegaDaFe() {
  const faqs = [
 {
     question: "Quanto tempo demora a chegar a Alfândega da Fé?",
-    answer: "Chegamos a Alfândega da Fé em apenas 25-30 minutos a partir de Trás-os-Montes. Cobrimos todo o conselho.",
+    answer: "Chegamos a Alfândega da Fé em apenas  a partir de Trás-os-Montes. Cobrimos todo o conselho.",
   },
 {
     question: "Qual o custo de deslocação a Alfândega da Fé?",
@@ -82,7 +82,7 @@ export default function AlfandegaDaFe() {
  <div className="container text-center text-white">
  <span className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-bold mb-4">⚡ ALFÂNDEGA DA FÉ - TERRA DAS AMÊNDOAS</span>
  <h1 className="text-4xl md:text-6xl font-black mb-6">Eletricista em Alfândega da Fé</h1>
- <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">A apenas 30km de Trás-os-Montes, servimos todo o concelho de Alfândega da Fé. Especialistas em instalações para amendoais e lagares de azeite.</p>
+ <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Na zona de Trás-os-Montes, servimos todo o concelho de Alfândega da Fé. Especialistas em instalações para amendoais e lagares de azeite.</p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a href={`tel:${businessInfo.phone}`} className="inline-flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg text-xl font-bold transition-all shadow-lg">
  <Phone className="w-6 h-6" />{businessInfo.phoneFormatted}
@@ -99,7 +99,7 @@ export default function AlfandegaDaFe() {
  { icon: Zap, title: "Instalações para Amendoais", desc: "Sistemas de rega elétricos, iluminação de armazéns e processamento" },
  { icon: Shield, title: "Quadros Elétricos Agrícolas", desc: "Quadros trifásicos para lagares de azeite e maquinaria" },
  { icon: CheckCircle, title: "Remodelação Habitacional", desc: "Atualização de instalações elétricas em casas antigas do concelho" },
- { icon: Zap, title: "Urgências 24h", desc: "Resposta rápida a 30 minutos de Trás-os-Montes" },
+ { icon: Zap, title: "Urgências 24h", desc: "Atendimento 24h/7d mediante confirmação por telefone" },
  ].map((service, index) => (
  <div key={index} className="flex items-start gap-4 p-6 bg-white rounded-xl shadow">
  <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -123,7 +123,7 @@ export default function AlfandegaDaFe() {
  <section className="py-16 bg-orange-500 text-white">
  <div className="container text-center">
  <h2 className="text-3xl font-black mb-4">Precisa de Eletricista em Alfândega da Fé?</h2>
- <p className="text-xl mb-8 opacity-90">Ligue agora. Estamos a apenas 30 minutos de distância.</p>
+ <p className="text-xl mb-8 opacity-90">Ligue agora. Estamos Disponível mediante contacto.</p>
  <a href={`tel:${businessInfo.phone}`} className="inline-flex items-center gap-2 bg-white text-orange-500 px-8 py-4 rounded-lg text-xl font-bold hover:bg-gray-100 transition-all shadow-lg">
  <Phone className="w-6 h-6" />932 321 892
  </a>

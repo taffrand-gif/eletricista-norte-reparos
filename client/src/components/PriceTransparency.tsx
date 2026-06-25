@@ -36,8 +36,8 @@ function PriceTransparency() {
  'Preço fixo ANTES de sair',
  'Orçamento grátis por telefone, por escrito',
  'Garantia do serviço escrita',
- 'Sem surpresas garantido',
- 'Preço = Preço combinado'
+ 'Sem surpresas',
+ 'Preço combinado por escrito'
  ],
  highlight: true
  },
@@ -161,11 +161,11 @@ function PriceTransparency() {
  {/* Social Proof */}
  <div className="mt-8 text-center">
  <div className="inline-flex items-center gap-2 text-yellow-500 text-2xl mb-2">
- ★★★★★
+ 
  </div>
  <p className="text-gray-600">
  <strong className="text-gray-900">baseado em{' '}
- que apreciaram a transparência</strong>
+ mediante pedido de orçamento</strong>
  </p>
  </div>
  </div>

@@ -126,7 +126,7 @@ export default function MacedoCavaleiros() {
  Eletricista em Macedo de Cavaleiros
  </h1>
  <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
- A nossa base é aqui. Chegamos Resposta rápida garantida. Serviço 24h para urgências elétricas.
+ A nossa base é aqui. Chegamos Atendimento 24h/7d garantida. Serviço 24h para urgências elétricas.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a
@@ -250,7 +250,7 @@ export default function MacedoCavaleiros() {
  Precisa de Eletricista em Macedo de Cavaleiros?
  </h2>
  <p className="text-xl mb-8 opacity-90">
- Ligue agora. Estamos a menos de 30 minutos de si.
+ Ligue agora. Estamos a menos de mediante confirmação de si.
  </p>
  <a
  href={`tel:${businessInfo.phone}`}
