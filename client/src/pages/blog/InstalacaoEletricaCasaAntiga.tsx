@@ -331,7 +331,7 @@ export default function InstalacaoEletricaCasaAntiga() {
  <div>
  <h3 className="font-bold mb-1">Certificação Elétrica</h3>
  <p className="text-sm text-gray-700">
- Emitimos Trabalho garantido por escrito obrigatório para legalização da instalação.
+ Emitimos Orçamento por escrito obrigatório para legalização da instalação.
  </p>
  </div>
  </div>

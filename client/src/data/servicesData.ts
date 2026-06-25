@@ -36,7 +36,7 @@ export const SERVICES: Service[] = [
  priceDetails: 'Preço varia conforme complexidade',
  image: '/images-optimized/services/service-instalacao.jpg',
  content: {
- intro: 'A Eletricista Profissional realiza **instalações elétricas completas** em Trás-os-Montes, cumprindo rigorosamente as **Regras Técnicas das Instalações Elétricas de Baixa Tensão (RTIEBT)**. Trabalhamos com materiais certificados (Legrand, Schneider Electric, Siemens) e garantimos instalações seguras com **Trabalho garantido por escrito** incluído.',
+ intro: 'A Eletricista Profissional realiza **instalações elétricas completas** em Trás-os-Montes, cumprindo rigorosamente as **Regras Técnicas das Instalações Elétricas de Baixa Tensão (RTIEBT)**. Trabalhamos com materiais certificados (Legrand, Schneider Electric, Siemens) e garantimos instalações seguras com **Orçamento por escrito** incluído.',
  sections: [
  {
  title: 'Tipos de Instalações',

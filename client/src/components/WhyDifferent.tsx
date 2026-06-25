@@ -22,7 +22,7 @@ function WhyDifferent() {
  value: 'Economiza €200 (solução definitiva)'},
  {
  icon: '📜',
- title: 'Sem Trabalho garantido por escrito',
+ title: 'Sem Orçamento por escrito',
  others: 'Instalação sem certificação legal',
  us: 'certificação elétrica incluída sempre',
  value: 'Economiza €150 (aceite seguradora)'},
@@ -66,7 +66,7 @@ function WhyDifferent() {
  icon: '📄',
  title: 'Sem Fatura, Sem Garantia',
  others: 'Trabalho por fora, desaparece',
- us: 'Fatura + Trabalho garantido por escrito + Garantia',
+ us: 'Fatura + Orçamento por escrito + Garantia',
  value: 'Economiza €200 (segurança legal)'},
  {
  icon: '🔌',
@@ -155,7 +155,7 @@ function WhyDifferent() {
  📞 Ligue: {config.phone}
  </a>
  <a
- href={`https://wa.me/351${config.phone.replace(/\s/g, '')}?text=Olá, preciso de eletricista Trabalho garantido por escrito`}
+ href={`https://wa.me/351${config.phone.replace(/\s/g, '')}?text=Olá, preciso de eletricista Orçamento por escrito`}
  target="_blank"
  rel="noopener noreferrer"
  className="inline-flex items-center justify-center gap-2 px-8 py-4 font-bold text-white bg-green-500 rounded-lg shadow-lg hover:shadow-xl transition-all text-lg"

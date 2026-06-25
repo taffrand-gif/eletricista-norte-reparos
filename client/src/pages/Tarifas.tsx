@@ -87,7 +87,7 @@ function Tarifas() {
  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
  <div className="text-4xl mb-3">🛡️</div>
  <h3 className="font-bold mb-2">Garantia Total</h3>
- <p className="text-sm text-gray-300">Trabalho garantido por escrito garantida</p>
+ <p className="text-sm text-gray-300">Orçamento por escrito garantida</p>
  </div>
  </div>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
