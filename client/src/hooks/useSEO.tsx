@@ -126,7 +126,7 @@ export function generateMetaDescription(ville?: string): string {
  
  if (ville) {
  // Meta descriptions optimisées par ville (<160 chars, mots-clés locaux, CTA, )
- return `Eletricista Trabalho garantido por escrito em ${ville} 24h/7d. Avarias, disjuntores, quadros elétricos. Chegamos assim que possível. ☎️ ${config.phone}`;
+ return `Eletricista Orçamento por escrito em ${ville} 24h/7d. Avarias, disjuntores, quadros elétricos. Chegamos assim que possível. ☎️ ${config.phone}`;
  }
  
  // Page d'accueil

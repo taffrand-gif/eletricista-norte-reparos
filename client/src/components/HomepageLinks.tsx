@@ -42,7 +42,7 @@ export default function HomepageLinks() {
  <div className="grid md:grid-cols-3 gap-4 mb-8">
  {[
  { href: '/blog/casa-sem-luz-o-que-fazer', title: 'Casa Sem Luz: O Que Fazer?', desc: 'Guia completo passo a passo.' },
- { href: '/blog/certificado--preco-quanto-custa', title: 'Trabalho garantido por escrito: Preço', desc: 'Quanto custa a certificação em 2026.' },
+ { href: '/blog/certificado--preco-quanto-custa', title: 'Orçamento por escrito: Preço', desc: 'Quanto custa a certificação em 2026.' },
  { href: '/blog/tomada-queimada-perigos-solucoes', title: 'Tomada Queimada: Perigos', desc: 'Saiba os perigos e como detetar.' },
  { href: '/blog/quadro-eletrico-antigo-fusiveis-trocar', title: 'Quadro Elétrico Antigo', desc: 'Quando trocar o quadro elétrico.' },
  { href: '/blog/sinais-problemas-eletricos-casa', title: 'Sinais de Problemas Elétricos', desc: 'Conheça os sinais de alerta.' },

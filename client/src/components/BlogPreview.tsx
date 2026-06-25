@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 const FEATURED_POSTS = [
  {
  slug: 'como-escolher-eletricista-certificado',
- title: 'Como Escolher um Eletricista Trabalho garantido por escrito',
+ title: 'Como Escolher um Eletricista Orçamento por escrito',
  excerpt: 'Guia completo para contratar um eletricista profissional em Trás-os-Montes.',
  date: '2026-03-01',
  readTime: 'alguns minutos'

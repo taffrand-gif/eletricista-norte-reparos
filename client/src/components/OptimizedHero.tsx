@@ -59,7 +59,7 @@ const OptimizedHero: React.FC = () => {
  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
  <div className="text-3xl mb-3">✅</div>
- <h3 className="text-white font-bold text-lg mb-2">Trabalho garantido por escrito</h3>
+ <h3 className="text-white font-bold text-lg mb-2">Orçamento por escrito</h3>
  <p className="text-white/80">Técnico com formação adequada e seguro ativo</p>
  </div>
  

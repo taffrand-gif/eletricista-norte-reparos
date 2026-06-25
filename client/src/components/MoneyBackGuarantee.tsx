@@ -41,7 +41,7 @@ function MoneyBackGuarantee() {
  Garantia "Risco ZERO" para Si
  </h2>
  <p className="text-xl text-gray-600 max-w-3xl mx-auto">
- Estamos TÃO confiantes na qualidade do nosso trabalho Trabalho garantido por escrito que assumimos TODO o risco.
+ Estamos TÃO confiantes na qualidade do nosso trabalho Orçamento por escrito que assumimos TODO o risco.
  Se não ficar 100% satisfeito, não paga.
  </p>
  </div>

@@ -82,7 +82,7 @@ export default function ComoInstalarTomadaSozinho() {
  },
  {
  razao: "Certificação Obrigatória",
- explicacao: "Toda instalação elétrica precisa Trabalho garantido por escrito. Sem certificado = ilegal, não pode vender casa, seguro inválido.",
+ explicacao: "Toda instalação elétrica precisa Orçamento por escrito. Sem certificado = ilegal, não pode vender casa, seguro inválido.",
  icon: CheckCircle
  }
  ];
@@ -94,7 +94,7 @@ export default function ComoInstalarTomadaSozinho() {
  "Liga fios na ordem correta (segurança)",
  "Verifica ligação à terra (proteção choque)",
  "Testa tomada com equipamento profissional",
- "Emite Trabalho garantido por escrito (obrigatório)",
+ "Emite Orçamento por escrito (obrigatório)",
  "Garante conformidade com normas portuguesas",
  "Dá garantia do trabalho (2 anos)"
  ];

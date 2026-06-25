@@ -42,7 +42,7 @@ export default function StructuredData() {
  "name": "Norte Reparos",
  "alternateName": serviceName,
  "description": `${config.description} Atualmente a servir ${detectedCity} e região.`,
- "slogan": `Serviço 24h/7d em ${detectedCity} • Trabalho garantido por escrito`,
+ "slogan": `Serviço 24h/7d em ${detectedCity} • Orçamento por escrito`,
  "url": `https://${config.domain}`,
  "telephone": businessInfo.phone,
  "email": config.email,
@@ -366,7 +366,7 @@ export default function StructuredData() {
  "currenciesAccepted": "EUR",
  "paymentAccepted": ["Cash", "Credit Card", "Bank Transfer", "MB WAY"],
  "knowsLanguage": ["pt-PT"],
- "slogan": "Serviço 24h/7d em Trás-os-Montes • Trabalho garantido por escrito"
+ "slogan": "Serviço 24h/7d em Trás-os-Montes • Orçamento por escrito"
  };
  // FAQ Schema enriquecido
  const faqSchema = {

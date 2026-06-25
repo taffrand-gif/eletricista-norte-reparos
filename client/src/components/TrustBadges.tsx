@@ -72,7 +72,7 @@ export default function TrustBadges() {
  <div className="text-5xl">✓</div>
  <div className="text-left">
  <h3 className="text-xl font-bold mb-1">
- Garantia de Trabalho garantido por escrito
+ Garantia de Orçamento por escrito
  </h3>
  <p className="text-sm opacity-90">
  Se não ficar satisfeito, voltamos gratuitamente até resolver. Sem custos adicionais.
