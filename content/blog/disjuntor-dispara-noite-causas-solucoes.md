@@ -432,7 +432,7 @@ Não ligar tudo ao mesmo tempo.
 - [Quanto Custa Quadro Elétrico 2026](https://eletricista-norte-reparos.pt/blog/quanto-custa-quadro-fusiveis-2026)
 - [Urgência Elétrica: O Que Fazer](https://eletricista-norte-reparos.pt/blog/urgencia-eletrica-o-que-fazer-antes)
 - [Eletricista Atendimento 24h/7d: Guia Completo](https://eletricista-norte-reparos.pt/blog/eletricista-24-horas-guia-completo)
-- [Fichas eletrotécnicas assinadas por técnico certificado DGEG Obrigatória](https://eletricista-norte-reparos.pt/blog/certificacao-eletrica-obrigatoria-quando-como)
+- [Fichas eletrotécnicas assinadas por técnico profissional Obrigatória](https://eletricista-norte-reparos.pt/blog/certificacao-eletrica-obrigatoria-quando-como)
 
 ## Disjuntor Dispara Frequentemente?
 

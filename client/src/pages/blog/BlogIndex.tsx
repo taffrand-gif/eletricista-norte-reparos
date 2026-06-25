@@ -110,7 +110,7 @@ const BlogIndex: React.FC = () => {
  {
  slug: 'como-escolher-eletricista-certificado',
  title: 'Como Escolher um Eletricista Certificado: 7 Critérios Essenciais',
- excerpt: 'Guia completo para escolher um eletricista certificado de confiança. 7 critérios essenciais para não errar na escolha.',
+ excerpt: 'Guia completo para escolher um eletricista com experiência de confiança. 7 critérios essenciais para não errar na escolha.',
  category: 'Dicas',
  readTime: '8',
  date: '18 Fev 2026',
@@ -137,7 +137,7 @@ const BlogIndex: React.FC = () => {
  Conhecimento que <span className="text-amber-600">Ilumina</span>
  </h1>
  <p className="text-xl text-gray-600 max-w-3xl mx-auto">
- Artigos escritos por eletricistas certificados para ajudar proprietários e empresas a entenderem melhor a eletricidade e tomarem decisões informadas.
+ Artigos escritos por eletricistas com experiência para ajudar proprietários e empresas a entenderem melhor a eletricidade e tomarem decisões informadas.
  </p>
  </div>
  {/* Featured article */}

@@ -113,7 +113,7 @@ const ComoInstalarCandeeiroTeto: React.FC = () => {
  <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg mb-8">
  <p className="text-blue-800 font-semibold text-lg">
  ⚠️ Aviso Importante: Este guia é para projetos DIY simples. Para instalações complexas, 
- quadros elétricos antigos ou qualquer dúvida sobre segurança, contate sempre um eletricista certificado.
+ quadros elétricos antigos ou qualquer dúvida sobre segurança, contate sempre um eletricista com experiência.
  </p>
  </div>
  <p className="text-xl text-gray-700 mb-6">
@@ -230,7 +230,7 @@ const ComoInstalarCandeeiroTeto: React.FC = () => {
  </div>
  <div className="mt-8 text-center">
  <p className="text-xl text-gray-900 mb-6">
- Na dúvida, é sempre mais seguro chamar um eletricista certificado.
+ Na dúvida, é sempre mais seguro chamar um eletricista com experiência.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a
@@ -287,7 +287,7 @@ const ComoInstalarCandeeiroTeto: React.FC = () => {
  <div className="md:w-3/4">
  <h3 className="text-2xl font-bold text-gray-900 mb-2">Sobre o Autor</h3>
  <p className="text-gray-700 mb-4">
- <strong>João Silva</strong> é eletricista certificado com experiência em Trás-os-Montes em Trás-os-Montes. 
+ <strong>João Silva</strong> é eletricista com experiência com experiência em Trás-os-Montes em Trás-os-Montes. 
  Especialista em instalações residenciais e comerciais, já realizou mais de 500 intervenções na região. 
  Acredita na importância da educação sobre segurança elétrica para prevenir acidentes domésticos.
  </p>

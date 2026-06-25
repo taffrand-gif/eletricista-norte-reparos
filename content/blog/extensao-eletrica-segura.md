@@ -408,7 +408,7 @@ Em Trás-os-Montes, onde muitas casas têm poucas tomadas (construções antigas
 **** - Eletricista Certificado em Trás-os-Montes  
 ✅ Instalação de tomadas adicionais  
 ✅ Upgrade de quadro elétrico  
-✅ Fichas eletrotécnicas assinadas por técnico certificado DGEG  
+✅ Fichas eletrotécnicas assinadas por técnico profissional  
 ✅ Orçamento grátis sem compromisso  
 ✅ Garantia de 2 anos  
 
@@ -424,4 +424,4 @@ Em Trás-os-Montes, onde muitas casas têm poucas tomadas (construções antigas
 
 ---
 
-*Artigo escrito por eletricistas certificados com 15+ anos de experiência em Trás-os-Montes. Atualizado em Março 2026.*
+*Artigo escrito por eletricistas com experiência com 15+ anos de experiência em Trás-os-Montes. Atualizado em Março 2026.*

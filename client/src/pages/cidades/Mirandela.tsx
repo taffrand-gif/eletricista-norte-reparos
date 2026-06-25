@@ -24,7 +24,7 @@ export default function Mirandela() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Eletricista em Mirandela e arredores. Técnicos qualificados e equipamento profissional. Orçamento grátis. Ligue 932 321 892.');
+ metaDescription.setAttribute('content', 'Eletricista em Mirandela e arredores. Técnicos com experiência e equipamento profissional. Orçamento grátis. Ligue 932 321 892.');
  // SEO meta keywords
  let metaKeywords = document.querySelector('meta[name="keywords"]');
  if (!metaKeywords) {

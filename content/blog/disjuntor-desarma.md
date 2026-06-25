@@ -13,7 +13,7 @@ priority: "CRITICAL"
 
 **O disjuntor desarma constantemente e fica sem luz?** Este é um problema crítico que indica sobrecarga, curto-circuito ou falha elétrica. Neste guia completo, vou mostrar-lhe **as 7 causas principais** de disjuntores que desarmam e **como resolver cada uma com segurança**.
 
-> ⚠️ **PERIGO: Risco de incêndio!** Se disjuntor desarma repetidamente, NÃO force. Ligue já: **[932 321 892](tel:+351932321892)** — Eletricista certificado em Bragança Atendimento prioritário, Atendimento 24h/7d.
+> ⚠️ **PERIGO: Risco de incêndio!** Se disjuntor desarma repetidamente, NÃO force. Ligue já: **[932 321 892](tel:+351932321892)** — Eletricista com experiência em Bragança Atendimento prioritário, Atendimento 24h/7d.
 
 ## 🔍 O Que É um Disjuntor e Como Funciona?
 
@@ -78,7 +78,7 @@ Está a pedir mais corrente do que o circuito suporta. Exemplo: circuito 16A (3.
 
 **Solução B: Aumentar capacidade do circuito (€80-200)**
 
-**Requer eletricista certificado:**
+**Requer eletricista com experiência:**
 1. Substituir disjuntor por um de maior capacidade (16A → 20A ou 25A)
 2. **MAS:** Verificar que o cabo suporta (cabo 2,5mm² suporta 20A, cabo 4mm² suporta 25A)
 3. Se cabo for fino (1,5mm²), precisa substituir cabo também (€150-500)
@@ -187,7 +187,7 @@ Disjuntores têm vida útil de 15-25 anos. Componentes internos desgastam-se e f
 - Mão de obra: €40-80
 - Total: €50-140
 
-**Requer eletricista certificado** (trabalho no quadro elétrico).
+**Requer eletricista com experiência** (trabalho no quadro elétrico).
 
 ### Causa 5: Ligação Solta ou Oxidada (4% dos casos)
 
@@ -293,7 +293,7 @@ Instalar protetor de sobretensão no quadro (obrigatório desde 2006 em instala�
 | Instalar protetor sobretensão | €120-250 |
 | Urgência 24h | +€50-80 |
 
-> 💡 **Disjuntor desarma constantemente?** Eletricista certificado: **[932 321 892](tel:+351932321892)** — Diagnóstico Atendimento prioritário, arranjo urgente.
+> 💡 **Disjuntor desarma constantemente?** Eletricista com experiência: **[932 321 892](tel:+351932321892)** — Diagnóstico Atendimento prioritário, arranjo urgente.
 
 ## 🔍 Como Diagnosticar o Problema
 
@@ -461,7 +461,7 @@ Disjuntor que desarma constantemente é **sinal de problema elétrico** que prec
 ✅ Arranjo imediata  
 ✅ Equipamento de deteção profissional  
 ✅ Garantia 1 ano no serviço  
-✅ Fichas eletrotécnicas assinadas por técnico certificado DGEG se necessário  
+✅ Fichas eletrotécnicas assinadas por técnico profissional se necessário  
 ✅ Cobrimos Bragança, Mirandela, Trás-os-Montes e toda a região
 
 **Não arrisque incêndio ou eletrocussão!** Disjuntor que desarma é aviso de problema grave. Contacte-nos já para intervenção urgente.

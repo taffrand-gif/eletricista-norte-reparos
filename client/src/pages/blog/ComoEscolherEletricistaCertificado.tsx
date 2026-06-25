@@ -8,7 +8,7 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  useSEO({
  title: 'Como Escolher um Eletricista Certificado em Trás-os-Montes - Guia 2026',
  description: 'Guia completo para escolher o eletricista certo em Trás-os-Montes. Critérios de seleção, perguntas essenciais e sinais de alerta.',
- keywords: 'eletricista certificado, escolher eletricista, eletricista de confiança, certificação eletricista, eletricista Trás-os-Montes',
+ keywords: 'eletricista com experiência, escolher eletricista, eletricista de confiança, certificação eletricista, eletricista Trás-os-Montes',
  schema: generateArticleSchema({
    title: 'Como Escolher um Eletricista Certificado em Trás-os-Montes - Guia 2026',
    description: 'Guia completo para escolher o eletricista certo em Trás-os-Montes. Critérios de seleção, perguntas essenciais e sinais de alerta.',
@@ -22,7 +22,7 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  return (
  <BlogLayout
  title="Como Escolher um Eletricista Certificado em Trás-os-Montes"
- description="Guia completo com critérios essenciais para selecionar um eletricista qualificado e de confiança na região de Trás-os-Montes"
+ description="Guia completo com critérios essenciais para selecionar um eletricista com experiência e de confiança na região de Trás-os-Montes"
  >
        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
@@ -88,7 +88,7 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  <div className="mb-10 rounded-2xl overflow-hidden">
  <img
  src="/images-optimized/blog/escolher-eletricista-certificado.jpg"
- alt="Eletricista certificado a trabalhar com segurança"
+ alt="Eletricista com experiência a trabalhar com segurança"
  className="w-full h-96 object-cover"
  loading="lazy"
  width={800}
@@ -368,7 +368,7 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  </div>
  <div className="mt-8 text-center">
  <p className="text-xl text-gray-900 mb-6">
- Precisa de um eletricista certificado e de confiança em <Link to="/servicos">Trás-os-Montes</Link>?
+ Precisa de um eletricista com experiência e de confiança em <Link to="/servicos">Trás-os-Montes</Link>?
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a
@@ -378,7 +378,7 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  📞 Falar com Eletricista Certificado
  </a>
  <a
- href={`https://wa.me/${ACTIVE_CONFIG.whatsappNumber}?text=Olá, preciso de eletricista certificado para:`}
+ href={`https://wa.me/${ACTIVE_CONFIG.whatsappNumber}?text=Olá, preciso de eletricista com experiência para:`}
  target="_blank"
  rel="noopener noreferrer"
  className="bg-white text-amber-700 font-bold text-lg px-8 py-4 rounded-xl border-2 border-amber-600 hover:bg-amber-50 transition-colors"
@@ -448,7 +448,7 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  "name": "Qual a diferença entre um eletricista 'certificado' e 'autorizado'?",
  "acceptedAnswer": {
  "@type": "Answer",
- "text": "Eletricista Certificado possui certificação profissional (nível 4 QNQ) que comprova formação. Eletricista Autorizado tem autorização da entidade reguladora para exercer atividade. Empresa Instaladora Autorizada tem alvará para realizar instalações. O ideal é profissional certificado E autorizado, preferencialmente em empresa instaladora autorizada."
+ "text": "Eletricista Certificado possui certificação profissional (nível 4 QNQ) que comprova formação. Eletricista Autorizado tem autorização da entidade reguladora para exercer atividade. Empresa Instaladora Autorizada tem alvará para realizar instalações. O ideal é profissional com experiência E autorizado, preferencialmente em empresa instaladora autorizada."
  }
  },
  {
@@ -495,7 +495,7 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  <div className="mt-12 bg-gradient-to-r from-amber-50 to-amber-100 rounded-2xl p-8">
  <h3 className="text-2xl font-bold text-gray-900 mb-6">📍 Eletricistas Certificados na Sua Zona</h3>
  <p className="text-gray-700 mb-6">
- Trabalhamos em toda a região com profissionais certificados e com experiência local:
+ Trabalhamos em toda a região com profissionais com experiência e com experiência local:
  </p>
  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
  <a href="/eletricista-vila-real" className="bg-white p-4 rounded-xl text-center hover:shadow-md transition-shadow">

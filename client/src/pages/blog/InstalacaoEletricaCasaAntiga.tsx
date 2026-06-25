@@ -100,7 +100,7 @@ export default function InstalacaoEletricaCasaAntiga() {
  "name": "A certificação elétrica é obrigatória após a renovação?",
  "acceptedAnswer": {
  "@type": "Answer",
- "text": "Sim. Qualquer renovação elétrica em Portugal deve cumprir as Regras Técnicas das Instalações Elétricas (RTIEBT). Após a renovação é obrigatório obter o certificado emitido por eletricista certificado. Sem ele, não pode vender nem arrendar o imóvel."
+ "text": "Sim. Qualquer renovação elétrica em Portugal deve cumprir as Regras Técnicas das Instalações Elétricas (RTIEBT). Após a renovação é obrigatório obter o certificado emitido por eletricista com experiência. Sem ele, não pode vender nem arrendar o imóvel."
  }
  }
  ]
@@ -349,7 +349,7 @@ export default function InstalacaoEletricaCasaAntiga() {
  <div className="bg-orange-50 p-4 rounded-lg border-l-4 border-orange-500 mb-4">
  <p className="text-sm text-gray-700">
  <strong>certificação elétrica:</strong> Após a renovação, é obrigatório obter o certificado 
- emitido por eletricista certificado. Sem ele, não pode vender ou arrendar o imóvel.
+ emitido por eletricista com experiência. Sem ele, não pode vender ou arrendar o imóvel.
  </p>
  </div>
  <p className="text-gray-700 mb-3"><strong>Requisitos mínimos:</strong></p>

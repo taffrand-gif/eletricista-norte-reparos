@@ -91,7 +91,7 @@ export default function FAQPage() {
  <p className="font-bold text-yellow-800">⚠️ Segurança Elétrica Primeiro!</p>
  <p className="text-yellow-700">
  Nunca tente arranjar problemas elétricos sozinho. Risco de eletrocussão e incêndio. 
- Contacte sempre um eletricista certificado para qualquer intervenção.
+ Contacte sempre um eletricista com experiência para qualquer intervenção.
  </p>
  </div>
  </div>

@@ -90,7 +90,7 @@ export default function TransparencePrix() {
  const faqPrix = [
  {
  question: "Porque os vossos preços são 15-20% mais elevados que a concorrência?",
- answer: "Os nossos preços refletem a qualidade superior do serviço: eletricistas certificados com experiência em Trás-os-Montes, materiais de marcas premium (Legrand, Schneider), garantia alargada de 12 meses, chegada garantida Atendimento prioritário, e certificação incluída. Não fazemos trabalhos 'baratos' que falham em 6 meses. Investimos em formação contínua e equipamento profissional. O barato sai caro em eletricidade - um trabalho mal feito pode causar incêndios."
+ answer: "Os nossos preços refletem a qualidade superior do serviço: eletricistas com experiência com experiência em Trás-os-Montes, materiais de marcas premium (Legrand, Schneider), garantia alargada de 12 meses, chegada garantida Atendimento prioritário, e certificação incluída. Não fazemos trabalhos 'baratos' que falham em 6 meses. Investimos em formação contínua e equipamento profissional. O barato sai caro em eletricidade - um trabalho mal feito pode causar incêndios."
  },
  {
  question: "O preço final pode ser diferente do orçamento?",

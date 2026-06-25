@@ -3,14 +3,14 @@ title: "Certificação de Imóveis 2026"
 date: 2026-06-06
 category: guia
 tags: [guia, 2026, portugal]
-summary: "SCE + DGEG + gás."
+summary: "SCE + + gás."
 author: "Norte Reparos"
 reading_time: "10-12 min"
 ---
 
 # Certificação de Imóveis 2026
 
-SCE + DGEG + gás.
+SCE + + gás.
 
 ## Índice
 
@@ -27,7 +27,7 @@ SCE + DGEG + gás.
 
 ## 1. O que é e quando é relevante
 
-SCE + DGEG + gás.
+SCE + + gás.
 
 Este guia aplica-se a Portugal continental em 2026, com foco na região de Trás-os-Montes (Bragança, Vila Real, Guarda). Os preços mencionados incluem IVA e são médios de mercado — podem variar conforme zona, urgência, e complexidade.
 
@@ -243,9 +243,9 @@ Sim, com inteligência. Negoceia escopo (não preço unitário), pagamento, timi
 
 Depende da idade do equipamento, custo da reparação vs substituição, e frequência de problemas. Análise no caso específico.
 
-**Como sei se um profissional é certificado?**
+**Como sei se um profissional tem experiência?**
 
-Verifica na DGEG (elétrico), ADENE (certificação energética),行业协会 do setor.
+Verifica na (elétrico), ADENE (certificação energética),行业协会 do setor.
 
 **Quanto tempo demora a obra?**
 
@@ -257,7 +257,7 @@ Normalmente: mão de obra, materiais, deslocação, IVA. SEMPRE peça discrimina
 
 **Posso fazer eu a parte elétrica?**
 
-Em Portugal, NÃO. É obrigatório eletricista certificado DGEG para instalações > 230V.
+Em Portugal, NÃO. É obrigatório eletricista profissional para instalações > 230V.
 
 **Vale a pena esperar pelo preço baixar?**
 
@@ -271,7 +271,7 @@ Preço muito abaixo do mercado, sem fatura, pressão para decidir rápido, sem r
 
 ## 8. Conclusão
 
-SCE + DGEG + gás.
+SCE + + gás.
 
 **Pontos-chave a reter:**
 
@@ -293,7 +293,7 @@ SCE + DGEG + gás.
 **Recursos úteis:**
 
 - Portal da ERSE (tarifas energia)
-- DGEG (lista técnicos certificados)
+- (lista técnicos com experiência)
 - ADENE (certificação energética)
 - Portal das Finanças
 - Câmara Municipal local (licenciamentos)

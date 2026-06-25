@@ -62,7 +62,7 @@ const ComoTrocarTomadaEletricaSozinho: React.FC = () => {
         {"@type":"Question","name":"Que materiais preciso para trocar uma tomada?","acceptedAnswer":{"@type":"Answer","text":"Precisa de uma tomada nova (5-15€), testador de tensão (5€), chave de fendas plana e estrela, alicate, fita isoladora e, se necessário, caixa de encastrar (2-3€). Total aproximado de 10-20€."}},
         {"@type":"Question","name":"Como desligar a corrente em segurança antes de trocar a tomada?","acceptedAnswer":{"@type":"Answer","text":"Vá ao quadro elétrico, identifique o disjuntor do circuito da tomada e desligue-o (não precisa desligar tudo). Cole um aviso 'NÃO LIGAR - TRABALHOS' e confirme com o testador de tensão que a tomada está a 0V antes de tocar nos fios."}},
         {"@type":"Question","name":"Qual o código de cores dos fios em Portugal?","acceptedAnswer":{"@type":"Answer","text":"Castanho ou preto é a fase (corrente ativa, perigoso), azul é o neutro e verde/amarelo é a terra (proteção contra choques). Ligue a fase ao terminal L, o neutro ao N e a terra ao terminal de terra."}},
-        {"@type":"Question","name":"Quando NÃO devo trocar a tomada sozinho?","acceptedAnswer":{"@type":"Answer","text":"Chame um eletricista certificado se a tomada tiver mais de 3 fios, não houver ligação à terra, os fios forem de alumínio, a caixa estiver danificada ou inexistente, não tiver experiência com eletricidade, ou a tomada estiver numa zona húmida sem proteção IP."}}
+        {"@type":"Question","name":"Quando NÃO devo trocar a tomada sozinho?","acceptedAnswer":{"@type":"Answer","text":"Chame um eletricista com experiência se a tomada tiver mais de 3 fios, não houver ligação à terra, os fios forem de alumínio, a caixa estiver danificada ou inexistente, não tiver experiência com eletricidade, ou a tomada estiver numa zona húmida sem proteção IP."}}
       ] }) }} />
       <article className="max-w-4xl mx-auto">
  <div className="mb-8">
@@ -309,7 +309,7 @@ const ComoTrocarTomadaEletricaSozinho: React.FC = () => {
  <li>• Tomada em zona húmida sem proteção IP</li>
  </ul>
  <p className="text-red-900 font-semibold mt-4">
- ⚠️ Nestes casos, chame eletricista certificado!
+ ⚠️ Nestes casos, chame eletricista com experiência!
  </p>
  </div>
  </section>

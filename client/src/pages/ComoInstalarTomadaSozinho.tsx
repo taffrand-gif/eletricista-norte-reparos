@@ -24,7 +24,7 @@ export default function ComoInstalarTomadaSozinho() {
  },
  {
  question: "Posso trocar tomada partida sozinho?",
- answer: "NÃO. Mesmo trocar tomada partida requer eletricista certificado em Portugal. Parece simples mas envolve: desligar disjuntor correto, verificar ausência tensão, ligação correta fios (fase, neutro, terra). Erro = risco fatal."
+ answer: "NÃO. Mesmo trocar tomada partida requer eletricista com experiência em Portugal. Parece simples mas envolve: desligar disjuntor correto, verificar ausência tensão, ligação correta fios (fase, neutro, terra). Erro = risco fatal."
  }
  ];
  const riscos = [
@@ -62,7 +62,7 @@ export default function ComoInstalarTomadaSozinho() {
  const porqueNao = [
  {
  razao: "É ILEGAL em Portugal",
- explicacao: "Decreto-Lei 226/2005: apenas eletricistas certificados podem fazer instalações elétricas. Trabalho DIY = crime.",
+ explicacao: "Decreto-Lei 226/2005: apenas eletricistas com experiência podem fazer instalações elétricas. Trabalho DIY = crime.",
  icon: XCircle
  },
  {
@@ -102,7 +102,7 @@ export default function ComoInstalarTomadaSozinho() {
  <>
  <Helmet>
  <title>Como Instalar Tomada Sozinho? (Guia Segurança) | 932 321 892</title>
- <meta name="description" content="Posso instalar tomada sozinho? ATENÇÃO: é ilegal e perigoso sem certificação. Risco choque elétrico e incêndio. Eletricista certificado: 932 321 892" />
+ <meta name="description" content="Posso instalar tomada sozinho? ATENÇÃO: é ilegal e perigoso sem certificação. Risco choque elétrico e incêndio. Eletricista com experiência: 932 321 892" />
  </Helmet>
  <Header />
  <main className="min-h-screen bg-gradient-to-b from-white to-orange-50">
@@ -263,7 +263,7 @@ export default function ComoInstalarTomadaSozinho() {
  <strong>Venda casa:</strong> Sem certificação elétrica, não pode vender casa legalmente.
  </p>
  <p className="font-bold text-red-700">
- Não arrisque. Chame eletricista certificado: {config.phone}
+ Não arrisque. Chame eletricista com experiência: {config.phone}
  </p>
  </div>
  </div>

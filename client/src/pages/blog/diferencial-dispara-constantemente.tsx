@@ -81,7 +81,7 @@ export default function DiferencialDisparaConstantemente() {
  <div className="flex flex-col md:flex-row items-center justify-between">
  <div className="mb-4 md:mb-0">
  <h3 className="text-xl font-bold mb-2">⚡ Diferencial Dispara Sempre? Urgência!</h3>
- <p className="text-red-100">Eletricistas certificados disponíveis 24h em Trás-os-Montes</p>
+ <p className="text-red-100">Eletricistas com experiência disponíveis 24h em Trás-os-Montes</p>
  </div>
  <div className="flex gap-3">
  <a href="tel:+351932321892" className="bg-white text-red-600 px-6 py-3 rounded-lg font-semibold hover:bg-red-50 transition flex items-center gap-2">
@@ -302,7 +302,7 @@ export default function DiferencialDisparaConstantemente() {
  </li>
  </ul>
  <p className="mt-4 text-red-900 font-bold text-lg">
- ☎️ Contacte eletricista certificado 24h: 932 321 892
+ ☎️ Contacte eletricista com experiência 24h: 932 321 892
  </p>
  </div>
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Perguntas Frequentes</h2>
@@ -339,7 +339,7 @@ export default function DiferencialDisparaConstantemente() {
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Conclusão</h2>
  <p>
  O diferencial que dispara constantemente não é apenas inconveniente - é um aviso de perigo real.
- Nunca ignore, force ou desative o diferencial. Identifique a causa seguindo os passos acima ou contacte eletricista certificado.
+ Nunca ignore, force ou desative o diferencial. Identifique a causa seguindo os passos acima ou contacte eletricista com experiência.
  </p>
  <p>
  O investimento de 100-250€ numa arranjo profissional previne choques elétricos fatais, incêndios e danos em aparelhos.
@@ -350,7 +350,7 @@ export default function DiferencialDisparaConstantemente() {
  <div className="bg-gradient-to-r from-red-600 to-orange-600 rounded-xl p-8 mt-12 text-white text-center">
  <h3 className="text-2xl font-bold mb-4">Diferencial Dispara Constantemente?</h3>
  <p className="text-red-100 mb-6 text-lg">
- Eletricistas certificados disponíveis 24h/7d em Bragança, Mirandela, Macedo e toda a região
+ Eletricistas com experiência disponíveis 24h/7d em Bragança, Mirandela, Macedo e toda a região
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a href="tel:+351932321892" className="bg-white text-red-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-red-50 transition flex items-center justify-center gap-2">

@@ -92,7 +92,7 @@ export default function Servicos() {
  </h1>
  <p className="text-xl mb-8 max-w-3xl">
  Serviços elétricos completos para residências, comércios e indústrias. 
- Profissionais certificados, materiais de qualidade e garantia no serviço.
+ Profissionais com experiência, materiais de qualidade e garantia no serviço.
  </p>
  <div className="flex flex-col sm:flex-row gap-4">
  <a

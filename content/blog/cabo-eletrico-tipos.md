@@ -13,7 +13,7 @@ priority: "TRENDING"
 
 **Precisa escolher cabo elétrico mas não sabe qual?** Existem vários tipos e secções, cada um para aplicações específicas. Neste guia completo, vou mostrar-lhe **os tipos principais de cabos**, como escolher a secção correta e aplicações recomendadas.
 
-> 💡 **Precisa de instalação elétrica?** Eletricista certificado em Bragança: **[932 321 892](tel:+351932321892)** — Escolhemos e instalamos cabos adequados, conforme normas.
+> 💡 **Precisa de instalação elétrica?** Eletricista com experiência em Bragança: **[932 321 892](tel:+351932321892)** — Escolhemos e instalamos cabos adequados, conforme normas.
 
 ## 🔍 Anatomia de um Cabo Elétrico
 
@@ -412,7 +412,7 @@ Escolher o cabo elétrico correto é **essencial para segurança e eficiência**
 
 ✅ Escolhemos cabos adequados para cada aplicação  
 ✅ Instalação conforme normas RTIEBT  
-✅ Fichas eletrotécnicas assinadas por técnico certificado DGEG incluído  
+✅ Fichas eletrotécnicas assinadas por técnico profissional incluído  
 ✅ Materiais de qualidade certificados  
 ✅ Garantia 2 anos no serviço  
 ✅ Orçamento grátis sem compromisso  

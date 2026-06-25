@@ -44,7 +44,7 @@ tags: ['painéis solares', 'energia solar', 'trás-os-montes', 'instalação', '
 - Cálculo de ROI personalizado
 
 ### Fase 2: Projeto e Licenciamento
-- Projeto técnico certificado
+- Projeto técnico com experiência
 - Licenciamento na câmara municipal
 - Aprovação da rede elétrica
 - Pedido de incentivos financeiros

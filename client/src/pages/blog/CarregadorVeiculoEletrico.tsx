@@ -304,7 +304,7 @@ export default function CarregadorVeiculoEletrico() {
  </li>
  <li className="flex items-start gap-2">
  <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
- <span className="text-gray-700">Instalação por eletricista certificado</span>
+ <span className="text-gray-700">Instalação por eletricista com experiência</span>
  </li>
  <li className="flex items-start gap-2">
  <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />

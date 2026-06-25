@@ -498,4 +498,4 @@ Em Trás-os-Montes, onde muitas casas usam aquecimento a lenha, esquentadores a 
 
 ---
 
-*Artigo escrito por eletricistas certificados com 15+ anos de experiência em Trás-os-Montes. Atualizado em Março 2026.*
+*Artigo escrito por eletricistas com experiência com 15+ anos de experiência em Trás-os-Montes. Atualizado em Março 2026.*
