@@ -10,13 +10,13 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  description: 'Análise completa da rentabilidade de painéis solares em Trás-os-Montes. Custos, poupanças, incentivos e especificidades regionais.',
  keywords: 'painéis solares Trás-os-Montes, energia solar, painéis fotovoltaicos, autoconsumo, rentabilidade solar, instalação painéis solares',
  schema: generateArticleSchema({
-   title: 'Painéis Solares em Trás-os-Montes: Vale a Pena? Guia Completo 2026',
-   description: 'Análise completa da rentabilidade de painéis solares em Trás-os-Montes. Custos, poupanças, incentivos e especificidades regionais.',
-   author: 'Norte Reparos',
-   publishedTime: '2024-01-01',
-   modifiedTime: '2026-06-17',
-   image: 'https://eletricista-norte-reparos.pt/og-image.jpg',
-   url: 'https://eletricista-norte-reparos.pt/blog/paineis-solares-tras-os-montes-guia'
+ title: 'Painéis Solares em Trás-os-Montes: Vale a Pena? Guia Completo 2026',
+ description: 'Análise completa da rentabilidade de painéis solares em Trás-os-Montes. Custos, poupanças, incentivos e especificidades regionais.',
+ author: 'Norte Reparos',
+ publishedTime: '2024-01-01',
+ modifiedTime: '2026-06-17',
+ image: 'https://eletricista-norte-reparos.pt/og-image.jpg',
+ url: 'https://eletricista-norte-reparos.pt/blog/paineis-solares-tras-os-montes-guia'
  })
  });
  return (
@@ -170,11 +170,11 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-lg mb-6">
  <h3 className="font-bold text-amber-800 text-lg mb-2">Cenário Real: Família de 4 pessoas em casa T3</h3>
  <ul className="text-amber-700 space-y-1">
- <li>• <strong>Consumo anual:</strong> 3.500 kWh (média regional)</li>
- <li>• <strong>Instalação:</strong> 4 kWp (10-12 painéis)</li>
- <li>• <strong>Custo total:</strong> 5.500-7.000€ (com bateria opcional +2.000€)</li>
+ <li>• <strong>Consumo anual:</strong> 3.500 kWh (média regional</li>
+ <li>• <strong>Instalação:</strong> 4 kWp (10-12 painéis</li>
+ <li>• <strong>Custo total:</strong> 5.500-7.000€ (com bateria opcional +2.000€</li>
  <li>• <strong>Produção anual:</strong> 5.200-5.600 kWh em Trás-os-Montes</li>
- <li>• <strong>Autoconsumo:</strong> 60-70% (restante injetado na rede)</li>
+ <li>• <strong>Autoconsumo:</strong> 60-70% (restante injetado na rede</li>
  </ul>
  </div>
  <h3 className="text-2xl font-bold text-gray-900 mb-4">Poupança Anual Detalhada:</h3>
@@ -288,10 +288,10 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  <div className="mt-6 bg-yellow-50 border border-yellow-200 rounded-xl p-6">
  <h3 className="font-bold text-yellow-800 text-lg mb-2">📝 Custos Específicos de Trás-os-Montes:</h3>
  <ul className="text-yellow-700 space-y-2">
- <li>• <strong>Deslocação equipas:</strong> +200-500€ (dependendo da localização)</li>
- <li>• <strong>Estruturas reforçadas:</strong> +300-600€ (para ventos fortes e neve ocasional)</li>
- <li>• <strong>Acesso difícil:</strong> +150-400€ (caminhos estreitos, telhados de lousa)</li>
- <li>• <strong>Equipamento climatização:</strong> +200-300€ (trabalho no inverno)</li>
+ <li>• <strong>Deslocação equipas:</strong> +200-500€ (dependendo da localização</li>
+ <li>• <strong>Estruturas reforçadas:</strong> +300-600€ (para ventos fortes e neve ocasional</li>
+ <li>• <strong>Acesso difícil:</strong> +150-400€ (caminhos estreitos, telhados de lousa</li>
+ <li>• <strong>Equipamento climatização:</strong> +200-300€ (trabalho no inverno</li>
  <li>• <strong>Acréscimo total regional:</strong> 850-1.800€ sobre preços nacionais</li>
  </ul>
  </div>
@@ -358,7 +358,7 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  <ul className="text-blue-700 space-y-2">
  <li>• <strong>Menor temperatura = maior eficiência:</strong> Painéis produzem 5-10% mais que no Algarve no verão</li>
  <li>• <strong>Ar limpo:</strong> Menos poeira e poluição = menos limpezas necessárias</li>
- <li>• <strong>Espaço disponível:</strong> Muitas propriedades têm terreno para instalação no solo (mais barata)</li>
+ <li>• <strong>Espaço disponível:</strong> Muitas propriedades têm terreno para instalação no solo (mais barata</li>
  <li>• <strong>Comunidades energéticas:</strong> Ideal para aldeias com várias casas próximas</li>
  </ul>
  </div>
@@ -460,7 +460,7 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  <li>• <strong>Dezembro-Fevereiro:</strong> Produz 20-30% da capacidade anual</li>
  <li>• <strong>Com neve leve:</strong> Painéis aquecem e derretem neve em horas</li>
  <li>• <strong>Neve acumulada:</strong> Pode bloquear produção completamente até limpeza</li>
- <li>• <strong>Geada:</strong> Não afeta performance (painéis testados a -40°C)</li>
+ <li>• <strong>Geada:</strong> Não afeta performance (painéis testados a -40°C</li>
  <li>• <strong>Solução:</strong> Inclinação maior (35°+), coating anti-aderente, limpeza ocasional</li>
  </ul>
  O importante é que <strong>75% da produção anual ocorre de Março a Outubro</strong>, compensando o inverno.
@@ -473,9 +473,9 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  Depende do perfil de consumo e localização:
  <ul className="mt-2 space-y-1">
  <li>• <strong>Sim, vale:</strong> Se está em aldeia isolada com falhas de rede frequentes</li>
- <li>• <strong>Sim, vale:</strong> Se consome maioritariamente à noite (família trabalha fora de dia)</li>
+ <li>• <strong>Sim, vale:</strong> Se consome maioritariamente à noite (família trabalha fora de dia</li>
  <li>• <strong>Talvez não:</strong> Se está na rede urbana e consome maioritariamente de dia</li>
- <li>• <strong>Não vale:</strong> Apenas para backup se falhas são raras (custo adicional elevado)</li>
+ <li>• <strong>Não vale:</strong> Apenas para backup se falhas são raras (custo adicional elevado</li>
  </ul>
  Em <Link to="/servicos">Trás-os-Montes</Link>, <strong>40% dos clientes</strong> optam por bateria pequena (3-5 kWh) principalmente 
  por segurança em zonas rurais com rede instável. O retorno económico da bateria isolada é longo (8-12 anos).
@@ -492,10 +492,10 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  </ul>
  <strong>Garantias típicas:</strong>
  <ul className="mt-2 space-y-1">
- <li>• <strong>Performance:</strong> 25 anos (80% da potência inicial)</li>
- <li>• <strong>Produto:</strong> 10-12 anos (defeitos de fabrico)</li>
- <li>• <strong>Inversor:</strong> 5-10 anos (componente que mais falha)</li>
- <li>• <strong>Vida útil real:</strong> 30-35 anos (após isso, produção reduzida mas ainda significativa)</li>
+ <li>• <strong>Performance:</strong> 25 anos (80% da potência inicial</li>
+ <li>• <strong>Produto:</strong> 10-12 anos (defeitos de fabrico</li>
+ <li>• <strong>Inversor:</strong> 5-10 anos (componente que mais falha</li>
+ <li>• <strong>Vida útil real:</strong> 30-35 anos (após isso, produção reduzida mas ainda significativa</li>
  </ul>
  Muitas instalações dos anos 90 na região ainda funcionam com 70-75% da capacidade original.
  </p>

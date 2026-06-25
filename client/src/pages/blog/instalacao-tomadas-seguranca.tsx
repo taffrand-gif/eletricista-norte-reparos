@@ -181,7 +181,7 @@ export default function InstalacaoTomadasSeguranca() {
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Normas de Segurança RTIEBT</h2>
  <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Altura de Instalação</h3>
  <ul>
- <li><strong>Tomadas gerais:</strong> 30cm do chão (mínimo 20cm)</li>
+ <li><strong>Tomadas gerais:</strong> 30cm do chão (mínimo 20cm</li>
  <li><strong>Tomadas bancada cozinha:</strong> 110-120cm do chão</li>
  <li><strong>Tomadas WC:</strong> Mínimo 60cm de banheira/duche</li>
  <li><strong>Tomadas exterior:</strong> Mínimo 40cm do chão</li>
@@ -198,12 +198,12 @@ export default function InstalacaoTomadasSeguranca() {
  Aparelhos de alta potência precisam de circuito dedicado (tomada exclusiva no quadro):
  </p>
  <ul>
- <li>Fogão elétrico (32A)</li>
- <li>Forno elétrico (20A)</li>
- <li>Máquina lavar roupa (16A)</li>
- <li>Máquina lavar loiça (16A)</li>
- <li>Ar condicionado (16-20A)</li>
- <li>Esquentador elétrico (25A)</li>
+ <li>Fogão elétrico (32A</li>
+ <li>Forno elétrico (20A</li>
+ <li>Máquina lavar roupa (16A</li>
+ <li>Máquina lavar loiça (16A</li>
+ <li>Ar condicionado (16-20A</li>
+ <li>Esquentador elétrico (25A</li>
  </ul>
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Preços Instalação Tomadas 2026</h2>
  <div className="overflow-x-auto my-8">

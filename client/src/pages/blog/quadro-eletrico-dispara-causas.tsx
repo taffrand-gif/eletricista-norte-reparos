@@ -125,7 +125,7 @@ export default function QuadroEletricoDisparaCausas() {
  <strong>Causas comuns:</strong>
  </p>
  <ul>
- <li>Roedores que roem isolamento de cabos (comum em zonas rurais)</li>
+ <li>Roedores que roem isolamento de cabos (comum em zonas rurais</li>
  <li>Humidade em caixas de derivação</li>
  <li>Pregos ou parafusos que perfuram cabos na parede</li>
  <li>Aparelhos com fios internos danificados</li>
@@ -143,9 +143,9 @@ export default function QuadroEletricoDisparaCausas() {
  <strong>Causas típicas:</strong>
  </p>
  <ul>
- <li>Isolamento degradado em cabos antigos (+25 anos)</li>
+ <li>Isolamento degradado em cabos antigos (+25 anos</li>
  <li>Água em contacto com instalação elétrica</li>
- <li>Aparelhos com defeito (especialmente em casa de banho/cozinha)</li>
+ <li>Aparelhos com defeito (especialmente em casa de banho/cozinha</li>
  <li>Ligação à terra inexistente ou defeituosa</li>
  </ul>
  <p>
@@ -186,7 +186,7 @@ export default function QuadroEletricoDisparaCausas() {
  </p>
  <ul>
  <li>Dispara sem carga significativa ligada</li>
- <li>Difícil de religar (alavanca dura ou solta)</li>
+ <li>Difícil de religar (alavanca dura ou solta</li>
  <li>Aquece excessivamente</li>
  <li>Marcas de queimadura ou derretimento</li>
  </ul>
@@ -206,7 +206,7 @@ export default function QuadroEletricoDisparaCausas() {
  <li>Cabos de 1,5mm² em circuitos que precisam 2,5mm²</li>
  <li>Apenas 1-2 circuitos para toda a casa</li>
  <li>Ausência de ligação à terra</li>
- <li>Quadro elétrico sem diferencial (obrigatório desde 1980)</li>
+ <li>Quadro elétrico sem diferencial (obrigatório desde 1980</li>
  </ul>
  <p>
  <strong>Solução:</strong> Atualização completa da instalação. Investimento: 1.500-4.000€ conforme área. Valoriza o imóvel e elimina riscos. Financiamento disponível através de programas de eficiência energética.

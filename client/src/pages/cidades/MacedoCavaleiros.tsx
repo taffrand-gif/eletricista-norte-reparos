@@ -87,20 +87,20 @@ export default function MacedoCavaleiros() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Macedo de Cavaleiros?",
-    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
-  },
+ answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+ },
  {
  question: "Trabalham aos fins de semana em Macedo?",
-    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
-  },
+ answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+ },
  {
  question: "Qual o custo de deslocação a Macedo de Cavaleiros?",
-    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
-  },
+ answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+ },
  {
  question: "Fazem certificação elétrica em Macedo?",
-    answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
-  },
+ answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+ },
  ];
  return (
  <div className="min-h-screen flex flex-col">

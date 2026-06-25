@@ -91,16 +91,16 @@ export default function Braganca() {
  const faqs = [
  {
  question: "Qual o custo de deslocação a Bragança?",
-    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
-  },
+ answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ },
  {
  question: "Fazem urgências Atendimento 24h/7d em Bragança?",
-    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
-  },
+ answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ },
  {
  question: "Fornecem certificação elétrica em Bragança?",
-    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
-  },
+ answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ },
  ];
  return () => {
  document.head.removeChild(schemaScript);
@@ -284,20 +284,20 @@ export default function Braganca() {
  faqs={[
  {
  question: "Atendem zonas rurais e aldeias remotas do concelho de Bragança?",
-    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
-  },
+ answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ },
  {
  question: "Como lidam com o clima frio de Bragança nos sistemas de aquecimento elétrico?",
-    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
-  },
+ answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ },
  {
  question: "Trabalham em edifícios históricos do centro de Bragança?",
-    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
-  },
+ answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ },
  {
  question: "Qual o tempo de resposta para urgências em Bragança?",
-    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
-  },
+ answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ },
  ]}
  />
  </section>

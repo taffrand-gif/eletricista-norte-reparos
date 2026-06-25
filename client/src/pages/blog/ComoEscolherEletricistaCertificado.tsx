@@ -10,13 +10,13 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  description: 'Guia completo para escolher o eletricista certo em Trás-os-Montes. Critérios de seleção, perguntas essenciais e sinais de alerta.',
  keywords: 'eletricista com experiência, escolher eletricista, eletricista de confiança, certificação eletricista, eletricista Trás-os-Montes',
  schema: generateArticleSchema({
-   title: 'Como Escolher um eletricista com experiência em Trás-os-Montes - Guia 2026',
-   description: 'Guia completo para escolher o eletricista certo em Trás-os-Montes. Critérios de seleção, perguntas essenciais e sinais de alerta.',
-   author: 'Norte Reparos',
-   publishedTime: '2024-01-01',
-   modifiedTime: '2026-06-17',
-   image: 'https://eletricista-norte-reparos.pt/og-image.jpg',
-   url: 'https://eletricista-norte-reparos.pt/blog/como-escolher-eletricista-certificado'
+ title: 'Como Escolher um eletricista com experiência em Trás-os-Montes - Guia 2026',
+ description: 'Guia completo para escolher o eletricista certo em Trás-os-Montes. Critérios de seleção, perguntas essenciais e sinais de alerta.',
+ author: 'Norte Reparos',
+ publishedTime: '2024-01-01',
+ modifiedTime: '2026-06-17',
+ image: 'https://eletricista-norte-reparos.pt/og-image.jpg',
+ url: 'https://eletricista-norte-reparos.pt/blog/como-escolher-eletricista-certificado'
  })
  });
  return (
@@ -24,41 +24,41 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  title="Como Escolher um eletricista com experiência em Trás-os-Montes"
  description="Guia completo com critérios essenciais para selecionar um eletricista com experiência e de confiança na região de Trás-os-Montes"
  >
-       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "HowTo",
-        "name": "Como Escolher um eletricista com experiência em Trás-os-Montes",
-        "description": "Guia completo com critérios de seleção, perguntas essenciais e sinais de alerta para escolher o eletricista certo.",
-        "totalTime": "PT15M",
-        "url": "https://eletricista-norte-reparos.pt/blog/como-escolher-eletricista-certificado",
-        "step": [
-          {"@type": "HowToStep", "name": "Peça referências e avaliações", "text": "Solicite contactos de clientes anteriores. Pesquise avaliações no Google Maps e em plataformas como Fixando ou Zaask."},
-          {"@type": "HowToStep", "name": "Solicite orçamento detalhado por escrito", "text": "Um profissional sério dá orçamento escrito com descrição dos trabalhos, materiais incluídos, mão de obra e prazo. Recuse orçamentos verbais."},
-          {"@type": "HowToStep", "name": "Confirme seguro de responsabilidade civil", "text": "Peça comprovativo do seguro de responsabilidade civil. Este seguro cobre danos causados durante a obra."},
-          {"@type": "HowToStep", "name": "Verifique o prazo e condições de garantia", "text": "Exija garantia mínima de 12 meses nos trabalhos. Confirme o que está coberto e o processo para reclamar."},
-          {"@type": "HowToStep", "name": "Compare preços com contexto regional", "text": "Em Trás-os-Montes, a deslocação tem custo (15-65€ conforme zona). Preços muito baixos sem deslocação são sinal de alerta."}
-        ]
-      }) }} />
-       <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Article",
-          "headline": "Como Escolher um eletricista com experiência em Trás-os-Montes - Guia 2026",
-          "author": { "@type": "Organization", "name": "Norte Reparos" },
-          "publisher": {
-            "@type": "Organization",
-            "name": "Norte Reparos",
-            "url": "https://eletricista-norte-reparos.pt",
-            "logo": { "@type": "ImageObject", "url": "https://eletricista-norte-reparos.pt/logo.png" }
-          },
-          "datePublished": "2026-01-01",
-          "dateModified": "2026-06-18",
-          "url": "https://eletricista-norte-reparos.pt/blog/como-escolher-eletricista-certificado",
-          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://eletricista-norte-reparos.pt/blog/como-escolher-eletricista-certificado" }
-        }) }}
-      />
-      <article className="max-w-4xl mx-auto">
+ <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+ "@context": "https://schema.org",
+ "@type": "HowTo",
+ "name": "Como Escolher um eletricista com experiência em Trás-os-Montes",
+ "description": "Guia completo com critérios de seleção, perguntas essenciais e sinais de alerta para escolher o eletricista certo.",
+ "totalTime": "PT15M",
+ "url": "https://eletricista-norte-reparos.pt/blog/como-escolher-eletricista-certificado",
+ "step": [
+ {"@type": "HowToStep", "name": "Peça referências e avaliações", "text": "Solicite contactos de clientes anteriores. Pesquise avaliações no Google Maps e em plataformas como Fixando ou Zaask."},
+ {"@type": "HowToStep", "name": "Solicite orçamento detalhado por escrito", "text": "Um profissional sério dá orçamento escrito com descrição dos trabalhos, materiais incluídos, mão de obra e prazo. Recuse orçamentos verbais."},
+ {"@type": "HowToStep", "name": "Confirme seguro de responsabilidade civil", "text": "Peça comprovativo do seguro de responsabilidade civil. Este seguro cobre danos causados durante a obra."},
+ {"@type": "HowToStep", "name": "Verifique o prazo e condições de garantia", "text": "Exija garantia mínima de 12 meses nos trabalhos. Confirme o que está coberto e o processo para reclamar."},
+ {"@type": "HowToStep", "name": "Compare preços com contexto regional", "text": "Em Trás-os-Montes, a deslocação tem custo (15-65€ conforme zona). Preços muito baixos sem deslocação são sinal de alerta."}
+ ]
+ }) }} />
+ <script
+ type="application/ld+json"
+ dangerouslySetInnerHTML={{ __html: JSON.stringify({
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "Como Escolher um eletricista com experiência em Trás-os-Montes - Guia 2026",
+ "author": { "@type": "Organization", "name": "Norte Reparos" },
+ "publisher": {
+ "@type": "Organization",
+ "name": "Norte Reparos",
+ "url": "https://eletricista-norte-reparos.pt",
+ "logo": { "@type": "ImageObject", "url": "https://eletricista-norte-reparos.pt/logo.png" }
+ },
+ "datePublished": "2026-01-01",
+ "dateModified": "2026-06-18",
+ "url": "https://eletricista-norte-reparos.pt/blog/como-escolher-eletricista-certificado",
+ "mainEntityOfPage": { "@type": "WebPage", "@id": "https://eletricista-norte-reparos.pt/blog/como-escolher-eletricista-certificado" }
+ }) }}
+ />
+ <article className="max-w-4xl mx-auto">
  {/* Meta info */}
  <div className="mb-8">
  <div className="flex flex-wrap items-center gap-4 text-gray-600 mb-4">
@@ -428,10 +428,10 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  <p className="text-gray-700">
  Em <Link to="/servicos">Trás-os-Montes</Link>, os preços variam:
  <ul className="mt-2 space-y-1">
- <li>• <strong>Avaliação básica de competências:</strong> Grátis a 50€ (incluída na visita para orçamento)</li>
- <li>• <strong>Verificação documental completa:</strong> 80-150€ (inclui verificação certificados, seguros, referências)</li>
- <li>• <strong>Inspeção a obra em curso:</strong> 120-250€ (para quem já contratou e quer segunda opinião)</li>
- <li>• <strong>Avaliação pós-obra:</strong> 150-300€ (verificação conformidade com normas)</li>
+ <li>• <strong>Avaliação básica de competências:</strong> Grátis a 50€ (incluída na visita para orçamento</li>
+ <li>• <strong>Verificação documental completa:</strong> 80-150€ (inclui verificação certificados, seguros, referências</li>
+ <li>• <strong>Inspeção a obra em curso:</strong> 120-250€ (para quem já contratou e quer segunda opinião</li>
+ <li>• <strong>Avaliação pós-obra:</strong> 150-300€ (verificação conformidade com normas</li>
  </ul>
  Muitos eletricistas sérios oferecem verificação documental gratuita como prova de transparência.
  </p>

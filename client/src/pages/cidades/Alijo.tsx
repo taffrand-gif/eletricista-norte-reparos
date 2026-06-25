@@ -67,16 +67,16 @@ export default function Alijo() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Alijó?",
-    answer: "Chegamos a Alijo em aproximadamente 60-75 minutos a partir de Trás-os-Montes. Cobrimos todo o conselho.",
-  },
+ answer: "Chegamos a Alijo em aproximadamente 60-75 minutos a partir de Trás-os-Montes. Cobrimos todo o conselho.",
+ },
  {
  question: "Trabalham nas quintas vinhateiras do Douro em Alijó?",
-    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
-  },
+ answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ },
  {
  question: "Qual o custo de deslocação a Alijó?",
 answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
-  },
+ },
 ];
 
 return (

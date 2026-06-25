@@ -67,16 +67,16 @@ export default function PesoDaRegua() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Peso da Régua?",
-    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
-  },
+ answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ },
  {
  question: "Fazem instalações para caves de vinho do Porto?",
-    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
-  },
+ answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ },
  {
  question: "Qual o custo de deslocação a Peso da Régua?",
-    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
-  },
+ answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ },
 ];
 
  return (

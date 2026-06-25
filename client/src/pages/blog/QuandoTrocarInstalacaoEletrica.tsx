@@ -8,13 +8,13 @@ const QuandoTrocarInstalacaoEletrica: React.FC = () => {
  description: 'Descubra os sinais de alerta que indicam que a sua instalação elétrica precisa de ser renovada. Guia completo sobre segurança elétrica em casas antigas.',
  keywords: 'instalação elétrica antiga, sinais perigo eletricidade, renovar quadro elétrico, trocar instalação elétrica, segurança elétrica casa',
  schema: generateArticleSchema({
-   title: 'Quando Trocar a Instalação Elétrica? Sinais de Alerta | 2026',
-   description: 'Descubra os sinais de alerta que indicam que a sua instalação elétrica precisa de ser renovada. Guia completo sobre segurança elétrica em casas antigas.',
-   author: 'Norte Reparos',
-   publishedTime: '2026-02-14',
-   modifiedTime: '2026-06-17',
-   image: 'https://eletricista-norte-reparos.pt/images-optimized/blog/instalacao-eletrica-detail.jpg',
-   url: 'https://eletricista-norte-reparos.pt/blog/quando-trocar-instalacao-eletrica'
+ title: 'Quando Trocar a Instalação Elétrica? Sinais de Alerta | 2026',
+ description: 'Descubra os sinais de alerta que indicam que a sua instalação elétrica precisa de ser renovada. Guia completo sobre segurança elétrica em casas antigas.',
+ author: 'Norte Reparos',
+ publishedTime: '2026-02-14',
+ modifiedTime: '2026-06-17',
+ image: 'https://eletricista-norte-reparos.pt/images-optimized/blog/instalacao-eletrica-detail.jpg',
+ url: 'https://eletricista-norte-reparos.pt/blog/quando-trocar-instalacao-eletrica'
  })
  });
  return (
@@ -22,26 +22,26 @@ const QuandoTrocarInstalacaoEletrica: React.FC = () => {
  title="Quando Trocar a Instalação Elétrica? Sinais de Alerta"
  description="Guia completo para identificar quando a instalação elétrica da sua casa precisa de renovação"
  >
-       <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Article",
-          "headline": "Quando Trocar a Instalação Elétrica? Sinais de Alerta | 2026",
-          "author": { "@type": "Organization", "name": "Norte Reparos" },
-          "publisher": {
-            "@type": "Organization",
-            "name": "Norte Reparos",
-            "url": "https://eletricista-norte-reparos.pt",
-            "logo": { "@type": "ImageObject", "url": "https://eletricista-norte-reparos.pt/logo.png" }
-          },
-          "datePublished": "2026-01-01",
-          "dateModified": "2026-06-18",
-          "url": "https://eletricista-norte-reparos.pt/blog/quando-trocar-instalacao-eletrica",
-          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://eletricista-norte-reparos.pt/blog/quando-trocar-instalacao-eletrica" }
-        }) }}
-      />
-      <article className="max-w-4xl mx-auto">
+ <script
+ type="application/ld+json"
+ dangerouslySetInnerHTML={{ __html: JSON.stringify({
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "Quando Trocar a Instalação Elétrica? Sinais de Alerta | 2026",
+ "author": { "@type": "Organization", "name": "Norte Reparos" },
+ "publisher": {
+ "@type": "Organization",
+ "name": "Norte Reparos",
+ "url": "https://eletricista-norte-reparos.pt",
+ "logo": { "@type": "ImageObject", "url": "https://eletricista-norte-reparos.pt/logo.png" }
+ },
+ "datePublished": "2026-01-01",
+ "dateModified": "2026-06-18",
+ "url": "https://eletricista-norte-reparos.pt/blog/quando-trocar-instalacao-eletrica",
+ "mainEntityOfPage": { "@type": "WebPage", "@id": "https://eletricista-norte-reparos.pt/blog/quando-trocar-instalacao-eletrica" }
+ }) }}
+ />
+ <article className="max-w-4xl mx-auto">
  {/* Meta info */}
  <div className="mb-8">
  <div className="flex flex-wrap items-center gap-4 text-gray-600 mb-4">
@@ -198,7 +198,7 @@ const QuandoTrocarInstalacaoEletrica: React.FC = () => {
  <div className="bg-white p-6 rounded-xl border border-red-200">
  <h3 className="font-bold text-red-800 mb-3">❌ Quadro Antigo (Fusíveis)</h3>
  <ul className="space-y-2 text-gray-700">
- <li>• Não tem diferencial (proteção contra eletrocussão)</li>
+ <li>• Não tem diferencial (proteção contra eletrocussão</li>
  <li>• Fusíveis não rearmar — precisam de substituição</li>
  <li>• Sem proteção contra sobretensão</li>
  <li>• Não suporta consumos modernos</li>
@@ -207,7 +207,7 @@ const QuandoTrocarInstalacaoEletrica: React.FC = () => {
  <div className="bg-white p-6 rounded-xl border border-green-200">
  <h3 className="font-bold text-green-800 mb-3">✅ Quadro Moderno (Disjuntores)</h3>
  <ul className="space-y-2 text-gray-700">
- <li>• Diferencial 30mA (proteção contra eletrocussão)</li>
+ <li>• Diferencial 30mA (proteção contra eletrocussão</li>
  <li>• Disjuntores rearmáveis</li>
  <li>• Proteção contra sobretensão</li>
  <li>• Circuitos separados por divisão</li>

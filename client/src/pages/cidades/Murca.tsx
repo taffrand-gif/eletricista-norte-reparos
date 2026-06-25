@@ -67,16 +67,16 @@ export default function Murca() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Murça?",
-    answer: "Chegamos a Murca em aproximadamente 45-60 minutos a partir de Trás-os-Montes. Cobrimos todo o conselho.",
-  },
+ answer: "Chegamos a Murca em aproximadamente 45-60 minutos a partir de Trás-os-Montes. Cobrimos todo o conselho.",
+ },
  {
  question: "Instalam sistemas elétricos em lagares de azeite?",
-    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
-  },
+ answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ },
  {
  question: "Qual o custo de deslocação a Murça?",
-    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
-  },
+ answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ },
 ];
 
  return (

@@ -104,7 +104,7 @@ export default function EconomiaEletricidadeCasaDicas() {
  <div className="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
  <h4 className="font-bold text-gray-900 mb-3">Distribuição Consumo Típico:</h4>
  <ul className="space-y-2 text-gray-700">
- <li><strong>Aquecimento/Arrefecimento:</strong> 35-45% (maior gasto)</li>
+ <li><strong>Aquecimento/Arrefecimento:</strong> 35-45% (maior gasto</li>
  <li><strong>Água quente:</strong> 15-20%</li>
  <li><strong>Iluminação:</strong> 10-15%</li>
  <li><strong>Frigorífico/Congelador:</strong> 10-15%</li>

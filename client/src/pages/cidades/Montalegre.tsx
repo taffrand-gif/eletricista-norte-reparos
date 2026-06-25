@@ -67,16 +67,16 @@ export default function Montalegre() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Montalegre?",
-    answer: "Chegamos a Montalegre em aproximadamente 70-90 minutos a partir de Trás-os-Montes. Cobrimos todo o conselho.",
-  },
+ answer: "Chegamos a Montalegre em aproximadamente 70-90 minutos a partir de Trás-os-Montes. Cobrimos todo o conselho.",
+ },
  {
  question: "Trabalham nas zonas das barragens de Montalegre?",
-    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
-  },
+ answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ },
  {
  question: "Qual o custo de deslocação a Montalegre?",
-    answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
-  },
+ answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ },
 ];
 
  return (
