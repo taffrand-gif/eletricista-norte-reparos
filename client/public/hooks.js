@@ -50,7 +50,7 @@
  if (isDay) {
  widget.style.background = 'linear-gradient(90deg,#1b8a2e,#25a33a)';
  widget.style.color = 'white';
- widget.innerHTML = '🟢 Atendimento 24h — Resposta rápida garantida | <a href="tel:+351' + PHONE + '" style="color:white;text-decoration:underline">Ligar: ' + PHONE.replace(/(\d{3})(\d{3})(\d{3})/, '$1 $2 $3') + '</a>';
+ widget.innerHTML = '🟢 Disponível 24h/7 dias • Orçamento por escrito | <a href="tel:+351' + PHONE + '" style="color:white;text-decoration:underline">Ligar: ' + PHONE.replace(/(\d{3})(\d{3})(\d{3})/, '$1 $2 $3') + '</a>';
  } else {
  widget.style.background = 'linear-gradient(90deg,#e65100,#f57c00)';
  widget.style.color = 'white';
