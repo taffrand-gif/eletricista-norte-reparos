@@ -286,7 +286,7 @@ export default function TransparencePrix() {
  <div className="grid md:grid-cols-2 gap-8">
  <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl border-2 border-blue-200">
  <Award className="w-12 h-12 text-blue-600 mb-4" />
- <h3 className="text-xl font-bold mb-3 text-gray-900">Eletricistas Certificados</h3>
+ <h3 className="text-xl font-bold mb-3 text-gray-900">eletricistas com experiência</h3>
  <p className="text-gray-700 leading-relaxed">
  Todos os nossos técnicos têm certificação elétrica e experiência em Trás-os-Montes.
  Formação contínua obrigatória. Não contratamos "ajudantes" sem qualificação.

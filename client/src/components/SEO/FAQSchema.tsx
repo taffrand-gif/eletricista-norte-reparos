@@ -38,7 +38,7 @@ export const eletricistaFAQs: FAQ[] = [
  answer: "Confirmamos a deslocação antes de intervir — Bragança (Z3, 35 €) e aldeias circundantes. Serviço 24h/7 dias incluindo feriados, orçamento por escrito."
  },
  {
-question: "São certificados ?",
+question: "têm experiência ?",
   answer: "Sim, temos técnicos experientes com formação profissional. Todos os trabalhos incluem documentação técnica conforme legislação portuguesa."
  },
  {

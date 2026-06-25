@@ -90,7 +90,7 @@ const ComoInstalarCandeeiroTeto: React.FC = () => {
  </div>
  <div>
  <p className="font-semibold text-gray-900">João Silva</p>
- <p className="text-gray-600">Eletricista Certificado com experiência em Trás-os-Montes</p>
+ <p className="text-gray-600">eletricista com experiência com experiência em Trás-os-Montes</p>
  </div>
  </div>
  </div>

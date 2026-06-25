@@ -32,7 +32,7 @@ function GuaranteeSection() {
  },
  {
  icon: '👨‍🔧',
- title: 'Técnico Qualificado',
+ title: 'técnico com experiência',
  description: 'experiência em Trás-os-Montes — Sabe o que faz',
  badge: '12+ anos'
  },
@@ -58,7 +58,7 @@ function GuaranteeSection() {
  },
  {
  icon: '👨‍🔧',
- title: 'Técnico Qualificado',
+ title: 'técnico com experiência',
  description: 'experiência em Trás-os-Montes + — Sabe o que faz',
  badge: ''
  },

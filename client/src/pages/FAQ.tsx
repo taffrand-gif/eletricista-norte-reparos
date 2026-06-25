@@ -200,7 +200,7 @@ export default function FAQPage() {
  </a>
  </div>
  <p className="mt-6 text-sm text-orange-200">
- Resposta mediante contacto garantida durante o dia • Urgências Atendimento 24h/7d • Eletricista Certificado
+ Resposta mediante contacto garantida durante o dia • Urgências Atendimento 24h/7d • eletricista com experiência
  </p>
  </div>
  </div>

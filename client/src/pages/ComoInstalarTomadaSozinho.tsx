@@ -127,7 +127,7 @@ export default function ComoInstalarTomadaSozinho() {
  className="bg-white text-red-600 hover:bg-gray-100 font-bold px-8 py-4 rounded-lg text-xl transition-colors shadow-lg flex items-center justify-center gap-2"
  >
  <Phone className="w-6 h-6" />
- Eletricista Certificado: {config.phone}
+ eletricista com experiência: {config.phone}
  </a>
  <a
  href={`https://wa.me/${config.whatsapp}?text=Preciso instalar tomada. Quanto custa?`}
@@ -209,7 +209,7 @@ export default function ComoInstalarTomadaSozinho() {
  <section className="py-16 bg-white">
  <div className="container mx-auto px-4">
  <h2 className="text-3xl font-bold text-center mb-4">
- ✅ O Que Faz Eletricista Certificado (40-80€)
+ ✅ O Que Faz eletricista com experiência (40-80€)
  </h2>
  <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
  Não é só "ligar 3 fios". É segurança, legalidade e garantia.
@@ -285,7 +285,7 @@ export default function ComoInstalarTomadaSozinho() {
  <div className="container mx-auto px-4 text-center">
  <Zap className="w-16 h-16 mx-auto mb-6" />
  <h2 className="text-3xl font-bold mb-4">
- Precisa Instalar Tomada? Chame Eletricista Certificado
+ Precisa Instalar Tomada? Chame eletricista com experiência
  </h2>
  <p className="text-xl mb-8 max-w-2xl mx-auto">
 40-80€ por tomada. Inclui certificação elétrica, garantia escrita. Legal, seguro e rápido (1-2h).

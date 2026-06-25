@@ -230,7 +230,7 @@ const QuandoTrocarInstalacaoEletrica: React.FC = () => {
  <p>Estes valores incluem materiais e mão de obra. Um orçamento detalhado requer visita ao local para avaliar o estado real da instalação.</p>
  </section>
  <section id="profissional" className="mb-12">
- <h2 className="text-3xl font-bold text-gray-900 mb-6">5. 👨‍🔧 Porquê Contratar um Eletricista Certificado</h2>
+ <h2 className="text-3xl font-bold text-gray-900 mb-6">5. 👨‍🔧 Porquê Contratar um eletricista com experiência</h2>
  <div className="bg-amber-50 border border-amber-200 rounded-2xl p-8">
  <p className="text-lg text-gray-700 mb-6">A renovação de uma instalação elétrica não é um projeto DIY. Requer conhecimentos técnicos, certificação e cumprimento das normas RTIEBT (Regras Técnicas das Instalações Elétricas de Baixa Tensão).</p>
  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

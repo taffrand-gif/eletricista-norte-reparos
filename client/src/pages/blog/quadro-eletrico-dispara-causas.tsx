@@ -153,7 +153,7 @@ export default function QuadroEletricoDisparaCausas() {
  </p>
  <div className="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
  <h3 className="text-xl font-bold text-gray-900 mb-3">
- Precisa de Eletricista Certificado em Bragança?
+ Precisa de eletricista com experiência em Bragança?
  </h3>
  <p className="text-gray-800 mb-4">
  Diagnóstico rápido e arranjo profissional. Intervenção em 2-4 horas. certificação elétrica garantida.
