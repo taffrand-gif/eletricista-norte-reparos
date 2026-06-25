@@ -3,14 +3,14 @@ title: "Certificação Elétrica 2026"
 date: 2026-06-06
 category: guia
 tags: [guia, 2026, portugal]
-summary: "DGEG, custos."
+summary: ", custos."
 author: "Norte Reparos"
 reading_time: "10-12 min"
 ---
 
 # Certificação Elétrica 2026
 
-DGEG, custos.
+, custos.
 
 ## Índice
 
@@ -27,7 +27,7 @@ DGEG, custos.
 
 ## 1. O que é e quando é relevante
 
-DGEG, custos.
+, custos.
 
 Este guia aplica-se a Portugal continental em 2026, com foco na região de Trás-os-Montes (Bragança, Vila Real, Guarda). Os preços mencionados incluem IVA e são médios de mercado — podem variar conforme zona, urgência, e complexidade.
 
@@ -64,7 +64,7 @@ Existem várias categorias a considerar antes de avançar:
 - Z4 (91-130 km): 40€ deslocação
 
 **D. Por tipo de profissional**
-- Certificado/inscrito (DGEG, ADENE, etc.)
+- Certificado/inscrito (, ADENE, etc.)
 - Com seguro
 - Com experiência comprovada
 - Com equipamento profissional
@@ -116,7 +116,7 @@ Os preços médios nacionais em 2026:
 1. **Empresa estabelecida** (3+ anos no mercado)
 2. **Seguro de responsabilidade civil** válido
 3. **Alvará** (para obras > 5000€)
-4. **Certificações profissionais** (DGEG para elétrico, etc.)
+4. **Certificações profissionais** ( para elétrico, etc.)
 5. **Referências verificáveis** (clientes anteriores)
 6. **Fatura detalhada** sempre
 7. **Orçamento por escrito** antes do trabalho
@@ -271,12 +271,12 @@ Preço muito abaixo do mercado, sem fatura, pressão para decidir rápido, sem r
 
 ## 8. Conclusão
 
-DGEG, custos.
+, custos.
 
 **Pontos-chave a reter:**
 
 1. **Faça sempre 2-3 orçamentos** escritos antes de decidir
-2. **Verifique certificações** (DGEG, ADENE,行业协会)
+2. **Verifique certificações** (, ADENE,行业协会)
 3. **Peça fatura detalhada** sempre
 4. **Mantenha documentação** (orçamentos, faturas, garantias)
 5. **Invista em manutenção preventiva** (200-500€/ano)

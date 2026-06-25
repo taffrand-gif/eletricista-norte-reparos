@@ -1,2602 +1,2602 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist/public",
-  "devCommand": "npm run dev",
-  "installCommand": "npm install --legacy-peer-deps",
-  "framework": "vite",
-  "rewrites": [
-    {
-      "source": "/eletricista-:city",
-      "destination": "/eletricista-:city.html"
-    },
-    {
-      "source": "/melhores-eletricistas-:city",
-      "destination": "/melhores-eletricistas-:city.html"
-    },
-    {
-      "source": "/arranjacao-:service-:city",
-      "destination": "/arranjacao-:service-:city.html"
-    },
-    {
-      "source": "/urgencia-:service-:city",
-      "destination": "/urgencia-:service-:city.html"
-    },
-    {
-      "source": "/instalacao-:service-:city",
-      "destination": "/instalacao-:service-:city.html"
-    },
-    {
-      "source": "/certificacao-:service-:city",
-      "destination": "/certificacao-:service-:city.html"
-    },
-    {
-      "source": "/quadro-:service-:city",
-      "destination": "/quadro-:service-:city.html"
-    },
-    {
-      "source": "/iluminacao-:city",
-      "destination": "/iluminacao-:city.html"
-    },
-    {
-      "source": "/tomadas-:city",
-      "destination": "/tomadas-:city.html"
-    },
-    {
-      "source": "/disjuntores-:city",
-      "destination": "/disjuntores-:city.html"
-    },
-    {
-      "source": "/blog/:slug",
-      "destination": "/blog/:slug.html"
-    },
-    {
-      "source": "/perguntas-frequentes",
-      "destination": "/perguntas-frequentes.html"
-    },
-    {
-      "source": "/contactos",
-      "destination": "/contactos.html"
-    },
-    {
-      "source": "/sobre",
-      "destination": "/sobre.html"
-    },
-    {
-      "source": "/politica-privacidade",
-      "destination": "/politica-privacidade.html"
-    },
-    {
-      "source": "/termos-condicoes",
-      "destination": "/termos-condicoes.html"
-    },
-    {
-      "source": "/precos",
-      "destination": "/precos.html"
-    },
-    {
-      "source": "/indice-a-z",
-      "destination": "/indice-a-z.html"
-    },
-    {
-      "source": "/indice-a-z-p1",
-      "destination": "/indice-a-z-p1.html"
-    },
-    {
-      "source": "/indice-a-z-p2",
-      "destination": "/indice-a-z-p2.html"
-    },
-    {
-      "source": "/indice-a-z-p3",
-      "destination": "/indice-a-z-p3.html"
-    },
-    {
-      "source": "/indice-a-z-p4",
-      "destination": "/indice-a-z-p4.html"
-    },
-    {
-      "source": "/indice-a-z-p5",
-      "destination": "/indice-a-z-p5.html"
-    },
-    {
-      "source": "/indice-a-z-p6",
-      "destination": "/indice-a-z-p6.html"
-    },
-    {
-      "source": "/indice-a-z-p7",
-      "destination": "/indice-a-z-p7.html"
-    },
-    {
-      "source": "/indice-a-z-p8",
-      "destination": "/indice-a-z-p8.html"
-    },
-    {
-      "source": "/indice-a-z-p9",
-      "destination": "/indice-a-z-p9.html"
-    },
-    {
-      "source": "/indice-a-z-p10",
-      "destination": "/indice-a-z-p10.html"
-    },
-    {
-      "source": "/indice-a-z-p11",
-      "destination": "/indice-a-z-p11.html"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/assets/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    },
-    {
-      "source": "/paa/(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/(.*)electrician(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        }
-      ]
-    },
-    {
-      "source": "/(.*)electricien(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        }
-      ]
-    },
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://ipapi.co https://nominatim.openstreetmap.org https://wa.me https://www.googletagmanager.com https://googleads.g.doubleclick.net https://www.google.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
-        },
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        },
-        {
-          "key": "X-Frame-Options",
-          "value": "DENY"
-        },
-        {
-          "key": "X-XSS-Protection",
-          "value": "1; mode=block"
-        },
-        {
-          "key": "Referrer-Policy",
-          "value": "strict-origin-when-cross-origin"
-        },
-        {
-          "key": "Strict-Transport-Security",
-          "value": "max-age=31536000; includeSubDomains; preload"
-        },
-        {
-          "key": "Permissions-Policy",
-          "value": "geolocation=(), microphone=(), camera=()"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-alfandega-da-fe",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-alfandega-fe",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-alijo",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-armamar",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-boticas",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-braganca",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-carrazeda-de-ansiaes",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-chaves",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-foz-coa",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-freixo-de-espada-a-cinta",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-lamego",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-macedo-cavaleiros",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-macedo-de-cavaleiros",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-mesao-frio",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-miranda-do-douro",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-mirandela",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-mogadouro",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-moimenta-da-beira",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-mondim-de-basto",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-montalegre",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-murca",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-penedono",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-peso-da-regua",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-pesqueira",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-ribeira-de-pena",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-sabrosa",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-santa-marta-de-penaguiao",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-sernancelhe",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-tabuaco",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-torre-de-moncorvo",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-torre-moncorvo",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-valpacos",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-vila-flor",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-vila-pouca-de-aguiar",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-vila-real",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-vimioso",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-vinhais",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-viana-do-bolo",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-urgente-viana-do-bolo",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-vitigudino",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-urgente-vitigudino",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-puebla-de-sanabria",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-urgente-puebla-de-sanabria",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-sanchón-de-la-ribera",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-justel",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-la-peña",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-san-vicente-de-la-cabeza",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-galende",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-asturianos",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-lumbrales",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-lubián",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-muelas-de-los-caballeros",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-trabazos",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-villadepera",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-la-vídola",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-sobradillo",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-cualedro",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-videmala",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-riofrío-de-aliste",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-sardon-de-los-frailes",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-viñas",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-masueco",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-almeida-de-sayago",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-manzanal-del-barco",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-verín",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-vilvestre",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-almaraz-de-duero",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-fermoselle",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-san-vitero",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-barruecopardo",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-laza",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-luelmo",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-trefacio",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-pereña-de-la-ribera",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-aldeadavila-de-la-ribera",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-muga-de-sayago",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-santa-eufemia-del-barco",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-alcañices",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-palacios-de-sanabria",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-manzanal-de-arriba",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-villar-del-buey",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-mahíde",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-mombuey",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-villar-de-samaniego",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-rionegro-del-puente",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-aldeadávila-de-la-ribera",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-gallegos-del-río",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-salce",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-losacio",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-pino-del-oro",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-robleda",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-roelos-de-sayago",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-sardón-de-los-frailes",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-monleras",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-villasbuenas",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-villarmuerto",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-olmillos-de-castro",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-losacino",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-peque",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-villaseco-de-los-reyes",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-argañín",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-sanchon-de-la-ribera",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-hinojosa-de-duero",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-manzanal-de-los-infantes",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-figueruela-de-arriba",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-fresno-de-sayago",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-trasmiras",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-puertas",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-samir-de-los-caños",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-moral-de-sayago",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-trabanca",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-oímbra",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-rosinos-de-la-requejada",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-carbellino",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-torregamones",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-saucelle",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-palacios-del-pan",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-villaseco-del-pan",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-fonfría",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-carbajales-de-alba",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-rabanales",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-muelas-del-pan",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-puerto-seguro",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-villalcampo",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-el-milano",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-villarino-de-los-aires",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-pedralba-de-la-pradería",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-villardiegua-de-la-ribera",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-vegalatrave",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-san-justo",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-hermisende",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-rábano-de-aliste",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-saldeana",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-rabano-de-aliste",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-gamones",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-malpartida",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-la-fregeneda",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-bermillo-de-sayago",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-ahigal-de-villarino",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-lubian",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-cobreros",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-cerezal-de-peñahorcada",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-ferreras-de-arriba",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/eletricista-villardeciervos",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/es",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/fr",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/en",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    }
-  ],
-  "redirects": [
-    {
-      "source": "/imprensa",
-      "destination": "/sobre.html",
-      "statusCode": 301
-    },
-    {
-      "source": "/imprensa.html",
-      "destination": "/sobre.html",
-      "statusCode": 301
-    },
-    {
-      "source": "/blog/contratar-canalizador-2026.html",
-      "destination": "/top-10-razoes-contratar-canalizador.html",
-      "statusCode": 301
-    },
-    {
-      "source": "/blog/guia-completo-canalizacao-casa-antiga.html",
-      "destination": "/guia-completo-canalizacao-casa-antiga-portugal.html",
-      "statusCode": 301
-    },
-    {
-      "source": "/amazon.html",
-      "destination": "/",
-      "statusCode": 301
-    },
-    {
-      "source": "/zonas-de-intervencao.html",
-      "destination": "/zona-intervencao.html",
-      "statusCode": 301
-    },
-    {
-      "source": "/fugas-agua.html",
-      "destination": "/fuga-agua.html",
-      "statusCode": 301
-    },
-    {
-      "source": "/desentupimentos.html",
-      "destination": "/desentupimento.html",
-      "statusCode": 301
-    },
-    {
-      "source": "/tuto.html",
-      "destination": "/tuto/",
-      "statusCode": 301
-    },
-    {
-      "source": "/blog.html",
-      "destination": "/blog/",
-      "statusCode": 301
-    },
-    {
-      "source": "/concelhos/bragança.html",
-      "destination": "/concelhos/braganca.html",
-      "statusCode": 301
-    },
-    {
-      "source": "/blog/certificacao--obrigatoria.html",
-      "destination": "/blog/certificacao-obrigatoria.html",
-      "statusCode": 301
-    },
-    {
-      "source": "/blog/certificacao--tudo-saber.html",
-      "destination": "/blog/certificacao-tudo-saber.html",
-      "statusCode": 301
-    },
-    {
-      "source": "/blog/certificacao-eletrica--guia.html",
-      "destination": "/blog/certificacao-eletrica-guia.html",
-      "statusCode": 301
-    },
-    {
-      "source": "/blog/certificacao--vila-flor.html",
-      "destination": "/blog/certificacao-vila-flor.html",
-      "statusCode": 301
-    },
-    {
-      "source": "/blog/certificacao--miranda-douro.html",
-      "destination": "/blog/certificacao-miranda-douro.html",
-      "statusCode": 301
-    },
-    {
-      "source": "/blog/certificacao--moimenta-beira.html",
-      "destination": "/blog/certificacao-moimenta-beira.html",
-      "statusCode": 301
-    },
-    {
-      "source": "/blog/certificacao--chaves-guia.html",
-      "destination": "/blog/certificacao-chaves-guia.html",
-      "statusCode": 301
-    },
-    {
-      "source": "/blog/certificacao--carrazeda-ansiaes-guia.html",
-      "destination": "/blog/certificacao-carrazeda-ansiaes-guia.html",
-      "statusCode": 301
-    },
-    {
-      "source": "/blog/certificacao--vila-flor-guia.html",
-      "destination": "/blog/certificacao-vila-flor-guia.html",
-      "statusCode": 301
-    },
-    {
-      "source": "/blog/certificacao--importancia.html",
-      "destination": "/blog/certificacao-importancia.html",
-      "statusCode": 301
-    },
-    {
-      "source": "/blog/certificacao--regua-guia.html",
-      "destination": "/blog/certificacao-regua-guia.html",
-      "statusCode": 301
-    },
-    {
-      "source": "/blog/certificacao--freixo-espada-cinta-guia.html",
-      "destination": "/blog/certificacao-freixo-espada-cinta-guia.html",
-      "statusCode": 301
-    },
-    {
-      "source": "/blog/certificacao--mogadouro.html",
-      "destination": "/blog/certificacao-mogadouro.html",
-      "statusCode": 301
-    },
-    {
-      "source": "/blog/certificacao--vila-real.html",
-      "destination": "/blog/certificacao-vila-real.html",
-      "statusCode": 301
-    },
-    {
-      "source": "/blog/certificacao--torre-moncorvo.html",
-      "destination": "/blog/certificacao-torre-moncorvo.html",
-      "statusCode": 301
-    },
-    {
-      "source": "/blog/certificacao--torre-moncorvo-guia.html",
-      "destination": "/blog/certificacao-torre-moncorvo-guia.html",
-      "statusCode": 301
-    },
-    {
-      "source": "/blog/certificacao--rebordelo.html",
-      "destination": "/blog/certificacao-rebordelo.html",
-      "statusCode": 301
-    },
-    {
-      "source": "/blog/certificacao--lamego-guia.html",
-      "destination": "/blog/certificacao-lamego-guia.html",
-      "statusCode": 301
-    },
-    {
-      "source": "/blog/certificacao--alijo.html",
-      "destination": "/blog/certificacao-alijo.html",
-      "statusCode": 301
-    },
-    {
-      "source": "/blog/certificacao--monforte-rio-livre.html",
-      "destination": "/blog/certificacao-monforte-rio-livre.html",
-      "statusCode": 301
-    },
-    {
-      "source": "/blog/certificacao--moncorvo.html",
-      "destination": "/blog/certificacao-moncorvo.html",
-      "statusCode": 301
-    },
-    {
-      "source": "/blog/certificacao--ribeira-pena.html",
-      "destination": "/blog/certificacao-ribeira-pena.html",
-      "statusCode": 301
-    },
-    {
-      "source": "/blog/certificacao--vimioso-guia.html",
-      "destination": "/blog/certificacao-vimioso-guia.html",
-      "statusCode": 301
-    },
-    {
-      "source": "/eletricista-a-gudia",
-      "destination": "/eletricista-a-gudina",
-      "statusCode": 301
-    },
-    {
-      "source": "/eletricista-campo-de-vboras",
-      "destination": "/eletricista-campo-de-viboras",
-      "statusCode": 301
-    },
-    {
-      "source": "/eletricista-cerezal-de-peahorcada",
-      "destination": "/eletricista-cerezal-de-penahorcada",
-      "statusCode": 301
-    },
-    {
-      "source": "/eletricista-espadaedo",
-      "destination": "/eletricista-espadanedo",
-      "statusCode": 301
-    },
-    {
-      "source": "/eletricista-gensio",
-      "destination": "/eletricista-genisio",
-      "statusCode": 301
-    },
-    {
-      "source": "/eletricista-gradssimo",
-      "destination": "/eletricista-gradissimo",
-      "statusCode": 301
-    },
-    {
-      "source": "/eletricista-la-pea",
-      "destination": "/eletricista-la-pena",
-      "statusCode": 301
-    },
-    {
-      "source": "/eletricista-la-vdola",
-      "destination": "/eletricista-la-vidola",
-      "statusCode": 301
-    },
-    {
-      "source": "/eletricista-pedralba-de-la-pradera",
-      "destination": "/eletricista-pedralba-de-la-praderia",
-      "statusCode": 301
-    },
-    {
-      "source": "/eletricista-perea-de-la-ribera",
-      "destination": "/eletricista-perena-de-la-ribera",
-      "statusCode": 301
-    },
-    {
-      "source": "/eletricista-samir-de-los-caos",
-      "destination": "/eletricista-samir-de-los-canos",
-      "statusCode": 301
-    },
-    {
-      "source": "/eletricista-vilario-de-conso",
-      "destination": "/eletricista-vilarino-de-conso",
-      "statusCode": 301
-    },
-    {
-      "source": "/melhor-avaria-tavira",
-      "destination": "/melhor-avaria-tavora",
-      "statusCode": 301
-    },
-    {
-      "source": "/melhor-carregador-ve-tavira",
-      "destination": "/melhor-carregador-ve-tavora",
-      "statusCode": 301
-    },
-    {
-      "source": "/melhor-certificacao-dgeg-tavira",
-      "destination": "/melhor-certificacao-dgeg-tavora",
-      "statusCode": 301
-    },
-    {
-      "source": "/melhor-iluminacao-led-tavira",
-      "destination": "/melhor-iluminacao-led-tavora",
-      "statusCode": 301
-    },
-    {
-      "source": "/melhor-painel-solar-tavira",
-      "destination": "/melhor-painel-solar-tavora",
-      "statusCode": 301
-    },
-    {
-      "source": "/melhor-quadro-eletrico-tavira",
-      "destination": "/melhor-quadro-eletrico-tavora",
-      "statusCode": 301
-    },
-    {
-      "source": "/eletricista-alfndega-da-fe",
-      "destination": "/eletricista-alfandega-da-fe",
-      "statusCode": 301
-    },
-    {
-      "source": "/eletricista-carrazeda-de-anciaes",
-      "destination": "/eletricista-carrazeda-de-ansiaes",
-      "statusCode": 301
-    },
-    {
-      "source": "/eletricista-seix0-de-ansiaes",
-      "destination": "/eletricista-seixo-de-ansiaes",
-      "statusCode": 301
-    },
-    {
-      "source": "/eletricista-mós-de-celas",
-      "destination": "/eletricista-mos-de-celas",
-      "statusCode": 301
-    },
-    {
-      "source": "/eletricista-mós",
-      "destination": "/eletricista-mos",
-      "statusCode": 301
-    },
-    {
-      "source": "/eletricista-tó",
-      "destination": "/eletricista-to",
-      "statusCode": 301
-    },
-    {
-      "source": "/eletricista-gallegos-del-ro",
-      "destination": "/eletricista-gallegos-del-ro",
-      "statusCode": 410
-    },
-    {
-      "source": "/melhores-quadros-eletricos-residenciais",
-      "destination": "/melhores-quadros-eletricos-residenciais",
-      "statusCode": 410
-    },
-    {
-      "source": "/quadros-eletricos-aguiar-da-beira",
-      "destination": "/quadro-eletrico-aguiar-da-beira",
-      "statusCode": 301
-    },
-    {
-      "source": "/quadros-eletricos-alfandega",
-      "destination": "/quadros-eletricos-alfandega",
-      "statusCode": 410
-    },
-    {
-      "source": "/quadros-eletricos-algoso",
-      "destination": "/quadros-eletricos-algoso",
-      "statusCode": 410
-    },
-    {
-      "source": "/quadros-eletricos-armamar",
-      "destination": "/quadro-eletrico-armamar",
-      "statusCode": 301
-    },
-    {
-      "source": "/quadros-eletricos-boticas",
-      "destination": "/quadro-eletrico-boticas",
-      "statusCode": 301
-    },
-    {
-      "source": "/quadros-eletricos-braganca",
-      "destination": "/quadro-eletrico-braganca",
-      "statusCode": 301
-    },
-    {
-      "source": "/quadros-eletricos-chaves",
-      "destination": "/quadro-eletrico-chaves",
-      "statusCode": 301
-    },
-    {
-      "source": "/quadros-eletricos-duas-igrejas",
-      "destination": "/quadros-eletricos-duas-igrejas",
-      "statusCode": 410
-    },
-    {
-      "source": "/quadros-eletricos-figueira-castelo-rodrigo",
-      "destination": "/quadros-eletricos-figueira-castelo-rodrigo",
-      "statusCode": 410
-    },
-    {
-      "source": "/quadros-eletricos-fornos-de-algodres",
-      "destination": "/quadros-eletricos-fornos-de-algodres",
-      "statusCode": 410
-    },
-    {
-      "source": "/quadros-eletricos-lagoaca",
-      "destination": "/quadros-eletricos-lagoaca",
-      "statusCode": 410
-    },
-    {
-      "source": "/quadros-eletricos-lamego",
-      "destination": "/quadro-eletrico-lamego",
-      "statusCode": 301
-    },
-    {
-      "source": "/quadros-eletricos-macedo",
-      "destination": "/quadros-eletricos-macedo",
-      "statusCode": 410
-    },
-    {
-      "source": "/quadros-eletricos-meda",
-      "destination": "/quadro-eletrico-meda",
-      "statusCode": 301
-    },
-    {
-      "source": "/quadros-eletricos-mesao-frio",
-      "destination": "/quadro-eletrico-mesao-frio",
-      "statusCode": 301
-    },
-    {
-      "source": "/quadros-eletricos-miranda-do-douro",
-      "destination": "/quadro-eletrico-miranda-do-douro",
-      "statusCode": 301
-    },
-    {
-      "source": "/quadros-eletricos-miranda-douro",
-      "destination": "/quadros-eletricos-miranda-douro",
-      "statusCode": 410
-    },
-    {
-      "source": "/quadros-eletricos-mirandela",
-      "destination": "/quadro-eletrico-mirandela",
-      "statusCode": 301
-    },
-    {
-      "source": "/quadros-eletricos-modernizacao",
-      "destination": "/quadros-eletricos-modernizacao",
-      "statusCode": 410
-    },
-    {
-      "source": "/quadros-eletricos-mogadouro",
-      "destination": "/quadro-eletrico-mogadouro",
-      "statusCode": 301
-    },
-    {
-      "source": "/quadros-eletricos-moncorvo",
-      "destination": "/quadros-eletricos-moncorvo",
-      "statusCode": 410
-    },
-    {
-      "source": "/quadros-eletricos-mondim-de-basto",
-      "destination": "/quadros-eletricos-mondim-de-basto",
-      "statusCode": 410
-    },
-    {
-      "source": "/quadros-eletricos-monforte-de-rio-livre",
-      "destination": "/quadros-eletricos-monforte-de-rio-livre",
-      "statusCode": 410
-    },
-    {
-      "source": "/quadros-eletricos-montalegre",
-      "destination": "/quadro-eletrico-montalegre",
-      "statusCode": 301
-    },
-    {
-      "source": "/quadros-eletricos-penedono",
-      "destination": "/quadro-eletrico-penedono",
-      "statusCode": 301
-    },
-    {
-      "source": "/quadros-eletricos-rebordelo",
-      "destination": "/quadros-eletricos-rebordelo",
-      "statusCode": 410
-    },
-    {
-      "source": "/quadros-eletricos-ribeira-de-pena",
-      "destination": "/quadro-eletrico-ribeira-de-pena",
-      "statusCode": 301
-    },
-    {
-      "source": "/quadros-eletricos-santa-marta-penaguiao",
-      "destination": "/quadros-eletricos-santa-marta-penaguiao",
-      "statusCode": 410
-    },
-    {
-      "source": "/quadros-eletricos-sendim",
-      "destination": "/quadro-eletrico-sendim",
-      "statusCode": 301
-    },
-    {
-      "source": "/quadros-eletricos-sernancelhe",
-      "destination": "/quadro-eletrico-sernancelhe",
-      "statusCode": 301
-    },
-    {
-      "source": "/quadros-eletricos-tabuaco",
-      "destination": "/quadro-eletrico-tabuaco",
-      "statusCode": 301
-    },
-    {
-      "source": "/quadros-eletricos-torre-moncorvo",
-      "destination": "/quadros-eletricos-torre-moncorvo",
-      "statusCode": 410
-    },
-    {
-      "source": "/quadros-eletricos-trancoso",
-      "destination": "/quadros-eletricos-trancoso",
-      "statusCode": 410
-    },
-    {
-      "source": "/quadros-eletricos-valpacos",
-      "destination": "/quadro-eletrico-valpacos",
-      "statusCode": 301
-    },
-    {
-      "source": "/quadros-eletricos-vila-pouca-de-aguiar",
-      "destination": "/quadro-eletrico-vila-pouca-de-aguiar",
-      "statusCode": 301
-    },
-    {
-      "source": "/quadros-eletricos-vila-real",
-      "destination": "/quadro-eletrico-vila-real",
-      "statusCode": 301
-    },
-    {
-      "source": "/quadros-eletricos-vinhais",
-      "destination": "/quadro-eletrico-vinhais",
-      "statusCode": 301
-    }
-  ]
+ "buildCommand": "npm run build",
+ "outputDirectory": "dist/public",
+ "devCommand": "npm run dev",
+ "installCommand": "npm install --legacy-peer-deps",
+ "framework": "vite",
+ "rewrites": [
+ {
+ "source": "/eletricista-:city",
+ "destination": "/eletricista-:city.html"
+ },
+ {
+ "source": "/melhores-eletricistas-:city",
+ "destination": "/melhores-eletricistas-:city.html"
+ },
+ {
+ "source": "/arranjacao-:service-:city",
+ "destination": "/arranjacao-:service-:city.html"
+ },
+ {
+ "source": "/urgencia-:service-:city",
+ "destination": "/urgencia-:service-:city.html"
+ },
+ {
+ "source": "/instalacao-:service-:city",
+ "destination": "/instalacao-:service-:city.html"
+ },
+ {
+ "source": "/certificacao-:service-:city",
+ "destination": "/certificacao-:service-:city.html"
+ },
+ {
+ "source": "/quadro-:service-:city",
+ "destination": "/quadro-:service-:city.html"
+ },
+ {
+ "source": "/iluminacao-:city",
+ "destination": "/iluminacao-:city.html"
+ },
+ {
+ "source": "/tomadas-:city",
+ "destination": "/tomadas-:city.html"
+ },
+ {
+ "source": "/disjuntores-:city",
+ "destination": "/disjuntores-:city.html"
+ },
+ {
+ "source": "/blog/:slug",
+ "destination": "/blog/:slug.html"
+ },
+ {
+ "source": "/perguntas-frequentes",
+ "destination": "/perguntas-frequentes.html"
+ },
+ {
+ "source": "/contactos",
+ "destination": "/contactos.html"
+ },
+ {
+ "source": "/sobre",
+ "destination": "/sobre.html"
+ },
+ {
+ "source": "/politica-privacidade",
+ "destination": "/politica-privacidade.html"
+ },
+ {
+ "source": "/termos-condicoes",
+ "destination": "/termos-condicoes.html"
+ },
+ {
+ "source": "/precos",
+ "destination": "/precos.html"
+ },
+ {
+ "source": "/indice-a-z",
+ "destination": "/indice-a-z.html"
+ },
+ {
+ "source": "/indice-a-z-p1",
+ "destination": "/indice-a-z-p1.html"
+ },
+ {
+ "source": "/indice-a-z-p2",
+ "destination": "/indice-a-z-p2.html"
+ },
+ {
+ "source": "/indice-a-z-p3",
+ "destination": "/indice-a-z-p3.html"
+ },
+ {
+ "source": "/indice-a-z-p4",
+ "destination": "/indice-a-z-p4.html"
+ },
+ {
+ "source": "/indice-a-z-p5",
+ "destination": "/indice-a-z-p5.html"
+ },
+ {
+ "source": "/indice-a-z-p6",
+ "destination": "/indice-a-z-p6.html"
+ },
+ {
+ "source": "/indice-a-z-p7",
+ "destination": "/indice-a-z-p7.html"
+ },
+ {
+ "source": "/indice-a-z-p8",
+ "destination": "/indice-a-z-p8.html"
+ },
+ {
+ "source": "/indice-a-z-p9",
+ "destination": "/indice-a-z-p9.html"
+ },
+ {
+ "source": "/indice-a-z-p10",
+ "destination": "/indice-a-z-p10.html"
+ },
+ {
+ "source": "/indice-a-z-p11",
+ "destination": "/indice-a-z-p11.html"
+ },
+ {
+ "source": "/(.*)",
+ "destination": "/index.html"
+ }
+ ],
+ "headers": [
+ {
+ "source": "/assets/(.*)",
+ "headers": [
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=31536000, immutable"
+ }
+ ]
+ },
+ {
+ "source": "/paa/(.*)",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/(.*)electrician(.*)",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ }
+ ]
+ },
+ {
+ "source": "/(.*)electricien(.*)",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ }
+ ]
+ },
+ {
+ "source": "/(.*)",
+ "headers": [
+ {
+ "key": "Content-Security-Policy",
+ "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://ipapi.co https://nominatim.openstreetmap.org https://wa.me https://www.googletagmanager.com https://googleads.g.doubleclick.net https://www.google.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
+ },
+ {
+ "key": "X-Content-Type-Options",
+ "value": "nosniff"
+ },
+ {
+ "key": "X-Frame-Options",
+ "value": "DENY"
+ },
+ {
+ "key": "X-XSS-Protection",
+ "value": "1; mode=block"
+ },
+ {
+ "key": "Referrer-Policy",
+ "value": "strict-origin-when-cross-origin"
+ },
+ {
+ "key": "Strict-Transport-Security",
+ "value": "max-age=31536000; includeSubDomains; preload"
+ },
+ {
+ "key": "Permissions-Policy",
+ "value": "geolocation=(), microphone=(), camera=()"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-alfandega-da-fe",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-alfandega-fe",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-alijo",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-armamar",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-boticas",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-braganca",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-carrazeda-de-ansiaes",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-chaves",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-foz-coa",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-freixo-de-espada-a-cinta",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-lamego",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-macedo-cavaleiros",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-macedo-de-cavaleiros",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-mesao-frio",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-miranda-do-douro",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-mirandela",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-mogadouro",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-moimenta-da-beira",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-mondim-de-basto",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-montalegre",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-murca",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-penedono",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-peso-da-regua",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-pesqueira",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-ribeira-de-pena",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-sabrosa",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-santa-marta-de-penaguiao",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-sernancelhe",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-tabuaco",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-torre-de-moncorvo",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-torre-moncorvo",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-valpacos",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-vila-flor",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-vila-pouca-de-aguiar",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-vila-real",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-vimioso",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/perguntas-frequentes-eletricista-vinhais",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-viana-do-bolo",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-urgente-viana-do-bolo",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-vitigudino",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-urgente-vitigudino",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-puebla-de-sanabria",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-urgente-puebla-de-sanabria",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-sanchón-de-la-ribera",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-justel",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-la-peña",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-san-vicente-de-la-cabeza",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-galende",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-asturianos",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-lumbrales",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-lubián",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-muelas-de-los-caballeros",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-trabazos",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-villadepera",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-la-vídola",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-sobradillo",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-cualedro",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-videmala",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-riofrío-de-aliste",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-sardon-de-los-frailes",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-viñas",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-masueco",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-almeida-de-sayago",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-manzanal-del-barco",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-verín",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-vilvestre",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-almaraz-de-duero",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-fermoselle",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-san-vitero",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-barruecopardo",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-laza",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-luelmo",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-trefacio",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-pereña-de-la-ribera",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-aldeadavila-de-la-ribera",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-muga-de-sayago",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-santa-eufemia-del-barco",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-alcañices",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-palacios-de-sanabria",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-manzanal-de-arriba",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-villar-del-buey",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-mahíde",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-mombuey",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-villar-de-samaniego",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-rionegro-del-puente",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-aldeadávila-de-la-ribera",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-gallegos-del-río",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-salce",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-losacio",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-pino-del-oro",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-robleda",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-roelos-de-sayago",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-sardón-de-los-frailes",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-monleras",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-villasbuenas",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-villarmuerto",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-olmillos-de-castro",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-losacino",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-peque",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-villaseco-de-los-reyes",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-argañín",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-sanchon-de-la-ribera",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-hinojosa-de-duero",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-manzanal-de-los-infantes",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-figueruela-de-arriba",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-fresno-de-sayago",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-trasmiras",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-puertas",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-samir-de-los-caños",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-moral-de-sayago",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-trabanca",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-oímbra",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-rosinos-de-la-requejada",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-carbellino",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-torregamones",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-saucelle",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-palacios-del-pan",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-villaseco-del-pan",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-fonfría",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-carbajales-de-alba",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-rabanales",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-muelas-del-pan",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-puerto-seguro",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-villalcampo",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-el-milano",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-villarino-de-los-aires",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-pedralba-de-la-pradería",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-villardiegua-de-la-ribera",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-vegalatrave",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-san-justo",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-hermisende",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-rábano-de-aliste",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-saldeana",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-rabano-de-aliste",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-gamones",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-malpartida",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-la-fregeneda",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-bermillo-de-sayago",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-ahigal-de-villarino",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-lubian",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-cobreros",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-cerezal-de-peñahorcada",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-ferreras-de-arriba",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/eletricista-villardeciervos",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/es",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/fr",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ },
+ {
+ "source": "/en",
+ "headers": [
+ {
+ "key": "X-Robots-Tag",
+ "value": "noindex, nofollow"
+ },
+ {
+ "key": "Cache-Control",
+ "value": "public, max-age=0, must-revalidate"
+ }
+ ]
+ }
+ ],
+ "redirects": [
+ {
+ "source": "/imprensa",
+ "destination": "/sobre.html",
+ "statusCode": 301
+ },
+ {
+ "source": "/imprensa.html",
+ "destination": "/sobre.html",
+ "statusCode": 301
+ },
+ {
+ "source": "/blog/contratar-canalizador-2026.html",
+ "destination": "/top-10-razoes-contratar-canalizador.html",
+ "statusCode": 301
+ },
+ {
+ "source": "/blog/guia-completo-canalizacao-casa-antiga.html",
+ "destination": "/guia-completo-canalizacao-casa-antiga-portugal.html",
+ "statusCode": 301
+ },
+ {
+ "source": "/amazon.html",
+ "destination": "/",
+ "statusCode": 301
+ },
+ {
+ "source": "/zonas-de-intervencao.html",
+ "destination": "/zona-intervencao.html",
+ "statusCode": 301
+ },
+ {
+ "source": "/fugas-agua.html",
+ "destination": "/fuga-agua.html",
+ "statusCode": 301
+ },
+ {
+ "source": "/desentupimentos.html",
+ "destination": "/desentupimento.html",
+ "statusCode": 301
+ },
+ {
+ "source": "/tuto.html",
+ "destination": "/tuto/",
+ "statusCode": 301
+ },
+ {
+ "source": "/blog.html",
+ "destination": "/blog/",
+ "statusCode": 301
+ },
+ {
+ "source": "/concelhos/bragança.html",
+ "destination": "/concelhos/braganca.html",
+ "statusCode": 301
+ },
+ {
+ "source": "/blog/certificacao--obrigatoria.html",
+ "destination": "/blog/certificacao-obrigatoria.html",
+ "statusCode": 301
+ },
+ {
+ "source": "/blog/certificacao--tudo-saber.html",
+ "destination": "/blog/certificacao-tudo-saber.html",
+ "statusCode": 301
+ },
+ {
+ "source": "/blog/certificacao-eletrica--guia.html",
+ "destination": "/blog/certificacao-eletrica-guia.html",
+ "statusCode": 301
+ },
+ {
+ "source": "/blog/certificacao--vila-flor.html",
+ "destination": "/blog/certificacao-vila-flor.html",
+ "statusCode": 301
+ },
+ {
+ "source": "/blog/certificacao--miranda-douro.html",
+ "destination": "/blog/certificacao-miranda-douro.html",
+ "statusCode": 301
+ },
+ {
+ "source": "/blog/certificacao--moimenta-beira.html",
+ "destination": "/blog/certificacao-moimenta-beira.html",
+ "statusCode": 301
+ },
+ {
+ "source": "/blog/certificacao--chaves-guia.html",
+ "destination": "/blog/certificacao-chaves-guia.html",
+ "statusCode": 301
+ },
+ {
+ "source": "/blog/certificacao--carrazeda-ansiaes-guia.html",
+ "destination": "/blog/certificacao-carrazeda-ansiaes-guia.html",
+ "statusCode": 301
+ },
+ {
+ "source": "/blog/certificacao--vila-flor-guia.html",
+ "destination": "/blog/certificacao-vila-flor-guia.html",
+ "statusCode": 301
+ },
+ {
+ "source": "/blog/certificacao--importancia.html",
+ "destination": "/blog/certificacao-importancia.html",
+ "statusCode": 301
+ },
+ {
+ "source": "/blog/certificacao--regua-guia.html",
+ "destination": "/blog/certificacao-regua-guia.html",
+ "statusCode": 301
+ },
+ {
+ "source": "/blog/certificacao--freixo-espada-cinta-guia.html",
+ "destination": "/blog/certificacao-freixo-espada-cinta-guia.html",
+ "statusCode": 301
+ },
+ {
+ "source": "/blog/certificacao--mogadouro.html",
+ "destination": "/blog/certificacao-mogadouro.html",
+ "statusCode": 301
+ },
+ {
+ "source": "/blog/certificacao--vila-real.html",
+ "destination": "/blog/certificacao-vila-real.html",
+ "statusCode": 301
+ },
+ {
+ "source": "/blog/certificacao--torre-moncorvo.html",
+ "destination": "/blog/certificacao-torre-moncorvo.html",
+ "statusCode": 301
+ },
+ {
+ "source": "/blog/certificacao--torre-moncorvo-guia.html",
+ "destination": "/blog/certificacao-torre-moncorvo-guia.html",
+ "statusCode": 301
+ },
+ {
+ "source": "/blog/certificacao--rebordelo.html",
+ "destination": "/blog/certificacao-rebordelo.html",
+ "statusCode": 301
+ },
+ {
+ "source": "/blog/certificacao--lamego-guia.html",
+ "destination": "/blog/certificacao-lamego-guia.html",
+ "statusCode": 301
+ },
+ {
+ "source": "/blog/certificacao--alijo.html",
+ "destination": "/blog/certificacao-alijo.html",
+ "statusCode": 301
+ },
+ {
+ "source": "/blog/certificacao--monforte-rio-livre.html",
+ "destination": "/blog/certificacao-monforte-rio-livre.html",
+ "statusCode": 301
+ },
+ {
+ "source": "/blog/certificacao--moncorvo.html",
+ "destination": "/blog/certificacao-moncorvo.html",
+ "statusCode": 301
+ },
+ {
+ "source": "/blog/certificacao--ribeira-pena.html",
+ "destination": "/blog/certificacao-ribeira-pena.html",
+ "statusCode": 301
+ },
+ {
+ "source": "/blog/certificacao--vimioso-guia.html",
+ "destination": "/blog/certificacao-vimioso-guia.html",
+ "statusCode": 301
+ },
+ {
+ "source": "/eletricista-a-gudia",
+ "destination": "/eletricista-a-gudina",
+ "statusCode": 301
+ },
+ {
+ "source": "/eletricista-campo-de-vboras",
+ "destination": "/eletricista-campo-de-viboras",
+ "statusCode": 301
+ },
+ {
+ "source": "/eletricista-cerezal-de-peahorcada",
+ "destination": "/eletricista-cerezal-de-penahorcada",
+ "statusCode": 301
+ },
+ {
+ "source": "/eletricista-espadaedo",
+ "destination": "/eletricista-espadanedo",
+ "statusCode": 301
+ },
+ {
+ "source": "/eletricista-gensio",
+ "destination": "/eletricista-genisio",
+ "statusCode": 301
+ },
+ {
+ "source": "/eletricista-gradssimo",
+ "destination": "/eletricista-gradissimo",
+ "statusCode": 301
+ },
+ {
+ "source": "/eletricista-la-pea",
+ "destination": "/eletricista-la-pena",
+ "statusCode": 301
+ },
+ {
+ "source": "/eletricista-la-vdola",
+ "destination": "/eletricista-la-vidola",
+ "statusCode": 301
+ },
+ {
+ "source": "/eletricista-pedralba-de-la-pradera",
+ "destination": "/eletricista-pedralba-de-la-praderia",
+ "statusCode": 301
+ },
+ {
+ "source": "/eletricista-perea-de-la-ribera",
+ "destination": "/eletricista-perena-de-la-ribera",
+ "statusCode": 301
+ },
+ {
+ "source": "/eletricista-samir-de-los-caos",
+ "destination": "/eletricista-samir-de-los-canos",
+ "statusCode": 301
+ },
+ {
+ "source": "/eletricista-vilario-de-conso",
+ "destination": "/eletricista-vilarino-de-conso",
+ "statusCode": 301
+ },
+ {
+ "source": "/melhor-avaria-tavira",
+ "destination": "/melhor-avaria-tavora",
+ "statusCode": 301
+ },
+ {
+ "source": "/melhor-carregador-ve-tavira",
+ "destination": "/melhor-carregador-ve-tavora",
+ "statusCode": 301
+ },
+ {
+ "source": "/melhor-certificacao--tavira",
+ "destination": "/melhor-certificacao--tavora",
+ "statusCode": 301
+ },
+ {
+ "source": "/melhor-iluminacao-led-tavira",
+ "destination": "/melhor-iluminacao-led-tavora",
+ "statusCode": 301
+ },
+ {
+ "source": "/melhor-painel-solar-tavira",
+ "destination": "/melhor-painel-solar-tavora",
+ "statusCode": 301
+ },
+ {
+ "source": "/melhor-quadro-eletrico-tavira",
+ "destination": "/melhor-quadro-eletrico-tavora",
+ "statusCode": 301
+ },
+ {
+ "source": "/eletricista-alfndega-da-fe",
+ "destination": "/eletricista-alfandega-da-fe",
+ "statusCode": 301
+ },
+ {
+ "source": "/eletricista-carrazeda-de-anciaes",
+ "destination": "/eletricista-carrazeda-de-ansiaes",
+ "statusCode": 301
+ },
+ {
+ "source": "/eletricista-seix0-de-ansiaes",
+ "destination": "/eletricista-seixo-de-ansiaes",
+ "statusCode": 301
+ },
+ {
+ "source": "/eletricista-mós-de-celas",
+ "destination": "/eletricista-mos-de-celas",
+ "statusCode": 301
+ },
+ {
+ "source": "/eletricista-mós",
+ "destination": "/eletricista-mos",
+ "statusCode": 301
+ },
+ {
+ "source": "/eletricista-tó",
+ "destination": "/eletricista-to",
+ "statusCode": 301
+ },
+ {
+ "source": "/eletricista-gallegos-del-ro",
+ "destination": "/eletricista-gallegos-del-ro",
+ "statusCode": 410
+ },
+ {
+ "source": "/melhores-quadros-eletricos-residenciais",
+ "destination": "/melhores-quadros-eletricos-residenciais",
+ "statusCode": 410
+ },
+ {
+ "source": "/quadros-eletricos-aguiar-da-beira",
+ "destination": "/quadro-eletrico-aguiar-da-beira",
+ "statusCode": 301
+ },
+ {
+ "source": "/quadros-eletricos-alfandega",
+ "destination": "/quadros-eletricos-alfandega",
+ "statusCode": 410
+ },
+ {
+ "source": "/quadros-eletricos-algoso",
+ "destination": "/quadros-eletricos-algoso",
+ "statusCode": 410
+ },
+ {
+ "source": "/quadros-eletricos-armamar",
+ "destination": "/quadro-eletrico-armamar",
+ "statusCode": 301
+ },
+ {
+ "source": "/quadros-eletricos-boticas",
+ "destination": "/quadro-eletrico-boticas",
+ "statusCode": 301
+ },
+ {
+ "source": "/quadros-eletricos-braganca",
+ "destination": "/quadro-eletrico-braganca",
+ "statusCode": 301
+ },
+ {
+ "source": "/quadros-eletricos-chaves",
+ "destination": "/quadro-eletrico-chaves",
+ "statusCode": 301
+ },
+ {
+ "source": "/quadros-eletricos-duas-igrejas",
+ "destination": "/quadros-eletricos-duas-igrejas",
+ "statusCode": 410
+ },
+ {
+ "source": "/quadros-eletricos-figueira-castelo-rodrigo",
+ "destination": "/quadros-eletricos-figueira-castelo-rodrigo",
+ "statusCode": 410
+ },
+ {
+ "source": "/quadros-eletricos-fornos-de-algodres",
+ "destination": "/quadros-eletricos-fornos-de-algodres",
+ "statusCode": 410
+ },
+ {
+ "source": "/quadros-eletricos-lagoaca",
+ "destination": "/quadros-eletricos-lagoaca",
+ "statusCode": 410
+ },
+ {
+ "source": "/quadros-eletricos-lamego",
+ "destination": "/quadro-eletrico-lamego",
+ "statusCode": 301
+ },
+ {
+ "source": "/quadros-eletricos-macedo",
+ "destination": "/quadros-eletricos-macedo",
+ "statusCode": 410
+ },
+ {
+ "source": "/quadros-eletricos-meda",
+ "destination": "/quadro-eletrico-meda",
+ "statusCode": 301
+ },
+ {
+ "source": "/quadros-eletricos-mesao-frio",
+ "destination": "/quadro-eletrico-mesao-frio",
+ "statusCode": 301
+ },
+ {
+ "source": "/quadros-eletricos-miranda-do-douro",
+ "destination": "/quadro-eletrico-miranda-do-douro",
+ "statusCode": 301
+ },
+ {
+ "source": "/quadros-eletricos-miranda-douro",
+ "destination": "/quadros-eletricos-miranda-douro",
+ "statusCode": 410
+ },
+ {
+ "source": "/quadros-eletricos-mirandela",
+ "destination": "/quadro-eletrico-mirandela",
+ "statusCode": 301
+ },
+ {
+ "source": "/quadros-eletricos-modernizacao",
+ "destination": "/quadros-eletricos-modernizacao",
+ "statusCode": 410
+ },
+ {
+ "source": "/quadros-eletricos-mogadouro",
+ "destination": "/quadro-eletrico-mogadouro",
+ "statusCode": 301
+ },
+ {
+ "source": "/quadros-eletricos-moncorvo",
+ "destination": "/quadros-eletricos-moncorvo",
+ "statusCode": 410
+ },
+ {
+ "source": "/quadros-eletricos-mondim-de-basto",
+ "destination": "/quadros-eletricos-mondim-de-basto",
+ "statusCode": 410
+ },
+ {
+ "source": "/quadros-eletricos-monforte-de-rio-livre",
+ "destination": "/quadros-eletricos-monforte-de-rio-livre",
+ "statusCode": 410
+ },
+ {
+ "source": "/quadros-eletricos-montalegre",
+ "destination": "/quadro-eletrico-montalegre",
+ "statusCode": 301
+ },
+ {
+ "source": "/quadros-eletricos-penedono",
+ "destination": "/quadro-eletrico-penedono",
+ "statusCode": 301
+ },
+ {
+ "source": "/quadros-eletricos-rebordelo",
+ "destination": "/quadros-eletricos-rebordelo",
+ "statusCode": 410
+ },
+ {
+ "source": "/quadros-eletricos-ribeira-de-pena",
+ "destination": "/quadro-eletrico-ribeira-de-pena",
+ "statusCode": 301
+ },
+ {
+ "source": "/quadros-eletricos-santa-marta-penaguiao",
+ "destination": "/quadros-eletricos-santa-marta-penaguiao",
+ "statusCode": 410
+ },
+ {
+ "source": "/quadros-eletricos-sendim",
+ "destination": "/quadro-eletrico-sendim",
+ "statusCode": 301
+ },
+ {
+ "source": "/quadros-eletricos-sernancelhe",
+ "destination": "/quadro-eletrico-sernancelhe",
+ "statusCode": 301
+ },
+ {
+ "source": "/quadros-eletricos-tabuaco",
+ "destination": "/quadro-eletrico-tabuaco",
+ "statusCode": 301
+ },
+ {
+ "source": "/quadros-eletricos-torre-moncorvo",
+ "destination": "/quadros-eletricos-torre-moncorvo",
+ "statusCode": 410
+ },
+ {
+ "source": "/quadros-eletricos-trancoso",
+ "destination": "/quadros-eletricos-trancoso",
+ "statusCode": 410
+ },
+ {
+ "source": "/quadros-eletricos-valpacos",
+ "destination": "/quadro-eletrico-valpacos",
+ "statusCode": 301
+ },
+ {
+ "source": "/quadros-eletricos-vila-pouca-de-aguiar",
+ "destination": "/quadro-eletrico-vila-pouca-de-aguiar",
+ "statusCode": 301
+ },
+ {
+ "source": "/quadros-eletricos-vila-real",
+ "destination": "/quadro-eletrico-vila-real",
+ "statusCode": 301
+ },
+ {
+ "source": "/quadros-eletricos-vinhais",
+ "destination": "/quadro-eletrico-vinhais",
+ "statusCode": 301
+ }
+ ]
 }

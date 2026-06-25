@@ -508,7 +508,7 @@ Apenas **técnicos com experiência** (Direção-Geral de Energia e Geologia) po
 
 ### Passo 4: Emissão
 - Emite o certificado eletrónico
-- Regista na plataforma DGEG
+- Regista na plataforma 
 - Entrega cópia ao cliente
 
 ### Passo 5: Comunicação
@@ -629,14 +629,14 @@ Algumas instalações requerem inspeções regulares:
 
 ### Requisitos Especiais:
 - Certificação da instalação de produção
-- Registo na DGEG
+- Registo na 
 - Contrato com a distribuidora
 - Certificado de exploração
 
 ### Processo:
 1. Instalação por técnico com experiência
 2. Emissão de certificado
-3. Registo na DGEG
+3. Registo na 
 4. Inspeção (se necessário)
 5. Licença de exploração
 

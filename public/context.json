@@ -1,251 +1,251 @@
 {
-  "business": {
-    "name": " - Electricista Profissional",
-    "type": "Electrician Services",
-    "region": "Trás-os-Montes, Portugal",
-    "headquarters": "Trás-os-Montes",
-    "coverage_radius_km": 100
-  },
-  "contact": {
-    "phone": "+351 932 321 892",
-    "whatsapp": "https://wa.me/351932321892",
-    "website": "https://eletricista-norte-reparos.pt",
-    "email": null,
-    "hours": "Atendimento 24h/7d including holidays",
-    "response_time": "Less than 1 hour for emergencies"
-  },
-  "cities_served": [
-    {
-      "name": "Bragança",
-      "type": "main",
-      "url": "https://eletricista-norte-reparos.pt/electricista-braganca"
-    },
-    {
-      "name": "Mirandela",
-      "type": "main",
-      "url": "https://eletricista-norte-reparos.pt/electricista-mirandela"
-    },
-    {
-      "name": "Trás-os-Montes",
-      "type": "headquarters",
-      "url": "https://eletricista-norte-reparos.pt/electricista-macedo-de-cavaleiros"
-    },
-    {
-      "name": "Chaves",
-      "type": "main",
-      "url": "https://eletricista-norte-reparos.pt/electricista-chaves"
-    },
-    {
-      "name": "Vila Real",
-      "type": "main",
-      "url": "https://eletricista-norte-reparos.pt/electricista-vila-real"
-    },
-    {
-      "name": "Vinhais",
-      "type": "secondary",
-      "url": "https://eletricista-norte-reparos.pt/electricista-vinhais"
-    },
-    {
-      "name": "Miranda do Douro",
-      "type": "secondary",
-      "url": "https://eletricista-norte-reparos.pt/electricista-miranda-do-douro"
-    },
-    {
-      "name": "Mogadouro",
-      "type": "secondary",
-      "url": "https://eletricista-norte-reparos.pt/electricista-mogadouro"
-    },
-    {
-      "name": "Torre de Moncorvo",
-      "type": "secondary",
-      "url": "https://eletricista-norte-reparos.pt/electricista-torre-de-moncorvo"
-    },
-    {
-      "name": "Freixo de Espada à Cinta",
-      "type": "secondary",
-      "url": "https://eletricista-norte-reparos.pt/electricista-freixo-de-espada-a-cinta"
-    },
-    {
-      "name": "Valpaços",
-      "type": "secondary",
-      "url": "https://eletricista-norte-reparos.pt/electricista-valpacos"
-    },
-    {
-      "name": "Alfândega da Fé",
-      "type": "secondary",
-      "url": "https://eletricista-norte-reparos.pt/electricista-alfandega-da-fe"
-    },
-    {
-      "name": "Vila Flor",
-      "type": "secondary",
-      "url": "https://eletricista-norte-reparos.pt/electricista-vila-flor"
-    },
-    {
-      "name": "Carrazeda de Ansiães",
-      "type": "secondary",
-      "url": "https://eletricista-norte-reparos.pt/electricista-carrazeda-de-ansiaes"
-    },
-    {
-      "name": "Vimioso",
-      "type": "secondary",
-      "url": "https://eletricista-norte-reparos.pt/electricista-vimioso"
-    },
-    {
-      "name": "Montalegre",
-      "type": "secondary",
-      "url": "https://eletricista-norte-reparos.pt/electricista-montalegre"
-    },
-    {
-      "name": "Boticas",
-      "type": "secondary",
-      "url": "https://eletricista-norte-reparos.pt/electricista-boticas"
-    },
-    {
-      "name": "Murça",
-      "type": "secondary",
-      "url": "https://eletricista-norte-reparos.pt/electricista-murca"
-    },
-    {
-      "name": "Alijó",
-      "type": "secondary",
-      "url": "https://eletricista-norte-reparos.pt/electricista-alijo"
-    },
-    {
-      "name": "Sabrosa",
-      "type": "secondary",
-      "url": "https://eletricista-norte-reparos.pt/electricista-sabrosa"
-    },
-    {
-      "name": "Vila Pouca de Aguiar",
-      "type": "secondary",
-      "url": "https://eletricista-norte-reparos.pt/electricista-vila-pouca-de-aguiar"
-    },
-    {
-      "name": "Ribeira de Pena",
-      "type": "secondary",
-      "url": "https://eletricista-norte-reparos.pt/electricista-ribeira-de-pena"
-    },
-    {
-      "name": "Mondim de Basto",
-      "type": "secondary",
-      "url": "https://eletricista-norte-reparos.pt/electricista-mondim-de-basto"
-    },
-    {
-      "name": "Peso da Régua",
-      "type": "secondary",
-      "url": "https://eletricista-norte-reparos.pt/electricista-peso-da-regua"
-    },
-    {
-      "name": "Lamego",
-      "type": "secondary",
-      "url": "https://eletricista-norte-reparos.pt/electricista-lamego"
-    },
-    {
-      "name": "Moimenta da Beira",
-      "type": "secondary",
-      "url": "https://eletricista-norte-reparos.pt/electricista-moimenta-da-beira"
-    },
-    {
-      "name": "Vila Nova de Foz Côa",
-      "type": "secondary",
-      "url": "https://eletricista-norte-reparos.pt/electricista-vila-nova-foz-coa"
-    },
-    {
-      "name": "Sernancelhe",
-      "type": "secondary",
-      "url": "https://eletricista-norte-reparos.pt/electricista-sernancelhe"
-    },
-    {
-      "name": "Penedono",
-      "type": "secondary",
-      "url": "https://eletricista-norte-reparos.pt/electricista-penedono"
-    },
-    {
-      "name": "São João da Pesqueira",
-      "type": "secondary",
-      "url": "https://eletricista-norte-reparos.pt/electricista-sao-joao-da-pesqueira"
-    },
-    {
-      "name": "Tabuaço",
-      "type": "secondary",
-      "url": "https://eletricista-norte-reparos.pt/electricista-tabuaco"
-    },
-    {
-      "name": "Armamar",
-      "type": "secondary",
-      "url": "https://eletricista-norte-reparos.pt/electricista-armamar"
-    },
-    {
-      "name": "Santa Marta de Penaguião",
-      "type": "secondary",
-      "url": "https://eletricista-norte-reparos.pt/electricista-santa-marta-de-penaguiao"
-    },
-    {
-      "name": "Mesão Frio",
-      "type": "secondary",
-      "url": "https://eletricista-norte-reparos.pt/electricista-mesao-frio"
-    }
-  ],
-  "services": [
-    {
-      "category": "Emergency 24h",
-      "items": [
-        "Short circuit repair",
-        "Circuit breaker tripping",
-        "Total or partial power outage",
-        "Overheating outlets",
-        "Burning smell in installation",
-        "Sparking outlets"
-      ]
-    },
-    {
-      "category": "Electrical Panels",
-      "items": [
-        "Electrical panel replacement",
-        "Old fuse box upgrade",
-        "Circuit breaker installation",
-        "Power capacity increase"
-      ]
-    },
-    {
-      "category": "DGEG Certification",
-      "items": [
-        "Property sale certification",
-        "Rental certification",
-        "Airbnb/local accommodation certification"
-      ]
-    },
-    {
-      "category": "Electrical Installations",
-      "items": [
-        "New electrical installation",
-        "Renovation of existing installation",
-        "LED lighting",
-        "Outlets and switches"
-      ]
-    }
-  ],
-  "pricing_2026": {
-    "travel_macedo_local": "10€",
-    "travel_braganca_mirandela": "20€",
-    "travel_chaves_vinhais_miranda": "30€",
-    "panel_replacement": "200€ - 400€",
-    "certiel_certification": "150€ - 250€",
-    "short_circuit_repair": "50€ - 120€",
-    "outlet_switch_installation": "30€ - 50€",
-    "note": "Prices without VAT. Free quote."
-  },
-  "keywords": [
-    "electricista urgente bragança",
-    "electricista Atendimento 24h/7d mirandela",
-    "electricista perto de mim trás-os-montes",
-    "quanto custa electricista bragança",
-    "melhor electricista trás-os-montes",
-    "electricista barato mirandela",
-    "electricista de confiança bragança",
-    "avaria elétrica bragança",
-    "certificação elétrica bragança",
-    "Fichas eletrotécnicas assinadas por técnico profissional mirandela"
-  ],
-  "last_updated": "2026-02-19"
+ "business": {
+ "name": " - Electricista Profissional",
+ "type": "Electrician Services",
+ "region": "Trás-os-Montes, Portugal",
+ "headquarters": "Trás-os-Montes",
+ "coverage_radius_km": 100
+ },
+ "contact": {
+ "phone": "+351 932 321 892",
+ "whatsapp": "https://wa.me/351932321892",
+ "website": "https://eletricista-norte-reparos.pt",
+ "email": null,
+ "hours": "Atendimento 24h/7d including holidays",
+ "response_time": "Less than 1 hour for emergencies"
+ },
+ "cities_served": [
+ {
+ "name": "Bragança",
+ "type": "main",
+ "url": "https://eletricista-norte-reparos.pt/electricista-braganca"
+ },
+ {
+ "name": "Mirandela",
+ "type": "main",
+ "url": "https://eletricista-norte-reparos.pt/electricista-mirandela"
+ },
+ {
+ "name": "Trás-os-Montes",
+ "type": "headquarters",
+ "url": "https://eletricista-norte-reparos.pt/electricista-macedo-de-cavaleiros"
+ },
+ {
+ "name": "Chaves",
+ "type": "main",
+ "url": "https://eletricista-norte-reparos.pt/electricista-chaves"
+ },
+ {
+ "name": "Vila Real",
+ "type": "main",
+ "url": "https://eletricista-norte-reparos.pt/electricista-vila-real"
+ },
+ {
+ "name": "Vinhais",
+ "type": "secondary",
+ "url": "https://eletricista-norte-reparos.pt/electricista-vinhais"
+ },
+ {
+ "name": "Miranda do Douro",
+ "type": "secondary",
+ "url": "https://eletricista-norte-reparos.pt/electricista-miranda-do-douro"
+ },
+ {
+ "name": "Mogadouro",
+ "type": "secondary",
+ "url": "https://eletricista-norte-reparos.pt/electricista-mogadouro"
+ },
+ {
+ "name": "Torre de Moncorvo",
+ "type": "secondary",
+ "url": "https://eletricista-norte-reparos.pt/electricista-torre-de-moncorvo"
+ },
+ {
+ "name": "Freixo de Espada à Cinta",
+ "type": "secondary",
+ "url": "https://eletricista-norte-reparos.pt/electricista-freixo-de-espada-a-cinta"
+ },
+ {
+ "name": "Valpaços",
+ "type": "secondary",
+ "url": "https://eletricista-norte-reparos.pt/electricista-valpacos"
+ },
+ {
+ "name": "Alfândega da Fé",
+ "type": "secondary",
+ "url": "https://eletricista-norte-reparos.pt/electricista-alfandega-da-fe"
+ },
+ {
+ "name": "Vila Flor",
+ "type": "secondary",
+ "url": "https://eletricista-norte-reparos.pt/electricista-vila-flor"
+ },
+ {
+ "name": "Carrazeda de Ansiães",
+ "type": "secondary",
+ "url": "https://eletricista-norte-reparos.pt/electricista-carrazeda-de-ansiaes"
+ },
+ {
+ "name": "Vimioso",
+ "type": "secondary",
+ "url": "https://eletricista-norte-reparos.pt/electricista-vimioso"
+ },
+ {
+ "name": "Montalegre",
+ "type": "secondary",
+ "url": "https://eletricista-norte-reparos.pt/electricista-montalegre"
+ },
+ {
+ "name": "Boticas",
+ "type": "secondary",
+ "url": "https://eletricista-norte-reparos.pt/electricista-boticas"
+ },
+ {
+ "name": "Murça",
+ "type": "secondary",
+ "url": "https://eletricista-norte-reparos.pt/electricista-murca"
+ },
+ {
+ "name": "Alijó",
+ "type": "secondary",
+ "url": "https://eletricista-norte-reparos.pt/electricista-alijo"
+ },
+ {
+ "name": "Sabrosa",
+ "type": "secondary",
+ "url": "https://eletricista-norte-reparos.pt/electricista-sabrosa"
+ },
+ {
+ "name": "Vila Pouca de Aguiar",
+ "type": "secondary",
+ "url": "https://eletricista-norte-reparos.pt/electricista-vila-pouca-de-aguiar"
+ },
+ {
+ "name": "Ribeira de Pena",
+ "type": "secondary",
+ "url": "https://eletricista-norte-reparos.pt/electricista-ribeira-de-pena"
+ },
+ {
+ "name": "Mondim de Basto",
+ "type": "secondary",
+ "url": "https://eletricista-norte-reparos.pt/electricista-mondim-de-basto"
+ },
+ {
+ "name": "Peso da Régua",
+ "type": "secondary",
+ "url": "https://eletricista-norte-reparos.pt/electricista-peso-da-regua"
+ },
+ {
+ "name": "Lamego",
+ "type": "secondary",
+ "url": "https://eletricista-norte-reparos.pt/electricista-lamego"
+ },
+ {
+ "name": "Moimenta da Beira",
+ "type": "secondary",
+ "url": "https://eletricista-norte-reparos.pt/electricista-moimenta-da-beira"
+ },
+ {
+ "name": "Vila Nova de Foz Côa",
+ "type": "secondary",
+ "url": "https://eletricista-norte-reparos.pt/electricista-vila-nova-foz-coa"
+ },
+ {
+ "name": "Sernancelhe",
+ "type": "secondary",
+ "url": "https://eletricista-norte-reparos.pt/electricista-sernancelhe"
+ },
+ {
+ "name": "Penedono",
+ "type": "secondary",
+ "url": "https://eletricista-norte-reparos.pt/electricista-penedono"
+ },
+ {
+ "name": "São João da Pesqueira",
+ "type": "secondary",
+ "url": "https://eletricista-norte-reparos.pt/electricista-sao-joao-da-pesqueira"
+ },
+ {
+ "name": "Tabuaço",
+ "type": "secondary",
+ "url": "https://eletricista-norte-reparos.pt/electricista-tabuaco"
+ },
+ {
+ "name": "Armamar",
+ "type": "secondary",
+ "url": "https://eletricista-norte-reparos.pt/electricista-armamar"
+ },
+ {
+ "name": "Santa Marta de Penaguião",
+ "type": "secondary",
+ "url": "https://eletricista-norte-reparos.pt/electricista-santa-marta-de-penaguiao"
+ },
+ {
+ "name": "Mesão Frio",
+ "type": "secondary",
+ "url": "https://eletricista-norte-reparos.pt/electricista-mesao-frio"
+ }
+ ],
+ "services": [
+ {
+ "category": "Emergency 24h",
+ "items": [
+ "Short circuit repair",
+ "Circuit breaker tripping",
+ "Total or partial power outage",
+ "Overheating outlets",
+ "Burning smell in installation",
+ "Sparking outlets"
+ ]
+ },
+ {
+ "category": "Electrical Panels",
+ "items": [
+ "Electrical panel replacement",
+ "Old fuse box upgrade",
+ "Circuit breaker installation",
+ "Power capacity increase"
+ ]
+ },
+ {
+ "category": " Certification",
+ "items": [
+ "Property sale certification",
+ "Rental certification",
+ "Airbnb/local accommodation certification"
+ ]
+ },
+ {
+ "category": "Electrical Installations",
+ "items": [
+ "New electrical installation",
+ "Renovation of existing installation",
+ "LED lighting",
+ "Outlets and switches"
+ ]
+ }
+ ],
+ "pricing_2026": {
+ "travel_macedo_local": "10€",
+ "travel_braganca_mirandela": "20€",
+ "travel_chaves_vinhais_miranda": "30€",
+ "panel_replacement": "200€ - 400€",
+ "certiel_certification": "150€ - 250€",
+ "short_circuit_repair": "50€ - 120€",
+ "outlet_switch_installation": "30€ - 50€",
+ "note": "Prices without VAT. Free quote."
+ },
+ "keywords": [
+ "electricista urgente bragança",
+ "electricista Atendimento 24h/7d mirandela",
+ "electricista perto de mim trás-os-montes",
+ "quanto custa electricista bragança",
+ "melhor electricista trás-os-montes",
+ "electricista barato mirandela",
+ "electricista de confiança bragança",
+ "avaria elétrica bragança",
+ "certificação elétrica bragança",
+ "Fichas eletrotécnicas assinadas por técnico profissional mirandela"
+ ],
+ "last_updated": "2026-02-19"
 }

@@ -15,7 +15,7 @@ priority: "CRITICAL"
 
 Neste guia completo, vamos explicar as **7 causas principais** que fazem o quadro elétrico disparar, como identificar cada uma, e as soluções definitivas. Com mais de 15 anos de experiência em instalações elétricas na região de Bragança, já resolvemos centenas de casos semelhantes.
 
-**📞 Quadro dispara constantemente? Ligue já: [932 321 892](tel:+351932321892)**  
+**📞 Quadro dispara constantemente? Ligue já: [932 321 892](tel:+351932321892)** 
 **💬 WhatsApp urgente: [Clique aqui](https://wa.me/351932321892?text=Olá%2C%20o%20meu%20quadro%20elétrico%20dispara%20constantemente.%20Preciso%20de%20ajuda%20urgente.)**
 
 ---
@@ -213,10 +213,10 @@ Siga este procedimento para identificar o problema:
 ### Passo 4: Teste de Carga
 1. Calcule a potência total ligada no circuito
 2. Compare com o limite do disjuntor:
-   - 10A = 2.300W
-   - 16A = 3.680W
-   - 20A = 4.600W
-   - 25A = 5.750W
+ - 10A = 2.300W
+ - 16A = 3.680W
+ - 20A = 4.600W
+ - 25A = 5.750W
 
 ### Passo 5: Teste do Diferencial
 1. Pressione o botão "T" (teste)
@@ -230,12 +230,12 @@ Siga este procedimento para identificar o problema:
 ## Soluções Definitivas e Custos
 
 ### Solução 1: Redistribuir Cargas (€0)
-**Quando:** Sobrecarga simples  
-**Como:** Ligar aparelhos potentes em tomadas de circuitos diferentes  
+**Quando:** Sobrecarga simples 
+**Como:** Ligar aparelhos potentes em tomadas de circuitos diferentes 
 **Eficácia:** 70% dos casos de sobrecarga
 
 ### Solução 2: Criar Circuito Dedicado (€150-400)
-**Quando:** Aparelho potente sem circuito próprio  
+**Quando:** Aparelho potente sem circuito próprio 
 **Inclui:**
 - Cabo adequado (2.5mm² ou 4mm²)
 - Disjuntor dedicado (20A ou 25A)
@@ -245,14 +245,14 @@ Siga este procedimento para identificar o problema:
 **Ideal para:** Placa de indução, termo-acumulador, máquina de lavar
 
 ### Solução 3: Substituir Disjuntor/Diferencial (€100-350)
-**Quando:** Dispositivo defeituoso ou subdimensionado  
+**Quando:** Dispositivo defeituoso ou subdimensionado 
 **Inclui:**
 - Disjuntor ou diferencial novo
 - Instalação e teste
 - Certificação
 
 ### Solução 4: Atualizar Quadro Elétrico Completo (€400-1.200)
-**Quando:** Instalação antiga (30+ anos) ou múltiplos problemas  
+**Quando:** Instalação antiga (30+ anos) ou múltiplos problemas 
 **Inclui:**
 - Quadro novo com disjuntores modernos
 - Diferencial 30mA tipo A
@@ -266,7 +266,7 @@ Siga este procedimento para identificar o problema:
 - Expansão de consumo (novos aparelhos)
 
 ### Solução 5: Arranjar Fuga de Corrente (€120-600)
-**Quando:** Diferencial dispara por humidade ou isolamento danificado  
+**Quando:** Diferencial dispara por humidade ou isolamento danificado 
 **Processo:**
 1. Localizar o circuito com fuga (teste de isolamento)
 2. Identificar o ponto exato (megóhmetro)
@@ -274,7 +274,7 @@ Siga este procedimento para identificar o problema:
 4. Testar e certificar
 
 ### Solução 6: Aumentar Potência Contratada (€30-50/ano)
-**Quando:** Potência insuficiente para consumo atual  
+**Quando:** Potência insuficiente para consumo atual 
 **Como:**
 - Contactar EDP Distribuição
 - Solicitar aumento (ex: 3.45 kVA → 6.9 kVA)
@@ -310,27 +310,27 @@ Siga este procedimento para identificar o problema:
 
 ## Perguntas Frequentes (FAQ)
 
-**1. É normal o quadro disparar ocasionalmente?**  
+**1. É normal o quadro disparar ocasionalmente?** 
 Não. Um quadro bem dimensionado e sem problemas não deve disparar. Disparo ocasional indica problema latente.
 
-**2. Posso religar o disjuntor várias vezes?**  
+**2. Posso religar o disjuntor várias vezes?** 
 Não recomendado. Se disparar 2-3 vezes seguidas, pare e chame um eletricista. Religar repetidamente pode causar incêndio.
 
-**3. Quanto custa uma inspeção elétrica completa?**  
+**3. Quanto custa uma inspeção elétrica completa?** 
 €80-200 em Trás-os-Montes, dependendo do tamanho da casa. Inclui teste de isolamento e relatório.
 
-**4. O diferencial dispara só à noite. Porquê?**  
+**4. O diferencial dispara só à noite. Porquê?** 
 Comum em casos de humidade (condensação noturna) ou aparelhos com fuga intermitente (termo-acumulador).
 
-**5. Posso substituir o disjuntor por um de maior amperagem?**  
+**5. Posso substituir o disjuntor por um de maior amperagem?** 
 **NÃO!** O disjuntor protege o cabo. Aumentar a amperagem sem trocar o cabo pode causar incêndio.
 
-**6. Quanto tempo demora a arranjar?**  
+**6. Quanto tempo demora a arranjar?** 
 - Sobrecarga simples: 30-60 minutos
 - Criar circuito novo: 2-4 horas
 - Atualizar quadro completo: 1-2 dias
 
-**7. Preciso de certificação após a arranjo?**  
+**7. Preciso de certificação após a arranjo?** 
 Sim, para alterações significativas (novo circuito, quadro novo). Fichas eletrotécnicas assinadas por técnico profissional obrigatória.
 
 ---

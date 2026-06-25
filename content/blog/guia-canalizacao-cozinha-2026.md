@@ -64,7 +64,7 @@ Existem várias categorias a considerar antes de avançar:
 - Z4 (91-130 km): 40€ deslocação
 
 **D. Por tipo de profissional**
-- Certificado/inscrito (DGEG, ADENE, etc.)
+- Certificado/inscrito (, ADENE, etc.)
 - Com seguro
 - Com experiência comprovada
 - Com equipamento profissional
@@ -116,7 +116,7 @@ Os preços médios nacionais em 2026:
 1. **Empresa estabelecida** (3+ anos no mercado)
 2. **Seguro de responsabilidade civil** válido
 3. **Alvará** (para obras > 5000€)
-4. **Certificações profissionais** (DGEG para elétrico, etc.)
+4. **Certificações profissionais** ( para elétrico, etc.)
 5. **Referências verificáveis** (clientes anteriores)
 6. **Fatura detalhada** sempre
 7. **Orçamento por escrito** antes do trabalho
@@ -276,7 +276,7 @@ Instalação e reparação.
 **Pontos-chave a reter:**
 
 1. **Faça sempre 2-3 orçamentos** escritos antes de decidir
-2. **Verifique certificações** (DGEG, ADENE,行业协会)
+2. **Verifique certificações** (, ADENE,行业协会)
 3. **Peça fatura detalhada** sempre
 4. **Mantenha documentação** (orçamentos, faturas, garantias)
 5. **Invista em manutenção preventiva** (200-500€/ano)
