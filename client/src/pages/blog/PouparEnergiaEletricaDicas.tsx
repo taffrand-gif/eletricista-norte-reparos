@@ -61,7 +61,7 @@ const PouparEnergiaEletricaDicas: React.FC = () => {
  </div>
  <div>
  <p className="font-semibold text-gray-900">João Silva</p>
- <p className="text-gray-600">Eletricista Certificado com 15+ anos de experiência</p>
+ <p className="text-gray-600">Eletricista Certificado com experiência em Trás-os-Montes</p>
  </div>
  </div>
  </div>
@@ -90,7 +90,7 @@ const PouparEnergiaEletricaDicas: React.FC = () => {
  <p className="text-xl text-gray-700 mb-6">
  Com os preços da energia a subir, poupar eletricidade deixou de ser apenas uma questão ambiental — é uma necessidade
  para o orçamento familiar. Neste guia, partilhamos 10 dicas práticas que qualquer pessoa pode aplicar
- imediatamente para reduzir o consumo elétrico em casa, especialmente adaptadas à realidade de Trás-os-Montes.
+ mediante confirmação para reduzir o consumo elétrico em casa, especialmente adaptadas à realidade de Trás-os-Montes.
  </p>
  </div>
  {/* Table of contents */}
@@ -310,7 +310,7 @@ const PouparEnergiaEletricaDicas: React.FC = () => {
  <div className="md:w-3/4">
  <h3 className="text-2xl font-bold text-gray-900 mb-2">Sobre o Autor</h3>
  <p className="text-gray-700 mb-4">
- <strong>João Silva</strong> é eletricista certificado com mais de 15 anos de experiência em Trás-os-Montes. Especialista em eficiência energética e instalações residenciais, ajuda famílias a reduzir o consumo elétrico e a modernizar as suas instalações.
+ <strong>João Silva</strong> é eletricista certificado com experiência em Trás-os-Montes em Trás-os-Montes. Especialista em eficiência energética e instalações residenciais, ajuda famílias a reduzir o consumo elétrico e a modernizar as suas instalações.
  </p>
  <p className="text-gray-600">Para questões técnicas ou orçamentos, contacte através do telefone ou WhatsApp acima.</p>
  </div>

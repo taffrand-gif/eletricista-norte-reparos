@@ -27,7 +27,7 @@ export default function DiferencialDisparaConstantemente() {
  "name": "É perigoso o diferencial disparar muitas vezes?",
  "acceptedAnswer": {
  "@type": "Answer",
- "text": "Sim. Disparos frequentes indicam fuga de corrente perigosa que pode causar choque elétrico fatal. Nunca force o diferencial a ficar ligado ou o substitua por um de maior sensibilidade. Contacte eletricista imediatamente."
+ "text": "Sim. Disparos frequentes indicam fuga de corrente perigosa que pode causar choque elétrico fatal. Nunca force o diferencial a ficar ligado ou o substitua por um de maior sensibilidade. Contacte eletricista mediante confirmação."
  }
  },
  {
@@ -108,7 +108,7 @@ export default function DiferencialDisparaConstantemente() {
  <h4 className="font-bold text-gray-900 mb-2">Como Funciona?</h4>
  <p className="text-gray-700 mb-0">
  O diferencial compara a corrente que entra (fase) com a que sai (neutro). Se houver diferença superior a 30mA,
- significa que corrente está a "fugir" (através de uma pessoa, água, isolamento danificado) e o diferencial dispara imediatamente.
+ significa que corrente está a "fugir" (através de uma pessoa, água, isolamento danificado) e o diferencial dispara mediante confirmação.
  </p>
  </div>
  </div>
@@ -157,7 +157,7 @@ export default function DiferencialDisparaConstantemente() {
  </p>
  <p><strong>Como testar:</strong></p>
  <ul>
- <li>Pressione botão "T" (teste) - deve disparar imediatamente</li>
+ <li>Pressione botão "T" (teste) - deve disparar mediante confirmação</li>
  <li>Se não disparar ao pressionar "T", está avariado</li>
  <li>Se disparar sem carga alguma, pode estar hipersensível</li>
  </ul>
@@ -207,7 +207,7 @@ export default function DiferencialDisparaConstantemente() {
  <div>
  <h4 className="font-bold text-gray-900 mb-2">Religue o Diferencial</h4>
  <p className="text-gray-700">
- Se disparar imediatamente sem nada ligado, o problema está na instalação (cabos, humidade) ou no próprio diferencial.
+ Se disparar mediante confirmação sem nada ligado, o problema está na instalação (cabos, humidade) ou no próprio diferencial.
  <strong> → Chame eletricista urgente.</strong>
  </p>
  </div>
@@ -227,7 +227,7 @@ export default function DiferencialDisparaConstantemente() {
  <div>
  <h4 className="font-bold text-gray-900 mb-2">Teste o Diferencial</h4>
  <p className="text-gray-700">
- Pressione botão "T" no diferencial. Deve disparar imediatamente. Se não disparar, o diferencial está avariado.
+ Pressione botão "T" no diferencial. Deve disparar mediante confirmação. Se não disparar, o diferencial está avariado.
  <strong> → Substitua urgentemente (não protege contra choques).</strong>
  </p>
  </div>
@@ -278,7 +278,7 @@ export default function DiferencialDisparaConstantemente() {
  <ul className="space-y-3 text-gray-800">
  <li className="flex items-start gap-2">
  <span className="text-red-600 font-bold">→</span>
- <span>Diferencial dispara imediatamente mesmo sem aparelhos ligados</span>
+ <span>Diferencial dispara mediante confirmação mesmo sem aparelhos ligados</span>
  </li>
  <li className="flex items-start gap-2">
  <span className="text-red-600 font-bold">→</span>
@@ -331,7 +331,7 @@ export default function DiferencialDisparaConstantemente() {
  <div className="bg-gray-50 rounded-lg p-6">
  <h4 className="font-bold text-gray-900 mb-2">Devo testar o diferencial regularmente?</h4>
  <p className="text-gray-700 mb-0">
- <strong>Sim, mensalmente.</strong> Pressione botão "T" - deve disparar imediatamente. Se não disparar, o diferencial
+ <strong>Sim, mensalmente.</strong> Pressione botão "T" - deve disparar mediante confirmação. Se não disparar, o diferencial
  está avariado e não protege contra choques. Substitua urgentemente.
  </p>
  </div>

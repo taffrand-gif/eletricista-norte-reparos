@@ -33,7 +33,7 @@ function GuaranteeSection() {
  {
  icon: '👨‍🔧',
  title: 'Técnico Qualificado',
- description: '12+ anos de experiência — Sabe o que faz',
+ description: 'experiência em Trás-os-Montes — Sabe o que faz',
  badge: '12+ anos'
  },
  {
@@ -59,7 +59,7 @@ function GuaranteeSection() {
  {
  icon: '👨‍🔧',
  title: 'Técnico Qualificado',
- description: '12+ anos de experiência + — Sabe o que faz',
+ description: 'experiência em Trás-os-Montes + — Sabe o que faz',
  badge: ''
  },
  {
@@ -157,7 +157,7 @@ function GuaranteeSection() {
  <div className="mt-8 text-center">
  <p className="text-gray-600">
  <strong className="text-gray-900">0 reclamações</strong> em 2 anos •{' '}
- <strong className="text-gray-900">500+ trabalhos</strong> garantidos
+ <strong className="text-gray-900">trabalhos em Trás-os-Montes</strong> garantidos
  </p>
  </div>
  </div>

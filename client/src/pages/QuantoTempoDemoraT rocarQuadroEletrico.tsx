@@ -315,7 +315,7 @@ export default function QuantoTempoQuadro() {
  📋 Como Preparar para Trocar Quadro
  </h2>
  <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
- Preparação ajuda reduzir tempo instalação em 30-60 minutos
+ Preparação ajuda reduzir tempo instalação mediante confirmação por telefone
  </p>
  <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
  {[

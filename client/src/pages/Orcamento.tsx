@@ -6,7 +6,7 @@ export default function Orcamento() {
  
  useSEO({
  title: `Pedir Orçamento Gratuito | ${businessName}`,
- description: `Peça um sem compromisso e sem compromisso. Resposta rápida e preços competitivos. Contacte-nos: ${phone}`,
+ description: `Peça um sem compromisso e sem compromisso. Resposta mediante contacto e preços competitivos. Contacte-nos: ${phone}`,
  keywords: "sem compromisso, pedir orçamento, orçamento sem compromisso, preços competitivos"});
  return (
  <div className="min-h-screen bg-gray-50">
@@ -18,7 +18,7 @@ export default function Orcamento() {
  Pedir Orçamento Gratuito
  </h1>
  <p className="text-xl sm:text-2xl mb-6">
- Resposta rápida e sem compromisso
+ Resposta mediante contacto e sem compromisso
  </p>
  <p className="text-lg opacity-90">
  Preencha o formulário abaixo e receberá um orçamento personalizado em poucas horas.
@@ -41,7 +41,7 @@ export default function Orcamento() {
  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
  <div className="text-center">
  <div className="text-5xl mb-4">⚡</div>
- <h3 className="text-xl font-bold mb-2">Resposta Rápida</h3>
+ <h3 className="text-xl font-bold mb-2">Resposta mediante contacto</h3>
  <p className="text-gray-600">
  Orçamento enviado em poucas horas
  </p>

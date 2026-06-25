@@ -25,7 +25,7 @@ export default function TrustBadges() {
   description: isPlumber ? 'Por escrito' : 'Por escrito'},
   {
   icon: '⚡',
-  title: 'Resposta Rápida',
+  title: 'Resposta mediante contacto',
   description: 'Atendimento 24h'},
  {
  icon: '💯',

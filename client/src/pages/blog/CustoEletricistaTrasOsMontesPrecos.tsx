@@ -544,7 +544,7 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <div className="md:w-3/4">
  <h3 className="text-2xl font-bold text-gray-900 mb-2">Sobre o Autor</h3>
  <p className="text-gray-700 mb-4">
- <strong>Técnico Mendes</strong> é gestor de projetos elétricos com mais de 10 anos de experiência 
+ <strong>Técnico Mendes</strong> é gestor de projetos elétricos com experiência em Trás-os-Montes 
  na região de <Link to="/servicos">Trás-os-Montes</Link>. Já coordenou mais de 300 projetos de instalação e renovação elétrica, 
  desde pequenas arranjos a instalações completas em casas centenárias. Especialista em 
  orçamentação transparente e adaptação de soluções técnicas à realidade económica regional.

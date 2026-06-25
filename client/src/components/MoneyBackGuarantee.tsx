@@ -93,7 +93,7 @@ function MoneyBackGuarantee() {
  <div className="grid md:grid-cols-3 gap-6 text-left">
  <div>
  <div className="text-3xl mb-2">👨‍🔧</div>
- <p className="font-bold text-green-900 mb-1">12+ anos de experiência</p>
+ <p className="font-bold text-green-900 mb-1">experiência em Trás-os-Montes</p>
  <p className="text-green-800">Eletricistas certificados </p>
  </div>
  <div>

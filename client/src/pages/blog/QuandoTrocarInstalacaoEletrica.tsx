@@ -129,7 +129,7 @@ const QuandoTrocarInstalacaoEletrica: React.FC = () => {
  <span className="bg-red-600 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">3</span>
  <div>
  <p className="font-semibold">Cheiro a queimado sem causa visível</p>
- <p className="text-gray-600">Um cheiro a plástico queimado perto de tomadas ou interruptores é sinal de sobreaquecimento — desligue imediatamente e chame um eletricista.</p>
+ <p className="text-gray-600">Um cheiro a plástico queimado perto de tomadas ou interruptores é sinal de sobreaquecimento — desligue mediante confirmação e chame um eletricista.</p>
  </div>
  </div>
  <div className="flex items-start gap-3 bg-white p-4 rounded-xl border border-gray-200">

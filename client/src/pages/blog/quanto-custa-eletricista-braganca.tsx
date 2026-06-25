@@ -88,7 +88,7 @@ export default function QuantoCustaEletricistaBraganca() {
  <div className="prose prose-lg max-w-none">
  <div className="bg-orange-50 border-l-4 border-orange-600 p-6 mb-8">
  <p className="text-lg font-semibold text-gray-900 mb-2">
- Resposta Rápida:
+ Resposta mediante contacto:
  </p>
  <p className="text-gray-800">
  Em Bragança, eletricista custa <strong>25-35€/hora</strong> em horário normal, <strong>45-65€/hora</strong> urgente. Chamada mínima: 50-80€. Serviços comuns: tomada 25-50€, interruptor 20-40€, quadro elétrico 400-800€, instalação completa T3 4.500-7.000€. certificação elétrica: 250-600€.

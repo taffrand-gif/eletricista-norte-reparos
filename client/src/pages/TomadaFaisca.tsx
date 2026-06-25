@@ -12,7 +12,7 @@ export default function TomadaFaisca() {
  const faqs = [
  {
  question: "É perigoso usar tomada que faz faísca?",
- answer: "SIM, é MUITO PERIGOSO. Tomada que faz faísca pode causar incêndio, choque elétrico ou danificar aparelhos. Desligue o disjuntor dessa tomada IMEDIATAMENTE e não use até ser arranjada por eletricista certificado."
+ answer: "SIM, é MUITO PERIGOSO. Tomada que faz faísca pode causar incêndio, choque elétrico ou danificar aparelhos. Desligue o disjuntor dessa tomada mediante confirmação e não use até ser arranjada por eletricista certificado."
  },
  {
  question: "Porque é que a tomada faz faísca?",
@@ -83,7 +83,7 @@ export default function TomadaFaisca() {
  DESLIGUE O DISJUNTOR
  </h3>
  <p className="text-gray-700 ml-10">
- Vá ao quadro elétrico e desligue o disjuntor dessa tomada IMEDIATAMENTE.
+ Vá ao quadro elétrico e desligue o disjuntor dessa tomada mediante confirmação.
  Se não sabe qual é, desligue o disjuntor geral.
  </p>
  </div>
@@ -104,7 +104,7 @@ export default function TomadaFaisca() {
  </h3>
  <p className="text-gray-700 ml-10">
  Ligue agora: <a href={`tel:${config.phone.replace(/\s/g, "")}`} className="font-bold text-green-600 underline">{config.phone}</a>
- <br />Atendemos 24h. Resposta rápida garantida-45 minutos.
+ <br />Atendemos 24h. Resposta mediante contacto garantida-45 minutos.
  </p>
  </div>
  </div>
@@ -186,7 +186,7 @@ export default function TomadaFaisca() {
  Tomada Faz Faísca? Ligue AGORA
  </h2>
  <p className="text-xl mb-8 max-w-2xl mx-auto">
- Atendimento 24h. Resposta rápida garantida-45 minutos. Sem compromisso.
+ Atendimento 24h. Resposta mediante contacto garantida-45 minutos. Sem compromisso.
  </p>
  <a
  href={`tel:${config.phone.replace(/\s/g, "")}`}

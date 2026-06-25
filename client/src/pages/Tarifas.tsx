@@ -76,8 +76,8 @@ function Tarifas() {
  <div className="grid md:grid-cols-3 gap-6 mb-8">
  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
  <div className="text-4xl mb-3">⚡</div>
- <h3 className="font-bold mb-2">Resposta Rápida</h3>
- <p className="text-sm text-gray-300">Atendemos Resposta rápida garantida</p>
+ <h3 className="font-bold mb-2">Resposta mediante contacto</h3>
+ <p className="text-sm text-gray-300">Atendemos Resposta mediante contacto garantida</p>
  </div>
  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
  <div className="text-4xl mb-3">✅</div>

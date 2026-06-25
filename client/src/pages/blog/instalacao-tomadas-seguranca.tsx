@@ -269,7 +269,7 @@ export default function InstalacaoTomadasSeguranca() {
  <li>✗ Tomada solta da parede</li>
  </ul>
  <p className="mt-4 text-sm font-bold text-red-900">
- → Desligue imediatamente e contacte eletricista
+ → Desligue mediante confirmação e contacte eletricista
  </p>
  </div>
  <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6">

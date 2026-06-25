@@ -63,7 +63,7 @@ function getDicas(serviceType: 'electricite'): Dica[] {
  {
  icon: '🔌',
  title: 'Verifique os cabos regularmente',
- content: 'Inspecione os cabos elétricos dos seus aparelhos. Se estiverem gastos, rachados ou expostos, substitua-os imediatamente para evitar curto-circuitos.'},
+ content: 'Inspecione os cabos elétricos dos seus aparelhos. Se estiverem gastos, rachados ou expostos, substitua-os mediante confirmação para evitar curto-circuitos.'},
  {
  icon: '💡',
  title: 'Use lâmpadas LED',
@@ -95,6 +95,6 @@ function getDicas(serviceType: 'electricite'): Dica[] {
  {
  icon: '📞',
  title: 'Tenha sempre um contacto de emergência',
- content: 'Guarde o número de um eletricista de confiança Atendimento 24h/7d. Problemas elétricos podem ser perigosos e requerem intervenção imediata.'},
+ content: 'Guarde o número de um eletricista de confiança Atendimento 24h/7d. Problemas elétricos podem ser perigosos e requerem Intervenção mediante confirmação.'},
  ];
 }

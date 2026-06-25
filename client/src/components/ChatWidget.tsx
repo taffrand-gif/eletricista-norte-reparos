@@ -62,7 +62,7 @@ export default function ChatWidget() {
  e.preventDefault();
  if (formData.name.trim() && formData.phone.trim() && formData.city.trim()) {
  setShowForm(false);
- // Enviar imediatamente as informações
+ // Enviar mediante confirmação as informações
  const fullMessage = `**Novo contacto via chat**\n\n**Nome:** ${formData.name}\n**Telefone:** ${formData.phone}\n**Cidade:** ${formData.city}\n**Tipo de Serviço:** ${formData.serviceType || "Não especificado"}\n**Descrição:** ${formData.description || "Não especificado"}`;
  sendMessage.mutate({
  name: formData.name,

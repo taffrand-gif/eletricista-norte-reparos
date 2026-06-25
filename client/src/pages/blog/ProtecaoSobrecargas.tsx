@@ -316,7 +316,7 @@ export default function ProtecaoSobrecargas() {
  </li>
  <li className="flex items-start gap-3">
  <span className="bg-orange-500 text-white w-7 h-7 rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0">9</span>
- <p className="text-gray-700">Substitua réguas e extensões danificadas imediatamente</p>
+ <p className="text-gray-700">Substitua réguas e extensões danificadas mediante confirmação</p>
  </li>
  <li className="flex items-start gap-3">
  <span className="bg-orange-500 text-white w-7 h-7 rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0">10</span>

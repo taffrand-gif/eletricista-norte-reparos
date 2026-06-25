@@ -32,7 +32,7 @@ export default function Certificacoes() {
  <Shield className="h-16 w-16 text-red-600 mx-auto mb-4" />
  <h3 className="font-bold text-xl mb-2">Experiência Profissional</h3>
  <p className="text-gray-600">
- {config.type === 'plomberie' ? 'Canalizador' : 'Eletricista'} com mais de 10 anos de experiência
+ {config.type === 'plomberie' ? 'Canalizador' : 'Eletricista'} com experiência em Trás-os-Montes
  </p>
  </Card>
  <Card className="p-8 text-center">

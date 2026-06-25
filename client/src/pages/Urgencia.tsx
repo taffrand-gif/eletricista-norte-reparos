@@ -10,8 +10,8 @@ function Urgencia() {
  return (
  <>
  <Helmet>
- <title>Urgência Eletricista — Intervenção Imediata 24h | Norte Reparos</title>
- <meta name="description" content="Urgência eletricista 24h em Trás-os-Montes. Sem luz? Curto-circuito? Cheiro queimado? Resposta rápida ao domicílio. 932 321 892" />
+ <title>Urgência Eletricista — Intervenção mediante confirmação 24h | Norte Reparos</title>
+ <meta name="description" content="Urgência eletricista 24h em Trás-os-Montes. Sem luz? Curto-circuito? Cheiro queimado? Resposta mediante contacto ao domicílio. 932 321 892" />
  </Helmet>
  {/* Hero Urgência */}
  <section className="relative bg-gradient-to-br from-orange-600 to-red-700 text-white py-20">
@@ -184,7 +184,7 @@ function Urgencia() {
  <div className="bg-red-100 rounded-lg p-4 mb-4">
  <p className="text-sm font-bold text-red-900">
  🚨 Desligue quadro geral<br />
- Ligue IMEDIATAMENTE
+ Ligue mediante confirmação
  </p>
  </div>
  <a
@@ -392,7 +392,7 @@ function Urgencia() {
  ⚡ Não Arrisque a Sua Segurança
  </h2>
  <p className="text-xl md:text-2xl mb-8">
- Risco de incêndio é REAL. Resposta rápida ao domicílio.
+ Risco de incêndio é REAL. Resposta mediante contacto ao domicílio.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
  <a

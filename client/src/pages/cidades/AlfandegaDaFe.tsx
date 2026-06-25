@@ -18,7 +18,7 @@ export default function AlfandegaDaFe() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Problema elétrico em Alfândega da Fé? A 30km de Macedo, chegamos rápido. Orçamento sem compromisso. Ligue: 932 321 892');
+ metaDescription.setAttribute('content', 'Problema elétrico em Alfândega da Fé? A 30km de Macedo, Confirmamos a deslocação por telefone. Orçamento sem compromisso. Ligue: 932 321 892');
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');
@@ -67,7 +67,7 @@ export default function AlfandegaDaFe() {
  const faqs = [
 {
     question: "Quanto tempo demora a chegar a Alfândega da Fé?",
-    answer: "Chegamos a Alfândega da Fé em apenas 25-30 minutos a partir de Trás-os-Montes. Cobrimos todo o conselho.",
+    answer: "Chegamos a Alfândega da Fé mediante confirmação por telefone a partir de Trás-os-Montes. Cobrimos todo o conselho.",
   },
 {
     question: "Qual o custo de deslocação a Alfândega da Fé?",
@@ -99,7 +99,7 @@ export default function AlfandegaDaFe() {
  { icon: Zap, title: "Instalações para Amendoais", desc: "Sistemas de rega elétricos, iluminação de armazéns e processamento" },
  { icon: Shield, title: "Quadros Elétricos Agrícolas", desc: "Quadros trifásicos para lagares de azeite e maquinaria" },
  { icon: CheckCircle, title: "Remodelação Habitacional", desc: "Atualização de instalações elétricas em casas antigas do concelho" },
- { icon: Zap, title: "Urgências 24h", desc: "Resposta rápida a 30 minutos de Trás-os-Montes" },
+ { icon: Zap, title: "Urgências 24h", desc: "Resposta mediante contacto a 30 minutos de Trás-os-Montes" },
  ].map((service, index) => (
  <div key={index} className="flex items-start gap-4 p-6 bg-white rounded-xl shadow">
  <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">

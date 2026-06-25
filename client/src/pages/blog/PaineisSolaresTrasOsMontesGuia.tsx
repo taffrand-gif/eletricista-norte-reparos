@@ -547,8 +547,7 @@ const PaineisSolaresTrasOsMontesGuia: React.FC = () => {
  <div className="md:w-3/4">
  <h3 className="text-2xl font-bold text-gray-900 mb-2">Sobre o Autor</h3>
  <p className="text-gray-700 mb-4">
- <strong>Pedro Alves</strong> é engenheiro especialista em energia solar com mais de 8 anos 
- de experiência específica em <Link to="/servicos">Trás-os-Montes</Link>. Já projetou e supervisionou mais de 200 instalações 
+ <strong>Pedro Alves</strong> é engenheiro especialista em energia solar com experiência em Trás-os-Montes específica em <Link to="/servicos">Trás-os-Montes</Link>. Já projetou e supervisionou mais de 200 instalações 
  na região, desde pequenos autoconsumos em aldeias remotas a sistemas comunitários em vilas. 
  Desenvolveu metodologias específicas para adaptação de tecnologia solar às condições únicas 
  do nordeste transmontano.

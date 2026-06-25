@@ -16,7 +16,7 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  "name": "Quais os sinais de perigo elétrico em casa?",
  "acceptedAnswer": {
  "@type": "Answer",
- "text": "Sinais urgentes: cheiro a queimado, disjuntor dispara frequentemente, choques elétricos ao tocar aparelhos, faíscas em tomadas/interruptores, luzes piscam constantemente. Contacte eletricista imediatamente."
+ "text": "Sinais urgentes: cheiro a queimado, disjuntor dispara frequentemente, choques elétricos ao tocar aparelhos, faíscas em tomadas/interruptores, luzes piscam constantemente. Contacte eletricista mediante confirmação."
  }
  },
  {
@@ -32,7 +32,7 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  "name": "Quando devo chamar eletricista urgente?",
  "acceptedAnswer": {
  "@type": "Answer",
- "text": "Chame IMEDIATAMENTE se: cheiro a queimado, fumo, faíscas, choques elétricos, quadro muito quente, disjuntor não liga, ou após tempestade com sobretensão. Não , risco de incêndio."
+ "text": "Chame mediante confirmação se: cheiro a queimado, fumo, faíscas, choques elétricos, quadro muito quente, disjuntor não liga, ou após tempestade com sobretensão. Não , risco de incêndio."
  }
  },
  {
@@ -40,7 +40,7 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  "name": "Cheiro a queimado é perigoso?",
  "acceptedAnswer": {
  "@type": "Answer",
- "text": "SIM, muito perigoso. Indica sobreaquecimento de cabos ou componentes. Precursor de incêndio elétrico. Desligue quadro imediatamente, não use instalação, chame eletricista urgente 24h."
+ "text": "SIM, muito perigoso. Indica sobreaquecimento de cabos ou componentes. Precursor de incêndio elétrico. Desligue quadro mediante confirmação, não use instalação, chame eletricista urgente 24h."
  }
  },
  {
@@ -91,7 +91,7 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  ⚠️ Alerta de Segurança:
  </p>
  <p className="text-gray-800">
- Se detetar <strong>cheiro a queimado, faíscas, choques elétricos ou fumo</strong>, desligue o quadro elétrico IMEDIATAMENTE e contacte eletricista urgente. Estes sinais indicam risco iminente de incêndio ou eletrocussão. Não até amanhã.
+ Se detetar <strong>cheiro a queimado, faíscas, choques elétricos ou fumo</strong>, desligue o quadro elétrico mediante confirmação e contacte eletricista urgente. Estes sinais indicam risco iminente de incêndio ou eletrocussão. Não até amanhã.
  </p>
  </div>
  <p className="lead text-xl text-gray-700 mb-8">
@@ -119,7 +119,7 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  <li>Componentes defeituosos no quadro elétrico</li>
  </ul>
  <p>
- <strong>O que fazer IMEDIATAMENTE:</strong>
+ <strong>O que fazer mediante confirmação:</strong>
  </p>
  <ol>
  <li>Desligue o disjuntor geral do quadro elétrico</li>
@@ -295,7 +295,7 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  <div className="flex items-start">
  <span className="text-red-600 font-bold mr-3">🚨</span>
  <div>
- <p className="font-bold text-gray-900">URGÊNCIA MÁXIMA (chamar imediatamente):</p>
+ <p className="font-bold text-gray-900">URGÊNCIA MÁXIMA (chamar mediante confirmação):</p>
  <p className="text-gray-700">Cheiro a queimado, fumo, faíscas, choques elétricos, quadro muito quente</p>
  </div>
  </div>
@@ -340,7 +340,7 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  Quais os sinais de perigo elétrico em casa?
  </h3>
  <p className="text-gray-700">
- Sinais urgentes: cheiro a queimado, disjuntor dispara frequentemente, choques elétricos ao tocar aparelhos, faíscas em tomadas/interruptores, luzes piscam constantemente. Contacte eletricista imediatamente.
+ Sinais urgentes: cheiro a queimado, disjuntor dispara frequentemente, choques elétricos ao tocar aparelhos, faíscas em tomadas/interruptores, luzes piscam constantemente. Contacte eletricista mediante confirmação.
  </p>
  </div>
  <div className="border-l-4 border-orange-600 pl-4">
@@ -356,7 +356,7 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  Quando devo chamar eletricista urgente?
  </h3>
  <p className="text-gray-700">
- Chame IMEDIATAMENTE se: cheiro a queimado, fumo, faíscas, choques elétricos, quadro muito quente, disjuntor não liga, ou após tempestade com sobretensão. Não , risco de incêndio.
+ Chame mediante confirmação se: cheiro a queimado, fumo, faíscas, choques elétricos, quadro muito quente, disjuntor não liga, ou após tempestade com sobretensão. Não , risco de incêndio.
  </p>
  </div>
  <div className="border-l-4 border-orange-600 pl-4">
@@ -364,7 +364,7 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  Cheiro a queimado é perigoso?
  </h3>
  <p className="text-gray-700">
- SIM, muito perigoso. Indica sobreaquecimento de cabos ou componentes. Precursor de incêndio elétrico. Desligue quadro imediatamente, não use instalação, chame eletricista urgente 24h.
+ SIM, muito perigoso. Indica sobreaquecimento de cabos ou componentes. Precursor de incêndio elétrico. Desligue quadro mediante confirmação, não use instalação, chame eletricista urgente 24h.
  </p>
  </div>
  <div className="border-l-4 border-orange-600 pl-4">

@@ -88,7 +88,7 @@ export default function PoupancaLedEconomiaReal() {
  <div className="prose prose-lg max-w-none">
  <div className="bg-orange-50 border-l-4 border-orange-600 p-6 mb-8">
  <p className="text-lg font-semibold text-gray-900 mb-2">
- Resposta Rápida:
+ Resposta mediante contacto:
  </p>
  <p className="text-gray-800">
  LED poupa <strong>80-90% energia</strong> vs lâmpadas incandescentes, <strong>50-60%</strong> vs halogéneas. Casa T3 típica: poupança <strong>150-300€/ano</strong>. Investimento inicial 300-600€ recuperado em 1-2 anos. Depois, poupança líquida de 100-250€/ano durante 15-25 anos de vida útil do LED.
@@ -305,7 +305,7 @@ export default function PoupancaLedEconomiaReal() {
  <ul>
  <li><strong>Durabilidade:</strong> 15-25 anos vs 1 ano (incandescente). Menos substituições, menos trabalho</li>
  <li><strong>Menos calor:</strong> LED não aquece. Reduz carga de ar condicionado no verão</li>
- <li><strong>Ligar instantâneo:</strong> Luz máxima imediatamente (vs fluorescente que demora)</li>
+ <li><strong>Ligar instantâneo:</strong> Luz máxima mediante confirmação (vs fluorescente que demora)</li>
  <li><strong>Sem mercúrio:</strong> Ecológico, não contamina se partir</li>
  <li><strong>Variedade de cores:</strong> Branco quente, neutro, frio. Escolha conforme ambiente</li>
  <li><strong>Regulável:</strong> LED dimerizável permite ajustar intensidade</li>

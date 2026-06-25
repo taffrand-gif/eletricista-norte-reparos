@@ -58,10 +58,10 @@ export default function SinaisProblemasEletricos() {
  "@type": "FAQPage",
  "mainEntity": [
  { "@type": "Question", "name": "O que significa o disjuntor disparar frequentemente?", "acceptedAnswer": { "@type": "Answer", "text": "Se o disjuntor dispara mais de uma vez por semana, indica sobrecarga no circuito ou curto-circuito. Não force o disjuntor: desligue aparelhos e chame um eletricista para inspeção." } },
- { "@type": "Question", "name": "Cheiro a queimado em casa sem origem visível é grave?", "acceptedAnswer": { "@type": "Answer", "text": "Sim, é urgente. Um cheiro a plástico ou borracha queimada pode indicar fios a derreter dentro das paredes. Desligue o quadro elétrico e chame imediatamente um eletricista — risco de incêndio." } },
- { "@type": "Question", "name": "Tomadas ou interruptores quentes ao toque — o que fazer?", "acceptedAnswer": { "@type": "Answer", "text": "Tomadas quentes indicam ligações soltas ou fios subdimensionados. Pare imediatamente de usar a tomada e agende inspeção com um eletricista profissional." } },
+ { "@type": "Question", "name": "Cheiro a queimado em casa sem origem visível é grave?", "acceptedAnswer": { "@type": "Answer", "text": "Sim, é urgente. Um cheiro a plástico ou borracha queimada pode indicar fios a derreter dentro das paredes. Desligue o quadro elétrico e chame mediante confirmação um eletricista — risco de incêndio." } },
+ { "@type": "Question", "name": "Tomadas ou interruptores quentes ao toque — o que fazer?", "acceptedAnswer": { "@type": "Answer", "text": "Tomadas quentes indicam ligações soltas ou fios subdimensionados. Pare mediante confirmação de usar a tomada e agende inspeção com um eletricista profissional." } },
  { "@type": "Question", "name": "Luzes que tremem ou piscam são sinal de problema sério?", "acceptedAnswer": { "@type": "Answer", "text": "Pode ser apenas uma lâmpada a falhar, mas se acontece em várias divisões o problema está na instalação elétrica. Teste com lâmpadas novas. Se persistir, chame um eletricista." } },
- { "@type": "Question", "name": "Sinto choques leves ao tocar em aparelhos — é perigoso?", "acceptedAnswer": { "@type": "Answer", "text": "Sim, é urgente. Sentir formigueiro ao tocar em aparelhos indica fuga de corrente com risco real de eletrocussão. É um problema de terra — não use o aparelho e chame eletricista imediatamente." } },
+ { "@type": "Question", "name": "Sinto choques leves ao tocar em aparelhos — é perigoso?", "acceptedAnswer": { "@type": "Answer", "text": "Sim, é urgente. Sentir formigueiro ao tocar em aparelhos indica fuga de corrente com risco real de eletrocussão. É um problema de terra — não use o aparelho e chame eletricista mediante confirmação." } },
  { "@type": "Question", "name": "A conta de luz subiu muito sem razão pode ser problema elétrico?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. Aumento súbito de consumo sem mudança de hábitos pode indicar fuga de corrente ou equipamento defeituoso. Peça uma inspeção elétrica para identificar consumos fantasma." } },
  { "@type": "Question", "name": "Faíscas ao ligar aparelhos à tomada são normais?", "acceptedAnswer": { "@type": "Answer", "text": "Pequenas faíscas ao ligar podem ser normais, mas faíscas grandes ou frequentes indicam arco elétrico — situação perigosa. Não use a tomada e chame um eletricista profissional." } }
  ]
@@ -84,7 +84,7 @@ export default function SinaisProblemasEletricos() {
  titulo: "2. Cheiro a Queimado sem Origem Visível",
  descricao: "Um cheiro a plástico ou borracha queimada pode indicar fios a derreter dentro das paredes.",
  urgencia: "critica",
- acao: "URGENTE: Desligue o quadro elétrico e chame imediatamente."
+ acao: "URGENTE: Desligue o quadro elétrico e chame mediante confirmação."
  },
  {
  titulo: "3. Tomadas ou Interruptores Quentes",
