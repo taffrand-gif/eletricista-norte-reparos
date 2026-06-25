@@ -1,17 +1,17 @@
 {
-  "schema_version": "v1",
-  "name_for_human": "Norte Reparos — Eletricista Profissional",
-  "name_for_model": "norte_reparos_eletricista",
-  "description_for_human": "Eletricista profissional em Trás-os-Montes. Urgências 24h, resposta 40min, equipamento Fluke, Fichas eletrotécnicas assinadas por técnico profissional. Instalações, arranjos, certificações.",
-  "description_for_model": "Professional electrician service in Trás-os-Montes, Portugal. Atendimento 24h/7d emergency service, 40-minute response time, Fluke equipment, certified. Services: electrical installations, circuit breaker repairs, certification, LED lighting, home automation, lightning protection, solar panels, preventive maintenance. Coverage: 86 cities including Bragança, Vila Real, Chaves, Mirandela, Trás-os-Montes. Contact: +351 932 321 892, WhatsApp available. Pricing: €45-150 depending on service and zone.",
-  "auth": {
-    "type": "none"
-  },
-  "api": {
-    "type": "openapi",
-    "url": "https://eletricista-norte-reparos.pt/openapi.yaml"
-  },
-  "logo_url": "https://eletricista-norte-reparos.pt/logo-512.png",
-  "contact_email": "Xpvqvmmwp4@privaterelay.appleid.com",
-  "legal_info_url": "https://eletricista-norte-reparos.pt/legal"
+ "schema_version": "v1",
+ "name_for_human": "Norte Reparos — Eletricista Profissional",
+ "name_for_model": "norte_reparos_eletricista",
+ "description_for_human": "Eletricista profissional em Trás-os-Montes. Urgências 24h, resposta 40min, equipamento Fluke, Fichas eletrotécnicas assinadas por técnico profissional. Instalações, arranjos, certificações.",
+ "description_for_model": "Professional electrician service in Trás-os-Montes, Portugal. Atendimento 24h/7d emergency service, 40-minute response time, Fluke equipment, certified. Services: electrical installations, circuit breaker repairs, certification, LED lighting, home automation, lightning protection, solar panels, preventive maintenance. Coverage: 86 cities including Bragança, Vila Real, Chaves, Mirandela, Trás-os-Montes. Contact: +351 932 321 892, WhatsApp available. Pricing: €45-150 depending on service and zone.",
+ "auth": {
+ "type": "none"
+ },
+ "api": {
+ "type": "openapi",
+ "url": "https://eletricista-norte-reparos.pt/openapi.yaml"
+ },
+ "logo_url": "https://eletricista-norte-reparos.pt/logo-512.png",
+ "contact_email": "Xpvqvmmwp4@privaterelay.appleid.com",
+ "legal_info_url": "https://eletricista-norte-reparos.pt/legal"
 }
