@@ -33,7 +33,7 @@ function MobileStickyBar() {
  <Phone className="w-5 h-5" />
  <span className="text-base">LIGAR</span>
  </div>
- <span className="text-xs font-normal opacity-100 mt-0.5">{arrivalTime.split('-')[0]}</span>
+ <span className="text-xs font-normal opacity-100 mt-0.5">{arrivalTime}</span>
  </a>
  {/* Botão WhatsApp — 50% direita */}
  <a
