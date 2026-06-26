@@ -320,3 +320,49 @@ Detetar, prevenir.
 **Orçamento grátis por telefone — sem compromisso.**
 
 [Pedir orçamento agora](tel:+351928484451)
+
+## Perguntas Frequentes (FAQ)
+
+### Qual é a diferença entre curto-circuito e sobrecarga?
+- **Curto-circuito**: Corrente elétrica excessiva causada por contacto direto entre 2 condutores (fase + neutro) ou (fase + terra). Resultado: disjuntor dispara IMEDIATAMENTE, faíscas, possível incêndio.
+- **Sobrecarga**: Demasiados aparelhos ligados num circuito. Disjuntor dispara APÓS minutos/horas de aquecimento dos cabos. Sem faíscas mas risco de sobreaquecimento.
+
+**Ambos são perigosos**. Curto-circuito é mais urgente. Chame eletricista imediatamente: **+351 932 321 892**.
+
+### Como prevenir curto-circuitos na instalação elétrica?
+**6 regras essenciais**:
+1. **Quadro elétrico moderno** com disjuntores + diferencial (DR)
+2. **Cabos adequados à carga** (secção correta: 1.5mm² iluminação, 2.5mm² tomadas, 4-6mm² fogão)
+3. **Tomadas em bom estado** (sem cabos soltos, sem marcas de queimado)
+4. **Manter distância de água** (cozinha, casa de banho com cuidado)
+5. **Não fazer bricolage elétrica** sem qualificação
+6. **Inspeção periódica** (10 anos ou após eventos: inundação, raio, etc.)
+
+### Quanto tempo demora arranjar um curto-circuito?
+Tempo médio em Trás-os-Montes (2026):
+- **Diagnóstico**: 15-30 minutos
+- **Reparação simples** (tomada, interruptor): 30-60 minutos
+- **Reparação média** (troca de cabo danificado): 1-3 horas
+- **Reparação complexa** (quadro, circuito dedicado): 3-8 horas
+
+Urgências respondemos em 30-45min. Orçamento antes do trabalho: **+351 932 321 892**.
+
+### Curto-circuito na cozinha é mais comum?
+**SIM**. A cozinha é a divisão com **maior risco** de curto-circuito porque:
+- Múltiplos eletrodomésticos de alta potência (forno, fogão, micro-ondas, máquina lavar loiça)
+- Presença de água (torneira, lava-loiça, humidade)
+- Sobrecarga frequente (muitos aparelhos na mesma tomada)
+
+**Prevenção específica cozinha**:
+- Circuito dedicado para forno/fogão (cabo 6mm² + disjuntor 32A)
+- Tomadas com proteção IP44 (resistentes a humidade)
+- Não usar extensões/triplas como solução permanente
+- Inspeção elétrica a cada 5 anos na cozinha
+
+### Posso religar o disjuntor que disparou sozinho?
+**Depende**:
+- ✅ **PODE tentar religar 1 vez** se: disjuntor disparou e não há cheiro a queimado, fumo ou faíscas
+- ❌ **NÃO religue se**: (1) Cheiro a queimado, (2) Marcas escuras nas tomadas, (3) Disjuntor dispara IMEDIATAMENTE ao tentar ligar
+
+Se o disjuntor dispara logo após religar = **curto-circuito ativo**. Chame eletricista urgente: **+351 932 321 892**. NÃO continue a tentar religar.
+

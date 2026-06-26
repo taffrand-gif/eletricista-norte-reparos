@@ -529,3 +529,56 @@ Curto-circuito é um **perigo real e grave**, responsável por **30-40% dos inc�
 ---
 
 * - eletricista com experiência em Trás-os-Montes | Segurança Elétrica | 932 321 892*
+
+## Perguntas Frequentes (FAQ)
+
+### O que fazer quando há um curto-circuito em casa?
+**Passos imediatos**:
+1. **Desligar o disjuntor geral** do quadro elétrico (se seguro aceder)
+2. **NÃO tocar em cabos ou equipamentos** danificados
+3. **Desconectar aparelhos** da tomada afetada (se acessível)
+4. **Chamar eletricista urgente 24h**: +351 932 321 892
+
+**NUNCA**: Tentar reparação DIY sem conhecimento técnico. Curto-circuitos podem causar **incêndio, eletrocução ou danos graves**. Serviço urgente Trás-os-Montes com resposta em 30-45min.
+
+### Quanto custa reparar um curto-circuito?
+Preços médios em Trás-os-Montes (2026):
+- **Diagnóstico + identificação causa**: 60-100€
+- **Reparação simples** (tomada/interruptor): 80-150€
+- **Reparação média** (secção de cabo): 150-300€
+- **Reparação complexa** (quadro elétrico, circuito dedicado): 300-600€
+
+Urgências noturnas/fim de semana: +50%. Orçamento grátis por telefone: **+351 932 321 892**.
+
+### Como saber se houve curto-circuito?
+**5 sinais típicos**:
+1. **Disjuntor dispara** e não arma (mesmo com tudo desligado)
+2. **Cheiro a queimado** ou plástico derretido vindo do quadro/tomadas
+3. **Fumo** visível ou marcas escuras nas tomadas
+4. **Faíscas** ao ligar/desligar aparelhos
+5. **Queda parcial de luz** só num circuito (luz cozinha vai, resto fica)
+
+Se detetar algum destes sinais, **desligue o disjuntor geral** e chame eletricista urgente imediatamente.
+
+### Curto-circuito é perigoso?
+**SIM, muito perigoso**. Um curto-circuito pode causar:
+- **Incêndio** (40% dos incêndios domésticos em Portugal têm origem elétrica)
+- **Eletrocução** (risco de morte com corrente >50V)
+- **Danos em equipamentos** (queima de aparelhos ligados)
+- **Danos no quadro elétrico** (fusíveis, disjuntores, cablagem)
+
+**NUNCA** tente reparar um curto-circuito sem formação. Chame sempre um eletricista qualificado. Em Trás-os-Montes: **+351 932 321 892** (serviço 24h).
+
+### Posso evitar curto-circuitos no futuro?
+**5 medidas preventivas**:
+1. **Inspeção elétrica periódica** (a cada 10 anos, ou 5 anos se casa antiga)
+2. **Não sobrecarregar tomadas** (muitos aparelhos numa só tomada = risco)
+3. **Substituir cabos antigos** danificados ou desgastados
+4. **Instalar disjuntores diferenciais** (DR) se não tiver
+5. **Desligar aparelhos** durante trovoadas fortes
+
+Prevenção é mais barato (100-200€ inspeção) que reparação (300-600€ emergência). Marque sua inspeção: **+351 932 321 892**.
+
+### Atendem curto-circuitos em todas as cidades de Trás-os-Montes?
+Sim. Servimos **Bragança, Mirandela, Macedo de Cavaleiros, Vinhais, Miranda do Douro, Mogadouro, Torre de Moncorvo, Freixo de Espada à Cinta, Valpaços, Alfândega da Fé, Vila Flor, Carrazeda de Ansiães, Vimioso, Montalegre, Chaves, Vila Real, Lamego** e todas as aldeias num raio de 100km de Macedo de Cavaleiros. Resposta em **30-45 minutos** para chamadas urgentes.
+
