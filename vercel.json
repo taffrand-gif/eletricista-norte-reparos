@@ -158,6 +158,90 @@
       "destination": "/tomada-faiscas-:city.html"
     },
     {
+      "source": "/domotica-:city",
+      "destination": "/domotica-:city.html"
+    },
+    {
+      "source": "/quanto-custa-:city",
+      "destination": "/quanto-custa-:city.html"
+    },
+    {
+      "source": "/choque-eletrico-:city",
+      "destination": "/choque-eletrico-:city.html"
+    },
+    {
+      "source": "/dicas-seguranca-:city",
+      "destination": "/dicas-seguranca-:city.html"
+    },
+    {
+      "source": "/problemas-comuns-:city",
+      "destination": "/problemas-comuns-:city.html"
+    },
+    {
+      "source": "/faq-eletricista-:city",
+      "destination": "/faq-eletricista-:city.html"
+    },
+    {
+      "source": "/perguntas-frequentes-:city",
+      "destination": "/perguntas-frequentes-:city.html"
+    },
+    {
+      "source": "/ar-condicionado-:city",
+      "destination": "/ar-condicionado-:city.html"
+    },
+    {
+      "source": "/paineis-fotovoltaicos-:city",
+      "destination": "/paineis-fotovoltaicos-:city.html"
+    },
+    {
+      "source": "/alarme-:city",
+      "destination": "/alarme-:city.html"
+    },
+    {
+      "source": "/wallbox-:city",
+      "destination": "/wallbox-:city.html"
+    },
+    {
+      "source": "/quadros-eletricos-:city",
+      "destination": "/quadros-eletricos-:city.html"
+    },
+    {
+      "source": "/vmc-:city",
+      "destination": "/vmc-:city.html"
+    },
+    {
+      "source": "/videoporteiro-:city",
+      "destination": "/videoporteiro-:city.html"
+    },
+    {
+      "source": "/aquecimento-eletrico-:city",
+      "destination": "/aquecimento-eletrico-:city.html"
+    },
+    {
+      "source": "/painel-solar-:city",
+      "destination": "/painel-solar-:city.html"
+    },
+    {
+      "source": "/protecao-raios-:city",
+      "destination": "/protecao-raios-:city.html"
+    },
+    {
+      "source": "/reparacao-avaria-:city",
+      "destination": "/reparacao-avaria-:city.html"
+    },
+    {
+      "source": "/disjuntor-disparar-:city",
+      "destination": "/disjuntor-disparar-:city.html"
+    },
+    {
+      "source": "/curto-circuito-:city",
+      "destination": "/curto-circuito-:city.html"
+    },
+    {
+      "source": "/guia-:city",
+      "destination": "/guia-:city.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
