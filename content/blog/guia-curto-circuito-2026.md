@@ -99,7 +99,7 @@ Os preços médios nacionais em 2026:
 - Reparação pontual: 100-300€
 - Remodelação completa (canalização): 4000-7000€
 - Remodelação completa (elétrica): 5000-9000€
-- Instalação painéis solares: 4500-7000€
+- Instalação sistemas específicos: consultar orçamento
 
 **Trás-os-Montes (raio 130 km Macedo):**
 - 15-20% abaixo de Lisboa/Porto
