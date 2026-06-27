@@ -186,7 +186,7 @@ export default function QuoteFormEnhanced() {
  value={formData.nif}
  onChange={(e) => setFormData({ ...formData, nif: e.target.value.replace(/\D/g, '') })}
  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent"
- placeholder="123456789"
+ placeholder="9 dígitos"
  aria-describedby="nif-description"
  />
  <p id="nif-description" className="text-xs text-gray-500 mt-1">Opcional - para faturação</p>
