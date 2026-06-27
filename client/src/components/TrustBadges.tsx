@@ -88,7 +88,7 @@ export default function TrustBadges() {
  <span className="text-sm">(com feedback verificado)</span>
  </div>
  <p className="text-sm text-gray-500">
- Empresa registada e segurada | NIF: {isPlumber ? '123456789' : '987654321'}
+ Empresa registada e segurada | NIF: 248 197 770
  </p>
  </div>
  </div>
