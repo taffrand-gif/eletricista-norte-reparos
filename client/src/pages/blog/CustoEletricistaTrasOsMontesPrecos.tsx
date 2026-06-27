@@ -89,7 +89,7 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <p className="text-amber-800 font-semibold text-lg">
  💡 Dados Reais 2025: Analisámos 200+ orçamentos executados em <Link to="/servicos">Trás-os-Montes</Link>. 
  Os preços apresentados refletem a realidade regional, considerando deslocações longas, 
- especificidades das casas antigas e disponibilidade limitada de profissionais com experiência.
+ especificidades das casas antigas e disponibilidade limitada de profissionais qualificados.
  </p>
  </div>
  <p className="text-xl text-gray-700 mb-6">
@@ -459,7 +459,7 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <li>• <strong>Menor densidade de clientes:</strong> Menos trabalhos por km² significa custos fixos distribuídos por menos faturas</li>
  <li>• <strong>Deslocações longas:</strong> Média de 50-100km entre clientes vs 5-10km em áreas urbanas</li>
  <li>• <strong>Especialização necessária:</strong> Conhecimento específico para casas antigas que eletricistas urbanos não têm</li>
- <li>• <strong>Menor concorrência:</strong> Poucos profissionais com experiência dispostos a trabalhar em zonas rurais</li>
+ <li>• <strong>Menor concorrência:</strong> Poucos profissionais qualificados dispostos a trabalhar em zonas rurais</li>
  <li>• <strong>Custos operacionais:</strong> Veículos 4x4, equipamento para condições adversas, stock maior de peças</li>
  </ul>
  No entanto, a qualidade e atenção ao detalhe são frequentemente superiores.
@@ -509,7 +509,7 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  "name": "Porque é que os eletricistas em Trás-os-Montes são mais caros que no Porto?",
  "acceptedAnswer": {
  "@type": "Answer",
- "text": "Menor densidade de clientes distribui custos fixos por menos faturas; Deslocações longas (50-100km vs 5-10km); Especialização necessária para casas antigas; Menor concorrência de profissionais com experiência; Custos operacionais com veículos 4x4 e equipamento para condições adversas. A qualidade e atenção são frequentemente superiores."
+ "text": "Menor densidade de clientes distribui custos fixos por menos faturas; Deslocações longas (50-100km vs 5-10km); Especialização necessária para casas antigas; Menor concorrência de profissionais qualificados; Custos operacionais com veículos 4x4 e equipamento para condições adversas. A qualidade e atenção são frequentemente superiores."
  }
  },
  {

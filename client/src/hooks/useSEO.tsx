@@ -130,7 +130,7 @@ export function generateMetaDescription(ville?: string): string {
  }
  
  // Page d'accueil
- return `${config.name} 24h - instalação, arranjo e manutenção de sistemas elétricos. Equipa de eletricistas profissionais com experiência. Ligue ${config.phone}`;
+ return `${config.name} 24h - instalação, arranjo e manutenção de sistemas elétricos. Equipa de eletricistas profissionais qualificados. Ligue ${config.phone}`;
 }
 // Fonction pour générer les mots-clés SEO
 export function generateKeywords(ville?: string): string {

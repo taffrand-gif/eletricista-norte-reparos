@@ -103,7 +103,7 @@ function MoneyBackGuarantee() {
  </div>
  <div>
  <div className="text-3xl mb-2">⭐</div>
- <p className="font-bold text-green-900 mb-1">500+ Instalações </p>
+ <p className="font-bold text-green-900 mb-1">Instalações profissionais </p>
  <p className="text-green-800">Menos de 1% reclamações</p>
  </div>
  </div>
@@ -145,7 +145,7 @@ function MoneyBackGuarantee() {
  <div className="p-6 bg-white rounded-lg border-2 border-gray-200">
  <div className="text-4xl mb-2">🏆</div>
  <p className="font-bold text-gray-900"> Estrelas</p>
- <p className="text-gray-600 text-sm">500+ instalações certificadas</p>
+ <p className="text-gray-600 text-sm">Instalações profissionais certificadas</p>
  </div>
  <div className="p-6 bg-white rounded-lg border-2 border-gray-200">
  <div className="text-4xl mb-2">⚡</div>

@@ -85,7 +85,7 @@ export default function TrustBadges() {
  <div className="flex items-center justify-center gap-2 text-gray-600">
  <span className="text-yellow-500">⭐⭐⭐⭐⭐</span>
  <span className="font-semibold"></span>
- <span className="text-sm">(500+ avaliações)</span>
+ <span className="text-sm">(com feedback verificado)</span>
  </div>
  <p className="text-sm text-gray-500">
  Empresa registada e segurada | NIF: {isPlumber ? '123456789' : '987654321'}

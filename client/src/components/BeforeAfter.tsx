@@ -186,7 +186,7 @@ function BeforeAfter() {
  {/* Social Proof */}
  <div className="mt-12 p-6 bg-white rounded-lg border-2 border-gray-200">
  <p className="text-center text-gray-700">
- <strong className="text-gray-900">500+ instalações certificadas </strong> em Bragança e região.
+ <strong className="text-gray-900">Instalações profissionais certificadas </strong> em Bragança e região.
  Problemas elétricos que outros não conseguiram resolver.
  </p>
  </div>
