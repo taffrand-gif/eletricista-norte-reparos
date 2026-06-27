@@ -121,20 +121,18 @@ export function useLocalRedirect() {
  });
  }, [city, isLoading, config.type]);
 }
-// Hook pour changer titre dynamiquement
+// Hook pour changer titre dynamiquement (DÉSACTIVÉ R11+R12)
+// Bug SEO : mute document.title APRÈS useSEO → titre écrasé = duplicate titles
+// Fix : retourne juste le titre suggéré, ne mute PAS document.title
+// Laissé pour compatibilité mais ne fait rien
 export function useDynamicTitle() {
  const { city } = useGeolocation();
  const config = ACTIVE_CONFIG;
- useEffect(() => {
- if (!city) return;
- const originalTitle = document.title;
- 
- // Ajouter ville au titre si pas déjà présent
- if (!originalTitle.includes(city)) {
- document.title = `${config.name} ${city} 24h | ${originalTitle}`;
- }
- return () => {
- document.title = originalTitle;
- };
- }, [city, config.name]);
+ // Ne PAS muter document.title (R12 géographique + useSEO prioritaire)
+ // Retourne juste titre suggéré si composant veut l'utiliser manuellement
+ if (!city) return { suggestedTitle: '' };
+ const originalTitle = (typeof document !== 'undefined' ? document.title : '') || config.name;
+ const suggestedTitle = originalTitle.includes(city) ? originalTitle : `${config.name} ${city} 24h | ${originalTitle}`;
+ return { suggestedTitle };
+}
 }
