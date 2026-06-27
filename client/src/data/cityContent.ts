@@ -37,7 +37,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  testimonials: [
  {
  name: "Paulo R.",
- text: "Curto-circuito às 2h da manhã. Chegaram Atendimento mediante confirmação e resolveram tudo com segurança. instalação elétrica incluída!",
+ text: "Curto-circuito às 2h da manhã. Resolveram tudo com segurança. instalação elétrica incluída!",
  rating: 5,
  date: "2026-02-16"
  },
@@ -49,7 +49,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  },
  {
  name: "Ricardo F.",
- text: "instalação elétrica para apartamento. Serviço rápido, preço justo e entrega em 48h. Recomendo!",
+ text: "instalação elétrica para apartamento. Serviço de qualidade, preço justo e entrega em 48h. Recomendo!",
  rating: 5,
  date: "2026-03-06"
  }
@@ -257,7 +257,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  testimonials: [
  {
  name: "Vítor L.",
- text: "Serviço rápido mesmo estando longe. instalação elétrica incluída. Preço justo!",
+ text: "Serviço de qualidade mesmo estando longe. instalação elétrica incluída. Preço justo!",
  rating: 5,
  date: "2026-02-25"
  }
@@ -289,7 +289,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  testimonials: [
  {
  name: "Henrique C.",
- text: "Avaria elétrica na quinta. Vieram com equipamento e resolveram rápido. Recomendo!",
+ text: "Avaria elétrica na quinta. Vieram com equipamento e resolveram. Recomendo!",
  rating: 5,
  date: "2026-03-04"
  }
