@@ -495,7 +495,7 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  <div className="mt-12 bg-gradient-to-r from-amber-50 to-amber-100 rounded-2xl p-8">
  <h3 className="text-2xl font-bold text-gray-900 mb-6">📍 eletricistas com experiência na Sua Zona</h3>
  <p className="text-gray-700 mb-6">
- Trabalhamos em toda a região com profissionais com experiência e com experiência local:
+ Trabalhamos em toda a região com profissionais qualificados e com experiência local:
  </p>
  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
  <a href="/eletricista-vila-real" className="bg-white p-4 rounded-xl text-center hover:shadow-md transition-shadow">

@@ -9,7 +9,7 @@ const InnovativeHero: React.FC = () => {
  ? [
  { icon: '💧', value: 'Certificado', label: 'Seguro Ativo' },
  { icon: '🔬', value: 'Ridgid', label: 'Câmara Inspeção' },
- { icon: '🛡️', value: '500+', label: 'Intervenções' },
+ { icon: '🛡️', value: 'Centenas', label: 'Intervenções' },
  { icon: '📞', value: 'em minutos', label: 'Chegada Bragança' },
  ]
  : [

@@ -86,7 +86,7 @@ function Hero() {
  <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4 text-white text-sm">
  <div className="flex items-center gap-2">
  <span className="text-yellow-400">⭐⭐⭐⭐⭐</span>
- <span className="font-bold"> (500+ avaliações)</span>
+ <span className="font-bold"> (com feedback verificado)</span>
  </div>
  <div className="hidden sm:block text-white/50">•</div>
  <div className="font-semibold">
