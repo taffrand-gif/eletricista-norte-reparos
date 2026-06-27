@@ -72,7 +72,7 @@ Trabalhamos apenas com equipamento de marcas reconhecidas:
 ## Perguntas Frequentes - Electricista 24h Bragança
 
 ### Quanto tempo demora a resposta?
-**Resposta:** Garantimos contacto Atendimento prioritário e chegada ao local em até 1 hora na zona urbana de Bragança.
+**Resposta:** Garantimos contacto Atendimento mediante confirmação e chegada ao local em até 1 hora na zona urbana de Bragança.
 
 ### Os preços são mais caros à noite ou fim de semana?
 **Resposta:** Aplicamos uma sobretaxa moderada de 20% para serviços entre 22h-8h e fins de semana, mas mantemos transparência total no orçamento.

@@ -13,7 +13,7 @@ priority: "HIGH DEMAND"
 
 **O interruptor não liga a luz ou está partido?** Este é um problema comum que pode ter causas simples (lâmpada queimada) ou mais complexas (interruptor avariado). Neste guia completo, vou mostrar-lhe **as 7 causas principais** e **como arranjar com segurança**.
 
-> ⚠️ **ATENÇÃO:** Trabalhos elétricos envolvem risco de eletrocussão. Se não tem experiência, ligue já: **[932 321 892](tel:+351932321892)** — Eletricista com experiência em Bragança Atendimento prioritário.
+> ⚠️ **ATENÇÃO:** Trabalhos elétricos envolvem risco de eletrocussão. Se não tem experiência, ligue já: **[932 321 892](tel:+351932321892)** — Eletricista com experiência em Bragança Atendimento mediante confirmação.
 
 ## 🔍 Diagnóstico Inicial: Teste Simples
 
@@ -431,7 +431,7 @@ Na maioria dos casos, interruptor que não funciona tem **causa identificável e
 📞 **Ligue agora: [932 321 892](tel:+351932321892)** 
 💬 **WhatsApp: [Clique aqui](https://wa.me/351932321892?text=Olá%2C%20tenho%20um%20interruptor%20que%20não%20funciona.%20Pode%20ajudar%3F)**
 
-✅ Diagnóstico rápido Atendimento prioritário 
+✅ Diagnóstico rápido Atendimento mediante confirmação 
 ✅ Arranjo ou substituição 
 ✅ Materiais de qualidade em stock 
 ✅ Garantia 1 ano no serviço 

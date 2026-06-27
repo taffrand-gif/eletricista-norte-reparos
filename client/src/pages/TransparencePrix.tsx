@@ -73,7 +73,7 @@ export default function TransparencePrix() {
  price: "90€ - 120€",
  duration: "Imediato",
  includes: [
- "Chegada Atendimento prioritário",
+ "Chegada Atendimento mediante confirmação",
  "Disponível Atendimento 24h/7d",
  "Fins de semana e feriados",
  "Resolução no local"
@@ -90,7 +90,7 @@ export default function TransparencePrix() {
  const faqPrix = [
  {
  question: "Porque os vossos preços são 15-20% mais elevados que a concorrência?",
- answer: "Os nossos preços refletem a qualidade superior do serviço: eletricistas com 12 anos de experiência em Trás-os-Montes, materiais de marcas premium (Legrand, Schneider), garantia alargada de 12 meses, chegada garantida Atendimento prioritário, e trabalho conforme legislação portuguesa. Não fazemos trabalhos 'baratos' que falham em 6 meses. Investimos em formação contínua e equipamento profissional. O barato sai caro em eletricidade - um trabalho mal feito pode causar incêndios."
+ answer: "Os nossos preços refletem a qualidade superior do serviço: eletricistas com vasta experiência em Trás-os-Montes, materiais de marcas profissionais reconhecidas, garantia sobre os trabalhos realizados, chegada garantida Atendimento mediante confirmação, e trabalho conforme legislação portuguesa. Não fazemos trabalhos 'baratos' que falham em 6 meses. Investimos em formação contínua e equipamento profissional. O barato sai caro em eletricidade - um trabalho mal feito pode causar incêndios."
  },
  {
  question: "O preço final pode ser diferente do orçamento?",

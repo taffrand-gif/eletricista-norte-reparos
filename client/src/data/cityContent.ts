@@ -37,7 +37,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  testimonials: [
  {
  name: "Paulo R.",
- text: "Curto-circuito às 2h da manhã. Chegaram Atendimento prioritário e resolveram tudo com segurança. instalação elétrica incluída!",
+ text: "Curto-circuito às 2h da manhã. Chegaram Atendimento mediante confirmação e resolveram tudo com segurança. instalação elétrica incluída!",
  rating: 5,
  date: "2026-02-16"
  },
@@ -61,7 +61,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  },
  stats: {
  interventionsAnnuelles: "480+ intervenções em Bragança",
- tauxSatisfaction: "99% clientes satisfeitos",
+ tauxSatisfaction: "",
  tempsReponse: "Média 37 minutos"
  },
  specificites: [
@@ -138,7 +138,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  },
  stats: {
  interventionsAnnuelles: "290+ intervenções em Macedo",
- tauxSatisfaction: "99% clientes satisfeitos",
+ tauxSatisfaction: "",
  tempsReponse: "Média 34 minutos"
  },
  specificites: [
@@ -171,7 +171,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  },
  stats: {
  interventionsAnnuelles: "400+ intervenções em Chaves",
- tauxSatisfaction: "97% clientes satisfeitos",
+ tauxSatisfaction: "",
  tempsReponse: "Média 47 minutos"
  },
  specificites: [
@@ -236,7 +236,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  },
  stats: {
  interventionsAnnuelles: "190+ intervenções em Vinhais",
- tauxSatisfaction: "99% clientes satisfeitos",
+ tauxSatisfaction: "",
  tempsReponse: "Média 57 minutos"
  },
  specificites: [
@@ -301,7 +301,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  },
  stats: {
  interventionsAnnuelles: "210+ intervenções em Mogadouro",
- tauxSatisfaction: "99% clientes satisfeitos",
+ tauxSatisfaction: "",
  tempsReponse: "Média 57 minutos"
  },
  specificites: [
@@ -334,7 +334,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  },
  stats: {
  interventionsAnnuelles: "150+ intervenções em Alfândega",
- tauxSatisfaction: "99% clientes satisfeitos",
+ tauxSatisfaction: "",
  tempsReponse: "Média 52 minutos"
  },
  specificites: [

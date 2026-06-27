@@ -411,7 +411,7 @@ keywords: ["energia renovável", "incentivos 2026", "painéis solares", "apoios"
 - Verificação sistema
 - Monitorização produção
 - Contratos disponíveis
-- Resposta rápida
+- Resposta mediante confirmação
 
 ## 🌍 Cobertura
 
@@ -427,7 +427,7 @@ Atendemos **86 cidades** em Trás-os-Montes:
 📞 **+351 932 321 892**
 💬 **[WhatsApp](https://wa.me/351932321892?text=Energia%20renovável%20incentivos)**
 
-**Resposta rápida garantida. Projeto completo + apoio candidaturas.**
+**Resposta mediante confirmação garantida. Projeto completo + apoio candidaturas.**
 
 ---
 

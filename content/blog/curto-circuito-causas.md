@@ -520,7 +520,7 @@ R: Diagnóstico €60-120, arranjo €100-500. Urgente 24h: +50-100%. : **932 32
 
 📞 **Ligue Agora: 932 321 892**
 - ✅ Atendimento 24h/7d (emergências elétricas)
-- ✅ Eletricista com experiência chega Atendimento prioritário
+- ✅ Eletricista com experiência chega Atendimento mediante confirmação
 - ✅ Diagnóstico de curto-circuito com equipamento profissional
 - ✅ Inspeção elétrica completa €150-400
 - ✅ Fichas eletrotécnicas assinadas por técnico profissional incluída

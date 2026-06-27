@@ -20,7 +20,7 @@ export default function Equipa() {
  Nossa Equipa
  </h1>
  <p className="text-xl text-red-100">
- Profissionais com 12 anos de experiência em Trás-os-Montes.
+ Profissionais com vasta experiência em Trás-os-Montes.
  </p>
  </div>
  </section>

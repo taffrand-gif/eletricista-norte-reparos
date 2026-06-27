@@ -22,7 +22,7 @@ function Urgencia() {
  </div>
  <h1 className="text-4xl md:text-6xl font-black mb-6">
  Eletricista Urgente<br />
- Chegamos Atendimento prioritário
+ Chegamos Atendimento mediante confirmação
  </h1>
  <div className="flex flex-wrap justify-center gap-4 text-xl md:text-2xl font-bold mb-8">
  <span className="flex items-center gap-2">⚡ Sem Luz?</span>

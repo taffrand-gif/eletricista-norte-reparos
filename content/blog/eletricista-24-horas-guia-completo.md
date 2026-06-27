@@ -370,7 +370,7 @@ Avaria elétrica no meio da noite? Sem corrente num domingo? Este guia completo 
 ## Testemunhos Clientes
 
 ### Maria S., Bragança
-"Domingo 23h, casa sem corrente, 2 crianças pequenas e frio. Liguei, chegaram Atendimento prioritário, resolveram Atendimento prioritário. Preço justo (165€). Recomendo!"
+"Domingo 23h, casa sem corrente, 2 crianças pequenas e frio. Liguei, chegaram Atendimento mediante confirmação, resolveram Atendimento mediante confirmação. Preço justo (165€). Recomendo!"
 
 ### João P., Mirandela
 "Cheiro a queimado às 3h da manhã. Atenderam logo, chegaram em 1h (vêm de Bragança). Encontraram cabo derretido, substituíram. Salvaram-me de incêndio. Obrigado!"
@@ -413,7 +413,7 @@ Avaria elétrica no meio da noite? Sem corrente num domingo? Este guia completo 
 **Ligue AGORA: 932 321 892**
 
 ✅ Atendimento em <3 toques
-✅ Resposta rápida garantida-90 minutos
+✅ Resposta mediante confirmação garantida-90 minutos
 ✅ Equipamento completo na viatura
 ✅ Preços transparentes
 ✅ Garantia 12 meses

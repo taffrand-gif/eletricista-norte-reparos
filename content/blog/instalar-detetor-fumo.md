@@ -81,7 +81,7 @@ Neste guia completo, vou mostrar-lhe:
 - **Mais rápido** a detetar chamas vivas (papel, madeira)
 
 **Vantagens:**
-- ✅ **Resposta rápida** a incêndios com chamas
+- ✅ **Resposta mediante confirmação** a incêndios com chamas
 - ✅ **Mais barato** (€10-25)
 - ✅ Ideal para salas, corredores
 
@@ -578,7 +578,7 @@ Um detetor de fumo é o **investimento mais importante** que pode fazer para pro
 
 ✅ **Reduz mortes em 50%** (estatística comprovada) 
 ✅ **Custa apenas €15-50** (menos que jantar fora) 
-✅ **Instala Atendimento prioritário** (qualquer pessoa consegue) 
+✅ **Instala Atendimento mediante confirmação** (qualquer pessoa consegue) 
 ✅ **Alerta nos primeiros 30-60 segundos** (tempo para escapar) 
 ✅ **Funciona 24h/dia, 365 dias/ano** 
 

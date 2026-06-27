@@ -456,7 +456,7 @@ R: SIM! Sem diferencial = risco eletrocussão. Fusíveis = proteção inadequada
 
 📞 **Ligue Agora: 932 321 892**
 - ✅ Atendimento 24h/7d (emergências elétricas)
-- ✅ Eletricista com experiência chega Atendimento prioritário
+- ✅ Eletricista com experiência chega Atendimento mediante confirmação
 - ✅ Inspeção completa do quadro €80-150
 - ✅ Substituição quadro completo €600-1.500
 - ✅ Fichas eletrotécnicas assinadas por técnico profissional incluída

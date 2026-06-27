@@ -437,7 +437,7 @@ R: SIM, mas verifique: potência máxima, se tem dimmer (use LED regulável), es
 
 📞 **Ligue Agora: 932 321 892**
 - ✅ Atendimento 24h/7d (urgências elétricas)
-- ✅ Eletricista com experiência chega Atendimento prioritário
+- ✅ Eletricista com experiência chega Atendimento mediante confirmação
 - ✅ Diagnóstico grátis (se contratar serviço)
 - ✅ Garantia 12 meses em todos os serviços
 - ✅ Certificação elétrica incluída

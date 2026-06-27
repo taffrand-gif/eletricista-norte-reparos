@@ -10,7 +10,7 @@ summary: "A nossa base. Resposta em minutos, não em horas. Para qualquer proble
 
 A nossa base. Resposta em minutos, não em horas. Para qualquer problema elétrico em Macedo e arredores.
 
-## Sede operacional — resposta imediata
+## Sede operacional — Resposta mediante confirmação
 
 Macedo de Cavaleiros é onde temos a base. Isto significa que para qualquer emergência elétrica em Macedo — curto-circuito, disjuntor que dispara, tomada em chamas — estamos a 5-15 minutos do local. Não há 'tempo de espera para chegar' porque já estamos cá.
 
@@ -32,4 +32,4 @@ Por ser a nossa sede, os preços em Macedo são os mais baixos: deslocação 20�
 
 **Norte Reparos** — Serviço profissional no distrito de Bragança. Atendimento 24h, 7 dias por semana. Orçamentos por telefone ou WhatsApp: **+351 932 321 892**
 
-Servimos Macedo de Cavaleiros e todas as freguesias envolventes. Ligue já — Resposta rápida garantida.
+Servimos Macedo de Cavaleiros e todas as freguesias envolventes. Ligue já — Resposta mediante confirmação garantida.

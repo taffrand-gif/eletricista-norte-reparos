@@ -220,7 +220,7 @@ Diagnóstico preciso em 15-45 minutos. Orçamento antes de arranjar.`
  },
  seo: {
  metaTitle: 'Eletricista Urgência 24h Bragança | Avarias | Eletricista Profissional',
- metaDescription: 'Urgências elétricas 24h em Bragança. Curto-circuitos, avarias, sem corrente. Resposta prioritária para urgências. Ligue 932 321 892!',
+ metaDescription: 'Urgências elétricas 24h em Bragança. Curto-circuitos, avarias, sem corrente. Resposta mediante confirmação para urgências. Ligue 932 321 892!',
  keywords: ['eletricista urgência bragança', 'urgência 24h', 'avaria elétrica urgente', 'sem corrente']
  }
  },

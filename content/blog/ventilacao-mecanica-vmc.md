@@ -491,7 +491,7 @@ Atendemos **86 cidades** em Trás-os-Montes:
 📞 **+351 932 321 892**
 💬 **[WhatsApp](https://wa.me/351932321892?text=VMC%20ventilação)**
 
-**Resposta rápida garantida. Projeto personalizado sem compromisso.**
+**Resposta mediante confirmação garantida. Projeto personalizado sem compromisso.**
 
 ---
 
