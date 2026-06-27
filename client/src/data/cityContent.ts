@@ -37,7 +37,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  testimonials: [
  {
  name: "Paulo R.",
- text: "Curto-circuito às 2h da manhã. Chegaram Atendimento prioritário e resolveram tudo com segurança. instalação elétrica incluída!",
+ text: "Curto-circuito às 2h da manhã. Resolveram tudo com segurança. instalação elétrica incluída!",
  rating: 5,
  date: "2026-02-16"
  },
@@ -49,7 +49,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  },
  {
  name: "Ricardo F.",
- text: "instalação elétrica para apartamento. Serviço rápido, preço justo e entrega em 48h. Recomendo!",
+ text: "instalação elétrica para apartamento. Serviço de qualidade, preço justo e entrega em 48h. Recomendo!",
  rating: 5,
  date: "2026-03-06"
  }
@@ -61,7 +61,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  },
  stats: {
  interventionsAnnuelles: "480+ intervenções em Bragança",
- tauxSatisfaction: "99% clientes satisfeitos",
+ tauxSatisfaction: "",
  tempsReponse: "Média 37 minutos"
  },
  specificites: [
@@ -138,7 +138,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  },
  stats: {
  interventionsAnnuelles: "290+ intervenções em Macedo",
- tauxSatisfaction: "99% clientes satisfeitos",
+ tauxSatisfaction: "",
  tempsReponse: "Média 34 minutos"
  },
  specificites: [
@@ -171,7 +171,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  },
  stats: {
  interventionsAnnuelles: "400+ intervenções em Chaves",
- tauxSatisfaction: "97% clientes satisfeitos",
+ tauxSatisfaction: "",
  tempsReponse: "Média 47 minutos"
  },
  specificites: [
@@ -236,7 +236,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  },
  stats: {
  interventionsAnnuelles: "190+ intervenções em Vinhais",
- tauxSatisfaction: "99% clientes satisfeitos",
+ tauxSatisfaction: "",
  tempsReponse: "Média 57 minutos"
  },
  specificites: [
@@ -257,7 +257,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  testimonials: [
  {
  name: "Vítor L.",
- text: "Serviço rápido mesmo estando longe. instalação elétrica incluída. Preço justo!",
+ text: "Serviço de qualidade mesmo estando longe. instalação elétrica incluída. Preço justo!",
  rating: 5,
  date: "2026-02-25"
  }
@@ -289,7 +289,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  testimonials: [
  {
  name: "Henrique C.",
- text: "Avaria elétrica na quinta. Vieram com equipamento e resolveram rápido. Recomendo!",
+ text: "Avaria elétrica na quinta. Vieram com equipamento e resolveram. Recomendo!",
  rating: 5,
  date: "2026-03-04"
  }
@@ -301,7 +301,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  },
  stats: {
  interventionsAnnuelles: "210+ intervenções em Mogadouro",
- tauxSatisfaction: "99% clientes satisfeitos",
+ tauxSatisfaction: "",
  tempsReponse: "Média 57 minutos"
  },
  specificites: [
@@ -334,7 +334,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  },
  stats: {
  interventionsAnnuelles: "150+ intervenções em Alfândega",
- tauxSatisfaction: "99% clientes satisfeitos",
+ tauxSatisfaction: "",
  tempsReponse: "Média 52 minutos"
  },
  specificites: [
