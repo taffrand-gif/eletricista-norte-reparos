@@ -35,7 +35,7 @@ export default function Diagnostico() {
  const [problem, setProblem] = useState('');
  const [urgency, setUrgency] = useState('');
  const [city, setCity] = useState('');
- const siteProblems = isPlumber ? problems['norte-reparos'] : problems['norte-reparos'];
+ const siteProblems = problems['norte-reparos'];
  const phone = isPlumber ? '928484451' : '932321892';
  const whatsapp = isPlumber ? '351928484451' : '351932321892';
  const accentColor = isPlumber ? '#0e7490' : '#FF6B35';
