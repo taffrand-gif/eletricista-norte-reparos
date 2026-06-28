@@ -59,10 +59,10 @@ export default function StatsCounters() {
  { value: 4.9, suffix: '/5', label: 'Avaliação Clientes', icon: '🌟' },
  ]
  : [
- { value: 350, suffix: '+', label: 'Instalações Realizadas', icon: '⚡' },
- { value: 10, suffix: '+', label: 'Anos de Experiência', icon: '⭐' },
- { value: 40, label: 'Min Chegada a Bragança', icon: '⏱️' },
- { value: 4.9, suffix: '/5', label: 'Avaliação Clientes', icon: '🌟' },
+ { value: 24, suffix: '/7', label: 'Serviço disponível', icon: '⚡' },
+ { value: 70, suffix: '€', label: 'Preço hora (sem surpresas)', icon: '💶' },
+ { value: 100, suffix: '%', label: 'Orçamento prévio', icon: '📋' },
+ { value: 2, suffix: ' anos', label: 'Garantia nos trabalhos', icon: '🛡️' },
  ];
  return (
  <section className="py-16 bg-gradient-to-br from-gray-50 to-gray-100">

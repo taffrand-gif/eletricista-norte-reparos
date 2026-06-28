@@ -50,9 +50,9 @@ function Hero() {
  </p>
  {/* Badge de urgência */}
  <div className="mb-6 inline-block">
-<div className="bg-red-600 text-white px-6 py-2 rounded-full font-bold text-sm animate-pulse">
- ⚡ TÉCNICO DISPONÍVEL EM {city.toUpperCase()} • SERVIÇO AO DOMICÍLIO
- </div>
+<div className="bg-red-600 text-white px-6 py-2 rounded-full font-bold text-sm">
+⚡ SERVIÇO DE ELÉTRICIDADE EM {city.toUpperCase()} • RESPOSTA POR TELEFONE
+</div>
  </div>
  {/* Botões CTA — mobile: largura total empilhados, desktop: inline */}
  <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -86,7 +86,7 @@ function Hero() {
  <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4 text-white text-sm">
  <div className="flex items-center gap-2">
  <span className="text-yellow-400">⭐⭐⭐⭐⭐</span>
- <span className="font-bold"> (com feedback verificado)</span>
+ <span className="font-bold"> avaliações Google em curso</span>
  </div>
  <div className="hidden sm:block text-white/50">•</div>
  <div className="font-semibold">

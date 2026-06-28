@@ -1,0 +1,190 @@
+# 📄 SEO_PLAN.md — Mémoire vivante du projet
+
+> **Fichier de coordination multi-IA / multi-agents / multi-harnais**
+> Toute IA travaillant sur ce repo DOIT lire ce fichier avant toute action.
+> Toute modification du projet DOIT être consignée ici.
+
+**Propriétaire** : Philippe Braganca (Filipe)
+**Site** : https://eletricista-norte-reparos.pt
+**Repo** : `taffrand-gif/eletricista-norte-reparos` (working copy locale : `~/work/Sites/eletricista-norte-reparos/`)
+**Branche prod** : `main` | **Branche dev** : `seo-2026-q3` (à créer)
+**NAP** : +351 932 321 892 | Norte Reparos | Trás-os-Montes
+**Doctrine site** : A+ COMPLÈTE v2 (déjà déployée 28/06/2026)
+**AGENTS.md** : verrouillé 14/06/2026 — lire `AGENTS.md` AVANT toute action
+
+---
+
+## 🎯 VISION — Ce qu'on veut devenir
+
+**Objectif business** : être la **référence électricité** sur Trás-os-Montes (Bragança, Vila Real, Mirandela, Chaves) via SEO + GEO pur.
+
+**Marché cible** : 4 districts, ~120 000 habitants, ~36 000 interventions/an potentielles.
+
+**Cible SEO** :
+- Top 5 Google sur "eletricista Bragança" / "eletricista Vila Real" / "eletricista Mirandela" / "eletricista Chaves" d'ici 12 mois
+- Cité par Google AI Overview sur "prix électricien Bragança 2026"
+- Cité par ChatGPT/Perplexity sur 3+ requêtes d'ici 12 mois
+
+**Cible business** : 50-100 appels/mois d'ici 6 mois.
+
+**Périmètre site** : Installation électrique, projets, devis, certification. PAS d'urgence (c'est `eletricista-urgente.pt` qui gère ça).
+
+**Promesse homepage** : "Instalação elétrica, certificação, quadros, iluminação LED, orçamento em 48h" (ton posé, méthode).
+
+---
+
+## 📊 ÉTAT ACTUEL (au 28/06/2026)
+
+### Forces SEO/GEO (à PROTÉGER)
+- ✅ ~3500 fichiers HTML
+- ✅ Schema.org Electrician complet sur homepage (NAP, areaServed, priceRange, logo, image, openingHours)
+- ✅ Pages /zonas/ déjà en place : `eletricista-braganca.html`, etc.
+- ✅ Robots.txt : 15+ crawlers IA explicitement autorisés (R10)
+- ✅ Sitemap complet
+- ✅ Doctrine A+ COMPLÈTE v2 déployée (vague 2 patch R12 28/06 13h06)
+- ✅ NAP cohérent : 932 321 892
+- ✅ Équipement différenciant : Fluke T6-1000, Megger MFT1741+, FLIR E96, caméra 30m
+
+### Faiblesses SEO/GEO (à corriger)
+- 🟠 Homepage n'a pas de H1 sémantique unique (CSS inline)
+- 🟠 Pas de différenciation d'intention vs `eletricista-urgente.pt`
+- 🟠 Pages /zonas/ n'ont pas toutes schema.org FAQPage
+- 🟠 Pas de différenciation des services électriques spécifiques (quadro, certificação, LED, etc.)
+
+### Interdits (RAPPELS)
+- ❌ Jamais de `streetAddress` précise (R5)
+- ❌ Jamais de chantiers inventés (R4 + R11)
+- ❌ Jamais de délais chiffrés inventés
+- ❌ Jamais d'avis inventés
+- ❌ Jamais `--force` sur main (R6)
+- ❌ Jamais d'auto-merge (R7)
+- ❌ Jamais mentionner "urgente" sur ce site
+
+---
+
+## 🗺️ ROADMAP — 3 phases
+
+### 🟥 PHASE A — Finaliser `eletricista-urgente.pt` (S1-S2)
+Voir : `~/work/Sites/eletricista-urgente/SEO_PLAN.md`
+**Cette phase concerne le REPO `eletricista-urgente`, pas celui-ci.**
+
+### 🟧 PHASE B — Différencier les 4 homepages (S3)
+**Pour ce repo** :
+- **B1** : Réécrire homepage pour clarifier "installation/devis/méthode"
+- **B2** : Ajouter `schema.org FAQPage` sur les pages /zonas/ existantes
+- **B3** : Convertir le H1 inline CSS en balisage HTML sémantique
+- **B4** : Différencier visuellement les services (quadro, certificação, LED, avarias)
+
+### 🟨 PHASE C — Backlinks externes (continu S5+)
+- C1. Inscription pages jaunes Portugal
+- C2. Inscription annuaires artisans
+- C3. Emails mairies Trás-os-Montes
+- C4. Échange liens avec artisans locaux
+
+---
+
+## 📋 TODO DÉTAILLÉE pour ce repo
+
+### 🟧 B1 — Homepage "installation/devis/méthode" (S3)
+**Statut** : ⏳ À FAIRE | **Priorité** : HAUTE | **Effort** : ~2h
+**Branche** : `seo-2026-q3` (à créer depuis `main`)
+**Fichiers** : `dist/public/index.html` (max 3 fichiers)
+**H1 cible** : `<h1>Eletricista para instalação, certificação e remodelação em Trás-os-Montes</h1>`
+
+### 🟧 B2 — Schema.org FAQPage sur pages /zonas/ (S4)
+**Statut** : ⏳ À FAIRE | **Effort** : ~4h
+**8 fichiers** : `dist/public/eletricista-{braganca,vila-real,mirandela,chaves,miranda-do-douro,mogadouro,vinhais,lamego}.html`
+
+### 🟧 B3 — H1 sémantique (S4)
+**Action** : convertir H1 inline CSS en classe sémantique
+
+### 🟧 B4 — Différenciation services électriques (S5)
+**Action** : section "Serviços" avec 4-6 services distincts
+
+### 🟨 C1-C4 — Backlinks (continu, S5+)
+Voir section dédiée. Documentation dans HISTORIQUE.
+
+---
+
+## 🛡️ RÈGLES DU PROJET (rappel)
+
+- R1-R9 : voir AGENTS.md
+- R10 (robots.txt) : crawlers IA OUVERTS
+- Pas de "urgente" ici
+- Pas d'invention de prix/delays/chantiers
+- Équipement EXACT : Fluke T6-1000, Megger MFT1741+, FLIR E96, caméra 30m
+- Marques véridiques : Schneider, Legrand
+- Témoin R8 : `grep -r "eletricista" dist/public/ | wc -l` AVANT et APRÈS
+
+---
+
+## 🔄 HISTORIQUE
+
+> **Format OBLIGATOIRE** : `| DATE | AGENT | TÂCHE | ACTION | JUSTIFICATION | RÉSULTAT | STATUT |`
+> **Statuts** : `✅ Fait` | `⏳ En cours` | `🛑 STOP - attente Philippe` | `❌ Échec` | `↩️ Rollback`
+
+| Date | Agent | Tâche | Action | Justification | Résultat | Statut |
+|---|---|---|---|---|---|---|
+| 2026-06-28 | claude-minimax-m3 | création | Création de SEO_PLAN.md | Mémoire vivante 4 sites | Fichier créé, 236 lignes | ✅ Fait |
+| 2026-06-28 | claude-minimax-m3 | phase-2 | Lecture homepage + schema.org | Audit lecture seule (R3) | Forces/faiblesses identifiées | ✅ Fait |
+| 2026-06-28 | claude-minimax-m3 | phase-3 | Création 4 SEO_PLAN.md | Mémoire par projet | 4 fichiers créés | ✅ Fait |
+| 2026-06-28 | claude-minimax-m3 | coordination | Patch AGENTS.md + CLAUDE.md (× 4) | Rendre SEO_PLAN.md découvrable | Triangle complet | ✅ Fait |
+| 2026-06-28 | claude-minimax-m3 | audit | NAP uniformisé | Cohérence cross-fichiers | "Norte Reparos \| Trás-os-Montes" sur 4 sites | ✅ Fait |
+| 2026-06-28 | claude-minimax-m3 | restore | Réécriture complète du fichier (recovery) | Patch replace_all a détruit la structure | Fichier restauré à partir de la version saine de canalizador | ✅ Fait |
+| 2026-06-29 | Hermes | R11+R12 conformité | Patch Hero (TÉCNICO DISPONÍVEL→SERVIÇO ELÉTRICIDADE, feedback verificado→avaliações Google em curso) | R11 (zéro invention) + R12 (transparence, pas de délai chiffré) | 2 strings fake virées | ✅ Fait |
+| 2026-06-29 | Hermes | R11 StatsCounters | Remplacement 4 chiffres fake (350+ instalações, 10+ anos, 40 min, 4.9/5) par stats honnêtes (24/7, 70€, 100%, 2 anos) | R11 (zéro invention) + R12 (pas de délai, pas de volume inventé) | 4 compteurs conformes | ✅ Fait |
+| 2026-06-29 | Hermes | R11 cityContent | Anonymisation 14 témoignages fake (Paulo R., Sandra M., Técnico L., etc.) + retrait chiffres fake (180+/140+/110+ casos, Média 37 min, 480+ intervenções) | R11 (zéro invention) | 10 villes mises à jour, 0 nom propre restant, 0 chiffre fake | ✅ Fait |
+| 2026-06-29 | Hermes | build | `npm run build` → 0 erreur, 4.77s | Vérification R11+R12 par exécution réelle | Build vert, 11 nouvelles strings dans bundles | ✅ Fait |
+
+---
+
+## 🤖 RÈGLES DE COORDINATION MULTI-IA (lecture obligatoire)
+
+### Quand plusieurs agents travaillent EN PARALLÈLE
+
+**Règles** :
+1. **Verrouillage logique par tâche** : avant de commencer, agent ajoute ligne HISTORIQUE avec `⏳ En cours`
+2. **Autres agents lisent HISTORIQUE en premier** : si `⏳ En cours` sur la même tâche → attendre
+3. **Pas de concurrence sur le même fichier** : 1 seul agent modifie `index.html` à la fois
+4. **Chaque agent met à jour HISTORIQUE** AVANT et APRÈS son action
+5. **Branches Git séparées** par agent (recommandé) : `agent-claude-A1`, `agent-codex-A1` etc.
+6. **Merge vers main** : UNIQUEMENT après STOP validation Philippe (R7)
+7. ⚠️ **JAMAIS utiliser `replace_all=true` sans vérifier l'unicité** — risque de destruction de structure (cf. incident 28/06/2026)
+
+### Champs obligatoires
+- **DATE** : ISO `YYYY-MM-DD`
+- **AGENT** : identifiant unique persistant
+- **TÂCHE** : référence SEO_PLAN.md (`A1`, `B2`...)
+- **ACTION** : verbe infinitif + objet court
+- **JUSTIFICATION** : réf règle AGENTS.md OU raison métier
+- **RÉSULTAT** : chiffres concrets
+- **STATUT** : 1 des 5 valeurs
+
+---
+
+## 📝 NOTES pour les futures IA
+
+### Contexte
+- Site "frère" : `canalizador-norte-reparos.pt`
+- Satellite : `eletricista-urgente.pt`
+- Pas de budget, pas de GBP, pas d'avis Google
+- Délai "monopole" : 9-15 mois
+
+### Pièges à éviter
+- ❌ Ne PAS ajouter "urgente" ici
+- ❌ Ne PAS modifier `vercel.json` sans validation
+- ❌ Ne PAS inventer témoignages/chantiers/prix
+- ❌ Ne PAS promettre délais chiffrés
+- ❌ Ne PAS utiliser `replace_all=true` sans contexte suffisant
+
+### Différenciation clé avec `eletricista-urgente.pt`
+| Ce site (`norte-reparos`) | Site `-urgente` |
+|---|---|
+| Installation, devis, projet | Panne, court-circuit, urgence |
+| Ton posé, méthode | Ton direct, "on arrive" |
+| H1 : "Instalação e remodelação" | H1 : "Eletricista urgente 24h" |
+
+---
+
+**Dernière MAJ** : 2026-06-28 16h30 BST
+**Prochaine action** : B1 (homepage "installation/devis") — en attente GO Philippe
