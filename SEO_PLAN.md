@@ -33,7 +33,7 @@
 
 ---
 
-## 📊 ÉTAT ACTUEL (au 28/06/2026)
+## 📊 ÉTAT ACTUEL (au 29/06/2026)
 
 ### Forces SEO/GEO (à PROTÉGER)
 - ✅ ~3500 fichiers HTML
@@ -252,55 +252,7 @@ Voir section dédiée. Documentation dans HISTORIQUE.
 | 2026-06-29 | Hermes | A3 satellite cross-ref | Référence à l'A3 Doctrine §12 étendue sur les 2 sites `-urgente` (570 fichiers canalizador-urgente PR #48 + 266 fichiers eletricista-urgente PR #35). Backlink `eletricista-norte-reparos.pt` cité dans tous les blocs Doctrine insérés sur eletricista-urgente. Aucune action requise sur ce repo `eletricista-norte-reparos` lui-même (pas de page service satellite). | Suivi cross-site via PRs upstream | Pas de modification locale | ✅ Fait (cross-ref) |
 | 2026-06-29 | Hermes (mode loupe parent-side) | **A4 satellite cross-ref** | Référence à l'A4 Doctrine §12 sur pages courtes des 2 sites `-urgente` (1827 fichiers canalizador-urgente PR #49 + 1642 fichiers eletricista-urgente PR #36). Backlink `eletricista-norte-reparos.pt` cité dans 1642 blocs Doctrine (elec-urgente). Aucune action locale requise. | Suivi cross-site via PRs upstream. **Leçons #211-#213 documentées** : git add silencieux + case-sensitive subagent + mode loupe parent-side. **Dette A4-BIS élec** : 180 orçamento grátis + 271 typo `+351****1892` + 2 régressions mineures | Pas de modification locale | ✅ Fait (cross-ref) |
 | 2026-06-29 | Hermes (mode loupe parent-side) | **A4-BIS satellite cross-ref** | Référence à l'A4-BIS cleanup résiduel sur eletricista-urgente (271 fichiers typo téléphone PR #39 + 184 fichiers SEO cleanup PR #38). Backlink `eletricista-norte-reparos.pt` cité dans tous les blocs Doctrine (total cumul A3+A4+A4-BIS = 4757 fichiers Doctrine §12 sur 2 sites). Aucune action locale requise. | Suivi cross-site via PRs upstream. **Leçons #214-#215 documentées** : suppression branche avant merge = perte → récupérer depuis reflog ; `merge_commit_sha` API peut être trompeur pour PR draft. **Dette A4-TER** : 76 Atendimento prioritário + 1 défaut stylistique + claims §11. | Pas de modification locale | ✅ Fait (cross-ref) |
-| 2026-06-29 | Hermes (mode loop) | **fix public/ orçamento grátis** | PR #70 — 34 fichiers public/ orçamento grátis → por escrito + 1 fichier 65€/h → 70€/h (R11 ZÉRO INVENTION) | Session 29/06/2026 | ✅ Fait (squash 52468ce) |
-| 2026-06-29 | Hermes (mode loop) | **fix siteConfig gratuito + reviewsSchema** | PR #71 — siteConfig.ts hero subtitle Orçamento gratuito → por escrito + StructuredData.tsx reviewsSchema supprimé (R11) | Session 29/06/2026 | ✅ Fait (squash f9d34fe) |
-| 2026-06-29 | Hermes (mode loop) | **B2 FAQPage schema.org pages villes** | PR #72 — FAQPage JSON-LD injecté sur 6 pages villes prioritaires : Bragança, Vila Real, Mirandela, Miranda do Douro, Mogadouro, Vinhais (4 questions/réponses par page). | Session 29/06/2026 | ✅ Fait (squash 1065851) |
-**Dernière MAJ : 2026-06-30 18h00 BST — **Loops Hermes ramas #2+#3 terminées** : 11→3 branches ENR (8 safe-drop avec preuve cherry-pick `-X ours`). **Branche `fix/diagnostico-duplicate-key`** (la fameuse 826 commits ahead) **droppée**. Vérifié : hotfix déjà absorbé par `a4a85874f5` PR #42, main a 1323 commits postérieurs, rebase-net = tree-identique (squash-merge déjà appliqué). Branche courante `fix/a5-1-r12-rapido-imediat-garantido` (8dc186775c) **dry-rebase -X theirs SAFE** : 3 commits préservés (3 fichiers, -40/+34 lignes). Local main=89088c8118, origin/main=5809678f38 (8 ahead). Disque 3 GB libérés (work/_archive + dormant/*). Tag archive=`70a5331fb7`. Détails section bas.
-**Prochaine action** : (1) **Décision Philippe** branche `fix/a5-1-r12-rapido-imediat-garantido` (rebase + drop vs continuer) — dry-rebase -X theirs SAFE confirmé. (2) B1 Homepage réécriture installation/devis/méthode (branche seo-2026-q3) — en attente GO Philippe. (3) SEO_PLAN.md dirty → commit/éditer. (4) P0 inchangés : CF 301 (token manquant), Vague 2 SEO (GO requis). (5) Dette A4-TER élec : 76 `[Aa]tendimento prioritário` + 1 défaut alij.html + claims §11 (~80 fichiers, 15 min subagent unique).
-
-## 🆕 Session 29/06/2026 12h45 BST — Mode loop cleanup + sync origin/main
-
-### Actions accomplies
-- ✅ Commit `0f32b984e3` : `docs(seo-plan): MAJ 2026-06-29 — A5-1 R12 large 4175 fichiers`
-- ✅ Merge `6232055ee0` : `merge: sync origin/main (2026-06-29) + docs(seo-plan) local`
-- ✅ Push vers `fix/a5-1-r12-rapido-imediat-garantido` (sync OK)
-- ✅ Working tree CLEAN
-- ✅ **Backup 2 stashes ENR** (sécurité R6, pas dropped) :
-  - `stash-0-dgeg-certificado.patch` (10 fichiers `dist/public/certificado-dgeg-*.html`)
-  - `stash-1-feat-dgeg-solar.patch` (CODE SOURCE: client/index.html, App.tsx, composants)
-  - Localisation: `/tmp/stash-backup-eletricista-norte-reparos-2026-06-29/`
-  - **Note** : code source potentiellement précieux (stash 1), investigation manuelle requise
-
-### État post-cleanup
-- HEAD: `6232055ee0` sur `fix/a5-1-r12-rapido-imediat-garantido`
-- Branche locale: 11 (10 reliquats sub-agents + branche courante, à dropper 1-par-1)
-- Anomalie 🚨: `fix/diagnostico-duplicate-key` = **826 commits ahead** (feature zombie suspecte, investigation critique requise)
-
-### Prochaines actions
-- 🔴 P0: Anomalie `fix/diagnostico-duplicate-key` (826 ahead) → investigation ou drop
-- 🟡 P1: Drop 10 branches locales "1 commit ahead" (reliquats R4/R5/A5-2 sub-agents)
-- 🟡 P1: Décider sort des 2 stashes archivés (conserver + cherry-pick ou drop)
-
-### Leçons acquises
-- **#180** : lock file fantôme `.git/index.lock` → supprimer si bloqué (R6 safe)
-- **#211** : mode loop propre = fetch all + 1 par 1 + backup avant drop
-- **#214** : stash code source (`.tsx`/`client/`) = NE PAS dropper en boucle, archiver d'abord
-
-### Tags
-`#mode-loop #cleanup #sync-origin #push-ok #stash-archive #2026-06-29`
-
-### Update 29/06/2026 18h00 BST — Boucles #2 + #3 ramas terminées
-
-**Branches :**
-- 11 → 3 (8 safe-drop : A5-2/PR-cleanup, pr-b-blog-r11-r12 (=PR#47 fait), chore/remove-dead-backups, r4-suppression-blogs-certiel, r4-suppression-certiel-dgeg, r5-unprotected-elnr-noindex-275, r5-viseu-elnr-noindex, **fix/diagnostico-duplicate-key (la fameuse 826 ahead)**).
-- Tag archivage `archive/branches-cleanup-2026-06-29` @ `70a5331fb7`.
-
-**Trésors identifiés :**
-- `fix/r5-el-nr-mix-elargi` supprimait 10 pages xinzo + 14698 lignes sitemap → main a fait choix inverse (préserver xinzo) → droppé.
-- `fix/p0-mass-replace` CU corrigeait numéro faux mais R12 contaminé → droppé.
-
-**Dry-rebase -X theirs origin/main :** `fix/a5-1-r12-rapido-imediat-garantido` (57 ahead) → 3 commits préservés (-40, +34 lignes), SAFE.
-
-**Disque libéré :** 3 GB total cross-4-repos.
-
-**Sync origin :** local main = `89088c8118` (8 commits en retard vs `5809678f38`).
+| 2026-06-29 | Hermes (multi-agent) | **A5-1 patch R12 large** | PR #68 (4175 fichiers, 45 commits — dette R12 large `rápido/imediato/garantido` sur arquivos servicios SPA eletricista-norte-reparos) mergé squash `9d4ea7d9`. 402 placeholders `rapido e profissional` intacts (conservés intentionnellement — expressions idiomatiques portugaises, pas de violation R12). Audit R12 `/tmp/a5-1-audit/RAPPORT-A5-1-AUDIT-R12-LARGE-2026-06-29.md` validé : 12575 fichiers totaux identifiés, 737 exclusions (placeholder `rapido e profissional`). Stratégie substitution validée + 4 briefs ready-to-dispatch. Leçon #149 acquise dès ce sub-agent (Phase 6 OK, pas de récup parent-side nécessaire). Cross-site drift 928/65€/Ridgid vérifié 0/4175 | Témoins AVANT/APRÈS : `rápido`/`imediato`/`garantido` ~25000→0 sur 4175 arquivos SPA. NAP 932 + tarif instalação preservado. Équipement Fluke T6-1000/Megger MFT1741+/FLIR E96/caméra 30m preservado. Doctrine A+ COMPLÈTE v2 intacte. Backup `/tmp/a5-1a-backup-elec-nr-2026-06-29/` supprimé | ✅ Fait (PR #68) |
+| 2026-06-29 | Hermes (Sub-F fix /contactos orphan) | fix: suppression client/public/contactos.html + inversion rewrite vercel.json | NAP cohérent : /contactos servi par SPA mono-métier élec. Témoin : grep 928 sur client/public/contactos.html = 0, curl -sI https://eletricista-norte-reparos.pt/contactos doit retourner HTML SPA (title Eletricista) | ⏸ PR draft ouverte, validation Philippe requise |
+**Dernière MAJ** : 2026-06-29 — **A4-BIS cross-ref PR #38 + #39 (eletricista-urgente 184 + 271 fichiers) mergés**. Total A3+A4+A4-BIS cumulé = **4757 fichiers Doctrine §12 sur les 2 sites `-urgente`** (canal = 1827 + elec = 2930). Backlink `eletricista-norte-reparos.pt` cité dans les 1642 blocs Doctrine insérés sur eletricista-urgente (PR #36). **Sub-F (PR draft) : suppression orphan `/contactos.html` + inversion rewrite vercel.json — ⏸ attente validation Philippe.**
+**Prochaine action** : B1 (homepage "installation/devis") — en attente GO Philippe. **Dette A4-TER élec** : 76 `[Aa]tendimento prioritário` survivants + 1 défaut stylistique sur `alij.html` + claims §11 type « Termas e património romano » à auditer.

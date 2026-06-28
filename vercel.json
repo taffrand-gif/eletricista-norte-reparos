@@ -54,8 +54,8 @@
       "destination": "/perguntas-frequentes.html"
     },
     {
-      "source": "/contactos",
-      "destination": "/contactos.html"
+      "source": "/contactos.html",
+      "destination": "/contactos"
     },
     {
       "source": "/sobre",
