@@ -129,7 +129,7 @@ function PriceTransparency() {
  Ligue Agora — Saiba o Preço por Escrito
  </h3>
  <p className="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
- Sem compromisso e sem compromisso. Preço fixo garantido antes de começarmos.
+ Sem compromisso e sem compromisso. Preço fixo comunicado por telefone antes de começarmos.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a
@@ -155,7 +155,7 @@ function PriceTransparency() {
  </a>
  </div>
  <p className="text-sm text-gray-500 mt-4">
- ✅ Sem compromisso • ✅ Sem compromisso • ✅ Preço fixo garantido
+ ✅ Sem compromisso • ✅ Sem compromisso • ✅ Preço fixo comunicado por telefone
  </p>
  </div>
  {/* Social Proof */}

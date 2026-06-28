@@ -83,7 +83,7 @@ function CalculadorPreco() {
  Calcule o Preço da Sua Intervenção
  </h2>
  <p className="text-lg text-gray-600">
- Estimativa imediata — sem ter de falar com ninguém
+ Estimativa após contacto — sem ter de falar com ninguém
  </p>
  </div>
  {/* Exemplos de Preços */}
