@@ -186,5 +186,6 @@ Voir section dédiée. Documentation dans HISTORIQUE.
 
 ---
 
-**Dernière MAJ** : 2026-06-28 16h30 BST
+| 2026-06-29 | Hermes | A3 satellite cross-ref | Référence à l'A3 Doctrine §12 étendue sur les 2 sites `-urgente` (570 fichiers canalizador-urgente PR #48 + 266 fichiers eletricista-urgente PR #35). Backlink `eletricista-norte-reparos.pt` cité dans tous les blocs Doctrine insérés sur eletricista-urgente. Aucune action requise sur ce repo `eletricista-norte-reparos` lui-même (pas de page service satellite). | Suivi cross-site via PRs upstream | Pas de modification locale | ✅ Fait (cross-ref) |
+**Dernière MAJ** : 2026-06-29 — A3 cross-ref PR #35 (eletricista-urgente 266 fichiers) + PR #48 (canalizador-urgente 570 fichiers) mergés
 **Prochaine action** : B1 (homepage "installation/devis") — en attente GO Philippe
