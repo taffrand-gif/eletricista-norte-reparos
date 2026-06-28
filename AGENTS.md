@@ -73,8 +73,34 @@ Allow: /
 
 User-agent: ClaudeBot
 Allow: /
-
+```
 User-agent: PerplexityBot
 Allow: /
 ```
 Une absence de règle = autorisé par défaut. La règle 10 dit : **en cas de doute, ne rien ajouter de restrictif**.
+
+---
+
+## 11. Plan SEO/GEO — Coordination multi-IA (ajoutée 28/06/2026 par Philippe)
+
+**Pourquoi** : 4 sites Norte Reparos, plusieurs IA/agents/harnais peuvent travailler dessus en parallèle. Il faut une **mémoire vivante partagée**.
+
+➡️ **Plan complet** : `./SEO_PLAN.md` (vision, état actuel, TODO par phase, historique)
+
+**OBLIGATOIRE pour toute IA / agent / harnais travaillant sur ce repo** :
+1. **Lire `AGENTS.md` EN ENTIER** (R1-R10 = règles verrouillées)
+2. **Lire `SEO_PLAN.md` EN ENTIER** (tâches B1-B4 = différenciation homepage + FAQPage + H1 + services élec)
+3. **Consigner toute action** dans la section `🔄 HISTORIQUE` du `SEO_PLAN.md`
+4. **Suivre l'ordre strict** : B1 (homepage) → B2 (FAQPage) → B3 (H1) → B4 (services) → C (backlinks)
+
+**Tâches verrouillées dans SEO_PLAN.md** :
+- **B1** : réécrire homepage "installation/devis/méthode" (H1 unique, DIFFÉRENT de -urgente)
+- **B2** : schema.org FAQPage sur 8 pages /zonas/
+- **B3** : convertir H1 inline CSS en balisage sémantique
+- **B4** : différencier visuellement les services (quadro, certificação, LED, avarias)
+- **C1-C4** : backlinks externes (continu)
+
+**Hiérarchie des fichiers de coordination** :
+1. `AGENTS.md` (ce fichier, règles verrouillées)
+2. `CLAUDE.md` (config Claude Code, pointeur)
+3. `SEO_PLAN.md` (mémoire vivante, à maintenir à jour)
