@@ -15,7 +15,7 @@ export const electricFaqs: FAQItem[] = [
  },
  {
  question: "Tem eletricista urgente Atendimento 24h/7d?",
- answer: "Sim! Serviço de urgência Atendimento 24h/7d, 7 dias por semana, incluindo fins de semana e feriados. Em caso de curto-circuito, falta de luz ou situação de perigo elétrico, ligue +351 932 321 892 para intervenção imediata."
+ answer: "Sim! Serviço de urgência Atendimento 24h/7d, 7 dias por semana, incluindo fins de semana e feriados. Em caso de curto-circuito, falta de luz ou situação de perigo elétrico, ligue +351 932 321 892 para intervenção mediante confirmação por telefone."
  },
  {
  question: "Quanto tempo demora a chegar em caso de urgência?",
@@ -97,7 +97,7 @@ export const plumberFaqs: FAQItem[] = [
  },
  {
  question: "Tem eletricista urgente Atendimento 24h/7d?",
- answer: "Sim! Serviço de urgência Atendimento 24h/7d, 7 dias por semana, incluindo fins de semana e feriados. Em caso de curto-circuito, falha de energia ou situação de perigo elétrico, ligue +351 932 321 892 para intervenção imediata."
+ answer: "Sim! Serviço de urgência Atendimento 24h/7d, 7 dias por semana, incluindo fins de semana e feriados. Em caso de curto-circuito, falha de energia ou situação de perigo elétrico, ligue +351 932 321 892 para intervenção mediante confirmação por telefone."
  },
  {
  question: "Quanto tempo demora a chegar em caso de urgência?",
