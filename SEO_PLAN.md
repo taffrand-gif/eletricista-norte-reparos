@@ -45,6 +45,13 @@
 - ✅ NAP cohérent : 932 321 892
 - ✅ Équipement différenciant : Fluke T6-1000, Megger MFT1741+, FLIR E96, caméra 30m
 
+### 🔴 PRIORITÉ 1 — Services interdits (audit 29/06/2026, session Filipe)
+- 🔴 **~297 pages de services NON fournis** dans `client/public/` (déployées) : chargeur VE (`eletricista-carregador-veiculo-eletrico-<ville>`), painel solar, ar condicionado, bomba de calor. Confirmé par Filipe : Norte Reparos ne fait PAS ces services.
+  - `client/public/` ≈ 192 pages + `client/public/blog/` ≈ 105 pages
+  - **Risque** : fausse offre = mauvais leads + crawl gaspillé + non-conforme
+  - **Plan** (même méthode que eletricista-urgente, déjà nettoyé) : 301 redirect chaque page → `/eletricista-<ville>` (si existe) ou `/`, puis suppression. **Prototype 1 page → validation Filipe → batch.**
+  - Catalogue services core (`servicesData.ts`) = propre (6 vrais services élec), problème uniquement dans `client/public/`
+
 ### Faiblesses SEO/GEO (à corriger)
 - 🟠 Homepage n'a pas de H1 sémantique unique (CSS inline)
 - 🟠 Pas de différenciation d'intention vs `eletricista-urgente.pt`
@@ -136,6 +143,7 @@ Voir section dédiée. Documentation dans HISTORIQUE.
 | 2026-06-29 | Hermes | R11 cityContent | Anonymisation 14 témoignages fake (Paulo R., Sandra M., Técnico L., etc.) + retrait chiffres fake (180+/140+/110+ casos, Média 37 min, 480+ intervenções) | R11 (zéro invention) | 10 villes mises à jour, 0 nom propre restant, 0 chiffre fake | ✅ Fait |
 | 2026-06-29 | Hermes | build | `npm run build` → 0 erreur, 4.77s | Vérification R11+R12 par exécution réelle | Build vert, 11 nouvelles strings dans bundles | ✅ Fait |
 | 2026-06-30 | Hermes (mode loop #5) | lag-doc | MAJ SEO_PLAN.md — dette A4-TER élec close | Dette A4-TER résolue via commits 336f6e9666 (Urgencia.tsx, suppression 'Resposta rápida'/'Imediata'/'Atendimento prioritário'), 8aec232199 (PR #67, batch V4 R12 'tempo médio ... Resposta' cassé, 1806 fichiers), 9d4ea7d9eda (PR #68, R12 'rápido/imediato/garantido' 4175 fichiers). Témoin 30/06 grep `[Aa]tendimento\s+prioritário` dist/public/ = 0. Fichier alij.html introuvable (probablement renommé/supprimé). | Lag doc fermé, état réel aligné sur SEO_PLAN.md | ✅ Fait (mode loop #5) |
+| 2026-06-29 | claude-opus-4.8 (session Filipe) | AUDIT services interdits | Scan `client/public/` : **~297 pages de services NON fournis** (chargeur VE ~192, blog solaire/AC/bomba calor ~105) — confirmé par Filipe que Norte Reparos ne fait PAS ces services. Catalogue `servicesData.ts` propre (6 vrais services). | Vérité contenu (fausse offre = mauvais leads + non-conforme). Voir nouvelle section 🔴 PRIORITÉ 1 dans ÉTAT ACTUEL. | Audit consigné, **fix PAS encore exécuté**. Méthode prévue = 301 + suppression (idem eletricista-urgente), prototype 1 page → validation Filipe → batch | 🛑 STOP - attente GO Philippe |
 
 ---
 
