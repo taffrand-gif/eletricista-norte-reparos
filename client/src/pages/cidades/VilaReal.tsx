@@ -14,6 +14,21 @@ import { useSite } from '@/contexts/SiteContext';
 import { useEffect } from 'react';
 export default function VilaReal() {
  const { config } = useSite();
+ // FAQ VilaReal (déclaré hors useEffect pour éviter TS2448/TS2454)
+ const faqs = [
+ {
+ question: "Qual o custo de deslocação a Vila Real?",
+ answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ },
+ {
+ question: "Fazem urgências Atendimento 24h/7d em Vila Real?",
+ answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ },
+ {
+ question: "Fornecem certificação elétrica em Vila Real?",
+ answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ },
+ ];
  useEffect(() => {
  document.title = "⚡ Eletricista Vila Real — Orçamento Grátis | Garantia Escrita";
  
@@ -88,23 +103,9 @@ export default function VilaReal() {
  }))
  });
  document.head.appendChild(faqSchema);
- const faqs = [
- {
- question: "Qual o custo de deslocação a Vila Real?",
- answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
- },
- {
- question: "Fazem urgências Atendimento 24h/7d em Vila Real?",
- answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
- },
- {
- question: "Fornecem certificação elétrica em Vila Real?",
- answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
- },
- ];
- 
- return () => {
- document.head.removeChild(schemaScript);
+
+  return () => {
+  document.head.removeChild(schemaScript);
  document.head.removeChild(faqSchema);
  };
  }, [config]);
