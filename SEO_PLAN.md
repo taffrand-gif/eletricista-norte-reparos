@@ -258,6 +258,7 @@ Voir section dédiée. Documentation dans HISTORIQUE.
 **Dernière MAJ : 2026-06-30 18h00 BST — **Loops Hermes ramas #2+#3 terminées** : 11→3 branches ENR (8 safe-drop avec preuve cherry-pick `-X ours`). **Branche `fix/diagnostico-duplicate-key`** (la fameuse 826 commits ahead) **droppée**. Vérifié : hotfix déjà absorbé par `a4a85874f5` PR #42, main a 1323 commits postérieurs, rebase-net = tree-identique (squash-merge déjà appliqué). Branche courante `fix/a5-1-r12-rapido-imediat-garantido` (8dc186775c) **dry-rebase -X theirs SAFE** : 3 commits préservés (3 fichiers, -40/+34 lignes). Local main=89088c8118, origin/main=5809678f38 (8 ahead). Disque 3 GB libérés (work/_archive + dormant/*). Tag archive=`70a5331fb7`. Détails section bas.
 **Prochaine action** : (1) **Décision Philippe** branche `fix/a5-1-r12-rapido-imediat-garantido` (rebase + drop vs continuer) — dry-rebase -X theirs SAFE confirmé. (2) B1 Homepage réécriture installation/devis/méthode (branche seo-2026-q3) — en attente GO Philippe. (3) SEO_PLAN.md dirty → commit/éditer. (4) P0 inchangés : CF 301 (token manquant), Vague 2 SEO (GO requis). (5) Dette A4-TER élec : 76 `[Aa]tendimento prioritário` + 1 défaut alij.html + claims §11 (~80 fichiers, 15 min subagent unique).
  (docs(seo-plan): MAJ 2026-06-29 — mode loop cleanup + sync origin OK)
+ (docs(seo-plan): MAJ 2026-06-30 18h00 BST — loops Hermes #2+#3 ramas terminées)
 
 ## 🆕 Session 29/06/2026 12h45 BST — Mode loop cleanup + sync origin/main
 
@@ -310,3 +311,4 @@ Voir section dédiée. Documentation dans HISTORIQUE.
  (fix(contactos): suppression orphan legacy + inversion rewrite SPA)
  (docs(seo-plan): MAJ 2026-06-29 — A5-1 R12 large 4175 fichiers)
  (docs(seo-plan): MAJ 2026-06-29 — mode loop cleanup + sync origin OK)
+ (docs(seo-plan): MAJ 2026-06-30 18h00 BST — loops Hermes #2+#3 ramas terminées)
