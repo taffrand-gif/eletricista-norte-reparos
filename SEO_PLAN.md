@@ -140,6 +140,11 @@ Voir section dédiée. Documentation dans HISTORIQUE.
 ---
 
 - **2026-06-29** — Appended Norte Reparos identity block + 'nous/je' pronoun rule to CLAUDE.md (docs commit, push origin main)
+  - **Bloc identité transversale** ajouté en bas de `CLAUDE.md` (maison-mère PME multi-sites, 4 sites, NAP, zone ~130 km Trás-os-Montes, stack, certif DGEG en attente, langue PT-PT)
+  - **Règle pronom** ajoutée : « nous » toujours, « je » jamais côté rédaction client. Interdits : « je suis », « je fais », « mon entreprise », « sozinho ». OK : « a nossa equipa », « contacte-nos », « garantimos ». Verrouillé 30/06/2026 par Philippe.
+  - **Rejets explicites** documentés : Doctrine A+ (contredit R12 §12), double NAP croisé (NAP unique par repo), tableau skills OpenClaw (config globale ≠ contexte repo, violation § Pas touche), bloc Mon rôle/ton rôle (propre session, pas repo).
+  - **Commits** : `98de924567` (CLAUDE.md) + `a8c861dda8` (SEO_PLAN history). **Push** origin/main OK, `ahead/behind = 0 0`.
+  - **Procédure** : skill `~/.hermes/skills/devops/append-claude-md-multirepo/SKILL.md` (réutilisable). **AGENTS.md non touché** (R3 STOP validation requis pour intégration formelle).
 ## 🤖 RÈGLES DE COORDINATION MULTI-IA (lecture obligatoire)
 
 ### Quand plusieurs agents travaillent EN PARALLÈLE
