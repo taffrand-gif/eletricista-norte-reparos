@@ -43,7 +43,7 @@ export default function TransparencePrix() {
  "Quadro 4-6 circuitos",
  "Disjuntores de qualidade",
  "Instalação completa",
- "certificação elétrica incluída"
+ "garantia 12 meses incluída"
  ]
  },
  {
@@ -54,18 +54,18 @@ export default function TransparencePrix() {
  "Quadro 8-12 circuitos",
  "Disjuntores diferencial + magnetotérmicos",
  "Instalação e ligação",
- "certificação elétrica + garantia 12 meses"
+ "garantia 12 meses"
  ]
  },
  {
- title: "certificação elétrica",
+ title: "Vistoria de Segurança Elétrica",
  price: "150€ - 300€",
  duration: "1-2h",
  includes: [
  "Vistoria técnica completa",
  "Testes de segurança",
- "Emissão certificado oficial",
- "Tratamos toda a papelada"
+ "Relatório técnico detalhado",
+ "Orientação para certificação via LDE Mirandela"
  ]
  },
  {
@@ -114,7 +114,7 @@ export default function TransparencePrix() {
  },
  {
  question: "Porque devo escolher-vos em vez de um eletricista mais barato?",
- answer: "Porque valorizamos a sua segurança e paz de espírito. Um eletricista barato pode: usar materiais de baixa qualidade que falham rapidamente, não ter seguro (se causar danos, o problema é seu), não emitir certificação elétrica (ilegal e perigoso), desaparecer quando há problemas. Nós somos uma empresa estabelecida há 15 anos, com satisfeitos, seguro de responsabilidade civil, e garantia real. O barato sai caro."
+ answer: "Porque valorizamos a sua segurança e paz de espírito. Um eletricista barato pode: usar materiais de baixa qualidade que falham rapidamente, não ter seguro (se causar danos, o problema é seu), não ter qualificação adequada para o trabalho (ilegal e perigoso), desaparecer quando há problemas. Nós somos uma empresa com 12 anos de experiência, com satisfeitos, seguro de responsabilidade civil, e garantia real. O barato sai caro."
  }
  ];
  return (
@@ -288,7 +288,7 @@ export default function TransparencePrix() {
  <Award className="w-12 h-12 text-blue-600 mb-4" />
  <h3 className="text-xl font-bold mb-3 text-gray-900">eletricistas com experiência</h3>
  <p className="text-gray-700 leading-relaxed">
- Todos os nossos técnicos têm certificação elétrica e experiência em Trás-os-Montes.
+ Todos os nossos técnicos têm formação adequada e experiência em Trás-os-Montes.
  Formação contínua obrigatória. Não contratamos "ajudantes" sem qualificação.
  </p>
  </div>
@@ -312,7 +312,7 @@ export default function TransparencePrix() {
  <Users className="w-12 h-12 text-orange-600 mb-4" />
  <h3 className="text-xl font-bold mb-3 text-gray-900">Seguro & Legalidade</h3>
  <p className="text-gray-700 leading-relaxed">
- Seguro de responsabilidade civil de 500.000€. certificação elétrica incluída.
+ Seguro de responsabilidade civil de 500.000€.
  Faturas legais. Muitos "baratos" trabalham ilegalmente.
  </p>
  </div>

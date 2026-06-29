@@ -246,7 +246,7 @@ function Urgencia() {
  <div className="space-y-2">
  <p className="flex items-center gap-2 text-gray-700">
  <span className="text-green-500 font-bold">✓</span>
- Diagnóstico preciso e rápido
+ Diagnóstico preciso e detalhado
  </p>
  <p className="flex items-center gap-2 text-gray-700">
  <span className="text-green-500 font-bold">✓</span>
