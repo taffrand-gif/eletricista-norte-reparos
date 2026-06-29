@@ -134,7 +134,7 @@ function ForfaitsGrid({ className = '' }: ForfaitsGridProps) {
  className={`bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden ${
  forfait.popular ? 'ring-2 ring-offset-2' : 'border-2 border-gray-100'
  }`}
- style={forfait.popular ? { ringColor: accentColor } : {}}
+ style={forfait.popular ? ({ '--tw-ring-color': accentColor } as React.CSSProperties) : {}}
  >
  {/* Popular Badge */}
  {forfait.popular && (

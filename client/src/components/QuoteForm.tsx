@@ -40,7 +40,7 @@ function QuoteForm() {
  description: ""});
  setIsSubmitting(false);
  },
- onError: (error) => {
+ onError: (error: Error) => {
  toast.error("❌ Erro ao enviar pedido", {
  description: error.message || "Por favor, tente novamente."});
  setIsSubmitting(false);

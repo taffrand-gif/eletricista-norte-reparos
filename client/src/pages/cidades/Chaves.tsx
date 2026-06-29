@@ -14,6 +14,21 @@ import { useEffect } from 'react';
 import FAQSection from '@/components/FAQSection';
 export default function Chaves() {
  const { config } = useSite();
+ // FAQ Chaves (déclaré hors useEffect pour éviter TS2448/TS2454)
+ const faqs = [
+ {
+ question: "Qual o custo de deslocação a Chaves?",
+ answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ },
+ {
+ question: "Fazem urgências Atendimento 24h/7d em Chaves?",
+ answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ },
+ {
+ question: "Fornecem certificação elétrica em Chaves?",
+ answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ },
+ ];
  useEffect(() => {
  document.title = "⚡ Eletricista Chaves — Orçamento Grátis | Garantia Escrita";
  
@@ -97,23 +112,9 @@ export default function Chaves() {
  }))
  });
  document.head.appendChild(faqSchema);
- const faqs = [
- {
- question: "Qual o custo de deslocação a Chaves?",
- answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
- },
- {
- question: "Fazem urgências Atendimento 24h/7d em Chaves?",
- answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
- },
- {
- question: "Fornecem certificação elétrica em Chaves?",
- answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
- },
- ];
- 
- return () => {
- document.head.removeChild(schemaScript);
+
+  return () => {
+  document.head.removeChild(schemaScript);
  document.head.removeChild(faqSchema);
  };
  }, [config]);

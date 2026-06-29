@@ -81,8 +81,9 @@ date: "2026"
  service3: 150
  },
  stats: {
- interventionsAnnuelles: "Serviço disponível em Trás-os-Montes",
- tempsReponse: "Combinado por telefone após diagnóstico"
+  interventionsAnnuelles: "Serviço disponível em Trás-os-Montes",
+  tauxSatisfaction: "A confirmar nas primeiras avaliações",
+  tempsReponse: "Combinado por telefone após diagnóstico"
  },
  specificites: [
  "instalação elétrica obrigatória incluída",
@@ -179,8 +180,9 @@ date: "2026"
  service3: 160
  },
  stats: {
- interventionsAnnuelles: "Serviço disponível em Trás-os-Montes",
- tempsReponse: "Combinado por telefone após diagnóstico"
+  interventionsAnnuelles: "Serviço disponível em Trás-os-Montes",
+  tauxSatisfaction: "A confirmar nas primeiras avaliações",
+  tempsReponse: "Combinado por telefone após diagnóstico"
  },
  specificites: [
  "Equipamento para prédios altos",
@@ -244,8 +246,9 @@ date: "2026"
  service3: 160
  },
  stats: {
- interventionsAnnuelles: "Serviço disponível em Trás-os-Montes",
- tempsReponse: "Combinado por telefone após diagnóstico"
+  interventionsAnnuelles: "Serviço disponível em Trás-os-Montes",
+  tauxSatisfaction: "A confirmar nas primeiras avaliações",
+  tempsReponse: "Combinado por telefone após diagnóstico"
  },
  specificites: [
  "Cobertura zona fronteiriça",
@@ -342,8 +345,9 @@ date: "2026"
  service3: 155
  },
  stats: {
- interventionsAnnuelles: "Serviço disponível em Trás-os-Montes",
- tempsReponse: "Combinado por telefone após diagnóstico"
+  interventionsAnnuelles: "Serviço disponível em Trás-os-Montes",
+  tauxSatisfaction: "A confirmar nas primeiras avaliações",
+  tempsReponse: "Combinado por telefone após diagnóstico"
  },
  specificites: [
  "Cobertura completa concelho",

@@ -454,7 +454,7 @@ export default function StructuredData() {
  };
  const breadcrumbSchema = getBreadcrumbSchema();
  // Inserir todos os schemas
- const schemas = [
+ const schemas: any[] = [
  localBusinessSchema,
  serviceSchema,
  websiteSchema,

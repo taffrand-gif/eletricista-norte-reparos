@@ -135,4 +135,3 @@ export function useDynamicTitle() {
  const suggestedTitle = originalTitle.includes(city) ? originalTitle : `${config.name} ${city} 24h | ${originalTitle}`;
  return { suggestedTitle };
 }
-}
