@@ -105,7 +105,7 @@ export const siteConfig: SiteConfig = {
  id: 'eletricista-norte-reparos',
  name: 'Eletricista Profissional',
  title: 'Eletricista em Trás-os-Montes | Norte Reparos — Serviço ao Domicílio 24h',
- description: 'Eletricista profissional ao seu domicílio em Trás-os-Montes. Avaria elétrica, instalação, iluminação, urgências 24h. Orçamento gratuito. Ligue 932 321 892.',
+ description: 'Eletricista profissional ao seu domicílio em Trás-os-Montes. Avaria elétrica, instalação, iluminação, urgências 24h. Orçamento por escrito. Ligue 932 321 892.',
  phone: '932 321 892',
  whatsapp: '351932321892',
  whatsappMessage: 'Olá, preciso de um eletricista em Trás-os-Montes. Podem dar-me um orçamento?',
@@ -121,7 +121,7 @@ export const siteConfig: SiteConfig = {
 
  hero: {
  title: 'Avaria Elétrica? Curto-Circuito?',
- subtitle: 'Serviço ao domicílio em Trás-os-Montes — 24h/7d. Orçamento gratuito antes de iniciar. Diagnóstico com multímetro certificado.',
+ subtitle: 'Serviço ao domicílio em Trás-os-Montes — 24h/7d. Orçamento por escrito antes de iniciar. Diagnóstico com multímetro certificado.',
  backgroundImage: '/images-optimized/hero/hero-electrician-portugal.jpg',
  ogImage: '/images-optimized/hero/hero-electrician-portugal.jpg'
  },
