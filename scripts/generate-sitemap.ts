@@ -60,11 +60,41 @@ function generateSitemap() {
 
  // Static pages
  urls.push(
- { loc: `${DOMAIN}/servicos`, priority: 0.8, changefreq: 'monthly' },
- { loc: `${DOMAIN}/faq`, priority: 0.7, changefreq: 'monthly' },
- { loc: `${DOMAIN}/zonas`, priority: 0.7, changefreq: 'monthly' },
- { loc: `${DOMAIN}/blog`, priority: 0.8, changefreq: 'weekly' }
+  { loc: `${DOMAIN}/servicos`, priority: 0.8, changefreq: 'monthly' },
+  { loc: `${DOMAIN}/faq`, priority: 0.7, changefreq: 'monthly' },
+  { loc: `${DOMAIN}/zonas`, priority: 0.7, changefreq: 'monthly' },
+  { loc: `${DOMAIN}/blog`, priority: 0.8, changefreq: 'weekly' }
  );
+
+ // SEO Vagues 1+2 (loop #6) : pages services/{ville}, faq/{topic}, urgencias/{ville}
+ // Ces pages sont générées par scripts/seo_pages_generator.py (cf. handover Obsidian)
+ // Sans ce bloc, Google ne sait pas qu'elles existent après merge.
+ // PRINCIPE : on lit le canonical DIRECTEMENT depuis chaque fichier .tsx (regex)
+ // plutôt que de re-deviner le slug.
+ const seoDirs = ['services', 'faq', 'urgencias'];
+ const repoRoot = path.join(__dirname, '..');
+ const clientPages = path.join(repoRoot, 'client', 'src', 'pages');
+ const canonicalRe = /canonical\.setAttribute\(['"]href['"]\s*,\s*['"]([^'"]+)['"]/;
+ let seoCount = 0;
+ for (const dir of seoDirs) {
+  const fullDir = path.join(clientPages, dir);
+  if (!fs.existsSync(fullDir)) continue;
+  const stat = fs.statSync(fullDir);
+  if (!stat.isDirectory()) continue;
+  const files = fs.readdirSync(fullDir).filter(f => f.endsWith('.tsx'));
+  for (const file of files) {
+   const fp = path.join(fullDir, file);
+   let content: string;
+   try { content = fs.readFileSync(fp, 'utf-8'); } catch { continue; }
+   const m = content.match(canonicalRe);
+   if (!m) continue;
+   const canonical = m[1];
+   if (!canonical.startsWith(DOMAIN)) continue;
+   urls.push({ loc: canonical, priority: 0.6, changefreq: 'monthly' });
+   seoCount++;
+  }
+ }
+ console.log(`📄 SEO Vagues 1+2: ${seoCount} pages ajoutées au sitemap (canonical direct)`);
 
  // Generate XML
  const xml = `<?xml version="1.0" encoding="UTF-8"?>
