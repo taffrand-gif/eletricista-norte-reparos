@@ -139,6 +139,7 @@ Voir section dédiée. Documentation dans HISTORIQUE.
 
 ---
 
+- **2026-06-29** — Appended Norte Reparos identity block + 'nous/je' pronoun rule to CLAUDE.md (docs commit, push origin main)
 ## 🤖 RÈGLES DE COORDINATION MULTI-IA (lecture obligatoire)
 
 ### Quand plusieurs agents travaillent EN PARALLÈLE
