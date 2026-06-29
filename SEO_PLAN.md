@@ -255,5 +255,52 @@ Voir section dédiée. Documentation dans HISTORIQUE.
 | 2026-06-29 | Hermes (mode loop) | **fix public/ orçamento grátis** | PR #70 — 34 fichiers public/ orçamento grátis → por escrito + 1 fichier 65€/h → 70€/h (R11 ZÉRO INVENTION) | Session 29/06/2026 | ✅ Fait (squash 52468ce) |
 | 2026-06-29 | Hermes (mode loop) | **fix siteConfig gratuito + reviewsSchema** | PR #71 — siteConfig.ts hero subtitle Orçamento gratuito → por escrito + StructuredData.tsx reviewsSchema supprimé (R11) | Session 29/06/2026 | ✅ Fait (squash f9d34fe) |
 | 2026-06-29 | Hermes (mode loop) | **B2 FAQPage schema.org pages villes** | PR #72 — FAQPage JSON-LD injecté sur 6 pages villes prioritaires : Bragança, Vila Real, Mirandela, Miranda do Douro, Mogadouro, Vinhais (4 questions/réponses par page). | Session 29/06/2026 | ✅ Fait (squash 1065851) |
-**Dernière MAJ : 2026-06-29 — **A4-BIS cross-ref PR #38 + #39 (eletricista-urgente 184 + 271 fichiers) mergés**. Total A3+A4+A4-BIS cumulé = **4757 fichiers Doctrine §12 sur les 2 sites `-urgente`** (canal = 1827 + elec = 2930). Backlink `eletricista-norte-reparos.pt` cité dans les 1642 blocs Doctrine insérés sur eletricista-urgente (PR #36).
-**Prochaine action** : B1 Homepage réécriture installation/devis/méthode (branche seo-2026-q3) (homepage "installation/devis") — en attente GO Philippe. **Dette A4-TER élec** : 76 `[Aa]tendimento prioritário` survivants + 1 défaut stylistique sur `alij.html` + claims §11 type « Termas e património romano » à auditer.
+**Dernière MAJ : 2026-06-30 18h00 BST — **Loops Hermes ramas #2+#3 terminées** : 11→3 branches ENR (8 safe-drop avec preuve cherry-pick `-X ours`). **Branche `fix/diagnostico-duplicate-key`** (la fameuse 826 commits ahead) **droppée**. Vérifié : hotfix déjà absorbé par `a4a85874f5` PR #42, main a 1323 commits postérieurs, rebase-net = tree-identique (squash-merge déjà appliqué). Branche courante `fix/a5-1-r12-rapido-imediat-garantido` (8dc186775c) **dry-rebase -X theirs SAFE** : 3 commits préservés (3 fichiers, -40/+34 lignes). Local main=89088c8118, origin/main=5809678f38 (8 ahead). Disque 3 GB libérés (work/_archive + dormant/*). Tag archive=`70a5331fb7`. Détails section bas.
+**Prochaine action** : (1) **Décision Philippe** branche `fix/a5-1-r12-rapido-imediat-garantido` (rebase + drop vs continuer) — dry-rebase -X theirs SAFE confirmé. (2) B1 Homepage réécriture installation/devis/méthode (branche seo-2026-q3) — en attente GO Philippe. (3) SEO_PLAN.md dirty → commit/éditer. (4) P0 inchangés : CF 301 (token manquant), Vague 2 SEO (GO requis). (5) Dette A4-TER élec : 76 `[Aa]tendimento prioritário` + 1 défaut alij.html + claims §11 (~80 fichiers, 15 min subagent unique).
+
+## 🆕 Session 29/06/2026 12h45 BST — Mode loop cleanup + sync origin/main
+
+### Actions accomplies
+- ✅ Commit `0f32b984e3` : `docs(seo-plan): MAJ 2026-06-29 — A5-1 R12 large 4175 fichiers`
+- ✅ Merge `6232055ee0` : `merge: sync origin/main (2026-06-29) + docs(seo-plan) local`
+- ✅ Push vers `fix/a5-1-r12-rapido-imediat-garantido` (sync OK)
+- ✅ Working tree CLEAN
+- ✅ **Backup 2 stashes ENR** (sécurité R6, pas dropped) :
+  - `stash-0-dgeg-certificado.patch` (10 fichiers `dist/public/certificado-dgeg-*.html`)
+  - `stash-1-feat-dgeg-solar.patch` (CODE SOURCE: client/index.html, App.tsx, composants)
+  - Localisation: `/tmp/stash-backup-eletricista-norte-reparos-2026-06-29/`
+  - **Note** : code source potentiellement précieux (stash 1), investigation manuelle requise
+
+### État post-cleanup
+- HEAD: `6232055ee0` sur `fix/a5-1-r12-rapido-imediat-garantido`
+- Branche locale: 11 (10 reliquats sub-agents + branche courante, à dropper 1-par-1)
+- Anomalie 🚨: `fix/diagnostico-duplicate-key` = **826 commits ahead** (feature zombie suspecte, investigation critique requise)
+
+### Prochaines actions
+- 🔴 P0: Anomalie `fix/diagnostico-duplicate-key` (826 ahead) → investigation ou drop
+- 🟡 P1: Drop 10 branches locales "1 commit ahead" (reliquats R4/R5/A5-2 sub-agents)
+- 🟡 P1: Décider sort des 2 stashes archivés (conserver + cherry-pick ou drop)
+
+### Leçons acquises
+- **#180** : lock file fantôme `.git/index.lock` → supprimer si bloqué (R6 safe)
+- **#211** : mode loop propre = fetch all + 1 par 1 + backup avant drop
+- **#214** : stash code source (`.tsx`/`client/`) = NE PAS dropper en boucle, archiver d'abord
+
+### Tags
+`#mode-loop #cleanup #sync-origin #push-ok #stash-archive #2026-06-29`
+
+### Update 29/06/2026 18h00 BST — Boucles #2 + #3 ramas terminées
+
+**Branches :**
+- 11 → 3 (8 safe-drop : A5-2/PR-cleanup, pr-b-blog-r11-r12 (=PR#47 fait), chore/remove-dead-backups, r4-suppression-blogs-certiel, r4-suppression-certiel-dgeg, r5-unprotected-elnr-noindex-275, r5-viseu-elnr-noindex, **fix/diagnostico-duplicate-key (la fameuse 826 ahead)**).
+- Tag archivage `archive/branches-cleanup-2026-06-29` @ `70a5331fb7`.
+
+**Trésors identifiés :**
+- `fix/r5-el-nr-mix-elargi` supprimait 10 pages xinzo + 14698 lignes sitemap → main a fait choix inverse (préserver xinzo) → droppé.
+- `fix/p0-mass-replace` CU corrigeait numéro faux mais R12 contaminé → droppé.
+
+**Dry-rebase -X theirs origin/main :** `fix/a5-1-r12-rapido-imediat-garantido` (57 ahead) → 3 commits préservés (-40, +34 lignes), SAFE.
+
+**Disque libéré :** 3 GB total cross-4-repos.
+
+**Sync origin :** local main = `89088c8118` (8 commits en retard vs `5809678f38`).
