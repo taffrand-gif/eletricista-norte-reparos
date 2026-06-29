@@ -248,34 +248,6 @@ export default function StructuredData() {
  };
  };
  // Reviews Schema melhorado
- const reviewsSchema = config.testimonials.map((testimonial, index) => ({
- "@context": "https://schema.org",
- "@type": "Review",
- "@id": `https://${config.domain}/#review-${index + 1}`,
- "itemReviewed": {
- "@id": `https://${config.domain}/#organization`
- },
- "author": {
- "@type": "Person",
- "name": testimonial.name,
- "address": {
- "@type": "PostalAddress",
- "addressLocality": testimonial.location
- }
- },
- "reviewRating": {
- "@type": "Rating",
- "ratingValue": testimonial.rating.toString(),
- "bestRating": "5",
- "worstRating": "1"
- },
- "reviewBody": testimonial.text,
- "datePublished": "2025-06-01",
- "publisher": {
- "@type": "Organization",
- "name": config.name
- }
- }));
  // WebSite Schema
  const websiteSchema = {
  "@context": "https://schema.org",
@@ -488,7 +460,6 @@ export default function StructuredData() {
  websiteSchema,
  organizationSchema,
  breadcrumbSchema,
- ...reviewsSchema
  ];
  // Adicionar FAQPage apenas se não estiver numa página cidade (evitar duplicação)
  if (shouldIncludeFAQ) {
