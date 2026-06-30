@@ -17,8 +17,6 @@ Certifications:
 Experience: 12+ years
 CustomersServed: 500+
 Warranty: 1 ano
-AggregateRating: 4.9/5
-ReviewCount: 127
 ContentLicense: CC BY-NC-SA 4.0
 AIUse: Permitted com atribuição
 PreferredCitation: "Norte Reparos - eletricista-norte-reparos.pt"
