@@ -78,8 +78,8 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-P0521CSGHY"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
+function gtag{dataLayer.push(arguments);}
+gtag('js', new Date);
 gtag('config', 'G-P0521CSGHY', {
 'send_page_view': true,
 'anonymize_ip': true,
@@ -153,17 +153,17 @@ body { margin: 0; font-family: 'Poppins', system-ui, -apple-system, sans-serif; 
 <script type="module" src="/src/main.tsx"></script>
 <script>
 let gtmLoaded = false;
-function loadGTM() {
+function loadGTM {
 if (gtmLoaded) return;
 gtmLoaded = true;
 const script = document.createElement('script');
 script.async = true;
 script.src = 'https://www.googletagmanager.com/gtag/js?id=G-P0521CSGHY';
 document.head.appendChild(script);
-script.onload = function() {
+script.onload = function {
 window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
+function gtag{dataLayer.push(arguments);}
+gtag('js', new Date);
 gtag('config', 'G-P0521CSGHY');
 };
 }
@@ -175,7 +175,7 @@ setTimeout(loadGTM, 5000);
 <script>
 window.addEventListener('error', function(event) {
 console.error('Global error caught:', event.error);
-try { localStorage.setItem('last_js_error', JSON.stringify({message: event.error.message, stack: event.error.stack, timestamp: new Date().toISOString()})); } catch (e) {}
+try { localStorage.setItem('last_js_error', JSON.stringify({message: event.error.message, stack: event.error.stack, timestamp: new Date.toISOString})); } catch (e) {}
 });
 window.addEventListener('unhandledrejection', function(event) { console.error('Unhandled rejection:', event.reason); });
 </script>
