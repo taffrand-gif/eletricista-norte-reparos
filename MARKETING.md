@@ -14,9 +14,9 @@ Différenciateur = électricien **fiable, conforme, transparent** (pas bricoleur
 
 ## Value Equation (Hormozi) — quel levier pousser
 - **Dream Outcome** : installation sûre, aux normes, finie proprement.
-- **Perceived Likelihood ↑ ← LEVIER GAGNANT** : orçamento détaillé (matériel + normes), Filipe identifiable, équipement réel (Fluke T6-1000, Megger MFT1741+, FLIR E96), garantia, fatura NIF + seguro RC.
+- **Perceived Likelihood ↑ ← LEVIER GAGNANT** : orçamento détaillé (matériel + normes), responsable identifiable (Filipe Bragança) présenté en « a nossa equipa », équipement réel (Fluke T6-1000, Megger MFT1741+, FLIR E96), garantia, fatura NIF + seguro RC.
 - **Time Delay** : peu pertinent (planifié). R145 reste valable — pas de délai inventé.
-- **Effort ↓** : « tratamos do projeto e da conformidade », interlocuteur unique.
+- **Effort ↓** : « tratamos do projeto e da conformidade », continuité (mesmo interlocutor de « a nossa equipa »).
 
 ## Construction de hook (Suby / Kennedy)
 Patron : **[peur non-conformité/dépassement] → [retournement sécurité + transparence]**.
@@ -38,4 +38,4 @@ Tél **932 321 892** + WhatsApp + formulaire orçamento. Demande de devis = acti
 Devis travaux → chantier conforme → satisfaction → (futur) avis RÉEL + contrat manutenção. Récupère le trafic urgence du satellite.
 
 ## Garde-fous (rappel — détail dans AGENTS.md)
-R11 zéro invention · transparence prix/devis · R145 zéro délai chiffré · géo-neutre · DGEG = registo em curso (jamais validé) · services interdits (clima/PAC/solaire/VE) · différencier de `eletricista-urgente.pt` · **STOP : pas de batch sans validation ; jamais merger `main` sans GO Philippe**.
+R11 zéro invention · transparence prix/devis · R145 zéro délai chiffré · géo-neutre · **pronom client « nós / a nossa equipa / os nossos técnicos » ; JAMAIS « je / sozinho / entreprise individuelle / contacto pessoal » (bloc identité verrouillé 30/06)** · DGEG = registo em curso (jamais validé) · services interdits (clima/PAC/solaire/VE) · différencier de `eletricista-urgente.pt` · **STOP : pas de batch sans validation ; jamais merger `main` sans GO Philippe**.
