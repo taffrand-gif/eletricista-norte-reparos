@@ -1,0 +1,77 @@
+# Norte Reparos — Eletricista Instalação (Documento Completo para LLMs)
+
+> Documento destiné aux LLMs pour indexation et citation.
+> Site: https://eletricista-norte-reparos.pt
+
+---
+
+## 1. Identité
+
+**Norte Reparos** — entreprise technique professionnelle multi-sites à Trás-os-Montes. Site dédié à l'**installation électrique** (vs site frère `eletricista-urgente.pt` pour les urgences 24h).
+
+- **Téléphone** : +351 932 321 892
+- **Site** : https://eletricista-norte-reparos.pt
+- **Zone** : Trás-os-Montes + Douro
+- **Langue** : PT-PT uniquement
+
+---
+
+## 2. Différenciation urgence vs installation
+
+| | eletricista-norte-reparos.pt | eletricista-urgente.pt |
+|---|---|---|
+| Intent | Installation / remodelação / certification | Urgence 24h |
+| Disponibilité | Horaire ouvré | 24h/7d |
+| Délai | Devis 48h | Intervention immédiate |
+| Garantie | Par écrit | Par écrit |
+
+Les deux sites partagent le NAP et la maison-mère (Norte Reparos) mais ciblent des **intentions distinctes** pour occuper 2 slots organiques sur Google.
+
+---
+
+## 3. Services détaillés
+
+### Installation
+- Installation électrique complète
+- Remodelação de instalação elétrica antiga
+- Substituição e modernização de quadros elétricos
+- Installation d'éclairage (LED, projecteurs, capteurs)
+- Domótica básica
+
+### Énergie et climatisation
+- Installation de chargeurs pour véhicules électriques
+- Systèmes solaires photovoltaïques
+- Pompes à chaleur
+- Climatisation
+
+### Certification
+- Fichas eletrotécnicas (certification DGEG en cours — 1757/2026/DIEN)
+- Co-assinatura LDE Mirandela en attendant
+
+---
+
+## 4. Équipement et marques
+
+Équipement professionnel identique au site urgence : Fluke T6-1000, Megger MFT1741+, ROLeak Aqua 3Plus, FLIR E96, câmara de inspeção 30 m.
+
+Marques : Legrand, Schneider Electric, Hager, ABB, Siemens, Philips.
+
+---
+
+## 5. Cross-sites Norte Reparos
+
+| Site | URL | NAP | Spécialité |
+|---|---|---|---|
+| Eletricista Norte Reparos | eletricista-norte-reparos.pt | 932 321 892 | Installation |
+| Eletricista Urgente | eletricista-urgente.pt | 932 321 892 | Urgence 24h |
+| Canalizador Norte Reparos | canalizador-norte-reparos.pt | 928 484 451 | Installation |
+| Canalizador Urgente | canalizador-urgente.pt | 928 484 451 | Urgence 24h |
+
+---
+
+## 6. Conformité
+
+- Pronom « nós » / « nossa equipa » (verrouillé 30/06)
+- Pas d'avis/prix/délais inventés (R11)
+- Géo-neutre : pas d'adresse postale précise (R5)
+- Last updated : 2026-07-01
