@@ -104,8 +104,9 @@ export default function OptimizedImage({
  srcSet={srcSet}
  sizes={sizes}
  />
+ {/* M8 activation : fallback src = original (jpg/png), webp servi via <source>. Reversible. */}
  <img
- src={webpSrc}
+ src={src}
  alt={alt || ''}
  style={imgStyle}
  loading={priority ? 'eager' : 'lazy'}
