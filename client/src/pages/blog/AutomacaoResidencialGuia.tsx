@@ -368,10 +368,12 @@ export default function AutomacaoResidencialGuia() {
  <h3 className="font-bold text-orange-500 mb-1">Proteção Contra Sobrecargas</h3>
  <p className="text-sm text-gray-600">Como proteger a sua casa de sobrecargas elétricas.</p>
  </a>
+ {/* REMOVED 2026-07-02 (hors-scope VE/Wallbox):
  <a href="/blog/carregador-veiculo-eletrico-casa" className="bg-white p-4 rounded-lg shadow hover:shadow-lg transition-shadow">
  <h3 className="font-bold text-orange-500 mb-1">Carregador de Veículo Elétrico</h3>
  <p className="text-sm text-gray-600">Guia para instalar wallbox em casa.</p>
  </a>
+ */}
  </div>
  </div>
  </section>
