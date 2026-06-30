@@ -467,3 +467,5 @@ Branche : `feat/seo-vague2-2026-06-30` @ 3 commits (c6ba77562, 305963c53, 6abdb2
 
 - **#255-#266** : voir CNR SEO_PLAN.
 - Spécifique ENR : **#264** problème massif découvert en vérifiant mon propre travail (4104 fichiers à purger), **#266** script batch a 95 fichiers avec duplication texte résiduelle (à fix en cron job).
+#fin loop #6
+| 2026-06-30 | claude-sonnet-4-6 (loop auto) | R4/R11 Hero.tsx trust indicators | Retrait "Orçamento 100% Grátis" → "por escrito", "Garantia 2 Anos" → "1 ano", suppression ⭐⭐⭐⭐⭐ sans avis réels. Ajout "Trás-os-Montes" honnête. | R4 (zéro invention), R11 (pas d'étoiles sans avis), R12 (siteConfig source de vérité) | 1 fichier modifié, +4/-5 lignes. Grep avant: 3 violations, après: 0. | ⏳ En cours — PR à ouvrir |
