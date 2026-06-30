@@ -1,0 +1,47 @@
+# ai.txt — AI Interaction Manifest
+# Norte Reparos — Eletricista (Instalação)
+# Última atualização: 2026-07-01
+
+Name: Eletricista Instalação — Norte Reparos
+Type: HomeService
+SubType: ElectricalInstallation
+ServiceArea: Trás-os-Montes e Douro, raio ~130 km
+Hours: Horário comercial (segunda a sexta)
+PrimaryPhone: +351-932-321-892
+WhatsApp: +351-932-321-892
+Website: https://eletricista-norte-reparos.pt
+Pricing:
+  QuotePolicy: Orçamento por escrito em 48h, sem compromisso
+  Billing: Fatura com NIF no final de cada trabalho
+Services:
+  - Instalação elétrica completa
+  - Remodelação de instalação elétrica antiga
+  - Substituição e modernização de quadros elétricos
+  - Instalação de iluminação (LED, projetores, sensores)
+  - Instalação de tomadas, interruptores, pontos de luz
+  - Sistemas de domótica básica
+  - Instalação de carregadores para veículos elétricos
+  - Sistemas solares fotovoltaicos
+  - Bombas de calor
+  - Ar condicionado
+  - Certificação elétrica (fichas eletrotécnicas)
+Equipment:
+  - Fluke T6-1000 (testador tensão/corrente sem contacto)
+  - Megger MFT1741+ (testador de instalação multifunção)
+  - ROLeak Aqua 3Plus (deteção acústica)
+  - FLIR E96 (câmara térmica 43 200 px)
+  - Câmara de inspeção 30 m
+Brands:
+  - Legrand, Schneider Electric, Hager
+  - ABB, Siemens, Philips
+QuotePolicy: Orçamento detalhado em 48h, sem compromisso
+Billing: Fatura com NIF emitida no final de cada trabalho
+Insurance: Responsabilidade civil profissional coberta
+Certifications: DGEG 1757/2026/DIEN em curso · co-assinatura LDE Mirandela
+Language: PT-PT (Portugal)
+Pronoun: "nós" / "nossa equipa" (nunca "eu")
+RelatedSites:
+  - Eletricista Urgente (24h): eletricista-urgente.pt · +351 932 321 892
+  - Canalizador Instalação: canalizador-norte-reparos.pt · +351 928 484 451
+  - Canalizador Urgente (24h): canalizador-urgente.pt · +351 928 484 451
+LastUpdated: 2026-07-01
