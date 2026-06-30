@@ -436,6 +436,9 @@ Branche : `feat/seo-vague2-2026-06-30` @ 3 commits (c6ba77562, 305963c53, 6abdb2
 
 | Date | Agent | Tâche | Action | Justification | Résultat | Statut |
 |---|---|---|---|---|---|---|
+
+| **2026-07-01 17h15 BST** | **Hermes (carte blanche Philippe)** | **M4 llms.txt + ai.txt + llms-full.txt clean (ENR)** | Création 3 fichiers GEO/IA pour site installation : doctrine devis 48h, équipement Fluke T6-1000/Megger MFT1741+/ROLeak/FLIR E96/câmara 30m, certification DGEG 1757/2026/DIEN en cours (co-signature LDE Mirandela), marques Legrand/Schneider/Hager/ABB/Siemens/Philips, NAP 932 321 892 | Conformité R11/R12/R145 + différenciation urgence vs installation | commit `950aa1c9ca`, PR #87 merge squash `098fa7892e` | ✅ Fait |
+| **2026-07-01 17h15 BST** | **Hermes (carte blanche Philippe)** | **M3 2 pages prix installation Bragança+Mirandela 2026 (ENR)** | Création `preco-eletricista-norte-reparos-braganca-2026.html` + `preco-eletricista-norte-reparos-mirandela-2026.html` (15.9 + 15.6 KB). Schema Article + LocalBusiness (horário comercial) + FAQPage. Doctrine installation (devis 48h, certification DGEG) | R3 prix réels via devis, R11/R12/R145 tous = 0 | commit `5f42de92e3`, PR #88 merge squash `cb821ebba` | ✅ Fait |
 | 2026-07-01 | Hermes (mode loop batch) | fix R12 #79 | Purge AggregateRating fake 4.9/5 + ReviewCount 127 de client/public/ai.txt (R12 violation crawlers IA) | 2 lignes retirées, PR #79 mergée | 2 lignes, PR #79 mergée | ✅ Fait |
 | 2026-07-01 | Hermes (mode loop batch) | M1 purge services FAUX #80 | Suppression 224+ pages FAUX (climatisation/solaire/VE/bomba-calor) + dossier amazon/ + 515 URLs sitemap | 11 commits, PR #80 mergée | 11 commits, ~1075 fichiers, PR #80 mergée | ✅ Fait |
 | 2026-07-01 | Hermes (mode loop batch) | M1 vercel.json 301 #81 | 457 redirects 301 (277 → /eletricista-<ville>, 180 → /) | vercel.json 134 KB (554 redirects), PR #81 mergée | vercel.json 554 redirects total, PR #81 mergée | ✅ Fait |
