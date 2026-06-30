@@ -454,6 +454,7 @@ Branche : `feat/seo-vague2-2026-06-30` @ 3 commits (c6ba77562, 305963c53, 6abdb2
 | 2026-07-01 | Hermes | cleanup .bak | Archive + suppression 1765 fichiers .bak | 1765 fichiers archivés | 1765 fichiers, 29 MB | ✅ Fait |
 | 2026-07-01 | Hermes (sub-agent) | loop PR #78 | PR [loop] Hero.tsx trust - CONFLICTING, R3 STOP | Bloqué | Bloqué - R3 STOP | 🛑 STOP - attente Filipe |
 | 2026-07-01 | Hermes | faux négatif PR #80 | client/public/carregadores-viaturas-eletricas.html = page FAUX ENTIÈRE non purgée (H1 Instalação de Carregadores para Carros Elétricos) | Mission dédiée à venir | Non purgé par PR #80 | 🛑 STOP - attente Filipe |
+| 2026-07-02 | Hermes (sub-agent P1 câblage) | merge PR câblage LECONS.md cross-sites | CLAUDE.md +4 lignes (bloc mémoire/leçons), merge squash avec delete-branch. PRs CNR #98 + ENR #86 mergées. CU #71 + EU #69 gardées en STOP (contenu substantiel non audité). | Leçon #274 reprise post-crash | ✅ Fait |
 
 ### État actuel post-session
 
