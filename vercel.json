@@ -126,10 +126,6 @@
       "destination": "/reparacao-avarias-:category-:city.html"
     },
     {
-      "source": "/paineis-solares-:city",
-      "destination": "/paineis-solares-:city.html"
-    },
-    {
       "source": "/avaria-eletrica-:city",
       "destination": "/avaria-eletrica-:city.html"
     },
@@ -190,16 +186,8 @@
       "destination": "/ar-condicionado-:city.html"
     },
     {
-      "source": "/paineis-fotovoltaicos-:city",
-      "destination": "/paineis-fotovoltaicos-:city.html"
-    },
-    {
       "source": "/alarme-:city",
       "destination": "/alarme-:city.html"
-    },
-    {
-      "source": "/wallbox-:city",
-      "destination": "/wallbox-:city.html"
     },
     {
       "source": "/quadros-eletricos-:city",
@@ -216,10 +204,6 @@
     {
       "source": "/aquecimento-eletrico-:city",
       "destination": "/aquecimento-eletrico-:city.html"
-    },
-    {
-      "source": "/painel-solar-:city",
-      "destination": "/painel-solar-:city.html"
     },
     {
       "source": "/protecao-raios-:city",
