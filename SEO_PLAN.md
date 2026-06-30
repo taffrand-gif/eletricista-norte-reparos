@@ -93,7 +93,7 @@ Voir : `~/work/Sites/eletricista-urgente/SEO_PLAN.md`
 ## 📋 TODO DÉTAILLÉE pour ce repo
 
 ### 🟧 B1 — Homepage "installation/devis/méthode" (S3)
-**Statut** : ⏳ À FAIRE | **Priorité** : HAUTE | **Effort** : ~2h
+**Statut** : ✅ FAIT (PR loop/2026-06-29-eletricista-b1-homepage-h1, 29/06/2026) | **Priorité** : HAUTE | **Effort** : ~2h
 **Branche** : `seo-2026-q3` (à créer depuis `main`)
 **Fichiers** : `dist/public/index.html` (max 3 fichiers)
 **H1 cible** : `<h1>Eletricista para instalação, certificação e remodelação em Trás-os-Montes</h1>`
@@ -139,6 +139,7 @@ Voir section dédiée. Documentation dans HISTORIQUE.
 | 2026-06-28 | claude-minimax-m3 | audit | NAP uniformisé | Cohérence cross-fichiers | "Norte Reparos \| Trás-os-Montes" sur 4 sites | ✅ Fait |
 | 2026-06-28 | claude-minimax-m3 | restore | Réécriture complète du fichier (recovery) | Patch replace_all a détruit la structure | Fichier restauré à partir de la version saine de canalizador | ✅ Fait |
 | 2026-06-29 | Hermes | R11+R12 conformité | Patch Hero (TÉCNICO DISPONÍVEL→SERVIÇO ELÉTRICIDADE, feedback verificado→avaliações Google em curso) | R11 (zéro invention) + R12 (transparence, pas de délai chiffré) | 2 strings fake virées | ✅ Fait |
+| 2026-06-29 | cowork-loop | B1 homepage H1 + R12 cleanup | 2 fichiers, 2 commits : (1) `shared/siteConfig.ts` — hero.title "Avaria Elétrica?" → "Eletricista para instalação e certificação — Trás-os-Montes", site title/description retrait 24h/7d (R12). (2) `client/src/components/Hero.tsx` — personalizedSubtitle "24h/7d" → "Instalação e certificação... Orçamento por escrito, garantia 1 ano." Grep avant: 24h/7d = 2 occurrences. Grep après: 0. Branch: loop/2026-06-29-eletricista-b1-homepage-h1 | R12, R4, R8 | ⏳ PR ouverte — attente merge Philippe |
 | 2026-06-29 | Hermes | R11 StatsCounters | Remplacement 4 chiffres fake (350+ instalações, 10+ anos, 40 min, 4.9/5) par stats honnêtes (24/7, 70€, 100%, 2 anos) | R11 (zéro invention) + R12 (pas de délai, pas de volume inventé) | 4 compteurs conformes | ✅ Fait |
 | 2026-06-29 | Hermes | R11 cityContent | Anonymisation 14 témoignages fake (Paulo R., Sandra M., Técnico L., etc.) + retrait chiffres fake (180+/140+/110+ casos, Média 37 min, 480+ intervenções) | R11 (zéro invention) | 10 villes mises à jour, 0 nom propre restant, 0 chiffre fake | ✅ Fait |
 | 2026-06-29 | Hermes | build | `npm run build` → 0 erreur, 4.77s | Vérification R11+R12 par exécution réelle | Build vert, 11 nouvelles strings dans bundles | ✅ Fait |
