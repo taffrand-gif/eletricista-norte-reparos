@@ -2820,7 +2820,7 @@
       "statusCode": 301
     },
     {
-      "source": "/concelhos/bragan\u00e7a.html",
+      "source": "/concelhos/bragança.html",
       "destination": "/concelhos/braganca.html",
       "statusCode": 301
     },
@@ -3045,17 +3045,17 @@
       "statusCode": 301
     },
     {
-      "source": "/eletricista-m\u00f3s-de-celas",
+      "source": "/eletricista-mós-de-celas",
       "destination": "/eletricista-mos-de-celas",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-m\u00f3s",
+      "source": "/eletricista-mós",
       "destination": "/eletricista-mos",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-t\u00f3",
+      "source": "/eletricista-tó",
       "destination": "/eletricista-to",
       "statusCode": 301
     },
@@ -5537,6 +5537,11 @@
     {
       "source": "/wallbox-vinhais.html",
       "destination": "/eletricista-vinhais",
+      "statusCode": 301
+    },
+    {
+      "source": "/carregadores-viaturas-eletricas",
+      "destination": "/",
       "statusCode": 301
     }
   ]
