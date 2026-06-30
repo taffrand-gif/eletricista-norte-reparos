@@ -38,7 +38,7 @@ const InnovativeHero: React.FC = () => {
  id="home"
  className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-cover bg-center"
  style={{
- backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('${config.hero.backgroundImage}')`}}
+ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), image-set(url('${config.hero.backgroundImage.replace(/\.jpg$/i, '.webp')}') type("image/webp"), url('${config.hero.backgroundImage}') type("image/jpeg"))`}}
  >
  {/* LCP Image preload hint */}
  <link rel="preload" as="image" href={config.hero.backgroundImage} fetchPriority="high" />
