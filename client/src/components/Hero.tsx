@@ -84,17 +84,16 @@ function Hero() {
  </div>
  {/* Indicadores de confiança abaixo do CTA */}
  <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4 text-white text-sm">
- <div className="flex items-center gap-2">
- <span className="text-yellow-400">⭐⭐⭐⭐⭐</span>
- <span className="font-bold"> avaliações Google em curso</span>
+ <div className="font-semibold">
+ ✓ Orçamento por escrito
  </div>
  <div className="hidden sm:block text-white/50">•</div>
  <div className="font-semibold">
- ✓ Orçamento 100% Grátis
+ ✓ Garantia 1 ano
  </div>
  <div className="hidden sm:block text-white/50">•</div>
  <div className="font-semibold">
- ✓ Garantia 2 Anos
+ ✓ Trás-os-Montes
  </div>
  </div>
  </div>
