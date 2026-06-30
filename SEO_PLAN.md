@@ -464,3 +464,35 @@ Branche : `feat/seo-vague2-2026-06-30` @ 3 commits (c6ba77562, 305963c53, 6abdb2
 
 - **#255-#266** : voir CNR SEO_PLAN.
 - Spécifique ENR : **#264** problème massif découvert en vérifiant mon propre travail (4104 fichiers à purger), **#266** script batch a 95 fichiers avec duplication texte résiduelle (à fix en cron job).
+
+---
+
+## 🔍 Session 2026-06-30 — Audit workspace (Filipe + Claude)
+
+> Audit des 4 repos du workspace `norte-os-sites`. Correction d'un état déclaré inexact. Mission Hermes ci-dessous.
+
+### Constat (vérifié par grep sur la source déployée `client/public/`)
+
+⚠️ **La purge « services FAUX 100% FAIT » (PR #80/#82/#83) est INCOMPLÈTE sur ENR.** Résidus hors `/blog/` éducatif :
+
+| Terme FAUX | Fichiers client/public | Nature |
+|---|---|---|
+| `ar condicionado` | 167 | mentions body + row table-prix « Instalação ar condicionado comercial » |
+| `carregador de carro elétrico, etc` | 77 | liste de services en body (pages ville/quadro) |
+| `instalação de painéis solares` (tagline) | 5 | claim de service |
+| `painel solar (kit 3kW)` | rows | table-prix |
+| `carregadores-viaturas-eletricas.html` | 1 page entière | **page dédiée FAUX toujours présente** (= faux négatif PR #80) |
+
+→ ~338 fichiers client/public matchent (dont une grande part = blog éducatif **à GARDER**).
+
+### Mission Hermes — M7 Purge FAUX résiduel (P0 trust)
+
+1. **Classer avant de supprimer.** Pour chaque hit : 🔴 CLAIM de service (tagline, row table-prix `Instalação <faux>`, liste `serviços`, page dédiée) → **purger** ; 🟢 blog éducatif (`/blog/como-funciona-painel-solar`, guides, `quanto-custa-carregar-carro-casa`) → **garder**.
+2. Cibles greppables : `grep -rl 'carregador de carro elétrico, etc\|instalação de painéis solares\|Instalação ar condicionado\|Instalação painel solar' client/public`.
+3. Supprimer `client/public/carregadores-viaturas-eletricas.html` + 301 redirect → `/` (méthode validée vérités-contenu).
+4. Témoin de contrôle (R8) : compte avant/après réconcilié, re-grep = 0 claim, blog intact.
+5. ⚠️ R7 (pas de merge sans GO Filipe) + périmètre `GUARD-4-SITES.json`.
+
+### État réel à retenir
+- Vercel lié (`prj_gGWqz1Co…`), repo propre/sync, branche `main`, ~2 Go (bloat images/_archive à investiguer P3).
+- La purge précédente a traité les pages dédiées massives mais a laissé **mentions body + rows table-prix + 1 page dédiée**.
