@@ -17,7 +17,7 @@
 ## 🏆 STRATÉGIE MONOPOLE SERP/GEO → voir `~/work/Sites/MONOPOLE_SEO_2026Q3.md`
 
 > Plan maître cross-sites (établi 30/06/2026). Objectif: occuper **plusieurs surfaces d'un seul résultat** par requête (Local Pack + 2 domaines organic + AI Overview + PAA + image pack + étoiles).
-> Priorités: **P0** purge services FAUX (224 pages dédiées ici, 53 dans sitemap) + différenciation des 2 domaines/métier → **P1** GBP/Local Pack → **P2** GEO (pages prix datées + entity + llms.txt) → **P3** qualité pSEO hub-and-spoke → **P4** SERP features.
+> Priorités: **P0** purge services FAUX (224 pages dédiées ici, 53 dans sitemap) + différenciation des 2 domaines/métier → **P1** double organic (GBP exclu) → **P2** GEO (pages prix datées + entity + llms.txt) → **P3** qualité pSEO hub-and-spoke → **P4** SERP features.
 > ⚠️ Risques: doorway/PBN (intent urgence≠installation obligatoire), scaled-content (signal local unique/page), trust (services FAUX cassent E-E-A-T). Véracité R11/R12 prime.
 
 ---
