@@ -380,4 +380,39 @@ Branche : `feat/seo-vague2-2026-06-30` @ 3 commits (c6ba77562, 305963c53, 6abdb2
 - Merger branche Vague 2 SEO CNR (1 commit avec 3 commits intégrés)
 - Décision critique : merger ou non le patch App.tsx (`~/Documents/ObsidianVault/NORTE-OS/routes_patch_proposed_2026-06-27.txt`) qui rendrait visibles les 30 pages SEO via nav. Sans ce patch, les pages sont accessibles par URL mais invisibles depuis le menu/nav.
 
-#fin loop #6
+## 🆕 Session 01/07/2026 18h00 BST — PR #77 [loop] B1 mergée + fix CI pnpm
+
+### Actions accomplies
+
+- ✅ **PR #77 mergée** (squash `f79f0d2b66`) : `[loop] eletricista — B1 Homepage H1 + R12 cleanup`
+  - **Fichiers** : `shared/siteConfig.ts` (title/description/hero.title/hero.subtitle), `client/src/components/Hero.tsx` (personalizedSubtitle), `SEO_PLAN.md` (B1 statut ✅ + ligne HISTORIQUE)
+  - **Diff** : 4 fichiers, +10/-12
+  - **Verdict R-multi** : R4 (zéro invention — "Orçamento por escrito em 48h, garantia 1 ano" conforme), R11 (pas de délais/chiffres inventés), R12 (retrait "24h/7d. Sem surpresas" → installation-focused), NAP 932 321 892 maintenu, titre H1 différencié vs -urgente
+  - **Témoins R8** : grep AVANT `24h/7d`=2, APRÈS=0 ✅
+  - **Branche loop supprimée** : locale + remote (gh auto-cleanup)
+
+- ✅ **Fix CI pnpm → npm** (2 commits atomiques sur la branche PR #77 avant merge) :
+  1. `89a3f21d15` : `fix(ci): switch workflow from pnpm to npm` — retiré `pnpm/action-setup@v4`, `cache: 'pnpm' → 'npm'`, `pnpm install → npm ci`, `pnpm build → npm run build`. Repo utilise npm (`package-lock.json` v3, pas de `pnpm-lock.yaml`).
+  2. `7aa82ac634` : `fix(ci): npm ci --legacy-peer-deps` — bypass conflit peer deps Vite 7 vs `@builder.io/vite-plugin-jsx-loc@0.1.1` (supporte que Vite ^4^5). Fix standard Vite 7+.
+  - **Build local PASS** : vite build 4.89s, esbuild server OK, exit 0
+  - **CI GitHub PASS** : run 28412490127 success 49s (build 45s + Vercel deploy 0s)
+
+### État final post-merge
+
+- **main** : `f79f0d2b66` [loop] eletricista — B1 Homepage H1 + R12 cleanup (#77)
+- **4/4 SEO_PLAN.md** présents, branches main synchros origin/main
+- **PRs ouvertes restantes** : 0 sur ENR (3 sur autres sites : #90 CNR, #67 CU, #64 EU, toutes Vercel rate-limited)
+
+### Leçons acquises session 01/07
+
+- **#249** : workflow CI peut être cassé pnpm/npm mismatch sans que ça soit visible localement (pnpm absent + packageManager manquant = erreur cryptique "No pnpm version is specified"). Toujours vérifier `packageManager` field + lockfile alignement.
+- **#250** : `npm ci` strict refuse peer deps conflicts → ajouter `--legacy-peer-deps` est le fix standard Vite 7+ (à documenter dans AGENTS.md ou `cowork-loop-master.md` pour les 4 repos).
+- **#251** : Vercel Free plan a un rate-limit de déploiements/jour. Si 4 PRs `[loop]` sont poussées le même jour, 3 seront rate-limited. À espacer les pushes (1 PR / heure minimum) ou échelonner sur 2 jours.
+
+### Prochaines actions (décisions Philippe)
+
+- Re-tenter merge #90 CNR + #67 CU + #64 EU après 24h (rate-limit Vercel reset) ou après up plan Vercel
+- Patch `cowork-loop-master.md` pour ajouter `--legacy-peer-deps` à la procédure (leçon #250) — 1 commit sur `~/work/Sites/cowork-loop-master.md` (hors-repo)
+- Auditer les autres repos (CU + EU n'ont pas de `ci.yml`, CNR a un ci.yml correct → no-op)
+
+#fin loop #7
