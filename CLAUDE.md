@@ -35,6 +35,7 @@
 **OBLIGATOIRE** : toute IA / agent / harnais travaillant sur ce repo DOIT :
 1. **Lire `AGENTS.md` EN ENTIER** (règles verrouillées)
 2. **Lire `SEO_PLAN.md` EN ENTIER** (vision + tâches en cours)
+2-bis. **Lire `MARKETING.md`** (couche offensive : persona, value equation, construction de hooks — complète AGENTS.md, ne le remplace pas)
 3. **Consigner toute action** dans la section `🔄 HISTORIQUE` du `SEO_PLAN.md`
 4. **Suivre l'ordre des tâches** (A1 → A2 → ... → B1 → ... → C1 → ...)
 
