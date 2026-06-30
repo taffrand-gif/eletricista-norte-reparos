@@ -28,6 +28,10 @@
 ## Plan stratégique SEO/GEO
 ➡️ `./SEO_PLAN.md` (vision, état actuel, TODO par phase, historique)
 
+## 🧠 Mémoire / Leçons (durable, cross-sites)
+➡️ `~/work/Sites/LECONS.md` — registre **append-only** des leçons méthode (survit aux `context.md` écrasés). **Lire AVANT d'agir**, **ajouter** après chaque erreur corrigée ou découverte, **ne jamais écraser**.
+➡️ `~/work/Sites/HERMES_MISSIONS_2026Q3.md` (missions cross-sites) · `~/work/Sites/MONOPOLE_SEO_2026Q3.md` (stratégie).
+
 **OBLIGATOIRE** : toute IA / agent / harnais travaillant sur ce repo DOIT :
 1. **Lire `AGENTS.md` EN ENTIER** (règles verrouillées)
 2. **Lire `SEO_PLAN.md` EN ENTIER** (vision + tâches en cours)
