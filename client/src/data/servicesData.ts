@@ -41,7 +41,7 @@ export const SERVICES: Service[] = [
  {
  title: 'Tipos de Instalações',
  content: `**Residenciais**: Casas novas, remodelações completas, ampliações, substituição de instalações antigas (sem terra → com terra), quadros elétricos monofásicos e trifásicos, iluminação interior e exterior, tomadas e interruptores, sistemas de aquecimento elétrico, portões automáticos, videoporteiros.
-**Comerciais**: Lojas, escritórios, restaurantes, hotéis, iluminação comercial (LED, spots, calhas), sistemas de climatização, redes informáticas, sistemas de segurança (alarmes, CCTV), sinalização de emergência.
+|**Comerciais**: Lojas, escritórios, restaurantes, hotéis, iluminação comercial (LED, spots, calhas), redes informáticas, sistemas de segurança (alarmes, CCTV), sinalização de emergência.
 **Industriais**: Instalações trifásicas de alta potência, quadros elétricos industriais, motores e automatismos, iluminação industrial, sistemas de força, ligações de máquinas industriais.`
  },
  {
