@@ -301,23 +301,6 @@ keywords: ["reduzir consumo eletricidade", "poupar luz", "conta luz alta", "efic
 
 **Ação**: Verificar consumo, reduzir se possível
 
-### 17. Carregador VE Noite (Poupança 50%)
-
-**Situação**:
-- Carrega carro dia
-- Tarifa ponta €0.30/kWh
-
-**Solução**:
-- Carregar vazio (22h-8h)
-- Tarifa €0.12/kWh
-- Wallbox programável
-
-**Investimento**: €0 (programação)
-**Poupança**: €200-500/ano
-**ROI**: Imediato
-
-**Ação**: Programar carregamento noite
-
 ### 18. Computador Eficiente (Poupança 60%)
 
 **Situação**:
