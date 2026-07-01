@@ -13,7 +13,7 @@ priority: "HIGH DEMAND"
 
 **Quer instalar um exaustor para melhorar a ventilação?** Seja na cozinha (eliminar fumos e odores) ou casa de banho (reduzir humidade e prevenir bolor), um exaustor é essencial para manter o ar saudável e proteger a casa. A instalação envolve **ligação elétrica** e **sistema de extração**, mas é perfeitamente viável com planeamento adequado.
 
-Neste guia completo, vamos explicar **como escolher o exaustor adequado**, ligação elétrica passo a passo, instalação do tubo de extração, custos reais, e quando chamar um eletricista com experiência. Com mais de 15 anos de experiência em instalações elétricas na região de Bragança, já instalámos centenas de exaustores.
+Neste guia completo, vamos explicar **como escolher o exaustor adequado**, ligação elétrica passo a passo, instalação do tubo de extração, custos habituais, e quando vale a pena chamar um eletricista qualificado.
 
 **📞 Quer instalar exaustor? Ligue já: [932 321 892](tel:+351932321892)** 
 **💬 WhatsApp: [Clique aqui](https://wa.me/351932321892?text=Olá%2C%20quero%20instalar%20um%20exaustor.%20Podem%20ajudar%3F)**
@@ -476,7 +476,7 @@ Instalar um exaustor é **investimento essencial** para manter ar saudável (eli
 **💬 WhatsApp: [Clique aqui](https://wa.me/351932321892?text=Olá%2C%20quero%20instalar%20um%20exaustor.%20Podem%20ajudar%3F)**
 
 **✅ Garantias :**
-- Eletricistas com experiência com 15+ anos de experiência
+|- Eletricistas qualificados conforme normas em vigor
 - Instalação conforme normas elétricas
 - Teste completo de extração
 - Garantia de 1 ano no trabalho
