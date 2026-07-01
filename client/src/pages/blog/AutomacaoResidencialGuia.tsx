@@ -13,7 +13,7 @@ export default function AutomacaoResidencialGuia() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Guia completo de automação residencial em Trás-os-Montes. Descubra como transformar a sua casa numa casa inteligente: iluminação, segurança, climatização e muito mais.');
+ metaDescription.setAttribute('content', 'Guia completo de automação residencial em Trás-os-Montes. Descubra como transformar a sua casa numa casa inteligente: iluminação, segurança e muito mais.');
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');
@@ -56,7 +56,7 @@ export default function AutomacaoResidencialGuia() {
  "name": "O que é automação residencial?",
  "acceptedAnswer": {
  "@type": "Answer",
- "text": "Automação residencial é a integração de tecnologia na sua casa para controlar automaticamente sistemas como iluminação, climatização, segurança, entretenimento e eletrodomésticos. Através de uma central de controlo (smartphone, tablet ou assistente de voz), pode gerir toda a casa de forma remota ou programada."
+ "text": "Automação residencial é a integração de tecnologia na sua casa para controlar automaticamente sistemas como iluminação, segurança, entretenimento e eletrodomésticos. Através de uma central de controlo (smartphone, tablet ou assistente de voz), pode gerir toda a casa de forma remota ou programada."
  }
  },
  {
@@ -64,7 +64,7 @@ export default function AutomacaoResidencialGuia() {
  "name": "Quanto custa automatizar uma casa?",
  "acceptedAnswer": {
  "@type": "Answer",
- "text": "Uma automação básica de iluminação inteligente (3-4 divisões) custa entre 500€ e 1.000€. Um sistema intermédio com iluminação, climatização e estores fica entre 2.000€ e 4.000€. Um sistema avançado completo e integrado varia entre 5.000€ e 10.000€. Os valores incluem equipamento e instalação."
+ "text": "Uma automação básica de iluminação inteligente (3-4 divisões) custa entre 500€ e 1.000€. Um sistema intermédio com iluminação e estores fica entre 2.000€ e 4.000€. Um sistema avançado completo e integrado varia entre 5.000€ e 10.000€. Os valores incluem equipamento e instalação."
  }
  },
  {
@@ -72,7 +72,7 @@ export default function AutomacaoResidencialGuia() {
  "name": "Quanto posso poupar com uma casa inteligente?",
  "acceptedAnswer": {
  "@type": "Answer",
- "text": "Com gestão inteligente de iluminação e climatização pode reduzir a conta de luz em 20-40%. Só na iluminação, a poupança pode chegar aos 60%."
+ "text": "Com gestão inteligente de iluminação pode reduzir a conta de luz. Só na iluminação, a poupança pode chegar aos 60%."
  }
  },
  {
@@ -97,12 +97,6 @@ export default function AutomacaoResidencialGuia() {
  descricao: "Controle todas as luzes da casa pelo smartphone ou por voz. Crie cenários, programe horários e poupe energia.",
  beneficios: ["Poupança até 60% na iluminação", "Controlo remoto total", "Integração com assistentes de voz"],
  custo: "150€ - 800€"
- },
- {
- titulo: "Climatização Automatizada",
- descricao: "Termostatos inteligentes que aprendem os seus hábitos e ajustam a temperatura automaticamente.",
- beneficios: ["Redução de 20-30% no aquecimento", "Controlo por zonas", "Programação inteligente"],
- custo: "200€ - 500€"
  },
  {
  titulo: "Segurança e Vigilância",
@@ -162,7 +156,7 @@ export default function AutomacaoResidencialGuia() {
  <div className="bg-white p-6 rounded-xl shadow-lg">
  <p className="text-gray-700 mb-4">
  Automação residencial é a integração de tecnologia na sua casa para controlar automaticamente 
- sistemas como iluminação, climatização, segurança, entretenimento e eletrodomésticos.
+ sistemas como iluminação, segurança, entretenimento e eletrodomésticos.
  </p>
  <p className="text-gray-700 mb-4">
  Através de uma <strong>central de controlo</strong> (smartphone, tablet, assistente de voz), 
@@ -217,7 +211,7 @@ export default function AutomacaoResidencialGuia() {
  <Lightbulb className="w-10 h-10 text-yellow-500 mb-3" />
  <h3 className="text-xl font-bold mb-2">Poupança de Energia</h3>
  <p className="text-gray-700 text-sm">
- Reduza a conta de luz em 20-40% com gestão inteligente de iluminação e climatização.
+ Reduza a conta de luz com gestão inteligente de iluminação.
  </p>
  </div>
  <div className="bg-white p-6 rounded-xl shadow-lg">
@@ -263,7 +257,7 @@ export default function AutomacaoResidencialGuia() {
  <div>
  <h3 className="font-bold mb-1">Escolha do Sistema</h3>
  <p className="text-sm text-gray-700">
- Defina o que quer automatizar: iluminação, climatização, segurança ou tudo integrado.
+ Defina o que quer automatizar: iluminação, segurança ou tudo integrado.
  </p>
  </div>
  </div>
@@ -311,7 +305,7 @@ export default function AutomacaoResidencialGuia() {
  <tr>
  <td className="py-3">
  <strong>Intermédio</strong><br/>
- <span className="text-xs text-gray-600">Iluminação + climatização + estores</span>
+ <span className="text-xs text-gray-600">Iluminação + estores</span>
  </td>
  <td className="text-right py-3 font-bold">2.000€ - 4.000€</td>
  </tr>
