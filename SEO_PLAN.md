@@ -456,6 +456,7 @@ Branche : `feat/seo-vague2-2026-06-30` @ 3 commits (c6ba77562, 305963c53, 6abdb2
 | 2026-07-01 | Hermes (sub-agent) | loop PR #78 | PR [loop] Hero.tsx trust - CONFLICTING, R3 STOP | Bloqué | Bloqué - R3 STOP | 🛑 STOP - attente Filipe |
 | 2026-07-01 | Hermes | faux négatif PR #80 | client/public/carregadores-viaturas-eletricas.html = page FAUX ENTIÈRE non purgée (H1 Instalação de Carregadores para Carros Elétricos) | Mission dédiée à venir | Non purgé par PR #80 | 🛑 STOP - attente Filipe |
 | 2026-07-02 | Hermes (sub-agent P1 câblage) | merge PR câblage LECONS.md cross-sites | CLAUDE.md +4 lignes (bloc mémoire/leçons), merge squash avec delete-branch. PRs CNR #98 + ENR #86 mergées. CU #71 + EU #69 gardées en STOP (contenu substantiel non audité). | Leçon #274 reprise post-crash | ✅ Fait |
+| 2026-07-02 | Hermes (sub-agent mode loop) | M1-P0.1 purge complète services non fournis #97 | 9 pages services FAUX supprimées (autoconsumo, potencia-VE, bateria-condensadores, carregar-carro, painel-solar-tras-os-montes, climatizacao, instalar-carregador, carregar-VE-casa, guia-ar-condicionado) + 23 fichiers patchés (liens cassés + sitemap régénéré -15454/+151). Doctrine Transparence Radicale §11-13 appliquée (R4 zéro faux contenu étendue aux faux services). Build vert 4.31s, CI PASS, Vercel preview PASS. | R4 (zéro faux service) + Doctrine Transparence Radicale AGENTS.md §11-13 | commit `25cc214b54` → merge squash `e8901eb761`, PR #97, branche supprimée (locale + remote). main = `e8901eb76` | ✅ Fait |
 
 ### État actuel post-session
 
