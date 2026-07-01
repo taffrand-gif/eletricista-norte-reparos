@@ -5355,172 +5355,172 @@
     },
     {
       "source": "/wallbox-alfandega-da-fe.html",
-      "destination": "/eletricista-alfandega-da-fe",
+      "destination": "/",
       "statusCode": 301
     },
     {
       "source": "/wallbox-algoso.html",
-      "destination": "/eletricista-algoso",
+      "destination": "/",
       "statusCode": 301
     },
     {
       "source": "/wallbox-armamar.html",
-      "destination": "/eletricista-armamar",
+      "destination": "/",
       "statusCode": 301
     },
     {
       "source": "/wallbox-boticas.html",
-      "destination": "/eletricista-boticas",
+      "destination": "/",
       "statusCode": 301
     },
     {
       "source": "/wallbox-braganca.html",
-      "destination": "/eletricista-braganca",
+      "destination": "/",
       "statusCode": 301
     },
     {
       "source": "/wallbox-carrazeda-de-ansiaes.html",
-      "destination": "/eletricista-carrazeda-de-ansiaes",
+      "destination": "/",
       "statusCode": 301
     },
     {
       "source": "/wallbox-chaves.html",
-      "destination": "/eletricista-chaves",
+      "destination": "/",
       "statusCode": 301
     },
     {
       "source": "/wallbox-duas-igrejas.html",
-      "destination": "/eletricista-duas-igrejas",
+      "destination": "/",
       "statusCode": 301
     },
     {
       "source": "/wallbox-freixo-de-espada-a-cinta.html",
-      "destination": "/eletricista-freixo-de-espada-a-cinta",
+      "destination": "/",
       "statusCode": 301
     },
     {
       "source": "/wallbox-lagoaca.html",
-      "destination": "/eletricista-lagoaca",
+      "destination": "/",
       "statusCode": 301
     },
     {
       "source": "/wallbox-macedo-de-cavaleiros.html",
-      "destination": "/eletricista-macedo-de-cavaleiros",
+      "destination": "/",
       "statusCode": 301
     },
     {
       "source": "/wallbox-mesao-frio.html",
-      "destination": "/eletricista-mesao-frio",
+      "destination": "/",
       "statusCode": 301
     },
     {
       "source": "/wallbox-miranda-do-douro.html",
-      "destination": "/eletricista-miranda-do-douro",
+      "destination": "/",
       "statusCode": 301
     },
     {
       "source": "/wallbox-mirandela.html",
-      "destination": "/eletricista-mirandela",
+      "destination": "/",
       "statusCode": 301
     },
     {
       "source": "/wallbox-mogadouro.html",
-      "destination": "/eletricista-mogadouro",
+      "destination": "/",
       "statusCode": 301
     },
     {
       "source": "/wallbox-moncorvo.html",
-      "destination": "/eletricista-moncorvo",
+      "destination": "/",
       "statusCode": 301
     },
     {
       "source": "/wallbox-mondim-de-basto.html",
-      "destination": "/eletricista-mondim-de-basto",
+      "destination": "/",
       "statusCode": 301
     },
     {
       "source": "/wallbox-monforte-de-rio-livre.html",
-      "destination": "/eletricista-monforte-de-rio-livre",
+      "destination": "/",
       "statusCode": 301
     },
     {
       "source": "/wallbox-montalegre.html",
-      "destination": "/eletricista-montalegre",
+      "destination": "/",
       "statusCode": 301
     },
     {
       "source": "/wallbox-murca.html",
-      "destination": "/eletricista-murca",
+      "destination": "/",
       "statusCode": 301
     },
     {
       "source": "/wallbox-penedono.html",
-      "destination": "/eletricista-penedono",
+      "destination": "/",
       "statusCode": 301
     },
     {
       "source": "/wallbox-rebordelo.html",
-      "destination": "/eletricista-rebordelo",
+      "destination": "/",
       "statusCode": 301
     },
     {
       "source": "/wallbox-ribeira-de-pena.html",
-      "destination": "/eletricista-ribeira-de-pena",
+      "destination": "/",
       "statusCode": 301
     },
     {
       "source": "/wallbox-santa-marta-penaguiao.html",
-      "destination": "/eletricista-santa-marta-penaguiao",
+      "destination": "/",
       "statusCode": 301
     },
     {
       "source": "/wallbox-sendim.html",
-      "destination": "/eletricista-sendim",
+      "destination": "/",
       "statusCode": 301
     },
     {
       "source": "/wallbox-sernancelhe.html",
-      "destination": "/eletricista-sernancelhe",
+      "destination": "/",
       "statusCode": 301
     },
     {
       "source": "/wallbox-tabuaco.html",
-      "destination": "/eletricista-tabuaco",
+      "destination": "/",
       "statusCode": 301
     },
     {
       "source": "/wallbox-torre-de-moncorvo.html",
-      "destination": "/eletricista-torre-de-moncorvo",
+      "destination": "/",
       "statusCode": 301
     },
     {
       "source": "/wallbox-valpacos.html",
-      "destination": "/eletricista-valpacos",
+      "destination": "/",
       "statusCode": 301
     },
     {
       "source": "/wallbox-vila-flor.html",
-      "destination": "/eletricista-vila-flor",
+      "destination": "/",
       "statusCode": 301
     },
     {
       "source": "/wallbox-vila-pouca-de-aguiar.html",
-      "destination": "/eletricista-vila-pouca-de-aguiar",
+      "destination": "/",
       "statusCode": 301
     },
     {
       "source": "/wallbox-vila-real.html",
-      "destination": "/eletricista-vila-real",
+      "destination": "/",
       "statusCode": 301
     },
     {
       "source": "/wallbox-vimioso.html",
-      "destination": "/eletricista-vimioso",
+      "destination": "/",
       "statusCode": 301
     },
     {
       "source": "/wallbox-vinhais.html",
-      "destination": "/eletricista-vinhais",
+      "destination": "/",
       "statusCode": 301
     },
     {
@@ -5530,6 +5530,26 @@
     },
     {
       "source": "/programa-fidelidade",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/marcas-grohe-roca-junkers",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/marcas-grohe-roca-junkers.html",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/parceiros",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/parceiros.html",
       "destination": "/",
       "statusCode": 301
     }

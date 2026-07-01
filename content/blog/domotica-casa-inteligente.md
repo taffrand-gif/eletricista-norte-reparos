@@ -485,10 +485,9 @@ keywords: ["domótica", "casa inteligente", "automação", "smart home", "Trás-
 
 ### Especialização Domótica
 
-- 100+ instalações smart home
-- Certificação KNX
-- Todas as tecnologias (KNX, Zigbee, WiFi)
-- Parceiros oficiais marcas
+- Experiência em instalações smart home
+- Conhecimento das tecnologias (KNX, Zigbee, WiFi)
+- Projeto à medida das suas necessidades
 
 ### Consultoria Completa
 

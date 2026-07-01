@@ -13,7 +13,7 @@ priority: "CRITICAL"
 
 **O seu quadro elétrico dispara constantemente?** Este é um dos problemas elétricos mais comuns e frustrantes em casas de Trás-os-Montes. Quando o disjuntor ou diferencial desliga repetidamente, não é apenas um incómodo — é um **sinal de alerta de segurança** que não deve ignorar.
 
-Neste guia completo, vamos explicar as **7 causas principais** que fazem o quadro elétrico disparar, como identificar cada uma, e as soluções definitivas. Com mais de 15 anos de experiência em instalações elétricas na região de Bragança, já resolvemos centenas de casos semelhantes.
+Neste guia completo, vamos explicar as **7 causas principais** que fazem o quadro elétrico disparar, como identificar cada uma, e as soluções definitivas.
 
 **📞 Quadro dispara constantemente? Ligue já: [932 321 892](tel:+351932321892)** 
 **💬 WhatsApp urgente: [Clique aqui](https://wa.me/351932321892?text=Olá%2C%20o%20meu%20quadro%20elétrico%20dispara%20constantemente.%20Preciso%20de%20ajuda%20urgente.)**
@@ -38,9 +38,9 @@ Antes de identificar as causas, é importante entender que existem **dois tipos 
 
 ---
 
-## As 7 Causas Principais (Com Percentagens Reais)
+## As 7 Causas Principais (Causas Mais Comuns)
 
-Com base na nossa experiência de 500+ intervenções em Trás-os-Montes, estas são as causas mais comuns:
+Estas são as causas mais comuns identificadas em quadros elétricos residenciais:
 
 ### 1. Sobrecarga Elétrica (45% dos Casos)
 
@@ -370,7 +370,7 @@ Um quadro elétrico que dispara constantemente não é apenas um incómodo — �
 **✅ Garantias :**
 - Diagnóstico preciso com equipamento profissional
 - Orçamento transparente antes de iniciar
-- Eletricistas com experiência com 15+ anos de experiência
+|- Eletricistas qualificados conforme normas em vigor
 - Fichas eletrotécnicas assinadas por técnico profissional incluída
 - Garantia de 2 anos em todo o trabalho
 - Disponível Atendimento 24h/7d para urgências

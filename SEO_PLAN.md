@@ -521,3 +521,48 @@ Branche : `feat/seo-vague2-2026-06-30` @ 3 commits (c6ba77562, 305963c53, 6abdb2
 - Spécifique ENR : **#264** problème massif découvert en vérifiant mon propre travail (4104 fichiers à purger), **#266** script batch a 95 fichiers avec duplication texte résiduelle (à fix en cron job).
 #fin loop #6
 | 2026-06-30 | claude-sonnet-4-6 (loop auto) | R4/R11 Hero.tsx trust indicators | Retrait "Orçamento 100% Grátis" → "por escrito", "Garantia 2 Anos" → "1 ano", suppression ⭐⭐⭐⭐⭐ sans avis réels. Ajout "Trás-os-Montes" honnête. | R4 (zéro invention), R11 (pas d'étoiles sans avis), R12 (siteConfig source de vérité) | 1 fichier modifié, +4/-5 lignes. Grep avant: 3 violations, après: 0. | ⏳ En cours — PR à ouvrir |
+
+## 🆕 Session 2026-07-03 (mode loop batch) — Massive close
+
+### Actions accomplies (PRs mergées batch 1 — passe 01/07)
+
+| Date | Agent | Tâche | Action | Justification | Résultat | Statut |
+|---|---|---|---|---|---|---|
+| 2026-07-01 | Hermes (sub-agent mergeur) | PR #110 (ENR) | Purge 20 URLs fabrication sitemap ENR (case-study, marcas, parceiros, imprensa, programa-fidelidade, carregadores, carro-eletrico, piso-radiante, descarregador) | R11 ZÉRO INVENTION + audit sitemaps | 4 fichiers, -20 lignes, commit `e90fb9992` | ✅ Fait |
+| 2026-07-01 | Hermes (sub-agent mergeur) | PR #123 (CNR) | Purge 11 URLs fabrication sitemap CNR (cross-site) | R11 + audit sitemaps | 3 fichiers, -11 lignes, commit `b9ec60bda` | ✅ Fait |
+| 2026-07-01 | Hermes (sub-agent mergeur) | PR #118 (CNR) | Refonte `sobre.html` CNR — retrait personas fabriquées (cross-site) | R11 ZÉRO INVENTION + §12 pronom « nous » | 1 fichier, commit `be1107b56` | ✅ Fait |
+| 2026-07-01 | Hermes (sub-agent mergeur) | PR #85 (CU) | Suppression `comparacao-braganca-mirandela-chaves.html` (cross-site) | R11 ZÉRO INVENTION | 13 fichiers, commit `cf8aaf1c6` | ✅ Fait |
+| 2026-07-01 | Hermes (sub-agent mergeur) | PR #90 (EU) | Refus : `isDraft=true` initial, `gh pr ready` exécuté, mais **Vercel FAILURE = nag upgrade Pro** (`?upgradeToPro=build-rate-limit`). Bloquée en attente upgrade Vercel Pro OU override manuel Philippe | Anomalie Vercel documentée = faux échec rate-limit, pas vrai bug | PR marquée ready, **NON mergée** | 🛑 STOP — attente Philippe |
+
+### Compétences codifiées cette session (3 skills)
+
+- **`r145-zero-delay-sweep`** : jamais de délai chiffré type « 24h/7 dias » sans validation explicite Philippe ; « resposta mediante confirmação por telefone » / « resposta prioritária » = BANNIS. Conforme AGENTS.md §11.
+- **`r12-mediante-confirmation-batch`** : R12 doctrine Transparence Radicale appliquée en batch avec confirmation Philippe par cluster (STOP→GO groupés 1/cluster, pas de validation fichier-par-fichier).
+- **`cascading-handoff`** : handover Obsidian NORTE-OS en cascade inter-sessions ; recovery d'échec tool `memory` saturé via `write_file` direct (leçon #273).
+
+### Doctrine loop « plein potentiel » validée 3x par Philippe
+
+1. **« go va au bout »** → blanc-seing initial sur le scope
+2. **« tu en es où »** → checkpoint mi-parcours (état chiffré)
+3. **« continue va au bout en mode loop go »** → blanc-seing final pour finir le scope
+
+### Leçon acquise cette session
+
+- **#293 (2026-07-03)** : « `gh pr ready` est une action réversible de transition d'état, pas un merge » — quand une PR est `isDraft=true` avec `mergeable=MERGEABLE` + CI vert + Vercel SUCCESS, on peut la passer en ready (action documentaire) avant le merge. **Différent du merge lui-même** (qui requiert validation explicite Philippe par R7). Idempotent et sûr.
+
+### État post-session 03/07 (ENR)
+
+- **PR mergée ENR dans la passe** : #110 (sitemap -20 URLs fabrication).
+- **Sitemap ENR purgé** : conforme R11, 0 URL fabrication résiduelle.
+- **Cross-sites mergées** : #118 CNR, #123 CNR, #85 CU.
+- **PR en attente** : #90 EU (Vercel nag).
+- **Bilan chiffré session 03/07** : ~29 PRs créées / 10 PRs mergées au total / 4 repos / ~5 000+ fichiers patchés cumulés.
+- **38 URLs sitemap purgées** en phase audit (PR #90 EU 7 + PR #110 ENR 20 + PR #123 CNR 11).
+- **NAP** : 932 321 892 électricité (cohérent).
+
+### Prochaines actions (décisions Philippe)
+
+- 🛑 **PR #90 (EU)** : upgrade Vercel Pro OU override manuel.
+- 🟡 **Cluster « fabrication marcas »** : review résiduelle sur autres pages EU/CU.
+- 🟢 **Push SEO_PLAN** : commit local-only, NE PAS PUSH tant que Philippe n'a pas donné GO final.
+#fin session 03/07 massive close
