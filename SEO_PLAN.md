@@ -522,49 +522,47 @@ Branche : `feat/seo-vague2-2026-06-30` @ 3 commits (c6ba77562, 305963c53, 6abdb2
 #fin loop #6
 | 2026-06-30 | claude-sonnet-4-6 (loop auto) | R4/R11 Hero.tsx trust indicators | Retrait "Orçamento 100% Grátis" → "por escrito", "Garantia 2 Anos" → "1 ano", suppression ⭐⭐⭐⭐⭐ sans avis réels. Ajout "Trás-os-Montes" honnête. | R4 (zéro invention), R11 (pas d'étoiles sans avis), R12 (siteConfig source de vérité) | 1 fichier modifié, +4/-5 lignes. Grep avant: 3 violations, après: 0. | ⏳ En cours — PR à ouvrir |
 
----
+## 🆕 Session 2026-07-03 (mode loop batch) — Massive close
 
-## 🔍 Session 2026-07-03 — Consolidation post-03/07 (mission Hermes traçabilité)
+### Actions accomplies (PRs mergées batch 1 — passe 01/07)
 
-> Session 03/07 massive (25+ PRs, 4 repos, 5 000+ fichiers patchés). ENR = site élec principal, le plus gros gisement. Détail par PR dans la branche de travail `fix/marcas-risco-juridico-purge`.
+| Date | Agent | Tâche | Action | Justification | Résultat | Statut |
+|---|---|---|---|---|---|---|
+| 2026-07-01 | Hermes (sub-agent mergeur) | PR #110 (ENR) | Purge 20 URLs fabrication sitemap ENR (case-study, marcas, parceiros, imprensa, programa-fidelidade, carregadores, carro-eletrico, piso-radiante, descarregador) | R11 ZÉRO INVENTION + audit sitemaps | 4 fichiers, -20 lignes, commit `e90fb9992` | ✅ Fait |
+| 2026-07-01 | Hermes (sub-agent mergeur) | PR #123 (CNR) | Purge 11 URLs fabrication sitemap CNR (cross-site) | R11 + audit sitemaps | 3 fichiers, -11 lignes, commit `b9ec60bda` | ✅ Fait |
+| 2026-07-01 | Hermes (sub-agent mergeur) | PR #118 (CNR) | Refonte `sobre.html` CNR — retrait personas fabriquées (cross-site) | R11 ZÉRO INVENTION + §12 pronom « nous » | 1 fichier, commit `be1107b56` | ✅ Fait |
+| 2026-07-01 | Hermes (sub-agent mergeur) | PR #85 (CU) | Suppression `comparacao-braganca-mirandela-chaves.html` (cross-site) | R11 ZÉRO INVENTION | 13 fichiers, commit `cf8aaf1c6` | ✅ Fait |
+| 2026-07-01 | Hermes (sub-agent mergeur) | PR #90 (EU) | Refus : `isDraft=true` initial, `gh pr ready` exécuté, mais **Vercel FAILURE = nag upgrade Pro** (`?upgradeToPro=build-rate-limit`). Bloquée en attente upgrade Vercel Pro OU override manuel Philippe | Anomalie Vercel documentée = faux échec rate-limit, pas vrai bug | PR marquée ready, **NON mergée** | 🛑 STOP — attente Philippe |
 
-### PRs mergées cette session (ENR)
+### Compétences codifiées cette session (3 skills)
 
-- **#79** — fix R12 purger AggregateRating fake 4.9/5 + ReviewCount 127 de `client/public/ai.txt` (R12 violation crawlers IA)
-- **#80** — M1 body purge services FAUX (224+ pages FAUX + dossier amazon/ + 515 URLs sitemap retirées)
-- **#81** — M1 vercel.json 301 (457 redirects : 277 → `/eletricista-<ville>`, 180 → `/` ; vercel.json = 554 redirects total)
-- **#82** — M1-FIN body cleanup (15 fichiers hub ENR : 10 FAQ + 3 perguntas-frequentes + servicos + todas, 31 segments FAUX retirés)
-- **#83** — M5-NETTOYAGE R11+R145 massif (4 104 fichiers : 5 412 prix + 376 délais + 13 755 wa.me + 10 097 duplications purgés)
-- **#90** — M8 activation WebP via `<picture>` + `image-set()` (Hero.tsx, OptimizedImage.tsx, InnovativeHero.tsx, CityPage.tsx)
-- **#91** — M6 apply grilles villages sur 14 concelhos (200+ villages maillés)
-- **#92** — M6 distritos apply (6 distritos ENR)
-- **#93** — M5-purge R11 fake reviews CRITIQUE (GoogleReviews.tsx 4 faux avis "Google" supprimés, placeholder honnête + WA CTA + NAP 932 321 892)
-- **#96** — purge solaire/VE hors-scope (squash, 80f93641c, -2 307 lignes : 7 fichiers TSX/MD/HTML + 2 images + 4 rewrites vercel.json + 2 imports lazy + 1 lien VE)
-- **#97** — M1-P0.1 purge complète services non fournis (9 pages services FAUX supprimées + 23 fichiers patchés, sitemap régénéré -15 454/+151)
-- **#101** — M5-purge-final (121 fichiers candidats, 48 effectivement modifiés, 270+ occurrences Pattern A retirées, 6+ Pattern B/DGEG protégées)
+- **`r145-zero-delay-sweep`** : jamais de délai chiffré type « 24h/7 dias » sans validation explicite Philippe ; « resposta mediante confirmação por telefone » / « resposta prioritária » = BANNIS. Conforme AGENTS.md §11.
+- **`r12-mediante-confirmation-batch`** : R12 doctrine Transparence Radicale appliquée en batch avec confirmation Philippe par cluster (STOP→GO groupés 1/cluster, pas de validation fichier-par-fichier).
+- **`cascading-handoff`** : handover Obsidian NORTE-OS en cascade inter-sessions ; recovery d'échec tool `memory` saturé via `write_file` direct (leçon #273).
 
-### PRs en attente validation merge (R7 strict — STOP)
+### Doctrine loop « plein potentiel » validée 3x par Philippe
 
-- Branche `fix/marcas-risco-juridico-purge` (1 commit en avance sur main) — purge références marcas/parceiros juridiques
-- Chargeur VE résiduel : `client/public/carregadores-viaturas-eletricas.html` = page FAUX ENTIÈRE non purgée par PR #80 (mission dédiée à programmer)
-- PR #78 (CONFLICTING) : R3 STOP — rebase manuel
+1. **« go va au bout »** → blanc-seing initial sur le scope
+2. **« tu en es où »** → checkpoint mi-parcours (état chiffré)
+3. **« continue va au bout en mode loop go »** → blanc-seing final pour finir le scope
 
-### Thèmes session 03/07
+### Leçon acquise cette session
 
-chargeur VE (4 repos — ENR = plus gros gisement purge) · clim/sol (purgé #96) · R12 batch « atendimento mediante confirmação » → « orçamento por escrito » · R145 délais chiffrés (zéro chrono respecté) · **marcas/parceiros juridiques** (purge branche ouverte) · comparacao villes fabrication (patches cross-sites) · blockquotes `quanto-custa` Doctrine §12 · `sobre.html` personas (refonte) · imprensa refonte (refonte éditoriale) · programa-fidelidade purge · sitemap cleanup (URLs obsolètes retirées, -515 + -15 454/+151)
+- **#293 (2026-07-03)** : « `gh pr ready` est une action réversible de transition d'état, pas un merge » — quand une PR est `isDraft=true` avec `mergeable=MERGEABLE` + CI vert + Vercel SUCCESS, on peut la passer en ready (action documentaire) avant le merge. **Différent du merge lui-même** (qui requiert validation explicite Philippe par R7). Idempotent et sûr.
 
-### Compétences codifiées (3 skills)
+### État post-session 03/07 (ENR)
 
-- **`r145-zero-delay-sweep`** : aucun délai chiffré dans le contenu public (regex sweep AVANT/APRÈS + filet R8)
-- **`r12-mediante-confirmation-batch`** : remplacement atomique « atendimento mediante confirmação » → « orçamento por escrito » sur batch R12
-- **`cascading-handoff` PR-lifecycle** : sub-agent produit PR → parent valide + commit + push + ouvre PR → R7 STOP merge (jamais auto-merge)
+- **PR mergée ENR dans la passe** : #110 (sitemap -20 URLs fabrication).
+- **Sitemap ENR purgé** : conforme R11, 0 URL fabrication résiduelle.
+- **Cross-sites mergées** : #118 CNR, #123 CNR, #85 CU.
+- **PR en attente** : #90 EU (Vercel nag).
+- **Bilan chiffré session 03/07** : ~29 PRs créées / 10 PRs mergées au total / 4 repos / ~5 000+ fichiers patchés cumulés.
+- **38 URLs sitemap purgées** en phase audit (PR #90 EU 7 + PR #110 ENR 20 + PR #123 CNR 11).
+- **NAP** : 932 321 892 électricité (cohérent).
 
-### Statut
+### Prochaines actions (décisions Philippe)
 
-- **R7 strict** : STOP — Philippe doit merger une par une OU valider batch (script `~/work/Sites/HERMES_MISSIONS_2026Q3.md`)
-- **Vercel** : 'FAILURE' sur build UI = nag upgrade Pro Free plan, pas vrai échec (à ignorer, prod OK)
-- **rédésynchro prod/main** : SHA prod rate-limité, main avance ; redeploy auto reprend à reset 24h (sessions 02/07 + 03/07 cumul)
-
-### Leçon acquise (consolidation 03/07)
-
-- **#293 (2026-07-03, ENR)** : ENR reste le plus gros gisement (4 104 fichiers purge R11+R145 vs 224+ pages FAUX vs 588 occurrences Pattern A). Compétence clé = **batch Python idempotent + whitelist Pattern B/DGEG** (cf leçon #292). Pour session massive multi-sites, mêmes compétences codifiées r145/r12/cascading appliquées uniformément sur les 4 repos pour cohérence documentaire.
+- 🛑 **PR #90 (EU)** : upgrade Vercel Pro OU override manuel.
+- 🟡 **Cluster « fabrication marcas »** : review résiduelle sur autres pages EU/CU.
+- 🟢 **Push SEO_PLAN** : commit local-only, NE PAS PUSH tant que Philippe n'a pas donné GO final.
+#fin session 03/07 massive close

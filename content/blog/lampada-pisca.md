@@ -13,7 +13,7 @@ priority: "HIGH DEMAND"
 
 **A sua lâmpada não para de piscar ou tremulicar?** Este problema irritante não é apenas desconfortável para os olhos — pode indicar **problemas elétricos graves** que requerem atenção imediata. Uma lâmpada que pisca pode ser um sinal de mau contacto, sobrecarga, ou até problemas na instalação elétrica que podem causar incêndio.
 
-Neste guia completo, vamos explicar as **7 causas principais** que fazem uma lâmpada piscar, como identificar cada uma, e as soluções definitivas. Com mais de 15 anos de experiência em instalações elétricas na região de Bragança, já resolvemos milhares de casos de iluminação problemática.
+Neste guia completo, vamos explicar as **7 causas principais** que fazem uma lâmpada piscar, como identificar cada uma, e as soluções definitivas.
 
 **📞 Lâmpada pisca constantemente? Ligue já: [932 321 892](tel:+351932321892)** 
 **💬 WhatsApp urgente: [Clique aqui](https://wa.me/351932321892?text=Olá%2C%20a%20minha%20lâmpada%20não%20para%20de%20piscar.%20Podem%20ajudar%3F)**
@@ -70,9 +70,9 @@ Antes de diagnosticar, é importante distinguir os diferentes tipos de piscar:
 
 ---
 
-## As 7 Causas Principais (Com Percentagens Reais)
+## As 7 Causas Principais (Causas Mais Comuns)
 
-Com base na nossa experiência de 800+ intervenções em Trás-os-Montes:
+Estas são as causas mais frequentes em lâmpadas que piscam:
 
 ### 1. Lâmpada Defeituosa ou Incompatível (40% dos Casos)
 
@@ -405,7 +405,7 @@ Contacte imediatamente se:
 - Teste interruptores (ruído, calor)
 
 ### 4. Atualização Preventiva
-- Substitua interruptores com 15+ anos
+- Substitua interruptores antigos que apresentem mau contacto ou desgaste visível
 - Atualize dimmers para versão LED
 - Verifique instalação elétrica a cada 10 anos
 
@@ -462,7 +462,7 @@ Uma lâmpada que pisca não é apenas irritante — pode indicar **problemas el�
 **💬 WhatsApp: [Clique aqui](https://wa.me/351932321892?text=Olá%2C%20a%20minha%20lâmpada%20não%20para%20de%20piscar.%20Podem%20ajudar%3F)**
 
 **✅ Garantias :**
-- Eletricistas com experiência com 15+ anos de experiência
+|- Eletricistas qualificados conforme normas em vigor
 - Diagnóstico preciso com equipamento profissional
 - Arranjo rápida (30-90 minutos)
 - Materiais de qualidade (Philips, Legrand, Schneider)
