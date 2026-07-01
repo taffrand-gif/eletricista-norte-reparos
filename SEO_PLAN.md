@@ -467,6 +467,7 @@ Branche : `feat/seo-vague2-2026-06-30` @ 3 commits (c6ba77562, 305963c53, 6abdb2
 - **#287** : "Pattern A vs B" — Pattern A (PROMO DÉGUISÉ, RETIRÉ) vs Pattern B (ANTI-FUNNEL, GARDÉ) vs Exception DGEG (in-scope, GARDÉ).
 - **#288 (codage)** : "vercel.json reformat whitespace" — sub-agent peut reformatter sans changer le sémantique (3548 lignes diff non-breaking). TOUJOURS valider JSON + comparer keys/counts avant commit.
 - **#290 (2026-07-02)** : "Re-grip réconcilié post-merge" (leçon #267 appliquée) — ENR 100% propre après M1+M2+M3. Pas de fichiers M4 nécessaires.
+- **#291 (2026-07-02)** : "Gisement M5 ENR" — 225 entrées Pattern A résiduelles dans `indice-a-z-{p1,p2,p4,p6,p7,p8}.html` (ar-condicionado, bomba-calor, painel-solar, carregador-veiculo, carro-eletrico) + 113 fichiers M2 élargi candidats. **Dette reportée** à mission M5 dédiée. Smart : finir ici car scope limité bien identifié, éviter mega-batch (cf #286).
 #fin loop #8
 
 ## 🆕 Session 2026-07-01 (mode loop batch) — Hermes
