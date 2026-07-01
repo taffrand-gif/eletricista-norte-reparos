@@ -432,6 +432,42 @@ Branche : `feat/seo-vague2-2026-06-30` @ 3 commits (c6ba77562, 305963c53, 6abdb2
 
 #fin loop #7
 
+## 🆕 Session 2026-07-02 (mode loop batch) — Hermes M1+M2+M3 purge FAUX
+
+### Mission M1-purge (PR #98 MERGÉE)
+
+| Date | Agent | Tâche | Action | Justification | Résultat | Statut |
+|---|---|---|---|---|---|---|
+| 2026-07-02 | Hermes (sub-agent ENR + parent rattrapage git) | M1-purge-articles-FAUX + cluster domotique | git rm `content/blog/guia-bomba-calor-2026.md`, `content/blog/energia-renovavel-incentivos-2026.md`, `client/public/blog/comunidade-energia-renovavel.html`, `client/public/blog/quanto-custa-carregar-carro-casa.html`. Cleanup 13 `domotica-*.html` + 12 `blog/quanto-custa-*.html` + `AutomacaoResidencialGuia.tsx` (1 carte VE retirée) + 3 `domotica-casa-inteligente*` files. Ajout `.hermes/` au .gitignore. | R11 Doctrine (zéro invention), brief Philippe 02/07. Domotique GARDÉE (cluster légitime, retrait solaire/VE/AC/bomba uniquement). | 29 fichiers, +54 / -899 lignes. PR #98 mergée en squash `ef6c0d52e8` → `94a5ab3238`. | ✅ Fait |
+
+### Mission M2-purge-ciblée (PR #99 MERGÉE)
+
+| Date | Agent | Tâche | Action | Justification | Résultat | Statut |
+|---|---|---|---|---|---|---|
+| 2026-07-02 | Hermes (sub-agent ENR + parent rattrapage git) | M2-purge-ciblée 3 fichiers résiduels | Retrait "sistemas de climatização" de `client/src/data/servicesData.ts` (liste comercial), et nettoyage `preco-eletricista-norte-reparos-{braganca,mirandela}-2026.html`. | R11 + M1 incomplet (50+ fichiers blog additionnels détectés en audit large post-M1). Scope M2 strict = 3 fichiers les plus clairs. M3 élargi pour le reste. | 3 fichiers modifiés, +5 / -27 lignes. PR #99 mergée en squash `b3923b288d` → `5835925c66`. | ✅ Fait |
+
+### Mission M3-cleanup-final (PR #100 MERGÉE)
+
+| Date | Agent | Tâche | Action | Justification | Résultat | Statut |
+|---|---|---|---|---|---|---|
+| 2026-07-02 | Hermes (sub-agent ENR + parent rattrapage git) | M3 double mission : A) sitemaps/redirects, B) M2 élargi 10 fichiers blog | **Partie A** : retrait URLs orphelines de 3 sitemaps (-1 chaque). **Partie B** : nettoyage Pattern A sur 10 fichiers blog (carregamento-noturno, como-dimensionar-quadro, como-instalar-luz-emergencia, iluminacao-inteligente-guia, incendio-eletrico, etc.) + 1 .md. | Fin Étapes 3-5 du brief original + M2 élargi sur fichiers résiduels. Exception DGEG (auditoria, termoacumulador, certificação) GARDÉE = in-scope ENR. | 14 fichiers, +10 / -14 lignes. PR #100 mergée en squash `ef845fbda9` → `11613f6a58`. | ✅ Fait |
+
+### Cumul M1+M2+M3 ENR
+
+- **46 fichiers touchés** (29 + 3 + 14)
+- **+69 / -940 lignes purgées**
+- 3 PRs mergées en squash
+- 0 lien mort, 0 URL orpheline, Pattern A vidé, Pattern B préservé, DGEG in-scope préservé
+- Doctrine R11 respectée
+
+### Leçons acquises session 2026-07-02
+
+- **#285** : "Silent partial completion" — sub-agents modifs disque sans commit final. Recovery = `git status` + finir git workflow parent-side. Inverse du pattern #266.
+- **#286** : "M1 strict vs M2 élargi" — audit large post-M1 révèle 50+ fichiers additionnels. Stratégie smart = M1 + M2 (ciblé) + M3 (cleanup final + élargi).
+- **#287** : "Pattern A vs B" — Pattern A (PROMO DÉGUISÉ, RETIRÉ) vs Pattern B (ANTI-FUNNEL, GARDÉ) vs Exception DGEG (in-scope, GARDÉ).
+- **#288 (codage)** : "vercel.json reformat whitespace" — sub-agent peut reformatter sans changer le sémantique (3548 lignes diff non-breaking). TOUJOURS valider JSON + comparer keys/counts avant commit.
+#fin loop #8
+
 ## 🆕 Session 2026-07-01 (mode loop batch) — Hermes
 
 ### Actions accomplies (PRs mergées)
