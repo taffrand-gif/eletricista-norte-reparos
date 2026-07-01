@@ -131,7 +131,6 @@ keywords: ["reduzir consumo eletricidade", "poupar luz", "conta luz alta", "efic
 - Painéis 5kW: €6,000
 - Produz 7,000 kWh/ano
 - Autoconsumo 30-40%
-- [Ver guia incentivos](/blog/energia-renovavel-incentivos-2026)
 
 **Investimento**: €6,000 (apoio -€2,500)
 **Poupança**: €600-1,000/ano
