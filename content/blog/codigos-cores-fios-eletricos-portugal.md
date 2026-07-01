@@ -95,9 +95,9 @@ Recomendamos contactar a nossa equipa sempre que:
 
 - A instalação tem mais de 20 anos e nunca foi reabilitada
 - Há disparidades de cor entre diferentes pontos da casa
-- Pretende adicionar novos circuitos (forno, bomba de calor, carregador de veículo elétrico)
+- Pretende adicionar novos circuitos para aparelhos de elevada potência
 - Há disjuntores que disparam repetidamente sem causa aparente
-- Quer instalar painéis solares ou um sistema de carregamento de veículo elétrico
+- Pretende avaliar a instalação antes de instalar novos equipamentos de maior consumo
 
 A nossa equipa trabalha em conformidade com as **normas técnicas do setor elétrico**, com certificações do setor e equipamento profissional de diagnóstico. Verificamos sempre a conformidade da instalação existente antes de qualquer trabalho.
 

@@ -479,7 +479,6 @@ Instalar uma ventoinha de teto é um **investimento inteligente** que proporcion
 ---
 
 **Artigos relacionados:**
-- [Como Poupar Eletricidade no Inverno: 15 Dicas](/blog/poupar-eletricidade-inverno)
 - [Instalar Tomada Exterior: Guia Completo](/blog/instalar-tomada-exterior)
 - [Quanto Custa um Eletricista em Trás-os-Montes?](/blog/custo-eletricista-tras-os-montes-precos)
 
