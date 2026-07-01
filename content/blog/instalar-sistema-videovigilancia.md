@@ -627,6 +627,5 @@ Um sistema de videovigilância:
 ---
 
 **Artigos relacionados:**
-- [Instalar Carregador de Carro Elétrico em Casa: Guia Completo](/blog/instalar-carregador-carro-eletrico)
 - [Quadro Elétrico: Guia Completo de Manutenção e Segurança](/blog/quadro-eletrico-manutencao)
 - [Instalar Tomada no Exterior: Guia Passo a Passo](/blog/instalar-tomada-exterior)
