@@ -5529,6 +5529,11 @@
       "statusCode": 301
     },
     {
+      "source": "/programa-fidelidade",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
       "source": "/marcas-grohe-roca-junkers",
       "destination": "/",
       "statusCode": 301
