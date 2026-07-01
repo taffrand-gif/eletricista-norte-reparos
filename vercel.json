@@ -5527,6 +5527,11 @@
       "source": "/carregadores-viaturas-eletricas",
       "destination": "/",
       "statusCode": 301
+    },
+    {
+      "source": "/programa-fidelidade",
+      "destination": "/",
+      "statusCode": 301
     }
   ]
 }
