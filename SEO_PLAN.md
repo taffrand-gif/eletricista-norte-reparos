@@ -521,3 +521,50 @@ Branche : `feat/seo-vague2-2026-06-30` @ 3 commits (c6ba77562, 305963c53, 6abdb2
 - Spécifique ENR : **#264** problème massif découvert en vérifiant mon propre travail (4104 fichiers à purger), **#266** script batch a 95 fichiers avec duplication texte résiduelle (à fix en cron job).
 #fin loop #6
 | 2026-06-30 | claude-sonnet-4-6 (loop auto) | R4/R11 Hero.tsx trust indicators | Retrait "Orçamento 100% Grátis" → "por escrito", "Garantia 2 Anos" → "1 ano", suppression ⭐⭐⭐⭐⭐ sans avis réels. Ajout "Trás-os-Montes" honnête. | R4 (zéro invention), R11 (pas d'étoiles sans avis), R12 (siteConfig source de vérité) | 1 fichier modifié, +4/-5 lignes. Grep avant: 3 violations, après: 0. | ⏳ En cours — PR à ouvrir |
+
+---
+
+## 🔍 Session 2026-07-03 — Consolidation post-03/07 (mission Hermes traçabilité)
+
+> Session 03/07 massive (25+ PRs, 4 repos, 5 000+ fichiers patchés). ENR = site élec principal, le plus gros gisement. Détail par PR dans la branche de travail `fix/marcas-risco-juridico-purge`.
+
+### PRs mergées cette session (ENR)
+
+- **#79** — fix R12 purger AggregateRating fake 4.9/5 + ReviewCount 127 de `client/public/ai.txt` (R12 violation crawlers IA)
+- **#80** — M1 body purge services FAUX (224+ pages FAUX + dossier amazon/ + 515 URLs sitemap retirées)
+- **#81** — M1 vercel.json 301 (457 redirects : 277 → `/eletricista-<ville>`, 180 → `/` ; vercel.json = 554 redirects total)
+- **#82** — M1-FIN body cleanup (15 fichiers hub ENR : 10 FAQ + 3 perguntas-frequentes + servicos + todas, 31 segments FAUX retirés)
+- **#83** — M5-NETTOYAGE R11+R145 massif (4 104 fichiers : 5 412 prix + 376 délais + 13 755 wa.me + 10 097 duplications purgés)
+- **#90** — M8 activation WebP via `<picture>` + `image-set()` (Hero.tsx, OptimizedImage.tsx, InnovativeHero.tsx, CityPage.tsx)
+- **#91** — M6 apply grilles villages sur 14 concelhos (200+ villages maillés)
+- **#92** — M6 distritos apply (6 distritos ENR)
+- **#93** — M5-purge R11 fake reviews CRITIQUE (GoogleReviews.tsx 4 faux avis "Google" supprimés, placeholder honnête + WA CTA + NAP 932 321 892)
+- **#96** — purge solaire/VE hors-scope (squash, 80f93641c, -2 307 lignes : 7 fichiers TSX/MD/HTML + 2 images + 4 rewrites vercel.json + 2 imports lazy + 1 lien VE)
+- **#97** — M1-P0.1 purge complète services non fournis (9 pages services FAUX supprimées + 23 fichiers patchés, sitemap régénéré -15 454/+151)
+- **#101** — M5-purge-final (121 fichiers candidats, 48 effectivement modifiés, 270+ occurrences Pattern A retirées, 6+ Pattern B/DGEG protégées)
+
+### PRs en attente validation merge (R7 strict — STOP)
+
+- Branche `fix/marcas-risco-juridico-purge` (1 commit en avance sur main) — purge références marcas/parceiros juridiques
+- Chargeur VE résiduel : `client/public/carregadores-viaturas-eletricas.html` = page FAUX ENTIÈRE non purgée par PR #80 (mission dédiée à programmer)
+- PR #78 (CONFLICTING) : R3 STOP — rebase manuel
+
+### Thèmes session 03/07
+
+chargeur VE (4 repos — ENR = plus gros gisement purge) · clim/sol (purgé #96) · R12 batch « atendimento mediante confirmação » → « orçamento por escrito » · R145 délais chiffrés (zéro chrono respecté) · **marcas/parceiros juridiques** (purge branche ouverte) · comparacao villes fabrication (patches cross-sites) · blockquotes `quanto-custa` Doctrine §12 · `sobre.html` personas (refonte) · imprensa refonte (refonte éditoriale) · programa-fidelidade purge · sitemap cleanup (URLs obsolètes retirées, -515 + -15 454/+151)
+
+### Compétences codifiées (3 skills)
+
+- **`r145-zero-delay-sweep`** : aucun délai chiffré dans le contenu public (regex sweep AVANT/APRÈS + filet R8)
+- **`r12-mediante-confirmation-batch`** : remplacement atomique « atendimento mediante confirmação » → « orçamento por escrito » sur batch R12
+- **`cascading-handoff` PR-lifecycle** : sub-agent produit PR → parent valide + commit + push + ouvre PR → R7 STOP merge (jamais auto-merge)
+
+### Statut
+
+- **R7 strict** : STOP — Philippe doit merger une par une OU valider batch (script `~/work/Sites/HERMES_MISSIONS_2026Q3.md`)
+- **Vercel** : 'FAILURE' sur build UI = nag upgrade Pro Free plan, pas vrai échec (à ignorer, prod OK)
+- **rédésynchro prod/main** : SHA prod rate-limité, main avance ; redeploy auto reprend à reset 24h (sessions 02/07 + 03/07 cumul)
+
+### Leçon acquise (consolidation 03/07)
+
+- **#293 (2026-07-03, ENR)** : ENR reste le plus gros gisement (4 104 fichiers purge R11+R145 vs 224+ pages FAUX vs 588 occurrences Pattern A). Compétence clé = **batch Python idempotent + whitelist Pattern B/DGEG** (cf leçon #292). Pour session massive multi-sites, mêmes compétences codifiées r145/r12/cascading appliquées uniformément sur les 4 repos pour cohérence documentaire.
