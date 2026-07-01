@@ -129,32 +129,7 @@ priority: "TRENDING"
 
 **Teste simples:** Passe vela acesa perto de portas/janelas. Se chama tremer = há corrente de ar.
 
-### Dica 7: Use Ventiladores em Vez de Ar Condicionado
-
-**Poupança:** €30-60/mês (verão)
-
-**Comparação:**
-- **Ar condicionado:** 1.000-3.000W (€0,23-0,69/hora)
-- **Ventilador:** 50-75W (€0,01-0,02/hora)
-
-**Ventilador consome 95% menos!**
-
-**Dica:** Use ar condicionado só em dias muito quentes (> 32°C). Resto do tempo: ventilador.
-
-### Dica 8: Mantenha Aquecedores/AC Limpos
-
-**Poupança:** €10-20/mês
-
-**Manutenção:**
-- Limpe filtros mensalmente (AC)
-- Limpe grelhas de aquecedores
-- Serviço anual profissional
-
-**Filtros sujos = +20-30% consumo**
-
-## 🍳 Cozinha (15-20% do consumo)
-
-### Dica 9: Use Eletrodomésticos Eficientes
+### Dica 7: Use Eletrodomésticos Eficientes
 
 **Poupança:** €20-40/mês
 
@@ -165,7 +140,7 @@ priority: "TRENDING"
 
 **Investimento maior mas compensa a longo prazo.**
 
-### Dica 10: Frigorífico e Congelador
+### Dica 8: Frigorífico e Congelador
 
 **Poupança:** €10-20/mês
 
@@ -180,7 +155,7 @@ priority: "TRENDING"
 
 **Frigorífico > 10 anos = considere substituir** (novos consomem 50% menos)
 
-### Dica 11: Cozinhar Eficientemente
+### Dica 9: Cozinhar Eficientemente
 
 **Poupança:** €5-15/mês
 
@@ -192,7 +167,7 @@ priority: "TRENDING"
 - Micro-ondas para pequenas porções (usa 50% menos)
 - Forno: cozinhe múltiplos pratos ao mesmo tempo
 
-### Dica 12: Máquina de Lavar Roupa
+### Dica 10: Máquina de Lavar Roupa
 
 **Poupança:** €5-10/mês
 
@@ -205,7 +180,7 @@ priority: "TRENDING"
 
 **Lavar a 30°C vs 60°C = -60% consumo**
 
-### Dica 13: Máquina de Lavar Loiça
+### Dica 11: Máquina de Lavar Loiça
 
 **Poupança:** €3-8/mês
 
@@ -219,7 +194,7 @@ priority: "TRENDING"
 
 ## 📺 Eletrónica (10-15% do consumo)
 
-### Dica 14: Desligue Standby
+### Dica 12: Desligue Standby
 
 **Poupança:** €10-20/mês
 
@@ -236,7 +211,7 @@ priority: "TRENDING"
 - Desligue da tomada quando não usa
 - Use temporizadores (€8-20)
 
-### Dica 15: Computadores e Portáteis
+### Dica 13: Computadores e Portáteis
 
 **Poupança:** €5-10/mês
 
@@ -247,7 +222,7 @@ priority: "TRENDING"
 - Portátil consome 50-80% menos que desktop
 - Desligue quando não usa (não deixe ligado 24h)
 
-### Dica 16: TV e Entretenimento
+### Dica 14: TV e Entretenimento
 
 **Poupança:** €3-8/mês
 
@@ -259,7 +234,7 @@ priority: "TRENDING"
 
 ## 🔌 Instalação Elétrica
 
-### Dica 17: Verifique Instalação Elétrica
+### Dica 15: Verifique Instalação Elétrica
 
 **Poupança:** €10-30/mês
 
@@ -276,7 +251,7 @@ priority: "TRENDING"
 
 **Instalação > 25 anos = considere atualizar**
 
-### Dica 18: Protetor de Sobretensão
+### Dica 16: Protetor de Sobretensão
 
 **Poupança:** €5-15/mês + proteção
 
@@ -287,7 +262,7 @@ priority: "TRENDING"
 
 **Custo:** €80-200 (instalação no quadro)
 
-### Dica 19: Monitorize o Consumo
+### Dica 17: Monitorize o Consumo
 
 **Poupança:** €10-25/mês
 
@@ -299,25 +274,6 @@ priority: "TRENDING"
 **Saber = poder poupar!**
 
 Identifique aparelhos que consomem mais e ajuste uso.
-
-## ☀️ Energias Renováveis
-
-### Dica 20: Painéis Solares
-
-**Poupança:** €50-150/mês
-
-**Investimento:**
-- Sistema 3kW: €4.000-7.000
-- Sistema 5kW: €6.000-10.000
-
-**Retorno:** 7-10 anos
-
-**Benefícios:**
-- Reduz conta 50-90%
-- Valoriza imóvel
-- Incentivos fiscais (verifique disponibilidade)
-
-**Consulte eletricista especializado** para avaliação.
 
 ## 📊 Resumo: Poupança por Categoria
 
