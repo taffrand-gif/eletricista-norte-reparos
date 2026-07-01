@@ -567,3 +567,35 @@ Branche : `feat/seo-vague2-2026-06-30` @ 3 commits (c6ba77562, 305963c53, 6abdb2
 - 🟡 **Cluster « fabrication marcas »** : review résiduelle sur autres pages EU/CU.
 - 🟢 **Push SEO_PLAN** : commit local-only, NE PAS PUSH tant que Philippe n'a pas donné GO final.
 #fin session 03/07 massive close
+
+## 🆕 Session 04/07 00h BST — P2 cleanup + P4.0 NO-GO + diagnostic batch 4
+
+| DATE | AGENT | TÂCHE | ACTION | JUSTIFICATION | RÉSULTAT | STATUT |
+|------|-------|-------|--------|---------------|----------|--------|
+| 2026-07-04 | hermes-mini | P2 | §9.3 bulk loop : drop 2 branches stale ENR (`docs/seo-plan-maj-*`) | Toutes tree-identical après rebase | 2 branches droppées | ✅ Fait |
+| 2026-07-04 | hermes-mini | P2 | Pull main ENR (était behind 2) | Récupération merge #113 docs + autres | ENR main aligné sur origin | ✅ Fait |
+| 2026-07-04 | hermes-mini | P2 | Purge worktree orphelin `/private/tmp/probe-enr-theirs-1689ae` (detached HEAD prunable) | Leçon #190-bis worktree-deletion trap | Worktree supprimé | ✅ Fait |
+| 2026-07-04 | hermes-mini | P2 | Purge 4091 `.bak` orphelins ENR | R6 respectée | 0 .bak résiduels hors _archive | ✅ Fait |
+| 2026-07-04 | hermes-mini | P4.0 | Sub-agent dispatch (CNR+ENR GoogleReviews.tsx) | Leçon #294 worktree, R7 PR draft, R8 témoins | Sub-agent mort silencieuse (leçon #172 #260 dispatched-but-dead) | ❌ Échec silencieux |
+| 2026-07-04 | hermes-mini | P4.0 | Diagnostic direct parent : `client/src/components/GoogleReviews.tsx` | Lecture composant + grep imports/usages | Composant DÉJÀ conforme R11 depuis M5 (commits `1b1632020` CNR #106 + `0764d8c9e7` ENR #93 mergés 01/07). Placeholder honnête "Ainda estamos a recolher os primeiros testemunhos verificados" | ✅ Fait (NO-GO éclairé) |
+| 2026-07-04 | hermes-mini | diagnostic | P4.0 sub-agent NO-GO report = 8 points R11/R12 résiduels flaggés | Hors scope P4.0 mais à programmer batch 4 | Liste : CNR Testimonials.tsx (JSON-LD conditionnel), CNR Testemunhos.tsx (DB), CNR DesentupirSanitaUrgente.tsx (lignes 235+), sitemap `/avaliacoes-clientes`, ENR `ai.txt` AggregateRating:4.9/5, ENR StatsCounters.tsx, dark-patterns Cialdini BandwagonEffect+LikingTechnician, mentions FAUX ~10 fichiers | 📋 Documenté |
+
+### Leçons codées cette session (#323, #260)
+
+- **#260 (rappel)** : sub-agent peut mourir silencieusement (dispatched-but-dead). Toujours valider via diagnostic direct parent si rapport attendu absent.
+- **#323** : P4.0 = déjà résolu par M5 (#106 CNR + #93 ENR mergés 01/07). Le diagnostic direct parent a évité de toucher un composant déjà conforme. **R3 strict respecté par le sub-agent dans son NO-GO report** = archétype.
+
+### État post-session 04/07 (ENR)
+
+- **Aucune PR mergée cette session** (P4.0 = NO-GO, P3 ne touche pas ENR).
+- **Branches locales** : 1 (main) après drop 2 docs.
+- **0 stash** | 1 worktree (main) | 0 `.bak` orphelin.
+- **Composant GoogleReviews.tsx** : conforme R11 depuis 01/07, M5 #93 déjà mergé.
+
+### Prochaines actions (P0/P1 batch 4)
+
+- 🛑 **ENR `StatsCounters.tsx`** : chiffres fantômes à neutraliser (R11).
+- 🛑 **ENR `ai.txt`** : `AggregateRating: 4.9/5` (claim LLM fabriqué pour ENR).
+- 🟡 **Mentions FAUX sur ~10 fichiers** (`melhor-*`, `quanto-custa-eletricista-*`, `domotica-*`, `alarme-*`, `premium-hooks.html`, `tomada-faiscas-*`, `quadro-antigo-*`) — grep résiduel à étendre.
+- 🟡 **P3.1 maillage 38 pages** : prochaine mission post-batch 4 (cross-site).
+- 🟢 **Push SEO_PLAN** : ce commit est local-only.
