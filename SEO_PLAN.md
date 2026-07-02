@@ -14,6 +14,63 @@
 
 ---
 
+## 🗺️ ROADMAP MONOPOLE — TODO ce repo (ENR) — owner exécution : **Hermes**
+
+> Roadmap phasée maître : `~/work/Sites/MONOPOLE_SEO_2026Q3.md` §ROADMAP PHASÉE. Ici = todos concrets ENR. Claude+Filipe conçoivent, Hermes coche.
+
+- [ ] **M0** — Retirer faux avis `GoogleReviews.tsx` + schema `Review`/`aggregateRating` → placeholder honnête (R11 ACTIF prod).
+- [ ] **M0** — Fin purge body : 107 mentions FAUX (wallbox/solar/AC) — garder blog éducatif, prioriser les 3 pages exposées au sitemap.
+- [ ] **M0** — DGEG : séparer `materiais certificados`/`RTIEBT` (garder) de `nós certificamos`/« Certificada » (retirer/geler jusqu'à inscription active).
+- [ ] **M1** — Maillage COMPLET : 20 hubs (14 concelhos + 6 distritos) → localités (page **primaire** only) ; remontant breadcrumb sur ~3247 pages localité → hub concelho→distrito ; latéral 6-8 sœurs même concelho. **Signal unique/hub**. Localités RÉELLES only (R11/R5). Vagues R15, grep AVANT/APRÈS, 0 lien 404.
+- [ ] **M2** — Split intent (⚠️ structure ÉCLATÉE, pas de `seoKeywords.ts`) : purger `urgente`/`24h`/`resposta prioritária`/`emergência` dans `client/src/pages/cidades/*.tsx` + `hooks/useSEO.tsx` + `SEOHead*.tsx`. Pilote `eletricista×Bragança`, livrable `keyword-map.csv`. Détail : master §M2 DESIGN.
+- [ ] **M3** — (schema LocalBusiness/areaServed/FAQPage déjà présents ✅) → **créer** pages `preço-eletricista-<ville>-2026` datées citables (4 districts, tableau Z1-Z6 + **70€/h** + date visible, schema Offer). Vérifier `areaServed` couvre 4 districts. Détail : master §M3 DESIGN.
+- [ ] **M4** — Actif « Observatório de preços » (agrège pages prix M3, citable/outreach) ; Review schema **BLOQUÉ** tant que 0 avis réel → lancer boucle collecte (WhatsApp/n8n après job). Détail : master §M4 DESIGN.
+
+---
+
+## 🆕 P0 — Prix/zones OSRM (ENR) — dry-run 04/07/2026
+
+> **Mission en cours** (doctrine doc-only, pattern #327) : consigner ici le périmètre P0 avant toute modification code.
+> **Source de vérité** : `~/work/Sites/norte-os-marketing/prototypes/zonas-data.json` (914) + `~/Documents/ObsidianVault/NORTE-OS/Methodologie/GRILLE-ZONES-OFFICIELLE-2026-06-24.md` (fallback concelho).
+> **Barème** : Z1=15€ · Z2=25€ · Z3=35€ · Z4=45€ · Z5=55€ · Z6=65€ (déplacement) · MO **70€/h élec** · majoration +50% MO+dép.
+> **R145** : limité au bloc `<div class="zone-info">` (R145 hors-bloc zone = mission séparée, `mediante confirmação` pending Filipe).
+> **Doctrine** : normalisation idempotente depuis source, **jamais inventer une zone pour NO_RESOL**.
+> **Artefacts** : `~/work/Sites/_audit/phase0-dryrun/` + `~/work/Sites/_audit/phase0.5-rescan/`.
+
+### Counts ENR (lecture seule dry-run)
+
+| Couche | Pages | OK | NO-OP | AJUSTER | INCOHERENT | NO_RESOL |
+|---|---:|---:|---:|---:|---:|---:|
+| `client/public/eletricista-*.html` (villages/aldeias) | 1734 | 450 | 0 | 1069 | 6 | 209 |
+| `public/eletricista-*.html` (villes-sèdes principales) | 58 | 1 | 15 | 29 | 0 | 13 |
+| **TOTAL ENR** | **1792** | **451** | **15** | **1098** | **6** | **222** |
+
+### Villes-sèdes (focus critique — fort trafic / haute valeur)
+
+| Ville | Zone OSRM | Badge actuel | Statut |
+|---|---|---|---|
+| Macedo de Cavaleiros | Z1 | Z1 | ✓ OK |
+| Mirandela | Z2 | Z2 | ✓ NO-OP |
+| **Bragança** | Z2 | **Z4** | ❌ AJUSTER |
+| **Chaves** | Z4 | (page absente ENR) | ⚠️ NON-AUDIT |
+| **Vila Real** | Z4 | **Z5** | ❌ AJUSTER |
+| **Lamego** | Z6 | (page absente ENR) | ⚠️ NON-AUDIT |
+
+### Plan d'attaque ENR
+
+- [ ] Branche `fix/prix-zones-osrm` (ENR) + prototype `public/eletricista-chaves.html` → STOP diff Filipe → GO batch R15
+- [ ] Vague 0 villes-sèdes (44 pages corrigibles : 29 AJUSTER + 15 NO-OP)
+- [ ] Vague 1-N : AJUSTER restant (1069 dans `client/public/`) en vagues ≤95 fichiers/commit
+- [ ] Mission M-NO_RESOL séparée (222 localités : 209 villages + 13 villes-sèdes) — décision Filipe
+
+### Liens artefacts
+
+- Audit complet : `~/work/Sites/_audit/phase0-dryrun/ENR_audit.{csv,json}`
+- Audit villes-sèdes : `~/work/Sites/_audit/phase0.5-rescan/ENR_public_audit.{csv,json}`
+- NO_RESOL consolidés : `~/work/Sites/_audit/phase0-no-resol/ENR.txt` (222 lignes)
+
+---
+
 ## 🏆 STRATÉGIE MONOPOLE SERP/GEO → voir `~/work/Sites/MONOPOLE_SEO_2026Q3.md`
 
 > Plan maître cross-sites (établi 30/06/2026). Objectif: occuper **plusieurs surfaces d'un seul résultat** par requête (Local Pack + 2 domaines organic + AI Overview + PAA + image pack + étoiles).
