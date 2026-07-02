@@ -797,3 +797,30 @@ Source unique zones : `~/work/Sites/norte-os-marketing/prototypes/zonas-data.jso
 **Si NO-GO D5-*** : re-scoping mission, nouveaux briefs sub-agents selon retours.
 
 **Ne pas oublier** (priorité oubliée 02/07 15h49) : correctif 2 531 `<title>` racine dupliqués (CU+EU) — branche séparée `fix/restore-titles-from-og-title-2026-07-02` depuis main, fix = 1 sed/fichier (`<og:title>` → `<title>`). Source : `~/work/Sites/.tooling/next_session_priorities.md`.
+
+
+---
+
+## 🎯 SESSION 02/07 17h — P0.5 PROTOTYPE ENR LIVRÉ, STOP D5/D6
+
+**Suite directe CU/EU/CNR.** Prototype ENR : `7c5dc4f9fb wip(ENR): P0.5 prototype S2 — client/public/quadro-eletrico-lamego Z5→Z6`.
+
+### ✅ Prototype P0.5 S2 strict livré (modèle Norte Reparos élec)
+
+Lamego = Z6 (zones-data.json). Badge data-zone Z5 → Z6, prix 55€ → 65€,
+total 1h 135€. Conformité R12 (orçamento por escrito em 48h, NAP 932 321 892).
+
+8 surfaces alignées : title, meta description, og:title, twitter,
+data-zone, zone-info visible, H1, JSON-LD FAQPage text.
+
+NON touché : aucun Offer JSON-LD service.
+
+### 🚦 STOP strict — En attente GO D5 (vagues) + D6 (slugs ENR)
+
+**Triple delta** : KO1 -1, KO2 -1, KO2bis -1 (patch conforme S2 strict).
+
+71 KO1 totaux ENR + 12 KO2 + 12 KO2bis → vagues à venir.
+
+Note D6 : 5 slugs ENR hors source-of-truth
+(alfndega-da-fe typo, fornos-de-algodres Guarda, macedo-cavaleiros sans "de",
+seix0-de-ansiaes typo, trancoso Guarda) — décision GO D6 avant vagues ENR.
