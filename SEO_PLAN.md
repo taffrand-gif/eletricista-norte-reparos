@@ -201,6 +201,7 @@ Voir section dédiée. Documentation dans HISTORIQUE.
 | 2 | `e162f13498` | Vague 1 client/public/ (88 fichiers) — cosmétique: badge Chaves " · 74.7 km" retiré |
 | 3 | `c7501798a9` | Vague 2 client/public/ (35 fichiers) — **ENR batch terminé** |
 | 4 | `e952f4361b` | docs(seo-plan): HISTORIQUE P0 batch 04/07 (24 commits batch prix/zones OSRM, 757 fichiers, 0 merge main) |
+| 5 | *pending* | **P0.5 vague 1 ENR** : apply_vague.py canonique (tier 1 = KO2ter_body_vs_badge). 100 fichiers, 95 patchés, 5 déjà OK, 0 skip, 0 erreur. is_urgente=False auto (R145 désactivé, conforme ENR). Témoin R8 : `git diff --name-only HEAD client/public/` = 96 fichiers (95 nouveaux + 1 braganca pré-modifié). JSON-LD : 116 valides, 0 cassé. Échantillon 20 fichiers : badge==source 5/20 (conforme scope KO2ter = aligner body sur badge, pas badge sur source), 0 délai chiffré restant. Source-of-truth chargée : 914 localités. **À committer.** |
 
 **ENR : 136 fichiers patchés.** (prototype Chaves déjà correct avant vague 0, pas de commit prototype séparé — leçon #329. Le "prototype ENR" est en réalité intégré dans la "vague 0" du 02/07 12h55.) Artefacts audit : `phase0-dryrun/ENR_audit.{csv,json}` (ENR racine 222 NO_RESOL) + `phase0.5-rescan/ENR_public_audit.{csv,json}` (13 villes-sèdes, 8 NO_RESOL consolidés `phase0-no-resol/ENR.txt`).
 
