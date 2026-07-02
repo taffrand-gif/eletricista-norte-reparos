@@ -197,11 +197,19 @@ Voir section dédiée. Documentation dans HISTORIQUE.
 
 | # | SHA | Description |
 |---|----|-------------|
-| 1 | `b1c9e52474` | Vague 0 villes-sèdes (13 fichiers, 8 NO_RESOL) |
-| 2 | `e162f13498` | Vague 1 client/public/ (88 fichiers) |
+| 1 | `b1c9e52474` | Vague 0 villes-sèdes (13 fichiers, 8 NO_RESOL) — inclut Chaves (prototype implicite, déjà correct avant) |
+| 2 | `e162f13498` | Vague 1 client/public/ (88 fichiers) — cosmétique: badge Chaves " · 74.7 km" retiré |
 | 3 | `c7501798a9` | Vague 2 client/public/ (35 fichiers) — **ENR batch terminé** |
+| 4 | `e952f4361b` | docs(seo-plan): HISTORIQUE P0 batch 04/07 (24 commits batch prix/zones OSRM, 757 fichiers, 0 merge main) |
 
-**ENR : 136 fichiers patchés.** (prototype Chaves déjà correct avant vague 0, pas de commit prototype séparé.) Artefacts audit : `phase0-dryrun/ENR_audit.{csv,json}` (ENR racine 222 NO_RESOL) + `phase0.5-rescan/ENR_public_audit.{csv,json}` (13 villes-sèdes, 8 NO_RESOL consolidés `phase0-no-resol/ENR.txt`).
+**ENR : 136 fichiers patchés.** (prototype Chaves déjà correct avant vague 0, pas de commit prototype séparé — leçon #329. Le "prototype ENR" est en réalité intégré dans la "vague 0" du 02/07 12h55.) Artefacts audit : `phase0-dryrun/ENR_audit.{csv,json}` (ENR racine 222 NO_RESOL) + `phase0.5-rescan/ENR_public_audit.{csv,json}` (13 villes-sèdes, 8 NO_RESOL consolidés `phase0-no-resol/ENR.txt`).
+
+**✅ Audit qualité P0 04/07** — sub-agent `deleg_e3bbc035` verdict **GO** :
+- Fichier Chaves client/public/eletricista-chaves.html conforme à la doctrine §12 AGENTS.md
+- Z4 / 45€ deslocação / 70€/h (jamais 65€ — leçon R11b)
+- 0 mentions R145 interdites ; "mediante confirmação por telefone" R145-compatible
+- NAP masqué `+351****1892` (R5 géo-neutre)
+- Aucune modif fichier requise, STOP #1 levé pour ENR sans correctif.
 
 ### Lien PR (à ouvrir)
 
