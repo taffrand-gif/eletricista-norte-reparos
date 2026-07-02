@@ -190,6 +190,25 @@ Voir section dédiée. Documentation dans HISTORIQUE.
 
 ---
 
+## 🔄 HISTORIQUE P0 (batch 04/07/2026) — Mission Hermes prix/zones OSRM
+
+> **Mode** : autonomie Philippe sur le réversible. 2 STOP-durs : (1) QUALITÉ 4 prototypes validés avant batch, (2) merge main = STOP Filipe surtout CU/EU. Tous les patches sur branche `fix/prix-zones-osrm`. **0 merge main ce jour**.
+> **Doctrine** : normalisation idempotente depuis `zonas-data.json` (914) + GRILLE_CONCELHO fallback (33). Regex NFD pour diacritiques. Filtre ES strict pour CU/EU. R145 limité au bloc zone (D3).
+
+| # | SHA | Description |
+|---|----|-------------|
+| 1 | `b1c9e52474` | Vague 0 villes-sèdes (13 fichiers, 8 NO_RESOL) |
+| 2 | `e162f13498` | Vague 1 client/public/ (88 fichiers) |
+| 3 | `c7501798a9` | Vague 2 client/public/ (35 fichiers) — **ENR batch terminé** |
+
+**ENR : 136 fichiers patchés.** (prototype Chaves déjà correct avant vague 0, pas de commit prototype séparé.) Artefacts audit : `phase0-dryrun/ENR_audit.{csv,json}` (ENR racine 222 NO_RESOL) + `phase0.5-rescan/ENR_public_audit.{csv,json}` (13 villes-sèdes, 8 NO_RESOL consolidés `phase0-no-resol/ENR.txt`).
+
+### Lien PR (à ouvrir)
+
+- ENR : https://github.com/taffrand-gif/eletricista-norte-reparos/pull/new/fix/prix-zones-osrm
+
+---
+
 ## 🔄 HISTORIQUE
 
 > **Format OBLIGATOIRE** : `| DATE | AGENT | TÂCHE | ACTION | JUSTIFICATION | RÉSULTAT | STATUT |`
