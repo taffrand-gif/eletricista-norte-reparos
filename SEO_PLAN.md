@@ -969,6 +969,21 @@ Co-Authored-By: Claude (Fable 5 Sonnet) <noreply@anthropic.com>
 
 ---
 
+## 🎯 SESSION 03/07 (PRs ready for review, STOP R7)
+
+**U4-M1 strict** : PR **#115** ready for review (20/20 hubs ENR, BreadcrumbList + maillage hub↔hub, commit `c9460155c3`, Vercel SUCCESS).
+
+**U4-M2 keywords purge** : PR **#116** ready for review (5/5 keywords urgente→24h, commit `acec1318a`, idempotent, Vercel SUCCESS).
+
+**U4-M3 Vague A datation** : PR **#117** ready for review (39/39 fichiers blog custo/precos `datePublished` 2025→2026-07-01, commit `0e22f06062`, Vercel SUCCESS). 1 fichier C_OK préservé (`custo-eletricista-tras-os-montes-precos.html`).
+
+**U4-M4 Observatório** (spéculatif ENR) : après validation CNR, page `/observatorio-precos-eletricista.html` (40 liens M3, barème Z1-Z6 + MO 70€/h ENR, NAP 932 321 892). Design CNR parent-side : `_audit/u4/U4_M4_observatorio_DESIGN.md`.
+
+**🆕 CLOSE 03/07 12:00 BST — GO nominatif CEO, 7 PRs SQUASH-MERGED (R7-bis)** : #128 #129 #130 #131 CNR + #115 #116 #117 ENR sur main 11:11 BST. Triangulation pre-merge API : `mergeStateStatus=CLEAN` 7/7. CI post-merge : success 7/7. Prod curl 200 sur hubs (Bragança conselho + distrito CNR+ENR, datation 2026-07-01 visible). Bugfix `patch_meta_keywords.py:5` 04/07→03/07. Skill `memory-before-plan` créée (`~/.hermes/skills/memory-before-plan/SKILL.md`). Leçons #340 (date) + #343 (memory-before-plan) + CEO leçon miroir « audit = commits + PRs ouvertes + trees ».
+
+**Suite** : U4 CNR+ENR terminé. Front suivant à trancher : U4 sur CU/EU (hubs urgence, si pas fait) ou D-liste.
+
+---
 ## 🎯 SESSION 02/07 22h35 — vagues 3-5 (cumul -28.1% KO2ter baseline 4145)
 
 **Vagues 1+2+3 livrees** (commits dans cette branche `fix/prix-zones-osrm`) :
