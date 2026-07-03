@@ -1109,3 +1109,35 @@ Co-Authored-By: Claude (Fable 5 Sonnet) <noreply@anthropic.com>
 
 ### Statut
 ✅ **PRs SQUASH-MERGED** sur main (13h03 BST) — CU squash  + EU squash .
+
+
+## 🔄 HISTORIQUE — 2026-07-03 ~16h50 BST — Mission CEO M1-M5 (4/5 ✅ livré)
+
+### M1 P0 · robots.txt — ✅ LIVRÉ (PRs mergées 16h50 BST)
+- **CNR** : PR #135 mergée (SHA `18f73506`). `norte-reparos.com` → `canalizador-norte-reparos.pt` + ajout `Sitemap: .../sitemap-plain.xml`. DoD : 2 lignes `^Sitemap:` dans `client/public/robots.txt`.
+- **ENR** : PR #121 mergée (SHA `aefee46c`). Ajout ligne `sitemap-plain.xml`. DoD : 2 lignes.
+
+### M2 P0 · Débloquer les 3 deploys — ✅ EU LIVE, CNR/ENR pending quota
+- `~/.hermes/scripts/{retry,post}-deploy-eu-enr.sh` étendus à 3 sites + bash 3.2-compat (declare -A → case) + capture OOM Node.
+- **EU déployé manuellement 16h55** : `vercel deploy --prod --yes` → 45s → `https://eletricista-urgente.pt` aliased.
+- **Quota Vercel saturé** : 100/100 deploys/24h glissantes. Reset dans 24h. CNR/ENR en attente (CLI OOM sur vercel.json 82KB, contournement = API REST via Deploy Hook ou attendre quota).
+
+### M3 P1 · ignoreCommand Vercel — ✅ 4 projets PRs mergées 16h48
+- `vercel.json` + `vercel-ignore.sh` créé sur **4 repos** (CNR #136 mergée, ENR #122 mergée, CU #106 mergée, EU #106 mergée).
+- 3 scénarios testés : SKIP (md) / BUILD (code) / BUILD (no SHA, fail-safe).
+- DoD : push branche doc-only = 0 preview Vercel brûlé (à valider post-reset quota).
+
+### M4 P1 · Vérif post-deploy <loc> — ✅ LIVRÉ
+- `post-deploy-eu-enr.sh` : `url_count=$(curl -s "$sitemap" | grep -oE "<loc>" | wc -l)` au lieu de HTTP 200 seul.
+- **EU vérif live** : 1829 URLs ✅, robots.txt contient `Sitemap: .../sitemap-plain.xml` ✅.
+
+### M5 P2 · Post-deploy live — ⏳ PARTIELLEMENT
+- EU : GSC submit OK (déjà fait 03/07 15h23) + IndexNow push tenté (clé pas servie en 200, retry next tick).
+- CNR/ENR : en attente quota Vercel.
+- commit SEO_PLAN.md (CU livré SHA `4e1a62785` non-pushé par doctrine leçon #347).
+
+### Leçons codées cette vague
+- **#359** bash 3.2 macOS = pas de `declare -A` → cron script mort silencieux.
+- **#360** Dry-run script avec `set -u` + side-effects peut créer markers parasites.
+- **#361** `ignoreCommand` se met dans `vercel.json` (PAS API Project Settings).
+- **OOM Node sur vercel.json >80KB** (Vite 1500+ rewrites) : contournement = API REST Vercel (Deploy Hooks) ou attendre 4GB `--max-old-space-size` (insuffisant sur le binaire actuel).
