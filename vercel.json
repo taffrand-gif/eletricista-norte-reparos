@@ -6533,5 +6533,6 @@
       "destination": "/eletricista-fiaes",
       "statusCode": 301
     }
-  ]
+  ],
+  "ignoreCommand": "if bash ./vercel-ignore.sh; then exit 0; else exit 1; fi"
 }
