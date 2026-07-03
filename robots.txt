@@ -48,3 +48,5 @@ Sitemap: https://eletricista-norte-reparos.pt/sitemap.xml
 User-agent: *
 Allow: /
 Sitemap: https://eletricista-norte-reparos.pt/sitemap-plain.xml
+
+# Redeploy trigger 2026-07-03 16:06:29
