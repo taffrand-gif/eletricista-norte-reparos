@@ -29,6 +29,9 @@ Allow: /
 User-agent: GoogleOther
 Allow: /
 
+User-agent: Google-InspectionTool
+Allow: /
+
 User-agent: Meta-ExternalAgent
 Allow: /
 
@@ -43,6 +46,7 @@ Allow: /
 
 # Sitemap
 Sitemap: https://eletricista-norte-reparos.pt/sitemap.xml
+Sitemap: https://eletricista-norte-reparos.pt/sitemap-plain.xml
 
 # Default
 User-agent: *
