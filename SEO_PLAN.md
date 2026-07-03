@@ -1000,3 +1000,62 @@ Vagues 4-5 dispatchees en parallele via deleg_61c15033 (4 sub-agents).
 Patcher canonique apply_vague.py SHA 6ab04f4d8, garde-fous R8 OpenClaw respectes.
 
 Co-Authored-By: Claude (Fable 5 Sonnet) <noreply@anthropic.com>
+
+
+---
+
+## 🆕 CLOSE 03/07 13h00 BST — 7 PRs U4 SQUASH-MERGED, baseline urgency CU/EU posée
+
+### 7 PRs SQUASH-MERGED sur main (R7-bis, 11h11 BST)
+
+| PR | Repo | Mission | HEAD squash | Fichiers +/− | CI | Vercel |
+|---|---|---|---|---|---|---|
+| **#128** | CNR | U4-M1 hubs (BreadcrumbList + hub↔hub) | `6fbe44a8` | 19 / +626/-0 | success | READY |
+| **#115** | ENR | U4-M1 hubs | `10f1fed8` | 20 / +693/-40 | success | READY |
+| **#129** | CNR | U4-M2 keywords urgente→24h | `8740588f` | 13 / +22/-22 | success | READY |
+| **#116** | ENR | U4-M2 keywords | `44bdf771` | 5 / +5/-5 | success | READY |
+| **#130** | CNR | U4-M3 Vague A datation 2026-07-01 | `bf34ad3f` | 38 / +38/-38 | success | READY |
+| **#117** | ENR | U4-M3 Vague A datation | `71650c14` | 39 / +39/-39 | success | READY |
+| **#131** | CNR | U4-M3 Vague B disclaimer aside | `4508bf02` | 31 / +92/-30 | success | READY |
+
+**Pre-merge gate** : `mergeStateStatus=CLEAN` 7/7 + `mergeable=true` 7/7 + base=main 7/7 (API GitHub).
+**Post-merge evidence** (curl prod) : Bragança CNR/ENR hubs conselho + distrito HTTP 200, BreadcrumbList ✓, datation `2026-07-01` ✓.
+
+### Bugfix date & skill
+
+- **`_audit/u4/patch_meta_keywords.py:5`** : docstring « Doctrine verrouillée user 04/07/2026 » → **03/07/2026** (source = `date` système `Fri Jul 3 … BST 2026`). Grep `04/07` dans `_audit/` = vide.
+- **Skill `~/.hermes/skills/memory-before-plan/SKILL.md` v1.1.0** créée + patchée. Doctrine verrouillée : « un ordre CEO qui contredit la mémoire = signal de réconciliation de rapport, pas re-travail de code ».
+
+### U4 sur CU/EU (sites urgência) — baseline scout posée 12h45 BST
+
+**Nouvelles mesures** (script `_audit/u4/u4_m1_scout_urgency.py`, read-only, 1s) :
+
+| Métrique | CU | EU |
+|---|---:|---:|
+| Pages root (toutes .html) | 2047 | 1968 |
+| Orphelines (0 lien entrant interne) | 276 (13.5%) | 253 (12.9%) |
+| …dont slugs accentués (ç, ã, é…) | 180 | 180 |
+| Doublons accentué↔plain (lagoaça.html + lagoaca.html) | 27 paires | 28 paires |
+| Pages <3 liens sortants | 67 | 64 |
+
+**Triangulation vs sonde CEO** : alignement parfait sur `180` slugs accentués orphelins (CU + EU).
+
+**Gisement U4 urgency caractérisé** :
+1. **180 orphelins accent** → intégrer au maillage « Veja também ».
+2. **40 plain préfixe `urgente-<ville>`** où `<ville>` accentué → même traitement.
+3. **33 blog/* orphelins** → liens contextuels vers pages service.
+4. **22 hubs morts (11 concelhos + 11 preco-…-2026.html)** CU → **Vague O.2 dédiée**.
+5. **27+28 paires doublons accent** = **D7 STOP** (301 = irréversible).
+
+### Prochain front après clôture session
+
+- **Vague O.2** : réactiver 11 concelhos/<ville>.html CU + 11 hubs EU (si présents).
+- **Vague O.1** : patcher `u4_patcher_orphan_inlinks.py` (idempotent) sur ~391 orphelins CU + ~410 EU.
+- **D7** : CEO tranche 27+28 doublons accent → 301, suppression, ou renommage plain.
+
+### Décisions CEO cumulées
+
+- **D3** (6561 NO_RESOL fallback concelho) : U4+ ✓
+- **D4** (avis client réel) : U4-M4 BLOQUÉ
+- **D6** (Trancoso + Fornos) : préservés intacts
+- **D7** (27+28 doublons accent, CSV prêt) : **À TRANCHER — 301 = STOP**
