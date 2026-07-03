@@ -47,7 +47,7 @@ export default function Chaves() {
  metaKeywords.setAttribute('name', 'keywords');
  document.head.appendChild(metaKeywords);
  }
- metaKeywords.setAttribute('content', 'eletricista urgente chaves, eletricista Atendimento 24h/7d chaves, eletricista chaves, eletricista profissional chaves, instalação elétrica chaves, quadro elétrico chaves, certificação elétrica chaves, arranjo elétrica chaves, eletricista trás-os-montes');
+ metaKeywords.setAttribute('content', 'eletricista 24h chaves, eletricista Atendimento 24h/7d chaves, eletricista chaves, eletricista profissional chaves, instalação elétrica chaves, quadro elétrico chaves, certificação elétrica chaves, arranjo elétrica chaves, eletricista trás-os-montes');
  
  
  // Canonical URL

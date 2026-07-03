@@ -47,7 +47,7 @@ export default function Braganca() {
  metaKeywords.setAttribute('name', 'keywords');
  document.head.appendChild(metaKeywords);
  }
- metaKeywords.setAttribute('content', 'eletricista urgente bragança, eletricista Atendimento 24h/7d bragança, eletricista bragança, eletricista profissional bragança, instalação elétrica bragança, quadro elétrico bragança, certificação elétrica bragança, arranjo elétrica bragança, eletricista trás-os-montes');
+ metaKeywords.setAttribute('content', 'eletricista 24h bragança, eletricista Atendimento 24h/7d bragança, eletricista bragança, eletricista profissional bragança, instalação elétrica bragança, quadro elétrico bragança, certificação elétrica bragança, arranjo elétrica bragança, eletricista trás-os-montes');
  
  
  // Canonical URL

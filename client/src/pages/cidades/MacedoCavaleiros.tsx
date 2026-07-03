@@ -29,7 +29,7 @@ export default function MacedoCavaleiros() {
  metaKeywords.setAttribute('name', 'keywords');
  document.head.appendChild(metaKeywords);
  }
- metaKeywords.setAttribute('content', 'eletricista macedo de cavaleiros, eletricista urgente macedo, eletricista Atendimento 24h/7d macedo cavaleiros, avaria elétrica macedo, quadro elétrico macedo cavaleiros, curto circuito macedo');
+ metaKeywords.setAttribute('content', 'eletricista macedo de cavaleiros, eletricista 24h macedo, eletricista Atendimento 24h/7d macedo cavaleiros, avaria elétrica macedo, quadro elétrico macedo cavaleiros, curto circuito macedo');
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');

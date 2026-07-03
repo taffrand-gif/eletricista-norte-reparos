@@ -47,7 +47,7 @@ export default function Mirandela() {
  metaKeywords.setAttribute('name', 'keywords');
  document.head.appendChild(metaKeywords);
  }
- metaKeywords.setAttribute('content', 'eletricista urgente mirandela, eletricista Atendimento 24h/7d mirandela, eletricista mirandela, eletricista profissional mirandela, instalação elétrica mirandela, quadro elétrico mirandela, certificação elétrica mirandela, arranjo elétrica mirandela, eletricista trás-os-montes');
+ metaKeywords.setAttribute('content', 'eletricista 24h mirandela, eletricista Atendimento 24h/7d mirandela, eletricista mirandela, eletricista profissional mirandela, instalação elétrica mirandela, quadro elétrico mirandela, certificação elétrica mirandela, arranjo elétrica mirandela, eletricista trás-os-montes');
  
  
  // Canonical URL
