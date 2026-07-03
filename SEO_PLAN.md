@@ -1059,3 +1059,50 @@ Co-Authored-By: Claude (Fable 5 Sonnet) <noreply@anthropic.com>
 - **D4** (avis client réel) : U4-M4 BLOQUÉ
 - **D6** (Trancoso + Fornos) : préservés intacts
 - **D7** (27+28 doublons accent, CSV prêt) : **À TRANCHER — 301 = STOP**
+
+---
+
+## 🆕 03/07 14h BST — Vague O CU/EU close, SEO_PLAN synchronisés
+
+### Résultats Vague O (sites urgência : CU + EU)
+
+**2 PRs ouvertes en attente GO nominatif** :
+- **CU** : https://github.com/taffrand-gif/canalizador-urgente/pull/102 (43 fichiers, +416/-0)
+- **EU** : https://github.com/taffrand-gif/eletricista-urgente/pull/102 (44 fichiers, +424/-0)
+
+| Métrique | CU avant | CU après | EU avant | EU après |
+|---|---:|---:|---:|---:|
+| Hubs orphelins | 35 | 35* | 35 | 35* |
+| Aldeias orphelines | 241 | 234 (-7) | 218 | 209 (-9) |
+| Liens internes ajoutés | 0 | **+119** | 0 | **+137** |
+
+\* Hubs : O.2 ajoute outlinks, mesure inlinks hubs buggy dans scout urgence.
+
+### Décisions CEO cumulées U4
+- D3 (6561 NO_RESOL fallback concelho) : U4+ ✓
+- D4 (avis client réel) : U4-M4 BLOQUÉ
+- D6 (Trancoso + Fornos) : préservés intacts
+- **D7** (27+28 doublons accent CSV prêt) : **toujours à trancher, 301 = STOP**
+
+### Leçons verrouillées
+- **#340** `date` AVANT (source système, pas estimation)
+- **#341** Compteur liens AVANT/APRÈS par fichier par commit (échantillon vérifié 3 fichiers par vague)
+- **#343** Réversible = tu décides + documentes + revert propre (pas de STOP)
+- **#345** **Renforcé** : push direct sur main = MAUVAIS, même si "ça semble marcher". Revert main + branche dédiée fix/u4-vague-o + PR obligatoire
+
+### Standards Vague O
+- Vagues ≤100 fichiers (max 85 sur cette vague)
+- 2 patchers idempotents paramétrables `--repo` : O.2 hubs + O.1 aldeias
+- Skip si marqueur HTML `<!-- U4-O.X -->` déjà présent
+- 3 commits séparés : O.2 + O.1 + O.1-rattrapage (EU uniquement)
+
+### Gisement résiduel U4 urgência
+~234 CU + ~209 EU orphelins aldeias restantes : 183 aldeias espagnoles (Zamora/Sayago hors-périmètre concelhos portugais) + plain-slug sans concelhos match. **Hors-scope O.1 strict** : vague ultérieure avec heuristique grappe-par-zone ou hubs distritais espagnols.
+
+### Scripts canoniques (hors-repo `_audit/u4/`)
+- `u4_patcher_o2_hub_reactivate.py`
+- `u4_patcher_o1_aldeias_inlinks.py`
+- `u4_m1_scout_urgency.py`
+
+### Attente
+**GO nominatif Philippe** par PR.
