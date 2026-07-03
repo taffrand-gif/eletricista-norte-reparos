@@ -5552,6 +5552,986 @@
       "source": "/parceiros.html",
       "destination": "/",
       "statusCode": 301
+    },
+    {
+      "source": "/eletricista-pópulo",
+      "destination": "/eletricista-populo",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-carçãozinho",
+      "destination": "/eletricista-carcaozinho",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-são-vicente",
+      "destination": "/eletricista-sao-vicente",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-ervões",
+      "destination": "/eletricista-ervoes",
+      "statusCode": 301
+    },
+    {
+      "source": "/melhor-certificacao-dgeg-alijó",
+      "destination": "/melhor-certificacao-dgeg-alijo",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-maçores",
+      "destination": "/eletricista-macores",
+      "statusCode": 301
+    },
+    {
+      "source": "/melhor-quadro-eletrico-valpaços",
+      "destination": "/melhor-quadro-eletrico-valpacos",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-carrazeda-de-ansiães",
+      "destination": "/eletricista-carrazeda-de-ansiaes",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-presandães",
+      "destination": "/eletricista-presandaes",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-gandariças",
+      "destination": "/eletricista-gandaricas",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-marzagão",
+      "destination": "/eletricista-marzagao",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-são-salvador",
+      "destination": "/eletricista-sao-salvador",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-carviçais",
+      "destination": "/eletricista-carvicais",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-valença-do-douro",
+      "destination": "/eletricista-valenca-do-douro",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-mogrão",
+      "destination": "/eletricista-mograo",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-touça",
+      "destination": "/eletricista-touca",
+      "statusCode": 301
+    },
+    {
+      "source": "/melhor-quadro-eletrico-alijó",
+      "destination": "/melhor-quadro-eletrico-alijo",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-águas-vivas",
+      "destination": "/eletricista-aguas-vivas",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-agrochão",
+      "destination": "/eletricista-agrochao",
+      "statusCode": 301
+    },
+    {
+      "source": "/melhor-avaria-mêda",
+      "destination": "/melhor-avaria-meda",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-póvoa-de-penela",
+      "destination": "/eletricista-povoa-de-penela",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-chãs",
+      "destination": "/eletricista-chas",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-vilarinho-de-agrochão",
+      "destination": "/eletricista-vilarinho-de-agrochao",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-grijó-de-parada",
+      "destination": "/eletricista-grijo-de-parada",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-urrós",
+      "destination": "/eletricista-urros",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-tazém",
+      "destination": "/eletricista-tazem",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-murçós",
+      "destination": "/eletricista-murcos",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-abaças",
+      "destination": "/eletricista-abacas",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-negrões",
+      "destination": "/eletricista-negroes",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-caçarelhos",
+      "destination": "/eletricista-cacarelhos",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-jerusalém-do-romeu",
+      "destination": "/eletricista-jerusalem-do-romeu",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-são-julião-de-palácios",
+      "destination": "/eletricista-sao-juliao-de-palacios",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-cortiços",
+      "destination": "/eletricista-corticos",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-paços",
+      "destination": "/eletricista-pacos",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-suçães",
+      "destination": "/eletricista-sucaes",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-lodões",
+      "destination": "/eletricista-lodoes",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-quintela-de-lampaças",
+      "destination": "/eletricista-quintela-de-lampacas",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-são-pedro-de-sarracenos",
+      "destination": "/eletricista-sao-pedro-de-sarracenos",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-carção",
+      "destination": "/eletricista-carcao",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-telões",
+      "destination": "/eletricista-teloes",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-são-lourenço-de-ribapinhão",
+      "destination": "/eletricista-sao-lourenco-de-ribapinhao",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-murça",
+      "destination": "/eletricista-murca",
+      "statusCode": 301
+    },
+    {
+      "source": "/melhor-iluminacao-led-mêda",
+      "destination": "/melhor-iluminacao-led-meda",
+      "statusCode": 301
+    },
+    {
+      "source": "/melhor-quadro-eletrico-bragança",
+      "destination": "/melhor-quadro-eletrico-braganca",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-água-revés",
+      "destination": "/eletricista-agua-reves",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-vilarinho-de-samardã",
+      "destination": "/eletricista-vilarinho-de-samarda",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-avinhó",
+      "destination": "/eletricista-avinho",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-cidões",
+      "destination": "/eletricista-cidoes",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-parada-do-pinhão",
+      "destination": "/eletricista-parada-do-pinhao",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-castro-de-avelãs",
+      "destination": "/eletricista-castro-de-avelas",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-sapiãos",
+      "destination": "/eletricista-sapiaos",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-grijó",
+      "destination": "/eletricista-grijo",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-vilares-da-vilariça",
+      "destination": "/eletricista-vilares-da-vilarica",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-são-martinho-do-peso",
+      "destination": "/eletricista-sao-martinho-do-peso",
+      "statusCode": 301
+    },
+    {
+      "source": "/melhor-iluminacao-led-peso-da-régua",
+      "destination": "/melhor-iluminacao-led-peso-da-regua",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-alfaião",
+      "destination": "/eletricista-alfaiao",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-são-martinho-de-angueira",
+      "destination": "/eletricista-sao-martinho-de-angueira",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-escalhão",
+      "destination": "/eletricista-escalhao",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-são-pedro-de-vale-do-conde",
+      "destination": "/eletricista-sao-pedro-de-vale-do-conde",
+      "statusCode": 301
+    },
+    {
+      "source": "/melhor-iluminacao-led-alijó",
+      "destination": "/melhor-iluminacao-led-alijo",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-lixa-do-alvão",
+      "destination": "/eletricista-lixa-do-alvao",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-santo-andré",
+      "destination": "/eletricista-santo-andre",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-freixo-de-numão",
+      "destination": "/eletricista-freixo-de-numao",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-açoreira",
+      "destination": "/eletricista-acoreira",
+      "statusCode": 301
+    },
+    {
+      "source": "/melhor-certificacao-dgeg-bragança",
+      "destination": "/melhor-certificacao-dgeg-braganca",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-bouçoães",
+      "destination": "/eletricista-boucoaes",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-horta-da-vilariça",
+      "destination": "/eletricista-horta-da-vilarica",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-alijó",
+      "destination": "/eletricista-alijo",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-o-riós",
+      "destination": "/eletricista-o-rios",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-póvoa-de-lila",
+      "destination": "/eletricista-povoa-de-lila",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-deilão",
+      "destination": "/eletricista-deilao",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-parâmio",
+      "destination": "/eletricista-paramio",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-santo-estêvão",
+      "destination": "/eletricista-santo-estevao",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-cachão",
+      "destination": "/eletricista-cachao",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-palaçoulo",
+      "destination": "/eletricista-palacoulo",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-santa-comba-de-vilariça",
+      "destination": "/eletricista-santa-comba-de-vilarica",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-mourão",
+      "destination": "/eletricista-mourao",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-seixo-de-ansiães",
+      "destination": "/eletricista-seixo-de-ansiaes",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-castelo-de-balsamão",
+      "destination": "/eletricista-castelo-de-balsamao",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-múrias",
+      "destination": "/eletricista-murias",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-bruçó",
+      "destination": "/eletricista-bruco",
+      "statusCode": 301
+    },
+    {
+      "source": "/melhor-certificacao-dgeg-valpaços",
+      "destination": "/melhor-certificacao-dgeg-valpacos",
+      "statusCode": 301
+    },
+    {
+      "source": "/melhor-quadro-eletrico-peso-da-régua",
+      "destination": "/melhor-quadro-eletrico-peso-da-regua",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-vila-boa-de-ousilhão",
+      "destination": "/eletricista-vila-boa-de-ousilhao",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-távora",
+      "destination": "/eletricista-tavora",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-campo-de-víboras",
+      "destination": "/eletricista-campo-de-viboras",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-senhora-da-penha-de-frança",
+      "destination": "/eletricista-senhora-da-penha-de-franca",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-arcossó",
+      "destination": "/eletricista-arcosso",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-santo-antónio-de-monforte",
+      "destination": "/eletricista-santo-antonio-de-monforte",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-carlão",
+      "destination": "/eletricista-carlao",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-vilar-chão",
+      "destination": "/eletricista-vilar-chao",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-são-cristóvão-do-douro",
+      "destination": "/eletricista-sao-cristovao-do-douro",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-vilar-de-maçada",
+      "destination": "/eletricista-vilar-de-macada",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-santo-aleixo-de-além-tâmega",
+      "destination": "/eletricista-santo-aleixo-de-alem-tamega",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-pádua-freixo",
+      "destination": "/eletricista-padua-freixo",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-brinço",
+      "destination": "/eletricista-brinco",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-genísio",
+      "destination": "/eletricista-genisio",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-quintã-de-pero-martins",
+      "destination": "/eletricista-quinta-de-pero-martins",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-gorgoço",
+      "destination": "/eletricista-gorgoco",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-são-pedro-de-agostém",
+      "destination": "/eletricista-sao-pedro-de-agostem",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-numão",
+      "destination": "/eletricista-numao",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-ousilhão",
+      "destination": "/eletricista-ousilhao",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-santa-eugénia",
+      "destination": "/eletricista-santa-eugenia",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-vilarinho-de-são-romão",
+      "destination": "/eletricista-vilarinho-de-sao-romao",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-bilhó",
+      "destination": "/eletricista-bilho",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-são-pedro-de-veiga-de-lila",
+      "destination": "/eletricista-sao-pedro-de-veiga-de-lila",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-vilariño-de-conso",
+      "destination": "/eletricista-vilarino-de-conso",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-tabuaço",
+      "destination": "/eletricista-tabuaco",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-poço-do-canto",
+      "destination": "/eletricista-poco-do-canto",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-ardãos",
+      "destination": "/eletricista-ardaos",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-penha-de-águia",
+      "destination": "/eletricista-penha-de-aguia",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-santa-leocádia",
+      "destination": "/eletricista-santa-leocadia",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-castainço",
+      "destination": "/eletricista-castainco",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-milhão",
+      "destination": "/eletricista-milhao",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-lamas-de-orelhão",
+      "destination": "/eletricista-lamas-de-orelhao",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-são-martinho-de-anta",
+      "destination": "/eletricista-sao-martinho-de-anta",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-guiães",
+      "destination": "/eletricista-guiaes",
+      "statusCode": 301
+    },
+    {
+      "source": "/melhor-avaria-valpaços",
+      "destination": "/melhor-avaria-valpacos",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-vilela-do-tâmega",
+      "destination": "/eletricista-vilela-do-tamega",
+      "statusCode": 301
+    },
+    {
+      "source": "/melhor-iluminacao-led-bragança",
+      "destination": "/melhor-iluminacao-led-braganca",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-são-cibrão",
+      "destination": "/eletricista-sao-cibrao",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-frança",
+      "destination": "/eletricista-franca",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-cedães",
+      "destination": "/eletricista-cedaes",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-santulhão",
+      "destination": "/eletricista-santulhao",
+      "statusCode": 301
+    },
+    {
+      "source": "/melhor-quadro-eletrico-mêda",
+      "destination": "/melhor-quadro-eletrico-meda",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-castelãos",
+      "destination": "/eletricista-castelaos",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-paçô-de-sortes",
+      "destination": "/eletricista-paco-de-sortes",
+      "statusCode": 301
+    },
+    {
+      "source": "/melhor-avaria-bragança",
+      "destination": "/melhor-avaria-braganca",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-quirás",
+      "destination": "/eletricista-quiras",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-paradela-de-guiães",
+      "destination": "/eletricista-paradela-de-guiaes",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-cabaços",
+      "destination": "/eletricista-cabacos",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-lebução",
+      "destination": "/eletricista-lebucao",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-águas-frias",
+      "destination": "/eletricista-aguas-frias",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-corriça",
+      "destination": "/eletricista-corrica",
+      "statusCode": 301
+    },
+    {
+      "source": "/melhor-iluminacao-led-valpaços",
+      "destination": "/melhor-iluminacao-led-valpacos",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-lagoaça",
+      "destination": "/eletricista-lagoaca",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-várzea-de-trevões",
+      "destination": "/eletricista-varzea-de-trevoes",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-couços",
+      "destination": "/eletricista-coucos",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-fiães-do-tâmega",
+      "destination": "/eletricista-fiaes-do-tamega",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-gralhós",
+      "destination": "/eletricista-gralhos",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-rebordãos",
+      "destination": "/eletricista-rebordaos",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-beça",
+      "destination": "/eletricista-beca",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-custóias",
+      "destination": "/eletricista-custoias",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-santo-adrião",
+      "destination": "/eletricista-santo-adriao",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-limões",
+      "destination": "/eletricista-limoes",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-freixo-de-espada-à-cinta",
+      "destination": "/eletricista-freixo-de-espada-a-cinta",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-gradíssimo",
+      "destination": "/eletricista-gradissimo",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-sardão",
+      "destination": "/eletricista-sardao",
+      "statusCode": 301
+    },
+    {
+      "source": "/melhor-certificacao-dgeg-mêda",
+      "destination": "/melhor-certificacao-dgeg-meda",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-chãos",
+      "destination": "/eletricista-chaos",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-são-pedro-velho",
+      "destination": "/eletricista-sao-pedro-velho",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-são-tomé-do-castelo",
+      "destination": "/eletricista-sao-tome-do-castelo",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-são-mamede-de-ribatua",
+      "destination": "/eletricista-sao-mamede-de-ribatua",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-pías",
+      "destination": "/eletricista-pias",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-fermentãos",
+      "destination": "/eletricista-fermentaos",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-trevões",
+      "destination": "/eletricista-trevoes",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-faílde",
+      "destination": "/eletricista-failde",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-torre-do-pinhão",
+      "destination": "/eletricista-torre-do-pinhao",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-são-miguel-de-lobrigos",
+      "destination": "/eletricista-sao-miguel-de-lobrigos",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-bairro-do-fundo-de-fomento-à-habitação",
+      "destination": "/eletricista-bairro-do-fundo-de-fomento-a-habitacao",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-mouçós",
+      "destination": "/eletricista-moucos",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-bouça",
+      "destination": "/eletricista-bouca",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-vila-chã-de-braciosa",
+      "destination": "/eletricista-vila-cha-de-braciosa",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-friões",
+      "destination": "/eletricista-frioes",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-lanção",
+      "destination": "/eletricista-lancao",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-gouvães-da-serra",
+      "destination": "/eletricista-gouvaes-da-serra",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-fontão",
+      "destination": "/eletricista-fontao",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-são-jomil",
+      "destination": "/eletricista-sao-jomil",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-samaiões",
+      "destination": "/eletricista-samaioes",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-chavães",
+      "destination": "/eletricista-chavaes",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-alvações-do-corgo",
+      "destination": "/eletricista-alvacoes-do-corgo",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-mondrões",
+      "destination": "/eletricista-mondroes",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-samões",
+      "destination": "/eletricista-samoes",
+      "statusCode": 301
+    },
+    {
+      "source": "/melhor-avaria-peso-da-régua",
+      "destination": "/melhor-avaria-peso-da-regua",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-calvão",
+      "destination": "/eletricista-calvao",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-carrazedo-do-alvão",
+      "destination": "/eletricista-carrazedo-do-alvao",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-limãos",
+      "destination": "/eletricista-limaos",
+      "statusCode": 301
+    },
+    {
+      "source": "/melhor-certificacao-dgeg-peso-da-régua",
+      "destination": "/melhor-certificacao-dgeg-peso-da-regua",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-freixeda-do-torrão",
+      "destination": "/eletricista-freixeda-do-torrao",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-alfândega-da-fé",
+      "destination": "/eletricista-alfandega-da-fe",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-vilardevós",
+      "destination": "/eletricista-vilardevos",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-são-joão-da-pesqueira",
+      "destination": "/eletricista-sao-joao-da-pesqueira",
+      "statusCode": 301
+    },
+    {
+      "source": "/melhor-avaria-alijó",
+      "destination": "/melhor-avaria-alijo",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-gouvães-do-douro",
+      "destination": "/eletricista-gouvaes-do-douro",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-ferreruela-de-tábara",
+      "destination": "/eletricista-ferreruela-de-tabara",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-bouças",
+      "destination": "/eletricista-boucas",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-andrães",
+      "destination": "/eletricista-andraes",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-azêvo",
+      "destination": "/eletricista-azevo",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-são-julião-de-montenegro",
+      "destination": "/eletricista-sao-juliao-de-montenegro",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-faiões",
+      "destination": "/eletricista-faioes",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-são-joão-da-corveira",
+      "destination": "/eletricista-sao-joao-da-corveira",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-santa-maria-de-émeres",
+      "destination": "/eletricista-santa-maria-de-emeres",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-baçal",
+      "destination": "/eletricista-bacal",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-póvoa-de-agrações",
+      "destination": "/eletricista-povoa-de-agracoes",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-quinta-de-são-pedro",
+      "destination": "/eletricista-quinta-de-sao-pedro",
+      "statusCode": 301
+    },
+    {
+      "source": "/eletricista-fiães",
+      "destination": "/eletricista-fiaes",
+      "statusCode": 301
     }
   ]
 }
