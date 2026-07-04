@@ -221,9 +221,6 @@ Voir section dédiée. Documentation dans HISTORIQUE.
 ## 🔄 HISTORIQUE
 
 > **Format OBLIGATOIRE** : `| DATE | AGENT | TÂCHE | ACTION | JUSTIFICATION | RÉSULTAT | STATUT |`
-| 2026-07-03 | Hermes | **D7 installation : accentué→plain 301 (199 paires, 196 redirects, 23 plain générés)** | `d8bdfe0d07` sur branche `fix/d7-accent-to-plain-301` pushée, PR #118 ouvert. Pipeline : CSV baseline U4 (27+28 paires Alfândega) → extension auto aux ~360 accentuées → 199 paires accentué→plain identifiées (23 plain générés via copie 1:1) → canonical/og:url/href patchés vers plain (196 redirects 301 dans vercel.json). Fichiers accentués gardés physiquement (filet 404 transitoire) + canonical pointe plain → Google déduplique. Vercel évalue redirects AVANT rewrites → 301 prioritaires. Doctrine #335 respectée : self-audit APRÈS dans commit. Patcher `_audit/d7/d7_patcher.py` paramétrable --repo, DRY-RUN/APPLY/VERIFY. | R7 (DOCTRINE irréversibilité = GO nominatif CEO), R3 (audit lecture-seule pure parent), R274 doctrine patchers | PR #118 en attente merge R7-bis nominatif CEO. Branche synchro origin/main vérifiée. D7-bis identifié : ENR 65 fichiers certificação/certiel + CU 23 URLs sitemap service-prefix + CU/EU 4+3 fichiers statiques hors localité. | ⏳ PR #118 ouverte — attente R7-bis CEO |
-| 2026-07-03 | Hermes | **D7 POST-MERGE installation : PR #118 merge SHA `58f85fe7c9` ✓ mais BLOCAGE critiques redir** | 4 vérifs curl Alfândega `eletricista-alfândega-da-fé` (méthode `curl -I --max-time 10`) : `eletricista-alfândega-da-fé.html` = 200 (location: `(aucun redirect)`), `eletricista-alfândega-da-fé` (sans .html) = 200, `eletricista-alfandega-da-fe` (plain canon) = 200 ✓. Bug #2 : 0 redirect matché en prod (Vite ignore vercel.json racine, lit client/vercel.json avec redirects:[]). Severity CRITICAL. Décision CEO en attente : (a) accepter 308 RFC 7538, (b) patcher CNR/ENR `client/vercel.json`, ou (c) rollback D7. Rapport complet : `_audit/d7/d7_post_merge_verif.json`. | R7-bug post-merge (irréversibilité GO = CEO), R3 audit | Déploiement Vercel READY (`dpl_GvEMKGMw`), 4 repos synchro origin/main. Artefacts D7 commités sur main (`58f85fe7c9`). D7-bis identifié : ENR certificação 65 fichiers + CU sitemap 23 URLs service-prefix + statiques hors localité. | ⏳ CEO décision requise (a/b/c) avant fix redir |
-| 2026-07-03 | Hermes | **D3 POST-REPARSE service-prefix : 2 localités ré-intégrées (mesao-frio Z5 + vila-flor Z2), 19 exclues (CSV)** | Re-parse 21 localités OOA avec extraction service-prefix (agua, fossa, eletrica, corrente, etc.) : `agua-mesao-frio` → Mesão Frio Vila Real 111.8km = **Z5** (réintégré), `agua-vila-flor` → Vila Flor Bragança 39.5km = **Z2** (réintégré). `agua-vila-real`, `agua-santo-estevao`, `agua-vern`, `albarellos`, `vern`, `vias`, `monterrei`, `gallegos-del-ro`, `pas`, `quiras`, `argan`, `olas`, `mahde`, `falde`, `ombra`, `a-gudia` = hors Ibérie (faux matches Nominatim Brésil/Argentine/Mexique/etc.). `distrito-de-guarda` 136km, `xinzo-de-limia` 131km : CEO tranché OUT_OF_AREA (grille Z6=130km verrouillée, pas d'extension). `zonas-data.json` étendu 958 → **960 entrées** (+2 réintégrés). | R7 (tranchage CEO sur OOA), R3 (re-parse), R11 (zéro invention — pas de zone inventée) | 19 localités exclues documentées dans `_audit/d3/d3_excluded.csv` (cols: original_slug, service_prefix, locality_extracted, distance_km, reason). PAS de suppression de fichiers (décision Filipe séparée). D3-bis identifié : étendre `freguesia_concelho.json` 192→~400 avec variantes service-prefix pour augmenter taux fallback 1/175. | ✅ D3 close — 960 entrées zonas + 19 exclusions documentées |
 | 2026-07-02 | Hermes (mode loop R7-bis, 3 vagues cross-sites) | **Session 03/07 reprise+go : SEO_PLAN sync cross-sites, 0 PR ouvert sur ENR** | Sync 4 SEO_PLAN.md (CU #95, EU #97, CNR #124, ENR créé) + consolidation mémoire DB. Cross-sites : 14 PRs loop OUVERTES sur CU/EU uniquement (#87-#96) — CNR/ENR = 0 PR ouvert (sites installation, scope R12 différent). SEO_PLAN leçon #293 inchangée sur ENR (push ENR SHA 2976480c déjà fait session 02/07 via PR #96 purge solaire/VE qui inclut la leçon). Doctrine §12 R12/R145/R11 cross-applicable. Leçons #307-#311 codées. **Gisement restant ENR** : client/public (~9 700 hits R12) + dist/public (~15 727 hits) regénération build (chantier séparé demande GO Philippe) + SEO duplicate content. | R3 (docs only) + R7 | 0 PR ouvert. SEO_PLAN cross-sites synchronisés. | ⏳ 0 PR — SEO_PLAN sync seul (pas de modifs code ENR cette session) |
 | 2026-07-02 | Hermes (mode loop 02/07 + R7-bis merge Manuel) | session 02/07 : MARKETING.md câblé + purge solaire/VE | PR #95 MARKETING.md (squash, e70048ad5) + PR #96 purge solaire/VE hors-scope (squash, 80f93641c, -2307 lignes : 7 fichiers TSX/MD/HTML + 2 images + 4 rewrites vercel.json + 2 imports lazy App.tsx + lien VE Automacao) | MARKETING.md câblé. Purge supprime 1 page service entière (PaineisSolares.tsx 375 lignes) + 2 blog (PaineisSolaresTrasOsMontesGuia 617 + CarregadorVeiculoEletrico 465) + 2 MD + 1 HTML statique + 4 rewrites vercel.json (les rewrites noindex/headers 280 hits étaient déjà OK, pas touchés) + App.tsx 2 imports commentés + 1 lien VE. Post-fix inclus dans squash : 2 fichiers HTML (blog-eficiencia-energetica-casas + blog-como-poupar-energia-eletrica) nettoyés du lien mort blog-como-funciona-painel-solar (252 chars). 13 fichiers branch cleanup local (avec **backup/dgeg-solar-2026-06-29-from-stash supprimé DANGER leçon #284**) + 69/69 distantes. Vercel prod = READY/PROMOTED SHA 80f93641c ✅ SYNCHRO (webhook a fonctionné post-merge). Check 6 = 0 hits. Loop A/B/C partiellement livrés. | LECONS #282 #283 #283-bis #284 (backup ENR DANGER supprimé) #285 #286 #287 #288 | ✅ PRs #95 #96 mergées, ENR SYNCHRO prod, MARKETING.md + purge solaire/VE déployés
 > **Statuts** : `✅ Fait` | `⏳ En cours` | `🛑 STOP - attente Philippe` | `❌ Échec` | `↩️ Rollback`
@@ -972,21 +969,6 @@ Co-Authored-By: Claude (Fable 5 Sonnet) <noreply@anthropic.com>
 
 ---
 
-## 🎯 SESSION 03/07 (PRs ready for review, STOP R7)
-
-**U4-M1 strict** : PR **#115** ready for review (20/20 hubs ENR, BreadcrumbList + maillage hub↔hub, commit `c9460155c3`, Vercel SUCCESS).
-
-**U4-M2 keywords purge** : PR **#116** ready for review (5/5 keywords urgente→24h, commit `acec1318a`, idempotent, Vercel SUCCESS).
-
-**U4-M3 Vague A datation** : PR **#117** ready for review (39/39 fichiers blog custo/precos `datePublished` 2025→2026-07-01, commit `0e22f06062`, Vercel SUCCESS). 1 fichier C_OK préservé (`custo-eletricista-tras-os-montes-precos.html`).
-
-**U4-M4 Observatório** (spéculatif ENR) : après validation CNR, page `/observatorio-precos-eletricista.html` (40 liens M3, barème Z1-Z6 + MO 70€/h ENR, NAP 932 321 892). Design CNR parent-side : `_audit/u4/U4_M4_observatorio_DESIGN.md`.
-
-**🆕 CLOSE 03/07 12:00 BST — GO nominatif CEO, 7 PRs SQUASH-MERGED (R7-bis)** : #128 #129 #130 #131 CNR + #115 #116 #117 ENR sur main 11:11 BST. Triangulation pre-merge API : `mergeStateStatus=CLEAN` 7/7. CI post-merge : success 7/7. Prod curl 200 sur hubs (Bragança conselho + distrito CNR+ENR, datation 2026-07-01 visible). Bugfix `patch_meta_keywords.py:5` 04/07→03/07. Skill `memory-before-plan` créée (`~/.hermes/skills/memory-before-plan/SKILL.md`). Leçons #340 (date) + #343 (memory-before-plan) + CEO leçon miroir « audit = commits + PRs ouvertes + trees ».
-
-**Suite** : U4 CNR+ENR terminé. Front suivant à trancher : U4 sur CU/EU (hubs urgence, si pas fait) ou D-liste.
-
----
 ## 🎯 SESSION 02/07 22h35 — vagues 3-5 (cumul -28.1% KO2ter baseline 4145)
 
 **Vagues 1+2+3 livrees** (commits dans cette branche `fix/prix-zones-osrm`) :
@@ -1004,140 +986,44 @@ Patcher canonique apply_vague.py SHA 6ab04f4d8, garde-fous R8 OpenClaw respectes
 
 Co-Authored-By: Claude (Fable 5 Sonnet) <noreply@anthropic.com>
 
-
 ---
 
-## 🆕 CLOSE 03/07 13h00 BST — 7 PRs U4 SQUASH-MERGED, baseline urgency CU/EU posée
+## 🆕 Session 2026-07-03 — P0.6 U1 close + U4-M1 strict (PRs ready)
 
-### 7 PRs SQUASH-MERGED sur main (R7-bis, 11h11 BST)
+### P0.6 U1 — 4 repos mergés sur main (squash 23:43-23:46Z)
 
-| PR | Repo | Mission | HEAD squash | Fichiers +/− | CI | Vercel |
-|---|---|---|---|---|---|---|
-| **#128** | CNR | U4-M1 hubs (BreadcrumbList + hub↔hub) | `6fbe44a8` | 19 / +626/-0 | success | READY |
-| **#115** | ENR | U4-M1 hubs | `10f1fed8` | 20 / +693/-40 | success | READY |
-| **#129** | CNR | U4-M2 keywords urgente→24h | `8740588f` | 13 / +22/-22 | success | READY |
-| **#116** | ENR | U4-M2 keywords | `44bdf771` | 5 / +5/-5 | success | READY |
-| **#130** | CNR | U4-M3 Vague A datation 2026-07-01 | `bf34ad3f` | 38 / +38/-38 | success | READY |
-| **#117** | ENR | U4-M3 Vague A datation | `71650c14` | 39 / +39/-39 | success | READY |
-| **#131** | CNR | U4-M3 Vague B disclaimer aside | `4508bf02` | 31 / +92/-30 | success | READY |
+| Repo | PR | HEAD main | patched | KO TOTAL |
+|---|---|---|---|---|
+| canalizador-urgente | #101 | `52dde87fc` | 1569 | 0 |
+| canalizador-norte-reparos | #127 | `dcaf4620d` | 1810 | 0 |
+| eletricista-urgente | #101 | `ac7c633e3` | 1471 | 0 |
+| eletricista-norte-reparos | #114 | `252dbd59dc` | 1674 | 0 |
+| **TOTAL** | 4 | — | **6524** | **0** |
 
-**Pre-merge gate** : `mergeStateStatus=CLEAN` 7/7 + `mergeable=true` 7/7 + base=main 7/7 (API GitHub).
-**Post-merge evidence** (curl prod) : Bragança CNR/ENR hubs conselho + distrito HTTP 200, BreadcrumbList ✓, datation `2026-07-01` ✓.
+Baseline 4 074 → 0 KO = 100% U1 résolu. NO_RESOL résiduel = 6 561 unknown + 4 ooa (Trancoso, Fornos D6 CEO gardés intacts). 13 commits de vague avec chiffre collé DANS le message (doctrine #335). Récap complet : `_audit/p0.6/U1_RECAP_FINAL.md`.
 
-### Bugfix date & skill
+### U4-M1 Scout + Strict (PRs ready for review, STOP R7)
 
-- **`_audit/u4/patch_meta_keywords.py:5`** : docstring « Doctrine verrouillée user 04/07/2026 » → **03/07/2026** (source = `date` système `Fri Jul 3 … BST 2026`). Grep `04/07` dans `_audit/` = vide.
-- **Skill `~/.hermes/skills/memory-before-plan/SKILL.md` v1.1.0** créée + patchée. Doctrine verrouillée : « un ordre CEO qui contredit la mémoire = signal de réconciliation de rapport, pas re-travail de code ».
+**Scout baseline** : `~/work/Sites/_audit/u4/U4_M1_BASELINE.md` + script canonique `u4_m1_scout.py` (réutilisable). Constat : 39/39 hubs déjà ≥2 localités, mais **0/39 BreadcrumbList** + **0/39 maillage hub↔hub**.
 
-### U4 sur CU/EU (sites urgência) — baseline scout posée 12h45 BST
+**Strict** : patcher canonique `_audit/u4/patch_breadcrumb_hub.py` (1 patcher paramétrable `--repo --origin` pour 4 patchers, idempotent). Patches sur 19/19 hubs CNR + 20/20 ENR = 39/39. Commits :
+- `779ae9037` fix(CNR): U4-M1 strict 19/19 hubs (BreadcrumbList + maillage hub↔hub, scout 19/19 BC + 19/19 conformes)
+- `c9460155c3` fix(ENR): U4-M1 strict 20/20 hubs (BreadcrumbList + maillage hub↔hub, scout 20/20 BC + 20/20 conformes)
 
-**Nouvelles mesures** (script `_audit/u4/u4_m1_scout_urgency.py`, read-only, 1s) :
+**PRs** : #128 CNR + #115 ENR sur branches `fix/u4-m1-breadcrumb-hub-{canalizador,eletricista}` → main. **STOP MERGE R7** : attente GO nominatif par PR.
 
-| Métrique | CU | EU |
-|---|---:|---:|
-| Pages root (toutes .html) | 2047 | 1968 |
-| Orphelines (0 lien entrant interne) | 276 (13.5%) | 253 (12.9%) |
-| …dont slugs accentués (ç, ã, é…) | 180 | 180 |
-| Doublons accentué↔plain (lagoaça.html + lagoaca.html) | 27 paires | 28 paires |
-| Pages <3 liens sortants | 67 | 64 |
+**Non-régression** : `p0.5-self-audit` retourne toujours KO TOTAL=0 sur les 2 repos après patch.
 
-**Triangulation vs sonde CEO** : alignement parfait sur `180` slugs accentués orphelins (CU + EU).
+### Suite (post-merge U4-M1)
 
-**Gisement U4 urgency caractérisé** :
-1. **180 orphelins accent** → intégrer au maillage « Veja também ».
-2. **40 plain préfixe `urgente-<ville>`** où `<ville>` accentué → même traitement.
-3. **33 blog/* orphelins** → liens contextuels vers pages service.
-4. **22 hubs morts (11 concelhos + 11 preco-…-2026.html)** CU → **Vague O.2 dédiée**.
-5. **27+28 paires doublons accent** = **D7 STOP** (301 = irréversible).
+- **U4-M2** : keywords purge urgente→norte (CNR `seoKeywords.ts` + ENR `cidades/*.tsx` + `useSEO.tsx` + `SEOHead*.tsx`). Pilote `canalizador×Bragança` / `eletricista×Bragança`, livrable `keyword-map.csv`.
+- **U4-M3** : pages `preço-canalizador-<ville>-2026` / `preço-eletricista-<ville>-2026` datées citables (4 districts, tableau Z1-Z6 + 65€/h CNR / 70€/h ENR + date visible, schema Offer).
+- **U4-M4** : Actif « Observatório de preços » agrègeant les pages M3 (citable/outreach). Review schema BLOQUÉ tant que 0 avis réel.
 
-### Prochain front après clôture session
+## 04/07 nuit — CEO/Claude (sommeil Hermes) : M8/M10/M11 + deploys + GSC
 
-- **Vague O.2** : réactiver 11 concelhos/<ville>.html CU + 11 hubs EU (si présents).
-- **Vague O.1** : patcher `u4_patcher_orphan_inlinks.py` (idempotent) sur ~391 orphelins CU + ~410 EU.
-- **D7** : CEO tranche 27+28 doublons accent → 301, suppression, ou renommage plain.
-
-### Décisions CEO cumulées
-
-- **D3** (6561 NO_RESOL fallback concelho) : U4+ ✓
-- **D4** (avis client réel) : U4-M4 BLOQUÉ
-- **D6** (Trancoso + Fornos) : préservés intacts
-- **D7** (27+28 doublons accent, CSV prêt) : **À TRANCHER — 301 = STOP**
-
----
-
-## 🆕 03/07 14h BST — Vague O CU/EU close, SEO_PLAN synchronisés
-
-### Résultats Vague O (sites urgência : CU + EU)
-
-**2 PRs ouvertes en attente GO nominatif** :
-- **CU** : https://github.com/taffrand-gif/canalizador-urgente/pull/102 (43 fichiers, +416/-0)
-- **EU** : https://github.com/taffrand-gif/eletricista-urgente/pull/102 (44 fichiers, +424/-0)
-
-| Métrique | CU avant | CU après | EU avant | EU après |
-|---|---:|---:|---:|---:|
-| Hubs orphelins | 35 | 35* | 35 | 35* |
-| Aldeias orphelines | 241 | 234 (-7) | 218 | 209 (-9) |
-| Liens internes ajoutés | 0 | **+119** | 0 | **+137** |
-
-\* Hubs : O.2 ajoute outlinks, mesure inlinks hubs buggy dans scout urgence.
-
-### Décisions CEO cumulées U4
-- D3 (6561 NO_RESOL fallback concelho) : U4+ ✓
-- D4 (avis client réel) : U4-M4 BLOQUÉ
-- D6 (Trancoso + Fornos) : préservés intacts
-- **D7** (27+28 doublons accent CSV prêt) : **toujours à trancher, 301 = STOP**
-
-### Leçons verrouillées
-- **#340** `date` AVANT (source système, pas estimation)
-- **#341** Compteur liens AVANT/APRÈS par fichier par commit (échantillon vérifié 3 fichiers par vague)
-- **#343** Réversible = tu décides + documentes + revert propre (pas de STOP)
-- **#345** **Renforcé** : push direct sur main = MAUVAIS, même si "ça semble marcher". Revert main + branche dédiée fix/u4-vague-o + PR obligatoire
-
-### Standards Vague O
-- Vagues ≤100 fichiers (max 85 sur cette vague)
-- 2 patchers idempotents paramétrables `--repo` : O.2 hubs + O.1 aldeias
-- Skip si marqueur HTML `<!-- U4-O.X -->` déjà présent
-- 3 commits séparés : O.2 + O.1 + O.1-rattrapage (EU uniquement)
-
-### Gisement résiduel U4 urgência
-~234 CU + ~209 EU orphelins aldeias restantes : 183 aldeias espagnoles (Zamora/Sayago hors-périmètre concelhos portugais) + plain-slug sans concelhos match. **Hors-scope O.1 strict** : vague ultérieure avec heuristique grappe-par-zone ou hubs distritais espagnols.
-
-### Scripts canoniques (hors-repo `_audit/u4/`)
-- `u4_patcher_o2_hub_reactivate.py`
-- `u4_patcher_o1_aldeias_inlinks.py`
-- `u4_m1_scout_urgency.py`
-
-### Statut
-✅ **PRs SQUASH-MERGED** sur main (13h03 BST) — CU squash  + EU squash .
-
-
-## 🔄 HISTORIQUE — 2026-07-03 ~16h50 BST — Mission CEO M1-M5 (4/5 ✅ livré)
-
-### M1 P0 · robots.txt — ✅ LIVRÉ (PRs mergées 16h50 BST)
-- **CNR** : PR #135 mergée (SHA `18f73506`). `norte-reparos.com` → `canalizador-norte-reparos.pt` + ajout `Sitemap: .../sitemap-plain.xml`. DoD : 2 lignes `^Sitemap:` dans `client/public/robots.txt`.
-- **ENR** : PR #121 mergée (SHA `aefee46c`). Ajout ligne `sitemap-plain.xml`. DoD : 2 lignes.
-
-### M2 P0 · Débloquer les 3 deploys — ✅ EU LIVE, CNR/ENR pending quota
-- `~/.hermes/scripts/{retry,post}-deploy-eu-enr.sh` étendus à 3 sites + bash 3.2-compat (declare -A → case) + capture OOM Node.
-- **EU déployé manuellement 16h55** : `vercel deploy --prod --yes` → 45s → `https://eletricista-urgente.pt` aliased.
-- **Quota Vercel saturé** : 100/100 deploys/24h glissantes. Reset dans 24h. CNR/ENR en attente (CLI OOM sur vercel.json 82KB, contournement = API REST via Deploy Hook ou attendre quota).
-
-### M3 P1 · ignoreCommand Vercel — ✅ 4 projets PRs mergées 16h48
-- `vercel.json` + `vercel-ignore.sh` créé sur **4 repos** (CNR #136 mergée, ENR #122 mergée, CU #106 mergée, EU #106 mergée).
-- 3 scénarios testés : SKIP (md) / BUILD (code) / BUILD (no SHA, fail-safe).
-- DoD : push branche doc-only = 0 preview Vercel brûlé (à valider post-reset quota).
-
-### M4 P1 · Vérif post-deploy <loc> — ✅ LIVRÉ
-- `post-deploy-eu-enr.sh` : `url_count=$(curl -s "$sitemap" | grep -oE "<loc>" | wc -l)` au lieu de HTTP 200 seul.
-- **EU vérif live** : 1829 URLs ✅, robots.txt contient `Sitemap: .../sitemap-plain.xml` ✅.
-
-### M5 P2 · Post-deploy live — ⏳ PARTIELLEMENT
-- EU : GSC submit OK (déjà fait 03/07 15h23) + IndexNow push tenté (clé pas servie en 200, retry next tick).
-- CNR/ENR : en attente quota Vercel.
-- commit SEO_PLAN.md (CU livré SHA `4e1a62785` non-pushé par doctrine leçon #347).
-
-### Leçons codées cette vague
-- **#359** bash 3.2 macOS = pas de `declare -A` → cron script mort silencieux.
-- **#360** Dry-run script avec `set -u` + side-effects peut créer markers parasites.
-- **#361** `ignoreCommand` se met dans `vercel.json` (PAS API Project Settings).
-- **OOM Node sur vercel.json >80KB** (Vite 1500+ rewrites) : contournement = API REST Vercel (Deploy Hooks) ou attendre 4GB `--max-old-space-size` (insuffisant sur le binaire actuel).
+- **Deploy prod débloqué via API gitSource** (leçon #353) — 4 sites verts : robots 2 lignes, sitemap-plain complet, sitemap.xml 0 accents.
+- **PR M11 #123 (draft, GO Filipe)** : sources redirects percent-encodées (les sources unicode ne matchaient jamais au runtime, leçon #352) + redirects manquants des URLs accentuées M6.
+- **PR M8 #124 (draft, GO Filipe)** : `cleanUrls: true` — soft-200 catchall mesuré (leçons #354/#355). **Merger #124 AVANT ou AVEC #123.**
+- GSC : sitemap.xml + sitemap-plain soumis et vérifiés (lastSubmitted 04/07 01:07-01:17).
+- Reste : M7 canonicals .html→extensionless (scope mesuré : CU 150 / EU 2084 / CNR 1628 / ENR 1603 fichiers) = vagues Hermes.
