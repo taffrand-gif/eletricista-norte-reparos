@@ -1027,3 +1027,6 @@ Baseline 4 074 → 0 KO = 100% U1 résolu. NO_RESOL résiduel = 6 561 unknown + 
 - **PR M8 #124 (draft, GO Filipe)** : `cleanUrls: true` — soft-200 catchall mesuré (leçons #354/#355). **Merger #124 AVANT ou AVEC #123.**
 - GSC : sitemap.xml + sitemap-plain soumis et vérifiés (lastSubmitted 04/07 01:07-01:17).
 - Reste : M7 canonicals .html→extensionless (scope mesuré : CU 150 / EU 2084 / CNR 1628 / ENR 1603 fichiers) = vagues Hermes.
+
+### 04/07 ~02h30 — MERGÉ + DÉPLOYÉ + DoD VÉRIFIÉ (GO Filipe explicite)
+M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → extensionless, 555 shadowées par cleanUrls sur les 4 repos) : mergés, déployés (webhook), vérifiés curl — 301 accentué→plain OK, chaînes .html atterrissent 200 en 2 hops, ex-soft-200 servent leur vrai contenu, sitemaps intacts, clés IndexNow live racine. Reste : IndexNow submit CNR/ENR en 403 SiteVerificationNotCompleted (clés trop fraîches) → retry dans quelques heures. M7 canonicals = vagues Hermes.
