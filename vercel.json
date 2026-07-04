@@ -2759,167 +2759,162 @@
       "statusCode": 301
     },
     {
-      "source": "/imprensa.html",
-      "destination": "/sobre",
-      "statusCode": 301
-    },
-    {
-      "source": "/blog/contratar-canalizador-2026.html",
+      "source": "/blog/contratar-canalizador-2026",
       "destination": "/top-10-razoes-contratar-canalizador",
       "statusCode": 301
     },
     {
-      "source": "/blog/guia-completo-canalizacao-casa-antiga.html",
+      "source": "/blog/guia-completo-canalizacao-casa-antiga",
       "destination": "/guia-completo-canalizacao-casa-antiga-portugal",
       "statusCode": 301
     },
     {
-      "source": "/amazon.html",
+      "source": "/amazon",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/zonas-de-intervencao.html",
+      "source": "/zonas-de-intervencao",
       "destination": "/zona-intervencao",
       "statusCode": 301
     },
     {
-      "source": "/fugas-agua.html",
+      "source": "/fugas-agua",
       "destination": "/fuga-agua",
       "statusCode": 301
     },
     {
-      "source": "/desentupimentos.html",
+      "source": "/desentupimentos",
       "destination": "/desentupimento",
       "statusCode": 301
     },
     {
-      "source": "/tuto.html",
+      "source": "/tuto",
       "destination": "/tuto/",
       "statusCode": 301
     },
     {
-      "source": "/blog.html",
+      "source": "/blog",
       "destination": "/blog/",
       "statusCode": 301
     },
     {
-      "source": "/concelhos/bragan%C3%A7a.html",
+      "source": "/concelhos/bragan%C3%A7a",
       "destination": "/concelhos/braganca",
       "statusCode": 301
     },
     {
-      "source": "/blog/certificacao--obrigatoria.html",
+      "source": "/blog/certificacao--obrigatoria",
       "destination": "/blog/certificacao-obrigatoria",
       "statusCode": 301
     },
     {
-      "source": "/blog/certificacao--tudo-saber.html",
+      "source": "/blog/certificacao--tudo-saber",
       "destination": "/blog/certificacao-tudo-saber",
       "statusCode": 301
     },
     {
-      "source": "/blog/certificacao-eletrica--guia.html",
+      "source": "/blog/certificacao-eletrica--guia",
       "destination": "/blog/certificacao-eletrica-guia",
       "statusCode": 301
     },
     {
-      "source": "/blog/certificacao--vila-flor.html",
+      "source": "/blog/certificacao--vila-flor",
       "destination": "/blog/certificacao-vila-flor",
       "statusCode": 301
     },
     {
-      "source": "/blog/certificacao--miranda-douro.html",
+      "source": "/blog/certificacao--miranda-douro",
       "destination": "/blog/certificacao-miranda-douro",
       "statusCode": 301
     },
     {
-      "source": "/blog/certificacao--moimenta-beira.html",
+      "source": "/blog/certificacao--moimenta-beira",
       "destination": "/blog/certificacao-moimenta-beira",
       "statusCode": 301
     },
     {
-      "source": "/blog/certificacao--chaves-guia.html",
+      "source": "/blog/certificacao--chaves-guia",
       "destination": "/blog/certificacao-chaves-guia",
       "statusCode": 301
     },
     {
-      "source": "/blog/certificacao--carrazeda-ansiaes-guia.html",
+      "source": "/blog/certificacao--carrazeda-ansiaes-guia",
       "destination": "/blog/certificacao-carrazeda-ansiaes-guia",
       "statusCode": 301
     },
     {
-      "source": "/blog/certificacao--vila-flor-guia.html",
+      "source": "/blog/certificacao--vila-flor-guia",
       "destination": "/blog/certificacao-vila-flor-guia",
       "statusCode": 301
     },
     {
-      "source": "/blog/certificacao--importancia.html",
+      "source": "/blog/certificacao--importancia",
       "destination": "/blog/certificacao-importancia",
       "statusCode": 301
     },
     {
-      "source": "/blog/certificacao--regua-guia.html",
+      "source": "/blog/certificacao--regua-guia",
       "destination": "/blog/certificacao-regua-guia",
       "statusCode": 301
     },
     {
-      "source": "/blog/certificacao--freixo-espada-cinta-guia.html",
+      "source": "/blog/certificacao--freixo-espada-cinta-guia",
       "destination": "/blog/certificacao-freixo-espada-cinta-guia",
       "statusCode": 301
     },
     {
-      "source": "/blog/certificacao--mogadouro.html",
+      "source": "/blog/certificacao--mogadouro",
       "destination": "/blog/certificacao-mogadouro",
       "statusCode": 301
     },
     {
-      "source": "/blog/certificacao--vila-real.html",
+      "source": "/blog/certificacao--vila-real",
       "destination": "/blog/certificacao-vila-real",
       "statusCode": 301
     },
     {
-      "source": "/blog/certificacao--torre-moncorvo.html",
+      "source": "/blog/certificacao--torre-moncorvo",
       "destination": "/blog/certificacao-torre-moncorvo",
       "statusCode": 301
     },
     {
-      "source": "/blog/certificacao--torre-moncorvo-guia.html",
+      "source": "/blog/certificacao--torre-moncorvo-guia",
       "destination": "/blog/certificacao-torre-moncorvo-guia",
       "statusCode": 301
     },
     {
-      "source": "/blog/certificacao--rebordelo.html",
+      "source": "/blog/certificacao--rebordelo",
       "destination": "/blog/certificacao-rebordelo",
       "statusCode": 301
     },
     {
-      "source": "/blog/certificacao--lamego-guia.html",
+      "source": "/blog/certificacao--lamego-guia",
       "destination": "/blog/certificacao-lamego-guia",
       "statusCode": 301
     },
     {
-      "source": "/blog/certificacao--alijo.html",
+      "source": "/blog/certificacao--alijo",
       "destination": "/blog/certificacao-alijo",
       "statusCode": 301
     },
     {
-      "source": "/blog/certificacao--monforte-rio-livre.html",
+      "source": "/blog/certificacao--monforte-rio-livre",
       "destination": "/blog/certificacao-monforte-rio-livre",
       "statusCode": 301
     },
     {
-      "source": "/blog/certificacao--moncorvo.html",
+      "source": "/blog/certificacao--moncorvo",
       "destination": "/blog/certificacao-moncorvo",
       "statusCode": 301
     },
     {
-      "source": "/blog/certificacao--ribeira-pena.html",
+      "source": "/blog/certificacao--ribeira-pena",
       "destination": "/blog/certificacao-ribeira-pena",
       "statusCode": 301
     },
     {
-      "source": "/blog/certificacao--vimioso-guia.html",
+      "source": "/blog/certificacao--vimioso-guia",
       "destination": "/blog/certificacao-vimioso-guia",
       "statusCode": 301
     },
@@ -3239,2287 +3234,2287 @@
       "statusCode": 301
     },
     {
-      "source": "/amazon/alicate-amperimetro.html",
+      "source": "/amazon/alicate-amperimetro",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/cabo-eletrico-h07v.html",
+      "source": "/amazon/cabo-eletrico-h07v",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/cabo-eletrico.html",
+      "source": "/amazon/cabo-eletrico",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/camera-termica-flir.html",
+      "source": "/amazon/camera-termica-flir",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/camera-termica.html",
+      "source": "/amazon/camera-termica",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/campainha-video-wifi.html",
+      "source": "/amazon/campainha-video-wifi",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/campainha-video.html",
+      "source": "/amazon/campainha-video",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/carregador-carro-eletrico-wallbox.html",
+      "source": "/amazon/carregador-carro-eletrico-wallbox",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/chave-fendas-isolada.html",
+      "source": "/amazon/chave-fendas-isolada",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/chaves-fendas-isoladas.html",
+      "source": "/amazon/chaves-fendas-isoladas",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/detetor-fumo-inteligente.html",
+      "source": "/amazon/detetor-fumo-inteligente",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/detetor-fumo.html",
+      "source": "/amazon/detetor-fumo",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/detetor-tensao-sem-contacto.html",
+      "source": "/amazon/detetor-tensao-sem-contacto",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/detetor-tensao.html",
+      "source": "/amazon/detetor-tensao",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/disjuntor-diferencial.html",
+      "source": "/amazon/disjuntor-diferencial",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/extensao-eletrica-profissional.html",
+      "source": "/amazon/extensao-eletrica-profissional",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/extensao-profissional.html",
+      "source": "/amazon/extensao-profissional",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/fita-isoladora-profissional.html",
+      "source": "/amazon/fita-isoladora-profissional",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/fita-isoladora.html",
+      "source": "/amazon/fita-isoladora",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/foco-led-exterior.html",
+      "source": "/amazon/foco-led-exterior",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/interruptor-inteligente.html",
+      "source": "/amazon/interruptor-inteligente",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/kit-ferramentas-eletricista.html",
+      "source": "/amazon/kit-ferramentas-eletricista",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/lampada-led-e27.html",
+      "source": "/amazon/lampada-led-e27",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/lanterna-trabalho-led.html",
+      "source": "/amazon/lanterna-trabalho-led",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/multimetro-digital-fluke.html",
+      "source": "/amazon/multimetro-digital-fluke",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/multimetro-digital.html",
+      "source": "/amazon/multimetro-digital",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/painel-solar-portatil.html",
+      "source": "/amazon/painel-solar-portatil",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/passa-fios-eletricista.html",
+      "source": "/amazon/passa-fios-eletricista",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/passa-fios.html",
+      "source": "/amazon/passa-fios",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/quadro-eletrico-residencial.html",
+      "source": "/amazon/quadro-eletrico-residencial",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/quadro-eletrico.html",
+      "source": "/amazon/quadro-eletrico",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/termostato-inteligente.html",
+      "source": "/amazon/termostato-inteligente",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/testador-tomadas.html",
+      "source": "/amazon/testador-tomadas",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/tomada-inteligente-wifi.html",
+      "source": "/amazon/tomada-inteligente-wifi",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/tomada-inteligente.html",
+      "source": "/amazon/tomada-inteligente",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/tubo-corrugado-eletrico.html",
+      "source": "/amazon/tubo-corrugado-eletrico",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/tubo-corrugado.html",
+      "source": "/amazon/tubo-corrugado",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/ups-protetor-computador.html",
+      "source": "/amazon/ups-protetor-computador",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/ups-protetor.html",
+      "source": "/amazon/ups-protetor",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/amazon/wallbox-carregador.html",
+      "source": "/amazon/wallbox-carregador",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-alfandega-da-fe.html",
+      "source": "/ar-condicionado-alfandega-da-fe",
       "destination": "/eletricista-alfandega-da-fe",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-algoso.html",
+      "source": "/ar-condicionado-algoso",
       "destination": "/eletricista-algoso",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-armamar.html",
+      "source": "/ar-condicionado-armamar",
       "destination": "/eletricista-armamar",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-boticas.html",
+      "source": "/ar-condicionado-boticas",
       "destination": "/eletricista-boticas",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-braganca.html",
+      "source": "/ar-condicionado-braganca",
       "destination": "/eletricista-braganca",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-carrazeda-de-ansiaes.html",
+      "source": "/ar-condicionado-carrazeda-de-ansiaes",
       "destination": "/eletricista-carrazeda-de-ansiaes",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-chaves.html",
+      "source": "/ar-condicionado-chaves",
       "destination": "/eletricista-chaves",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-duas-igrejas.html",
+      "source": "/ar-condicionado-duas-igrejas",
       "destination": "/eletricista-duas-igrejas",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-freixo-de-espada-a-cinta.html",
+      "source": "/ar-condicionado-freixo-de-espada-a-cinta",
       "destination": "/eletricista-freixo-de-espada-a-cinta",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-lagoaca.html",
+      "source": "/ar-condicionado-lagoaca",
       "destination": "/eletricista-lagoaca",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-macedo-de-cavaleiros.html",
+      "source": "/ar-condicionado-macedo-de-cavaleiros",
       "destination": "/eletricista-macedo-de-cavaleiros",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-mesao-frio.html",
+      "source": "/ar-condicionado-mesao-frio",
       "destination": "/eletricista-mesao-frio",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-miranda-do-douro.html",
+      "source": "/ar-condicionado-miranda-do-douro",
       "destination": "/eletricista-miranda-do-douro",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-mirandela.html",
+      "source": "/ar-condicionado-mirandela",
       "destination": "/eletricista-mirandela",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-mogadouro.html",
+      "source": "/ar-condicionado-mogadouro",
       "destination": "/eletricista-mogadouro",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-moncorvo.html",
+      "source": "/ar-condicionado-moncorvo",
       "destination": "/eletricista-moncorvo",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-mondim-de-basto.html",
+      "source": "/ar-condicionado-mondim-de-basto",
       "destination": "/eletricista-mondim-de-basto",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-monforte-de-rio-livre.html",
+      "source": "/ar-condicionado-monforte-de-rio-livre",
       "destination": "/eletricista-monforte-de-rio-livre",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-montalegre.html",
+      "source": "/ar-condicionado-montalegre",
       "destination": "/eletricista-montalegre",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-murca.html",
+      "source": "/ar-condicionado-murca",
       "destination": "/eletricista-murca",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-penedono.html",
+      "source": "/ar-condicionado-penedono",
       "destination": "/eletricista-penedono",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-rebordelo.html",
+      "source": "/ar-condicionado-rebordelo",
       "destination": "/eletricista-rebordelo",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-ribeira-de-pena.html",
+      "source": "/ar-condicionado-ribeira-de-pena",
       "destination": "/eletricista-ribeira-de-pena",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-santa-marta-penaguiao.html",
+      "source": "/ar-condicionado-santa-marta-penaguiao",
       "destination": "/eletricista-santa-marta-penaguiao",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-sendim.html",
+      "source": "/ar-condicionado-sendim",
       "destination": "/eletricista-sendim",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-sernancelhe.html",
+      "source": "/ar-condicionado-sernancelhe",
       "destination": "/eletricista-sernancelhe",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-tabuaco.html",
+      "source": "/ar-condicionado-tabuaco",
       "destination": "/eletricista-tabuaco",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-torre-de-moncorvo.html",
+      "source": "/ar-condicionado-torre-de-moncorvo",
       "destination": "/eletricista-torre-de-moncorvo",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-valpacos.html",
+      "source": "/ar-condicionado-valpacos",
       "destination": "/eletricista-valpacos",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-vila-flor.html",
+      "source": "/ar-condicionado-vila-flor",
       "destination": "/eletricista-vila-flor",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-vila-pouca-de-aguiar.html",
+      "source": "/ar-condicionado-vila-pouca-de-aguiar",
       "destination": "/eletricista-vila-pouca-de-aguiar",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-vila-real.html",
+      "source": "/ar-condicionado-vila-real",
       "destination": "/eletricista-vila-real",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-vimioso.html",
+      "source": "/ar-condicionado-vimioso",
       "destination": "/eletricista-vimioso",
       "statusCode": 301
     },
     {
-      "source": "/ar-condicionado-vinhais.html",
+      "source": "/ar-condicionado-vinhais",
       "destination": "/eletricista-vinhais",
       "statusCode": 301
     },
     {
-      "source": "/blog/ar-condicionado-eficiente-verao.html",
+      "source": "/blog/ar-condicionado-eficiente-verao",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/bateria-solar-vale-pena.html",
+      "source": "/blog/bateria-solar-vale-pena",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/bomba-calor-vs-ar-condicionado.html",
+      "source": "/blog/bomba-calor-vs-ar-condicionado",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/carregador-carro-eletrico-casa.html",
+      "source": "/blog/carregador-carro-eletrico-casa",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/carregador-carro-eletrico-garagem.html",
+      "source": "/blog/carregador-carro-eletrico-garagem",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/carregador-carro-eletrico-problema.html",
+      "source": "/blog/carregador-carro-eletrico-problema",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/carregador-carro-eletrico-solar.html",
+      "source": "/blog/carregador-carro-eletrico-solar",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/como-escolher-ar-condicionado.html",
+      "source": "/blog/como-escolher-ar-condicionado",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/como-escolher-painel-solar-casa.html",
+      "source": "/blog/como-escolher-painel-solar-casa",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/como-instalar-ar-condicionado-passo-passo.html",
+      "source": "/blog/como-instalar-ar-condicionado-passo-passo",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/como-instalar-carregador-carro-eletrico.html",
+      "source": "/blog/como-instalar-carregador-carro-eletrico",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/como-instalar-painel-solar-varanda.html",
+      "source": "/blog/como-instalar-painel-solar-varanda",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/como-instalar-wallbox-casa.html",
+      "source": "/blog/como-instalar-wallbox-casa",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/descarregador-sobretensoes.html",
+      "source": "/blog/descarregador-sobretensoes",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/dps-descarregador-sobretensao-guia.html",
+      "source": "/blog/dps-descarregador-sobretensao-guia",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-alfandega-fe.html",
+      "source": "/blog/instalacao-ar-condicionado-alfandega-fe",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-algoso.html",
+      "source": "/blog/instalacao-ar-condicionado-algoso",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-alijo.html",
+      "source": "/blog/instalacao-ar-condicionado-alijo",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-armamar.html",
+      "source": "/blog/instalacao-ar-condicionado-armamar",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-boticas.html",
+      "source": "/blog/instalacao-ar-condicionado-boticas",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-braganca.html",
+      "source": "/blog/instalacao-ar-condicionado-braganca",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-carrazeda-ansiaes.html",
+      "source": "/blog/instalacao-ar-condicionado-carrazeda-ansiaes",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-chaves.html",
+      "source": "/blog/instalacao-ar-condicionado-chaves",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-duas-igrejas.html",
+      "source": "/blog/instalacao-ar-condicionado-duas-igrejas",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-figueira-castelo-rodrigo.html",
+      "source": "/blog/instalacao-ar-condicionado-figueira-castelo-rodrigo",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-foz-coa.html",
+      "source": "/blog/instalacao-ar-condicionado-foz-coa",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-freixo-espada-cinta.html",
+      "source": "/blog/instalacao-ar-condicionado-freixo-espada-cinta",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-lagoaca.html",
+      "source": "/blog/instalacao-ar-condicionado-lagoaca",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-lamego.html",
+      "source": "/blog/instalacao-ar-condicionado-lamego",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-macedo-cavaleiros.html",
+      "source": "/blog/instalacao-ar-condicionado-macedo-cavaleiros",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-meda.html",
+      "source": "/blog/instalacao-ar-condicionado-meda",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-mesao-frio.html",
+      "source": "/blog/instalacao-ar-condicionado-mesao-frio",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-miranda-douro.html",
+      "source": "/blog/instalacao-ar-condicionado-miranda-douro",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-mirandela.html",
+      "source": "/blog/instalacao-ar-condicionado-mirandela",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-mogadouro.html",
+      "source": "/blog/instalacao-ar-condicionado-mogadouro",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-moimenta-beira.html",
+      "source": "/blog/instalacao-ar-condicionado-moimenta-beira",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-moncorvo.html",
+      "source": "/blog/instalacao-ar-condicionado-moncorvo",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-mondim-basto.html",
+      "source": "/blog/instalacao-ar-condicionado-mondim-basto",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-monforte-rio-livre.html",
+      "source": "/blog/instalacao-ar-condicionado-monforte-rio-livre",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-montalegre.html",
+      "source": "/blog/instalacao-ar-condicionado-montalegre",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-murca.html",
+      "source": "/blog/instalacao-ar-condicionado-murca",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-penedono.html",
+      "source": "/blog/instalacao-ar-condicionado-penedono",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-rebordelo.html",
+      "source": "/blog/instalacao-ar-condicionado-rebordelo",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-regua.html",
+      "source": "/blog/instalacao-ar-condicionado-regua",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-ribeira-pena.html",
+      "source": "/blog/instalacao-ar-condicionado-ribeira-pena",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-sabrosa.html",
+      "source": "/blog/instalacao-ar-condicionado-sabrosa",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-santa-marta-penaguiao.html",
+      "source": "/blog/instalacao-ar-condicionado-santa-marta-penaguiao",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-sao-joao-pesqueira.html",
+      "source": "/blog/instalacao-ar-condicionado-sao-joao-pesqueira",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-sendim.html",
+      "source": "/blog/instalacao-ar-condicionado-sendim",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-sernancelhe.html",
+      "source": "/blog/instalacao-ar-condicionado-sernancelhe",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-tabuaco.html",
+      "source": "/blog/instalacao-ar-condicionado-tabuaco",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-torre-moncorvo.html",
+      "source": "/blog/instalacao-ar-condicionado-torre-moncorvo",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-valpacos.html",
+      "source": "/blog/instalacao-ar-condicionado-valpacos",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-vila-flor.html",
+      "source": "/blog/instalacao-ar-condicionado-vila-flor",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-vila-pouca-aguiar.html",
+      "source": "/blog/instalacao-ar-condicionado-vila-pouca-aguiar",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-vila-real.html",
+      "source": "/blog/instalacao-ar-condicionado-vila-real",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-vimioso.html",
+      "source": "/blog/instalacao-ar-condicionado-vimioso",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-vinhais.html",
+      "source": "/blog/instalacao-ar-condicionado-vinhais",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-paineis-solares-macedo-cavaleiros.html",
+      "source": "/blog/instalacao-paineis-solares-macedo-cavaleiros",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-alfandega-fe.html",
+      "source": "/blog/instalacao-painel-solar-alfandega-fe",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-algoso.html",
+      "source": "/blog/instalacao-painel-solar-algoso",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-alijo.html",
+      "source": "/blog/instalacao-painel-solar-alijo",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-armamar.html",
+      "source": "/blog/instalacao-painel-solar-armamar",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-boticas.html",
+      "source": "/blog/instalacao-painel-solar-boticas",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-braganca.html",
+      "source": "/blog/instalacao-painel-solar-braganca",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-carrazeda-ansiaes.html",
+      "source": "/blog/instalacao-painel-solar-carrazeda-ansiaes",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-chaves.html",
+      "source": "/blog/instalacao-painel-solar-chaves",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-duas-igrejas.html",
+      "source": "/blog/instalacao-painel-solar-duas-igrejas",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-figueira-castelo-rodrigo.html",
+      "source": "/blog/instalacao-painel-solar-figueira-castelo-rodrigo",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-foz-coa.html",
+      "source": "/blog/instalacao-painel-solar-foz-coa",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-freixo-espada-cinta.html",
+      "source": "/blog/instalacao-painel-solar-freixo-espada-cinta",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-lagoaca.html",
+      "source": "/blog/instalacao-painel-solar-lagoaca",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-lamego.html",
+      "source": "/blog/instalacao-painel-solar-lamego",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-macedo-cavaleiros.html",
+      "source": "/blog/instalacao-painel-solar-macedo-cavaleiros",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-meda.html",
+      "source": "/blog/instalacao-painel-solar-meda",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-mesao-frio.html",
+      "source": "/blog/instalacao-painel-solar-mesao-frio",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-miranda-douro.html",
+      "source": "/blog/instalacao-painel-solar-miranda-douro",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-mirandela.html",
+      "source": "/blog/instalacao-painel-solar-mirandela",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-mogadouro.html",
+      "source": "/blog/instalacao-painel-solar-mogadouro",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-moimenta-beira.html",
+      "source": "/blog/instalacao-painel-solar-moimenta-beira",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-moncorvo.html",
+      "source": "/blog/instalacao-painel-solar-moncorvo",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-mondim-basto.html",
+      "source": "/blog/instalacao-painel-solar-mondim-basto",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-monforte-rio-livre.html",
+      "source": "/blog/instalacao-painel-solar-monforte-rio-livre",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-montalegre.html",
+      "source": "/blog/instalacao-painel-solar-montalegre",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-murca.html",
+      "source": "/blog/instalacao-painel-solar-murca",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-penedono.html",
+      "source": "/blog/instalacao-painel-solar-penedono",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-rebordelo.html",
+      "source": "/blog/instalacao-painel-solar-rebordelo",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-regua.html",
+      "source": "/blog/instalacao-painel-solar-regua",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-ribeira-pena.html",
+      "source": "/blog/instalacao-painel-solar-ribeira-pena",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-sabrosa.html",
+      "source": "/blog/instalacao-painel-solar-sabrosa",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-santa-marta-penaguiao.html",
+      "source": "/blog/instalacao-painel-solar-santa-marta-penaguiao",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-sao-joao-pesqueira.html",
+      "source": "/blog/instalacao-painel-solar-sao-joao-pesqueira",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-sendim.html",
+      "source": "/blog/instalacao-painel-solar-sendim",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-sernancelhe.html",
+      "source": "/blog/instalacao-painel-solar-sernancelhe",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-tabuaco.html",
+      "source": "/blog/instalacao-painel-solar-tabuaco",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-torre-moncorvo.html",
+      "source": "/blog/instalacao-painel-solar-torre-moncorvo",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-valpacos.html",
+      "source": "/blog/instalacao-painel-solar-valpacos",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-vila-flor.html",
+      "source": "/blog/instalacao-painel-solar-vila-flor",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-vila-pouca-aguiar.html",
+      "source": "/blog/instalacao-painel-solar-vila-pouca-aguiar",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-vila-real.html",
+      "source": "/blog/instalacao-painel-solar-vila-real",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-vimioso.html",
+      "source": "/blog/instalacao-painel-solar-vimioso",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-painel-solar-vinhais.html",
+      "source": "/blog/instalacao-painel-solar-vinhais",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/instalar-ar-condicionado-eletrica.html",
+      "source": "/blog/instalar-ar-condicionado-eletrica",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/inversor-solar-como-escolher.html",
+      "source": "/blog/inversor-solar-como-escolher",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/legislacao-autoconsumo-solar.html",
+      "source": "/blog/legislacao-autoconsumo-solar",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/manutencao-paineis-solares.html",
+      "source": "/blog/manutencao-paineis-solares",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/paineis-solares-instalacao-eletrica-guia.html",
+      "source": "/blog/paineis-solares-instalacao-eletrica-guia",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/paineis-solares-norte-portugal-rendimento.html",
+      "source": "/blog/paineis-solares-norte-portugal-rendimento",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/paineis-solares-telhado-inclinado.html",
+      "source": "/blog/paineis-solares-telhado-inclinado",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/paineis-solares-tras-os-montes-guia-completo.html",
+      "source": "/blog/paineis-solares-tras-os-montes-guia-completo",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/paineis-solares-tras-os-montes-guia.html",
+      "source": "/blog/paineis-solares-tras-os-montes-guia",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/paineis-solares-vale-pena.html",
+      "source": "/blog/paineis-solares-vale-pena",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/painel-controlo-casa.html",
+      "source": "/blog/painel-controlo-casa",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/painel-solar-eletricista-precisa.html",
+      "source": "/blog/painel-solar-eletricista-precisa",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/painel-solar-nao-produz-causa.html",
+      "source": "/blog/painel-solar-nao-produz-causa",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/quanto-custa-instalar-ar-condicionado.html",
+      "source": "/blog/quanto-custa-instalar-ar-condicionado",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/quanto-custa-instalar-bomba-calor.html",
+      "source": "/blog/quanto-custa-instalar-bomba-calor",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/quanto-custa-instalar-paineis-solares.html",
+      "source": "/blog/quanto-custa-instalar-paineis-solares",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/quanto-custa-instalar-wallbox.html",
+      "source": "/blog/quanto-custa-instalar-wallbox",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/quanto-poupa-paineis-solares.html",
+      "source": "/blog/quanto-poupa-paineis-solares",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/subsidio-wallbox-portugal.html",
+      "source": "/blog/subsidio-wallbox-portugal",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/wallbox-7kw-vs-22kw.html",
+      "source": "/blog/wallbox-7kw-vs-22kw",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/wallbox-condominio-regras.html",
+      "source": "/blog/wallbox-condominio-regras",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/wallbox-instalacao-casa.html",
+      "source": "/blog/wallbox-instalacao-casa",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/wallbox-monofasico-vs-trifasico.html",
+      "source": "/blog/wallbox-monofasico-vs-trifasico",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/blog/wallbox-solar-autoconsumo.html",
+      "source": "/blog/wallbox-solar-autoconsumo",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/como-instalar-painel-solar.html",
+      "source": "/como-instalar-painel-solar",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-alfandega-da-fe.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-alfandega-da-fe",
       "destination": "/eletricista-alfandega-da-fe",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-alijo.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-alijo",
       "destination": "/eletricista-alijo",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-almendra.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-almendra",
       "destination": "/eletricista-almendra",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-amarante.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-amarante",
       "destination": "/eletricista-amarante",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-argozelo.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-argozelo",
       "destination": "/eletricista-argozelo",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-armamar.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-armamar",
       "destination": "/eletricista-armamar",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-boticas.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-boticas",
       "destination": "/eletricista-boticas",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-braganca.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-braganca",
       "destination": "/eletricista-braganca",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-britiande.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-britiande",
       "destination": "/eletricista-britiande",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-cambres.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-cambres",
       "destination": "/eletricista-cambres",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-carrazeda-de-ansiaes.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-carrazeda-de-ansiaes",
       "destination": "/eletricista-carrazeda-de-ansiaes",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-carrazedo-de-montenegro.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-carrazedo-de-montenegro",
       "destination": "/eletricista-carrazedo-de-montenegro",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-cedovim.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-cedovim",
       "destination": "/eletricista-cedovim",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-cerva.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-cerva",
       "destination": "/eletricista-cerva",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-chaves.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-chaves",
       "destination": "/eletricista-chaves",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-cumieira.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-cumieira",
       "destination": "/eletricista-cumieira",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-ervedosa-do-douro.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-ervedosa-do-douro",
       "destination": "/eletricista-ervedosa-do-douro",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-favaios.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-favaios",
       "destination": "/eletricista-favaios",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-figueira-de-castelo-rodrigo.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-figueira-de-castelo-rodrigo",
       "destination": "/eletricista-figueira-de-castelo-rodrigo",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-freixo-de-espada-a-cinta.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-freixo-de-espada-a-cinta",
       "destination": "/eletricista-freixo-de-espada-a-cinta",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-freixo-de-numao.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-freixo-de-numao",
       "destination": "/eletricista-freixo-de-numao",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-izeda.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-izeda",
       "destination": "/eletricista-izeda",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-lalim.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-lalim",
       "destination": "/eletricista-lalim",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-lamego.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-lamego",
       "destination": "/eletricista-lamego",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-lazarim.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-lazarim",
       "destination": "/eletricista-lazarim",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-lixa.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-lixa",
       "destination": "/eletricista-lixa",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-lordelo.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-lordelo",
       "destination": "/eletricista-lordelo",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-macedo-de-cavaleiros.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-macedo-de-cavaleiros",
       "destination": "/eletricista-macedo-de-cavaleiros",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-marco-de-canaveses.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-marco-de-canaveses",
       "destination": "/eletricista-marco-de-canaveses",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-marialva.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-marialva",
       "destination": "/eletricista-marialva",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-mesao-frio.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-mesao-frio",
       "destination": "/eletricista-mesao-frio",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-miranda-do-douro.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-miranda-do-douro",
       "destination": "/eletricista-miranda-do-douro",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-mirandela.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-mirandela",
       "destination": "/eletricista-mirandela",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-mogadouro.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-mogadouro",
       "destination": "/eletricista-mogadouro",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-mondim-da-beira.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-mondim-da-beira",
       "destination": "/eletricista-mondim-da-beira",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-mondim-de-basto.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-mondim-de-basto",
       "destination": "/eletricista-mondim-de-basto",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-montalegre.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-montalegre",
       "destination": "/eletricista-montalegre",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-moucos.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-moucos",
       "destination": "/eletricista-moucos",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-murca.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-murca",
       "destination": "/eletricista-murca",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-pedras-salgadas.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-pedras-salgadas",
       "destination": "/eletricista-pedras-salgadas",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-penedono.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-penedono",
       "destination": "/eletricista-penedono",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-peso-da-regua.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-peso-da-regua",
       "destination": "/eletricista-peso-da-regua",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-pinhao.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-pinhao",
       "destination": "/eletricista-pinhao",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-resende.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-resende",
       "destination": "/eletricista-resende",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-ribeira-de-pena.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-ribeira-de-pena",
       "destination": "/eletricista-ribeira-de-pena",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-sabrosa.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-sabrosa",
       "destination": "/eletricista-sabrosa",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-salzedas.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-salzedas",
       "destination": "/eletricista-salzedas",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-sanfins-do-douro.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-sanfins-do-douro",
       "destination": "/eletricista-sanfins-do-douro",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-santa-marinha-do-zezere.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-santa-marinha-do-zezere",
       "destination": "/eletricista-santa-marinha-do-zezere",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-santa-marta-de-penaguiao.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-santa-marta-de-penaguiao",
       "destination": "/eletricista-santa-marta-de-penaguiao",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-santo-estevao.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-santo-estevao",
       "destination": "/eletricista-santo-estevao",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-sao-cosmado.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-sao-cosmado",
       "destination": "/eletricista-sao-cosmado",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-sao-joao-da-pesqueira.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-sao-joao-da-pesqueira",
       "destination": "/eletricista-sao-joao-da-pesqueira",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-sao-joao-de-tarouca.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-sao-joao-de-tarouca",
       "destination": "/eletricista-sao-joao-de-tarouca",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-sao-martinho-de-anta.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-sao-martinho-de-anta",
       "destination": "/eletricista-sao-martinho-de-anta",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-sao-martinho-de-mouros.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-sao-martinho-de-mouros",
       "destination": "/eletricista-sao-martinho-de-mouros",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-sendim.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-sendim",
       "destination": "/eletricista-sendim",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-sernancelhe.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-sernancelhe",
       "destination": "/eletricista-sernancelhe",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-tabuaco.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-tabuaco",
       "destination": "/eletricista-tabuaco",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-tarouca.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-tarouca",
       "destination": "/eletricista-tarouca",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-torre-de-dona-chama.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-torre-de-dona-chama",
       "destination": "/eletricista-torre-de-dona-chama",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-torre-de-moncorvo.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-torre-de-moncorvo",
       "destination": "/eletricista-torre-de-moncorvo",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-trevoes.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-trevoes",
       "destination": "/eletricista-trevoes",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-valdigem.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-valdigem",
       "destination": "/eletricista-valdigem",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-valpacos.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-valpacos",
       "destination": "/eletricista-valpacos",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-vern.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-vern",
       "destination": "/eletricista-vern",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-vidago.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-vidago",
       "destination": "/eletricista-vidago",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-vila-flor.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-vila-flor",
       "destination": "/eletricista-vila-flor",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-vila-franca-das-naves.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-vila-franca-das-naves",
       "destination": "/eletricista-vila-franca-das-naves",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-vila-nova-de-foz-coa.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-vila-nova-de-foz-coa",
       "destination": "/eletricista-vila-nova-de-foz-coa",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-vila-pouca-de-aguiar.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-vila-pouca-de-aguiar",
       "destination": "/eletricista-vila-pouca-de-aguiar",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-vila-real.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-vila-real",
       "destination": "/eletricista-vila-real",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-vilar-de-macada.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-vilar-de-macada",
       "destination": "/eletricista-vilar-de-macada",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-vilarandelo.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-vilarandelo",
       "destination": "/eletricista-vilarandelo",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-vimioso.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-vimioso",
       "destination": "/eletricista-vimioso",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-vinhais.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-vinhais",
       "destination": "/eletricista-vinhais",
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-xinzo-de-limia.html",
+      "source": "/eletricista-carregador-veiculo-eletrico-xinzo-de-limia",
       "destination": "/eletricista-xinzo-de-limia",
       "statusCode": 301
     },
     {
-      "source": "/instalacao-ar-condicionado.html",
+      "source": "/instalacao-ar-condicionado",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/instalacao-paineis-solares-tras-os-montes.html",
+      "source": "/instalacao-paineis-solares-tras-os-montes",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/melhor-carregador-ve-chaves.html",
+      "source": "/melhor-carregador-ve-chaves",
       "destination": "/eletricista-chaves",
       "statusCode": 301
     },
     {
-      "source": "/melhor-carregador-ve-lamego.html",
+      "source": "/melhor-carregador-ve-lamego",
       "destination": "/eletricista-lamego",
       "statusCode": 301
     },
     {
-      "source": "/melhor-carregador-ve-macedo-de-cavaleiros.html",
+      "source": "/melhor-carregador-ve-macedo-de-cavaleiros",
       "destination": "/eletricista-macedo-de-cavaleiros",
       "statusCode": 301
     },
     {
-      "source": "/melhor-carregador-ve-miranda-do-douro.html",
+      "source": "/melhor-carregador-ve-miranda-do-douro",
       "destination": "/eletricista-miranda-do-douro",
       "statusCode": 301
     },
     {
-      "source": "/melhor-carregador-ve-mirandela.html",
+      "source": "/melhor-carregador-ve-mirandela",
       "destination": "/eletricista-mirandela",
       "statusCode": 301
     },
     {
-      "source": "/melhor-carregador-ve-mogadouro.html",
+      "source": "/melhor-carregador-ve-mogadouro",
       "destination": "/eletricista-mogadouro",
       "statusCode": 301
     },
     {
-      "source": "/melhor-carregador-ve-moimenta-da-beira.html",
+      "source": "/melhor-carregador-ve-moimenta-da-beira",
       "destination": "/eletricista-moimenta-da-beira",
       "statusCode": 301
     },
     {
-      "source": "/melhor-carregador-ve-tavora.html",
+      "source": "/melhor-carregador-ve-tavora",
       "destination": "/eletricista-tavora",
       "statusCode": 301
     },
     {
-      "source": "/melhor-carregador-ve-vila-real.html",
+      "source": "/melhor-carregador-ve-vila-real",
       "destination": "/eletricista-vila-real",
       "statusCode": 301
     },
     {
-      "source": "/melhor-carregador-ve-vinhais.html",
+      "source": "/melhor-carregador-ve-vinhais",
       "destination": "/eletricista-vinhais",
       "statusCode": 301
     },
     {
-      "source": "/melhor-painel-solar-chaves.html",
+      "source": "/melhor-painel-solar-chaves",
       "destination": "/eletricista-chaves",
       "statusCode": 301
     },
     {
-      "source": "/melhor-painel-solar-lamego.html",
+      "source": "/melhor-painel-solar-lamego",
       "destination": "/eletricista-lamego",
       "statusCode": 301
     },
     {
-      "source": "/melhor-painel-solar-macedo-de-cavaleiros.html",
+      "source": "/melhor-painel-solar-macedo-de-cavaleiros",
       "destination": "/eletricista-macedo-de-cavaleiros",
       "statusCode": 301
     },
     {
-      "source": "/melhor-painel-solar-miranda-do-douro.html",
+      "source": "/melhor-painel-solar-miranda-do-douro",
       "destination": "/eletricista-miranda-do-douro",
       "statusCode": 301
     },
     {
-      "source": "/melhor-painel-solar-mirandela.html",
+      "source": "/melhor-painel-solar-mirandela",
       "destination": "/eletricista-mirandela",
       "statusCode": 301
     },
     {
-      "source": "/melhor-painel-solar-mogadouro.html",
+      "source": "/melhor-painel-solar-mogadouro",
       "destination": "/eletricista-mogadouro",
       "statusCode": 301
     },
     {
-      "source": "/melhor-painel-solar-moimenta-da-beira.html",
+      "source": "/melhor-painel-solar-moimenta-da-beira",
       "destination": "/eletricista-moimenta-da-beira",
       "statusCode": 301
     },
     {
-      "source": "/melhor-painel-solar-tavora.html",
+      "source": "/melhor-painel-solar-tavora",
       "destination": "/eletricista-tavora",
       "statusCode": 301
     },
     {
-      "source": "/melhor-painel-solar-vila-real.html",
+      "source": "/melhor-painel-solar-vila-real",
       "destination": "/eletricista-vila-real",
       "statusCode": 301
     },
     {
-      "source": "/melhor-painel-solar-vinhais.html",
+      "source": "/melhor-painel-solar-vinhais",
       "destination": "/eletricista-vinhais",
       "statusCode": 301
     },
     {
-      "source": "/melhores-aquecedores-eletricos.html",
+      "source": "/melhores-aquecedores-eletricos",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/melhores-ar-condicionado-casa.html",
+      "source": "/melhores-ar-condicionado-casa",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/melhores-baterias-solares.html",
+      "source": "/melhores-baterias-solares",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/melhores-carregadores-ev-wallbox.html",
+      "source": "/melhores-carregadores-ev-wallbox",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/melhores-geradores-eletricos.html",
+      "source": "/melhores-geradores-eletricos",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/melhores-humidificadores.html",
+      "source": "/melhores-humidificadores",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/melhores-inversores-solares.html",
+      "source": "/melhores-inversores-solares",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/melhores-paineis-solares-varanda.html",
+      "source": "/melhores-paineis-solares-varanda",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/melhores-termostatos-inteligentes.html",
+      "source": "/melhores-termostatos-inteligentes",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/melhores-ventiladores-teto.html",
+      "source": "/melhores-ventiladores-teto",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-alfandega-da-fe.html",
+      "source": "/paineis-fotovoltaicos-alfandega-da-fe",
       "destination": "/eletricista-alfandega-da-fe",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-algoso.html",
+      "source": "/paineis-fotovoltaicos-algoso",
       "destination": "/eletricista-algoso",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-armamar.html",
+      "source": "/paineis-fotovoltaicos-armamar",
       "destination": "/eletricista-armamar",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-boticas.html",
+      "source": "/paineis-fotovoltaicos-boticas",
       "destination": "/eletricista-boticas",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-braganca.html",
+      "source": "/paineis-fotovoltaicos-braganca",
       "destination": "/eletricista-braganca",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-carrazeda-de-ansiaes.html",
+      "source": "/paineis-fotovoltaicos-carrazeda-de-ansiaes",
       "destination": "/eletricista-carrazeda-de-ansiaes",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-chaves.html",
+      "source": "/paineis-fotovoltaicos-chaves",
       "destination": "/eletricista-chaves",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-duas-igrejas.html",
+      "source": "/paineis-fotovoltaicos-duas-igrejas",
       "destination": "/eletricista-duas-igrejas",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-freixo-de-espada-a-cinta.html",
+      "source": "/paineis-fotovoltaicos-freixo-de-espada-a-cinta",
       "destination": "/eletricista-freixo-de-espada-a-cinta",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-lagoaca.html",
+      "source": "/paineis-fotovoltaicos-lagoaca",
       "destination": "/eletricista-lagoaca",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-macedo-de-cavaleiros.html",
+      "source": "/paineis-fotovoltaicos-macedo-de-cavaleiros",
       "destination": "/eletricista-macedo-de-cavaleiros",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-mesao-frio.html",
+      "source": "/paineis-fotovoltaicos-mesao-frio",
       "destination": "/eletricista-mesao-frio",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-miranda-do-douro.html",
+      "source": "/paineis-fotovoltaicos-miranda-do-douro",
       "destination": "/eletricista-miranda-do-douro",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-mirandela.html",
+      "source": "/paineis-fotovoltaicos-mirandela",
       "destination": "/eletricista-mirandela",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-mogadouro.html",
+      "source": "/paineis-fotovoltaicos-mogadouro",
       "destination": "/eletricista-mogadouro",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-moncorvo.html",
+      "source": "/paineis-fotovoltaicos-moncorvo",
       "destination": "/eletricista-moncorvo",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-mondim-de-basto.html",
+      "source": "/paineis-fotovoltaicos-mondim-de-basto",
       "destination": "/eletricista-mondim-de-basto",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-monforte-de-rio-livre.html",
+      "source": "/paineis-fotovoltaicos-monforte-de-rio-livre",
       "destination": "/eletricista-monforte-de-rio-livre",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-montalegre.html",
+      "source": "/paineis-fotovoltaicos-montalegre",
       "destination": "/eletricista-montalegre",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-murca.html",
+      "source": "/paineis-fotovoltaicos-murca",
       "destination": "/eletricista-murca",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-penedono.html",
+      "source": "/paineis-fotovoltaicos-penedono",
       "destination": "/eletricista-penedono",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-rebordelo.html",
+      "source": "/paineis-fotovoltaicos-rebordelo",
       "destination": "/eletricista-rebordelo",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-ribeira-de-pena.html",
+      "source": "/paineis-fotovoltaicos-ribeira-de-pena",
       "destination": "/eletricista-ribeira-de-pena",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-santa-marta-penaguiao.html",
+      "source": "/paineis-fotovoltaicos-santa-marta-penaguiao",
       "destination": "/eletricista-santa-marta-penaguiao",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-sendim.html",
+      "source": "/paineis-fotovoltaicos-sendim",
       "destination": "/eletricista-sendim",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-sernancelhe.html",
+      "source": "/paineis-fotovoltaicos-sernancelhe",
       "destination": "/eletricista-sernancelhe",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-tabuaco.html",
+      "source": "/paineis-fotovoltaicos-tabuaco",
       "destination": "/eletricista-tabuaco",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-torre-de-moncorvo.html",
+      "source": "/paineis-fotovoltaicos-torre-de-moncorvo",
       "destination": "/eletricista-torre-de-moncorvo",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-valpacos.html",
+      "source": "/paineis-fotovoltaicos-valpacos",
       "destination": "/eletricista-valpacos",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-vila-flor.html",
+      "source": "/paineis-fotovoltaicos-vila-flor",
       "destination": "/eletricista-vila-flor",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-vila-pouca-de-aguiar.html",
+      "source": "/paineis-fotovoltaicos-vila-pouca-de-aguiar",
       "destination": "/eletricista-vila-pouca-de-aguiar",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-vila-real.html",
+      "source": "/paineis-fotovoltaicos-vila-real",
       "destination": "/eletricista-vila-real",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-vimioso.html",
+      "source": "/paineis-fotovoltaicos-vimioso",
       "destination": "/eletricista-vimioso",
       "statusCode": 301
     },
     {
-      "source": "/paineis-fotovoltaicos-vinhais.html",
+      "source": "/paineis-fotovoltaicos-vinhais",
       "destination": "/eletricista-vinhais",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-alfandega-da-fe.html",
+      "source": "/paineis-solares-alfandega-da-fe",
       "destination": "/eletricista-alfandega-da-fe",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-alijo.html",
+      "source": "/paineis-solares-alijo",
       "destination": "/eletricista-alijo",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-almendra.html",
+      "source": "/paineis-solares-almendra",
       "destination": "/eletricista-almendra",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-argozelo.html",
+      "source": "/paineis-solares-argozelo",
       "destination": "/eletricista-argozelo",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-armamar.html",
+      "source": "/paineis-solares-armamar",
       "destination": "/eletricista-armamar",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-boticas.html",
+      "source": "/paineis-solares-boticas",
       "destination": "/eletricista-boticas",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-braganca.html",
+      "source": "/paineis-solares-braganca",
       "destination": "/eletricista-braganca",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-britiande.html",
+      "source": "/paineis-solares-britiande",
       "destination": "/eletricista-britiande",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-cambres.html",
+      "source": "/paineis-solares-cambres",
       "destination": "/eletricista-cambres",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-carrazeda-de-ansiaes.html",
+      "source": "/paineis-solares-carrazeda-de-ansiaes",
       "destination": "/eletricista-carrazeda-de-ansiaes",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-carrazedo-de-montenegro.html",
+      "source": "/paineis-solares-carrazedo-de-montenegro",
       "destination": "/eletricista-carrazedo-de-montenegro",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-cedovim.html",
+      "source": "/paineis-solares-cedovim",
       "destination": "/eletricista-cedovim",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-chaves.html",
+      "source": "/paineis-solares-chaves",
       "destination": "/eletricista-chaves",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-cumieira.html",
+      "source": "/paineis-solares-cumieira",
       "destination": "/eletricista-cumieira",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-ervedosa-do-douro.html",
+      "source": "/paineis-solares-ervedosa-do-douro",
       "destination": "/eletricista-ervedosa-do-douro",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-favaios.html",
+      "source": "/paineis-solares-favaios",
       "destination": "/eletricista-favaios",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-figueira-de-castelo-rodrigo.html",
+      "source": "/paineis-solares-figueira-de-castelo-rodrigo",
       "destination": "/eletricista-figueira-de-castelo-rodrigo",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-freixo-de-espada-a-cinta.html",
+      "source": "/paineis-solares-freixo-de-espada-a-cinta",
       "destination": "/eletricista-freixo-de-espada-a-cinta",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-freixo-de-numao.html",
+      "source": "/paineis-solares-freixo-de-numao",
       "destination": "/eletricista-freixo-de-numao",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-izeda.html",
+      "source": "/paineis-solares-izeda",
       "destination": "/eletricista-izeda",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-lalim.html",
+      "source": "/paineis-solares-lalim",
       "destination": "/eletricista-lalim",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-lamego.html",
+      "source": "/paineis-solares-lamego",
       "destination": "/eletricista-lamego",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-lazarim.html",
+      "source": "/paineis-solares-lazarim",
       "destination": "/eletricista-lazarim",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-lordelo.html",
+      "source": "/paineis-solares-lordelo",
       "destination": "/eletricista-lordelo",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-macedo-de-cavaleiros.html",
+      "source": "/paineis-solares-macedo-de-cavaleiros",
       "destination": "/eletricista-macedo-de-cavaleiros",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-marialva.html",
+      "source": "/paineis-solares-marialva",
       "destination": "/eletricista-marialva",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-mesao-frio.html",
+      "source": "/paineis-solares-mesao-frio",
       "destination": "/eletricista-mesao-frio",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-miranda-do-douro.html",
+      "source": "/paineis-solares-miranda-do-douro",
       "destination": "/eletricista-miranda-do-douro",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-mirandela.html",
+      "source": "/paineis-solares-mirandela",
       "destination": "/eletricista-mirandela",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-mogadouro.html",
+      "source": "/paineis-solares-mogadouro",
       "destination": "/eletricista-mogadouro",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-mondim-da-beira.html",
+      "source": "/paineis-solares-mondim-da-beira",
       "destination": "/eletricista-mondim-da-beira",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-montalegre.html",
+      "source": "/paineis-solares-montalegre",
       "destination": "/eletricista-montalegre",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-moucos.html",
+      "source": "/paineis-solares-moucos",
       "destination": "/eletricista-moucos",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-murca.html",
+      "source": "/paineis-solares-murca",
       "destination": "/eletricista-murca",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-pedras-salgadas.html",
+      "source": "/paineis-solares-pedras-salgadas",
       "destination": "/eletricista-pedras-salgadas",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-penedono.html",
+      "source": "/paineis-solares-penedono",
       "destination": "/eletricista-penedono",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-peso-da-regua.html",
+      "source": "/paineis-solares-peso-da-regua",
       "destination": "/eletricista-peso-da-regua",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-pinhao.html",
+      "source": "/paineis-solares-pinhao",
       "destination": "/eletricista-pinhao",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-ribeira-de-pena.html",
+      "source": "/paineis-solares-ribeira-de-pena",
       "destination": "/eletricista-ribeira-de-pena",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-sabrosa.html",
+      "source": "/paineis-solares-sabrosa",
       "destination": "/eletricista-sabrosa",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-salzedas.html",
+      "source": "/paineis-solares-salzedas",
       "destination": "/eletricista-salzedas",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-sanfins-do-douro.html",
+      "source": "/paineis-solares-sanfins-do-douro",
       "destination": "/eletricista-sanfins-do-douro",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-santa-marta-de-penaguiao.html",
+      "source": "/paineis-solares-santa-marta-de-penaguiao",
       "destination": "/eletricista-santa-marta-de-penaguiao",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-santo-estevao.html",
+      "source": "/paineis-solares-santo-estevao",
       "destination": "/eletricista-santo-estevao",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-sao-cosmado.html",
+      "source": "/paineis-solares-sao-cosmado",
       "destination": "/eletricista-sao-cosmado",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-sao-joao-da-pesqueira.html",
+      "source": "/paineis-solares-sao-joao-da-pesqueira",
       "destination": "/eletricista-sao-joao-da-pesqueira",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-sao-joao-de-tarouca.html",
+      "source": "/paineis-solares-sao-joao-de-tarouca",
       "destination": "/eletricista-sao-joao-de-tarouca",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-sao-martinho-de-anta.html",
+      "source": "/paineis-solares-sao-martinho-de-anta",
       "destination": "/eletricista-sao-martinho-de-anta",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-sendim.html",
+      "source": "/paineis-solares-sendim",
       "destination": "/eletricista-sendim",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-sernancelhe.html",
+      "source": "/paineis-solares-sernancelhe",
       "destination": "/eletricista-sernancelhe",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-tabuaco.html",
+      "source": "/paineis-solares-tabuaco",
       "destination": "/eletricista-tabuaco",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-tarouca.html",
+      "source": "/paineis-solares-tarouca",
       "destination": "/eletricista-tarouca",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-torre-de-dona-chama.html",
+      "source": "/paineis-solares-torre-de-dona-chama",
       "destination": "/eletricista-torre-de-dona-chama",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-torre-de-moncorvo.html",
+      "source": "/paineis-solares-torre-de-moncorvo",
       "destination": "/eletricista-torre-de-moncorvo",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-trevoes.html",
+      "source": "/paineis-solares-trevoes",
       "destination": "/eletricista-trevoes",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-valdigem.html",
+      "source": "/paineis-solares-valdigem",
       "destination": "/eletricista-valdigem",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-valpacos.html",
+      "source": "/paineis-solares-valpacos",
       "destination": "/eletricista-valpacos",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-vidago.html",
+      "source": "/paineis-solares-vidago",
       "destination": "/eletricista-vidago",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-vila-flor.html",
+      "source": "/paineis-solares-vila-flor",
       "destination": "/eletricista-vila-flor",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-vila-franca-das-naves.html",
+      "source": "/paineis-solares-vila-franca-das-naves",
       "destination": "/eletricista-vila-franca-das-naves",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-vila-nova-de-foz-coa.html",
+      "source": "/paineis-solares-vila-nova-de-foz-coa",
       "destination": "/eletricista-vila-nova-de-foz-coa",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-vila-pouca-de-aguiar.html",
+      "source": "/paineis-solares-vila-pouca-de-aguiar",
       "destination": "/eletricista-vila-pouca-de-aguiar",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-vila-real.html",
+      "source": "/paineis-solares-vila-real",
       "destination": "/eletricista-vila-real",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-vilar-de-macada.html",
+      "source": "/paineis-solares-vilar-de-macada",
       "destination": "/eletricista-vilar-de-macada",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-vilarandelo.html",
+      "source": "/paineis-solares-vilarandelo",
       "destination": "/eletricista-vilarandelo",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-vimioso.html",
+      "source": "/paineis-solares-vimioso",
       "destination": "/eletricista-vimioso",
       "statusCode": 301
     },
     {
-      "source": "/paineis-solares-vinhais.html",
+      "source": "/paineis-solares-vinhais",
       "destination": "/eletricista-vinhais",
       "statusCode": 301
     },
     {
-      "source": "/painel-solar-braganca.html",
+      "source": "/painel-solar-braganca",
       "destination": "/eletricista-braganca",
       "statusCode": 301
     },
     {
-      "source": "/painel-solar-chaves.html",
+      "source": "/painel-solar-chaves",
       "destination": "/eletricista-chaves",
       "statusCode": 301
     },
     {
-      "source": "/painel-solar-lamego.html",
+      "source": "/painel-solar-lamego",
       "destination": "/eletricista-lamego",
       "statusCode": 301
     },
     {
-      "source": "/painel-solar-macedo-de-cavaleiros.html",
+      "source": "/painel-solar-macedo-de-cavaleiros",
       "destination": "/eletricista-macedo-de-cavaleiros",
       "statusCode": 301
     },
     {
-      "source": "/painel-solar-miranda-do-douro.html",
+      "source": "/painel-solar-miranda-do-douro",
       "destination": "/eletricista-miranda-do-douro",
       "statusCode": 301
     },
     {
-      "source": "/painel-solar-mirandela.html",
+      "source": "/painel-solar-mirandela",
       "destination": "/eletricista-mirandela",
       "statusCode": 301
     },
     {
-      "source": "/painel-solar-mogadouro.html",
+      "source": "/painel-solar-mogadouro",
       "destination": "/eletricista-mogadouro",
       "statusCode": 301
     },
     {
-      "source": "/painel-solar-vale-pena.html",
+      "source": "/painel-solar-vale-pena",
       "destination": "/eletricista-vale-pena",
       "statusCode": 301
     },
     {
-      "source": "/painel-solar-vila-real.html",
+      "source": "/painel-solar-vila-real",
       "destination": "/eletricista-vila-real",
       "statusCode": 301
     },
     {
-      "source": "/painel-solar-vimioso.html",
+      "source": "/painel-solar-vimioso",
       "destination": "/eletricista-vimioso",
       "statusCode": 301
     },
     {
-      "source": "/painel-solar-vinhais.html",
+      "source": "/painel-solar-vinhais",
       "destination": "/eletricista-vinhais",
       "statusCode": 301
     },
     {
-      "source": "/quanto-custa-paineis-solares.html",
+      "source": "/quanto-custa-paineis-solares",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-alfandega-da-fe.html",
+      "source": "/wallbox-alfandega-da-fe",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-algoso.html",
+      "source": "/wallbox-algoso",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-armamar.html",
+      "source": "/wallbox-armamar",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-boticas.html",
+      "source": "/wallbox-boticas",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-braganca.html",
+      "source": "/wallbox-braganca",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-carrazeda-de-ansiaes.html",
+      "source": "/wallbox-carrazeda-de-ansiaes",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-chaves.html",
+      "source": "/wallbox-chaves",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-duas-igrejas.html",
+      "source": "/wallbox-duas-igrejas",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-freixo-de-espada-a-cinta.html",
+      "source": "/wallbox-freixo-de-espada-a-cinta",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-lagoaca.html",
+      "source": "/wallbox-lagoaca",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-macedo-de-cavaleiros.html",
+      "source": "/wallbox-macedo-de-cavaleiros",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-mesao-frio.html",
+      "source": "/wallbox-mesao-frio",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-miranda-do-douro.html",
+      "source": "/wallbox-miranda-do-douro",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-mirandela.html",
+      "source": "/wallbox-mirandela",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-mogadouro.html",
+      "source": "/wallbox-mogadouro",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-moncorvo.html",
+      "source": "/wallbox-moncorvo",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-mondim-de-basto.html",
+      "source": "/wallbox-mondim-de-basto",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-monforte-de-rio-livre.html",
+      "source": "/wallbox-monforte-de-rio-livre",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-montalegre.html",
+      "source": "/wallbox-montalegre",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-murca.html",
+      "source": "/wallbox-murca",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-penedono.html",
+      "source": "/wallbox-penedono",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-rebordelo.html",
+      "source": "/wallbox-rebordelo",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-ribeira-de-pena.html",
+      "source": "/wallbox-ribeira-de-pena",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-santa-marta-penaguiao.html",
+      "source": "/wallbox-santa-marta-penaguiao",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-sendim.html",
+      "source": "/wallbox-sendim",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-sernancelhe.html",
+      "source": "/wallbox-sernancelhe",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-tabuaco.html",
+      "source": "/wallbox-tabuaco",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-torre-de-moncorvo.html",
+      "source": "/wallbox-torre-de-moncorvo",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-valpacos.html",
+      "source": "/wallbox-valpacos",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-vila-flor.html",
+      "source": "/wallbox-vila-flor",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-vila-pouca-de-aguiar.html",
+      "source": "/wallbox-vila-pouca-de-aguiar",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-vila-real.html",
+      "source": "/wallbox-vila-real",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-vimioso.html",
+      "source": "/wallbox-vimioso",
       "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/wallbox-vinhais.html",
+      "source": "/wallbox-vinhais",
       "destination": "/",
       "statusCode": 301
     },
@@ -5539,17 +5534,7 @@
       "statusCode": 301
     },
     {
-      "source": "/marcas-grohe-roca-junkers.html",
-      "destination": "/",
-      "statusCode": 301
-    },
-    {
       "source": "/parceiros",
-      "destination": "/",
-      "statusCode": 301
-    },
-    {
-      "source": "/parceiros.html",
       "destination": "/",
       "statusCode": 301
     },
@@ -6531,86 +6516,6 @@
     {
       "source": "/eletricista-fi%C3%A3es",
       "destination": "/eletricista-fiaes",
-      "statusCode": 301
-    },
-    {
-      "source": "/melhor-avaria-valpa%C3%A7os.html",
-      "destination": "/melhor-avaria-valpacos",
-      "statusCode": 301
-    },
-    {
-      "source": "/melhor-avaria-peso-da-r%C3%A9gua.html",
-      "destination": "/melhor-avaria-peso-da-regua",
-      "statusCode": 301
-    },
-    {
-      "source": "/melhor-avaria-bragan%C3%A7a.html",
-      "destination": "/melhor-avaria-braganca",
-      "statusCode": 301
-    },
-    {
-      "source": "/melhor-quadro-eletrico-valpa%C3%A7os.html",
-      "destination": "/melhor-quadro-eletrico-valpacos",
-      "statusCode": 301
-    },
-    {
-      "source": "/melhor-iluminacao-led-peso-da-r%C3%A9gua.html",
-      "destination": "/melhor-iluminacao-led-peso-da-regua",
-      "statusCode": 301
-    },
-    {
-      "source": "/melhor-iluminacao-led-valpa%C3%A7os.html",
-      "destination": "/melhor-iluminacao-led-valpacos",
-      "statusCode": 301
-    },
-    {
-      "source": "/melhor-avaria-alij%C3%B3.html",
-      "destination": "/melhor-avaria-alijo",
-      "statusCode": 301
-    },
-    {
-      "source": "/melhor-iluminacao-led-bragan%C3%A7a.html",
-      "destination": "/melhor-iluminacao-led-braganca",
-      "statusCode": 301
-    },
-    {
-      "source": "/melhor-quadro-eletrico-alij%C3%B3.html",
-      "destination": "/melhor-quadro-eletrico-alijo",
-      "statusCode": 301
-    },
-    {
-      "source": "/melhor-certificacao-dgeg-alij%C3%B3.html",
-      "destination": "/melhor-certificacao-dgeg-alijo",
-      "statusCode": 301
-    },
-    {
-      "source": "/melhor-quadro-eletrico-peso-da-r%C3%A9gua.html",
-      "destination": "/melhor-quadro-eletrico-peso-da-regua",
-      "statusCode": 301
-    },
-    {
-      "source": "/melhor-certificacao-dgeg-peso-da-r%C3%A9gua.html",
-      "destination": "/melhor-certificacao-dgeg-peso-da-regua",
-      "statusCode": 301
-    },
-    {
-      "source": "/melhor-iluminacao-led-alij%C3%B3.html",
-      "destination": "/melhor-iluminacao-led-alijo",
-      "statusCode": 301
-    },
-    {
-      "source": "/melhor-quadro-eletrico-bragan%C3%A7a.html",
-      "destination": "/melhor-quadro-eletrico-braganca",
-      "statusCode": 301
-    },
-    {
-      "source": "/melhor-certificacao-dgeg-valpa%C3%A7os.html",
-      "destination": "/melhor-certificacao-dgeg-valpacos",
-      "statusCode": 301
-    },
-    {
-      "source": "/melhor-certificacao-dgeg-bragan%C3%A7a.html",
-      "destination": "/melhor-certificacao-dgeg-braganca",
       "statusCode": 301
     }
   ],
