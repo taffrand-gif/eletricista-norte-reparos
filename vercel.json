@@ -2754,6 +2754,17 @@
   ],
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.eletricista-norte-reparos.pt"
+        }
+      ],
+      "destination": "https://eletricista-norte-reparos.pt/:path*",
+      "permanent": true
+    },
+    {
       "source": "/imprensa",
       "destination": "/sobre",
       "statusCode": 301
