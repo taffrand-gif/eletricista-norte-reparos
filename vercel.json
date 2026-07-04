@@ -2755,22 +2755,22 @@
   "redirects": [
     {
       "source": "/imprensa",
-      "destination": "/sobre.html",
+      "destination": "/sobre",
       "statusCode": 301
     },
     {
       "source": "/imprensa.html",
-      "destination": "/sobre.html",
+      "destination": "/sobre",
       "statusCode": 301
     },
     {
       "source": "/blog/contratar-canalizador-2026.html",
-      "destination": "/top-10-razoes-contratar-canalizador.html",
+      "destination": "/top-10-razoes-contratar-canalizador",
       "statusCode": 301
     },
     {
       "source": "/blog/guia-completo-canalizacao-casa-antiga.html",
-      "destination": "/guia-completo-canalizacao-casa-antiga-portugal.html",
+      "destination": "/guia-completo-canalizacao-casa-antiga-portugal",
       "statusCode": 301
     },
     {
@@ -2780,17 +2780,17 @@
     },
     {
       "source": "/zonas-de-intervencao.html",
-      "destination": "/zona-intervencao.html",
+      "destination": "/zona-intervencao",
       "statusCode": 301
     },
     {
       "source": "/fugas-agua.html",
-      "destination": "/fuga-agua.html",
+      "destination": "/fuga-agua",
       "statusCode": 301
     },
     {
       "source": "/desentupimentos.html",
-      "destination": "/desentupimento.html",
+      "destination": "/desentupimento",
       "statusCode": 301
     },
     {
@@ -2805,122 +2805,122 @@
     },
     {
       "source": "/concelhos/bragan%C3%A7a.html",
-      "destination": "/concelhos/braganca.html",
+      "destination": "/concelhos/braganca",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--obrigatoria.html",
-      "destination": "/blog/certificacao-obrigatoria.html",
+      "destination": "/blog/certificacao-obrigatoria",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--tudo-saber.html",
-      "destination": "/blog/certificacao-tudo-saber.html",
+      "destination": "/blog/certificacao-tudo-saber",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao-eletrica--guia.html",
-      "destination": "/blog/certificacao-eletrica-guia.html",
+      "destination": "/blog/certificacao-eletrica-guia",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--vila-flor.html",
-      "destination": "/blog/certificacao-vila-flor.html",
+      "destination": "/blog/certificacao-vila-flor",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--miranda-douro.html",
-      "destination": "/blog/certificacao-miranda-douro.html",
+      "destination": "/blog/certificacao-miranda-douro",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--moimenta-beira.html",
-      "destination": "/blog/certificacao-moimenta-beira.html",
+      "destination": "/blog/certificacao-moimenta-beira",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--chaves-guia.html",
-      "destination": "/blog/certificacao-chaves-guia.html",
+      "destination": "/blog/certificacao-chaves-guia",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--carrazeda-ansiaes-guia.html",
-      "destination": "/blog/certificacao-carrazeda-ansiaes-guia.html",
+      "destination": "/blog/certificacao-carrazeda-ansiaes-guia",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--vila-flor-guia.html",
-      "destination": "/blog/certificacao-vila-flor-guia.html",
+      "destination": "/blog/certificacao-vila-flor-guia",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--importancia.html",
-      "destination": "/blog/certificacao-importancia.html",
+      "destination": "/blog/certificacao-importancia",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--regua-guia.html",
-      "destination": "/blog/certificacao-regua-guia.html",
+      "destination": "/blog/certificacao-regua-guia",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--freixo-espada-cinta-guia.html",
-      "destination": "/blog/certificacao-freixo-espada-cinta-guia.html",
+      "destination": "/blog/certificacao-freixo-espada-cinta-guia",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--mogadouro.html",
-      "destination": "/blog/certificacao-mogadouro.html",
+      "destination": "/blog/certificacao-mogadouro",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--vila-real.html",
-      "destination": "/blog/certificacao-vila-real.html",
+      "destination": "/blog/certificacao-vila-real",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--torre-moncorvo.html",
-      "destination": "/blog/certificacao-torre-moncorvo.html",
+      "destination": "/blog/certificacao-torre-moncorvo",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--torre-moncorvo-guia.html",
-      "destination": "/blog/certificacao-torre-moncorvo-guia.html",
+      "destination": "/blog/certificacao-torre-moncorvo-guia",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--rebordelo.html",
-      "destination": "/blog/certificacao-rebordelo.html",
+      "destination": "/blog/certificacao-rebordelo",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--lamego-guia.html",
-      "destination": "/blog/certificacao-lamego-guia.html",
+      "destination": "/blog/certificacao-lamego-guia",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--alijo.html",
-      "destination": "/blog/certificacao-alijo.html",
+      "destination": "/blog/certificacao-alijo",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--monforte-rio-livre.html",
-      "destination": "/blog/certificacao-monforte-rio-livre.html",
+      "destination": "/blog/certificacao-monforte-rio-livre",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--moncorvo.html",
-      "destination": "/blog/certificacao-moncorvo.html",
+      "destination": "/blog/certificacao-moncorvo",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--ribeira-pena.html",
-      "destination": "/blog/certificacao-ribeira-pena.html",
+      "destination": "/blog/certificacao-ribeira-pena",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--vimioso-guia.html",
-      "destination": "/blog/certificacao-vimioso-guia.html",
+      "destination": "/blog/certificacao-vimioso-guia",
       "statusCode": 301
     },
     {
@@ -6535,82 +6535,82 @@
     },
     {
       "source": "/melhor-avaria-valpa%C3%A7os.html",
-      "destination": "/melhor-avaria-valpacos.html",
+      "destination": "/melhor-avaria-valpacos",
       "statusCode": 301
     },
     {
       "source": "/melhor-avaria-peso-da-r%C3%A9gua.html",
-      "destination": "/melhor-avaria-peso-da-regua.html",
+      "destination": "/melhor-avaria-peso-da-regua",
       "statusCode": 301
     },
     {
       "source": "/melhor-avaria-bragan%C3%A7a.html",
-      "destination": "/melhor-avaria-braganca.html",
+      "destination": "/melhor-avaria-braganca",
       "statusCode": 301
     },
     {
       "source": "/melhor-quadro-eletrico-valpa%C3%A7os.html",
-      "destination": "/melhor-quadro-eletrico-valpacos.html",
+      "destination": "/melhor-quadro-eletrico-valpacos",
       "statusCode": 301
     },
     {
       "source": "/melhor-iluminacao-led-peso-da-r%C3%A9gua.html",
-      "destination": "/melhor-iluminacao-led-peso-da-regua.html",
+      "destination": "/melhor-iluminacao-led-peso-da-regua",
       "statusCode": 301
     },
     {
       "source": "/melhor-iluminacao-led-valpa%C3%A7os.html",
-      "destination": "/melhor-iluminacao-led-valpacos.html",
+      "destination": "/melhor-iluminacao-led-valpacos",
       "statusCode": 301
     },
     {
       "source": "/melhor-avaria-alij%C3%B3.html",
-      "destination": "/melhor-avaria-alijo.html",
+      "destination": "/melhor-avaria-alijo",
       "statusCode": 301
     },
     {
       "source": "/melhor-iluminacao-led-bragan%C3%A7a.html",
-      "destination": "/melhor-iluminacao-led-braganca.html",
+      "destination": "/melhor-iluminacao-led-braganca",
       "statusCode": 301
     },
     {
       "source": "/melhor-quadro-eletrico-alij%C3%B3.html",
-      "destination": "/melhor-quadro-eletrico-alijo.html",
+      "destination": "/melhor-quadro-eletrico-alijo",
       "statusCode": 301
     },
     {
       "source": "/melhor-certificacao-dgeg-alij%C3%B3.html",
-      "destination": "/melhor-certificacao-dgeg-alijo.html",
+      "destination": "/melhor-certificacao-dgeg-alijo",
       "statusCode": 301
     },
     {
       "source": "/melhor-quadro-eletrico-peso-da-r%C3%A9gua.html",
-      "destination": "/melhor-quadro-eletrico-peso-da-regua.html",
+      "destination": "/melhor-quadro-eletrico-peso-da-regua",
       "statusCode": 301
     },
     {
       "source": "/melhor-certificacao-dgeg-peso-da-r%C3%A9gua.html",
-      "destination": "/melhor-certificacao-dgeg-peso-da-regua.html",
+      "destination": "/melhor-certificacao-dgeg-peso-da-regua",
       "statusCode": 301
     },
     {
       "source": "/melhor-iluminacao-led-alij%C3%B3.html",
-      "destination": "/melhor-iluminacao-led-alijo.html",
+      "destination": "/melhor-iluminacao-led-alijo",
       "statusCode": 301
     },
     {
       "source": "/melhor-quadro-eletrico-bragan%C3%A7a.html",
-      "destination": "/melhor-quadro-eletrico-braganca.html",
+      "destination": "/melhor-quadro-eletrico-braganca",
       "statusCode": 301
     },
     {
       "source": "/melhor-certificacao-dgeg-valpa%C3%A7os.html",
-      "destination": "/melhor-certificacao-dgeg-valpacos.html",
+      "destination": "/melhor-certificacao-dgeg-valpacos",
       "statusCode": 301
     },
     {
       "source": "/melhor-certificacao-dgeg-bragan%C3%A7a.html",
-      "destination": "/melhor-certificacao-dgeg-braganca.html",
+      "destination": "/melhor-certificacao-dgeg-braganca",
       "statusCode": 301
     }
   ],
