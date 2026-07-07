@@ -412,7 +412,7 @@ function getWhyChooseUs(citySlug: string, serviceSlug: string) {
  {
  icon: '📋',
  title: 'certificação elétrica Garantida',
- description: 'Todos os trabalhos incluem certificação elétrica obrigatória. Regularizamos instalações antigas e emitimos certificados para venda ou arrendamento de imóveis.'
+ description: 'Todos os trabalhos incluem inspeção elétrica detalhada. Regularizamos instalações antigas e emitimos relatório técnico de conformidade, para venda ou arrendamento de imóveis.'
  }
  ]
  },

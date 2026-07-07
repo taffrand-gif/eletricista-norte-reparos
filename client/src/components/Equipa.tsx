@@ -17,12 +17,7 @@ export default function Equipa() {
  stat: 'A confirmar',
  label: 'Chegada a Bragança',
  desc: 'Preço dito ao telefone antes de sair. Se disser 80€, são 80€. Nunca mais.'},
- {
- icon: <Wrench className="w-10 h-10" />,
- stat: '',
- label: 'Certificado em 48h',
- desc: 'Trato de toda a papelada para venda ou arrendamento. Sem complicações.'},
- ];
+];
  return (
  <section id="equipa" className="py-20 bg-white">
  <div className="container mx-auto px-4">

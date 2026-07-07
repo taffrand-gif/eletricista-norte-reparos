@@ -48,7 +48,7 @@ export const SERVICES: Service[] = [
  title: 'Materiais e Certificações',
  content: `**Marcas Premium**: Legrand (tomadas, interruptores), Schneider Electric (quadros, disjuntores), Siemens (automação), Hager (proteções), ABB (industrial).
 **Cabos Certificados**: H07V-U/R (instalações fixas), H05VV-F (flexível), XV (enterrado), todos com marcação CE e certificação elétrica.
-**certificação elétrica Incluída**: Todas as instalações são certificadas pela (Associação Certificadora de Instalações Elétricas), obrigatório por lei. Certificado válido para venda/arrendamento de imóveis, seguros e inspeções.
+**Inspeção e Relatório Técnico**: Emitimos relatório técnico de conformidade da instalação, com identificação do instalador, características técnicas e testes realizados.
 **Garantia 5 Anos**: Todas as instalações têm garantia de 5 anos (material + mão de obra), conforme legislação portuguesa.`
  },
  {
@@ -243,7 +243,7 @@ Diagnóstico preciso em 15-45 minutos. Orçamento antes de arranjar.`
  },
  {
  title: 'Relatório Técnico',
- content: `Fotografias instalação, Resultados testes elétricos, Lista problemas identificados (críticos, importantes, recomendações), Orçamento para correções, Certificado conformidade (se aprovado). Válido para seguros, vendas, arrendamentos.`
+ content: `Fotografias instalação, Resultados testes elétricos, Lista problemas identificados (críticos, importantes, recomendações), Orçamento para correções, Relatório técnico de conformidade (se instalação aprovada). Indicado para seguros, vendas e arrendamentos.`
  },
  {
  title: 'Preços',

@@ -7,14 +7,14 @@ const InnovativeHero: React.FC = () => {
  const isPlumber = config.id === 'norte-reparos';
  const statsData = isPlumber
  ? [
- { icon: '💧', value: 'Certificado', label: 'Seguro Ativo' },
+ { icon: '💧', value: '24h/7d', label: 'Disponibilidade' },
  { icon: '🔬', value: 'Ridgid', label: 'Câmara Inspeção' },
  { icon: '🛡️', value: 'Centenas', label: 'Intervenções' },
  { icon: '📞', value: 'em minutos', label: 'Chegada Bragança' },
  ]
  : [
- { icon: '✅', value: '', label: 'Certificado' },
- { icon: '🔬', value: 'Fluke & FLIR', label: 'Diagnóstico Pro' },
+ { icon: '✅', value: 'Fluke', label: 'Diagnóstico Pro' },
+ { icon: '🔬', value: 'FLIR', label: 'Câmara Térmica' },
  { icon: '⚡', value: '350+', label: 'Intervenções' },
  { icon: '📞', value: 'em minutos', label: 'Chegada Bragança' },
  ];

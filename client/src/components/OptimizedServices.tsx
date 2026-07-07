@@ -23,7 +23,7 @@ const electricDescriptions: Record<string, string> = {
  'Arranjo de Avarias Elétricas': 'Diagnóstico e arranjo rápida de avarias elétricas, curtos-circuitos, disjuntores que disparam, falhas de iluminação e outros problemas elétricos.',
  'Quadros Elétricos Modernos': 'Substituição e modernização de quadros elétricos antigos, instalação de disjuntores diferenciais, organização e identificação de circuitos.',
  'Iluminação Interior/Exterior': 'Projeto e instalação de sistemas de iluminação interior e exterior, spots LED, iluminação decorativa, sensores de movimento e automatização.',
- 'certificação elétrica': 'Inspeção e certificação elétrica obrigatória para venda e arrendamento de imóveis, com emissão de certificado válido e registado na .',
+ 'certificação elétrica': 'Inspeção elétrica e relatório técnico detalhado, para venda, arrendamento ou regularização de imóveis.',
  'Urgências 24h': 'Atendimento de urgências elétricas Atendimento 24h/7d, 7 dias por semana, para situações de perigo ou falta de energia.'};
 // Descriptions pour plomberie
 const plumbDescriptions: Record<string, string> = {
@@ -57,8 +57,8 @@ const electricFeatures: Record<string, string[]> = {
  ],
  'certificação elétrica': [
  'Inspeção completa com relatório',
- 'Certificado válido para venda/arrendamento',
- 'Registo na plataforma '
+ 'Relatório técnico de conformidade',
+ 'Lista de anomalias e recomendações'
  ],
  'Urgências 24h': [
  'Disponível 24h/7d',

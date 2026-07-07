@@ -55,9 +55,9 @@ export default function Servicos() {
  features: [
  'Inspeção completa da instalação elétrica',
  'Testes de segurança e funcionamento',
- 'Emissão de certificado oficial ',
- 'Registo no sistema nacional',
- 'Validade legal garantida'
+ 'Emissão de relatório técnico detalhado',
+ 'Indicação de correções recomendadas',
+ 'Documentação para seguro, venda ou arrendamento'
  ],
  image: '/images-optimized/services/service-certificacao.jpg',
  priceRange: 'A partir de €150'
@@ -183,7 +183,7 @@ export default function Servicos() {
  },
  {
  question: "A certificação elétrica é obrigatória?",
- answer: "Sim, para venda ou arrendamento de imóveis em Portugal é obrigatório ter certificação elétrica válida. O certificado tem validade de 8 anos."
+ answer: "Sim. Para venda ou arrendamento de imóveis em Portugal, a instalação elétrica exige inspeção e relatório técnico. A periodicidade de re-inspeção e a validade aplicável seguem a regulamentação em vigor — consulte o técnico responsável pelo seu caso para confirmar prazos e requisitos."
  },
  {
  question: "Oferecem garantia nos serviços?",

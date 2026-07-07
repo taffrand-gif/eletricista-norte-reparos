@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 const faqItems = [
  { question: "Quando devo modernizar o quadro elétrico?", answer: "Se o seu quadro ainda tem fusíveis de porcelana, tem mais de 25 anos, ou dispara frequentemente, é hora de modernizar. Um quadro moderno com disjuntores e diferencial protege a sua família e os seus equipamentos." },
  { question: "Quanto custa modernizar um quadro elétrico?", answer: "A modernização de um quadro elétrico residencial custa entre €200 e €600, dependendo do número de circuitos e da complexidade da instalação. Inclui disjuntores, diferencial e certificação." },
- { question: "A modernização do quadro inclui certificação elétrica?", answer: "Sim, após a modernização emitimos o certificado de conformidade , obrigatório para contratos de eletricidade e seguros de habitação." }
+ { question: "A modernização do quadro inclui certificação elétrica?", answer: "Sim, após a modernização emitimos o relatório técnico de conformidade da instalação, necessário para contratos de eletricidade e seguros de habitação." }
 ];
 export default function QuadrosEletricos() {
  useEffect(() => {
