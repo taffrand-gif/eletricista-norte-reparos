@@ -2765,6 +2765,16 @@
       "permanent": true
     },
     {
+      "source": "/certificacao-eletrica",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/certificacao-eletrica-:city",
+      "destination": "/eletricista-:city",
+      "statusCode": 301
+    },
+    {
       "source": "/imprensa",
       "destination": "/sobre",
       "statusCode": 301
