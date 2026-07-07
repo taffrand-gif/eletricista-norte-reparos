@@ -382,7 +382,7 @@ export default function StructuredData() {
  "name": "Têm certificação profissional?",
  "acceptedAnswer": {
  "@type": "Answer",
- "text": "Sim, somos eletricistas com vasta experiência comprovada na região. Trabalhamos com equipamento profissional Fluke e FLIR, e emitimos certificação elétrica."
+ "text": "Sim, somos eletricistas com vasta experiência comprovada na região. Trabalhamos com equipamento profissional Fluke e FLIR, e emitimos relatório técnico detalhado da instalação."
  }
  }
  ]

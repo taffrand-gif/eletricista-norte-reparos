@@ -8,7 +8,7 @@ export default function Equipa() {
  
  useSEO({
  title: `Nossa Equipa - ${config.name}`,
- description: `Conheça a equipa profissional de ${config.type === 'plomberie' ? 'canalizadores' : 'eletricistas'} certificados.`});
+ description: `Conheça a equipa profissional de ${config.type === 'plomberie' ? 'canalizadores' : 'eletricistas'} qualificados com experiência em Trás-os-Montes.`});
  return (
  <div className="min-h-screen flex flex-col">
  <Header />
@@ -29,7 +29,7 @@ export default function Equipa() {
  <Card className="p-8 mb-8">
  <h2 className="text-2xl font-bold mb-4">Quem Somos</h2>
  <p className="text-gray-700 mb-4">
- Somos uma equipa de {config.type === 'plomberie' ? 'canalizadores' : 'eletricistas'} certificados com experiência em Trás-os-Montes na região de Bragança e Trás-os-Montes.
+ Somos uma equipa de {config.type === 'plomberie' ? 'canalizadores' : 'eletricistas'} qualificados com experiência em Trás-os-Montes, na região de Bragança.
  </p>
  <p className="text-gray-700">
  Disponíveis Atendimento 24h/7d, 7 dias por semana, garantimos um serviço rápido, profissional e com garantia de 12 meses.

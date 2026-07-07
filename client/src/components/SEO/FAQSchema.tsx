@@ -55,7 +55,7 @@ question: "têm experiência ?",
  },
  {
  question: "Fazem certificação elétrica?",
- answer: "Sim, fazemos certificação elétrica para casas, apartamentos e estabelecimentos comerciais. Preço: €150. Entrega em 48h."
+ answer: "Sim, fazemos inspeção elétrica detalhada para casas, apartamentos e estabelecimentos comerciais, com emissão de relatório técnico de conformidade da instalação. Preço: €150. Entrega em 48h."
  },
  {
  question: "Aceitam pagamento com cartão?",
@@ -107,6 +107,6 @@ question: "têm experiência ?",
  },
  {
  question: "Quanto tempo dura a certificação elétrica?",
- answer: "A certificação elétrica é vitalícia para a instalação. Recomendamos inspeção a cada 10 anos para garantir segurança."
+ answer: "A inspeção periódica da instalação deve ser feita conforme a regulamentação aplicável. Para instalações domésticas, recomenda-se re-inspeção a cada 10 anos para garantir segurança. Consulte o técnico responsável pelo seu caso para confirmar a periodicidade exigida."
  }
 ];

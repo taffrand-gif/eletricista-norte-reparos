@@ -142,7 +142,7 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  </li>
  <li className="flex items-center gap-2">
  <span className="text-green-600">✓</span>
- <span><strong>CERTIFICAÇÃO PROFISSIONAL:</strong> Nível 4 QNQ (antigo CET)</span>
+ <span><strong>FORMAÇÃO TÉCNICA:</strong> curso profissional na área de eletricidade ou experiência comprovada equivalente</span>
  </li>
  <li className="flex items-center gap-2">
  <span className="text-green-600">✓</span>
@@ -402,7 +402,7 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  <p className="text-gray-700">
  Em Portugal, a terminologia é importante:
  <ul className="mt-2 space-y-1">
- <li>• <strong>eletricista com experiência:</strong> Possui certificação profissional (nível 4 QNQ ou superior) que comprova formação e competências técnicas.</li>
+ <li>• <strong>eletricista com experiência:</strong> Possui formação e competências técnicas comprovadas para instalações elétricas, conforme a legislação aplicável.</li>
  <li>• <strong>Eletricista Autorizado:</strong> Tem autorização da entidade reguladora (ex: ERSE para baixa tensão) para exercer atividade, após verificação de requisitos.</li>
  <li>• <strong>Empresa Instaladora Autorizada:</strong> Empresa com alvará para realizar instalações elétricas, obrigatória para obras novas ou renovações totais.</li>
  </ul>
@@ -448,7 +448,7 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  "name": "Qual a diferença entre um eletricista 'certificado' e 'autorizado'?",
  "acceptedAnswer": {
  "@type": "Answer",
- "text": "eletricista com experiência possui certificação profissional (nível 4 QNQ) que comprova formação. Eletricista Autorizado tem autorização da entidade reguladora para exercer atividade. Empresa Instaladora Autorizada tem alvará para realizar instalações. O ideal é profissional com experiência E autorizado, preferencialmente em empresa instaladora autorizada."
+ "text": "eletricista com experiência possui formação e competências técnicas comprovadas. Eletricista Autorizado tem autorização da entidade reguladora para exercer atividade. Empresa Instaladora Autorizada tem alvará para realizar instalações. O ideal é profissional com experiência E autorizado, preferencialmente em empresa instaladora autorizada."
  }
  },
  {
