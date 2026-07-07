@@ -31,7 +31,7 @@ export const electricFaqs: FAQItem[] = [
  },
  {
  question: "Fazem certificação elétrica ?",
- answer: "Fazemos inspeção elétrica detalhada e emitimos relatório técnico da instalação, para identificar o que precisa de ser corrigido. A emissão do documento de conformidade segue a tramitação legal aplicável — consulte o seu caso connosco."
+ answer: "De momento não emitimos certificados oficiais. Fazemos inspeção elétrica e emitimos relatório técnico da instalação, para identificar o que precisa de ser corrigido."
  },
  {
  question: "Instalam painéis solares na região?",
