@@ -113,7 +113,7 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  <>
  <Helmet>
  <title>Quanto Custa Arranjar Quadro Elétrico? Preços 2026 | 932 321 892</title>
- <meta name="description" content="Quanto custa arranjar quadro elétrico? Preços 2026: substituir disjuntor 60-100€, quadro completo 300-800€. certificação elétrica incluída. Orçamento grátis: 932 321 892" />
+ <meta name="description" content="Quanto custa arranjar quadro elétrico? Preços 2026: substituir disjuntor 60-100€, quadro completo 300-800€. relatório técnico incluído. Orçamento grátis: 932 321 892" />
  </Helmet>
  <Header />
  <main className="min-h-screen bg-gradient-to-b from-white to-orange-50">
@@ -130,7 +130,7 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  </h1>
  <p className="text-xl mb-8">
  Preços claros e honestos: 60-800€ (depende serviço).
- certificação elétrica incluída. Sem compromisso sem compromisso.
+ relatório técnico incluído. Sem compromisso sem compromisso.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a
@@ -195,7 +195,7 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  <div className="mt-8 text-center">
  <p className="text-gray-600 mb-4">
  ✅ Sem compromisso sem compromisso<br />
- ✅ certificação elétrica incluída (obrigatória)<br />
+ ✅ relatório técnico incluído (obrigatório)<br />
  ✅ Garantia do serviço<br />
  ✅ Atendimento urgente 24h disponível
  </p>
@@ -294,7 +294,7 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  Precisa Arranjar Quadro Elétrico?
  </h2>
  <p className="text-xl mb-8 max-w-2xl mx-auto">
- Sem compromisso sem compromisso. certificação elétrica incluída.
+ Sem compromisso sem compromisso. relatório técnico incluído.
  Atendimento urgente 24h.
  </p>
  <a

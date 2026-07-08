@@ -48,7 +48,7 @@ const electricFeatures: Record<string, string[]> = {
  'Quadros Elétricos Modernos': [
  'Quadros modulares com disjuntores diferenciais',
  'Identificação clara dos circuitos',
- 'Certificação incluída'
+ 'Relatório técnico incluído'
  ],
  'Iluminação Interior/Exterior': [
  'Projeto luminotécnico',
