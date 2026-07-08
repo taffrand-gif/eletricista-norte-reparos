@@ -18,7 +18,7 @@ export default function VilaRealCity() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Eletricista em Vila Pouca de Aguiar. Instalações para termas, hotéis e explorações mineiras. Quadros elétricos, iluminação, certificação. Sem compromisso.');
+ metaDescription.setAttribute('content', 'Eletricista em Vila Pouca de Aguiar. Instalações para termas, hotéis e explorações mineiras. Quadros elétricos, iluminação, diagnóstico. Sem compromisso.');
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');

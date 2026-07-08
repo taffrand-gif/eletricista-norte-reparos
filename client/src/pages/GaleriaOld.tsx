@@ -131,7 +131,7 @@ function getGalleryImages(serviceType: 'plomberie' | 'electricite'): GalleryImag
  { url: IMAGES.electricite.emergency, alt: "Serviço de urgência 24h", category: "Urgências" },
  { url: IMAGES.gallery[0], alt: "Arranjo de curto-circuito", category: "Arranjos" },
  { url: IMAGES.gallery[1], alt: "Instalação de tomadas", category: "Instalações" },
- { url: IMAGES.gallery[2], alt: "Certificação elétrica", category: "Certificação" },
+ { url: IMAGES.gallery[2], alt: "Diagnóstico elétrico", category: "Diagnóstico" },
  { url: IMAGES.gallery[3], alt: "Instalação de iluminação LED", category: "Iluminação" },
  { url: IMAGES.gallery[4], alt: "Substituição de disjuntor", category: "Arranjos" },
  ];

@@ -25,7 +25,7 @@ export default function Mirandela() {
  answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
  },
  {
- question: "Fornecem certificação elétrica em Mirandela?",
+ question: "Fornecem diagnóstico elétrico em Mirandela?",
  answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
  },
  ];
@@ -47,7 +47,7 @@ export default function Mirandela() {
  metaKeywords.setAttribute('name', 'keywords');
  document.head.appendChild(metaKeywords);
  }
- metaKeywords.setAttribute('content', 'eletricista 24h mirandela, eletricista Atendimento 24h/7d mirandela, eletricista mirandela, eletricista profissional mirandela, instalação elétrica mirandela, quadro elétrico mirandela, certificação elétrica mirandela, arranjo elétrica mirandela, eletricista trás-os-montes');
+ metaKeywords.setAttribute('content', 'eletricista 24h mirandela, eletricista Atendimento 24h/7d mirandela, eletricista mirandela, eletricista profissional mirandela, instalação elétrica mirandela, quadro elétrico mirandela, diagnóstico elétrico mirandela, arranjo elétrica mirandela, eletricista trás-os-montes');
  
  
  // Canonical URL
@@ -67,7 +67,7 @@ export default function Mirandela() {
  "@type": "LocalBusiness",
  "name": "Eletricista Profissional — Eletricista em Mirandela",
  "image": "/images-optimized/hero/hero-electrician-portugal.jpg",
- "description": "Eletricista profissional em Mirandela, Trás-os-Montes. Instalação, arranjo e certificação elétrica para agricultura e indústria.",
+ "description": "Eletricista profissional em Mirandela, Trás-os-Montes. Instalação, arranjo e reparação elétrica para agricultura e indústria.",
  "address": getCityAddress('mirandela'),
  "geo": {
  "@type": "GeoCoordinates",

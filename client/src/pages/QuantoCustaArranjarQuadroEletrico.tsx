@@ -12,11 +12,11 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  const faqs = [
  {
  question: "Quanto custa substituir quadro elétrico completo?",
- answer: "Quadro elétrico completo: 370-650€ para quadro 8-12 circuitos (depende tamanho casa). Inclui: quadro novo, disjuntores, diferencial, instalação, certificação elétrica. T1/T2: 370-450€, T3/T4: 450-650€. Orçamento grátis: 932 321 892"
+ answer: "Quadro elétrico completo: 370-650€ para quadro 8-12 circuitos (depende tamanho casa). Inclui: quadro novo, disjuntores, diferencial, instalação, diagnóstico elétrico. T1/T2: 370-450€, T3/T4: 450-650€. Orçamento grátis: 932 321 892"
  },
  {
  question: "Quanto custa substituir um disjuntor?",
- answer: "Substituir disjuntor simples: 60-100€. Substituir diferencial: 100-150€. Inclui deslocação, disjuntor novo, instalação, teste e certificação. Urgente 24h disponível."
+ answer: "Substituir disjuntor simples: 60-100€. Substituir diferencial: 100-150€. Inclui deslocação, disjuntor novo, instalação, teste e reparação. Urgente 24h disponível."
  },
  {
  question: "Quando devo substituir quadro elétrico?",
@@ -33,42 +33,42 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  preco: "60-100€",
  tempo: "1-2h",
  descricao: "Substituir disjuntor avariado (10A, 16A, 20A, 25A, 32A)",
- inclui: ["Disjuntor novo", "Instalação", "Teste", "Certificação"]
+ inclui: ["Disjuntor novo", "Instalação", "Teste", "Diagnóstico"]
  },
  {
  servico: "Substituir Diferencial",
  preco: "100-150€",
  tempo: "1-2h",
  descricao: "Substituir diferencial 30mA avariado (proteção choque)",
- inclui: ["Diferencial novo 30mA", "Instalação", "Teste sensibilidade", "Certificação"]
+ inclui: ["Diferencial novo 30mA", "Instalação", "Teste sensibilidade", "Diagnóstico"]
  },
  {
  servico: "Adicionar Circuito Novo",
  preco: "80-150€",
  tempo: "2-3h",
  descricao: "Adicionar circuito novo ao quadro existente (tomadas, luzes)",
- inclui: ["Disjuntor novo", "Cablagem até 10m", "Instalação", "Certificação"]
+ inclui: ["Disjuntor novo", "Cablagem até 10m", "Instalação", "Diagnóstico"]
  },
  {
  servico: "Quadro Elétrico T1/T2",
  preco: "370-450€",
  tempo: "3-5h",
  descricao: "Quadro completo para apartamento pequeno (6-8 circuitos)",
- inclui: ["Quadro 8 módulos", "Diferencial 40A", "6-8 disjuntores", "Instalação", "certificação elétrica"]
+ inclui: ["Quadro 8 módulos", "Diferencial 40A", "6-8 disjuntores", "Instalação", "diagnóstico elétrico"]
  },
  {
  servico: "Quadro Elétrico T3/T4",
  preco: "450-650€",
  tempo: "4-6h",
  descricao: "Quadro completo para apartamento médio (10-12 circuitos)",
- inclui: ["Quadro 12 módulos", "Diferencial 63A", "10-12 disjuntores", "Instalação", "certificação elétrica"]
+ inclui: ["Quadro 12 módulos", "Diferencial 63A", "10-12 disjuntores", "Instalação", "diagnóstico elétrico"]
  },
  {
  servico: "Quadro Elétrico Moradia",
  preco: "650-900€",
  tempo: "5-8h",
  descricao: "Quadro completo para moradia (14-18 circuitos)",
- inclui: ["Quadro 18 módulos", "2 Diferenciais", "14-18 disjuntores", "Instalação", "certificação elétrica"]
+ inclui: ["Quadro 18 módulos", "2 Diferenciais", "14-18 disjuntores", "Instalação", "diagnóstico elétrico"]
  }
  ];
  const sinaisSubstituir = [
@@ -113,7 +113,7 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  <>
  <Helmet>
  <title>Quanto Custa Arranjar Quadro Elétrico? Preços 2026 | 932 321 892</title>
- <meta name="description" content="Quanto custa arranjar quadro elétrico? Preços 2026: substituir disjuntor 60-100€, quadro completo 300-800€. relatório técnico incluído. Orçamento grátis: 932 321 892" />
+ <meta name="description" content="Quanto custa arranjar quadro elétrico? Preços 2026: substituir disjuntor 60-100€, quadro completo 300-800€. garantia incluída. Orçamento grátis: 932 321 892" />
  </Helmet>
  <Header />
  <main className="min-h-screen bg-gradient-to-b from-white to-orange-50">
@@ -130,7 +130,7 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  </h1>
  <p className="text-xl mb-8">
  Preços claros e honestos: 60-800€ (depende serviço).
- relatório técnico incluído. Sem compromisso sem compromisso.
+ garantia incluída. Sem compromisso sem compromisso.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a
@@ -159,7 +159,7 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  💰 Tabela de Preços - Quadro Elétrico 2026
  </h2>
  <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
- Preços incluem: deslocação, material, instalação, certificação elétrica.
+ Preços incluem: deslocação, material, instalação, diagnóstico elétrico.
  Orçamento final após avaliação no local.
  </p>
  <div className="max-w-5xl mx-auto space-y-6">
@@ -195,7 +195,7 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  <div className="mt-8 text-center">
  <p className="text-gray-600 mb-4">
  ✅ Sem compromisso sem compromisso<br />
- ✅ relatório técnico incluído (obrigatório)<br />
+ ✅ garantia incluída (obrigatório)<br />
  ✅ Garantia do serviço<br />
  ✅ Atendimento urgente 24h disponível
  </p>
@@ -294,7 +294,7 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  Precisa Arranjar Quadro Elétrico?
  </h2>
  <p className="text-xl mb-8 max-w-2xl mx-auto">
- Sem compromisso sem compromisso. relatório técnico incluído.
+ Sem compromisso sem compromisso. garantia incluída.
  Atendimento urgente 24h.
  </p>
  <a

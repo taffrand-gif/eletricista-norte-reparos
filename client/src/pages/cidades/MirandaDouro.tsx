@@ -96,7 +96,7 @@ export default function MirandaDouro() {
  { icon: Zap, title: "Urgências Elétricas 24h", desc: "Apagões, curto-circuitos, disjuntores a disparar" },
  { icon: Shield, title: "Casas de Aldeia", desc: "Reabilitação elétrica de casas tradicionais mirandesas" },
  { icon: CheckCircle, title: "Turismo Rural", desc: "Instalações para alojamento local e casas de férias" },
- { icon: Zap, title: "certificação elétrica", desc: "Obrigatória para arrendamento turístico" },
+ { title: "Diagnóstico elétrico", desc: "Obrigatória para arrendamento turístico" },
  ].map((service, index) => (
  <div key={index} className="flex items-start gap-4 p-6 bg-white rounded-xl shadow">
  <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0"><service.icon className="w-6 h-6 text-white" /></div>

@@ -18,7 +18,7 @@ export default function Sernancelhe() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Eletricista em Sernancelhe. Instalações para secadores de castanha, patrimônio religioso e habitações rurais. Quadros elétricos, certificação. Sem compromisso.');
+ metaDescription.setAttribute('content', 'Eletricista em Sernancelhe. Instalações para secadores de castanha, patrimônio religioso e habitações rurais. Quadros elétricos, diagnóstico. Sem compromisso.');
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');

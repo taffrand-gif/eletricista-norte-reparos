@@ -90,7 +90,7 @@ function getDicas(serviceType: 'electricite'): Dica[] {
  content: 'Nunca toque em interruptores ou aparelhos elétricos com as mãos molhadas. Instale tomadas com proteção IP44 em casas de banho e cozinhas.'},
  {
  icon: '📋',
- title: 'Faça certificação elétrica regular',
+ title: 'Faça diagnóstico elétrico regular',
  content: 'A certificação elétrica é obrigatória e garante que a sua instalação está segura e conforme as normas. Renove-a periodicamente.'},
  {
  icon: '📞',

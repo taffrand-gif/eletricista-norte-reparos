@@ -431,22 +431,22 @@ A **Eletricista Profissional** pode ajudá-lo a otimizar a sua instalação elé
  },
  {
  slug: "certificacao-eletrica-portugal",
- title: "Certificação Elétrica em Portugal: Guia Completo",
+ title: "Diagnóstico Elétrico em Portugal: Guia Completo",
  excerpt: "Tudo o que precisa saber sobre certificação elétrica: quando é obrigatória, como obter e quanto custa.",
  image: "https://cdn.manus.space/webdev-assets/electrical-certificate.jpg",
  date: "2026-01-05",
  author: "Eletricista Profissional",
  readTime: "resposta prioritária",
- category: "Certificação",
+ category: "Diagnóstico",
  tags: ["certificação", "legislação", "obrigações"],
  content: `
-# Certificação Elétrica em Portugal: Guia Completo
+# Diagnóstico Elétrico em Portugal: Guia Completo
 
 A certificação elétrica é um documento obrigatório em muitas situações em Portugal. Neste guia completo, vamos explicar tudo o que precisa saber sobre este processo essencial.
 
 ## O que é a Certificação Elétrica?
 
-A certificação elétrica (também chamada de Termo de Responsabilidade pela Execução de Instalação Elétrica - TREIE) é um documento que atesta que uma instalação elétrica cumpre todas as normas de segurança e regulamentos técnicos em vigor.
+A diagnóstico elétrico (também chamada de Termo de Responsabilidade pela Execução de Instalação Elétrica - TREIE) é um documento que atesta que uma instalação elétrica cumpre todas as normas de segurança e regulamentos técnicos em vigor.
 
 ### Informação Incluída:
 - Identificação do instalador certificado
@@ -679,9 +679,9 @@ Sim, fica associado ao imóvel.
 
 ## Conclusão
 
-A certificação elétrica é um documento essencial que garante a segurança da sua instalação elétrica. Não deixe para a última hora - se precisa de certificação, contacte um profissionais com experiência o quanto antes.
+A diagnóstico elétrico é um documento essencial que garante a segurança da sua instalação elétrica. Não deixe para a última hora - se precisa de certificação, contacte um profissionais com experiência o quanto antes.
 
-A **Eletricista Profissional** tem técnicos com formação adequada prontos para inspecionar a sua instalação elétrica em Bragança e arredores. Processo rápido, preços transparentes e relatório técnico detalhado.
+A **Eletricista Profissional** tem técnicos com formação adequada prontos para inspecionar a sua instalação elétrica em Bragança e arredores. Processo rápido, preços transparentes e trabalho detalhado.
 
 **Agende a sua inspeção elétrica: 932 321 892**
 `
@@ -984,7 +984,7 @@ Sim, mas com produção reduzida (10-25% da capacidade).
 Não é obrigatório em sistemas on-grid, mas aumenta autoconsumo.
 
 ### Posso instalar eu próprio?
-Não recomendado. Precisa de certificação elétrica.
+Não recomendado. Precisa de diagnóstico elétrico.
 
 ### E se mudar de casa?
 Painéis valorizam o imóvel. Pode vender com eles ou removê-los.

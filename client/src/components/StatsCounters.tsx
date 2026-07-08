@@ -99,7 +99,7 @@ export default function StatsCounters() {
  <p className="text-gray-600 text-sm max-w-2xl mx-auto">
  {isPlumber
  ? 'Mais de 500 famílias em Trás-os-Montes confiam no nosso trabalho. Fugas resolvidas, entupimentos eliminados, casas de banho renovadas — sempre com garantia e transparência total.'
- : 'Mais de 350 instalações elétricas certificadas em Trás-os-Montes. Quadros modernizados, certificações emitidas, problemas resolvidos — sempre com equipamento profissional Fluke e FLIR.'}
+ : 'Mais de 350 instalações elétricas realizadas em Trás-os-Montes. Quadros modernizados, certificações emitidas, problemas resolvidos — sempre com equipamento profissional Fluke e FLIR.'}
  </p>
  </div>
  </div>

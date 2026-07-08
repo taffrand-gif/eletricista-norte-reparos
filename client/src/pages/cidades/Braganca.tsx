@@ -25,7 +25,7 @@ export default function Braganca() {
  answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
  },
  {
- question: "Fornecem certificação elétrica em Bragança?",
+ question: "Fornecem diagnóstico elétrico em Bragança?",
  answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
  },
  ];
@@ -47,7 +47,7 @@ export default function Braganca() {
  metaKeywords.setAttribute('name', 'keywords');
  document.head.appendChild(metaKeywords);
  }
- metaKeywords.setAttribute('content', 'eletricista 24h bragança, eletricista Atendimento 24h/7d bragança, eletricista bragança, eletricista profissional bragança, instalação elétrica bragança, quadro elétrico bragança, certificação elétrica bragança, arranjo elétrica bragança, eletricista trás-os-montes');
+ metaKeywords.setAttribute('content', 'eletricista 24h bragança, eletricista Atendimento 24h/7d bragança, eletricista bragança, eletricista profissional bragança, instalação elétrica bragança, quadro elétrico bragança, diagnóstico elétrico bragança, arranjo elétrica bragança, eletricista trás-os-montes');
  
  
  // Canonical URL
@@ -67,7 +67,7 @@ export default function Braganca() {
  "@type": "LocalBusiness",
  "name": "Eletricista Profissional — Eletricista em Bragança",
  "image": "/images-optimized/hero/hero-electrician-portugal.jpg",
- "description": "Eletricista profissional em Bragança, Trás-os-Montes. Instalação, arranjo e certificação elétrica.",
+ "description": "Eletricista profissional em Bragança, Trás-os-Montes. Instalação, arranjo e reparação elétrica.",
  "address": getCityAddress('braganca'),
  "geo": {
  "@type": "GeoCoordinates",

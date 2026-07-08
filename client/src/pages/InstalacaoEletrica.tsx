@@ -20,7 +20,7 @@ export default function InstalacaoEletrica() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Instalação elétrica completa em Trás-os-Montes: obra nova, remodelação, certificação. Eletricista profissional, materiais de qualidade, garantia no serviço. Sem compromisso.');
+ metaDescription.setAttribute('content', 'Instalação elétrica completa em Trás-os-Montes: obra nova, remodelação, diagnóstico. Eletricista profissional, materiais de qualidade, garantia no serviço. Sem compromisso.');
  }, [config]);
  // Schema.org Service JSON-LD
  const serviceSchema = {
@@ -97,7 +97,7 @@ export default function InstalacaoEletrica() {
  </h1>
  <p className="text-xl mb-8 max-w-3xl">
  Instalação elétrica completa para residências, comércios e indústrias. 
- Desde o quadro principal até às tomadas finais, com relatório técnico detalhado.
+ Desde o quadro principal até às tomadas finais, com trabalho detalhado.
  </p>
  <div className="flex flex-col sm:flex-row gap-4">
  <a
@@ -140,7 +140,7 @@ export default function InstalacaoEletrica() {
  <li><strong>Cabeamento:</strong> Passagem de cabos por toda a propriedade</li>
  <li><strong>Pontos elétricos:</strong> Instalação de tomadas, interruptores e pontos de luz</li>
  <li><strong>Iluminação:</strong> Montagem de sistemas de iluminação interior/exterior</li>
- <li><strong>Testes e relatório técnico:</strong> Verificação de segurança e emissão de relatório técnico</li>
+ <li><strong>Testes e trabalho elétrico:</strong> Verificação de segurança e execução do trabalho elétrico</li>
  </ol>
  
  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Componentes da Instalação</h3>
@@ -191,7 +191,7 @@ export default function InstalacaoEletrica() {
  </li>
  <li className="flex items-center gap-3">
  <span className="text-green-500">✓</span>
- <span><strong>Garantia:</strong> Trabalho certificado com garantia extensa</span>
+ <span><strong>Garantia:</strong> Trabalho profissional com garantia extensa</span>
  </li>
  </ul>
  </div>
@@ -262,7 +262,7 @@ export default function InstalacaoEletrica() {
  </li>
  <li className="flex items-start gap-3">
  <span className="text-amber-500 mt-1">✓</span>
- <span>Certificação elétrica (opcional, com custo adicional)</span>
+ <span>Diagnóstico elétrico (opcional, com custo adicional)</span>
  </li>
  <li className="flex items-start gap-3">
  <span className="text-amber-500 mt-1">✓</span>
@@ -327,7 +327,7 @@ export default function InstalacaoEletrica() {
  </a>
  <a href="/eletricista-chaves" className="bg-white hover:bg-amber-50 border border-gray-300 rounded-lg p-4 text-center transition-colors">
  <div className="text-amber-600 font-bold">Chaves</div>
- <div className="text-sm text-gray-600">Certificação</div>
+ <div className="text-sm text-gray-600">Diagnóstico</div>
  </a>
  <a href="/eletricista-valpacos" className="bg-white hover:bg-amber-50 border border-gray-300 rounded-lg p-4 text-center transition-colors">
  <div className="text-amber-600 font-bold">Valpaços</div>

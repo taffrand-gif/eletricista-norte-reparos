@@ -18,7 +18,7 @@ export default function VilaNovaFozCoa() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Eletricista em Vila Nova de Foz Côa, Património UNESCO. Instalações para museus, quintas do Douro e turismo cultural. certificação elétrica. Sem compromisso.');
+ metaDescription.setAttribute('content', 'Eletricista em Vila Nova de Foz Côa, Património UNESCO. Instalações para museus, quintas do Douro e turismo cultural. diagnóstico elétrico. Sem compromisso.');
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');
@@ -104,7 +104,7 @@ export default function VilaNovaFozCoa() {
  { icon: Zap, title: "Espaços Culturais", desc: "Iluminação técnica para museus, galerias e centros interpretativos" },
  { icon: Shield, title: "Quintas do Douro", desc: "Instalações para adegas, caves e produção vinícola do vale do Côa" },
  { icon: CheckCircle, title: "Turismo Cultural", desc: "Sistemas elétricos para hotéis, pousadas e alojamento turístico" },
- { icon: Zap, title: "certificação elétrica", desc: "Certificação para imóveis, comércio e espaços públicos" },
+ { title: "Diagnóstico elétrico", desc: "Diagnóstico para imóveis, comércio e espaços públicos" },
  ].map((service, index) => (
  <div key={index} className="flex items-start gap-4 p-6 bg-white rounded-xl shadow">
  <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">

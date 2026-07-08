@@ -19,8 +19,8 @@ export default function Garantias() {
  pain: 'Sem taxas escondidas, sem "surpresas" depois de abrir parede.'},
  {
  icon: '📄',
- title: 'Relatório para Seguro',
- desc: 'Relatório técnico claro para seguros e condomínios, enviado por email na mesma noite. Sem inventar culpados.',
+ title: 'Verificação de Segurança',
+ desc: 'Trabalho elétrico conforme para seguros e condomínios, enviado por email na mesma noite. Sem inventar culpados.',
  pain: 'Nunca mais perca prazos do seguro por falta de documentos.'},
  {
  icon: '🔄',
@@ -56,7 +56,7 @@ export default function Garantias() {
  pain: 'Instalações seguras, dentro das normas — sem jeitos que ardem daqui a 6 meses.'},
  {
  icon: '📄',
- title: 'certificação elétrica Completa',
+ title: 'Diagnóstico elétrico completo',
  desc: 'Tratamos de toda a papelada: Termo de Responsabilidade, registo, acompanhamento até aprovação.',
  pain: 'Sem dores de cabeça com aumentos de potência ou certificados.'},
  {

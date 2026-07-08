@@ -24,7 +24,7 @@ function WhyDifferent() {
  icon: '📜',
  title: 'Sem Orçamento por escrito',
  others: 'Instalação sem certificação legal',
- us: 'relatório técnico incluído sempre',
+ us: 'garantia incluída sempre',
  value: 'Economiza €150 (aceite seguradora)'},
  {
  icon: '🔥',
@@ -54,7 +54,7 @@ function WhyDifferent() {
  icon: '❓',
  title: 'Diagnóstico Errado',
  others: 'Adivinha, cobra extra depois',
- us: 'Multímetro profissional Fluke + Relatório',
+ us: 'Multímetro profissional Fluke + Diagnóstico',
  value: 'Economiza €150 (precisão)'},
  {
  icon: '🚫',
@@ -86,7 +86,7 @@ function WhyDifferent() {
  </h2>
  <p className="text-xl text-gray-600 max-w-3xl mx-auto">
  Já teve estes problemas? Nós resolvemos de forma DIFERENTE.
- Por isso damos garantias e relatório técnico detalhado que outros não dão.
+ Por isso damos garantias reais que outros não dão.
  </p>
  </div>
  {/* Problems Grid */}
@@ -140,11 +140,11 @@ function WhyDifferent() {
  style={{ borderColor: config.colors.primary }}
  >
  <h3 className="text-2xl font-black mb-4">
- ✅ Garantia 12 Meses + certificação elétrica
+ ✅ Garantia 12 Meses + diagnóstico elétrico
  </h3>
  <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
  Se o problema voltar em 12 meses, voltamos GRATUITAMENTE.
- relatório técnico incluído. Conforme legislação portuguesa.
+ garantia incluída. Conforme legislação portuguesa.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a
@@ -164,7 +164,7 @@ function WhyDifferent() {
  </a>
  </div>
  <p className="text-sm text-gray-500 mt-4">
- Atendimento 24h/7d • Confirmação por telefone • Certificação elétrica incluída
+ Atendimento 24h/7d • Confirmação por telefone • garantia incluída
  </p>
  </div>
  {/* Social Proof */}
@@ -174,7 +174,7 @@ function WhyDifferent() {
  </div>
  <p className="text-gray-600">
  <strong className="text-gray-900"></strong> baseado em{' '}
- <strong className="text-gray-900">Centenas</strong> Intervenções profissionais certificadas 
+ <strong className="text-gray-900">Centenas</strong> Intervenções profissionais realizadas 
  </p>
  </div>
  </div>

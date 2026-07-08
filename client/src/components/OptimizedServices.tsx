@@ -7,7 +7,7 @@ const electricServiceImages: Record<string, string> = {
  'Arranjo de Avarias Elétricas': 'service-urgencia.jpg',
  'Quadros Elétricos Modernos': 'service-quadro-eletrico.jpg',
  'Iluminação Interior/Exterior': 'service-iluminacao.jpg',
- 'certificação elétrica': 'service-certificacao.jpg',
+ 'diagnóstico elétrico': 'service-certificacao.jpg',
  'Urgências 24h': 'service-urgencia.jpg'};
 // Images de services pour plomberie
 const plumbServiceImages: Record<string, string> = {
@@ -23,7 +23,7 @@ const electricDescriptions: Record<string, string> = {
  'Arranjo de Avarias Elétricas': 'Diagnóstico e arranjo rápida de avarias elétricas, curtos-circuitos, disjuntores que disparam, falhas de iluminação e outros problemas elétricos.',
  'Quadros Elétricos Modernos': 'Substituição e modernização de quadros elétricos antigos, instalação de disjuntores diferenciais, organização e identificação de circuitos.',
  'Iluminação Interior/Exterior': 'Projeto e instalação de sistemas de iluminação interior e exterior, spots LED, iluminação decorativa, sensores de movimento e automatização.',
- 'certificação elétrica': 'Inspeção elétrica e relatório técnico detalhado, para venda, arrendamento ou regularização de imóveis.',
+ 'diagnóstico elétrico': 'Inspeção elétrica e trabalho detalhado, para venda, arrendamento ou regularização de imóveis.',
  'Urgências 24h': 'Atendimento de urgências elétricas Atendimento 24h/7d, 7 dias por semana, para situações de perigo ou falta de energia.'};
 // Descriptions pour plomberie
 const plumbDescriptions: Record<string, string> = {
@@ -48,16 +48,16 @@ const electricFeatures: Record<string, string[]> = {
  'Quadros Elétricos Modernos': [
  'Quadros modulares com disjuntores diferenciais',
  'Identificação clara dos circuitos',
- 'Relatório técnico incluído'
+ 'Garantia incluída'
  ],
  'Iluminação Interior/Exterior': [
  'Projeto luminotécnico',
  'LED de alta eficiência',
  'Automação com sensores'
  ],
- 'certificação elétrica': [
- 'Inspeção completa com relatório',
- 'Relatório técnico de conformidade',
+ 'diagnóstico elétrico': [
+ 'Inspeção completa',
+ 'Reparação elétrica',
  'Lista de anomalias e recomendações'
  ],
  'Urgências 24h': [
@@ -108,7 +108,7 @@ const OptimizedServices: React.FC = () => {
  // Construire la liste des services à partir de serviceConfig
  const services = isPlumber
  ? ['Desentupimentos', 'Arranjo de Fugas de Água', 'Instalação Sanitários', 'Aquecimento Central', 'Canalização Nova', 'Urgências 24h']
- : ['Instalação Elétrica Completa', 'Arranjo de Avarias Elétricas', 'Quadros Elétricos Modernos', 'Iluminação Interior/Exterior', 'certificação elétrica', 'Urgências 24h'];
+ : ['Instalação Elétrica Completa', 'Arranjo de Avarias Elétricas', 'Quadros Elétricos Modernos', 'Iluminação Interior/Exterior', 'diagnóstico elétrico', 'Urgências 24h'];
  const sectionTitle = isPlumber ? 'Canalização' : 'Eletricidade';
  const accentColor = isPlumber ? 'text-blue-600' : 'text-amber-600';
  const hoverBorder = isPlumber ? 'hover:border-blue-500' : 'hover:border-amber-500';
@@ -201,7 +201,7 @@ const OptimizedServices: React.FC = () => {
  </li>
  <li className="flex items-center gap-3">
  <div className="bg-amber-100 text-amber-600 p-2 rounded-full">📋</div>
- <span className="text-gray-700">Certificação e documentação completa</span>
+ <span className="text-gray-700">Trabalho e garantia completa</span>
  </li>
  <li className="flex items-center gap-3">
  <div className="bg-amber-100 text-amber-600 p-2 rounded-full">💰</div>

@@ -25,7 +25,7 @@ export default function Chaves() {
  answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
  },
  {
- question: "Fornecem certificação elétrica em Chaves?",
+ question: "Fornecem diagnóstico elétrico em Chaves?",
  answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
  },
  ];
@@ -47,7 +47,7 @@ export default function Chaves() {
  metaKeywords.setAttribute('name', 'keywords');
  document.head.appendChild(metaKeywords);
  }
- metaKeywords.setAttribute('content', 'eletricista 24h chaves, eletricista Atendimento 24h/7d chaves, eletricista chaves, eletricista profissional chaves, instalação elétrica chaves, quadro elétrico chaves, certificação elétrica chaves, arranjo elétrica chaves, eletricista trás-os-montes');
+ metaKeywords.setAttribute('content', 'eletricista 24h chaves, eletricista Atendimento 24h/7d chaves, eletricista chaves, eletricista profissional chaves, instalação elétrica chaves, quadro elétrico chaves, diagnóstico elétrico chaves, arranjo elétrica chaves, eletricista trás-os-montes');
  
  
  // Canonical URL
@@ -67,7 +67,7 @@ export default function Chaves() {
  "@type": "LocalBusiness",
  "name": "Eletricista Profissional — Eletricista em Chaves",
  "image": "/images-optimized/hero/hero-electrician-portugal.jpg",
- "description": "Eletricista profissional em Chaves, Trás-os-Montes. Instalação, arranjo e certificação elétrica para termas e turismo.",
+ "description": "Eletricista profissional em Chaves, Trás-os-Montes. Instalação, arranjo e reparação elétrica para termas e turismo.",
  "address": getCityAddress('chaves'),
  "geo": {
  "@type": "GeoCoordinates",

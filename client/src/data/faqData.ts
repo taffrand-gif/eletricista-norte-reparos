@@ -30,8 +30,8 @@ export const electricFaqs: FAQItem[] = [
  answer: "Instalação elétrica completa, arranjo de avarias, quadros elétricos novos, iluminação interior/exterior, tomadas e interruptores, automação residencial, urgências elétricas."
  },
  {
- question: "Fazem certificação elétrica ?",
- answer: "De momento não emitimos certificados oficiais. Fazemos inspeção elétrica e emitimos relatório técnico da instalação, para identificar o que precisa de ser corrigido."
+ question: "Fazem diagnóstico elétrico ?",
+ answer: "De momento não emitimos certificados oficiais. Fazemos o trabalho elétrico da instalação e identificamos o que precisa de ser corrigido."
  },
  {
  question: "Instalam painéis solares na região?",

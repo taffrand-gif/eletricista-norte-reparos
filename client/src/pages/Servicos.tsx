@@ -50,12 +50,12 @@ export default function Servicos() {
  priceRange: 'A partir de €80'
  },
  {
- title: 'Certificação Elétrica ',
- description: 'Inspeção e certificação elétrica obrigatória para venda e arrendamento de imóveis. Relatório técnico detalhado da instalação, conforme todas as exigências legais.',
+ title: 'Diagnóstico Elétrico ',
+ description: 'Inspeção e certificação elétrica obrigatória para venda e arrendamento de imóveis. Trabalho detalhado da instalação, conforme todas as exigências legais.',
  features: [
  'Inspeção completa da instalação elétrica',
  'Testes de segurança e funcionamento',
- 'Emissão de relatório técnico detalhado',
+ 'Emissão de trabalho detalhado',
  'Indicação de correções recomendadas',
  'Documentação para seguro, venda ou arrendamento'
  ],
@@ -183,7 +183,7 @@ export default function Servicos() {
  },
  {
  question: "A certificação elétrica é obrigatória?",
- answer: "Sim. Para venda ou arrendamento de imóveis em Portugal, a instalação elétrica exige inspeção e relatório técnico. A periodicidade de re-inspeção e a validade aplicável seguem a regulamentação em vigor — consulte o técnico responsável pelo seu caso para confirmar prazos e requisitos."
+ answer: "Sim. Para venda ou arrendamento de imóveis em Portugal, a instalação elétrica exige diagnóstico e reparação. A periodicidade de re-inspeção e a validade aplicável seguem a regulamentação em vigor — consulte o técnico responsável pelo seu caso para confirmar prazos e requisitos."
  },
  {
  question: "Oferecem garantia nos serviços?",
@@ -194,7 +194,7 @@ export default function Servicos() {
  answer: "Sim, temos serviço de urgência Atendimento 24h/7d para situações críticas como falta total de energia, curtos-circuitos ou perigo iminente."
  },
  {
- question: "Quais são os documentos necessários para certificação elétrica?",
+ question: "Quais são os documentos necessários para diagnóstico elétrico?",
  answer: "Necessita do projeto elétrico aprovado, boletins de ensaio dos materiais utilizados e memorial descritivo da instalação. Nós tratamos de toda a burocracia."
  },
  {

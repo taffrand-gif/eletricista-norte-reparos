@@ -18,7 +18,7 @@ function Trabalhos() {
  {
  title: 'Instalação de Esquentador a Gás',
  location: 'Trás-os-Montes',
- description: 'Substituição de esquentador antigo por modelo eficiente com certificação e ligação de gás completa.',
+ description: 'Substituição de esquentador antigo por modelo eficiente com ligação de gás completa.',
  image: '/images-optimized/services/service-aquecimento.jpg'},
  {
  title: 'Desentupimento de Rede de Esgotos',
@@ -45,7 +45,7 @@ function Trabalhos() {
  {
  title: 'Substituição de Quadro Elétrico',
  location: 'Bragança',
- description: 'Substituição de quadro elétrico antigo com fusíveis por quadro moderno com disjuntores diferenciais e certificação.',
+ description: 'Substituição de quadro elétrico antigo com fusíveis por quadro moderno com disjuntores diferenciais.',
  image: '/images-optimized/services/service-quadro-eletrico.jpg'},
  {
  title: 'Instalação Elétrica Completa',
@@ -53,9 +53,9 @@ function Trabalhos() {
  description: 'Instalação elétrica completa numa moradia nova, desde o quadro principal até às tomadas e iluminação.',
  image: '/images-optimized/services/service-instalacao.jpg'},
  {
- title: 'certificação elétrica para Venda',
+ title: 'diagnóstico elétrico para Venda',
  location: 'Mirandela',
- description: 'Inspeção completa, correção de anomalias e emissão de relatório técnico elétrico para venda de imóvel.',
+ description: 'Inspeção completa, correção de anomalias e execução do trabalho elétrico para venda de imóvel.',
  image: '/images-optimized/services/service-certificacao.jpg'},
  {
  title: 'Iluminação LED Residencial',

@@ -35,7 +35,7 @@ function ForfaitsGrid({ className = '' }: ForfaitsGridProps) {
  details: [
  'Deslocação incluída (Zona 1)',
  'Diagnóstico aprofundado',
- 'Relatório detalhado',
+ 'Diagnóstico detalhado',
  'Orçamento reparação gratuito'
  ],
  popular: true
@@ -91,14 +91,14 @@ function ForfaitsGrid({ className = '' }: ForfaitsGridProps) {
  },
  {
  icon: '📋',
- title: 'certificação elétrica',
- description: 'Inspeção e relatório técnico de conformidade da instalação',
+ title: 'diagnóstico elétrico',
+ description: 'Diagnóstico e reparação elétrica da instalação',
  priceRange: '95-215€',
  details: [
  'Deslocação incluída (Zona 1)',
  'Inspeção completa',
- 'Relatório técnico de conformidade',
- 'Relatório detalhado'
+ 'Reparação elétrica',
+ 'Diagnóstico detalhado'
  ]
  },
  {
