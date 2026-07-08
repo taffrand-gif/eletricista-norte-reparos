@@ -31,7 +31,7 @@ export function FAQSchema({ faqs }: FAQSchemaProps) {
 export const eletricistaFAQs: FAQ[] = [
  {
  question: "Quanto custa reparar um quadro elétrico em Bragança?",
- answer: "O preço médio para reparar um quadro elétrico em Bragança é de €100. Inclui deslocação, diagnóstico e reparação. relatório técnico incluído. Garantia 12 meses."
+ answer: "O preço médio para reparar um quadro elétrico em Bragança é de €100. Inclui deslocação, diagnóstico e reparação. Garantia 12 meses."
  },
  {
  question: "Quanto tempo demora a chegar em caso de urgência elétrica?",
@@ -54,8 +54,8 @@ question: "têm experiência ?",
  answer: "Arranjo de avaria elétrica custa €80 em Bragança. Inclui deslocação, diagnóstico e reparação simples. Resolvemos 90% dos casos em menos de 1 hora."
  },
  {
- question: "Fazem certificação elétrica?",
- answer: "Sim, fazemos inspeção elétrica detalhada para casas, apartamentos e estabelecimentos comerciais, com emissão de relatório técnico de conformidade da instalação. Preço: €150. Entrega em 48h."
+ question: "Fazem diagnóstico elétrico?",
+ answer: "Sim, fazemos inspeção elétrica detalhada para casas, apartamentos e estabelecimentos comerciais. Preço: €150. Entrega em 48h."
  },
  {
  question: "Aceitam pagamento com cartão?",
@@ -79,7 +79,7 @@ question: "têm experiência ?",
  },
  {
  question: "Fazem instalação de tomadas?",
- answer: "Sim, instalamos tomadas, interruptores e pontos de luz. Preço: €30-50 por ponto (inclui material básico e certificação)."
+ answer: "Sim, instalamos tomadas, interruptores e pontos de luz. Preço: €30-50 por ponto (inclui material básico)."
  },
  {
  question: "Resolvem disjuntores que disparam constantemente?",
@@ -91,7 +91,7 @@ question: "têm experiência ?",
  },
  {
  question: "Quanto custa instalar um quadro elétrico novo?",
- answer: "Instalação de quadro elétrico novo custa entre €200-400 dependendo do número de circuitos. Inclui material, instalação e certificação elétrica."
+ answer: "Instalação de quadro elétrico novo custa entre €200-400 dependendo do número de circuitos. Inclui material, instalação e diagnóstico elétrico."
  },
  {
  question: "Dão fatura?",
@@ -103,7 +103,7 @@ question: "têm experiência ?",
  },
  {
  question: "Trabalham com seguradoras?",
- answer: "Sim, trabalhamos com as principais seguradoras. Fornecemos relatório técnico detalhado e fatura para reembolso."
+ answer: "Sim, trabalhamos com as principais seguradoras. Fornecemos trabalho detalhado e fatura para reembolso."
  },
  {
  question: "Quanto tempo dura a certificação elétrica?",

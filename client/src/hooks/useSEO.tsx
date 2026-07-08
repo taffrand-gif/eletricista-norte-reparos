@@ -136,7 +136,7 @@ export function generateMetaDescription(ville?: string): string {
 export function generateKeywords(ville?: string): string {
  const config = ACTIVE_CONFIG;
  
- const baseKeywords = ['eletricista', 'eletricista com experiência', 'curto-circuito', 'quadro elétrico', 'instalação elétrica', 'urgência 24h', 'certificação elétrica'];
+ const baseKeywords = ['eletricista', 'eletricista com experiência', 'curto-circuito', 'quadro elétrico', 'instalação elétrica', 'urgência 24h', 'diagnóstico elétrico'];
  
  if (ville) {
  return [...baseKeywords, ville, `${config.name} ${ville}`, `urgência ${ville}`].join(', ');

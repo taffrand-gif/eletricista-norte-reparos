@@ -12,7 +12,7 @@ export default function QuantoTempoDemoraInstalarTomada() {
  "@context": "https://schema.org",
  "@type": "Article",
  "headline": "Quanto Tempo Demora Instalar Tomada? Tempos Reais 2026",
- "description": "Guia completo de tempos para instalar tomada: desde avaliação até certificação",
+ "description": "Guia completo de tempos para instalar tomada: desde avaliação até execução",
  "author": {
  "@type": "Organization",
  "name": config.businessName
@@ -34,7 +34,7 @@ export default function QuantoTempoDemoraInstalarTomada() {
  },
  {
  question: "Posso instalar tomada em 1 dia?",
- answer: "SIM. Instalação tomada é feita em 1 dia (1-4h). Começamos, terminamos no mesmo dia. certificação elétrica emitida no final. Pode usar tomada mediante confirmação após."
+ answer: "SIM. Instalação tomada é feita em 1 dia (1-4h). Começamos, terminamos no mesmo dia. diagnóstico elétrico emitida no final. Pode usar tomada mediante confirmação após."
  },
  {
  question: "Quanto tempo demora instalar várias tomadas?",
@@ -132,7 +132,7 @@ export default function QuantoTempoDemoraInstalarTomada() {
  tempo: "+30min a +2h"
  },
  {
- factor: "certificação elétrica",
+ factor: "diagnóstico elétrico",
  impacto: "Certificação obrigatória, incluída no tempo",
  tempo: "15-30 min"
  }
@@ -141,7 +141,7 @@ export default function QuantoTempoDemoraInstalarTomada() {
  <>
  <Helmet>
  <title>Quanto Tempo Demora Instalar Tomada? Tempos Reais 2026 | 932 321 892</title>
- <meta name="description" content="Quanto tempo demora instalar tomada? 1-5h dependendo tipo. Simples: 1-2h, Nova com cabos: 2-3h, Cabos novos: 3-5h. Relatório técnico incluído. Marcação: 932 321 892" />
+ <meta name="description" content="Quanto tempo demora instalar tomada? 1-5h dependendo tipo. Simples: 1-2h, Nova com cabos: 2-3h, Cabos novos: 3-5h. Garantia incluída. Marcação: 932 321 892" />
  <script type="application/ld+json">
  {JSON.stringify(schemaData)}
  </script>
@@ -161,7 +161,7 @@ export default function QuantoTempoDemoraInstalarTomada() {
  </h1>
  <p className="text-xl mb-8">
  Tempos reais: 1 a 5 horas (feito em 1 dia).
- Inclui instalação completa + certificação elétrica.
+ Inclui instalação completa + diagnóstico elétrico.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a
@@ -190,7 +190,7 @@ export default function QuantoTempoDemoraInstalarTomada() {
  ⏱️ Tabela de Tempos por Tipo
  </h2>
  <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
- Tempos incluem: avaliação + instalação + testes + certificação elétrica
+ Tempos incluem: avaliação + instalação + testes + diagnóstico elétrico
  </p>
  <div className="max-w-5xl mx-auto space-y-6">
  {tempos.map((item, index) => (
@@ -234,7 +234,7 @@ export default function QuantoTempoDemoraInstalarTomada() {
  <div className="bg-green-50 p-4 rounded-lg border-2 border-green-200">
  <div className="text-sm text-gray-600 mb-1">✅ Incluído:</div>
  <ul className="text-sm text-gray-700 space-y-1">
- <li>• certificação elétrica</li>
+ <li>• diagnóstico elétrico</li>
  <li>• Teste segurança</li>
  <li>• Garantia do serviço</li>
  </ul>
@@ -287,7 +287,7 @@ export default function QuantoTempoDemoraInstalarTomada() {
  { tempo: "11:20", acao: "Instalar tomada", descricao: "Montagem tomada e fixação parede" },
  { tempo: "11:50", acao: "Fechar parede", descricao: "Restauro parede, preparação pintura" },
  { tempo: "12:05", acao: "Testar instalação", descricao: "Teste segurança, voltagem, ligação terra" },
- { tempo: "12:20", acao: "certificação elétrica", descricao: "Emissão certificado conformidade" }
+ { tempo: "12:20", acao: "diagnóstico elétrico", descricao: "Verificação de segurança e testes" }
  ].map((step, index) => (
  <div key={index} className="flex gap-4">
  <div className="flex flex-col items-center">
@@ -329,7 +329,7 @@ export default function QuantoTempoDemoraInstalarTomada() {
  Instalar Tomada? Feito em 1 Dia
  </h2>
  <p className="text-xl mb-8 max-w-2xl mx-auto">
- Instalação completa 1-5h com relatório técnico incluído.
+ Instalação completa 1-5h com garantia incluída.
  Pode usar tomada mediante confirmação após.
  </p>
  <a

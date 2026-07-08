@@ -53,7 +53,7 @@ function BeforeAfter() {
  id: 'no-',
  title: 'Seguradora Recusou Sinistro',
  problem: 'Instalação sem . Seguradora não pagou €5,000.',
- solution: 'certificação elétrica completa + relatório técnico.',
+ solution: 'diagnóstico elétrico completo e reparação.',
  time: '4 horas',
  cost: '€250',
  savings: 'Aceite seguradora (€5,000 coberto)',
@@ -72,7 +72,7 @@ function BeforeAfter() {
  </h2>
  <p className="text-xl text-gray-600">
  Casos reais de clientes que estavam desesperados.
- Veja como resolvemos definitivamente com certificação elétrica.
+ Veja como resolvemos definitivamente com diagnóstico elétrico.
  </p>
  </div>
  {/* Case Selector */}
@@ -180,13 +180,13 @@ function BeforeAfter() {
  </a>
  </div>
  <p className="text-sm text-gray-500 mt-4">
- ✅ Inspeção grátis • ✅ certificação elétrica • ✅ Orçamento por escrito antes de intervir
+ ✅ Inspeção grátis • ✅ diagnóstico elétrico • ✅ Orçamento por escrito antes de intervir
  </p>
  </div>
  {/* Social Proof */}
  <div className="mt-12 p-6 bg-white rounded-lg border-2 border-gray-200">
  <p className="text-center text-gray-700">
- <strong className="text-gray-900">Instalações profissionais certificadas </strong> em Bragança e região.
+ <strong className="text-gray-900">Instalações profissionais realizadas </strong> em Bragança e região.
  Problemas elétricos que outros não conseguiram resolver.
  </p>
  </div>

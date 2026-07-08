@@ -14,7 +14,7 @@ const servicesElec = [
  { label: 'Tomada / Interruptor', min: 35, max: 70 },
  { label: 'Avaria / Diagnóstico', min: 70, max: 140 },
  { label: 'Substituição Quadro Elétrico', min: 210, max: 420 },
- { label: 'certificação elétrica', min: 140, max: 280 },
+ { label: 'diagnóstico elétrico', min: 140, max: 280 },
  { label: 'Instalação Completa', min: 280, max: 700 },
 ];
 const servicesPlumb = [
@@ -38,7 +38,7 @@ const examplesElec = [
  { icon: '🔌', label: 'Instalação de tomada', price: '50-105€' },
  { icon: '⚡', label: 'Arranjo de quadro elétrico', price: '105-210€' },
  { icon: '💡', label: 'Instalação de candeeiro', price: '50-105€' },
- { icon: '📋', label: 'Certificação elétrica', price: '150-350€' },
+ { icon: '📋', label: 'Diagnóstico elétrico', price: '150-350€' },
 ];
 function CalculadorPreco() {
  const { config } = useSite();

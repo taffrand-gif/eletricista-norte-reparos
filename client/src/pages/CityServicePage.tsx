@@ -117,7 +117,7 @@ export default function CityServicePage() {
  Oferecemos também serviços de{' '}
  <a href={`/instalacao-eletrica-${params.city}`} className="text-blue-600 hover:underline">instalação elétrica</a>,{' '}
  <a href={`/quadro-eletrico-${params.city}`} className="text-blue-600 hover:underline">quadro elétrico</a> e{' '}
- <a href={`/certificacao-eletrica-${params.city}`} className="text-blue-600 hover:underline">certificação elétrica</a>.
+ <a href={`/certificacao-eletrica-${params.city}`} className="text-blue-600 hover:underline">diagnóstico elétrico</a>.
  </p>
  <a
  href={`https://wa.me/${ACTIVE_CONFIG.whatsappNumber}?text=${encodeURIComponent(`Olá! Preciso de ${service.name} em ${city.name}. Podem fazer orçamento?`)}`}
@@ -308,7 +308,7 @@ function getCitySpecificFAQs(citySlug: string, serviceSlug: string) {
  },
  {
  question: 'Trabalham com instalações trifásicas em Trás-os-Montes?',
- answer: 'Sim, temos equipamento e certificação para trabalhar com instalações trifásicas, comuns em explorações agrícolas e pequenas indústrias na região de Trás-os-Montes. Fazemos manutenção preventiva e arranjos urgentes.'
+ answer: 'Sim, temos equipamento para trabalhar com instalações trifásicas, comuns em explorações agrícolas e pequenas indústrias na região de Trás-os-Montes. Fazemos manutenção preventiva e arranjos urgentes.'
  }
  ]
  }
@@ -344,7 +344,7 @@ function getCityAboutSection(citySlug: string) {
  A economia local baseia-se fortemente na agricultura, pecuária e pequena indústria, o que significa que muitas instalações elétricas na região são trifásicas e de maior complexidade. Explorações agrícolas, adegas, lagares de azeite e unidades de transformação alimentar requerem sistemas elétricos robustos e fiáveis. A nossa equipa tem experiência especializada em instalações industriais e agrícolas, garantindo segurança e eficiência energética.
  </p>
  <p>
- Conhecemos bem as particularidades de Trás-os-Montes e das suas aldeias circundantes. Desde o centro urbano até às zonas mais rurais, garantimos Resposta mediante contacto a qualquer emergência elétrica. Trabalhamos regularmente com bombas de água para rega, sistemas de refrigeração para armazéns agrícolas, e instalações elétricas em edifícios de turismo rural, sempre com certificação elétrica e cumprimento rigoroso das normas de segurança.
+ Conhecemos bem as particularidades de Trás-os-Montes e das suas aldeias circundantes. Desde o centro urbano até às zonas mais rurais, garantimos Resposta mediante contacto a qualquer emergência elétrica. Trabalhamos regularmente com bombas de água para rega, sistemas de refrigeração para armazéns agrícolas, e instalações elétricas em edifícios de turismo rural, sempre com diagnóstico elétrico e cumprimento rigoroso das normas de segurança.
  </p>
  </>
  )
@@ -411,8 +411,8 @@ function getWhyChooseUs(citySlug: string, serviceSlug: string) {
  },
  {
  icon: '📋',
- title: 'certificação elétrica Garantida',
- description: 'Todos os trabalhos incluem inspeção elétrica detalhada. Regularizamos instalações antigas e emitimos relatório técnico de conformidade, para venda ou arrendamento de imóveis.'
+ title: 'diagnóstico elétrico Garantida',
+ description: 'Todos os trabalhos incluem inspeção elétrica detalhada. Regularizamos instalações antigas e fazemos o trabalho elétrico para venda ou arrendamento de imóveis.'
  }
  ]
  },
@@ -436,7 +436,7 @@ function getWhyChooseUs(citySlug: string, serviceSlug: string) {
  {
  icon: '🔒',
  title: 'Segurança e Conformidade',
- description: 'Todas as instalações com certificação elétrica. Inspeções de segurança, modernização de quadros antigos e conformidade com normas atuais para seguros e licenciamentos.'
+ description: 'Todas as instalações com diagnóstico elétrico. Inspeções de segurança, modernização de quadros antigos e conformidade com normas atuais para seguros e licenciamentos.'
  }
  ]
  }

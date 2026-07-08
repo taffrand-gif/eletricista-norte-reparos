@@ -19,7 +19,7 @@ function QuoteCalculator() {
  { id: 'tomada', name: 'Instalação Tomada/Interruptor', base: 40, urgent: 60, icon: '🔌' },
  { id: 'iluminacao', name: 'Instalação Iluminação', base: 60, urgent: 90, icon: '💡' },
  { id: 'avaria', name: 'Arranjo Avaria Urgente', base: 80, urgent: 120, icon: '🚨' },
- { id: 'certificacao', name: 'certificação elétrica', base: 120, urgent: 180, icon: '📋' },
+ { id: 'certificacao', name: 'diagnóstico elétrico', base: 120, urgent: 180, icon: '📋' },
  { id: 'instalacao', name: 'Instalação Elétrica Nova', base: 200, urgent: 280, icon: '🏗️' },
  ];
  const handleServiceClick = (selectedService: typeof services[0]) => {

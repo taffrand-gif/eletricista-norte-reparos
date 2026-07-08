@@ -5,20 +5,20 @@ import { useEffect } from 'react';
 const faqItems = [
  { question: "Quando devo modernizar o quadro elétrico?", answer: "Se o seu quadro ainda tem fusíveis de porcelana, tem mais de 25 anos, ou dispara frequentemente, é hora de modernizar. Um quadro moderno com disjuntores e diferencial protege a sua família e os seus equipamentos." },
  { question: "Quanto custa modernizar um quadro elétrico?", answer: "A modernização de um quadro elétrico residencial custa entre €200 e €600, dependendo do número de circuitos e da complexidade da instalação. Inclui disjuntores, diferencial e certificação." },
- { question: "A modernização do quadro inclui certificação elétrica?", answer: "Sim, após a modernização emitimos o relatório técnico de conformidade da instalação, necessário para contratos de eletricidade e seguros de habitação." }
+ { question: "A modernização do quadro inclui diagnóstico elétrico?", answer: "Sim, após a modernização fazemos a instalação elétrica completa, necessário para contratos de eletricidade e seguros de habitação." }
 ];
 export default function QuadrosEletricos() {
  useEffect(() => {
  document.title = "Quadros Elétricos Trás-os-Montes | 932 321 892";
  let meta = document.querySelector('meta[name="description"]');
  if (!meta) { meta = document.createElement('meta'); meta.setAttribute('name', 'description'); document.head.appendChild(meta); }
- meta.setAttribute('content', 'Instalação e modernização de quadros elétricos em Trás-os-Montes. Disjuntores, diferenciais, certificação elétrica. Eletricista com experiência 24h. Ligue +351 932 321 892.');
+ meta.setAttribute('content', 'Instalação e modernização de quadros elétricos em Trás-os-Montes. Disjuntores, diferenciais, diagnóstico elétrico. Eletricista com experiência 24h. Ligue +351 932 321 892.');
  }, []);
  const serviceSchema = {
  "@context": "https://schema.org", "@type": "Service",
  "name": "Quadros Elétricos - Instalação e Modernização", "provider": { "@type": "Electrician", "name": "", "telephone": ACTIVE_CONFIG.phone },
  "areaServed": { "@type": "GeoCircle", "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 41.4393, "longitude": -6.9603 }, "geoRadius": "100000" },
- "description": "Instalação e modernização profissional de quadros elétricos em Trás-os-Montes com certificação elétrica."
+ "description": "Instalação e modernização profissional de quadros elétricos em Trás-os-Montes com diagnóstico elétrico."
  };
  return (
  <>
@@ -45,7 +45,7 @@ export default function QuadrosEletricos() {
  {[
  { title: "Modernização de Quadros", desc: "Substituição de quadros antigos com fusíveis por quadros modernos com disjuntores automáticos e diferencial. Mais segurança para a sua família.", icon: "⚡" },
  { title: "Instalação Nova", desc: "Instalação de quadros elétricos para construção nova ou ampliação. Dimensionamento correto para as necessidades da sua casa.", icon: "🏠" },
- { title: "certificação elétrica", desc: "Relatório técnico de conformidade após instalação ou modernização. Obrigatório para contratos de eletricidade.", icon: "📋" },
+ { title: "Diagnóstico elétrico", desc: "Reparação elétrica após instalação ou modernização. Obrigatório para contratos de eletricidade.", icon: "📋" },
  { title: "Arranjo e Manutenção", desc: "Diagnóstico e arranjo de quadros que disparam frequentemente, circuitos sobrecarregados e problemas de terra.", icon: "🔧" }
  ].map((service, i) => (
  <div key={i} className="p-6 border border-gray-200 rounded-xl hover:shadow-lg transition-shadow">
@@ -84,7 +84,7 @@ export default function QuadrosEletricos() {
  {[
  { service: "Modernização simples", price: "Desde €200" },
  { service: "Quadro completo", price: "Desde €400" },
- { service: "certificação elétrica", price: "Desde €150" }
+ { service: "diagnóstico elétrico", price: "Desde €150" }
  ].map((item, i) => (
  <div key={i} className="p-6 bg-orange-50 rounded-xl text-center">
  <h3 className="font-bold text-gray-900 mb-2">{item.service}</h3>

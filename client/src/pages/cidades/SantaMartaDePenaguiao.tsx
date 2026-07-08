@@ -104,7 +104,7 @@ export default function SantaMartaDePenaguiao() {
  { icon: Zap, title: "Adegas de Vinho", desc: "Climatização, refrigeração e quadros para produção de vinho verde e Douro" },
  { icon: Shield, title: "Quintas do Douro", desc: "Instalações completas para quintas vinícolas e espaços de enoturismo" },
  { icon: CheckCircle, title: "Turismo e Eventos", desc: "Iluminação e som para espaços de eventos e restaurantes panorâmicos" },
- { icon: Zap, title: "Habitações", desc: "Remodelação elétrica e certificação elétrica para imóveis" },
+ { icon: Zap, title: "Habitações", desc: "Remodelação elétrica e diagnóstico elétrico para imóveis" },
  ].map((service, index) => (
  <div key={index} className="flex items-start gap-4 p-6 bg-white rounded-xl shadow">
  <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">

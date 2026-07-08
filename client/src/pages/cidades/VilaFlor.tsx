@@ -104,7 +104,7 @@ export default function VilaFlor() {
  { icon: Zap, title: "Adegas e Lagares", desc: "Instalações elétricas completas para produção vinícola e oleícola" },
  { icon: Shield, title: "Sistemas de Refrigeração", desc: "Quadros elétricos para câmaras frias e controlo de temperatura" },
  { icon: CheckCircle, title: "Iluminação Industrial", desc: "Iluminação LED para armazéns, adegas e espaços de produção" },
- { icon: Zap, title: "certificação elétrica", desc: "Certificação elétrica para imóveis e espaços comerciais" },
+ { title: "Diagnóstico elétrico", desc: "Diagnóstico elétrico para imóveis e espaços comerciais" },
  ].map((service, index) => (
  <div key={index} className="flex items-start gap-4 p-6 bg-white rounded-xl shadow">
  <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">

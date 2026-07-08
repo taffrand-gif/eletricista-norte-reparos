@@ -104,7 +104,7 @@ export default function Vinhais() {
  { icon: Zap, title: "Urgências Elétricas 24h", desc: "Apagões, curto-circuitos, disjuntores a disparar" },
  { icon: Shield, title: "Quadros Elétricos", desc: "Substituição de quadros antigos, fusíveis por disjuntores" },
  { icon: CheckCircle, title: "Instalações Rurais", desc: "Casas de aldeia, quintas, explorações agrícolas" },
- { icon: Zap, title: "certificação elétrica", desc: "Para venda ou arrendamento de imóveis" },
+ { title: "Diagnóstico elétrico", desc: "Para venda ou arrendamento de imóveis" },
  ].map((service, index) => (
  <div key={index} className="flex items-start gap-4 p-6 bg-white rounded-xl shadow">
  <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">

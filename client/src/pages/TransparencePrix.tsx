@@ -64,8 +64,8 @@ export default function TransparencePrix() {
  includes: [
  "Vistoria técnica completa",
  "Testes de segurança",
- "Relatório técnico detalhado",
- "Orientação para certificação via LDE Mirandela"
+ "Trabalho detalhado",
+ "Diagnóstico elétrico completo"
  ]
  },
  {

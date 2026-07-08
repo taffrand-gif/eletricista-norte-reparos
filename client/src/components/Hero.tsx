@@ -19,7 +19,7 @@ function Hero() {
  return config.hero.title;
  }, [config.hero.title]);
  const personalizedSubtitle = useMemo(() => {
- return `Instalação e certificação elétrica ao seu domicílio em Trás-os-Montes. Orçamento por escrito, garantia 1 ano.`;
+ return `Instalação e reparação elétrica ao seu domicílio em Trás-os-Montes. Orçamento por escrito, garantia 1 ano.`;
  }, []);
  const whatsappMessage = usePersonalizedWhatsAppMessage(config.whatsappMessage);
  return (

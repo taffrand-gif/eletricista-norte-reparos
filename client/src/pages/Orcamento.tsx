@@ -57,7 +57,7 @@ export default function Orcamento() {
  <div className="text-5xl mb-4">👨‍🔧</div>
  <h3 className="text-xl font-bold mb-2">Profissionais</h3>
  <p className="text-gray-600">
- Equipa qualificada e certificada
+ Equipa qualificada e com experiência
  </p>
  </div>
  </div>

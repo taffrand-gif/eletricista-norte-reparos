@@ -37,7 +37,7 @@ export default function Blog() {
  image: '/images-optimized/blog/installing-ceiling-light.jpg',
  link: '/blog/como-instalar-candeeiro-teto-seguranca'},
  {
- title: 'Certificação Elétrica : Tudo o que Precisa Saber',
+ title: 'Diagnóstico Elétrico : Tudo o que Precisa Saber',
  excerpt: 'Descubra quando é obrigatória a certificação elétrica, quanto custa e como parranjar a sua instalação para a inspeção.',
  date: '10 Jan 2026',
  readTime: 'alguns minutos',

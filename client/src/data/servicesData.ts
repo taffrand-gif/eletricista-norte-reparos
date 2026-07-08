@@ -29,8 +29,8 @@ export const SERVICES: Service[] = [
  id: '1',
  slug: 'instalacao-eletrica',
  title: 'Instalação Elétrica Completa',
- subtitle: 'Instalações Elétricas Certificadas em Trás-os-Montes',
- description: 'Instalação completa de sistemas elétricos residenciais, comerciais e industriais. Quadros elétricos, tomadas, iluminação e certificação elétrica.',
+ subtitle: 'Instalações Elétricas Profissionais em Trás-os-Montes',
+ description: 'Instalação completa de sistemas elétricos residenciais, comerciais e industriais. Quadros elétricos, tomadas, iluminação e diagnóstico elétrico.',
  icon: '⚡',
  price: 'Desde 150€',
  priceDetails: 'Preço varia conforme complexidade',
@@ -47,8 +47,8 @@ export const SERVICES: Service[] = [
  {
  title: 'Materiais e Certificações',
  content: `**Marcas Premium**: Legrand (tomadas, interruptores), Schneider Electric (quadros, disjuntores), Siemens (automação), Hager (proteções), ABB (industrial).
-**Cabos Certificados**: H07V-U/R (instalações fixas), H05VV-F (flexível), XV (enterrado), todos com marcação CE e certificação elétrica.
-**Inspeção e Relatório Técnico**: Emitimos relatório técnico de conformidade da instalação, com identificação do instalador, características técnicas e testes realizados.
+**Cabos Certificados**: H07V-U/R (instalações fixas), H05VV-F (flexível), XV (enterrado), todos com marcação CE.
+**Diagnóstico e Reparação**: Fazemos a instalação elétrica completa, com identificação do instalador, características técnicas e testes realizados.
 **Garantia 5 Anos**: Todas as instalações têm garantia de 5 anos (material + mão de obra), conforme legislação portuguesa.`
  },
  {
@@ -56,23 +56,23 @@ export const SERVICES: Service[] = [
  content: `**FASE 1**: Visita técnica gratuita → Levantamento necessidades → Projeto elétrico (se necessário) → Orçamento detalhado.
 **FASE 2**: Compra materiais certificados → Parranjo obra → Proteção superfícies → Abertura roços (se necessário).
 **FASE 3**: Instalação tubagens e caixas → Passagem cabos → Montagem quadro elétrico → Ligação tomadas/interruptores/iluminação → Ligação terra.
-**FASE 4**: Testes elétricos (continuidade, isolamento, diferencial) → certificação elétrica → Entrega certificado + garantia → Limpeza completa.
+**FASE 4**: Testes elétricos (continuidade, isolamento, diferencial) → diagnóstico elétrico → Garantia → Limpeza completa.
 **Prazo**: 2-10 dias conforme dimensão (casa T3: 3-5 dias).`
  },
  {
  title: 'Preços Indicativos',
- content: `**Instalação Completa Casa Nova**: T1 desde 2.500€, T2 desde 3.500€, T3 desde 4.500€, T4+ desde 6.000€ (inclui materiais + mão de obra + certificação).
+ content: `**Instalação Completa Casa Nova**: T1 desde 2.500€, T2 desde 3.500€, T3 desde 4.500€, T4+ desde 6.000€ (inclui materiais + mão de obra).
 **Remodelação Parcial**: Quarto 400€, Cozinha 600€, Casa de banho 500€, Sala 500€.
 **Serviços Avulsos**: Quadro elétrico 370-650€ (12 módulos), Tomada nova 138-182€, Tomada substituição 66-90€, Interruptor 58-78€, Ponto de luz 60-85€, Ligação máquina lavar 110-145€, Portão automático 280-420€.
-**Todos os preços incluem**: Materiais certificados, mão de obra, certificação elétrica, garantia 5 anos. Deslocação gratuita em Bragança e arredores.`
+**Todos os preços incluem**: Materiais certificados, mão de obra, diagnóstico elétrico, garantia 5 anos. Deslocação gratuita em Bragança e arredores.`
  }
  ],
  cta: 'Precisa de instalação elétrica? **Ligue já 932 321 892** para sem compromisso!'
  },
  seo: {
- metaTitle: 'Instalação Elétrica Bragança | Certificada | Eletricista Profissional',
- metaDescription: 'Instalação elétrica completa em Bragança. Quadros, tomadas, iluminação. relatório técnico incluído. Garantia 5 anos. Desde 150€. Ligue 932 321 892!',
- keywords: ['instalação elétrica bragança', 'eletricista bragança', 'certificação elétrica', 'quadro elétrico']
+ metaTitle: 'Instalação Elétrica Bragança | Profissional | Eletricista Profissional',
+ metaDescription: 'Instalação elétrica completa em Bragança. Quadros, tomadas, iluminação. Garantia 5 anos. Desde 150€. Ligue 932 321 892!',
+ keywords: ['instalação elétrica bragança', 'eletricista bragança', 'diagnóstico elétrico', 'quadro elétrico']
  }
  },
  // Service 2: Arranjo de Avarias
@@ -145,14 +145,14 @@ Diagnóstico preciso em 15-45 minutos. Orçamento antes de arranjar.`
  },
  {
  title: 'Preços',
- content: `Monofásico básico 370€, Monofásico completo 12 módulos 370-650€, Trifásico 800-1200€, Ampliação (adicionar circuitos) 110-160€. Inclui materiais, instalação, certificação, garantia 5 anos.`
+ content: `Monofásico básico 370€, Monofásico completo 12 módulos 370-650€, Trifásico 800-1200€, Ampliação (adicionar circuitos) 110-160€. Inclui materiais, instalação, garantia 5 anos.`
  }
  ],
  cta: 'Quadro elétrico antigo? **Ligue 932 321 892** para modernizar!'
  },
  seo: {
  metaTitle: 'Quadros Elétricos Bragança | Modernização | Eletricista Profissional',
- metaDescription: 'Quadros elétricos novos e modernização em Bragança. Monofásicos, trifásicos. certificação elétrica. Desde 370€. Ligue 932 321 892!',
+ metaDescription: 'Quadros elétricos novos e modernização em Bragança. Monofásicos, trifásicos. diagnóstico elétrico. Desde 370€. Ligue 932 321 892!',
  keywords: ['quadro elétrico bragança', 'modernização quadro', 'disjuntores', 'diferencial']
  }
  },
@@ -229,10 +229,10 @@ Diagnóstico preciso em 15-45 minutos. Orçamento antes de arranjar.`
  slug: 'inspecao-eletrica',
  title: 'Inspeção Elétrica',
  subtitle: 'Diagnóstico Completo da Instalação Elétrica',
- description: 'Inspeção visual e testes elétricos. Identifica problemas de segurança, isolamento, ligação terra. Relatório técnico.',
+ description: 'Inspeção visual e testes elétricos. Identifica problemas de segurança, isolamento, ligação terra.',
  icon: '🔍',
  price: 'Desde 150€',
- priceDetails: 'Inclui relatório técnico',
+ priceDetails: "Inclui diagnóstico e garantia",
  image: '/images-optimized/services/service-certificacao.jpg',
  content: {
  intro: 'Inspeção elétrica identifica problemas antes de se tornarem perigosos. Recomendada para casas com +20 anos, compra/venda de imóveis, após remodelações.',
@@ -242,19 +242,19 @@ Diagnóstico preciso em 15-45 minutos. Orçamento antes de arranjar.`
  content: `Quadro elétrico (conformidade, proteções), Ligação terra (resistência, continuidade), Isolamento cabos (megger), Tomadas e interruptores (polaridade, terra), Iluminação (funcionamento, segurança), Ligações aparelhos (máquinas, esquentadores), Instalação exterior (jardim, portões). Testes: continuidade, isolamento, diferencial, polaridade, resistência terra.`
  },
  {
- title: 'Relatório Técnico',
- content: `Fotografias instalação, Resultados testes elétricos, Lista problemas identificados (críticos, importantes, recomendações), Orçamento para correções, Relatório técnico de conformidade (se instalação aprovada). Indicado para seguros, vendas e arrendamentos.`
+ title: "Diagnóstico elétrico",
+ content: `Fotografias instalação, Resultados testes elétricos, Lista problemas identificados (críticos, importantes, recomendações), Orçamento para correções (se instalação aprovada). Indicado para seguros, vendas e arrendamentos.`
  },
  {
  title: 'Preços',
- content: `Apartamento T1-T2: 150€, Casa T3-T4: 200€, Casa T4+: 280€, Comércio/Indústria: desde 350€. Inclui inspeção completa, testes, relatório técnico. 10% desconto para clientes com contrato manutenção.`
+ content: `Apartamento T1-T2: 150€, Casa T3-T4: 200€, Casa T4+: 280€, Comércio/Indústria: desde 350€. Inclui inspeção completa, testes, trabalho garantido. 10% desconto para clientes com contrato manutenção.`
  }
  ],
  cta: 'Precisa de inspeção? **Ligue 932 321 892** para agendar!'
  },
  seo: {
  metaTitle: 'Inspeção Elétrica Bragança | Diagnóstico | Eletricista Profissional',
- metaDescription: 'Inspeção elétrica completa em Bragança. Testes, relatório técnico. Identifica problemas de segurança. Desde 150€. Ligue 932 321 892!',
+ metaDescription: 'Inspeção elétrica completa em Bragança. Testes, trabalho garantido. Identifica problemas de segurança. Desde 150€. Ligue 932 321 892!',
  keywords: ['inspeção elétrica bragança', 'diagnóstico elétrico', 'teste isolamento', 'certificado elétrico']
  }
  }

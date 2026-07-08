@@ -129,7 +129,7 @@ export default function QuantoTempoSemLuzCasa() {
  tempo: "+15min a +1h"
  },
  {
- factor: "certificação elétrica",
+ factor: "diagnóstico elétrico",
  impacto: "Certificação obrigatória, incluída no tempo",
  tempo: "15-30 min"
  }
@@ -289,7 +289,7 @@ export default function QuantoTempoSemLuzCasa() {
  { tempo: "14:50", acao: "Início reparação", descricao: "Substituição disjuntor (material em stock)" },
  { tempo: "15:10", acao: "Reparação concluída", descricao: "Disjuntor novo instalado" },
  { tempo: "15:20", acao: "Teste circuito", descricao: "Verificação voltagem e segurança" },
- { tempo: "15:35", acao: "Luz restabelecida!", descricao: "Casa com luz. Certificação emitida." }
+ { tempo: "15:35", acao: "Luz restabelecida!", descricao: "Casa com luz." }
  ].map((step, index) => (
  <div key={index} className="flex gap-4">
  <div className="flex flex-col items-center">

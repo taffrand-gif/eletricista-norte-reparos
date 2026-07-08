@@ -45,7 +45,7 @@ date: "2026"
  prices: {
  service1: 100, // Quadro elétrico
  service2: 80, // Avaria
- service3: 150 // Certificação
+ service3: 150 // Diagnóstico
  },
  stats: {
  interventionsAnnuelles: "Serviço disponível em Trás-os-Montes",

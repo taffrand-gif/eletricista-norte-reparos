@@ -18,7 +18,7 @@ export default function Sabrosa() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Eletricista em Sabrosa, terra de Fernão de Magalhães no Douro. Instalações para quintas, museus e turismo. Quadros elétricos, certificação. Sem compromisso.');
+ metaDescription.setAttribute('content', 'Eletricista em Sabrosa, terra de Fernão de Magalhães no Douro. Instalações para quintas, museus e turismo. Quadros elétricos, diagnóstico. Sem compromisso.');
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');
@@ -104,7 +104,7 @@ export default function Sabrosa() {
  { icon: Zap, title: "Quintas do Douro", desc: "Instalações completas para adegas, caves e produção vinícola" },
  { icon: Shield, title: "Espaços Culturais", desc: "Iluminação técnica para museus, galerias e centros interpretativos" },
  { icon: CheckCircle, title: "Turismo Premium", desc: "Sistemas elétricos para hotéis de charme e casas de turismo rural" },
- { icon: Zap, title: "certificação elétrica", desc: "Certificação para venda, arrendamento e legalização de imóveis" },
+ { title: "Diagnóstico elétrico", desc: "Diagnóstico elétrico para venda, arrendamento e legalização de imóveis" },
  ].map((service, index) => (
  <div key={index} className="flex items-start gap-4 p-6 bg-white rounded-xl shadow">
  <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">

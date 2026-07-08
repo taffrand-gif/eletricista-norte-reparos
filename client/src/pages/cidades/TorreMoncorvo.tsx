@@ -19,7 +19,7 @@ export default function TorreMoncorvo() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Tomada queimada em Torre de Moncorvo? Arranjo no próprio dia. certificação elétrica, sem compromisso. Ligue: 932 321 892');
+ metaDescription.setAttribute('content', 'Tomada queimada em Torre de Moncorvo? Arranjo no próprio dia. diagnóstico elétrico, sem compromisso. Ligue: 932 321 892');
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');
@@ -95,7 +95,7 @@ export default function TorreMoncorvo() {
  {[
  { icon: Zap, title: "Urgências Elétricas 24h", desc: "Apagões, curto-circuitos, disjuntores a disparar" },
  { icon: Shield, title: "Quintas Vinícolas", desc: "Instalações para adegas, lagares, sistemas de refrigeração" },
- { icon: CheckCircle, title: "certificação elétrica", desc: "Obrigatória para turismo rural e alojamento local" },
+ { title: "Diagnóstico elétrico", desc: "Obrigatória para turismo rural e alojamento local" },
  { icon: Zap, title: "Quadros Elétricos", desc: "Modernização e aumento de potência" },
  ].map((service, index) => (
  <div key={index} className="flex items-start gap-4 p-6 bg-white rounded-xl shadow">

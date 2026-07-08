@@ -18,7 +18,7 @@ export default function PesoDaRegua() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Eletricista em Peso da Régua, capital do Douro. Instalações para caves de vinho, museus, hotéis e comércio. Quadros elétricos, certificação. Sem compromisso.');
+ metaDescription.setAttribute('content', 'Eletricista em Peso da Régua, capital do Douro. Instalações para caves de vinho, museus, hotéis e comércio. Quadros elétricos, diagnóstico. Sem compromisso.');
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');

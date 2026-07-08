@@ -25,7 +25,7 @@ export default function VilaReal() {
  answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
  },
  {
- question: "Fornecem certificação elétrica em Vila Real?",
+ question: "Fornecem diagnóstico elétrico em Vila Real?",
  answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
  },
  ];
@@ -47,7 +47,7 @@ export default function VilaReal() {
  metaKeywords.setAttribute('name', 'keywords');
  document.head.appendChild(metaKeywords);
  }
- metaKeywords.setAttribute('content', 'eletricista 24h vila real, eletricista Atendimento 24h/7d vila real, eletricista vila real, eletricista profissional vila real, instalação elétrica vila real, quadro elétrico vila real, certificação elétrica vila real, arranjo elétrica vila real, eletricista trás-os-montes');
+ metaKeywords.setAttribute('content', 'eletricista 24h vila real, eletricista Atendimento 24h/7d vila real, eletricista vila real, eletricista profissional vila real, instalação elétrica vila real, quadro elétrico vila real, diagnóstico elétrico vila real, arranjo elétrica vila real, eletricista trás-os-montes');
  
  
  // Canonical URL
@@ -67,7 +67,7 @@ export default function VilaReal() {
  "@type": "LocalBusiness",
  "name": "Eletricista Profissional — Eletricista em Vila Real",
  "image": "/images-optimized/hero/hero-electrician-portugal.jpg",
- "description": "Eletricista profissional em Vila Real, Trás-os-Montes. Instalação, arranjo e certificação elétrica.",
+ "description": "Eletricista profissional em Vila Real, Trás-os-Montes. Instalação, arranjo e reparação elétrica.",
  "address": getCityAddress('vila-real'),
  "geo": {
  "@type": "GeoCoordinates",
@@ -195,7 +195,7 @@ export default function VilaReal() {
  </li>
  <li className="flex items-center gap-2">
  <span className="text-green-500">✓</span>
- <span>Certificação para propriedades em Vila Real</span>
+ <span>Diagnóstico para propriedades em Vila Real</span>
  </li>
  <li className="flex items-center gap-2">
  <span className="text-green-500">✓</span>

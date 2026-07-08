@@ -5,7 +5,7 @@ const problems = {
  { icon: '⚡', label: 'Sem Luz', value: 'sem-luz' },
  { icon: '🔥', label: 'Cheiro Queimado', value: 'cheiro-queimado' },
  { icon: '💥', label: 'Curto-Circuito', value: 'curto-circuito' },
- { icon: '📋', label: 'certificação elétrica', value: '' },
+ { icon: '📋', label: 'diagnóstico elétrico', value: '' },
  { icon: '🔧', label: 'Outro Problema', value: 'outro' },
  ],
  canalizador: [

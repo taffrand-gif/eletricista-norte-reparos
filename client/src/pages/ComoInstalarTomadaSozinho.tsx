@@ -16,7 +16,7 @@ export default function ComoInstalarTomadaSozinho() {
  },
  {
  question: "Quanto custa eletricista para instalar tomada?",
- answer: "Instalar tomada simples: 40-80€ (inclui deslocação, instalação, material, certificação). Instalar tomada com cablagem nova: 80-150€. Preço inclui segurança, legalidade e garantia. Orçamento grátis: 932 321 892"
+ answer: "Instalar tomada simples: 40-80€ (inclui deslocação, instalação, material). Instalar tomada com cablagem nova: 80-150€. Preço inclui segurança, legalidade e garantia. Orçamento grátis: 932 321 892"
  },
  {
  question: "É perigoso instalar tomada sem ser eletricista?",
@@ -225,7 +225,7 @@ export default function ComoInstalarTomadaSozinho() {
  <div className="mt-8 text-center">
  <p className="text-gray-600 mb-4">
  ✅ Preço: 40-80€ (instalação simples)<br />
- ✅ Inclui: deslocação, material, certificação elétrica<br />
+ ✅ Inclui: deslocação, material, diagnóstico elétrico<br />
  ✅ Garantia: 2 anos<br />
  ✅ Legal e seguro
  </p>
@@ -251,7 +251,7 @@ export default function ComoInstalarTomadaSozinho() {
  </h2>
  <div className="space-y-3 text-gray-700">
  <p>
- <strong>Decreto-Lei 226/2005:</strong> Apenas eletricistas com certificação elétrica podem fazer instalações elétricas em Portugal.
+ <strong>Decreto-Lei 226/2005:</strong> Apenas eletricistas com diagnóstico elétrico podem fazer instalações elétricas em Portugal.
  </p>
  <p>
  <strong>Multa:</strong> Trabalhos elétricos ilegais = multa até 3740€ (pessoa singular) ou 44.890€ (empresa).
@@ -288,7 +288,7 @@ export default function ComoInstalarTomadaSozinho() {
  Precisa Instalar Tomada? Chame eletricista com experiência
  </h2>
  <p className="text-xl mb-8 max-w-2xl mx-auto">
-40-80€ por tomada. Inclui certificação elétrica, garantia escrita. Legal, seguro e rápido (1-2h).
+40-80€ por tomada. Inclui garantia escrita. Legal, seguro e rápido (1-2h).
  </p>
  <a
  href={`tel:${config.phone.replace(/\s/g, "")}`}

@@ -17,8 +17,8 @@ export default function PriceTable() {
  price: "70€ - 140€",
  details: ["1-2h de trabalho", "Pesquisa de avaria", "Resolução duradoura"]},
  {
- service: "Certificação / Potência",
- description: "certificação elétrica ou aumento potência",
+ service: "Diagnóstico / Potência",
+ description: "diagnóstico elétrico ou aumento potência",
  price: "Sob Orçamento",
  details: ["Vistoria técnica", "Tratamos da papelada", "Garantia de aprovação"]}
  ];

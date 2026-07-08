@@ -12,7 +12,7 @@ export default function QuantoTempoQuadro() {
  "@context": "https://schema.org",
  "@type": "Article",
  "headline": "Quanto Tempo Demora Trocar Quadro Elétrico? Tempos Reais 2026",
- "description": "Guia completo de tempos para trocar quadro elétrico: desde avaliação até certificação",
+ "description": "Guia completo de tempos para trocar quadro elétrico: desde avaliação até execução",
  "author": {
  "@type": "Organization",
  "name": config.businessName
@@ -26,7 +26,7 @@ export default function QuantoTempoQuadro() {
  const faqs = [
  {
  question: "Quanto tempo demora trocar quadro elétrico completo?",
- answer: "Quadro elétrico completo: 3 a 8 horas. T1/T2: 3-5h, T3/T4: 4-6h, Moradia: 5-8h. Inclui: desligar circuitos, remover quadro antigo, instalar novo, ligar circuitos, testar tudo, certificação elétrica. Marcação: 932 321 892"
+ answer: "Quadro elétrico completo: 3 a 8 horas. T1/T2: 3-5h, T3/T4: 4-6h, Moradia: 5-8h. Inclui: desligar circuitos, remover quadro antigo, instalar novo, ligar circuitos, testar tudo, diagnóstico elétrico. Marcação: 932 321 892"
  },
  {
  question: "Quanto tempo fico sem luz ao trocar quadro?",
@@ -34,7 +34,7 @@ export default function QuantoTempoQuadro() {
  },
  {
  question: "Posso trocar quadro elétrico em 1 dia?",
- answer: "SIM. Quadro completo é feito em 1 dia (3-8h). Começamos de manhã, terminamos tarde. certificação elétrica emitida no final. Marcação antecipada recomendada: 932 321 892"
+ answer: "SIM. Quadro completo é feito em 1 dia (3-8h). Começamos de manhã, terminamos tarde. diagnóstico elétrico emitida no final. Marcação antecipada recomendada: 932 321 892"
  },
  {
  question: "Quanto tempo demora substituir só um disjuntor?",
@@ -68,7 +68,7 @@ export default function QuantoTempoQuadro() {
  "Instalar novo: 90-120 min",
  "Ligar circuitos: 45-60 min",
  "Testar tudo: 30-45 min",
- "Certificação: 20-30 min"
+ "Verificação: 20-30 min"
  ],
  icon: CheckCircle
  },
@@ -84,7 +84,7 @@ export default function QuantoTempoQuadro() {
  "Instalar novo: 120-150 min",
  "Ligar circuitos: 60-90 min",
  "Testar tudo: 45-60 min",
- "Certificação: 30 min"
+ "Verificação: 30 min"
  ],
  icon: Zap
  },
@@ -100,7 +100,7 @@ export default function QuantoTempoQuadro() {
  "Instalar novo: 150-210 min",
  "Ligar circuitos: 90-120 min",
  "Testar tudo: 60-90 min",
- "Certificação: 30-45 min"
+ "Verificação: 30-45 min"
  ],
  icon: AlertTriangle
  }
@@ -127,7 +127,7 @@ export default function QuantoTempoQuadro() {
  tempo: "+1h a +3h"
  },
  {
- factor: "Certificação",
+ factor: "Diagnóstico",
  impacto: "certificação elétrica obrigatória, incluída no tempo",
  tempo: "20-45 min"
  }
@@ -136,7 +136,7 @@ export default function QuantoTempoQuadro() {
  <>
  <Helmet>
  <title>Quanto Tempo Demora Trocar Quadro Elétrico? Tempos Reais 2026 | 932 321 892</title>
- <meta name="description" content="Quanto tempo demora trocar quadro elétrico? 3-8h dependendo tamanho. T1/T2: 3-5h, T3/T4: 4-6h, Moradia: 5-8h. Relatório técnico incluído. Marcação: 932 321 892" />
+ <meta name="description" content="Quanto tempo demora trocar quadro elétrico? 3-8h dependendo tamanho. T1/T2: 3-5h, T3/T4: 4-6h, Moradia: 5-8h. Garantia incluída. Marcação: 932 321 892" />
  <script type="application/ld+json">
  {JSON.stringify(schemaData)}
  </script>
@@ -156,7 +156,7 @@ export default function QuantoTempoQuadro() {
  </h1>
  <p className="text-xl mb-8">
  Tempos reais: 3 a 8 horas (feito em 1 dia).
- Inclui instalação completa + certificação elétrica.
+ Inclui instalação completa + diagnóstico elétrico.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a
@@ -185,7 +185,7 @@ export default function QuantoTempoQuadro() {
  ⏱️ Tabela de Tempos por Tamanho
  </h2>
  <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
- Tempos incluem: avaliação + instalação + testes + certificação elétrica
+ Tempos incluem: avaliação + instalação + testes + diagnóstico elétrico
  </p>
  <div className="max-w-5xl mx-auto space-y-6">
  {tempos.map((item, index) => (
@@ -229,7 +229,7 @@ export default function QuantoTempoQuadro() {
  <div className="bg-green-50 p-4 rounded-lg border-2 border-green-200">
  <div className="text-sm text-gray-600 mb-1">✅ Incluído:</div>
  <ul className="text-sm text-gray-700 space-y-1">
- <li>• certificação elétrica</li>
+ <li>• diagnóstico elétrico</li>
  <li>• Teste todos circuitos</li>
  <li>• Garantia do serviço</li>
  </ul>
@@ -282,7 +282,7 @@ export default function QuantoTempoQuadro() {
  { tempo: "12:30", acao: "Pausa almoço", descricao: "30-45 minutos" },
  { tempo: "13:15", acao: "Ligar circuitos", descricao: "Ligação ordenada: iluminação, tomadas, cozinha, aquecimento" },
  { tempo: "14:45", acao: "Testes completos", descricao: "Teste cada circuito, verificação diferencial, medição corrente" },
- { tempo: "15:45", acao: "certificação elétrica", descricao: "Emissão certificado conformidade obrigatório" },
+ { tempo: "15:45", acao: "testes finais", descricao: "Verificação de segurança e testes elétricos" },
  { tempo: "16:15", acao: "Conclusão e limpeza", descricao: "Explicação funcionamento, entrega documentação" }
  ].map((step, index) => (
  <div key={index} className="flex gap-4">
@@ -358,7 +358,7 @@ export default function QuantoTempoQuadro() {
  Trocar Quadro Elétrico? Feito em 1 Dia
  </h2>
  <p className="text-xl mb-8 max-w-2xl mx-auto">
- Instalação completa 3-8h com relatório técnico incluído.
+ Instalação completa 3-8h com garantia incluída.
  Marcação: começamos de manhã, terminamos tarde.
  </p>
  <a
