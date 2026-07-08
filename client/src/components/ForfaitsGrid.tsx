@@ -91,7 +91,7 @@ function ForfaitsGrid({ className = '' }: ForfaitsGridProps) {
  },
  {
  icon: '📋',
- title: 'certificação elétrica',
+ title: 'inspeção elétrica',
  description: 'Inspeção e relatório técnico de conformidade da instalação',
  priceRange: '95-215€',
  details: [

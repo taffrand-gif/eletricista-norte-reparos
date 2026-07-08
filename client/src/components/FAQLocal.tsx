@@ -26,7 +26,7 @@ function FAQLocal() {
  answer: 'Sim, prestamos serviço de eletricidade de urgência em Miranda do Douro e toda a zona raiana. Tempo de chegada: confirmamos por telefone. Disponível Atendimento 24h/7d para emergências como curtos-circuitos, falhas de energia ou situações de perigo. Ligue 932 321 892.'},
  {
  question: 'Instalam esquentadores em Vila Flor e Carrazeda de Ansiães?',
- answer: 'Sim, fazemos instalação e substituição de esquentadores a gás em Vila Flor, Carrazeda de Ansiães e todas as localidades do distrito de Bragança. Preço de instalação: 100-200€ (sem IVA, sem equipamento). Incluímos certificação obrigatória e teste de segurança.'},
+ answer: 'Sim, fazemos instalação e substituição de esquentadores a gás em Vila Flor, Carrazeda de Ansiães e todas as localidades do distrito de Bragança. Preço de instalação: 100-200€ (sem IVA, sem equipamento). Incluímos inspeção e teste de segurança.'},
  {
  question: 'Qual o canalizador mais perto de Mogadouro?',
  answer: 'A Norte Reparos é o canalizador profissional mais próximo de Mogadouro, com tempo de resposta rápido. Cobrimos Mogadouro e todas as suas freguesias. Serviço disponível Atendimento 24h/7d com sem compromisso.'},
@@ -36,16 +36,16 @@ function FAQLocal() {
  answer: 'Sim, a Eletricista Profissional disponibiliza eletricista com experiência em Mirandela todos os dias da semana, incluindo sábados, domingos e feriados. O nosso serviço de urgência funciona Atendimento 24h/7d. Tempo de chegada a Mirandela: a confirmar por telefone.'},
  {
  question: 'Quanto custa um eletricista em Bragança?',
- answer: 'O preço de um eletricista em Bragança varia conforme o serviço: diagnóstico (80-120€), arranjo urgente (150-210€), substituição de quadro elétrico 12 módulos (370-650€), certificação elétrica (150-300€). Todos os preços sem IVA. Sem compromisso e sem compromisso.'},
+ answer: 'O preço de um eletricista em Bragança varia conforme o serviço: diagnóstico (80-120€), arranjo urgente (150-210€), substituição de quadro elétrico 12 módulos (370-650€), inspeção elétrica (150-300€). Todos os preços sem IVA. Sem compromisso e sem compromisso.'},
  {
- question: 'Fazem certificação elétrica na zona de Bragança?',
+ question: 'Fazem inspeção elétrica na zona de Bragança?',
  answer: 'Sim, fazemos inspeção elétrica para venda de imóveis, arrendamento e instalações novas na zona de Bragança e emitimos relatório técnico. Prazo: 3-5 dias úteis. Preço: a partir de 150€ (sem IVA).'},
  {
  question: 'Há eletricista de urgência em Miranda do Douro?',
  answer: 'Sim, prestamos serviço de eletricidade de urgência em Miranda do Douro e toda a zona raiana. Tempo de chegada: confirmamos por telefone. Disponível Atendimento 24h/7d para emergências como curtos-circuitos, falhas de energia ou situações de perigo. Ligue 932 321 892.'},
  {
  question: 'Instalam quadros elétricos em Vila Flor e Torre de Moncorvo?',
- answer: 'Sim, fazemos substituição e modernização de quadros elétricos em Vila Flor, Torre de Moncorvo e todas as localidades do distrito de Bragança. Preço: 370-650€ para quadro 12 módulos (sem IVA). Inclui quadro novo, disjuntores diferenciais, instalação completa e certificação.'},
+ answer: 'Sim, fazemos substituição e modernização de quadros elétricos em Vila Flor, Torre de Moncorvo e todas as localidades do distrito de Bragança. Preço: 370-650€ para quadro 12 módulos (sem IVA). Inclui quadro novo, disjuntores diferenciais, instalação completa e relatório técnico.'},
  {
  question: 'Qual o eletricista mais perto de Mogadouro?',
  answer: 'A Eletricista Profissional é o eletricista com experiência mais próximo de Mogadouro, com tempo de resposta rápido. Cobrimos Mogadouro e todas as suas freguesias. Serviço disponível Atendimento 24h/7d com sem compromisso.'},
