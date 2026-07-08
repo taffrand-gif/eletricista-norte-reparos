@@ -683,7 +683,7 @@ A certificação elétrica é um documento essencial que garante a segurança da
 
 A **Eletricista Profissional** tem técnicos com formação adequada prontos para inspecionar a sua instalação elétrica em Bragança e arredores. Processo rápido, preços transparentes e relatório técnico detalhado.
 
-**Agende a sua certificação: 932 321 892**
+**Agende a sua inspeção elétrica: 932 321 892**
 `
  },
  {

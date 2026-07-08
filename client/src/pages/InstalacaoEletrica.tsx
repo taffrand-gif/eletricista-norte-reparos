@@ -97,7 +97,7 @@ export default function InstalacaoEletrica() {
  </h1>
  <p className="text-xl mb-8 max-w-3xl">
  Instalação elétrica completa para residências, comércios e indústrias. 
- Desde o quadro principal até às tomadas finais, com certificação garantida.
+ Desde o quadro principal até às tomadas finais, com relatório técnico detalhado.
  </p>
  <div className="flex flex-col sm:flex-row gap-4">
  <a
@@ -140,7 +140,7 @@ export default function InstalacaoEletrica() {
  <li><strong>Cabeamento:</strong> Passagem de cabos por toda a propriedade</li>
  <li><strong>Pontos elétricos:</strong> Instalação de tomadas, interruptores e pontos de luz</li>
  <li><strong>Iluminação:</strong> Montagem de sistemas de iluminação interior/exterior</li>
- <li><strong>Testes e certificação:</strong> Verificação de segurança e emissão de certificado</li>
+ <li><strong>Testes e relatório técnico:</strong> Verificação de segurança e emissão de relatório técnico</li>
  </ol>
  
  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Componentes da Instalação</h3>

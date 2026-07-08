@@ -71,7 +71,7 @@ export const SERVICES: Service[] = [
  },
  seo: {
  metaTitle: 'Instalação Elétrica Bragança | Certificada | Eletricista Profissional',
- metaDescription: 'Instalação elétrica completa em Bragança. Quadros, tomadas, iluminação. certificação elétrica incluída. Garantia 5 anos. Desde 150€. Ligue 932 321 892!',
+ metaDescription: 'Instalação elétrica completa em Bragança. Quadros, tomadas, iluminação. relatório técnico incluído. Garantia 5 anos. Desde 150€. Ligue 932 321 892!',
  keywords: ['instalação elétrica bragança', 'eletricista bragança', 'certificação elétrica', 'quadro elétrico']
  }
  },

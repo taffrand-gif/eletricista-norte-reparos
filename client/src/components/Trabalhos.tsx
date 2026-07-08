@@ -55,7 +55,7 @@ function Trabalhos() {
  {
  title: 'certificação elétrica para Venda',
  location: 'Mirandela',
- description: 'Inspeção completa, correção de anomalias e emissão de certificado elétrico para venda de imóvel.',
+ description: 'Inspeção completa, correção de anomalias e emissão de relatório técnico elétrico para venda de imóvel.',
  image: '/images-optimized/services/service-certificacao.jpg'},
  {
  title: 'Iluminação LED Residencial',

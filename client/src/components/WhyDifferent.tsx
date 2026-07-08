@@ -24,7 +24,7 @@ function WhyDifferent() {
  icon: '📜',
  title: 'Sem Orçamento por escrito',
  others: 'Instalação sem certificação legal',
- us: 'certificação elétrica incluída sempre',
+ us: 'relatório técnico incluído sempre',
  value: 'Economiza €150 (aceite seguradora)'},
  {
  icon: '🔥',
@@ -86,7 +86,7 @@ function WhyDifferent() {
  </h2>
  <p className="text-xl text-gray-600 max-w-3xl mx-auto">
  Já teve estes problemas? Nós resolvemos de forma DIFERENTE.
- Por isso damos garantias e certificação elétrica que outros não dão.
+ Por isso damos garantias e relatório técnico detalhado que outros não dão.
  </p>
  </div>
  {/* Problems Grid */}
@@ -144,7 +144,7 @@ function WhyDifferent() {
  </h3>
  <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
  Se o problema voltar em 12 meses, voltamos GRATUITAMENTE.
- certificação elétrica incluída. Conforme legislação portuguesa.
+ relatório técnico incluído. Conforme legislação portuguesa.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a

@@ -39,7 +39,7 @@ function FAQLocal() {
  answer: 'O preço de um eletricista em Bragança varia conforme o serviço: diagnóstico (80-120€), arranjo urgente (150-210€), substituição de quadro elétrico 12 módulos (370-650€), certificação elétrica (150-300€). Todos os preços sem IVA. Sem compromisso e sem compromisso.'},
  {
  question: 'Fazem certificação elétrica na zona de Bragança?',
- answer: 'Sim, fazemos certificação elétrica para venda de imóveis, arrendamento e instalações novas na zona de Bragança. Fazemos certificação elétrica para venda de imóveis, arrendamento e instalações novas. Prazo: 3-5 dias úteis. Preço: a partir de 150€ (sem IVA). Tratamos de toda a documentação e submissão na plataforma.'},
+ answer: 'Sim, fazemos inspeção elétrica para venda de imóveis, arrendamento e instalações novas na zona de Bragança e emitimos relatório técnico. Prazo: 3-5 dias úteis. Preço: a partir de 150€ (sem IVA).'},
  {
  question: 'Há eletricista de urgência em Miranda do Douro?',
  answer: 'Sim, prestamos serviço de eletricidade de urgência em Miranda do Douro e toda a zona raiana. Tempo de chegada: confirmamos por telefone. Disponível Atendimento 24h/7d para emergências como curtos-circuitos, falhas de energia ou situações de perigo. Ligue 932 321 892.'},

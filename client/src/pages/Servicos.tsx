@@ -51,7 +51,7 @@ export default function Servicos() {
  },
  {
  title: 'Certificação Elétrica ',
- description: 'Inspeção e certificação elétrica obrigatória para venda e arrendamento de imóveis. Emissão de certificado válido e registado, cumprindo todas as exigências legais.',
+ description: 'Inspeção e certificação elétrica obrigatória para venda e arrendamento de imóveis. Relatório técnico detalhado da instalação, conforme todas as exigências legais.',
  features: [
  'Inspeção completa da instalação elétrica',
  'Testes de segurança e funcionamento',

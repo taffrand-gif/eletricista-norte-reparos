@@ -31,7 +31,7 @@ export function FAQSchema({ faqs }: FAQSchemaProps) {
 export const eletricistaFAQs: FAQ[] = [
  {
  question: "Quanto custa reparar um quadro elétrico em Bragança?",
- answer: "O preço médio para reparar um quadro elétrico em Bragança é de €100. Inclui deslocação, diagnóstico e reparação. certificação elétrica incluída. Garantia 12 meses."
+ answer: "O preço médio para reparar um quadro elétrico em Bragança é de €100. Inclui deslocação, diagnóstico e reparação. relatório técnico incluído. Garantia 12 meses."
  },
  {
  question: "Quanto tempo demora a chegar em caso de urgência elétrica?",
