@@ -259,10 +259,7 @@ a[href^="https://wa.me"]:active {
  PERFORMANCE — Lazy loading et optimisations
  ============================================ */
 
-/* Optimisation du rendu des images */
-img {
- content-visibility: auto;
-}
+/* Optimisation du rendu des images : règle img vidée (CLS intermittent M7/M10, mesure Lighthouse 1.06) */
 
 /* Smooth scroll natif */
 html {
