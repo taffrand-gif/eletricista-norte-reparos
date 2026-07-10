@@ -1,102 +1,74 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'wouter';
+import AnswerFirstFAQSchema from '@/components/SEO/AnswerFirstFAQSchema';
 
 export default function QuantoCustaEletricistaHoraPortugal() {
-  return (
-    <>
-      <Helmet>
-        <title>Quanto Custa um Eletricista à Hora em Portugal em 2026? | Norte Reparos</title>
-        <meta
-          name="description"
-          content="Quanto custa um eletricista à hora em Portugal em 2026? Tabela Norte Reparos: 70€/h em horário normal, +50% noite/sábado/domingo/feriado. Z1-Z6 deslocação. Orçamento por escrito antes de qualquer intervenção."
-        />
-        <link rel="canonical" href="https://eletricista-norte-reparos.pt/blog/quanto-custa-eletricista-hora-portugal" />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "Quanto custa um eletricista à hora em Portugal em 2026?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Em Portugal, o tarifário Norte Reparos para eletricista é 70€/hora em horário comercial (segunda a sexta, 9h-18h), com majoração de +50% aplicada ao preço hora e à deslocação no período noturno (18h-8h), sábado, domingo e feriados. O preço final é sempre calculado como: deslocação segundo a zona (Z1 15€ até Z6 65€) + horas de mão de obra × tarifário hora aplicável. Orçamento por escrito antes de qualquer intervenção."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Qual é a diferença de preço entre horário normal e urgência 24h?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Norte Reparos aplica majoração de +50% sobre o tarifário hora (70€/h → 105€/h) e sobre a deslocação da zona no período noturno (entre as 18h e as 8h), aos sábados, domingos e feriados. Não há tarifa diferente publicada para 'urgência' — é o mesmo tarifário com a majoração legal aplicada às horas e ao custo de deslocação."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "O que está incluído no preço à hora de um eletricista?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "O tarifário hora cobre a mão de obra do técnico (deslocação dentro do horário combinado, diagnóstico, execução do trabalho). Os materiais (cabos, disjuntores, tomadas, quadro, etc.) são cobrados à parte, especificados no orçamento por escrito. A deslocação é cobrada à parte, segundo a zona oficial (Z1 15€, Z2 25€, Z3 35€, Z4 45€, Z5 55€, Z6 65€)."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Como funciona o pagamento em Trás-os-Montes?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "A Norte Reparos emite fatura com NIF após cada intervenção. O pagamento é combinado no orçamento por escrito (multibanco, MBWAY, numerário ou transferência). Não se cobra nada antes do orçamento estar aprovado por escrito pelo cliente."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Posso pedir um orçamento sem compromisso?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Sim. Falamos sempre consigo antes de qualquer deslocação e apresentamos um orçamento por escrito detalhado (descrição do trabalho, materiais previstos, mão de obra em horas × tarifa hora, deslocação pela zona). Só avançamos depois da sua aprovação por escrito. Esta é a nossa forma de trabalhar — sem surpresas."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Quanto cobrar um eletricista por uma instalação elétrica completa?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "O custo de uma instalação elétrica completa depende da área, do número de pontos (tomadas, iluminação, quadros) e do tipo de certificação exigida. Fornecemos sempre um orçamento por escrito detalhado após visita técnica à sua casa. Trabalhamos em Trás-os-Montes com o mesmo tarifário hora de 70€/h qualquer que seja a dimensão do projeto."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Os concorrentes costumam publicar preços de eletricista?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Na maioria dos casos, não. Vários sites concorrentes em Portugal remetem para 'peça orçamento' ou 'faça pedido de orçamento' sem publicar um valor hora. A Norte Reparos publica o tarifário hora (70€/h, com majoração de +50% em período noturno, fim de semana e feriados) precisamente para lhe permitir comparar antes de pedir orçamento."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Cobertura geográfica da Norte Reparos em Trás-os-Montes?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Cobramos ~34 concelhos num raio de cerca de 130 km a partir de Macedo de Cavaleiros: Bragança, Mirandela, Macedo de Cavaleiros, Vinhais, Mogadouro, Miranda do Douro, Freixo de Espada à Cinta, Alfândega da Fé, Vila Flor, Carrazeda de Ansiães, Torre de Moncorvo, Vila Nova de Foz Coa e arredores. Para aldeias mais afastadas (Z5-Z6), os tempos de deslocação podem exigir agendamento prévio."
-                }
-              }
-            ]
-          })}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "Quanto Custa um Eletricista à Hora em Portugal em 2026?",
-            "description": "Tabela Norte Reparos 2026: 70€/h eletricista, majoração +50% noite/WE/feriado, deslocação Z1-Z6 de 15€ a 65€. Orçamento por escrito antes de qualquer intervenção.",
-            "author": { "@type": "Organization", "name": "Norte Reparos" },
-            "publisher": { "@type": "Organization", "name": "Norte Reparos", "url": "https://eletricista-norte-reparos.pt" },
-            "datePublished": "2026-07-10",
-            "dateModified": "2026-07-10",
-            "url": "https://eletricista-norte-reparos.pt/blog/quanto-custa-eletricista-hora-portugal",
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://eletricista-norte-reparos.pt/blog/quanto-custa-eletricista-hora-portugal" }
-          })}
-        </script>
+ // GEO1 — FAQ + grille verrouillée R12 (Z1-Z6 + 70€/h + +50% nuit/WE/feriado)
+ // Aucune fabrication prix : tout est aligné sur la grille officielle §12
+ const pageUrl = 'https://eletricista-norte-reparos.pt/blog/quanto-custa-eletricista-hora-portugal';
+ const faqs = [
+ {
+ question: 'Quanto custa um eletricista à hora em Portugal em 2026?',
+ answer:
+ 'Em Portugal, o tarifário Norte Reparos para eletricista é 70€/hora em horário comercial (segunda a sexta, 9h-18h), com majoração de +50% aplicada ao preço hora e à deslocação no período noturno (20h-8h), sábado, domingo e feriados nacionais. O preço final é sempre calculado como: deslocação segundo a zona (Z1 15€ até Z6 65€) + horas de mão de obra × tarifário hora aplicável. Orçamento por escrito antes de qualquer intervenção.',
+ },
+ {
+ question: 'Qual é a diferença de preço entre horário normal e urgência?',
+ answer:
+ 'Norte Reparos aplica majoração de +50% sobre o tarifário hora (70€/h → 105€/h) e sobre a deslocação da zona no período noturno (entre as 20h e as 8h), aos sábados, domingos e feriados nacionais. Não há tarifa diferente publicada para "urgência" — é o mesmo tarifário com a majoração legal aplicada às horas e ao custo de deslocação.',
+ },
+ {
+ question: 'O que está incluído no preço à hora de um eletricista?',
+ answer:
+ 'O tarifário hora cobre a mão de obra do técnico (deslocação dentro do horário combinado, diagnóstico, execução do trabalho). Os materiais (cabos, disjuntores, tomadas, quadro, etc.) são cobrados à parte, especificados no orçamento por escrito. A deslocação é cobrada à parte, segundo a zona oficial (Z1 15€, Z2 25€, Z3 35€, Z4 45€, Z5 55€, Z6 65€).',
+ },
+ {
+ question: 'Como funciona o pagamento em Trás-os-Montes?',
+ answer:
+ 'A Norte Reparos emite fatura com NIF após cada intervenção. O pagamento é combinado no orçamento por escrito (multibanco, MBWAY, numerário ou transferência). Não se cobra nada antes do orçamento estar aprovado por escrito pelo cliente.',
+ },
+ {
+ question: 'Posso pedir um orçamento sem compromisso?',
+ answer:
+ 'Sim. Falamos sempre consigo antes de qualquer deslocação e apresentamos um orçamento por escrito detalhado (descrição do trabalho, materiais previstos, mão de obra em horas × tarifa hora, deslocação pela zona). Só avançamos depois da sua aprovação por escrito. Esta é a nossa forma de trabalhar — sem surpresas.',
+ },
+ {
+ question: 'Cobertura geográfica da Norte Reparos em Trás-os-Montes?',
+ answer:
+ 'Cobrimos os concelhos num raio de cerca de 130 km a partir de Macedo de Cavaleiros: Bragança, Mirandela, Macedo de Cavaleiros, Vinhais, Mogadouro, Miranda do Douro, Freixo de Espada à Cinta, Alfândega da Fé, Vila Flor, Carrazeda de Ansiães, Torre de Moncorvo, Vila Nova de Foz Coa, Chaves, Vila Real e concelhos envolventes. Para saber a sua zona, indique-nos o nome da sua localidade ao pedir orçamento.',
+ },
+ ];
+ return (
+ <>
+ <AnswerFirstFAQSchema
+ pageTitle="Quanto Custa um Eletricista à Hora em Portugal em 2026?"
+ pageUrl={pageUrl}
+ faqs={faqs}
+ phone="932 321 892"
+ businessName="Norte Reparos"
+ domain="eletricista-norte-reparos.pt"
+ />
+ <Helmet>
+ <title>Quanto Custa um Eletricista à Hora em Portugal em 2026? | Norte Reparos</title>
+ <meta
+ name="description"
+ content="Quanto custa um eletricista à hora em Portugal em 2026? Tabela Norte Reparos: 70€/h em horário normal, +50% noite/sábado/domingo/feriado. Z1-Z6 deslocação. Orçamento por escrito antes de qualquer intervenção."
+ />
+ <link rel="canonical" href={pageUrl} />
+  <script type="application/ld+json">
+  {JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Quanto Custa um Eletricista à Hora em Portugal em 2026?",
+  "description": "Tabela Norte Reparos 2026: 70€/h eletricista, majoração +50% noite/WE/feriado, deslocação Z1-Z6 de 15€ a 65€. Orçamento por escrito antes de qualquer intervenção.",
+  "author": { "@type": "Organization", "name": "Norte Reparos" },
+  "publisher": { "@type": "Organization", "name": "Norte Reparos", "url": "https://eletricista-norte-reparos.pt" },
+  "datePublished": "2026-07-10",
+  "dateModified": "2026-07-10",
+  "url": pageUrl,
+  "mainEntityOfPage": { "@type": "WebPage", "@id": pageUrl }
+  })}
+  </script>
       </Helmet>
       <article className="max-w-4xl mx-auto px-4 py-12">
         <div className="mb-8">
