@@ -698,7 +698,7 @@
   </url>
   <url>
     <loc>https://eletricista-norte-reparos.pt/blog/como-instalar-interruptor</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-07-10</lastmod>
   </url>
   <url>
     <loc>https://eletricista-norte-reparos.pt/blog/como-instalar-lampada-inteligente</loc>
@@ -794,7 +794,7 @@
   </url>
   <url>
     <loc>https://eletricista-norte-reparos.pt/blog/como-ligar-interruptor-duplo</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-07-10</lastmod>
   </url>
   <url>
     <loc>https://eletricista-norte-reparos.pt/blog/como-mudar-potencia-contratada</loc>
@@ -1238,7 +1238,7 @@
   </url>
   <url>
     <loc>https://eletricista-norte-reparos.pt/blog/fio-derretido-causas-perigos</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-07-10</lastmod>
   </url>
   <url>
     <loc>https://eletricista-norte-reparos.pt/blog/fio-neutro-partido-perigos</loc>
@@ -1262,7 +1262,7 @@
   </url>
   <url>
     <loc>https://eletricista-norte-reparos.pt/blog/guia-cores-fios-eletricos</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-07-10</lastmod>
   </url>
   <url>
     <loc>https://eletricista-norte-reparos.pt/blog/guia-protecao-diferencial</loc>
@@ -2006,7 +2006,7 @@
   </url>
   <url>
     <loc>https://eletricista-norte-reparos.pt/blog/interruptor-aquece-causas-perigos</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-07-10</lastmod>
   </url>
   <url>
     <loc>https://eletricista-norte-reparos.pt/blog/interruptor-click-luz-nao-acende</loc>
@@ -3482,7 +3482,7 @@
   </url>
   <url>
     <loc>https://eletricista-norte-reparos.pt/blog/tomadas-e-interruptores-quando-substituir</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-07-10</lastmod>
   </url>
   <url>
     <loc>https://eletricista-norte-reparos.pt/blog/tomadas-numeros-ideais</loc>
@@ -15671,5 +15671,29 @@
   <url>
     <loc>https://eletricista-norte-reparos.pt/zonas-e-precos</loc>
     <lastmod>2026-07-03</lastmod>
+  </url>
+  <url>
+    <loc>https://eletricista-norte-reparos.pt/blog/fase-e-neutro-cores</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://eletricista-norte-reparos.pt/blog/como-ligar-interruptor-simples</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://eletricista-norte-reparos.pt/blog/como-ligar-comutador-escada</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://eletricista-norte-reparos.pt/blog/como-ligar-interruptor-e-tomada</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
