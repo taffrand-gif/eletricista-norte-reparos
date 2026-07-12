@@ -219,6 +219,7 @@ Voir section dédiée. Documentation dans HISTORIQUE.
 ---
 
 ## 🔄 HISTORIQUE
+| 2026-07-12 | Hermes (kanban t_6571aa09) | **Maillage w2a propre ENR post-w2b** | Ajout de 3 liens contextuels extensionless dans le bloc « Artigos Relacionados » de 9 blogs, soit 27 liens. Branche neuve depuis main frais, lock-check des PRs ouvertes = aucune vague concurrente. | Régénération sérialisée après fermeture de la première w2a ; cibles 200 direct, présentes au sitemap, sans noindex et hors blacklist doorway. | 9 fichiers blog + SEO_PLAN ; 0 merge main. | ⏳ PR review |
 
 > **Format OBLIGATOIRE** : `| DATE | AGENT | TÂCHE | ACTION | JUSTIFICATION | RÉSULTAT | STATUT |`
 | 2026-07-12 | Hermes (kanban pilote anti-doorway) | **Différenciation 10 pages money-intent ENR** | Réécriture éditoriale profonde de 10 pages quadro/curto-circuito : H1 et angles distincts, contexte local factuel, procédure technique, FAQ, tarifs source-of-truth et 2-3 liens métier/page. Ajout des scripts reproductibles `tools/audit-money-pages-pilot.py` et `tools/verify-money-pages-pilot.py` + rapport `_audit/ENR_MONEY_PAGES_PILOT_GATE_2026-07-12.md`. | Baseline GSC : pages CRAWLED_NOT_INDEXED et vocabulaire partagé élevé ; pilote avant toute réplication et sans créer de nouvelles pages. | 45/45 paires sous 50% (max 40,1%); 10/10 H1 uniques et JSON-LD valides; prix rechargés de `zonas-data.json` (Macedo Z1/15€, Mirandela Z2/25€, Mogadouro Z3/35€, Alijó+Vila Real Z4/45€, Régua Z5/55€); 22/22 hrefs HTTP 200 direct; doctrine ciblée 0 hit. | ⏳ PR review — ne pas merger |
