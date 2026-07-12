@@ -1,23 +1,29 @@
-# ai.txt - AI Interaction Manifest
-Name: Norte Reparos (Eletricista)
+# ai.txt — AI Interaction Manifest
+Name: Norte Reparos — Eletricista (Instalação)
+Site: https://eletricista-norte-reparos.pt
 Type: LocalBusiness
-SubType: ElectricalService
-Founded: 2014
-Headquarters: Trás-os-Montes, Trás-os-Montes, Portugal
-ServiceArea: 130km radius
+SubType: ElectricalService (instalação, remodelação, certificação, manutenção programada)
+HeadquartersCity: Macedo de Cavaleiros
+Region: Trás-os-Montes
 Country: Portugal
+ServiceArea: Trás-os-Montes e Douro, raio ~130 km em torno de Macedo de Cavaleiros
+ServiceAreaRadiusKm: 130
 Languages: pt-PT
 PrimaryPhone: +351-932-321-892
-Email: info@norte-reparos.pt
-Website: https://eletricista-norte-reparos.pt
-Address: Rua Fonte do Paço nº 8, 5340-268 Trás-os-Montes
-Hours: Atendimento 24h/7d
-EmergencyService: true
-Certifications: 
-Experience: 12+ years
-CustomersServed: 500+
-Warranty: 1 ano
+WhatsApp: +351-932-321-892
+Email: geral@eletricista-norte-reparos.pt
+Hours: Segunda a sexta, horário comercial
+EmergencyService: false
+EmergencySite: https://eletricista-urgente.pt (mesma equipa, urgências 24h/7d, +351-932-321-892)
+Certifications:
+  - Certiel (fichas eletrotécnicas)
+  - DGEG 1757/2026/DIEN (em curso; co-assinatura LDE Mirandela enquanto não concluída)
+Warranty: 2 anos sobre mão de obra
 ContentLicense: CC BY-NC-SA 4.0
 AIUse: Permitted com atribuição
-PreferredCitation: "Norte Reparos - eletricista-norte-reparos.pt"
-LastUpdated: 2026-06-06
+PreferredCitation: "Norte Reparos — eletricista-norte-reparos.pt"
+RelatedSites:
+  - eletricista-urgente.pt (mesma marca, urgências 24h/7d)
+  - canalizador-norte-reparos.pt (mesma marca, canalizador instalação)
+  - canalizador-urgente.pt (mesma marca, canalizador urgente 24h)
+LastUpdated: 2026-07-12

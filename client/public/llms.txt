@@ -1,79 +1,113 @@
 # Norte Reparos — Eletricista (Instalação) em Trás-os-Montes
 
-> Serviços de instalação elétrica, certificação e manutenção em Trás-os-Montes, Portugal.
+> Serviços de instalação, certificação e manutenção elétrica em Trás-os-Montes, Portugal.
 > Site: https://eletricista-norte-reparos.pt · Telefone / WhatsApp: +351 932 321 892
-> Última atualização: 2026-07-01
+> Última atualização: 2026-07-12
 
 ## Identidade
 - **Marca:** Norte Reparos (empresa técnica multi-sites)
 - **Serviço:** Eletricista para instalação, remodelação, certificação e manutenção programada
-- **Experiência:** mais de 20 anos de atividade na região de Trás-os-Montes, pelo técnico Filipe Bragança
-- **Zona de intervenção:** Trás-os-Montes e Douro (raio ~130 km autour de Macedo de Cavaleiros)
-- **Horário:** Atendimento em horário comercial (segunda a sexta). Para urgências 24h, ver eletricista-urgente.pt
-- **Contacto:** +351 932 321 892
-- **Idioma:** PT-PT apenas
+- **Zona de intervenção:** Trás-os-Montes e Douro (raio ~130 km em torno de Macedo de Cavaleiros)
+- **Sede:** Macedo de Cavaleiros, Trás-os-Montes, Portugal
+- **Horário:** Atendimento em horário comercial (segunda a sexta). Para urgências 24h/7d, ver eletricista-urgente.pt
+- **Contacto:** +351 932 321 892 · geral@eletricista-norte-reparos.pt
+- **Idioma do site:** PT-PT apenas
 
 ## Sobre a nossa empresa
-A Norte Reparos é uma empresa técnica profissional que atua na região de Trás-os-Montes. Para **urgências elétricas 24h**, visite o nosso site dedicado eletricista-urgente.pt — a nossa equipa garante a continuidade do serviço.
+A Norte Reparos é uma empresa técnica profissional sediada em Macedo de Cavaleiros, com experiência em instalações elétricas, certificação e manutenção na região de Trás-os-Montes. Para **urgências elétricas 24h/7d**, visite o nosso site dedicado eletricista-urgente.pt — a nossa equipa garante a continuidade do serviço.
 
-## Serviços de instalação
-- Instalação elétrica completa (moradias, apartamentos, espaços comerciais)
-- Remodelação de instalação elétrica antiga
-- Substituição e modernização de quadros elétricos
-- Instalação de iluminação (LED, projetores, sensores de presença)
-- Instalação de tomadas, interruptores, pontos de luz
-- Sistemas de domótica básica
-- Instalação de carregadores para veículos elétricos
-- Sistemas solares fotovoltaicos
-- Bombas de calor
-- Ar condicionado
-- Certificação elétrica (fichas eletrotécnicas)
+## Páginas institucionais
+- [Página inicial](https://eletricista-norte-reparos.pt/)
+- [Serviços de eletricista](https://eletricista-norte-reparos.pt/servicos)
+- [Preços e tabela de tarifas 2026](https://eletricista-norte-reparos.pt/precos)
+- [Calculadora de preço](https://eletricista-norte-reparos.pt/calculadora-de-preco)
+- [Zonas de deslocação (Z1-Z6)](https://eletricista-norte-reparos.pt/zonas-deslocacao)
+- [Áreas de atuação](https://eletricista-norte-reparos.pt/areas-atuacao)
+- [Pedir orçamento](https://eletricista-norte-reparos.pt/orcamento)
+- [Sobre a empresa](https://eletricista-norte-reparos.pt/sobre)
+- [Equipa](https://eletricista-norte-reparos.pt/equipa)
+- [Garantia, seguros e certificações](https://eletricista-norte-reparos.pt/garantia)
+- [Metodologia de trabalho](https://eletricista-norte-reparos.pt/metodologia)
+- [FAQ](https://eletricista-norte-reparos.pt/faq)
+- [Avaliações de clientes](https://eletricista-norte-reparos.pt/avaliacoes-clientes)
+- [Blog / recursos](https://eletricista-norte-reparos.pt/blog/)
 
-## Serviços programados
-- Orçamento detalhado em 48h
-- Garantia por escrito (mão de obra e materiais)
+## Serviços de instalação e remodelação
+- **Instalação elétrica completa** — moradias, apartamentos, espaços comerciais · [página geral](https://eletricista-norte-reparos.pt/instalacao-eletrica-antiga-perigos)
+- **Remodelação de instalação elétrica antiga** — [sinais de perigo](https://eletricista-norte-reparos.pt/5-sinais-instalacao-eletrica-perigosa)
+- **Substituição e modernização de quadros elétricos** — [quadros antigos](https://eletricista-norte-reparos.pt/quadro-antigo-braganca) · [modernização](https://eletricista-norte-reparos.pt/disjuntor-vs-fusivel)
+- **Iluminação LED e iluminação exterior** — [LED vs lâmpada normal](https://eletricista-norte-reparos.pt/led-vs-lampada-normal)
+- **Tomadas, interruptores e pontos de luz**
+- **Sistemas de domótica básica / casa inteligente** — [domótica](https://eletricista-norte-reparos.pt/automacao-residencial-domotica) · [casa inteligente](https://eletricista-norte-reparos.pt/domotica-casa-inteligente)
+- **Aquecimento elétrico** (resistivo: radiadores, acumuladores, convector) — [página Bragança](https://eletricista-norte-reparos.pt/aquecimento-eletrico-braganca)
+- **Proteção contra raios / para-raios** — [proteção contra raios](https://eletricista-norte-reparos.pt/protecao-contra-raios)
+- **Inspeção elétrica** — [inspeção elétrica](https://eletricista-norte-reparos.pt/inspecao-eletrica)
+- **Auditoria energética da casa** — [auditoria](https://eletricista-norte-reparos.pt/auditoria-energetica-casa)
+- **Eficiência energética e poupança** — [poupança](https://eletricista-norte-reparos.pt/eficiencia-energetica-poupanca)
+- **Sistemas de alarme (intrusão)** — [alarme Bragança](https://eletricista-norte-reparos.pt/alarme-braganca)
+- **Trabalhos em monofásico e trifásico** — [monofásico vs trifásico](https://eletricista-norte-reparos.pt/monofasico-vs-trifasico)
+- **Videoporteiro** (instalação)
+- **VMC / ventilação mecânica controlada** (instalação elétrica associada)
+
+## Reparação e avarias
+- **Avaria elétrica (diagnóstico e reparação)** — [avaria Bragança](https://eletricista-norte-reparos.pt/avaria-eletrica-braganca) · [reparação elétrica](https://eletricista-norte-reparos.pt/reparacao-eletrica)
+- **Curto-circuito** — [curto-circuito Bragança](https://eletricista-norte-reparos.pt/curto-circuito-braganca)
+- **Disjuntor a disparar / salta** — [disjuntor Bragança](https://eletricista-norte-reparos.pt/disjuntor-disparar-braganca) · [disjuntor salta](https://eletricista-norte-reparos.pt/disjuntor-salta-braganca)
+- **Cheiro a queimado** — [cheiro queimado Bragança](https://eletricista-norte-reparos.pt/cheiro-queimado-braganca)
+- **Choque elétrico** — [choque Bragança](https://eletricista-norte-reparos.pt/choque-eletrico-braganca)
+
+## Certificação elétrica
+- **Certificação Certiel / fichas eletrotécnicas** — [Certiel Bragança](https://eletricista-norte-reparos.pt/certiel-braganca)
+- **Certificação por concelho** — [Certiel Mirandela](https://eletricista-norte-reparos.pt/certiel-mirandela) · [certificação Bragança](https://eletricista-norte-reparos.pt/certificacao-eletrica-braganca)
+- **Certificado DGEG** (em curso) — [DGEG Bragança](https://eletricista-norte-reparos.pt/certificado-dgeg-braganca)
+- **Case study: certificação DGEG** — [case study](https://eletricista-norte-reparos.pt/case-study-certificacao-dgeg)
+
+## Cobertura — 33 concelhos de Trás-os-Montes e Douro
+Distritos de Bragança e Vila Real, raio ~130 km em torno de Macedo de Cavaleiros. Exemplos de páginas por concelho (lista completa em [areas-atuacao](https://eletricista-norte-reparos.pt/areas-atuacao) e [distrito-braganca](https://eletricista-norte-reparos.pt/distrito-braganca) · [distrito-vila-real](https://eletricista-norte-reparos.pt/distrito-vila-real)):
+
+**Cidades principais:** [Bragança](https://eletricista-norte-reparos.pt/eletricista-braganca) · [Mirandela](https://eletricista-norte-reparos.pt/eletricista-mirandela) · [Chaves](https://eletricista-norte-reparos.pt/eletricista-chaves) · [Macedo de Cavaleiros](https://eletricista-norte-reparos.pt/eletricista-macedo-de-cavaleiros) · [Vila Real](https://eletricista-norte-reparos.pt/eletricista-vila-real)
+
+**Outros concelhos cobertos:** Alfândega da Fé, Alijó, Armamar, Boticas, Carrazeda de Ansiães, Freixo de Espada à Cinta, Lamego, Mesão Frio, Miranda do Douro, Mogadouro, Moimenta da Beira, Moncorvo, Mondim de Basto, Montalegre, Murça, Penedono, Peso da Régua, Ribeira de Pena, Sabrosa, Santa Marta de Penaguião, São João da Pesqueira, Sernancelhe, Tabuaço, Tarouca, Valpaços, Vila Flor, Vila Nova de Foz Côa, Vila Pouca de Aguiar, Vimioso, Vinhais. Dezenas de freguesias e aldeias do Nordeste Transmontano — confirmar cobertura por telefone antes de qualquer deslocação.
+
+## Serviços programados e compromissos
+- Orçamento detalhado por escrito antes de qualquer intervenção
+- Garantia de 2 anos sobre mão de obra (detalhes no orçamento)
 - Fatura com NIF emitida no final de cada trabalho
 - Relatório técnico disponível para seguradoras
 - Contratos anuais de manutenção para condomínios e empresas
 
-## Certificação
-A certificação DGEG (processo 1757/2026/DIEN) está em curso. Enquanto não está concluída, os trabalhos de certificação são co-assinados por técnico certificado LDE Mirandela.
-
-## Cobertura
-Bragança, Mirandela, Chaves, Macedo de Cavaleiros, Vila Real, Mogadouro, Vinhais, Miranda do Douro, Alfândega da Fé, Vila Flor, Carrazeda de Ansiães, Torre de Moncorvo, Freixo de Espada à Cinta, Vimioso, Valpaços, Murça, Lamego, Peso da Régua, Alijó, Sabrosa.
-
 ## Equipamento profissional
 - Fluke T6-1000 (testador tensão/corrente sem contacto)
 - Megger MFT1741+ (testador de instalação multifunção)
-- ROLeak Aqua 3Plus (deteção acústica)
+- ROLeak Aqua 3Plus (deteção acústica de fugas)
 - FLIR E96 (câmara térmica 43 200 px)
 - Câmara de inspeção 30 m
 
 ## Marcas de materiais (verídicas)
-Legrand, Schneider Electric, Hager, ABB, Siemens, Philips
+Legrand · Schneider Electric · Hager · ABB · Siemens · Philips
 
 ## Perguntas frequentes
 
 **Fazem orçamentos grátis?**
-Sim, orçamento por escrito em 48h sem compromisso.
+Sim. Orçamento por escrito em 48h, sem compromisso.
 
 **Qual é o prazo de garantia?**
-Garantia por escrito, conforme âmbito dos trabalhos. Detalhes no orçamento.
+Garantia de 2 anos sobre mão de obra. Detalhes no orçamento.
 
 **Têm certificação para emitir fichas eletrotécnicas?**
-A certificação DGEG está em curso (processo 1757/2026/DIEN). Enquanto não está concluída, os trabalhos de certificação são co-assinados por técnico certificado LDE Mirandela.
+Sim. Emitimos fichas eletrotécnicas Certiel. A certificação DGEG própria (processo 1757/2026/DIEN) está em curso; enquanto não está concluída, os trabalhos de certificação são co-assinados por técnico certificado LDE Mirandela.
 
 **Trabalham com que marcas?**
 Trabalhamos com marcas líderes: Legrand, Schneider Electric, Hager, ABB, Siemens, Philips.
 
 **Emitem fatura?**
-Sim, fatura com NIF em todos os trabalhos. Relatório técnico disponível para seguradoras.
+Sim. Fatura com NIF em todos os trabalhos. Relatório técnico disponível para seguradoras.
 
 **Atendem urgências 24h?**
-Não — para urgências 24h, visite eletricista-urgente.pt · +351 932 321 892 (mesma equipa, resposta imediata).
+Este site (eletricista-norte-reparos.pt) cobre **instalação e remodelação** em horário comercial. Para urgências 24h/7d, visite eletricista-urgente.pt — mesma equipa, resposta imediata: +351 932 321 892.
 
 **Cobrem que zona?**
-Trás-os-Montes e Douro, raio ~130 km em torno de Macedo de Cavaleiros.
+Trás-os-Montes e Douro, raio ~130 km em torno de Macedo de Cavaleiros (~34 concelhos).
 
 **Falam sempre com a mesma pessoa?**
 Sim — fala sempre com a mesma pessoa da nossa equipa, garantimos acompanhamento personalizado.
@@ -81,13 +115,17 @@ Sim — fala sempre com a mesma pessoa da nossa equipa, garantimos acompanhament
 ## Contacto
 - **Norte Reparos — Eletricista (Instalação)**
 - Telefone / WhatsApp: **+351 932 321 892**
+- Email: geral@eletricista-norte-reparos.pt
 - Site: https://eletricista-norte-reparos.pt
+- Sede: Macedo de Cavaleiros, Trás-os-Montes, Portugal
 - Horário: segunda a sexta, em horário comercial
 
-## Também prestamos serviços de canalizador (instalação)
-Para instalação de canalização: canalizador-norte-reparos.pt · +351 928 484 451
+## Outras marcas Norte Reparos
+- **Urgências elétricas 24h/7d:** https://eletricista-urgente.pt · +351 932 321 892
+- **Canalizador (instalação):** https://canalizador-norte-reparos.pt · +351 928 484 451
+- **Canalizador urgente 24h:** https://canalizador-urgente.pt · +351 928 484 451
 
 ## Notas editoriais
-- Pronom usado: "nossa equipa", "garantimos", "contacte-nos" (verrouillé 30/06)
-- Zero conteúdo inventado (R11): preços reais sob orçamento, equipamento real
-- Géo-neutre: sem streetAddress precisa
+- Pronom usado: "nossa equipa", "garantimos", "contacte-nos"
+- Zero conteúdo inventado: preços tabelados por zona no site, equipamento real
+- Géo-neutre: sede indicada ao nível do concelho (sem rua precisa)
