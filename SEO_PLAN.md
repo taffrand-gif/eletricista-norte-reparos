@@ -1048,3 +1048,18 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
 - Tout mergé, deploy au premier tick launchd post-quota (gitSource-first).
 
 | 2026-07-09 | Hermes (M10) | **Fix CLS homepage ENR (content-visibility retiré sur img)** | Retrait de la règle `img { content-visibility: auto; }` dans `client/src/index.css` L263-265 (option A safe). Cause confirmée en M7 (4 mesures Lighthouse mobile : CLS 1.06 / 0.00 / 0.287 / 0.00 — intermittent corrélé TBT). Branche `fix/enr-cls-content-visibility` basée sur `origin/main`. Build vert (`✓ built in 3.50s`, exit 0). PR DRAFT #161 ouverte, **STOP MERGE R7**. | CLS réel prouvé M7, intermittent 50%, cause identifiée = skip-render viewport sur img. Option A safe, option B (contain-intrinsic-size) réservée 2e temps. | Témoins : `grep content-visibility` = 0 sur source, bundle CSS = faux positif Tailwind (`transition-property` liste). P1 preload Hero non touché (flag). | ⏳ PR #161 — re-mesure CLS post-deploy requise |
+
+### 13/07 — P1 chirurgical maillage blog → pages urgence différenciées (Hermes t_3d82d6a7)
+- **PR #188 (ENR) + PR #190 (CNR) — DRAFT, STOP MERGE R7** : 4 liens contextuels blog → pages urgence EU/CU différenciées.
+- **Méthode** : pré-checkup via skill `norte-os-internal-linking-vagues` (Pitfall #5 200 + #6 indexabilité + #7 coordination).
+- **Sources blog** (4 fichiers, money-adjacent, non-baseline) :
+  - ENR : `disjuntor-cai-microondas-solucao` (1070 mots) + `tomada-preta-queimada-o-que-fazer` (768 mots)
+  - CNR : `barulho-canos-agua-noite-causa` (960 mots) + `como-desentupir-ralo-duche` (2169 mots)
+- **Destinations différenciées** (validées `_audit/geo-410/keep_geo.txt`) :
+  - EU : `/eletricista-quadro-eletrico-braganca`, `/eletricista-avaria-eletrica-braganca`
+  - CU : `/canalizador-desentupimento-chaves`, `/canalizador-desentupimento-mirandela`
+- **Ancres 100% uniques** (4 ancres distinctes, partial-match naturel).
+- **DoD prouvé** : 4/4 dest curl 200 prod · 0 dans candidat_exp · 0 dans blacklist_doorway · 0 pilote touché · diff minimal (2+/2- par fichier) · 1 lien par blog.
+- **Worktrees isolés** : `fix/p1-blog-money-enr` + `fix/p1-blog-money-cnr` depuis main propre.
+- **Refus Mapping 1** : 4 fichiers cibles initiaux (cheiro-queimado-tomada, disjuntor-a-saltar, cano-rebentado, como-desentupir-sanita) tous en cours d'édition par 8-10 worktrees parallèles (risque conflit Pitfall #7). Re-scopage sur fichiers money-adjacent hors scope = 0 conflit attendu.
+- **Refs** : t_3d82d6a7 (mission B P1), leçon #362 ci-dessous.
