@@ -39,7 +39,7 @@ export default function Mogadouro() {
  "geo": { "@type": "GeoCoordinates", "latitude": "41.3333", "longitude": "-6.7167" },
  "telephone": businessInfo.phone,
  "openingHours": "Mo-Su 00:00-23:59",
- "priceRange": "€€"
+ "priceRange":"€€"
  });
  document.head.appendChild(schemaScript);
  // FAQ Schema

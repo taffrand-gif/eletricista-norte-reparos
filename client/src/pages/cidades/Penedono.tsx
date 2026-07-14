@@ -38,7 +38,7 @@ export default function Penedono() {
  "geo": { "@type": "GeoCoordinates", "latitude": "40.9833", "longitude": "-7.3833" },
  "telephone": businessInfo.phone,
  "openingHours": "Mo-Su 00:00-23:59",
- "priceRange": "€€"
+ "priceRange":"€€"
  });
  document.head.appendChild(schemaScript);
  // FAQ Schema

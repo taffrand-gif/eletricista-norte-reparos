@@ -38,7 +38,7 @@ export default function Alijo() {
  "geo": { "@type": "GeoCoordinates", "latitude": "41.2833", "longitude": "-7.4667" },
  "telephone": businessInfo.phone,
  "openingHours": "Mo-Su 00:00-23:59",
- "priceRange": "€€"
+ "priceRange":"€€"
  });
  document.head.appendChild(schemaScript);
  // FAQ Schema
