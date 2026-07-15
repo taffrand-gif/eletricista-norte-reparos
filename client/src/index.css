@@ -43,8 +43,12 @@
 }
 
 :root {
- /* Brutalisme Numérique Fonctionnel - Design tokens */
- --primary: var(--color-blue-700);
+ /* === Brand tokens — Pilote design ENR (2026-07-13) === */
+ /* Base indigo (énergie · calme · pro) + accent jaune volt (CTA/H1 accents seulement) */
+ --brand-primary: #1A1A3A; /* indigo Norte-OS install élec */
+ --brand-accent: #FFD400; /* jaune volt — jamais sur body text (AA = FAIL sur <18px) */
+ /* Aliasing non-cassant : --primary pointe sur la marque, pas sur Radix blue */
+ --primary: var(--brand-primary);
  --primary-foreground: oklch(1 0 0);
  --sidebar-primary: var(--color-blue-600);
  --sidebar-primary-foreground: oklch(1 0 0);
@@ -80,7 +84,11 @@
 }
 
 .dark {
- --primary: var(--color-blue-700);
+ /* Brand tokens en mode sombre — identique à :root pour V1 pilote (cohérence light/dark) */
+ --brand-primary: #1A1A3A;
+ --brand-accent: #FFD400;
+ /* Aliasing : --primary pointe sur la marque, pas sur Radix blue */
+ --primary: var(--brand-primary);
  --primary-foreground: var(--color-blue-50);
  --sidebar-primary: var(--color-blue-500);
  --sidebar-primary-foreground: var(--color-blue-50);
@@ -214,6 +222,49 @@ a:focus-visible,
 /* ============================================
  MICRO-ANIMATIONS CTA — Hover effects subtils
  ============================================ */
+
+/* ============================================
+ EFFET SIGNATURE — Grille circuit subtile (hero)
+ ============================================ */
+/* Pilote design ENR (2026-07-13) :
+ * Hero (#home, composant Hero.tsx) reçoit une grille circuit
+ * via pseudo-element ::before — CSS-only, non-cassant.
+ * - Lignes horizontales/verticales très subtiles (opacité 0.10 indigo via overlay)
+ * - 1 trait volt d'accent (#FFD400) en diagonale + 1 ligne en bas (très discrets)
+ * - pointer-events:none pour ne pas bloquer les clics
+ * - z-index:1 pour passer au-dessus du <picture> (z=0 implicite)
+ */
+#home::before {
+ content: "";
+ position: absolute;
+ inset: 0;
+ z-index: 1;
+ pointer-events: none;
+ background-image:
+ /* trait volt d'accent — diagonale subtile */
+ linear-gradient(135deg, transparent 49.5%, var(--brand-accent) 49.5%, var(--brand-accent) 50.5%, transparent 50.5%),
+ /* grille verticale (toutes les 80px) */
+ repeating-linear-gradient(90deg, var(--brand-primary) 0 1px, transparent 1px 80px),
+ /* grille horizontale (toutes les 80px) */
+ repeating-linear-gradient(0deg, var(--brand-primary) 0 1px, transparent 1px 80px);
+ opacity: 0.10; /* facteur d'opacité global */
+ mix-blend-mode: overlay;
+}
+
+/* Pulse léger sur 1 trait volt horizontal en bas du hero (cycle 8s = discret) */
+@keyframes circuit-pulse {
+ 0%, 100% { opacity: 0.04; }
+ 50% { opacity: 0.10; }
+}
+#home::after {
+ content: "";
+ position: absolute;
+ inset: 0;
+ z-index: 1;
+ pointer-events: none;
+ background-image: linear-gradient(180deg, transparent 95%, var(--brand-accent) 95%, var(--brand-accent) 100%);
+ animation: circuit-pulse 8s ease-in-out infinite;
+}
 
 /* Animation pulse pour les boutons CTA principaux */
 @keyframes subtle-pulse {
