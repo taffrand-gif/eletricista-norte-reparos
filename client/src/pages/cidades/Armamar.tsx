@@ -38,7 +38,7 @@ export default function Armamar() {
  "geo": { "@type": "GeoCoordinates", "latitude": "41.1000", "longitude": "-7.6833" },
  "telephone": businessInfo.phone,
  "openingHours": "Mo-Su 00:00-23:59",
- "priceRange": "€€"
+ "priceRange":"€€"
  });
  document.head.appendChild(schemaScript);
  // FAQ Schema

@@ -38,7 +38,7 @@ export default function Sabrosa() {
  "geo": { "@type": "GeoCoordinates", "latitude": "41.2667", "longitude": "-7.5667" },
  "telephone": businessInfo.phone,
  "openingHours": "Mo-Su 00:00-23:59",
- "priceRange": "€€"
+ "priceRange":"€€"
  });
  document.head.appendChild(schemaScript);
  // FAQ Schema

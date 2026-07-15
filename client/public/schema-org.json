@@ -23,7 +23,7 @@
  "Mo-Fr 08:00-18:00",
  "Sa 09:00-13:00"
  ],
- "priceRange": "€€",
+ "priceRange":"€€",
  "areaServed": {
  "@type": "GeoCircle",
  "geoMidpoint": {
