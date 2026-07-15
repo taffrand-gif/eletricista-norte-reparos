@@ -1063,3 +1063,9 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
 - **Worktrees isolés** : `fix/p1-blog-money-enr` + `fix/p1-blog-money-cnr` depuis main propre.
 - **Refus Mapping 1** : 4 fichiers cibles initiaux (cheiro-queimado-tomada, disjuntor-a-saltar, cano-rebentado, como-desentupir-sanita) tous en cours d'édition par 8-10 worktrees parallèles (risque conflit Pitfall #7). Re-scopage sur fichiers money-adjacent hors scope = 0 conflit attendu.
 - **Refs** : t_3d82d6a7 (mission B P1), leçon #362 ci-dessous.
+
+
+### 2026-07-15 — P0 NAP click-to-call E.164 (Hermes t_73779eca)
+- Audit des HTML suivis par Git : 0 occurrence `****4451`, donc aucun HTML modifié sur ENR.
+- Leçon : auditer uniquement les fichiers suivis par Git (`git ls-files -z`) afin de ne pas recompter les worktrees imbriqués ; ne jamais substituer un numéro à partir de sa seule terminaison, le NAP visible/site prime. Origine documentée dans `~/work/Sites/LECONS.md` (leçon #a7868915) : héritage de templates déjà masqués ; ENR reste un no-op pour la terminaison 4451.
+- Branche `fix/nap-phone-e164-4451`, PR draft documentaire, zéro merge.
