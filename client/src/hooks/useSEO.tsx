@@ -154,7 +154,7 @@ export function generateLocalBusinessSchema(ville?: string) {
  "name": config.businessName,
  "image": `https://${config.domain}/logo.png`,
  "telephone": `+${config.whatsappNumber}`,
- "priceRange": "€€",
+ "priceRange":"€€",
  "address": {
  "@type": "PostalAddress",
  "addressLocality": ville || "Trás-os-Montes",

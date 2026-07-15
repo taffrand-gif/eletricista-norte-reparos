@@ -38,7 +38,7 @@ export default function CarrazedaDeAnsiaes() {
  "geo": { "@type": "GeoCoordinates", "latitude": "41.2333", "longitude": "-7.3000" },
  "telephone": businessInfo.phone,
  "openingHours": "Mo-Su 00:00-23:59",
- "priceRange": "€€"
+ "priceRange":"€€"
  });
  document.head.appendChild(schemaScript);
  // FAQ Schema

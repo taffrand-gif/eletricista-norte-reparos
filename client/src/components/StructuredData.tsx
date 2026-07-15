@@ -46,7 +46,7 @@ export default function StructuredData() {
  "url": `https://${config.domain}`,
  "telephone": businessInfo.phone,
  "email": config.email,
- "priceRange": "€€",
+ "priceRange":"€€",
  "image": `https://${config.domain}${config.seo.ogImage}`,
  "logo": `https://${config.domain}/logo.png`,
  "address": {
@@ -334,7 +334,7 @@ export default function StructuredData() {
  "sameAs": [
  `https://wa.me/${config.whatsapp || '351932321892'}?text=${encodeURIComponent(config.whatsappMessage)}`
  ],
- "priceRange": "€€",
+ "priceRange":"€€",
  "currenciesAccepted": "EUR",
  "paymentAccepted": ["Cash", "Credit Card", "Bank Transfer", "MB WAY"],
  "knowsLanguage": ["pt-PT"],

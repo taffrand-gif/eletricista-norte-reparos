@@ -49,7 +49,7 @@ export default function CityServicePage() {
  "@type": "City",
  "name": city.name
  },
- "priceRange": "€€",
+ "priceRange":"€€",
  "description": `${service.description} em ${city.name}`
  };
  const faqItems = generateFAQs(service, city, isPlumber);
