@@ -224,7 +224,7 @@ export default function QuantoCustaEletricistaHoraPortugal() {
           <div className="mt-12 p-8 bg-orange-100 border-l-4 border-orange-600 rounded-r-lg">
             <h2 className="text-2xl font-bold text-gray-900 mb-3">Precisa de eletricista em Trás-os-Montes?</h2>
             <p className="text-gray-800 mb-4">
-              Fale connosco — orçamento por escrito detalhado antes de qualquer intervenção. Fala sempre com a mesma pessoa; sem call center.
+              Fale connosco — orçamento por escrito detalhado antes de qualquer intervenção. Falamos consigo diretamente, sem call center.
             </p>
             <p className="text-2xl font-bold text-orange-700 mb-4">
               <a href="tel:+351932321892" className="hover:underline">📞 +351 932 321 892</a>
