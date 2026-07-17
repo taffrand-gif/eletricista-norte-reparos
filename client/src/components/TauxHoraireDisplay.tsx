@@ -96,8 +96,8 @@ function TauxHoraireDisplay({ className = '' }: TauxHoraireDisplayProps) {
  <span className="font-bold text-gray-900">Zona 2</span>
  <span className="text-2xl font-black text-blue-600">25€</span>
  </div>
- <p className="text-sm text-gray-600">15-35 km</p>
- <p className="text-xs text-gray-500 mt-2">Mirandela, Vila Flor</p>
+ <p className="text-sm text-gray-600">15-30 km</p>
+ <p className="text-xs text-gray-500 mt-2">Mirandela</p>
  </div>
  {/* Zona 3 */}
  <div className="bg-yellow-50 rounded-xl p-5 border-2 border-yellow-200">
@@ -105,8 +105,8 @@ function TauxHoraireDisplay({ className = '' }: TauxHoraireDisplayProps) {
  <span className="font-bold text-gray-900">Zona 3</span>
  <span className="text-2xl font-black text-yellow-600">35€</span>
  </div>
- <p className="text-sm text-gray-600">35-60 km</p>
- <p className="text-xs text-gray-500 mt-2">Bragança, Vinhais</p>
+ <p className="text-sm text-gray-600">30-50 km</p>
+ <p className="text-xs text-gray-500 mt-2">Bragança, Vinhais, Vila Flor</p>
  </div>
  {/* Zona 4 */}
  <div className="bg-orange-50 rounded-xl p-5 border-2 border-orange-200">
@@ -114,8 +114,8 @@ function TauxHoraireDisplay({ className = '' }: TauxHoraireDisplayProps) {
  <span className="font-bold text-gray-900">Zona 4</span>
  <span className="text-2xl font-black text-orange-600">45€</span>
  </div>
- <p className="text-sm text-gray-600">60-90 km</p>
- <p className="text-xs text-gray-500 mt-2">Miranda do Douro</p>
+ <p className="text-sm text-gray-600">50-70 km</p>
+ <p className="text-xs text-gray-500 mt-2">Torre de Moncorvo, Murça</p>
  </div>
  {/* Zona 5 */}
  <div className="bg-red-50 rounded-xl p-5 border-2 border-red-200">
@@ -123,8 +123,8 @@ function TauxHoraireDisplay({ className = '' }: TauxHoraireDisplayProps) {
  <span className="font-bold text-gray-900">Zona 5</span>
  <span className="text-2xl font-black text-red-600">55€</span>
  </div>
- <p className="text-sm text-gray-600">90-120 km</p>
- <p className="text-xs text-gray-500 mt-2">Vila Real, Lamego</p>
+ <p className="text-sm text-gray-600">70-90 km</p>
+ <p className="text-xs text-gray-500 mt-2">Chaves, Vila Real, Alijó</p>
  </div>
  {/* Zona 6 */}
  <div className="bg-purple-50 rounded-xl p-5 border-2 border-purple-200">
@@ -132,8 +132,8 @@ function TauxHoraireDisplay({ className = '' }: TauxHoraireDisplayProps) {
  <span className="font-bold text-gray-900">Zona 6</span>
  <span className="text-2xl font-black text-purple-600">65€</span>
  </div>
- <p className="text-sm text-gray-600">&gt; 120 km</p>
- <p className="text-xs text-gray-500 mt-2">Chaves, Montalegre</p>
+ <p className="text-sm text-gray-600">90-140 km</p>
+ <p className="text-xs text-gray-500 mt-2">Miranda do Douro, Lamego, Montalegre</p>
  </div>
  </div>
  <div className="mt-6 bg-gray-50 rounded-xl p-4">

@@ -2,13 +2,17 @@ import React, { useState, useMemo } from 'react';
 import { useSite } from '@/contexts/SiteContext';
 import { useLocationContent, usePersonalizedWhatsAppMessage } from '@/hooks/useLocationContent';
 // memo removed from 'react';
+// ZONES — grille Filipe 14/07/2026 (recale TomTom).
+// Z1 0-15km=15€ · Z2 15-30=25€ · Z3 30-50=35€ · Z4 50-70=45€ · Z5 70-90=55€ · Z6 90-140=65€
+// Villes emblématiques alignées sur concelhos.json (route_km TomTom corrigé 16/07).
+// Bornes [a,b): km=15.0 → Z2 (convention outil `preco-deslocacao.py`).
 const zones = [
- { label: 'Trás-os-Montes (Zona 1)', price: 15 },
- { label: 'Mirandela / Vila Flor (Zona 2)', price: 25 },
- { label: 'Bragança / Vinhais (Zona 3)', price: 35 },
- { label: 'Miranda do Douro (Zona 4)', price: 45 },
- { label: 'Vila Real / Lamego (Zona 5)', price: 55 },
- { label: 'Chaves / Montalegre (Zona 6)', price: 65 },
+ { label: 'Trás-os-Montes (Zona 1)', price: 15 },                                       // Macedo de Cavaleiros
+ { label: 'Mirandela (Zona 2)', price: 25 },                                           // km=27.4
+ { label: 'Bragança / Vinhais / Vila Flor (Zona 3)', price: 35 },                      // km=42.4 / 48.7 / 41.4
+ { label: 'Torre de Moncorvo / Murça (Zona 4)', price: 45 },                           // km=52.2 / 53.7
+ { label: 'Chaves / Vila Real (Zona 5)', price: 55 },                                  // km=74.7 / 85.7
+ { label: 'Miranda do Douro / Lamego / Montalegre (Zona 6)', price: 65 },              // km=92.2 / 110.7 / 112.6
 ];
 const servicesElec = [
  { label: 'Tomada / Interruptor', min: 35, max: 70 },

@@ -25,7 +25,7 @@ const cities = [
  { label: 'Mirandela', value: 'mirandela', zone: 2, price: 25, time: 'A confirmar' },
  { label: 'Bragança', value: 'braganca', zone: 3, price: 35, time: 'A confirmar' },
  { label: 'Vila Real', value: 'vila-real', zone: 5, price: 55, time: 'A confirmar' },
- { label: 'Chaves', value: 'chaves', zone: 6, price: 65, time: 'A confirmar' },
+ { label: 'Chaves', value: 'chaves', zone: 5, price: 55, time: 'A confirmar' },
  { label: 'Outra cidade', value: 'outra', zone: 0, price: 0, time: '' },
 ];
 export default function Diagnostico() {
