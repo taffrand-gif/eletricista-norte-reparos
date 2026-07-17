@@ -125,6 +125,25 @@ const BlogIndex: React.FC = () => {
  date: '18 Fev 2026',
  imageUrl: '/images-optimized/blog/precos.jpg'
  },
+ // MONOPOLE money-kw 2026-07-17 — miroirs intent-info, cross-link 1 sens piliers EU
+ {
+ slug: 'guia-curto-circuito',
+ title: 'Curto-Circuito: Causas, Prevenção e Sinais no Quadro Elétrico',
+ excerpt: 'O que é um curto-circuito, o que o provoca, como prevenir. Sinais no quadro elétrico e o que fazer antes de telefonar ao eletricista.',
+ category: 'Segurança Elétrica',
+ readTime: '6',
+ date: '17 Jul 2026',
+ imageUrl: '/images-optimized/blog/quadro-eletrico.jpg'
+ },
+ {
+ slug: 'guia-falha-energia',
+ title: 'Falha de Energia em Casa: Causas, Quadro Elétrico e Segurança',
+ excerpt: 'O que fazer quando falta a energia em casa. Como distinguir falha geral da EDP de problema interno, como verificar o quadro elétrico, e medidas de prevenção.',
+ category: 'Segurança Elétrica',
+ readTime: '6',
+ date: '17 Jul 2026',
+ imageUrl: '/images-optimized/blog/falha-energia.jpg'
+ },
  ];
  return (
  <BlogLayout

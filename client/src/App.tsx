@@ -71,6 +71,9 @@ const IluminacaoExteriorJardim = lazy(() => import("@/pages/blog/IluminacaoExter
 const InstalacaoEletricaCasaAntiga = lazy(() => import("@/pages/blog/InstalacaoEletricaCasaAntiga"));
 const QuantoCustaEletricistaHoraPortugal = lazy(() => import("@/pages/blog/QuantoCustaEletricistaHoraPortugal"));
 const PrecoEletricistaUrgente24h = lazy(() => import("@/pages/blog/PrecoEletricistaUrgente24h"));
+// MONOPOLE money-kw 2026-07-17 — pages-espelho intent-info (miroir des piliers EU)
+const GuiaCurtoCircuito = lazy(() => import("@/pages/blog/GuiaCurtoCircuito"));
+const GuiaFalhaEnergia = lazy(() => import("@/pages/blog/GuiaFalhaEnergia"));
 // REMOVED 2026-07-02: const CarregadorVeiculoEletrico = lazy(() => import("@/pages/blog/CarregadorVeiculoEletrico")); // hors-scope (VE / Wallbox)
 const PoupancaEnergiaInverno = lazy(() => import("@/pages/blog/PoupancaEnergiaInverno"));
 const Zonas = lazy(() => import("@/pages/Zonas"));
@@ -148,6 +151,9 @@ function Router() {
  <Route path={"/blog/instalacao-eletrica-casa-antiga-renovacao"} component={InstalacaoEletricaCasaAntiga} />
  <Route path={"/blog/quanto-custa-eletricista-hora-portugal"} component={QuantoCustaEletricistaHoraPortugal} />
  <Route path={"/blog/preco-eletricista-urgente-24h"} component={PrecoEletricistaUrgente24h} />
+{/* MONOPOLE money-kw 2026-07-17 — miroirs intent-info, cross-link 1 sens vers piliers EU */}
+<Route path={"/blog/guia-curto-circuito"} component={GuiaCurtoCircuito} />
+<Route path={"/blog/guia-falha-energia"} component={GuiaFalhaEnergia} />
  {/* REMOVED 2026-07-02: <Route path={"/blog/carregador-veiculo-eletrico-casa"} component={CarregadorVeiculoEletrico} /> */}
  <Route path={"/blog/poupanca-energia-inverno-tras-os-montes"} component={PoupancaEnergiaInverno} />
  <Route path={"/faq"} component={FAQPage} />
