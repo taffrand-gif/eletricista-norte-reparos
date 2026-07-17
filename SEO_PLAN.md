@@ -190,7 +190,27 @@ Voir section dédiée. Documentation dans HISTORIQUE.
 
 ---
 
-## 🔄 HISTORIQUE P0 (batch 04/07/2026) — Mission Hermes prix/zones OSRM
+## 🔄 HISTORIQUE
+
+### 2026-07-17 — MONOPOLE money-kw TACHE 3 (PR #204 draft, branche feat/monopole-guias-enr)
+**Source ruling** : `~/work/Sites/MONOPOLE-MONEY-KW-2026-07-17.md` §3 (miroirs intent-info)
+**Livré** :
+- `client/src/pages/blog/GuiaCurtoCircuito.tsx` — 7 Q FAQPage + Article schema, canonical self clean, cross-link 1 sens → `https://eletricista-urgente.pt/curto-circuito`
+- `client/src/pages/blog/GuiaFalhaEnergia.tsx` — 7 Q FAQPage + Article schema, canonical self clean, cross-link 1 sens → `https://eletricista-urgente.pt/falha-energia`
+- `client/src/App.tsx` : 2 lazy imports + 2 Route (`/blog/guia-curto-circuito`, `/blog/guia-falha-energia`)
+- `client/src/pages/blog/BlogIndex.tsx` : 2 entrées « Segurança Elétrica » 17 Jul 2026
+**DoD** :
+- `npm run build` OK (GuiaCurtoCircuito 27 kB + GuiaFalhaEnergia 26 kB)
+- `tsc --noEmit` : 0 erreur dans les 2 nouveaux fichiers
+- T1 `mediante confirmação` = 0 · T2 promesse minutes = 0 · T3 pronom = 0 (1 hit `sozinho` fixé en `por conta própria`) · T4 claims marques = 0
+- T5 NAP `+351 932 321 892` + schema.telephone E.164 présents sur les 2 pages
+- T6 cross-link 1 sens OK, **back-link EU → ENR = 0** (`grep -l "guia-curto-circuito|guia-falha-energia" ~/work/Sites/eletricista-urgente/public/*.html` = 0)
+- T7 canonical self URL clean (1/page, sans query) OK
+- T8 JSON-LD FAQPage + Article valides (json.loads OK)
+**Lint** : BLOQUÉ par config pre-existante du repo (`.eslintrc.json` v8 vs `eslint@9` flat-config + plugin react-refresh absent). Mentionné dans la PR. Pas introduit par cette mission.
+**LEÇON** : `~/work/Sites/LECONS.md` #412 (miroir intent-info ENR ↔ pilier EU : cross-link 1 sens, format React .tsx OBLIGATOIRE).
+**Statut** : draft PR en attente GO Filipe (R1/R7-TER, pas d'auto-merge).
+ P0 (batch 04/07/2026) — Mission Hermes prix/zones OSRM
 
 > **Mode** : autonomie Philippe sur le réversible. 2 STOP-durs : (1) QUALITÉ 4 prototypes validés avant batch, (2) merge main = STOP Filipe surtout CU/EU. Tous les patches sur branche `fix/prix-zones-osrm`. **0 merge main ce jour**.
 > **Doctrine** : normalisation idempotente depuis `zonas-data.json` (914) + GRILLE_CONCELHO fallback (33). Regex NFD pour diacritiques. Filtre ES strict pour CU/EU. R145 limité au bloc zone (D3).
