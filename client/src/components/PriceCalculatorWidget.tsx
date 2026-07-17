@@ -35,13 +35,14 @@ const servicesStaff: ServicePrice[] = [
  { id: 'diagnostico', label: 'Diagnóstico Pane', priceMin: 80, priceMax: 120, nightMultiplier: 1.5 }
 ];
 // Zones déplacement (identiques pour les 2 sites)
+// Aligné grille Filipe 14/07 (bornes [a,b): 15.0km → Z2) + concelhos.json TomTom 16/07
 const zones: Zone[] = [
- { label: 'Z1 - Macedo (≤15km)', price: 15, nightPrice: 22.5 },
- { label: 'Z2 - Mirandela/Vila Flor (15-35km)', price: 25, nightPrice: 37.5 },
- { label: 'Z3 - Bragança (35-60km)', price: 35, nightPrice: 52.5 },
- { label: 'Z4 - Régua (60-75km)', price: 45, nightPrice: 67.5 },
- { label: 'Z5 - Vila Real (75-90km)', price: 55, nightPrice: 82.5 },
- { label: 'Z6 - Chaves (90-110km)', price: 65, nightPrice: 97.5 }
+ { label: 'Z1 - Macedo (0-15km)', price: 15, nightPrice: 22.5 },
+ { label: 'Z2 - Mirandela (15-30km)', price: 25, nightPrice: 37.5 },
+ { label: 'Z3 - Bragança/Vila Flor/Vinhais (30-50km)', price: 35, nightPrice: 52.5 },
+ { label: 'Z4 - Torre Moncorvo/Murça (50-70km)', price: 45, nightPrice: 67.5 },
+ { label: 'Z5 - Chaves/Vila Real (70-90km)', price: 55, nightPrice: 82.5 },
+ { label: 'Z6 - Miranda Douro/Lamego/Montalegre (90-140km)', price: 65, nightPrice: 97.5 }
 ];
 function PriceCalculatorWidget() {
  const { config } = useSite();
