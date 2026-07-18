@@ -1089,3 +1089,24 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
 - Audit des HTML suivis par Git : 0 occurrence `****4451`, donc aucun HTML modifié sur ENR.
 - Leçon : auditer uniquement les fichiers suivis par Git (`git ls-files -z`) afin de ne pas recompter les worktrees imbriqués ; ne jamais substituer un numéro à partir de sa seule terminaison, le NAP visible/site prime. Origine documentée dans `~/work/Sites/LECONS.md` (leçon #a7868915) : héritage de templates déjà masqués ; ENR reste un no-op pour la terminaison 4451.
 - Branche `fix/nap-phone-e164-4451`, PR draft documentaire, zéro merge.
+
+---
+
+## 🆕 2026-07-17/18 — ÉTAT RÉEL GUIDES / ZONES / INTENT
+
+- **Guides blog** : les routes React `/blog/guia-curto-circuito` et `/blog/guia-falha-energia` sont présentes dans `main`.
+- **Merge code** : PR #204 a été mergée le 17/07 (`aa839e9d86`), avec FAQPage/Article et canonical self dans les deux guides.
+- **Vérification source** : `public/sitemap-blog.xml` contient 58 URLs, dont les deux nouveaux guides en `lastmod 2026-07-17`.
+- **Vérification production 18/07** : après un premier constat HTTP 404, les deux URLs guides répondent désormais HTTP 200; le correctif routing a donc levé le 404.
+- **Sitemap production** : `/sitemap-blog.xml` répond HTTP 200, mais son contenu live ne contient pas encore les deux nouveaux guides; il sert l’ancien état.
+- **Honnêteté de statut** : les guides sont mergés et accessibles en production, mais leur découverte via le sitemap blog live reste en retard.
+- **Correction prod** : le routing est rétabli; le reliquat vérifié est la publication du `public/sitemap-blog.xml` source actualisé.
+- **Zones/prix** : PR #203 a été mergée le 17/07 (`12e56c19a5`), recalage TomTom vérifié sur les libellés zone/prix, notamment Chaves Z5 / 55 €.
+- **Tarification conservée** : électricité 70 €/h; déplacement Z1–Z6 = 15/25/35/45/55/65 €; majoration nuit/WE/férié +50 %.
+- **Rôle SEO** : ces pages `/blog/guia-*` portent un intent **info/prévention**, pas l’acquisition d’urgence.
+- **Rôle du domaine urgent** : `eletricista-urgente.pt` conserve les pages piliers et l’intent intervention urgente.
+- **Maillage** : chaque guide ENR pointe à sens unique vers son pilier EU correspondant; aucun backlink EU → guide ENR n’est attendu dans ce pattern.
+- **Garde-fou** : ne pas confondre route présente, URL dans sitemap source et disponibilité live; les trois états doivent être vérifiés séparément.
+- **Leçon** : un merge Git et un sitemap source à jour ne prouvent pas le déploiement Vercel ni le HTTP 200 public.
+- **Suite** : revalider les deux guides et `/sitemap-blog.xml` après correction routing, puis seulement documenter le statut indexable.
+- **Statut de cette note** : documentation factuelle; aucun merge de la présente branche sans GO Filipe (R7).
