@@ -469,8 +469,8 @@ Voir section dédiée. Documentation dans HISTORIQUE.
 
 ### Fix NAP tel: link (RFC 3966)
 
-- ✅ CNR `public/canalizador-vila-real.html` L62 : `tel:+351****4451` → `tel:+351928484451`
-- ✅ ENR `public/eletricista-macedo-cavaleiros.html` L106 : `tel:+351****1892` → `tel:+351932321892`
+- ✅ CNR `public/canalizador-vila-real.html` L62 : `tel:+351928484451` → `tel:+351928484451`
+- ✅ ENR `public/eletricista-macedo-cavaleiros.html` L106 : `tel:+351932321892` → `tel:+351932321892`
 - Le handover loop #5 évoquait JSON-LD ligne 35 mais le bug était UNIQUEMENT dans les liens tel: markdown des pages /zonas/.
 - VISIBLE était déjà correct (numéros lus correctement), seul le `href="tel:"` était cassé → mobile tap-to-call cassé.
 
