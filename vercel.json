@@ -1,6 +1,8 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist/public",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install --legacy-peer-deps",
   "framework": "vite",
   "cleanUrls": true,
   "rewrites": [
