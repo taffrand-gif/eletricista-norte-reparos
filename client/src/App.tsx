@@ -19,7 +19,6 @@ const QuoteCalculator = lazy(() => import('@/components/QuoteCalculator'));
 const LocationDetector = lazy(() => import('@/components/LocationDetector'));
 // Lazy load all pages except homepage for better LCP
 const Servicos = lazy(() => import("@/pages/Servicos"));
-const QuadrosEletricos = lazy(() => import("@/pages/QuadrosEletricos"));
 const InstalacaoEletrica = lazy(() => import("@/pages/InstalacaoEletrica"));
 const NotFound = lazy(() => import("@/pages/NotFound"));
 const FAQPage = lazy(() => import("@/pages/FAQ"));
@@ -64,6 +63,7 @@ const SinaisProblemasEletricos = lazy(() => import("@/pages/blog/SinaisProblemas
 const QuadroEletricoAntigo = lazy(() => import("@/pages/blog/QuadroEletricoAntigo"));
 const ComoEscolherEletricistaCertificado = lazy(() => import("@/pages/blog/ComoEscolherEletricistaCertificado"));
 const CustoEletricistaTrasOsMontesPrecos = lazy(() => import("@/pages/blog/CustoEletricistaTrasOsMontesPrecos"));
+// REMOVED 2026-07-02 (confirmed hors-scope feat/prerender-routes 2026-07-18 — R5 violation panneaux solaires — Norte-OS doctrine): <Route path="/blog/paineis-solares-tras-os-montes-guia"> — voir _audit/SPA-PRERENDER-CANDIDATES-2026-07-18.md §5.6
 // REMOVED 2026-07-02: const PaineisSolaresTrasOsMontesGuia = lazy(() => import("@/pages/blog/PaineisSolaresTrasOsMontesGuia")); // hors-scope (panneaux solaires)
 const AutomacaoResidencialGuia = lazy(() => import("@/pages/blog/AutomacaoResidencialGuia"));
 const ProtecaoSobrecargas = lazy(() => import("@/pages/blog/ProtecaoSobrecargas"));
@@ -101,7 +101,6 @@ function Router() {
  <Switch>
  <Route path={"/"} component={OptimizedHome} />
  <Route path={"/servicos"} component={Servicos} />
- <Route path={"/quadros-eletricos"} component={QuadrosEletricos} />
  <Route path={"/instalacao-eletrica"} component={InstalacaoEletrica} />
  <Route path={"/eletricista-vila-real"} component={VilaReal} />
  <Route path={"/eletricista-braganca"} component={Braganca} />
@@ -154,6 +153,7 @@ function Router() {
 {/* MONOPOLE money-kw 2026-07-17 — miroirs intent-info, cross-link 1 sens vers piliers EU */}
 <Route path={"/blog/guia-curto-circuito"} component={GuiaCurtoCircuito} />
 <Route path={"/blog/guia-falha-energia"} component={GuiaFalhaEnergia} />
+ {/* REMOVED 2026-07-02 (confirmed hors-scope feat/prerender-routes 2026-07-18 — R5 violation wallbox/VE — Norte-OS doctrine): <Route path="/blog/carregador-veiculo-eletrico-casa"> — voir _audit/SPA-PRERENDER-CANDIDATES-2026-07-18.md §5.6 */}
  {/* REMOVED 2026-07-02: <Route path={"/blog/carregador-veiculo-eletrico-casa"} component={CarregadorVeiculoEletrico} /> */}
  <Route path={"/blog/poupanca-energia-inverno-tras-os-montes"} component={PoupancaEnergiaInverno} />
  <Route path={"/faq"} component={FAQPage} />
@@ -168,10 +168,10 @@ function Router() {
  <Route path={"/quanto-tempo-demora-instalar-tomada"} component={QuantoTempoDemoraInstalarTomada} />
  <Route path={"/quanto-tempo-sem-luz-casa"} component={QuantoTempoSemLuzCasa} />
  <Route path={"/404"} component={NotFound} />
- {/* Service hub pages */}
+ {/* Service hub pages — routes derive slug via useRoute('/:service') */}
  <Route path={"/quadros-eletricos"} component={ServiceHub} />
  <Route path={"/tomadas-interruptores"} component={ServiceHub} />
- <Route path={"/certificacao-"} component={ServiceHub} />
+ {/* REMOVED feat/prerender-routes (2026-07-18): <Route path="/certificacao-"/> — bug visible : tiret final + slash, jamais callable, ServiceHub.find() retourne null (slug 'certificacao-' introuvable dans shared/cityServiceMatrix.ts). Route retirée pour éviter 404 silencieux + rendu vide. À recréer proprement plus tard si besoin. */}
  <Route path={"/iluminacao"} component={ServiceHub} />
  <Route path={"/avarias-urgentes"} component={ServiceHub} />
  {/* Dynamic freguesia pages (498 pages) */}
