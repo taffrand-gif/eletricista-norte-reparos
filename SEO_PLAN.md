@@ -192,6 +192,8 @@ Voir section dédiée. Documentation dans HISTORIQUE.
 
 ## 🔄 HISTORIQUE
 
+| 2026-07-18 | Hermes (hotfix clean URLs) | **Réparer la régression des URLs statiques + pré-rendre les 2 guides ENR** | Retour `cleanUrls: true`, retrait du rewrite `/blog/:slug → /index.html`, ajout de `client/public/blog/guia-{curto-circuito,falha-energia}.html` sérialisés depuis le rendu React Chromium local. | `cleanUrls: false` servait le shell SPA canonical home sur les pages statiques sans rewrite explicite ; les fichiers réels permettent désormais aux guides de fonctionner avec clean URLs. | Build vert ; `dist/public/blog/` contient les 2 guides avec title/meta/canonical self uniques + FAQPage/Article ; 3 statiques témoins source=dist byte-à-byte. Leçon : tout toggle `cleanUrls` doit tester les deux familles d’URLs (statiques et routes SPA/guides). | ⏳ PR draft — ne pas merger |
+
 ### 2026-07-17 — MONOPOLE money-kw TACHE 3 (PR #204 draft, branche feat/monopole-guias-enr)
 **Source ruling** : `~/work/Sites/MONOPOLE-MONEY-KW-2026-07-17.md` §3 (miroirs intent-info)
 **Livré** :

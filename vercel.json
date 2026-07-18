@@ -46,10 +46,6 @@
       "destination": "/disjuntores-:city.html"
     },
     {
-      "source": "/blog/:slug",
-      "destination": "/index.html"
-    },
-    {
       "source": "/perguntas-frequentes",
       "destination": "/perguntas-frequentes.html"
     },
@@ -6554,5 +6550,5 @@
     }
   ],
   "ignoreCommand": "if bash ./vercel-ignore.sh; then exit 0; else exit 1; fi",
-  "cleanUrls": false
+  "cleanUrls": true
 }
