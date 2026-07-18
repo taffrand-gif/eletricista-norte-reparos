@@ -1097,10 +1097,10 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
 - **Guides blog** : les routes React `/blog/guia-curto-circuito` et `/blog/guia-falha-energia` sont présentes dans `main`.
 - **Merge code** : PR #204 a été mergée le 17/07 (`aa839e9d86`), avec FAQPage/Article et canonical self dans les deux guides.
 - **Vérification source** : `public/sitemap-blog.xml` contient 58 URLs, dont les deux nouveaux guides en `lastmod 2026-07-17`.
-- **Vérification production 18/07** : les deux URLs guides répondent encore HTTP 404 `NOT_FOUND`.
+- **Vérification production 18/07** : après un premier constat HTTP 404, les deux URLs guides répondent désormais HTTP 200; le correctif routing a donc levé le 404.
 - **Sitemap production** : `/sitemap-blog.xml` répond HTTP 200, mais son contenu live ne contient pas encore les deux nouveaux guides; il sert l’ancien état.
-- **Honnêteté de statut** : les guides sont mergés dans Git, mais pas encore considérés comme live/indexables en production.
-- **Correction prod** : un correctif Vercel/routing dédié est en cours sur `fix/guias-prod-404`; aucun succès prod ne doit être déclaré avant nouveau curl 200.
+- **Honnêteté de statut** : les guides sont mergés et accessibles en production, mais leur découverte via le sitemap blog live reste en retard.
+- **Correction prod** : le routing est rétabli; le reliquat vérifié est la publication du `public/sitemap-blog.xml` source actualisé.
 - **Zones/prix** : PR #203 a été mergée le 17/07 (`12e56c19a5`), recalage TomTom vérifié sur les libellés zone/prix, notamment Chaves Z5 / 55 €.
 - **Tarification conservée** : électricité 70 €/h; déplacement Z1–Z6 = 15/25/35/45/55/65 €; majoration nuit/WE/férié +50 %.
 - **Rôle SEO** : ces pages `/blog/guia-*` portent un intent **info/prévention**, pas l’acquisition d’urgence.
