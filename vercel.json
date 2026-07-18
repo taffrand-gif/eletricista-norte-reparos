@@ -4,9 +4,7 @@
   "framework": "vite",
   "cleanUrls": true,
   "rewrites": [
-    {
-      "source": "/:path((?!.*\\.html$).*)",
-      "destination": "/index.html"
-    }
+    { "source": "/blog/guia-curto-circuito", "destination": "/index.html" },
+    { "source": "/blog/guia-falha-energia", "destination": "/index.html" }
   ]
 }
