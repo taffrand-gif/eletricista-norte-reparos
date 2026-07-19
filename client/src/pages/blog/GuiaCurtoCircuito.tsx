@@ -41,7 +41,7 @@ export default function GuiaCurtoCircuito() {
                 "name": "Como prevenir um curto-circuito?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "A prevenção passa por: instalação elétrica com terra e disjuntor diferencial, certificado conforme as RTIEBT; revisão periódica da instalação (a cada 10 anos ou após 20 anos de utilização); não ligar extensões em cadeia; substituir fichas e tomadas partidas; manter as caixas de derivação estanques; chamar um eletricista certificado para qualquer alteração à instalação fixa."
+                  "text": "A prevenção passa por: instalação elétrica com terra e disjuntor diferencial, certificado conforme as RTIEBT; revisão periódica da instalação, com periodicidade definida pelo estado e pela idade; não ligar extensões em cadeia; substituir fichas e tomadas partidas; manter as caixas de derivação estanques; chamar um eletricista certificado para qualquer alteração à instalação fixa."
                 }
               },
               {
@@ -73,7 +73,7 @@ export default function GuiaCurtoCircuito() {
                 "name": "Um curto-circuito é sempre urgente?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Não. Um curto-circuito que disparou uma vez e foi isolado (disjuntor parcial desligado) pode esperar algumas horas ou um dia para ser diagnosticado em horário normal. É urgente quando há faísca visível, cheiro a queimado, tomada quente, ou quando afeta circuitos essenciais (iluminação geral, frigorífico, aquecimento). Nestes casos, contacte piquete 24h."
+                  "text": "Não. Curto-circuito que dispara uma vez e é isolado pode ser diagnosticado em horário normal. Se há faísca visível, cheiro a queimado, tomada quente ou afeta circuitos essenciais, desligue o geral e contacte a equipa adequada."
                 }
               }
             ]
@@ -112,7 +112,7 @@ export default function GuiaCurtoCircuito() {
             Curto-Circuito: Causas, Prevenção e Sinais no Quadro Elétrico
           </h1>
           <p className="text-lg text-gray-600">
-            Guia informativo · Prevenção, diagnóstico seguro e quando chamar eletricista · ~6 min de leitura
+            Guia informativo · Prevenção, diagnóstico seguro e quando chamar eletricista · leitura
           </p>
         </header>
         <div className="prose prose-lg max-w-none">
@@ -125,15 +125,15 @@ export default function GuiaCurtoCircuito() {
 
           <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">1. O que é, exatamente, um curto-circuito</h2>
           <p>
-            Em condições normais, a corrente elétrica circula pela fase, alimenta o aparelho, e regressa pelo neutro. A resistência dos condutores e dos aparelhos limita a intensidade a valores previsíveis (por exemplo, 10A num circuito de iluminação). Num curto-circuito, surge um <strong>caminho de baixa resistência</strong> que contorna essa limitação — fase a tocar no neutro, fase a tocar na terra, ou os dois condutores a tocarem numa superfície condutora exposta.
+            Em condições normais, a corrente elétrica circula pela fase, alimenta o aparelho, e regressa pelo neutro. A resistência dos condutores e dos aparelhos limita a intensidade a valores previsíveis (por exemplo, num circuito de iluminação). Num curto-circuito, surge um <strong>caminho de baixa resistência</strong> que contorna essa limitação — fase a tocar no neutro, fase a tocar na terra, ou os dois condutores a tocarem numa superfície condutora exposta.
           </p>
           <p>
-            A corrente sobe para centenas ou milhares de ampères em milissegundos. Se nada cortar o circuito, os fios aquecem, o isolamento derrete, e há risco de incêndio. O disjuntor magnetotérmico está desenhado para detetar este pico e abrir o circuito em poucos milissegundos — é a primeira linha de defesa.
+            A corrente sobe abruptamente; sem corte, os fios aquecem e o isolamento pode derreter. Se nada cortar o circuito, os fios aquecem, o isolamento derrete, e há risco de incêndio. O disjuntor magnetotérmico está desenhado para detetar este pico e abrir o circuito rapidamente — é a primeira linha de defesa.
           </p>
 
           <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">2. Causas mais frequentes em habitação</h2>
           <ul className="list-disc pl-6 space-y-2 mb-6">
-            <li><strong>Isolamento deteriorado pela idade</strong> — instalações com 20, 30 ou mais anos, sem revisão, têm fios com isolamento ressequido que parte à mais pequena torção.</li>
+            <li><strong>Isolamento deteriorado pela idade</strong> — instalações antigas sem revisão, têm fios com isolamento ressequido que parte à mais pequena torção.</li>
             <li><strong>Humidade em caixas de derivação</strong> — comum em casas antigas, caves, garagens e zonas rurais de Trás-os-Montes onde a humidade se infiltra pelas paredes de granito.</li>
             <li><strong>Ligação mal apertada</strong> — um fio pouco apertado num borne de tomada gera calor, que degrada o isolamento, que provoca o curto-circuito. Efeito bola de neve.</li>
             <li><strong>Furos em paredes</strong> — ao pendurar uma prateleira ou instalar um varão, é fácil atravessar um cabo embebido. Use sempre um detetor de metais/tensão antes de furar.</li>
@@ -168,10 +168,10 @@ export default function GuiaCurtoCircuito() {
           </p>
           <ol className="list-decimal pl-6 space-y-3 mb-6">
             <li>
-              <strong>Instalação certificada conforme as RTIEBT</strong> — disjuntor magnetotérmico em cada circuito, disjuntor diferencial (30 mA, tipo AC ou A), condutor de terra efetivo em todas as tomadas. Se a sua casa não tem diferencial a funcionar, está em risco.
+              <strong>Instalação certificada conforme as RTIEBT</strong> — disjuntor magnetotérmico em cada circuito, disjuntor diferencial adequado, condutor de terra efetivo em todas as tomadas. Se a sua casa não tem diferencial a funcionar, está em risco.
             </li>
             <li>
-              <strong>Revisão periódica por eletricista certificado</strong> — a cada 10 anos em instalações recentes, com maior frequência em casas com mais de 20 anos. A revisão mede o isolamento dos fios, testa o diferencial, aperta os bornes que possam ter folga.
+              <strong>Revisão periódica por eletricista certificado</strong> — com periodicidade ajustada ao estado e à idade da instalação. A revisão mede o isolamento dos fios, testa o diferencial, aperta os bornes que possam ter folga.
             </li>
             <li>
               <strong>Não fazer “obras” elétricas por conta própria</strong> — uma tomada trocada sem cuidado pode deixar um fio mal isolado dentro da caixa. Resultado: curto-circuito seis meses depois.
@@ -180,7 +180,7 @@ export default function GuiaCurtoCircuito() {
               <strong>Não usar extensões em cadeia</strong> — uma extensão por tomada, dimensionada para a carga. Extensões em série ("margarida") são uma causa frequente de curto-circuito em cozinhas e escritórios em casa.
             </li>
             <li>
-              <strong>Detetor de tensão antes de furar</strong> — antes de qualquer furo em parede, utilize um detetor de tensão/cabos. Custa 25€ a 60€ e evita anos de problemas.
+              <strong>Detetor de tensão antes de furar</strong> — antes de qualquer furo em parede, utilize um detetor de tensão/cabos. É uma ferramenta de segurança; confirme a presença de cabos antes de furar.
             </li>
           </ol>
 
@@ -192,7 +192,7 @@ export default function GuiaCurtoCircuito() {
             <li>O disjuntor parcial dispara repetidamente na mesma situação.</li>
             <li>O disjuntor diferencial dispara (independentemente do que tenha ligado).</li>
             <li>Há cheiro a queimado, faísca, tomada quente, marca escura numa tomada.</li>
-            <li>A instalação tem mais de 20 anos e nunca foi revisada.</li>
+            <li>A instalação é antiga e nunca foi revisada.</li>
             <li>Quer substituir fichas, interruptores ou tomadas sem experiência.</li>
             <li>Detetou roeduras em cabos (armazéns, garagens, anexos).</li>
           </ul>
@@ -210,12 +210,29 @@ export default function GuiaCurtoCircuito() {
             Curto-circuito e sobrecarga são os dois grandes motivos de disparo do disjuntor magnetotérmico, mas têm naturezas diferentes:
           </p>
           <ul className="list-disc pl-6 space-y-2 mb-6">
-            <li><strong>Sobrecarga</strong>: o circuito está a pedir mais corrente do que suporta. Exemplo: 3.500 W num circuito dimensionado para 3.000 W. Dispara passados alguns minutos, não de imediato.</li>
+            <li><strong>Sobrecarga</strong>: o circuito está a pedir mais corrente do que suporta. Exemplo: ligar cargas acima da capacidade do circuito; o disparo tende a ocorrer depois de a carga se manter, não necessariamente no instante de ligar.</li>
             <li><strong>Curto-circuito</strong>: corrente sobe para valores extremos por um caminho de baixa resistência. Dispara em milissegundos ao armar.</li>
           </ul>
           <p>
             Em ambos os casos o disjuntor está a fazer o seu trabalho. O que importa é perceber a causa — uma sobrecarga crónica deteriora a instalação ao longo do tempo; um curto-circuito pontual pode ter sido um incidente isolado.
           </p>
+
+          <section className="my-10 bg-orange-50 border-l-4 border-orange-600 p-6 rounded-r-lg">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Factos verificáveis Norte Reparos</h2>
+            <p className="text-gray-800 mb-3"><strong>Mão de obra:</strong> 70 €/h para eletricidade, segundo a grelha interna R12.</p>
+            <p className="text-gray-800 mb-3"><strong>Deslocação:</strong> Z1 = 15 €, Z2 = 25 €, Z3 = 35 €, Z4 = 45 €, Z5 = 55 € e Z6 = 65 €. Em noite, fim de semana ou feriado, aplica-se +50% à mão de obra.</p>
+            <p className="text-gray-800 mb-2"><strong>Exemplos de distância TomTom desde Macedo de Cavaleiros:</strong></p>
+            <ul className="list-disc pl-6 space-y-1 mb-3">
+              <li>Macedo de Cavaleiros: 0,0 km · Z1 · 15 €</li>
+              <li>Mirandela: 27,4 km · Z2 · 25 €</li>
+              <li>Bragança: 42,4 km · Z3 · 35 €</li>
+              <li>Chaves: 74,7 km · Z5 · 55 €</li>
+              <li>Vila Real: 85,7 km · Z5 · 55 €</li>
+              <li>Miranda do Douro: 92,2 km · Z6 · 65 €</li>
+            </ul>
+            <p className="text-gray-800 mb-3"><strong>Equipamento real:</strong> Fluke T6-1000, Megger MFT1741+, FLIR E96 e câmara de inspeção de 30 m.</p>
+            <p className="text-sm text-gray-600">Fontes internas: grelha de zonas verrouillée em 14/07/2026; <code>preco-deslocacao.py</code>; dados TomTom reais em <code>_audit/zonas-distances-concelhos.json</code> (data/concelhos.json).</p>
+          </section>
 
           <h2 id="faq" className="text-3xl font-bold text-gray-900 mt-12 mb-6">7. Perguntas frequentes</h2>
           <div className="space-y-6">
@@ -233,11 +250,15 @@ export default function GuiaCurtoCircuito() {
             </div>
             <div>
               <h3 className="font-bold text-gray-900 mb-2 text-xl">Quanto custa prevenir/reparar curto-circuitos?</h3>
-              <p className="text-gray-700">Em Trás-os-Montes, a mão de obra de eletricista é de 70€/h em horário normal (2ª-6ª, 9h-18h), com deslocação entre 15€ e 65€ consoante a zona (Z1 a Z6) — orçamento por escrito antes da intervenção. Reparações mais comuns (substituir tomada danificada, isolar cabo com falha) são tipicamente concluídas numa visita. Instalações com diagnóstico mais amplo variam caso a caso, sempre com orçamento prévio detalhado.</p>
+              <p className="text-gray-700">A tarifa interna de eletricista é 70 €/h. A deslocação segue a grelha Z1 = 15 €, Z2 = 25 €, Z3 = 35 €, Z4 = 45 €, Z5 = 55 € e Z6 = 65 €; em noite, fim de semana ou feriado aplica-se +50% à mão de obra. O orçamento por escrito é preparado antes da intervenção, sem surpresas; o trabalho depende do diagnóstico.</p>
             </div>
             <div>
               <h3 className="font-bold text-gray-900 mb-2 text-xl">Posso prevenir com DPS (dispositivo de proteção contra sobretensões)?</h3>
               <p className="text-gray-700">O DPS protege contra picos de tensão vindos da rede (trovoadas, manobras da EDP), não contra curto-circuitos internos. São complementares, não substitutos. Em zonas rurais com trovoadas frequentes, ter DPS no quadro é uma camada adicional útil.</p>
+            </div>
+            <div>
+              <h3 className="font-bold text-gray-900 mb-2 text-xl">Um curto-circuito é sempre urgente?</h3>
+              <p className="text-gray-700">Não. Curto-circuito que dispara uma vez e é isolado pode ser diagnosticado em horário normal. Se há faísca visível, cheiro a queimado, tomada quente ou afeta circuitos essenciais, desligue o geral e contacte a equipa adequada.</p>
             </div>
           </div>
 

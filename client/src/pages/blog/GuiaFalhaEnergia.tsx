@@ -33,7 +33,7 @@ export default function GuiaFalhaEnergia() {
                 "name": "Como saber se é falha geral da EDP ou só na minha casa?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Verifique três pontos: olhe pela janela para ver se a iluminação pública ou casas vizinhas estão desligadas; tente aceder ao site da EDP Distribuição ou à linha de avarias 808 200 520; veja se o contador digital apresenta indicação de falha (mensagem ou ecrã apagado). Se os vizinhos também estão sem luz, é falha geral — não é problema da sua instalação."
+                  "text": "Verifique a rua, o quadro e o contador: olhe pela janela para ver se a iluminação pública ou casas vizinhas estão desligadas; consulte os canais oficiais da EDP para saber se existe uma avaria reportada; veja se o contador digital apresenta indicação de falha (mensagem ou ecrã apagado). Se os vizinhos também estão sem luz, é falha geral — não é problema da sua instalação."
                 }
               },
               {
@@ -41,7 +41,7 @@ export default function GuiaFalhaEnergia() {
                 "name": "Como prevenir falhas de energia em casa?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "A prevenção mais eficaz é manter a instalação em bom estado: revisão periódica por eletricista certificado (a cada 10 anos), disjuntor diferencial a funcionar (30 mA), DPS (proteção contra sobretensões) para picos da rede, e evitar sobrecargas crónicas. Em zonas rurais com falhas frequentes da rede, ter um sistema simples de iluminação de emergência (lanterna, velas) é prudente."
+                  "text": "A prevenção mais eficaz é manter a instalação em bom estado: revisão periódica por eletricista certificado, disjuntor diferencial a funcionar, DPS (proteção contra sobretensões) para picos da rede, e evitar sobrecargas crónicas. Em zonas rurais com falhas frequentes da rede, ter um sistema simples de iluminação de emergência (lanterna, velas) é prudente."
                 }
               },
               {
@@ -73,7 +73,7 @@ export default function GuiaFalhaEnergia() {
                 "name": "Quanto tempo pode uma casa ficar sem energia em segurança?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Em condições normais, uma habitação pode ficar várias horas sem energia sem risco estrutural. O principal cuidado é com a cadeia do frio (frigorífico/congelador): um frigorífico fechado mantém a temperatura durante cerca de 4 horas, um congelador durante 24 a 48 horas se não for aberto. Em zonas rurais com falhas frequentes, vale a pena ter alimentos que não exijam frio."
+                  "text": "Em condições normais, uma habitação pode ficar várias horas sem energia sem risco estrutural. O principal cuidado é com a cadeia do frio (frigorífico/congelador): um frigorífico ou congelador fechado conserva melhor a temperatura; o tempo depende do equipamento e de quantas vezes é aberto. Em zonas rurais com falhas frequentes, vale a pena ter alimentos que não exijam frio."
                 }
               }
             ]
@@ -112,7 +112,7 @@ export default function GuiaFalhaEnergia() {
             Falha de Energia em Casa: Causas, Quadro Elétrico e Segurança
           </h1>
           <p className="text-lg text-gray-600">
-            Guia informativo · Como identificar a origem, prevenir e agir em segurança · ~6 min de leitura
+            Guia informativo · Como identificar a origem, prevenir e agir em segurança · leitura
           </p>
         </header>
         <div className="prose prose-lg max-w-none">
@@ -164,9 +164,9 @@ export default function GuiaFalhaEnergia() {
             Se confirmou que a falha é geral (vizinhos sem luz, iluminação pública apagada), o que está nas suas mãos:
           </p>
           <ul className="list-disc pl-6 space-y-2 mb-6">
-            <li><strong>Verificar a área de cliente EDP</strong> ou a linha de avarias 808 200 520 — confirme se há falha reportada na sua zona e o tempo estimado de resolução.</li>
+            <li><strong>Verificar os canais oficiais da EDP</strong> para confirmar se há falha reportada na sua zona.</li>
             <li><strong>Desligar aparelhos sensíveis</strong> da tomada para os proteger quando a energia voltar (computadores, televisão, carregadores). Picos de tensão no regresso da rede podem queimar fontes.</li>
-            <li><strong>Não abrir o frigorífico/congelador</strong> mais do que o necessário. Um frigorífico fechado mantém-se frio cerca de 4 horas, um congelador entre 24 e 48 horas.</li>
+            <li><strong>Não abrir o frigorífico/congelador</strong> mais do que o necessário. Manter as portas fechadas ajuda a conservar a temperatura; o tempo depende do equipamento e da utilização.</li>
             <li><strong>Não usar velas em locais com corrente de ar</strong> ou perto de cortinas. Ter uma lanterna em local acessível é mais seguro.</li>
             <li><strong>Não tentar soluções improvisadas</strong> (grupos geradores sem ligação própria, gambiarras). Risco real de eletrocussão ou de danificar a instalação.</li>
           </ul>
@@ -177,13 +177,13 @@ export default function GuiaFalhaEnergia() {
           </p>
           <ol className="list-decimal pl-6 space-y-3 mb-6">
             <li>
-              <strong>Instalação certificada e bem conservada</strong> — terra efetiva em todas as tomadas, disjuntor diferencial de 30 mA a funcionar, disjuntores magnetotérmicos dimensionados para a secção dos fios. Em zonas rurais antigas de Trás-os-Montes, muitas casas ainda têm instalações dos anos 70/80 que beneficiariam de renovação.
+              <strong>Instalação certificada e bem conservada</strong> — terra efetiva em todas as tomadas, disjuntor diferencial a funcionar, disjuntores magnetotérmicos dimensionados para a secção dos fios. Em zonas rurais antigas de Trás-os-Montes, muitas casas ainda têm instalações antigas que beneficiariam de uma avaliação.
             </li>
             <li>
-              <strong>DPS (Dispositivo de Proteção contra Sobretensões)</strong> — protege os equipamentos eletrónicos da casa contra picos de tensão vindos da rede (trovoadas, manobras da EDP). Custo acessível (50€-120€ o aparelho, mais a instalação).
+              <strong>DPS (Dispositivo de Proteção contra Sobretensões)</strong> — protege os equipamentos eletrónicos da casa contra picos de tensão vindos da rede (trovoadas, manobras da EDP). O custo depende do quadro, do equipamento escolhido e da instalação necessária; deve ser orçamentado antes do trabalho.
             </li>
             <li>
-              <strong>Revisão periódica da instalação</strong> — a cada 10 anos em instalações recentes, com maior frequência em instalações com mais de 20 anos. Mede o isolamento dos fios, testa o diferencial, aperta os bornes, identifica pontos quentes antes de falharem.
+              <strong>Revisão periódica da instalação</strong> — com periodicidade ajustada ao estado e à idade da instalação. Mede o isolamento dos fios, testa o diferencial, aperta os bornes, identifica pontos quentes antes de falharem.
             </li>
             <li>
               <strong>Não sobrecarregar circuitos</strong> —especialmente em cozinhas, aquecedores e extensões. A sobrecarga crónica envelhece a cablagem e pode levar a curto-circuitos meses depois.
@@ -207,11 +207,28 @@ export default function GuiaFalhaEnergia() {
             Em qualquer destes casos, o caminho seguro é: identificar o disjuntor parcial, deixá-lo desligado, e chamar eletricista certificado. Não tente abrir caixas de derivação nem mexer em ligações dentro de paredes sem formação — risco de eletrocussão e de agravar a avaria.
           </p>
 
+          <section className="my-10 bg-orange-50 border-l-4 border-orange-600 p-6 rounded-r-lg">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Factos verificáveis Norte Reparos</h2>
+            <p className="text-gray-800 mb-3"><strong>Mão de obra:</strong> 70 €/h para eletricidade, segundo a grelha interna R12.</p>
+            <p className="text-gray-800 mb-3"><strong>Deslocação:</strong> Z1 = 15 €, Z2 = 25 €, Z3 = 35 €, Z4 = 45 €, Z5 = 55 € e Z6 = 65 €. Em noite, fim de semana ou feriado, aplica-se +50% à mão de obra.</p>
+            <p className="text-gray-800 mb-2"><strong>Exemplos de distância TomTom desde Macedo de Cavaleiros:</strong></p>
+            <ul className="list-disc pl-6 space-y-1 mb-3">
+              <li>Macedo de Cavaleiros: 0,0 km · Z1 · 15 €</li>
+              <li>Mirandela: 27,4 km · Z2 · 25 €</li>
+              <li>Bragança: 42,4 km · Z3 · 35 €</li>
+              <li>Chaves: 74,7 km · Z5 · 55 €</li>
+              <li>Vila Real: 85,7 km · Z5 · 55 €</li>
+              <li>Miranda do Douro: 92,2 km · Z6 · 65 €</li>
+            </ul>
+            <p className="text-gray-800 mb-3"><strong>Equipamento real:</strong> Fluke T6-1000, Megger MFT1741+, FLIR E96 e câmara de inspeção de 30 m.</p>
+            <p className="text-sm text-gray-600">Fontes internas: grelha de zonas verrouillée em 14/07/2026; <code>preco-deslocacao.py</code>; dados TomTom reais em <code>_audit/zonas-distances-concelhos.json</code> (data/concelhos.json).</p>
+          </section>
+
           <h2 id="faq" className="text-3xl font-bold text-gray-900 mt-12 mb-6">6. Perguntas frequentes</h2>
           <div className="space-y-6">
             <div>
               <h3 className="font-bold text-gray-900 mb-2 text-xl">Quanto tempo pode a casa ficar sem energia em segurança?</h3>
-              <p className="text-gray-700">Em condições normais, várias horas. O principal cuidado é com a cadeia do frio (4h frigorífico, 24-48h congelador fechado) e com a segurança (não improvisar soluções elétricas).</p>
+              <p className="text-gray-700">Em condições normais, várias horas. O principal cuidado é com a cadeia do frio (tempo variável conforme o equipamento e a utilização) e com a segurança (não improvisar soluções elétricas).</p>
             </div>
             <div>
               <h3 className="font-bold text-gray-900 mb-2 text-xl">Posso religar o disjuntor geral se ele disparou?</h3>
@@ -227,7 +244,7 @@ export default function GuiaFalhaEnergia() {
             </div>
             <div>
               <h3 className="font-bold text-gray-900 mb-2 text-xl">Quanto custa prevenir falha de energia?</h3>
-              <p className="text-gray-700">Em Trás-os-Montes, a mão de obra de eletricista é de 70€/h em horário normal, com deslocação entre 15€ e 65€ consoante a zona (Z1 a Z6). O custo total de uma instalação de DPS ou revisão preventiva depende da situação concreta da instalação — peçamos sempre orçamento por escrito antes da intervenção, com a descrição do trabalho a realizar.</p>
+              <p className="text-gray-700">A tarifa interna de eletricista é 70 €/h. A deslocação segue a grelha Z1 = 15 €, Z2 = 25 €, Z3 = 35 €, Z4 = 45 €, Z5 = 55 € e Z6 = 65 €; em noite, fim de semana ou feriado aplica-se +50% à mão de obra. O custo de um DPS ou de uma revisão preventiva depende do diagnóstico; damos orçamento por escrito antes da intervenção.</p>
             </div>
           </div>
 
