@@ -5,6 +5,32 @@
 
 ---
 
+## L#003 — 2026-07-20 — GEO-PROTO Mirandela : owned-data ≠ vérité homogène
+
+**Contexte** : enrichissement de la page ville React Mirandela à partir des sources owned du repo,
+sans consultation web. Le premier brouillon reprenait « 44 freguesias » et appliquait Z2/25 € à toute
+la liste, alors que `client/public/concelhos/mirandela.html` en énumère 37 et que
+`precos-zonas.json` classe les localités résolues entre Z1 et Z4.
+
+**Leçons** :
+
+1. **Une source owned doit encore être réconciliée avec les autres sources owned.** Compter les
+   entrées et vérifier chaque nom dans `precos-zonas.json` avant de publier un total ou une zone.
+2. **Ville ≠ concelho.** TomTom 27,4 km / 23 min et Z2/25 € concernent Mirandela ville ; confirmer
+   la zone et le prix par localité pour le reste du concelho.
+3. **R5 s'applique aussi aux helpers.** `getCityAddress()` synthétise un `streetAddress` local ;
+   employer l'adresse régionale géo-neutre et `areaServed` pour la ville.
+4. **R-TEL doit être bytes-level.** Utiliser `+351932321892` pour `tel:`/schema et
+   `+351 932 321 892` pour le texte visible.
+5. **Une référence routière n'est pas une promesse d'arrivée.** Présenter le temps TomTom comme
+   mesure de parcours, avec variabilité des conditions réelles.
+
+**Règle opérationnelle** : avant tout prochain prototype ville owned-only, exécuter le triplet
+`compte hub` → `lookup zone par localité` → `scan R5/R-TEL`; si les sources divergent, publier le
+périmètre le plus étroit et expliciter la limite.
+
+---
+
 ## L#001 — 2026-07-17 — money-fix P0 zones ENR (grille Filipe 14/07)
 
 **Contexte** : bug identique à CU/EU du 16/07 (commit `35867f4dc` « Chaves passe Z6 65€ → Z5 55€ »)
