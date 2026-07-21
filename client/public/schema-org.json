@@ -7,7 +7,7 @@
  "description": "Serviços de eletricista profissional",
  "address": {
  "@type": "PostalAddress",
- "streetAddress": "Trás-os-Montes, Trás-os-Montes, Portugal",
+ "streetAddress": "Trás-os-Montes, Portugal",
  "addressLocality": "Trás-os-Montes",
  "addressRegion": "Trás-os-Montes",
  "addressCountry": "PT",
