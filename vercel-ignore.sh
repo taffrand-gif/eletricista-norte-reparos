@@ -53,6 +53,8 @@ fi
 DOC_ONLY=true
 while IFS= read -r f; do
   case "$f" in
+    # build paths (Vite) — TOUJOURS build, meme .txt/.json (fix bug .txt whitelist)
+    client/public/*|public/*|client/src/*|src/*) DOC_ONLY=false; break ;;
     # === DOCS AUTORISÉES ===
     *.md|*.markdown) continue ;;
     *.txt) continue ;;
