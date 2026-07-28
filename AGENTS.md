@@ -115,7 +115,7 @@ Une absence de règle = autorisé par défaut. La règle 10 dit : **en cas de do
 - **Sites actifs** : canalizador-norte-reparos.pt (928 484 451) · canalizador-urgente.pt (928 484 451) · eletricista-norte-reparos.pt (932 321 892) · eletricista-urgente.pt (932 321 892)
 - **Zone** : Trás-os-Montes, ~34 concelhos, rayon ~130 km autour de Macedo de Cavaleiros
 - **Stack transversale** : React + Vite · GitHub (org `taffrand-gif`) · Vercel · Cloudflare DNS · n8n · Obsidian (vault `NORTE-OS`) · GA4 · Google Search Console · Google Ads · Meta Ads · TomTom · WhatsApp · ElevenLabs + Twilio (agent vocal, conçu, pas encore construit)
-- **Certification élec** : DGEG `1757/2026/DIEN` en attente · co-signature LDE Mirandela en attendant
+- **Certification élec** : TRIESP **n.º 90062** — DGEG, domínio *Execução em Baixa Tensão* até 41,4 kVA (Lei n.º 14/2015) — titulaire Filipe Bragança
 - **Langue** : interne FR informel · tout contenu client **PT-PT uniquement** (jamais PT-BR)
 
 **Règle pronom — rédaction client uniquement (verrouillée 30/06/2026)** :
@@ -125,3 +125,87 @@ Une absence de règle = autorisé par défaut. La règle 10 dit : **en cas de do
 - Vérifié à chaque livraison
 
 **Compatibilité** : ce bloc complète la doctrine locale (R1-R11 + §11 ci-dessus) sans la remplacer. En cas de contradiction, la doctrine locale prime.
+
+## 13. DOCTRINE DGEG — TRIESP 90062 (ruling Filipe 2026-07-28, verrouillée)
+
+Filipe **EST technicien certifié DGEG** et émet **Ficha Eletrotécnica** + **Termo de Responsabilidade**. Cette règle remplace toute ancienne consigne « pas de cert DGEG / pas de ficha » qui datait d'avant la certification.
+
+**Wording public canonique** (à réutiliser verbatim, source `DGEG-CERT-SOURCE-OF-TRUTH.md`) :
+> **Técnico Responsável de Instalações Elétricas inscrito na DGEG — TRIESP n.º 90062** (domínio *Execução em Baixa Tensão*, instalações até 41,4 kVA). Emitimos **Ficha Eletrotécnica** e **Termo de Responsabilidade**. Seguro de responsabilidade civil válido. (Lei n.º 14/2015)
+
+**Scope STRICT** (jamais surclamer) :
+- ✅ « inscrito na DGEG », « TRIESP n.º 90062 », « Execução em Baixa Tensão », « instalações até 41,4 kVA », « Ficha Eletrotécnica », « Termo de Responsabilidade », « seguro RC »
+- ❌ **INTERDIT** : « definitivo / permanente / título definitivo », « CERTIEL » (c'est DGEG, pas CERTIEL), « instalações certificadas » au sens qualification d'entreprise, tout scope hors Baixa Tensão / 41,4 kVA (MT, AT, produção, RESP, etc.)
+- **Nuance R11** : l'inscription est à *título provisório* (action de formation prévue, art. 34 Lei 14/2015) — « inscrito » reste VRAI, « definitivo » INTERDIT.
+
+**Service RÉEL débloqué par la cert (2026-07-28) — CHARGEUR VE** :
+- L'installation de **carregadores de veículos elétricos (wallbox)** entre dans le scope Baixa Tensão até 41,4 kVA. **AUTORISÉ** sur le site élec avec mention Ficha + Termo.
+- Mots-clés : « carregador carro elétrico », « wallbox instalação », « posto de carregamento VE », « carregador veículo elétrico casa ».
+- **HORS scope** : climatisation / bomba de calor / solaire / pompe à chaleur / plancher chauffant (sauf GO explicite Filipe).
+
+## 14. GATE DGEG — Preuve obligatoire avant merge de tout batch mentionnant DGEG/TRIESP/certificado (verrouillée 2026-07-28 par Philippe)
+
+**Règle non-négociable** : tout batch (script, copier-coller, refonte) qui insère ou modifie un bloc DGEG/TRIESP/Ficha/Termo sur les pages élec **DOIT** passer le gate ci-dessous avant merge vers `main`. **Refus du merge** si une des conditions échoue.
+
+### Test 1 — Présence wording canonique (grep)
+La chaîne exacte suivante DOIT apparaître dans la diff du batch (et sur chaque page touchée) :
+- `TRIESP n.º 90062`
+- `Execução em Baixa Tensão`
+- `até 41,4 kVA`
+- `Ficha Eletrotécnica`
+- `Termo de Responsabilidade`
+- `Lei n.º 14/2015`
+
+**INTERDIT dans le batch** (à grep `-v` et compter = 0 occurrence) :
+- `definitivo` / `permanente` / `título definitivo`
+- `CERTIEL`
+- `instalações certificadas` (au sens qualification d'entreprise)
+
+### Test 2 — JSON-LD credential valide (parse strict)
+Chaque page touchée DOIT contenir un JSON-LD `Person` avec `hasCredential` :
+- `credentialCategory` = `"Registo profissional DGEG — TRIESP"`
+- `identifier` = `"90062"`
+- `recognizedBy.url` = `"https://www.dgeg.gov.pt/"`
+Parse Python : `json.loads(blob)` doit retourner sans exception (après dé-sandbox `https://***@type` → `https://schema.org`).
+
+### Test 3 — Invariants structurels (Δ = 0 cassé)
+- Compteur `<h1>` par page = **inchangé** vs `main` (1 ou 0 selon état pré-existant — pas de nouvelle ligne H1 ajoutée par le batch)
+- `tel:+351932321892` (numéro NON masqué) — `tel:+351****1892` interdit dans le batch
+- Aucune régression grille tarifaire (70 €/h élec)
+
+### Test 4 — Chargeur VE
+Si le batch introduit « chargeur VE / wallbox / carregador » : OK. Si NON (pas de mention VE dans le batch) : N/A, passe par défaut.
+
+### Comment exécuter le gate (depuis `client/public/`)
+
+```bash
+cd <repo>/.worktrees/fix-dgeg-doctrine/client/public
+# Test 1
+grep -l "TRIESP n.º 90062" *.html | wc -l
+grep -rE "(definitivo|permanente|CERTIEL|instalações certificadas)" *.html | wc -l   # doit être 0
+# Test 2
+python3 -c '
+import re, json
+from pathlib import Path
+broken=[]
+for f in Path(".").glob("**/*.html"):
+    txt = f.read_text(errors="replace")
+    for m in re.finditer(r"<script type="application/ld\+json">(.*?)</script>", txt, re.DOTALL):
+        b = m.group(1).replace("https://***@type","https://schema.org")
+        try: json.loads(b)
+        except Exception as e: broken.append((f.name, str(e)[:60]))
+print("JSON-LD invalides:", len(broken))
+'
+# Test 3 : H1 inchangé vs main
+git diff origin/main -- '*.html' | grep -cE '^[+-]<h1'   # devrait être 0
+```
+
+**Sortie interdite** : « Tout vert sauf Test 2 / JSON-LD invalides » → STOP, fixer le JSON avant merge.
+
+### Provenance
+Ce gate est dérivé de la doctrine source-of-truth : `~/work/Sites/DGEG-CERT-SOURCE-OF-TRUTH.md`.
+Tout écart à cette source = STOP validation Philippe.
+
+---
+
+**Source de vérité unique** : `~/.openclaw/workspace/AGENTS.md` (global) + ce fichier (site-spécifique).
