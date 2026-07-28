@@ -37,7 +37,7 @@ Brands:
 QuotePolicy: Orçamento detalhado em 48h, sem compromisso
 Billing: Fatura com NIF emitida no final de cada trabalho
 Insurance: Responsabilidade civil profissional coberta
-Certifications: DGEG 1757/2026/DIEN em curso · co-assinatura LDE Mirandela
+Certifications: DGEG TRIESP n.º 90062 (Técnico Responsável, Execução em Baixa Tensão, até 41,4 kVA)
 Language: PT-PT (Portugal)
 Pronoun: "nós" / "nossa equipa" (nunca "eu")
 RelatedSites:
