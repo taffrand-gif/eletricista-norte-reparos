@@ -16,169 +16,236 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Ficha Eletrotécnica: o que é, quem passa, preço",
-  "description": "Guia completo sobre a Ficha Eletrotécnica: definição legal, quando é obrigatória, quem a pode emitir (Técnico Responsável DGEG TRIESP 90062), preço a partir de 350€ e como obter em Trás-os-Montes.",
-  "author": {
-    "@type": "Organization",
-    "name": "Norte Reparos",
-    "url": "https://eletricista-norte-reparos.pt"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Norte Reparos",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://eletricista-norte-reparos.pt/logo.png"
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://eletricista-norte-reparos.pt/#filipe",
+      "name": "Filipe Bragança",
+      "jobTitle": "Técnico Responsável de Instalações Elétricas de Serviço Particular (TRIESP)",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Registo profissional DGEG — TRIESP",
+          "identifier": "90062",
+          "recognizedBy": {
+            "@type": "GovernmentOrganization",
+            "name": "Direção-Geral de Energia e Geologia (DGEG)",
+            "url": "https://www.dgeg.gov.pt/"
+          }
+        }
+      ],
+      "worksFor": {
+        "@id": "https://eletricista-norte-reparos.pt/#business"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://eletricista-norte-reparos.pt/#business",
+      "name": "Norte Reparos",
+      "url": "https://eletricista-norte-reparos.pt",
+      "employee": {
+        "@id": "https://eletricista-norte-reparos.pt/#filipe"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://eletricista-norte-reparos.pt/#localbusiness",
+      "name": "Norte Reparos - Eletricista Trás-os-Montes",
+      "image": "https://eletricista-norte-reparos.pt/og-image.png",
+      "telephone": "+351-932 321 892",
+      "priceRange": "€€",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Trás-os-Montes e Douro",
+        "addressCountry": "PT"
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Trás-os-Montes"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Douro"
+        }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "sameAs": [
+        "https://canalizador-norte-reparos.pt",
+        "https://canalizador-urgente.pt",
+        "https://eletricista-urgente.pt"
+      ],
+      "parentOrganization": {
+        "@id": "https://eletricista-norte-reparos.pt/#business"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://eletricista-norte-reparos.pt/ficha-eletrotecnica#service",
+      "name": "Emissão de Ficha Eletrotécnica e Termo de Responsabilidade",
+      "serviceType": "Certificação elétrica DGEG",
+      "provider": {
+        "@id": "https://eletricista-norte-reparos.pt/#localbusiness"
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Trás-os-Montes"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Douro"
+        }
+      ],
+      "description": "A nossa equipa inclui um Técnico Responsável de Instalações Elétricas de Serviço Particular (TRIESP) inscrito na DGEG com o número 90062, no domínio Execução em Baixa Tensão, para instalações até 41,4 kVA.",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "EUR",
+        "price": "350",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "priceCurrency": "EUR",
+          "minPrice": 350,
+          "description": "Preço de partida para serviço com emissão de Ficha Eletrotécnica e Termo de Responsabilidade. Orçamento escrito antes de qualquer intervenção."
+        }
+      }
+    },
+    {
+      "@type": "Article",
+      "@id": "https://eletricista-norte-reparos.pt/ficha-eletrotecnica#article",
+      "headline": "Ficha Eletrotécnica: o que é, quem passa, preço",
+      "description": "Guia completo sobre a Ficha Eletrotécnica: definição legal, quando é obrigatória, quem a pode emitir (Técnico Responsável DGEG TRIESP 90062), preço a partir de 350€ e como obter em Trás-os-Montes.",
+      "author": {
+        "@id": "https://eletricista-norte-reparos.pt/#business"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Norte Reparos",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://eletricista-norte-reparos.pt/logo.png"
+        }
+      },
+      "datePublished": "2026-07-28",
+      "dateModified": "2026-07-28",
+      "inLanguage": "pt-PT",
+      "about": {
+        "@type": "DefinedTerm",
+        "name": "Ficha Eletrotécnica",
+        "alternateName": "Ficha de Instalação Elétrica"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://eletricista-norte-reparos.pt/ficha-eletrotecnica"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O que é a Ficha Eletrotécnica?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Ficha Eletrotécnica é um documento oficial que descreve uma instalação elétrica (potência, circuitos, proteções, terras) e confirma que foi executada conforme as normas técnicas em vigor. É emitida por um Técnico Responsável de Instalações Elétricas de Serviço Particular (TRIESP) inscrito na DGEG e acompanha o Termo de Responsabilidade, conforme a Lei n.º 14/2015."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quem pode passar a Ficha Eletrotécnica?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Só um Técnico Responsável de Instalações Elétricas de Serviço Particular (TRIESP) inscrito na DGEG, no domínio Execução em Baixa Tensão e com seguro de responsabilidade civil válido (mínimo 50.000€). Não é um documento que qualquer eletricista, mesmo experiente, possa emitir por iniciativa própria."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto custa a Ficha Eletrotécnica?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O serviço certificado de emissão de Ficha Eletrotécnica e Termo de Responsabilidade prestado pela nossa equipa tem preço de partida de 350€, mediante orçamento escrito antes de qualquer intervenção. O valor final depende do tipo de trabalho (nova instalação, aumento de potência, remodelação) e da complexidade. Não cobramos nada antes de apresentar o orçamento."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quando é que a Ficha Eletrotécnica é obrigatória?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "É obrigatória em vários cenários: nova instalação elétrica, aumento de potência contratada, remodelações ou alterações que mexam na potência/circuitos, legalização de instalações antigas, e quando o imóvel é vendido ou arrendado e a entidade compradora/inquilino exige comprovativo. Sem Ficha válida, o comercializador de energia pode recusar contratos novos ou alterações de potência."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a diferença entre Ficha Eletrotécnica e Termo de Responsabilidade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "São documentos diferentes mas sempre emitidos em conjunto pelo mesmo TRIESP: a Ficha Eletrotécnica descreve tecnicamente a instalação (características, ensaios, conformidade); o Termo de Responsabilidade é a declaração assinada pelo técnico que assume a responsabilidade técnica pela execução e conformidade da instalação. Ambos seguem a Lei n.º 14/2015."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como obter a Ficha Eletrotécnica em Trás-os-Montes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Passo 1: ligue 932 321 892 ou envie WhatsApp e descreva o que precisa (nova instalação, aumento de potência, legalização). Passo 2: a nossa equipa desloca-se, avalia a instalação e entrega orçamento escrito sem compromisso. Passo 3: após a intervenção, emitimos a Ficha Eletrotécnica e o Termo de Responsabilidade assinados pelo nosso Técnico Responsável inscrito na DGEG (TRIESP nº 90062), válidos para apresentar ao comercializador, seguradora ou notário."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Posso vender ou arrendar a casa sem Ficha Eletrotécnica?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende do comprador/inquilino e da lei aplicável. Em多くの casos, a seguradora exige instalação certificada para ativar a apólice multi-risco, e o banco pode recusar financiamento sem conformidade elétrica comprovada. Mesmo sem obrigação legal estrita, apresentar a Ficha Eletrotécnica é a forma de remover risco contratual para quem compra ou arrenda."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A Norte Reparos emite Ficha para todo o tipo de instalações?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Emitimos Ficha Eletrotécnica e Termo de Responsabilidade para instalações elétricas em Baixa Tensão até 41,4 kVA (o limite legal do nosso registo DGEG, domínio Execução em Baixa Tensão). Para instalações acima desse limite, como certos industriais ou postos de transformação, é necessário outro tipo de técnico responsável - indique-nos o caso e indicamos o caminho."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://eletricista-norte-reparos.pt/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Trás-os-Montes",
+          "item": "https://eletricista-norte-reparos.pt/distritos/tras-os-montes.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Ficha Eletrotécnica",
+          "item": "https://eletricista-norte-reparos.pt/ficha-eletrotecnica"
+        }
+      ]
     }
-  },
-  "datePublished": "2026-07-28",
-  "dateModified": "2026-07-28",
-  "inLanguage": "pt-PT",
-  "about": {
-    "@type": "DefinedTerm",
-    "name": "Ficha Eletrotécnica",
-    "alternateName": "Ficha de Instalação Elétrica"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://eletricista-norte-reparos.pt/ficha-eletrotecnica"
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Emissão de Ficha Eletrotécnica e Termo de Responsabilidade",
-  "serviceType": "Certificação elétrica DGEG",
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "Norte Reparos",
-    "telephone": "+351-932 321 892",
-    "areaServed": [
-      {"@type": "AdministrativeArea", "name": "Trás-os-Montes"},
-      {"@type": "AdministrativeArea", "name": "Douro"}
-    ],
-    "sameAs": [
-      "https://canalizador-norte-reparos.pt",
-      "https://canalizador-urgente.pt",
-      "https://eletricista-urgente.pt"
-    ]
-  },
-  "offers": {
-    "@type": "Offer",
-    "priceCurrency": "EUR",
-    "price": "350",
-    "priceSpecification": {
-      "@type": "PriceSpecification",
-      "priceCurrency": "EUR",
-      "minPrice": 350,
-      "description": "Preço de partida para serviço com emissão de Ficha Eletrotécnica e Termo de Responsabilidade. Orçamento escrito antes de qualquer intervenção."
-    }
-  },
-  "description": "A nossa equipa inclui um Técnico Responsável de Instalações Elétricas de Serviço Particular (TRIESP) inscrito na DGEG com o número 90062, no domínio Execução em Baixa Tensão, para instalações até 41,4 kVA."
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "O que é a Ficha Eletrotécnica?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A Ficha Eletrotécnica é um documento oficial que descreve uma instalação elétrica (potência, circuitos, proteções, terras) e confirma que foi executada conforme as normas técnicas em vigor. É emitida por um Técnico Responsável de Instalações Elétricas de Serviço Particular (TRIESP) inscrito na DGEG e acompanha o Termo de Responsabilidade, conforme a Lei n.º 14/2015."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Quem pode passar a Ficha Eletrotécnica?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Só um Técnico Responsável de Instalações Elétricas de Serviço Particular (TRIESP) inscrito na DGEG, no domínio Execução em Baixa Tensão e com seguro de responsabilidade civil válido (mínimo 50.000€). Não é um documento que qualquer eletricista, mesmo experiente, possa emitir por iniciativa própria."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Quanto custa a Ficha Eletrotécnica?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "O serviço certificado de emissão de Ficha Eletrotécnica e Termo de Responsabilidade prestado pela nossa equipa tem preço de partida de 350€, mediante orçamento escrito antes de qualquer intervenção. O valor final depende do tipo de trabalho (nova instalação, aumento de potência, remodelação) e da complexidade. Não cobramos nada antes de apresentar o orçamento."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Quando é que a Ficha Eletrotécnica é obrigatória?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "É obrigatória em vários cenários: nova instalação elétrica, aumento de potência contratada, remodelações ou alterações que mexam na potência/circuitos, legalização de instalações antigas, e quando o imóvel é vendido ou arrendado e a entidade compradora/inquilino exige comprovativo. Sem Ficha válida, o comercializador de energia pode recusar contratos novos ou alterações de potência."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Qual a diferença entre Ficha Eletrotécnica e Termo de Responsabilidade?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "São documentos diferentes mas sempre emitidos em conjunto pelo mesmo TRIESP: a Ficha Eletrotécnica descreve tecnicamente a instalação (características, ensaios, conformidade); o Termo de Responsabilidade é a declaração assinada pelo técnico que assume a responsabilidade técnica pela execução e conformidade da instalação. Ambos seguem a Lei n.º 14/2015."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Como obter a Ficha Eletrotécnica em Trás-os-Montes?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Passo 1: ligue 932 321 892 ou envie WhatsApp e descreva o que precisa (nova instalação, aumento de potência, legalização). Passo 2: a nossa equipa desloca-se, avalia a instalação e entrega orçamento escrito sem compromisso. Passo 3: após a intervenção, emitimos a Ficha Eletrotécnica e o Termo de Responsabilidade assinados pelo nosso Técnico Responsável inscrito na DGEG (TRIESP nº 90062), válidos para apresentar ao comercializador, seguradora ou notário."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Posso vender ou arrendar a casa sem Ficha Eletrotécnica?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Depende do comprador/inquilino e da lei aplicável. Em多くの casos, a seguradora exige instalação certificada para ativar a apólice multi-risco, e o banco pode recusar financiamento sem conformidade elétrica comprovada. Mesmo sem obrigação legal estrita, apresentar a Ficha Eletrotécnica é a forma de remover risco contratual para quem compra ou arrenda."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "A Norte Reparos emite Ficha para todo o tipo de instalações?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Emitimos Ficha Eletrotécnica e Termo de Responsabilidade para instalações elétricas em Baixa Tensão até 41,4 kVA (o limite legal do nosso registo DGEG, domínio Execução em Baixa Tensão). Para instalações acima desse limite, como certos industriais ou postos de transformação, é necessário outro tipo de técnico responsável - indique-nos o caso e indicamos o caminho."
-      }
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://eletricista-norte-reparos.pt/"},
-    {"@type": "ListItem", "position": 2, "name": "Trás-os-Montes", "item": "https://eletricista-norte-reparos.pt/distritos/tras-os-montes.html"},
-    {"@type": "ListItem", "position": 3, "name": "Ficha Eletrotécnica", "item": "https://eletricista-norte-reparos.pt/ficha-eletrotecnica"}
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Norte Reparos",
-  "telephone": "+351-932 321 892",
-  "openingHoursSpecification": [{
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-    "opens": "00:00",
-    "closes": "23:59"
-  }],
-  "sameAs": [
-    "https://canalizador-norte-reparos.pt",
-    "https://canalizador-urgente.pt",
-    "https://eletricista-urgente.pt"
   ]
 }
 </script>

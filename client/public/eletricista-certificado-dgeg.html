@@ -20,150 +20,222 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Eletricista Certificado DGEG em Trás-os-Montes — TRIESP n.º 90062",
-  "description": "Quem é o técnico responsável certificado pela DGEG na região de Trás-os-Montes, em que condições atua e porquê escolher um eletricista com registo DGEG.",
-  "datePublished": "2026-07-28",
-  "dateModified": "2026-07-28",
-  "inLanguage": "pt-PT",
-  "author": {"@type": "Organization", "name": "Norte Reparos", "telephone": "+351-932-321-892", "url": "https://eletricista-norte-reparos.pt", "sameAs": ["https://canalizador-norte-reparos.pt", "https://canalizador-urgente.pt", "https://eletricista-urgente.pt"]},
-  "publisher": {"@type": "Organization", "name": "Norte Reparos", "telephone": "+351-932-321-892", "url": "https://eletricista-norte-reparos.pt", "logo": {"@type": "ImageObject", "url": "https://eletricista-norte-reparos.pt/og-image.png"}, "sameAs": ["https://canalizador-norte-reparos.pt", "https://canalizador-urgente.pt", "https://eletricista-urgente.pt"]},
-  "about": {"@type": "GovernmentOrganization", "name": "DGEG — Direção-Geral de Energia e Geologia", "url": "https://www.dgeg.gov.pt"},
-  "keywords": "eletricista certificado DGEG, TRIESP, técnico responsável instalações elétricas, Ficha Eletrotécnica, Termo de Responsabilidade, Lei 14/2015, Trás-os-Montes"
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Filipe Bragança",
-  "jobTitle": "Técnico Responsável de Instalações Elétricas de Serviço Particular (TRIESP)",
-  "worksFor": {"@type": "Organization", "name": "Norte Reparos", "url": "https://eletricista-norte-reparos.pt"},
-  "telephone": "+351-932-321-892",
-  "url": "https://eletricista-norte-reparos.pt/eletricista-certificado-dgeg",
-  "areaServed": {"@type": "AdministrativeArea", "name": "Trás-os-Montes"},
-  "knowsAbout": ["Instalações elétricas de baixa tensão", "Ficha Eletrotécnica", "Termo de Responsabilidade", "Execução em Baixa Tensão até 41,4 kVA", "Lei n.º 14/2015"],
-  "hasCredential": [
+  "@graph": [
     {
-      "@type": "EducationalOccupationalCredential",
-      "credentialCategory": "Registo profissional DGEG — TRIESP (Técnico Responsável de Instalações Elétricas de Serviço Particular)",
-      "identifier": "90062",
-      "url": "https://www.dgeg.gov.pt",
-      "recognizedBy": {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Filipe Bragança",
+      "jobTitle": "Técnico Responsável de Instalações Elétricas de Serviço Particular (TRIESP)",
+      "worksFor": {
+        "@id": "https://eletricista-norte-reparos.pt/#business"
+      },
+      "telephone": "+351-932-321-892",
+      "url": "https://eletricista-norte-reparos.pt/eletricista-certificado-dgeg",
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Trás-os-Montes"
+      },
+      "knowsAbout": [
+        "Instalações elétricas de baixa tensão",
+        "Ficha Eletrotécnica",
+        "Termo de Responsabilidade",
+        "Execução em Baixa Tensão até 41,4 kVA",
+        "Lei n.º 14/2015"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Registo profissional DGEG — TRIESP (Técnico Responsável de Instalações Elétricas de Serviço Particular)",
+          "identifier": "90062",
+          "url": "https://www.dgeg.gov.pt",
+          "recognizedBy": {
+            "@type": "GovernmentOrganization",
+            "name": "DGEG — Direção-Geral de Energia e Geologia",
+            "url": "https://www.dgeg.gov.pt"
+          },
+          "validIn": {
+            "@type": "AdministrativeArea",
+            "name": "Portugal"
+          },
+          "about": "Domínio: Execução em Baixa Tensão. Instalações elétricas até 41,4 kVA (inclusive). Base legal: Lei n.º 14/2015, de 16 de fevereiro, complementada pelo DL n.º 72/2020 e Despacho n.º 13/2022."
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Seguro de Responsabilidade Civil Profissional",
+          "identifier": "mínimo €50.000",
+          "recognizedBy": {
+            "@type": "GovernmentOrganization",
+            "name": "ASF — Autoridade de Supervisão de Seguros e Fundos de Pensões"
+          },
+          "about": "Cobertura mínima obrigatória exigida pela Lei n.º 14/2015 para TRIESP a exercer em Portugal."
+        }
+      ],
+      "@id": "https://eletricista-norte-reparos.pt/#filipe"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://eletricista-norte-reparos.pt/#business",
+      "name": "Norte Reparos",
+      "url": "https://eletricista-norte-reparos.pt",
+      "employee": {
+        "@id": "https://eletricista-norte-reparos.pt/#filipe"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Norte Reparos — Eletricista Certificado DGEG Trás-os-Montes",
+      "telephone": "+351-932-321-892",
+      "url": "https://eletricista-norte-reparos.pt/",
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Trás-os-Montes"
+      },
+      "priceRange": "€€",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://canalizador-norte-reparos.pt",
+        "https://canalizador-urgente.pt",
+        "https://eletricista-urgente.pt"
+      ],
+      "@id": "https://eletricista-norte-reparos.pt/#localbusiness",
+      "parentOrganization": {
+        "@id": "https://eletricista-norte-reparos.pt/#business"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Eletricista Certificado DGEG em Trás-os-Montes — TRIESP n.º 90062",
+      "description": "Quem é o técnico responsável certificado pela DGEG na região de Trás-os-Montes, em que condições atua e porquê escolher um eletricista com registo DGEG.",
+      "datePublished": "2026-07-28",
+      "dateModified": "2026-07-28",
+      "inLanguage": "pt-PT",
+      "author": {
+        "@id": "https://eletricista-norte-reparos.pt/#business"
+      },
+      "publisher": {
+        "@id": "https://eletricista-norte-reparos.pt/#business"
+      },
+      "about": {
         "@type": "GovernmentOrganization",
         "name": "DGEG — Direção-Geral de Energia e Geologia",
         "url": "https://www.dgeg.gov.pt"
       },
-      "validIn": {"@type": "AdministrativeArea", "name": "Portugal"},
-      "about": "Domínio: Execução em Baixa Tensão. Instalações elétricas até 41,4 kVA (inclusive). Base legal: Lei n.º 14/2015, de 16 de fevereiro, complementada pelo DL n.º 72/2020 e Despacho n.º 13/2022."
+      "keywords": "eletricista certificado DGEG, TRIESP, técnico responsável instalações elétricas, Ficha Eletrotécnica, Termo de Responsabilidade, Lei 14/2015, Trás-os-Montes",
+      "@id": "https://eletricista-norte-reparos.pt/eletricista-certificado-dgeg#article"
     },
     {
-      "@type": "EducationalOccupationalCredential",
-      "credentialCategory": "Seguro de Responsabilidade Civil Profissional",
-      "identifier": "mínimo €50.000",
-      "recognizedBy": {"@type": "GovernmentOrganization", "name": "ASF — Autoridade de Supervisão de Seguros e Fundos de Pensões"},
-      "about": "Cobertura mínima obrigatória exigida pela Lei n.º 14/2015 para TRIESP a exercer em Portugal."
-    }
-  ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Norte Reparos — Eletricista Certificado DGEG Trás-os-Montes",
-  "telephone": "+351-932-321-892",
-  "url": "https://eletricista-norte-reparos.pt/",
-  "areaServed": {"@type": "AdministrativeArea", "name": "Trás-os-Montes"},
-  "priceRange": "€€",
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-    "opens": "09:00",
-    "closes": "18:00"
-  },
-  "sameAs": ["https://canalizador-norte-reparos.pt", "https://canalizador-urgente.pt", "https://eletricista-urgente.pt"]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Quem é o eletricista certificado DGEG em Trás-os-Montes?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "O técnico responsável da Norte Reparos é Filipe Bragança, inscrito na DGEG com o número 90062 como Técnico Responsável de Instalações Elétricas de Serviço Particular (TRIESP), no domínio Execução em Baixa Tensão, para instalações até 41,4 kVA. Atua em Trás-os-Montes sob a Lei n.º 14/2015 e emite Ficha Eletrotécnica e Termo de Responsabilidade após cada intervenção. Contacto: +351 932 321 892."
-      }
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quem é o eletricista certificado DGEG em Trás-os-Montes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O técnico responsável da Norte Reparos é Filipe Bragança, inscrito na DGEG com o número 90062 como Técnico Responsável de Instalações Elétricas de Serviço Particular (TRIESP), no domínio Execução em Baixa Tensão, para instalações até 41,4 kVA. Atua em Trás-os-Montes sob a Lei n.º 14/2015 e emite Ficha Eletrotécnica e Termo de Responsabilidade após cada intervenção. Contacto: +351 932 321 892."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O que é um TRIESP e porquê interessa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "TRIESP significa Técnico Responsável de Instalações Elétricas de Serviço Particular. É o técnico inscrito na DGEG que, por força da Lei n.º 14/2015, assume a responsabilidade técnica da instalação. Sem TRIESP, a instalação não pode ser legalizada: não há Ficha Eletrotécnica nem Termo de Responsabilidade válidos, e o seguro da habitação pode recusar cobertura em caso de sinistro elétrico."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O seguro de responsabilidade civil está mesmo ativo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. A Lei n.º 14/2015 exige seguro de responsabilidade civil profissional com capital mínimo de €50.000 para qualquer TRIESP a exercer em Portugal. A Norte Reparos mantém seguro válido durante toda a intervenção, e o capital mínimo corresponde exatamente ao limiar legal — pode pedir comprovativo no orçamento."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O que é a Ficha Eletrotécnica e quando é obrigatória?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Ficha Eletrotécnica é o documento oficial que descreve a instalação (características técnicas, materiais, conformidade com as RTIEBT) e identifica o TRIESP responsável. É obrigatória após qualquer instalação nova, remodelação, aumento de potência ou legalização, e é exigida em contratos de compra e arrendamento. Emitimos a Ficha no final da intervenção, assinada pelo TRIESP n.º 90062."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto custa um serviço com Ficha e Termo de Responsabilidade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O serviço com Ficha Eletrotécnica e Termo de Responsabilidade assinados pelo TRIESP está orçamentado a partir de 350 €, mediante visita técnica e detalhe por escrito. O valor final depende da dimensão da instalação, materiais aplicados e complexidade do projeto. O orçamento é detalhado linha a linha, sem surpresas, e o pagamento é feito no final contra fatura com NIF."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a diferença entre um eletricista certificado e um eletricista informal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O eletricista informal não tem registo na DGEG, não pode emitir Ficha Eletrotécnica nem Termo de Responsabilidade, e não tem seguro de responsabilidade civil. Em caso de sinistro, o seguro da habitação pode recusar a indemnização; em caso de venda ou arrendamento, o imóvel fica sem documentação; em caso de inspeção, pode haver coima. A diferença prática, no fim, é que só o trabalho do eletricista certificado deixa provas juridicamente válidas do que foi feito."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A Norte Reparos cobre toda a região de Trás-os-Montes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. A Norte Reparos cobre os concelhos de Trás-os-Montes — Bragança, Mirandela, Macedo de Cavaleiros, Vinhais, Mogadouro, Miranda do Douro, Vimioso, Valpaços, Chaves, Vila Real, Lamego, Peso da Régua, Alfândega da Fé, Carrazeda de Ansiães, Moncorvo, Freixo de Espada à Cinta, Torre de Moncorvo, Murça, Sabrosa, Alijó, Mesão Frio, Santa Marta de Penaguião, Armamar, Tabuaço, Sernancelhe, Penedono, São João da Pesqueira, Moimenta da Beira, Boticas, Montalegre, Ribeira de Pena, Mondim de Basto, Vila Pouca de Aguiar — e respetivas aldeias. Para concelhos fora desta lista, contacte-nos primeiro por telefone."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Posso confiar numa instalação feita por alguém sem registo DGEG?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende do risco que está disposto a aceitar. Em termos legais, uma instalação sem Ficha Eletrotécnica assinada por TRIESP é considerada não documentada. Para o seu dia-a-dia pode funcionar; no momento em que precisa da documentação (venda, arrendamento, aumento de potência, vistoria, sinistro), deixa de servir. A Lei n.º 14/2015 existe precisamente para eliminar essa zona cinzenta."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como peço um orçamento à Norte Reparos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ligue +351 932 321 892 ou envie mensagem WhatsApp para o mesmo número. Descreva o que precisa (instalação nova, remodelação, aumento de potência, carregador VE, quadro, certificação), e agendamos uma visita técnica sem compromisso. Recebe depois um orçamento detalhado por escrito, com materiais, mão-de-obra, prazo de garantia e documentos que vamos emitir (Ficha Eletrotécnica + Termo de Responsabilidade)."
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "O que é um TRIESP e porquê interessa?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "TRIESP significa Técnico Responsável de Instalações Elétricas de Serviço Particular. É o técnico inscrito na DGEG que, por força da Lei n.º 14/2015, assume a responsabilidade técnica da instalação. Sem TRIESP, a instalação não pode ser legalizada: não há Ficha Eletrotécnica nem Termo de Responsabilidade válidos, e o seguro da habitação pode recusar cobertura em caso de sinistro elétrico."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "O seguro de responsabilidade civil está mesmo ativo?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sim. A Lei n.º 14/2015 exige seguro de responsabilidade civil profissional com capital mínimo de €50.000 para qualquer TRIESP a exercer em Portugal. A Norte Reparos mantém seguro válido durante toda a intervenção, e o capital mínimo corresponde exatamente ao limiar legal — pode pedir comprovativo no orçamento."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "O que é a Ficha Eletrotécnica e quando é obrigatória?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A Ficha Eletrotécnica é o documento oficial que descreve a instalação (características técnicas, materiais, conformidade com as RTIEBT) e identifica o TRIESP responsável. É obrigatória após qualquer instalação nova, remodelação, aumento de potência ou legalização, e é exigida em contratos de compra e arrendamento. Emitimos a Ficha no final da intervenção, assinada pelo TRIESP n.º 90062."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Quanto custa um serviço com Ficha e Termo de Responsabilidade?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "O serviço com Ficha Eletrotécnica e Termo de Responsabilidade assinados pelo TRIESP está orçamentado a partir de 350 €, mediante visita técnica e detalhe por escrito. O valor final depende da dimensão da instalação, materiais aplicados e complexidade do projeto. O orçamento é detalhado linha a linha, sem surpresas, e o pagamento é feito no final contra fatura com NIF."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Qual a diferença entre um eletricista certificado e um eletricista informal?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "O eletricista informal não tem registo na DGEG, não pode emitir Ficha Eletrotécnica nem Termo de Responsabilidade, e não tem seguro de responsabilidade civil. Em caso de sinistro, o seguro da habitação pode recusar a indemnização; em caso de venda ou arrendamento, o imóvel fica sem documentação; em caso de inspeção, pode haver coima. A diferença prática, no fim, é que só o trabalho do eletricista certificado deixa provas juridicamente válidas do que foi feito."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "A Norte Reparos cobre toda a região de Trás-os-Montes?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sim. A Norte Reparos cobre os concelhos de Trás-os-Montes — Bragança, Mirandela, Macedo de Cavaleiros, Vinhais, Mogadouro, Miranda do Douro, Vimioso, Valpaços, Chaves, Vila Real, Lamego, Peso da Régua, Alfândega da Fé, Carrazeda de Ansiães, Moncorvo, Freixo de Espada à Cinta, Torre de Moncorvo, Murça, Sabrosa, Alijó, Mesão Frio, Santa Marta de Penaguião, Armamar, Tabuaço, Sernancelhe, Penedono, São João da Pesqueira, Moimenta da Beira, Boticas, Montalegre, Ribeira de Pena, Mondim de Basto, Vila Pouca de Aguiar — e respetivas aldeias. Para concelhos fora desta lista, contacte-nos primeiro por telefone."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Posso confiar numa instalação feita por alguém sem registo DGEG?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Depende do risco que está disposto a aceitar. Em termos legais, uma instalação sem Ficha Eletrotécnica assinada por TRIESP é considerada não documentada. Para o seu dia-a-dia pode funcionar; no momento em que precisa da documentação (venda, arrendamento, aumento de potência, vistoria, sinistro), deixa de servir. A Lei n.º 14/2015 existe precisamente para eliminar essa zona cinzenta."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Como peço um orçamento à Norte Reparos?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ligue +351 932 321 892 ou envie mensagem WhatsApp para o mesmo número. Descreva o que precisa (instalação nova, remodelação, aumento de potência, carregador VE, quadro, certificação), e agendamos uma visita técnica sem compromisso. Recebe depois um orçamento detalhado por escrito, com materiais, mão-de-obra, prazo de garantia e documentos que vamos emitir (Ficha Eletrotécnica + Termo de Responsabilidade)."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://eletricista-norte-reparos.pt/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Trás-os-Montes",
+          "item": "https://eletricista-norte-reparos.pt/distritos/tras-os-montes.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Eletricista Certificado DGEG",
+          "item": "https://eletricista-norte-reparos.pt/eletricista-certificado-dgeg"
+        }
+      ]
     }
   ]
 }

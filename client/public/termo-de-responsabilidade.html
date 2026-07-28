@@ -16,169 +16,236 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Termo de Responsabilidade: o que é, quem assina, preço",
-  "description": "Guia completo sobre o Termo de Responsabilidade: definição legal, quando é obrigatório, quem o pode assinar (Técnico Responsável DGEG TRIESP 90062), preço a partir de 350€ e como obter em Trás-os-Montes.",
-  "author": {
-    "@type": "Organization",
-    "name": "Norte Reparos",
-    "url": "https://eletricista-norte-reparos.pt"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Norte Reparos",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://eletricista-norte-reparos.pt/logo.png"
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://eletricista-norte-reparos.pt/#filipe",
+      "name": "Filipe Bragança",
+      "jobTitle": "Técnico Responsável de Instalações Elétricas de Serviço Particular (TRIESP)",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Registo profissional DGEG — TRIESP",
+          "identifier": "90062",
+          "recognizedBy": {
+            "@type": "GovernmentOrganization",
+            "name": "Direção-Geral de Energia e Geologia (DGEG)",
+            "url": "https://www.dgeg.gov.pt/"
+          }
+        }
+      ],
+      "worksFor": {
+        "@id": "https://eletricista-norte-reparos.pt/#business"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://eletricista-norte-reparos.pt/#business",
+      "name": "Norte Reparos",
+      "url": "https://eletricista-norte-reparos.pt",
+      "employee": {
+        "@id": "https://eletricista-norte-reparos.pt/#filipe"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://eletricista-norte-reparos.pt/#localbusiness",
+      "name": "Norte Reparos - Eletricista Trás-os-Montes",
+      "image": "https://eletricista-norte-reparos.pt/og-image.png",
+      "telephone": "+351-932 321 892",
+      "priceRange": "€€",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Trás-os-Montes e Douro",
+        "addressCountry": "PT"
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Trás-os-Montes"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Douro"
+        }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "sameAs": [
+        "https://canalizador-norte-reparos.pt",
+        "https://canalizador-urgente.pt",
+        "https://eletricista-urgente.pt"
+      ],
+      "parentOrganization": {
+        "@id": "https://eletricista-norte-reparos.pt/#business"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://eletricista-norte-reparos.pt/termo-de-responsabilidade#service",
+      "name": "Emissão de Termo de Responsabilidade e Ficha Eletrotécnica",
+      "serviceType": "Certificação elétrica DGEG",
+      "provider": {
+        "@id": "https://eletricista-norte-reparos.pt/#localbusiness"
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Trás-os-Montes"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Douro"
+        }
+      ],
+      "description": "A nossa equipa inclui um Técnico Responsável de Instalações Elétricas de Serviço Particular (TRIESP) inscrito na DGEG com o número 90062, no domínio Execução em Baixa Tensão, para instalações até 41,4 kVA.",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "EUR",
+        "price": "350",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "priceCurrency": "EUR",
+          "minPrice": 350,
+          "description": "Preço de partida para serviço com emissão de Termo de Responsabilidade e Ficha Eletrotécnica. Orçamento escrito antes de qualquer intervenção."
+        }
+      }
+    },
+    {
+      "@type": "Article",
+      "@id": "https://eletricista-norte-reparos.pt/termo-de-responsabilidade#article",
+      "headline": "Termo de Responsabilidade: o que é, quem assina, preço",
+      "description": "Guia completo sobre o Termo de Responsabilidade: definição legal, quando é obrigatório, quem o pode assinar (Técnico Responsável DGEG TRIESP 90062), preço a partir de 350€ e como obter em Trás-os-Montes.",
+      "author": {
+        "@id": "https://eletricista-norte-reparos.pt/#business"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Norte Reparos",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://eletricista-norte-reparos.pt/logo.png"
+        }
+      },
+      "datePublished": "2026-07-28",
+      "dateModified": "2026-07-28",
+      "inLanguage": "pt-PT",
+      "about": {
+        "@type": "DefinedTerm",
+        "name": "Termo de Responsabilidade",
+        "alternateName": "Termo de Responsabilidade Técnica"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://eletricista-norte-reparos.pt/termo-de-responsabilidade"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O que é o Termo de Responsabilidade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O Termo de Responsabilidade é uma declaração oficial, assinada por um Técnico Responsável de Instalações Elétricas de Serviço Particular (TRIESP) inscrito na DGEG, pela qual o técnico assume perante a lei a responsabilidade técnica pela execução e conformidade de uma instalação elétrica. Acompanha sempre a Ficha Eletrotécnica, conforme a Lei n.º 14/2015."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quem pode assinar o Termo de Responsabilidade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Só um Técnico Responsável de Instalações Elétricas de Serviço Particular (TRIESP) inscrito na DGEG, no domínio Execução em Baixa Tensão, com seguro de Responsabilidade Civil válido (mínimo 50.000€). Não é uma assinatura que qualquer eletricista possa apor por iniciativa própria — é a assunção formal de responsabilidade civil e técnica perante a DGEG e terceiros."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto custa o Termo de Responsabilidade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O serviço certificado de emissão de Termo de Responsabilidade e Ficha Eletrotécnica prestado pela nossa equipa tem preço de partida de 350€, mediante orçamento escrito antes de qualquer intervenção. O valor final depende do tipo de trabalho (nova instalação, aumento de potência, remodelação, legalização) e da complexidade. Não cobramos nada antes de apresentar o orçamento."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quando é que o Termo de Responsabilidade é obrigatório?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "É obrigatório sempre que haja lugar à emissão de Ficha Eletrotécnica: nova instalação elétrica, aumento de potência contratada, remodelações que mexam na potência ou nos circuitos, legalização de instalações antigas, e em qualquer situação onde a DGEG, o comercializador de energia, a seguradora ou o notário exijam comprovativo da execução técnica. Sem Termo válido arquivado, a Ficha não tem valor legal."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a diferença entre Termo de Responsabilidade e Ficha Eletrotécnica?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "São documentos diferentes mas sempre emitidos em conjunto pelo mesmo TRIESP: a Ficha Eletrotécnica descreve tecnicamente a instalação (potência, circuitos, proteções, terras, ensaios); o Termo de Responsabilidade é a declaração assinada pelo técnico que assume a responsabilidade técnica e civil pela execução e conformidade da instalação. Ambos seguem a Lei n.º 14/2015."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como obter o Termo de Responsabilidade em Trás-os-Montes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Passo 1: ligue 932 321 892 ou envie WhatsApp para o mesmo número e descreva o que precisa (nova instalação, aumento de potência, legalização, remodelação). Passo 2: a nossa equipa desloca-se, avalia a instalação e entrega orçamento escrito sem compromisso. Passo 3: após a intervenção e os ensaios finais, emitimos a Ficha Eletrotécnica e o Termo de Responsabilidade assinados pelo nosso Técnico Responsável inscrito na DGEG (TRIESP nº 90062), arquivados e prontos a entregar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Posso vender ou arrendar a casa sem Termo de Responsabilidade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende do comprador, do inquilino e da lei aplicável. Em muitos casos, a seguradora exige instalação certificada para ativar a apólice multi-risco, e o banco pode recusar financiamento sem conformidade elétrica comprovada. O Termo de Responsabilidade é o documento que prova essa conformidade perante terceiros — sem ele, a Ficha Eletrotécnica é apenas um registo técnico sem força legal."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A Norte Reparos emite Termo para todo o tipo de instalações?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Emitimos Termo de Responsabilidade e Ficha Eletrotécnica para instalações elétricas em Baixa Tensão até 41,4 kVA (o limite legal do nosso registo DGEG, domínio Execução em Baixa Tensão). Para instalações acima desse limite, como certos industriais ou postos de transformação, é necessário outro tipo de técnico responsável — indique-nos o caso e indicamos o caminho."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://eletricista-norte-reparos.pt/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Trás-os-Montes",
+          "item": "https://eletricista-norte-reparos.pt/distritos/tras-os-montes.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Termo de Responsabilidade",
+          "item": "https://eletricista-norte-reparos.pt/termo-de-responsabilidade"
+        }
+      ]
     }
-  },
-  "datePublished": "2026-07-28",
-  "dateModified": "2026-07-28",
-  "inLanguage": "pt-PT",
-  "about": {
-    "@type": "DefinedTerm",
-    "name": "Termo de Responsabilidade",
-    "alternateName": "Termo de Responsabilidade Técnica"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://eletricista-norte-reparos.pt/termo-de-responsabilidade"
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Emissão de Termo de Responsabilidade e Ficha Eletrotécnica",
-  "serviceType": "Certificação elétrica DGEG",
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "Norte Reparos",
-    "telephone": "+351-932 321 892",
-    "areaServed": [
-      {"@type": "AdministrativeArea", "name": "Trás-os-Montes"},
-      {"@type": "AdministrativeArea", "name": "Douro"}
-    ],
-    "sameAs": [
-      "https://canalizador-norte-reparos.pt",
-      "https://canalizador-urgente.pt",
-      "https://eletricista-urgente.pt"
-    ]
-  },
-  "offers": {
-    "@type": "Offer",
-    "priceCurrency": "EUR",
-    "price": "350",
-    "priceSpecification": {
-      "@type": "PriceSpecification",
-      "priceCurrency": "EUR",
-      "minPrice": 350,
-      "description": "Preço de partida para serviço com emissão de Termo de Responsabilidade e Ficha Eletrotécnica. Orçamento escrito antes de qualquer intervenção."
-    }
-  },
-  "description": "A nossa equipa inclui um Técnico Responsável de Instalações Elétricas de Serviço Particular (TRIESP) inscrito na DGEG com o número 90062, no domínio Execução em Baixa Tensão, para instalações até 41,4 kVA."
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "O que é o Termo de Responsabilidade?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "O Termo de Responsabilidade é uma declaração oficial, assinada por um Técnico Responsável de Instalações Elétricas de Serviço Particular (TRIESP) inscrito na DGEG, pela qual o técnico assume perante a lei a responsabilidade técnica pela execução e conformidade de uma instalação elétrica. Acompanha sempre a Ficha Eletrotécnica, conforme a Lei n.º 14/2015."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Quem pode assinar o Termo de Responsabilidade?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Só um Técnico Responsável de Instalações Elétricas de Serviço Particular (TRIESP) inscrito na DGEG, no domínio Execução em Baixa Tensão, com seguro de Responsabilidade Civil válido (mínimo 50.000€). Não é uma assinatura que qualquer eletricista possa apor por iniciativa própria — é a assunção formal de responsabilidade civil e técnica perante a DGEG e terceiros."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Quanto custa o Termo de Responsabilidade?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "O serviço certificado de emissão de Termo de Responsabilidade e Ficha Eletrotécnica prestado pela nossa equipa tem preço de partida de 350€, mediante orçamento escrito antes de qualquer intervenção. O valor final depende do tipo de trabalho (nova instalação, aumento de potência, remodelação, legalização) e da complexidade. Não cobramos nada antes de apresentar o orçamento."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Quando é que o Termo de Responsabilidade é obrigatório?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "É obrigatório sempre que haja lugar à emissão de Ficha Eletrotécnica: nova instalação elétrica, aumento de potência contratada, remodelações que mexam na potência ou nos circuitos, legalização de instalações antigas, e em qualquer situação onde a DGEG, o comercializador de energia, a seguradora ou o notário exijam comprovativo da execução técnica. Sem Termo válido arquivado, a Ficha não tem valor legal."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Qual a diferença entre Termo de Responsabilidade e Ficha Eletrotécnica?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "São documentos diferentes mas sempre emitidos em conjunto pelo mesmo TRIESP: a Ficha Eletrotécnica descreve tecnicamente a instalação (potência, circuitos, proteções, terras, ensaios); o Termo de Responsabilidade é a declaração assinada pelo técnico que assume a responsabilidade técnica e civil pela execução e conformidade da instalação. Ambos seguem a Lei n.º 14/2015."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Como obter o Termo de Responsabilidade em Trás-os-Montes?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Passo 1: ligue 932 321 892 ou envie WhatsApp para o mesmo número e descreva o que precisa (nova instalação, aumento de potência, legalização, remodelação). Passo 2: a nossa equipa desloca-se, avalia a instalação e entrega orçamento escrito sem compromisso. Passo 3: após a intervenção e os ensaios finais, emitimos a Ficha Eletrotécnica e o Termo de Responsabilidade assinados pelo nosso Técnico Responsável inscrito na DGEG (TRIESP nº 90062), arquivados e prontos a entregar."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Posso vender ou arrendar a casa sem Termo de Responsabilidade?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Depende do comprador, do inquilino e da lei aplicável. Em muitos casos, a seguradora exige instalação certificada para ativar a apólice multi-risco, e o banco pode recusar financiamento sem conformidade elétrica comprovada. O Termo de Responsabilidade é o documento que prova essa conformidade perante terceiros — sem ele, a Ficha Eletrotécnica é apenas um registo técnico sem força legal."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "A Norte Reparos emite Termo para todo o tipo de instalações?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Emitimos Termo de Responsabilidade e Ficha Eletrotécnica para instalações elétricas em Baixa Tensão até 41,4 kVA (o limite legal do nosso registo DGEG, domínio Execução em Baixa Tensão). Para instalações acima desse limite, como certos industriais ou postos de transformação, é necessário outro tipo de técnico responsável — indique-nos o caso e indicamos o caminho."
-      }
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://eletricista-norte-reparos.pt/"},
-    {"@type": "ListItem", "position": 2, "name": "Trás-os-Montes", "item": "https://eletricista-norte-reparos.pt/distritos/tras-os-montes.html"},
-    {"@type": "ListItem", "position": 3, "name": "Termo de Responsabilidade", "item": "https://eletricista-norte-reparos.pt/termo-de-responsabilidade"}
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Norte Reparos",
-  "telephone": "+351-932 321 892",
-  "openingHoursSpecification": [{
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-    "opens": "00:00",
-    "closes": "23:59"
-  }],
-  "sameAs": [
-    "https://canalizador-norte-reparos.pt",
-    "https://canalizador-urgente.pt",
-    "https://eletricista-urgente.pt"
   ]
 }
 </script>
