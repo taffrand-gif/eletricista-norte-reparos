@@ -217,7 +217,7 @@ export default function QuantoCustaEletricistaHoraPortugal() {
             </div>
             <div>
               <h3 className="font-bold text-gray-900 mb-2 text-xl">Os vossos eletricistas são certificados?</h3>
-              <p className="text-gray-700">A nossa equipa trabalha com as normas técnicas em vigor. A certificação DGEG da empresa encontra-se em curso (registo junto da Direção-Geral de Energia e Geologia); enquanto não estiver emitida, as instalações são asseguradas pelo técnico responsável (TRIESP 90062).</p>
+              <p className="text-gray-700">A nossa equipa trabalha com as normas técnicas em vigor. Filipe Bragança é Técnico Responsável de Instalações Elétricas inscrito na DGEG (TRIESP n.º 90062, Execução em Baixa Tensão, até 41,4 kVA). Emitimos Ficha Eletrotécnica e Termo de Responsabilidade.</p>
             </div>
           </div>
 
