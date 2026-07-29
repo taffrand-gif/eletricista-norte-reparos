@@ -109,7 +109,7 @@ export const siteConfig: SiteConfig = {
  phone: '932 321 892',
  whatsapp: '351932321892',
  whatsappMessage: 'Olá, preciso de um eletricista em Trás-os-Montes. Podem dar-me um orçamento?',
- email: 'info@eletricista-norte-reparos.pt',
+ email: 'geral@eletricista-norte-reparos.pt',
  serviceType: 'Eletricista',
  domain: 'eletricista-norte-reparos.pt',
  colors: {

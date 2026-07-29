@@ -23,7 +23,7 @@ export default function Contactos() {
  e.preventDefault();
  setIsSubmitting(true);
  try {
- const res = await fetch("https://formsubmit.co/ajax/taff.rand@gmail.com", {
+ const res = await fetch("https://formsubmit.co/ajax/geral@eletricista-norte-reparos.pt", {
  method: "POST",
  headers: { "Content-Type": "application/json", Accept: "application/json" },
  body: JSON.stringify({
