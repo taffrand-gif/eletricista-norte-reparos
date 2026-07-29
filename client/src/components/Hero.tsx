@@ -48,7 +48,7 @@ function Hero() {
  <ServicesSlider />
  </div>
  {/* Título principal - Título massivo brutalista */}
- <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tight leading-none" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.5)' }}>
+ <h1 className="hero-title-shadow text-5xl md:text-7xl font-black mb-6 tracking-tight leading-none">
  {personalizedTitle}
  </h1>
  {/* Subtítulo */}
