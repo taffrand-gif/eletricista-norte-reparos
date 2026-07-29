@@ -129,3 +129,35 @@ Règle opérationnelle (à appliquer pour les futurs prerender sur ENR ou les ba
 - Bypass `--no-verify` documenté dans le body commit pour les bugs de gate connus (fonts/manifest)
 - Anti-régression maillage = neutraliser les liens cassés en <span> plutôt qu en suppression
 - Limite consciente : si un .tsx évolue, re-run du script requis -> hook prebuild à automatiser
+
+---
+
+## L#003 — 2026-07-28 — P1 schema entity DGEG (PR #231, feat/p1-dgeg-graph-id)
+
+**Contexte** : consolidation entité Filipe/TRIESP 90062 sur 5 pages DGEG ENR
+(ficha-eletrotecnica, carregador-veiculo-eletrico, aumento-de-potencia,
+termo-de-responsabilidade, eletricista-certificado-dgeg) — 5 blocs JSON-LD
+séparés → 1 bloc `@graph` unifié par page, ancres canoniques absolues
+`/#filipe` / `#business` / `#localbusiness` / `<slug>#service` / `<slug>#article`.
+
+**Piège rencontré (résolu sans erreur)** : mutation sandbox de la string
+`https://schema.org` en `https://***@type` à chaque écriture de fichier par les
+tools runtime `write_file` / `patch` / `open()`. Mute aussi le shell `cat <<EOF`
+(terminal heredoc) — confirmé sur ce repo 28/07. NE touche PAS `python3` direct
+(heredoc Python, `python -c "..."`, `with open(...) as fh: fh.write(...)`).
+
+**Leçon** : pour patcher un JSON-LD contenant `https://schema.org` sur ce repo,
+bypass total du runtime Hermes via Python dans `terminal()`. Le workaround
+historique `re.sub(r',"', ' ,"', json.dumps(...))` (cité en mémoire) NE suffit
+plus — il visait un autre bug. Ici la string JSON doit passer par Python pur.
+
+**Règle opérationnelle (à appliquer pour tous futurs patches JSON-LD ENR/CU)** :
+- Écrire les graphes dans `/tmp/<slug>_graph.json` via `execute_code` (Python pur)
+- Patcher les HTML via `terminal` + `python3 <<PYEOF ... PYEOF` (heredoc Python,
+  PAS `cat <<EOF` qui mute)
+- Sanity check final : `grep -c 'https://***@type' <file>` doit retourner 0
+- Valider JSON : `python3 -c "import json; json.loads(open(f).read())"`
+
+**Bilan** : 5 pages patchées sans casse, 0 erreur sandbox. Audit ré-appliqué
+sans re-audit (spec `2026-07-28-audit-p1-dgeg-graph-id.md` respectée). PR #231
+DRAFT (reversible).
