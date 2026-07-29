@@ -330,3 +330,8 @@ html {
 @font-face {
  font-display: swap;
 }
+
+/* B3 — H1 sémantique : ombre du titre hero extraite du style inline (rendu identique) */
+.hero-title-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
