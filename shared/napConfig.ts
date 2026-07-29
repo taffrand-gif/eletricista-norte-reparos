@@ -18,7 +18,7 @@ export const businessInfo = {
  phone: '+351 932 321 892',
  phoneFormatted: '932 321 892',
  whatsapp: '351932321892',
- email: 'info@eletricista-norte-reparos.pt',
+ email: 'geral@eletricista-norte-reparos.pt',
  domain: 'eletricista-norte-reparos.pt',
 
  // Base address (géo-neutre, R74 : jamais l'adresse précise)

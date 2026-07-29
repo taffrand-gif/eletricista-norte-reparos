@@ -404,7 +404,7 @@ A **Norte Reparos** é especializada em canalização e eletricidade em Trás-os
 - 💧 **Canalizador:** +351 928 484 451
 - ⚡ **Eletricista:** +351 932 321 892
 - 🌐 **Site:** https://canalizador-norte-reparos.pt
-- 📧 **Email:** info@norte-reparos.pt
+- 📧 **Email:** geral@eletricista-norte-reparos.pt
 
 **Serviços:**
 - Desentupimento

@@ -313,7 +313,7 @@ Reparar, substituir, escolher.
 - ⚡ **Eletricista:** +351 932 321 892
 - 💬 **WhatsApp:** https://wa.me/351928484451
 - 🌐 **Site:** https://canalizador-norte-reparos.pt
-- 📧 **Email:** info@norte-reparos.pt
+- 📧 **Email:** geral@eletricista-norte-reparos.pt
 - 📍 **Sede:** Trás-os-Montes
 
 **Preços tabelados por zona — sem surpresas.**
