@@ -168,6 +168,7 @@ Voir : `~/work/Sites/eletricista-urgente/SEO_PLAN.md`
 **8 fichiers** : `dist/public/eletricista-{braganca,vila-real,mirandela,chaves,miranda-do-douro,mogadouro,vinhais,lamego}.html`
 
 ### 🟧 B3 — H1 sémantique (S4)
+**Statut** : ✅ Fait (2026-07-29, cowork-loop)
 **Action** : convertir H1 inline CSS en classe sémantique
 
 ### 🟧 B4 — Différenciation services électriques (S5)
@@ -1112,3 +1113,19 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
 - **Leçon** : un merge Git et un sitemap source à jour ne prouvent pas le déploiement Vercel ni le HTTP 200 public.
 - **Suite** : revalider les deux guides et `/sitemap-blog.xml` après correction routing, puis seulement documenter le statut indexable.
 - **Statut de cette note** : documentation factuelle; aucun merge de la présente branche sans GO Filipe (R7).
+
+---
+
+### 2026-07-29 — B3 H1 sémantique : ombre inline → classe CSS (cowork-loop)
+- **Tâche** : B3 (§B3, priorité BASSE, cosmétique SEO/code-quality) — convertir le `style={{ textShadow: ... }}` inline du H1 homepage en classe CSS dédiée.
+- **Pré-contrôle R4/R11** (instruction verrouillée du run précédent) : grep `Grátis|Garantia [0-9]|⭐` sur `Hero.tsx` → 2 hits, **aucun n'est une violation** : L89 « 💬 WhatsApp Grátis » (canal de messagerie gratuit par nature, non-violation déjà tranchée) et L99 « ✓ Garantia 1 ano » qui est désormais **aligné** sur `shared/siteConfig.ts` (« garantia 1 ano », L108 et L124) — le bug « Garantia 2 Anos » signalé au run du 30/06 a bien été corrigé. Aucune étoile/avis inventé. Rien à corriger en priorité.
+- **Action** (2 fichiers, 2 commits atomiques) :
+  1. `client/src/index.css` — ajout de `.hero-title-shadow { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }` (valeur strictement identique à l'inline), en fin de fichier, hors de tout `@layer`.
+  2. `client/src/components/Hero.tsx` L51 — `<h1 className="text-5xl ... leading-none" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.5)' }}>` → `<h1 className="hero-title-shadow text-5xl ... leading-none">`.
+- **Témoins R8** : `textShadow` dans `Hero.tsx` 1→0 ; `hero-title-shadow` dans `index.css` 0→1 et dans `Hero.tsx` 0→1 ; `<h1 ... style=` dans `client/src/` 1→0.
+- **Critère GO/STOP (rendu visuel identique)** : ✅ respecté — même valeur d'ombre, aucune utilitaire Tailwind ne définit `text-shadow`, et la règle est placée hors `@layer` donc jamais écrasée par la cascade Tailwind. Diff = 1 ligne.
+- **Vérification build** : `npx tsc --noEmit` — **0 erreur dans `Hero.tsx`**. Erreurs restantes toutes pré-existantes (`GoogleReviews.tsx`, `lib/trpc.ts`, `pages/cidades/*.tsx`).
+- **Conformité** : R4 ✅ (aucun contenu ajouté), R6 ✅ (pas de force-push), R8 ✅ (témoins avant/après), commit atomique ✅.
+- **Statut** : ✅ Fait — branche `loop/2026-07-29-eletricista-norte-reparos-b3-h1-semantique`.
+
+---
