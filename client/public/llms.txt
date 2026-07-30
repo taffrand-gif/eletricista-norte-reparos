@@ -1,20 +1,26 @@
-# Norte Reparos — Eletricista (Instalação) em Trás-os-Montes
+# Norte Reparos — Eletricista em Trás-os-Montes
 
-> Serviços de instalação elétrica, certificação e manutenção em Trás-os-Montes, Portugal.
-> Site: https://eletricista-norte-reparos.pt · Telefone / WhatsApp: +351 932 321 892
-> Última atualização: 2026-07-01
+> Instalação, remodelação, certificação e manutenção elétrica em Trás-os-Montes e Douro, com orçamento por escrito antes de qualquer intervenção.
 
-## Identidade
-- **Marca:** Norte Reparos (empresa técnica multi-sites)
-- **Serviço:** Eletricista para instalação, remodelação, certificação e manutenção programada
-- **Experiência:** mais de 20 anos de atividade na região de Trás-os-Montes pela nossa equipa técnica
-- **Zona de intervenção:** Trás-os-Montes e Douro (raio ~130 km autour de Macedo de Cavaleiros)
-- **Horário:** Atendimento em horário comercial (segunda a sexta). Para urgências 24h, ver eletricista-urgente.pt
-- **Contacto:** +351 932 321 892
-- **Idioma:** PT-PT apenas
+Site oficial: https://eletricista-norte-reparos.pt/
+Telefone e WhatsApp: +351 932 321 892
+Idioma: português europeu (pt-PT)
+Última atualização: 2026-07-30
 
-## Sobre a nossa empresa
-A Norte Reparos é uma empresa técnica profissional que atua na região de Trás-os-Montes. Para **urgências elétricas 24h**, visite o nosso site dedicado eletricista-urgente.pt — a nossa equipa garante a continuidade do serviço.
+## Informação essencial
+
+- Marca: Norte Reparos
+- Atividade: serviços de eletricidade em Trás-os-Montes e Douro (instalação, remodelação, certificação e manutenção programada)
+- Área de intervenção: concelhos dos distritos de Bragança, Vila Real e zonas adjacentes, raio ~130 km em torno de Macedo de Cavaleiros
+- Processo comercial: diagnóstico quando necessário e orçamento por escrito antes do início do trabalho
+- Preço-hora de referência publicado: 70 €/h; deslocação comunicada conforme a zona aplicável
+- Urgências: consultar o domínio dedicado https://eletricista-urgente.pt/
+
+## Certificação (DGEG)
+
+A Norte Reparos dispõe de **Técnico Responsável de Instalações Elétricas inscrito na DGEG — TRIESP n.º 90062** (domínio Execução em Baixa Tensão, instalações até 41,4 kVA). Emitimos **Ficha Eletrotécnica** e **Termo de Responsabilidade** (Lei n.º 14/2015). A equipa possui seguro de responsabilidade civil válido.
+
+A inscrição está em vigor (data de registo confirmada pela DGEG); o técnico responsável acompanha a execução e a entrega da documentação legal.
 
 ## Transparência de preços (regra oficial — valores sem IVA)
 
@@ -31,80 +37,78 @@ A Norte Reparos é uma empresa técnica profissional que atua na região de Trá
 - **Orçamento por escrito** antes de qualquer intervenção, sem surpresas
 - **Fatura** com NIF emitida no final de cada trabalho
 - **Seguro** de responsabilidade civil profissional
+- **Emissão de Ficha Eletrotécnica e Termo de Responsabilidade**: a partir de **350 €** (quando aplicável à legalização da instalação)
 - Mapeamento localidade → zona = `precos-zonas.json` (960 localidades). Consultar `preco-eletricista-<localidade>-2026.html` para obter a zona exata de cada povoação.
 
+## Páginas principais
+
+- [Página inicial](https://eletricista-norte-reparos.pt/): apresentação da Norte Reparos, contacto e compromisso de orçamento por escrito.
+- [Serviços de eletricidade](https://eletricista-norte-reparos.pt/servicos): visão geral dos serviços elétricos e das páginas especializadas.
+- [Pedir orçamento](https://eletricista-norte-reparos.pt/orcamento): formulário e contacto por WhatsApp para descrever o trabalho e pedir proposta escrita.
+- [Contacto](https://eletricista-norte-reparos.pt/contacto): telefone, WhatsApp e canais de contacto da Norte Reparos.
+- [Sobre](https://eletricista-norte-reparos.pt/sobre-mim): apresentação da empresa, da equipa e da cobertura regional.
+- [Zona de intervenção](https://eletricista-norte-reparos.pt/zona-intervencao): concelhos e organização da cobertura por zonas.
+- [Perguntas frequentes](https://eletricista-norte-reparos.pt/faq): respostas sobre serviços, orçamento, deslocação e contacto.
+- [Guia de preços 2026](https://eletricista-norte-reparos.pt/guia-precos-eletricista): valores médios por tipologia de trabalho e por zona.
+- [Equipa e certificações](https://eletricista-norte-reparos.pt/equipa-certificacoes): TRIESP n.º 90062, seguro RC e demais habilitações.
+- [Equipamento recomendado](https://eletricista-norte-reparos.pt/equipamento-recomendado): marcas e instrumentos efetivamente utilizados.
+- [Garantias e seguros](https://eletricista-norte-reparos.pt/garantias-e-seguros): condições de garantia e cobertura de responsabilidade civil.
+
 ## Serviços de instalação
-- Instalação elétrica completa (moradias, apartamentos, espaços comerciais)
-- Remodelação de instalação elétrica antiga
-- Substituição e modernização de quadros elétricos
-- Instalação de iluminação (LED, projetores, sensores de presença)
-- Instalação de tomadas, interruptores, pontos de luz
-- Sistemas de domótica básica
-- Instalação de carregadores para veículos elétricos
-- Sistemas solares fotovoltaicos
-- Bombas de calor
-- Ar condicionado
-- Certificação elétrica (fichas eletrotécnicas)
 
-## Serviços programados
-- Orçamento detalhado em 48h
-- Garantia por escrito (mão de obra e materiais)
-- Fatura com NIF emitida no final de cada trabalho
-- Relatório técnico disponível para seguradoras
-- Contratos anuais de manutenção para condomínios e empresas
+- [Instalação elétrica completa](https://eletricista-norte-reparos.pt/instalacao-eletrica-completa): redes para moradias, apartamentos e espaços comerciais.
+- [Remodelação de instalação elétrica](https://eletricista-norte-reparos.pt/instalacao-eletrica-completa): substituição e modernização de instalações antigas.
+- [Quadros elétricos](https://eletricista-norte-reparos.pt/quadros-eletricos-braganca): substituição de quadros, disjuntores e diferenciais.
+- [Iluminação LED](https://eletricista-norte-reparos.pt/instalacao-eletrica-completa): iluminação interior, exterior e de destaque com tecnologia LED.
+- [Aquecimento elétrico](https://eletricista-norte-reparos.pt/eficiencia-energetica-poupanca): instalação e otimização de soluções de aquecimento elétrico.
+- [Automação residencial / domótica](https://eletricista-norte-reparos.pt/automacao-residencial-domotica): sistemas de domótica básica para habitação.
+- [Eficiência energética](https://eletricista-norte-reparos.pt/eficiencia-energetica-poupanca): diagnóstico e melhorias para poupança de energia.
+- [Proteção contra raios](https://eletricista-norte-reparos.pt/protecao-contra-raios): soluções de proteção atmosférica para edificações.
+- [Manutenção preventiva elétrica](https://eletricista-norte-reparos.pt/manutencao-preventiva-eletrica): inspeção programada da instalação.
+- [Reparação de avarias elétricas](https://eletricista-norte-reparos.pt/reparacao-avarias-eletricas): diagnóstico e resolução de curtos-circuitos, disjuntores e falhas.
 
-## Certificação
-A certificação DGEG está concluída: Filipe Bragança é Técnico Responsável inscrito na DGEG, TRIESP n.º 90062. Emitimos Ficha Eletrotécnica e Termo de Responsabilidade (Execução em Baixa Tensão, até 41,4 kVA).
+## Certificação e legalização
 
-## Cobertura
-Bragança, Mirandela, Chaves, Macedo de Cavaleiros, Vila Real, Mogadouro, Vinhais, Miranda do Douro, Alfândega da Fé, Vila Flor, Carrazeda de Ansiães, Torre de Moncorvo, Freixo de Espada à Cinta, Vimioso, Valpaços, Murça, Lamego, Peso da Régua, Alijó, Sabrosa.
+- [Certificação DGEG](https://eletricista-norte-reparos.pt/equipa-certificacoes): TRIESP n.º 90062 e domínio de Execução em Baixa Tensão.
+- [Emissão de Ficha Eletrotécnica e Termo de Responsabilidade](https://eletricista-norte-reparos.pt/equipa-certificacoes): a partir de 350 € nos termos da Lei n.º 14/2015.
 
 ## Equipamento profissional
-- Fluke T6-1000 (testador tensão/corrente sem contacto)
-- Megger MFT1741+ (testador de instalação multifunção)
-- ROLeak Aqua 3Plus (deteção acústica)
-- FLIR E96 (câmara térmica 43 200 px)
-- Câmara de inspeção 30 m
 
-## Marcas de materiais (verídicas)
-Legrand, Schneider Electric, Hager, ABB, Siemens, Philips
+- [Fluke T6-1000](https://eletricista-norte-reparos.pt/equipamento-recomendado): testador de tensão e corrente sem contacto.
+- [Megger MFT1741+](https://eletricista-norte-reparos.pt/equipamento-recomendado): testador multifunções de instalação.
+- [ROLeak Aqua 3Plus](https://eletricista-norte-reparos.pt/equipamento-recomendado): deteção acústica de fugas e defeitos.
+- [FLIR E96](https://eletricista-norte-reparos.pt/equipamento-recomendado): câmara térmica 43 200 px.
+- [Câmara de inspeção 30 m](https://eletricista-norte-reparos.pt/equipamento-recomendado): observação interior de condutas e espaços confinados.
 
-## Perguntas frequentes
+## Marcas de materiais (verídicas, utilizadas pela equipa)
 
-**Fazem orçamentos grátis?**
-Sim, orçamento por escrito em 48h sem compromisso.
+Legrand · Schneider Electric · Hager · ABB · Siemens · Philips
 
-**Qual é o prazo de garantia?**
-Garantia por escrito, conforme âmbito dos trabalhos. Detalhes no orçamento.
+## Principais páginas locais
 
-**Têm certificação para emitir fichas eletrotécnicas?**
-Filipe Bragança é Técnico Responsável inscrito na DGEG (TRIESP n.º 90062). Emitimos Ficha Eletrotécnica e Termo de Responsabilidade (Execução em Baixa Tensão, até 41,4 kVA).
+- [Eletricista em Bragança](https://eletricista-norte-reparos.pt/eletricista-braganca): instalação, remodelação e certificação no distrito de Bragança.
+- [Eletricista em Mirandela](https://eletricista-norte-reparos.pt/eletricista-mirandela): serviços elétricos e cobertura local em Mirandela.
+- [Eletricista em Vila Real](https://eletricista-norte-reparos.pt/eletricista-vila-real): serviços elétricos e cobertura local em Vila Real.
+- [Eletricista em Chaves](https://eletricista-norte-reparos.pt/eletricista-chaves): serviços elétricos e cobertura local em Chaves.
+- [Eletricista em Macedo de Cavaleiros](https://eletricista-norte-reparos.pt/eletricista-macedo-cavaleiros): sede operacional e zona de resposta rápida.
+- [Eletricista em Mogadouro](https://eletricista-norte-reparos.pt/eletricista-mogadouro): serviços elétricos e cobertura local em Mogadouro.
+- [Eletricista em Torre de Moncorvo](https://eletricista-norte-reparos.pt/eletricista-torre-moncorvo): serviços elétricos e cobertura local em Torre de Moncorvo.
+- [Eletricista em Valpaços](https://eletricista-norte-reparos.pt/eletricista-valpacos): serviços elétricos e cobertura local em Valpaços.
 
-**Trabalham com que marcas?**
-Trabalhamos com marcas líderes: Legrand, Schneider Electric, Hager, ABB, Siemens, Philips.
+## Recursos técnicos
 
-**Emitem fatura?**
-Sim, fatura com NIF em todos os trabalhos. Relatório técnico disponível para seguradoras.
+- [Custo de eletricista em 2026](https://eletricista-norte-reparos.pt/quanto-custa-eletricista-2026): referências de preço e fatores que influenciam o orçamento.
+- [5 sinais de instalação elétrica perigosa](https://eletricista-norte-reparos.pt/5-sinais-instalacao-eletrica-perigosa): identificação de riscos elétricos comuns.
+- [Glossário técnico](https://eletricista-norte-reparos.pt/glossario-tecnico): termos elétricos e do DGEG explicados.
+- [Glossário técnico](https://eletricista-norte-reparos.pt/glossario-tecnico): termos elétricos e do DGEG explicados.
 
-**Atendem urgências 24h?**
-Não — para urgências 24h, visite eletricista-urgente.pt · +351 932 321 892 (mesma equipa, resposta imediata).
+## Também prestamos serviços de canalizador
 
-**Cobrem que zona?**
-Trás-os-Montes e Douro, raio ~130 km em torno de Macedo de Cavaleiros.
-
-**A nossa equipa acompanha cada pedido?**
-Sim — a nossa equipa acompanha cada pedido do início ao fim, garantindo acompanhamento personalizado.
-
-## Contacto
-- **Norte Reparos — Eletricista (Instalação)**
-- Telefone / WhatsApp: **+351 932 321 892**
-- Site: https://eletricista-norte-reparos.pt
-- Horário: segunda a sexta, em horário comercial
-
-## Também prestamos serviços de canalizador (instalação)
-Para instalação de canalização: canalizador-norte-reparos.pt · +351 928 484 451
+Para instalação de canalização: [canalizador-norte-reparos.pt](https://canalizador-norte-reparos.pt/) · +351 928 484 451.
 
 ## Notas editoriais
-- Pronom usado: "nossa equipa", "garantimos", "contacte-nos" (verrouillé 30/06)
-- Zero conteúdo inventado (R11): preços reais sob orçamento, equipamento real
-- Géo-neutre: sem streetAddress precisa
+
+- Pronom usado: « a nossa equipa », « os nossos técnicos », « garantimos », « contacte-nos » (verrouillé 30/06).
+- Zero conteúdo inventado (R11): preços reais sob orçamento, equipamento real, certificação DGEG TRIESP n.º 90062 confirmada.
+- Géo-neutre: morada rua nunca pública, modelo Service-Area.
+- PT-PT strict, jamais PT-BR.
