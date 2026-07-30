@@ -19,8 +19,8 @@
 > Roadmap phasée maître : `~/work/Sites/MONOPOLE_SEO_2026Q3.md` §ROADMAP PHASÉE. Ici = todos concrets ENR. Claude+Filipe conçoivent, Hermes coche.
 
 - [ ] **M0** — Retirer faux avis `GoogleReviews.tsx` + schema `Review`/`aggregateRating` → placeholder honnête (R11 ACTIF prod).
-- [ ] **M0** — Fin purge body : 107 mentions FAUX (wallbox/solar/AC) — garder blog éducatif, prioriser les 3 pages exposées au sitemap.
-- [ ] **M0** — DGEG : séparer `materiais certificados`/`RTIEBT` (garder) de `nós certificamos`/« Certificada » (retirer/geler jusqu'à inscription active).
+- [ ] **M0** — Fin purge body : 107 mentions FAUX (solar/AC) — garder blog éducatif, prioriser les 3 pages exposées au sitemap. ⚠️ **Note 30/07/2026** : `wallbox`/`carregador VE` ne sont **PLUS** dans le périmètre FAUX sur ENR — la cert DGEG TRIESP 90062 (Baixa Tensão ≤41,4 kVA) obtenue le 24/07/2026 fait passer l'installation de chargeur VE au statut **RÉEL** sur ce site. À séparer des mentions purement solar/AC. Source : `~/work/Sites/DGEG-CERT-SOURCE-OF-TRUTH.md` §Nouveau service RÉEL débloqué par la cert (28/07).
+- [ ] **M0** — DGEG : séparer `materiais certificados`/`RTIEBT` (garder) de `nós certificamos`/« Certificada » (garder uniquement ceux liés à la cert active TRIESP 90062). ⚠️ **Note 30/07/2026** : inscription DGEG **active** (nº 90062, 24/07/2026) → on **peut** revendiquer « instalação certificada » / « instalação legalizada » sur ENR + EU (Baixa Tensão ≤41,4 kVA), cf. `AGENTS.md` §12 et `DGEG-CERT-SOURCE-OF-TRUTH.md`.
 - [ ] **M1** — Maillage COMPLET : 20 hubs (14 concelhos + 6 distritos) → localités (page **primaire** only) ; remontant breadcrumb sur ~3247 pages localité → hub concelho→distrito ; latéral 6-8 sœurs même concelho. **Signal unique/hub**. Localités RÉELLES only (R11/R5). Vagues R15, grep AVANT/APRÈS, 0 lien 404.
 - [ ] **M2** — Split intent (⚠️ structure ÉCLATÉE, pas de `seoKeywords.ts`) : purger `urgente`/`24h`/`resposta prioritária`/`emergência` dans `client/src/pages/cidades/*.tsx` + `hooks/useSEO.tsx` + `SEOHead*.tsx`. Pilote `eletricista×Bragança`, livrable `keyword-map.csv`. Détail : master §M2 DESIGN.
 - [ ] **M3** — (schema LocalBusiness/areaServed/FAQPage déjà présents ✅) → **créer** pages `preço-eletricista-<ville>-2026` datées citables (4 districts, tableau Z1-Z6 + **70€/h** + date visible, schema Offer). Vérifier `areaServed` couvre 4 districts. Détail : master §M3 DESIGN.
@@ -110,8 +110,9 @@
 - ✅ NAP cohérent : 932 321 892
 - ✅ Équipement différenciant : Fluke T6-1000, Megger MFT1741+, FLIR E96, caméra 30m
 
-### 🔴 PRIORITÉ 1 — Services interdits (audit 29/06/2026, session Filipe)
-- 🔴 **~297 pages de services NON fournis** dans `client/public/` (déployées) : chargeur VE (`eletricista-carregador-veiculo-eletrico-<ville>`), painel solar, ar condicionado, bomba de calor. Confirmé par Filipe : Norte Reparos ne fait PAS ces services.
+### 🔴 PRIORITÉ 1 — Services interdits (audit 29/06/2026, amendé 30/07/2026)
+- ⚠️ **Amendement 30/07/2026** : la certification DGEG **TRIESP 90062** obtenue le 24/07/2026 (Baixa Tensão até 41,4 kVA) fait passer l'installation de **chargeur VE / wallbox** au statut **RÉEL** sur ENR + EU. Ne **plus** considérer le chargeur VE comme service FAUX sur les 2 sites élec. Source vérité : `~/work/Sites/DGEG-CERT-SOURCE-OF-TRUTH.md`.
+- 🔴 **Services NON fournis restants** (toujours HORS périmètre post-cert) : painel solar (autoconsumo / Fotovoltaico), ar condicionado (climatisation), bomba de calor (pompe à chaleur), piso radiante (plancher chauffant), certificado energético SCE (≠ DGEG, autre autorité). Reste purge body sur ces mentions.
   - `client/public/` ≈ 192 pages + `client/public/blog/` ≈ 105 pages
   - **Risque** : fausse offre = mauvais leads + crawl gaspillé + non-conforme
   - **Plan** (même méthode que eletricista-urgente, déjà nettoyé) : 301 redirect chaque page → `/eletricista-<ville>` (si existe) ou `/`, puis suppression. **Prototype 1 page → validation Filipe → batch.**
@@ -1129,3 +1130,15 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
 - **Statut** : ✅ Fait — branche `loop/2026-07-29-eletricista-norte-reparos-b3-h1-semantique`.
 
 ---
+
+### 2026-07-30 — AMENDEMENT doctrine : chargeur VE RÉEL sur EU + ENR (cert DGEG TRIESP 90062)
+
+- **Fait** : la certification DGEG **TRIESP 90062** a été obtenue le 24/07/2026 (despacho 23/07/2026, Baixa Tensão até 41,4 kVA). Source vérité : `~/work/Sites/DGEG-CERT-SOURCE-OF-TRUTH.md`.
+- **Conséquence doctrine** : l'installation de **chargeur VE / wallbox** passe du statut FAUX (interdit) au statut **RÉEL** sur les 2 sites élec (ENR + EU), scope Baixa Tensão ≤ 41,4 kVA, avec émission de Ficha Eletrotécnica + Termo de Responsabilidade.
+- **Amendement vs ce SEO_PLAN** :
+  - **§17 (ligne 22)** `M0 — Fin purge body : 107 mentions FAUX (wallbox/solar/AC)` : amendé en place → wallbox retiré de la catégorie FAUX sur ENR, garde uniquement solar/AC. Voir diff ligne 22.
+  - **§17 (ligne 23)** `M0 — DGEG : séparer materiais certificados/RTIEBT (garder) de nós certificamos (retirer/geler jusqu'à inscription active)` : amendé en place → l'inscription est active (TRIESP 90062), on PEUT revendiquer « instalação certificada » / « instalação legalizada » sur ENR + EU (Baixa Tensão ≤ 41,4 kVA). Voir diff ligne 23.
+  - **§ÉTAT ACTUEL ligne 114** (PRIORITÉ 1 — Services interdits) : amendé en place → chargeur VE retiré des services NON fournis, ajout amendement 30/07/2026 avec source-of-truth.
+  - Les entrées HISTORIQUE qui mentionnent « ~297 pages services NON fournis incluant chargeur VE » (lignes 257, 275-276, 455, 457, 588, 614, 616, 649) documentent l'état de la doctrine à la date d'écriture et restent factuelles à leur époque — **NE PAS réécrire l'historique** (append-only).
+- **Action prise (t_9a231a1d)** : `AGENTS.md` ENR §12 Identité ligne 120 (Certification élec) mise à jour. SEO_PLAN §17 M0 + §ÉTAT ACTUEL amendés en place.
+- **Statut** : ✅ Fait côté AGENTS.md + SEO_PLAN ENR.

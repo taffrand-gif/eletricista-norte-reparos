@@ -115,7 +115,7 @@ Une absence de règle = autorisé par défaut. La règle 10 dit : **en cas de do
 - **Sites actifs** : canalizador-norte-reparos.pt (928 484 451) · canalizador-urgente.pt (928 484 451) · eletricista-norte-reparos.pt (932 321 892) · eletricista-urgente.pt (932 321 892)
 - **Zone** : Trás-os-Montes, ~34 concelhos, rayon ~130 km autour de Macedo de Cavaleiros
 - **Stack transversale** : React + Vite · GitHub (org `taffrand-gif`) · Vercel · Cloudflare DNS · n8n · Obsidian (vault `NORTE-OS`) · GA4 · Google Search Console · Google Ads · Meta Ads · TomTom · WhatsApp · ElevenLabs + Twilio (agent vocal, conçu, pas encore construit)
-- **Certification élec** : DGEG `1757/2026/DIEN` en attente · co-signature LDE Mirandela en attendant
+- **Certification élec** : DGEG `TRIESP 90062` **obtenue 24/07/2026** (despacho 23/07/2026) · Execução em Baixa Tensão · instalações até 41,4 kVA · Seguro RC ≥ 50 000 € · Lei n.º 14/2015. Filipe **délivre officiellement** Ficha Eletrotécnica + Termo de Responsabilidade. À partir de **350 €** pour le service certifié (Ficha + Termo). Source vérité : `~/work/Sites/DGEG-CERT-SOURCE-OF-TRUTH.md`.
 - **Langue** : interne FR informel · tout contenu client **PT-PT uniquement** (jamais PT-BR)
 
 **Règle pronom — rédaction client uniquement (verrouillée 30/06/2026)** :
@@ -125,3 +125,12 @@ Une absence de règle = autorisé par défaut. La règle 10 dit : **en cas de do
 - Vérifié à chaque livraison
 
 **Compatibilité** : ce bloc complète la doctrine locale (R1-R11 + §11 ci-dessus) sans la remplacer. En cas de contradiction, la doctrine locale prime.
+
+---
+
+## 13. Note 30/07/2026 — Chargeur VE RÉEL + DGEG actif (tâche t_9a231a1d)
+
+- **Chargeur VE / wallbox** = service **RÉEL** sur ce site (ENR) — installation dans le scope Baixa Tensão até 41,4 kVA, avec émission de Ficha Eletrotécnica + Termo de Responsabilidade sous TRIESP DGEG n.º 90062. NE JAMAIS lister comme service FAUX ou interdit.
+- **Documents émis** : Filipe délivre officiellement Ficha + Termo (Lei 14/2015). Le statut antérieur « en attente / aguardando » est clos.
+- **Prix** : Ficha + Termo à partir de **350 €** (service certifié uniquement). Chargeur VE = prix marché matériel + 70 €/h + Fundo Ambiental — JAMAIS écrire « carregador a partir de 350 € ».
+- Source vérité unique : `~/work/Sites/DGEG-CERT-SOURCE-OF-TRUTH.md`. **JAMAIS sur les sites plomberie (CNR/CU)** : zéro claim DGEG, zéro mention TRIESP/Ficha/Termo/chargeur VE.
