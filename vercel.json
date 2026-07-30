@@ -2779,6 +2779,21 @@
       "statusCode": 301
     },
     {
+      "source": "/sobre-mim",
+      "destination": "/sobre-equipa",
+      "statusCode": 301
+    },
+    {
+      "source": "/sobre-mim.html",
+      "destination": "/sobre-equipa",
+      "statusCode": 301
+    },
+    {
+      "source": "/imprensa",
+      "destination": "/sobre",
+      "statusCode": 301
+    },
+    {
       "source": "/certificacao-eletrica-:city",
       "destination": "/eletricista-:city",
       "statusCode": 301

@@ -46,7 +46,7 @@ A inscrição está em vigor (data de registo confirmada pela DGEG); o técnico 
 - [Serviços de eletricidade](https://eletricista-norte-reparos.pt/servicos): visão geral dos serviços elétricos e das páginas especializadas.
 - [Pedir orçamento](https://eletricista-norte-reparos.pt/orcamento): formulário e contacto por WhatsApp para descrever o trabalho e pedir proposta escrita.
 - [Contacto](https://eletricista-norte-reparos.pt/contacto): telefone, WhatsApp e canais de contacto da Norte Reparos.
-- [Sobre](https://eletricista-norte-reparos.pt/sobre-mim): apresentação da empresa, da equipa e da cobertura regional.
+- [Sobre](https://eletricista-norte-reparos.pt/sobre-equipa): apresentação da empresa, da equipa e da cobertura regional.
 - [Zona de intervenção](https://eletricista-norte-reparos.pt/zona-intervencao): concelhos e organização da cobertura por zonas.
 - [Perguntas frequentes](https://eletricista-norte-reparos.pt/faq): respostas sobre serviços, orçamento, deslocação e contacto.
 - [Guia de preços 2026](https://eletricista-norte-reparos.pt/guia-precos-eletricista): valores médios por tipologia de trabalho e por zona.
