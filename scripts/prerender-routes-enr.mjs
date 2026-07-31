@@ -23,7 +23,7 @@
 //   DOM live = R11-safe (zéro invention) par construction.
 //
 // Limite consciente : si le contenu React evolue (R12 prix, R145 délais,
-// §12 pluriel), re-runs requis. Hook prebuild à automatiser (à ajouter).
+// §12 pluriel), re-runs Playwright requis. Les hashes sont synchronisés au postbuild.
 //
 // Usage : `npm run build` puis `node scripts/prerender-routes-enr.mjs`
 // (depuis la racine du repo).
@@ -37,6 +37,56 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, '..');
 const DIST_PUBLIC = path.join(REPO_ROOT, 'dist/public');
 const CLIENT_PUBLIC = path.join(REPO_ROOT, 'client/public');
+
+// Vite copie client/public avant d'émettre les bundles. Ce mode postbuild
+// réaligne leurs src/href sur le build courant, sans Playwright ni réécriture.
+function listHtml(dir) {
+  return fs.readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
+    const file = path.join(dir, entry.name);
+    return entry.isDirectory() ? listHtml(file) : entry.name.endsWith('.html') ? [file] : [];
+  });
+}
+
+function syncPrerenderAssetRefs() {
+  const assetsDir = path.join(DIST_PUBLIC, 'assets');
+  if (!fs.existsSync(assetsDir)) throw new Error("dist/public/assets absent — lancer le build d'abord");
+
+  const current = new Map();
+  for (const file of fs.readdirSync(assetsDir)) {
+    const match = /^(.+)-[A-Za-z0-9_-]{8}\.(js|css)$/.exec(file);
+    if (match) current.set(`${match[1]}.${match[2]}`, file);
+  }
+
+  let changedFiles = 0, replacements = 0;
+  const unresolved = new Set();
+  for (const file of listHtml(DIST_PUBLIC)) {
+    const html = fs.readFileSync(file, 'utf8');
+    const next = html.replace(/((?:src|href)=")\/assets\/([^"]+\.(?:js|css))"/g,
+      (tag, prefix, oldAsset) => {
+        if (fs.existsSync(path.join(assetsDir, oldAsset))) return tag;
+        const match = /^(.+)-[A-Za-z0-9_-]{8}\.(js|css)$/.exec(oldAsset);
+        const replacement = match && current.get(`${match[1]}.${match[2]}`);
+        if (!replacement) {
+          unresolved.add(`${path.relative(DIST_PUBLIC, file)} -> ${oldAsset}`);
+          return tag;
+        }
+        replacements++;
+        return `${prefix}/assets/${replacement}"`;
+      });
+    if (next !== html) {
+      fs.writeFileSync(file, next, 'utf8');
+      changedFiles++;
+    }
+  }
+
+  if (unresolved.size) throw new Error(`assets sans équivalent courant:\n${[...unresolved].join('\n')}`);
+  console.log(`✓ postbuild prerender assets: ${replacements} refs réalignées dans ${changedFiles} HTML`);
+}
+
+if (process.argv.includes('--sync-assets')) {
+  try { syncPrerenderAssetRefs(); } catch (error) { console.error(`❌ ${error.message}`); process.exit(1); }
+  process.exit(0);
+}
 
 // Chromium binary location — codeium ws-browser chromium-1155 fonctionne
 // pour le projet (sandbox désactivé via --no-sandbox).
