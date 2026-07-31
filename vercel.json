@@ -2774,6 +2774,16 @@
       "permanent": true
     },
     {
+      "source": "/sobre-mim",
+      "destination": "/sobre-nos",
+      "statusCode": 301
+    },
+    {
+      "source": "/sobre-mim.html",
+      "destination": "/sobre-nos",
+      "statusCode": 301
+    },
+    {
       "source": "/certificacao-eletrica",
       "destination": "/",
       "statusCode": 301
