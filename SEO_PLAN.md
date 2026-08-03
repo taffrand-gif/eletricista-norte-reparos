@@ -1217,3 +1217,37 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
 - **Impact attendu J+7 (mesure via `gsc-trajectoire-cron.sh`)** : si la query remonte au top 4 sur la fenêtre J+7, c'est un win ; sinon rollback possible (page rewritable car structurée en sections isolées).
 - **Statut** : ⏳ PR draft — STOP merge/déploiement Filipe (R7).
 
+
+### 2026-08-04 — t_2810eb05 — Rank-push GSC long-tail « como ligar um interruptor duplo para duas lâmpadas » (pos 5.4, 0 impr 28j)
+
+- **Constat GSC (fenêtre 28j close 03/08/2026)** : query long-tail « como ligar um interruptor duplo para duas lâmpadas » sur ENR en position moyenne **5.4** (fenêtre 4..20 = presque top3) avec **0 impression / 0 clic** sur la fenêtre. Cause racine identifiée : la page dédiée `client/public/blog/como-ligar-interruptor-duplo.html` (déjà optimisée 03/08 par t_d65bd024 pour la query courte « como ligar um interruptor duplo ») contenait **0 occurrence littérale** de la variante longue avec « para duas lâmpadas ». Google ne pouvait pas matcher l'exact search sur cette formulation conversationnelle PT-PT typique (« Como ligar ... para duas lâmpadas » = recherche vocale Google fréquente).
+- **Action (2e commit sur la branche `feat/enr-rankpush-interruptor-duplo-t_d65bd024`, PR #261 reste en DRAFT cumulatif)** :
+  - **H1** : « Como ligar um interruptor duplo » → « Como ligar um interruptor duplo **para duas lâmpadas** » (intégration du suffixe exact de la query).
+  - **Title** (51 → 58 chars) : « Como Ligar Interruptor Duplo **Para Duas Lâmpadas** (5 Passos) » — alignement complet sur la query longue + bénéfice.
+  - **Meta description** (161 → 149 chars) : « Como ligar um interruptor duplo **para duas lâmpadas** em 5 passos: desligar disjuntor, identificar fios, fase em L e retornos em L1 e L2. Esquema PT-PT. ».
+  - **og:title + og:description + twitter:title** : alignés sur la query longue (CVR SERP homogène).
+  - **Answer-first `<div class="answer">`** : « Resposta direta: Como ligar um interruptor duplo **para duas lâmpadas** : a fase entra no borne L ... Cada botão comanda a sua lâmpada de forma independente. » (lead-in snippet Google).
+  - **Nouvelle section H2 `<section id="duas-lampadas">`** dédiée « Interruptor duplo para duas lâmpadas: como funciona » (paragraphe définition + 5-step recap + lien interne vers le cluster) — ajoutée au TOC entre Esquema et Materiais.
+  - **Nouvelle question FAQ** en tête de section FAQ : « Como ligar um interruptor duplo para duas lâmpadas? » (snippet long-tail eligible).
+  - **JSON-LD alignés** : Article.headline + HowTo.name + BreadcrumbList[3].name mis à jour sur la query longue ; dateModified `2026-08-03` → `2026-08-04` ; FAQPage FAQ[0] = la nouvelle question long-tail.
+  - **canonical** inchangé : `https://eletricista-norte-reparos.pt/blog/como-ligar-interruptor-duplo` (URL stable, PR cumulé sur même slug = consolidation autorité, pas de risque de cannibalisation entre pages).
+  - **`client/public/sitemap-blog.xml`** : lastmod `2026-08-03` → `2026-08-04` pour signaler le refresh à Googlebot (pattern rank-push).
+- **Témoins R8 (avant / après, mesurés par `python3` local)** :
+  - Octets fichier : 19 316 → 21 443.
+  - Occurrences query **longue** « como ligar um interruptor duplo para duas lâmpadas » (case-insensitive) : **0 → 13**.
+  - Occurrences query **courte** « como ligar um interruptor duplo » (case-insensitive) : 16 (préservée, jamais réduite).
+  - Title : 51 → 58 chars (sous le seuil 60 SERP-friendly).
+  - Sections H2 nouvelles : +1 (`#duas-lampadas`).
+  - FAQ Page : 5 → 6 questions.
+  - Violations R11 détectées : 0 (gate R11 PASS — 0 hit sur les 9 patterns inventés : 85-95, 20-40, atendemos 24h, Efapel, je suis/fais, mon entreprise, sozinho, 24h/7).
+  - Mentions marques autorisées (Schneider, Legrand) : 2 ; marques non autorisées : 0.
+  - Mentions source vérité (70 €/h × 4, zones 15-65 € × 3, Lei 14/2015 × 3, TRIESP 90062 × 2) : toutes sourcées PRICING.md + DGEG-CERT-SOURCE-OF-TRUTH.md.
+  - JSON-LD blocks : 5/5 parsables par `python3 -m json.tool` (Article + BreadcrumbList + HowTo + FAQPage + Service).
+- **Gates** :
+  - **R4** ✅ aucun prix/zone/délai/marque inventé hors PRICING.md + DGEG source-of-truth.
+  - **R7** ⏳ PR draft cumulatif sur `feat/enr-rankpush-interruptor-duplo-t_d65bd024` (PR #261 cumulera 2 commits : t_d65bd024 + t_2810eb05) — **STOP merge** en attente GO nominatif Philippe.
+  - **R11** ✅ `grep -in` 0 hit sur les 9 patterns inventés (urgence 24h, 85-95, 20-40, Efapel, je suis, je fais, mon entreprise, sozinho, 24h/7).
+  - **R12** ✅ prix 70 €/h + Z1-Z6 + Lei 14/2015 + TRIESP 90062 tous sourcés et vérifiés.
+  - **AGENTS.md §12** ✅ Marques = Schneider, Legrand uniquement ; pronom « nous » partout (« a nossa equipa », « os nossos técnicos »).
+- **Impact attendu J+7 (mesure via `gsc-trajectoire-cron.sh`)** : si la query longue remonte au top 4 sur la fenêtre J+7, c'est un win ; sinon rollback possible (page rewritable car structurée en sections isolées). La query courte déjà couverte par t_d65bd024 reste servie (occurrences préservées, canonical inchangé).
+- **Statut** : ⏳ PR draft cumulatif (2 commits sur la même branche) — STOP merge/déploiement Filipe (R7).
