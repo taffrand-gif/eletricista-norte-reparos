@@ -1934,6 +1934,7 @@ Le fichier **se contredit lui-même** : L17 affiche « 70€ - 140€ » pour «
 - **Branche** : `fix/enr-quem-pode-assinar-t_60bc1d40` (commit 002fe333f9), push OK sur origin, PR DRAFT #323 ouverte (1 file, +570/-0).
 - **Gating R7** : **0 merge, 0 push prod, PR draft laissé en DRAFT** — STOP validation Filipe obligatoire avant merge.
 - **Liens** : PR #323 https://github.com/taffrand-gif/eletricista-norte-reparos/pull/323 · body contient commande de vérification + sortie live.
+<<<<<<< HEAD
 
   | Octets nouvelle page | 0 | 20 825 |
   | Mots `<main>` nouvelle page | 0 | 1 423 |
@@ -1958,8 +1959,14 @@ Le fichier **se contredit lui-même** : L17 affiche « 70€ - 140€ » pour «
 - **Leçon (à propager)** : **la structure JSON-LD a besoin d'une vérification automatisée par bloc** (cf. leçon t_0952e95f). Pour les prochaines pages, intégrer un check `python3 -c "json.loads(...)"` dans le pre-commit hook du worktree.
 - **Statut** : 🟢 **Prêt pour GO Philippe**. Branche + consignation SEO_PLAN.md + sitemap ajout prêts. 0 merge sans ordre explicite.
 
-  1. Trancher : **commit + push + ouvrir PR draft** sur cette branche (recommandé si 0 nouvelle circulation de claims) OU attendre pour faire un re-packaging (`/public/blog/` → `/client/public/blog/` si la convention actuelle est de déployer depuis ce dernier).
+
+=======  1. Trancher : **commit + push + ouvrir PR draft** sur cette branche (recommandé si 0 nouvelle circulation de claims) OU attendre pour faire un re-packaging (`/public/blog/` → `/client/public/blog/` si la convention actuelle est de déployer depuis ce dernier).
   2. Valider le **port de la page vers `/client/public/blog/blog-disjuntor-dispara-sem-nada-ligado.html`** — car `vite.config.ts` a `publicDir = client/public` (le déploiement effectif passe par cette racine). Le dossier `/public/` racine semble orphelin (24 fichiers auto-générés, jamais servi par Vercel ; vérifié : la prod a `/blog/disjuntor-dispara-constantemente.html` etc., pas `blog-*`). Si la convention a changé et que la prod attend `client/public/blog/`, alors ouvrir un PR sur une branche qui créera le même fichier à `/client/public/blog/` pour effectivement servir la page. **Ce point est en attente décision CEO**.
   3. Ajouter la nouvelle URL à `/public/sitemap-blog.xml` (legacy) et `client/public/sitemap-blog.xml` (actif) — pas fait dans cette tâche pour éviter de commettre sans validation sur le périmètre de sitemap.
 - **Leçon (à propager)** : **diagnostic exhaustif avant patch** (grep + find 2 étapes) permet de confirmer en 2 secondes qu'**aucune page n'existait pour la query**, ce qui justifie la création et non le renforcement — et épargne 30 min de relecture de la page existante qui est complètement off-topic. La tâche aurait été trivialement NO-OP si la page soeur `blog-disjuntor-a-saltar-causas.html` couvrait déjà cette query, ce qui n'est pas le cas (vérifié par grep `dispara.*sem.*nada` = 0 hit dans cette page).
+<<<<<<< HEAD
 - **Statut** : 🟢 **Prêt pour GO Philippe**. Branche locale + consignation SEO_PLAN.md + cross-linking prêts. 0 merge sans ordre explicite.
+=======
+- **Statut** : 🟢 **Prêt pour GO Philippe**. Branche locale + consignation SEO_PLAN.md + cross-linking prêts. 0 merge sans ordre explicite.
+>>>>>>> 2fd0d67ba1 (docs(seo-plan): consigner t_bac235b8 (GSC gap 'como ligar interruptor duplo', PR draft 77e6c0eaf6))
+>>>>>>> f648bff733 (docs(seo-plan): consigner t_bac235b8 (GSC gap 'como ligar interruptor duplo', PR draft 77e6c0eaf6))
