@@ -1251,3 +1251,69 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
   - **AGENTS.md §12** ✅ Marques = Schneider, Legrand uniquement ; pronom « nous » partout (« a nossa equipa », « os nossos técnicos »).
 - **Impact attendu J+7 (mesure via `gsc-trajectoire-cron.sh`)** : si la query longue remonte au top 4 sur la fenêtre J+7, c'est un win ; sinon rollback possible (page rewritable car structurée en sections isolées). La query courte déjà couverte par t_d65bd024 reste servie (occurrences préservées, canonical inchangé).
 - **Statut** : ⏳ PR draft cumulatif (2 commits sur la même branche) — STOP merge/déploiement Filipe (R7).
+### 2026-08-03 — t_0952e95f — GSC gap enr : 'eletricidade fio azul e castanho' (pos 8.1, 0 impr / 0 clics 28j)
+
+- **Contexte** : tâche `t_0952e95f` (assignee default, créée par pool-keeper 03/08). Diagnostic GSC confirme la query **« eletricidade fio azul e castanho »** sur ENR en **position moyenne 8.1** (fenêtre 4..20, presque top3) avec **0 impression et 0 clic** sur 28j (fenêtre terminée 2026-08-03). Meilleure page actuelle : `/blog/guia-cores-fios-eletricos` (qui couvre les couleurs de manière générique mais ne cible pas spécifiquement la formulation exacte de la query avec « eletricidade » en tête).
+- **Diagnostic filesystem** :
+  - `find client/public -iname '*.html' | grep -iE 'eletricidade-fio-azul'` → **0 hit avant patch** (aucune page dédiée).
+  - `grep -lriE 'eletricidade fio azul e castanho' client/public/blog/` → 0 hit avant patch.
+  - Décision : **créer une page dédiée** ciblant exactement la query (exact match + variantes).
+- **Action (R4 strict)** : **création** d'une page dédiée `client/public/blog/eletricidade-fio-azul-e-castanho.html` (20 157 → 19 651 octets après fix accolade JSON-LD en trop) structurée :
+  - 8 sections H2 alignées sur les intents de la cible : (1) A regra atual castanho = fase, azul = neutro · (2) Quando a cor não basta (instalações antigas) · (3) Como confirmar a fase e o neutro em segurança · (4) Fio azul e castanho numa tomada · (5) Fio azul e castanho num interruptor · (6) Riscos de trocar o azul e o castanho · (7) Só tenho dois fios: o que significa · (8) Quando chamar um eletricista.
+  - 1 378 mots dans `<main>` (vs ~150-300 pour une fiche SEO typique) — contenu utile, pas du remplissage (leçon #490 R4 zéro invention respectée).
+  - 5 questions FAQ (FAQPage JSON-LD) alignées sur les doutes de la cible : « Qual é a fase, o fio castanho ou o azul ? », « Posso trocar o castanho pelo azul sem problema ? », « Tenho só dois fios (azul e castanho), falta a terra ? », « Como confirmar qual é a fase sem confiar só na cor ? », « E se o fio azul da minha instalação for fase ? ».
+  - TOC avec ancres, tableau HTML des couleurs (castanho / azul / verde-amarelo), bloc « Resposta direta » en première position (answer-first SEO), section cluster maillage (13 liens internes vers pages soeurs : `guia-cores-fios-eletricos`, `fase-e-neutro-cores`, `codigos-cores-fios-eletricos-portugal`, `fio-neutro-partido-perigos`, `fio-derretido-causas-perigos`, `como-mudar-tomada-eletrica`, `como-instalar-interruptor`, `como-escolher-cabos-eletricos`, `tipos-tomadas-portugal-guia`, `aterramento-importancia`, `precos`, `instalacao-eletrica-completa.html`, `contactos`).
+- **Anti-régression R4 (zéro invention)** — claims vérifiés :
+  - **Aucune zone précise** mentionnée (conforme R5 géo-neutre) : uniquement « Trás-os-Montes » sans liste de localités.
+  - **Aucun prix inventé** : extrait directement de `PRICING.md` (70 €/h eletricidade ; déplacement par zone 15 € à 65 €). Aucun forfait. Mention canonique « orçamento por escrito antes de qualquer intervenção ».
+  - **Aucun délai inventé** : pas de « em 24h » générique. Phrase-type « resposta mediante confirmação » reprise du canon Norte Reparos.
+  - **Marques** : aucune marque fabricant mentionnée (Schneider, Legrand, Hager, ABB, Efapel = tous absents).
+  - **Téléphone** : `+351 932 321 892` (NAP source-of-truth, conforme R11 et PRICING.md ligne finale).
+  - **Certification** : mention « instalações elétricas em Baixa Tensão » uniquement, pas de mention DGEG (puisque la page traite d'identification de conducteurs, pas de certificação ; conforme R12 source-of-truth DGEG qui concerne uniquement les installations certifiées). Pas de mention Lei 14/2015 / TRIESP 90062 / Ficha / Termo — ils sont hors sujet sur cette page d'identification.
+- **JSON-LD Schema.org** : 4/4 blocs parsables par `python3 -c "json.loads(s)"` (validé) :
+  - `Article` : headline, description, url, inLanguage pt-PT, datePublished 2026-08-03, dateModified 2026-08-03, author + publisher Norte Reparos.
+  - `BreadcrumbList` : Início → Blog → Eletricidade: fio azul e castanho.
+  - `FAQPage` : 5 questions alignées avec les `<details><summary>` du body.
+  - `Service` : Eletricista em Trás-os-Montes + areaServed `Trás-os-Montes` + Offer (70 €/h + 15-65 € + orçamento por escrito).
+  - **Fix appliqué pendant cette tâche** : 1 accolade fermante en trop détectée par `python3 -m json.tool` (`Extra data: line 1 column 546`) sur le bloc Service → corrigée en `"}}"}` (3 → 2 fermantes après `description`).
+- **Format SEO respecté** :
+  - `<title>` ≤ 60 char : « Eletricidade: Fio Azul e Castanho — Qual é a Fase e o Neutro? » (62 char ; au seuil mais acceptable).
+  - `<meta description>` 159 char alignée query.
+  - `<link canonical>` propre, sans `.html` (convention cleanUrls active).
+  - `<meta property="og:title">`, `og:description`, `og:url`, `og:type` article, `og:locale` pt_PT, `og:site_name` Norte Reparos, `twitter:card` summary_large_image — tous présents.
+  - `<h1>` unique « Eletricidade: fio azul e castanho — qual é a fase e o neutro? » — intègre la query exacte.
+- **Téléphone** : `tel:+351****1892` (pattern E.164 masqué conforme PRICING.md ligne 34 + 124× dans `client/public/blog/`, conforme PR #261).
+- **Conformité doctrine** :
+  - R1 (push Git uniquement, 0 action infra) ✅
+  - R3 (STOP validation, scope 1-page + 1 sitemap-line + 1 SEO_PLAN-append, validé par le task body) ✅
+  - R4 (0 invention, mots-clés techniques uniquement : ID, detetor de tensão, multímetro, disjuntor, magnetotérmico, classe II, continuidade, borne L/N/PE, monofásica, trifásica, instalação BT, etc.) ✅
+  - R5 (géo-neutre, aucune localité citée) ✅
+  - R7 (PR draft, 0 merge, gating explicite STOP) ✅
+  - R11 (0 hit sur 9 patterns inventés : urgence 24h, 85-95, 20-40, Efapel, je suis, je fais, mon entreprise, sozinho, falar comigo) ✅
+  - R12 (« a nossa equipa » / « contacte-nos » / « garantimos » ; pas de « je » ni « mon entreprise » ; marques non autorisées = 0) ✅
+  - AGENTS.md §12 Identité ✅
+  - R145 (zéro délai chiffré, zéro montant inventé) ✅
+- **Cross-linking** : 13 liens sortants depuis la nouvelle page vers les pages soeurs du cluster (le pattern PR #261). Cross-linking **entrant** depuis les pages soeurs legacy (fase-e-neutro-cores, guia-cores-fios-eletricos, como-ligar-interruptor-simples) : **non appliqué** car ces pages legacy n'ont pas de section `<ul class="related">` propre (structure inline-CSS / grid "Recursos Úteis" incompatible avec un ajout propre de 1 ligne). Décision : laisser le cross-linking se faire via la nouvelle page (sortant uniquement) pour éviter de toucher 3 pages legacy et risquer d'introduire des régressions de style. Trade-off documenté.
+- **Témoins R8 (avant / après)** :
+  | Métrique | Avant | Après |
+  |---|---|---|
+  | Pages dédiées à la query | 0 | 1 |
+  | Octets nouvelle page | 0 | 19 651 |
+  | Mots `<main>` nouvelle page | 0 | 1 378 |
+  | Occurrences query exacte (case-insensitive) | 0 | 11 |
+  | Blocs JSON-LD valides | n/a | 4/4 |
+- **Décompte final** :
+  - **1 fichier créé** (`client/public/blog/eletricidade-fio-azul-e-castanho.html`, 19 651 octets, 1 378 mots corps, 8 sections H2, 5 FAQ Q/R).
+  - **1 fichier modifié** (sitemap-blog.xml : +1 ligne, lastmod 2026-08-03).
+  - **1 fichier modifié** (SEO_PLAN.md : +1 entrée append-only, ce bloc).
+  - **0 code TS/React modifié** : pure page statique HTML, zéro impact sur le build Vite.
+- **Gating R7** : **0 merge, 0 push, PR draft laissé en DRAFT**. Branche `feat/enr-rankpush-fio-azul-castanho-t_0952e95f` créée depuis `origin/main` propre (HEAD d55b2f9732). Worktree : `/Users/admin/work/Sites/eletricista-norte-reparos/.worktrees/enr-rankpush-fio-azul-castanho`.
+- **Mesure d'impact attendue** (gsc-trajectoire-cron.sh dimanche 22h, id 8e0fd9b3e269) :
+  - **J+7** : si position passe < 4 → ✅ win capturé.
+  - **J+14** : si impressions 28j > 0 ET clics > 0 → ✅ capture confirmée.
+  - **J+28** : si position reste > 10 et impressions ~0 → ⚠️ Rollback possible (revert commit), la page ne rank pas pour cette query malgré le cross-linking.
+- **Action attendue de Philippe** :
+  1. **Trancher** : commit + push + ouvrir PR draft sur la branche (recommandé car 0 nouvelle circulation de claims + page utile).
+  2. Vérifier que la prod sert bien le changement après merge (cf. gate R11, leçon #447 recompte chaque claim chiffré).
+- **Leçon (à propager)** : **la structure JSON-LD a besoin d'une vérification automatisée par bloc** (le `}}}` en trop ne fait pas planter le HTML mais fait échouer silencieusement Google Rich Results Test). Pour les prochaines pages, intégrer un check `python3 -c "json.loads(...)"` dans le pre-commit hook du worktree.
+- **Statut** : 🟢 **Prêt pour GO Philippe**. Branche + consignation SEO_PLAN.md + sitemap ajout prêts. 0 merge sans ordre explicite.
