@@ -1157,3 +1157,22 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
 - **Conclusion ENR+EU** : chantier **DÉJÀ CLÔTURÉ** par la tâche `t_9a231a1d` du 30/07/2026 (PR #95 MARKETING.md squash `e70048ad5` + PR #96 purge solaire/VE squash `80f93641c`, -2307 lignes ; SEO_PLAN §17 ligne 22 amendé en place côté ENR ; branche `wt/t9a231a1d-doctrine-ve-eletricista-urgente` créée côté EU avec AMENDEMENT entrée, non mergée). **NO-OP légitime** : aucun PR draft à ouvrir, doctrine cohérente. Statut append-only historique préservé (les entrées mentionnant « ~297 pages services NON fournis incluant chargeur VE » documentent l'état à leur époque et restent factuelles, cf. ligne 1143 du précédent run).
 - **Statut** : ✅ NO-OP légitime (chantier `t_9a231a1d` fait, vérifié et consigné).
 - **🛑 Trouvaille critique côté CNR+CU** : voir l'entrée correspondante dans `canalizador-norte-reparos/SEO_PLAN.md` §17 historique (date 2026-08-03 t_c49186be recompte) — violation massive non détectée par `AUDIT-FAILLES-2026-08-03.md` (regex trop stricte, rattrapée en recompte).
+
+### 2026-08-03 — t_2b10861a — purge unique résidu painel solar FAQ macedo (PR draft #256, 0 merge)
+
+- **Contexte** : reprise du chantier ligne 115 (Services NON fournis panneau solar/autoconsumo/fotovoltaico, verrouillé HORS périmètre post-TRIESP 90062 24/07/2026). Scan ciblé `client/public/` + `client/public/blog/` + `client/public/concelhos/` + `client/public/faq/` par t_e12a378e le 03/08 a réduit le périmètre résiduel réel à **1 fichier**.
+- **Fichier** : `client/public/concelhos/macedo-de-cavaleiros.html` lignes 168-169.
+- **Ancienne réponse** (problématique, R4 violation) :
+  > « Sim, fazemos a parte elétrica da instalação de painéis solares fotovoltaicos: ligação ao quadro elétrico, instalação do inversor, proteção AC/DC e integração com a rede. Para a certificação DGEG do sistema completo, trabalhamos em articulação com empresas instaladoras parceiras reconhecidas pela Direção-Geral de Energia e Geologia. »
+- **Nouvelle réponse** (conforme R4 + SEO_PLAN ligne 115 + source-of-truth DGEG) :
+  > « Não. A nossa equipa é especializada em instalações elétricas em Baixa Tensão (até 41,4 kVA, TRIESP DGEG n.º 90062): quadros, iluminação, certificação DGEG e legalização. A instalação completa de painéis solares fotovoltaicos (autoconsumo) está fora do nosso âmbito — exigindo inscrição específica na DGEG. Para esse serviço, recomendamos contactar uma empresa instaladora de autoconsumo reconhecida pela Direção-Geral de Energia e Geologia. Podemos, se necessário, realizar a parte elétrica complementar (ligação ao quadro, inversor, proteção AC/DC) sob orçamento separado, após a instalação do parceiro. »
+- **Justification** :
+  - SEO_PLAN.md ligne 115 verrouillé 29/06 + amendé 30/07/2026 : `painel solar (autoconsumo / Fotovoltaico)` = HORS périmètre (TRIESP 90062 couvre Baixa Tensão générique ≤41,4 kVA, pas l'inscription spécifique autoconsumo).
+  - R4 AGENTS.md : zéro contenu inventé / pas de claims non vérifiables.
+  - Mention « TRIESP 90062 + Baixa Tensão até 41,4 kVA » = conforme `~/work/Sites/DGEG-CERT-SOURCE-OF-TRUTH.md`.
+  - Préservation de l'option « parte elétrica complementar sob orçamento separado » : honnête, ne ferme pas la porte, ne sur-promet pas.
+- **Scope strict** : 1 page, 1 Q/R FAQ, 0 autre modif. `npm run lint` clean (HTML statique). Pas de FAQPage JSON-LD sur cette page (vérifié) donc 0 impact schema.org. Aucun autre résidu `painel solar fotovoltaicos` en mode claim dans `client/public/` (vérifié par grep ciblé avant commit).
+- **PR ouverte** : <https://github.com/taffrand-gif/eletricista-norte-reparos/pull/256> (branche `feat/purge-painel-solar-macedo-faq`, **DRAFT**, base=main).
+- **Gating** : **0 merge sans GO explicite de Philippe** (R7 AGENTS.md). PR DRAFT — seul Philippe décide du merge après vérification que la prod sert bien le changement (cf. gate R11, leçon #447 recompte chaque claim chiffré).
+- **Hors périmètre (signalé pour arbitrage futur)** : 3 occurrences `piso radiante` en **meta keywords** sur `aquecimento-eletrico-{braganca,vila-real,mirandela}.html` — body H1 = `Aquecimento Elétrico` (radiador/convector/manta = LÉGITIME Baixa Tensão), mais keyword `piso radiante` ambigu (hydraulique HORS scope vs électrique OK). À arbitrer avec Philippe séparément (carte enfant `t_e12a378e.1` à créer).
+- **Statut** : 🟡 PR #256 DRAFT en attente GO Philippe.
