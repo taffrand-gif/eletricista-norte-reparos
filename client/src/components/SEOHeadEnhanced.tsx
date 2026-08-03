@@ -111,7 +111,6 @@ export default function SEOHeadEnhanced({
  // Hreflang tags (pour internationalisation)
  const hreflangTags = [
  { lang: 'pt-PT', url: seoConfig.canonicalUrl },
- { lang: 'pt-BR', url: seoConfig.canonicalUrl.replace('.com', '.com.br') },
  { lang: 'en', url: seoConfig.canonicalUrl.replace('.com', '.com/en') },
  { lang: 'es', url: seoConfig.canonicalUrl.replace('.com', '.com/es') }
  ];
