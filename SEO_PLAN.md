@@ -1406,3 +1406,83 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
   3. Mesurer l'impact J+7/J+14/J+28 via `gsc-trajectoire-cron.sh` (recette : position < 4 = win, régression sur long-tail = rollback).
 - **Leçon (à propager)** : **le validateur JSON-LD doit être exécuté systématiquement sur chaque page avant commit**. Le bug des 4 `@context` corrompus (`https://***@type` au lieu de `https://schema.org`) n'a jamais été détecté en prod parce que le HTML reste valide — seul Google Rich Results Test (ou `python3 -m json.tool`) révèle l'erreur. Pour les prochaines pages, intégrer un check `python3 -c "json.loads(...).get('@context') == 'https://schema.org'"` dans le pre-commit hook du worktree (modèle `auto-skill-router:hermes-learning-loop`).
 - **Statut** : 🟢 **Prêt pour GO Philippe**. Branche + consignation SEO_PLAN.md + PR #277 DRAFT prêts. 0 merge sans ordre explicite.
+
+---
+
+## 🆕 t_29fbbba7 — GSC gap enr : 'quanto custa colocar estores elétricos' en pos 8.6 (21 impr / 1 clic en 28j) — 04/08/2026
+
+> **Mission terminée** : rank-push d'une page existante `/blog/quanto-custa-instalar-estores-eletricos` pour la query GSC où elle était à pos 8.6 (fenêtre 4..20).
+
+### Cause racine confirmée
+
+Page déjà dans le sitemap (lastmod 2026-06-06, priority 0.7) mais avec 5 défauts structurels qui la maintenaient hors top3 :
+
+1. **H1 / title / og utilisaient 'instalar'** alors que la query GSC est '**colocar**' -> Google pondère la correspondance exacte -> top3 inaccessible.
+2. **0 occurrence de 'colocar'** dans le contenu (666 mots, copie squelettique).
+3. **3 JSON-LD cassés** (`https://***@type` au lieu de `https://schema.org`) -> aucun enrichissement Search, aucun FAQPage/Article/BreadcrumbList parsable.
+4. **2 tel:+351**** masqués** (footer + sticky-cta) -> R-TEL gate 0 (AGENTS.md §12).
+5. **H1 doublé** (`<h1>` dans `<header>` + `<h2>` parasite "Quanto Custa Instalar Estores Elétricos? Preços 2026") -> confusion hiérarchique.
+
+### Témoins de contrôle R8 (avant/après)
+
+| Métrique | AVANT | APRÈS | Delta |
+|---|---:|---:|---:|
+| Mots total | 666 | 3 473 | +2 807 (+422 %) |
+| Occurrences 'colocar' | 0 | 25+ | +25 (1ère apparition) |
+| Occurrences 'estores elétricos' | 13 | 37 | +24 |
+| H1 unique | non | oui | OK structurel |
+| H2 parasites (faux h1) | 1 | 0 | ✅ |
+| JSON-LD parsables | 0/3 | 6/6 | ✅ |
+| tel:+351**** masqués | 2 | 0 | R-TEL gate PASS |
+| FAQPage mainEntity | 1 Q tronquée | 6 Q/R | ✅ |
+| HowTo steps | 0 | 6 | ✅ |
+| Bloc transparence PRICING | absent | présent | ✅ |
+| Maillage interne (réel) | 0 | 5 liens extensionless | ✅ |
+| Sitemap lastmod | 2026-06-06 | 2026-08-04 | ✅ |
+| Article schema.org dateModified | 2026-02-24 | 2026-08-04 | ✅ |
+| URL canonique | inchangée | inchangée | (slug 'instalar' conservé exprès pour ne pas reset ranking) |
+
+### Sources de vérité utilisées (PRICING.md)
+
+- Mão de obra eletricidade : **70 €/h** (source PRICING.md, 100 % réel).
+- Déplacement Z1-Z6 : **15 € / 25 € / 35 € / 45 € / 55 € / 65 €** (grelha officielle).
+- **0 invention** : aucun tarif, aucun délai, aucune zone ajoutée hors PRICING.md.
+- DGEG n.º **90062** (Lei n.º 14/2015, baixa tensão até 41,4 kVA) : déjà dans AGENTS.md §12.
+
+### Décompte final
+
+- **1 fichier modifié substantiellement** (`client/public/blog/quanto-custa-instalar-estores-eletricos.html`, +438 lignes net, restructuration complète).
+- **1 sitemap mis à jour** (`public/sitemap.xml` ligne 2402, lastmod 2026-06-06 → 2026-08-04).
+- **0 fichier TS/React modifié** : pure page statique HTML, zéro impact sur le build Vite.
+- **1 PR draft** : **#283** sur `feat/enr-rankpush-colocar-estores-eletricos-t_29fbbba7`.
+  - URL : https://github.com/taffrand-gif/eletricista-norte-reparos/pull/283
+- **1 entrée append-only** à `SEO_PLAN.md` (ce bloc).
+
+### Gating R7
+
+**0 merge sans GO Philippe nominatif**. PR #283 laissé **DRAFT**. Branche `feat/enr-rankpush-colocar-estores-eletricos-t_29fbbba7` créée depuis `docs/seo-plan-statuts-actualises-t_b2d2b734` propre (HEAD `f66f5b5d20`). Push Git OK (`git push -u origin` -> branche suivie).
+
+### Mesure d'impact attendue (gsc-trajectoire-cron.sh dimanche 22h, id 8e0fd9b3e269)
+
+- **J+7** : si position passe < 4 sur la query `quanto custa colocar estores elétricos` → ✅ win capturé.
+- **J+14** : si impressions 28j > 21 ET clics > 1 → ✅ capture confirmée.
+- **J+28** : si position reste > 10 et impressions ~ 0 → ⚠️ Rollback possible (revert single commit), canonical inchangé -> la page replongera sur la query longue (`instalar`).
+- **Régression à surveiller** : position `quanto custa instalar estores elétricos` (long-tail préservé, ne doit pas dégrader).
+
+### Action attendue de Philippe
+
+1. **Trancher** : merge + push sur `main` (recommandé car corrections de bugs prod : 3 JSON-LD cassés + 2 `tel:+351****` masqués + H1 dupliqué).
+2. Vérifier que la prod sert bien le changement après merge (cf. gate R11, leçon #447 recompte chaque claim chiffré).
+3. Mesurer l'impact J+7/J+14/J+28 via `gsc-trajectoire-cron.sh`.
+
+### Leçon (à propager)
+
+**La couverture exacte d'une query GSC n'est pas qu'une affaire de présence de page — c'est aussi l'alignement lexical H1/title/contenu + l'intégrité technique (JSON-LD, tel E.164, structure h1 unique)**. Une page peut exister depuis 6 mois, être indexée, et rester hors top3 faute de match exact et de signaux structurés valides. Pour les prochaines vagues, la check-list d'entrée est :
+
+- [ ] H1 contient le **verbe exact** de la query GSC (pas un synonyme).
+- [ ] Au moins 10-15 occurrences naturelles du verbe dans le corps.
+- [ ] Au moins 1 JSON-LD valide (tester avec `python3 -m json.tool` avant commit).
+- [ ] 0 `tel:+351****` masqué (E.164 propre obligatoire).
+- [ ] 1 seul `<h1>`, suivi de `<h2>` cohérents.
+
+- **Statut** : 🟢 **Prêt pour GO Philippe**. Branche + consignation SEO_PLAN.md + PR #283 DRAFT prêts. 0 merge sans ordre explicite.
