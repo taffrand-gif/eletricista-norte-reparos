@@ -20,7 +20,7 @@ const InnovativeHero: React.FC = () => {
  ];
  const badgeText = isPlumber
  ? 'CANALIZADOR — DISPONÍVEL 24H/7D'
- : 'eletricista com experiência — DISPONÍVEL 24H/7D';
+ : 'eletricista com experiência — ORÇAMENTO POR ESCRITO EM 48H';
  const badgeEmoji = isPlumber ? '💧' : '⚡';
  const gradientFrom = isPlumber ? 'from-blue-600' : 'from-amber-500';
  const gradientVia = isPlumber ? 'via-blue-700' : 'via-amber-600';

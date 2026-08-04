@@ -129,8 +129,8 @@ export const electriciteConfig: ServiceConfig = {
  to: '#cc4a1f', // Orange foncé
  },
  accentColor: '#FF6B35',
- heroTitle: 'Avaria Elétrica? Curto-Circuito?',
- heroSubtitle: 'Eletricista em Trás-os-Montes — 24h/7d. Orçamento por escrito antes de qualquer intervenção.',
+ heroTitle: 'Eletricista para instalação e reparação — Trás-os-Montes',
+ heroSubtitle: 'Instalação, remodelação e diagnóstico elétrico ao seu domicílio. Orçamento por escrito em 48h, garantia 1 ano.',
  heroEmoji: '⚡',
  serviceEmoji: '🔌',
  services: [
