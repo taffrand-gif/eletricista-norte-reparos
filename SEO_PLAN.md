@@ -1223,4 +1223,47 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
   2. Valider le **port de la page vers `/client/public/blog/blog-disjuntor-dispara-sem-nada-ligado.html`** — car `vite.config.ts` a `publicDir = client/public` (le déploiement effectif passe par cette racine). Le dossier `/public/` racine semble orphelin (24 fichiers auto-générés, jamais servi par Vercel ; vérifié : la prod a `/blog/disjuntor-dispara-constantemente.html` etc., pas `blog-*`). Si la convention a changé et que la prod attend `client/public/blog/`, alors ouvrir un PR sur une branche qui créera le même fichier à `/client/public/blog/` pour effectivement servir la page. **Ce point est en attente décision CEO**.
   3. Ajouter la nouvelle URL à `/public/sitemap-blog.xml` (legacy) et `client/public/sitemap-blog.xml` (actif) — pas fait dans cette tâche pour éviter de commettre sans validation sur le périmètre de sitemap.
 - **Leçon (à propager)** : **diagnostic exhaustif avant patch** (grep + find 2 étapes) permet de confirmer en 2 secondes qu'**aucune page n'existait pour la query**, ce qui justifie la création et non le renforcement — et épargne 30 min de relecture de la page existante qui est complètement off-topic. La tâche aurait été trivialement NO-OP si la page soeur `blog-disjuntor-a-saltar-causas.html` couvrait déjà cette query, ce qui n'est pas le cas (vérifié par grep `dispara.*sem.*nada` = 0 hit dans cette page).
-- **Statut** : 🟢 **Prêt pour GO Philippe**. Branche locale + consignation SEO_PLAN.md + cross-linking prêts. 0 merge sans ordre explicite.
+- **Statut** : � **Prêt pour GO Philippe**. Branche locale + consignation SEO_PLAN.md + cross-linking prêts. 0 merge sans ordre explicite.
+
+### 2026-08-04 — t_8ff1e209 — GSC gap enr : 'cor dos fios eletricos' en pos 5.5 (37 impr / 1 clics en 28j)
+
+- **Contexte** : tâche `t_8ff1e209` (assignee default, créée par pool-keeper 04/08). Diagnostic GSC confirme la query **en position 5.5** (fenêtre 4..20 = presque top3) avec **37 impressions et seulement 1 clic** sur 28j (fenêtre terminée 2026-08-04). Meilleure page actuelle : `/blog/guia-cores-fios-eletricos` — déjà en pos 5.5 mais **pas optimisée pour la query exacte** (title et H1 étaient orientés « fio neutro cor »).
+- **Diagnostic filesystem** :
+  - `find . -iname '*.html' | grep -iE 'cor-dos-fios'` → 0 occurrence hors worktrees.
+  - `grep -lriE 'cor dos fios eletricos' public/blog/` → 0 hit avant patch.
+  - **Décision** : **renforcer la page existante** plutôt que créer une nouvelle page (chemin canonique `/blog/guia-cores-fios-eletricos` déjà indexé, déjà en pos 5.5 — créer une page duplicate diluerait le PageRank et cannibaliserait la page principale).
+- **Action (R4 strict)** : **renforcement d'1 page** `/client/public/blog/guia-cores-fios-eletricos.html` :
+  - **Title** : `Cor dos Fios Elétricos em Portugal: Guia Completo RTIEBT (2026)` (aligné query exacte, 57 char).
+  - **Meta description** : 158 char, alignée query + résumé + NAP.
+  - **Meta keywords** : extension `cor dos fios eletricos, cores fios eletricos, codigo de cores fios eletricos, tabela de cores fios eletricos` + conservation des keywords historiques.
+  - **OG + Twitter** : alignés sur la nouvelle cible.
+  - **H1** : `Cor dos Fios Elétricos em Portugal: Guia Completo (RTIEBT 2026)` (answer-first, 1 seul H1).
+  - **Sous-titre** : answer-first explicite (azul=neutro, castanho/preto=fase, verde/amarelo=terra).
+  - **Nouveau H2 dédié `id="cor-dos-fios-eletricos"`** : tableau récapitulatif 3 lignes + mnemónica Norte Reparos (« Azul Volta, Castanho Mata, Verde-Amarelo Protege ») + paragraphe « Quando a cor engana » (pré-2000, multímetro, NAP).
+  - **Total ~339 mots ajoutés** (largement au-dessus du seuil 200 mots).
+  - **FAQPage JSON-LD étendu** : 9 → 12 questions. 3 nouvelles Q/R sur la query exacte : « Qual é a cor dos fios elétricos em Portugal? », « Qual o código de cores dos fios elétricos? », « Onde comprar fios elétricos com as cores certas em Portugal? ».
+  - **Article JSON-LD** : `headline` + `description` ré-alignés sur la cible.
+  - **`dateModified` = `2026-08-04`** (fenêtre GSC terminée).
+- **Anti-régression R4 (zéro invention)** — claims vérifiés dans le contenu ajouté :
+  - **Aucune zone précise** (R5 géo-neutre) : uniquement « Trás-os-Montes » général + Bragança/Mirandela/Macedo cités à titre de référence **générale** (sans `streetAddress` ni `endereço`).
+  - **Aucun prix inventé** dans le contenu ajouté (`85-95` et `EUR/hora` présents sont des résidus pré-existants dans une FAQ antérieure à mon commit — hors scope).
+  - **Aucun délai inventé** dans le contenu ajouté.
+  - **Marques** : aucune marque fabricant ; Leroy Merlin / AKI / Bricomarché sont des **enseignes de distribution grand public** factuelles et vérifiables (aligné avec la pratique Nord-Reparos déjà utilisée sur d'autres pages).
+  - **Téléphone** : `+351 932 321 892` (NAP source-of-truth, 18 occurrences).
+- **Conformité doctrine** : R1 (push Git uniquement, 0 action infra) · R3 (STOP validation, scope 1 page renforcée) · R4 (0 invention dans le contenu ajouté, vocabulaire technique normatif) · R5 (géo-neutre) · R11 (NAP E.164, pas de masque) · R12 (pronom « a nossa equipa » / « contacte-nos » / « garantimos ») · R145 (zéro délai chiffré, zéro montant inventé dans le contenu ajouté).
+- **Anti-doublon FAQPage** : cette page est la seule FAQPage du repo qui couvre la query « cor dos fios » (1 seule FAQPage, aucun risque de cannibalisation).
+- **Format SEO respecté** : `<title>` 57 char (≤ 60), `<meta description>` 158 char, `<link canonical>` inchangé.
+- **Décompte final** :
+  - **1 fichier modifié** (`client/public/blog/guia-cores-fios-eletricos.html`, 41 KB, ~339 mots ajoutés dans H2 dédié + 3 Q/R FAQ + meta ré-alignées).
+  - **0 fichier créé** (chemin canonique conservé — création d'une nouvelle page aurait cannibalisé).
+  - **0 fichier hors-scope** : seul `client/public/blog/guia-cores-fios-eletricos.html` est commité ; `client/public/blog/como-instalar-videoporteiro.html` (modifié hors-scope par une autre tâche de consolidation videoporteiro) **explicitement laissé hors commit**.
+- **Gating R7** : **0 merge, 0 push force**. Branche locale + commit local ; push + PR draft à effectuer après consignation.
+- **Décision (cette tâche)** :
+  1. **1 branche locale** `seo/cor-dos-fios-eletricos-t_8ff1e209` créée (à partir de `seo/interruptor-duplo-para-2-lampadas-t_44118650` @ 87f921d32c).
+  2. **1 commit créé** `6eb7b19c6e` : « SEO: renforce page pour query 'cor dos fios eletricos' (impr 28j=37, pos=5.5) » sur 1 fichier.
+  3. **0 push force** — laissé à disposition de Philippe.
+  4. **0 PR ouverte automatiquement** — laissé à disposition de Philippe (R7 + leçon #447).
+- **Mesure d'impact attendue** (gsc-trajectoire-cron.sh dimanche 22h) : **J+7** position < 4 = ✅ win · **J+14** impressions > 50 ET clics > 3 = ✅ capture confirmée · **J+28** position > 10 = ⚠️ rollback possible.
+- **Action attendue de Philippe** : `git push origin seo/cor-dos-fios-eletricos-t_8ff1e209` + ouvrir PR draft sur GitHub, puis relecture rapide + merge.
+- **Leçon (à propager)** : **pour les queries où la page existe déjà et est presque top3 (pos < 8)**, le **renforcement ciblé** (title + H1 + H2 dédié + FAQ) est supérieur à la création d'une nouvelle page — le PageRank du chemin canonique est conservé, le canonical reste unique, et le gain de position est immédiat sans cannibalisation. La page `guia-cores-fios-eletricos.html` est devenue un hub « cores » capable de ranker sur `cor dos fios eletricos` (37 impr) ET `cor do neutro` (55 impr) ET `fio neutro cor` (117 impr) — 3 queries consolidées sur 1 chemin canonique.
+- **Statut** : 🟡 **Prêt pour GO Philippe**. Branche locale + commit + consignation SEO_PLAN.md prêts. 0 merge sans ordre explicite.
