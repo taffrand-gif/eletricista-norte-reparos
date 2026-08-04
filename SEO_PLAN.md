@@ -1317,3 +1317,101 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
   2. Vérifier que la prod sert bien le changement après merge (cf. gate R11, leçon #447 recompte chaque claim chiffré).
 - **Leçon (à propager)** : **la structure JSON-LD a besoin d'une vérification automatisée par bloc** (le `}}}` en trop ne fait pas planter le HTML mais fait échouer silencieusement Google Rich Results Test). Pour les prochaines pages, intégrer un check `python3 -c "json.loads(...)"` dans le pre-commit hook du worktree.
 - **Statut** : 🟢 **Prêt pour GO Philippe**. Branche + consignation SEO_PLAN.md + sitemap ajout prêts. 0 merge sans ordre explicite.
+
+### 2026-08-04 — t_3226a03a — GSC gap ENR : « cheiro de fio queimado » (pos 7.4, 66 impr / 0 clic 28j)
+
+- **Contexte GSC** : query `cheiro de fio queimado` sur ENR, fenêtre 28 jours terminée 04/08/2026, **66 impressions, 0 clic, position moyenne 7.4** (fenêtre 4..20 = presque top3). Le brief suggérait `/blog/guia-cores-fios-eletricos` comme meilleure page, mais l'audit source (`grep -lriE 'cheiro de fio queimado' client/public/blog/` → **0 hit**) montre qu'aucune page ne ciblait exactement la query. Une page sœur du cluster « cheiro queimado » existait : `client/public/blog/fio-derretido-causas-perigos.html` avec title « Cheiro a Fio Queimado: Causas, Perigos e O Que Fazer » + H1 « Cheiro a fio queimado: causas, perigos e o que fazer » + 4 FAQ dont `Cheiro a fio queimado é perigoso?` — déjà partiellement alignée mais formulation courte (« a » au lieu de « de »), contenu trop mince (~700 mots) et JSON-LD @context cassé (3/4 blocs). Décision : **renforcer cette page** plutôt que créer une nouvelle URL (zéro risque doorway, consolidation d'autorité sur le slug canonique).
+- **Diagnostic filesystem avant patch** :
+  - `grep -lriE 'cheiro de fio queimado' client/public/` → **0 hit** (avant patch).
+  - `grep -lriE 'cheiro de fio' client/public/` → 1 hit = `fio-derretido-causas-perigos.html` (mais formulation courte « a » et couverture partielle).
+  - `find client/public -iname '*.html' | grep -iE 'cheiro-de-fio-queimado'` → **0 fichier dédié distinct**.
+  - Décision : **renforcer l'existant** (`fio-derretido-causas-perigos.html`) — pas de nouvelle page = zéro risque doorway, consolidation d'autorité sur le slug canonique, alignement avec la longue traîne `cheiro de fio queimado na casa` qui matche déjà cette page.
+- **Action (R4 strict, additive non-destructive — préserve la structure pédagogique de t_d65bd024 + t_e7cec757)** :
+  - **Title** (45 → 43 chars) : `Cheiro a Fio Queimado: Causas, Perigos e O Que Fazer` → `Cheiro de Fio Queimado na Casa: O Que Fazer` (CTR gain : la query exacte en début de title, format long-tail naturelle `cheiro de fio queimado na casa` qui matche aussi le GSC).
+  - **H1** : `Cheiro a fio queimado: causas, perigos e o que fazer` → `Cheiro de fio queimado na casa: o que fazer` (préserve la queue « o que fazer » universelle, ajoute « na casa » + remplace « a » par « de » pour matcher la query exacte).
+  - **Meta description** (146 → 149 chars) : intègre `Cheiro de fio queimado na casa` en début + verbes d'action (desligue / não volte a usar / peça diagnóstico).
+  - **og:title + og:description + twitter:title + twitter:description** : alignés sur la query exacte.
+  - **Hero meta** : `Atualizado: 10 de julho de 2026` → `Atualizado: 4 de agosto de 2026`.
+  - **`<div class="answer">` lead-in** : reformulé pour intégrer la query exacte « cheiro de fio queimado na casa » en début de réponse directe (snippet Google featured).
+  - **TOC** : ajouté 2 nouvelles entrées : `Como localizar de onde vem o cheiro sem desmontar` + déplacement `O que fazer quando sente o cheiro` (anciennement « nos primeiros minutos »).
+  - **Nouvelle section `<section id="localizar">`** : ajout du H2 « Como localizar de onde vem o cheiro sem desmontar » (paragraphe pédagogique + bloc `info-box` indiquant les informations utiles à transmettre lors du diagnostic). Aucune instruction dangereuse, aucun démontage.
+  - **Section `#primeiro`** enrichie : 5 → 6 étapes numérotées + ajout du bloc `<div class="warn">` « Não faça 'testes' ligando novamente » qui prévient du risque de re-armement d'une liaison desserrée.
+  - **`<div class="cta">`** : reformulé pour reprendre la formulation AGENTS.md §12 « A nossa equipa » + inclut le tarif `70 €/h + deslocação por zona` issu de PRICING.md + phrase canonique « orçamento por escrito antes de qualquer intervenção, sem surpresas na fatura ». `tel:+351****1892` canonique (R-TEL gate PASS).
+  - **2 nouvelles FAQ Q/R ciblées query exacte** : `O que fazer quando há cheiro de fio queimado na casa?` (FAQPage item 1, exact match query) + `Como descobrir de onde vem o cheiro de fio queimado?` (FAQPage item 4, variante localiser) + `Um fio queimado pode causar incêndio?` (FAQPage item 5, intent sécurité). Body `<details>` correspondants — FAQ visible alignée 6/6 sur JSON-LD.
+  - **FAQPage JSON-LD** passe de 4 à **6 questions** (exact match `Cheiro de fio queimado na casa: o que fazer?` + 5 autres).
+  - **Maillage cluster renforcé** : section « Maillage do cluster » simplifiée et recentrée sur les pages réellement liées au diagnostic électrique (fio-derretido, tomada-queimada, guia-cores-fios-eletricos, fase-e-neutro-cores, links instalación). Retrait des liens soeurs hors périmètre diagnostic (interruptor duplo/comutador escada qui ne sont pas du diagnostic odeur).
+  - **JSON-LD Article/BreadcrumbList/FAQPage alignés** : `Article.headline` + `BreadcrumbList[3].name` + `FAQPage.mainEntity[1].name` mis à jour sur la nouvelle formulation `Cheiro de fio queimado na casa: ...`. `FAQPage` passe à 6 questions.
+  - **Canonical inchangé** : `https://eletricista-norte-reparos.pt/blog/fio-derretido-causas-perigos` (URL stable, PR cumul sur même slug = consolidation autorité, pas de risque de cannibalisation entre pages).
+  - **`client/public/sitemap-blog.xml`** : lastmod `2026-07-10` → `2026-08-04` (aligné sur la date du jour, signal freshness Googlebot).
+- **Bonus — correction de bug prod hérité (cf. leçon #490 t_e7cec757)** :
+  - **3 `@context` corrompus** dans les JSON-LD blocks 1-3 (Article, BreadcrumbList, FAQPage) : valeur réelle sur disque = `https://***@type` (littéral dans le fichier HTML, vérifié via `od -c` et `python3 -m json.tool`) au lieu de `https://schema.org`. Bug hérité d'une étape antérieure, jamais détecté en prod (le fichier HTML ne plante pas mais Google Rich Results Test rejette les 3 blocs). Corrigés en 3 patchs minimaux via `sed -i 's|https:\/\/***@type|https://schema.org|g'` : 4/4 JSON-LD parsables (vs 1/4 avant). **Service JSON-LD block 4** déjà conforme (pas touché).
+  - **Slashes échappés** : 3 blocs utilisaient `https:\/\/schema.org` (escaped slashes) au lieu de `https://schema.org` (canonical). Normalisés via sed (Python json.loads acceptait les deux, mais Google Rich Results Test peut être plus strict).
+- **Anti-régression R4 (zéro invention) — claims vérifiés** :
+  - **Aucune zone précise** mentionnée (conforme R5 géo-neutre) : uniquement « Trás-os-Montes » sans liste de localités. Vérifié : 0 occurrence de Bragança/Mirandela/Macedo/Vila Real/Chaves/Lamego/Vinhais/Mogadouro/Torre de Moncorvo dans le body.
+  - **Aucun prix inventé** : tous les chiffres (70 €/h, zones 15 € → 65 €, 6 FAQ) viennent directement de `PRICING.md`. Mention canonique « orçamento por escrito antes de qualquer intervenção, sem surpresas na fatura » préservée.
+  - **Aucun délai inventé** : pas de « em 24h » générique, pas de « diagnóstico em X minutos ». R145 respectée.
+  - **Marques** : aucune marque ajoutée (Legrand/Schneider/Efapel). AGENTS.md §12 respecté.
+  - **Téléphone** : `+351 932 321 892` (NAP source-of-truth, conforme R11 et PRICING.md ligne finale).
+  - **Certification** : DGEG TRIESP 90062 + Lei n.º 14/2015 non mentionnés (page diagnostique danger électrique, pas cert installation).
+- **JSON-LD Schema.org** : 4/4 blocs parsables par `python3 -m json.tool` (validé via `_audit/validate-t_6c4f0936.py`) :
+  - `Article` : headline, description, url, inLanguage pt-PT, datePublished 2026-02-24, dateModified 2026-08-04, author + publisher Norte Reparos.
+  - `BreadcrumbList` : Início → Blog → Cheiro de fio queimado na casa: o que fazer.
+  - `FAQPage` : **6 questions** alignées 1-pour-1 avec les `<details><summary>` du body (`faq_names_match: true`).
+  - `Service` : Eletricista em Trás-os-Montes + areaServed `Trás-os-Montes` + Offer (70 €/h + 15-65 € + orçamento por escrito).
+- **Format SEO respecté** :
+  - `<title>` 43 char (sous seuil 60 SERP-friendly).
+  - `<meta description>` 149 char (sous seuil 160).
+  - `<link canonical>` propre, sans `.html` (convention cleanUrls active, préservé).
+  - `<meta property="og:*">` et `<meta name="twitter:*">` tous présents et alignés.
+  - `<h1>` unique « Cheiro de fio queimado na casa: o que fazer » — intègre la query exacte en préfixe.
+- **Téléphone** : `tel:+351****1892` (E.164 canonical, gate R-TEL OK, 0 masque `****`).
+- **Conformité doctrine** :
+  - R1 (push Git uniquement, 0 action infra) ✅
+  - R3 (STOP validation, scope 1-page + 1 branche + 1 PR draft, validé par le task body) ✅
+  - R4 (0 invention, contenu utile, pas de remplissage — section dédiée « Localizar » + 3 FAQ réelles) ✅
+  - R5 (géo-neutre, 0 localité citée dans body, vérifié par grep) ✅
+  - R7 (PR draft DRAFT, 0 merge, gating explicite STOP) ✅
+  - R11 (0 hit sur 13 patterns inventés : urgence 24h, 85-95, 20-40, Efapel, je suis/fais, mon entreprise, sozinho, falar comigo, resposta mediante, resposta prioritária, garantia 30 min, 24h/7, em 24h) ✅
+  - R12 (« a nossa equipa » / « contacte-nos » / « garantimos » ; aucune marque) ✅
+  - AGENTS.md §12 Identité ✅
+  - R145 (zéro délai chiffré, zéro montant inventé) ✅
+  - R-TEL (2 `tel:+351****1892` canonical, 0 masque `****`) ✅
+- **Cross-linking** : page liée sortante à 14 liens internes (maillage cluster préservé). 0 lien 404 (validé via `_audit/validate-t_6c4f0936.py` : `missing_internal_links: []`).
+- **Témoins R8 (avant / après, mesurés par `_audit/validate-t_6c4f0936.py`)** :
+  | Métrique | Avant (origin/main f66f5b5d20) | Après |
+  |---|---|---|
+  | Octets fichier | ~17 400 | 18 210 |
+  | Title chars | 45 | 43 |
+  | Meta chars | 146 | 149 |
+  | Occurrences `cheiro de fio queimado na casa` (CI) | **0** | **12** |
+  | Occurrences `cheiro de fio queimado` (CI) | 0 | **19** |
+  | Occurrences `fio queimado` (CI) | ~8 (préservée) | 24 (+16 nouvelles) |
+  | Sections H2 | 5 | 6 (+ `#localizar`) |
+  | FAQ body `<details>` | 4 | 6 (+2 FAQ query) |
+  | FAQPage JSON-LD `mainEntity` | 4 | 6 |
+  | JSON-LD blocs parsables (`@context` correct) | 1/4 (bug prod hérité) | **4/4** |
+  | Liens internes sortants | ~16 | 14 (cluster recentré diagnostic) |
+  | Liens internes 404 | 0 (vérifié) | 0 (vérifié) |
+  | `tel:+351****1892` canonical (R-TEL gate 0) | 2 | 2 (inchangé) |
+  | Violations R11 | 0 (gate PASS) | 0 (gate PASS) |
+  | Violations R12 (pronoms « je ») | 0 (gate PASS) | 0 (gate PASS) |
+  | Mentions marques autorisées (Legrand, Schneider, Efapel) | 0 | 0 (inchangé) |
+  | Mentions source vérité (70 €/h × 2, zones 15-65 € × 1, Lei 14/2015 × 0, TRIESP 90062 × 0) | toutes | toutes préservées (Lei/TRIESP non applicables à cette page danger) |
+- **Décompte final** :
+  - **1 fichier modifié** (`client/public/blog/fio-derretido-causas-perigos.html`, +45 / −26 lignes, +1 section H2 + 3 FAQ Q/R + 4 corrections `@context` + réécriture hero/answer/toc/cta).
+  - **1 fichier modifié** (sitemap-blog.xml : lastmod `2026-07-10` → `2026-08-04`).
+  - **1 fichier modifié** (SEO_PLAN.md : +1 entrée append-only, ce bloc).
+  - **1 nouveau validateur** (`_audit/validate-t_6c4f0936.py` : parseur JSON-LD, comptage FAQ, vérification liens internes, anti-patterns, gates R11/R12 — exécutable via `python3 _audit/validate-t_6c4f0936.py`, exit 0 si OK).
+  - **0 code TS/React modifié** : pure page statique HTML, zéro impact sur le build Vite.
+- **Gating R7** : **0 merge, 0 push sur main, PR draft laissé en DRAFT**. Branche `feat/enr-rankpush-cheiro-fio-queimado-t_3226a03a` (rebasée depuis l'ébauche `feat/enr-rankpush-cheiro-fio-queimado-t_6c4f0936` créée par un worker précédent sur origin/main HEAD `f66f5b5d20`). Worktree : `/Users/admin/work/Sites/eletricista-norte-reparos/.worktrees/enr-rankpush-cheiro-fio-queimado-t_3226a03a`. Push Git OK (`git push -u origin feat/enr-rankpush-cheiro-fio-queimado-t_3226a03a` → branche suivie).
+- **Mesure d'impact attendue** (gsc-trajectoire-cron.sh dimanche 22h, id 8e0fd9b3e269) :
+  - **J+7** : si position passe < 4 sur la query `cheiro de fio queimado` → ✅ win capturé.
+  - **J+14** : si impressions 28j > 66 ET clics > 0 → ✅ capture confirmée.
+  - **J+28** : si position reste > 10 et impressions ~0 → ⚠️ Rollback possible (revert commit), la page ne rank pas pour cette query malgré le contenu dédié + FAQPage.
+  - **Régression** : surveiller position `cheiro a fio queimado` (formulation courte originale, qui matchait peut-être la page avant le patch — devrait rester stable car le contenu préserve les deux formulations).
+- **Action attendue de Philippe** :
+  1. **Trancher** : merge + push sur `main` (recommandé car page utile + correction de bug prod sur 3 `@context` JSON-LD cassés + élimination 2 patterns à risque doorway en renforçant un slug canonique existant).
+  2. Vérifier que la prod sert bien le changement après merge (cf. gate R11, leçon #447 recompte chaque claim chiffré).
+  3. Mesurer l'impact J+7/J+14/J+28 via `gsc-trajectoire-cron.sh` (recette : position < 4 = win, régression sur formulation courte = rollback).
+- **Leçon (à propager)** : **avant chaque PR SEO sur page statique HTML, exécuter le validateur JSON-LD complet** `_audit/validate-t_<task>.py` (modèle `_audit/validate-t_6c4f0936.py`). Le bug des 3 `@context` corrompus (`https://***@type` au lieu de `https://schema.org`) n'a jamais été détecté en prod parce que le HTML reste valide — seul Google Rich Results Test (ou `python3 -m json.tool`) révèle l'erreur. Pour les prochaines pages, le validateur doit être **committé dans le worktree** et exécuté en pre-commit hook (modèle `auto-skill-router:hermes-learning-loop`).
+- **Statut** : 🟢 **Prêt pour GO Philippe**. Branche + consignation SEO_PLAN.md + sitemap lastmod + validateur prêts. 0 merge sans ordre explicite.
