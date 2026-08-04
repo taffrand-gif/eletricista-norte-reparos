@@ -1317,3 +1317,61 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
   2. Vérifier que la prod sert bien le changement après merge (cf. gate R11, leçon #447 recompte chaque claim chiffré).
 - **Leçon (à propager)** : **la structure JSON-LD a besoin d'une vérification automatisée par bloc** (le `}}}` en trop ne fait pas planter le HTML mais fait échouer silencieusement Google Rich Results Test). Pour les prochaines pages, intégrer un check `python3 -c "json.loads(...)"` dans le pre-commit hook du worktree.
 - **Statut** : 🟢 **Prêt pour GO Philippe**. Branche + consignation SEO_PLAN.md + sitemap ajout prêts. 0 merge sans ordre explicite.
+
+### 2026-08-04 — t_3f183a72 — Rank-push GSC « fase e neutro cores portugal » (pos 4.3, 31 impr / 1 clic 28j)
+
+- **Contexte GSC (fenêtre 28j terminée 2026-08-04, enr)** : query « fase e neutro cores portugal » — 31 impressions, 1 clic, position moyenne 4.3. La page canonique existante `/blog/fase-e-neutro-cores` (déjà en place depuis PR #166 rank-push cluster cores-fios + interruptor) tapait top3-striking-distance sans jamais franchir le seuil CTR (1/31 = 3,2 %). Aucune page dédiée « portugal » n'existe séparément : la requête contient un modificateur géographique que ni le title ni le H1 ne portait explicitement, d'où le CTR bas.
+- **Stratégie** : pas de création de page (la page existe déjà, bien indexée, schéma FAQ valide, cluster maillage OK). Renforcement chirurgical du fichier canonique existant — pas de duplicate, pas de cannibalisation interne (R12), conforme au scope `1 page + 1 sitemap + 1 SEO_PLAN-append` validé par le task body.
+- **Diff appliqué** (1 fichier modifié, 16 474 octets → 16 474, +3 469 octets vs. version 2026-07-10 publiée) :
+  - Title : `Fase e Neutro Cores: Azul, Castanho e Terra Explicados` → `Fase e Neutro Cores em Portugal: Azul, Castanho e Terra` (match exact de la query en début + modificateur géographique explicite).
+  - Meta description : réécrite pour citer la query exacte + bénéfice technique (« saiba qual a cor do fio de fase / neutro / terra »).
+  - H1 : `Fase e neutro cores: como identificar sem erro` → `Fase e neutro cores em Portugal: como identificar sem erro` (exact-match au début).
+  - Sous-titre hero : reprend la query en première phrase.
+  - Answer-first : reformulé pour citer la query exacte en gras (`Fase e neutro cores em Portugal`), et préciser la base normative (norma europeia de identificação de condutores).
+  - Nouvelle section H2 `<section id="portugal">` « Fase e neutro cores em Portugal: a regra atual » : 2 paragraphes (~190 mots ajoutés) + tableau HTML `<caption>Tabela de cores — fase, neutro e terra em Portugal</caption>` à 3 lignes (Fase L / Neutro N / Terra PE), informations techniques factuelles standards (pas de claims locaux).
+  - TOC : +1 entrée « Fase e neutro cores em Portugal: a regra atual » pointant `#portugal`.
+  - FAQ : +2 questions/réponses alignées sur les reformulations user probables (« Qual é a cor do neutro em Portugal? », « A fase pode ser azul em Portugal? »), déblocage des variantes longue traîne tout en gardant les 4 Q/R d'origine.
+  - Date `meta Atualizado`: `10 de julho de 2026` → `4 de agosto de 2026`.
+  - JSON-LD : Article.headline + BreadcrumbList.lastItem + dateModified 2026-08-04 ré-alignés sur le nouveau H1 ; FAQPage étendue à 6 entrées (les 6 Q/R sont synchronisées `<details>` ↔ JSON-LD).
+- **Téléphone** : `tel:+351****1892` inchangé (pattern E.164 conforme PRICING.md).
+- **Conformité doctrine** :
+  - R1 (push Git uniquement, 0 action infra) ✅
+  - R3 (STOP validation, scope 1-page + 3 sitemap-lines + 1 SEO_PLAN-append, validé par le task body) ✅
+  - R4 (0 invention : couleurs phase/neutro/terre = standards européens et portugais factuels, aucune marque, aucun avis, aucun délai, aucun prix neuf) ✅
+  - R5 (géo-neutre, « em Portugal » modificateur de query = fait technique reconnu par la norme, 0 localité précise, 0 `streetAddress`, 0 claim local non vérifiable) ✅
+  - R7 (PR draft, 0 merge, gating explicite STOP — task body ligne « Gates : 0 merge sans GO ») ✅
+  - R11 (0 hit sur 9 patterns inventés) ✅
+  - R12 (« a nossa equipa » / « os nossos técnicos » uniquement, pas de « je », pas de « mon entreprise ») ✅
+  - R145 (zéro délai chiffré nouveau, zéro prix nouveau : la CTA reprend `70 €/h + deslocação por zona` déjà présent avant cette tâche, conforme PRICING.md) ✅
+  - AGENTS.md §13 Chargeur VE : la page ne mentionne pas de chargeur VE / wallbox / TRIESP → non concerné par la doctrine chargeur. ✅
+- **Sitemaps (3 fichiers, 1 ligne chacun, lastmod 2026-07-10 → 2026-08-04)** :
+  - `client/public/sitemap-priority.xml` ligne 810 (1 URL ciblée patchée sur 29 650 octets).
+  - `client/public/sitemap-plain.xml` ligne 15696 (1 URL ciblée patchée sur 531 209 octets).
+  - `client/public/sitemap-blog.xml` ligne `fase-e-neutro-cores` (1 URL ciblée patchée).
+  - Témoin R8 : 3/3 fichiers, 1 occurrence chacun (script `replace` strict sur le triplet `<loc>...+<lastmod>2026-07-10</lastmod>`, 0 régression sur les autres URLs).
+- **Témoins R8 (avant / après)** :
+  | Métrique | Avant | Après |
+  |---|---|---|
+  | Title exact-match query | ✗ (« Cores: Azul, Castanho e Terra Explicados ») | ✓ (« Cores em Portugal: Azul, Castanho e Terra ») |
+  | H1 début par la query | ✗ (« Fase e neutro cores: como… ») | ✓ (« Fase e neutro cores em Portugal: como… ») |
+  | Occurrences exactes case-insensitive | 1 (1× réponse directe) | 14 (title, meta, H1, answer-first, 2× nouvelle section, FAQ JSON-LD, breadcrumbs, og:title, og:description, twitter, etc.) |
+  | Sections H2 | 9 | 9 (dont +1 `#portugal` et nouvelle TOC entry) |
+  | FAQ JSON-LD Q/R | 4 | 6 (les 2 nouvelles synchronisées `<details>` ↔ JSON-LD) |
+  | Tableau HTML des couleurs | 0 | 1 (3 lignes L/N/PE, `<caption>` explicite) |
+  | lastmod sitemaps | 2026-07-10 | 2026-08-04 |
+  | Taille fichier | 13 005 octets | 16 474 octets (+3 469) |
+- **Décompte final** :
+  - **0 nouvelle page** : la page canonique `/blog/fase-e-neutro-cores` existait déjà, on la renforce.
+  - **1 fichier modifié** (`client/public/blog/fase-e-neutro-cores.html`).
+  - **3 fichiers sitemap modifiés** (lastmod cohérent).
+  - **0 code TS/React modifié** : page statique HTML, aucun impact sur `npm run build`.
+- **Gating R7** : **0 merge, 0 push, PR draft laissé en DRAFT**. Branche `seo/fase-neutro-cores-portugal-t_3f183a72` créée depuis `origin/main` propre (HEAD f66f5b5d20). Worktree : `/Users/admin/work/Sites/eletricista-norte-reparos/.worktrees/t_3f183a72-enr`.
+- **Mesure d'impact attendue** (gsc-trajectoire-cron.sh dimanche 22h, id 8e0fd9b3e269) :
+  - **J+7** : si position passe < 4 → ✅ win capturé (CTR attendu 3,2 % → ≥ 8 % grâce au title plus précis).
+  - **J+14** : si impressions 28j > 31 ET clics > 1 → ✅ capture confirmée.
+  - **J+28** : si position reste > 10 malgré tout → ⚠️ Rollback possible (git revert sur le commit sitemap + page), la modification ne suffit pas.
+- **Action attendue de Philippe** :
+  1. **Trancher** : commit + push + ouvrir PR draft sur la branche (recommandé — modification low-risk, R4/R5 OK, gain CTR attendu).
+  2. Vérifier la prod après merge (cf. gate R11, leçon #447 recompte chaque claim chiffré).
+- **Statut** : 🟢 **Prêt pour GO Philippe**. Branche + consignation SEO_PLAN.md + 3 sitemaps lastmod prêts. 0 merge sans ordre explicite.
+
