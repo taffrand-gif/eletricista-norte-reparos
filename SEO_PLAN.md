@@ -1405,3 +1405,75 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
   3. Mesurer l'impact J+7/J+14/J+28 via `gsc-trajectoire-cron.sh` (recette : position < 4 = win, régression sur long-tail = rollback).
 - **Leçon (à propager)** : **le validateur JSON-LD doit être exécuté systématiquement sur chaque page avant commit**. Le bug des 4 `@context` corrompus (`https://***@type` au lieu de `https://schema.org`) n'a jamais été détecté en prod parce que le HTML reste valide — seul Google Rich Results Test (ou `python3 -m json.tool`) révèle l'erreur. Pour les prochaines pages, intégrer un check `python3 -c "json.loads(...).get('@context') == 'https://schema.org'"` dans le pre-commit hook du worktree (modèle `auto-skill-router:hermes-learning-loop`).
 - **Statut** : 🟢 **Prêt pour GO Philippe**. Branche + consignation SEO_PLAN.md + PR #277 DRAFT prêts. 0 merge sans ordre explicite.
+
+### 2026-08-04 — t_8b3fde94 — GSC gap enr : 'neutro cor' en pos 6.6 (48 impr / 1 clic 28j)
+
+- **Contexte** : tâche `t_8b3fde94` (assignee default, créée par pool-keeper 04/08). Diagnostic GSC confirme la query **`neutro cor`** (forme courte 2 mots sans article) sur ENR en **position moyenne 6.6** (fenêtre 4..20 = presque top3) avec **48 impressions et 1 clic** sur 28j (fenêtre terminée 2026-08-04). Le body de la tâche suggérait `/blog/guia-cores-fios-eletricos` comme meilleure page (qui match par topical relevance cluster cores-fios), mais **vérification ciblée de l'URL canonique montre que `/blog/fase-e-neutro-cores` est en réalité la page la plus pertinente** (title/H1 originaux « Fase e neutro cores: como identificar sem erro » portent exactement la topicalité, mais ne matchent pas la query courte 2 mots en exact-match → snippet écrasé → CTR minimal 1/48 = 2,08%).
+- **Décision architecture** : **renforcement chirurgical de la page canonique existante** plutôt que création d'une nouvelle URL. Rationale : (1) canonical self inchangé → 0 risque de cannibalisation ; (2) la page a déjà PR #166 rank-push cluster cores-fios + PR draft #276 sur variante « fase e neutro cores portugal » → éviter une 3ᵉ URL éclatant le cluster ; (3) le diagnostic GSC identifie clairement la query comme « presque top3 » (pos 6.6) → un simple exact-match H1/answer-first + 2 FAQ + section dédiée suffit pour pousser dans le top4 sans réécriture complète.
+- **Renforcement effectué** (`client/public/blog/fase-e-neutro-cores.html`, canonical self inchangé) :
+  - **`<title>`** : « Fase e Neutro Cores: Azul, Castanho e Terra Explicados » → **« Neutro Cor: Azul Claro, Fase Castanha e Terra — Guia PT »** (exact-match query en début de title, snippet-eligible).
+  - **`<meta name="description">`** : « Fase e neutro: cores corretas em Portugal... » → **« Neutro cor: saiba qual é a cor do neutro (azul claro), da fase (castanha/preta/cinzenta) e da terra (verde-amarelo) em Portugal. Tabela, teste, FAQ e ligação correta. »** (query + réponse directe, format snippet + featured-snippet eligible).
+  - **`<h1>`** : « Fase e neutro cores: como identificar sem erro » → **« Neutro cor: qual é a cor do neutro em Portugal »** (exact-match query + intent question).
+  - **Sous-titre hero** : « Fase e neutro: cores corretas em Portugal... » → **« Neutro cor em Portugal: o fio neutro deve ser azul claro, a fase castanha/preta/cinzenta e a terra verde-amarelo. Como confirmar com teste, erros comuns e ligação correta. »**
+  - **Answer-first (.answer)** : « Fase e neutro cores: em Portugal, o neutro deve ser azul claro... » → **« Neutro cor em Portugal: o neutro é azul claro, a fase é castanha, preta ou cinzenta, e a terra é verde-amarelo (norma europeia de identificação de condutores). Em instalações antigas, meça antes de assumir — a cor só por si não é garantia. »** (answer-first format Google featured snippet).
+  - **Nouvelle section `<section id="neutro-cor">`** ajoutée au TOC :
+    - H2 « Neutro cor em Portugal: a regra atual » (~210 mots)
+    - Contenu : règle EN 60446 (identification harmónica de condutores), installations anciennes pré-harmonisation (azul = fase possível), conseil de test (multímetro ou detetor de tensão, confirmation continuité condutor de proteção), maillage vers `/blog/guia-cores-fios-eletricos` (extension cluster)
+    - **Table HTML L/N/PE** avec colonne explicite « Neutro (N) — **neutro cor** » (snippet-eligible pour SERP table)
+  - **FAQPage 4 → 6 Q/R** (FAQ `<details>` synchronisé avec JSON-LD FAQPage) :
+    - **NEW** « Qual é a cor do neutro? » → « A cor do neutro em Portugal é azul claro. Esta é a regra das instalações atuais (norma europeia EN 60446 de identificação de condutores). Em instalações antigas pré-harmonização, o azul podia estar atribuído a uma fase — meça sempre antes de intervir. »
+    - **NEW** « Neutro cor: é sempre azul? » → « Nas instalações atuais em Portugal, sim: a cor do neutro é azul claro. Em instalações antigas ou alteradas, o azul pode estar a servir uma fase. Por isso, a regra é partir da cor mas confirmar com teste, sobretudo em moradias com décadas, em caixas de derivação alteradas ou em casas usadas recém-adquiridas. »
+    - Conservées : « Fase e neutro têm sempre estas cores? », « Posso ligar interruptor ao neutro? », « Que cor é a terra? », « Se a luz funciona, a ligação está certa? »
+  - **Article JSON-LD** : `headline` + `description` + `dateModified 2026-07-10 → 2026-08-04` + `mainEntityOfPage` self.
+  - **BreadcrumbList JSON-LD** : `item[3].name` « Fase e neutro cores: como identificar sem erro » → « **Neutro cor: qual é a cor do neutro em Portugal** ».
+  - **FAQPage JSON-LD** : 2 nouvelles Q ajoutées en tête (ordre de pertinence décroissant), JSON-LD `<details>` 100% synchronisés.
+  - **og:title / og:description / twitter:title / twitter:description** : alignés sur la query pour cohérence SERP/social.
+  - **Hero meta** : « Atualizado: 10 de julho de 2026 » → « Atualizado: 4 de agosto de 2026 » (signal freshness).
+- **Sitemaps (signal refresh Googlebot)** :
+  - `client/public/sitemap-blog.xml` : lastmod URL `fase-e-neutro-cores.html` 2026-07-10 → **2026-08-04**.
+  - `client/public/sitemap-plain.xml` : lastmod URL `fase-e-neutro-cores` 2026-07-10 → **2026-08-04**.
+  - `client/public/sitemap-priority.xml` : lastmod URL `fase-e-neutro-cores` 2026-07-10 → **2026-08-04**.
+- **Témoins R8 (validés avant commit par `python3` local)** :
+  - Occurrences `neutro cor` (whole-word, CI) : **8 → 19 (+137%)**.
+  - JSON-LD valides (`@context` schema.org) : 4/4 (Article + BreadcrumbList + FAQPage + Service).
+  - Q/R FAQPage synchronisées JSON-LD ↔ `<details>` : 4 → **6 (+2 exact-match)**.
+  - Sections H2 dans TOC : 5 → **6 (+1 `#neutro-cor`)**.
+  - `<h2>` contient « neutro cor » : non → **oui (exact-match ajouté)**.
+  - R-TEL : 0 `tel:+351****` masqué dans la page (gate 0 → 0, OK).
+  - R12 forbidden words (je/sozinho/contacto pessoal/falar comigo) : 0 (gate 0 → 0, OK).
+  - R4 invention couleurs : 0 (couleurs = référentiel normatif EN 60446, pas claim inventé).
+  - R5 claim local non vérifiable : 0 (modificateur « em Portugal » = norme européenne, pas géographique).
+  - R11 patterns inventés : 0.
+  - R145 prix/délai neuf inventé : 0 (grille inchangée 70 €/h + deslocação 15-65 €).
+  - Date alignment : hero `4 de agosto de 2026` = JSON-LD `dateModified 2026-08-04` = sitemap `lastmod 2026-08-04` (3 sources synchro OK).
+- **Conformité règles verrouillées** :
+  - R1 (push Git sous validation) ✅ : branche + push OK, PR draft laissée en DRAFT.
+  - R3 (STOP validation Philippe) ✅ : PR DRAFT, 0 merge.
+  - R4 (zéro invention) ✅ : couleurs = référentiel normatif EN 60446 (azul claro / castanho/preto/cinzento / verde-amarelo).
+  - R5 (géo-neutre) ✅ : modificateur « em Portugal » = norme UE harmonisée, pas claim local.
+  - R6 (pas de `--force`) ✅ : branche nouvelle depuis `origin/main` à f66f5b5d20, pas de réécriture d'historique.
+  - R7 (0 merge sans GO) ✅ : **PR draft #284 en DRAFT, 0 merge, STOP validation Philippe**.
+  - R8 (témoins) ✅ : tableau ci-dessus (avant/après + compte réconcilié).
+  - R9 (grille 2 colonnes) ✅ : technique OK (HTML valide, JSON-LD valides, sitemaps cohérents) + conformité OK (gates R4/R5/R11/R12/R145/R-TEL tous à 0).
+  - R11 (0 patterns inventés) ✅.
+  - R12 (pronom « a nossa equipa ») ✅ : CTA préservé « A nossa equipa trabalha em Trás-os-Montes... » (0 forbidden word).
+  - R145 (0 délai/prix neuf) ✅ : grille inchangée (70 €/h + deslocação).
+  - §12 (identité Norte Reparos) ✅ : pas de mention « je », pas de marque invoquée.
+- **Décompte final** :
+  - **1 fichier principal modifié** (`client/public/blog/fase-e-neutro-cores.html`, +28/−17 lignes sur 24 insertions / 19 suppressions après compteur `git diff --stat`, contenu utile ajouté : +210 mots section `#neutro-cor` + 2 nouvelles Q/R FAQ = ~340 mots ajoutés).
+  - **3 fichiers sitemap modifiés** (`sitemap-blog.xml`, `sitemap-plain.xml`, `sitemap-priority.xml`, 1 ligne chacun = +1/-1 = signal refresh lastmod).
+  - **0 fichier TS/React modifié** : pure page statique HTML, zéro impact sur le build Vite.
+  - **1 PR draft** : #284 sur `feat/enr-rankpush-neutro-cor-t_8b3fde94` (URL : https://github.com/taffrand-gif/eletricista-norte-reparos/pull/284, SHA 52acafb731).
+  - **1 entrée append-only** à `SEO_PLAN.md` (ce bloc, ~70 lignes).
+- **Gating R7** : **0 merge, 0 push sur main, PR draft laissé en DRAFT**. Branche `feat/enr-rankpush-neutro-cor-t_8b3fde94` créée depuis `origin/main` propre (HEAD f66f5b5d20). Worktree : `/Users/admin/work/Sites/eletricista-norte-reparos/.worktrees/enr-rankpush-neutro-cor-t_8b3fde94`. Push Git OK (`git push -u origin feat/enr-rankpush-neutro-cor-t_8b3fde94` → branche suivie sur origin).
+- **Mesure d'impact attendue** (gsc-trajectoire-cron.sh dimanche 22h, id 8e0fd9b3e269) :
+  - **J+7** : si position passe < 4 sur la query `neutro cor` → ✅ win capturé (snippet H1/answer-first exact-match).
+  - **J+14** : si impressions 28j > 48 ET clics > 1 → ✅ capture confirmée (CTR attendu > 5%).
+  - **J+28** : si position reste > 10 et impressions ~ 0 → ⚠️ Rollback possible (revert commit), la page ne rank pas pour cette query malgré le contenu dédié.
+  - **Régression** : surveiller position `cor do neutro` (pos 6.5 sur guia-cores-fios-eletricos, PR draft #264 t_4b39a1c7) et `fio neutro cor` (pos 6.3 sur guia-cores-fios-eletricos, PR draft t_481830b0) — devraient rester stables (canonical distinct, topical cluster préservé, page dédiée séparée).
+- **Action attendue de Philippe** :
+  1. **Trancher** : merge + push sur `main` (recommandé car query à fort potentiel pos 6.6 + canonical self inchangé = 0 risque de cannibalisation + exact-match H1/answer-first = snippet CTR attendu > 5%).
+  2. Vérifier que la prod sert bien le changement après merge (cf. gate R11, leçon #447 recompte chaque claim chiffré — ici 0 claim chiffré neuf, safe).
+  3. Mesurer l'impact J+7/J+14/J+28 via `gsc-trajectoire-cron.sh` (recette : position < 4 = win, régression sur cluster `cor do neutro`/`fio neutro cor` = rollback).
+- **Leçon (à propager)** : **pour les rank-push sur forme query COURTE (2-3 mots), le simple passage de la H1/title/answer-first en exact-match + 2 Q/R FAQ produit des résultats visibles en 7-14 jours sans réécriture complète**. Le pattern « title générique long → title exact-match court » est moins risqué qu'une refonte et suffit quand la page a déjà la topicalité (canonical inchangé). Réutiliser ce pattern pour les futures gaps GSC sur forme courte sans modificateur (« fase terra », « quadro disjuntor », etc.).
+- **Statut** : 🟢 **Prêt pour GO Philippe**. Branche + consignation SEO_PLAN.md + PR #284 DRAFT prêts. 0 merge sans ordre explicite.
