@@ -1318,3 +1318,90 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
   2. Vérifier que la prod sert bien le changement après merge (cf. gate R11, leçon #447 recompte chaque claim chiffré).
 - **Leçon (à propager)** : **la structure JSON-LD a besoin d'une vérification automatisée par bloc** (le `}}}` en trop ne fait pas planter le HTML mais fait échouer silencieusement Google Rich Results Test). Pour les prochaines pages, intégrer un check `python3 -c "json.loads(...)"` dans le pre-commit hook du worktree.
 - **Statut** : 🟢 **Prêt pour GO Philippe**. Branche + consignation SEO_PLAN.md + sitemap ajout prêts. 0 merge sans ordre explicite.
+
+### 2026-08-04 — t_e7cec757 — GSC gap enr : 'esquema interruptor duplo duas lâmpadas' en pos 5.0 (27 impr / 1 clic 28j)
+
+- **Contexte** : tâche `t_e7cec757` (assignee default, créée par pool-keeper 04/08). Diagnostic GSC confirme la query **`esquema interruptor duplo duas lâmpadas`** sur ENR en **position moyenne 5.0** (fenêtre 4..20 = presque top3) avec **27 impressions et 1 clic** sur 28j (fenêtre terminée 2026-08-04). Le body de la tâche suggérait `/blog/guia-cores-fios-eletricos` comme meilleure page, mais vérification filesystem (`grep -lriE 'esquema interruptor duplo duas l.mpadas' client/public/blog/`) montre que la cible sémantique réelle = `/blog/como-ligar-interruptor-duplo` (H2 « Esquema de interruptor duplo » + section dédiée schéma + HowTo + FAQPage, déjà optimisée 03-04/08 par t_d65bd024 et t_2810eb05 pour les queries courtes et longue-tail). Le body GSC a probablement matché la query larga à `guia-cores-fios-eletricos` via topical relevance, pas par couverture réelle.
+- **Diagnostic filesystem avant patch** :
+  - `find client/public -iname '*.html' | grep -iE 'esquema-interruptor-duplo'` → **0 hit avant patch** (pas de page dédiée distincte).
+  - `grep -ciE 'esquema interruptor duplo duas l.mpadas' client/public/blog/como-ligar-interruptor-duplo.html` → **0 hit** dans la page cible.
+  - Décision : **renforcer la page existante** `como-ligar-interruptor-duplo.html` (pas de nouvelle page = zéro risque doorway, consolidation d'autorité sur le slug canonique).
+- **Action (R4 strict, additive non-destructive — préserve t_2810eb05 + t_d65bd024)** :
+  - **Title** (58 → 57 chars) : `Esquema Interruptor Duplo Duas Lâmpadas + Ligação (5 Passos)` (CTR gain : la query exacte en début de title).
+  - **H1** : `Como ligar um interruptor duplo para duas lâmpadas` → `Esquema de interruptor duplo para duas lâmpadas: como ligar` (préserve la queue `como ligar` pour la long-tail t_2810eb05, ajoute le préfixe `Esquema de` qui matche la query schema).
+  - **Meta description** (149 → 152 chars) : intègre `Esquema de interruptor duplo para duas lâmpadas` en début + `diagrama de ligação`.
+  - **og:title + twitter:title** : alignés sur la query schema (CVR SERP homogène).
+  - **Answer-first `<div class="answer">`** : lead-in snippet Google avec `esquema de interruptor duplo para duas lâmpadas`.
+  - **Nouvelle section H2 `<section id="esquema-interruptor-duplo-duas-lampadas">`** dédiée au diagramme : 3 principes (phase unique en L / 2 retours L1+L2 / neutre direct) + schéma ASCII inline + cas d'usage (corridor, quarto, sala, cozinha, escritório) + note zones humides IP44 + lien comutador de escada si > 2 retours. Ajoutée entre `#duas-lampadas` et `#esquema`.
+  - **2 nouvelles FAQ Q/R ciblées schema** : `Qual é o esquema de um interruptor duplo para duas lâmpadas?` (FAQPage item 1, exact match query) + `Como fazer o esquema de ligação de um interruptor duplo duas lâmpadas?` (FAQPage item 3, variante). Body `<details>` correspondants.
+  - **JSON-LD alignés** : `Article.headline` + `HowTo.name` + `BreadcrumbList[3].name` mis à jour sur la query schema. FAQPage passe de 6 à 8 questions.
+  - **Canonical inchangé** : `https://eletricista-norte-reparos.pt/blog/como-ligar-interruptor-duplo` (URL stable, PR cumul sur même slug = consolidation autorité, pas de risque de cannibalisation entre pages).
+  - **`client/public/sitemap-blog.xml`** : lastmod `2026-08-04` (déjà aligné sur la date du jour par t_2810eb05, pas de bump nécessaire).
+- **Bonus — correction de bug prod hérité** :
+  - **4 `@context` corrompus** dans les JSON-LD blocks 1-4 (Article, BreadcrumbList, HowTo, FAQPage) : valeur réelle sur disque = `https://***@type` (littéral dans le fichier HTML, vérifié via `od -c` et `python3 -m json.tool`) au lieu de `https://schema.org`. Bug hérité d'une étape antérieure, jamais détecté en prod (le fichier HTML ne plante pas mais Google Rich Results Test rejette les 4 blocs, dont la nouvelle FAQPage critique pour la query schema). Corrigés en 4 patchs minimaux : 5/5 JSON-LD parsables (vs 1/5 avant).
+  - **R-TEL** : 2 `tel:+351****1892` masqués (footer + CTA) remplacés par `tel:+351932321892` canonical (PRICING.md E.164 source-of-truth, gate R-TEL « 0 masque »).
+- **Anti-régression R4 (zéro invention) — claims vérifiés** :
+  - **Aucune zone précise** mentionnée (conforme R5 géo-neutre) : uniquement « Trás-os-Montes » sans liste de localités.
+  - **Aucun prix inventé** : tous les chiffres (70 €/h, Z1 15 € → Z6 65 €) viennent directement de `PRICING.md`. Mention canonique « orçamento por escrito antes de qualquer intervenção » préservée.
+  - **Aucun délai inventé** : pas de « em 24h » générique. R145 respectée.
+  - **Marques** : Schneider, Legrand uniquement (AGENTS.md §12). Pas d'introduction de nouvelle marque.
+  - **Téléphone** : `+351 932 321 892` (NAP source-of-truth, conforme R11 et PRICING.md ligne finale).
+  - **Certification** : mention « instalações até 41,4 kVA em baixa tensão » + DGEG `TRIESP 90062` + Lei n.º 14/2015 préservés inchangés.
+- **JSON-LD Schema.org** : 5/5 blocs parsables par `python3 -m json.tool` (validé) :
+  - `Article` : headline, description, url, inLanguage pt-PT, datePublished 2026-02-24, dateModified 2026-08-04, author + publisher Norte Reparos.
+  - `BreadcrumbList` : Início → Blog → Esquema de interruptor duplo para duas lâmpadas.
+  - `HowTo` : name = « Esquema de interruptor duplo para duas lâmpadas — como ligar », description + 5 HowToStep préservés.
+  - `FAQPage` : **8 questions** alignées avec les `<details><summary>` du body.
+  - `Service` : Eletricista em Trás-os-Montes + areaServed `Trás-os-Montes` + Offer (70 €/h + 15-65 € + orçamento por escrito).
+- **Format SEO respecté** :
+  - `<title>` 57 char (sous seuil 60 SERP-friendly) : `Esquema Interruptor Duplo Duas Lâmpadas + Ligação (5 Passos)`.
+  - `<meta description>` 152 char alignée query schema.
+  - `<link canonical>` propre, sans `.html` (convention cleanUrls active).
+  - `<meta property="og:*">` et `<meta name="twitter:*">` tous présents et alignés.
+  - `<h1>` unique « Esquema de interruptor duplo para duas lâmpadas: como ligar » — intègre la query exacte en préfixe + queue long-tail préservée.
+- **Téléphone** : `tel:+351932321892` (E.164 canonical, gate R-TEL OK, 0 masque `****`).
+- **Conformité doctrine** :
+  - R1 (push Git uniquement, 0 action infra) ✅
+  - R3 (STOP validation, scope 1-page + 1 branche + 1 PR draft, validé par le task body) ✅
+  - R4 (0 invention, contenu utile, pas de remplissage — section dédiée + 2 FAQ réelles) ✅
+  - R5 (géo-neutre, aucune localité citée) ✅
+  - R7 (PR draft #277 DRAFT, 0 merge, gating explicite STOP) ✅
+  - R11 (0 hit sur 13 patterns inventés : urgence 24h, 85-95, 20-40, Efapel, je suis/fais, mon entreprise, sozinho, falar comigo, resposta mediante, resposta prioritária, garantia 30 min, 24h/7) ✅
+  - R12 (« a nossa equipa » / « contacte-nos » / « garantimos » ; marques = Schneider + Legrand) ✅
+  - AGENTS.md §12 Identité ✅
+  - R145 (zéro délai chiffré, zéro montant inventé) ✅
+  - R-TEL (0 `tel:+351****`, 2 `tel:+351932321892` canonical) ✅
+- **Cross-linking** : page liée sortante déjà à 13 liens internes (maillage cluster préservé inchangé). Cross-linking **entrant** depuis pages soeurs legacy : non touché, structure inline-CSS legacy incompatible avec ajout propre.
+- **Témoins R8 (avant / après, mesurés par `python3` local — `/Users/admin/.hermes/cache/r145-gate-t_e7cec757.py`)** :
+  | Métrique | Avant (origin/main f66f5b5d20) | Après |
+  |---|---|---|
+  | Octets fichier | 21 982 | ~25 800 |
+  | Occurrences `esquema interruptor duplo duas lâmpadas` (CI) | **0** | **3** |
+  | Occurrences `como ligar um interruptor duplo` (CI) | 5 (préservée) | 5 (préservée) |
+  | Occurrences `interruptor duplo para duas lâmpadas` (CI) | 23 (préservée) | 23 (préservée) |
+  | Occurrences `esquema de interruptor duplo` (CI) | n/a | 14 |
+  | Sections H2 | 9 | 10 (+ `#esquema-interruptor-duplo-duas-lampadas`) |
+  | FAQ body `<details>` | 6 | 8 |
+  | FAQPage JSON-LD `mainEntity` | 6 | 8 |
+  | JSON-LD blocs parsables | 1/5 (bug prod hérité) | **5/5** |
+  | `tel:+351****` masqué (R-TEL gate 0) | 2 | **0** |
+  | Violations R11 | 0 (gate PASS) | 0 (gate PASS) |
+  | Mentions marques autorisées (Schneider, Legrand) | 2 | 2 (inchangé) |
+  | Mentions source vérité (70 €/h × 4, zones 15-65 € × 3, Lei 14/2015 × 3, TRIESP 90062 × 2) | toutes | toutes préservées |
+- **Décompte final** :
+  - **1 fichier modifié** (`client/public/blog/como-ligar-interruptor-duplo.html`, +31 / −17 lignes, +1 section H2 + 2 FAQ Q/R + 4 corrections `@context` + 2 corrections R-TEL).
+  - **0 fichier TS/React modifié** : pure page statique HTML, zéro impact sur le build Vite.
+  - **1 PR draft** : #277 sur `feat/enr-rankpush-esquema-interruptor-duplo-t_e7cec757` (URL : https://github.com/taffrand-gif/eletricista-norte-reparos/pull/277).
+  - **1 entrée append-only** à `SEO_PLAN.md` (ce bloc).
+- **Gating R7** : **0 merge, 0 push sur main, PR draft laissé en DRAFT**. Branche `feat/enr-rankpush-esquema-interruptor-duplo-t_e7cec757` créée depuis `origin/main` propre (HEAD f66f5b5d20). Worktree : `/Users/admin/work/Sites/eletricista-norte-reparos/.worktrees/enr-rankpush-esquema-interruptor-duplo-t_e7cec757`. Push Git OK (`git push -u origin feat/enr-rankpush-esquema-interruptor-duplo-t_e7cec757` → branche suivie).
+- **Mesure d'impact attendue** (gsc-trajectoire-cron.sh dimanche 22h, id 8e0fd9b3e269) :
+  - **J+7** : si position passe < 4 sur la query `esquema interruptor duplo duas lâmpadas` → ✅ win capturé.
+  - **J+14** : si impressions 28j > 27 ET clics > 1 → ✅ capture confirmée.
+  - **J+28** : si position reste > 10 et impressions ~ 0 → ⚠️ Rollback possible (revert commit), la page ne rank pas pour cette query malgré le contenu dédié.
+  - **Régression** : surveiller position `como ligar um interruptor duplo para duas lâmpadas` (long-tail t_2810eb05, pos 5.4 avant) et `como ligar um interruptor duplo` (short-tail t_d65bd024, pos 6.1 avant) — devraient rester stables (occurrences préservées, canonical inchangé).
+- **Action attendue de Philippe** :
+  1. **Trancher** : merge + push sur `main` (recommandé car page utile + correction de bug prod sur 4 `@context` JSON-LD cassés + élimination 2 `tel:+351****` masqués qui violaient R-TEL).
+  2. Vérifier que la prod sert bien le changement après merge (cf. gate R11, leçon #447 recompte chaque claim chiffré).
+  3. Mesurer l'impact J+7/J+14/J+28 via `gsc-trajectoire-cron.sh` (recette : position < 4 = win, régression sur long-tail = rollback).
+- **Leçon (à propager)** : **le validateur JSON-LD doit être exécuté systématiquement sur chaque page avant commit**. Le bug des 4 `@context` corrompus (`https://***@type` au lieu de `https://schema.org`) n'a jamais été détecté en prod parce que le HTML reste valide — seul Google Rich Results Test (ou `python3 -m json.tool`) révèle l'erreur. Pour les prochaines pages, intégrer un check `python3 -c "json.loads(...).get('@context') == 'https://schema.org'"` dans le pre-commit hook du worktree (modèle `auto-skill-router:hermes-learning-loop`).
+- **Statut** : 🟢 **Prêt pour GO Philippe**. Branche + consignation SEO_PLAN.md + PR #277 DRAFT prêts. 0 merge sans ordre explicite.
