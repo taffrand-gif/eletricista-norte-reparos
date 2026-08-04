@@ -2003,7 +2003,7 @@ Le fichier **se contredit lui-même** : L17 affiche « 70€ - 140€ » pour «
 - **Gating R7** : **0 merge, 0 push prod, PR draft laissé en DRAFT** — STOP validation Filipe obligatoire avant merge.
 - **Liens** : PR #310 https://github.com/taffrand-gif/eletricista-norte-reparos/pull/310 · 4 entrées ESCALADE-FILIPE.md (escalades #1 à #4).
 
-=======
+
 ### 2026-08-04 -- t_3553bc9e -- GSC gap enr : 'ligar comutador de escada simples' en pos 6.8 (100 impr / 1 clic 28j)
 
 - **Contexte** : tache t_3553bc9e (assignee default, creee par pool-keeper 04/08). Diagnostic GSC confirme la query **'ligar comutador de escada simples'** sur ENR en **position moyenne 6.8** (fenetre 4..20 = presque top3) avec **100 impressions et 1 clic** sur 28j (fenetre terminee 2026-08-04). Le body de la tache suggere /blog/guia-cores-fios-eletricos comme meilleure page, mais verification filesystem (grep -lriE 'ligar comutador de escada simples' client/public/blog/) montre que la cible semantique reelle = /blog/como-ligar-comutador-escada (couvre le comutador d'escada mais ne mentionne pas 'simples' dans son H1/title -- Google matche la page via topical relevance mais ne capte pas l'intent exact). Decision : **renforcer la page existante** (consolidation d'autorite sur slug canonique, pas de nouvelle page = zero risque doorway, zero cannibalisation, coherent avec t_e7cec757).
@@ -2087,3 +2087,13 @@ Le fichier **se contredit lui-même** : L17 affiche « 70€ - 140€ » pour «
   2. Verifier que la prod sert bien le changement apres merge (cf. gate R11, lecon #447 recompte chaque claim chiffre).
   3. Mesurer l'impact J+7/J+14/J+28 via gsc-trajectoire-cron.sh (recette : position < 4 = win, regression long-tail = rollback).
 - **Statut** : Pret pour GO Philippe. Branche + consignation SEO_PLAN.md + PR #281 DRAFT prets. 0 merge sans ordre explicite.>>>>>>> 66912d0a83 (merge rebase #281)
+=======
+### 2026-08-04 — t_6c4f0936 — GSC gap ENR : « cheiro de fio queimado na casa » (pos 7.4, 71 impr / 0 clic 28j)
+
+- **Contexte GSC** : query `cheiro de fio queimado na casa`, fenêtre 28 jours terminée le 04/08/2026, **71 impressions**, **0 clic**, position moyenne **7.4**. Le brief attribuait la meilleure page à `/blog/guia-cores-fios-eletricos`, mais l'audit source a trouvé une page dédiée déjà plus pertinente : `/blog/fio-derretido-causas-perigos`.
+- **Diagnostic avant patch** : 0 fichier dont le slug cible exactement `cheiro-de-fio-queimado-na-casa` et 0 occurrence littérale de la query dans `client/public/blog/`; en revanche `fio-derretido-causas-perigos.html` ciblait déjà « cheiro a fio queimado » dans title, H1, answer-first et FAQ. Décision : **consolider cette URL canonique**, sans créer de page concurrente ni cannibalisation.
+- **Action** : title, meta description, OG, Twitter, H1, hero, answer-first, Article/Breadcrumb/FAQPage alignés sur la formulation recherchée. Ajout de plus de 200 mots utiles : procédure de mise en sécurité, localisation sans démontage, six causes, signaux, diagnostic et prévention. FAQ visible et JSON-LD portée de 4 à 6 questions. Maillage remplacé par 8 pages réellement liées au diagnostic électrique. `client/public/sitemap-blog.xml` : lastmod de la page mis à `2026-08-04`.
+- **Source-of-truth** : seul tarif cité = **70 €/h + déplacement selon la zone**, repris de `PRICING.md`; phrase canonique « orçamento por escrito antes de qualquer intervenção, sem surpresas na fatura ». Aucun forfait, prix de pièce, zone précise, délai, avis, chantier ou marque ajouté. NAP = `+351 932 321 892`; zone éditoriale = Trás-os-Montes, géo-neutre.
+- **Gates pré-PR (validés)** : canonical stable `/blog/fio-derretido-causas-perigos`; title **43** caractères; meta **149** caractères; 1 H1; query exacte **12 occurrences**; corps `<main>` **1 173 mots**; FAQ visible **6/6** alignée avec FAQPage; **4/4 JSON-LD parsables**; **0 lien interne manquant**; `npm run build` PASS. `npm run check` reste rouge sur des erreurs TypeScript préexistantes hors scope (aucun TS/TSX modifié).
+- **Mesure J+7** : `gsc-trajectoire-cron.sh`; position < 4 = win. Si position > 10 après réévaluation, rollback possible par revert du commit.
+- **Statut** : ⏳ **PR draft à ouvrir — STOP merge/déploiement Philippe (R7)**.
