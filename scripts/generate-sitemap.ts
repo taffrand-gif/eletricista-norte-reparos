@@ -241,7 +241,7 @@ ${urls.map(url => ` <url>
 </urlset>`;
 
  // Write to file
- const outputPath = path.join(__dirname, '../public/sitemap-dynamic.xml');
+ const outputPath = path.join(REPO_ROOT, 'client', 'public', 'sitemap-dynamic.xml');
  fs.writeFileSync(outputPath, xml, 'utf-8');
 
  console.log(`✅ Generated sitemap with ${urls.length} URLs`);
