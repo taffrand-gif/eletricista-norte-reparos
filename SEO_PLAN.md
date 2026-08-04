@@ -1323,6 +1323,23 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
 
 ---
 
+### 2026-08-04 — t_0952e95f — Consignation post-merge PR #263 (a posteriori) : GO Philippe 04/08 03:28 UTC
+
+- **Contexte** : relecture du board kanban le 04/08 ~17h BST a reveillé que la PR #263 (page dediee `eletricidade-fio-azul-e-castanho`) avait ete **mergee manuellement par Philippe** (`taffrand-gif`) le **2026-08-04 a 03:28 UTC** (= 04:28 BST), alors que la consignation initiale du 03/08 laissait la PR en DRAFT (R7 strict).
+- **Timeline reelle (source : GitHub API `issues/263/events`)** :
+  - 2026-08-03 22:54 UTC : commentaire Vercel-bot sur la PR (Preview deploye automatiquement suite au push de la branche `feat/enr-rankpush-fio-azul-castanho-t_0952e95f`).
+  - 2026-08-04 03:17 UTC : `taffrand-gif` (Philippe) execute `ready_for_review` sur la PR (passage DRAFT -> ready).
+  - 2026-08-04 03:28 UTC : `taffrand-gif` (Philippe) merge la PR -> commit `bdffa9b04803a03b68d35723b237b5718c87dec9` sur `origin/main` (auteur change de `Hermes` -> `taffrand-gif` au squash/rebase, message de commit identique preserve).
+- **Verification prod (2026-08-04 ~17h BST)** :
+  - `curl -s -o /dev/null -w '%{http_code}' https://eletricista-norte-reparos.pt/blog/eletricidade-fio-azul-e-castanho` -> **HTTP 200** : la page est bien servie en production.
+  - Git tree sur `origin/main` (HEAD = 384c583cf6, issu de PR #277 pour t_e7cec757) inclut bien le commit `bdffa9b048` (#263).
+- **Conformite R7 retrospective** : **OK**. GO explicite materialise par (1) passage DRAFT -> ready_for_review puis (2) merge manuel tous deux executes par le compte `taffrand-gif`. Pas d'auto-merge (R7 verifie : aucun actor bot sur l'event `merged`). Le worker qui avait laisse la PR en DRAFT le 03/08 22:54 UTC respectait bien la consigne en attendant le GO.
+- **Lecon (a propager)** : **l'etat DRAFT sur GitHub n'est pas un blocage technique** = Vercel deploye systematiquement la branche en Preview des qu'elle est poussee (cf. commentaire Vercel-bot 03/08 22:54 UTC). Pour les PRs SEO rank-push qui passent en production, prevoir dans le brief : (a) pousser la branche (Vercel Preview auto-deploye, OK), (b) laisser la PR en DRAFT, (c) attendre GO explicite, (d) Philippe fait `ready_for_review` + `merge` manuellement. Ne **jamais** auto-merge (R7 + AGENTS.md R1 : deploiement de code = push Git uniquement, pas d'API Vercel).
+- **Action de consignation** : cet append est la seule action restante pour cloturer proprement la tache `t_0952e95f`. La page, le sitemap, et la consignation initiale du 03/08 etaient deja faits par le worker precedent.
+- **Statut** : ✅ **FAIT**. PR #263 MERGED 04/08 03:28 UTC, page en prod (HTTP 200), conformite R7 retrospective validee. Mesure d'impact J+7 (04/08 -> 11/08) via `gsc-trajectoire-cron.sh` dimanche 22h (id 8e0fd9b3e269) : si position passe < 4 sur « eletricidade fio azul e castanho » -> win, sinon rollback possible (revert `bdffa9b048`).
+
+---
+
 ### 2026-08-04 - Tache t_8ca16628 - Rank-push GSC « tomada com terra » (pos 9.9, 22 impr / 1 clic 28j, fenetre terminee 2026-08-04)
 
 - **Query ciblee** : `tomada com terra`
