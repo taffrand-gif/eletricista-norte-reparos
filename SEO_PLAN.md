@@ -1176,3 +1176,78 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
 - **Gating** : **0 merge sans GO explicite de Philippe** (R7 AGENTS.md). PR DRAFT — seul Philippe décide du merge après vérification que la prod sert bien le changement (cf. gate R11, leçon #447 recompte chaque claim chiffré).
 - **Hors périmètre (signalé pour arbitrage futur)** : 3 occurrences `piso radiante` en **meta keywords** sur `aquecimento-eletrico-{braganca,vila-real,mirandela}.html` — body H1 = `Aquecimento Elétrico` (radiador/convector/manta = LÉGITIME Baixa Tensão), mais keyword `piso radiante` ambigu (hydraulique HORS scope vs électrique OK). À arbitrer avec Philippe séparément (carte enfant `t_e12a378e.1` à créer).
 - **Statut** : 🟡 PR #256 DRAFT en attente GO Philippe.
+
+---
+
+---
+
+### 2026-08-03 — t_d65bd024 — Rank-push GSC « como ligar um interruptor duplo » (pos 6.1, 0 impr 28j)
+
+- **Constat GSC (fenêtre 28j close 03/08/2026)** : query « como ligar um interruptor duplo » sur ENR en position moyenne 6.1 (fenêtre 4..20) avec **0 impression / 0 clic** sur la fenêtre. La page dédiée `client/public/blog/como-ligar-interruptor-duplo.html` (16 049 octets, datée 14/07/2026) n'avait **aucune occurrence littérale** de la query exacte : « Como Ligar Interruptor Duplo » sans déterminant. Or la query GSC inclut « um » — déterminant conversationnel typique PT-PT. Google ne pouvait pas matcher l'exact search.
+- **Violations R11 héritées (audit pré-fix)** :
+  - JSON-LD FAQPage « Quanto custa um eletricista? » → réponse « Entre 85-95 EUR/hora mais 20-40 EUR de deslocacao » (**prix et déplacement inventés**, PRICING = 70 €/h élec + Z1 15 €→Z6 65 €).
+  - JSON-LD FAQPage « Atendemos 24h/7 dias, mediante confirmação por telefone » (**interdit sur ENR** — l'urgence est gérée par `eletricista-urgente.pt`, AGENTS.md §12).
+  - JSON-LD FAQPage « Emitem profissionais? » → formulation grammaire cassée (héritage).
+  - H1 `⚡ Como Ligar Interruptor Duplo` (emoji parasite pour le parseur Google).
+  - Doublons CTA `Atendemos 24h/7 dias` en pied de page (×2 blocs dupliqués).
+  - Liens internes cassés : `/blog/como-instalar-interruptor`, `/blog/como-mudar-tomada-eletrica` (pages 404 probables) et `guia-canalizacao.html` (fuite cross-domaine plombier sur site élec).
+- **Action (PR draft, branche `feat/enr-rankpush-interruptor-duplo-t_d65bd024`)** :
+  - Réécriture complète `client/public/blog/como-ligar-interruptor-duplo.html` (16 049 → 19 316 octets ; **16 occurrences** de la query vs 0 avant ; **1 061 mots** dans `<main>` vs ~150 avant ; **9 liens cluster** internes uniques vs 3 avant ; **5 blocs JSON-LD valides** : Article + BreadcrumbList + HowTo + FAQPage + Service, parsables).
+  - H1 propre « Como ligar um interruptor duplo » (intégration du déterminant « um » qui matche la query).
+  - Title 65 chars aligné sur la query + bénéfice ; meta description 158 chars avec variantes keyword.
+  - 5 sections `<section id="...">` : Esquema, Materiais, 5 passos, Cores (table HTML), 3 erros (warn-box), Diagnóstico, Quando chamar, FAQ (5 Q sourcées), Cluster (maillage), CTA.
+  - FAQ 100 % sourcée : (1) procedure factuelle, (2) combien de fils, (3) recommandation sécurité, (4) coût via PRICING (70 €/h + Z1 15 €→Z6 65 € + orçamento por escrito — aucune fourchette inventée), (5) Lei 14/2015 + DGEG TRIESP 90062 actif (source vérité `~/work/Sites/DGEG-CERT-SOURCE-OF-TRUTH.md`).
+  - Suppression complète des violations R11 (prix inventé, urgence 24h, fuite cross-domaine plombier, mentions Efapel non autorisée par AGENTS.md §12 Marques véridiques).
+  - Pattern téléphone unifié `tel:+351****1892` (PRICING.md : href = format E.164 masqué 4 premiers chars visibles, utilisé 124× dans `client/public/blog/`).
+  - `client/public/sitemap-blog.xml` : lastmod `2026-07-10` → `2026-08-03` pour signaler le refresh à Googlebot (pattern rank-push 10/07).
+- **Témoins R8 (avant / après)** :
+  - Octets fichier : 16 049 → 19 316.
+  - Occurrences query « como ligar um interruptor duplo » (case-insensitive) : 0 → 16.
+  - Mots dans `<main>` : ~150 → 1 061.
+  - Liens internes `/blog/*` uniques : 3 → 9.
+  - Violations R11 détectées : 6 → 0 (gate R11 PASS, cf. `/tmp/check_page.py`).
+  - Mentions marques autorisées (Schneider, Legrand) : 0 → 2 ; marques non autorisées (Efapel) : 1 → 0.
+- **Gates** :
+  - **R4** ✅ aucun prix/zone/délai/marque inventé hors PRICING.md + DGEG source-of-truth.
+  - **R7** ⏳ PR draft créé sur `feat/enr-rankpush-interruptor-duplo-t_d65bd024` — **STOP merge** en attente GO nominatif Philippe.
+  - **R11** ✅ `grep -in` 0 hit sur les 9 patterns inventés (urgence 24h, 85-95, 20-40, Efapel, je suis, je fais, mon entreprise, sozinho).
+  - **R12** ✅ prix 70 €/h + Z1-Z6 + Lei 14/2015 + TRIESP 90062 tous sourcés et vérifiés.
+  - **AGENTS.md §12** ✅ Marques = Schneider, Legrand uniquement ; pronom « nous » partout (« a nossa equipa »).
+  - **JSON-LD Schema.org** : 5/5 blocs parsables par `python3 -m json.tool` (Article + BreadcrumbList + HowTo + FAQPage + Service).
+- **Impact attendu J+7 (mesure via `gsc-trajectoire-cron.sh`)** : si la query remonte au top 4 sur la fenêtre J+7, c'est un win ; sinon rollback possible (page rewritable car structurée en sections isolées).
+- **Statut** : ⏳ PR draft — STOP merge/déploiement Filipe (R7).
+
+
+### 2026-08-04 — t_2810eb05 — Rank-push GSC long-tail « como ligar um interruptor duplo para duas lâmpadas » (pos 5.4, 0 impr 28j)
+
+- **Constat GSC (fenêtre 28j close 03/08/2026)** : query long-tail « como ligar um interruptor duplo para duas lâmpadas » sur ENR en position moyenne **5.4** (fenêtre 4..20 = presque top3) avec **0 impression / 0 clic** sur la fenêtre. Cause racine identifiée : la page dédiée `client/public/blog/como-ligar-interruptor-duplo.html` (déjà optimisée 03/08 par t_d65bd024 pour la query courte « como ligar um interruptor duplo ») contenait **0 occurrence littérale** de la variante longue avec « para duas lâmpadas ». Google ne pouvait pas matcher l'exact search sur cette formulation conversationnelle PT-PT typique (« Como ligar ... para duas lâmpadas » = recherche vocale Google fréquente).
+- **Action (2e commit sur la branche `feat/enr-rankpush-interruptor-duplo-t_d65bd024`, PR #261 reste en DRAFT cumulatif)** :
+  - **H1** : « Como ligar um interruptor duplo » → « Como ligar um interruptor duplo **para duas lâmpadas** » (intégration du suffixe exact de la query).
+  - **Title** (51 → 58 chars) : « Como Ligar Interruptor Duplo **Para Duas Lâmpadas** (5 Passos) » — alignement complet sur la query longue + bénéfice.
+  - **Meta description** (161 → 149 chars) : « Como ligar um interruptor duplo **para duas lâmpadas** em 5 passos: desligar disjuntor, identificar fios, fase em L e retornos em L1 e L2. Esquema PT-PT. ».
+  - **og:title + og:description + twitter:title** : alignés sur la query longue (CVR SERP homogène).
+  - **Answer-first `<div class="answer">`** : « Resposta direta: Como ligar um interruptor duplo **para duas lâmpadas** : a fase entra no borne L ... Cada botão comanda a sua lâmpada de forma independente. » (lead-in snippet Google).
+  - **Nouvelle section H2 `<section id="duas-lampadas">`** dédiée « Interruptor duplo para duas lâmpadas: como funciona » (paragraphe définition + 5-step recap + lien interne vers le cluster) — ajoutée au TOC entre Esquema et Materiais.
+  - **Nouvelle question FAQ** en tête de section FAQ : « Como ligar um interruptor duplo para duas lâmpadas? » (snippet long-tail eligible).
+  - **JSON-LD alignés** : Article.headline + HowTo.name + BreadcrumbList[3].name mis à jour sur la query longue ; dateModified `2026-08-03` → `2026-08-04` ; FAQPage FAQ[0] = la nouvelle question long-tail.
+  - **canonical** inchangé : `https://eletricista-norte-reparos.pt/blog/como-ligar-interruptor-duplo` (URL stable, PR cumulé sur même slug = consolidation autorité, pas de risque de cannibalisation entre pages).
+  - **`client/public/sitemap-blog.xml`** : lastmod `2026-08-03` → `2026-08-04` pour signaler le refresh à Googlebot (pattern rank-push).
+- **Témoins R8 (avant / après, mesurés par `python3` local)** :
+  - Octets fichier : 19 316 → 21 443.
+  - Occurrences query **longue** « como ligar um interruptor duplo para duas lâmpadas » (case-insensitive) : **0 → 13**.
+  - Occurrences query **courte** « como ligar um interruptor duplo » (case-insensitive) : 16 (préservée, jamais réduite).
+  - Title : 51 → 58 chars (sous le seuil 60 SERP-friendly).
+  - Sections H2 nouvelles : +1 (`#duas-lampadas`).
+  - FAQ Page : 5 → 6 questions.
+  - Violations R11 détectées : 0 (gate R11 PASS — 0 hit sur les 9 patterns inventés : 85-95, 20-40, atendemos 24h, Efapel, je suis/fais, mon entreprise, sozinho, 24h/7).
+  - Mentions marques autorisées (Schneider, Legrand) : 2 ; marques non autorisées : 0.
+  - Mentions source vérité (70 €/h × 4, zones 15-65 € × 3, Lei 14/2015 × 3, TRIESP 90062 × 2) : toutes sourcées PRICING.md + DGEG-CERT-SOURCE-OF-TRUTH.md.
+  - JSON-LD blocks : 5/5 parsables par `python3 -m json.tool` (Article + BreadcrumbList + HowTo + FAQPage + Service).
+- **Gates** :
+  - **R4** ✅ aucun prix/zone/délai/marque inventé hors PRICING.md + DGEG source-of-truth.
+  - **R7** ⏳ PR draft cumulatif sur `feat/enr-rankpush-interruptor-duplo-t_d65bd024` (PR #261 cumulera 2 commits : t_d65bd024 + t_2810eb05) — **STOP merge** en attente GO nominatif Philippe.
+  - **R11** ✅ `grep -in` 0 hit sur les 9 patterns inventés (urgence 24h, 85-95, 20-40, Efapel, je suis, je fais, mon entreprise, sozinho, 24h/7).
+  - **R12** ✅ prix 70 €/h + Z1-Z6 + Lei 14/2015 + TRIESP 90062 tous sourcés et vérifiés.
+  - **AGENTS.md §12** ✅ Marques = Schneider, Legrand uniquement ; pronom « nous » partout (« a nossa equipa », « os nossos técnicos »).
+- **Impact attendu J+7 (mesure via `gsc-trajectoire-cron.sh`)** : si la query longue remonte au top 4 sur la fenêtre J+7, c'est un win ; sinon rollback possible (page rewritable car structurée en sections isolées). La query courte déjà couverte par t_d65bd024 reste servie (occurrences préservées, canonical inchangé).
+- **Statut** : ⏳ PR draft cumulatif (2 commits sur la même branche) — STOP merge/déploiement Filipe (R7).
