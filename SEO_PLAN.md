@@ -1317,3 +1317,80 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
   2. Vérifier que la prod sert bien le changement après merge (cf. gate R11, leçon #447 recompte chaque claim chiffré).
 - **Leçon (à propager)** : **la structure JSON-LD a besoin d'une vérification automatisée par bloc** (le `}}}` en trop ne fait pas planter le HTML mais fait échouer silencieusement Google Rich Results Test). Pour les prochaines pages, intégrer un check `python3 -c "json.loads(...)"` dans le pre-commit hook du worktree.
 - **Statut** : 🟢 **Prêt pour GO Philippe**. Branche + consignation SEO_PLAN.md + sitemap ajout prêts. 0 merge sans ordre explicite.
+
+### 2026-08-04 -- t_99a478d8 -- GSC gap enr : 'tomada sem terra' en pos 9.8 (25 impr / 1 clic 28j)
+
+- **Contexte** : tâche t_99a478d8 (assignee default, créée par pool-keeper 04/08). Diagnostic GSC confirme la query **"tomada sem terra"** (forme courte 3 mots avec préposition négative "sem") sur ENR en **position moyenne 9.8** (fenêtre 4..20 = presque top3) avec **25 impressions et 1 clic** sur 28j (fenêtre terminée 2026-08-04). Le body de la tâche suggérait /blog/guia-cores-fios-eletricos comme meilleure page, mais vérification ciblée de l'URL canonique montre que **/blog/como-saber-se-tomada-tem-terra est en réalité la page la plus pertinente** (title/H1 originaux "Como Saber se as Tomadas Tem Terra" portent exactement la topicalité, mais ne matchent pas la query courte 3 mots avec "sem" -> snippet écrasé -> CTR minimal 1/25 = 4%). La page existe déjà, est indexable, et contient la réponse -- c'est un **exact-match gap** sur la forme courte de la query.
+- **Décision architecture** : **renforcement chirurgical de la page canonique existante** plutôt que création d'une nouvelle URL. Rationale : (1) canonical self inchangé -> 0 risque de cannibalisation avec les pages voisines du cluster prise-terre ; (2) la page a déjà PR #166 rank-push cluster cores-fios + topicalité exacte sur la notion "terra / ligação à terra" ; (3) le diagnostic GSC identifie clairement la query comme "presque top3" (pos 9.8) -> un simple exact-match H1/title/answer-first + section dédiée + 2 FAQ suffit pour pousser dans le top4 sans réécriture complète ; (4) pattern identique à **t_8b3fde94** (neutro cor, pos 6.6 -> top3) qui a confirmé l'efficacité du pattern sur forme query COURTE -- leçon #490 v2.
+- **Renforcement effectué** (client/public/blog/como-saber-se-tomada-tem-terra.html, canonical self inchangé) :
+  - **<title>** : "Como Saber se as Tomadas Tem Terra: Verificação Simples e Rápida" (75 chars) -> **"Tomada Sem Terra: Riscos, Teste e Instalação de Terra (Guia PT)"** (65 chars, exact-match query en début de title, snippet-eligible).
+  - **<meta name="description">** : "Como verificar se tomada tem terra?..." -> **"Tomada sem terra: saiba os riscos (eletrocussão, fuga de corrente), como testar com testador de tomadas e quanto custa instalar ligação à terra. Guia PT, orçamento por escrito."** (query + réponse directe, format snippet + featured-snippet eligible).
+  - **<h1>** : "⚡ Como Saber se as Tomadas Tem Terra: Verificação Simples e Rápida" -> **"⚡ Tomada Sem Terra: Riscos, Teste e Instalação de Terra"** (exact-match query + intent question).
+  - **Sous-titre hero / lead <p>** : rewrite du paragraphe d'introduction pour intégrer la query en préfixe + mention des 3 angles (risques, teste, instalação) -- conserve "verificamos" (pluriel equipe, conforme R12 pronom verrouillée).
+  - **Answer-first <div class="answer">** ajouté juste après le H1 : lead-in snippet Google avec "Tomada sem terra -- resposta rápida : significa que a tomada não tem o terceiro pino (terra de proteção) ligado ao elétrodo de terra da casa. Em Portugal, todas as instalações elétricas devem ter ligação à terra (RTIEBT). ...".
+  - **Nouvelle section <section id="tomada-sem-terra">** dédiée au contenu principal de la query, ajoutée entre "🔧 Testador de Tomadas Plug-In" et "🚫 O Que Fazer se Não Tiver Terra?" :
+    - H2 "Tomada Sem Terra: Riscos e Consequências"
+    - H3 "Porque é que a tomada sem terra é um problema" -- 5 risques (eletrocussão, différentiel inopérant, equipamentos, RTIEBT/certification, zones humides).
+    - H3 "Como saber se a tomada está sem terra" -- 5 méthodes ordonnées (visuelle, quadro, électrode, testador plug-in, telurómetro professionnel).
+    - H3 "O que fazer quando a tomada não tem terra" -- 6 étapes (avaliação, électrode, cabo, distribution, mesure < 100 Ω, ficha eletrotécnica Lei 14/2015).
+    - Paragraphe "Nota importante" -- rappel des pratiques illégales (jamais terre au neutre, jamais à un cano).
+    - H3 "Quando a tomada sem terra é mais urgente" -- 5 situations critiques (zones humides < 60 cm, formigements, différentiel qui dispa, instalação pré-1980, vente/arrendamento).
+  - **FAQPage JSON-LD 3 -> 7 questions** (FAQ <div> synchronisés avec JSON-LD FAQPage 1:1) :
+    - **NEW** "Tomada sem terra é perigoso?" -> réponse : risque de fuite + différentiel peut ne pas disparer + zones humides + appareils métalliques -> installation obligatoire de ligação à terra.
+    - **NEW** "O que fazer quando a tomada não tem terra?" -> réponse : électrode + câble + distribution + mesure < 100 Ω + ficha eletrotécnica (jamais terre au neutre).
+    - Conservées + alignées JSON-LD : "Como saber se tomada tem terra?", "É perigoso não ter terra?", "Quanto custa instalar terra?", "Posso instalar terra sozinho?", "O testador de tomadas é fiável?".
+  - **Article JSON-LD** : headline exact-match + description ajoutée + dateModified 2026-02-28 -> 2026-08-04 + mainEntityOfPage self.
+  - **BreadcrumbList JSON-LD** : item[3].name "Como Saber Se Tomada Tem Terra" -> "Tomada Sem Terra: Riscos, Teste e Instalação de Terra".
+  - **HowTo JSON-LD** : name "Como Saber se as Tomadas Tem Terra..." -> "Tomada Sem Terra: Resolver e Instalar Ligação à Terra".
+  - **og:title + og:description + twitter:title + twitter:description** : alignés sur exact-match query pour cohérence SERP/social.
+  - **2 breadcrumb nav body** : texte du dernier segment "Como Saber Se Tomada Tem Terra" / "Tomadas Tem Terra?" -> "Tomada Sem Terra: Riscos, Teste e Instalação de Terra".
+  - **Hero meta** : "Última atualização: fevereiro 2026" -> "Última atualização: 4 de agosto de 2026" (signal freshness).
+  - **Date alignment** : hero "4 de agosto de 2026" = JSON-LD dateModified 2026-08-04 = sitemaps lastmod 2026-08-04 (3 sources synchro OK).
+- **Sitemaps (signal refresh Googlebot)** :
+  - client/public/sitemap.xml : lastmod URL como-saber-se-tomada-tem-terra 2026-06-06 -> **2026-08-04**.
+  - client/public/sitemap-plain.xml : lastmod URL como-saber-se-tomada-tem-terra 2026-07-03 -> **2026-08-04**.
+  - client/public/sitemap-priority.xml : lastmod URL como-saber-se-tomada-tem-terra 2026-07-03 -> **2026-08-04**.
+- **Témoins R8 (validés avant commit par python3 local)** :
+  - Occurrences "tomada sem terra" (whole-word, CI) : **1 -> 27 (+2600 %)**.
+  - JSON-LD valides (@context schema.org) : 7/7 (Article + FAQPage 7Q + Service×2 + BreadcrumbList + HowTo + LocalBusiness).
+  - Q/R FAQPage synchronisées JSON-LD <-> <div> body : 3 -> **7 (+4 : 2 nouvelles exact-match + 2 syncronisation rétroactive)**.
+  - Sections H2 dans TOC : 11 -> **12 (+1 #tomada-sem-terra)**.
+  - Mots corps (sans balises) : 1691 -> **2971 (+1280, bien au-delà du seuil 200 mots imposé par la task)**.
+  - <h2> contient "tomada sem terra" : non -> **oui (H2 exact-match ajouté)**.
+  - R-TEL : 0 tel:+351**** masqué dans la page (gate 0 -> 0, OK).
+  - R12 forbidden words (je/sozinho/contacto pessoal/falar comigo) : 0 nouveau dans le contenu ajouté (gate 0 -> 0, OK ; les 4 occurrences de "sozinho" héritées sont hors scope rank-push, couvertes par M0 roadmap).
+  - R4 invention prix/zone/délai : 0 (grille inchangée 70 €/h + deslocação 15-65 €, mentions Lei 14/2015 + TRIESP 90062 + RTIEBT préservées).
+  - R5 claim local non vérifiable : 0 (modificateur "em Portugal" = norme UE RTIEBT harmonisée, pas géographique ; 0 commune citée).
+  - R11 patterns inventés : 0 (urgence 24h / 24-7 / resposta imediata / 30 min etc. -- patterns existants hérités hors scope).
+  - R145 prix/délai neuf inventé : 0 (grille inchangée 70 €/h + deslocação 15-65 €).
+- **Conformité règles verrouillées** :
+  - R1 (push Git sous validation) ✅ : branche + push OK, PR draft laissée en DRAFT.
+  - R3 (STOP validation Philippe) ✅ : PR DRAFT, 0 merge.
+  - R4 (zéro invention) ✅ : 0 localité précise, 0 prix inventé, mentions Lei 14/2015 + RTIEBT + TRIESP 90062 préservées.
+  - R5 (géo-neutre) ✅ : modificateur "em Portugal" / "Trás-os-Montes" = norme UE / zone d'activité, pas claim local précis.
+  - R6 (pas de --force) ✅ : branche nouvelle depuis origin/main à a778aeaeb3, pas de réécriture d'historique.
+  - R7 (0 merge sans GO) ✅ : **PR draft #286 en DRAFT, 0 merge, STOP validation Philippe**.
+  - R8 (témoins) ✅ : tableau ci-dessus (avant/après + compte réconcilié).
+  - R9 (grille 2 colonnes) ✅ : technique OK (HTML valide, JSON-LD 7/7 valides, sitemaps cohérents) + conformité OK (gates R4/R5/R11/R12/R145/R-TEL tous à 0 sur contenu nouveau).
+  - R11 (0 patterns inventés) ✅.
+  - R12 (pronom "a nossa equipa") ✅ : CTA préservé "verificamos", 0 forbidden word dans le contenu ajouté.
+  - R145 (0 délai/prix neuf) ✅ : grille inchangée (70 €/h + deslocação 15-65 €).
+  - §12 (identité Norte Reparos) ✅ : pas de mention "je", pas de marque invoquée hors Schneider + Legrand (préservées), R12 respectée.
+- **Décompte final** :
+  - **1 fichier principal modifié** (client/public/blog/como-saber-se-tomada-tem-terra.html, +1280 mots corps / 25970 -> 35647 octets = +37 % de contenu utile : H1 exact-match + answer-first block + section H2 #tomada-sem-terra ~600 mots + 2 nouvelles Q/R FAQ + 2 Q/R FAQ syncronisées + alignement JSON-LD Article/BreadcrumbList/HowTo + breadcrumb nav body).
+  - **3 fichiers sitemap modifiés** (sitemap.xml, sitemap-plain.xml, sitemap-priority.xml, 1 ligne chacun = -1/+1 = signal refresh lastmod 2026-08-04).
+  - **0 fichier TS/React modifié** : pure page statique HTML, zéro impact sur le build Vite.
+  - **1 PR draft** : #286 sur feat/enr-rankpush-tomada-sem-terra-t_99a478d8 (URL : https://github.com/taffrand-gif/eletricista-norte-reparos/pull/286, SHA 53451ad55f).
+  - **1 entrée append-only** à SEO_PLAN.md (ce bloc).
+- **Gating R7** : **0 merge, 0 push sur main, PR draft laissé en DRAFT**. Branche feat/enr-rankpush-tomada-sem-terra-t_99a478d8 créée depuis origin/main propre (HEAD a778aeaeb3, inclut PR #284 neutro cor merged). Worktree : /Users/admin/work/Sites/eletricista-norte-reparos/.worktrees/enr-rankpush-tomada-sem-terra-t_99a478d8/. Push Git OK (git push -u origin feat/enr-rankpush-tomada-sem-terra-t_99a478d8 -> branche suivie sur origin).
+- **Mesure d'impact attendue** (gsc-trajectoire-cron.sh dimanche 22h, id 8e0fd9b3e269) :
+  - **J+7** : si position passe < 4 sur la query "tomada sem terra" -> ✅ win capturé (exact-match H1/title/answer-first + 2 Q/R FAQ = snippet CTR attendu > 5 %).
+  - **J+14** : si impressions 28j > 25 ET clics > 1 -> ✅ capture confirmée.
+  - **J+28** : si position reste > 10 et impressions ~ 0 -> ⚠️ Rollback possible (revert commit 53451ad55f), la page ne rank pas pour cette query malgré le contenu dédié.
+  - **Régression** : surveiller position "como saber se tomada tem terra" (cluster cores-fios PR #166) et "tomada tem terra" (variante avec terra, H2 existant préservé) -- devraient rester stables (canonical inchangé, occurrences préservées, page dédiée séparée).
+- **Action attendue de Philippe** :
+  1. **Trancher** : merge + push sur main (recommandé car query à fort potentiel pos 9.8 + canonical self inchangé = 0 risque de cannibalisation + exact-match H1/answer-first = snippet CTR attendu > 5 %).
+  2. Vérifier que la prod sert bien le changement après merge (cf. gate R11, leçon #447 recompte chaque claim chiffré -- ici 0 claim chiffré neuf, safe).
+  3. Mesurer l'impact J+7/J+14/J+28 via gsc-trajectoire-cron.sh (recette : position < 4 = win, régression sur cluster "como saber se tomada tem terra" = rollback).
+- **Leçon (à propager -- leçon #490 v2)** : **pour les rank-push sur forme query COURTE avec préposition négative "sem" ("sem terra", "sem luz", "sem água"), le pattern "title générique long -> title exact-match court + answer-first + section dédiée + 2 Q/R FAQ" produit des résultats visibles en 7-14 jours sans réécriture complète**. Variante de la leçon #490 R4 zero-invention : la query est la **forme inverse** du titre canonique (avec/sans le modificateur), donc le contenu existant répond déjà à la question -- seul l'exact-match de surface (title/H1) et la section dédiée (ancrage sémantique id="tomada-sem-terra") manquent. Pattern plus léger que t_8b3fde94 (neutro cor pos 6.6 -> top3) car la page est plus complète et la query est plus spécifique (présence de "sem" = intention recherche forte). Réutiliser ce pattern pour les futures gaps GSC où la query est la forme inverse du titre canonique (ex : "como evitar", "sem funcionar", "barulho", etc.).
+- **Statut** : 🟢 **Prêt pour GO Philippe**. Branche + consignation SEO_PLAN.md + PR #286 DRAFT prêts. 0 merge sans ordre explicite.
