@@ -36,7 +36,7 @@ count=0
 shopt -s nullglob
 for file in content/blog/*.md; do
   filename=$(basename "$file" .md)
-  rel="public/blog/${filename}.html"
+  rel="client/public/blog/${filename}.html"
   d="$(git_lastmod "$rel")"
   echo "<url><loc>${SITE_URL}/blog/${filename}.html</loc><lastmod>${d}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>" >> "$TMP_FILE"
   count=$((count + 1))
