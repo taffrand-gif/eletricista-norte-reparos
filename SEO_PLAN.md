@@ -1317,3 +1317,74 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
   2. Vérifier que la prod sert bien le changement après merge (cf. gate R11, leçon #447 recompte chaque claim chiffré).
 - **Leçon (à propager)** : **la structure JSON-LD a besoin d'une vérification automatisée par bloc** (le `}}}` en trop ne fait pas planter le HTML mais fait échouer silencieusement Google Rich Results Test). Pour les prochaines pages, intégrer un check `python3 -c "json.loads(...)"` dans le pre-commit hook du worktree.
 - **Statut** : 🟢 **Prêt pour GO Philippe**. Branche + consignation SEO_PLAN.md + sitemap ajout prêts. 0 merge sans ordre explicite.
+
+### 2026-08-04 — t_34e1ebd7 — GSC gap enr : 'interruptor duplo simples' (pos 9.5, 33 impr / 3 clics en 28j)
+
+- **Contexte** : tâche `t_34e1ebd7` (assignee default, créée par pool-keeper 04/08). Diagnostic GSC confirme la query **« interruptor duplo simples »** sur ENR en **position moyenne 9.5** (fenêtre 4..20, presque top3) avec **33 impressions et 3 clics** sur 28j (fenêtre terminée 2026-08-04). Meilleure page actuelle : `/blog/guia-cores-fios-eletricos` (intent différent — couvre les couleurs des fils, pas le branchement d'un double interrupteur en mode « simple »).
+- **Diagnostic filesystem** :
+  - `find client/public -iname '*.html' | grep -iE 'interruptor-duplo-simples|como-ligar-interruptor-duplo-simples'` → **0 hit avant patch** (aucune page dédiée).
+  - `grep -lriE 'interruptor duplo simples' client/public/blog/` → 0 hit avant patch (la requête exacte n'apparaît littéralement dans aucune page du blog).
+  - Page soeur `/blog/como-ligar-interruptor-duplo.html` (refondue par t_d65bd024 PR #261) couvre la query courte « como ligar um interruptor duplo » mais **ne contient pas la formulation exacte** « interruptor duplo simples » — Google ne peut pas matcher l'exact search.
+  - Décision : **créer une page dédiée** ciblant la query « interruptor duplo simples » + variantes (« como ligar um interruptor duplo simples », « esquema interruptor duplo simples »), avec maillage explicite vers la page soeur `como-ligar-interruptor-duplo.html` pour éviter toute cannibalisation.
+- **Action (R4 strict)** : **création** d'une page dédiée `client/public/blog/como-ligar-interruptor-duplo-simples.html` (20 825 octets) structurée :
+  - 9 sections H2 alignées sur les intents de la cible : (1) O que é um interruptor duplo simples · (2) Esquema de ligação · (3) Materiais e ferramentas · (4) 5 passos de ligação · (5) Que cores esperar · (6) Três erros que queimam o circuito · (7) Se não funciona depois de ligar · (8) Quando chamar um eletricista · (9) FAQ.
+  - **1 423 mots** dans `<main>` (largement > 200 mots demandés) — contenu utile, pas du remplissage (leçon #490 R4 zéro invention respectée).
+  - **6 questions FAQ** (FAQPage JSON-LD) alignées sur les doutes de la cible : « O que é um interruptor duplo simples ? », « Como ligar um interruptor duplo simples ? », « Quantos fios precisa um interruptor duplo simples ? », « Qual a diferença entre interruptor duplo e duplo simples ? », « Quanto custa instalar um interruptor duplo simples ? », « Posso ligar um interruptor duplo simples sem experiência ? ».
+  - TOC avec ancres, schéma ASCII du câblage, tableau HTML des couleurs (castanho / azul / verde-amarelo), bloc « Resposta direta » en première position (answer-first SEO), section cluster maillage (14 liens internes vers pages soeurs : `como-ligar-interruptor-duplo`, `como-ligar-interruptor-simples`, `como-ligar-comutador-escada`, `como-ligar-interruptor-e-tomada`, `guia-cores-fios-eletricos`, `fase-e-neutro-cores`, `como-instalar-interruptor`, `interruptor-aquece-causas-perigos`, `tomadas-e-interruptores-quando-substituir`, `fio-derretido-causas-perigos`, `instalacao-eletrica-completa`, `precos`, `eletricista-braganca`, `eletricista-vila-real`).
+- **Anti-régression R4 (zéro invention)** — claims vérifiés :
+  - **Aucune zone précise** mentionnée (conforme R5 géo-neutre) : uniquement « Trás-os-Montes » sans liste de localités.
+  - **Aucun prix inventé** : extrait directement de `PRICING.md` (70 €/h eletricidade ; déplacement par zone 15 € à 65 €). Aucun forfait. Mention canonique « orçamento por escrito antes de qualquer intervenção ».
+  - **Aucun délai inventé** : pas de « em 24h » générique, pas de « minutos / horas / dias » chiffrés ailleurs que dans la doctrine (« mediante confirmação »).
+  - **Marques** : Schneider, Legrand uniquement (autorisées par AGENTS.md §12). 0 hit Efapel, Hager, ABB, EDP, Iberdrola.
+  - **Téléphone** : `+351 932 321 892` non masqué (NAP source-of-truth public, conforme R11 et PRICING.md).
+  - **Certification** : mention « instalações elétricas em Baixa Tensão » + Lei 14/2015 + DGEG TRIESP 90062 uniquement dans le contexte légal (termo de responsabilidade), pas de claim Ficha gratuit.
+- **JSON-LD Schema.org** : 4/4 blocs parsables par `python3 -c "json.loads(s)"` (validé) :
+  - `Article` : headline, description, url, inLanguage pt-PT, datePublished 2026-08-04, dateModified 2026-08-04, author + publisher Norte Reparos.
+  - `BreadcrumbList` : Início → Blog → Como ligar um interruptor duplo simples.
+  - `FAQPage` : 6 questions alignées avec les `<details><summary>` du body.
+  - `Service` : Eletricista em Trás-os-Montes + areaServed `Trás-os-Montes` + Offer (70 €/h + 15-65 € + orçamento por escrito).
+- **Format SEO respecté** :
+  - `<title>` 52 char : « Como Ligar Interruptor Duplo Simples: 5 Passos (PT-PT) ».
+  - `<meta description>` 146 char alignée query + bénéfices (5 passos + esquema + FAQ).
+  - `<link canonical>` propre, sans `.html` (convention cleanUrls active).
+  - `<meta property="og:title">`, `og:description`, `og:url`, `og:type` article, `og:locale` pt_PT, `og:site_name` Norte Reparos, `twitter:card` summary_large_image — tous présents.
+  - `<h1>` unique « Como ligar um interruptor duplo simples: esquema, fios e 5 passos » — intègre la query exacte + bénéfice.
+- **Téléphone** : `tel:+351932321892` (pattern E.164 non masqué en CTA, conforme PRICING.md format public).
+- **Conformité doctrine** :
+  - R1 (push Git uniquement, 0 action infra) ✅
+  - R3 (STOP validation, scope 1-page + 1 sitemap-line + 1 SEO_PLAN-append, validé par le task body) ✅
+  - R4 (0 invention, mots-clés techniques uniquement : borne L/L1/L2, fase, retorno, neutro, disjuntor, detetor de tensão, multímetro, IP, BT, etc.) ✅
+  - R5 (géo-neutre, aucune localité citée) ✅
+  - R7 (PR draft, 0 merge, gating explicite STOP) ✅
+  - R11 (0 hit sur 13 patterns inventés : 24h, 85-95, 20-40, Efapel, Hager, je suis, je fais, mon entreprise, sozinho, falar comigo, 85 €/90 €/95 €, EDP/Iberdrola) ✅
+  - R12 (« a nossa equipa » / « os nossos técnicos » / « contacte-nos » / « garantimos » ; pas de « je » ni « mon entreprise » ; marques non autorisées = 0) ✅
+  - AGENTS.md §12 Identité ✅
+  - AGENTS.md §13 Chargeur VE (page n'évoque pas le VE — focus sur interruption, pas de claim hors-scope) ✅
+  - R145 (zéro délai chiffré, zéro montant inventé) ✅
+  - Pre-commit hook `maillage-gate` : PASS (tous les hrefs sont clean URLs extensionless pointant vers des fichiers existants ou déjà dans le sitemap).
+- **Témoins R8 (avant / après)** :
+  | Métrique | Avant | Après |
+  |---|---|---|
+  | Pages dédiées à la query | 0 | 1 |
+  | Octets nouvelle page | 0 | 20 825 |
+  | Mots `<main>` nouvelle page | 0 | 1 423 |
+  | Occurrences « interruptor duplo simples » | 0 | 26 |
+  | Occurrences « interruptor duplo » | n/a | 36 |
+  | Blocs JSON-LD valides | n/a | 4/4 |
+  | FAQ Q/R | 0 | 6 |
+  | Liens internes cluster | 0 | 14 |
+- **Décompte final** :
+  - **1 fichier créé** (`client/public/blog/como-ligar-interruptor-duplo-simples.html`, 20 825 octets, 1 423 mots corps, 9 sections H2, 6 FAQ Q/R).
+  - **1 fichier modifié** (sitemap-blog.xml : +1 ligne, lastmod 2026-08-04).
+  - **1 fichier modifié** (SEO_PLAN.md : +1 entrée append-only, ce bloc).
+  - **0 code TS/React modifié** : pure page statique HTML, zéro impact sur le build Vite.
+- **Gating R7** : **0 merge, 0 push auto**. Branche `feat/enr-rankpush-interruptor-duplo-simples-t_6cbaca55` (worktree préexistant, basé sur main HEAD f66f5b5d20). PR draft à ouvrir après commit + push.
+- **Mesure d'impact attendue** (gsc-trajectoire-cron.sh dimanche 22h, id 8e0fd9b3e269) :
+  - **J+7** : si position passe < 4 → ✅ win capturé.
+  - **J+14** : si impressions 28j > 33 ET clics 28j > 3 → ✅ capture confirmée.
+  - **J+28** : si position reste > 10 et impressions ~0 → ⚠️ Rollback possible (revert commit), la page ne rank pas pour cette query malgré le cross-linking.
+- **Action attendue de Philippe** :
+  1. **Trancher** : commit + push + ouvrir PR draft sur la branche `feat/enr-rankpush-interruptor-duplo-simples-t_6cbaca55` (recommandé car 0 nouvelle circulation de claims + page utile + maillage cluster renforce `como-ligar-interruptor-duplo`).
+  2. Vérifier que la prod sert bien le changement après merge (cf. gate R11, leçon #447 recompte chaque claim chiffré).
+- **Leçon (à propager)** : **la structure JSON-LD a besoin d'une vérification automatisée par bloc** (cf. leçon t_0952e95f). Pour les prochaines pages, intégrer un check `python3 -c "json.loads(...)"` dans le pre-commit hook du worktree.
+- **Statut** : 🟢 **Prêt pour GO Philippe**. Branche + consignation SEO_PLAN.md + sitemap ajout prêts. 0 merge sans ordre explicite.
