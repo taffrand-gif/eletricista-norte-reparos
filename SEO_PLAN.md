@@ -1267,3 +1267,5 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
 - **Action attendue de Philippe** : `git push origin seo/cor-dos-fios-eletricos-t_8ff1e209` + ouvrir PR draft sur GitHub, puis relecture rapide + merge.
 - **Leçon (à propager)** : **pour les queries où la page existe déjà et est presque top3 (pos < 8)**, le **renforcement ciblé** (title + H1 + H2 dédié + FAQ) est supérieur à la création d'une nouvelle page — le PageRank du chemin canonique est conservé, le canonical reste unique, et le gain de position est immédiat sans cannibalisation. La page `guia-cores-fios-eletricos.html` est devenue un hub « cores » capable de ranker sur `cor dos fios eletricos` (37 impr) ET `cor do neutro` (55 impr) ET `fio neutro cor` (117 impr) — 3 queries consolidées sur 1 chemin canonique.
 - **Statut** : 🟡 **Prêt pour GO Philippe**. Branche locale + commit + consignation SEO_PLAN.md prêts. 0 merge sans ordre explicite.
+
+- **PR draft ouverte** : <https://github.com/taffrand-gif/eletricista-norte-reparos/pull/271> (DRAFT, base=main).
