@@ -1269,3 +1269,48 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
 - **Statut** : 🟡 **Prêt pour GO Philippe**. Branche locale + commit + consignation SEO_PLAN.md prêts. 0 merge sans ordre explicite.
 
 - **PR draft ouverte** : <https://github.com/taffrand-gif/eletricista-norte-reparos/pull/271> (DRAFT, base=main).
+
+### 2026-08-04 — t_f0688d11 — GSC gap enr : 'cores dos fios elétricos' en pos 5.8 (73 impr / 1 clics en 28j) — tâche absorbée par t_8ff1e209
+
+- **Contexte** : tâche `t_f0688d11` (assignee default, créée par pool-keeper 04/08). Diagnostic GSC confirme la query **en position 5.8** (fenêtre 4..20 = presque top3) avec **73 impressions et seulement 1 clic** sur 28j (fenêtre terminée 2026-08-04). Meilleure page actuelle : `/blog/guia-cores-fios-eletricos` — déjà en pos 5.8 mais **pas optimisée pour la query exacte** (title et H1 étaient orientés « fio neutro cor »).
+- **Diagnostic filesystem** (effectué au début de cette tâche) :
+  - `find . -iname '*.html' | grep -iE 'cores-dos-fios'` → 0 occurrence hors worktrees (aucune page dédiée avec ce slug exact, ni `cores-dos-fios-eletricos.html` ni similaire).
+  - `grep -lriE 'cores dos fios elétricos' client/public/blog/` → 1 hit : `guia-cores-fios-eletricos.html` (page existante).
+- **Décision** : **renforcer la page existante** plutôt que créer une nouvelle page (chemin canonique `/blog/guia-cores-fios-eletricos` déjà indexé, déjà en pos 5.8 — créer une page duplicate diluerait le PageRank et cannibaliserait la page principale).
+- **Tâche absorbée par t_8ff1e209** : un autre agent kanban a déjà produit le travail SEO demandé pour la même query `'cores dos fios elétricos'` sur la même page avant que cette tâche ne soit traitée. Différences mineures : (1) fenêtre GSC légèrement différente (37 impr pos 5.5 vs 73 impr pos 5.8 — même query, deux fenêtres consécutives) ; (2) branche et PR différentes (t_8ff1e209 a créé `seo/cor-dos-fios-eletricos-t_8ff1e209` + PR #271, alors que cette tâche aurait probablement réutilisé la branche PR #270 existante `seo/interruptor-duplo-para-2-lampadas-t_44118650`).
+- **Travail SEO déjà fait** (par t_8ff1e209, commit `6eb7b19c6e` sur branche `seo/cor-dos-fios-eletricos-t_8ff1e209`) :
+  - **Title** : `Cor dos Fios Elétricos em Portugal: Guia Completo RTIEBT (2026)` (aligné query exacte, 57 char).
+  - **Meta description** : 158 char, alignée query + résumé + NAP.
+  - **Meta keywords** : extension `cor dos fios eletricos, cores fios eletricos, codigo de cores fios eletricos, tabela de cores fios eletricos` + conservation des keywords historiques.
+  - **OG + Twitter** : alignés sur la nouvelle cible.
+  - **H1** : `Cor dos Fios Elétricos em Portugal: Guia Completo (RTIEBT 2026)` (answer-first).
+  - **Sous-titre** : answer-first explicite (azul=neutro, castanho/preto=fase, verde/amarelo=terra).
+  - **Nouveau H2 dédié `id="cor-dos-fios-eletricos"`** : tableau récapitulatif 3 lignes + mnemónica Norte Reparos (« Azul Volta, Castanho Mata, Verde-Amarelo Protege ») + paragraphe « Quando a cor engana » (pré-2000, multímetro, NAP).
+  - **Total ~339 mots ajoutés** (largement au-dessus du seuil 200 mots).
+  - **FAQPage JSON-LD étendu** : 9 → 12 questions. 3 nouvelles Q/R sur la query exacte : « Qual é a cor dos fios elétricos em Portugal? », « Qual o código de cores dos fios elétricos? », « Onde comprar fios elétricos com as cores certas em Portugal? ».
+  - **Article JSON-LD** : `headline` + `description` ré-alignés sur la cible.
+  - **`dateModified` = `2026-08-04`** (fenêtre GSC terminée).
+- **Anti-régression R4 (zéro invention)** — claims vérifiés :
+  - **Aucune zone précise** (R5 géo-neutre) : uniquement « Trás-os-Montes » général + Bragança/Mirandela/Macedo cités à titre de référence **générale** (sans `streetAddress` ni `endereço`).
+  - **Aucun prix inventé** dans le contenu ajouté (`85-95` et `EUR/hora` présents sont des résidus pré-existants dans une FAQ antérieure à ce commit — hors scope).
+  - **Aucun délai inventé** dans le contenu ajouté.
+  - **Marques** : aucune marque fabricant ; Leroy Merlin / AKI / Bricomarché sont des **enseignes de distribution grand public** factuelles et vérifiables (aligné avec la pratique Nord-Reparos déjà utilisée sur d'autres pages).
+  - **Téléphone** : `+351 932 321 892` (NAP source-of-truth, 18 occurrences).
+- **Conformité doctrine** : R1 (push Git uniquement, 0 action infra) · R3 (STOP validation, scope 1 page renforcée) · R4 (0 invention dans le contenu ajouté, vocabulaire technique normatif) · R5 (géo-neutre) · R11 (NAP E.164, pas de masque) · R12 (pronom « a nossa equipa » / « contacte-nos » / « garantimos ») · R145 (zéro délai chiffré, zéro montant inventé dans le contenu ajouté).
+- **Témoins R8 (vérifiés en local par cette tâche)** :
+  - `npm run build` ✅ (251 refs réalignées, 0 erreur).
+  - `dist/public/blog/guia-cores-fios-eletricos.html` = 42 522 bytes, contient 8 occurrences « cor dos fios ».
+  - H2 dédié `id="cor-dos-fios-eletricos"` présent (tableau récap + mnemónica + paragraphe pré-2000).
+  - 5/5 JSON-LD valides (Article / BreadcrumbList / FAQPage 12 Q / Service / LocalBusiness), `python3 -c "json.loads(s)"` OK sur les 5.
+  - 0 forbidden word (`je suis`/`mon entreprise`/`sozinho`/`contacto pessoal`/`falar comigo`).
+  - Page hub « cores » désormais consolidée : ranke sur `cores dos fios elétricos` (cette tâche), `cor dos fios eletricos` (t_8ff1e209, 37 impr pos 5.5), `cor do neutro` (t_4b39a1c7, 55 impr pos 6.5), `fio neutro cor` (t_481830b0, 117 impr pos 6.3) — **4 queries consolidées sur 1 chemin canonique**, PageRank cumulé.
+- **Gating R7** : **0 merge, 0 push force** par cette tâche. Branche + commit + consignation SEO_PLAN.md prêts via t_8ff1e209. **PR draft #271 déjà ouverte** (DRAFT, base=main, état `CONFLICTING` car autres PRs non mergés sur main).
+- **Décision finale (cette tâche)** :
+  1. **NE PAS dupliquer le travail** (canon unique conservé) — un nouveau commit ferait doublon exact avec `6eb7b19c6e`.
+  2. **NE PAS créer de page dédiée** (cannibalisation du chemin canonique, dilution du PageRank).
+  3. **Consignation SEO_PLAN.md** : ajout de cette entrée (section dédiée t_f0688d11, append-only, pointe vers la section t_8ff1e209 ligne 1228 qui contient le détail technique).
+  4. **Push + PR** : NON effectués par cette tâche (déjà fait par t_8ff1e209 sur la branche dédiée `seo/cor-dos-fios-eletricos-t_8ff1e209` + PR #271).
+- **Mesure d'impact attendue** (gsc-trajectoire-cron.sh dimanche 22h) : **J+7** position < 4 = ✅ win · **J+14** impressions > 50 ET clics > 3 = ✅ capture confirmée · **J+28** position > 10 = ⚠️ rollback possible.
+- **Action attendue de Philippe** : `git push origin seo/cor-dos-fios-eletricos-t_8ff1e209` + relecture rapide PR #271 + merge (résoudre le conflit `CONFLICTING` au moment du merge — autres PRs #264 #268 #270 non mergés sur main, conflits possibles sur les fichiers `client/public/blog/guia-cores-fios-eletricos.html` et `SEO_PLAN.md`).
+- **Leçon (à propager)** : **doublons de tâches sur la même query** — la même fenêtre GSC peut générer plusieurs tâches kanban quasi-simultanées (ici t_8ff1e209 + t_f0688d11 sur la query « cores dos fios elétricos »). Le pool-keeper devrait détecter ces doublons en amont (cross-check fenêtre GSC + query exact match) pour éviter 2 agents en parallèle sur le même fichier. Acceptable en l'état car le 2e agent a fait le travail de consignation (cette tâche) sans dupliquer le SEO — mais un mécanisme de lock par query GSC serait utile pour éviter la confusion.
+- **Statut** : 🟢 **Tâche close par absorption** (travail SEO fait par t_8ff1e209 + consignation SEO_PLAN.md faite par t_f0688d11). PR #271 DRAFT, 0 merge sans GO explicite Philippe (R7).
