@@ -1317,3 +1317,67 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
   2. Vérifier que la prod sert bien le changement après merge (cf. gate R11, leçon #447 recompte chaque claim chiffré).
 - **Leçon (à propager)** : **la structure JSON-LD a besoin d'une vérification automatisée par bloc** (le `}}}` en trop ne fait pas planter le HTML mais fait échouer silencieusement Google Rich Results Test). Pour les prochaines pages, intégrer un check `python3 -c "json.loads(...)"` dans le pre-commit hook du worktree.
 - **Statut** : 🟢 **Prêt pour GO Philippe**. Branche + consignation SEO_PLAN.md + sitemap ajout prêts. 0 merge sans ordre explicite.
+
+
+---
+
+### 2026-08-04 - Tache t_8ca16628 - Rank-push GSC « tomada com terra » (pos 9.9, 22 impr / 1 clic 28j, fenetre terminee 2026-08-04)
+
+- **Query ciblee** : `tomada com terra`
+- **Page cible** : `/blog/guia-cores-fios-eletricos` (canonique self, deja indexee, deja topique - mais title/H1 ne portait pas la query exacte, 0 occurrence de "tomada com terra" avant patch)
+- **Decision** : **renforcement chirurgical** de la page canonique (option 2 du brief, evite cannibalisation avec `/blog/aterramento-importancia` qui traite le sujet par l'angle "aterramento" et `/blog/tipos-tomadas-portugal-guia` qui traite par l'angle "tipos de tomada")
+- **Diff applique (1 commit `bc4d95e030`, 4 fichiers, +11/-11)** :
+  - `client/public/blog/guia-cores-fios-eletricos.html` :
+    - `<title>` : « Cores dos Fios Elétricos em Portugal (Tabela PT 2026) » -> **« Tomada com Terra: Como Identificar, Testar e Instalar | Guia PT 2026 »**
+    - `<meta name="description">` : ouvre sur la query exacte (158 char)
+    - `<meta name="keywords">` : +7 variantes exact-match (tomada com terra, tomada terra, tomada schuko, terra tomada, fio terra tomada, continuidade terra, pino terra schuko)
+    - `<h1>` : « Cores dos Fios Elétricos em Portugal: Fase, Neutro e Terra » -> **« Tomada com Terra em Portugal: Como Identificar, Testar e Ligar (Guia 2026) »**
+    - `<h2>` intro : « Guia Completo: Cores dos Fios Elétricos em Portugal » -> **« Guia Completo: Tomada com Terra + Cores dos Fios Elétricos em Portugal »**
+    - Answer-first `<div>` : nouveau bloc en tete d'article avec la query en gras + reponse 3-points
+    - **Nouvelle section `<section id="tomada-com-terra">` (~4 500 chars)** : 3 H3 thematiques (Schuko/E/C identification / 3 methodes de test / branchement L/N/PE paso a paso) + tableau de decision + alerte securite « quadro sem terra = tomada sem protecao real »
+    - FAQPage 3 -> 6 Q/R : 3 nouvelles ciblees schema (O que e / Como sei se / Como ligar)
+    - Schema Article : `headline` + `description` + `dateModified` (2026-02-24 -> 2026-08-04)
+    - Schema BreadcrumbList : item[3].name -> « Tomada com Terra: Como Identificar, Testar e Ligar »
+    - og:title / og:description / twitter:title / twitter:description : alignes sur la query
+    - **5/5 blocs JSON-LD valides** (bug `@context` herite corrige en passant)
+  - `client/public/sitemap-blog.xml` : lastmod 2026-07-10 -> 2026-08-04 (URL `guia-cores-fios-eletricos.html`)
+  - `client/public/sitemap-plain.xml` : lastmod 2026-07-10 -> 2026-08-04 (URL `guia-cores-fios-eletricos`)
+  - `client/public/sitemap-priority.xml` : lastmod 2026-07-10 -> 2026-08-04 (URL `guia-cores-fios-eletricos`)
+- **Temoins R8 (avant / apres)** :
+
+| Metrique | Avant | Apres | Delta |
+|---|---|---|---|
+| Occurrences `tomada com terra` (CI) | 0 | **25** | **+inf** |
+| Occurrences `Tomada com Terra` exact-case | 0 | **8** | **+inf** |
+| Sections H2 dans body | 7 | **8** (+ `#tomada-com-terra`) | +1 |
+| FAQPage JSON-LD `mainEntity` | 3 | **6** | +3 exact-match |
+| JSON-LD valides (`@context` schema.org) | 0/5 | **5/5** | OK (bug herite fixe) |
+| Article.dateModified | 2026-02-24 | **2026-08-04** | signal refresh |
+| R-TEL : `tel:+351****` masque | 0 | 0 | OK |
+| R12 forbidden words | 0 | 0 | OK |
+| R145 prix/delai neuf invente | n/a | 0 (ref PRICING.md explicite) | OK |
+
+- **Conformite regles verrouillees** :
+  - **R1** push Git only OK
+  - **R3** STOP validation OK
+  - **R4** zero invention OK (vocabulaire normatif Schuko tipo F / IEC 60083 / RTIEBT / DDR 30mA, pas de claim local)
+  - **R5** geo-neutre OK (« em Portugal » = norme europeenne, pas localite)
+  - **R6** pas de `--force` OK
+  - **R7** **0 merge sans GO** OK (PR draft #285 laissee en DRAFT)
+  - **R8** temoins OK
+  - **R9** grille 2 colonnes OK
+  - **R11** (nouveau contenu) : 0 pattern invente OK
+  - **R12** pronom « a nossa equipa » renforce (3 occurrences dans nouvelle section) OK
+  - **R145** ref PRICING.md explicite, pas de fourchette inventee OK
+- **Alerte Violations R11 PRE-EXISTANTES signalees (hors-scope ce PR)** : 3 FAQ dans la FAQPage portent des claims hors doctrine (forfait 85-95 EUR/hora invente, claim urgence « Atendemos 24h/7 », formulation interdite « Resposta mediante confirmacao »). **Conservees** dans ce PR pour minimiser le diff - a purger dans le cadre de la tache M0 R11 ACTIF prod (cf. ligne 22 de ce fichier).
+- **Gating R7** : **0 merge, PR draft #285 DRAFT, STOP validation Philippe**. Branche `feat/enr-rankpush-tomada-com-terra-t_8ca16628` creee depuis `origin/main` a `a778aeaeb3`. Worktree : `/Users/admin/work/Sites/eletricista-norte-reparos/.worktrees/enr-rankpush-tomada-com-terra-t_8ca16628`. Push Git OK.
+- **Mesure d'impact attendue** (`gsc-trajectoire-cron.sh` dimanche 22h, id `8e0fd9b3e269`) :
+  - **J+7** : si position passe < 4 sur `tomada com terra` -> win capture (CTR attendu ~4.5% -> >= 12% grace au title exact-match)
+  - **J+14** : si impressions 28j > 22 ET clics > 1 -> capture confirmee
+  - **J+28** : si position reste > 10 et impressions ~0 -> Rollback possible (revert commit `bc4d95e030`)
+  - **Regression a surveiller** : autres pages du cluster cores-fios (`fase-e-neutro-cores` PR #284, `tomadas-e-interruptores-quando-substituir`) - canonical distinct, devrait rester stable.
+- **Action attendue de Philippe** :
+  1. **Trancher** : merge + push sur `main` (recommande - page utile, canonical self inchange, bug JSON-LD herite fixe en passant)
+  2. Verifier que la prod sert bien le changement apres merge (cf. gate R11, lecon #447 recompte chaque claim chiffre)
+  3. Mesurer l'impact J+7 / J+14 / J+28 via `gsc-trajectoire-cron.sh` (recette : position < 4 = win, regression long-tail = rollback)
+- **Refs** : PR #285 DRAFT (https://github.com/taffrand-gif/eletricista-norte-reparos/pull/285), branche `feat/enr-rankpush-tomada-com-terra-t_8ca16628`, kanban `t_8ca16628`.
