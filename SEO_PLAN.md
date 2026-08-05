@@ -1317,3 +1317,91 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
   2. Vérifier que la prod sert bien le changement après merge (cf. gate R11, leçon #447 recompte chaque claim chiffré).
 - **Leçon (à propager)** : **la structure JSON-LD a besoin d'une vérification automatisée par bloc** (le `}}}` en trop ne fait pas planter le HTML mais fait échouer silencieusement Google Rich Results Test). Pour les prochaines pages, intégrer un check `python3 -c "json.loads(...)"` dans le pre-commit hook du worktree.
 - **Statut** : 🟢 **Prêt pour GO Philippe**. Branche + consignation SEO_PLAN.md + sitemap ajout prêts. 0 merge sans ordre explicite.
+
+### 2026-08-05 — t_fb13b1f7 — Conformidade scope + integridade linguistica PT-PT : blog-manutencao-preventiva-quadro (PR draft #294)
+
+**Contexto**: tarefa `t_fb13b1f7` (assignee default, criada por pool-keeper 21h40 selon `~/work/Sites/_audit/pool-keeper.log`, label scan `scope-electric-on-plumbing`). Mesmo tipo de ficheiro que `t_30fe1c6a` corrigé hoje à noite (`public/blog/blog-disjuntor-a-saltar-causas.html`, branche `fix/enr-conform-disjuntor-scope-t_30fe1c6a`, commit 4a9b5fcca1) — blog estático ENR, généré via old pipeline, dérive linguistique cumul ES/EN/RU/PT.
+
+**Vérification de la preuve**: extrait log `[2026-08-05 21:40]` = `« dispara também em outras alturas (sem motivo aparente), pode ter um problema de fuga de corrente algures »`. **Analyse manuelle conclut : faux positif sur le label scope**. Le terme `fuga de corrente` est strictement électricité (diferencial/disjuntor/quadro) ; le fichier contient 0 mot plomberie (`canalizador|água|esgoto|fossa|canalização|tubagem|encanador|sumidouro`, 0 hit grep exhaustif). MAIS **dérives linguistiques réelles** détectées par scan exhaustif post-extrait (mêmes catégories que t_30fe1c6a : mélange EN/PT/ES + CJK + typos + doublon zone).
+
+**Diagnostic détaillé** :
+- Fichier `public/blog/blog-manutencao-preventiva-quadro.html` (136 lignes, 9 936 octets, 599 mots `<article>`, 6 HowTo JSON-LD passos) — page pilar maintenance quadro elétrico (intent informationnel électricité pure).
+- Fichier généré par ancien pipeline (présence `<nav>` inline avec `/blog/blog-*.html` hrefs et `<div class="related">`) — même famille que t_30fe1c6a (drift linguistique multi-langues).
+- NAP élec `+351 932 321 892` intacto · canonical ✓ · meta description ✓ · JSON-LD HowTo 6 passos ✓ (structure préservée).
+
+**14 corrections appliquées (+15/-15, 1 fichier = 1 commit)** :
+| # | Ligne | Avant | Après |
+|---|------|-------|------|
+| 1 | L1 head | `<html lang="pt">` | `<html lang="pt-PT">` |
+| 2 | L21 JSON-LD | `conexiones soltas` | `ligações soltas` |
+| 3 | L23 JSON-LD | `correctly etiquetados — uma etiqueta поможет you identificar quickly` | `corretamente etiquetados — uma etiqueta clara ajuda a identificar` (purge EN+RU+EN, phrase PT propre) |
+| 4 | L24 JSON-LD | `não almacene objectos` | `não guarde objetos` |
+| 5 | L25 JSON-LD | `verificar conexes` | `verificar as conexões` |
+| 6 | L26 JSON-LD | `disjuntores antigos ou avariadas` | `disjuntores antigos ou avariados` (concordância PT) |
+| 7 | L65 body | `olhadelá` | `olhadela` (typo accent) |
+| 8 | L66 body | `anomaly = quentes` | `anómalo = quentes` |
+| 9 | L72 body | `deve dispara immediatamente` | `deve disparar imediatamente` (typo + conjugaison 3e personne) |
+| 10 | L76 warning-box | `electricidade. Asegúrese` | `eletricidade. Assegure-se` (ES→PT, electricidade→eletricidade) |
+| 11 | L110 FAQ | `em outras alturas… fuga de corrente algures` | `noutras alturas… fuga de corrente em algum ponto da instalação` |
+| 12 | L113 CTA | `CONTACT-NOS!` | `CONTACTE-NOS!` (typo manifeste, identique PR #261 pattern) |
+| 13 | L117 + L131 | doublon `Trás-os-Montes, Trás-os-Montes` ×2 | singulier (identique t_30fe1c6a pattern) |
+
+**Témoins R8 / R9 (avant / après scan exhaustif)** :
+| Métrique | Avant | Après |
+|---|---|---|
+| `conexiones` (ES) | 1 | 0 |
+| `correctly` (EN) | 1 | 0 |
+| `quickly` (EN) | 1 | 0 |
+| `поможет` (RU cyrillique) | 1 | 0 |
+| `conexes` (ES/PT corrompu) | 1 | 0 |
+| `avariadas` (concordância ES) | 1 | 0 |
+| `olhadelá` (typo accent) | 1 | 0 |
+| `anomaly` (EN) | 1 | 0 |
+| `immediatamente` (typo) | 1 | 0 |
+| `Asegúrese` (ES) | 1 | 0 |
+| `algures` (PT non-standard) | 1 | 0 |
+| `CONTACT-NOS` (typo CTA) | 1 | 0 |
+| doublon `Trás-os-Montes, Trás-os-Montes` | 2 | 0 |
+| Termes plomberie (`canalizador|água|esgoto|fossa|sumidouro`) | 0 | 0 (scan confirm: signal absent, label faux positif baseline) |
+| NAP elec `+351 932 321 892` | 1 | 1 ✓ |
+| HowTo JSON-LD passos | 6 | 6 ✓ (structure `HowTo → step[6]` valide) |
+| canonical self (propre ou avec `.html`) | 1 | 1 ✓ (propre = `pt-PT`) |
+| `<html lang>` | `pt` | `pt-PT` ✓ |
+| Prix/services/zone/délai inventés | 0 | 0 ✓ |
+| Marques commerciales (Efapel/Hager/etc.) | 0 | 0 ✓ |
+
+**Conformité** :
+- R1 push Git only (0 infra) ✓
+- R4 zero falso conteúdo (0 número novo, 0 claim GEO novo, 0 service inventé) ✓
+- R5 géo-neutre mantido ✓
+- R7 PR draft — **0 merge sem GO Filipe**, attentes explicites ✓
+- R8 1 ficheiro = 1 commit, 1 motif = 1 patch (drift linguistique intégral) ✓
+- R9 2 colonnes : technique (témoins pré/post = OK, JSON-LD intact 6 passos, NAP intact) + conformité (R1+R4+R5+R7+R8+R11+R12+R145 = OK) ✓
+- R11 0 hit sur 9 patterns inventés (urgence 24h, 85-95, 20-40, Efapel/Hager, `je/sozinho entreprise`) ✓ — `Sozinho` L63 préservé (sens PT-PT « vous-même » ≠ interdit R12 « entrepreneur solo »)
+- R12 pronom `a nossa equipa`/`contacte-nos`/`garantimos` natif (page déjà neutre, 0 claim) ✓
+- R145 0 délai chiffré, 0 montant inventé ✓
+- maillage-gate pre-commit PASS (zero href nouveau, nav inchangée, related inchangé) ✓
+- AGENTS.md §10 robots.txt crawlers IA : non touché ✓
+- AGENTS.md §11 SEO_PLAN : consignation historique présente (ce bloc) ✓
+- AGENTS.md §12 Identidade Norte Reparos : respeitado (formulations neutres, 0 mention solo) ✓
+- AGENTS.md §13 Chargeur VE / DGEG : non touché (page maintenance quadro seulement) ✓
+
+**Livraison** :
+- Branche `fix/enr-conform-quadro-scope-t_fb13b1f7` créée depuis `origin/main` (HEAD 0fa6e92ce9) — pas worktree dédié (la branche de t_30fe1c6a est déjà sur le worktree parent).
+- Commit unique `53d3a82108` (+15/-15 sur 1 fichier).
+- Push OK vers `origin/fix/enr-conform-quadro-scope-t_fb13b1f7`.
+- PR draft #294 ouverte : https://github.com/taffrand-gif/eletricista-norte-reparos/pull/294
+- SEO_PLAN.md : append-only ce bloc (1 fichier diff, 0 merge, R3 respecté).
+
+**Sortie attendue du scan pool-keeper (re-pass)** :
+- type `scope-electric-on-plumbing` sur `blog-manutencao-preventiva-quadro.html` : devrait disparaître après merge (le label de scan matchait probablement `fuga de corrente` sans guard anti-électricité). Leçon à propager au pool-keeper.sh.
+- compteurs fautes : `conexiones|correctly|pomozhet|quickly|avariadas|olhadelá|anomaly|immediatamente|Asegúrese|algures|CONTACT-NOS` : devraient tous être à 0 dans le repo après merge.
+
+**Action attendue de Philippe** :
+1. Review PR #294 (GitHub) — fichiers touchés : `public/blog/blog-manutencao-preventiva-quadro.html` (+15/-15) + `SEO_PLAN.md` (append).
+2. Trancher : merge PR (recommandé, 0 risque SEO négatif, purge de fautes améliore E-E-A-T) ou revert.
+3. Si merge : vérifier que le scan pool-keeper suivant ne re-flag pas le fichier (leçon à propager aux opérateurs du pool pour affiner la regex `scope-electric-on-plumbing`).
+
+**Leçon (à propager à `pool-keeper.sh`)** : le label `scope-electric-on-plumbing` matche actuellement `fuga de corrente` (terme strictement électricité) comme faux positif. Confirmer une dérive plomberie requerra présence simultanée d'au moins un mot-clé *canalização* (`canalizador|água|esgoto|fossa|canalização|tubagem|encanador|sumidouro`) **ET** l'absence du contexte électrique (`quadro|disjuntor|diferencial|corrente|elétrico`). Le pattern est trop permissif et génère du bruit récurrent (cf. log 03-04-05/08 : > 80% faux positifs estimés sur ce label, historique `63d301b65a` a corrigé un vrai cas mais le pattern reste imprécis pour les fichiers pure élec mentionnant `fuga de corrente`).
+
+**Statut** : 🟡 **PR draft #294 en attente GO Philippe** (R7).
