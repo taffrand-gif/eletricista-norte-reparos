@@ -1400,3 +1400,48 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
   2. Verifier que la prod sert bien le changement apres merge (cf. gate R11, lecon #447 recompte chaque claim chiffre)
   3. Mesurer l'impact J+7 / J+14 / J+28 via `gsc-trajectoire-cron.sh` (recette : position < 4 = win, regression long-tail = rollback)
 - **Refs** : PR #285 DRAFT (https://github.com/taffrand-gif/eletricista-norte-reparos/pull/285), branche `feat/enr-rankpush-tomada-com-terra-t_8ca16628`, kanban `t_8ca16628`.
+
+## G23 — Rank-push ENR `tomada queimada` (t_5d146c11, 2026-08-05)
+
+**Contexte** : gap MONOPOLE #1 ENR identifié via `_audit/_scratch_monopole_positions_30j.json` (imp=98/30j, p=6.53, clk=1, CTR=1.02%, 53% du trafic ENR mesuré). Page canonique EXISTE et sitemapée (`client/public/blog/tomada-queimada-perigos-solucoes.html`, 75 lignes, 11 occ query, title query-exact, canonical self). Pattern canonique = renforcement chirurgical (alignement t_8ca16628 sœur `tomada com terra`).
+
+**Décision** : 1 PR draft atomique `feat/enr-rankpush-tomada-queimada-t_G23` (base main). 6 fichiers touchés, scope strict ≤300 lignes.
+
+**Changements appliqués** :
+1. `client/public/blog/tomada-queimada-perigos-solucoes.html` (canonique) : H1 patch `Tomada Queimada: Perigos + 5 Causas Reais (Diagnóstico FLIR)`, FAQPage JSON-LD passé de 2 Q/R génériques à 3 Q/R ciblées (Quanto custa / É perigoso / O que fazer), nouvelle section H2 `🔌 O Que Significa "Tomada Queimada" e Como Identificar` (4 types définis), bloc answer-directa, meta description enrichie, og + twitter alignés, dateModified JSON-LD 2026-08-05. Footer R145 aligné (horário comercial).
+2. `client/public/blog/tomada-a-fazer-faiscas-perigo.html` (voisine) : ancre g23-rank-push ajoutée vers canonique.
+3. `client/public/blog/tomada-nao-funciona-causa.html` (voisine) : ancre g23-rank-push.
+4. `client/public/blog/tomada-quente-perigo-o-que-fazer.html` (voisine) : ancre g23-rank-push.
+5. `client/public/blog/tomada-preta-queimada-o-que-fazer.html` (voisine) : ancre g23-rank-push.
+6. `client/public/blog/cheiro-queimado-tomada-o-que-fazer.html` (sœur) : ancre g23-rank-push.
+7. `client/public/sitemap-plain.xml` : 6 lastmod bumps 2026-07-03 → 2026-08-05 (5 tomadas + 1 cheiro).
+8. `client/public/sitemap-blog.xml` : 1 lastmod bump (canonique 2026-02-22 → 2026-08-05).
+9. `SEO_PLAN.md` : présente entrée G23 (append-only).
+
+**Doctrine respectée** :
+- R7 **STOP validation Philippe** avant `gh pr merge` (jamais d'auto-merge)
+- R11 ZÉRO INVENTION : pas de prix/zone/délai inventés, ref PRICING.md strict
+- R12 formulation collective (nós/nossa equipa), jamais 'je/sozinho'
+- R145 aucun délai chiffré (jamais 'resposta em Xmin')
+- R-AGENTS.md §11-13 : NAP +351 932 321 892, DGEG TRIESP 90062 si pertinent, géo-neutre, PT-PT strict
+
+**Témoins R8** :
+- Audit 3 couches : 5 voisines (title/H1/occ/canonical/lines) + canonique caractérisée (75L, 11 occ, title query-exact, canonical self, JSON-LD complet)
+- Contrôle positif grep : `tomada queimada` canonique = 11 occ → 13 occ après patch (+2 sur H1 + section H2)
+- Maillage 5/5 voisines = `g23-rank-push=1` après patch
+- Sitemap 6/6 lastmod bumped = 2026-08-05
+
+**Gating R7** : 0 merge, PR draft DRAFT, STOP validation Philippe nominative. Branche `feat/enr-rankpush-tomada-queimada-t_G23` depuis `origin/main` à `0fa6e92ce9`. Worktree : `/Users/admin/work/Sites/eletricista-norte-reparos/.worktrees/enr-rankpush-tomada-queimada-t_5d146c11`. Push Git OK après build vert.
+
+**Mesure d'impact attendue** (gsc-trajectoire-cron.sh dim 22h, id 8e0fd9b3e269) :
+- J+7 : si position < 4 → win probable (FAQ + H1 query-first + maillage = boost compound)
+- CTR attendu : 1.02% → 3-5% (title + H1 query-exact) = +3-4 clics/30j
+- J+28 : si position > 8 et impressions ~0 → rollback (revert HEAD)
+- Régression à surveiller : 5 voisines (g23-rank-push interne) + 3 sœurs cheiro-* (canonical distinct, devrait rester stable)
+
+**Action attendue de Philippe** :
+1. Trancher : merge + push sur main (recommandé - gap MONOPOLE #1, signal fort sur query money-diagnostic)
+2. Vérifier prod sert le changement après merge
+3. Mesurer impact J+7 / J+14 / J+28 via gsc-trajectoire-cron.sh
+
+**Refs** : PR draft (à créer via gh), branche `feat/enr-rankpush-tomada-queimada-t_G23`, kanban `t_5d146c11`. Parent `t_0b3dc988` (MONOPOLE-PERSISTENCE). Sœurs : t_8ca16628 (tomada com terra PR #285 DRAFT), t_968c1375 (G21 done), t_e5aab0e9 (G22 done).
