@@ -24,7 +24,7 @@ const electricDescriptions: Record<string, string> = {
  'Quadros Elétricos Modernos': 'Substituição e modernização de quadros elétricos antigos, instalação de disjuntores diferenciais, organização e identificação de circuitos.',
  'Iluminação Interior/Exterior': 'Projeto e instalação de sistemas de iluminação interior e exterior, spots LED, iluminação decorativa, sensores de movimento e automatização.',
  'diagnóstico elétrico': 'Inspeção elétrica e trabalho detalhado, para venda, arrendamento ou regularização de imóveis.',
- 'Urgências 24h': 'Atendimento de urgências elétricas Atendimento 24h/7d, 7 dias por semana, para situações de perigo ou falta de energia.'};
+ 'Urgências 24h': 'Intervenção em avarias elétricas, curtos-circuitos e falta de energia, ao seu domicílio em Trás-os-Montes.'};
 // Descriptions pour plomberie
 const plumbDescriptions: Record<string, string> = {
  'Desentupimentos': 'Desentupimento profissional de canalizações, WC, pias, ralos e redes de esgotos com equipamento especializado.',
@@ -61,8 +61,8 @@ const electricFeatures: Record<string, string[]> = {
  'Lista de anomalias e recomendações'
  ],
  'Urgências 24h': [
- 'Disponível 24h/7d',
- 'Técnicos equipados para emergências',
+ 'Orçamento por escrito em 48h',
+ 'A nossa equipa com equipamento profissional de diagnóstico',
  'Orçamento no local'
  ]
 };
