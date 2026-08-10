@@ -37,6 +37,17 @@ export default function OptimizedHome() {
  <main>
  <PremiumBar />
  <InnovativeHero />
+ {!isPlumber && (
+ <section className="dgeg-cert" style={{background: '#f4f9fb', border: '1px solid #0a4d68', borderRadius: '8px', padding: '1.5rem', margin: '2rem auto', maxWidth: '920px'}}>
+ <h2 style={{marginTop: 0, color: '#0a4d68', fontSize: '1.15rem'}}>⚡ Técnico Responsável inscrito na DGEG</h2>
+ <p style={{margin: 0, color: '#222'}}>
+ <strong>Técnico Responsável de Instalações Elétricas inscrito na DGEG — TRIESP n.º 90062</strong> (domínio <em>Execução em Baixa Tensão</em>, instalações até 41,4 kVA). Emitimos <strong>Ficha Eletrotécnica</strong> e <strong>Termo de Responsabilidade</strong> no final de cada intervenção. Seguro de responsabilidade civil válido (Lei n.º 14/2015).
+ </p>
+ <p style={{margin: '0.75rem 0 0 0'}}>
+ Ver guias detalhados: <a href="/quem-pode-emitir-ficha-eletrotecnica" style={{color: '#0a4d68', fontWeight: 700}}>Quem pode emitir?</a> · <a href="/ficha-eletrotecnica" style={{color: '#0a4d68', fontWeight: 700}}>Ficha Eletrotécnica</a> · <a href="/lei-14-2015" style={{color: '#0a4d68', fontWeight: 700}}>Lei 14/2015</a>
+ </p>
+ </section>
+ )}
  <TrustBanner />
  <Diagnostico />
  <OrcamentoGratuitoBadge />
