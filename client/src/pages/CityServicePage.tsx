@@ -431,7 +431,7 @@ function getWhyChooseUs(citySlug: string, serviceSlug: string) {
  {
  icon: '🌙',
  title: 'Urgências 24h em Macedo',
- description: 'Equipa local disponível Atendimento 24h/7d, 7 dias por semana. Sabemos que avarias elétricas em explorações agrícolas não podem esperar. Resposta mediante confirmação por telefone.'
+ description: 'Equipa local disponível Atendimento 24h/7d, 7 dias por semana. Sabemos que avarias elétricas em explorações agrícolas não podem esperar. Atendimento confirmado por telefone.'
  },
  {
  icon: '🔒',
