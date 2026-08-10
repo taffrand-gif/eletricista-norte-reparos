@@ -10,8 +10,11 @@ export default function StructuredData() {
  const [location] = useWouterLocation();
  const { getCurrentCity } = useLocation();
  useEffect(() => {
- // Remover scripts existentes
- const existingScripts = document.querySelectorAll('script[type="application/ld+json"]');
+ // Remover scripts existentes — EXCETO o bloco de credencial DGEG
+ // (data-dgeg-cert), injetado no HTML estático para ser legível SEM
+ // execução de JavaScript (crawlers IA). Sem este :not(), a hidratação
+ // apagava a credencial TRIESP 90062 para os clientes que executam JS.
+ const existingScripts = document.querySelectorAll('script[type="application/ld+json"]:not([data-dgeg-cert])');
  existingScripts.forEach(script => script.remove());
  const businessType = 'Electrician';
  const serviceName = 'Eletricista';
