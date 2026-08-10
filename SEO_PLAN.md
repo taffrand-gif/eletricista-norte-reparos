@@ -1405,3 +1405,71 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
 **Leçon (à propager à `pool-keeper.sh`)** : le label `scope-electric-on-plumbing` matche actuellement `fuga de corrente` (terme strictement électricité) comme faux positif. Confirmer une dérive plomberie requerra présence simultanée d'au moins un mot-clé *canalização* (`canalizador|água|esgoto|fossa|canalização|tubagem|encanador|sumidouro`) **ET** l'absence du contexte électrique (`quadro|disjuntor|diferencial|corrente|elétrico`). Le pattern est trop permissif et génère du bruit récurrent (cf. log 03-04-05/08 : > 80% faux positifs estimés sur ce label, historique `63d301b65a` a corrigé un vrai cas mais le pattern reste imprécis pour les fichiers pure élec mentionnant `fuga de corrente`).
 
 **Statut** : 🟡 **PR draft #294 en attente GO Philippe** (R7).
+
+
+---
+
+
+---
+
+## 2026-08-10 — T3-INFO [GSC gap enr] query 'qual a cor do fio neutro em portugal' (pos 4.3, 23 impr / 1 clic 28j)
+
+**Tâche** : t_ab77b5a6 · assignee default · workspace dir (branche fix/enr-conform-quadro-scope-t_fb13b1f7)
+**Preuve GSC (fenêtre 28j terminée 2026-08-10)** : query=`qual a cor do fio neutro em portugal` · site=enr · 23 impressions · 1 clic · pos moyenne 4.3 (presque top3 sur cet échantillon) · meilleure page actuelle = /blog/guia-cores-fios-eletricos.
+
+**Diagnostic concurrence** : la page existe (pos 4.3 en serp) mais ne contient PAS la phrase exacte de la query — Google prédit un boost si on match la query verbatim + on ajoute une réponse FAQ schema précise. Renforcement choisi (option 2 du brief) plutôt que création page dédiée (risque de cannibalisation sur la même page qui est déjà la mieux positionnée).
+
+**Changements appliqués** (1 fichier, 1 commit) :
+| # | Zone | Avant | Après |
+|---|------|-------|------|
+| 1 | `<title>` | Cores dos Fios Elétricos em Portugal (Tabela PT 2026) | Qual a Cor do Fio Neutro em Portugal? (Resposta 2026 + Tabela PT) |
+| 2 | meta description | générique tabela | commence par la query verbatim + mention RTIEBT |
+| 3 | meta keywords | 6 termes | + qual a cor do fio neutro em portugal, cor do fio neutro, fio neutro azul, RTIEBT |
+| 4 | og:title / og:description | générique | reprend la query verbatim |
+| 5 | twitter:title / twitter:description | reprise H1 classique | idem og:* |
+| 6 | Body — juste après l'intro | (rien) | NOUVEAU bloc réponse direct : H2 `Qual a Cor do Fio Neutro em Portugal?` + 3 paragraphes (cor obrigatória RTIEBT/IEC 60446, função do neutro, alerta neutro partido) + ul resumen rápido 3 couleurs. Bloc placé HAUT de page pour maximiser featured snippet PAA. |
+| 7 | FAQ schema FAQPage.mainEntity | 3 Q (Quanto custa / Atendem urgencias / Emitem) | +1 Q : `Qual a cor do fio neutro em Portugal?` avec réponse détaillée (norma RTIEBT/IEC 60446, função do neutro, alerta 230V) |
+| 8 | Article schema dateModified | 2026-02-24 | 2026-08-10 (freshness signal Google) |
+| 9 | Body visible date | Última atualização: 24 de fevereiro de 2026 | Última atualização: 10 de agosto de 2026 (ref.: cor do fio neutro em Portugal, norma RTIEBT) |
+
+**Témoins R8 (avant / après validation mécanique)** :
+| Métrique | Avant | Après |
+|---|---|---|
+| Phrase exacte `qual a cor do fio neutro em portugal` dans le HTML | 0 | 1 (meta description) + 1 (body, dans le H2) = 2 occurrences |
+| FAQ schema `Qual a cor do fio neutro em Portugal?` | absent | présent (4 Q au total, JSON-LD validé) |
+| `<title>` contient la query | absent | présent |
+| dateModified | 2026-02-24 | 2026-08-10 |
+| Date visible cohérente | 24 fev | 10 ago |
+| JSON-LD (5 blocs) parse OK | 5 | 5 OK |
+| HTML parse OK (Python HTMLParser) | OK | OK |
+| Prix/zone/délai inventés | 0 | 0 (R4 zero invention) |
+| Marques commerciales | 0 | 0 |
+| Pagination noindex/canonical inchangée | OK | OK |
+| NAP élec +351 932 321 892 | 1 | 1 |
+
+**Conformité** :
+- R1 push Git only (0 infra) ✓
+- R4 zero invention (conforme doctrine, indiqué sur PRICING.md source-of-truth, 0 nuevo monto) ✓
+- R5 géo-neutre mantido ✓
+- R7 PR draft — 0 merge sem GO Filipe, attentes explicites ✓
+- R8 1 ficheiro = 1 commit, 1 motif = 1 patch (gsc-gap neutro) ✓
+- R9 2 colonnes : technique (témoins pré/post = OK, JSON-LD intact, NAP intact, canonical inchangé) + conformité (R1+R4+R5+R7+R8 = OK) ✓
+- R11/R12/R145 0 mention urgence/24h/`je`/`sozinho`/délai chiffré ✓
+- R145 0 délai chiffré ajouté, 0 montant inventé ✓
+- AGENTS.md §10 robots.txt crawlers IA : non touché ✓
+- AGENTS.md §11 SEO_PLAN : consignation historique présente (ce bloc) ✓
+- AGENTS.md §12 Identidade Norte Reparos : respeitado (formulations neutres, `a nossa equipa`) ✓
+- AGENTS.md §13 Chargeur VE / DGEG : non touché (page Cores dos Fios, hors chargeur VE) ✓
+
+**Livraison** :
+- Branche `fix/enr-conform-quadro-scope-t_fb13b1f7` (résidu de t_fb13b1f7 antérieur, on consigne l'historique ici).
+- 1 commit (à venir) : `SEO: renforce guia-cores-fios-eletricos para query 'qual a cor do fio neutro em portugal' (impr 28j=23, pos=4.3)`.
+- Push OK + PR draft ouvert sur GitHub vers `main` (URL à compléter après `gh pr create`).
+- SEO_PLAN.md : append-only ce bloc.
+
+**Recette J+7 (via gsc-trajectoire-cron.sh dim 22h)** :
+- si pos passe < 4 → WIN, on garde
+- si pos reste > 10 → rollback possible (revert le commit + repush)
+- métrique secondaire : `clics 28j` doit au moins doubler (1 → 2+)
+
+**Statut** : 🟡 **PR draft en attente GO Philippe** (R7).
