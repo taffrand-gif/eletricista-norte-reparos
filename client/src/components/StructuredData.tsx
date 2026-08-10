@@ -355,8 +355,10 @@ export default function StructuredData() {
  },
  "hasCredential": {
  "@type": "EducationalOccupationalCredential",
+ "name": "Técnico Responsável de Instalações Elétricas de Serviços Particulares (TRIESP) n.º 90062",
  "credentialCategory": "Registo profissional DGEG — TRIESP",
  "identifier": "90062",
+ "description": "Inscrição na DGEG no domínio Execução em Baixa Tensão, instalações elétricas até 41,4 kVA, ao abrigo da Lei n.º 14/2015, de 16 de fevereiro.",
  "recognizedBy": {
  "@type": "GovernmentOrganization",
  "name": "Direção-Geral de Energia e Geologia (DGEG)",
