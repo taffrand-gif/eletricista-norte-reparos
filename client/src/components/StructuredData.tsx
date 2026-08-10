@@ -338,31 +338,7 @@ export default function StructuredData() {
  "currenciesAccepted": "EUR",
  "paymentAccepted": ["Cash", "Credit Card", "Bank Transfer", "MB WAY"],
  "knowsLanguage": ["pt-PT"],
- "slogan": "Serviço 24h/7d em Trás-os-Montes • Orçamento por escrito",
- "employee": {
- "@id": `https://${config.domain}/#filipe`
- }
- };
- // Person Schema — Filipe Bragança, TRIESP DGEG 90062 (autoridade técnica liée à l'Organization)
- const personSchema = {
- "@context": "https://schema.org",
- "@type": "Person",
- "@id": `https://${config.domain}/#filipe`,
- "name": "Filipe Bragança",
- "jobTitle": "Técnico Responsável de Instalações Elétricas (TRIESP)",
- "worksFor": {
- "@id": `https://${config.domain}/#organization`
- },
- "hasCredential": {
- "@type": "EducationalOccupationalCredential",
- "credentialCategory": "Registo profissional DGEG — TRIESP",
- "identifier": "90062",
- "recognizedBy": {
- "@type": "GovernmentOrganization",
- "name": "Direção-Geral de Energia e Geologia (DGEG)",
- "url": "https://www.dgeg.gov.pt/"
- }
- }
+ "slogan": "Serviço 24h/7d em Trás-os-Montes • Orçamento por escrito"
  };
  // FAQ Schema enriquecido
  const faqSchema = {
@@ -483,7 +459,6 @@ export default function StructuredData() {
  serviceSchema,
  websiteSchema,
  organizationSchema,
- personSchema,
  breadcrumbSchema,
  ];
  // Adicionar FAQPage apenas se não estiver numa página cidade (evitar duplicação)

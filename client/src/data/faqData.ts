@@ -31,7 +31,7 @@ export const electricFaqs: FAQItem[] = [
  },
  {
  question: "Fazem diagnóstico elétrico ?",
- answer: "Sim. A nossa equipa integra um Técnico Responsável de Instalações Elétricas (TRIESP) inscrito na DGEG sob o n.º 90062 (domínio Execução em Baixa Tensão até 41,4 kVA). Fazemos o diagnóstico, executamos o trabalho, e no final emitimos a Ficha Eletrotécnica e o Termo de Responsabilidade. Seguro de responsabilidade civil válido (mínimo 50 000 €, Lei n.º 14/2015)."
+ answer: "De momento não emitimos certificados oficiais. Fazemos o trabalho elétrico da instalação e identificamos o que precisa de ser corrigido."
  },
  {
  question: "Instalam painéis solares na região?",
