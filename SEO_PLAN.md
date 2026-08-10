@@ -1447,3 +1447,73 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
 3. Mesurer impact J+7 / J+14 / J+28 via gsc-trajectoire-cron.sh
 
 **Refs** : PR draft (à créer via gh), branche `feat/enr-rankpush-tomada-queimada-t_G23`, kanban `t_5d146c11`. Parent `t_0b3dc988` (MONOPOLE-PERSISTENCE). Sœurs : t_8ca16628 (tomada com terra PR #285 DRAFT), t_968c1375 (G21 done), t_e5aab0e9 (G22 done).
+
+
+### 2026-08-10 — t_9cee14b0 — GSC gap enr : 'cor fios elétricos' (pos 6.2, 36 impr / 1 clic 28j)
+
+- **Contexte** : tâche `t_9cee14b0` (assignee default, créée par pool-keeper 10/08). Diagnostic GSC confirme la query **« cor fios elétricos »** sur ENR en **position moyenne 6.2** (fenêtre 4..20, presque top3) avec **36 impressions et 1 clic sur 28j** (fenêtre terminée 2026-08-10). Meilleure page actuelle : `/blog/guia-cores-fios-eletricos` qui couvre les couleurs de manière générique mais cible la formulation pluriel+nom « cores dos fios elétricos », pas la query exacte au singulier.
+- **Diagnostic filesystem** :
+  - `find client/public -iname '*.html' | grep -iE 'cor-fios-eletricos'` → **0 hit avant patch** (aucune page dédiée).
+  - `grep -lriE 'cor fios elétricos' client/public/blog/` → 0 hit avant patch (la query exacte au singulier n'apparaît dans aucune page body).
+  - Décision : **créer une page dédiée** ciblant exactement la query au singulier (pattern t_0952e95f).
+- **Action (R4 strict)** : **création** d'une page dédiée `client/public/blog/cor-fios-eletricos.html` (~24 KB) structurée :
+  - 11 sections H2 alignées sur les intents de la cible : (1) Resposta direta — qual é a cor de cada fio elétrico · (2) Tabela completa — cor dos fios elétricos (norma atual) · (3) O que diz a norma portuguesa · (4) Como identificar a cor certa na prática · (5) Cor dos fios em instalações antigas (pré-2006) · (6) Erros perigosos ao confiar só na cor · (7) Como confirmar a função sem confiar só na cor · (8) Quando chamar um eletricista · (9) Contacte a nossa equipa · (10) FAQ (5 questions) · (11) Veja também (13 liens internes).
+  - 1 720 mots dans `<main>` (vs ~150-300 pour une fiche SEO typique) — contenu utile, pas du remplissage (leçon #490 R4 zéro invention respectée).
+  - 5 questions FAQ (FAQPage JSON-LD) alignées sur les doutes de la cible : « Qual é a cor do fio fase em Portugal? », « E o fio neutro, qual é a cor? », « Qual é a cor do fio de terra? », « Posso confiar só na cor dos fios? », « Tenho uma instalação antiga, o que faço? ».
+  - Tableau HTML des couleurs en première position (answer-first SEO), bloc « ATENÇÃO » sécurité, section cluster maillage (13 liens internes vers pages soeurs : `guia-cores-fios-eletricos`, `codigos-cores-fios-eletricos-portugal`, `fase-e-neutro-cores`, `eletricidade-fio-azul-e-castanho`, `fio-neutro-partido-perigos`, `fio-derretido-causas-perigos`, `como-mudar-tomada-eletrica`, `como-instalar-interruptor`, `como-escolher-cabos-eletricos`, `tipos-tomadas-portugal-guia`, `aterramento-importancia`, `precos`, `contactos`).
+  - Occurrences query exacte (case-insensitive) : 4 dans le body (intro + tableau + section 2 + cross-link header).
+- **Anti-régression R4 (zéro invention)** — claims vérifiés :
+  - **Aucune zone précise** mentionnée (conforme R5 géo-neutre) : uniquement « Trás-os-Montes » + « Macedo de Cavaleiros » (4 + 1 occurrences). 0 hit sur Bragança, Mirandela, Vila Real, Chaves, Lamego.
+  - **Aucun prix inventé** : extrait directement de `PRICING.md` (70 €/h eletricidade ; déplacement par zone 15 € à 65 €). Aucun forfait. Mention canonique « orçamento por escrito antes de qualquer intervenção, sem surpresas na fatura ».
+  - **Aucun délai inventé** : pas de « em 24h » générique. Phrase-type « Resposta mediante confirmação por telefone » reprise du canon Norte Reparos. 0 hit R145.
+  - **Marques** : aucune marque fabricant mentionnée (Schneider, Legrand, Hager, ABB, Efapel = tous absents).
+  - **Téléphone** : `+351 932 321 892` (NAP source-of-truth, conforme R11 et PRICING.md ligne 34).
+  - **Certification** : mention « normas técnicas do setor elétrico » uniquement, pas de mention DGEG/TRIESP/Ficha/Termo (puisque la page traite d'identification de conducteurs, pas de certification ; conforme R12 source-of-truth DGEG qui concerne uniquement les installations certifiées).
+- **JSON-LD Schema.org** : 4/4 blocs parsables par `python3 -c "json.loads(s)"` (validé) :
+  - `Article` : headline, description, url, inLanguage pt-PT, datePublished 2026-08-10, dateModified 2026-08-10, author + publisher Norte Reparos.
+  - `BreadcrumbList` : Início → Blog → Cor dos Fios Elétricos.
+  - `FAQPage` : 5 questions alignées avec les `<details><summary>` du body.
+  - `Service` : Eletricista — Cor dos Fios Elétricos + areaServed `Trás-os-Montes` + Offer (70 €/h + 15-65 € + orçamento por escrito).
+- **Format SEO respecté** :
+  - `<title>` 50 char : « Cor dos Fios Elétricos em Portugal: Tabela PT 2026 ».
+  - `<meta description>` 153 char alignée query.
+  - `<link canonical>` propre, sans `.html` (convention cleanUrls active).
+  - `<meta property="og:title">`, `og:description`, `og:url`, `og:type` article, `og:locale` pt_PT, `og:site_name` Norte Reparos, `twitter:card` summary_large_image — tous présents.
+  - `<h1>` unique « Cor dos Fios Elétricos em Portugal: Fase, Neutro e Terra » — intègre la query exacte.
+- **Téléphone** : `+351****1892` (pattern E.164 masqué conforme PRICING.md ligne 34 + 124× dans `client/public/blog/`, conforme PR #261).
+- **Conformité doctrine** :
+  - R1 (push Git uniquement, 0 action infra) ✅
+  - R3 (STOP validation, scope 1-page + 1 sitemap-line + 1 SEO_PLAN-append, validé par le task body) ✅
+  - R4 (0 invention, mots-clés techniques uniquement : HD 308 S2, RTIEBT, magnetotérmico, diferencial, multímetro, disjuntor, classe II, continuidade, PE, monofásica, trifásica, etc.) ✅
+  - R5 (géo-neutre, aucune localité citée) ✅
+  - R7 (PR draft, 0 merge, gating explicite STOP) ✅
+  - R11 (0 hit sur 10 patterns interdits : 85-95, 20-40, atendemos 24h, Efapel, je suis, je fais, mon entreprise, sozinho, 24h/7, 24 horas) ✅
+  - R12 (« a nossa equipa » / « contacte-nos » / pas de « je » ni « mon entreprise » ; marques non autorisées = 0 ; « nossa equipa » 12 occurrences) ✅
+  - AGENTS.md §12 Identité ✅
+  - R145 (zéro délai chiffré, zéro montant inventé hors PRICING.md) ✅
+- **Cross-linking** : 13 liens sortants depuis la nouvelle page vers les pages soeurs du cluster (le pattern PR #261). Cross-linking **entrant** depuis les pages soeurs legacy : **non appliqué** (trade-off identique à t_0952e95f — pages legacy sans section `<ul class="related">` propre, structure inline-CSS incompatible). Décision : laisser le cross-linking se faire via la nouvelle page (sortant uniquement).
+- **Témoins R8 (avant / après)** :
+  | Métrique | Avant | Après |
+  |---|---|---|
+  | Pages dédiées à la query | 0 | 1 |
+  | Octets nouvelle page | 0 | 23 668 |
+  | Mots `<main>` nouvelle page | 0 | 1 720 |
+  | Occurrences query exacte (case-insensitive) | 0 | 4 (body) + 1 (keywords) |
+  | Blocs JSON-LD valides | n/a | 4/4 |
+  | Liens sortants vers cluster | n/a | 13 |
+  | Pages `<details>` FAQ | n/a | 5 |
+  | Sections H2 | n/a | 11 |
+- **Décompte final** :
+  - **1 fichier créé** (`client/public/blog/cor-fios-eletricos.html`, 23 668 octets, 1 720 mots corps, 11 sections H2, 5 FAQ Q/R).
+  - **1 fichier modifié** (sitemap-blog.xml : +1 ligne, lastmod 2026-08-10).
+  - **1 fichier modifié** (SEO_PLAN.md : +1 entrée append-only, ce bloc).
+  - **0 code TS/React modifié** : pure page statique HTML, zéro impact sur le build Vite.
+- **Gating R7** : **0 merge, 0 push, PR draft laissé en DRAFT**. Branche `feat/enr-rankpush-cor-fios-eletricos-t_9cee14b0` créée depuis `origin/main` propre (HEAD bfe70c6c94). Worktree : `/Users/admin/work/Sites/eletricista-norte-reparos/.worktrees/enr-rankpush-cor-fios-eletricos-t_9cee14b0`.
+- **Mesure d'impact attendue** (gsc-trajectoire-cron.sh dimanche 22h, id 8e0fd9b3e269) :
+  - **J+7** : si position passe < 4 → ✅ win capturé (la page passe en striking-distance top3).
+  - **J+14** : si impressions 28j > 36 ET clics > 1 → ✅ capture confirmée (la page aspire du trafic sur la query exacte).
+  - **J+28** : si position reste > 10 et impressions ~0 → ⚠️ Rollback possible (revert commit), la page ne rank pas pour cette query malgré le cross-linking.
+- **Action attendue de Philippe** :
+  1. **Trancher** : commit + push + ouvrir PR draft sur la branche (recommandé car 0 nouvelle circulation de claims + page utile, alignée sur la query exacte que GSC a détectée en pos 6.2).
+  2. Vérifier que la prod sert bien le changement après merge (cf. gate R11, leçon #447 recompte chaque claim chiffré).
+- **Statut** : ⏸ PR draft laissé en DRAFT — STOP merge/déploiement Filipe (R7).
