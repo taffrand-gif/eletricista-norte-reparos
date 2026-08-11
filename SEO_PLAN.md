@@ -1537,3 +1537,30 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
 - **Leçons liées** : #447 (recompte live avant claim chiffré), R01 doctrine (gates standards), R08 esprit critique (audit contredit brief parent).
 
 Refs : audit `_audit/AUDIT-EXHAUSTIF-31-2026-08-11-ENR.md` §III.1+III.2 §6 verdict final, rapport RAPPORT-AUDIT-CRITIQUE-FINAL-2026-08-10.md §1 (annonce mensongère 31 fichiers).
+
+### 2026-08-12 — t_e99faace — AUDIT-11-08 OFFENSIF publicar equipamento de diagnóstico (ENR, scope 1 fichier)
+
+- **Source** : brief kanban t_e99faace (validé Filipe 11/08). Constat : 5 instruments électriques présents dans `ai.txt` ENR (Fluke T6-1000, Megger MFT1741+, FLIR E96, ROLeak Aqua 3Plus, Câmara de inspeção 30 m) mais mal publiés sur la page pilier — section « 🔬 Equipamento Profissional » trop vague (« Fluke — Multímetros », « FLIR — Câmara térmica »), ne nomme aucun modèle, donc 0 citabilité IA directe (les LLM ne peuvent pas citer ce qui est générique).
+- **Décision R08** : périmètre réduit à **1 fichier** (`client/public/equipa-certificacoes.html` ENR) après audit exhaustif :
+  - CNR (plomberie) : `ai.txt` liste une nomenclature différente (Ridgid FlexShaft K9-102, Câmara de inspeção CCTV, Câmara térmica FLIR, ROLeak Aqua 3Plus, Kit fluorosceína UV) — Fluke T6-1000 n'y figure PAS, donc patcher CNR = inventer un instrument qu'on ne possède pas. **HORS SCOPE.**
+  - ENR (électricité) : `ai.txt` confirme les 5 instruments à publier. **CIBLE.** Page `equipa-certificacoes.html` a déjà une section « 🔬 Equipamento Profissional » mais vague. C'est la seule page pilier candidate.
+  - CU/EU : matériel déjà publié en masse (3500+ occurrences sur CNR, 3000+ sur les autres). **HORS SCOPE.**
+  - Exception maintenue (jet hydrocurage / NIF / zones gelées) : aucun ajout.
+- **Patch** : substitution d'**un seul bloc** dans `client/public/equipa-certificacoes.html` (4 items génériques → 5 instruments nommés avec leur PROBLÈME résolu). +845 octets. Aucune autre ligne touchée (H1, NAP, canonical, OG, Twitter, JSON-LD tous vérifiés identiques).
+- **Doctrine respectée** :
+  - R4 zero-invention : chaque description s'appuie sur une caractéristique listée dans `ai.txt` ENR (ex : FLIR E96 « câmara térmica 43 200 px » repris tel quel). Aucun prix, aucune zone, aucun délai ajouté.
+  - Formulation collective « a nossa equipa » (AGENTS.md §12).
+  - PT-PT strict.
+  - Aucun forbidden token (mesma pessoa / mesmo técnico / sozinho / você / CERTIEL / definitivo DGEG).
+  - Pas de masque téléphone `****` (5 vrais `tel:+351<4chiffres>` vérifiés, dont 0 `****`).
+- **Gates exécutés** :
+  - 5 instruments présents (1 hit chacun) ✅
+  - Anciennes formulations vagues : 0 hit ✅
+  - Forbidden tokens : 0 hit ✅
+  - JSON-LD parse : 5/5 blocs OK (Organization, BreadcrumbList, FAQPage, Service, LocalBusiness) ✅
+  - HTML structure : `<html>/<head>/<body>/<main>/<ul>/<div>/<h2>` balances identiques avant/après ✅
+  - Canonical, og:url, og:title, og:description, twitter:title, twitter:description, meta description : identiques ✅
+  - Garde grammaire R145 : 5 phrases ENTIÈRES relues après patch, aucune formulation du type « intervir quando precisa do dia ou da noite » (cf. leçon R145 11/08).
+- **Gating R7** : **0 merge, 0 push**. PR DRAFT laissé en DRAFT — STOP merge/déploiement Filipe. Branche `feat/t_e99faace-equipamento-diagnostico` créée depuis `origin/main` propre (HEAD 3555ca6a44). Worktree : `/Users/admin/work/Sites/eletricista-norte-reparos/.worktrees/enr-t_e99faace-equipamento`.
+- **Suivi LECONS** : pas de nouvelle leçon (incident 0 sur ce run), auto-évaluation en fin de tâche kanban.
+- **Action attendue de Philippe** : ouvrir PR DRAFT (commande `gh pr create --draft --base main --head feat/t_e99faace-equipamento-diagnostico ...` — voir rapport kanban pour titre/body et sortie de gates), puis trancher merge ou follow-up.
