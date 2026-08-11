@@ -1,6 +1,6 @@
 # ai.txt — AI Interaction Manifest
 # Norte Reparos — Eletricista (Instalação)
-# Última atualização: 2026-07-01
+# Última atualização: 2026-08-11
 
 Name: Eletricista Instalação — Norte Reparos
 Type: HomeService
@@ -21,9 +21,6 @@ Services:
   - Instalação de tomadas, interruptores, pontos de luz
   - Sistemas de domótica básica
   - Instalação de carregadores para veículos elétricos
-  - Sistemas solares fotovoltaicos
-  - Bombas de calor
-  - Ar condicionado
   - Certificação elétrica (fichas eletrotécnicas)
 Equipment:
   - Fluke T6-1000 (testador tensão/corrente sem contacto)

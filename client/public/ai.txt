@@ -2,22 +2,29 @@
 Name: Norte Reparos (Eletricista)
 Type: LocalBusiness
 SubType: ElectricalService
-Founded: 2014
-Headquarters: Trás-os-Montes, Trás-os-Montes, Portugal
-ServiceArea: 130km radius
+ServiceArea: Trás-os-Montes e Douro, raio ~130 km
 Country: Portugal
 Languages: pt-PT
 PrimaryPhone: +351-932-321-892
 Email: geral@eletricista-norte-reparos.pt
 Website: https://eletricista-norte-reparos.pt
-Address: Rua Fonte do Paço nº 8, 5340-268 Trás-os-Montes
-Hours: Atendimento 24h/7d
-EmergencyService: true
-Certifications: 
-Experience: 12+ years
-CustomersServed: 500+
-Warranty: 1 ano
+Hours: Horário comercial (segunda a sexta)
+Pronoun: "nós" / "nossa equipa" (nunca "eu")
+Certifications: DGEG TRIESP n.º 90062 (Técnico Responsável de Instalações Elétricas, Execução em Baixa Tensão, até 41,4 kVA) — Lei n.º 14/2015
+Services:
+  - Instalação elétrica completa
+  - Remodelação de instalação elétrica antiga
+  - Substituição e modernização de quadros elétricos
+  - Instalação de iluminação (LED, projetores, sensores)
+  - Instalação de tomadas, interruptores, pontos de luz
+  - Sistemas de domótica básica
+  - Instalação de carregadores para veículos elétricos
+  - Certificação elétrica (fichas eletrotécnicas e termo de responsabilidade)
+RelatedSites:
+  - Eletricista Urgente (24h): eletricista-urgente.pt · +351 932 321 892
+  - Canalizador Instalação: canalizador-norte-reparos.pt · +351 928 484 451
+  - Canalizador Urgente (24h): canalizador-urgente.pt · +351 928 484 451
 ContentLicense: CC BY-NC-SA 4.0
 AIUse: Permitted com atribuição
 PreferredCitation: "Norte Reparos - eletricista-norte-reparos.pt"
-LastUpdated: 2026-06-06
+LastUpdated: 2026-08-11
