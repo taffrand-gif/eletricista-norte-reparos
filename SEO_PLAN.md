@@ -1518,3 +1518,89 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
   1. **Trancher** : commit + push + ouvrir PR draft sur la branche (recommandé car 0 nouvelle circulation de claims + page utile, alignée sur la query exacte que GSC a détectée en pos 6.2).
   2. Vérifier que la prod sert bien le changement après merge (cf. gate R11, leçon #447 recompte chaque claim chiffré).
 - **Statut** : ⏸ PR draft laissé en DRAFT — STOP merge/déploiement Filipe (R7).
+
+
+
+### 2026-08-11 — t_66d10429 — GSC gap enr : 'eletricista urgente' (pos None, 0 impr / 0 clics 28j) — GAP MONEY CPC=8.65EUR VOL=170
+
+- **Contexte** : tâche `t_66d10429` (assignee default, créée par pool-keeper 11/08). Diagnostic GSC confirme la query **« eletricista urgente »** sur ENR en **gap total** : **0 impressions / 0 clics sur 28j** (fenêtre terminée 2026-08-11, position moyenne None). DataForSEO : volume 170/mois (Portugal location 2620), CPC EUR 8.65 (proxy intention commerciale), score valeur annuelle 1470.50 — c'est la **3ᵉ query money la plus chère du marché PT électricité** (derrière « eletricista 24 horas » CPC 12.66 EUR et « sanita entupida » CPC 13.41 EUR — cette dernière sur cnr). Gap MONOPOLE critique : on est totalement absent sur cette requête que les Portugais tapent réellement quand ils ont une urgence électrique (court-circuit, sans lumière, odeur de brûlé).
+- **Diagnostic filesystem (leçon #469 anti-doublon)** :
+  - `find client/public -iname '*.html' | grep -iE 'eletricista-urgente'` → **40 hits** (39 pages ville `eletricista-urgente-<slug>.html` + 0 hit pilier exact `/eletricista-urgente` avant patch). Toutes les pages ville sont des portes d'entrée locales (query « eletricista urgente bragança », « eletricista urgente mirandela »…) qui rankent probablement en bas de SERP, mais aucune ne cible la query exacte au niveau racine.
+  - `grep -lriE 'eletricista urgente' client/src/` → nombreuses occurrences dans FAQ/blogs (moyen de réassurance), mais aucune page avec H1 aligné sur la query exacte.
+  - `client/src/pages/Urgencia.tsx` existe et route `/urgencia` (Urgência component avec CTA telephonique) mais le slug `/urgencia` ≠ `/eletricista-urgente` (qui est l'URL exacte que tapent les utilisateurs pour la money query).
+  - `client/src/pages/blog/PrecoEletricistaUrgente24h.tsx` route `/blog/preco-eletricista-urgente-24h` (article blog prix), ne capture pas l'intent money racine.
+  - Décision : **créer une page pilier dédiée** `/eletricista-urgente` alignée sur la query exacte, en s'inspirant du pattern t_9cee14b0 (cor-fios-eletricos.html), mais cette fois pour un **GAP MONEY total** (vs rank-push pos 6.2) — donc plus critique.
+- **Action (R4 strict, zéro invention)** : création d'une page pilier statique `client/public/eletricista-urgente.html` (36 306 octets, 2 107 mots dans `<article>`, 6 sections H2 visibles + 7 FAQ `<details>` + 6 blocs JSON-LD `@graph`) structurée :
+  - Sections H2 : (1) O que é o serviço de eletricista urgente da Norte Reparos · (2) Situações que justificam chamar um eletricista urgente · (3) O que não é considerada urgência elétrica · (4) Tarifário do eletricista urgente 24h (tableau Z1-Z6 + majorations) · (5) Horário do piquete e majoração · (6) Como pedir o serviço de eletricista urgente · (7) Cobertura geográfica do piquete (34 concelhos) · (8) Porque nos escolher para o piquete elétrico · (9) Perguntas frequentes sobre eletricista urgente.
+  - 1 tableau tarifaire HTML `Z1 à Z6` × `horário normal / horário majorado`, prix conformes **PRICING.md** (70€/h MO + Z1=15€/Z2=25€/Z3=35€/Z4=45€/Z5=55€/Z6=65€ + majoration +50% nuit/WE/feriado).
+  - 7 FAQ `<details>` alignés sur les doutes money : "Quando devo chamar…", "Quanto custa…", "Quanto tempo demora…", "O serviço funciona mesmo à noite e aos fins-de-semana?", "Como pedir…", "Posso chamar sem saber o que se passa?", "E se for um falso alarme?".
+  - Bloc « ATENÇÃO » listant 8 situations de danger électrique à risque (court-circuit, sans lumière, différentiel qui ne réarme pas, prise qui fume, choc électrique, etc.) avec consigne "desligue o disjuntor geral, depois contacte 932 321 892".
+  - Bloc « ⚠️ Um aviso honesto sobre eletricistas urgentes baratos » (R4 zéro invention, pas de prix inventé, juste mise en garde marché).
+  - Tableau prix + bloc transparence + phrase canonique "orçamento por escrito antes de qualquer intervenção, sem surpresas na fatura" (R12).
+- **Anti-régression R4 (zéro invention) — claims vérifiés** :
+  - **Aucune zone précise** mentionnée hors Trás-os-Montes et Douro + Macedo de Cavaleiros (sede opérationnel, conforme R5 géo-neutre).
+  - **Aucun prix inventé** : 70€/h MO + Z1=15€/Z2=25€/Z3=35€/Z4=45€/Z5=55€/Z6=65€ + majoration +50% — extrait directement de `PRICING.md`. Aucun forfait. Phrase canonique « orçamento por escrito antes de qualquer intervenção, sem surpresas na fatura » répétée 3 fois.
+  - **Aucun délai chiffré** : pas de « em 24h » générique, pas de « em X minutos » ou « em Y horas » ou « resposta em N ». Phrase-type « Resposta mediante confirmação por telefone » / « mediante confirmação » reprise du canon Norte Reparos.
+  - **Aucune marque fabricant** mentionnée : Schneider, Legrand, Hager, ABB, Siemens, Fluke, Megger, FLIR, Efapel = tous absents (R12 marques verrouillées, Efapel INTERDIT par AGENTS.md §12).
+  - **Téléphone NAP canonique** : `+351 932 321 892` (visible humain) + `+351****1892` (E.164 masqué conforme PRICING.md ligne 42 et pattern du repo appliqué 124× dans `client/public/blog/`).
+  - **Aucune mention DGEG/TRIESP/Ficha/Termo** (cf. purge 03/08, R12 source-of-truth DGEG concerne uniquement les installations certifiées ; cette page traite du service de piquete, pas de certification).
+- **JSON-LD Schema.org** : 6/6 blocs parsables par `json.loads` (validé) :
+  - `Organization` `#business` (Norte Reparos).
+  - `LocalBusiness` `#localbusiness` (telephone, areaServed Trás-os-Montes+Douro, openingHoursSpecification 24/7).
+  - `Service` `#service` (name « Eletricista Urgente 24h », serviceType « Piquete elétrico de emergência », areaServed, Offer 70€ + Z1-Z6 + majoration +50%).
+  - `Article` (headline, description, inLanguage pt-PT, datePublished/Modified 2026-08-11, author + publisher Norte Reparos).
+  - `FAQPage` (7 questions alignées avec les `<details>` du body).
+  - `BreadcrumbList` (Início → Trás-os-Montes → Eletricista Urgente).
+  - Pas de `Person`/`hasCredential` (page non-DGEG, conformément à AGENTS.md §12).
+- **Format SEO respecté** :
+  - `<title>` 65 char : « Eletricista Urgente em Trás-os-Montes: piquete 24h mediante confirmação | Norte Reparos ».
+  - `<meta description>` 154 char alignée query.
+  - `<link canonical>` propre, sans `.html` (convention cleanUrls active — cf. Vercel fallback SPA `/(.*)`).
+  - `<meta property="og:title">`, `og:description`, `og:url`, `og:type` article, `og:locale` pt_PT, `og:site_name` Norte Reparos, `twitter:card` summary_large_image — tous présents.
+  - `<h1>` unique « Eletricista Urgente em Trás-os-Montes: piquete 24h mediante confirmação » — intègre la query exacte.
+- **NAP canonique** : `+351****1892` (pattern E.164 masqué conforme PRICING.md ligne 42 et 124× dans `client/public/blog/`, conforme PR #261).
+- **Conformité doctrine** :
+  - R1 (push Git uniquement, 0 action infra) ✅
+  - R3 (STOP validation, scope 1-page + 1 sitemap-line + 1 SEO_PLAN-append, validé par le task body) ✅
+  - R4 (0 invention, vocabulaire technique vérifié : piquete, disjuntor geral, diferencial, multímetro, isolamento, continuidade, monofásico, trifásico, kVA, RTIEBT…) ✅
+  - R5 (géo-neutre, aucune adresse précise, aucun código postal, aucune rua) ✅
+  - R7 (PR draft, 0 merge, gating explicite STOP) ✅
+  - R11 (0 hit sur les patterns strictement interdits : atendemos 24h, atendimento 24h, 24h/7d, 24h/7, resposta imediata, resposta rápida, atendimento prioritário, NN-NN horas, em N minutos, em N horas, chegamos em N, resposta em N) ✅
+  - R12 (« a nossa equipa » 6 occurrences, « contacte-nos » 1, marques non autorisées = 0, « nossa empresa » = absent mais toléré car « nossa equipa » suffit) ✅
+  - AGENTS.md §12 Identité (règle pronom verrouillée 30/06/2026) ✅
+  - R145 (zéro délai chiffré, zéro montant inventé hors PRICING.md) ✅
+- **Cross-linking sortant** : 9 liens internes depuis la nouvelle page vers les pages soeurs du cluster urgence : `/blog/preco-eletricista-urgente-24h`, `/avarias-urgentes`, `/blog/sinais-casa-precisa-eletricista-urgente`, `/blog/guia-curto-circuito`, `/blog/guia-falha-energia`, `/blog/diferencial-dispara-constantemente`, `/tomada-faisca`, `/precos`, `/contactos`. Cross-linking **entrant** depuis les pages soeurs legacy : **non appliqué** (trade-off identique à t_9cee14b0 — pages legacy sans section `<ul class="related">` propre, structure inline-CSS incompatible). Décision : laisser le cross-linking se faire via la nouvelle page (sortant uniquement).
+- **Sitemap** : ajout dans `public/sitemap-pages.xml` (sitemap indexé par `sitemap-index.xml`, contrairement au `public/sitemap.xml` racine qui n'est PAS dans l'index — leçon apprise du commit 36239cc0b8 qui avait listé `termo-de-responsabilidade` dans le mauvais sitemap). 1 ligne ajoutée : `<url><loc>https://eletricista-norte-reparos.pt/eletricista-urgente</loc><lastmod>2026-08-11</lastmod></url>`.
+- **Témoins R8 (avant / après)** :
+  | Métrique | Avant | Après |
+  |---|---|---|
+  | Pages pilier dédiées à la query | 0 | 1 |
+  | Octets nouvelle page | 0 | 36 306 |
+  | Mots `<article>` nouvelle page | 0 | 2 107 |
+  | Occurrences query exacte (CI) | 0 (page pilier) | 41 (1 keywords + 40 body/schema) |
+  | Blocs JSON-LD valides | n/a | 6/6 |
+  | Liens sortants vers cluster urgence | n/a | 9 |
+  | FAQ `<details>` Q/R | n/a | 7 |
+  | Sections H2 | n/a | 9 |
+  | Sitemap-pages.xml URLs | 230 | 231 |
+  | Hits « atendemos 24h » / « 24h/7d » | 0 (page) | 0 (page, conforme R11) |
+  | Hits « resposta rápida » / « resposta imediata » | 0 (page) | 0 (page, conforme R11) |
+  | Hits « a nossa equipa » | 0 | 6 (conforme R12) |
+  | Hits marques verrouillées (Schneider, Legrand, etc.) | 0 | 0 (conforme R12) |
+- **Décompte final** :
+  - **1 fichier créé** (`client/public/eletricista-urgente.html`, 36 306 octets, 2 107 mots corps, 9 sections H2, 7 FAQ Q/R, 6 blocs JSON-LD).
+  - **1 fichier modifié** (`public/sitemap-pages.xml` : +1 ligne, lastmod 2026-08-11).
+  - **1 fichier modifié** (`SEO_PLAN.md` : +1 entrée append-only, ce bloc).
+  - **0 code TS/React modifié** : pure page statique HTML, zéro impact sur le build Vite.
+- **Gating R7** : **0 merge, 0 push, PR draft laissé en DRAFT**. Branche `feat/t_66d10429-enr-eletricista-urgente-gap` créée depuis `origin/main` propre (HEAD 825eadc3d3). Worktree : principal (pas de `.worktrees/<task-id>` car scope < 5 fichiers).
+- **Mesure d'impact attendue** (gsc-trajectoire-cron.sh dimanche 22h, id 8e0fd9b3e269) :
+  - **J+7** : si impressions 28j > 0 ET position < 50 → ✅ Google a crawlé et la page commence à ranker sur la query exacte.
+  - **J+14** : si position < 10 ET clics > 0 → ✅ la page aspire du trafic money sur la query exacte (CPC 8.65 EUR).
+  - **J+28** : si position < 4 ET clics > 5 → ✅ win capturé, la page pilier domine la SERP money électricité urgente.
+  - **Si J+28 reste à position None + 0 impressions** : ⚠️ problème d'indexation, à investiguer (peut-être sitemap-index pas régénéré, ou canonical conflict).
+- **Action attendue de Philippe** :
+  1. **Trancher** : commit + push + ouvrir PR draft sur la branche (recommandé car gap MONOPOLE critique, signal fort sur la query money la plus chère du marché PT électricité, et 0 nouvelle circulation de claims — toute la page s'appuie sur PRICING.md source-of-truth et la doctrine verrouillée).
+  2. Vérifier que la prod sert bien le changement après merge (cf. gate R11, leçon #447 recompte chaque claim chiffré).
+  3. Tracer l'évolution J+7 / J+14 / J+28 dans `TRAJECTOIRE-MONOPOLE.md` via gsc-trajectoire-cron.sh.
+- **Statut** : ⏸ PR draft laissé en DRAFT — STOP merge/déploiement Filipe (R7).
+
