@@ -1518,3 +1518,87 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
   1. **Trancher** : commit + push + ouvrir PR draft sur la branche (recommandé car 0 nouvelle circulation de claims + page utile, alignée sur la query exacte que GSC a détectée en pos 6.2).
   2. Vérifier que la prod sert bien le changement après merge (cf. gate R11, leçon #447 recompte chaque claim chiffré).
 - **Statut** : ⏸ PR draft laissé en DRAFT — STOP merge/déploiement Filipe (R7).
+
+### 2026-08-11 — t_74af19c3 — GSC gap enr : 'eletricista 24 horas' (pos None, 0 impr / 0 clics 28j, CPC=12.66 EUR vol=170 score=2152.20)
+
+**Cause racine** (confirmée par audit pré-patch) : le pilier `client/public/eletricista-24-horas.html` créé par PR #259 (commit `63dde66ee0`, branche `feat/enr-24-horas`, 17/07) avait été **oublié d'indexer dans les sitemaps source** servis par Vercel. `grep -oE '<loc>[^<]*24-horas[^<]*</loc>' client/public/sitemap.xml` AVANT patch = **1 ligne (blog/eletricista-urgente-24-horas-braganca, AUTRE page)** — la page pilier « eletricista-24-horas » proprement dite avait 0 entrée. Sans sitemap entry, Google ne crawle/discovery jamais la page → 0 impressions 28j sur la query la plus chère du marché portugais (CPC=12.66 EUR). **Même pattern orphelin que PR #301 (audit F1)** résolu pour 6 pages HUB DGEG le 10/08.
+
+**Fix appliqué** (scope strict, 5 fichiers, 26 insertions / 14 suppressions, PR #304 draft) :
+
+1. **Indexation sitemap** (le fix racine du GAP). Ajout `<url><loc>https://eletricista-norte-reparos.pt/eletricista-24-horas</loc><lastmod>2026-08-11</lastmod><priority>0.9</priority></url>` dans :
+   - `client/public/sitemap.xml` (canonical Google, format one-line, source `robots.txt` Sitemap 1)
+   - `client/public/sitemap-plain.xml` (format multi-line, source `robots.txt` Sitemap 2)
+   - `client/public/sitemap-priority.xml` (format multi-line, mirror interne)
+   - `client/public/sitemap-pages.xml` (format mixed, référencé via `sitemap-index.xml`)
+   - **Priorité 0.9** : alignée money pages (`/precos`, `/equipamento-recomendado`, `/contacto`). Max de la grille site pour signaler à Google que c'est une page pilier money.
+   - **lastmod 2026-08-11** : date du patch (t_74af19c3).
+
+2. **Réconciliation grille PRICING.md** (R4 zéro faux contenu). La grille zones + Ficha Eletrotécnica était codée sur l'ancien barème (Z2=20/Z3=30/Z6=50/Ficha=350) créé avant la mise à jour `PRICING.md` du 2026-08-10 (t_ed82226d — prix ficha eletrotécnica 250 EUR publié sur /precos). Remplacement systématique vers le barème canonique PRICING.md dans **3 emplacements** :
+   - `<meta name="description">` : « Z1-Z6 (15€ a 50€ deslocação) » → « (15€ a 65€ deslocação) »
+   - Schema.org `Service.offers` JSON-LD : 6 entries (Z2=25/Z3=35/Z4=45/Z5=55/Z6=65 ; Z1=15 inchangé)
+   - Schema.org `FAQPage` JSON-LD : Q2 (range 15€-65€), Q3 (grille complète Z2-Z6 alignée PRICING), Q5 (ajout « a partir de 250 € — preço único cobrindo os dois documentos »)
+   - Body `<table>` (5 lignes `<tr>` Z2-Z6 modifiées)
+   - Body FAQ Q2/Q3/Q5 (3 paragraphes `<p>` modifiés)
+   - Body `<tr>` Ficha Eletrotécnica : « a partir de 350 € » → « a partir de 250 € » + ajout wording canonique « preço único cobrindo os dois documentos » (doctrine Filipe, R4)
+
+**Témoins R8 (avant / après)** :
+
+| Métrique | Avant | Après |
+|---|---|---|
+| Entrées sitemap.xml (URL pilier) | 0 | 1 |
+| Entrées sitemap-plain.xml | 0 | 1 |
+| Entrées sitemap-priority.xml | 0 | 1 |
+| Entrées sitemap-pages.xml | 0 | 1 |
+| JSON-LD Service.offers Z2.price | 20.00 | 25.00 ✅ |
+| JSON-LD Service.offers Z3.price | 30.00 | 35.00 ✅ |
+| JSON-LD Service.offers Z4.price | 35.00 | 45.00 ✅ |
+| JSON-LD Service.offers Z5.price | 45.00 | 55.00 ✅ |
+| JSON-LD Service.offers Z6.price | 50.00 | 65.00 ✅ |
+| FAQPage Q2 « entre 15 € e X € » | 50 € | 65 € ✅ |
+| FAQPage Q3 grille Z2-Z6 | grille ancier | grille PRICING.md ✅ |
+| FAQPage Q5 « a partir de 250 € » | absent | présent ✅ |
+| Body table Z2-Z6 (5 lignes) | grille ancier | grille PRICING.md ✅ |
+| Body table Ficha « a partir de 350 € » | 350 € | 250 € ✅ |
+| Body FAQ Q2/Q3/Q5 (3 paragraphes) | ancier | aligné PRICING ✅ |
+| Meta description « Z1-Z6 (15€ a X€) » | 50€ | 65€ ✅ |
+| R11 (10 patterns interdits, page) | 0 hit | 0 hit ✅ |
+| R12 (délai chiffré, page) | 0 hit | 0 hit ✅ |
+| XML validité sitemaps (4 fichiers) | n/a | 4/4 OK ✅ |
+
+**Conformité doctrine** (toutes les gates) :
+- R1 OpenClaw : N/A, push Git seul (Vercel auto-deploy post-merge)
+- R3 STOP validation : PR draft, 0 fusion sans GO Filipe
+- R4 zéro invention : prix 100% repris de `PRICING.md` (verrouillé 2026-08-10 par Filipe)
+- R5 géo-neutre : pas de `streetAddress` précise, Trás-os-Montes agrégé conservé
+- R6 pas de force-push : branche `feat/t_74af19c3-enr-eletricista-24h-sitemap` créée depuis `feat/t_1b984298-chantier2-francais-pt-pt`, push incrémental
+- R7 zéro auto-merge : label draft appliqué, attente GO merge Filipe
+- R11 zéro faux contenu : 10 patterns interdits = 0 hit
+- R12 pas de délai chiffré : 0 hit
+- R145 zero-delay-sweep : OK
+- R8 témoins AVANT/APRÈS : tableau ci-dessus
+
+**Décompte final** :
+- **4 fichiers modifiés** (sitemap.xml, sitemap-plain.xml, sitemap-priority.xml, sitemap-pages.xml)
+- **1 fichier modifié** (`client/public/eletricista-24-horas.html`)
+- **0 code TS/React modifié** : pure page statique HTML + sitemaps XML, zéro impact sur le build Vite.
+- **PR #304 draft** : `https://github.com/taffrand-gif/eletricista-norte-reparos/pull/304`
+- **Branche** : `feat/t_74af19c3-enr-eletricista-24h-sitemap` (poussée sur origin)
+- **Worktree** : `/Users/admin/work/Sites/.worktrees/t_74af19c3`
+- **Commit** : `cd087c1339 fix(enr,seo): indexar pilier eletricista-24-horas + aligner grille zones/Ficha sur PRICING.md (CPC=12.66 GAP, t_74af19c3)`
+
+**Mesure d'impact attendue** (`gsc-trajectoire-cron.sh` dimanche 22h, id `8e0fd9b3e269` — APPEND `TRAJECTOIRE-MONOPOLE.md`) :
+- **J+7** : si impressions 28j > 0 → ✅ GAP comblé, sitemap + indexation GSC fonctionnent.
+- **J+14** : si position moyenne < 30 ET clics > 0 → ✅ premières positions captées.
+- **J+28** : si position < 15 ET impressions > 50 → ✅ page pilier money active (CPC max marché).
+- **J+60** : si position < 5 ET impressions > 100 → 🎯 strike zone (potentiel featured snippet + top-3 money).
+
+**Action attendue de Philippe** :
+1. **Trancher** : merge PR #304 (recommandé car fix = indexation sitemap + réconciliation grille PRICING.md ; 0 invention, aligné doctrine, 2 gates R7/R3 dépendent).
+2. Vérifier prod : `curl -sI https://eletricista-norte-reparos.pt/eletricista-24-horas` → 200 OK après deploy Vercel auto.
+3. Demander indexation immédiate via Google Search Console → inspecter URL.
+
+**Note de cohérence cross-repo (escalade future, hors scope R7)** : le patch est **strictement scopé à la page pilier `eletricista-24-horas.html`**. Les pages `precos-eletricista.html`, `areas-atuacao.html` (et ~300 autres pages ENR) portent encore la **même grille anachronique** (Z2=20/Z3=30/Z6=50/Ficha=350). Réconciliation cross-site = chantier distinct, à traiter en carte fille post-merge PR #304.
+
+Refs : t_74af19c3, PR #259 (création page), PR #301 (pattern sitemap orphelin F1), t_ed82226d (PRICING.md 250€), AUDIT-FINAL-4-SITES-2026-08-10.md D.4 (F1 même classe de bug).
+
+**Statut** : ⏸ PR #304 draft laissé en DRAFT — STOP merge/déploiement Filipe (R7).
