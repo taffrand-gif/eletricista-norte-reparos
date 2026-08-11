@@ -1519,3 +1519,31 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
   1. **Trancher** : commit + push + ouvrir PR draft sur la branche (recommandé car 0 nouvelle circulation de claims + page utile, alignée sur la query exacte que GSC a détectée en pos 6.2).
   2. Vérifier que la prod sert bien le changement après merge (cf. gate R11, leçon #447 recompte chaque claim chiffré).
 - **Statut** : ⏸ PR draft laissé en DRAFT — STOP merge/déploiement Filipe (R7).
+
+---
+
+### 2026-08-11 06:57 · t_b655738d — APPLIQUER verdict AUDIT-EXHAUSTIF-31-2026-08-11-ENR.md
+
+- **Contexte** : tâche `t_b655738d` (assignee default, kanban dispatch 11/08). Lecture intégrale rapport `_audit/AUDIT-EXHAUSTIF-31-2026-08-11-ENR.md` (349 lignes, 6 sections). Re-mesure brute des 3 P0 claims avant action (leçon #447) :
+  - III.1 Atendimento confirmado = **1 fichier** (confirmé rapport)
+  - III.2 Resposta mediante confirmação = **3366 fichiers** (vs rapport 2590, +30 % suite merges nocturnes PR #305/#308/#309)
+  - V.1 sitemap lastmod = **toutes figées à 2026-06-06** (confirmé, 66 jours)
+  - III.32 quem assina = **1 fichier / 6 occurrences** (confirmé rapport)
+- **Décisions applicabilité** :
+  - **APPLIQUÉ** (PR DRAFT #310, 3 fichiers, scope strict) : action #3 (FAQ 'quem assina' sur pilier DGEG) + action #5 (LastUpdated ai.txt 2026-06-06 → 2026-08-11)
+  - **ESCALADÉ** (4 entrées ESCALADE-FILIPE.md) : action #1 (III.2 batch 3366 fichiers, contexte mixte), action #2 (V.1 sitemap pipeline infra), drift prix 350 → 250 EUR (PR #300 vs DGEG-SOURCE-OF-TRUTH conflict), violations R5/R145 sur ai.txt (4 lignes préexistantes)
+- **Patch appliqué (PR DRAFT #310)** :
+  - `client/public/ficha-eletrotecnica.html` (+12/-0) : ajout FAQ JSON-LD "Quem assina a Ficha Eletrotécnica?" (9ᵉ question) + H3 visible "Quem assina efetivamente os documentos"
+  - `client/public/termo-de-responsabilidade.html` (+6/-2) : rename FAQ JSON-LD "Quem pode assinar" → "Quem assina" + enrichissement réponse (TRIESP 90062 explicite) + H3 visible
+  - `client/public/ai.txt` (+1/-1) : LastUpdated 2026-06-06 → 2026-08-11
+- **Témoins grep (gate R11/R12/R145/doctrine §12)** :
+  - R11 zéro invention : 0 NAP/tel/zone inventé
+  - R12 collectif : 2 "A nossa equipa" / "o nosso técnico"
+  - R145 zéro délai chiffré : 0 "24h/7" / "em X min" / "resposta em N"
+  - Doctrine §12 NAP 932 321 892 : inchangé (0 modif)
+  - DGEG TRIESP 90062 : 10 occurrences (préservé + ajouté)
+  - Contamination plomberie : 0 "928 484 451" / "canalização"
+- **JSON-LD validé** : 9 FAQ ficha (était 8) / 8 FAQ termo (renommé 1), `json.loads` 0 erreur
+- **Branche** : `fix/enr-quem-assina-dgeg-faq-t_b655738d` (commit 48d9f99347), push OK sur origin, PR DRAFT #310 ouverte (MERGEABLE).
+- **Gating R7** : **0 merge, 0 push prod, PR draft laissé en DRAFT** — STOP validation Filipe obligatoire avant merge.
+- **Liens** : PR #310 https://github.com/taffrand-gif/eletricista-norte-reparos/pull/310 · 4 entrées ESCALADE-FILIPE.md (escalades #1 à #4).
