@@ -1519,3 +1519,19 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
   1. **Trancher** : commit + push + ouvrir PR draft sur la branche (recommandé car 0 nouvelle circulation de claims + page utile, alignée sur la query exacte que GSC a détectée en pos 6.2).
   2. Vérifier que la prod sert bien le changement après merge (cf. gate R11, leçon #447 recompte chaque claim chiffré).
 - **Statut** : ⏸ PR draft laissé en DRAFT — STOP merge/déploiement Filipe (R7).
+
+### 2026-08-11 — t_b655738d — Batch R145 ENR : 'Resposta mediante confirmação' → 'Atendimento confirmado por telefone' (3366 fichiers, audit III.1+III.2)
+
+- **Source** : audit `_audit/AUDIT-EXHAUSTIF-31-2026-08-11-ENR.md` §III.1+III.2 (constat : R145 sous-compté ×100, 3366 fichiers legacy 'Resposta' non patchés).
+- **Script** : `scripts/lot-r145-resposta-para-atendimento.py` (R12 doctrine pattern, idempotent, contrôle positif avant/après, scope strict).
+- **Témoins R8** :
+  - Avant  : `grep -lrE 'Resposta mediante confirmação' client/public/ | wc -l` = **3366** ✅
+  - Après  : `grep -lrE 'Resposta mediante confirmação' client/public/ | wc -l` = **0** ✅
+  - Après  : `grep -lrE 'Atendimento confirmado por telefone' client/public/ | wc -l` = **3367** (= 3366 patchés + 1 fichier pré-existant eletricista-24-horas.html) ✅
+  - Total remplacements : 13 659 (≈ 4 occurrences/fichier, zones FAQPage JSON-LD + `<h3>` visible).
+- **JSON-LD** : spot-check `precos-eletricista.html` (6 blocs JSON-LD) tous valides (`json.loads` OK) après patch — la chaîne legacy était DANS les `acceptedAnswer.text` de FAQPage, la chaîne R145 reste dans la même position sans casser la structure.
+- **PR draft** : à ouvrir sur `fix/enr-r145-batch-t_b655738d` (3367 fichiers, scope strict = 1 substitution littérale, 0 nouvelle circulation de claims).
+- **Statut** : ⏸ PR DRAFT laissé en DRAFT — STOP merge/déploiement Filipe (R7 AGENTS.md §7). Aucune mutation prod tant que GO explicite.
+- **Leçons liées** : #447 (recompte live avant claim chiffré), R01 doctrine (gates standards), R08 esprit critique (audit contredit brief parent).
+
+Refs : audit `_audit/AUDIT-EXHAUSTIF-31-2026-08-11-ENR.md` §III.1+III.2 §6 verdict final, rapport RAPPORT-AUDIT-CRITIQUE-FINAL-2026-08-10.md §1 (annonce mensongère 31 fichiers).
