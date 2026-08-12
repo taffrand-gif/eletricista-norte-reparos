@@ -6548,6 +6548,47 @@
       "destination": "/eletricista-fiaes",
       "statusCode": 301
     }
+,
+    {
+      "source": "/melhor-avaria-tavora",
+      "destination": "/melhor-avaria-braganca",
+      "statusCode": 301
+    },
+    {
+      "source": "/melhor-avaria-meda",
+      "destination": "/melhor-avaria-braganca",
+      "statusCode": 301
+    },
+    {
+      "source": "/melhor-certificacao-dgeg-tavora",
+      "destination": "/melhor-certificacao-dgeg-braganca",
+      "statusCode": 301
+    },
+    {
+      "source": "/melhor-certificacao-dgeg-meda",
+      "destination": "/melhor-certificacao-dgeg-braganca",
+      "statusCode": 301
+    },
+    {
+      "source": "/melhor-iluminacao-led-tavora",
+      "destination": "/melhor-iluminacao-led-braganca",
+      "statusCode": 301
+    },
+    {
+      "source": "/melhor-iluminacao-led-meda",
+      "destination": "/melhor-iluminacao-led-braganca",
+      "statusCode": 301
+    },
+    {
+      "source": "/melhor-quadro-eletrico-tavora",
+      "destination": "/melhor-quadro-eletrico-braganca",
+      "statusCode": 301
+    },
+    {
+      "source": "/melhor-quadro-eletrico-meda",
+      "destination": "/melhor-quadro-eletrico-braganca",
+      "statusCode": 301
+    }
   ],
   "ignoreCommand": "if bash ./vercel-ignore.sh; then exit 0; else exit 1; fi",
   "cleanUrls": true
