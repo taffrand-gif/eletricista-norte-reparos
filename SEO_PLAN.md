@@ -1566,3 +1566,30 @@ Refs : audit `_audit/AUDIT-EXHAUSTIF-31-2026-08-11-ENR.md` §III.1+III.2 §6 ver
 - **Gating R7** : **0 merge, 0 push**. PR DRAFT laissé en DRAFT — STOP merge/déploiement Filipe. Branche `feat/t_e99faace-equipamento-diagnostico` créée depuis `origin/main` propre (HEAD 3555ca6a44). Worktree : `/Users/admin/work/Sites/eletricista-norte-reparos/.worktrees/enr-t_e99faace-equipamento`.
 - **Suivi LECONS** : pas de nouvelle leçon (incident 0 sur ce run), auto-évaluation en fin de tâche kanban.
 - **Action attendue de Philippe** : ouvrir PR DRAFT (commande `gh pr create --draft --base main --head feat/t_e99faace-equipamento-diagnostico ...` — voir rapport kanban pour titre/body et sortie de gates), puis trancher merge ou follow-up.
+
+### 2026-08-13 — R12/R4 : assainissement du FAQPage JSON-LD + clôture du rang 1 Footer (loop Cowork)
+- **Contexte** : tâche prévue = rang 1 de la file loop (`Footer.tsx`, 7 occ R12). Statué en lecture, **puis violation plus grave détectée dans le JSON-LD et traitée en priorité (R11/R12)**.
+- **Méthode : binôme cross-repo comme source de vérité.** `client/src/components/StructuredData.tsx` est le **même composant** sur `canalizador-norte-reparos`, avec le **même bloc `faqSchema`** et la **même Question**. La version CNR est déjà conforme ; la version ENR ne l'était pas. Les remplacements sont des **transplants verbatim**, pas des réécritures.
+
+#### 1. `client/src/components/StructuredData.tsx` — 3 corrections dans `faqSchema` (5 → 4 questions)
+| # | Question | Avant | Traitement |
+|---|---|---|---|
+| Q1 | `Qual é o horário de atendimento do ${config.serviceType}?` | « Estamos disponíveis **Atendimento 24h/7d, 7 dias por semana, incluindo fins de semana e feriados. Serviço de urgência permanente.** » | **Transplant verbatim CNR** : « Atendimento por telefone durante o horário comercial. Para questões urgentes fora de horário, deixe mensagem e respondemos assim que possível. » |
+| Q2 | « Quanto tempo demora a chegar em caso de urgência? » | « O nosso tempo médio de resposta em situações de urgência **é rápido**. Contacte-nos e a nossa equipa **actua com brevidade**. » | **Retrait du couple Q/R** — délai + claim vague, aucune réponse honnête ET conforme n'existe. Patron validé par le merge de la **PR #200** (EU). |
+| Q4 | « Quanto custa uma intervenção? » | « Os preços variam conforme o serviço e a localização. Oferecemos **sem compromisso e sem compromisso**. **Preços a partir de 50€ para instalação de tomadas.** » | **Retrait du prix inventé** + correction du doublon de purge. Remplacement verbatim CNR : « O orçamento é sempre fornecido por escrito antes de qualquer intervenção, sem compromisso. » |
+- **R4 — le « 50€ » est un prix inventé** : absent de `PRICING-CANONIQUE.md`. La grille ENR est **70€/h + deslocação Z1-Z6 de 15€ à 65€**, majoration `urgencyMultiplier: 1.5`. Aucun forfait de 50€ n'existe.
+- **Gravité** : la surface est le **JSON-LD**, donc **ce que Google lit et cite**. Un claim de disponibilité et un prix inventé y pèsent davantage que dans le corps de page.
+- **Doublon `sem compromisso e sem compromisso`** : artefact de la purge « orçamento gratuito » (doctrine du 11/08, PR #274). Même famille que les suffixes orphelins relevés sur CU.
+
+#### 2. `client/src/components/Footer.tsx` — rang 1 STATUÉ puis CLOS
+- Retrait du `<li>` « Horário: **Atendimento 24h/7d, 7 dias por semana** » — **retrait pur**, aligné sur le jumeau CNR dont le Footer ne porte **aucun** bloc Horário. Import `Clock` devenu inutilisé retiré, import aligné verbatim sur CNR.
+- **Statut de l'entrée : ✅ CLOSE.** Sur les 7 occurrences R12, **2** étaient cette ligne (violation réelle) et **5** sont le maillage de segmentation d'intent vers les sites frères (`eletricista-urgente.pt`, `canalizador-urgente.pt`) — **hors périmètre**, exactement la conclusion de la clôture `Footer.tsx` sur CNR le 10/08. Compteur 7 → 5, **résiduel entièrement hors périmètre : ne pas repatcher au compteur.**
+- **Témoins R8 (avant → après)** : `Atendimento 24h/7d` (Footer) **1 → 0** · `7 dias por semana` (Footer) **1 → 0** · `Clock` **2 → 0** · `urgente` **4 → 4** et `canalizador-norte-reparos.pt` **1 → 1** (contrôles positifs — le maillage est intact).
+- **Témoins R8 sur `client/src/` (avant → après)** : `Serviço de urgência permanente` **1 → 0** · `Quanto tempo demora a chegar em caso de urgência` **4 → 3** · `a partir de 50€` **2 → 1** · `sem compromisso e sem compromisso` **5 → 4** · `Estamos disponíveis` **5 → 4** · `Atendimento 24h/7d` **65 → 64**. Chaque témoin recule **d'exactement 1** : le patch n'a touché que les fichiers visés (contrôle positif).
+- **Contrôle de sanité** : `./node_modules/.bin/tsc --noEmit` → **total 82** (baseline conforme), **0 erreur** sur les 2 fichiers patchés.
+- **Conformité** : R4 (zéro invention — transplants verbatim CNR et retraits), R6, R7 (aucun merge), R8, R-WT (worktree), commit atomique (2 fichiers = 2 commits).
+- **Statut** : ✅ Fait — PR ouverte, en attente de GO/merge Philippe (R7).
+
+#### Reste à arbitrer dans le même `faqSchema` — NON traité (R4 : pas d'invention)
+- **Q3 « Qual é a zona de cobertura? »** : ENR annonce un **rayon de 130 km**, CNR **100 km**, pour la même région. De plus la liste de villes ENR contient **« Trás-os-Montes »** comme s'il s'agissait d'une ville (artefact — absent de la liste CNR). ➡️ **Décision demandée : 100 ou 130 km ?** Le `context.md` de CU note que « 130 » y désigne un **rayon en km autour de Macedo de Cavaleiros** — donc 130 est peut-être le bon chiffre, et c'est CNR qu'il faudrait corriger. **Un seul arbitrage tranche les 2 repos.**
+- **Q5 « Têm certificação profissional? »** : « fazemos **o trabalho detalhado da instalação** » — formulation résiduelle probablement issue d'une purge, pas une violation. À reformuler seulement si une source verbatim existe.
