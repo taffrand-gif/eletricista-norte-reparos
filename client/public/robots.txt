@@ -47,6 +47,7 @@ Allow: /
 # Sitemap
 Sitemap: https://eletricista-norte-reparos.pt/sitemap.xml
 Sitemap: https://eletricista-norte-reparos.pt/sitemap-plain.xml
+Sitemap: https://eletricista-norte-reparos.pt/sitemap-extra.xml
 
 # Default
 User-agent: *
