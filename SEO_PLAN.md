@@ -1567,6 +1567,34 @@ Refs : audit `_audit/AUDIT-EXHAUSTIF-31-2026-08-11-ENR.md` §III.1+III.2 §6 ver
 - **Suivi LECONS** : pas de nouvelle leçon (incident 0 sur ce run), auto-évaluation en fin de tâche kanban.
 - **Action attendue de Philippe** : ouvrir PR DRAFT (commande `gh pr create --draft --base main --head feat/t_e99faace-equipamento-diagnostico ...` — voir rapport kanban pour titre/body et sortie de gates), puis trancher merge ou follow-up.
 
+### 2026-08-13 — t_32218c4a — T3-INFO rank-push 'qual a cor do fio neutro em portugal' (ENR, scope 1 page + 3 sitemaps)
+
+- **Source** : brief kanban t_32218c4a (validé Filipe via pool-keeper, intent=INFO). Diagnostic GSC confirme la query **« qual a cor do fio neutro em portugal »** sur ENR en **position moyenne 4.6** (fenêtre 4..20, presque top3) avec **23 impressions et 1 clic sur 28j** (fenêtre terminée 2026-08-13). Meilleure page actuelle selon GSC : `/blog/guia-cores-fios-eletricos` (slug canonique) — vérifiée localement, cette page existe (36211 octets, dans `client/public/blog/guia-cores-fios-eletricos.html`) mais a été cannibalisée par le PR #285 (rank-push « tomada com terra ») qui a réécrit title/H1/og:title sur « Tomada com Terra » et supprimé le bloc « Qual a Cor do Fio Neutro » précédemment ajouté par t_ab77b5a6 (10/08). La page actuelle n'a donc plus la query exacte en title/H1 (H1 = « Tomada com Terra em Portugal: Como Identificar, Testar e Ligar (Guia 2026) », 0 hit « qual a cor do fio neutro »).
+- **Décision R8** : **créer 1 page dédiée** avec slug exact `qual-a-cor-do-fio-neutro-em-portugal.html` (pattern rank-push validé par t_9cee14b0 `cor-fios-eletricos.html` 10/08). Renforcer `guia-cores-fios-eletricos.html` aurait (a) régressé PR #285 (tomada com terra) encore en observation, (b) introduit une cannibalisation entre cette page et `cor-fios-eletricos.html` + `fase-e-neutro-cores.html` (mêmes couleurs). Page dédiée = canonical self, 0 collision, 0 régression.
+- **Patch** : 1 nouveau fichier `client/public/blog/qual-a-cor-do-fio-neutro-em-portugal.html` (27949 octets, ~3270 mots, structure H1 → H2 numérotés 1-7 + FAQ + Contact + Veja também), aligné sur le gold standard `cor-fios-eletricos.html` (t_9cee14b0) pour cohérence cluster. +3 lignes dans 3 sitemaps (blog/plain/priority). Total 4 fichiers, +1 fichier / +3 lignes sitemap / 0 fichier modifié.
+- **Doctrine respectée** :
+  - R4 zero-invention : couleurs = référentiel normatif RTIEBT + HD 308 S2 (transposition portugaise de la norme européenne harmonisée), pas de claim local inventé.
+  - R12 pronom collectif : 10 occurrences « a nossa equipa / os nossos » ; 0 hit « eu / sozinho / mesma pessoa ».
+  - R-canon-2026-08-11 : 0 hit « orçamento gratuito / visita gratuita / deslocação gratuita ». Formulation canonique « estimativa sem custo por telefone ou WhatsApp » + « orçamento por escrito antes de qualquer intervenção » + « mão-d'œuvre 70 €/h + deslocação por zona (15 € a 65 €) ».
+  - R-TEL : 3 `tel:+351****1892` (pattern E.164 masqué conforme PRICING.md ligne 58).
+  - R145 0 délai chiffré : 0 hit « em X minutos / X horas ».
+  - PT-PT strict.
+  - Formulation bannies : 0 hit « orçamento gratuito / visita gratuita / deslocação gratuita ».
+  - Pas de prix fiche/termo inventé (mention DGEG dans Service JSON-LD factuelle, conforme credencial TRIESP 90062 ENR).
+- **Gates exécutés** :
+  - JSON-LD : 4/4 blocs valides (Article/BreadcrumbList/FAQPage/Service) ✅
+  - FAQ sync : 8 Q JSON-LD ↔ 8 `<details>` (1:1, dont 2 exact-match : « Qual a cor do fio neutro em Portugal? » + « A cor do fio neutro é sempre azul-claro? ») ✅
+  - Query hits : 3 occurrences « qual a cor do fio neutro » (1 complète + 2 courtes) ✅
+  - R-canon : 0 hit formulations bannies ✅
+  - R12 : 0 hit pronom « je » / sozinho ✅
+  - R145 : 0 hit délai chiffré ✅
+  - R-TEL : 3 href `tel:+351****1892` (pattern PRICING.md) ✅
+  - Balance HTML : `<html>/<head>/<body>/<main>/<article>/<details>` ouvertes = fermées ✅
+  - Sitemaps : 3/3 contiennent la nouvelle URL avec lastmod 2026-08-13 ✅
+  - NAP : +351 932 321 892 visible 4× (telephone href, contacte list, footer, whatsapp href) ✅
+- **Gating R7** : **0 merge, 0 push**. Branche `feat/enr-rankpush-qual-cor-fio-neutro-t_32218c4a` créée depuis `origin/main` propre (HEAD 183fbdcbbf). Worktree : `/Users/admin/work/Sites/eletricista-norte-reparos/.worktrees/enr-rankpush-qual-cor-fio-neutro-t_32218c4a`. PR draft à ouvrir avec commande ci-dessous.
+- **Suivi LECONS** : pas de nouvelle leçon (incident 0 sur ce run).
+- **Action attendue de Philippe** : `gh pr create --draft --base main --head feat/enr-rankpush-qual-cor-fio-neutro-t_32218c4a --title "fix(enr,seo,blog): rank-push 'qual a cor do fio neutro em portugal' — page dédiée PT-PT (t_32218c4a, pos 4.6, 23 impr/1 clic 28j)" --body "GSC gap query 'qual a cor do fio neutro em portugal' (pos 4.6, 23 impr / 1 clic 28j, fenêtre terminée 2026-08-13) sur ENR : la page canonique /blog/guia-cores-fios-eletricos a été cannibalisée par PR #285 (rank-push 'tomada com terra') qui a basculé son title/H1 sur 'tomada com terra' et supprimé le bloc answer-first 'Qual a Cor do Fio Neutro' précédemment ajouté par t_ab77b5a6 (10/08). Création d'une page dédiée /blog/qual-a-cor-do-fio-neutro-em-portugal.html (canonical self, 0 régression de PR #285, 0 collision avec cor-fios-eletricos.html + fase-e-neutro-cores.html). Page ~3270 mots, structure H1→H2 numérotés 1-7 + FAQ 8 Q (dont 2 exact-match query) + Contact + maillage cluster 13 liens internes. Prix 70 €/h + deslocação 15 € a 65 € conformes PRICING.md, 0 invention. +3 lignes dans 3 sitemaps (blog/plain/priority) avec lastmod 2026-08-13. Gating R7 : 0 merge, 0 push. Mesure d'impact J+7/J+14/J+28 via gsc-trajectoire-cron.sh (recette : pos < 4 = win, impr > 23 + clics > 1 = capture confirmée)."`, puis trancher merge ou follow-up."
 ### 2026-08-13 — R12/R4 : assainissement du FAQPage JSON-LD + clôture du rang 1 Footer (loop Cowork)
 - **Contexte** : tâche prévue = rang 1 de la file loop (`Footer.tsx`, 7 occ R12). Statué en lecture, **puis violation plus grave détectée dans le JSON-LD et traitée en priorité (R11/R12)**.
 - **Méthode : binôme cross-repo comme source de vérité.** `client/src/components/StructuredData.tsx` est le **même composant** sur `canalizador-norte-reparos`, avec le **même bloc `faqSchema`** et la **même Question**. La version CNR est déjà conforme ; la version ENR ne l'était pas. Les remplacements sont des **transplants verbatim**, pas des réécritures.
