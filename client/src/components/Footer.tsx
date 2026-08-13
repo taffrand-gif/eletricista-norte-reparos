@@ -1,7 +1,7 @@
 import React from 'react';
 // Footer com navegação funcional e informações de contacto
 import { useSite } from '@/contexts/SiteContext';
-import { Phone, Clock, MapPin } from 'lucide-react';
+import { Phone, MapPin } from 'lucide-react';
 // memo removed from 'react';
 function Footer() {
  const { config } = useSite();
@@ -81,13 +81,6 @@ function Footer() {
  >
  {config.phone}
  </a>
- </div>
- </li>
- <li className="flex items-start gap-3">
- <Clock className="w-5 h-5 mt-1 flex-shrink-0" />
- <div>
- <p className="font-bold">Horário:</p>
- <p className="text-gray-200">Atendimento 24h/7d, 7 dias por semana</p>
  </div>
  </li>
  <li className="flex items-start gap-3">
