@@ -353,17 +353,10 @@ export default function StructuredData() {
  "name": `Qual é o horário de atendimento do ${config.serviceType}?`,
  "acceptedAnswer": {
  "@type": "Answer",
- "text": "Estamos disponíveis Atendimento 24h/7d, 7 dias por semana, incluindo fins de semana e feriados. Serviço de urgência permanente."
+ "text": "Atendimento por telefone durante o horário comercial. Para questões urgentes fora de horário, deixe mensagem e respondemos assim que possível."
  }
  },
- {
- "@type": "Question",
- "name": "Quanto tempo demora a chegar em caso de urgência?",
- "acceptedAnswer": {
- "@type": "Answer",
- "text": "O nosso tempo médio de resposta em situações de urgência é rápido. Contacte-nos e a nossa equipa actua com brevidade."
- }
- },
+ 
  {
  "@type": "Question",
  "name": "Qual é a zona de cobertura?",
@@ -377,7 +370,7 @@ export default function StructuredData() {
  "name": "Quanto custa uma intervenção?",
  "acceptedAnswer": {
  "@type": "Answer",
- "text": "Os preços variam conforme o serviço e a localização. Oferecemos sem compromisso e sem compromisso. Preços a partir de 50€ para instalação de tomadas."
+ "text": "Os preços variam conforme o serviço e a localização. O orçamento é sempre fornecido por escrito antes de qualquer intervenção, sem compromisso."
  }
  },
  {
