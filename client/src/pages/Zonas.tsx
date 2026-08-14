@@ -67,7 +67,7 @@ export default function Zonas() {
  }
  metaDescription.setAttribute(
  'content',
- 'Eletricista profissional em 34 cidades de Trás-os-Montes. 130km de Cavaleiros. Serviço rápido em Bragança, Vila Real, Chaves, Mirandela e toda a região.'
+ 'Eletricista profissional em 34 cidades de Trás-os-Montes. 130km de Cavaleiros. Orçamento por escrito em 48h. Bragança, Vila Real, Chaves, Mirandela e toda a região.'
  );
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
@@ -146,13 +146,12 @@ export default function Zonas() {
  Zona de Intervenção — Eletricista em Trás-os-Montes
  </h1>
  <p className="text-xl text-orange-100 mb-8">
- Servimos 34 cidades 130km de Cavaleiros. Intervenção rápida em toda a região de
- Trás-os-Montes.
+ Servimos 34 cidades 130km de Cavaleiros.
  </p>
  <div className="flex flex-wrap justify-center gap-6 text-lg">
  <div className="flex items-center">
  <Clock className="w-6 h-6 mr-2" />
- <span>Resposta em 24h</span>
+ <span>Orçamento por escrito em 48h</span>
  </div>
  <div className="flex items-center">
  <MapPin className="w-6 h-6 mr-2" />
