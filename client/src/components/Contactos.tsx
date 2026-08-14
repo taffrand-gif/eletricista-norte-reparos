@@ -189,9 +189,6 @@ export default function Contactos() {
  >
  {config.email}
  </a>
- <p className="text-sm text-gray-600 mt-1">
- Resposta em 24h
- </p>
  </div>
  </div>
  </div>
