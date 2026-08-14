@@ -3,29 +3,37 @@
 > Écrit par le loop Cowork après chaque run. NE PAS ÉDITER MANUELLEMENT.
 
 ## Dernier run
-- Date : 2026-08-13
-- Tâche prévue : **file de tâches loop, rang 1 — `Footer.tsx`** (7 occ R12).
-- Tâche réellement exécutée : rang 1 **statué ET clos**, puis **violation plus grave détectée dans le JSON-LD et traitée en priorité** (R11/R12).
-- Branche : `loop/2026-08-13-eletricista-norte-reparos-r12-jsonld-faq` (depuis `refs/remotes/origin/main`, **en worktree**)
-- Commits : `954e056a0f` (`StructuredData.tsx`), `8440306000` (`Footer.tsx`), le commit `SEO_PLAN.md`, puis `0108db589e` (merge de `main`, voir Edge cases)
-- PR ouverte : https://github.com/taffrand-gif/eletricista-norte-reparos/pull/334 — **mergeable ✅**
-- Résultat : ✅ 3 fichiers, 1 commit chacun. **Le `faqSchema` de production portait un claim de disponibilité ET un prix inventé, dans le JSON-LD — donc dans ce que Google lit et cite.**
+- Date : 2026-08-14
+- Tâche prévue : **file de tâches loop, rang 1 — `Contactos.tsx`** (binôme CNR).
+- Tâche réellement exécutée : **la tâche prévue, requalifiée en R145** — binôme CNR **exécuté dans le même run**.
+- Branche : `loop/2026-08-14-eletricista-norte-reparos-resposta-24h` (depuis `origin/main`, **en worktree**)
+- Commits : 4 (3 fichiers de production, 1 par commit, + `SEO_PLAN.md`)
+- PR ouverte : https://github.com/taffrand-gif/eletricista-norte-reparos/pull/335 · **PR jumelle CNR : #302**
+- Résultat : ✅ 3 fichiers. **Et une requalification doctrinale qui réduit la file.**
 
-| Question | Avant | Traitement |
+### La requalification
+Texte verrouillé de R145 (`~/.openclaw/workspace/AGENTS.md` §12) : « **24h/7 dias OK**, *resposta rápida* / *resposta prioritária* **BANNIS** ».
+➡️ Sur les 4 occurrences annoncées pour `Contactos.tsx`, **une seule est une violation réelle** :
+
+| Ligne | Chaîne | Verdict |
 |---|---|---|
-| `Qual é o horário de atendimento…?` | « Estamos disponíveis **Atendimento 24h/7d, 7 dias por semana, incluindo fins de semana e feriados. Serviço de urgência permanente.** » | **Transplant verbatim CNR** |
-| « Quanto tempo demora a chegar em caso de urgência? » | « tempo médio […] **é rápido** […] **actua com brevidade** » | **Retrait du couple Q/R** (patron PR #200) |
-| « Quanto custa uma intervenção? » | « Oferecemos **sem compromisso e sem compromisso**. **Preços a partir de 50€ para instalação de tomadas.** » | **Retrait du prix inventé** + doublon corrigé |
+| L167 | `Disponível Atendimento 24h/7d` | ✅ non-violation — claim de disponibilité, **autorisé** |
+| L234 | `Atendimento 24h/7d` | ✅ non-violation |
+| L237 | `7 dias por semana, incluindo feriados` | ✅ non-violation |
+| **L193** | **`Resposta em 24h`** | 🔴 **violation** — délai chiffré (R145 + gabarit §13) |
 
-- 🔴 **Le « 50€ » est un prix inventé (R4)** : absent de `PRICING-CANONIQUE.md`. La grille ENR est **70€/h + deslocação Z1-Z6 de 15€ à 65€**, majoration `urgencyMultiplier: 1.5`. Aucun forfait de 50€ n'existe.
-- **`Footer.tsx`** : retrait du `<li>` « Horário: Atendimento 24h/7d, 7 dias por semana » — **retrait pur**, aligné sur le jumeau CNR dont le Footer ne porte **aucun** bloc Horário et n'importe pas `Clock`.
-- Témoins R8 (`client/src/`, avant → après) : `Serviço de urgência permanente` **1→0** · `Quanto tempo demora a chegar em caso de urgência` **4→3** · `a partir de 50€` **2→1** · `sem compromisso e sem compromisso` **5→4** · `Estamos disponíveis` **5→4** · `Atendimento 24h/7d` **65→64**. **Chaque témoin recule d'exactement 1** (contrôle positif). Footer : `Clock` **2→0**, `urgente` **4→4** et `canalizador-norte-reparos.pt` **1→1** (maillage intact). `FAQPage` : **5 → 4 questions**. `./node_modules/.bin/tsc --noEmit` : **82** (baseline conforme).
+🔎 Le compteur de la file **sous-estimait le périmètre** : `Resposta em 24h` existe en **3** exemplaires dans `client/src/`, pas 2 — `pages/Zonas.tsx` L155 n'y figurait pas (le compteur ne parcourt que les composants importés par `OptimizedHome.tsx`).
 
+Traitement : `OrcamentoGratuitoBadge.tsx` L15 → `Orçamento por escrito em 48h` (**verbatim** `shared/siteConfig.ts` L108/L124) · `Contactos.tsx` L192-194 → **retrait du `<p>`** (aucun équivalent honnête pour un délai de réponse e-mail) · `pages/Zonas.tsx` → 3 substitutions (span, hero `Intervenção rápida`, **meta description** `Serviço rápido`).
+
+Témoins R8 (`client/src/`) : `Resposta em 24h` **3→0** · `Intervenção rápida` **4→3** · `Serviço rápido` **1→0** · `Orçamento por escrito em 48h` **3→6**.
+`tsc` : **0 erreur introduite**. ⚠️ L'unique erreur touchant un fichier nommé `Contactos.tsx` est dans `client/src/pages/Contactos.tsx` — **fichier différent** de celui patché — et **pré-existe à l'identique sur `origin/main`**.
 ## ✅ Gate merge — aucun gate actif
-Vérifié ce run : aucune mention d'attente dans les 4 `context.md`. **CNR #300 a été mergée pendant le run** ; #334 (ici), #260 (CU) et #284 (EU) sont ouvertes et **toutes mergeables**.
+Vérifié ce run : aucune mention d'attente dans les 4 `context.md`. Aucun gate réécrit.
 
 🔴 **Rappel de doctrine, à ne jamais réécrire** : R7 interdit de **MERGER**, pas de **PRODUIRE**. Entre le 06/08 et le 09/08, la mention « Attente GO merge (R7) » a été relue chaque nuit comme un ordre d'arrêt → **4 runs sans production**. Ne jamais réécrire un gate de ce type.
 
+🆕 **Corollaire découvert ce run (sur CNR)** : le statut `MERGED` de l'API GitHub **n'est pas une preuve de présence en production**. **Audit mené ici : les 12 dernières PR mergées d'ENR sont toutes ancêtres d'`origin/main` — ENR n'est pas touché.**
 ## 🎯 FILE DE TÂCHES LOOP — état au 2026-08-13
 
 | Rang | Composant | Occ. R12 | Statut |
@@ -50,12 +58,18 @@ done | sort -k2 -rn
 ```
 
 ## Tâche suivante recommandée
-1. **`Contactos.tsx`** (rang 1) — 4 lignes R12 : **L167** `Disponível Atendimento 24h/7d` · **L193** `Resposta em 24h` · **L234** `Atendimento 24h/7d` · **L237** `7 dias por semana, incluindo feriados`. **Le fichier est quasi identique sur CNR** (mêmes 4 lignes, mêmes numéros ; seules diffèrent l'adresse `formsubmit` L26, le `_subject` L34 et la liste de villes L215). ➡️ **Binôme obligatoire : traiter ENR et CNR dans le même run** (écart de propagation mesuré : ~20 min en binôme contre 6 à 14 jours sinon).
-2. **`OrcamentoGratuitoBadge.tsx` L15** — `Sem compromisso • Resposta em 24h`. **Ligne strictement identique sur CNR.** Second binôme, groupable avec (1).
-3. **`client/src/data/faqData.ts` L26** — « trabalhamos **Atendimento 24h/7d**. Não importa se é meia-noite, domingo ou feriado - temos **equipas de piquete sempre disponíveis** ». Même famille que le JSON-LD traité ce run, **invisible au compteur de composants**.
-4. Vocabulaire de remplacement validé, **verbatim** : `shared/siteConfig.ts` L107/L108/L123/L124/L158/L159. Pronoms : `AGENTS.md` §12. **Privilégier le RETRAIT** — validé 2 fois ce run.
-
+1. **Repasser toute la file au filtre R145 avant de patcher quoi que ce soit.** Le compteur agrège `24h|24 horas|urgent|urgência|emergência|7 dias|prioritári` — or **seuls `prioritári`, `rápid` et les délais chiffrés sont interdits**. Les rangs `TrustBanner.tsx`, `CalculadorPreco.tsx`, `Blog.tsx` sont vraisemblablement vides de violations réelles. **Une passe de requalification vaut plusieurs runs de patch.**
+2. **`Diagnostico.tsx`** (rang 2, 6 occ) — **jumelle de la PR #280 (CNR)**, patron déjà validé. À requalifier d'abord (voir 1).
+3. **`client/src/data/faqData.ts` L26** — « trabalhamos Atendimento 24h/7d. Não importa se é meia-noite, domingo ou feriado - temos **equipas de piquete sempre disponíveis** ». **Invisible au compteur de composants.** ⚠️ `24h/7d` est autorisé ; ce qui est à statuer c'est « equipas de piquete sempre disponíveis » (claim d'effectif) et l'agrammaticalité « trabalhamos Atendimento ».
+4. **Batch R145 `rápida`/`rápido` — 61 occurrences dans `client/src/`** (CNR : 130). GO Philippe requis. Patron validé : ventiler → prototyper sur 1 page → GO en un tap.
+5. Vocabulaire de remplacement validé, **verbatim** : `shared/siteConfig.ts` L107/L108/L123/L124/L158/L159. Pronoms : `AGENTS.md` §12. **Privilégier le RETRAIT.**
 ## Apprentissages (self-improving)
+- 🔴 **NOUVEAU — le compteur de la file mélange DEUX règles et sur-compte.** R145 **autorise** `24h/7 dias` ; seuls `resposta rápida`, `resposta prioritária` et les **délais chiffrés** sont interdits. Sur `Contactos.tsx` : **1 violation réelle sur 4 annoncées**. ➡️ **Requalifier chaque occurrence contre le texte verrouillé AVANT de patcher.** R4 se viole aussi en effaçant du contenu vrai.
+- 🔴 **NOUVEAU — le compteur n'est pas exhaustif non plus.** Il ne parcourt que les composants importés par `OptimizedHome.tsx` et ratait `pages/Zonas.tsx`. ➡️ **Une fois le motif exact identifié, le grepper sur TOUT `client/src/` avant de figer le périmètre.**
+- 🔴 **NOUVEAU — une PR mergée peut DISPARAÎTRE de `main`.** Sur CNR, la PR #300 (`state=MERGED`) a été annulée par une réécriture de `main` ; son merge commit n'est ancêtre d'aucune branche. ➡️ **Contrôle de fin de run : `git merge-base --is-ancestor <mergeCommit> <remote>/main`.** Audit mené ici : **ENR est propre sur les 12 dernières PR**.
+- 🟢 **NOUVEAU — la divergence de rayon est tranchée, et en faveur d'ENR.** `AGENTS.md` §12 (verrouillé 30/06) : « rayon **~130 km** autour de Macedo de Cavaleiros ». **ENR (130 km) est conforme ; c'est CNR (100 km) qui diverge.** Ne rien changer ici. 1 tap sur la PR CNR #302 ferme le sujet.
+- 🟢 **Le binôme CNR/ENR dans le même run tient ses promesses** : 3 fichiers quasi identiques, écart de propagation **~20 min** contre 6 à 14 jours en traitement séparé. **À reconduire systématiquement** dès qu'un composant existe sur les deux repos.
+- ⚠️ **NOUVEAU — la baseline `tsc` a dérivé : 106, plus 82.** Mesurée à l'identique sur `origin/main` intact et sur la branche. **Constante mise à jour ici : total attendu = 106.**
 - 🔴 **NOUVEAU — le compteur R12 ne voit pas le JSON-LD, et c'est là que sont les violations les plus graves.** `StructuredData.tsx` affichait **0** au compteur de la file et portait un claim 24h/7d **et** un prix inventé, dans la surface que Google lit et cite. ➡️ **Contrôle à passer en début de run, indépendamment du compteur : `StructuredData.tsx` et `client/src/data/faqData.ts`.** Le même motif s'est vérifié sur CU et EU le même run — **c'est un pattern des 4 repos, pas une particularité ENR.**
 - 🔴 **NOUVEAU — le binôme cross-repo fournit un REMPLACEMENT verbatim, pas seulement une détection.** Quand deux repos partagent un composant et qu'un seul est conforme, le conforme est une source de vérité qui permet de corriger **sans rien inventer (R4)**. Utilisé 2 fois ce run : ici (réponse JSON-LD) et sur CNR (17 classes Tailwind restaurées depuis ENR). ➡️ **Avant de déclarer une valeur irrécupérable, regarder le jumeau.**
 - 🔴 **NOUVEAU — un doublon `X e X` est une signature de purge**, au même titre qu'un suffixe orphelin (`/7d`) ou un `Z` orphelin. `sem compromisso e sem compromisso` = 5 fichiers. Motif de détection à ajouter : `(\b\w[\w\s]{4,}\b) e \1`.
