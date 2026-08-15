@@ -10,20 +10,16 @@ export const electricFaqs: FAQItem[] = [
  answer: "Os preços variam conforme o serviço: diagnóstico 80-120€, instalação de tomada nova 138-182€, substituição tomada 66-90€, arranjo curto-circuito 150-210€, quadro elétrico 12 módulos 370-650€. Oferecemos preço fixo confirmado por telefone. Contacte-nos para orçamento sem compromisso."
  },
  {
- question: "Como funciona o sem compromisso?",
+ question: "Como funciona o orçamento por escrito?",
  answer: "Contacte-nos por telefone, WhatsApp ou formulário online. Deslocamo-nos gratuitamente para avaliar o problema, apresentamos um orçamento detalhado com preços transparentes e só avançamos após sua aprovação. Sem surpresas."
  },
  {
- question: "Tem eletricista urgente Atendimento 24h/7d?",
- answer: "Sim! Serviço de urgência Atendimento 24h/7d, 7 dias por semana, incluindo fins de semana e feriados. Em caso de curto-circuito, falta de luz ou situação de perigo elétrico, ligue +351 932 321 892 para intervenção mediante confirmação por telefone."
- },
- {
- question: "Quanto tempo demora a chegar em caso de urgência?",
- answer: "Na zona de Trás-os-Montes e arredores (até 20km): 30-45 minutos. Para outras localidades do distrito: 45 minutos a 1 hora. Temos veículos equipados com ferramentas e material para deslocações rápidas."
+ question: "Tem eletricista urgente 24h/7d?",
+ answer: "Sim! Serviço de urgência 24h/7d, 7 dias por semana, incluindo fins de semana e feriados. Em caso de curto-circuito, falta de luz ou situação de perigo elétrico, ligue +351 932 321 892 para intervenção mediante confirmação por telefone."
  },
  {
  question: "Atendem urgências à noite ou fim de semana?",
- answer: "Sim, trabalhamos Atendimento 24h/7d. Não importa se é meia-noite, domingo ou feriado - temos equipas de piquete sempre disponíveis para emergências elétricas. O preço de urgência aplica-se fora do horário comercial."
+ answer: "Sim, trabalhamos 24h/7d. Não importa se é meia-noite, domingo ou feriado - temos equipas de piquete sempre disponíveis para emergências elétricas. O preço de urgência aplica-se fora do horário comercial."
  },
  {
  question: "Quais os serviços elétricos que oferecem?",
@@ -89,23 +85,19 @@ export const electricFaqs: FAQItem[] = [
 export const plumberFaqs: FAQItem[] = [
  {
  question: "Quanto custa um canalizador em Trás-os-Montes?",
- answer: "Os preços variam conforme o serviço: desentupimento simples a partir de 50€, arranjo de fuga a partir de 60€, instalação de esquentador a partir de 150€. Oferecemos sem compromisso sem compromisso."
+ answer: "Os preços variam conforme o serviço: desentupimento simples a partir de 50€, arranjo de fuga a partir de 60€, instalação de esquentador a partir de 150€. Oferecemos orçamento por escrito, sem compromisso."
  },
  {
- question: "Como funciona o sem compromisso?",
+ question: "Como funciona o orçamento por escrito?",
  answer: "Contacte-nos por telefone, WhatsApp ou formulário online. Deslocamo-nos gratuitamente para avaliar o problema, apresentamos um orçamento detalhado com preços transparentes e só avançamos após sua aprovação."
  },
  {
- question: "Tem eletricista urgente Atendimento 24h/7d?",
- answer: "Sim! Serviço de urgência Atendimento 24h/7d, 7 dias por semana, incluindo fins de semana e feriados. Em caso de curto-circuito, falha de energia ou situação de perigo elétrico, ligue +351 932 321 892 para intervenção mediante confirmação por telefone."
- },
- {
- question: "Quanto tempo demora a chegar em caso de urgência?",
- answer: "Na zona de Trás-os-Montes e arredores: 30-45 minutos. Para outras localidades do distrito: 45 minutos a 1 hora. Temos veículos equipados com ferramentas e material para deslocações rápidas."
+ question: "Tem eletricista urgente 24h/7d?",
+ answer: "Sim! Serviço de urgência 24h/7d, 7 dias por semana, incluindo fins de semana e feriados. Em caso de curto-circuito, falha de energia ou situação de perigo elétrico, ligue +351 932 321 892 para intervenção mediante confirmação por telefone."
  },
  {
  question: "Atendem urgências à noite ou fim de semana?",
- answer: "Sim, trabalhamos Atendimento 24h/7d. Não importa se é meia-noite, domingo ou feriado - temos equipas de piquete sempre disponíveis para emergências de canalização."
+ answer: "Sim, trabalhamos 24h/7d. Não importa se é meia-noite, domingo ou feriado - temos equipas de piquete sempre disponíveis para emergências de canalização."
  },
  {
  question: "Quais os serviços de canalização que oferecem?",
