@@ -1622,3 +1622,19 @@ Refs : audit `_audit/AUDIT-EXHAUSTIF-31-2026-08-11-ENR.md` §III.1+III.2 §6 ver
 #### Reste à arbitrer dans le même `faqSchema` — NON traité (R4 : pas d'invention)
 - **Q3 « Qual é a zona de cobertura? »** : ENR annonce un **rayon de 130 km**, CNR **100 km**, pour la même région. De plus la liste de villes ENR contient **« Trás-os-Montes »** comme s'il s'agissait d'une ville (artefact — absent de la liste CNR). ➡️ **Décision demandée : 100 ou 130 km ?** Le `context.md` de CU note que « 130 » y désigne un **rayon en km autour de Macedo de Cavaleiros** — donc 130 est peut-être le bon chiffre, et c'est CNR qu'il faudrait corriger. **Un seul arbitrage tranche les 2 repos.**
 - **Q5 « Têm certificação profissional? »** : « fazemos **o trabalho detalhado da instalação** » — formulation résiduelle probablement issue d'une purge, pas une violation. À reformuler seulement si une source verbatim existe.
+
+---
+
+## 🔄 RUN LOOP 2026-08-15 — Audit `faqData.ts` (tâche n°3 du context.md du 14/08)
+
+| # | Fichier | Statut |
+|---|---|---|
+| 1 | `client/src/data/faqData.ts` | ✅ **Fait** — 2 couples Q/R de délai retirés + 8 artefacts de purge corrigés. |
+
+**Violations R145** : `Quanto tempo demora a chegar em caso de urgência?` existait **en double** (section électricité + section canalisation), avec 3 violations dans une seule réponse — `30-45 minutos`, `45 minutos a 1 hora`, `deslocações rápidas`. Retrait du couple Q/R (patron PR #200).
+
+**Artefacts** : le mot `Atendimento` inséré en milieu de phrase, **6 fois, dont 2 dans des NOMS DE QUESTION** (`Tem eletricista urgente Atendimento 24h/7d?`). Plus `Como funciona o sem compromisso?` (×2, noms de question) et le doublon `Oferecemos sem compromisso sem compromisso.`. Vocabulaire de remplacement **verbatim** depuis `shared/siteConfig.ts`.
+
+Grep : `Atendimento 24h/7d` 6→0 · `30-45 minutos` 2→0 · `deslocações rápidas` 2→0 · `sem compromisso sem compromisso` 1→0 · `funciona o sem compromisso` 2→0 · **`24h/7d` 8→6 (contrôle positif — R145 l'autorise)**. `tsc` : **106**, baseline exacte.
+
+**Non patché, à arbitrer (1 tap)** : `equipas de piquete sempre disponíveis` (×2) — `sempre disponíveis` est autorisé, c'est le pluriel `equipas` qui est un claim d'effectif ; le reste du repo dit « a nossa equipa ». Et `Deslocamo-nos gratuitamente` (×2).
