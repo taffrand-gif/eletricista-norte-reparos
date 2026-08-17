@@ -1817,3 +1817,32 @@ Le fichier **se contredit lui-même** : L17 affiche « 70€ - 140€ » pour «
   2. Vérifier que la prod sert bien le changement après merge (cf. gate R11, leçon #447 recompte chaque claim chiffré).
   3. Tracer l'évolution J+7 / J+14 / J+28 dans `TRAJECTOIRE-MONOPOLE.md` via gsc-trajectoire-cron.sh.
 - **Statut** : ⏸ PR draft laissé en DRAFT — STOP merge/déploiement Filipe (R7).
+
+### 2026-08-12 00:35 · t_60bc1d40 — AUDIT-11-08 OFFENSIF pilier cluster 'quem pode assinar'
+
+- **Contexte** : tâche `t_60bc1d40` (assignee default, kanban dispatch 12/08 00:25 BST). Brief pool-keeper : « cluster 'quem assina / quem pode / quem legaliza' = 0 page aujourd'hui », angle le plus citable = délimitation honnête des 4 documents que tout le monde confond.
+- **Re-mesure brute AVANT** (audit live 00:31 BST, lecon #447) :
+  - 0 page dediee cluster sur origin/main (`git ls-tree -r origin/main --name-only | grep quem-pode-assinar` = vide)
+  - PR #310 DRAFT OPEN (t_b655738d) ajoute FAQ « Quem assina » sur pilier Ficha+Termo (≠ overlap, 2 fichiers pilier + LastUpdated ai.txt)
+  - PR #309 DRAFT OPEN (t_514b9e6e) cree 3 pages DGEG disjointes (certiel-dgeg, projeto-eletrico, falha-de-energia)
+  - Drift prix connu : origin/main = 350€, PRICING.md post PR #300 MERGED = 250€ (escaladé via PR #310 escalade #3)
+- **Décision applicabilité** : **1 page dédiée** (brief explicite : « 1 PR draft par page, pas un article fourre-tout »). Slug = `quem-pode-assinar-ficha-eletrotecnica` (entry point cluster, requête la plus citable Filipe « quem assina a ficha »).
+- **Patch appliqué (PR DRAFT #323)** :
+  - `client/public/quem-pode-assinar-ficha-eletrotecnica.html` (+570/-0, 1 fichier)
+  - Schema.org `@graph` avec 6 entités : Person (Filipe TRIESP 90062) + Organization + LocalBusiness + Article + FAQPage (10 Q/R ciblées) + BreadcrumbList
+  - Tableau des 4 documents que tout le monde confond (Ficha, Termo, Cert.Exploração, Cert.Energético) avec qui émet quoi + scope strict 41,4 kVA
+  - Délimitation honnête explicite : hors-périmètre Certificado Exploração (régime moyenne/haute tension), Certificado Energético SCE (autre autorité ADENE), gaz
+  - Prix : 250 EUR unique ligne couvrant les 2 documents (formulation Filipe « ficha electrotec et/ou termos »), conforme PRICING.md post PR #300
+  - 6 liens internes vers pilier DGEG (extensionless, validé par `maillage-gate` pre-commit hook)
+- **Témoins grep (gate R8 live, 1 motif par commande)** :
+  - R11 zero invention : `250 €` ×2, `350 €` ×0, `90062` ×11, `Lei n.º 14/2015` ×13, `41,4 kVA` ×17, `€50.000` ×7
+  - R12 collectif : `a nossa equipa` ×8, `mesmo técnico/mesma pessoa` ×0, `sozinho/contacto pessoal` ×0
+  - R145 zero délai chiffré : `24h/7` ×0, `mediante confirmação` ×0, `em X minutos/horas` ×0
+  - Doctrine §12 NAP 932 321 892 : ×5, téléphone plomberie 928 484 451 ×0
+  - DGEG : `definitivo` ×0, `CERTIEL` ×0, `NIF` public ×0
+  - JSON-LD : 1 block parse OK (`json.loads`), FAQPage 10 Q/R, toutes réponses > 400 chars
+  - Garde grammaire : 5 paragraphes au hasard (seed=11) lus comme un client, verdict PT-PT clean (artefact « mesmo tecnico » corrigé en 1ère passe via `pelo mesmo TRIESP` → `pelo TRIESP responsável`)
+- **Pre-commit hooks** : `maillage-gate` a bloqué la 1ère tentative (`.html` dans href → 308 redirect, leçon R03 catch-all SPA) — corrigé en extensionless, 2ème commit OK.
+- **Branche** : `fix/enr-quem-pode-assinar-t_60bc1d40` (commit 002fe333f9), push OK sur origin, PR DRAFT #323 ouverte (1 file, +570/-0).
+- **Gating R7** : **0 merge, 0 push prod, PR draft laissé en DRAFT** — STOP validation Filipe obligatoire avant merge.
+- **Liens** : PR #323 https://github.com/taffrand-gif/eletricista-norte-reparos/pull/323 · body contient commande de vérification + sortie live.
