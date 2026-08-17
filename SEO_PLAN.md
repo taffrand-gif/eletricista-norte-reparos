@@ -1352,6 +1352,16 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
 
 ---
 
+### 2026-08-05 — t_f15294f7 — Correction conformité du guide « problèmes électriques en hiver »
+
+- **Preuve production avant patch** : `https://eletricista-norte-reparos.pt/blog/blog-problemas-eletricos-inverno` répondait HTTP 200 le 05/08/2026 et exposait encore le texte « componentes Schneider Electric » / « garantimos certificação elétrica » ainsi que des fourchettes tarifaires héritées. La source était dupliquée entre `public/blog/` et `client/public/blog/`; Vite sert la seconde copie au build.
+- **Action** : remplacement du contenu corrompu dans les deux copies du même document, sans toucher au routage ni au sitemap. Retrait des mots-clés plomberie, des prix/fourchettes inventés, des promesses d'urgence, des services hors périmètre (bomba de calor), des claims locaux non prouvés et de la première personne du singulier.
+- **Source de vérité** : `PRICING.md` (70 €/h, déplacement Z1–Z6 15–65 €, +50 %, orçamento écrit) et doctrine `AGENTS.md` R4/R5/R7/R9 + §12. Les services variables restent « sob orçamento ».
+- **Résultat attendu après merge** : une page PT-PT valide, canonical self unique, un seul H1, NAP électricité `+351 932 321 892`, zéro contamination plomberie et zéro prix/délai/service inventé. PR draft uniquement; aucun merge sans GO Philippe (R7).
+- **Statut** : ⏳ PR draft — attente revue et GO merge Philippe.
+
+---
+
 ### 2026-08-04 - Tache t_8ca16628 - Rank-push GSC « tomada com terra » (pos 9.9, 22 impr / 1 clic 28j, fenetre terminee 2026-08-04)
 
 - **Query ciblee** : `tomada com terra`
