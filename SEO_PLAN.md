@@ -1665,3 +1665,29 @@ Grep : `Atendimento 24h/7d` 6→0 · `30-45 minutos` 2→0 · `deslocações rá
   - Nouvelle PR draft sur `fix/purge-texte-mort-painel-solar-2026-08-17` (cette branche).
 - **Conformité** : R4 (zéro invention — suppression pure), R7 (STOP merge), R8 (témoin -110 fichiers), R12 (0 mention urgência/24h ajoutée), AGENTS.md §12 (formulation collective préservée), R-WT (worktree depuis origin/main, branche dédiée).
 - **LEÇON #N à consigner dans LECONS.md** : recompte case-sensitive vs case-insensitive en PT — toujours utiliser `-i` pour les motifs en début de phrase, et recompter **deux fois** avant d'annoncer une mesure (cf. leçon #447). Bug réel observé : Filipe 10/08 annonce 117→2 en case-sensitive alors que le total -i reste 117 — sa mesure a masqué 115 occurrences capitalized.
+
+**Non patché, à arbitrer (1 tap)** : `equipas de piquete sempre disponíveis` (×2) — `sempre disponíveis` est autorisé, c'est le pluriel `equipas` qui est un claim d'effectif ; le reste du repo dit « a nossa equipa ». Et `Deslocamo-nos gratuitamente` (×2).
+
+### 2026-08-17 — t_8ee1a13e — Pilier money 'curto-circuito' (ENR, scope 2 fichiers, 0 chemin protégé)
+
+- **Source** : brief kanban t_8ee1a13e (pool-keeper, intent=MONEY, score 7040.00 = 1600 vol × 4.40 € CPC). GSC 28j terminé 2026-08-17 : **0 impression / 0 clic / pos=None** sur la query broad « curto circuito ». Cible T1-MONEY.
+- **Diagnostic** : la query existe déjà indexée via **pages villes** (`curto-circuito-braganca`, `curto-circuito-chaves`, `curto-circuito-vila-real`, `curto-circuito-mirandela`, `curto-circuito-lamego`, `curto-circuito-macedo-de-cavaleiros`) et via **guide blog** (`blog/guia-curto-circuito`, mergé PR #204 le 17/07, format React .tsx informationnel pur). **Mais aucun pilier racine** `/curto-circuito.html` ne cible la query broad sans suffixe ville — Google ne capte donc pas la query money à 4.40 €/clic. Réponse = **page pilier générique à intent service** (différente du guide blog qui est éducatif).
+- **Livré** :
+  - `client/public/curto-circuito.html` (~20 kB) — page pilier statique sérialisée, pattern repris des villes (NAP +351 932 321 892, JSON-LD @graph: WebSite + Organization + LocalBusiness + Service + FAQPage, canonical self `https://eletricista-norte-reparos.pt/curto-circuito`, table preços Z1-Z6 + 70 €/h conforme `PRICING.md`, 6 Q FAQ orientées service, 17 liens internes vers villes + guide + urgencias). H1 aligné query.
+  - `scripts/generate-sitemap.ts` — 1 ligne ajoutée dans le tableau « Static pages » pour que le sitemap dynamique référence le pilier après rebuild.
+- **Témoins R8 / gates** :
+  - JSON-LD parse : 1 bloc, 5 entrées graph, **OK** (json.loads).
+  - NAP unique `+351****1892` : 4 occurrences (tel/header/footer/whatsapp).
+  - Title : `Curto-Circuito: Reparação por eletricista habilitado | Norte Reparos` — query exact-match.
+  - H1 : `⚡ Curto-Circuito em Casa — Reparação por Eletricista Habilitado`.
+  - Zones : 15/25/35/45/55/65 € **toutes** présentes en clair dans la table.
+  - MO : 70 €/h.
+  - DGEG/TRIESP/Termo/Ficha : **0** (R11 — neutralité côté élec, mais aucune mention pilier).
+  - Cross-refs canalizador-* : **0**.
+  - Pronom je/sozinho/meu : **0**.
+  - Canonical self clean (sans query) : OK.
+  - Distinction guide blog (éducatif, 8 Q info) ≠ pilier (service, 6 Q achat) : OK.
+  - `npm run check` : 82 erreurs TS pré-existantes, **0 nouvelle erreur** sur la page (HTML statique).
+- **Doctrines** : R4 (zéro invention prix — tous depuis PRICING.md), R8 (témoins comptés ci-dessus), R11 (0 mention DGEG), R12 (0 pronom « je », 0 promesse 24h sans « mediante confirmação »), R-WT (worktree respecté), commit atomique (2 fichiers = 1 commit).
+- **Gating R7** : **0 merge, 0 push**. Branche `feat/t8ee1a13e-curto-circuito-pillar` créée depuis `origin/main` propre. PR draft à ouvrir. Mesure impact J+7/J+14/J+28 via `gsc-trajectoire-cron.sh` (recette : impr > 0 + clics > 0 sur « curto circuito » broad = capture GAP confirmée).
+- **Action attendue de Philippe** : ouvrir PR draft via `gh pr create --draft --base main --head feat/t8ee1a13e-curto-circuito-pillar --title "fix(enr,seo,pillar): fermer le gap money 'curto-circuito' (CPC=4.40 EUR, vol=1600) — page pilier racine (t_8ee1a13e, 0 impr 28j)" --body "GSC gap query 'curto circuito' broad sur ENR (0 impression / 0 clic / pos=None, fenêtre 28j terminée 2026-08-17). DataForSEO vol=1600/mois, CPC=4.40 EUR. Les pages villes curto-circuito-<ville> et le guide /blog/guia-curto-circuito (informationnel) existent mais aucun pilier générique sans suffixe ville ne cible la query money. Création /curto-circuito.html (HTML statique, ~20 kB, pattern repris des pages villes) : JSON-LD @graph WebSite+Organization+LocalBusiness+Service+FAQPage (1 bloc, 5 entrées, parse OK), canonical self clean, H1 '⚡ Curto-Circuito em Casa — Reparação por Eletricista Habilitado', title exact-match query, table Z1-Z6 + 70 €/h conformes PRICING.md, 6 Q FAQ service, 17 liens internes. +1 entrée dans scripts/generate-sitemap.ts (tableau Static pages). 0 mention DGEG/TRIESP, 0 pronom je/sozinho, 0 cross-ref canalizador-*. Gating R7 : 0 merge, 0 push. Mesure J+7/J+14/J+28 via gsc-trajectoire-cron.sh."`, puis trancher merge ou follow-up."
