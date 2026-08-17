@@ -127,3 +127,6 @@ client/src/components/.backups/
 
 # IndexNow key (déjà servie par Vercel, jamais à commiter)
 public/e1ede796962ebc575aaaa6dc.txt
+
+.worktrees/
+_indexing/

@@ -1793,6 +1793,24 @@ Grep : `Atendimento 24h/7d` 6→0 · `30-45 minutos` 2→0 · `deslocações rá
 - **Action attendue de Philippe** : ouvrir PR draft via `gh pr create --draft --base main --head feat/t8ee1a13e-curto-circuito-pillar --title "fix(enr,seo,pillar): fermer le gap money 'curto-circuito' (CPC=4.40 EUR, vol=1600) — page pilier racine (t_8ee1a13e, 0 impr 28j)" --body "GSC gap query 'curto circuito' broad sur ENR (0 impression / 0 clic / pos=None, fenêtre 28j terminée 2026-08-17). DataForSEO vol=1600/mois, CPC=4.40 EUR. Les pages villes curto-circuito-<ville> et le guide /blog/guia-curto-circuito (informationnel) existent mais aucun pilier générique sans suffixe ville ne cible la query money. Création /curto-circuito.html (HTML statique, ~20 kB, pattern repris des pages villes) : JSON-LD @graph WebSite+Organization+LocalBusiness+Service+FAQPage (1 bloc, 5 entrées, parse OK), canonical self clean, H1 '⚡ Curto-Circuito em Casa — Reparação por Eletricista Habilitado', title exact-match query, table Z1-Z6 + 70 €/h conformes PRICING.md, 6 Q FAQ service, 17 liens internes. +1 entrée dans scripts/generate-sitemap.ts (tableau Static pages). 0 mention DGEG/TRIESP, 0 pronom je/sozinho, 0 cross-ref canalizador-*. Gating R7 : 0 merge, 0 push. Mesure J+7/J+14/J+28 via gsc-trajectoire-cron.sh."`, puis trancher merge ou follow-up."
 
 
+
+### 2026-08-17 — t_97468c02 — SITEMAPKO enr `/eletricista-avaria-eletrica-sao-joao-da-pesqueira` (KO ponctuel, 0 commit)
+
+- **Source** : brief kanban t_97468c02 (delta sitemap 2026-08-17, code HTTP `None` vu par GSC sur URL sans `.html`).
+- **Vérification worker** : 5/5 GET HTTP 200 sur edge Vercel `cdg1` (0.148-0.248 s, cache HIT, 19982 B stable), 3 variantes URL (avec/sans `.html`, avec `/index.html`) = 200. Title / h1 / canonical propres (`Eletricista em Avaria Eletrica Sao Joao Da Pesqueira`).
+- **Verdict** : **KO PONCTUEL** (faux positif GSC, même pattern que t_0128a137 / t_63578346 / t_fa07d024 / t_50e84483 / t_27e49b98 / etc. drain quota GSC partagé 4 sites Norte-OS).
+- **Décision** : **0 commit, 0 modif sitemap.xml** (gate R7 : on ne touche pas le sitemap sur un faux positif).
+- **Rapport** : `_audit/SMKO-enr-2026-08-17-avaria-eletrica-sao-joao-da-pesqueira.md` (preuve curl + verdict).
+
+### 2026-08-17 — t_5e973d63 — SITEMAPKO enr `/eletricista-limaos` (KO ponctuel, 0 commit)
+
+- **Source** : brief kanban t_5e973d63 (delta sitemap 2026-08-17, code HTTP `None` vu par GSC sur URL sans `.html`).
+- **Vérification worker** : 5/5 GET HTTP 200 sur edge Vercel `cdg1` (0.146-0.165 s, cache HIT, 17910 B stable), 3 variantes URL (avec/sans `.html`, avec `/index.html`) = 200. `last-modified: Mon, 17 Aug 2026 16:03:11 GMT`, `etag: "11183fe814f92d3d23fa2b4441374010"` constants. Title / h1 / canonical / `lang="pt-PT"` propres (`Eletricista em Limaos`).
+- **Body bit-stable prod ↔ local** : `sha256(7a2517bfe2eff15dad7e4fed129978dd2eb176a5de542ae71d665343063b7630)` identique entre `https://eletricista-norte-reparos.pt/eletricista-limaos` et `client/public/eletricista-limaos.html` (`diff -q` BIT-IDENTICAL).
+- **Verdict** : **KO PONCTUEL** (faux positif GSC, même pattern que t_cf96c158 / t_97468c02 / t_61da26a4 / t_fcd692d1 / t_b6a4bb5f / etc. drain quota GSC partagé 4 sites Norte-OS).
+- **Décision** : **0 commit, 0 modif sitemap.xml** (gate R7 : on ne touche pas le sitemap sur un faux positif).
+- **Rapport** : `_audit/SMKO-enr-2026-08-17-eletricista-limaos.md` (preuve curl + bit-stable + verdict).
+
 ---
 
 ## 🔄 HISTORIQUE — Run loop 2026-08-12 · `FAQLocal.tsx` (rang 1) + audit `PriceTable.tsx`
