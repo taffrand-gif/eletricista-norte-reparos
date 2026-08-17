@@ -215,6 +215,7 @@ Voir section dédiée. Documentation dans HISTORIQUE.
 | 2026-07-30 | Hermes (kanban t_0abaa4f6) | **Prévenir le drift des hashes Vite dans 26 HTML prérendus** | Ajout d’un hook `postbuild` qui réaligne uniquement les attributs `src`/`href` de `dist/public` vers les chunks du build courant, sans Playwright en CI et sans modifier les snapshots `client/public`. | Un redeploy simple recopiait 26 HTML figés et laissait 198 références vers des bundles absents ; committer un nouveau snapshot ne protège pas le build suivant. | Build vert ; 251 références réalignées dans 26 HTML ; scan exhaustif 4165 HTML = 0 asset `src/href` absent ; revue indépendante SAFE. | ⏳ PR draft — STOP merge/déploiement Filipe |
 | 2026-08-04 | Hermes (kanban t_bac235b8) | **GSC gap 'como ligar interruptor duplo' — création pilier dédié** | Nouvelle page `public/blog/blog-como-ligar-interruptor-duplo.html` (37 KB, 4830 mots) : title/h1/meta alignés sur la query exacte, 11 sections + TOC, 5 blocs JSON-LD (Article + BreadcrumbList + HowTo 6 passos + FAQPage 9 Q + Service), 9 liens internes vers pages piliers ENR. Prix 70 €/h + 15-65 € Z1-Z6 (PRICING.md, 0 invention, 'mediante confirmação'). NAP +351 932 321 892, 0 claim solar/AC. Commit `77e6c0eaf6` sur branche `seo/disjuntor-dispara-sem-nada-ligado-t_23540997`. | GSC 28j : 0 impressions / 0 clics / pos 5.8 sur la query 'como ligar interruptor duplo' ; meilleure page actuelle (guia-cores) ne couvre pas l'intent (comment brancher, pas couleurs des fils). Fix = page dédiée exacte-match query. | Témoins : 5/5 JSON-LD valides (json.loads OK), 9 liens internes, h1 = exact match query, prix 100% PRICING.md, 0 forbidden word, pré-commit maillage-gate contourné via `--no-verify` (fichiers cibles dans public/blog/, pas dans SERVED list du hook — résolu au merge via Vercel rewrite). | ⏳ PR draft — STOP merge/déploiement Filipe (R7) |
 
+| 2026-08-04 | Hermes (kanban t_3553bc9e) | **Rank-push 'ligar comutador de escada simples' -- section dediee + 2 FAQ + fix JSON-LD @context** | Renforcement de la page canonique client/public/blog/como-ligar-comutador-escada.html (pos GSC 6.8, 100 impr/1 clic 28j) : Title -> Ligar Comutador de Escada Simples: Passo a Passo (5 Etapas) + H1 aligne query + nouvelle section H2 #ligar-comutador-de-escada-simples-5-etapas avec 5 etapes numerotees + 2 encadres (sem neutro / 3+ pontos) + FAQ body 4 vers 6 + FAQPage JSON-LD 4 vers 6 mainEntity + bug prod herite 4 @context JSON-LD (https avec triple-asterisque puis @type) -> https://schema.org corrige (4/4 parsables vs 1/4 avant) + canonical inchange. Validation : 17 occurrences CI de la query, 6/6 FAQ alignees, R-TEL 0 masque, R11 0 hit sur 13 patterns, R5 geo-neutre, R12 'a nossa equipa', R145 0 invention, AGENTS.md §13 0 claim DGEG. PR #281 DRAFT (branche feat/enr-rankpush-ligar-comutador-de-escada-simples-t_3553bc9e depuis origin/main f66f5b5d20, +33/-20 sur 1 fichier HTML pur statique). | Diagnostic GSC confirme la query 'ligar comutador de escada simples' sur ENR en position moyenne 6.8 (fenetre 4..20 = presque top3) avec 100 impressions et 1 clic sur 28j (fenetre terminee 2026-08-04). Le body de la tache suggere /blog/guia-cores-fios-eletricos comme meilleure page (via topical relevance), mais verification filesystem (grep -lriE 'comutador de escada simples' client/public/blog/) montre que la cible semantique reelle = /blog/como-ligar-comutador-escada (couvre le comutador d'escada mais ne mentionne pas 'simples'). Decision : **renforcer la page existante** (consolidation d'autorite sur slug canonique, pas de nouvelle page = zero risque doorway, zero cannibalisation). | 1 page canonique renforcee, 1 section H2 dediee + 2 FAQ Q/R ciblees schema, JSON-LD 4/4 parsables, canonical inchange, 0 fichier TS/React touche. PR #281 DRAFT. | PR draft -- STOP merge/deploiement Filipe |
 | 2026-07-18 | Hermes (hotfix clean URLs) | **Réparer la régression des URLs statiques + pré-rendre les 2 guides ENR** | Retour `cleanUrls: true`, retrait du rewrite `/blog/:slug → /index.html`, ajout de `client/public/blog/guia-{curto-circuito,falha-energia}.html` sérialisés depuis le rendu React Chromium local. | `cleanUrls: false` servait le shell SPA canonical home sur les pages statiques sans rewrite explicite ; les fichiers réels permettent désormais aux guides de fonctionner avec clean URLs. | Build vert ; `dist/public/blog/` contient les 2 guides avec title/meta/canonical self uniques + FAQPage/Article ; 3 statiques témoins source=dist byte-à-byte. Leçon : tout toggle `cleanUrls` doit tester les deux familles d’URLs (statiques et routes SPA/guides). | ⏳ PR draft — ne pas merger |
 
 ### 2026-07-17 — MONOPOLE money-kw TACHE 3 (PR #204 draft, branche feat/monopole-guias-enr)
@@ -1972,6 +1973,7 @@ Le fichier **se contredit lui-même** : L17 affiche « 70€ - 140€ » pour «
   3. Ajouter la nouvelle URL à `/public/sitemap-blog.xml` (legacy) et `client/public/sitemap-blog.xml` (actif) — pas fait dans cette tâche pour éviter de commettre sans validation sur le périmètre de sitemap.
 - **Leçon (à propager)** : **diagnostic exhaustif avant patch** (grep + find 2 étapes) permet de confirmer en 2 secondes qu'**aucune page n'existait pour la query**, ce qui justifie la création et non le renforcement — et épargne 30 min de relecture de la page existante qui est complètement off-topic. La tâche aurait été trivialement NO-OP si la page soeur `blog-disjuntor-a-saltar-causas.html` couvrait déjà cette query, ce qui n'est pas le cas (vérifié par grep `dispara.*sem.*nada` = 0 hit dans cette page).
 - **Statut** : 🟢 **Prêt pour GO Philippe**. Branche locale + consignation SEO_PLAN.md + cross-linking prêts. 0 merge sans ordre explicite.
+<<<<<<< HEAD
 
 ---
 
@@ -2000,3 +2002,88 @@ Le fichier **se contredit lui-même** : L17 affiche « 70€ - 140€ » pour «
 - **Branche** : `fix/enr-quem-assina-dgeg-faq-t_b655738d` (commit 48d9f99347), push OK sur origin, PR DRAFT #310 ouverte (MERGEABLE).
 - **Gating R7** : **0 merge, 0 push prod, PR draft laissé en DRAFT** — STOP validation Filipe obligatoire avant merge.
 - **Liens** : PR #310 https://github.com/taffrand-gif/eletricista-norte-reparos/pull/310 · 4 entrées ESCALADE-FILIPE.md (escalades #1 à #4).
+
+=======
+### 2026-08-04 -- t_3553bc9e -- GSC gap enr : 'ligar comutador de escada simples' en pos 6.8 (100 impr / 1 clic 28j)
+
+- **Contexte** : tache t_3553bc9e (assignee default, creee par pool-keeper 04/08). Diagnostic GSC confirme la query **'ligar comutador de escada simples'** sur ENR en **position moyenne 6.8** (fenetre 4..20 = presque top3) avec **100 impressions et 1 clic** sur 28j (fenetre terminee 2026-08-04). Le body de la tache suggere /blog/guia-cores-fios-eletricos comme meilleure page, mais verification filesystem (grep -lriE 'ligar comutador de escada simples' client/public/blog/) montre que la cible semantique reelle = /blog/como-ligar-comutador-escada (couvre le comutador d'escada mais ne mentionne pas 'simples' dans son H1/title -- Google matche la page via topical relevance mais ne capte pas l'intent exact). Decision : **renforcer la page existante** (consolidation d'autorite sur slug canonique, pas de nouvelle page = zero risque doorway, zero cannibalisation, coherent avec t_e7cec757).
+- **Diagnostic filesystem avant patch** :
+  - find client/public -iname '*.html' | grep -iE 'ligar-comutador-de-escada-simples' -> **0 hit avant patch** (pas de page dediee distincte).
+  - grep -ciE 'ligar comutador de escada simples' client/public/blog/como-ligar-comutador-escada.html -> **0 hit** dans la page cible.
+  - grep -ciE 'comutador de escada simples' client/public/blog/como-ligar-comutador-escada.html -> **0 hit** dans la page cible.
+- **Action (R4 strict, additive non-destructive -- preserve cluster rank-push 10/07)** :
+  - **Title** (49 -> 59 chars) : Como Ligar Comutador de Escada: Comum e Viajantes -> Ligar Comutador de Escada Simples: Passo a Passo (5 Etapas) (prefixe query exacte + queue long-tail preservee pour CTR SERP).
+  - **H1** : Como ligar comutador de escada: comum e viajantes -> Ligar comutador de escada simples: passo a passo (5 etapas) (prefixe query, queue long-tail preservee).
+  - **Meta description** (102 -> 153 chars) : integre 'Ligar comutador de escada simples em 5 etapas' en debut.
+  - **og:title + og:description + twitter:title + twitter:description** : alignes sur la query (CVR SERP homogene).
+  - **Answer-first div class=answer** : lead-in snippet Google avec 'Ligar comutador de escada simples' en gras + phrase complete 'em 5 etapas'.
+  - **TOC** : nouvelle entree <a href=#ligar-comutador-de-escada-simples-5-etapas>Ligar comutador de escada simples em 5 etapas</a> ajoutee entre #esquema et #passos.
+  - **Nouvelle section H2 <section id=ligar-comutador-de-escada-simples-5-etapas>** dediee : 5 etapes numerotees (marcar comum -> desligar circuito -> fase no COM A -> unir viajantes entre A/B -> COM B no retorno a lampada) + encadres div class=warn (sem neutro na caixa : nao improvise tomada nem use terra como neutro) + div class=ok (3+ pontos de comando = comutador de cruzamento, peca orcamento). Ajoutee entre #esquema et #passos.
+  - **FAQ body details** : 4 -> 6 questions. 2 nouvelles FAQ Q/R ciblees schema : 'Como ligar comutador de escada simples em 5 etapas?' (exact match query) + 'Qual e o esquema de um comutador de escada simples?' (variante long-tail).
+  - **FAQPage JSON-LD** : mainEntity 4 -> 6 items alignes avec les details du body.
+  - **JSON-LD alignes** : Article.headline + BreadcrumbList[3].name + FAQPage.mainEntity[].name mis a jour sur la query schema. dateModified 2026-07-10 -> 2026-08-04.
+  - **Canonical inchange** : https://eletricista-norte-reparos.pt/blog/como-ligar-comutador-escada (URL stable, PR cumul sur meme slug = consolidation autorite, pas de risque de cannibalisation entre pages).
+- **Bonus -- correction de bug prod herite** :
+  - **4 @context corrompus** dans les JSON-LD blocks 1-4 (Article, BreadcrumbList, FAQPage, Service) : valeur reelle sur disque = (https avec triple-asterisque puis @type) (litteral dans le fichier HTML, verifie via od -c et python3 -m json.tool) au lieu de https://schema.org. Bug herite d'une etape anterieure, jamais detecte en prod (le fichier HTML ne plante pas mais Google Rich Results Test rejette les 4 blocs, dont la nouvelle FAQPage critique pour la query schema). Corriges en 4 patchs minimaux : 4/4 JSON-LD parsables (vs 1/4 avant). Lecon deja documentee dans t_e7cec757 : **le validateur JSON-LD doit etre execute systematiquement sur chaque page avant commit**.
+- **R-TEL gate** : deja conforme avant patch (0 masque, 2 occurrences tel:+351932321892 canonical). Aucun correctif R-TEL necessaire.
+- **Anti-regression R4 (zero invention) -- claims verifies** :
+  - **Aucune zone precise** mentionnee (conforme R5 geo-neutre) : uniquement Tras-os-Montes sans liste de localites. Braganca/Vila Real = ancres maillage preexistantes vers pages villes-sedes (presentes dans la section related avant le patch).
+  - **Aucun prix invente** : tous les chiffres (70 EUR/h x 2, zones 15-65 EUR x 1) viennent directement de PRICING.md. Mention canonique 'orcamento por escrito antes de qualquer intervencao' preservee.
+  - **Aucun delai invente** : pas de 'em 24h' generique. R145 respectee.
+  - **Marques** : 0 marque introduite (Schneider, Legrand AGENTS.md §12 -- page neutre, hors scope).
+  - **Telephone** : +351 932 321 892 (NAP source-of-truth, conforme R11 et PRICING.md ligne finale), 2 occurrences canonical dans CTA + footer.
+  - **Certification** : 0 claim DGEG/TRIESP/Ficha/Termo (chargeur VE = service reel mais non lie a cette page -- AGENTS.md §13 respectee).
+- **JSON-LD Schema.org** : 4/4 blocs parsables par python3 -m json.tool (valide) :
+  - Article : headline 'Ligar comutador de escada simples: passo a passo (5 etapas)', description, url, inLanguage pt-PT, datePublished 2026-02-24, dateModified 2026-08-04, author + publisher Norte Reparos.
+  - BreadcrumbList : Inicio -> Blog -> 'Ligar comutador de escada simples: passo a passo'.
+  - FAQPage : **6 questions** alignees avec les details summary du body.
+  - Service : Eletricista em Tras-os-Montes + areaServed Tras-os-Montes + Offer (70 EUR/h + 15-65 EUR + orcamento por escrito).
+- **Format SEO respecte** :
+  - title 59 char (sous seuil 60 SERP-friendly).
+  - meta description 153 char alignee query schema.
+  - link canonical propre, sans .html (convention cleanUrls active).
+  - meta property og:* et meta name twitter:* tous presents et alignes.
+  - h1 unique 'Ligar comutador de escada simples: passo a passo (5 etapas)' -- integre la query exacte en prefixe + queue long-tail preservee.
+- **Telephone** : tel:+351932321892 (E.164 canonical, gate R-TEL OK, 0 masque).
+- **Conformite doctrine** :
+  - R1 (push Git uniquement, 0 action infra) OK
+  - R3 (STOP validation, scope 1-page + 1 branche + 1 PR draft, valide par le task body) OK
+  - R4 (0 invention, contenu utile, pas de remplissage -- section dediee + 2 FAQ reelles) OK
+  - R5 (geo-neutre, aucune localite citee en claim) OK
+  - R7 (PR draft #281 DRAFT, 0 merge, gating explicite STOP) OK
+  - R11 (0 hit sur 13 patterns inventes) OK
+  - R12 ('a nossa equipa' / 'contacte-nos' / 'garantimos' ; marques = 0 ajout) OK
+  - AGENTS.md §12 Identite OK
+  - AGENTS.md §13 (chargeur VE reel mais non lie a cette page, 0 claim DGEG) OK
+  - R145 (zero delai chiffre, zero montant invente) OK
+  - R-TEL (0 tel masque, 2 tel canonical) OK
+- **Cross-linking** : page liee sortante deja a 14 liens internes (maillage cluster preserve inchange). Cross-linking **entrant** depuis pages soeurs legacy : non touche, structure inline-CSS legacy incompatible avec ajout propre.
+- **Temoins R8 (avant / apres, mesures par python3 local -- /tmp/validate_t3553bc9e.py)** :
+  | Metrique | Avant (origin/main f66f5b5d20) | Apres |
+  |---|---|---|
+  | Octets fichier | 12 423 | 16 195 |
+  | Occurrences 'ligar comutador de escada simples' (CI) | **0** | **17** |
+  | Occurrences 'comutador de escada simples' (CI) | **0** | **19** |
+  | Sections H2 | 6 | 7 (+ #ligar-comutador-de-escada-simples-5-etapas) |
+  | FAQ body details | 4 | 6 |
+  | FAQPage JSON-LD mainEntity | 4 | 6 |
+  | JSON-LD blocs parsables | 1/4 (bug prod herite) | **4/4** |
+  | tel masque (R-TEL gate 0) | 0 | **0** |
+  | Violations R11 | 0 (gate PASS) | 0 (gate PASS) |
+  | Mentions source verite (70 EUR/h x 2, zones 15-65 EUR x 1) | toutes | toutes preservees |
+- **Decompte final** :
+  - **1 fichier modifie** (client/public/blog/como-ligar-comutador-escada.html, +33 / -20 lignes, +1 section H2 + 2 FAQ Q/R + 4 corrections @context).
+  - **0 fichier TS/React modifie** : pure page statique HTML, zero impact sur le build Vite.
+  - **1 PR draft** : #281 sur feat/enr-rankpush-ligar-comutador-de-escada-simples-t_3553bc9e (URL : https://github.com/taffrand-gif/eletricista-norte-reparos/pull/281).
+  - **1 entree append-only** a SEO_PLAN.md (ce bloc + 1 ligne tableau historique).
+- **Gating R7** : **0 merge, 0 push sur main, PR draft laisse en DRAFT**. Branche feat/enr-rankpush-ligar-comutador-de-escada-simples-t_3553bc9e creee depuis origin/main propre (HEAD f66f5b5d20). Worktree : /Users/admin/work/Sites/eletricista-norte-reparos/.worktrees/enr-rankpush-ligar-comutador-escada-simples-t_3553bc9e. Push Git OK (git push -u origin ... branche suivie).
+- **Mesure d'impact attendue** (gsc-trajectoire-cron.sh dimanche 22h, id 8e0fd9b3e269) :
+  - **J+7** : si position passe < 4 sur la query 'ligar comutador de escada simples' -> win capture.
+  - **J+14** : si impressions 28j > 100 ET clics > 1 -> capture confirmee.
+  - **J+28** : si position reste > 10 et impressions ~ 0 -> Rollback possible (revert commit).
+  - **Regression** : surveiller positions long-tail 'como ligar comutador de escada' et 'comutador de escada' (occurrences preservees, canonical inchange) -- devraient rester stables.
+- **Action attendue de Philippe** :
+  1. **Trancher** : merge + push sur main (recommande car page utile + correction de bug prod sur 4 @context JSON-LD casses).
+  2. Verifier que la prod sert bien le changement apres merge (cf. gate R11, lecon #447 recompte chaque claim chiffre).
+  3. Mesurer l'impact J+7/J+14/J+28 via gsc-trajectoire-cron.sh (recette : position < 4 = win, regression long-tail = rollback).
+- **Statut** : Pret pour GO Philippe. Branche + consignation SEO_PLAN.md + PR #281 DRAFT prets. 0 merge sans ordre explicite.>>>>>>> 66912d0a83 (merge rebase #281)
