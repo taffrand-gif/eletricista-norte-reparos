@@ -1640,4 +1640,28 @@ Refs : audit `_audit/AUDIT-EXHAUSTIF-31-2026-08-11-ENR.md` §III.1+III.2 §6 ver
 
 Grep : `Atendimento 24h/7d` 6→0 · `30-45 minutos` 2→0 · `deslocações rápidas` 2→0 · `sem compromisso sem compromisso` 1→0 · `funciona o sem compromisso` 2→0 · **`24h/7d` 8→6 (contrôle positif — R145 l'autorise)**. `tsc` : **106**, baseline exacte.
 
-**Non patché, à arbitrer (1 tap)** : `equipas de piquete sempre disponíveis` (×2) — `sempre disponíveis` est autorisé, c'est le pluriel `equipas` qui est un claim d'effectif ; le reste du repo dit « a nossa equipa ». Et `Deslocamo-nos gratuitamente` (×2).
+- **Non patché, à arbitrer (1 tap)** : `equipas de piquete sempre disponíveis` (×2) — `sempre disponíveis` est autorisé, c'est le pluriel `equipas` qui est un claim d'effectif ; le reste du repo dit « a nossa equipa ». Et `Deslocamo-nos gratuitamente` (×2).
+
+### 2026-08-17 — t_2c3d350c
+
+- **Source** : brief kanban t_2c3d350c (pool-keeper, ligne 115 SEO_PLAN). Mission = traiter le chantier vivant Services NON fournis post-TRIESP 90062.
+- **Recompte live 2026-08-17 14h35 BST (R01 leçon #447)** :
+  - `git grep -lI -i 'painel solar' -- client/public/` = **117 fichiers** (case-insensitive, totalisant 117 occurrences — HTML mono-ligne).
+  - Répartition :
+    - **35 fichiers** `<strong>→ Instalação Painel Solar em [ville]</strong>` suivi d'un `<a href>` vers un article **différent** (texte mort orphelin pur, EXACTEMENT le pattern décrit par Filipe dans son commit `3bb13019b5` chantier-1-hors-perimetre-t_1b984298 le 10/08 mais qu'il n'a **pas terminé** — il a nettoyé les fichiers où `painel solar` était en lowercase, mais pas la forme `Painel Solar` capitalized).
+    - **1 fichier** `<li>Painel Solar Varanda</li>` orphan.
+    - **61 fichiers** `<li><span ... >→</span>Instalação Painel Solar em [ville]</li>` (orphan `<li>` pur).
+    - **28 fichiers** `<strong>→ Instalação Painel Solar em [ville]</strong>` orphan en `</div></section>` (sans `<a>`).
+  - Filipe 10/08 a publié un commit avec un compteur `git grep -lI 'painel solar'` (case-sensitive) qui retournait `117 → 2`. **Bug de recompte** : la version lowercase-only a masqué 115 occurrences capitalized (`Painel Solar` avec majuscule en début de phrase). Leçon #447 confirme : recompter live avant d'annoncer une mesure.
+- **Scope strict identifié (chantier texte mort orphelin pur)** : **110 fichiers**, **125 occurrences**. Pure suppression de chaîne trompeuse — **R4 zero invention strict** (rien d'autre n'est touché).
+- **Décision** : **APPLICABLE — PR draft** (chantier vivant, scope strictement borné, 0 impact schema.org, 0 impact sitemap, 0 lien cassé, 0 prix/délai touché). R7 STOP validation Philippe avant tout merge (PR draft seule = réversible).
+- **Script** : `tools/purge_texte_mort_painel_solar.py` — idempotent, 4 patterns (strong orphelin, li orphelin, Varanda), garde les 7 cas pédagogiques (description caméra Eufy, conseil portail isolé, info article « solar não produz »).
+- **Témoin R8 (avant/après, mesuré)** :
+  - `git grep -lI -i 'Painel Solar' -- client/public/` : **117 → 7** fichiers (-110, soit -94%).
+  - Occurrences supprimées : **125**.
+  - 7 fichiers restants = 100% cas b gardés (Filipe chantier-1 + 5 pages d'article pédagogique « Painel Solar Não Produz Energia »).
+- **Statut** :
+  - PR #256 DRAFT (03/08) sur `feat/purge-painel-solar-macedo-faq` (FAQ macedo panneau solaire) — **toujours en attente GO** depuis 14 jours. **NON touchée** par cette mission (FAQ macedo = question utilisateur, pas texte mort orphelin).
+  - Nouvelle PR draft sur `fix/purge-texte-mort-painel-solar-2026-08-17` (cette branche).
+- **Conformité** : R4 (zéro invention — suppression pure), R7 (STOP merge), R8 (témoin -110 fichiers), R12 (0 mention urgência/24h ajoutée), AGENTS.md §12 (formulation collective préservée), R-WT (worktree depuis origin/main, branche dédiée).
+- **LEÇON #N à consigner dans LECONS.md** : recompte case-sensitive vs case-insensitive en PT — toujours utiliser `-i` pour les motifs en début de phrase, et recompter **deux fois** avant d'annoncer une mesure (cf. leçon #447). Bug réel observé : Filipe 10/08 annonce 117→2 en case-sensitive alors que le total -i reste 117 — sa mesure a masqué 115 occurrences capitalized.
