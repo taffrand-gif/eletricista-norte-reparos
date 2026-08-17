@@ -196,7 +196,9 @@ function generateSitemap() {
   { loc: `${DOMAIN}/servicos`, priority: 0.8, changefreq: 'monthly', lastmod: gitLastmod('client/public/servicos.html') },
   { loc: `${DOMAIN}/faq`, priority: 0.7, changefreq: 'monthly', lastmod: gitLastmod('client/public/faq.html') },
   { loc: `${DOMAIN}/zonas`, priority: 0.7, changefreq: 'monthly', lastmod: gitLastmod('client/public/zonas.html') },
-  { loc: `${DOMAIN}/blog`, priority: 0.8, changefreq: 'weekly', lastmod: gitLastmod('client/public/blog/index.html') }
+  { loc: `${DOMAIN}/blog`, priority: 0.8, changefreq: 'weekly', lastmod: gitLastmod('client/public/blog/index.html') },
+  // Pilier générique curto-circuito (mission t_8ee1a13e — query broad money CPC=4.40 EUR, vol=1600)
+  { loc: `${DOMAIN}/curto-circuito`, priority: 0.8, changefreq: 'monthly', lastmod: gitLastmod('client/public/curto-circuito.html') }
  );
 
  // SEO Vagues 1+2 (loop #6) : pages services/{ville}, faq/{topic}, urgencias/{ville}
