@@ -1691,3 +1691,45 @@ Grep : `Atendimento 24h/7d` 6→0 · `30-45 minutos` 2→0 · `deslocações rá
 - **Doctrines** : R4 (zéro invention prix — tous depuis PRICING.md), R8 (témoins comptés ci-dessus), R11 (0 mention DGEG), R12 (0 pronom « je », 0 promesse 24h sans « mediante confirmação »), R-WT (worktree respecté), commit atomique (2 fichiers = 1 commit).
 - **Gating R7** : **0 merge, 0 push**. Branche `feat/t8ee1a13e-curto-circuito-pillar` créée depuis `origin/main` propre. PR draft à ouvrir. Mesure impact J+7/J+14/J+28 via `gsc-trajectoire-cron.sh` (recette : impr > 0 + clics > 0 sur « curto circuito » broad = capture GAP confirmée).
 - **Action attendue de Philippe** : ouvrir PR draft via `gh pr create --draft --base main --head feat/t8ee1a13e-curto-circuito-pillar --title "fix(enr,seo,pillar): fermer le gap money 'curto-circuito' (CPC=4.40 EUR, vol=1600) — page pilier racine (t_8ee1a13e, 0 impr 28j)" --body "GSC gap query 'curto circuito' broad sur ENR (0 impression / 0 clic / pos=None, fenêtre 28j terminée 2026-08-17). DataForSEO vol=1600/mois, CPC=4.40 EUR. Les pages villes curto-circuito-<ville> et le guide /blog/guia-curto-circuito (informationnel) existent mais aucun pilier générique sans suffixe ville ne cible la query money. Création /curto-circuito.html (HTML statique, ~20 kB, pattern repris des pages villes) : JSON-LD @graph WebSite+Organization+LocalBusiness+Service+FAQPage (1 bloc, 5 entrées, parse OK), canonical self clean, H1 '⚡ Curto-Circuito em Casa — Reparação por Eletricista Habilitado', title exact-match query, table Z1-Z6 + 70 €/h conformes PRICING.md, 6 Q FAQ service, 17 liens internes. +1 entrée dans scripts/generate-sitemap.ts (tableau Static pages). 0 mention DGEG/TRIESP, 0 pronom je/sozinho, 0 cross-ref canalizador-*. Gating R7 : 0 merge, 0 push. Mesure J+7/J+14/J+28 via gsc-trajectoire-cron.sh."`, puis trancher merge ou follow-up."
+
+
+---
+
+## 🔄 HISTORIQUE — Run loop 2026-08-12 · `FAQLocal.tsx` (rang 1) + audit `PriceTable.tsx`
+
+| Date | Agent | Type | Action | Motif | Résultat | Statut |
+|---|---|---|---|---|---|---|
+| 2026-08-12 | cowork-loop | fix | `client/src/components/FAQLocal.tsx` — retrait de la branche `isPlumber ? [...]` morte | R12 (9 occ) + pollution cross-métier plomberie sur un site électricité | 1 fichier, 1 commit, **+1 / −21**. Compteur R12 **9 → 0**. `tsc --noEmit` total 82 (baseline), 0 erreur | ✅ Fait |
+| 2026-08-12 | cowork-loop | audit | `client/src/components/PriceTable.tsx` — 3 écarts relevés vs `hourlyRate: 70` | R4/R11 — main-d'œuvre annoncée à moitié du tarif canonique | **Non patché — arbitrage d'offre requis**, voir ci-dessous | 🛑 GO Philippe |
+
+### `FAQLocal.tsx` — l'ambiguïté du 11/08 est tranchée : hypothèse (a)
+
+Le `context.md` du 11/08 posait la question : « `FAQLocal.tsx` a déjà été traité par la PR #291 et compte pourtant 9 — (a) résiduel de branche morte, ou (b) régression réelle ? »
+
+**Réponse : (a), et de façon statique, pas circonstancielle.**
+
+- `shared/siteConfig.ts` L105 : `id: 'eletricista-norte-reparos'`
+- `shared/siteConfig.ts` L233-235 : `getCurrentSiteConfig()` retourne le `siteConfig` unique — **aucune commutation à l'exécution**
+- donc `isPlumber = config.id === 'norte-reparos'` (L13) est **statiquement faux sur ce repo**
+
+Les 9 occurrences vivaient toutes dans la branche `isPlumber ? [...]` (L14-L32), **jamais rendue**. La branche électricité (L34-L51), seule rendue, était déjà propre — la PR #291 avait bien fait son travail.
+
+**Traitement retenu : retrait de la branche morte plutôt que clôture de l'entrée.** Elle ne portait pas seulement du R12 : elle portait du contenu **plomberie** (`canalizador`, `desentupimento`, `esquentador`, prix de désentupimento) embarqué dans le bundle d'un site d'électricité. Même famille que le retrait du `.md` mort sur CNR (**#286**, 10/08). Retrait pur, zéro vocabulaire introduit, branche électricité inchangée octet pour octet.
+
+Témoins R8 : `isPlumber` 2→0 · `canalizador` 3→0 · `desentupimento` 2→0 · `esquentador` 2→0 · `Atendimento 24h/7d` 3→0 · `domingos` 1→0 · `urgência` 3→0 · `eletricista` 6→6 · `Orçamento por escrito em 48h` 3→3 (contrôles positifs). `questions == answers == 6`.
+
+### 🛑 `PriceTable.tsx` — 3 écarts de prix relevés, NON patchés
+
+Le binôme avec CNR (PR #290 ce run, prix de deslocação faux) a fait vérifier `PriceTable.tsx` ici. **Les deslocações sont correctes** (Z1 = 15 €, Z3 = 35 €, conformes à `PRICING-CANONIQUE.md`) — le défaut CNR ne s'est pas propagé. Mais un défaut **différent** apparaît, sur la main-d'œuvre :
+
+| Ligne | Affiché | Canonique (`hourlyRate: 70`, `PRICING-CANONIQUE.md` L7 « Eletricidade : 70 €/h ») | Écart |
+|---|---|---|---|
+| L109 | « Mão de Obra (**mín. 1h**) : **35 €** » | 1 h = **70 €** | **−50 %** |
+| L12 | « Pequena Arranjo » : « **35€** - 70€ », détail « **Mínimo 1h** de trabalho » | plancher = **70 €** | plancher faux |
+| L117 | « Intervenção Urgência (1h) : **100 €** » | 70 × `urgencyMultiplier: 1.5` = **105 €** | −5 € |
+
+Le fichier **se contredit lui-même** : L17 affiche « 70€ - 140€ » pour « 1-2h de trabalho », soit exactement 70 €/h. Les entrées à 35 € sont les vestiges.
+
+**Pourquoi ce n'est pas patché ce run** : corriger L109 à 70 € rend L12 (« 35€ - 70€ », mínimo 1h) incohérent, et le corriger à son tour ferait de « Pequena Arranjo » un doublon de « Intervenção Standard » (70€ - 140€). **Il n'existe pas de correction verbatim sans redéfinir la structure de l'offre** — c'est un arbitrage, pas un patch. Appliquer la leçon « ne pas sur-purger » plutôt que d'inventer une grille.
+
+➡️ **Décision demandée à Philippe** : quel est le prix plancher réel d'une « Pequena Arranjo » (tomadas, interruptores, pontos de luz) ? Si c'est bien 1 h minimum → plancher 70 € et la ligne « Pequena Arranjo » fusionne avec « Intervenção Standard ». S'il existe un forfait court en dessous de l'heure, il doit entrer dans `PRICING-CANONIQUE.md` — il n'y est pas aujourd'hui.
