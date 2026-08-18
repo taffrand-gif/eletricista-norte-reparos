@@ -27,7 +27,7 @@ const QuadroEletricoDispara: React.FC = () => {
  "url": "https://eletricista-norte-reparos.pt/blog/quadro-eletrico-dispara",
  "mainEntity": [
  {"@type": "Question", "name": "Porque é que o quadro elétrico dispara constantemente?", "acceptedAnswer": {"@type": "Answer", "text": "As 3 causas mais comuns: Sobrecarga: demasiados aparelhos ligados ao mesmo circuito; Curto-circuito: fio danificado ou ligação mal feita; Fuga de corrente: isolamento danificado ou humidade."}},
- {"@type": "Question", "name": "Posso religar o disjuntor várias vezes?", "acceptedAnswer": {"@type": "Answer", "text": "Pode religar 1-2 vezes se disparou por sobrecarga pontual. Não religue repetidamente se dispara mediante confirmação ou há cheiro a queimado. Nunca force a alavanca se não sobe facilmente — o disjuntor pode estar danificado."}},
+ {"@type": "Question", "name": "Posso religar o disjuntor várias vezes?", "acceptedAnswer": {"@type": "Answer", "text": "Pode religar 1-2 vezes se disparou por sobrecarga pontual. Não religue repetidamente se dispara imediatamente ou há cheiro a queimado. Nunca force a alavanca se não sobe facilmente — o disjuntor pode estar danificado."}},
  {"@type": "Question", "name": "Como sei se é sobrecarga no quadro elétrico?", "acceptedAnswer": {"@type": "Answer", "text": "Sinais de sobrecarga: dispara quando liga aparelho potente (forno, aquecedor, máquina lavar), dispara sempre no mesmo circuito, tomadas ou fios ficam quentes, luzes diminuem intensidade ao ligar um aparelho."}},
  {"@type": "Question", "name": "Quanto custa resolver quadro elétrico que dispara?", "acceptedAnswer": {"@type": "Answer", "text": "Custos típicos em Trás-os-Montes: substituir disjuntor defeituoso 40-100€, reparar curto-circuito 80-200€, resolver fuga de corrente 60-150€. Diagnóstico profissional: 40-80€."}},
  {"@type": "Question", "name": "É perigoso o quadro elétrico disparar?", "acceptedAnswer": {"@type": "Answer", "text": "Sobrecarga ocasional não é perigosa se resolver rapidamente. Curto-circuito é perigoso — pode causar incêndio. Fuga de corrente é muito perigosa — risco de choque fatal. Nunca ignore problema recorrente."}}
@@ -62,7 +62,7 @@ const QuadroEletricoDispara: React.FC = () => {
  "totalTime": "PT30M",
  "step": [
  { "@type": "HowToStep", "position": 1, "name": "Identificar Qual Disjuntor Dispara", "text": "Verifique se é o disjuntor geral (problema grave em toda a instalação), o diferencial (fuga de corrente) ou um disjuntor parcial (problema num circuito específico)." },
- { "@type": "HowToStep", "position": 2, "name": "Verificar Quando Dispara", "text": "Anote quando acontece: ao ligar aparelho específico (aparelho avariado), aleatoriamente (fuga de corrente), mediante confirmação ao religar (curto-circuito) ou após alguns minutos (sobrecarga)." },
+ { "@type": "HowToStep", "position": 2, "name": "Verificar Quando Dispara", "text": "Anote quando acontece: ao ligar aparelho específico (aparelho avariado), aleatoriamente (fuga de corrente), imediatamente ao religar (curto-circuito) ou após alguns minutos (sobrecarga)." },
  { "@type": "HowToStep", "position": 3, "name": "Teste de Isolamento", "text": "Desligue TODOS os aparelhos das tomadas e todos os interruptores. Ligue o disjuntor. Se não disparar o problema está num aparelho; se disparar o problema é na instalação fixa." },
  { "@type": "HowToStep", "position": 4, "name": "Identificar o Aparelho Culpado", "text": "Se passou o Passo 3, ligue aparelhos um a um e aguarde 2-3 minutos entre cada. Quando disparar, o aparelho ligado nesse momento é o culpado." },
  { "@type": "HowToStep", "position": 5, "name": "Verificar Sobrecarga", "text": "Some a potência de todos os aparelhos no circuito e compare com a capacidade do disjuntor (ex: 16A = 3680W). Se ultrapassar, redistribua os aparelhos por outros circuitos ou chame eletricista." }
@@ -136,7 +136,7 @@ const QuadroEletricoDispara: React.FC = () => {
  </div>
  <div className="bg-purple-50 p-4 rounded-lg">
  <h4 className="font-bold text-purple-900 mb-2">Disjuntor Diferencial:</h4>
- <p className="text-purple-800 text-sm">Protege contra choques elétricos. Deteta fugas de corrente e desliga mediante confirmação (salva vidas!).</p>
+ <p className="text-purple-800 text-sm">Protege contra choques elétricos. Deteta fugas de corrente e desliga imediatamente (salva vidas!).</p>
  </div>
  <div className="bg-orange-50 p-4 rounded-lg">
  <h4 className="font-bold text-orange-900 mb-2">Contador:</h4>
@@ -199,7 +199,7 @@ const QuadroEletricoDispara: React.FC = () => {
  <div className="bg-orange-50 p-4 rounded-lg">
  <p className="font-bold text-orange-900 mb-2">Sinais Típicos:</p>
  <ul className="text-orange-800 text-sm space-y-1">
- <li>• Dispara mediante confirmação ao ligar disjuntor</li>
+ <li>• Dispara imediatamente ao ligar disjuntor</li>
  <li>• Pode haver faísca ou cheiro a queimado</li>
  <li>• Acontece após trabalhos elétricos ou furar parede</li>
  <li>• Tomada ou interruptor danificado visível</li>
@@ -343,7 +343,7 @@ const QuadroEletricoDispara: React.FC = () => {
  <ul className="text-gray-700 text-sm space-y-1">
  <li>• Ao ligar aparelho específico = aparelho avariado ou sobrecarga</li>
  <li>• Aleatoriamente = fuga de corrente, humidade ou disjuntor defeituoso</li>
- <li>• mediante confirmação ao religar = curto-circuito</li>
+ <li>• Imediatamente ao religar = curto-circuito</li>
  <li>• Após alguns minutos = sobrecarga ou sobreaquecimento</li>
  </ul>
  </div>
@@ -833,7 +833,7 @@ const QuadroEletricoDispara: React.FC = () => {
  <strong>✅ Pode religar 1-2 vezes:</strong> Se disparou por sobrecarga pontual (ligou muitos aparelhos). Desligue alguns e religue.
  </li>
  <li>
- <strong>⚠️ Não religue repetidamente:</strong> Se dispara mediante confirmação ou há cheiro a queimado. Chame eletricista.
+ <strong>⚠️ Não religue repetidamente:</strong> Se dispara imediatamente ou há cheiro a queimado. Chame eletricista.
  </li>
  <li>
  <strong>🚨 Nunca force:</strong> Se alavanca não sobe facilmente, não force. Disjuntor pode estar danificado.
