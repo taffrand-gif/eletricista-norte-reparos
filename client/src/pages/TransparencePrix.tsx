@@ -110,7 +110,7 @@ export default function TransparencePrix() {
  },
  {
  question: "O que acontece se não ficar satisfeito?",
- answer: "Garantia 100% satisfeito ou reembolsado. Se não ficar completamente satisfeito com o trabalho, voltamos gratuitamente para corrigir. Se mesmo assim não resolver, devolvemos o valor pago. Sem perguntas, sem letra pequena. Em 15 anos, isto aconteceu 2 vezes."
+ answer: "% satisfeito. Se não ficar completamente satisfeito com o trabalho, voltamos gratuitamente para corrigir. Se mesmo assim não resolver, devolvemos o valor pago. Sem perguntas, sem letra pequena. Em 15 anos, isto aconteceu 2 vezes."
  },
  {
  question: "Porque devo escolher-vos em vez de um eletricista mais barato?",
@@ -121,7 +121,7 @@ export default function TransparencePrix() {
  <>
  <SEOHead
  title={`Transparência de Preços - Um eletricista profissional de Trás-os-Montes que Publica os Seus Preços | ${config.name}`}
- description="Somos Um eletricista profissional em Trás-os-Montes com preços 100% transparentes publicados online. Veja todos os nossos preços, sem surpresas, sem letra pequena. Pequena arranjo desde 30€, quadros elétricos desde 150€. Garantia satisfeito ou reembolsado."
+ description="Somos Um eletricista profissional em Trás-os-Montes com preços 100% transparentes publicados online. Veja todos os nossos preços, sem surpresas, sem letra pequena. Pequena arranjo desde 30€, quadros elétricos desde 150€. Garantia satisfeito ."
  />
  <Header />
  <main>
@@ -203,10 +203,10 @@ export default function TransparencePrix() {
  <Check className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
  <span>{item}</span>
  </li>
- ))}
+))}
  </ul>
  </div>
- ))}
+))}
  </div>
  </div>
  </section>
@@ -335,7 +335,7 @@ export default function TransparencePrix() {
  <div className="max-w-4xl mx-auto text-center">
  <Shield className="w-16 h-16 mx-auto mb-6" />
  <h2 className="text-4xl md:text-5xl font-black mb-6">
- Garantia 100% Satisfeito<br />ou Reembolsado
+ % Satisfeito<br />
  </h2>
  <p className="text-xl text-white/90 mb-12 leading-relaxed">
  Se não ficar completamente satisfeito com o nosso trabalho, voltamos gratuitamente para corrigir.
@@ -389,7 +389,7 @@ export default function TransparencePrix() {
  {faq.answer}
  </AccordionContent>
  </AccordionItem>
- ))}
+))}
  </Accordion>
  </div>
  </div>
@@ -429,5 +429,5 @@ export default function TransparencePrix() {
  </main>
  <Footer />
  </>
- );
+);
 }
