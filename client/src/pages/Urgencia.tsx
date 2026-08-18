@@ -10,7 +10,7 @@ function Urgencia() {
  return (
  <>
  <Helmet>
- <title>Urgência Eletricista — Intervenção mediante confirmação 24h | Norte Reparos</title>
+ <title>Urgência Eletricista — Intervenção Imediata 24h | Norte Reparos</title>
  <meta name="description" content="Urgência eletricista 24h em Trás-os-Montes. Sem luz? Curto-circuito? Cheiro queimado? Resposta mediante contacto ao domicílio. 932 321 892" />
  </Helmet>
  {/* Hero Urgência */}
@@ -184,7 +184,7 @@ function Urgencia() {
  <div className="bg-red-100 rounded-lg p-4 mb-4">
  <p className="text-sm font-bold text-red-900">
  🚨 Desligue quadro geral<br />
- Ligue mediante confirmação
+ Ligue IMEDIATAMENTE
  </p>
  </div>
  <a

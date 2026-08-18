@@ -34,7 +34,7 @@ export default function QuantoTempoDemoraInstalarTomada() {
  },
  {
  question: "Posso instalar tomada em 1 dia?",
- answer: "SIM. Instalação tomada é feita em 1 dia (1-4h). Começamos, terminamos no mesmo dia. diagnóstico elétrico emitida no final. Pode usar tomada mediante confirmação após."
+ answer: "SIM. Instalação tomada é feita em 1 dia (1-4h). Começamos, terminamos no mesmo dia. diagnóstico elétrico emitida no final. Pode usar tomada imediatamente após."
  },
  {
  question: "Quanto tempo demora instalar várias tomadas?",
@@ -330,7 +330,7 @@ export default function QuantoTempoDemoraInstalarTomada() {
  </h2>
  <p className="text-xl mb-8 max-w-2xl mx-auto">
  Instalação completa 1-5h com garantia incluída.
- Pode usar tomada mediante confirmação após.
+ Pode usar tomada imediatamente após.
  </p>
  <a
  href={`tel:${config.phone.replace(/\s/g, "")}`}

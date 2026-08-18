@@ -32,7 +32,7 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  "name": "Quando devo chamar eletricista urgente?",
  "acceptedAnswer": {
  "@type": "Answer",
- "text": "Chame mediante confirmação se: cheiro a queimado, fumo, faíscas, choques elétricos, quadro muito quente, disjuntor não liga, ou após tempestade com sobretensão. Não , risco de incêndio."
+ "text": "Chame IMEDIATAMENTE se: cheiro a queimado, fumo, faíscas, choques elétricos, quadro muito quente, disjuntor não liga, ou após tempestade com sobretensão. Não , risco de incêndio."
  }
  },
  {
@@ -91,7 +91,7 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  ⚠️ Alerta de Segurança:
  </p>
  <p className="text-gray-800">
- Se detetar <strong>cheiro a queimado, faíscas, choques elétricos ou fumo</strong>, desligue o quadro elétrico mediante confirmação e contacte eletricista urgente. Estes sinais indicam risco iminente de incêndio ou eletrocussão. Não até amanhã.
+ Se detetar <strong>cheiro a queimado, faíscas, choques elétricos ou fumo</strong>, desligue o quadro elétrico IMEDIATAMENTE e contacte eletricista urgente. Estes sinais indicam risco iminente de incêndio ou eletrocussão. Não até amanhã.
  </p>
  </div>
  <p className="lead text-xl text-gray-700 mb-8">
@@ -356,7 +356,7 @@ export default function SinaisCasaPrecisaEletricistaUrgente() {
  Quando devo chamar eletricista urgente?
  </h3>
  <p className="text-gray-700">
- Chame mediante confirmação se: cheiro a queimado, fumo, faíscas, choques elétricos, quadro muito quente, disjuntor não liga, ou após tempestade com sobretensão. Não , risco de incêndio.
+ Chame IMEDIATAMENTE se: cheiro a queimado, fumo, faíscas, choques elétricos, quadro muito quente, disjuntor não liga, ou após tempestade com sobretensão. Não , risco de incêndio.
  </p>
  </div>
  <div className="border-l-4 border-orange-600 pl-4">
