@@ -26,7 +26,7 @@ export default function QuantoTempoSemLuzCasa() {
  const faqs = [
  {
  question: "Quanto tempo fico sem luz se disjuntor disparar?",
- answer: "Disjuntor simples: 1-2 horas. Curto-circuito: 2-4 horas. Problema quadro: 3-6 horas. Eletricista chega em 30-45 min. Começamos arranjo mediante confirmação. Urgente 24h: 932 321 892"
+ answer: "A duração depende da avaria, mediante confirmação por telefone. Eletricista chega mediante confirmação. Começamos arranjo mediante confirmação. Urgente 24h: 932 321 892"
  },
  {
  question: "Eletricista consegue restabelecer luz no mesmo dia?",
@@ -34,11 +34,11 @@ export default function QuantoTempoSemLuzCasa() {
  },
  {
  question: "Quanto tempo demora arranjar curto-circuito?",
- answer: "Curto-circuito: 2-4 horas. Inclui: localizar curto (30-90min), reparar cabo/tomada (30-120min), testar circuito (20-30min), certificar (20min). Feito em 1 dia."
+ answer: "Curto-circuito: mediante confirmação por telefone. Inclui: localizar curto, reparar cabo/tomada, testar circuito, certificar. Feito em poucos dias."
  },
  {
  question: "Posso ter luz hoje se avaria acontecer de manhã?",
- answer: "SIM, se ligar de manhã. Chegamos 30-45 min, arranjamos 1-4h. Se ligar 09:00, luz restabelecida 11:00-14:00. Atendemos urgências 24h: 932 321 892"
+ answer: "SIM, se ligar de manhã. Chegamos mediante confirmação por telefone, arranjamos em poucas horas. Se ligar 09:00, luz restabelecida 11:00-14:00. Atendemos urgências 24h: 932 321 892"
  }
  ];
  const tempos = [
@@ -48,11 +48,11 @@ export default function QuantoTempoSemLuzCasa() {
  tempo: "1-2h",
  solucao: "Substituir disjuntor",
  detalhes: [
- "Chegada: 30-45 min",
- "Diagnóstico: 10-15 min",
- "Substituir disjuntor: 20-30 min",
- "Testar circuito: 10-15 min",
- "Certificar: 15-20 min"
+ "Chegada: mediante confirmação",
+ "Diagnóstico: mediante confirmação",
+ "Substituir disjuntor: mediante confirmação",
+ "Testar circuito: mediante confirmação",
+ "Certificar: mediante confirmação"
  ],
  urgencia: "MÉDIA",
  icon: CheckCircle
@@ -63,12 +63,12 @@ export default function QuantoTempoSemLuzCasa() {
  tempo: "2-4h",
  solucao: "Reparar circuito",
  detalhes: [
- "Chegada: 30-45 min",
- "Localizar curto: 30-90 min",
- "Desligar circuito: 5 min",
- "Reparar cabo/tomada: 30-120 min",
- "Testar circuito: 20-30 min",
- "Certificar: 20 min"
+ "Chegada: mediante confirmação",
+ "Localizar curto: mediante confirmação",
+ "Desligar circuito: mediante confirmação",
+ "Reparar cabo/tomada: mediante confirmação",
+ "Testar circuito: mediante confirmação",
+ "Certificar: mediante confirmação"
  ],
  urgencia: "ALTA",
  icon: Wrench
@@ -79,13 +79,13 @@ export default function QuantoTempoSemLuzCasa() {
  tempo: "3-6h",
  solucao: "Reparar/substituir componente",
  detalhes: [
- "Chegada: 30-45 min",
- "Diagnóstico quadro: 20-30 min",
- "Desligar geral: 5 min",
- "Substituir diferencial: 45-120 min",
- "Ligar circuitos: 30-60 min",
- "Testar todos: 30-45 min",
- "Certificar: 20-30 min"
+ "Chegada: mediante confirmação",
+ "Diagnóstico quadro: mediante confirmação",
+ "Desligar geral: mediante confirmação",
+ "Substituir diferencial: mediante confirmação",
+ "Ligar circuitos: mediante confirmação",
+ "Testar todos: mediante confirmação",
+ "Certificar: mediante confirmação"
  ],
  urgencia: "ALTA",
  icon: AlertTriangle
@@ -96,12 +96,12 @@ export default function QuantoTempoSemLuzCasa() {
  tempo: "2-8h",
  solucao: "Coordenar com EDP",
  detalhes: [
- "Chegada: 30-45 min",
- "Diagnóstico: 15-20 min",
- "Contactar EDP: 30-60 min",
- "Espera técnico EDP: 1-4 horas",
- "Reparar ligação: 30-90 min",
- "Testar: 20-30 min"
+ "Chegada: mediante confirmação",
+ "Diagnóstico: mediante confirmação",
+ "Contactar EDP: mediante confirmação",
+ "Espera técnico EDP: mediante confirmação",
+ "Reparar ligação: mediante confirmação",
+ "Testar: mediante confirmação"
  ],
  urgencia: "CRÍTICA",
  icon: Zap
@@ -111,22 +111,22 @@ export default function QuantoTempoSemLuzCasa() {
  {
  factor: "Tipo de Avaria",
  impacto: "Disjuntor: rápido. Curto: médio. Quadro: longo. Rede: muito longo",
- tempo: "+30min a +6h"
+ tempo: "mediante confirmação por telefone"
  },
  {
  factor: "Localização Problema",
  impacto: "Quadro: rápido. Circuito: médio. Parede escondida: longo",
- tempo: "+20min a +3h"
+ tempo: "mediante confirmação por telefone"
  },
  {
  factor: "Disponibilidade Material",
  impacto: "Material comum (stock): rápido. Material especial: +1-2 dias",
- tempo: "+30min a +48h"
+ tempo: "mediante confirmação por telefone"
  },
  {
  factor: "Hora do Dia",
  impacto: "Dia: normal. Noite/fim-semana: pode demorar mais chegar",
- tempo: "+15min a +1h"
+ tempo: "mediante confirmação por telefone"
  },
  {
  factor: "diagnóstico elétrico",
@@ -157,7 +157,7 @@ export default function QuantoTempoSemLuzCasa() {
  Quanto Tempo Sem Luz Casa?
  </h1>
  <p className="text-xl mb-8">
- Avaria arranjada em 1-3 horas. Eletricista chega.
+ Avaria arranjada em algumas horas. Eletricista chega.
  95% avarias resolvidas no mesmo dia. Atendimento urgente 24h.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -328,7 +328,7 @@ export default function QuantoTempoSemLuzCasa() {
  <div className="container mx-auto px-4 text-center">
  <Clock className="w-16 h-16 mx-auto mb-6" />
  <h2 className="text-3xl font-bold mb-4">
- Sem Luz Casa? Arranjamos em 1-3 Horas
+ Sem Luz Casa? Arranjamos em poucas horass
  </h2>
  <p className="text-xl mb-8 max-w-2xl mx-auto">
  Eletricista chega. 95% avarias resolvidas mesmo dia.

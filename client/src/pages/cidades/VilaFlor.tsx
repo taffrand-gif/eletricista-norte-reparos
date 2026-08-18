@@ -67,7 +67,7 @@ export default function VilaFlor() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Vila Flor?",
- answer: "Chegamos a Vila Flor em aproximadamente 35-45 minutos a partir de Trás-os-Montes. Cobrimos todo o conselho.",
+ answer: "Chegamos a Vila Flor mediante confirmação por telefone a partir de Trás-os-Montes. Cobrimos todo o conselho.",
  },
  {
  question: "Instalam sistemas elétricos em adegas e lagares?",

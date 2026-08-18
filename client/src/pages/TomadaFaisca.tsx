@@ -186,7 +186,7 @@ export default function TomadaFaisca() {
  Tomada Faz Faísca? Ligue AGORA
  </h2>
  <p className="text-xl mb-8 max-w-2xl mx-auto">
- Atendimento 24h. Resposta mediante contacto garantida-45 minutos. Sem compromisso.
+ Atendimento 24h. Resposta mediante contacto. Sem compromisso.
  </p>
  <a
  href={`tel:${config.phone.replace(/\s/g, "")}`}

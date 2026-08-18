@@ -66,7 +66,7 @@ export default function Mogadouro() {
  }, []);
  const cidadesProximas = getCidadesProximas('mogadouro');
  const faqs = [
- { question: "Quanto tempo demora a chegar a Mogadouro?", answer: "Chegamos a Mogadouro em aproximadamente 50-60 minutos a partir de Trás-os-Montes." },
+ { question: "Quanto tempo demora a chegar a Mogadouro?", answer: "Chegamos a Mogadouro mediante confirmação por telefone a partir de Trás-os-Montes." },
  {
  question: "Qual o custo de deslocação a Mogadouro?",
  answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
