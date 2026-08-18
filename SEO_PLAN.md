@@ -2059,3 +2059,64 @@ Le fichier **se contredit lui-même** : L17 affiche « 70€ - 140€ » pour «
 - **Gating R7** : **0 merge, 0 push**. Branche `feat/enr-rankpush-qual-cor-fio-neutro-r3-t_ed44908c` créée depuis `origin/main` propre. PR draft à ouvrir avec commande ci-dessous.
 - **Suivi LECONS** : pas de nouvelle leçon (incident 0 sur ce run). Renforcement R3 sur page déjà solidement positionnée = pattern réutilisable pour les autres T3-INFO GSC gaps avec CTR < 5 % (axes : title query-first + meta compacte 158 chars + answer-first snippet bait + FAQPage +10Q + sitemaps freshness).
 - **Action attendue de Philippe** : `gh pr create --draft --base main --head feat/enr-rankpush-qual-cor-fio-neutro-r3-t_ed44908c --title "fix(enr,seo,blog): rank-push R3 'qual a cor do fio neutro em portugal' — title query-first + meta compacte + answer-first snippet + FAQPage 8→10 (t_ed44908c, pos 5.5, 28 impr/1 clic 28j, CTR 3.6%)" --body "Round 3 renforcement page /blog/qual-a-cor-do-fio-neutro-em-portugal.html (créée PR #331, t_32218c4a) suite GSC 28j close 2026-08-25 : pos 5.5 / 28 impr / 1 clic (CTR 3.6 %, sous benchmark GSC ~5 % pour pos 5). 5 axes SEO on-page : (1) title query-first 'Qual a Cor do Fio Neutro em Portugal: Azul-claro (Norma RTIEBT)' (réponse explicite en title), (2) meta description compactée 196→158 chars + chiffres clés, (3) sous-titre dateUpdated 2026-08-25 + tempo leitura, (4) answer-first featured-snippet bait 75 mots en tête H2 §1, (5) FAQPage densifiée 8→10 questions dont 2 nouvelles exact-match longue traîne (na tomada + cabo 3 fios). + 3 sitemaps lastmod 2026-08-13→2026-08-25. Page passe 3268→3572 mots (+9.3 %), 297→309 lignes. Doctrine OK : R4/R12/R-canon/R145/R-TEL/PT-PT. JSON-LD 4/4 valides (Article dateModified 2026-08-25, FAQPage 10 Q), FAQ sync 10/10. Prix inchangés (70 €/h + Z1-Z6 PRICING.md). Gating R7 : 0 merge, 0 push prod. Mesure impact J+7/J+14/J+28 via gsc-trajectoire-cron.sh (recette : CTR > 5 % + pos < 5 = win, impr > 28 + clics > 1 = capture confirmée).\"`, puis trancher merge ou follow-up.
+---
+## G24 — Rank-push ENR `tomada queimada` R2 (t_b6cbd373, 2026-08-18)
+
+**Contexte** : GSC gap MONOPOLE — round 2 sur la même query « tomada queimada » après consolidation G23 (t_5d146c11, PR #293 mergé 2026-08-05). Nouvelle fenêtre 28j terminée 2026-08-18 : imp=78, clk=2, **CTR=2.6%**, pos=7.6 (fenêtre 4..20). Page canonique EXISTE et était déjà renforcée par G23 (`client/public/blog/tomada-queimada-perigos-solucoes.html`).
+
+**Diagnostic** : la page est bien indexée (78 impressions) mais le CTR reste trop bas. Pistes probables : (a) title de l'époque G23 (« Tomada Queimada: 5 Causas + Perigos de Incêndio ») pas strict query-exact ; (b) absence de Q/R FAQPage sur les sous-questions naturelles (Como saber / Quando substituir) qui donnent des featured snippets ; (c) section H2 introductive qui couvrait le concept mais sans maillage explicite des 5 causes + 7 sinais de alerta.
+
+**Décision** : 1 PR draft atomique `feat/enr-rankpush-tomada-queimada-r2-t_b6cbd373` (base main). 4 fichiers touchés, scope strict 50+/7-.
+
+**Changements appliqués** (commit `dd64885711`) :
+
+1. `client/public/blog/tomada-queimada-perigos-solucoes.html` (canonique) :
+   - Title → query-exact : « Tomada Queimada: Perigos + 5 Causas Reais (Diagnóstico FLIR) » (l'ancien « 5 Causas + Perigos de Incêndio » n'était pas exact-match)
+   - Meta description enrichie : géo Trás-os-Montes + NAP 932 321 892 + « orçamento por escrito » avant
+   - og:description + twitter:description alignées sur la meta description
+   - keywords meta + « tomada queimada como identificar, tomada queimada sinais »
+   - FAQPage JSON-LD 3 → 5 Q/R :
+     - + « Como saber se a tomada está queimada? » (signes visibles + invisibles)
+     - + « Quando substituir uma tomada queimada? » (Schneider / Legrand / ABB)
+   - **Nouvelle section H2** « Tomada Queimada: 5 Causas Mais Comuns e Sinais de Alerta » insérée entre H2 introductif et H2 É Perigoso (couvre exactement la query, structure: 5 causes + 7 sinais + H3 « Por que uma tomada queimada é perigosa? »)
+   - dateModified JSON-LD 2026-08-05 → 2026-08-18
+   - Date visible « Última atualização: 5 de agosto → 18 de agosto de 2026 »
+   - Maillage interne élargi : +5 voisines vers articles relacionados (tomada preta, tomada faiscas, tomada quente, cheiro queimado)
+2. `client/public/sitemap-blog.xml` : lastmod canonique 2026-08-05 → 2026-08-18
+3. `client/public/sitemap-plain.xml` : lastmod canonique 2026-08-05 → 2026-08-18
+4. `scripts/validate-jsonld.py` (NEW, +33) : parse les 7 blocs JSON-LD de la page, valide la syntaxe + compte les Q/R de FAQPage. Réutilisable pour les autres pages du cluster (kill le pattern copier-coller silencieux).
+
+**Témoins R8 (audit 3 couches)** :
+
+- **Témoin 1 (canonique)** : `tomada queimada` canonique = 18 occ (main) → 26 occ (worktree) → 26 occ (build `dist/`) = +8 occ
+- **Témoin 2 (JSON-LD)** : 7 blocs tous valides (Article, BreadcrumbList, HowTo, Service, FAQPage 5Q/R, Service, LocalBusiness), `validate-jsonld.py` 0 erreur
+- **Témoin 3 (build)** : `npm run build` vert, prerender 26 HTML, dist/public/blog/tomada-queimada-perigos-solucoes.html = 30251 octets
+- **Témoin 4 (diffstat)** : 4 files, 50 insertions, 7 suppressions (canonique + 2 sitemaps + 1 script)
+- **Témoin 5 (doctrine)** : R4 zéro invention (0 marque/prix/délai), R11 (NAP 932 321 892 + 70 €/h de PRICING.md), R12 (« a nossa equipa » présent, 0 « je/sozinho » côté rédaction), R145 (« mediante confirmação » formulation acceptée post-#343), AGENTS.md §13 (PT-PT strict, géo Trás-os-Montes)
+
+**Doctrine respectée** :
+
+- R4 zéro invention : aucune marque/prix/délai inventé. FAQPage « Schneider / Legrand / ABB » = marques de référence déjà citées sur main (FAQPage G23), pas d'ajout de marque non-vérifiée
+- R7 STOP validation Philippe : 0 merge, PR DRAFT
+- R3 scope : 3 fichiers de prod touchés, scope strict ≤300 lignes ✓
+- R8 témoins : 5 couches validées
+- R-AGENTS.md §13 : PT-PT strict, NAP 932 321 892, géo Trás-os-Montes
+- R-AGENTS.md §11 : auto-routeur Norte-OS, gap MONOPOLE
+
+**Gating R7** : 0 merge, PR #345 DRAFT, STOP validation Philippe nominative. Branche `feat/enr-rankpush-tomada-queimada-r2-t_b6cbd373` depuis `origin/main` à `3d1645ba33`. Worktree : `/Users/admin/work/Sites/eletricista-norte-reparos/.worktrees/rankpush-tomada-queimada-r2-t_b6cbd373`. Push Git OK (`git push -u origin`, sans --force).
+
+**Mesure d'impact attendue** (`gsc-trajectoire-cron.sh` dimanche 22h, id 8e0fd9b3e269) :
+
+- **J+7** : si position < 4 → win probable (FAQPage 5 Q/R + title exact-match + nouvelle section H2 sur la query + date visible fraîche + maillage élargi)
+- **CTR attendu** : 2.6% → 5-7% (title exact-match + meta enrichie) = +3-4 clics/30j
+- **J+14** : si impressions 28j > 90 et clics > 4 → capture confirmée
+- **J+28** : si position > 8 et impressions ~0 → Rollback (revert `dd64885711`)
+- **Régression à surveiller** : voisines maillées (`tomada preta/faiscas/quente/cheiro queimado`), canonical distinct, devrait rester stable
+
+**Action attendue de Philippe** :
+
+1. **Trancher** : merge + push sur `main` (recommandé - gap MONOPOLE #1 récurrent, signal fort sur query money-diagnostic, page déjà canonique depuis G23)
+2. Vérifier que la prod sert bien le changement après merge (cf. gate R11, leçon #447 recompte chaque claim chiffré)
+3. Mesurer l'impact J+7 / J+14 / J+28 via `gsc-trajectoire-cron.sh` (recette : position < 4 = win, régression long-tail = rollback)
+
+**Refs** : PR #345 DRAFT (https://github.com/taffrand-gif/eletricista-norte-reparos/pull/345), branche `feat/enr-rankpush-tomada-queimada-r2-t_b6cbd373`, kanban `t_b6cbd373`. Parent `t_0b3dc988` (MONOPOLE-PERSISTENCE). Sœurs : t_5d146c11 (G23 done PR #293), t_6cd173cc (interruptor duplo 2026-08-18), t_6a4315f2 (fase neutro 2026-08-18).
