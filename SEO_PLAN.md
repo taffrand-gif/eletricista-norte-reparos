@@ -681,7 +681,7 @@ Branche : `feat/seo-vague2-2026-06-30` @ 3 commits (c6ba77562, 305963c53, 6abdb2
 
 ### Compétences codifiées cette session (3 skills)
 
-- **`r145-zero-delay-sweep`** : jamais de délai chiffré type « 24h/7 dias » sans validation explicite Philippe ; « resposta mediante confirmação por telefone » / « resposta prioritária » = BANNIS. Conforme AGENTS.md §11.
+- **`r145-zero-delay-sweep`** : jamais de délai chiffré type « 24h/7 dias » sans validation explicite Philippe ; « resposta » / « resposta prioritária » = BANNIS. Conforme AGENTS.md §11.
 - **`r12-mediante-confirmation-batch`** : R12 doctrine Transparence Radicale appliquée en batch avec confirmation Philippe par cluster (STOP→GO groupés 1/cluster, pas de validation fichier-par-fichier).
 - **`cascading-handoff`** : handover Obsidian NORTE-OS en cascade inter-sessions ; recovery d'échec tool `memory` saturé via `write_file` direct (leçon #273).
 
@@ -1212,7 +1212,7 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
 - **Constat GSC (fenêtre 28j close 03/08/2026)** : query « como ligar um interruptor duplo » sur ENR en position moyenne 6.1 (fenêtre 4..20) avec **0 impression / 0 clic** sur la fenêtre. La page dédiée `client/public/blog/como-ligar-interruptor-duplo.html` (16 049 octets, datée 14/07/2026) n'avait **aucune occurrence littérale** de la query exacte : « Como Ligar Interruptor Duplo » sans déterminant. Or la query GSC inclut « um » — déterminant conversationnel typique PT-PT. Google ne pouvait pas matcher l'exact search.
 - **Violations R11 héritées (audit pré-fix)** :
   - JSON-LD FAQPage « Quanto custa um eletricista? » → réponse « Entre 85-95 EUR/hora mais 20-40 EUR de deslocacao » (**prix et déplacement inventés**, PRICING = 70 €/h élec + Z1 15 €→Z6 65 €).
-  - JSON-LD FAQPage « Atendemos 24h/7 dias, mediante confirmação por telefone » (**interdit sur ENR** — l'urgence est gérée par `eletricista-urgente.pt`, AGENTS.md §12).
+  - JSON-LD FAQPage « Atendemos 24h/7 dias » (**interdit sur ENR** — l'urgence est gérée par `eletricista-urgente.pt`, AGENTS.md §12).
   - JSON-LD FAQPage « Emitem profissionais? » → formulation grammaire cassée (héritage).
   - H1 `⚡ Como Ligar Interruptor Duplo` (emoji parasite pour le parseur Google).
   - Doublons CTA `Atendemos 24h/7 dias` en pied de page (×2 blocs dupliqués).
@@ -1530,7 +1530,7 @@ M8 cleanUrls + M11 redirects + M10 clés IndexNow + M11-bis (sources .html → e
 - **Anti-régression R4 (zéro invention)** — claims vérifiés :
   - **Aucune zone précise** mentionnée (conforme R5 géo-neutre) : uniquement « Trás-os-Montes » + « Macedo de Cavaleiros » (4 + 1 occurrences). 0 hit sur Bragança, Mirandela, Vila Real, Chaves, Lamego.
   - **Aucun prix inventé** : extrait directement de `PRICING.md` (70 €/h eletricidade ; déplacement par zone 15 € à 65 €). Aucun forfait. Mention canonique « orçamento por escrito antes de qualquer intervenção, sem surpresas na fatura ».
-  - **Aucun délai inventé** : pas de « em 24h » générique. Phrase-type « Resposta mediante confirmação por telefone » reprise du canon Norte Reparos. 0 hit R145.
+  - **Aucun délai inventé** : pas de « em 24h » générique. Phrase-type « Resposta » reprise du canon Norte Reparos. 0 hit R145.
   - **Marques** : aucune marque fabricant mentionnée (Schneider, Legrand, Hager, ABB, Efapel = tous absents).
   - **Téléphone** : `+351 932 321 892` (NAP source-of-truth, conforme R11 et PRICING.md ligne 34).
   - **Certification** : mention « normas técnicas do setor elétrico » uniquement, pas de mention DGEG/TRIESP/Ficha/Termo (puisque la page traite d'identification de conducteurs, pas de certification ; conforme R12 source-of-truth DGEG qui concerne uniquement les installations certifiées).
@@ -1853,7 +1853,7 @@ Le fichier **se contredit lui-même** : L17 affiche « 70€ - 140€ » pour «
 - **Anti-régression R4 (zéro invention) — claims vérifiés** :
   - **Aucune zone précise** mentionnée hors Trás-os-Montes et Douro + Macedo de Cavaleiros (sede opérationnel, conforme R5 géo-neutre).
   - **Aucun prix inventé** : 70€/h MO + Z1=15€/Z2=25€/Z3=35€/Z4=45€/Z5=55€/Z6=65€ + majoration +50% — extrait directement de `PRICING.md`. Aucun forfait. Phrase canonique « orçamento por escrito antes de qualquer intervenção, sem surpresas na fatura » répétée 3 fois.
-  - **Aucun délai chiffré** : pas de « em 24h » générique, pas de « em X minutos » ou « em Y horas » ou « resposta em N ». Phrase-type « Resposta mediante confirmação por telefone » / « mediante confirmação » reprise du canon Norte Reparos.
+  - **Aucun délai chiffré** : pas de « em 24h » générique, pas de « em X minutos » ou « em Y horas » ou « resposta em N ». Phrase-type « Resposta » / « mediante confirmação » reprise du canon Norte Reparos.
   - **Aucune marque fabricant** mentionnée : Schneider, Legrand, Hager, ABB, Siemens, Fluke, Megger, FLIR, Efapel = tous absents (R12 marques verrouillées, Efapel INTERDIT par AGENTS.md §12).
   - **Téléphone NAP canonique** : `+351 932 321 892` (visible humain) + `+351****1892` (E.164 masqué conforme PRICING.md ligne 42 et pattern du repo appliqué 124× dans `client/public/blog/`).
   - **Aucune mention DGEG/TRIESP/Ficha/Termo** (cf. purge 03/08, R12 source-of-truth DGEG concerne uniquement les installations certifiées ; cette page traite du service de piquete, pas de certification).
