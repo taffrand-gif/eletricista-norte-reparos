@@ -320,7 +320,7 @@ export default function QuadroEletricoDisparaCausas() {
  Quando Chamar Eletricista Urgente?
  </h2>
  <p>
- Contacte profissional com experiência mediante confirmação se:
+ Contacte profissional com experiência se:
  </p>
  <ul>
  <li>Cheiro a queimado ou fumo no quadro elétrico</li>
