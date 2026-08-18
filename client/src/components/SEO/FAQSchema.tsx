@@ -51,7 +51,7 @@ question: "têm experiência ?",
  },
  {
  question: "Quanto custa arranjar uma avaria elétrica?",
- answer: "Arranjo de avaria elétrica custa €80 em Bragança. Inclui deslocação, diagnóstico e reparação simples. Resolvemos 90% dos casos em menos de 1 hora."
+ answer: "Arranjo de avaria elétrica custa €80 em Bragança. Inclui deslocação, diagnóstico e reparação simples. Resolvemos a maioria dos casos mediante confirmação por telefone."
  },
  {
  question: "Fazem diagnóstico elétrico?",

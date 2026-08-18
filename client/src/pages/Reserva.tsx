@@ -245,7 +245,7 @@ export default function Reserva() {
  ℹ️ Informações Importantes
  </h3>
  <ul className="space-y-2 text-blue-800">
- <li>• Entraremos em contacto em até 2 horas para confirmar a sua reserva</li>
+ <li>• Entraremos em contacto mediante confirmação por telefone para confirmar a sua reserva</li>
  <li>• O horário está sujeito a disponibilidade</li>
  <li>• Para urgências, ligue diretamente: {config.phone}</li>
  <li>• Serviço disponível Atendimento 24h/7d, 7 dias por semana</li>

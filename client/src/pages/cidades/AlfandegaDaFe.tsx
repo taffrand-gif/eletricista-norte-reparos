@@ -99,7 +99,7 @@ export default function AlfandegaDaFe() {
  { icon: Zap, title: "Instalações para Amendoais", desc: "Sistemas de rega elétricos, iluminação de armazéns e processamento" },
  { icon: Shield, title: "Quadros Elétricos Agrícolas", desc: "Quadros trifásicos para lagares de azeite e maquinaria" },
  { icon: CheckCircle, title: "Remodelação Habitacional", desc: "Atualização de instalações elétricas em casas antigas do concelho" },
- { icon: Zap, title: "Urgências 24h", desc: "Resposta mediante contacto a 30 minutos de Trás-os-Montes" },
+ { icon: Zap, title: "Urgências 24h", desc: "Resposta mediante contacto de Trás-os-Montes" },
  ].map((service, index) => (
  <div key={index} className="flex items-start gap-4 p-6 bg-white rounded-xl shadow">
  <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
