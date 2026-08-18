@@ -138,7 +138,7 @@ Precisa de um eletricista profissional em Trás-os-Montes? A nossa equipa interv
 - 📧 **Email**: geral@eletricista-norte-reparos.pt
 - 🌐 **Site**: [eletricista-norte-reparos.pt](https://eletricista-norte-reparos.pt)
 
-**Horário**: disponível 24h, 7 dias por semana, mediante confirmação por telefone. Intervenção em horário nocturno, fim de semana e feriado sujeito a confirmação prévia.
+**Horário**: disponível 24h, 7 dias por semana. Intervenção em horário nocturno, fim de semana e feriado sujeito a confirmação prévia.
 
 ---
 

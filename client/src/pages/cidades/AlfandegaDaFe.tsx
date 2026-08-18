@@ -67,7 +67,7 @@ export default function AlfandegaDaFe() {
  const faqs = [
 {
  question: "Quanto tempo demora a chegar a Alfândega da Fé?",
- answer: "Chegamos a Alfândega da Fé mediante confirmação por telefone a partir de Trás-os-Montes. Cobrimos todo o conselho.",
+ answer: "Chegamos a Alfândega da Fé a partir de Trás-os-Montes. Cobrimos todo o conselho.",
  },
 {
  question: "Qual o custo de deslocação a Alfândega da Fé?",

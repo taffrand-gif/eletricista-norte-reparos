@@ -157,7 +157,7 @@ export default function QuantoTempoSemLuzCasa() {
  Quanto Tempo Sem Luz Casa?
  </h1>
  <p className="text-xl mb-8">
- Avaria arranjada em 1-3 horas. Eletricista chega mediante confirmação por telefone.
+ Avaria arranjada em 1-3 horas. Eletricista chega.
  95% avarias resolvidas no mesmo dia. Atendimento urgente 24h.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -283,7 +283,7 @@ export default function QuantoTempoSemLuzCasa() {
  <div className="space-y-6">
  {[
  { tempo: "14:00", acao: "Liga para 932 321 892", descricao: "Sem luz em casa. Atendimento 24h/7d." },
- { tempo: "14:05", acao: "Eletricista a caminho", descricao: "Confirmamos chegada mediante confirmação por telefone" },
+ { tempo: "14:05", acao: "Eletricista a caminho", descricao: "Confirmamos chegada" },
  { tempo: "14:35", acao: "Eletricista chega", descricao: "Avaliação quadro eléctrico e diagnóstico" },
  { tempo: "14:45", acao: "Diagnóstico completo", descricao: "Identificamos problema: disjuntor avariado" },
  { tempo: "14:50", acao: "Início reparação", descricao: "Substituição disjuntor (material em stock)" },
@@ -331,7 +331,7 @@ export default function QuantoTempoSemLuzCasa() {
  Sem Luz Casa? Arranjamos em 1-3 Horas
  </h2>
  <p className="text-xl mb-8 max-w-2xl mx-auto">
- Eletricista chega mediante confirmação por telefone. 95% avarias resolvidas mesmo dia.
+ Eletricista chega. 95% avarias resolvidas mesmo dia.
  Atendimento urgente 24h em Trás-os-Montes.
  </p>
  <a
