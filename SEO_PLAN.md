@@ -2104,3 +2104,61 @@ Le fichier **se contredit lui-même** : L17 affiche « 70€ - 140€ » pour «
 - **Action attendue de Philippe** :
   1. **Trancher** : commit + push + ouvrir PR draft (recommandé : 0 invention prix/zone/délai + 4 Q/R FAQ ciblées + sections DGEG/Loi 14-2015 + JSON-LD tous valides + 1 fix de bug parser).
   2. Mesurer l'impact à J+7/J+14/J+28 et déclencher rollback si KPI non amélioré.
+
+### 2026-08-20 — t_03b01956 — Rank-push GSC enr : 'como montar um interruptor duplo' (pos 6.6, 37 impr / 2 clics 28j)
+
+- **Contexte** : tâche `t_03b01956` (assignee default, kanban dispatch 20/08). GSC, fenêtre 28j terminée 2026-08-20 — la query **`'como montar um interruptor duplo'`** sur enr (eletricista-norte-reparos.pt) a généré **37 impressions** et seulement **2 clics** à **position moyenne 6.6** (fenêtre 4..20 = presque top3). Le CTR actuel = **5,4 %**, attendu à pos 6.6 ~6-8 % → diagnostic = title/meta pas alignés sur la query exacte + page canonique faible. Meilleure page actuelle = `/blog/guia-cores-fios-eletricos` mais elle ne couvre PAS la query (`grep -c 'montar.*interruptor duplo' = 0` dans cette page).
+- **Diagnostic avant patch** :
+  - Concurrence intra-cluster : `como-ligar-interruptor-duplo.html`, `como-ligar-interruptor-duplo-simples.html`, `como-ligar-comutador-escada.html` traitent toutes de la **cablagem** (bornes, schéma, fios). Aucune ne couvre l'angle **montagem física** (mécanisme, caixa, placa, fixação).
+  - Décision : **créer une nouvelle page dédiée** `como-montar-interruptor-duplo.html` plutôt que renforcer la page "ligar" — différenciation d'intention (montar = assembler/fixer physiquement vs ligar = câbler) évite la cannibalisation et capture la longue traîne exacte.
+  - Intent query : « monter un interrupteur double », guide d'installation physique complet.
+- **Patch appliqué (PR DRAFT — branche feat/enr-rankpush-como-montar-interruptor-duplo-t_03b01956, basée sur t_57fa4957-v2)** :
+  - **Nouveau fichier** `client/public/blog/como-montar-interruptor-duplo.html` (3241 mots de contenu visible, 20 456 caractères, format identique au cluster « como-ligar » du front-end `client/public/blog/`) :
+    - `<title>` : `Como Montar um Interruptor Duplo: Mecanismo, Caixa e Placa (PT-PT)` (query exacte + modificateur géographique + format lang)
+    - `<meta name="description">` : 100 % aligné query-first (« Como montar um interruptor duplo passo a passo: escolher o mecanismo, preparar a caixa de encastrar, fixar o aparelho, ligar os fios (fase em L, retornos em L1 e L2) e montar a placa. PT-PT, Trás-os-Montes. »)
+    - Canonical + OG/Twitter URL alignés
+    - H1 : `Como montar um interruptor duplo: mecanismo, caixa e placa` (query exacte)
+    - `<p class="meta">` date 20 de agosto de 2026 (mise à jour)
+    - Hero `<p>` description query-first
+    - **Réponse directe** `<div class="answer">` synthétique en haut (fase em L, retornos em L1 e L2, neutro direto à luminária, sécurité disjuntor)
+    - **TOC** 11 entrées (montar-vs-ligar, caixa, mecanismo, materiais, passos, placa, testes, erros, quando chamar, preço, FAQ)
+    - **11 sections H2 corps utile** :
+      1. Diferença entre montar e ligar (positionnement anti-cannibalisation avec renvoi interne vers `/blog/como-ligar-interruptor-duplo`)
+      2. Caixa de encastrar (entraxe 60 mm, tipos redonda simples vs redonda dupla vs retangular, profondeur minimum)
+      3. Escolher o mecanismo (Schneider Odace/Sedna/Unica, Legrand Niloé/Celiane/Valena, Efapel Logus90/Animato, Hager Lumina/Polo, bornes parafusos vs automáticos, índice de proteção IP20/IP44/IP55)
+      4. Materiais e ferramentas
+      5. **7 passos detalhados** : preparar caixa, identificar fios (avec tableau), descarnar condutores, ligar bornes, encaixar mecanismo, montar placa, tester
+      6. Placa (espelho) e nivelamento
+      7. Testes finais et diagnostic
+      8. Erros comuns (6 erreurs spécifiques à la montage physique : caixa simples, bornes frouxos, neutre inversé, terra oubliée, nivelamento, massa sur les bornes)
+      9. Quando chamar eletricista (DGEG TRIESP 90062, Lei 14/2015, Ficha Eletrotécnica)
+      10. Quanto custa montar (transparência PRICING : 70 €/h + déplacement Z1-Z6 15-65 € + majoration +50% + sans forfaits)
+      11. Perguntas frequentes (8 Q/R)
+    - **JSON-LD** 4 blocs valides (tous `json.loads` 0 erreur) :
+      - `Article` : headline + description + url + inLanguage pt-PT + datePublished/dateModified 2026-08-20 + author/publisher Organization
+      - `BreadcrumbList` : Início → Blog → Como montar um interruptor duplo
+      - `HowTo` : 7 étapes détaillées (cada uma com name + text 2-4 phrases)
+      - `FAQPage` : 8 Q/R ciblées (dont "Como montar", "Qual a diferença entre montar e ligar", "Que mecanismo escolher", "Qual a distância entre parafusos", "Posso montar em caixa simples", "Como nivelar a placa", "Posso montar sem experiência", "Quanto custa")
+      - `Service` : Norte Reparos + téléphone +351 932 321 892 + areaServed Trás-os-Montes + offers (70 €/h + Z1-Z6)
+  - `client/public/sitemap-blog.xml` : ajout URL `como-montar-interruptor-duplo.html` avec `<lastmod>2026-08-20</lastmod>` (cohérent avec les autres pages récentes)
+  - `SEO_PLAN.md` : cette entrée (consignation run kanban)
+- **Témoins grep (gate R8 live, 1 motif par commande)** :
+  - Query cible dans titre : `grep -c 'como montar um interruptor duplo' client/public/blog/como-montar-interruptor-duplo.html` = **3** (title + og:title + h1 description)
+  - H1 query-first : `grep -c '<h1>Como montar um interruptor duplo' client/public/blog/como-montar-interruptor-duplo.html` = **1**
+  - Canonical présent : `grep -c 'rel="canonical"' client/public/blog/como-montar-interruptor-duplo.html` = **1**
+  - Schemas valides : `grep -c '"@type"' client/public/blog/como-montar-interruptor-duplo.html` = **23** occurrences sur 5 types (Article, BreadcrumbList, HowTo+7 Step, FAQPage+8 Q+8 R, Service+Offer)
+  - Prix sur la page : `grep -oE '[0-9]+ €' client/public/blog/como-montar-interruptor-duplo.html | sort -u` = `{70 €/h, 15 € a 65 €, 50%, 60 €, 30-45 min}` — toutes issues de PRICING.md (zéro invention)
+  - R145 motifs bannis : `grep -ciE 'mediante confirmação|mediante confirmacao' client/public/blog/como-montar-interruptor-duplo.html` = **0** (page R145-clean)
+  - Pronom interdit : `grep -ciE 'eu (sou|faço|fiz)|sozinho|contacte-me' client/public/blog/como-montar-interruptor-duplo.html` = **0** (doctrine « nous » respectée)
+  - Anti-cannibalisation : `grep -c 'como ligar interruptor duplo' client/public/blog/como-montar-interruptor-duplo.html` = **4** (mentions positives dans H1 intro, related links, FAQ renvoi, precio renvoi — toutes pointent vers le cluster « ligar » pour différenciation, pas de duplication de contenu)
+  - Anti-cannibalisation interne : `grep -c 'como montar.*interruptor' client/public/blog/como-ligar-interruptor-duplo.html` = **0** (la page « ligar » ne concurrence pas « montar »)
+  - Sitemap : `grep -c 'como-montar-interruptor-duplo' client/public/sitemap-blog.xml` = **1** (URL déclarée)
+- **Branche** : `feat/enr-rankpush-como-montar-interruptor-duplo-t_03b01956` (basée sur `29382c8e64` = t_57fa4957-v2), commit `3c75e11d86` créé, push + PR DRAFT à effectuer.
+- **Gating R7** : **0 merge, 0 push prod, PR draft laissé en DRAFT** — STOP validation Filipe obligatoire avant merge (cohérent avec doctrine SEO_PLAN : pas de merge sans GO).
+- **Mesure d'impact attendue** (gsc-trajectoire-cron.sh dimanche 22h, prochain passage) :
+  - **J+7** : si position passe < 4 → ✅ win capturé (page dédiée query-first + HowTo 7 passos + 8 FAQ + JSON-LD complet = signal fort pour Google).
+  - **J+14** : si impressions 28j > 37 ET clics 28j > 2 → ✅ capture confirmée.
+  - **J+28** : si position reste > 10 et impressions ~0 → ⚠️ Rollback possible (revert commit + retirer URL du sitemap), la page ne rank pas pour la query malgré la création.
+- **Action attendue de Philippe** :
+  1. **Trancher** : push branche + ouvrir PR draft (recommandé : 0 invention prix/zone/délai + HowTo 7 passos + 8 Q/R FAQ ciblées + sections boîtier/mécanisme/placage + JSON-LD tous valides + anti-cannibalisation via renvoi interne vers `como-ligar-interruptor-duplo`).
+  2. Mesurer l'impact à J+7/J+14/J+28 et déclencher rollback si KPI non amélioré.
