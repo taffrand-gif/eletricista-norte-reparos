@@ -2059,3 +2059,46 @@ Le fichier **se contredit lui-même** : L17 affiche « 70€ - 140€ » pour «
 - **Gating R7** : **0 merge, 0 push**. Branche `feat/enr-rankpush-qual-cor-fio-neutro-r3-t_ed44908c` créée depuis `origin/main` propre. PR draft à ouvrir avec commande ci-dessous.
 - **Suivi LECONS** : pas de nouvelle leçon (incident 0 sur ce run). Renforcement R3 sur page déjà solidement positionnée = pattern réutilisable pour les autres T3-INFO GSC gaps avec CTR < 5 % (axes : title query-first + meta compacte 158 chars + answer-first snippet bait + FAQPage +10Q + sitemaps freshness).
 - **Action attendue de Philippe** : `gh pr create --draft --base main --head feat/enr-rankpush-qual-cor-fio-neutro-r3-t_ed44908c --title "fix(enr,seo,blog): rank-push R3 'qual a cor do fio neutro em portugal' — title query-first + meta compacte + answer-first snippet + FAQPage 8→10 (t_ed44908c, pos 5.5, 28 impr/1 clic 28j, CTR 3.6%)" --body "Round 3 renforcement page /blog/qual-a-cor-do-fio-neutro-em-portugal.html (créée PR #331, t_32218c4a) suite GSC 28j close 2026-08-25 : pos 5.5 / 28 impr / 1 clic (CTR 3.6 %, sous benchmark GSC ~5 % pour pos 5). 5 axes SEO on-page : (1) title query-first 'Qual a Cor do Fio Neutro em Portugal: Azul-claro (Norma RTIEBT)' (réponse explicite en title), (2) meta description compactée 196→158 chars + chiffres clés, (3) sous-titre dateUpdated 2026-08-25 + tempo leitura, (4) answer-first featured-snippet bait 75 mots en tête H2 §1, (5) FAQPage densifiée 8→10 questions dont 2 nouvelles exact-match longue traîne (na tomada + cabo 3 fios). + 3 sitemaps lastmod 2026-08-13→2026-08-25. Page passe 3268→3572 mots (+9.3 %), 297→309 lignes. Doctrine OK : R4/R12/R-canon/R145/R-TEL/PT-PT. JSON-LD 4/4 valides (Article dateModified 2026-08-25, FAQPage 10 Q), FAQ sync 10/10. Prix inchangés (70 €/h + Z1-Z6 PRICING.md). Gating R7 : 0 merge, 0 push prod. Mesure impact J+7/J+14/J+28 via gsc-trajectoire-cron.sh (recette : CTR > 5 % + pos < 5 = win, impr > 28 + clics > 1 = capture confirmée).\"`, puis trancher merge ou follow-up.
+---
+### 2026-08-19 — t_57fa4957 — Rank-push GSC enr : 'ligar interruptor duplo' (pos 6.6, 102 impr / 3 clics 28j)
+
+- **Contexte** : tâche `t_57fa4957` (assignee default, kanban dispatch 19/08). GSC, fenêtre 28j terminée 2026-08-19 — la query **'ligar interruptor duplo'** sur enr (eletricista-norte-reparos.pt) a généré **102 impressions** et seulement **3 clics** à **position moyenne 6.6** (fenêtre 4..20 = presque top3). Meilleure page actuelle = `/blog/guia-cores-fios-eletricos` mais celle-ci ne couvre PAS la query (`grep -c 'interruptor duplo' = 0` dans cette page).
+- **Diagnostic avant patch** :
+  - Page canonique SERVIE par Vercel = `client/public/blog/como-ligar-interruptor-duplo.html` (vite.config.ts publicDir = client/public, legacy `public/blog/blog-como-ligar-interruptor-duplo.html` orphelin = 0 impact).
+  - La page existe mais titre/H1 orientés "esquema" et "duas lâmpadas" — pas query-first sur 'ligar interruptor duplo'.
+  - Concurrence intra-cluster : `como-ligar-interruptor-duplo-simples.html` cible 'ligar interruptor duplo simples' (H1 long, query différente). Risque cannibalisation = limité.
+  - Page sœur `como-ligar-interruptor-simples` + `como-ligar-comutador-escada` = cluster propre, liens internes déjà en place depuis la page cible.
+- **Décision applicabilité** : **renforcement chirurgical query-first** (1 page, 1 sitemap). Pas de création : la page existe et est indexée, c'est un rank-push pur.
+- **Patch appliqué (PR DRAFT — feat/enr-rankpush-ligar-interruptor-duplo-t_57fa4957)** :
+  - `client/public/blog/como-ligar-interruptor-duplo.html` (+12 fichiers structurel / +197 mots corps utile) :
+    - `<title>` : "Esquema Interruptor Duplo Duas Lâmpadas + Ligação (5 Passos)" → **"Como Ligar Interruptor Duplo: Esquema, Fios e 5 Passos (PT)"** (query-first)
+    - `<meta name="description">` : commence par "Como ligar interruptor duplo em Portugal…"
+    - OG/Twitter title+description alignés query-first
+    - H1 : "Esquema de interruptor duplo para duas lâmpadas: como ligar" → **"Como ligar interruptor duplo: esquema, fios e 5 passos"**
+    - 2 nouveaux H2 (`#como-ligar`, `#o-que-precisa`) en tête de corps AVANT la section `#duas-lampadas` existante (corps utile, pas remplissage — intro query-first + checklist outils/fils)
+    - 1 nouveau FAQ JSON-LD en première position : "Como ligar um interruptor duplo?" (la Q/R redondante de l'ancienne FAQ a été retirée — total Q/R passe de 8 → 7, dont 1 ciblée query-first)
+    - `<div class="answer">` réécrit pour commencer par la query
+    - Breadcrumbs + hero meta `Atualizado: 4 de agosto de 2026 → 19 de agosto de 2026`
+    - 1 cross-link interne vers `guia-cores-fios-eletricos` (déjà présent en related, ajouté dans la nouvelle section `#o-que-precisa` pour densité cluster)
+    - `dateModified` dans 4 JSON-LD (Article, BreadcrumbList, HowTo, FAQPage) : 2026-08-04 → 2026-08-19
+  - `client/public/sitemap-blog.xml` (+1/-1) : `<lastmod>` 2026-08-04 → 2026-08-19 pour `como-ligar-interruptor-duplo.html`
+  - `SEO_PLAN.md` (+1 entrée append-only, ce bloc)
+- **Témoins grep (gate R8 live, 1 motif par commande)** :
+  - R11 zéro invention : `70 €/h` ×3 alignés PRICING.md, `15 € a 65 €` ×2 alignés PRICING.md, `0` claim zone/tel inventé
+  - R12 pluriel : `a nossa equipa` ×2 (préservé, pas modifié), `0` occurrence `sozinho`/`contacto pessoal`/`eu sou`
+  - R145 zéro délai chiffré : `0` match `24h/7`/`em X min`/`resposta em`/`mediante confirma`/`piquete 24`
+  - Doctrine §12 NAP : +351 932 321 892 ×3 (inchangé), téléphone plomberie 928 484 451 ×0 (0 contamination)
+  - DGEG TRIESP 90062 : inchangé (2 occurrences préservées dans FAQ + Service), 41,4 kVA inchangé
+  - JSON-LD : 5 blocs valides (`json.loads` 0 erreur) — Article, BreadcrumbList, HowTo, FAQPage (7 Q/R), Service
+  - Query occurrences dans la page : `como ligar interruptor duplo` ×8 (title + meta + H1 + lead + 2 H2 + 1 FAQ Q/R), `interruptor duplo` ×38 (vs 32 avant, +19% densité query)
+  - Wordcount `<main>` : +197 mots de corps utile (sections `#como-ligar` ~145 mots + `#o-que-precisa` ~180 mots, FAQ Q/R rewrites)
+  - Garde grammaire PT-PT : 5 paragraphes au hasard relus comme un client, formulation propre, aucun artifact
+- **Branche** : `feat/enr-rankpush-ligar-interruptor-duplo-t_57fa4957` (basée sur main), commit local prêt, push + PR DRAFT à effectuer.
+- **Gating R7** : **0 merge, 0 push prod, PR draft laissé en DRAFT** — STOP validation Filipe obligatoire avant merge.
+- **Mesure d'impact attendue** (gsc-trajectoire-cron.sh dimanche 22h, prochain passage) :
+  - **J+7** : si position passe < 4 → ✅ win capturé (title+H1 query-first + corps étoffé + FAQ query-first = signal fort pour Google).
+  - **J+14** : si impressions 28j > 102 ET clics 28j > 3 → ✅ capture confirmée.
+  - **J+28** : si position reste > 10 et impressions ~0 → ⚠️ Rollback possible (revert commit), le cluster ne rank pas pour cette query malgré le query-first.
+- **Action attendue de Philippe** :
+  1. **Trancher** : commit + push + ouvrir PR draft (recommandé : 0 invention prix/zone/délai + page utile + corps étoffé + cross-link cluster conservé + JSON-LD tous valides).
+  2. Mesurer l'impact à J+7/J+14/J+28 et déclencher rollback si KPI non amélioré.
