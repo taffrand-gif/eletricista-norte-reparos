@@ -11,7 +11,7 @@ export const electricFaqs: FAQItem[] = [
  },
  {
  question: "Como funciona o orçamento por escrito?",
- answer: "Contacte-nos por telefone, WhatsApp ou formulário online. Deslocamo-nos gratuitamente para avaliar o problema, apresentamos um orçamento detalhado com preços transparentes e só avançamos após sua aprovação. Sem surpresas."
+ answer: "Contacte-nos por telefone, WhatsApp ou formulário online. Apresentamos um orçamento detalhado com preços transparentes e só avançamos após sua aprovação. Sem surpresas."
  },
  {
  question: "Tem eletricista urgente 24h/7d?",
@@ -19,7 +19,7 @@ export const electricFaqs: FAQItem[] = [
  },
  {
  question: "Atendem urgências à noite ou fim de semana?",
- answer: "Sim, trabalhamos 24h/7d. Não importa se é meia-noite, domingo ou feriado - temos equipas de piquete sempre disponíveis para emergências elétricas. O preço de urgência aplica-se fora do horário comercial."
+ answer: "Sim, trabalhamos 24h/7d. Não importa se é meia-noite, domingo ou feriado. O preço de urgência aplica-se fora do horário comercial."
  },
  {
  question: "Quais os serviços elétricos que oferecem?",
@@ -39,7 +39,7 @@ export const electricFaqs: FAQItem[] = [
  },
  {
  question: "Qual é o raio de ação máximo?",
- answer: "Atendemos num raio de 100km a partir de Trás-os-Montes. Para localidades mais distantes, aplicamos uma taxa de deslocação adicional (consultar). Cobrimos praticamente todo o Nordeste Transmontano."
+ answer: "Atendemos num raio de cerca de 130 km a partir de Macedo de Cavaleiros. A deslocação tem preço tabelado por zona (Z1 a Z6). Cobrimos praticamente todo o Nordeste Transmontano."
  },
  {
  question: "Quanto tempo demora uma instalação elétrica nova?",

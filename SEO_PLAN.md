@@ -2003,3 +2003,20 @@ Le fichier **se contredit lui-même** : L17 affiche « 70€ - 140€ » pour «
 - **Branche** : `fix/enr-quem-assina-dgeg-faq-t_b655738d` (commit 48d9f99347), push OK sur origin, PR DRAFT #310 ouverte (MERGEABLE).
 - **Gating R7** : **0 merge, 0 push prod, PR draft laissé en DRAFT** — STOP validation Filipe obligatoire avant merge.
 - **Liens** : PR #310 https://github.com/taffrand-gif/eletricista-norte-reparos/pull/310 · 4 entrées ESCALADE-FILIPE.md (escalades #1 à #4).
+
+---
+
+## Run loop 2026-08-19 — ENR · `client/src/data/faqData.ts` (audit hors compteur)
+
+- **Statut** : ✅ Fait — branche `loop/2026-08-19-enr-faqdata`
+- **Origine** : tâche n°3 du `context.md` du 14/08 (« `faqData.ts` L26, invisible au compteur de composants »). Audit élargi au fichier entier.
+- **3 violations réelles corrigées, toutes dans `electricFaqs` (branche VIVE)** :
+  1. `Deslocamo-nos gratuitamente para avaliar o problema` → **retrait**. `PRICING.md` L56 (verrouillé) : « ❌ JAMAIS *deslocacao gratuita* : la deslocacao a un prix tabelado par zone (Z1-Z6) ».
+  2. `temos equipas de piquete sempre disponíveis` → **retrait**. Claim d'effectif non vérifiable (R4/R5). `24h/7d` **conservé** (R145 l'autorise).
+  3. `raio de 100km a partir de Trás-os-Montes` → `raio de cerca de 130 km a partir de Macedo de Cavaleiros` + mention du tarif tabelado Z1-Z6. Source **verbatim** : `AGENTS.md` §12 L116 (verrouillé 30/06) et formulation déjà en production sur ce repo (`pages/blog/QuantoCustaEletricistaHoraPortugal.tsx` L38).
+- **🔴 Découverte : la divergence de rayon n'est PAS entre CNR et ENR — elle est À L'INTÉRIEUR d'ENR.** Le `context.md` du 14/08 concluait « ENR (130 km) est conforme ». Faux : 6 fichiers disaient 130 km, `faqData.ts` disait 100 km. Le contrôle avait porté sur `StructuredData.tsx` seul.
+- **Témoins R8** (`client/src/data/faqData.ts`) : `raio de 100km` **1→0** · `raio de cerca de 130 km` **0→1** · `piquete` **2→1** (le résiduel est dans la branche morte) · `Deslocamo-nos gratuitamente` **2→1** (idem) · `24h/7d` **6→6** (contrôle positif).
+- **⏸ Statué sans patch, à traiter séparément** :
+  - `plumberFaqs` (L85-fin) = **branche morte permanente** (`isPlumber ? plumberFaqs : electricFaqs`, `FAQ.tsx` L21, sur un repo mono-config électricité). Elle porte du contenu **plomberie** et les 2 résiduels ci-dessus. **Candidat au retrait de branche morte**, pas au patch au compteur.
+  - `garantia de 24 meses` (L50) et les durées chiffrées (L46) : la PR **#342** (« purge des engagements de garantie ») et la PR **#350** (« durée facturable ») sont ouvertes sur ces sujets — non retouché ici pour ne pas créer de conflit.
+  - `components/SEO/FAQSchema.tsx` L70 « a deslocação está incluída no preço do serviço dentro do raio de **50km de Bragança** » — **violation réelle** (contredit la grille Z1-Z6 **et** invente un rayon), mais **fichier déjà modifié par la PR #350 ouverte** → non retouché.
