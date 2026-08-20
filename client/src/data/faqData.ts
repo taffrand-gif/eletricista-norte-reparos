@@ -82,33 +82,3 @@ export const electricFaqs: FAQItem[] = [
  answer: "Trocar para LED, instalar painéis solares, usar termoacumulador com horário bi-horário, desligar standby dos aparelhos, escolher eletrodomésticos classe A+++, isolar bem a casa, usar cortinas térmicas no inverno."
  }
 ];
-export const plumberFaqs: FAQItem[] = [
- {
- question: "Quanto custa um canalizador em Trás-os-Montes?",
- answer: "Os preços variam conforme o serviço: desentupimento simples a partir de 50€, arranjo de fuga a partir de 60€, instalação de esquentador a partir de 150€. Oferecemos orçamento por escrito, sem compromisso."
- },
- {
- question: "Como funciona o orçamento por escrito?",
- answer: "Contacte-nos por telefone, WhatsApp ou formulário online. Deslocamo-nos gratuitamente para avaliar o problema, apresentamos um orçamento detalhado com preços transparentes e só avançamos após sua aprovação."
- },
- {
- question: "Tem eletricista urgente 24h/7d?",
- answer: "Sim! Serviço de urgência 24h/7d, 7 dias por semana, incluindo fins de semana e feriados. Em caso de curto-circuito, falha de energia ou situação de perigo elétrico, ligue +351 932 321 892 para intervenção."
- },
- {
- question: "Atendem urgências à noite ou fim de semana?",
- answer: "Sim, trabalhamos 24h/7d. Não importa se é meia-noite, domingo ou feriado - temos equipas de piquete sempre disponíveis para emergências de canalização."
- },
- {
- question: "Quais os serviços de canalização que oferecem?",
- answer: "Arranjo de fugas, desentupimentos, instalação de esquentadores e caldeiras, substituição de canalização, instalação de sanitas e lavatórios, arranjo de autoclismos, deteção de fugas, urgências 24h."
- },
- {
- question: "Fazem certificação de gás?",
- answer: "De momento não fazemos instalação nem certificação de sistemas de gás."
- },
- {
- question: "Quais cidades servem no distrito de Bragança?",
- answer: "Servimos todo o distrito: Bragança, Mirandela, Trás-os-Montes, Chaves, Vila Real, Vinhais, Miranda do Douro, Mogadouro, Torre de Moncorvo e todas as aldeias circundantes."
- }
-];
