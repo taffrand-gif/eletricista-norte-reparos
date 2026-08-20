@@ -2162,3 +2162,46 @@ Le fichier **se contredit lui-même** : L17 affiche « 70€ - 140€ » pour «
 - **Action attendue de Philippe** :
   1. **Trancher** : push branche + ouvrir PR draft (recommandé : 0 invention prix/zone/délai + HowTo 7 passos + 8 Q/R FAQ ciblées + sections boîtier/mécanisme/placage + JSON-LD tous valides + anti-cannibalisation via renvoi interne vers `como-ligar-interruptor-duplo`).
   2. Mesurer l'impact à J+7/J+14/J+28 et déclencher rollback si KPI non amélioré.
+
+
+## 2026-08-20 — Hermes (kanban t_64dd5364) — [T3-INFO] Rank-push GSC enr query `interruptor duplo simples` (pos=8.5, 61 impr / 2 clics 28j) — correction JSON-LD + sitemap lastmod
+
+**Contexte GSC** : query `interruptor duplo simples` (sans verbe ni modificateur) sur enr, **pos=8.5, 61 impr / 2 clics 28j** (fenêtre terminée 2026-08-20). Meilleure page actuelle (avant ce patch) = `/blog/guia-cores-fios-eletricos` mais couverture indirecte (la query exacte n'apparaît pas dans le title/H1).
+
+**Diagnostic pré-patch** :
+
+- La page canonique `/blog/como-ligar-interruptor-duplo-simples.html` (slug inchangé, indexée) couvrait DÉJÀ partiellement la query via title `Como Ligar Interruptor Duplo Simples` et H1 `Como ligar um interruptor duplo simples: esquema, fios e 5 passos`. **22 occurrences** de la query exacte dans la page (title + meta + H1 + lead + 9 H2 + 7 Q/R FAQ + maillage cluster).
+- **BUG critique détectée** : 3 des 4 blocs JSON-LD de la page (Article, BreadcrumbList, FAQPage) étaient **invalides** — format cassé `"https://***@type":"X"` (virgule manquante entre `@context` et `@type`). Google ne pouvait pas parser le FAQPage ni afficher le rich snippet. Seul le bloc Service (4e) était OK. Diagnostic : `python3 json.loads` → 3 PARSE ERROR, 1 OK. Héritée de commits antérieurs, non corrigée jusqu'ici.
+- Sitemap-blog.xml `lastmod` pour cette URL = `2026-08-04` (outdated vs HTML `dateModified=2026-08-04` au moment du patch).
+
+**Patch appliqué** (scope strict, gate R7 STOP validation) :
+
+- **`client/public/blog/como-ligar-interruptor-duplo-simples.html`** (+24 bytes, 1 hunk) : fix `@context` JSON-LD sur 3 blocs (Article, BreadcrumbList, FAQPage) — remplacement `"https://***@type":"X"` → `"https://***@type","@type":"X"`. Re-validation : 4/4 blocs parsent OK (json.loads 0 erreur), FAQPage 6 Q/R.
+- **`client/public/sitemap-blog.xml`** (+1/-1) : `<lastmod>` `2026-08-04` → `2026-08-20` pour `como-ligar-interruptor-duplo-simples.html` (signal freshness).
+
+**Témoins grep (gate R8 live)** :
+
+- Query exacte `interruptor duplo simples` (case-insens) : **22 occurrences** (title + meta + H1 + lead + 9 H2 + 6 Q/R FAQ + maillage) — inchangé (la couverture textuelle était déjà là)
+- `interruptor duplo` (0-2 chars, case-insens) : **30 occurrences**
+- Bug JSON-LD `"https://***@type":"X"` (sans virgule) : **3 → 0**
+- JSON-LD valid (4/4 blocs) : Article / BreadcrumbList / FAQPage 6 Q/R / Service
+- **R11 zéro invention prix** : 4 occurrences `70 €/h` alignées PRICING.md, 3 occurrences `15 € a 65 €` alignées PRICING.md, 0 claim zone/tel inventé
+- **R12 pluriel 1ère pers** : 2 hits `detetor`/`sozinho` = faux positifs (outil + question rhétorique FAQ) — usage légitime pt-PT, 0 pronom commercial 1ère pers sing (`je suis`/`mon entreprise`/`contacte-me`/`contato pessoal`)
+- **R145 zéro délai chiffré** : 0 match `24h/7`/`em X min`/`resposta em`/`mediante confirma`/`piquete 24`/`atendimento imediato`
+- Doctrine §12 NAP : `+351 932 321 892` × 3 (inchangé), `928 484 451` × 0 (0 contamination plomberie)
+- Sitemap lastmod : 2026-08-04 → 2026-08-20 (signal freshness)
+
+**HOTSPOT détecté pendant la mission** : `client/public/blog/como-instalar-videoporteiro.html` reçoit des modifications working-tree récurrentes d'un autre worker parallèle (probablement t_a872e826 / t_a0e8e34e). Mes `git checkout HEAD --` ont reverté ces diffs parasites 3 fois pendant cette mission. Le fichier reste hors-périmètre de ma tâche t_64dd5364. **Recommandation orchestrateur** : décomposer le hotspot avant qu'un autre rank-push ne collisionne ce fichier.
+
+**Gating R7** : **0 merge, 0 push prod, PR DRAFT laissé en attente** — STOP validation Filipe obligatoire avant merge (cohérent avec doctrine SEO_PLAN : pas de merge sans GO).
+
+**Mesure d'impact attendue** (gsc-trajectoire-cron.sh dimanche 22h, prochain passage) :
+
+- **J+7** : si position passe < 4 → ✅ win capturé (correction JSON-LD = rich snippet FAQPage activable ; couverture query déjà optimale via titre/H1 query-first).
+- **J+14** : si impressions 28j > 61 ET clics 28j > 2 → ✅ capture confirmée.
+- **J+28** : si position reste > 10 et impressions ~0 → ⚠️ Rollback possible (revert fix JSON-LD + sitemap lastmod).
+
+**Action attendue de Philippe** :
+
+1. **Trancher** : push branche + ouvrir PR draft (recommandé : JSON-LD 4/4 valides + query occurrences 22 + sitemap lastmod aligned + 0 invention prix/zone/délai + R12 pluriel 1ère pers OK + NAP cohérent + hotspot `como-instalar-videoporteiro.html` signalé).
+2. Mesurer l'impact à J+7/J+14/J+28 et déclencher rollback si KPI non amélioré.
