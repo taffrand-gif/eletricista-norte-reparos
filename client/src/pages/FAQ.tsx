@@ -9,7 +9,7 @@ import SEOHead from '@/components/SEOHead';
 import { useSite } from '@/contexts/SiteContext';
 import { ChevronDown, ChevronUp, Phone, MessageCircle, Zap, Shield } from 'lucide-react';
 import { Link } from 'wouter';
-import { electricFaqs, plumberFaqs } from '@/data/faqData';
+import { electricFaqs } from '@/data/faqData';
 export default function FAQPage() {
  const { config } = useSite();
  const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -17,8 +17,7 @@ export default function FAQPage() {
  setOpenIndex(openIndex === index ? null : index);
  };
  // Utilise toutes les 20 questions des FAQs partilhées
- const isPlumber = config.id === 'norte-reparos';
- const faqs = isPlumber ? plumberFaqs : electricFaqs;
+ const faqs = electricFaqs;
  // Schema.org FAQPage JSON-LD
  const faqSchema = {
  "@context": "https://schema.org",
