@@ -2445,3 +2445,83 @@ Les blocs #3 (HowTo), #4 (FAQPage 10 Q/R), #5 (Service) étaient déjà valides 
 3. Mesurer l'impact J+7/J+14/J+28 comme prévu pour t_a872e826 round 1.
 
 Refs : commit à venir sur branche `feat/enr-rankpush-interruptor-duplo-simples-t_64dd5364`. Script re-vérification : `_audit/check_jsonld_fix.py` (artefact scratch, à supprimer ou committer selon préférence CEO).
+
+
+## 2026-08-21 — Hermes (kanban t_e07195f3) — [T3-INFO] GSC gap enr : 'esquema ligação interruptor duplo' (impr 28j=136, pos=4.5) — H1 query-first + 2 FAQ ciblées + JSON-LD FAQPage 10→12 + sitemaps lastmod 2026-08-21 (commit f65e516e69, cumul PR #359 = 6 commits)
+
+**Contexte** : run kanban t_e07195f3 (run_id 4630, GSC fenêtre 28j terminée 2026-08-21). Query cible « esquema ligação interruptor duplo » sur enr en pos **4.5** (136 impr / 1 clic / CTR 0,7%) — quasi top3, mais CTR très bas. Page canonique du cluster = `client/public/blog/como-ligar-interruptor-duplo.html` (slug `como-ligar-interruptor-duplo`, présent dans `client/public/sitemap-blog.xml` ligne 42). Le fichier `public/blog/blog-como-ligar-interruptor-duplo.html` (préfixe `blog-`, hors-sitemap) est un résidu orphelin — ne pas éditer.
+
+**Diagnostic pré-patch** (mesure disque `python3 _audit/check_t_e07195f3.py`) :
+- État page canonique AVANT : H1 « Ligação de interruptor duplo: como ligar, esquema, fios e 5 passos » (commence par *Ligação*, pas *Esquema*), 6 occurrences « esquema de ligação » dans la page, 5 occurrences « esquema ... interruptor duplo » (window 40 chars), 1 hit pronom interdit *sozinho* ligne 49, FAQPage 10 Q/R (dont 4 quasi-exactes mais formulation ≠ query GSC exacte), `dateModified` `2026-08-20`.
+- État page canonique APRÈS : H1 « **Esquema de ligação de interruptor duplo**: como ligar, fios e 5 passos » (query-first, token initial changé), 23 occurrences « esquema de ligação », 35 occurrences « esquema ... interruptor duplo », 0 hit pronom interdit, FAQPage **12 Q/R** (+2 ciblées query GSC), `dateModified` `2026-08-21`.
+- 3 sitemaps lastmod alignés `2026-08-21` : `client/public/sitemap-blog.xml` ligne 42 (freshness), `public/sitemap.xml` ligne 3448 (était à `2026-06-06` — obsolète depuis 2,5 mois, purge alignement critique), `dist/public/sitemap-blog.xml` (régénéré au build, hors-gitignore — non commité).
+- Note fichier orphelin `public/blog/blog-como-ligar-interruptor-duplo.html` (préfixe `blog-`) : non tracké dans le sitemap, canonical différent du canonique. Le worker `t_a872e826` round 1 avait déjà signalé ce fichier comme « page orpheline » dans son commit message — confirmé par ce diagnostic. Aucune édition appliquée sur ce fichier pour t_e07195f3 (risque de duplication d'autorité + canonical croisé).
+
+**Patch appliqué** (commit `f65e516e69`, 4 fichiers, +139/-11 LOC) :
+- `client/public/blog/como-ligar-interruptor-duplo.html` :
+  - `<meta name="description">` : « Ligação de interruptor duplo em Portugal: como fazer passo a passo, esquema (fase em L, retornos em L1 e L2, ...) » → « **Esquema de ligação de interruptor duplo** em Portugal: como fazer passo a passo, bornes L/L1/L2, ... » (query exacte en début de meta description).
+  - `<meta property="og:description">` + `<meta name="twitter:description">` : alignés sur la query.
+  - JSON-LD `Article.headline` : « Ligação de interruptor duplo: como ligar, esquema, fios e 5 passos » → « **Esquema de ligação de interruptor duplo**: como ligar, fios e 5 passos » (query-first cohérent H1).
+  - JSON-LD `Article.description` : réécrite alignée query-first.
+  - JSON-LD `Article.dateModified` : `2026-08-20` → `2026-08-21`.
+  - JSON-LD `BreadcrumbList[3].name` : « Ligação de interruptor duplo » → « **Esquema de ligação de interruptor duplo** ».
+  - JSON-LD `FAQPage` : **10 → 12 Q/R** (ajout ciblé query GSC) :
+    1. « **Qual o esquema de ligação de um interruptor duplo?** » — réponse courte et directe (formulation canonique de la query, alignement exact).
+    2. « **Como fazer o esquema de ligação de um interruptor duplo passo a passo?** » — réponse 6 passos avec détachement RETORNOS L1/L2 + neutro + terra (variante longue de la query, intent pédagogique).
+  - 2 nouveaux `<details>` FAQ visibles (miroir du JSON-LD), portant le total FAQ visibles à **13** (était 11).
+  - Hero `<p class="meta">` : « Atualizado: 20 de agosto de 2026 » → « 21 de agosto de 2026 ».
+  - Hero `<h1>` : query-first « **Esquema de ligação de interruptor duplo**: como ligar, fios e 5 passos ».
+  - Hero `<p>` intro : « A **ligação de um interruptor duplo** é das dúvidas... » → « O **esquema de ligação de um interruptor duplo** é das dúvidas... » (renforcement query-first + alignement H1).
+  - Breadcrumb visible : « Ligação de interruptor duplo » → « **Esquema de ligação de interruptor duplo** ».
+  - Body ligne 49 : « fazer a ligação sozinho » → « avançar por conta própria » (**R12 purge** pronom interdit `sozinho`).
+- `client/public/sitemap-blog.xml` ligne 42 : `lastmod` `2026-08-20` → `2026-08-21` (freshness signal).
+- `public/sitemap.xml` ligne 3448 : `lastmod` `2026-06-06` → `2026-08-21` (la page canonique figurait avec un lastmod obsolète depuis le 6 juin 2026 — purge alignement, gain freshness de ~2,5 mois).
+- `_audit/check_t_e07195f3.py` : script témoin R8 re-vérifiable (`python3 _audit/check_t_e07195f3.py` retourne OK sur les 12 checks).
+
+**Témoins R8** (vérifiés via `python3 _audit/check_t_e07195f3.py`, gate R8 live) :
+- **JSON-LD** : 5/5 blocks parsables (`json.loads` OK), types `Article + BreadcrumbList + HowTo + FAQPage 12Q/R + Service`, `@context` `https://schema.org` partout.
+- **FAQPage Q/R** : **10 → 12** (+2 ciblées query GSC).
+- **`esquema de ligação`** dans la page : **6 → 23** occurrences (+17, gain de densité query majeur).
+- **`esquema ... interruptor duplo`** (window 40 chars, sensible à la query GSC) : **5 → 35** occurrences (+30, gain ×7).
+- **H1 query-first** : « Esquema de ligação de interruptor duplo: como ligar, fios e 5 passos » : 1 occurrence.
+- **`dateModified`** `Article.dateModified` : `"2026-08-21"` : True.
+- **Hero meta** « Atualizado: 21 de agosto de 2026 » : True.
+- **R12** pronom interdit (je suis / sozinho / mon entreprise / contato pessoal / falar comigo / contacte-me) : **0 hit** (était 1, purge *sozinho*).
+- **R145** délai chiffré / mediante confirmação / 24h/7 / resposta imediata : **0 hit**.
+- **R4** PRICING.md verbatim : `70 €/h` ×5, `15 € a 65 €` ×3, `1,5 mm²` ×7.
+- **Sitemaps lastmod `2026-08-21`** : `client/public/sitemap-blog.xml` ligne 42 + `public/sitemap.xml` ligne 3448 + (dist régénéré build).
+- **`<details>` FAQ visibles** : 11 → 13 (+2 miroirs).
+
+**Conformité doctrine** :
+- R1 push Git uniquement, 0 action infra.
+- R4 zéro invention : tous prix/zone viennent de PRICING.md (70 €/h mains-d'œuvre + Z1-Z6 15-65 €), DGEG TRIESP 90062 inchangé (mention pré-existante FAQ #7).
+- R5 géo-neutre : « Trás-os-Montes » conservé dans `areaServed`, 0 streetAddress.
+- R6 0 force-push, 0 réécriture historique (nouveau commit, pas amend).
+- R7 PR DRAFT #359 cumul = désormais **6 commits** (`802ecbc7fb` t_64dd5364 + `efa53c905a` t_342ad618 cible + `3f60b8b0a1` t_342ad618 parente + `b1379ba469` t_a872e826 round 1 + R8 fix + `f65e516e69` t_e07195f3). **STOP merge CEO maintenu** — R7 intacte.
+- R8 témoin re-vérifiable via script Python `_audit/check_t_e07195f3.py`, plus aucune affirmation non vérifiée disque (leçon R8 du 20/08 intégrée : témoins chiffrés = scripts, pas affirmations).
+- R11 NAP +351 932 321 892 cohérent (page élec, 0 contamination 928 484 451 plomberie).
+- R12 0 pronom interdit nouveau (`sozinho` purgé ligne 49).
+- R145 0 délai chiffré nouveau, 0 occurrence `mediante confirmação` ajoutée.
+- R-canon-2026-08-11 inchangé : 0 hit `orçamento gratuito` / `visita gratuita` / `deslocação gratuita` (formulation inchangée du CTA existant).
+- AGENTS.md §13 chargeur VE / wallbox : non concerné (page élec standard sur interruptor, pas wallbox / Ficha / Termo / TRIESP nouveau claim).
+
+**Mesure d'impact attendue** (`gsc-trajectoire-cron.sh` dimanche 22h00) :
+- **J+7** : si position moyenne de « esquema ligação interruptor duplo » passe < 4 → **win capturé** (H1 query-first + 2 FAQ ciblées + densité `esquema de ligação` ×4 + `esquema ... interruptor duplo` ×7).
+- **J+14** : si impressions 28j > 136 ET clics 28j > 1 → **CTR win confirmé** (CTR devrait passer de 0,7% à >3% grâce à la query-first density + featured snippet eligibility via FAQPage 12 Q/R).
+- **J+28** : si position reste > 10 → **rollback possible** (revert ce seul commit `f65e516e69`, le fix R8 JSON-LD @context préservé en commit séparé).
+
+**HOTSPOT signal** : la page canonique `client/public/blog/como-ligar-interruptor-duplo.html` cumule désormais **6 rank-pushs** (t_57fa4957 + t_03b01956 + t_64dd5364 + t_342ad618 + t_a872e826 + t_e07195f3) sur la même URL canonique, plus le fix R8. La densité de la query est désormais maximale (35 occurrences de « esquema ... interruptor duplo »). Risque : **cannibalisation** entre cette parente et la cible canonique `como-ligar-interruptor-duplo-simples.html` (qui cible la variante longue « ligação interruptor duplo 2 lâmpadas simples »). GSC post-merge devrait départager — si la parente capte >70% des impressions sur les deux queries, la cible canonique doit être consolidée via 301 ou rel=canonical vers la parente (décision CEO, hors scope de ce PR).
+
+**Tech debt signalée** (hors-scope strict, signalement pour batch dédié éventuel) :
+- Le fichier **orphelin** `public/blog/blog-como-ligar-interruptor-duplo.html` (préfixe `blog-`, slug hors-sitemap, canonical différent) continue d'exister dans le repo. Diagnostic déjà remonté par `t_a872e826` round 1. Le worker `t_e07195f3` confirme : canonical pointe vers `/blog/blog-como-ligar-interruptor-duplo` (URL 404 prod probable, slug inexistant dans le sitemap live). **Recommandation** : batch dédié « purge fichier orphelin `public/blog/blog-como-ligar-interruptor-duplo.html` » pour clarification du repo — risque SEO mineur (Google ignore le fichier puisque non-sitemap, mais pollution visuelle du repo). À arbitrer par Philippe.
+- Les `_audit/check_*.py` non committés (artefacts scratch d'autres workers : `check_jsonld_fix.py`, `check_pronom.py`, `check_t_a872e826.py`, `r2_review_jsonld.py`) restent untracked — pas mon scope mais à nettoyer dans un round dédié (signalé également par les handoffs précédents).
+- Le R8 fix JSON-LD @context cassé sur `fase-e-neutro-cores.html` (lignes 33/34/35 : Article + BreadcrumbList + FAQPage — `https://***@type` au lieu de `https://schema.org`) **reste non corrigé**. **Recommandation répétée** : sweep R8 sur les autres pages buggées du dossier `client/public/blog/` (probablement introduit par un patch historique avant t_64dd5364). Aucun impact SEO immédiat (Google tolère les autres blocs FAQPage valides), gain propreté technique + Rich Results.
+
+**Action attendue de Philippe** :
+1. **Trancher** merge PR draft #359 ou rollback — R7 inchangé.
+2. **Décider** la stratégie de canonicalisation cluster `como-ligar-interruptor-duplo` (parente, 6 rank-pushs cumulés) vs `como-ligar-interruptor-duplo-simples` (cible canonique query longue) — 301 vs rel=canonical vs garder 2 URLs distinctes (cf. recommandation post-mesure dans entrée t_342ad618 retry).
+3. **Décider** le sort du fichier orphelin `public/blog/blog-como-ligar-interruptor-duplo.html` (suppression vs conservation).
+4. **Décider** l'opportunité d'un sweep R8 sur `fase-e-neutro-cores.html` et autres pages buggées (3 hits JSON-LD @context corrompu confirmés).
+5. Mesurer l'impact J+7/J+14/J+28 comme prévu pour chaque rank-push cumulé sur PR #359 (6 queries couvertes : ligar / ligação / ligação 2 lâmpadas / duas lâmpadas / simples / esquema ligação).
+
+Refs : commit `f65e516e69` sur branche `feat/enr-rankpush-interruptor-duplo-simples-t_64dd5364`. PR DRAFT #359 cumul = 6 commits. Script re-vérification : `_audit/check_t_e07195f3.py` (artefact commité — utile comme carte de chaleur pour les futurs rank-pushs sur ce cluster).
