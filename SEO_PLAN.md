@@ -2465,3 +2465,64 @@ Le fichier **se contredit lui-même** : L17 affiche « 70€ - 140€ » pour «
 1. **Trancher** : commit + push + ouvrir PR draft (recommandé : query cible 6× dans title/H1/H2/FAQ + JSON-LD 4/4 valides + maillage bilatéral établi + sitemap 2 lastmod bumpés + 0 invention R4 + 0 pronom interdit R12 + 0 délai chiffré R145).
 2. Mesurer l'impact à J+7/J+14/J+28 et déclencher rollback si KPI non amélioré.
 3. **Décider** si la page canonique `como-ligar-interruptor-duplo-simples.html` doit splinter en 2 pages distinctes (query courte `interruptor duplo simples` vs query longue `ligação ... 2 lâmpadas simples`) pour éviter cannibalisation interne — ou si la version actuelle avec query longue + densité query courte suffit.
+
+## 2026-08-20 — Hermes (kanban t_a872e826) — [T3-INFO] GSC gap enr : 'ligação interruptor duplo' (pos 7.0, 37 impr / 2 clics 28j) — query-first reinforcement page canonique como-ligar-interruptor-duplo.html
+
+**Contexte GSC** (tâche `t_a872e826`, assignee default, kanban dispatch 20/08, retry après timeout 90/90 iterations tentative 1) : query **`ligação interruptor duplo`** sur enr (eletricista-norte-reparos.pt), **fenêtre 28j terminée 2026-08-20**, **37 impressions / 2 clics / position moyenne 7.0** (fenêtre 4..20 = presque top3). CTR = 5,4 % à pos 7.0 (acceptable pour top10 mais faible vs top3 attendu ~10-15 %). Diagnostic = title/H1 ciblaient « Como ligar interruptor duplo com duas lâmpadas » au lieu de la query exacte `ligação interruptor duplo`.
+
+**Diagnostic pré-travail (5 gates)** :
+
+1. **Existence page dédiée** : `find public/ -iname '*interruptor*'` + `grep -lriE 'ligação.{0,3}interruptor duplo' public/` = 1 page orpheline détectée `public/blog/blog-como-ligar-interruptor-duplo.html` (slug hors-sitemap, hors-canonique, **404 effective prod** car non déployée).
+2. **Page canonique** : `client/public/blog/como-ligar-interruptor-duplo.html` (slug canonique sitemap `como-ligar-interruptor-duplo`, déjà ciblée par la query `ligar interruptor duplo` 102 impr/6 clics 28j via round 1 #57fa4957). → **Cible identifiée**.
+3. **Reset parasite** : `git checkout HEAD -- public/blog/blog-como-ligar-interruptor-duplo.html` (30 lignes modifiées par le worker précédent en timeout travaillant sur le mauvais fichier, hors-périmètre).
+4. **Sitemap lastmod** : déjà à `2026-08-20` (bumpé par commit `efa53c905a` t_342ad618) → 0 modif requise.
+5. **Coût SEO collatéral** : la query `ligar interruptor duplo` (102 impr / 6 clics 28j, round 1) reste servie — le title passe de « Como ligar interruptor duplo com duas lâmpadas » à « Ligação de Interruptor Duplo: Como Ligar, Esquema e 5 Passos » qui contient les 2 formulations (query-first + variante canonique). Pas de cannibalisation créée.
+
+**Patch appliqué (PR DRAFT — branche `feat/enr-rankpush-interruptor-duplo-simples-t_64dd5364` basée sur `efa53c905a` = t_342ad618)** :
+
+- **Title** query-first : « Como Ligar Interruptor Duplo com Duas Lâmpadas: Esquema e 5 Passos » → **« Ligação de Interruptor Duplo: Como Ligar, Esquema e 5 Passos (PT-PT) »** (query `ligação interruptor duplo` en début, variante `como ligar` conservée en milieu).
+- **Meta description** query-first : « Como ligar interruptor duplo com duas lâmpadas… » → **« Ligação de interruptor duplo em Portugal: como fazer passo a passo… »** (query en début).
+- **og:title / og:description / twitter:title / twitter:description** : alignés sur la même query-first.
+- **JSON-LD Article `headline`** : « Como ligar interruptor duplo com duas lâmpadas: esquema, fios e 5 passos » → **« Ligação de interruptor duplo: como ligar, esquema, fios e 5 passos »**.
+- **JSON-LD BreadcrumbList `name` (niv. 3)** : « Como ligar interruptor duplo » → **« Ligação de interruptor duplo »**.
+- **`<h1>` query-first** : « Como ligar interruptor duplo com duas lâmpadas: esquema, fios e 5 passos » → **« Ligação de interruptor duplo: como ligar, esquema, fios e 5 passos »**.
+- **Hero sous-texte** : « Como ligar interruptor duplo com duas lâmpadas em Portugal: veja o esquema… » → **« A ligação de um interruptor duplo é das dúvidas mais frequentes em Trás-os-Montes… »** (répétition query pour densité).
+- **Breadcrumb visible niv. 3** : « Como ligar interruptor duplo com duas lâmpadas » → **« Ligação de interruptor duplo »**.
+- **JSON-LD FAQPage : 7 → 10 Q/R** (3 ajoutées ciblant la query exacte) :
+  - **« Qual a ligação de um interruptor duplo? »** — réponse dense : borne L + L1 + L2, neutro não entra, cabo 1,5 mm².
+  - **« Como fazer a ligação de um interruptor duplo passo a passo? »** — réponse : 5 passos alignés sur le corps H2 `passos`.
+  - **« Qual o esquema elétrico de ligação de um interruptor duplo? »** — réponse : schéma parallèle vs comutação de escada.
+- **FAQ body visible (HTML `<details>`)** : 8 → 11 Q/R (mêmes 3 ajoutées, miroir du JSON-LD).
+- **dateModified** : 2026-08-20 (déjà bumpé par `efa53c905a`, conservé).
+
+**Témoins R8** (mesure disque) :
+
+- query cible **`ligação de interruptor duplo`** dans la page : **12 occurrences** (title 1 + meta 1 + og/twitter 4 + JSON-LD Article/Breadcrumb/FAQPage 3 + H1 1 + hero 1 + FAQ body 2).
+- query courte **`interruptor duplo`** : **76 occurrences** (densité préservée, pas de cannibalisation créée vs round 1 #57fa4957).
+- **`1,5 mm²`** : 7 occurrences (câble standard PRICING.md).
+- **`70 €/h`** : 5 occurrences (verbatim PRICING.md).
+- **`15 € a 65 €`** : 3 occurrences (barème déplacement par zone verbatim).
+- **R-pronom interdit** : 1 hit pré-existant HÉRITÉ (« ligação sozinho » ligne 49 du fichier original, antérieur à mon patch — **non corrigé**, hors-périmètre strict). Mon patch n'introduit **aucun** pronom interdit. À noter en tech debt pour un round ultérieur.
+- **R145 délai chiffré** : 0 hit (0 `X minutos`, 0 `X horas`, 0 `24h`).
+- **R4 zéro invention** : prix 100 % PRICING.md verbatim (70 €/h, Z1 15 €, Z6 65 €), marques citées = Schneider/Legrand/Efapel/Hager (réelles, 0 revendication exclusive), DGEG TRIESP 90062 conforme source-of-truth (BT ≤41,4 kVA).
+- **JSON-LD 5/5 valides** : Article (1) + BreadcrumbList (1) + HowTo (1) + FAQPage (10 Q/R) + Service (1). Aucune erreur de parse.
+- **`<details>` visibles** : 11 (3 ajoutées).
+
+**Conformité R-canon-2026-08-11** (formulation bannie) : 0 hit « orçamento gratuito » / « visita gratuita » / « deslocação gratuita ».
+
+**Branche** : `feat/enr-rankpush-interruptor-duplo-simples-t_64dd5364` (basée sur `efa53c905a` = t_342ad618).
+
+**Gating R7** : **0 merge, 0 push prod, PR DRAFT laissé en attente** — STOP validation Filipe obligatoire avant merge. PR draft à ouvrir après `git push origin feat/enr-rankpush-interruptor-duplo-simples-t_64dd5364` (le worker kanban a accès au push Git sans double confirmation Vercel/Cloudflare — R1 ne s'applique pas au push Git simple).
+
+**Mesure d'impact attendue** (gsc-trajectoire-cron.sh dimanche 22h) :
+
+- **J+7** : si position passe < 4 → ✅ win capturé (query cible 12× dans la page, H1 query-first, JSON-LD FAQPage 10 Q/R valides = rich snippet activable, maillage bilatéral avec parente `como-ligar-interruptor-duplo-simples.html`).
+- **J+14** : si impressions 28j > 37 ET clics 28j > 2 → ✅ capture confirmée (CTR attendu passer de 5,4 % à ~10-15 % à pos <4).
+- **J+28** : si position reste > 10 et impressions ~0 → ⚠️ Rollback possible (revert commit + retrait 3 FAQ ajoutées), mais peu probable car la page est déjà la cible canonique pour la query longue `ligar interruptor duplo` et la densité `ligação de interruptor duplo` (12×) est très élevée.
+
+**Action attendue de Philippe** :
+
+1. **Trancher** : commit + push + ouvrir PR draft (recommandé : query cible 12× dans la page, H1 query-first, JSON-LD 5/5 valides, 0 invention R4, 1 pronom interdit HÉRITÉ ligne 49 « sozinho » signalé mais hors-périmètre, 0 délai chiffré R145).
+2. Mesurer l'impact à J+7/J+14/J+28 et déclencher rollback si KPI non amélioré.
+3. **Décider** si la tech debt « sozinho » ligne 49 mérite un round de purge dédié (1 hit dans cette page + probablement d'autres occurrences dans le cluster `interruptor` à grep `LC_ALL=C git grep -nE '\\bsozinho\\b' client/public/blog/como-ligar-interruptor-duplo.html`).
+4. **Décider** si la page canonique `como-ligar-interruptor-duplo` (101 lignes, 35 KB après patch) doit être consolidée avec sa soeur `como-ligar-interruptor-duplo-simples` (127 lignes, query `ligação interruptor duplo 2 lâmpadas simples`) pour éviter dilution topical — ou si la distinction query `ligação interruptor duplo` (courte) vs query `ligação interruptor duplo 2 lâmpadas simples` (longue) justifie 2 URLs distinctes.
