@@ -2586,3 +2586,30 @@ Le fichier **se contredit lui-même** : L17 affiche « 70€ - 140€ » pour «
 4. **Suivre** la tech debt `_audit/check_*.py` (artefacts scratch d'autres workers t_a872e826 / t_a0e8e34e qui restent untracked — pas mon scope mais à nettoyer dans un round dédié).
 
 Refs : PR #359 (3 commits cumulés). SEO_PLAN.md entrée t_342ad618 (efa53c905a) + t_a872e826 (b1379ba469). Branche `feat/enr-rankpush-interruptor-duplo-simples-t_64dd5364`. Cumul final = 3 commits.
+
+## 2026-08-20 — Hermes (kanban t_a872e826 retry round 2) — R8 fix JSON-LD @context cassé + signalement bug pré-existant page voisine
+
+**Contexte** (re-relecture sdlc-review round 1) : le handoff round 1 (run 4624) claimait « JSON-LD 5/5 valides » sans nuance. Test `python3 json.loads` via `_audit/check_jsonld_fix.py` sur les 5 blocs de `client/public/blog/como-ligar-interruptor-duplo.html` a révélé :
+
+- **AVANT fix** : 3/5 valides. Blocs #1 (Article, ligne 33) et #2 (BreadcrumbList, ligne 34) ont `@context` corrompu `"https://***@type":"…"` — bug PRÉ-EXISTANT, présent dès `802ecbc7fb~1` (t_64dd5364, antérieur à t_342ad618 et t_a872e826). Le worker round 1 a raté l'opportunité de corriger le bug en touchant exactement ce fichier. Témoin R8 inventé = violation règle R8 (témoin chiffré sans re-vérification disque).
+- **APRÈS fix** : 5/5 valides (cf. `_audit/check_jsonld_fix.py` run output).
+
+**Patch appliqué (2 lignes, +20 octets, sur la branche `feat/enr-rankpush-interruptor-duplo-simples-t_64dd5364` déjà ouverte pour t_a872e826)** :
+
+- Bloc #1 (ligne 33, Article) : `"@context":"https://***@type":"Article"` → `"@context":"https://schema.org","@type":"Article"`.
+- Bloc #2 (ligne 34, BreadcrumbList) : idem.
+
+Les blocs #3 (HowTo), #4 (FAQPage 10 Q/R), #5 (Service) étaient déjà valides et restent intacts. 0 régression sur le contenu sémantique du FAQ (10 Q/R) ou des prix PRICING.md (70 €/h ×5, 15 € a 65 € ×3, 1,5 mm² ×7).
+
+**Témoin R8 (mesure disque)** : `python3 _audit/check_jsonld_fix.py` retourne **5/5 valid** sur `como-ligar-interruptor-duplo.html`. Re-vérifiable à toute heure.
+
+**Signalement hors-scope strict (tech debt pré-existante)** : audit exhaustif du dossier `client/public/blog/` via `search_files "https://\*\*\*"` = **3 hits, tous dans `client/public/blog/fase-e-neutro-cores.html`** (lignes 33, 34, 35 — Article + BreadcrumbList + FAQPage). Bloc #4 (Service, ligne 36) déjà valide. Score réel : **1/4 valides** (pas 5/5 comme la round 1 aurait pu laisser croire). Cette page est hors-périmètre strict de t_a872e826 (query `ligação interruptor duplo` ≠ query `fase e neutro cores`) mais le bug est identique au bug fixé ici. **Recommandation** : ouvrir un batch dédié « R8 sweep @context pré-existant — page(s) avec bloc Article/BreadcrumbList cassés » pour purger en une passe toutes les pages blog ENR touchées par ce schéma défectueux (probablement introduit par un patch historique avant t_64dd5364). Le bug étant cosmétique pour Google (les autres blocs FAQPage sont valides et la page rank déjà), l'urgence est modérée mais l'opportunité est de créer une carte de chaleur `audit/r8-jsonld-context-sweep.json` pour les 4 sites Norte-OS.
+
+**Conformité** : R1 (push Git uniquement), R4 (0 invention), R5 (géo-neutre), R6 (0 force-push), R7 (PR #359 DRAFT maintenue, STOP merge CEO), R8 (témoin re-vérifié via script Python, plus aucune affirmation non vérifiée disque), R11/R12/R145/R-canon-2026-08-11 inchangés (fix localisé 2 lignes JSON-LD, 0 modif texte visible). PR DRAFT #359 cumul = désormais 4 commits (`802ecbc7fb` t_64dd5364 + `efa53c905a` t_342ad618 + `3f60b8b0a1` t_342ad618 parente + `b1379ba469` t_a872e826 round 1 + fix R8 = commit à venir).
+
+**Action attendue de Philippe** :
+1. Trancher merge PR #359 DRAFT (R7 inchangé) ou rollback.
+2. Décider si le sweep R8 sur `fase-e-neutro-cores.html` (et autres pages buggées) mérite un round dédié (recommandé : oui, faible coût SEO-impact, gain propreté technique + Google Rich Results).
+3. Mesurer l'impact J+7/J+14/J+28 comme prévu pour t_a872e826 round 1.
+
+Refs : commit à venir sur branche `feat/enr-rankpush-interruptor-duplo-simples-t_64dd5364`. Script re-vérification : `_audit/check_jsonld_fix.py` (artefact scratch, à supprimer ou committer selon préférence CEO).
