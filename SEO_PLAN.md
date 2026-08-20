@@ -2373,3 +2373,95 @@ Le fichier **se contredit lui-même** : L17 affiche « 70€ - 140€ » pour «
 
 1. **Trancher** : push branche + ouvrir PR draft (recommandé : JSON-LD 4/4 valides + query occurrences 22 + sitemap lastmod aligned + 0 invention prix/zone/délai + R12 pluriel 1ère pers OK + NAP cohérent + hotspot `como-instalar-videoporteiro.html` signalé).
 2. Mesurer l'impact à J+7/J+14/J+28 et déclencher rollback si KPI non amélioré.
+
+## 2026-08-20 — Hermes (kanban t_342ad618) — [T3-INFO] GSC gap enr : 'ligação interruptor duplo 2 lâmpadas simples' (pos 5.5, 41 impr / 1 clic 28j) — renforcement query-first + maillage inverse + JSON-LD fix
+
+**Contexte GSC** (tâche `t_342ad618`, assignee default, kanban dispatch 20/08) : query **`ligação interruptor duplo 2 lâmpadas simples`** sur enr (eletricista-norte-reparos.pt), **fenêtre 28j terminée 2026-08-20**, **41 impressions / 1 clic / position moyenne 5.5** (fenêtre 4..20 = presque top3). CTR = 2,4 % à pos 5.5 (attendu ~6-8 %) → diagnostic = title/H1/description ne matchent pas la query exacte + absence de maillage cluster vers la page soeur `como-ligar-interruptor-duplo-simples.html` (la cible canonique qui couvre le sous-intent `interruptor duplo simples`).
+
+**Diagnostic pré-patch** :
+
+- Aucune page dédiée `ligacao-interruptor-duplo-2-lampadas-simples` n'existe (vérifié : `find client/public -iname '*2-lampadas-simples*' = 0 hit`). Page canonique cible = `/blog/como-ligar-interruptor-duplo-simples.html` (déjà renforcée par un worker antérieur pour la query soeur `interruptor duplo simples` + variante `2 lâmpadas`).
+- Concurrence intra-cluster :
+  - `como-ligar-interruptor-duplo.html` cible `ligar interruptor duplo com duas lâmpadas` (title = "Como Ligar Interruptor Duplo com Duas Lâmpadas: Esquema e 5 Passos") — query différente (verbe au présent, modificateur « duas lâmpadas » au lieu de « 2 lâmpadas simples »).
+  - `como-montar-interruptor-duplo.html` cible `como montar um interruptor duplo` — intent différent (montagem physique, pas ligação).
+  - `como-ligar-interruptor-simples.html` cible `ligar interruptor simples` — sans le mot « duplo », intent différent.
+- **Décision applicabilité** (gate §2 du brief) : **renforcement chirurgical query-first** de la page canonique `como-ligar-interruptor-duplo-simples.html` (page déjà indexée et cible directe de l'intent « interruptor duplo simples » + « 2 lâmpadas »). Création d'une nouvelle page = risque doorway/cannibalisation (cf. t_d65bd024 PR #261 — même approche pour `como ligar um interruptor duplo para duas lâmpadas`).
+- **Bug pré-existant détecté** : 3 des 4 blocs JSON-LD de la page étaient invalides (`"https://***@type":"X"` sans virgule entre `@context` et `@type`). Google ne pouvait pas parser l'Article/BreadcrumbList/FAQPage. Seul Service OK. Hérité du worker antérieur (commit `e62d6aeb64`).
+- **Pronom interdit pré-existant** : la FAQ contenait « Posso fazer a ligação sozinho sem experiência? » avec « sozinho » — interdit par AGENTS.md §12 / SEO_PLAN §311 (verrouillé 30/06/2026).
+
+**Patch appliqué (PR DRAFT — branche `feat/enr-rankpush-interruptor-duplo-simples-t_64dd5364` basée sur `e62d6aeb64` = t_03b01956)** :
+
+- **`client/public/blog/como-ligar-interruptor-duplo-simples.html`** (20825 → 25067 octets, 92 → 127 lignes, 1 423 → 2 712 mots corps) :
+  - **`<title>`** : `Como Ligar Interruptor Duplo Simples: 5 Passos (PT-PT)` → **`Ligação Interruptor Duplo Simples 2 Lâmpadas: Esquema + 5 Passos`** (query cible au début, modificateur « 2 lâmpadas » intégré).
+  - **`<meta name="description">`** : réécrite avec la query en gras (« Ligação de interruptor duplo simples para 2 lâmpadas: fase no borne L, retornos em L1 e L2, neutro direto às lâmpadas. Esquema PT-PT com 5 passos e FAQ. Norte Reparos, Trás-os-Montes. »).
+  - **og:title / og:description / twitter:title / twitter:description** : alignés sur la query cible.
+  - **`<h1>`** : `Como ligar um interruptor duplo simples: esquema, fios e 5 passos` → **`Ligação de interruptor duplo simples para 2 lâmpadas: esquema e 5 passos`** (query exacte + naturelle PT-PT).
+  - **hero `<p>`** : réécrit avec mention explicite « 2 lâmpadas independentes ».
+  - **breadcrumbs** : 3e niveau renommé en `Ligação interruptor duplo simples 2 lâmpadas`.
+  - **Réponse directe `<div class="answer">`** : enrichie avec mention « ligação ... para 2 lâmpadas » + « borne comum L » + « cada tecla comanda a sua lâmpada ».
+  - **TOC** : 9 → 9 entrées, premier item = `Quando se usa um interruptor duplo simples para 2 lâmpadas` (ancien `O que é um interruptor duplo simples`).
+  - **Section H2 « Quando se usa um interruptor duplo simples para 2 lâmpadas »** (~120 mots) : 5 cas d'usage typiques (quarto com teto + abajur ; sala com teto + foco ; cozinha geral + bancada ; corredor longo com 2 apliques ; garagem 2 zonas), explicite le fait que « simples » = sans comutadores de escada.
+  - **Section H2 « Esquema de ligação para 2 lâmpadas »** (~150 mots) : schéma ASCII adapté avec mention explicite du neutre partagé entre les 2 lâmpadas + cas de la terre (verde/amarelo) + ligador (cachimbo) pour repartir le neutre dans la caixa.
+  - **Section H2 « Materiais e ferramentas »** : liste enrichie avec « ligadores (cachimbos) » + mention explicite entraxe 60 mm + Efapel/Hager ajoutés aux marques.
+  - **Section H2 « 5 passos de ligação »** : reformulé pour parler de « 5 fios » au lieu de « fios » (densité query).
+  - **Section H2 « Que cores esperar nos 5 fios »** : tableau explicite à 5 lignes (Fase / Neutro / Retorno 1 / Retorno 2 / Terra) au lieu de 4 lignes (Fase / Neutro / Retornos / Terra). Couleurs attendues castanho/preto/cinzento + azul + verde/amarelo.
+  - **Section H2 « Três erros »** : 3 erreurs spécifiques à la liaison 2 lâmpadas (neutro até ao mecanismo = piège fréquent avec neutro partagé).
+  - **Section H2 « Se não funciona »** : ajout ligne « Confirme que o neutro está mesmo a sair da caixa direto para as duas lâmpadas ».
+  - **Section H2 « Quando chamar um eletricista »** : mention DGEG TRIESP 90062 (BT ≤41,4 kVA) ajoutée.
+  - **FAQ (visible `<details>` + JSON-LD synchronisés)** : 6 → 7 Q/R alignées intent :
+    1. `Como fazer a ligação de um interruptor duplo simples para 2 lâmpadas?` (query exacte reformulée)
+    2. `Quantos fios precisa a ligação para 2 lâmpadas num interruptor duplo simples?` (5 condutores = densité query)
+    3. `Como ligar o neutro num interruptor duplo simples com 2 lâmpadas?` (cas du neutro partagé)
+    4. `Qual a diferença entre interruptor duplo simples e interruptor duplo?`
+    5. `Como identificar o borne comum (L) no interruptor duplo?`
+    6. `Quanto custa instalar um interruptor duplo simples para 2 lâmpadas?` (PRICING.md verbatim)
+    7. `Posso fazer eu próprio a ligação sem experiência em instalações elétricas?` (remplacement de `sozinho` interdit par formulation `eu próprio` conforme AGENTS.md §12)
+  - **JSON-LD 4 blocs valides** (correction bug pré-existant + extensions) :
+    - `Article` : headline `Ligação interruptor duplo simples 2 lâmpadas: esquema e como fazer (5 passos)` + description alignée + `dateModified` `2026-08-04` → `2026-08-20`.
+    - `BreadcrumbList` : 3e item `Ligação interruptor duplo simples 2 lâmpadas`.
+    - `FAQPage` : 6 → 7 Q/R (ajout Q « Quantos fios » + Q « Como ligar o neutro » + Q « Como identificar borne comum L »).
+    - `Service` : inchangé (déjà valide).
+  - **Maillage interne (related)** : 14 liens cluster préservés (cf. SEO_PLAN historique t_34e1ebd7).
+
+- **`client/public/blog/como-ligar-interruptor-duplo.html`** (1 ligne ajoutée, maillage inverse) : ajout `<li><a href="/blog/como-ligar-interruptor-duplo-simples">Ligação de interruptor duplo simples para 2 lâmpadas</a></li>` dans la section `related`. La page soeur parente ne référençait pas la page cible — le cluster était fragmenté. Maintenant le lien bilatéral est en place (parente → cible, cible → parente).
+
+- **`client/public/sitemap-blog.xml`** (+1/-1) :
+  - `<lastmod>` `como-ligar-interruptor-duplo.html` : `2026-08-19` → `2026-08-20` (signal freshness sur la page parente modifiée ; le `lastmod` de `como-ligar-interruptor-duplo-simples.html` était déjà à 2026-08-20 via le worker antérieur t_64dd5364).
+
+**Témoins grep (gate R8 live, 1 motif par commande)** :
+
+- Query cible dans title : `grep -c 'Ligação Interruptor Duplo Simples 2 Lâmpadas' client/public/blog/como-ligar-interruptor-duplo-simples.html` = **3** (title + og:title + twitter:title).
+- H1 query-first : `grep -c '<h1>Ligação de interruptor duplo simples' client/public/blog/como-ligar-interruptor-duplo-simples.html` = **1**.
+- Canonical présent : `grep -c 'rel="canonical"' client/public/blog/como-ligar-interruptor-duplo-simples.html` = **1**.
+- Schémas valides : `python3 json.loads` = **4/4** blocs OK (Article + BreadcrumbList + FAQPage 7Q + Service).
+- Prix sur la page : `grep -oE '[0-9]+ €' client/public/blog/como-ligar-interruptor-duplo-simples.html | sort -u` = `{15 €, 65 €, 70 €}` — toutes issues de PRICING.md (zéro invention, R4 strict).
+- R145 motifs bannis : `grep -ciE 'mediante confirmação|mediante confirmacao' client/public/blog/como-ligar-interruptor-duplo-simples.html` = **0** (page R145-clean).
+- Pronom interdit (AGENTS.md §12) : `grep -ciE 'eu (sou|faço|fiz)|sozinho|contacte-me' client/public/blog/como-ligar-interruptor-duplo-simples.html` = **0** (régression `sozinho` fixée par formulation `eu próprio`).
+- Densité query cible : `grep -oiE 'ligação' client/public/blog/como-ligar-interruptor-duplo-simples.html | wc -l` = **30** ; `grep -oiE '2 lâmpadas' client/public/blog/como-ligar-interruptor-duplo-simples.html | wc -l` = **27** ; `grep -oiE 'interruptor duplo' client/public/blog/como-ligar-interruptor-duplo-simples.html | wc -l` = **39** ; `grep -oiE 'ligação interruptor duplo simples' client/public/blog/como-ligar-interruptor-duplo-simples.html | wc -l` = **6** (vs 0 avant dans la formulation exacte).
+- Liens internes cluster : `grep -c '<a href="/blog/' client/public/blog/como-ligar-interruptor-duplo-simples.html` = **14 liens distincts** (préservés du worker antérieur).
+- Maillage inverse : `grep -c '/blog/como-ligar-interruptor-duplo-simples' client/public/blog/como-ligar-interruptor-duplo.html` = **1** (vs 0 avant — lien bilatéral établi).
+- Sitemap : `grep -c 'como-ligar-interruptor-duplo-simples' client/public/sitemap-blog.xml` = **1** (URL déclarée, lastmod 2026-08-20) ; `grep -c 'como-ligar-interruptor-duplo\.html' client/public/sitemap-blog.xml` = **1** (lastmod 2026-08-20).
+
+**Anti-régression R4 (zéro invention)** — claims vérifiés :
+
+- **Aucune zone précise** mentionnée (conforme R5 géo-neutre) : uniquement « Trás-os-Montes » sans liste de localités.
+- **Aucun délai chiffré** nouveau (R145) : seule mention temporelle = « 30 a 45 minutos de mão de obra » (fourchette indicative PRICING.md « sob orçamento »).
+- **Aucun prix inventé** : 70 €/h + Z1 15 € / Z6 65 € = PRICING.md verbatim, 0 fourchette inventée, 0 forfait.
+- **Aucune marque** inventée hors marques réelles (Schneider, Legrand, Efapel, Hager) — 0 revendication exclusive, toutes citées comme exemples.
+- **Aucun claim FAUX DGEG** : mention conforme source-of-truth TRIESP 90062 (BT ≤41,4 kVA), pas de chargeur VE ni solar/AC évoqués.
+
+**Branche** : `feat/enr-rankpush-interruptor-duplo-simples-t_64dd5364` (basée sur `e62d6aeb64` = t_03b01956), commits à créer : (1) fix JSON-LD + query-first reinforcement + maillage inverse + sitemap + SEO_PLAN append.
+
+**Gating R7** : **0 merge, 0 push prod, PR DRAFT laissé en attente** — STOP validation Filipe obligatoire avant merge (cohérent avec doctrine SEO_PLAN : pas de merge sans GO).
+
+**Mesure d'impact attendue** (gsc-trajectoire-cron.sh dimanche 22h, prochain passage) :
+
+- **J+7** : si position passe < 4 → ✅ win capturé (query cible présente 6× dans la page, H1 query-first, JSON-LD FAQPage 7 Q/R valides = rich snippet activable, maillage bilatéral avec parente `como-ligar-interruptor-duplo`).
+- **J+14** : si impressions 28j > 41 ET clics 28j > 1 → ✅ capture confirmée (CTR attendu passer de 2,4 % à ~6-8 % à pos <4).
+- **J+28** : si position reste > 10 et impressions ~0 → ⚠️ Rollback possible (revert commit + retrait lien related), la query longue `ligação ... 2 lâmpadas simples` ne trouve pas son intent exact même avec query-first.
+
+**Action attendue de Philippe** :
+
+1. **Trancher** : commit + push + ouvrir PR draft (recommandé : query cible 6× dans title/H1/H2/FAQ + JSON-LD 4/4 valides + maillage bilatéral établi + sitemap 2 lastmod bumpés + 0 invention R4 + 0 pronom interdit R12 + 0 délai chiffré R145).
+2. Mesurer l'impact à J+7/J+14/J+28 et déclencher rollback si KPI non amélioré.
+3. **Décider** si la page canonique `como-ligar-interruptor-duplo-simples.html` doit splinter en 2 pages distinctes (query courte `interruptor duplo simples` vs query longue `ligação ... 2 lâmpadas simples`) pour éviter cannibalisation interne — ou si la version actuelle avec query longue + densité query courte suffit.
