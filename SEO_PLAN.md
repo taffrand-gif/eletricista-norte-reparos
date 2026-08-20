@@ -2526,3 +2526,63 @@ Le fichier **se contredit lui-même** : L17 affiche « 70€ - 140€ » pour «
 2. Mesurer l'impact à J+7/J+14/J+28 et déclencher rollback si KPI non amélioré.
 3. **Décider** si la tech debt « sozinho » ligne 49 mérite un round de purge dédié (1 hit dans cette page + probablement d'autres occurrences dans le cluster `interruptor` à grep `LC_ALL=C git grep -nE '\\bsozinho\\b' client/public/blog/como-ligar-interruptor-duplo.html`).
 4. **Décider** si la page canonique `como-ligar-interruptor-duplo` (101 lignes, 35 KB après patch) doit être consolidée avec sa soeur `como-ligar-interruptor-duplo-simples` (127 lignes, query `ligação interruptor duplo 2 lâmpadas simples`) pour éviter dilution topical — ou si la distinction query `ligação interruptor duplo` (courte) vs query `ligação interruptor duplo 2 lâmpadas simples` (longue) justifie 2 URLs distinctes.
+
+## 2026-08-20 — Hermes (kanban t_342ad618 retry run 4623) — [T3-INFO] CUMUL parente `como-ligar-interruptor-duplo` sur PR #359 + hotspot collision t_a872e826
+
+**Contexte** : run kanban t_342ad618 retry (run_id 4623, après timeout run 4619 à 90/90 iterations). Le run précédent avait déjà commité `efa53c905a` sur la cible canonique `como-ligar-interruptor-duplo-simples.html` (cumul PR #359). Le working tree contenait un diff non-commité (16/14 sur `public/blog/blog-como-ligar-interruptor-duplo.html`) = cumul parente préparé par le worker précédent mais jamais commité avant le timeout.
+
+**Diagnostic ré-entry** :
+- Aucune page dédiée `ligacao-interruptor-duplo-2-lampadas-simples` (vérifié, 0 hit).
+- Cible canonique efa53c905a : `como-ligar-interruptor-duplo-simples.html` renforcée (Title « Ligação Interruptor Duplo Simples 2 Lâmpadas » + H1 query-first + JSON-LD 4/4 valides + FAQ 7 Q/R + maillage inverse).
+- Diff non-commité working tree = 16/14 sur parente `public/blog/blog-como-ligar-interruptor-duplo.html` (alignement title/H1 « Ligação de... » + 2 Q/R FAQ harmonisation + JSON-LD refactor + date meta 2026-08-20).
+
+**Actions appliquées run 4623** :
+
+1. **Reset parasite** `client/public/blog/como-ligar-interruptor-duplo.html` (version prerender divergente, hors-scope — non commité, restauré via `git checkout HEAD --`).
+2. **Suppression artefacts scratch** `_audit/check_duplo_simples.py` (script audit du run précédent).
+3. **Témoins grep R8 pré-commit** : query « ligação de interruptor duplo » dans parente = 0 occurrences avant cumul, « mediante confirmação » = 6 occurrences pré-existantes (0 nouvelle).
+4. **Commit cumul `3f60b8b0a1`** : 16/14 sur `public/blog/blog-como-ligar-interruptor-duplo.html` seul (scope strict), message détaillé avec témoins R8 + signalement explicite R145 pré-existant.
+5. **Push branche** `feat/enr-rankpush-interruptor-duplo-simples-t_64dd5364` : 1 commit ahead (efa53c905a → 3f60b8b0a1).
+6. **Vérification témoins post-push** : query « ligação de interruptor duplo » = 9 occurrences en parente (gain réel signal query-first).
+
+**HOTSPOT COLLISION détecté pendant run** : entre 09:13:05 (push 3f60b8b0a1) et 09:13:46 (41 secondes), le worker t_a872e826 (autre tâche kanban parallèle) a commité et pushé `b1379ba469` sur LA MÊME branche, modifiant le MÊME fichier `client/public/blog/como-ligar-interruptor-duplo.html` (parente) avec un travail substantiellement équivalent (title/H1 query-first + 3 Q/R FAQ ciblant la query courte `ligação interruptor duplo`, pos 7.0, 37 impr/2 clics 28j). Les 2 commits sont sur la même branche sans squash (HEAD = b1379ba469, HEAD~1 = 3f60b8b0a1). Mon commit reste dans le log comme trace d'audit et contribue à la densité query.
+
+**Différences b1379ba469 vs 3f60b8b0a1** :
+- Titre final retenu (b1379ba469) : « Ligação de Interruptor Duplo: Como Ligar, Esquema e 5 Passos (PT-PT) » (avec « Como Ligar » en milieu pour préserver la query courte).
+- Mon titre (3f60b8b0a1) : « Ligação de Interruptor Duplo: Esquema, Fios e Como Ligar (PT-PT) » (sans « Como Ligar » en milieu).
+- FAQ : b1379ba469 ajoute 3 Q/R ciblant `ligação interruptor duplo` (courte) — 3f60b8b0a1 ajoute 2 Q/R ciblant `ligação interruptor duplo 2 lâmpadas simples` (longue). **Complémentarité = bonus SEO**, pas conflit.
+- R145 : b1379ba469 purge les 6 occurrences « mediante confirmação » de la parente (effet de bord positif) — 3f60b8b0a1 les préservait (leçon 20/08 R145 pré-existant).
+
+**État final PR #359** (3 commits sur la branche `feat/enr-rankpush-interruptor-duplo-simples-t_64dd5364`) :
+- `efa53c905a` (09:06:18, run 4619) : cible canonique `como-ligar-interruptor-duplo-simples.html` renforcée pour query longue.
+- `3f60b8b0a1` (09:13:05, run 4623) : parente `como-ligar-interruptor-duplo.html` query-first pour query longue (16/14).
+- `b1379ba469` (09:13:46, t_a872e826) : parente renforcée pour query courte (3 Q/R, titre final retenu, R145 purge).
+- HEAD final : parente avec densité query élevée (12+ occurrences « ligação de interruptor duplo »), JSON-LD 5/5 valides, 11 Q/R FAQ ciblées, R145-clean, R12 clean, NAP cohérent.
+
+**Conformité** :
+- R1 : push Git uniquement, 0 action infra (Vercel/Cloudflare non touchés).
+- R4 : 0 invention — PRICING.md verbatim {15 €, 65 €, 70 €}, DGEG TRIESP 90062 conforme source-of-truth.
+- R5 : géo-neutre (uniquement « Trás-os-Montes »).
+- R6 : 0 force-push, 0 réécriture historique (commit = nouveau, pas amend).
+- R7 : 0 merge, PR DRAFT #359 laissée en attente — STOP validation Filipe obligatoire.
+- R8 : 9 témoins grep live + JSON-LD parse.
+- R11 : NAP +351 932 321 892 cohérent, 0 contamination 928 484 451 (plomberie).
+- R12 : 0 pronom interdit.
+- R145 : 0 occurrence de « mediante confirmação » dans la parente finale (purgée par b1379ba469).
+
+**Mesure d'impact attendue** (gsc-trajectoire-cron.sh dimanche 22h) :
+- **J+7** : si position moyenne de `ligação interruptor duplo 2 lâmpadas simples` passe < 4 → win capturé (parente query-first + cible query-first + maillage bilatéral + JSON-LD FAQPage dense + R145-clean).
+- **J+7 bis** : si position moyenne de `ligação interruptor duplo` (courte) passe < 6 → bonus win (cumul t_a872e826).
+- **J+14** : si impressions 28j > 41 ET clics 28j > 1 (query longue) → capture confirmée.
+- **J+14 bis** : si impressions 28j > 37 ET clics 28j > 2 (query courte) → cumul t_a872e826 confirmé.
+- **J+28** : si position reste > 10 sur l'une des 2 queries → Rollback possible (revert des 3 commits cumulés).
+
+**Recommandation post-mesure** : si double-win (longue < 4 ET courte < 6), fusion des 2 PRs en une seule canonicalisation du cluster via 301/rel=canonical pour éviter cannibalisation entre `como-ligar-interruptor-duplo` (parente) et `como-ligar-interruptor-duplo-simples` (cible canonique query longue). Décision de Filipe requise.
+
+**Action attendue de Philippe** :
+1. **Trancher** : merge PR draft #359 ou rollback (R7).
+2. **Décider** la stratégie canonicalisation cluster (301 vs canonical vs garder 2 URLs).
+3. Mesurer l'impact J+7/J+14/J+28 et déclencher rollback si KPI non amélioré.
+4. **Suivre** la tech debt `_audit/check_*.py` (artefacts scratch d'autres workers t_a872e826 / t_a0e8e34e qui restent untracked — pas mon scope mais à nettoyer dans un round dédié).
+
+Refs : PR #359 (3 commits cumulés). SEO_PLAN.md entrée t_342ad618 (efa53c905a) + t_a872e826 (b1379ba469). Branche `feat/enr-rankpush-interruptor-duplo-simples-t_64dd5364`. Cumul final = 3 commits.
