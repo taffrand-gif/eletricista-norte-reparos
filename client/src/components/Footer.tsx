@@ -41,7 +41,7 @@ function Footer() {
  <ul className="space-y-2 text-sm">
  <li><a href="/instalacao-eletrica-completa" className="text-gray-200 hover:text-white transition-colors">Instalação Elétrica</a></li>
  <li><a href="/quadros-eletricos-modernizacao" className="text-gray-200 hover:text-white transition-colors">Quadros Elétricos</a></li>
- <li><a href="/arranjacao-avarias-eletricas" className="text-gray-200 hover:text-white transition-colors">Arranjo Avarias</a></li>
+ <li><a href="/reparacao-avarias-eletricas" className="text-gray-200 hover:text-white transition-colors">Arranjo Avarias</a></li>
  <li><a href="/iluminacao-led-profissional" className="text-gray-200 hover:text-white transition-colors">Iluminação LED</a></li>
  </ul>
  </div>
