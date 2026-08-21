@@ -3,85 +3,86 @@
 > Écrit par le loop Cowork après chaque run. NE PAS ÉDITER MANUELLEMENT.
 
 ## Dernier run
-- Date : 2026-08-20
-- Tâche prévue : rang 1 de la file du 19/08 — retrait de la **branche morte `plumberFaqs`**.
-- Tâche réellement exécutée : **la tâche prévue.**
-- Branche (depuis `refs/remotes/origin/main`, **en worktree**) : `loop/2026-08-20-enr-plumberfaqs-deadbranch`
-- Commits : 3 (2 fichiers de production, **1 par commit**, + `SEO_PLAN.md`)
-- PR ouverte : **#358** — https://github.com/taffrand-gif/eletricista-norte-reparos/pull/358
-- **PR jumelle CNR : #321** (même famille : code mort porteur de violations)
-- Résultat : ✅ 2 fichiers. **Les 2 résiduels R8 du run précédent sont tombés à 0.**
+- Date : 2026-08-21
+- Tâche prévue : rang 1 de la file du 20/08 — audit systématique du code mort.
+- Tâche réellement exécutée : l'audit a été fait, **mais une violation découverte pendant a pris la priorité (R11/R12)** et constitue la PR livrée.
+- **PR ouverte : #363** — https://github.com/taffrand-gif/eletricista-norte-reparos/pull/363 — branche `loop/2026-08-21-enr-liens-corrompus` — 21 commits, 20 fichiers, **22 liens internes morts réparés**.
 
-### Preuve de branche morte — établie, pas supposée
-`FAQ.tsx` L20-21 faisait `isPlumber ? plumberFaqs : electricFaqs` avec `isPlumber = config.id === 'norte-reparos'`. `config` vient de `useSite()` → `getCurrentSiteConfig()` (`shared/siteConfig.ts` L233-235) qui retourne le **littéral** `siteConfig`, dont `id` vaut `'eletricista-norte-reparos'` (L105). `isPlumber` est **statiquement false**.
-Le bloc restait néanmoins **dans le bundle servi au navigateur**, donc lisible par tout crawler qui exécute le JS, sur un domaine 100 % électricité. Il portait : `Deslocamo-nos gratuitamente` (`PRICING.md` L56, interdit verbatim) · `equipas de piquete sempre disponíveis` (claim d'effectif, R4) — **les deux exactement ce que la PR #351 avait retiré d'`electricFaqs`** · un catalogue de services de canalisation + prix plomberie 50/60/150 € **absents du `PRICING.md` de ce repo** (R12, cannibalisation de `canalizador-norte-reparos.pt`) · un bloc incohérent (« Tem eletricista urgente 24h/7d? » rangé dans les FAQ plomberie, avec le téléphone électricien).
+### 🔴 Batch `repar`→`arranj` appliqué sans limite de mot — les 4 repos sont touchés
+Trouvé en requalifiant `pages/CityPage.tsx` sur CNR : « a nosso trabalho está **parranjada** ». `p|repar|ada` → `p`+`arranj`+`ada`. Un batch a remplacé la sous-chaîne `repar` par `arranj` **sans `\b`**, corrompant tout mot contenant `repar`.
 
-**Ordre des commits imposé** : `FAQ.tsx` d'abord (cesse de consommer), `faqData.ts` ensuite (retire l'export) → aucun commit intermédiaire ne casse la compilation.
+**523 occurrences / 258 fichiers** sur les 4 repos — CNR 296/138 · **ENR 164/81** · CU 33/19 · EU 30/20.
+Formes : `parranjar` 221 (`preparar`) · `arranjacao` 113 (`reparacao`) · `parranjo` 96 (`preparação`) · `parranjada/o/os/as` 41 · `parranjou` 14 · `parranja` 8 · `parranjamos` 2 · `arranjacoes` 2.
 
-- **Témoins R8** (`client/src` + `shared`) : `plumberFaqs` **3→0** · `Deslocamo-nos gratuitamente` **1→0** · `equipas de piquete` **1→0** · `emergências de canalização` **1→0** · `certificação de gás` **1→0** · `electricFaqs` **3→3** (contrôle positif).
-- `git diff --numstat` : `faqData.ts` **0/30** · `FAQ.tsx` **2/3**.
-- **`tsc --noEmit` : 82 sur la branche, 82 sur un worktree détaché `refs/remotes/origin/main` intact → 0 régression.**
+⚠️ **Le sous-ensemble grave : les `href`.** Les fichiers cibles ont gardé leur nom correct sur le disque **et les sitemaps déclarent la forme correcte** → ce sont des **404 internes durs**, pas un renommage.
+Sur ENR : `/arranjacao-avarias-eletricas` **29×** (cible `reparacao-avarias-eletricas.html` présente), `/blog/parranjar-instalacao-eletrica-inverno` 4×, `/blog/parranjar-casa-verao-eletricidade`, `/arranjacao-eletrica`, image OG `og/arranjacao-avarias-eletricas.svg`.
+🔴 **Le plus grave : `client/src/components/Footer.tsx` portait un de ces liens morts — donc servi sur toutes les pages du site.**
+
+- **Témoin R8** `(href|src|content)="…(parranjar|arranjacao)…"` : **48 → 26**. Le résiduel est **entièrement** constitué des 11 fichiers pris par des PR ouvertes et des liens sans cible sous aucune forme (`/servicos/arranjacao-eletrica` ×3).
+- **Réparé uniquement ce dont la cible corrigée a été vérifiée présente sur le disque** — zéro invention (R4).
+
+### Audit du code mort — résultat, non livré en PR
+🔴 **Le prédicat prescrit était faux.** « Grepper le nom d'export sur `client/src` + `shared` » manque les consommateurs situés dans `scripts/` (sur CNR il aurait fait supprimer 5 pages pré-rendues en production). **Prédicat corrigé : grep sur tout le dépôt** (4667 fichiers), mentions dans `SEO_PLAN.md`/`context.md` exclues.
+Résultat ENR : **14 fichiers morts**, dont **6 porteurs de motifs**. Après requalification en lecture, **2 faux positifs** (`DashboardLayout.tsx` : les « délais » sont les classes CSS `min-w-0`).
+**Presque tout le gisement est bloqué par des PR ouvertes** — d'où le choix de livrer la corruption à la place.
 
 ## ✅ Gate merge — aucun gate actif
 Vérifié ce run : **aucune mention d'attente de merge** dans les 4 `context.md`. Aucun gate réécrit.
 
-🔴 **Rappel de doctrine, à ne jamais réécrire** : R7 interdit de **MERGER**, pas de **PRODUIRE**. Une PR en attente ne gèle pas le repo. Entre le 06/08 et le 09/08, la mention « Attente GO merge (R7) » a été relue chaque nuit comme un ordre d'arrêt → **4 runs sans production**. Ne jamais réécrire un gate de ce type.
+🔴 **Rappel de doctrine, à ne jamais réécrire** : R7 interdit de **MERGER**, pas de **PRODUIRE**. Une PR en attente ne gèle pas le repo — ce run a ouvert une PR pendant que 16 autres restaient ouvertes. Entre le 06/08 et le 09/08, la mention « Attente GO merge (R7) » a été relue chaque nuit comme un ordre d'arrêt → **4 runs sans production**. **Ne jamais réécrire un gate de ce type.**
 
-## 🎯 FILE DE TÂCHES LOOP — état au 2026-08-20
+## 🎯 FILE DE TÂCHES LOOP — état au 2026-08-21
 
 | Rang | Cible | Statut |
 |---|---|---|
-| — | `FAQ.tsx` · `FAQLocal.tsx` · `OptimizedServices.tsx` · `Footer.tsx` · `StructuredData.tsx` · `Contactos.tsx` · `data/faqData.ts` (dont `plumberFaqs`) | ✅ traités |
-| **1** | **Audit systématique du code mort** : pour chaque export de `client/src/components/**` et `client/src/data/**`, `grep -rn "<NomExport>" client/src shared` ; 1 seule occurrence (sa définition) ⇒ code mort | ⏳ **PROCHAINE TÂCHE.** Meilleur rapport effort/risque de la file : 0 risque prod, 0 arbitrage d'offre. **Sur CNR le même audit a sorti `SEO/FAQSchema.tsx` = 10 violations retirées en une suppression (PR #321).** |
-| **2** | **`components/SEO/FAQSchema.tsx` L70** — « deslocação incluída … raio de 50km de Bragança » | ⏸ **fichier pris par les PR #350 ET #349, toutes deux ouvertes.** ⚠️ **Sur CNR, le fichier jumeau était du CODE MORT** — vérifier le prédicat d'importeur ici **avant** de patcher : si `FAQSchema` n'a pas d'importeur sur ENR non plus, la réponse est le **retrait**, pas le patch. |
-| 3 | `grep -rn 'gratuit' client/src` + `grep -rn 'raio de' client/src` sur **tout** le repo | ⏳ prédicat `PRICING.md` L54-56 passé seulement sur `faqData.ts` |
-| 4 | `Diagnostico.tsx` (6 occ) | ⏳ **à requalifier d'abord** — R145 autorise `24h/7 dias` |
-| 5 | `PriceTable.tsx` (3) | 🛑 **BLOQUÉ — arbitrage de prix. Ne pas patcher** |
-| 6 | `CalculadorPreco.tsx` · `InnovativeHero.tsx` · `TrustBanner.tsx` · `Blog.tsx` | ⏸ **requalifier en lecture** — vraisemblablement vides de violations réelles |
+| — | 20 fichiers à liens corrompus, dont `Footer.tsx` | ✅ **traité ce run (#363)** |
+| **1** | **`components/SEO/FAQSchema.tsx` — RETRAIT, pas patch** | ⏸ **hypothèse du 20/08 CONFIRMÉE ce run** : **0 importeur dans tout le dépôt** → c'est du code mort, exactement comme son jumeau CNR (PR #321, 10 violations retirées). Il porte **7 familles de violations** (`raio de …km` ×2, `deslocação incluída`, `gratuito` ×2, stat non sourcée, `A confirmar`, délai, garantie). **Toujours pris par les PR #350 ET #349** — reprendre après leur merge. |
+| **2** | **`##style##` / `##endstyle##` — marqueurs de gabarit non substitués** | ⏳ **PROCHAINE TÂCHE SANS GO.** `client/public/sobre.html` L21, `client/public/calculadora-de-preco.html` L21. Sur CU/EU le même défaut faisait **servir tout le CSS comme texte visible** ; correctif validé et mergeable tel quel (PR #270/#313). |
+| **3** | **Corruption de prose `repar`→`arranj` — ~140 occurrences restantes sur ENR** | ⏳ **GO périmètre requis.** Inclut `Parranjo` = `Preparação`, restauration *probable* mais **pas prouvable par un fichier sur disque** → hors R4 sans arbitrage. **Un GO d'une ligne débloque les 523 des 4 repos.** |
+| **4** | **`pages/QuantoTempoDemoraT rocarQuadroEletrico.tsx` — le nom du fichier contient une ESPACE** | ⏳ `App.tsx` L89 l'importe avec l'espace, la route L167 est active : le fichier est **vivant**, mais c'est le **seul fichier source avec une espace sur les 4 repos**. Il porte aussi 35 motifs de délai à requalifier. **Pris par une PR ouverte** → après merge. |
+| **5** | **9 chaînes françaises du corpus INTERDIT** (`satisfait ou refait`, `parle uniquement`, `Marque grande`, `Comparez vous-même`, `tout le pays`, `à l'avenir`) | ⏳ 6 occurrences sur ENR. Interdites **verbatim** par `LECONS.md`. Petit volume. |
+| **6** | `grep -rn 'gratuit' client/src` + `grep -rn 'raio de' client/src` | ⏳ prédicat `PRICING.md` L54-56 passé seulement sur `faqData.ts` |
+| **7** | 12 fichiers morts sans violation | ⏳ dont `ComponentShowcase.tsx` (1375 L), `blog/QuadroEletricoDispara.tsx` (1072 L), `GaleriaOld.tsx`. Retrait de confort. ⚠️ `blog/ComoTrocarTomadaEletricaSozinho.tsx` : contenu « faire soi-même » sur un site d'électricien certifié — **question de positionnement ET de sécurité**, à arbitrer. |
+| 8 | `Diagnostico.tsx` (6 occ) | ⏳ **à requalifier d'abord** — R145 autorise `24h/7 dias` |
+| — | `PriceTable.tsx` | 🛑 **BLOQUÉ — arbitrage de prix** |
+| — | `CalculadorPreco.tsx` · `InnovativeHero.tsx` · `TrustBanner.tsx` · `Blog.tsx` | ⏸ requalifier en lecture |
 
 ## Tâche suivante recommandée
-1. **Rang 1 — l'audit du code mort**, en premier. Méthode validée ce run sur les 2 repos jumeaux.
-2. **`FAQSchema.tsx`** dès que #350 et #349 sont mergées, en commençant par le test d'importeur.
-3. **Le prédicat `gratuit` sur tout `client/src/` et `client/public/`.** Sur CU le même prédicat avait donné 38 fichiers + 1 page (PR #267).
-4. **`garantia de 24 meses` (L50) et durées chiffrées (L46) de `faqData.ts`** — les PR **#342** et **#350** sont ouvertes sur ces sujets exacts. **Reprendre après leur merge.**
-5. **Batch R145 `rápida`/`rápido` — 61 occurrences.** GO requis.
+1. **Rang 2 — les marqueurs `##style##`** : 2 fichiers, correctif déterministe déjà validé sur CU et EU, aucun GO.
+2. **Rang 5 — les 6 chaînes françaises interdites** : petit, sourcé verbatim, aucun GO.
+3. **`FAQSchema.tsx` en RETRAIT** dès #350 et #349 mergées — commencer par re-tester le prédicat d'importeur.
+4. **Le prédicat `gratuit` sur tout `client/src/` et `client/public/`.**
+5. **`garantia de 24 meses` (L50) et durées chiffrées (L46) de `faqData.ts`** — PR #342 et #350 ouvertes sur ces sujets exacts. Après leur merge.
 6. Vocabulaire validé **verbatim** : `shared/siteConfig.ts` L107/L108/L123/L124/L158/L159. Pronoms : `AGENTS.md` §12. **Privilégier le RETRAIT.**
 
 ## Apprentissages (self-improving)
-- 🔴 **NOUVEAU — un résiduel de témoin R8 qui « ne descend pas à 0 » est une PISTE, pas du bruit.** Le run du 19/08 a noté `2→1` deux fois, a qualifié les restes de « branche morte » et est passé à autre chose. **Ces deux résiduels étaient les mêmes violations, toujours dans le bundle.** ➡️ **Quand un témoin s'arrête au-dessus de 0, la ligne suivante du run doit dire où est le reste et pourquoi il survit.**
-- 🔴 **NOUVEAU — le CODE MORT est un gisement de violations à part entière, sur les DEUX repos jumeaux.** ENR (`plumberFaqs`, 4 violations) et CNR (`SEO/FAQSchema.tsx`, 10 violations) en ont livré chacun le même soir. Il est **invisible à tous les compteurs**, qui partent de `OptimizedHome.tsx`. ➡️ **Test d'ouverture** : `grep -rn "<NomExport>" client/src shared` ; 1 occurrence = sa définition ⇒ code mort.
-- 🔴 **NOUVEAU — une baseline `tsc` se REMESURE, elle ne se recopie pas.** La note du 14/08 (« total 106, pas 82 ») est **infirmée** : mesurée ce run des deux côtés, c'est **82**. Sur CNR la baseline annoncée était 322, la mesure donne 215. **Deux `context.md` sur deux portaient une baseline fausse.** ➡️ Mesurer la baseline sur un **worktree détaché sur le remote intact, dans le même run**.
-- 🔴 **Une branche `isPlumber ? A : B` sur un repo mono-config est du code MORT permanent.** `getCurrentSiteConfig()` retourne une constante. ⚠️ **Le pattern `isPlumber` reste utilisé par ~20 autres composants** : ce sont les mêmes branches mortes, mais elles portent surtout du style (couleurs, emoji). **Traiter en priorité celles qui portent du TEXTE ou des PRIX.**
-- 🔴 **Un contrôle de conformité sur UN fichier ne clôt pas une divergence de doctrine.** ➡️ Grepper la **VALEUR** sur tout `client/src/`. (Confirmé une fois de plus sur CNR ce run : 6 divergences de rayon restaient après un run qui se croyait complet.)
-- 🔴 **`PRICING.md` porte des interdictions verbatim (L54-56) qu'aucun compteur R12 ne teste.** ➡️ `grep -c 'gratuit'` au contrôle d'ouverture des 4 repos.
-- 🔴 **Vérifier les PR ouvertes AVANT de patcher.** A orienté ce run : `faqData.ts` était libre, `FAQSchema.tsx` non.
-- 🔴 **Une PR « MERGED » se vérifie dans `main` par `(#N)` dans `git log --oneline`**, pas par son statut ni par `merge-base --is-ancestor` (faux sur un merge en squash). Vérifié ce run pour #351 : présente.
-- 🔴 **Le compteur R12 ne voit pas le JSON-LD**, et c'est là que sont les violations les plus graves.
-- 🔴 **Le binôme cross-repo fournit un REMPLACEMENT verbatim, pas seulement une détection.** Utilisé 5 fois. **Avant de déclarer une valeur irrécupérable, regarder le jumeau.**
-- 🔴 **Un doublon `X e X` est une signature de purge** (variante CU : `X: X`). Motif : `(\b\w[\w\s]{4,}\b) e \1`.
-- 🔴 **Un `SEO_PLAN.md` append-only entre en conflit à CHAQUE merge de `main`.** Résolution : **conserver les DEUX côtés** (main d'abord). Contrôle : `git diff --numstat SEO_PLAN.md` → N ajoutées, **0 supprimée**.
-- 🔴 **R6 interdit `--force`, donc une PR déjà ouverte se met à jour par MERGE, jamais par rebase.**
-- **Quand une question FAQ porte sur un délai, retirer le couple Q/R plutôt que le réécrire.** Validé par le merge de la PR #200 (EU).
-- **Un artefact de purge peut créer un contresens de SÉCURITÉ.** Relire en priorité les contenus à enjeu physique.
-- **`SEO_PLAN.md` et `context.md` dérivent indépendamment — lire les DEUX.**
-- B1, B2, B3 sont TERMINÉS — ne pas les rouvrir.
+- 🔴 **NOUVEAU — la signature d'une corruption de batch, c'est le MOT INEXISTANT.** Personne ne pense à grepper `parranjar`. `grep -rIoE '[[:alpha:]]*<lemme>[[:alpha:]]*' | sort | uniq -c` sort les formes légitimes **et**, juste en dessous, les non-mots : 1361 `arranjar` valides, puis 221 `parranjar` qui ne le sont pas. Une commande, 523 corruptions révélées. ➡️ **À passer sur `urgência`, `rápido`, `garantia`, `gratuito`.**
+- 🔴 **NOUVEAU — tout batch de substitution doit ancrer ses motifs sur `\b` et livrer le compte des non-mots créés.**
+- 🔴 **NOUVEAU — un prédicat de code mort doit porter sur TOUT le dépôt.** Les consommateurs vivent aussi dans `scripts/` et les manifestes de pré-rendu. **Seconde fois en deux runs qu'une méthode écrite dans un `context.md` se révèle fausse à l'exécution.**
+- 🔴 **NOUVEAU — un scanner qui tokenise sur `\w` rate les noms de fichier contenant une espace.** `QuantoTempoDemoraT rocarQuadroEletrico.tsx` était compté mort alors qu'il est importé et routé. Contrôle : `find . -type f -name "* *"`.
+- 🔴 **NOUVEAU — un lien corrompu est invisible à l'audit de conformité ET à l'audit de sitemap.** Contrôle dédié : **résoudre chaque lien interne contre le disque**.
+- 🔴 **NOUVEAU — quand un défaut récidive, chercher le GÉNÉRATEUR, pas la page** (leçon CU/EU de ce run : le NAP parasite était écrit en dur dans deux scripts Python).
+- 🔴 **NOUVEAU — un motif de violation dans un commentaire qui CITE la règle est un faux positif systématique.**
+- 🔴 **ATTENTION, hypothèse invalidée ce run** : ENR est un **codebase multi-sites**. `shared/serviceConfig.ts` porte les domaines plomberie **et** électricité, et les composants branchent dessus (`config.x ? '…canalizadores…' : '…'`). **Un grep « contamination cross-métier » brut sort 17 fichiers de faux positifs.** Ne l'appliquer qu'aux **pages autonomes**, jamais aux composants pilotés par config.
+- 🔴 **Vérifier les PR ouvertes AVANT de patcher** : `gh pr view <n> --json files --jq '.files[].path'`. Sur ENR, **11 des 31 fichiers porteurs étaient pris** — contrôle indispensable, 3ᵉ run consécutif où il évite un conflit.
+- 🔴 **Le compteur R12 sur-compte** : R145 **autorise** `24h/7 dias`. Requalifier avant de patcher.
+- 🔴 **Une baseline se remesure sur un arbre intact dans le même run** (CNR : `tsc` = **215**, pas 322).
+- **Ne pas sur-purger.** R4 se viole dans les deux sens.
 
 ## Edge cases détectés
-- ✅ **REFERMÉ — la branche locale parasite `refs/heads/origin/main` n'existe plus.** Vérifié ce run : `git rev-parse refs/heads/origin/main` → `fatal: Needed a single revision`. `origin/main` n'est plus ambigu. **Écrire `refs/remotes/origin/main` reste la forme sûre**, mais ce n'est plus un blocage.
-- 🔴 **Le hook `maillage-gate` produit un FAUX POSITIF sur tout merge commit.** Procédure : vérifier que le fichier incriminé n'est pas dans `git diff --name-only <remote>/main...HEAD`, vérifier que les href préexistent sur main, puis `--no-verify` **en le justifiant dans le message de commit**. Ne jamais bypasser sans ces deux vérifications.
-- **`gh` et les credentials Git n'existent QUE sur le host macOS.** Sandbox `mcp__workspace__bash` = lecture / grep / parsing Python / **écriture de fichiers** ; `git` en écriture / `gh` / `tsc` → `mcp__desktop-commander__start_process`. **Confirmé ce run** : `git push` depuis le sandbox échoue sur `could not read Username` (le credential helper pointe `/opt/homebrew/bin/gh`).
-- **Le `/tmp` du sandbox ≠ le `/tmp` du host.** Worktrees sous `~/work/Sites/_worktrees/loop-YYYY-MM-DD/` — lisibles depuis le sandbox.
-- **Les commandes `git` ne fonctionnent PAS depuis le sandbox dans un worktree** (chemin absolu host dans `.git`). **L'écriture de fichiers, si.**
-- **`tsc` dans un worktree** : `ln -sfn <checkout>/node_modules ./node_modules` avant, **et retirer le lien avant le commit**.
-- 🔴 `gh pr diff <n>` peut dépasser la limite de sortie → `gh pr view <n> --json files --jq '.files[].path'`.
-- 🔴 **zsh ne fait PAS de word-splitting** ; **`grep -P` n'existe pas sur macOS** → Python pour tout motif non trivial ; **`git commit -m` multiligne est fragile** → `git commit -F -` + heredoc `<<'MSG'`.
-- L'outil `Write` (chemin host) gère parfaitement les accents — plus sûr que `sed`.
-- Corps de PR long : `gh pr create --body-file`, jamais `--body` inline.
-- **Worktree obligatoire** (R-WT). **Jamais `reset --hard` / `checkout -- .` / `stash` / `clean`** sur le checkout partagé. Vérifié ce run : le checkout partagé était sur `feat/enr-rankpush-como-montar-interruptor-duplo-t_03b01956`, **non touché**. Aucun `context.md` des 4 repos ne *prescrit* de `reset --hard` — rien à corriger.
+- **`gh` et les credentials Git n'existent QUE sur le host macOS.** Sandbox : `git fetch` OK, **`git push` impossible**. **Répartition** : lecture / grep / parsing Python / **écriture de fichiers** → sandbox ; `git` en écriture / `gh` / `tsc` → `mcp__desktop-commander__start_process`.
+- **Le `/tmp` du sandbox ≠ le `/tmp` du host.** Worktrees sous `~/work/Sites/_worktrees/loop-YYYY-MM-DD/`.
+- 🔴 **`git worktree add … -b X <remote>/main` puis `git switch -c Y <remote>/main` conserve les modifications non commitées** — manière propre de scinder un run en 2 PR sans `stash` (interdit R-WT).
+- 🔴 **`grep -P` n'existe pas sur macOS** ; **zsh ne fait pas de word-splitting**. Pour tout motif non trivial : **Python**.
+- 🔴 **`git commit -m` multiligne est fragile en zsh** → `git commit -F -`. Corps de PR : `--body-file`.
+- **Worktree obligatoire** (R-WT). **Jamais `reset --hard` / `checkout -- .` / `stash` / `clean`** sur le checkout partagé.
 
 ## Blocages connus
-1. 🛑 **`PriceTable.tsx` — plancher de « Pequena Arranjo » à définir.** L109 « Mão de Obra (mín. 1h) : 35 € » contre 70 €/h canonique. **Arbitrage, pas patch.** Bloque 3 corrections de prix sur une money page.
-2. 🛑 **Le service `'Urgências 24h'`** : même question ouverte sur CNR — **un seul arbitrage débloque les 2 repos**.
-3. ⏸ **`SEO/FAQSchema.tsx`** — bloqué par les PR #350 et #349 ouvertes, pas par un arbitrage. Reprendre après merge, **en commençant par le test d'importeur** (sur CNR le jumeau était du code mort).
-4. ✅ **REFERMÉ — rayon de couverture.** `AGENTS.md` §12 le verrouille à ~130 km depuis le 30/06. Appliqué ici (PR #351) et sur CNR (PR #319 + #321).
-5. ✅ **REFERMÉ — `plumberFaqs`.** Retiré ce run (PR #358). La décision de périmètre était légère : le code était inatteignable.
+1. 🛑 **GO périmètre — corruption de prose `repar`→`arranj`** : 523 occurrences / 258 fichiers sur les 4 repos.
+2. 🛑 **`Você` — 184 occurrences / 161 fichiers sur les 4 repos, dont ENR 103/96** — le plus gros gisement des 4. `LECONS.md` le classe dans le **corpus INTERDIT** (marqueur pt-BR sur sites pt-PT). GO requis.
+3. 🛑 **Le service s'appelle littéralement `'Urgências 24h'`** — le renommer **change l'offre affichée** → GO. **Même question sur CNR : un seul arbitrage débloque les 2 repos.**
+4. 🛑 **Batch R145 `rápida`/`rápido` — 61 occurrences.** GO requis.
+5. ⏸ **`FAQSchema.tsx`** — bloqué par #350 et #349, **pas par un arbitrage**. La réponse est le RETRAIT.
+6. ⚠️ **9 fichiers HTML déséquilibrés** relevés par le contrôle de balises : `client/public/blog/tomada-queimada-perigos-solucoes.html` (`<script>` 10/8 + 2 JSON-LD invalides), `aquecimento-eletrico-macedo.html`, `quadros-eletricos-alfandega.html`, `quadros-eletricos-macedo.html` (`<script>` 5/4 + `<style>` 0/1 + JSON-LD invalide chacun), `blog/fase-e-neutro-cores.html` (3 JSON-LD invalides), `blog/como-instalar-fechadura-eletrica.html`, `blog/guia-cores-fios-eletricos.html`, `public/blog/blog-domotica-para-casas-inteligentes.html`, `public/blog/blog-reparacao-cabos-danificados.html`. **Gisement dense, aucun GO requis** — plusieurs sont pris par des PR ouvertes.
+7. ⚠️ **`https://***` résiduel : 3 occurrences / 1 fichier.**
+8. ⚠️ **La cause racine du batch `repar`→`arranj` n'est pas identifiée.** **Retrouver le script pour s'assurer qu'il n'est pas rejoué.**
