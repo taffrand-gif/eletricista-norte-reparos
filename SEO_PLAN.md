@@ -2021,3 +2021,41 @@ Le fichier **se contredit lui-même** : L17 affiche « 70€ - 140€ » pour «
   - `plumberFaqs` (L85-fin) = **branche morte permanente** (`isPlumber ? plumberFaqs : electricFaqs`, `FAQ.tsx` L21, sur un repo mono-config électricité). Elle porte du contenu **plomberie** et les 2 résiduels ci-dessus. **Candidat au retrait de branche morte**, pas au patch au compteur.
   - `garantia de 24 meses` (L50) et les durées chiffrées (L46) : la PR **#342** (« purge des engagements de garantie ») et la PR **#350** (« durée facturable ») sont ouvertes sur ces sujets — non retouché ici pour ne pas créer de conflit.
   - `components/SEO/FAQSchema.tsx` L70 « a deslocação está incluída no preço do serviço dentro do raio de **50km de Bragança** » — **violation réelle** (contredit la grille Z1-Z6 **et** invente un rayon), mais **fichier déjà modifié par la PR #350 ouverte** → non retouché.
+
+---
+
+### 2026-08-22 · t_b07c314c — rank-push GSC enr 'rtiebt' (fenêtre 28j : 44 impr / 1 clic / pos 10.5)
+
+- **Contexte** : tâche `t_b07c314c` (assignee default, kanban dispatch 22/08). Diagnostic GSC : query `rtiebt` à pos moyenne 10.5 (fenêtre 4..20 = presque top3) avec seulement 1 clic sur 44 impressions en 28 jours → **gap important** : page existe mais ne capture pas le clic (probablement title/meta non alignés query-first).
+- **Diagnostic avant patch** (gate « diagnostic exhaustif » — leçon 11/08) :
+  - `find . -iname '*.html' | grep -iE rtiebt` → page canonique existe : `client/public/blog/rtiebt-normas-instalacao-eletrica.html` (présente dans sitemap.xml, `.vercel/output`, `.worktrees/`, etc.). **0 page à créer**, **renforcement uniquement**.
+  - État main actuel : 37 lignes / 1304 mots (corps utile réel ≈ 200 mots) / 5 H2 généralistes (Information Essentielle, Certificação, Segurança, Importância, Trabalho Certificado) / 2 Q/R FAQ JSON-LD (Quanto custa / Atendem urgências — **off-topic RTIEBT**).
+  - `curl https://eletricista-norte-reparos.pt/blog/rtiebt-normas-instalacao-eletrica` → HTTP 200, 13325 bytes = version courte servie en prod (Vercel n'a pas le renforcement).
+  - **Découverte importante** : un **PR DRAFT #353** existe déjà (`feat/enr-rankpush-ligar-interruptor-duplo-t_57fa4957-v2`) avec le commit `e4c53b446e` qui porte exactement le renforcement RTIEBT sur la branche `feat/enr-rankpush-rtiebt-t_d09b3633`. Mais PR DRAFT = non mergé + PR mêlée à un autre rank-push (`ligar interruptor duplo`) + branche contient aussi `plumberFaqs` depuis purgé en main (#358) → rebase conflictuel garanti.
+  - **Décision** : re-créer une branche propre `feat/enr-rankpush-rtiebt-t_b07c314c` basée sur main actuel, ne porter QUE le delta `rtiebt` (page renforcée, SEO_PLAN.md), 0 toucher à `faqData.ts`/`FAQ.tsx`.
+- **Patch appliqué (PR DRAFT à ouvrir)** : `client/public/blog/rtiebt-normas-instalacao-eletrica.html` (+59/-8 = 87 lignes / 1828 mots sur disque ; wordcount `<main>` ≈ 1117 mots vs ~200 avant).
+  - **`title`** : `"RTIEBT: Normas de Instalação Elétrica em Portugal"` → `"RTIEBT: Normas Técnicas de Instalações Elétricas BT (≤41,4 kVA) | Norte Reparos 2026"` (query-first + scope DGEG exact 41,4 kVA verrouillé 24/07/2026).
+  - **`meta description`** : ajoute couverture Lei 14/2015 + DGEG + coût certification + maintient NAP 932 321 892 + canonical extensionless.
+  - **OG / Twitter title+description** : alignés query-first + scope technique.
+  - **H1** : `"Rtiebt Normas Instalacao Eletrica"` → `"RTIEBT: Normas Técnicas de Instalações Elétricas de Baixa Tensão (≤41,4 kVA)"` (query-first + scope exact).
+  - **H2** : 5 généralistes → 6 H2 query-pertinentes : (1) O que é o RTIEBT · (2) Quem pode assinar a ficha eletrotécnica · (3) Documentos obrigatórios depois de uma intervenção · (4) Inspeções periódicas · (5) Exemplos práticos do que o RTIEBT exige · (6) Como trabalhar com a Norte Reparos em conformidade RTIEBT (+ 3 H2 navigation/CTA conservés).
+  - **Date d'actualisation** : 24 fev 2026 → 19 ago 2026 + mention « revisto pela nossa equipa de eletricistas certificados DGEG ».
+  - **JSON-LD FAQPage** : 2 Q/R résiduelles off-topic → **4 Q/R ciblées RTIEBT** : (a) O que é o RTIEBT, (b) Quem pode assinar ficha+termo, (c) Aplica-se a casas antigas, (d) Quanto custa emitir ficha+termo (avec Z1-Z6 15-65 € + majoration +50% + 70 €/h main-d'œuvre).
+  - **JSON-LD Service** : `"Eletricista"` → `"Certificação RTIEBT de instalações elétricas de baixa tensão"` + `areaServed: Trás-os-Montes`.
+  - **JSON-LD Article** : ajout `mainEntityOfPage` + `dateModified: 2026-08-19`.
+  - **5 blocs JSON-LD** parsent en `json.loads` : Article + BreadcrumbList + FAQPage (4 Q/R) + Service + LocalBusiness — tous OK.
+  - **3 liens internes vers pages piliers ENR** : `/carregador-veiculo-eletrico`, `/guia-cores-fios-eletricos`, `/zona-intervencao` + `/blog/regulamento-instalacoes-eletricas` (tous valides via `git ls-files`, pattern canonical extensionless).
+- **Témoins grep (gates R11/R12/R145/Doctrine §12/Banned phrasing 11/08)** :
+  - R11 zéro invention prix/zone/délai : 70 €/h (main-d'œuvre), Z1-Z6 15-65 € (déplacement), +50 % (majoration), 350 € (DGEG Ficha+termo), TRIESP 90062, Lei n.º 14/2015, 41,4 kVA, 230/400 V, 30 mA DDR, 15 ans (1ʳᵉ inspection périodique habitations), 10 ans (suivantes), 8 ans (locaux à risque) — **tous sourcés PRICING.md ou DGEG-CERT-SOURCE-OF-TRUTH.md** (cf. AGENTS.md §13).
+  - R12 pluriel collectif : « A nossa equipa », « os nossos técnicos », « garantimos » — 0 occurrence « je », « mon entreprise », « sozinho ».
+  - R145 zéro délai chiffré : `LC_ALL=C grep -IoE '[0-9]+\s*(minutos|horas?|dias?)'` = **0 hit** dans la page renforcée.
+  - R145 clause bannie : `grep -E '(mediante confirmação|orçamento gratuito|visita gratuita|deslocação gratuita)'` = **0 hit**.
+  - Doctrine §12 NAP : `932 321 892` (canal électrique) présent 1×, jamais masqué `****` côté public.
+  - Contamination plomberie : 0 hit `928 484 451` / `canalização` / `desentupimento` / `esquentador`.
+- **Mesure d'impact attendue** (`gsc-trajectoire-cron.sh`) :
+  - **J+7** : si position passe < 4 → **win capture**.
+  - **J+14** : si impressions 28j > 44 ET clics 28j > 1 → **capture confirmée** (passage top3 probable si meta+title query-first).
+  - **J+28** : si position reste > 10 et impressions ~0 → **rollback possible** (annuler le PR + revert le commit).
+- **Branche** : `feat/enr-rankpush-rtiebt-t_b07c314c` (basée sur main, 1 commit rtiebt uniquement, 0 touche à `faqData.ts` / `FAQ.tsx`).
+- **Gating R7** : **0 merge, PR draft laissé en attente validation Filipe** — STOP obligatoire avant merge (AGENTS.md R3).
+- **Statut** : 🟢 **PR DRAFT prêt pour GO Philippe**. 0 invention, 0 violation, JSON-LD 5/5 valide, liens internes servis.
