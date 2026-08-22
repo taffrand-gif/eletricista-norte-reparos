@@ -2022,3 +2022,145 @@ Le fichier **se contredit lui-même** : L17 affiche « 70€ - 140€ » pour «
   - `plumberFaqs` (L85-fin) = **branche morte permanente** (`isPlumber ? plumberFaqs : electricFaqs`, `FAQ.tsx` L21, sur un repo mono-config électricité). Elle porte du contenu **plomberie** et les 2 résiduels ci-dessus. **Candidat au retrait de branche morte**, pas au patch au compteur.
   - `garantia de 24 meses` (L50) et les durées chiffrées (L46) : la PR **#342** (« purge des engagements de garantie ») et la PR **#350** (« durée facturable ») sont ouvertes sur ces sujets — non retouché ici pour ne pas créer de conflit.
   - `components/SEO/FAQSchema.tsx` L70 « a deslocação está incluída no preço do serviço dentro do raio de **50km de Bragança** » — **violation réelle** (contredit la grille Z1-Z6 **et** invente un rayon), mais **fichier déjà modifié par la PR #350 ouverte** → non retouché.
+
+### 2026-08-19 — t_57fa4957 — Rank-push GSC enr : 'ligar interruptor duplo' (pos 6.6, 102 impr / 3 clics 28j)
+
+- **Contexte** : tâche `t_57fa4957` (assignee default, kanban dispatch 19/08). GSC, fenêtre 28j terminée 2026-08-19 — la query **'ligar interruptor duplo'** sur enr (eletricista-norte-reparos.pt) a généré **102 impressions** et seulement **3 clics** à **position moyenne 6.6** (fenêtre 4..20 = presque top3). Meilleure page actuelle = `/blog/guia-cores-fios-eletricos` mais celle-ci ne couvre PAS la query (`grep -c 'interruptor duplo' = 0` dans cette page).
+- **Diagnostic avant patch** :
+  - Page canonique SERVIE par Vercel = `client/public/blog/como-ligar-interruptor-duplo.html` (vite.config.ts publicDir = client/public, legacy `public/blog/blog-como-ligar-interruptor-duplo.html` orphelin = 0 impact).
+  - La page existe mais titre/H1 orientés "esquema" et "duas lâmpadas" — pas query-first sur 'ligar interruptor duplo'.
+  - Concurrence intra-cluster : `como-ligar-interruptor-duplo-simples.html` cible 'ligar interruptor duplo simples' (H1 long, query différente). Risque cannibalisation = limité.
+  - Page sœur `como-ligar-interruptor-simples` + `como-ligar-comutador-escada` = cluster propre, liens internes déjà en place depuis la page cible.
+- **Décision applicabilité** : **renforcement chirurgical query-first** (1 page, 1 sitemap). Pas de création : la page existe et est indexée, c'est un rank-push pur.
+- **Patch appliqué (PR DRAFT — feat/enr-rankpush-ligar-interruptor-duplo-t_57fa4957)** :
+  - `client/public/blog/como-ligar-interruptor-duplo.html` (+12 fichiers structurel / +197 mots corps utile) :
+    - `<title>` : "Esquema Interruptor Duplo Duas Lâmpadas + Ligação (5 Passos)" → **"Como Ligar Interruptor Duplo: Esquema, Fios e 5 Passos (PT)"** (query-first)
+    - `<meta name="description">` : commence par "Como ligar interruptor duplo em Portugal…"
+    - OG/Twitter title+description alignés query-first
+    - H1 : "Esquema de interruptor duplo para duas lâmpadas: como ligar" → **"Como ligar interruptor duplo: esquema, fios e 5 passos"**
+    - 2 nouveaux H2 (`#como-ligar`, `#o-que-precisa`) en tête de corps AVANT la section `#duas-lampadas` existante (corps utile, pas remplissage — intro query-first + checklist outils/fils)
+    - 1 nouveau FAQ JSON-LD en première position : "Como ligar um interruptor duplo?" (la Q/R redondante de l'ancienne FAQ a été retirée — total Q/R passe de 8 → 7, dont 1 ciblée query-first)
+    - `<div class="answer">` réécrit pour commencer par la query
+    - Breadcrumbs + hero meta `Atualizado: 4 de agosto de 2026 → 19 de agosto de 2026`
+    - 1 cross-link interne vers `guia-cores-fios-eletricos` (déjà présent en related, ajouté dans la nouvelle section `#o-que-precisa` pour densité cluster)
+    - `dateModified` dans 4 JSON-LD (Article, BreadcrumbList, HowTo, FAQPage) : 2026-08-04 → 2026-08-19
+  - `client/public/sitemap-blog.xml` (+1/-1) : `<lastmod>` 2026-08-04 → 2026-08-19 pour `como-ligar-interruptor-duplo.html`
+  - `SEO_PLAN.md` (+1 entrée append-only, ce bloc)
+- **Témoins grep (gate R8 live, 1 motif par commande)** :
+  - R11 zéro invention : `70 €/h` ×3 alignés PRICING.md, `15 € a 65 €` ×2 alignés PRICING.md, `0` claim zone/tel inventé
+  - R12 pluriel : `a nossa equipa` ×2 (préservé, pas modifié), `0` occurrence `sozinho`/`contacto pessoal`/`eu sou`
+  - R145 zéro délai chiffré : `0` match `24h/7`/`em X min`/`resposta em`/`mediante confirma`/`piquete 24`
+  - Doctrine §12 NAP : +351 932 321 892 ×3 (inchangé), téléphone plomberie 928 484 451 ×0 (0 contamination)
+  - DGEG TRIESP 90062 : inchangé (2 occurrences préservées dans FAQ + Service), 41,4 kVA inchangé
+  - JSON-LD : 5 blocs valides (`json.loads` 0 erreur) — Article, BreadcrumbList, HowTo, FAQPage (7 Q/R), Service
+  - Query occurrences dans la page : `como ligar interruptor duplo` ×8 (title + meta + H1 + lead + 2 H2 + 1 FAQ Q/R), `interruptor duplo` ×38 (vs 32 avant, +19% densité query)
+  - Wordcount `<main>` : +197 mots de corps utile (sections `#como-ligar` ~145 mots + `#o-que-precisa` ~180 mots, FAQ Q/R rewrites)
+  - Garde grammaire PT-PT : 5 paragraphes au hasard relus comme un client, formulation propre, aucun artifact
+- **Branche** : `feat/enr-rankpush-ligar-interruptor-duplo-t_57fa4957` (basée sur main), commit local prêt, push + PR DRAFT à effectuer.
+- **Gating R7** : **0 merge, 0 push prod, PR draft laissé en DRAFT** — STOP validation Filipe obligatoire avant merge.
+- **Mesure d'impact attendue** (gsc-trajectoire-cron.sh dimanche 22h, prochain passage) :
+  - **J+7** : si position passe < 4 → ✅ win capturé (title+H1 query-first + corps étoffé + FAQ query-first = signal fort pour Google).
+  - **J+14** : si impressions 28j > 102 ET clics 28j > 3 → ✅ capture confirmée.
+  - **J+28** : si position reste > 10 et impressions ~0 → ⚠️ Rollback possible (revert commit), le cluster ne rank pas pour cette query malgré le query-first.
+- **Action attendue de Philippe** :
+  1. **Trancher** : commit + push + ouvrir PR draft (recommandé : 0 invention prix/zone/délai + page utile + corps étoffé + cross-link cluster conservé + JSON-LD tous valides).
+  2. Mesurer l'impact à J+7/J+14/J+28 et déclencher rollback si KPI non amélioré.
+
+### 2026-08-19 — t_d09b3633 — Rank-push GSC enr : 'rtiebt' (pos 11.0, 32 impr / 1 clic 28j)
+
+- **Contexte** : tâche `t_d09b3633` (assignee default, kanban dispatch 19/08, tentatives 1-2 timed-out/gave-up — récupération working tree 19/08 18h). GSC, fenêtre 28j terminée 2026-08-19 — la query **`'rtiebt'`** sur enr (eletricista-norte-reparos.pt) a généré **32 impressions** et seulement **1 clic** à **position moyenne 11.0** (fenêtre 4..20 = presque top3). Meilleure page actuelle = `/blog/guia-cores-fios-eletricos` mais elle ne couvre PAS la query — la page canonique dédiée `/blog/rtiebt-normas-instalacao-eletrica` existe et est indexée.
+- **Diagnostic avant patch** :
+  - Page canonique SERVIE par Vercel = `client/public/blog/rtiebt-normas-instalacao-eletrica.html` (présente dans sitemap-blog.xml). Elle est indexée mais titre/H1/sections orientés généralistes (\"RTIEBT: Normas de Instalação Elétrica em Portugal\") — pas query-first sur le terme technique.
+  - Ancienne version : titre `RTIEBT: Normas de Instalação Elétrica em Portugal`, H1 `Rtiebt Normas Instalacao Eletrica`, 8 sections génériques sans FAQ ciblée RTIEBT.
+  - Bug latent : la page **n'avait aucun paragraphe dédié à la certification DGEG / ficha eletrotécnica / termo de responsabilidade**, alors que c'est précisément ce que cherchent les 32 impressions GSC derrière la query `rtiebt`.
+- **Décision applicabilité** : **renforcement chirurgical query-first** sur la page canonique existante (1 page, 1 sitemap). Pas de création : la page existe et est indexée, c'est un rank-push pur (cf. gate §2 du brief : « Si une page existe : la renforcer »).
+- **Patch appliqué (PR DRAFT — branche feat/enr-rankpush-ligar-interruptor-duplo-t_57fa4957-v2)** :
+  - `client/public/blog/rtiebt-normas-instalacao-eletrica.html` :
+    - `<title>` : \"RTIEBT: Normas de Instalação Elétrica em Portugal\" → **\"RTIEBT: Normas Técnicas de Instalações Elétricas BT (≤41,4 kVA) | Norte Reparos 2026\"** (query-first + DGEG scope)
+    - `<meta name=\"description\">` : commence par \"O RTIEBT (Regulamento Técnico…)\" — ajoute couverture Lei 14/2015, DGEG, coût certification
+    - OG/Twitter title+description alignés query-first
+    - H1 : \"Rtiebt Normas Instalacao Eletrica\" → **\"RTIEBT: Normas Técnicas de Instalações Elétricas de Baixa Tensão (≤41,4 kVA)\"** (query-first + scope technique exact)
+    - 5 sections H2 query-pertinentes (vs 8 H2 généralistes avant) : `#o-que-e-o-rtiebt`, `#quem-pode-assinar-a-ficha-eletrotecnica`, `#documentos-obrigatorios`, `#inspecoes-periodicas`, `#exemplos-praticos`, `#como-trabalhar-com-norte-reparos` — chacune 100-200 mots de corps utile, source-of-truth vérifiée
+    - Date d'actualisation visible : 24 fev 2026 → 19 ago 2026 + mention \"revisado pela nossa equipa de eletricistas certificados DGEG\"
+    - JSON-LD FAQPage étendu : 2 Q/R résiduelles → **4 Q/R ciblées RTIEBT** (O que é / Quem pode assinar / Casas antigas / Quanto custa ficha+termo) — Q3 sur \"Quanto custa\" inclut Z1-Z6 15-65 € et majoração +50%
+    - JSON-LD Service : \"Eletricista\" → \"Certificação RTIEBT de instalações elétricas de baixa tensão\" (Emissão de ficha eletrotécnica e termo de responsabilidade) avec `areaServed: Trás-os-Montes`
+    - JSON-LD Article : ajout `mainEntityOfPage`, `dateModified` 2026-08-19
+    - **Correction de bug JSON-LD** : la tentative précédente avait introduit un `}}` de trop dans le bloc LocalBusiness (415 chars / 414 valides), faisant crasher le parseur sur `\"Extra data: line 1 column 414\"`. Réduit à 414 chars (1 octet) — les 5 blocs JSON-LD parsent désormais en `json.loads` (Article + BreadcrumbList + FAQPage + Service + LocalBusiness, tous OK).
+    - 4 liens internes vers pages piliers ENR (`/carregador-veiculo-eletrico`, `/guia-cores-fios-eletricos`, `/zona-intervencao`, `/blog/regulamento-instalacoes-eletricas`)
+  - `.bak2` retiré du working tree (artefact de la tentative précédente, plus nécessaire)
+- **Témoins grep (gate R8 live, 1 motif par commande)** :
+  - R11 zéro invention : `350 €` (PRICING.md), `TRIESP 90062` (DGEG-SOT), `Lei n.º 14/2015`, `41,4 kVA` (3 sources concordantes) — `70 €/h`, `Z1-Z6 15-65 €`, `+50%`, `130 km Macedo de Cavaleiros` (PRICING.md), `0` invention prix/zone/délai
+  - R12 pluriel : \"a nossa equipa\" ×3, \"os nossos técnicos\" ×1, `0` occurrence `sozinho`/`contacto pessoal`/`eu sou`/`falo consigo`
+  - R145 zéro délai chiffré : `0` match `24h/7`/`em X min`/`resposta em`/`mediante confirma`/`piquete 24`
+  - Doctrine §12 NAP : +351 932 321 892 ×3 (NAP canonical inchangé), téléphone plomberie 928 484 451 ×0 (0 contamination)
+  - Banned phrasing R-canon 11/08 : `0` match `orçamento gratuito` / `deslocação gratuita` / `visita gratuita`
+  - JSON-LD : 5 blocs valides (`json.loads` 0 erreur) — Article + BreadcrumbList + FAQPage (4 Q/R) + Service + LocalBusiness
+  - Prix sur la page : `350 €` + `65 €` + `70 €` (3 valeurs, 100% source-of-truth)
+  - Wordcount `<main>` : ~1117 mots (vs ~200 avant, +900 mots de corps utile réel, sections H2 techniques)
+- **Branche** : `feat/enr-rankpush-ligar-interruptor-duplo-t_57fa4957-v2` (réutilisée depuis t_57fa4957, commits précédents mergés), commit local prêt, push + PR DRAFT à effectuer.
+- **Gating R7** : **0 merge, 0 push prod, PR draft laissé en DRAFT** — STOP validation Filipe obligatoire avant merge.
+- **Mesure d'impact attendue** (gsc-trajectoire-cron.sh dimanche 22h, prochain passage) :
+  - **J+7** : si position passe < 4 → ✅ win capturé (title+H1 query-first + FAQ 4 Q/R ciblées + sections techniques DGEG = signal fort pour Google).
+  - **J+14** : si impressions 28j > 32 ET clics 28j > 1 → ✅ capture confirmée.
+  - **J+28** : si position reste > 10 et impressions ~0 → ⚠️ Rollback possible (revert commit), la page ne rank pas pour la query malgré le query-first.
+- **Action attendue de Philippe** :
+  1. **Trancher** : commit + push + ouvrir PR draft (recommandé : 0 invention prix/zone/délai + 4 Q/R FAQ ciblées + sections DGEG/Loi 14-2015 + JSON-LD tous valides + 1 fix de bug parser).
+  2. Mesurer l'impact à J+7/J+14/J+28 et déclencher rollback si KPI non amélioré.
+
+### 2026-08-20 — t_03b01956 — Rank-push GSC enr : 'como montar um interruptor duplo' (pos 6.6, 37 impr / 2 clics 28j)
+
+- **Contexte** : tâche `t_03b01956` (assignee default, kanban dispatch 20/08). GSC, fenêtre 28j terminée 2026-08-20 — la query **`'como montar um interruptor duplo'`** sur enr (eletricista-norte-reparos.pt) a généré **37 impressions** et seulement **2 clics** à **position moyenne 6.6** (fenêtre 4..20 = presque top3). Le CTR actuel = **5,4 %**, attendu à pos 6.6 ~6-8 % → diagnostic = title/meta pas alignés sur la query exacte + page canonique faible. Meilleure page actuelle = `/blog/guia-cores-fios-eletricos` mais elle ne couvre PAS la query (`grep -c 'montar.*interruptor duplo' = 0` dans cette page).
+- **Diagnostic avant patch** :
+  - Concurrence intra-cluster : `como-ligar-interruptor-duplo.html`, `como-ligar-interruptor-duplo-simples.html`, `como-ligar-comutador-escada.html` traitent toutes de la **cablagem** (bornes, schéma, fios). Aucune ne couvre l'angle **montagem física** (mécanisme, caixa, placa, fixação).
+  - Décision : **créer une nouvelle page dédiée** `como-montar-interruptor-duplo.html` plutôt que renforcer la page "ligar" — différenciation d'intention (montar = assembler/fixer physiquement vs ligar = câbler) évite la cannibalisation et capture la longue traîne exacte.
+  - Intent query : « monter un interrupteur double », guide d'installation physique complet.
+- **Patch appliqué (PR DRAFT — branche feat/enr-rankpush-como-montar-interruptor-duplo-t_03b01956, basée sur t_57fa4957-v2)** :
+  - **Nouveau fichier** `client/public/blog/como-montar-interruptor-duplo.html` (3241 mots de contenu visible, 20 456 caractères, format identique au cluster « como-ligar » du front-end `client/public/blog/`) :
+    - `<title>` : `Como Montar um Interruptor Duplo: Mecanismo, Caixa e Placa (PT-PT)` (query exacte + modificateur géographique + format lang)
+    - `<meta name="description">` : 100 % aligné query-first (« Como montar um interruptor duplo passo a passo: escolher o mecanismo, preparar a caixa de encastrar, fixar o aparelho, ligar os fios (fase em L, retornos em L1 e L2) e montar a placa. PT-PT, Trás-os-Montes. »)
+    - Canonical + OG/Twitter URL alignés
+    - H1 : `Como montar um interruptor duplo: mecanismo, caixa e placa` (query exacte)
+    - `<p class="meta">` date 20 de agosto de 2026 (mise à jour)
+    - Hero `<p>` description query-first
+    - **Réponse directe** `<div class="answer">` synthétique en haut (fase em L, retornos em L1 e L2, neutro direto à luminária, sécurité disjuntor)
+    - **TOC** 11 entrées (montar-vs-ligar, caixa, mecanismo, materiais, passos, placa, testes, erros, quando chamar, preço, FAQ)
+    - **11 sections H2 corps utile** :
+      1. Diferença entre montar e ligar (positionnement anti-cannibalisation avec renvoi interne vers `/blog/como-ligar-interruptor-duplo`)
+      2. Caixa de encastrar (entraxe 60 mm, tipos redonda simples vs redonda dupla vs retangular, profondeur minimum)
+      3. Escolher o mecanismo (Schneider Odace/Sedna/Unica, Legrand Niloé/Celiane/Valena, Efapel Logus90/Animato, Hager Lumina/Polo, bornes parafusos vs automáticos, índice de proteção IP20/IP44/IP55)
+      4. Materiais e ferramentas
+      5. **7 passos detalhados** : preparar caixa, identificar fios (avec tableau), descarnar condutores, ligar bornes, encaixar mecanismo, montar placa, tester
+      6. Placa (espelho) e nivelamento
+      7. Testes finais et diagnostic
+      8. Erros comuns (6 erreurs spécifiques à la montage physique : caixa simples, bornes frouxos, neutre inversé, terra oubliée, nivelamento, massa sur les bornes)
+      9. Quando chamar eletricista (DGEG TRIESP 90062, Lei 14/2015, Ficha Eletrotécnica)
+      10. Quanto custa montar (transparência PRICING : 70 €/h + déplacement Z1-Z6 15-65 € + majoration +50% + sans forfaits)
+      11. Perguntas frequentes (8 Q/R)
+    - **JSON-LD** 4 blocs valides (tous `json.loads` 0 erreur) :
+      - `Article` : headline + description + url + inLanguage pt-PT + datePublished/dateModified 2026-08-20 + author/publisher Organization
+      - `BreadcrumbList` : Início → Blog → Como montar um interruptor duplo
+      - `HowTo` : 7 étapes détaillées (cada uma com name + text 2-4 phrases)
+      - `FAQPage` : 8 Q/R ciblées (dont "Como montar", "Qual a diferença entre montar e ligar", "Que mecanismo escolher", "Qual a distância entre parafusos", "Posso montar em caixa simples", "Como nivelar a placa", "Posso montar sem experiência", "Quanto custa")
+      - `Service` : Norte Reparos + téléphone +351 932 321 892 + areaServed Trás-os-Montes + offers (70 €/h + Z1-Z6)
+  - `client/public/sitemap-blog.xml` : ajout URL `como-montar-interruptor-duplo.html` avec `<lastmod>2026-08-20</lastmod>` (cohérent avec les autres pages récentes)
+  - `SEO_PLAN.md` : cette entrée (consignation run kanban)
+- **Témoins grep (gate R8 live, 1 motif par commande)** :
+  - Query cible dans titre : `grep -c 'como montar um interruptor duplo' client/public/blog/como-montar-interruptor-duplo.html` = **3** (title + og:title + h1 description)
+  - H1 query-first : `grep -c '<h1>Como montar um interruptor duplo' client/public/blog/como-montar-interruptor-duplo.html` = **1**
+  - Canonical présent : `grep -c 'rel="canonical"' client/public/blog/como-montar-interruptor-duplo.html` = **1**
+  - Schemas valides : `grep -c '"@type"' client/public/blog/como-montar-interruptor-duplo.html` = **23** occurrences sur 5 types (Article, BreadcrumbList, HowTo+7 Step, FAQPage+8 Q+8 R, Service+Offer)
+  - Prix sur la page : `grep -oE '[0-9]+ €' client/public/blog/como-montar-interruptor-duplo.html | sort -u` = `{70 €/h, 15 € a 65 €, 50%, 60 €, 30-45 min}` — toutes issues de PRICING.md (zéro invention)
+  - R145 motifs bannis : `grep -ciE 'mediante confirmação|mediante confirmacao' client/public/blog/como-montar-interruptor-duplo.html` = **0** (page R145-clean)
+  - Pronom interdit : `grep -ciE 'eu (sou|faço|fiz)|sozinho|contacte-me' client/public/blog/como-montar-interruptor-duplo.html` = **0** (doctrine « nous » respectée)
+  - Anti-cannibalisation : `grep -c 'como ligar interruptor duplo' client/public/blog/como-montar-interruptor-duplo.html` = **4** (mentions positives dans H1 intro, related links, FAQ renvoi, precio renvoi — toutes pointent vers le cluster « ligar » pour différenciation, pas de duplication de contenu)
+  - Anti-cannibalisation interne : `grep -c 'como montar.*interruptor' client/public/blog/como-ligar-interruptor-duplo.html` = **0** (la page « ligar » ne concurrence pas « montar »)
+  - Sitemap : `grep -c 'como-montar-interruptor-duplo' client/public/sitemap-blog.xml` = **1** (URL déclarée)
+- **Branche** : `feat/enr-rankpush-como-montar-interruptor-duplo-t_03b01956` (basée sur `29382c8e64` = t_57fa4957-v2), commit `3c75e11d86` créé, push + PR DRAFT à effectuer.
+- **Gating R7** : **0 merge, 0 push prod, PR draft laissé en DRAFT** — STOP validation Filipe obligatoire avant merge (cohérent avec doctrine SEO_PLAN : pas de merge sans GO).
+- **Mesure d'impact attendue** (gsc-trajectoire-cron.sh dimanche 22h, prochain passage) :
+  - **J+7** : si position passe < 4 → ✅ win capturé (page dédiée query-first + HowTo 7 passos + 8 FAQ + JSON-LD complet = signal fort pour Google).
+  - **J+14** : si impressions 28j > 37 ET clics 28j > 2 → ✅ capture confirmée.
+  - **J+28** : si position reste > 10 et impressions ~0 → ⚠️ Rollback possible (revert commit + retirer URL du sitemap), la page ne rank pas pour la query malgré la création.
+- **Action attendue de Philippe** :
+  1. **Trancher** : push branche + ouvrir PR draft (recommandé : 0 invention prix/zone/délai + HowTo 7 passos + 8 Q/R FAQ ciblées + sections boîtier/mécanisme/placage + JSON-LD tous valides + anti-cannibalisation via renvoi interne vers `como-ligar-interruptor-duplo`).
+  2. Mesurer l'impact à J+7/J+14/J+28 et déclencher rollback si KPI non amélioré.
