@@ -99,10 +99,6 @@ function QuoteCalculator() {
  </div>
  <div className="flex items-center gap-2 text-base md:text-sm text-gray-700">
  <span className="text-green-600">✓</span>
- <span>Resposta em menos de 1 hora</span>
- </div>
- <div className="flex items-center gap-2 text-base md:text-sm text-gray-700">
- <span className="text-green-600">✓</span>
  <span>Preço final confirmado após avaliação</span>
  </div>
  </div>

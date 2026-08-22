@@ -125,7 +125,6 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <th className="py-4 px-6 text-left font-bold">Preço Mínimo</th>
  <th className="py-4 px-6 text-left font-bold">Preço Médio</th>
  <th className="py-4 px-6 text-left font-bold">Preço Máximo</th>
- <th className="py-4 px-6 text-left font-bold">Duração</th>
  </tr>
  </thead>
  <tbody>
@@ -134,63 +133,54 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <td className="py-4 px-6">45€</td>
  <td className="py-4 px-6">65€</td>
  <td className="py-4 px-6">95€</td>
- <td className="py-4 px-6">1-1.5h</td>
  </tr>
  <tr className="border-b border-gray-200 hover:bg-amber-50">
  <td className="py-4 px-6 font-semibold">Instalação tomada simples</td>
  <td className="py-4 px-6">40€</td>
  <td className="py-4 px-6">55€</td>
  <td className="py-4 px-6">80€</td>
- <td className="py-4 px-6">menos de 1h</td>
  </tr>
  <tr className="border-b border-gray-200 hover:bg-amber-50">
  <td className="py-4 px-6 font-semibold">Instalação interruptor</td>
  <td className="py-4 px-6">35€</td>
  <td className="py-4 px-6">50€</td>
  <td className="py-4 px-6">70€</td>
- <td className="py-4 px-6">menos de 1h</td>
  </tr>
  <tr className="border-b border-gray-200 hover:bg-amber-50">
  <td className="py-4 px-6 font-semibold">Substituição quadro elétrico completo</td>
  <td className="py-4 px-6">450€</td>
  <td className="py-4 px-6">750€</td>
  <td className="py-4 px-6">1.200€</td>
- <td className="py-4 px-6">6-10h</td>
  </tr>
  <tr className="border-b border-gray-200 hover:bg-amber-50">
  <td className="py-4 px-6 font-semibold">Instalação candeeiro teto</td>
  <td className="py-4 px-6">50€</td>
  <td className="py-4 px-6">75€</td>
  <td className="py-4 px-6">110€</td>
- <td className="py-4 px-6">1-2h</td>
  </tr>
  <tr className="border-b border-gray-200 hover:bg-amber-50">
  <td className="py-4 px-6 font-semibold">Arranjo avaria simples</td>
  <td className="py-4 px-6">60€</td>
  <td className="py-4 px-6">90€</td>
  <td className="py-4 px-6">140€</td>
- <td className="py-4 px-6">1-2h</td>
  </tr>
  <tr className="border-b border-gray-200 hover:bg-amber-50">
  <td className="py-4 px-6 font-semibold">Diagnóstico avaria complexa</td>
  <td className="py-4 px-6">80€</td>
  <td className="py-4 px-6">120€</td>
  <td className="py-4 px-6">180€</td>
- <td className="py-4 px-6">2-3h</td>
  </tr>
  <tr className="border-b border-gray-200 hover:bg-amber-50">
  <td className="py-4 px-6 font-semibold">Instalação ventilador teto</td>
  <td className="py-4 px-6">90€</td>
  <td className="py-4 px-6">130€</td>
  <td className="py-4 px-6">190€</td>
- <td className="py-4 px-6">2-3h</td>
  </tr>
  <tr className="hover:bg-amber-50">
  <td className="py-4 px-6 font-semibold">Certificação elétrica (Boletim)</td>
  <td className="py-4 px-6">150€</td>
  <td className="py-4 px-6">250€</td>
  <td className="py-4 px-6">400€</td>
- <td className="py-4 px-6">3-5h</td>
  </tr>
  </tbody>
  </table>
