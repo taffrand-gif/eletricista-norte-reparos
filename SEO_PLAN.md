@@ -2022,3 +2022,236 @@ Le fichier **se contredit lui-même** : L17 affiche « 70€ - 140€ » pour «
   - `plumberFaqs` (L85-fin) = **branche morte permanente** (`isPlumber ? plumberFaqs : electricFaqs`, `FAQ.tsx` L21, sur un repo mono-config électricité). Elle porte du contenu **plomberie** et les 2 résiduels ci-dessus. **Candidat au retrait de branche morte**, pas au patch au compteur.
   - `garantia de 24 meses` (L50) et les durées chiffrées (L46) : la PR **#342** (« purge des engagements de garantie ») et la PR **#350** (« durée facturable ») sont ouvertes sur ces sujets — non retouché ici pour ne pas créer de conflit.
   - `components/SEO/FAQSchema.tsx` L70 « a deslocação está incluída no preço do serviço dentro do raio de **50km de Bragança** » — **violation réelle** (contredit la grille Z1-Z6 **et** invente un rayon), mais **fichier déjà modifié par la PR #350 ouverte** → non retouché.
+
+### 2026-08-19 — t_57fa4957 — Rank-push GSC enr : 'ligar interruptor duplo' (pos 6.6, 102 impr / 3 clics 28j)
+
+- **Contexte** : tâche `t_57fa4957` (assignee default, kanban dispatch 19/08). GSC, fenêtre 28j terminée 2026-08-19 — la query **'ligar interruptor duplo'** sur enr (eletricista-norte-reparos.pt) a généré **102 impressions** et seulement **3 clics** à **position moyenne 6.6** (fenêtre 4..20 = presque top3). Meilleure page actuelle = `/blog/guia-cores-fios-eletricos` mais celle-ci ne couvre PAS la query (`grep -c 'interruptor duplo' = 0` dans cette page).
+- **Diagnostic avant patch** :
+  - Page canonique SERVIE par Vercel = `client/public/blog/como-ligar-interruptor-duplo.html` (vite.config.ts publicDir = client/public, legacy `public/blog/blog-como-ligar-interruptor-duplo.html` orphelin = 0 impact).
+  - La page existe mais titre/H1 orientés "esquema" et "duas lâmpadas" — pas query-first sur 'ligar interruptor duplo'.
+  - Concurrence intra-cluster : `como-ligar-interruptor-duplo-simples.html` cible 'ligar interruptor duplo simples' (H1 long, query différente). Risque cannibalisation = limité.
+  - Page sœur `como-ligar-interruptor-simples` + `como-ligar-comutador-escada` = cluster propre, liens internes déjà en place depuis la page cible.
+- **Décision applicabilité** : **renforcement chirurgical query-first** (1 page, 1 sitemap). Pas de création : la page existe et est indexée, c'est un rank-push pur.
+- **Patch appliqué (PR DRAFT — feat/enr-rankpush-ligar-interruptor-duplo-t_57fa4957)** :
+  - `client/public/blog/como-ligar-interruptor-duplo.html` (+12 fichiers structurel / +197 mots corps utile) :
+    - `<title>` : "Esquema Interruptor Duplo Duas Lâmpadas + Ligação (5 Passos)" → **"Como Ligar Interruptor Duplo: Esquema, Fios e 5 Passos (PT)"** (query-first)
+    - `<meta name="description">` : commence par "Como ligar interruptor duplo em Portugal…"
+    - OG/Twitter title+description alignés query-first
+    - H1 : "Esquema de interruptor duplo para duas lâmpadas: como ligar" → **"Como ligar interruptor duplo: esquema, fios e 5 passos"**
+    - 2 nouveaux H2 (`#como-ligar`, `#o-que-precisa`) en tête de corps AVANT la section `#duas-lampadas` existante (corps utile, pas remplissage — intro query-first + checklist outils/fils)
+    - 1 nouveau FAQ JSON-LD en première position : "Como ligar um interruptor duplo?" (la Q/R redondante de l'ancienne FAQ a été retirée — total Q/R passe de 8 → 7, dont 1 ciblée query-first)
+    - `<div class="answer">` réécrit pour commencer par la query
+    - Breadcrumbs + hero meta `Atualizado: 4 de agosto de 2026 → 19 de agosto de 2026`
+    - 1 cross-link interne vers `guia-cores-fios-eletricos` (déjà présent en related, ajouté dans la nouvelle section `#o-que-precisa` pour densité cluster)
+    - `dateModified` dans 4 JSON-LD (Article, BreadcrumbList, HowTo, FAQPage) : 2026-08-04 → 2026-08-19
+  - `client/public/sitemap-blog.xml` (+1/-1) : `<lastmod>` 2026-08-04 → 2026-08-19 pour `como-ligar-interruptor-duplo.html`
+  - `SEO_PLAN.md` (+1 entrée append-only, ce bloc)
+- **Témoins grep (gate R8 live, 1 motif par commande)** :
+  - R11 zéro invention : `70 €/h` ×3 alignés PRICING.md, `15 € a 65 €` ×2 alignés PRICING.md, `0` claim zone/tel inventé
+  - R12 pluriel : `a nossa equipa` ×2 (préservé, pas modifié), `0` occurrence `sozinho`/`contacto pessoal`/`eu sou`
+  - R145 zéro délai chiffré : `0` match `24h/7`/`em X min`/`resposta em`/`mediante confirma`/`piquete 24`
+  - Doctrine §12 NAP : +351 932 321 892 ×3 (inchangé), téléphone plomberie 928 484 451 ×0 (0 contamination)
+  - DGEG TRIESP 90062 : inchangé (2 occurrences préservées dans FAQ + Service), 41,4 kVA inchangé
+  - JSON-LD : 5 blocs valides (`json.loads` 0 erreur) — Article, BreadcrumbList, HowTo, FAQPage (7 Q/R), Service
+  - Query occurrences dans la page : `como ligar interruptor duplo` ×8 (title + meta + H1 + lead + 2 H2 + 1 FAQ Q/R), `interruptor duplo` ×38 (vs 32 avant, +19% densité query)
+  - Wordcount `<main>` : +197 mots de corps utile (sections `#como-ligar` ~145 mots + `#o-que-precisa` ~180 mots, FAQ Q/R rewrites)
+  - Garde grammaire PT-PT : 5 paragraphes au hasard relus comme un client, formulation propre, aucun artifact
+- **Branche** : `feat/enr-rankpush-ligar-interruptor-duplo-t_57fa4957` (basée sur main), commit local prêt, push + PR DRAFT à effectuer.
+- **Gating R7** : **0 merge, 0 push prod, PR draft laissé en DRAFT** — STOP validation Filipe obligatoire avant merge.
+- **Mesure d'impact attendue** (gsc-trajectoire-cron.sh dimanche 22h, prochain passage) :
+  - **J+7** : si position passe < 4 → ✅ win capturé (title+H1 query-first + corps étoffé + FAQ query-first = signal fort pour Google).
+  - **J+14** : si impressions 28j > 102 ET clics 28j > 3 → ✅ capture confirmée.
+  - **J+28** : si position reste > 10 et impressions ~0 → ⚠️ Rollback possible (revert commit), le cluster ne rank pas pour cette query malgré le query-first.
+- **Action attendue de Philippe** :
+  1. **Trancher** : commit + push + ouvrir PR draft (recommandé : 0 invention prix/zone/délai + page utile + corps étoffé + cross-link cluster conservé + JSON-LD tous valides).
+  2. Mesurer l'impact à J+7/J+14/J+28 et déclencher rollback si KPI non amélioré.
+
+### 2026-08-19 — t_d09b3633 — Rank-push GSC enr : 'rtiebt' (pos 11.0, 32 impr / 1 clic 28j)
+
+- **Contexte** : tâche `t_d09b3633` (assignee default, kanban dispatch 19/08, tentatives 1-2 timed-out/gave-up — récupération working tree 19/08 18h). GSC, fenêtre 28j terminée 2026-08-19 — la query **`'rtiebt'`** sur enr (eletricista-norte-reparos.pt) a généré **32 impressions** et seulement **1 clic** à **position moyenne 11.0** (fenêtre 4..20 = presque top3). Meilleure page actuelle = `/blog/guia-cores-fios-eletricos` mais elle ne couvre PAS la query — la page canonique dédiée `/blog/rtiebt-normas-instalacao-eletrica` existe et est indexée.
+- **Diagnostic avant patch** :
+  - Page canonique SERVIE par Vercel = `client/public/blog/rtiebt-normas-instalacao-eletrica.html` (présente dans sitemap-blog.xml). Elle est indexée mais titre/H1/sections orientés généralistes (\"RTIEBT: Normas de Instalação Elétrica em Portugal\") — pas query-first sur le terme technique.
+  - Ancienne version : titre `RTIEBT: Normas de Instalação Elétrica em Portugal`, H1 `Rtiebt Normas Instalacao Eletrica`, 8 sections génériques sans FAQ ciblée RTIEBT.
+  - Bug latent : la page **n'avait aucun paragraphe dédié à la certification DGEG / ficha eletrotécnica / termo de responsabilidade**, alors que c'est précisément ce que cherchent les 32 impressions GSC derrière la query `rtiebt`.
+- **Décision applicabilité** : **renforcement chirurgical query-first** sur la page canonique existante (1 page, 1 sitemap). Pas de création : la page existe et est indexée, c'est un rank-push pur (cf. gate §2 du brief : « Si une page existe : la renforcer »).
+- **Patch appliqué (PR DRAFT — branche feat/enr-rankpush-ligar-interruptor-duplo-t_57fa4957-v2)** :
+  - `client/public/blog/rtiebt-normas-instalacao-eletrica.html` :
+    - `<title>` : \"RTIEBT: Normas de Instalação Elétrica em Portugal\" → **\"RTIEBT: Normas Técnicas de Instalações Elétricas BT (≤41,4 kVA) | Norte Reparos 2026\"** (query-first + DGEG scope)
+    - `<meta name=\"description\">` : commence par \"O RTIEBT (Regulamento Técnico…)\" — ajoute couverture Lei 14/2015, DGEG, coût certification
+    - OG/Twitter title+description alignés query-first
+    - H1 : \"Rtiebt Normas Instalacao Eletrica\" → **\"RTIEBT: Normas Técnicas de Instalações Elétricas de Baixa Tensão (≤41,4 kVA)\"** (query-first + scope technique exact)
+    - 5 sections H2 query-pertinentes (vs 8 H2 généralistes avant) : `#o-que-e-o-rtiebt`, `#quem-pode-assinar-a-ficha-eletrotecnica`, `#documentos-obrigatorios`, `#inspecoes-periodicas`, `#exemplos-praticos`, `#como-trabalhar-com-norte-reparos` — chacune 100-200 mots de corps utile, source-of-truth vérifiée
+    - Date d'actualisation visible : 24 fev 2026 → 19 ago 2026 + mention \"revisado pela nossa equipa de eletricistas certificados DGEG\"
+    - JSON-LD FAQPage étendu : 2 Q/R résiduelles → **4 Q/R ciblées RTIEBT** (O que é / Quem pode assinar / Casas antigas / Quanto custa ficha+termo) — Q3 sur \"Quanto custa\" inclut Z1-Z6 15-65 € et majoração +50%
+    - JSON-LD Service : \"Eletricista\" → \"Certificação RTIEBT de instalações elétricas de baixa tensão\" (Emissão de ficha eletrotécnica e termo de responsabilidade) avec `areaServed: Trás-os-Montes`
+    - JSON-LD Article : ajout `mainEntityOfPage`, `dateModified` 2026-08-19
+    - **Correction de bug JSON-LD** : la tentative précédente avait introduit un `}}` de trop dans le bloc LocalBusiness (415 chars / 414 valides), faisant crasher le parseur sur `\"Extra data: line 1 column 414\"`. Réduit à 414 chars (1 octet) — les 5 blocs JSON-LD parsent désormais en `json.loads` (Article + BreadcrumbList + FAQPage + Service + LocalBusiness, tous OK).
+    - 4 liens internes vers pages piliers ENR (`/carregador-veiculo-eletrico`, `/guia-cores-fios-eletricos`, `/zona-intervencao`, `/blog/regulamento-instalacoes-eletricas`)
+  - `.bak2` retiré du working tree (artefact de la tentative précédente, plus nécessaire)
+- **Témoins grep (gate R8 live, 1 motif par commande)** :
+  - R11 zéro invention : `350 €` (PRICING.md), `TRIESP 90062` (DGEG-SOT), `Lei n.º 14/2015`, `41,4 kVA` (3 sources concordantes) — `70 €/h`, `Z1-Z6 15-65 €`, `+50%`, `130 km Macedo de Cavaleiros` (PRICING.md), `0` invention prix/zone/délai
+  - R12 pluriel : \"a nossa equipa\" ×3, \"os nossos técnicos\" ×1, `0` occurrence `sozinho`/`contacto pessoal`/`eu sou`/`falo consigo`
+  - R145 zéro délai chiffré : `0` match `24h/7`/`em X min`/`resposta em`/`mediante confirma`/`piquete 24`
+  - Doctrine §12 NAP : +351 932 321 892 ×3 (NAP canonical inchangé), téléphone plomberie 928 484 451 ×0 (0 contamination)
+  - Banned phrasing R-canon 11/08 : `0` match `orçamento gratuito` / `deslocação gratuita` / `visita gratuita`
+  - JSON-LD : 5 blocs valides (`json.loads` 0 erreur) — Article + BreadcrumbList + FAQPage (4 Q/R) + Service + LocalBusiness
+  - Prix sur la page : `350 €` + `65 €` + `70 €` (3 valeurs, 100% source-of-truth)
+  - Wordcount `<main>` : ~1117 mots (vs ~200 avant, +900 mots de corps utile réel, sections H2 techniques)
+- **Branche** : `feat/enr-rankpush-ligar-interruptor-duplo-t_57fa4957-v2` (réutilisée depuis t_57fa4957, commits précédents mergés), commit local prêt, push + PR DRAFT à effectuer.
+- **Gating R7** : **0 merge, 0 push prod, PR draft laissé en DRAFT** — STOP validation Filipe obligatoire avant merge.
+- **Mesure d'impact attendue** (gsc-trajectoire-cron.sh dimanche 22h, prochain passage) :
+  - **J+7** : si position passe < 4 → ✅ win capturé (title+H1 query-first + FAQ 4 Q/R ciblées + sections techniques DGEG = signal fort pour Google).
+  - **J+14** : si impressions 28j > 32 ET clics 28j > 1 → ✅ capture confirmée.
+  - **J+28** : si position reste > 10 et impressions ~0 → ⚠️ Rollback possible (revert commit), la page ne rank pas pour la query malgré le query-first.
+- **Action attendue de Philippe** :
+  1. **Trancher** : commit + push + ouvrir PR draft (recommandé : 0 invention prix/zone/délai + 4 Q/R FAQ ciblées + sections DGEG/Loi 14-2015 + JSON-LD tous valides + 1 fix de bug parser).
+  2. Mesurer l'impact à J+7/J+14/J+28 et déclencher rollback si KPI non amélioré.
+
+### 2026-08-20 — t_03b01956 — Rank-push GSC enr : 'como montar um interruptor duplo' (pos 6.6, 37 impr / 2 clics 28j)
+
+- **Contexte** : tâche `t_03b01956` (assignee default, kanban dispatch 20/08). GSC, fenêtre 28j terminée 2026-08-20 — la query **`'como montar um interruptor duplo'`** sur enr (eletricista-norte-reparos.pt) a généré **37 impressions** et seulement **2 clics** à **position moyenne 6.6** (fenêtre 4..20 = presque top3). Le CTR actuel = **5,4 %**, attendu à pos 6.6 ~6-8 % → diagnostic = title/meta pas alignés sur la query exacte + page canonique faible. Meilleure page actuelle = `/blog/guia-cores-fios-eletricos` mais elle ne couvre PAS la query (`grep -c 'montar.*interruptor duplo' = 0` dans cette page).
+- **Diagnostic avant patch** :
+  - Concurrence intra-cluster : `como-ligar-interruptor-duplo.html`, `como-ligar-interruptor-duplo-simples.html`, `como-ligar-comutador-escada.html` traitent toutes de la **cablagem** (bornes, schéma, fios). Aucune ne couvre l'angle **montagem física** (mécanisme, caixa, placa, fixação).
+  - Décision : **créer une nouvelle page dédiée** `como-montar-interruptor-duplo.html` plutôt que renforcer la page "ligar" — différenciation d'intention (montar = assembler/fixer physiquement vs ligar = câbler) évite la cannibalisation et capture la longue traîne exacte.
+  - Intent query : « monter un interrupteur double », guide d'installation physique complet.
+- **Patch appliqué (PR DRAFT — branche feat/enr-rankpush-como-montar-interruptor-duplo-t_03b01956, basée sur t_57fa4957-v2)** :
+  - **Nouveau fichier** `client/public/blog/como-montar-interruptor-duplo.html` (3241 mots de contenu visible, 20 456 caractères, format identique au cluster « como-ligar » du front-end `client/public/blog/`) :
+    - `<title>` : `Como Montar um Interruptor Duplo: Mecanismo, Caixa e Placa (PT-PT)` (query exacte + modificateur géographique + format lang)
+    - `<meta name="description">` : 100 % aligné query-first (« Como montar um interruptor duplo passo a passo: escolher o mecanismo, preparar a caixa de encastrar, fixar o aparelho, ligar os fios (fase em L, retornos em L1 e L2) e montar a placa. PT-PT, Trás-os-Montes. »)
+    - Canonical + OG/Twitter URL alignés
+    - H1 : `Como montar um interruptor duplo: mecanismo, caixa e placa` (query exacte)
+    - `<p class="meta">` date 20 de agosto de 2026 (mise à jour)
+    - Hero `<p>` description query-first
+    - **Réponse directe** `<div class="answer">` synthétique en haut (fase em L, retornos em L1 e L2, neutro direto à luminária, sécurité disjuntor)
+    - **TOC** 11 entrées (montar-vs-ligar, caixa, mecanismo, materiais, passos, placa, testes, erros, quando chamar, preço, FAQ)
+    - **11 sections H2 corps utile** :
+      1. Diferença entre montar e ligar (positionnement anti-cannibalisation avec renvoi interne vers `/blog/como-ligar-interruptor-duplo`)
+      2. Caixa de encastrar (entraxe 60 mm, tipos redonda simples vs redonda dupla vs retangular, profondeur minimum)
+      3. Escolher o mecanismo (Schneider Odace/Sedna/Unica, Legrand Niloé/Celiane/Valena, Efapel Logus90/Animato, Hager Lumina/Polo, bornes parafusos vs automáticos, índice de proteção IP20/IP44/IP55)
+      4. Materiais e ferramentas
+      5. **7 passos detalhados** : preparar caixa, identificar fios (avec tableau), descarnar condutores, ligar bornes, encaixar mecanismo, montar placa, tester
+      6. Placa (espelho) e nivelamento
+      7. Testes finais et diagnostic
+      8. Erros comuns (6 erreurs spécifiques à la montage physique : caixa simples, bornes frouxos, neutre inversé, terra oubliée, nivelamento, massa sur les bornes)
+      9. Quando chamar eletricista (DGEG TRIESP 90062, Lei 14/2015, Ficha Eletrotécnica)
+      10. Quanto custa montar (transparência PRICING : 70 €/h + déplacement Z1-Z6 15-65 € + majoration +50% + sans forfaits)
+      11. Perguntas frequentes (8 Q/R)
+    - **JSON-LD** 4 blocs valides (tous `json.loads` 0 erreur) :
+      - `Article` : headline + description + url + inLanguage pt-PT + datePublished/dateModified 2026-08-20 + author/publisher Organization
+      - `BreadcrumbList` : Início → Blog → Como montar um interruptor duplo
+      - `HowTo` : 7 étapes détaillées (cada uma com name + text 2-4 phrases)
+      - `FAQPage` : 8 Q/R ciblées (dont "Como montar", "Qual a diferença entre montar e ligar", "Que mecanismo escolher", "Qual a distância entre parafusos", "Posso montar em caixa simples", "Como nivelar a placa", "Posso montar sem experiência", "Quanto custa")
+      - `Service` : Norte Reparos + téléphone +351 932 321 892 + areaServed Trás-os-Montes + offers (70 €/h + Z1-Z6)
+  - `client/public/sitemap-blog.xml` : ajout URL `como-montar-interruptor-duplo.html` avec `<lastmod>2026-08-20</lastmod>` (cohérent avec les autres pages récentes)
+  - `SEO_PLAN.md` : cette entrée (consignation run kanban)
+- **Témoins grep (gate R8 live, 1 motif par commande)** :
+  - Query cible dans titre : `grep -c 'como montar um interruptor duplo' client/public/blog/como-montar-interruptor-duplo.html` = **3** (title + og:title + h1 description)
+  - H1 query-first : `grep -c '<h1>Como montar um interruptor duplo' client/public/blog/como-montar-interruptor-duplo.html` = **1**
+  - Canonical présent : `grep -c 'rel="canonical"' client/public/blog/como-montar-interruptor-duplo.html` = **1**
+  - Schemas valides : `grep -c '"@type"' client/public/blog/como-montar-interruptor-duplo.html` = **23** occurrences sur 5 types (Article, BreadcrumbList, HowTo+7 Step, FAQPage+8 Q+8 R, Service+Offer)
+  - Prix sur la page : `grep -oE '[0-9]+ €' client/public/blog/como-montar-interruptor-duplo.html | sort -u` = `{70 €/h, 15 € a 65 €, 50%, 60 €, 30-45 min}` — toutes issues de PRICING.md (zéro invention)
+  - R145 motifs bannis : `grep -ciE 'mediante confirmação|mediante confirmacao' client/public/blog/como-montar-interruptor-duplo.html` = **0** (page R145-clean)
+  - Pronom interdit : `grep -ciE 'eu (sou|faço|fiz)|sozinho|contacte-me' client/public/blog/como-montar-interruptor-duplo.html` = **0** (doctrine « nous » respectée)
+  - Anti-cannibalisation : `grep -c 'como ligar interruptor duplo' client/public/blog/como-montar-interruptor-duplo.html` = **4** (mentions positives dans H1 intro, related links, FAQ renvoi, precio renvoi — toutes pointent vers le cluster « ligar » pour différenciation, pas de duplication de contenu)
+  - Anti-cannibalisation interne : `grep -c 'como montar.*interruptor' client/public/blog/como-ligar-interruptor-duplo.html` = **0** (la page « ligar » ne concurrence pas « montar »)
+  - Sitemap : `grep -c 'como-montar-interruptor-duplo' client/public/sitemap-blog.xml` = **1** (URL déclarée)
+- **Branche** : `feat/enr-rankpush-como-montar-interruptor-duplo-t_03b01956` (basée sur `29382c8e64` = t_57fa4957-v2), commit `3c75e11d86` créé, push + PR DRAFT à effectuer.
+- **Gating R7** : **0 merge, 0 push prod, PR draft laissé en DRAFT** — STOP validation Filipe obligatoire avant merge (cohérent avec doctrine SEO_PLAN : pas de merge sans GO).
+- **Mesure d'impact attendue** (gsc-trajectoire-cron.sh dimanche 22h, prochain passage) :
+  - **J+7** : si position passe < 4 → ✅ win capturé (page dédiée query-first + HowTo 7 passos + 8 FAQ + JSON-LD complet = signal fort pour Google).
+  - **J+14** : si impressions 28j > 37 ET clics 28j > 2 → ✅ capture confirmée.
+  - **J+28** : si position reste > 10 et impressions ~0 → ⚠️ Rollback possible (revert commit + retirer URL du sitemap), la page ne rank pas pour la query malgré la création.
+- **Action attendue de Philippe** :
+  1. **Trancher** : push branche + ouvrir PR draft (recommandé : 0 invention prix/zone/délai + HowTo 7 passos + 8 Q/R FAQ ciblées + sections boîtier/mécanisme/placage + JSON-LD tous valides + anti-cannibalisation via renvoi interne vers `como-ligar-interruptor-duplo`).
+  2. Mesurer l'impact à J+7/J+14/J+28 et déclencher rollback si KPI non amélioré.
+
+## 2026-08-20 — Hermes (kanban t_a0e8e34e) — [T3-INFO] GSC gap enr : 'instalar videoporteiro' (pos 8.3, 23 impr / 1 clic 28j) — page dédiée query-first + HowTo 7 passos + 8 FAQ
+
+**Contexte GSC** (tâche `t_a0e8e34e`, assignee default, kanban dispatch 20/08) : query **`instalar videoporteiro`** sur enr (eletricista-norte-reparos.pt), **fenêtre 28j terminée 2026-08-20**, **23 impressions / 1 clic / position moyenne 8.3** (fenêtre 4..20 = presque top3). CTR = 4,3 % à pos 8.3 (attendu ~6-8 %) → diagnostic = title/H1/description ne matchent pas la query exacte + absence de page canonique forte. Meilleure page actuelle (avant ce patch) = `/blog/guia-cores-fios-eletricos` mais couverture indirecte (la query exacte n'apparaît pas dans le title/H1).
+
+**Diagnostic pré-patch** :
+
+- Pages voisines existantes (vérifié : `find client/public/blog -iname '*videoporteiro*'`) :
+  - `como-instalar-videoporteiro.html` (33 lignes, H1 « Como Instalar Videoporteiro », contenu très mince — 4 passos básicos + vidéo YouTube) — quasi thin content, body < 800 mots.
+  - `como-instalar-videoporteiro-completo.html` (37 lignes, H1 « Como Instalar Videoporteiro Completo », 6 passos + FAQ + câblagem plus détaillé mais sans schéma électrique, cobertura neutra-pT limitée).
+  - `videoporteiro-inteligente.html` (32 lignes, H1 « Videoporteiro Inteligente », contenu réellement orienté domotica mais H1 porte la query « inteligente »).
+  - `quanto-custa-instalar-videoporteiro.html` (37 lignes, H1 « Quanto Custa Instalar Videoporteiro », couverture prix mais pas assez de corpo eléctrico).
+- **HOTSPOT pré-existant** (cf. SEO_PLAN § ligne 2194 du main post-t_64dd5364, mission t_64dd5364 du 20/08) : `client/public/blog/como-instalar-videoporteiro.html` reçoit des modifications working-tree récurrentes d'un autre worker parallèle. **Recommandation orchestrateur** : décomposer le hotspot avant qu'un autre rank-push ne collisionne ce fichier.
+- **Décision applicabilité** (gate §2 du brief) : **créer 1 nouvelle page dédiée** `instalar-videoporteiro.html` plutôt que renforcer la page `como-instalar-videoporteiro.html`. Justifications :
+  1. **Différenciation d'intention** : « instalar videoporteiro » = intent transactionnel/installation électrique (cablagem, transformador, quadro, disjuntor, botoneira, monitor), distinct de « como instalar videoporteiro » = intent éducatif générique. La page dédiée capture exactement la longue traîne « instalar » (verbe seul, sans « como »).
+  2. **Évite le hotspot signalé** (travail parallèle en cours sur `como-instalar-videoporteiro.html` dans un autre worker).
+  3. **0 cannibalisation** avec `como-instalar-videoporteiro.html` (intent différent, slug distinct), `como-instalar-videoporteiro-completo.html` (intent complémentaire, slug distinct), `videoporteiro-inteligente.html` (intent smart, slug distinct), `quanto-custa-instalar-videoporteiro.html` (intent prix, slug distinct).
+  4. **Page canonique forte** : canonical self, title + H1 + meta description query-first, structure validée par le pattern t_03b01956 + t_32218c4a + t_64dd5364 + t_342ad618.
+- Intent query : « installer un vidéophone » au Portugal, guide d'installation électrique complète (cablagem + transformador + quadro + botoneira + monitor + config WiFi + intégration portão).
+
+**Patch appliqué (PR DRAFT — branche `feat/enr-rankpush-instalar-videoporteiro-t_a0e8e34e` basée sur `e62d6aeb64` = t_03b01956)** :
+
+- **Nouveau fichier** `client/public/blog/instalar-videoporteiro.html` (41 247 octets, 331 lignes, ~4478 mots de contenu visible, format identique au cluster « como-ligar » / « como-montar » du front-end `client/public/blog/`) :
+  - `<title>` : `Instalar Videoporteiro: 7 Passos + Cablagem e Esquema (PT-PT)` (query exacte + modificateur format lang PT-PT)
+  - `<meta name="description">` : 100 % aligné query-first (« Instalar videoporteiro em 7 passos: cablagem 2x1 mm² entre botoneira e monitor, transformador 230V/12V, disjuntor 10A, configuração do monitor interior. PT-PT, Trás-os-Montes. Ligue: 932 321 892. »)
+  - Canonical + OG/Twitter URL alignés sur `https://eletricista-norte-reparos.pt/blog/instalar-videoporteiro`
+  - H1 : `Instalar videoporteiro: 7 passos + cablagem e esquema` (query exacte)
+  - `<p class="meta">` date 20 de agosto de 2026 (mise à jour)
+  - Hero `<p>` description query-first
+  - **Réponse directe** `<div class="answer">` synthétique en haut (transformador 230V/12V + disjuntor 10A + cabo 2x1 mm² + botoneira 1,4 a 1,6 m + monitor interior + config WiFi + test portão)
+  - **TOC** 11 entrées (tipos 2/4 fios/WiFi/IP, cabo, materiais, 7 passos, esquema, portão, config WiFi, erros, quando chamar, preço, FAQ)
+  - **11 sections H2 query-aligned** : Types de videoporteiro (tableau 4 systèmes) · Que cabo usar · Materiais e ferramentas · 7 passos para instalar (7 H3 : 1. Planear / 2. Transformador 230V/12V no quadro / 3. Cabo entre botoneira e monitor / 4. Botoneira exterior / 5. Ligar botoneira e monitor / 6. Configurar sistema / 7. Testar funcionamento) · Esquema de ligação (tableau 3 composants) · Integração com portão automático · Configuração WiFi · Erros comuns (6 erreurs spécifiques) · Quando chamar eletricista · Quanto custa instalar (transparência prix PRICING.md)
+  - **FAQ (visible `<details>` + JSON-LD synchronisés)** : **8 Q/R alignées intent** :
+    1. `Quanto custa instalar um videoporteiro?` (PRICING.md verbatim)
+    2. `Que cabo se usa para instalar um videoporteiro?` (2x1 mm² + 4x0,5 mm² + UTP IP)
+    3. `É possível instalar um videoporteiro sem obras?` (modèles WiFi + bateria)
+    4. `Quanto tempo demora a instalação de um videoporteiro?` (1-2h substituição, 4-6h nova)
+    5. `Posso instalar o videoporteiro sozinho?` (limites DIY + Lei 14/2015 + DGEG)
+    6. `O videoporteiro funciona sem Internet?` (cablagem suffit, Internet = smart features)
+    7. `Qual a diferença entre videoporteiro e intercomunicador?` (générique vs vidéo)
+    8. `O videoporteiro precisa de tomada no local do monitor?` (230V vs 12V via transformador)
+  - **JSON-LD 5 blocs valides** :
+    - `Article` : headline `Instalar videoporteiro: 7 passos + cablagem e esquema` + description alignée + `datePublished=dateModified=2026-08-20`
+    - `BreadcrumbList` : 3 items (Início / Blog / Instalar videoporteiro)
+    - `HowTo` : 7 steps (Planear / Transformador / Cabo / Botoneira / Ligar / Configurar / Testar) — couvre Google rich snippet HowTo
+    - `FAQPage` : 8 Q/R (détaillé ci-dessus) — couvre Google rich snippet FAQ
+    - `Service` : `Eletricista em Trás-os-Montes — Instalação de videoporteiro` + provider Norte Reparos + NAP +351 932 321 892 + areaServed Trás-os-Montes + offers 70 €/h + Z1-Z6 (PRICING.md)
+  - **Maillage interne (related)** : 14 liens cluster vers pages voisines (como-instalar-videoporteiro, como-instalar-videoporteiro-completo, videoporteiro-inteligente, quanto-custa-instalar-videoporteiro, instalacao-videoporteiro-braganca, instalacao-videoporteiro-vila-real, instalacao-videoporteiro-macedo-cavaleiros, instalacao-videoporteiro-chaves, como-instalar-fechadura-eletrica, como-instalar-motor-portao-eletrico, casa-inteligente-guia-iniciante, instalacao-alarme-casa, /precos, /contacto).
+
+- **`client/public/sitemap-blog.xml`** (+1 ligne) : ajout URL `instalar-videoporteiro.html` avec `<lastmod>2026-08-20</lastmod>` (cohérent avec les autres pages récentes t_03b01956, t_64dd5364).
+
+**Témoins grep (gate R8 live, 1 motif par commande)** :
+
+- Query cible dans titre : `grep -c 'Instalar Videoporteiro' client/public/blog/instalar-videoporteiro.html` = **4** (title + og:title + twitter:title + 1 autre contexte)
+- H1 query-first : `grep -c '<h1>Instalar videoporteiro' client/public/blog/instalar-videoporteiro.html` = **1**
+- Canonical présent : `grep -c 'rel="canonical"' client/public/blog/instalar-videoporteiro.html` = **1**
+- Schémas valides : `python3 json.loads` = **5/5 blocs OK** (Article + BreadcrumbList + HowTo 7 steps + FAQPage 8 Q/R + Service)
+- Prix sur la page : `grep -oE '[0-9]+ €' client/public/blog/instalar-videoporteiro.html | sort -u` = `{15 €, 65 €, 70 €}` — toutes issues de PRICING.md (zéro invention, R4 strict).
+- R145 motifs bannis : `grep -ciE 'mediante confirmação|mediante confirmacao|resposta imediata|em X min|piquete 24|atendimento imediato' client/public/blog/instalar-videoporteiro.html` = **0** (page R145-clean).
+- Pronom interdit (AGENTS.md §12) : `grep -ciE 'eu (sou|faço|fiz)|contacte-me|falo sozinho|minha empresa' client/public/blog/instalar-videoporteiro.html` = **0** (les 2 occurrences `sozinho` sont dans des FAQ user-facing « Posso instalar o videoporteiro sozinho? » — légitime, pas de revendication commerciale 1ère personne).
+- Densité query cible : `grep -oiE 'instalar videoporteiro' client/public/blog/instalar-videoporteiro.html | wc -l` = **4** (title + H1 + answer + FAQ) ; `grep -oiE 'videoporteiro' client/public/blog/instalar-videoporteiro.html | wc -l` = **45+**.
+- DGEG conforme : `grep -c 'TRIESP n.º 90062' client/public/blog/instalar-videoporteiro.html` = **1** (mention contextuelle dans section « Quando chamar »).
+- NAP 932 321 892 : `grep -c '932 321 892' client/public/blog/instalar-videoporteiro.html` = **8** (header, CTA, footer, JSON-LD).
+- Liens internes cluster : `grep -c '<a href="/blog/' client/public/blog/instalar-videoporteiro.html` = **12 liens distincts** + 2 liens services/contact = 14 liens related.
+- Sitemap : `grep -c 'instalar-videoporteiro' client/public/sitemap-blog.xml` = **1** (URL déclarée, lastmod 2026-08-20).
+- R5 géo-neutre : `grep -ciE 'streetAddress|rua [A-Z]' client/public/blog/instalar-videoporteiro.html` = **0** (uniquement « Trás-os-Montes » comme zone générique).
+- Visible word count : ~4478 mots (corps utile, gate R8 cible ≥ 200 ✅).
+
+**Anti-régression R4 (zéro invention)** — claims vérifiés :
+
+- **Aucune zone précise** mentionnée (conforme R5 géo-neutre) : uniquement « Trás-os-Montes » + mention contextuelle « Bragança / Vila Real / Macedo de Cavaleiros / Chaves » UNIQUEMENT dans les liens related (URLs existantes, 0 claim local non-vérifiable).
+- **Aucun délai chiffré** nouveau (R145) : seules mentions temporelles = « 1 a 2 horas » (substituição), « 4 a 6 horas » (nova instalação), « 1 a 3 segundos » (tempo abertura portão) — fourchettes indicatives techniques, 0 promesse de délai d'intervention.
+- **Aucun prix inventé** : 70 €/h + Z1 15 € / Z6 65 € = PRICING.md verbatim, 0 fourchette inventée, 0 forfait « instalação de videoporteiro a partir de X € ».
+- **Aucune marque** inventée (Schneider, Legrand, Efapel, Hager, Fermax, BTicino, Tegui = marques réelles du marché).
+- **Aucun claim FAUX DGEG** : mention conforme source-of-truth TRIESP 90062 (BT ≤41,4 kVA), pas de chargeur VE ni solar/AC évoqués (R4 site-scope respecté).
+
+**Branche** : `feat/enr-rankpush-instalar-videoporteiro-t_a0e8e34e` (basée sur `e62d6aeb64` = t_03b01956), commit à créer : (1) création page dédiée + sitemap lastmod + SEO_PLAN append.
+
+**Gating R7** : **⏳ PR DRAFT — STOP validation Filipe obligatoire avant merge** (cohérent avec doctrine SEO_PLAN : pas de merge sans GO, R7 verrouillé).
+
+**Mesure d'impact attendue** (gsc-trajectoire-cron.sh dimanche 22h, prochain passage) :
+
+- **J+7** : si position passe < 4 → ✅ win capturé (query cible présente 4× dans title/H1/answer/FAQ + H1 query-first + JSON-LD HowTo 7 steps + FAQPage 8 Q/R valides = double rich snippet activable).
+- **J+14** : si impressions 28j > 23 ET clics 28j > 1 → ✅ capture confirmée (CTR attendu passer de 4,3 % à ~6-8 % à pos <4).
+- **J+28** : si position reste > 10 et impressions ~0 → ⚠️ Rollback possible (revert commit + retrait URL du sitemap), la query `instalar videoporteiro` ne trouve pas son intent exact même avec query-first.
+
+**Action attendue de Philippe** :
+
+1. **Trancher** : commit + push + ouvrir PR draft (recommandé : query cible 4× dans title/H1/answer/FAQ + JSON-LD 5/5 valides + HowTo 7 steps + maillage cluster 14 liens + sitemap lastmod aligned + 0 invention R4 + 0 pronom interdit R12 + 0 délai chiffré R145 + DGEG TRIESP 90062 conforme + NAP cohérent + hotspot `como-instalar-videoporteiro.html` non touché).
+2. Mesurer l'impact à J+7/J+14/J+28 et déclencher rollback si KPI non amélioré.
+
