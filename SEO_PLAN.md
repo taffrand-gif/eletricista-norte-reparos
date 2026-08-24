@@ -2693,3 +2693,64 @@ Refs : commit à venir sur branche `feat/enr-rankpush-interruptor-duplo-simples-
 5. Mesurer l'impact J+7/J+14/J+28 comme prévu pour chaque rank-push cumulé sur PR #359 (6 queries couvertes : ligar / ligação / ligação 2 lâmpadas / duas lâmpadas / simples / esquema ligação).
 
 Refs : commit `f65e516e69` sur branche `feat/enr-rankpush-interruptor-duplo-simples-t_64dd5364`. PR DRAFT #359 cumul = 6 commits. Script re-vérification : `_audit/check_t_e07195f3.py` (artefact commité — utile comme carte de chaleur pour les futurs rank-pushs sur ce cluster).
+
+### 2026-08-24 07:34 BST · t_51757798 — GSC gap enr : « ligação interruptor duplo 2 lâmpadas simples » (48 impr / 1 clic / pos 5.3 — fenêtre close 2026-08-24)
+
+- **Contexte** : tâche `t_51757798` (assignee default, créée par pool-keeper 24/08). Nouvelle mesure GSC sur la **même query déjà ciblée par PR #359** (« ligacao interruptor duplo 2 lampadas simples »), fenêtre 28j terminée 2026-08-24. Résultats : **48 impressions / 1 clic / position moyenne 5.3** (fenêtre 4..20, presque top3). CTR = **2,1 %** (vs attendu 6-8 % pour cette position) → le diagnostic reste inchangé par rapport au run `t_342ad618` (mesure 41/1/5.5, 20/08) : **le bottleneck n'est pas un manque de patch mais l'absence de merge R7**.
+- **Diagnostic filesystem (re-vérification complète 24/08, branche PR #359 checkée-out)** :
+  - `find client/public -iname '*2-lampadas-simples*'` = 0 hit (aucune nouvelle page dédiée créée depuis le dernier run).
+  - `find client/public -iname '*duplo*'` = 2 hits (`como-ligar-interruptor-duplo.html` parente + `como-ligar-interruptor-duplo-simples.html` cible canonique).
+  - **Page parente** `client/public/blog/como-ligar-interruptor-duplo.html` (4388 mots, 117 lignes) : title = « **Ligacao de Interruptor Duplo: Como Ligar, Esquema e 5 Passos (PT-PT)** » (query-first harmonisé par commit `3f60b8b0a1` du 20/08, cumul PR #359). H1 = « **Esquema de ligacao de interruptor duplo: como ligar, fios e 5 passos** ». Schema FAQPage 12 Q/R (commit `f65e516e69` du 21/08).
+  - **Page soeur canonique** `client/public/blog/como-ligar-interruptor-duplo-simples.html` (2712 mots, 117 lignes) : title = « **Ligacao Interruptor Duplo Simples 2 Lampadas: Esquema + 5 Passos** » (query cible exacte au début, commit `efa53c905a` du 20/08). H1 = « **Ligacao de interruptor duplo simples para 2 lampadas: esquema e 5 passos** ». Schema FAQPage 7 Q/R, JSON-LD 4/4 valides (correction R8 du bug `@context` cassé pré-existant).
+  - Densité query exacte dans la soeur : **6 occurrences** « ligacao interruptor duplo simples 2 lampadas » + 3 occurrences « ligacao de interruptor duplo simples » (vs 0 avant PR #359 — gate R8 validé).
+  - **Aucune nouvelle page n'est créée par ce run** : la page soeur existe déjà et contient déjà la formulation exacte « ligação interruptor duplo 2 lâmpadas simples » (title, H1, og, twitter, breadcrumb, Article JSON-LD, 7 FAQ Q/R) depuis le 20/08.
+  - **Aucune PR draft nouvelle ouverte par ce run** : PR #359 DRAFT cumul 6 commits existe depuis le 20/08 et contient déjà tout le patch nécessaire. Créer une nouvelle PR serait un doublon (hotspot collision déjà signalé par t_a872e826).
+- **Décision appliquée : NO-OP applicable**. Conformément à AGENTS.md R7 (0 merge sans GO Philippe) + R1 (push Git uniquement) + R11 (zéro invention) + R12 (collectif) :
+  - **Aucun commit de code créé** par ce run (le patch validé existe déjà dans PR #359 état HEAD `a4a4beee99`).
+  - **1 commit docs** = `docs(enr,seo-plan): consigner run kanban t_51757798` (présent run, append-only historique SEO_PLAN.md).
+  - **1 commentaire PR** sur #359 via `gh pr comment` pour rafraîchir le contexte (mesure 48/1/5.3 sur fenêtre close 2026-08-24, post-cumul 6 commits).
+  - **Tâche kanban bloquée** (kind=needs_input) avec demande explicite de GO merge PR #359 à Philippe — le worker ne peut pas merger seul (R7).
+- **Témoins R8 (avant/après) — vérification 24/08 sur branche PR #359** :
+  | Métrique | Avant PR #359 (20/08) | Après PR #359 (24/08, non mergé) |
+  |---|---|---|
+  | title parente | « Como Ligar um Interruptor Duplo: ... » | « Ligacao de Interruptor Duplo: Como Ligar, Esquema e 5 Passos (PT-PT) » (query-first) |
+  | H1 parente | « Como ligar um interruptor duplo: esquema, fios e passo a passo » | « Esquema de ligacao de interruptor duplo: como ligar, fios e 5 passos » (query-first) |
+  | title soeur (cible canonique) | « Como Ligar Interruptor Duplo Simples: 5 Passos (PT-PT) » | « **Ligacao Interruptor Duplo Simples 2 Lampadas: Esquema + 5 Passos** » (query exacte au début) |
+  | H1 soeur | « Como ligar um interruptor duplo simples: esquema, fios e 5 passos » | « **Ligacao de interruptor duplo simples para 2 lampadas: esquema e 5 passos** » (query exacte naturelle) |
+  | Mots parente | ~4086 | 4388 (+302) |
+  | Mots soeur | ~1423 | 2712 (+1289, +91 %) |
+  | Occurrences query exacte dans soeur | 0 | 6 |
+  | FAQ Q/R soeur | 6 | 7 |
+  | FAQ Q/R parente | 9 | 12 |
+  | JSON-LD valides parente | 3/5 (bug `@context`) | 5/5 (R8 fix commit `7f1dbb4a5f`) |
+  | JSON-LD valides soeur | 1/4 (bug `@context`) | 4/4 (R8 fix commit `efa53c905a`) |
+  | Maillage bilatéral cluster | absent | parente ↔ soeur (lien related ajouté par `efa53c905a`) |
+  | Sitemap lastmod cible | 2026-08-04 | 2026-08-21 (signal freshness) |
+  | Mesure GSC : impressions 28j | 41 | 48 (+7) |
+  | Mesure GSC : clics 28j | 1 | 1 (=, CTR reste 2,1 %) |
+  | Mesure GSC : position moyenne | 5.5 | 5.3 (légère amélioration top3) |
+  | R145 « mediante confirmacao » | absent | absent (0 hit) |
+  | R11 « atendimento 24h » | absent | absent (0 hit) |
+  | R12 pronom interdit (je/sozinho/contacte-me) | présent « sozinho » | corrigé « eu próprio » |
+  | PRICING.md verbatim (70 €/h, Z1 15 €, Z6 65 €) | OK | OK |
+  | NAP +351 932 321 892 cohérent | OK | OK (pas de contamination 928 484 451) |
+- **Conformité doctrine** :
+  - R1 (push Git uniquement, 0 action infra) ✓
+  - R4 (0 invention, PRICING.md verbatim) ✓
+  - R5 (géo-neutre, uniquement Trás-os-Montes mentionné) ✓
+  - R6 (0 force-push, 0 réécriture historique) ✓
+  - **R7 (PR DRAFT, STOP merge Filipe, pas d'auto-merge) ✓ — c'est le bottleneck identifié**
+  - R8 (témoins grep + JSON-LD parse verbatim) ✓
+  - R11 (NAP cohérent +351 932 321 892, 0 contamination 928 484 451) ✓
+  - R12 (collectif « a nossa equipa », 0 pronom 1ère pers sing commercial) ✓
+  - R145 (0 délai chiffré nouveau, sauf fourchette indicative PRICING « sob orcamento ») ✓
+  - AGENTS.md §12 Identité (règle pronom verrouillée 30/06/2026) ✓
+  - AGENTS.md §13 (chargeur VE non concerné par cette query — 0 ajout wallbox/TRIESP/Ficha/Termo) ✓
+- **Cross-checking vs PR #359** : ce run **confirme** que la cible canonique PR #359 (`client/public/blog/como-ligar-interruptor-duplo-simples.html`) est techniquement prête pour la query GSC t_51757798 — seule l'absence de merge empêche la captation top3. La mesure GSC post-20/08 (48/1/5.3 vs 41/1/5.5 antérieur) montre une légère progression de la position moyenne (5.5 → 5.3) et des impressions (41 → 48) malgré l'absence de merge — signal SEO faible mais positif (Google réévalue peut-être la pertinence via des signaux externes ou des comportements utilisateur). Le CTR reste le verrou.
+- **Action attendue de Philippe (rappel cumul PR #359)** :
+  1. **Trancher merge PR #359** ou rollback — R7 inchangé, bottleneck identifié.
+  2. **Décider** la stratégie de canonicalisation cluster (parente vs cible simple) : 301 vs rel=canonical vs garder 2 URLs distinctes. Recommandation post-mesure : garder 2 URLs distinctes pour le moment, re-mesurer J+28 après merge.
+  3. **Décider** le sort du fichier orphelin `public/blog/blog-como-ligar-interruptor-duplo.html` (suppression vs conservation) — signalé par t_e07195f3.
+  4. **Décider** l'opportunité d'un sweep R8 sur `fase-e-neutro-cores.html` et autres pages buggées (3 hits JSON-LD @context corrompu confirmés).
+  5. Mesurer l'impact J+7/J+14/J+28 comme prévu pour chaque rank-push cumulé sur PR #359 (6 queries couvertes : ligar / ligação / ligação 2 lâmpadas / duas lâmpadas / simples / esquema ligação).
+- **Refs** : PR DRAFT #359 (`feat/enr-rankpush-interruptor-duplo-simples-t_64dd5364`, HEAD `a4a4beee99`, cumul 9 commits en avance sur main). Commit pertinent pour la query t_51757798 = `efa53c905a` du 20/08 (renforcement chirurgical query-first + JSON-LD fix + maillage inverse + FAQ 7 Q/R sur la cible canonique). Mémoire signal hotspot collision t_a872e826 (round 1) — ne pas dupliquer PR #359.
