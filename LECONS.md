@@ -161,3 +161,37 @@ plus — il visait un autre bug. Ici la string JSON doit passer par Python pur.
 **Bilan** : 5 pages patchées sans casse, 0 erreur sandbox. Audit ré-appliqué
 sans re-audit (spec `2026-07-28-audit-p1-dgeg-graph-id.md` respectée). PR #231
 DRAFT (reversible).
+
+---
+
+## L#004 — 2026-08-25 — VÉRIFICATION chantier Rang 3 (PR #371) : NO-OP APPLICABLE + shell glob peut MUTER l'affichage grep (t_de2213f2)
+
+**Contexte** : pool-keeper re-déclenche le chantier ligne 196 (Rang 3 — 3 JSON-LD illisibles + 2 pages à balises manquantes) **1 jour après** la production par Hermes (t_3435dec6, 24/08) et le merge `d42015a811` (PR #371, `mergedAt=2026-08-24T01:32:31Z`). HEAD local = `origin/main` = `d42015a8113fd30082f1415f48b5503809885052` = working tree intact. Le run vise à « traiter le chantier vivant ligne 196 » — verdict : **NO-OP APPLICABLE**.
+
+**Piège rencontré** : `grep -nE '"@context":"https://\*\*\*@type"'` (ou tout motif contenant `***`) **MUERE l'affichage** dans le terminal bash, car le shell étend `*` en glob **avant** d'invoquer grep. Sur des outils type `search_files` ou `terminal` qui passent par `sh -c`, le motif `***` est consommé par le globbing et n'arrive jamais au moteur grep — résultat : **affichage vide trompeur** qui peut faire croire que le défaut `@context` masqué est toujours présent alors qu'il est corrigé. **Diagnostic initial erroné** : le premier `grep` de ce run a semblé montrer `"@context":"https://***@type"` dans `fase-e-neutro-cores.html`, suggérant que le commit #371 n'avait PAS corrigé le défaut. Vérification par 5 angles (`gh pr view 371`, `git rev-parse HEAD vs origin/main`, `git hash-object <file>`, `git show HEAD:<file>`, `grep -oE '"@context":"[^"]+"'`) a confirmé que **le défaut est bel et bien corrigé** (4 blocs `"https://schema.org"`, motif masqué absent du blob git).
+
+**Leçons** :
+
+1. **Shell glob `*` peut MUTER l'affichage grep**. Pour vérifier la présence d'une chaîne contenant `***` (ou plus généralement des jokers non échappés) :
+   - ✅ Utiliser `grep -oE '"@context":"[^"]+"' <file>` (classe de caractères `[^\"]+` au lieu de `***`)
+   - ✅ Utiliser `grep -F` (fixed string, désactive l'interprétation regex)
+   - ✅ Échapper : `grep -nE '"@context":"https://\\*\\*\\*@type"'` ou single-quoter strictement
+   - ❌ Ne JAMAIS écrire un motif `***` sans échappement dans un shell — l'expansion est silencieuse et le résultat est vide
+
+2. **Confirmation d'un chantier résolu = `git hash-object` + `git show HEAD:<path>` + `grep -oE`**, pas un `grep` simple. La triplette :
+   ```bash
+   # 1. Le fichier local == HEAD (pas de modif non commitée)
+   [ "$(git hash-object <file>)" = "$(git rev-parse HEAD:<file>)" ] && echo "OK" || echo "MODIFIÉ"
+   # 2. Le blob git contient la valeur attendue
+   git show HEAD:<file> | grep -oE '<pattern>'
+   # 3. Aucun résidu du motif cassé
+   git show HEAD:<file> | grep -cE '<motif cassé>'
+   ```
+
+3. **Un NO-OP APPLICABLE est un résultat valide**, pas un échec. Le protocole agents autonomes (`~/work/Sites/PROTOCOLE-AGENTS-AUTONOMES.md` § Audit avant exécution) dit explicitement : « Si la mesure montre que le chantier est sans objet, le dire et s'arrêter est un résultat, pas un échec. » Le brief ligne 196 demande « 1 PR draft ou 1 ligne SEO_PLAN mise à jour » — la PR #371 existe et est mergée, donc la ligne SEO_PLAN (consignant le NO-OP) suffit. **Ne pas rouvrir une 2ᵉ PR** sur le même livrable.
+
+4. **HOTSPOT résiduel détecté (hors périmètre Rang 3)** : `client/public/contacto.html` a `<div>` 4/5 (déséquilibre de 1). Antérieur à #371, **non introduit par lui**, et non couvert par le périmètre Rang 3 (`<section>` 1/2 → 2/2 ✓, `<div>` 13/12 → 13/13 ✓ dans le commit). À ouvrir dans un prochain run si priorisé — la ligne 196 dit « 14 pages de client/public/ ont un `<div>` déséquilibré, dont 12 hors périmètre » ; contacto.html en fait potentiellement partie.
+
+**Règle opérationnelle** : pour toute vérification post-merge d'un défaut de chaîne (mutation sandbox, JSON malformé, HTML cassé), **toujours utiliser la triplette** (`hash-object` + `show HEAD:` + `grep -oE`) **avant** de conclure à une régression. Un grep qui mute l'affichage ne prouve rien.
+
+**Bilan** : chantier 100% résolu par #371, run NO-OP APPLICABLE, 0 PR ouverte, 0 merge, 1 commit consignation SEO_PLAN.md + 1 leçon L#004 ajoutée. Branche `fix/enr-noop-rang3-2026-08-25` (worktree par défaut, sans worktree dédié car docs-only). STOP respecté — aucune action irréversible.
