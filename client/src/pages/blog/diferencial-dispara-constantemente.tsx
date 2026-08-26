@@ -207,7 +207,7 @@ export default function DiferencialDisparaConstantemente() {
  <div>
  <h4 className="font-bold text-gray-900 mb-2">Religue o Diferencial</h4>
  <p className="text-gray-700">
- Se disparar mediante confirmação sem nada ligado, o problema está na instalação (cabos, humidade) ou no próprio diferencial.
+ Se disparar imediatamente sem nada ligado, o problema está na instalação (cabos, humidade) ou no próprio diferencial.
  <strong> → Chame eletricista urgente.</strong>
  </p>
  </div>
@@ -278,7 +278,7 @@ export default function DiferencialDisparaConstantemente() {
  <ul className="space-y-3 text-gray-800">
  <li className="flex items-start gap-2">
  <span className="text-red-600 font-bold">→</span>
- <span>Diferencial dispara mediante confirmação mesmo sem aparelhos ligados</span>
+ <span>Diferencial dispara imediatamente mesmo sem aparelhos ligados</span>
  </li>
  <li className="flex items-start gap-2">
  <span className="text-red-600 font-bold">→</span>
