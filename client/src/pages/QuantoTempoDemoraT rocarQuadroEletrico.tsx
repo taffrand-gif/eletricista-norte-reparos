@@ -38,7 +38,7 @@ export default function QuantoTempoQuadro() {
  },
  {
  question: "Quanto tempo demora substituir só um disjuntor?",
- answer: "Substituir disjuntor: 1-2 horas. Inclui: chegada eletricista (30-45 min), desligar circuito (5 min), substituir disjuntor (15-30 min), testar (10-15 min), certificar (15-20 min). Urgente 24h disponível."
+ answer: "Substituir disjuntor: 1-2 horas. Inclui: chegada do eletricista, desligar circuito (5 min), substituir disjuntor (15-30 min), testar (10-15 min), certificar (15-20 min). Urgente 24h disponível."
  }
  ];
  const tempos = [

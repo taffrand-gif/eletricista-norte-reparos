@@ -26,7 +26,7 @@ export default function QuantoTempoSemLuzCasa() {
  const faqs = [
  {
  question: "Quanto tempo fico sem luz se disjuntor disparar?",
- answer: "Disjuntor simples: 1-2 horas. Curto-circuito: 2-4 horas. Problema quadro: 3-6 horas. Eletricista chega em 30-45 min. Começamos arranjo mediante confirmação. Urgente 24h: 932 321 892"
+ answer: "Disjuntor simples: 1-2 horas. Curto-circuito: 2-4 horas. Problema quadro: 3-6 horas. Confirmamos a hora de chegada por telefone. Começamos arranjo mediante confirmação. Urgente 24h: 932 321 892"
  },
  {
  question: "Eletricista consegue restabelecer luz no mesmo dia?",
@@ -38,7 +38,7 @@ export default function QuantoTempoSemLuzCasa() {
  },
  {
  question: "Posso ter luz hoje se avaria acontecer de manhã?",
- answer: "SIM, se ligar de manhã. Chegamos 30-45 min, arranjamos 1-4h. Se ligar 09:00, luz restabelecida 11:00-14:00. Atendemos urgências 24h: 932 321 892"
+ answer: "SIM, se ligar de manhã. Arranjamos em 1-4h. Atendemos urgências 24h: 932 321 892"
  }
  ];
  const tempos = [
@@ -48,7 +48,7 @@ export default function QuantoTempoSemLuzCasa() {
  tempo: "1-2h",
  solucao: "Substituir disjuntor",
  detalhes: [
- "Chegada: 30-45 min",
+ "Chegada a confirmar",
  "Diagnóstico: 10-15 min",
  "Substituir disjuntor: 20-30 min",
  "Testar circuito: 10-15 min",
@@ -63,7 +63,7 @@ export default function QuantoTempoSemLuzCasa() {
  tempo: "2-4h",
  solucao: "Reparar circuito",
  detalhes: [
- "Chegada: 30-45 min",
+ "Chegada a confirmar",
  "Localizar curto: 30-90 min",
  "Desligar circuito: 5 min",
  "Reparar cabo/tomada: 30-120 min",
@@ -79,7 +79,7 @@ export default function QuantoTempoSemLuzCasa() {
  tempo: "3-6h",
  solucao: "Reparar/substituir componente",
  detalhes: [
- "Chegada: 30-45 min",
+ "Chegada a confirmar",
  "Diagnóstico quadro: 20-30 min",
  "Desligar geral: 5 min",
  "Substituir diferencial: 45-120 min",
@@ -96,7 +96,7 @@ export default function QuantoTempoSemLuzCasa() {
  tempo: "2-8h",
  solucao: "Coordenar com EDP",
  detalhes: [
- "Chegada: 30-45 min",
+ "Chegada a confirmar",
  "Diagnóstico: 15-20 min",
  "Contactar EDP: 30-60 min",
  "Espera técnico EDP: 1-4 horas",
