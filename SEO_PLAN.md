@@ -2016,6 +2016,27 @@ Le fichier **se contredit lui-même** : L17 affiche « 70€ - 140€ » pour «
 
 ---
 
+## Run loop 2026-08-24 — ENR · t_2a26901a — Rank-push GSC `cores fios elétricos portugal` (pos=4.1, 34 impr / 1 clic 28j)
+
+- **Contexte** : tâche `t_2a26901a` (assignee default, kanban dispatch 24/08, intent=INFO). Diagnostic GSC confirme la query **`cores fios elétricos portugal`** sur ENR en **position moyenne 4.1** (fenêtre 4..20, presque top3) avec **34 impressions et 1 clic sur 28j** (fenêtre terminée 2026-08-24). Brief disait "la meilleure page est `/blog/guia-cores-fios-eletricos` mais ne couvre pas spécifiquement cette query" — vérification croisée : la page **existe bien** (`client/public/blog/guia-cores-fios-eletricos.html`, 4086 mots, 4086 lignes, 2 Article JSON-LD + 9 autres blocs) et **est canonique** (sitemap-blog + sitemap.xml + sitemap-plain + sitemap-priority).
+- **Diagnostic concurrence interne** : la page a été **multi-réécrite** par PR #272 (H1 = "Cor dos Fios Elétricos em Portugal — Tabela RTIEBT (Fase, Neutro, Terra)" — singulier) puis PR #285 (title = "Tomada com Terra"). Le fichier concatène **2 `<title>` + 2 `<h1>`** (build artefact, jamais nettoyé). Le title actuel retenu par Google est `Cores dos Fios Elétricos em Portugal: Tabela RTIEBT Completa (2026)` (pluriel exact de la query) — donc la query `cores fios elétricos portugal` matche le **title meta mais PAS le H1 visible** (singulier).
+- **Décision R8** : **renforcer la page existante** (1 fichier HTML + 4 sitemaps) plutôt que créer une page concurrente. Stratégie alignée sur le pattern PR #272 (t_c302be14, "cor dos fios eletricos") : (a) H1 → pluriel exact comme title + query, (b) bloc "Resposta direta" en tête avec 3 mentions de la query exacte en début, (c) FAQ FAQPage Q5 alignée `Cores fios elétricos Portugal: quais são e como identificar cada uma?` (exact-match query), (d) dateModified JSON-LD 2026-08-04 → 2026-08-24 sur les 2 Article, (e) "Última atualização: 4 de agosto de 2026" → "24 de agosto de 2026", (f) 4 sitemaps lastmod 2026-08-04 / 2026-06-06 → 2026-08-24. **0 régression de PR #285** (le 1er bloc `<title>`/`<h1>` "Tomada com Terra" reste intact, mais ce n'est pas le bloc rendu visuellement par Google).
+- **Témoins grep (gate R4/R11/R12/R145/doctrine §12)** :
+  - **R4 zéro invention** : 0 NAP/tel/zone/délai inventé. Bloc Resposta direta mentionne uniquement normes (RTIEBT, IEC 60446) et tensions physiques (230V, 0V) — constantes normatives, pas d'invention marketing.
+  - **R12 pronom collectif** : 8 hits "a nossa equipa / os nossos / contacte / garantimos" + 0 hit interdit (sozinho / je suis / mon entreprise / contacte-me / falar comigo / contato pessoal).
+  - **R145 zéro délai chiffré** : 0 ajout de délai (0 "em X min", 0 "rapidez", 0 "atendimento imediato"). "24h/7 dias" **pré-existant** et autorisé par R145.
+  - **Doctrine §12 NAP 932 321 892** : 0 modification du NAP.
+  - **Contamination plomberie** : 0 occurrence `928 484 451` ou `canalização`.
+  - **JSON-LD valide** : 8/9 blocs OK (le 9ᵉ pré-existant = `<script>` vide entre les 2 heads concaténés — pas mon diff). 2 FAQPage : [1] 6 questions (Tomada) inchangé, [2] **6 questions** (Cores fios) avec **Q5 ajoutée** = `Cores fios elétricos Portugal: quais são e como identificar cada uma?` (testé `json.loads` 0 erreur).
+  - **Mesure mots** : 4086 → 4334 mots = **+248 mots** (>> 200 demandés par brief).
+  - **Mesure occurrences query exacte `cores fios elétricos`** : **5** (1 H1 + 1 description meta + 1 titre meta keywords + 2 dans la FAQ Q5 ajoutée + 1 dans la description twitter). Title meta = **exact-match** avec query.
+  - **Sitemaps XML valides** : `python3 -c "xml.etree.ElementTree"` parse OK sur les 4 (sitemap-blog, sitemap-plain, sitemap-priority, public/sitemap.xml).
+- **Décision convention sitemap** : la prod est servie par `client/public/` (vérifié `vite.config.ts` L278 : `root = client`, `publicDir = client/public`). Le `public/sitemap.xml` racine (L3461, lastmod 2026-06-06 figé — confirmé par SEO_PLAN run loop 2026-08-19 et par 2 audits antérieurs) est **legacy** mais reste servi par Vercel ; je l'ai mis à jour aussi pour cohérence (4ème entrée patchée), sans merge séparé.
+- **Branche** : `feat/enr-rankpush-cores-fios-eletricos-portugal-t_2a26901a` depuis `origin/main` (`6bb93dc2eb`), **worktree dédié** `~/work/Sites/eletricista-norte-reparos/.worktrees/t_2a26901a-cores-fios-portugal/` (ne touche pas la branche courante `feat/enr-rankpush-fechadura-eletrica-t_8d9e484d` qui appartient à une autre tâche encore en cours).
+- **Gating R7** : **0 merge, 0 push prod, PR draft à ouvrir après STOP validation Filipe** (cf. leçon t_45ec27ae PR #320 — handoff ne dispense pas de STOP CEO). Mesure impact J+7/J+14/J+28 via gsc-trajectoire-cron.sh (recette : pos < 4 = win, impr > 34 + clics > 1 = capture confirmée).
+- **HOTSPOT signal** : la page `guia-cores-fios-eletricos.html` a 2 `<title>` + 2 `<h1>` concaténés depuis PR #272 + PR #285. Tant que ce doublon n'est pas nettoyé, le risque persiste qu'un futur patch casse involontairement l'autre bloc. **À traiter en tâche séparée post-merge** (1 commit nettoyage qui retire le bloc pré-PR #272).
+- **Statut** : 🟢 **Prêt pour commit + push + PR draft + STOP GO Filipe**.
+
 ## Run loop 2026-08-19 — ENR · `client/src/data/faqData.ts` (audit hors compteur)
 
 - **Statut** : ✅ Fait — branche `loop/2026-08-19-enr-faqdata`
