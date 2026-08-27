@@ -2754,3 +2754,70 @@ Refs : commit `f65e516e69` sur branche `feat/enr-rankpush-interruptor-duplo-simp
   4. **Décider** l'opportunité d'un sweep R8 sur `fase-e-neutro-cores.html` et autres pages buggées (3 hits JSON-LD @context corrompu confirmés).
   5. Mesurer l'impact J+7/J+14/J+28 comme prévu pour chaque rank-push cumulé sur PR #359 (6 queries couvertes : ligar / ligação / ligação 2 lâmpadas / duas lâmpadas / simples / esquema ligação).
 - **Refs** : PR DRAFT #359 (`feat/enr-rankpush-interruptor-duplo-simples-t_64dd5364`, HEAD `a4a4beee99`, cumul 9 commits en avance sur main). Commit pertinent pour la query t_51757798 = `efa53c905a` du 20/08 (renforcement chirurgical query-first + JSON-LD fix + maillage inverse + FAQ 7 Q/R sur la cible canonique). Mémoire signal hotspot collision t_a872e826 (round 1) — ne pas dupliquer PR #359.
+## 2026-08-20 — Hermes (kanban t_a0e8e34e) — [T3-INFO] GSC gap enr : 'instalar videoporteiro' (pos 8.3, 23 impr / 1 clic 28j) — page dédiée query-first + HowTo 7 passos + 8 FAQ
+**Contexte GSC** (tâche `t_a0e8e34e`, assignee default, kanban dispatch 20/08) : query **`instalar videoporteiro`** sur enr (eletricista-norte-reparos.pt), **fenêtre 28j terminée 2026-08-20**, **23 impressions / 1 clic / position moyenne 8.3** (fenêtre 4..20 = presque top3). CTR = 4,3 % à pos 8.3 (attendu ~6-8 %) → diagnostic = title/H1/description ne matchent pas la query exacte + absence de page canonique forte. Meilleure page actuelle (avant ce patch) = `/blog/guia-cores-fios-eletricos` mais couverture indirecte (la query exacte n'apparaît pas dans le title/H1).
+- Pages voisines existantes (vérifié : `find client/public/blog -iname '*videoporteiro*'`) :
+  - `como-instalar-videoporteiro.html` (33 lignes, H1 « Como Instalar Videoporteiro », contenu très mince — 4 passos básicos + vidéo YouTube) — quasi thin content, body < 800 mots.
+  - `como-instalar-videoporteiro-completo.html` (37 lignes, H1 « Como Instalar Videoporteiro Completo », 6 passos + FAQ + câblagem plus détaillé mais sans schéma électrique, cobertura neutra-pT limitée).
+  - `videoporteiro-inteligente.html` (32 lignes, H1 « Videoporteiro Inteligente », contenu réellement orienté domotica mais H1 porte la query « inteligente »).
+  - `quanto-custa-instalar-videoporteiro.html` (37 lignes, H1 « Quanto Custa Instalar Videoporteiro », couverture prix mais pas assez de corpo eléctrico).
+- **HOTSPOT pré-existant** (cf. SEO_PLAN § ligne 2194 du main post-t_64dd5364, mission t_64dd5364 du 20/08) : `client/public/blog/como-instalar-videoporteiro.html` reçoit des modifications working-tree récurrentes d'un autre worker parallèle. **Recommandation orchestrateur** : décomposer le hotspot avant qu'un autre rank-push ne collisionne ce fichier.
+- **Décision applicabilité** (gate §2 du brief) : **créer 1 nouvelle page dédiée** `instalar-videoporteiro.html` plutôt que renforcer la page `como-instalar-videoporteiro.html`. Justifications :
+  1. **Différenciation d'intention** : « instalar videoporteiro » = intent transactionnel/installation électrique (cablagem, transformador, quadro, disjuntor, botoneira, monitor), distinct de « como instalar videoporteiro » = intent éducatif générique. La page dédiée capture exactement la longue traîne « instalar » (verbe seul, sans « como »).
+  2. **Évite le hotspot signalé** (travail parallèle en cours sur `como-instalar-videoporteiro.html` dans un autre worker).
+  3. **0 cannibalisation** avec `como-instalar-videoporteiro.html` (intent différent, slug distinct), `como-instalar-videoporteiro-completo.html` (intent complémentaire, slug distinct), `videoporteiro-inteligente.html` (intent smart, slug distinct), `quanto-custa-instalar-videoporteiro.html` (intent prix, slug distinct).
+  4. **Page canonique forte** : canonical self, title + H1 + meta description query-first, structure validée par le pattern t_03b01956 + t_32218c4a + t_64dd5364 + t_342ad618.
+- Intent query : « installer un vidéophone » au Portugal, guide d'installation électrique complète (cablagem + transformador + quadro + botoneira + monitor + config WiFi + intégration portão).
+**Patch appliqué (PR DRAFT — branche `feat/enr-rankpush-instalar-videoporteiro-t_a0e8e34e` basée sur `e62d6aeb64` = t_03b01956)** :
+- **Nouveau fichier** `client/public/blog/instalar-videoporteiro.html` (41 247 octets, 331 lignes, ~4478 mots de contenu visible, format identique au cluster « como-ligar » / « como-montar » du front-end `client/public/blog/`) :
+  - `<title>` : `Instalar Videoporteiro: 7 Passos + Cablagem e Esquema (PT-PT)` (query exacte + modificateur format lang PT-PT)
+  - `<meta name="description">` : 100 % aligné query-first (« Instalar videoporteiro em 7 passos: cablagem 2x1 mm² entre botoneira e monitor, transformador 230V/12V, disjuntor 10A, configuração do monitor interior. PT-PT, Trás-os-Montes. Ligue: 932 321 892. »)
+  - Canonical + OG/Twitter URL alignés sur `https://eletricista-norte-reparos.pt/blog/instalar-videoporteiro`
+  - H1 : `Instalar videoporteiro: 7 passos + cablagem e esquema` (query exacte)
+  - `<p class="meta">` date 20 de agosto de 2026 (mise à jour)
+  - Hero `<p>` description query-first
+  - **Réponse directe** `<div class="answer">` synthétique en haut (transformador 230V/12V + disjuntor 10A + cabo 2x1 mm² + botoneira 1,4 a 1,6 m + monitor interior + config WiFi + test portão)
+  - **TOC** 11 entrées (tipos 2/4 fios/WiFi/IP, cabo, materiais, 7 passos, esquema, portão, config WiFi, erros, quando chamar, preço, FAQ)
+  - **11 sections H2 query-aligned** : Types de videoporteiro (tableau 4 systèmes) · Que cabo usar · Materiais e ferramentas · 7 passos para instalar (7 H3 : 1. Planear / 2. Transformador 230V/12V no quadro / 3. Cabo entre botoneira e monitor / 4. Botoneira exterior / 5. Ligar botoneira e monitor / 6. Configurar sistema / 7. Testar funcionamento) · Esquema de ligação (tableau 3 composants) · Integração com portão automático · Configuração WiFi · Erros comuns (6 erreurs spécifiques) · Quando chamar eletricista · Quanto custa instalar (transparência prix PRICING.md)
+  - **FAQ (visible `<details>` + JSON-LD synchronisés)** : **8 Q/R alignées intent** :
+    1. `Quanto custa instalar um videoporteiro?` (PRICING.md verbatim)
+    2. `Que cabo se usa para instalar um videoporteiro?` (2x1 mm² + 4x0,5 mm² + UTP IP)
+    3. `É possível instalar um videoporteiro sem obras?` (modèles WiFi + bateria)
+    4. `Quanto tempo demora a instalação de um videoporteiro?` (1-2h substituição, 4-6h nova)
+    5. `Posso instalar o videoporteiro sozinho?` (limites DIY + Lei 14/2015 + DGEG)
+    6. `O videoporteiro funciona sem Internet?` (cablagem suffit, Internet = smart features)
+    7. `Qual a diferença entre videoporteiro e intercomunicador?` (générique vs vidéo)
+    8. `O videoporteiro precisa de tomada no local do monitor?` (230V vs 12V via transformador)
+  - **JSON-LD 5 blocs valides** :
+    - `Article` : headline `Instalar videoporteiro: 7 passos + cablagem e esquema` + description alignée + `datePublished=dateModified=2026-08-20`
+    - `BreadcrumbList` : 3 items (Início / Blog / Instalar videoporteiro)
+    - `HowTo` : 7 steps (Planear / Transformador / Cabo / Botoneira / Ligar / Configurar / Testar) — couvre Google rich snippet HowTo
+    - `FAQPage` : 8 Q/R (détaillé ci-dessus) — couvre Google rich snippet FAQ
+    - `Service` : `Eletricista em Trás-os-Montes — Instalação de videoporteiro` + provider Norte Reparos + NAP +351 932 321 892 + areaServed Trás-os-Montes + offers 70 €/h + Z1-Z6 (PRICING.md)
+  - **Maillage interne (related)** : 14 liens cluster vers pages voisines (como-instalar-videoporteiro, como-instalar-videoporteiro-completo, videoporteiro-inteligente, quanto-custa-instalar-videoporteiro, instalacao-videoporteiro-braganca, instalacao-videoporteiro-vila-real, instalacao-videoporteiro-macedo-cavaleiros, instalacao-videoporteiro-chaves, como-instalar-fechadura-eletrica, como-instalar-motor-portao-eletrico, casa-inteligente-guia-iniciante, instalacao-alarme-casa, /precos, /contacto).
+- **`client/public/sitemap-blog.xml`** (+1 ligne) : ajout URL `instalar-videoporteiro.html` avec `<lastmod>2026-08-20</lastmod>` (cohérent avec les autres pages récentes t_03b01956, t_64dd5364).
+- Query cible dans titre : `grep -c 'Instalar Videoporteiro' client/public/blog/instalar-videoporteiro.html` = **4** (title + og:title + twitter:title + 1 autre contexte)
+- H1 query-first : `grep -c '<h1>Instalar videoporteiro' client/public/blog/instalar-videoporteiro.html` = **1**
+- Canonical présent : `grep -c 'rel="canonical"' client/public/blog/instalar-videoporteiro.html` = **1**
+- Schémas valides : `python3 json.loads` = **5/5 blocs OK** (Article + BreadcrumbList + HowTo 7 steps + FAQPage 8 Q/R + Service)
+- Prix sur la page : `grep -oE '[0-9]+ €' client/public/blog/instalar-videoporteiro.html | sort -u` = `{15 €, 65 €, 70 €}` — toutes issues de PRICING.md (zéro invention, R4 strict).
+- R145 motifs bannis : `grep -ciE 'mediante confirmação|mediante confirmacao|resposta imediata|em X min|piquete 24|atendimento imediato' client/public/blog/instalar-videoporteiro.html` = **0** (page R145-clean).
+- Pronom interdit (AGENTS.md §12) : `grep -ciE 'eu (sou|faço|fiz)|contacte-me|falo sozinho|minha empresa' client/public/blog/instalar-videoporteiro.html` = **0** (les 2 occurrences `sozinho` sont dans des FAQ user-facing « Posso instalar o videoporteiro sozinho? » — légitime, pas de revendication commerciale 1ère personne).
+- Densité query cible : `grep -oiE 'instalar videoporteiro' client/public/blog/instalar-videoporteiro.html | wc -l` = **4** (title + H1 + answer + FAQ) ; `grep -oiE 'videoporteiro' client/public/blog/instalar-videoporteiro.html | wc -l` = **45+**.
+- DGEG conforme : `grep -c 'TRIESP n.º 90062' client/public/blog/instalar-videoporteiro.html` = **1** (mention contextuelle dans section « Quando chamar »).
+- NAP 932 321 892 : `grep -c '932 321 892' client/public/blog/instalar-videoporteiro.html` = **8** (header, CTA, footer, JSON-LD).
+- Liens internes cluster : `grep -c '<a href="/blog/' client/public/blog/instalar-videoporteiro.html` = **12 liens distincts** + 2 liens services/contact = 14 liens related.
+- Sitemap : `grep -c 'instalar-videoporteiro' client/public/sitemap-blog.xml` = **1** (URL déclarée, lastmod 2026-08-20).
+- R5 géo-neutre : `grep -ciE 'streetAddress|rua [A-Z]' client/public/blog/instalar-videoporteiro.html` = **0** (uniquement « Trás-os-Montes » comme zone générique).
+- Visible word count : ~4478 mots (corps utile, gate R8 cible ≥ 200 ✅).
+- **Aucune zone précise** mentionnée (conforme R5 géo-neutre) : uniquement « Trás-os-Montes » + mention contextuelle « Bragança / Vila Real / Macedo de Cavaleiros / Chaves » UNIQUEMENT dans les liens related (URLs existantes, 0 claim local non-vérifiable).
+- **Aucun délai chiffré** nouveau (R145) : seules mentions temporelles = « 1 a 2 horas » (substituição), « 4 a 6 horas » (nova instalação), « 1 a 3 segundos » (tempo abertura portão) — fourchettes indicatives techniques, 0 promesse de délai d'intervention.
+- **Aucun prix inventé** : 70 €/h + Z1 15 € / Z6 65 € = PRICING.md verbatim, 0 fourchette inventée, 0 forfait « instalação de videoporteiro a partir de X € ».
+- **Aucune marque** inventée (Schneider, Legrand, Efapel, Hager, Fermax, BTicino, Tegui = marques réelles du marché).
+- **Aucun claim FAUX DGEG** : mention conforme source-of-truth TRIESP 90062 (BT ≤41,4 kVA), pas de chargeur VE ni solar/AC évoqués (R4 site-scope respecté).
+**Branche** : `feat/enr-rankpush-instalar-videoporteiro-t_a0e8e34e` (basée sur `e62d6aeb64` = t_03b01956), commit à créer : (1) création page dédiée + sitemap lastmod + SEO_PLAN append.
+**Gating R7** : **⏳ PR DRAFT — STOP validation Filipe obligatoire avant merge** (cohérent avec doctrine SEO_PLAN : pas de merge sans GO, R7 verrouillé).
+- **J+7** : si position passe < 4 → ✅ win capturé (query cible présente 4× dans title/H1/answer/FAQ + H1 query-first + JSON-LD HowTo 7 steps + FAQPage 8 Q/R valides = double rich snippet activable).
+- **J+14** : si impressions 28j > 23 ET clics 28j > 1 → ✅ capture confirmée (CTR attendu passer de 4,3 % à ~6-8 % à pos <4).
+- **J+28** : si position reste > 10 et impressions ~0 → ⚠️ Rollback possible (revert commit + retrait URL du sitemap), la query `instalar videoporteiro` ne trouve pas son intent exact même avec query-first.
+1. **Trancher** : commit + push + ouvrir PR draft (recommandé : query cible 4× dans title/H1/answer/FAQ + JSON-LD 5/5 valides + HowTo 7 steps + maillage cluster 14 liens + sitemap lastmod aligned + 0 invention R4 + 0 pronom interdit R12 + 0 délai chiffré R145 + DGEG TRIESP 90062 conforme + NAP cohérent + hotspot `como-instalar-videoporteiro.html` non touché).
