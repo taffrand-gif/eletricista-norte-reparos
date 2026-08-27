@@ -86,7 +86,7 @@ function FloatingCTA() {
  </a>
  {/* Petit texte avec preuve sociale */}
  <p className="text-xs text-gray-600 text-center mt-2 font-semibold">
- ✓ Orçamento grátis • ✓ Sem compromisso
+ ✓ Orçamento por escrito • ✓ Sem compromisso
  </p>
  </div>
  </div>
