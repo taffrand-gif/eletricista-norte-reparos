@@ -2898,3 +2898,41 @@ Refs : commit `f65e516e69` sur branche `feat/enr-rankpush-interruptor-duplo-simp
   - **J+14** : si impressions 28j > 31 ET clics 28j > 1 → ✅ capture confirmée.
   - **J+28** : si position reste > 10 et clics 28j = 0-1 → ⚠️ Rollback possible (revert commit), la page ne capture pas la query malgré le query-first — diagnostic = concurrence trop forte ou intent trop spécialisé.
   1. **Trancher** : commit + push + ouvrir PR draft (recommandé : 0 invention prix/zone/délai + 10 Q/R FAQ ciblées + HowTo schema + bloc transparency PRICING.md + migration canonique + sitemaps sync + cross-link vers blog-como-ligar-interruptor-duplo + JSON-LD tous valides).
+## 🎯 2026-08-21 — T3-INFO Kanban t_da1164ba · rank-push ENR `código cores fios elétricos portugal` (GSC pos=4.6, 156 impr/1 clic 28j) — page canonique renforcée + R8 fixé
+- **Statut** : ✅ Fait — branche `feat/enr-rankpush-codigo-cores-fios-portugal-t_da1164ba`, push OK sur origin, **PR DRAFT #362** ouverte (attente GO Filipe).
+- **Origine** : gap GSC enr query `código cores fios elétricos portugal` (pos=4.6, 156 impr, 1 clic en 28j, terminée 2026-08-21). Page canonique identifiée : `client/public/blog/guia-cores-fios-eletricos.html` (déjà en place, autorité GSC acquise). Choix retenu = **renforcer** la page existante (option 2) plutôt que créer une page dédiée (option 3) — pour ne pas diluer l'autorité et éviter la cannibalisation avec les 4 pages soeurs du cluster `cores fios` (`cor-fios-eletricos`, `fase-e-neutro-cores`, `qual-a-cor-do-fio-neutro-em-portugal`, `eletricidade-fio-azul-e-castanho`).
+- **Diagnostic pré-travail** : la page existante avait **3 défauts critiques** découverts en audit :
+  1. **Dédoublement HTML catastrophique** : 2 `<!DOCTYPE>` + 2 `<html>` + 2 `<body>` concaténés en un seul fichier (artefact de fusions successives PR #272 + #274 + #278 + #281).
+  2. **R8 `@context` cassé** sur **9 blocs JSON-LD** : `"@context":"https://***@type"` (artefact regex de purge antérieure) → `json.loads` KO sur 1 bloc.
+  3. **H1 dédoublé** : un H1 « Tomada com Terra » + un H1 « Cor dos Fios Elétricos » dans le même document.
+- **Page réécrite intégralement** (`client/public/blog/guia-cores-fios-eletricos.html`, 62→334 lignes, 2669→3607 mots, 48025→44680 chars) :
+  - **H1 unique query-first** : *« Código de Cores dos Fios Elétricos em Portugal: Tabela RTIEBT 2026 (Fase, Neutro, Terra) »* (correspondance exacte avec la query GSC).
+  - **Title/Meta description query-first** alignés sur la query exacte.
+  - **15 sections H2 + 14 sous-sections H3** : Tabela rápida / O que é o código / Norma atual (RTIEBT + IEC 60446 + HD 308 S2) / Cor do fio de fase (L) — 230 V / Cor do fio neutro (N) / Cor do fio de terra (PE) / Cores antigas pré-2000 / Monofásica vs Trifásica / Como identificar fios sem cor / Ligação típica tomada+interruptor+candeeiro / Erros perigosos / Quando chamar eletricista / Quanto custa identificar/substituir / FAQ.
+  - **8 Q/R FAQ ciblées** (JSON-LD FAQPage 5→8) :
+    1. Qual é o código de cores dos fios elétricos em Portugal?
+    2. Qual a cor do fio neutro em Portugal?
+    3. Qual a cor do fio de fase (L) em Portugal?
+    4. Qual a cor do fio de terra (PE) em Portugal?
+    5. O que é a norma RTIEBT?
+    6. O código de cores dos fios elétricos é o mesmo em toda a Europa?
+    7. Como saber se a minha tomada tem terra?
+    8. Posso usar fio de outra cor se não encontrar a cor certa?
+  - **HowTo 5 passos** : Desligar disjuntor → Identificar visualmente → Confirmar fase com detetor → Medir continuidade terra com multímetro → Marcar cada condutor.
+  - **Bloc Transparence prix PRICING.md verbatim** : 70 €/h + 15 € a 65 € (Z1-Z6) + majoração +50% + Ficha/Termo a partir de 350 € (DGEG TRIESP 90062).
+  - **Maillage interne 13 liens** vers pages soeurs (qual-a-cor-do-fio-neutro / fase-e-neutro-cores / cor-fios-eletricos / eletricidade-fio-azul-e-castanho / como-instalar-candeeiro-teto-seguranca / fio-neutro-partido / como-verificar-terra / instalacao-eletrica-casa-nova-guia / como-mudar-tomada-eletrica / tipos-tomadas-portugal-guia / como-instalar-interruptor / tomada-nao-funciona-causa / guia-cores-fios-eletricos (self)) — **tous valides dans origin/main** (gate pre-commit OK après correction d'un lien `como-instalar-candeeiro-de-teto` → `como-instalar-candeeiro-teto-seguranca` qui n'existait pas sur main).
+  - **NAP cohérent** : `+351 932 321 892` x3 display, `tel:+351****1892` x5, `wa.me/351932321892` x3.
+- **JSON-LD validé** : 5 blocs / 5 OK (json.loads OK) — Article + BreadcrumbList 3 items + FAQPage 8 Q/R + HowTo 5 passos + Service.
+- **Sitemap** : `client/public/sitemap-blog.xml` lastmod `2026-08-04` → `2026-08-21` sur `guia-cores-fios-eletricos.html`.
+- **Témoins grep** (gate R4/R7/R11/R12/R145/R-canon-2026-08-11/R8) :
+  - R4 zéro invention : 0 prix/zone/délai inventé ; 8 références PRICING.md verbatim (70 €/h, 15 € a 65 €, 350 €, Z1 a Z6, Macedo de Cavaleiros, Ficha Eletrotécnica x7, Termo de Responsabilidade x5, majoração +50% x2).
+  - R12 collectif : 10 *« a nossa equipa »*, 2 *« contacte-nos »*, 10 *« norte reparos »* ; 0 *« mon entreprise/sozinho/je suis/falar comigo/contato pessoal/contacte-me/minha empresa »*.
+  - R145 zéro délai chiffré : 0 occurrence R145 motifs.
+  - R-canon-2026-08-11 : 0 *« orçamento gratuito »* / *« deslocação gratuita »* / *« visita gratuita »* (le *« orçamento grátis »* x1 est dans une formulation de DÉNI canonique PRICING.md — « Não publicamos orçamento grátis porque a deslocação é sempre facturada » — pas une promesse).
+  - Doctrine §12 NAP 932 321 892 : inchangé + maintenu.
+  - R8 JSON-LD : 5/5 valides, 0 cassé (réparé sur cette page ; les 9 anciens blocs KO sont tous remplacés).
+  - PT-PT : *« diploma legal »* / *« força legal »* (PT-PT correct, pas BR slang *« legal »*).
+- **Branche** : `feat/enr-rankpush-codigo-cores-fios-portugal-t_da1164ba` (commits `a128b09941` + `fa0eca07fd`), push OK sur origin.
+- **Liens** : PR #362 https://github.com/taffrand-gif/eletricista-norte-reparos/pull/362 · worktree dédié `~/work/Sites/eletricista-norte-reparos/.worktrees/enr-rankpush-codigo-cores-fios-portugal-t_da1164ba/` (ne touche pas la branche courante `feat/enr-rankpush-interruptor-duplo-simples-t_64dd5364`).
+- **🔴 HOTSPOT résolu** : le fichier `guia-cores-fios-eletricos.html` était un **hotspot collision** (double DOCTYPE concaténé issu de fusions successives PR #272 + #274 + #278 + #281) ; décomposé en ce PR dédié — un autre rank-push sur ce fichier ne devrait pas collisionner.
+- **Mesure d'impact** : à re-mesurer **J+7** via `gsc-trajectoire-cron.sh` (recette : pos<4 win, pos>10 rollback possible).
