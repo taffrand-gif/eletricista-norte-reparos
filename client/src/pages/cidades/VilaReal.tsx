@@ -39,7 +39,7 @@ export default function VilaReal() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Eletricista em Vila Real e arredores. Técnicos com experiência e equipamento profissional. Orçamento grátis. Ligue 932 321 892.');
+ metaDescription.setAttribute('content', 'Eletricista em Vila Real e arredores. Técnicos com experiência e equipamento profissional. Orçamento por escrito. Ligue 932 321 892.');
  // SEO meta keywords
  let metaKeywords = document.querySelector('meta[name="keywords"]');
  if (!metaKeywords) {
@@ -310,7 +310,7 @@ export default function VilaReal() {
  </div>
  
  <p className="text-amber-200">
- 🚗 <strong>Deslocação gratuita</strong> em Vila Real • ⏱️ <strong>Urgências 24h</strong> • 💰 <strong>Orçamento sem compromisso</strong>
+ 🚗 <strong>Deslocação com preço tabelado</strong> em Vila Real • ⏱️ <strong>Urgências 24h</strong> • 💰 <strong>Orçamento sem compromisso</strong>
  </p>
  </div>
  </section>

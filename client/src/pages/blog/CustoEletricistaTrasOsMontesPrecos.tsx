@@ -431,7 +431,7 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  </a>
  </div>
  <p className="text-sm text-gray-600 mt-4">
- Orçamentos gratuitos com discriminação completa de custos
+ Orçamentos por escrito com discriminação completa de custos
  </p>
  </div>
  </div>

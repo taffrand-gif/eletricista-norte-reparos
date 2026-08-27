@@ -16,13 +16,13 @@ function FAQ() {
  const faqs = useMemo(() => [
  {
  question: 'Quanto custa um eletricista em Bragança?',
- answer: 'O custo de um eletricista em Bragança varia entre €80-200 dependendo do serviço. Arranjo de avarias elétricas custa €100-180, quadros elétricos €150-300, diagnóstico elétrico €150. Deslocação: €15. Orçamento grátis pelo 932 321 892.'},
+ answer: 'O custo de um eletricista em Bragança varia entre €80-200 dependendo do serviço. Arranjo de avarias elétricas custa €100-180, quadros elétricos €150-300, diagnóstico elétrico €150. Deslocação: €15. Orçamento por escrito pelo 932 321 892.'},
  {
  question: 'O que fazer em caso de curto-circuito perigoso?',
  answer: 'Em caso de curto-circuito: 1) Desligue o disjuntor geral, 2) Não toque em fios expostos ou tomadas, 3) Afaste-se de cheiro a queimado, 4) Ligue para 932 321 892. Nunca tente arranjar sozinho - risco de eletrocussão.'},
  {
  question: 'Quanto custa instalar um quadro elétrico?',
- answer: 'Instalar um quadro elétrico custa entre €150-300 em Bragança. Preços: quadro básico 4 circuitos (€150-200), quadro completo 8+ circuitos (€250-300), substituição disjuntor (€80-150). Inclui mão de obra e materiais. Orçamento grátis: 932 321 892.'},
+ answer: 'Instalar um quadro elétrico custa entre €150-300 em Bragança. Preços: quadro básico 4 circuitos (€150-200), quadro completo 8+ circuitos (€250-300), substituição disjuntor (€80-150). Inclui mão de obra e materiais. Orçamento por escrito: 932 321 892.'},
  {
  question: 'Como detetar problema elétrico perigoso?',
  answer: 'Sinais de perigo elétrico: 1) Disjuntor dispara constantemente, 2) Tomadas quentes ao toque, 3) Cheiro a queimado, 4) Faíscas ou estalidos, 5) Luzes piscando, 6) Fios expostos. Se notar qualquer sinal, desligue disjuntor geral e ligue 932 321 892.'},

@@ -12,7 +12,7 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  const faqs = [
  {
  question: "Quanto custa substituir quadro elétrico completo?",
- answer: "Quadro elétrico completo: 370-650€ para quadro 8-12 circuitos (depende tamanho casa). Inclui: quadro novo, disjuntores, diferencial, instalação, diagnóstico elétrico. T1/T2: 370-450€, T3/T4: 450-650€. Orçamento grátis: 932 321 892"
+ answer: "Quadro elétrico completo: 370-650€ para quadro 8-12 circuitos (depende tamanho casa). Inclui: quadro novo, disjuntores, diferencial, instalação, diagnóstico elétrico. T1/T2: 370-450€, T3/T4: 450-650€. Orçamento por escrito: 932 321 892"
  },
  {
  question: "Quanto custa substituir um disjuntor?",
@@ -113,7 +113,7 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  <>
  <Helmet>
  <title>Quanto Custa Arranjar Quadro Elétrico? Preços 2026 | 932 321 892</title>
- <meta name="description" content="Quanto custa arranjar quadro elétrico? Preços 2026: substituir disjuntor 60-100€, quadro completo 300-800€. garantia incluída. Orçamento grátis: 932 321 892" />
+ <meta name="description" content="Quanto custa arranjar quadro elétrico? Preços 2026: substituir disjuntor 60-100€, quadro completo 300-800€. garantia incluída. Orçamento por escrito: 932 321 892" />
  </Helmet>
  <Header />
  <main className="min-h-screen bg-gradient-to-b from-white to-orange-50">
@@ -260,7 +260,7 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  </h2>
  <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
  {[
- "Deslocação gratuita em Trás-os-Montes",
+ "Deslocação com preço tabelado em Trás-os-Montes",
  "Avaliação e diagnóstico completo",
  "Material certificado (quadro, disjuntores, diferencial)",
  "Instalação profissional",
