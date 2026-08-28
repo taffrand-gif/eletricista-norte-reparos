@@ -119,7 +119,7 @@ const ComoInstalarCandeeiroTeto: React.FC = () => {
  <p className="text-xl text-gray-700 mb-6">
  Instalar um candeeiro de teto pode parecer uma tarefa simples, mas envolve riscos elétricos sérios 
  se não for feito corretamente. Neste guia completo, vamos percorrer cada passo da instalação, 
- desde a parranjo até ao teste final, sempre com foco na segurança.
+ desde a preparo até ao teste final, sempre com foco na segurança.
  </p>
  </div>
  {/* Table of contents */}

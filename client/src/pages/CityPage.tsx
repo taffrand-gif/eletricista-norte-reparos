@@ -100,7 +100,7 @@ export default function CityPage() {
  A <strong>{config.businessName}</strong> é a sua solução de confiança para serviços de {config.name.toLowerCase()} em {city.name}. Com uma equipa de técnicos qualificados e com experiência, garantimos intervenções rápidas e eficazes, Atendimento 24h/7d, todos os dias do ano, incluindo fins de semana e feriados.
  </p>
  <p className="text-lg leading-relaxed text-gray-700">
- Já realizámos mais de {interventionsCount} intervenções bem-sucedidas em {city.name}, conquistando a confiança de centenas de clientes. Seja qual for o problema que esteja a enfrentar, a nosso trabalho está parranjada para o resolver com rapidez e profissionalismo.
+ Já realizámos mais de {interventionsCount} intervenções bem-sucedidas em {city.name}, conquistando a confiança de centenas de clientes. Seja qual for o problema que esteja a enfrentar, a nosso trabalho está preparada para o resolver com rapidez e profissionalismo.
  </p>
  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
  Serviços disponíveis em {city.name}

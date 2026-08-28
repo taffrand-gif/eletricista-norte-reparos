@@ -353,7 +353,7 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <div className="mt-6 p-6 bg-green-50 border border-green-200 rounded-xl">
  <h4 className="font-bold text-green-800 text-lg mb-2">💡 Dica para Poupar:</h4>
  <p className="text-green-700">
- Para renovações, considere fazer a <strong>demolição e parranjo</strong> você mesmo 
+ Para renovações, considere fazer a <strong>demolição e preparo</strong> você mesmo 
  (retirar tomadas antigas, abrir roços simples). Isto pode reduzir a mão-de-obra em 
  20-30%. Mas <strong>NUNCA</strong> mexa na parte elétrica ativa - deixe sempre para o profissional.
  </p>

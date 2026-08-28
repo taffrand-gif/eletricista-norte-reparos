@@ -34,7 +34,7 @@ tags: [problemas elétricos, inverno, soluções, manutenção, segurança]
 **Causas:**
 - Múltiplos aquecedores no mesmo circuito
 - Fiação inadequada para carga elevada
-- Tomadas antigas não parranjadas para consumo moderno
+- Tomadas antigas não preparadas para consumo moderno
 
 **Soluções Profissionais:**
 - Instalação de circuitos dedicados para aquecimento
@@ -145,7 +145,7 @@ tags: [problemas elétricos, inverno, soluções, manutenção, segurança]
 ### Como saber se preciso de um novo quadro elétrico?
 **Resposta:** Sinais: disjuntores que desarmam frequentemente, cheiro a queimado, tomadas sobreaquecidas, instalação com mais de 20 anos.
 
-## Conclusão: Parranjo é a Chave para um Inverno Seguro
+## Conclusão: Preparo é a Chave para um Inverno Seguro
 
 Os problemas elétricos no inverno em Trás-os-Montes não são inevitáveis. Com **manutenção preventiva adequada** e **soluções profissionais**, pode garantir o conforto e segurança da sua família durante os meses mais frios.
 
