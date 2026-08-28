@@ -155,7 +155,7 @@ export default function QuadroEletricoAntigo() {
  { titulo: "Proteção Diferencial", desc: "Corta a corrente em 30ms se houver fuga - salva vidas" },
  { titulo: "Disjuntores Rearmáveis", desc: "Acabaram-se os fusíveis queimados - basta rearmar" },
  { titulo: "Circuitos Separados", desc: "Cozinha, quartos, casa de banho - cada um protegido" },
- { titulo: "Parranjado para o Futuro", desc: "Carregador carro elétrico, ar condicionado, etc." },
+ { titulo: "Preparado para o Futuro", desc: "Carregador carro elétrico, ar condicionado, etc." },
  ].map((item, i) => (
  <div key={i} className="p-4 bg-green-50 rounded-lg">
  <div className="flex items-center gap-2 mb-2">

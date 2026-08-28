@@ -54,7 +54,7 @@ export const SERVICES: Service[] = [
  {
  title: 'Processo Profissional',
  content: `**FASE 1**: Visita técnica gratuita → Levantamento necessidades → Projeto elétrico (se necessário) → Orçamento detalhado.
-**FASE 2**: Compra materiais certificados → Parranjo obra → Proteção superfícies → Abertura roços (se necessário).
+**FASE 2**: Compra materiais certificados → Preparo obra → Proteção superfícies → Abertura roços (se necessário).
 **FASE 3**: Instalação tubagens e caixas → Passagem cabos → Montagem quadro elétrico → Ligação tomadas/interruptores/iluminação → Ligação terra.
 **FASE 4**: Testes elétricos (continuidade, isolamento, diferencial) → diagnóstico elétrico → Garantia → Limpeza completa.
 **Prazo**: 2-10 dias conforme dimensão (casa T3: 3-5 dias).`

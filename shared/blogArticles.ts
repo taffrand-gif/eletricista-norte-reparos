@@ -424,7 +424,7 @@ Implementando todas estas medidas:
 
 Poupar energia não significa sacrificar conforto. Com pequenas mudanças de hábitos e investimentos inteligentes, pode reduzir significativamente a fatura elétrica enquanto contribui para um futuro mais sustentável.
 
-A **Eletricista Profissional** pode ajudá-lo a otimizar a sua instalação elétrica, instalar iluminação LED e parranjar a casa para painéis solares. Contacte-nos para uma avaliação gratuita.
+A **Eletricista Profissional** pode ajudá-lo a otimizar a sua instalação elétrica, instalar iluminação LED e preparar a casa para painéis solares. Contacte-nos para uma avaliação gratuita.
 
 **Ligue agora: 932 321 892**
 `
@@ -863,7 +863,7 @@ Os painéis solares tornaram-se uma opção cada vez mais popular em Portugal. N
  - Licenças municipais (se necessário)
  - Aprovação da condomínio (se aplicável)
 
-### Fase 2: Parranjo (1-2 semanas)
+### Fase 2: Preparo (1-2 semanas)
 
 4. **Encomenda de equipamentos:**
  - Painéis solares

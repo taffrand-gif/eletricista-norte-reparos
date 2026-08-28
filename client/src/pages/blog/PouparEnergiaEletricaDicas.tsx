@@ -255,7 +255,7 @@ const PouparEnergiaEletricaDicas: React.FC = () => {
  <ul className="space-y-2 text-gray-700">
  <li>• Instalar temporizadores e sensores</li>
  <li>• Atualizar quadro elétrico</li>
- <li>• Parranjar para painéis solares</li>
+ <li>• Preparar para painéis solares</li>
  <li>• Instalar tomadas inteligentes</li>
  </ul>
  </div>
