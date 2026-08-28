@@ -155,7 +155,7 @@ export default function Zonas() {
  </div>
  <div className="flex items-center">
  <MapPin className="w-6 h-6 mr-2" />
- <span>100km de raio</span>
+ <span>130 km de raio</span>
  </div>
  <div className="flex items-center">
  <Phone className="w-6 h-6 mr-2" />

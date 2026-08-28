@@ -580,5 +580,5 @@ Se detetar algum destes sinais, **desligue o disjuntor geral** e chame eletricis
 Prevenção é mais barato (100-200€ inspeção) que reparação (300-600€ emergência). Marque sua inspeção: **+351 932 321 892**.
 
 ### Atendem curto-circuitos em todas as cidades de Trás-os-Montes?
-Sim. Servimos **Bragança, Mirandela, Macedo de Cavaleiros, Vinhais, Miranda do Douro, Mogadouro, Torre de Moncorvo, Freixo de Espada à Cinta, Valpaços, Alfândega da Fé, Vila Flor, Carrazeda de Ansiães, Vimioso, Montalegre, Chaves, Vila Real, Lamego** e todas as aldeias num raio de 100km de Macedo de Cavaleiros. Resposta em **30-45 minutos** para chamadas urgentes.
+Sim. Servimos **Bragança, Mirandela, Macedo de Cavaleiros, Vinhais, Miranda do Douro, Mogadouro, Torre de Moncorvo, Freixo de Espada à Cinta, Valpaços, Alfândega da Fé, Vila Flor, Carrazeda de Ansiães, Vimioso, Montalegre, Chaves, Vila Real, Lamego** e todas as aldeias num raio de 130 km de Macedo de Cavaleiros. Resposta em **30-45 minutos** para chamadas urgentes.
 

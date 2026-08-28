@@ -131,7 +131,7 @@ A nossa equipa trabalha em conformidade com as **normas técnicas do setor elét
 
 ## 📞 Contacte a nossa equipa
 
-Precisa de um eletricista profissional em Trás-os-Montes? A nossa equipa intervém em Macedo de Cavaleiros e num raio de 100 km (Bragança, Mirandela, Vila Real, Chaves e arredores).
+Precisa de um eletricista profissional em Trás-os-Montes? A nossa equipa intervém em Macedo de Cavaleiros e num raio de 130 km (Bragança, Mirandela, Vila Real, Chaves e arredores).
 
 - 📞 **Telefone**: [+351 932 321 892](tel:+351932321892)
 - 💬 **WhatsApp**: [wa.me/351932321892](https://wa.me/351932321892)
