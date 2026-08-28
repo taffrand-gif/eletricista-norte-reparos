@@ -223,7 +223,7 @@ A Fichas eletrotécnicas assinadas por técnico profissional é obrigatória por
 | **Vila Real** | 220€ | 300€ | 380€ | +20€ |
 | **Miranda do Douro** | 220€ | 300€ | 380€ | +20€ |
 
-*Deslocação incluída em raio 50km de Bragança*
+*Deslocação com preço tabelado por zona (Z1-Z6), a partir de Macedo de Cavaleiros*
 
 ## Quanto Tempo Demora?
 

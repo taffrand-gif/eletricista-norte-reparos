@@ -67,7 +67,7 @@ question: "têm experiência ?",
  },
  {
  question: "Cobram deslocação?",
- answer: "Não, a deslocação está incluída no preço do serviço dentro do raio de 50km de Bragança."
+ answer: "Não. A deslocação tem preço tabelado por zona (Z1-Z6), calculado a partir de Macedo de Cavaleiros."
  },
  {
  question: "O que fazer em caso de curto-circuito?",

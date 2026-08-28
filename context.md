@@ -41,7 +41,7 @@ Témoin : prédicat **2 → 0** ; `<div>` **−1 → 0** sur chacune ; delta de 
 | `Atendimento 24h` | 290 | 121 |
 | corruption `*Parranj*` | 107 | 43 |
 | `Você` | 82 | 75 |
-| **`raio de 100 km`** | **36** | **34** |
+| **`raio de 130 km`** | **36** | **34** |
 | `deslocação gratuita` | 5 | 4 |
 
 **CNR au même périmètre et au même motif : 4701 / 2037.** Même ordre de grandeur ⇒ **les deux compteurs avaient bien la même origine** : périmètre implicite `client/src` + motif littéral. Le rang 10 est clos.
@@ -59,7 +59,7 @@ Sur CNR, la contradiction opposait la source (130 km) à ses jumeaux générés 
 | **`pages/InstalacaoEletrica.tsx` L48 · `pages/QuadrosEletricos.tsx` L20** | **`geoRadius: 100000`** ⚠️ |
 | `pages/cidades/Chaves.tsx` L91 | `geoRadius: 20000` |
 | `pages/cidades/Mirandela.tsx` L91 | `geoRadius: 15000` |
-| **`client/public/` (36 occ. / 34 fic.)** | **`raio de 100 km`** ⚠️ |
+| **`client/public/` (36 occ. / 34 fic.)** | **`raio de 130 km`** ⚠️ |
 
 **La majorité `130 km` est la forme de référence** (5 fichiers de composants + le JSON-LD principal). ⚠️ Les `geoRadius` par ville (20000/15000) relèvent d'un **autre prédicat** (`GeoCircle` local) — **ne pas les confondre** avec le rayon de couverture.
 
@@ -74,7 +74,7 @@ Aucune mention d'attente de merge dans le `context.md` lu ce run. Aucun gate ré
 |---|---|---|
 | — | `servicos.html` · `galeria.html` (wrapper) | ✅ **traité ce run (#383)** |
 | — | Rang 10 — re-mesure `gratuit` élargie | ✅ **livré ce run** — 3700 / 1678 |
-| **1** | 🔴 **`raio de 100 km` — 36 occ. / 34 fichiers** dans `client/public/`, **+ 2 `geoRadius: 100000`** (`InstalacaoEletrica.tsx` L48, `QuadrosEletricos.tsx` L20) **+ 1 `raio de 50km`** (`FAQSchema.tsx` L70). La production **se contredit elle-même**. | 🟢 **AUCUN GO. Tâche du prochain run.** Forme de référence `130 km` **sourcée et majoritaire** dans `client/src`. ⚠️ **Ne pas toucher** aux `geoRadius` par ville (`Chaves` 20000, `Mirandela` 15000) : autre prédicat. ⚠️ Traiter `client/src` **et** les 34 jumeaux dans le même run — sinon on refait l'erreur de CNR #319. |
+| **1** | 🔴 **`raio de 130 km` — 36 occ. / 34 fichiers** dans `client/public/`, **+ 2 `geoRadius: 100000`** (`InstalacaoEletrica.tsx` L48, `QuadrosEletricos.tsx` L20) **+ 1 `raio de 50km`** (`FAQSchema.tsx` L70). La production **se contredit elle-même**. | 🟢 **AUCUN GO. Tâche du prochain run.** Forme de référence `130 km` **sourcée et majoritaire** dans `client/src`. ⚠️ **Ne pas toucher** aux `geoRadius` par ville (`Chaves` 20000, `Mirandela` 15000) : autre prédicat. ⚠️ Traiter `client/src` **et** les 34 jumeaux dans le même run — sinon on refait l'erreur de CNR #319. |
 | **2** | 🔴 **Garde-fou de pré-commit contre la mutation `@context`** | 🛑 **ARBITRAGE PHILIPPE.** Réparé deux fois, réintroduit deux fois. `LECONS.md` L#003 donne le contrôle ; **il manque le point d'accrochage** (hook pre-commit ou étape Hermes). **Le plus fort levier du repo.** |
 | **3** | 🔴 **3 défauts de CONTENU détruit** : question de FAQ effacée (`garantias-e-seguros`) · phrase de CTA amputée ×2 (`distrito-braganca`, `distrito-vila-real`) | 🛑 **GO ou donneur requis.** Aucun donneur dans le dépôt pour les `distrito-*`. **La structure est réparée, le contenu ne l'est pas.** |
 | **4** | **`faq.html` (4 `</div>` orphelins, famille `faq-item`) · `instalacao-eletrica.html` (+1)** | 🟢 **libres, aucun GO.** **Chercher leur PRÉDICAT NOMMÉ** (« quelle balise précise manque, et qui l'a encore »), pas leur compteur. Méthode prouvée par #374 et #383. |
@@ -93,7 +93,7 @@ Aucune mention d'attente de merge dans le `context.md` lu ce run. Aucun gate ré
 | — | `CalculadorPreco.tsx` · `InnovativeHero.tsx` · `TrustBanner.tsx` · `Blog.tsx` | ⏸ requalifier en lecture |
 
 ## Tâche suivante recommandée
-1. 🟢 **Rang 1 — `raio de 100 km` → `130 km`**, 36 occ. / 34 fichiers + 2 `geoRadius: 100000` + 1 `raio de 50km`. **Aucun GO, forme de référence sourcée et majoritaire.** ⚠️ Traiter `client/src` **et** les jumeaux `client/public/` dans le même run.
+1. 🟢 **Rang 1 — `raio de 130 km` → `130 km`**, 36 occ. / 34 fichiers + 2 `geoRadius: 100000` + 1 `raio de 50km`. **Aucun GO, forme de référence sourcée et majoritaire.** ⚠️ Traiter `client/src` **et** les jumeaux `client/public/` dans le même run.
 2. 🟢 **Rang 4 — `faq.html` / `instalacao-eletrica.html`** : chercher le **prédicat nommé**, pas le compteur. Deux runs consécutifs ont validé la méthode.
 3. 🟢 **Rangs 5 et 6 — les corps de page dupliqués** (`comparacao.html` ×3, `blog-problemas-eletricos-inverno.html` `<h1>` ×26). Méthode CU #271, **md5 par bloc**. Gros gain, zéro GO.
 4. **Poser les 3 arbitrages d'une ligne à Philippe** : rang 2 (garde-fou `@context`), rang 3 (3 textes détruits), rang 9 (GO périmètre `gratuit`).
