@@ -77,6 +77,25 @@
 <link rel="dns-prefetch" href="https://nominatim.openstreetmap.org" />
 
 <!-- Google Analytics 4 -->
+<!-- RGPD Consent Mode v2 — default denied avant tout chargement GA4 (Volet 1 React ENR, mission t_639f45fd) -->
+<!-- Doit être injecté AVANT gtag.js pour que la queue dataLayer contienne déjà le refus par défaut -->
+<script data-rgpd-marker="RGPD-t_639f45fd-2026-08-29-consent-default-denied-enr">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  gtag('js', new Date());
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied',
+    'functionality_storage': 'denied',
+    'personalization_storage': 'denied',
+    'security_storage': 'granted',
+    'wait_for_update': 500
+  });
+</script>
+<!-- /RGPD Consent Mode v2 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-P0521CSGHY"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
