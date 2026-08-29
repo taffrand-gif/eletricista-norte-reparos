@@ -6547,6 +6547,16 @@
       "source": "/eletricista-fi%C3%A3es",
       "destination": "/eletricista-fiaes",
       "statusCode": 301
+    },
+    {
+      "source": "/blog/certificacao-eletrica-certiel-guia",
+      "destination": "/blog/certificacao-dgeg-guia-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/como-ligar-comutador-escada",
+      "destination": "/blog/como-ligar-interruptor-duplo",
+      "permanent": true
     }
   ],
   "ignoreCommand": "if bash ./vercel-ignore.sh; then exit 0; else exit 1; fi",
