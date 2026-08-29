@@ -76,7 +76,7 @@ async function startServer() {
  },
  "/areas-atuacao": {
  title: "Áreas de Atuação | Norte Reparos - Eletricista Trás-os-Montes",
- description: "Zonas de intervenção do eletricista Norte Reparos. Raio 100km desde Macedo de Cavaleiros, cobrindo Bragança, Vila Real, Viseu, Guarda.",
+ description: "Zonas de intervenção do eletricista Norte Reparos. Raio 130km desde Macedo de Cavaleiros, cobrindo Bragança, Vila Real, Viseu, Guarda.",
  canonical: "https://eletricista-norte-reparos.pt/areas-atuacao"
  },
  "/transparencia-precos": {
