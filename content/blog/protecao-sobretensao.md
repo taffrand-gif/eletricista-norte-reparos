@@ -13,7 +13,7 @@ priority: "HIGH DEMAND"
 
 **Já perdeu aparelhos eletrónicos após uma trovoada ou falha na rede elétrica?** Picos de tensão (sobretensões) são **invisíveis mas devastadores**, podendo queimar TV, computador, eletrodomésticos, e até causar incêndios. Em Trás-os-Montes, onde **trovoadas são frequentes no verão** e a rede elétrica pode ser instável em zonas rurais, um **protetor de sobretensão** (DPS) é investimento essencial.
 
-Neste guia completo, vamos explicar **o que é sobretensão**, tipos de protetores (Tipo 1, 2, 3), como funcionam, custos, instalação, e por que são obrigatórios em novas instalações. Com mais de 15 anos de experiência em instalações elétricas na região de Bragança, protegemos centenas de casas contra sobretensões.
+Neste guia completo, vamos explicar **o que é sobretensão**, tipos de protetores (Tipo 1, 2, 3), como funcionam, custos, instalação, e por que são obrigatórios em novas instalações. Com 20 anos de experiência em instalações elétricas na região de Bragança, protegemos centenas de casas contra sobretensões.
 
 **📞 Quer instalar protetor de sobretensão? Ligue já: [932 321 892](tel:+351932321892)** 
 **💬 WhatsApp: [Clique aqui](https://wa.me/351932321892?text=Olá%2C%20quero%20instalar%20protetor%20de%20sobretensão.%20Podem%20ajudar%3F)**
