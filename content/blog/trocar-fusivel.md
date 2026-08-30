@@ -446,7 +446,7 @@ Trocar um fusível é uma tarefa **simples mas que requer atenção absoluta à 
 **💬 WhatsApp: [Clique aqui](https://wa.me/351932321892?text=Olá%2C%20o%20fusível%20queima%20constantemente.%20Preciso%20de%20diagnóstico.)**
 
 **✅ Garantias :**
-- Eletricistas com experiência com 15+ anos de experiência
+- Eletricistas com experiência com 20 anos de experiência
 - Diagnóstico preciso com equipamento profissional
 - Soluções definitivas (não temporárias)
 - Orçamento transparente antes de iniciar

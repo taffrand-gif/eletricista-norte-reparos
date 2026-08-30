@@ -211,7 +211,7 @@ ZAPIER_WEBHOOK_URL=https://hooks.zapier.com/hooks/catch/xxxxx/yyyyy/
 5. Mappez les champs:
  - Nom → Name
  - Email → Email
- - Téléphone → Phone
+ - Phone → Phone
  - Ville → City
  - Service → Service Type
  - etc.

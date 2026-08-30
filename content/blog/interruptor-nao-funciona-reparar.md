@@ -376,4 +376,4 @@ O problema é:
 
 ---
 
-*Artigo escrito por eletricistas com experiência com 15+ anos de experiência em Trás-os-Montes. Atualizado em Março 2026.*
+*Artigo escrito por eletricistas com experiência com 20 anos de experiência em Trás-os-Montes. Atualizado em Março 2026.*

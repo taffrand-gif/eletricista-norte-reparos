@@ -467,7 +467,7 @@ Instalar uma ventoinha de teto é um **investimento inteligente** que proporcion
 **💬 WhatsApp: [Clique aqui](https://wa.me/351932321892?text=Olá%2C%20quero%20instalar%20uma%20ventoinha%20de%20teto.%20Podem%20ajudar%3F)**
 
 **✅ Garantias :**
-- Eletricistas com experiência com 15+ anos de experiência
+- Eletricistas com experiência com 20 anos de experiência
 - Verificação estrutural do teto
 - Instalação conforme normas de segurança
 - Teste completo de funcionamento
