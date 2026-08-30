@@ -1,0 +1,19 @@
+node_modules
+.git
+.DS_Store
+dist
+.vercel/output
+
+# Backups parasites (cf. PR og-image-bak-enr 2026-08-30)
+*.bak
+*.bak-*
+*.orig
+*.rej
+*.backup-*
+*.pre-fix-*
+
+# IndexNow key (servie par Vercel, jamais à commiter)
+public/e1ede796962ebc575aaaa6dc.txt
+
+# Worktrees locaux (jamais déployés)
+.worktrees/
