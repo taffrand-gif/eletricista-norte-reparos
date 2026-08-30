@@ -215,3 +215,22 @@ DRAFT (reversible).
 7. **Un chantier au 3ᵉ passage est un signal d'escalade, pas une 4ᵉ occasion de revalider** (cf. leçon #504 du corpus). Le livrable utile de ce run n'est pas la re-vérification du contenu (déjà acquise) : c'est la correction de la cause du bouclage (l'orphelin poussé) et la règle de déduplication ci-dessus.
 
 **Bilan** : verdict **NO-OP APPLICABLE sur le contenu** (les 3 surfaces sont à `130 km`, scan détagué complet = 0 nouvelle surface, les 5 `100km` résiduels du repo sont tous des bornes de zone ou des distances de ville, classés un par un) **+ 1 correction de plomberie git réelle** (commit orphelin `609047188f` isolé sur `docs/seo-plan-noop-t_005bb272-2026-08-30`, `main` local réaligné `0 0` sur `origin/main`). 0 fichier de production modifié, 0 merge, PR draft en attente de GO Filipe (R7). STOP respecté — aucune action irréversible.
+
+## L#006 — 2026-08-30 — Convergence contenu vs divergence graphe : 5 commits locaux contenus-équivalents à 1 squash-merge (t_b17f4d7a)
+
+**Contexte** : pendant le run t_b17f4d7a (7ᵉ passage NO-OP sur le chantier « ligne 201 » = ligne 196 décalée par 6 consignations successives), `git fetch origin main` révèle que **PR #403 a été squash-merge à 02:00:17Z** et que les 5 commits locaux de consignation (`609047188f`+`d4820b4975`+`c85c4de816`+`9a375ba73c`+`329d8e2cc9`) sont **contenu-équivalents** au commit squash `d5b6f99429` : `git diff origin/main..HEAD` = vide (octet-à-octet). MAIS la branche locale `docs/seo-plan-noop-t_005bb272-2026-08-30` pointe sur `329d8e2cc9` ≠ `origin/main = d5b6f99429` → **graphe divergent** alors que le contenu est identique.
+
+**Cause racine** : la branche locale accumule des commits en parallèle du squash-merge. Chaque run NO-OP suivant fait `git commit` + `git push` sur la même branche sans avoir conscience que la PR a été mergée entre-temps. Le push crée alors une branche divergente où l'historique se dédouble : un côté = squash unique sur main, autre côté = N commits séparés sur la branche.
+
+**Leçon** : après qu'une PR de branche X a été mergée, **toujours** réconcilier la branche locale avec origin/main AVANT de commencer un nouveau run sur X. Commande non-destructive recommandée (R6 zéro force-push, R-WT aucune copie de travail partagée touchée) :
+
+```
+git fetch origin main
+git update-ref refs/heads/<br> origin/main   # déplace le pointeur local sans toucher au working tree
+```
+
+Variante sur branche non-checkout : `git branch -f <br> origin/main`. Sur la branche checkout, c'est l'inverse — utiliser `git pull --ff-only` ou reset explicite. Ne JAMAIS faire de `git reset --hard origin/main` sans validation (R6 + Working-Tree safety).
+
+**Corollaire dédup L#005** : avec 7 passages sur le même chantier résolu, le pool-keeper DOIT implémenter la dédup canonique `(date + intitulé + PR mergée:mergedAt + mergeCommit:oid)` **avant le 8ᵉ dispatch**, sinon la boucle continuera à produire des runs sans signal nouveau tout en créant des branches divergentes orphelines (coût marginal ≠ 0).
+
+**Bilan** : 1 reset de branche (R6 OK), 0 force-push, 0 merge, 0 fichier de production modifié. PR draft #404 absorbera le commit de consignation t_b17f4d7a.
