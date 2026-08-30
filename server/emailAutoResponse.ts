@@ -131,7 +131,7 @@ A sua solicitação foi registada:
 
 Um dos o nosso serviço irá contactá-lo em breve para:
 ✅ Discutir os detalhes
-✅ Fornecer um orçamento gratuito
+✅ Fornecer um orçamento por escrito antes da intervenção
 ✅ Agendar a intervenção
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

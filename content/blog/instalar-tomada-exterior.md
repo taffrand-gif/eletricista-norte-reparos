@@ -235,7 +235,7 @@ O código IP indica a proteção contra sólidos e líquidos:
 
 **Tempo de instalação:** 1-2 horas
 
-> 💡 **Quer instalação profissional?** Eletricista com experiência em Bragança: **[932 321 892](tel:+351932321892)** — Orçamento grátis, certificado incluído.
+> 💡 **Quer instalação profissional?** Eletricista com experiência em Bragança: **[932 321 892](tel:+351932321892)** — estimativa sem custo, certificado incluído.
 
 ## ⚠️ Erros Comuns a Evitar
 
@@ -358,7 +358,7 @@ A instalação de tomada no exterior requer **cuidados especiais de segurança**
 ✅ Técnico em sua casa em 30-45 minutos 
 ✅ Cobrimos Bragança, Mirandela, Trás-os-Montes e toda a região
 
-**Não arrisque a sua segurança!** Trabalhos elétricos mal feitos podem causar incêndios ou eletrocussão. Contacte-nos já para orçamento grátis.
+**Não arrisque a sua segurança!** Trabalhos elétricos mal feitos podem causar incêndios ou eletrocussão. Contacte-nos já para estimativa sem custo.
 
 ---
 

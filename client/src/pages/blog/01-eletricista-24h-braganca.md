@@ -1,6 +1,6 @@
 ---
 title: "Electricista 24h em Bragança - Preços + Contacto Urgente"
-description: "Precisa de electricista urgente em Bragança? Serviço 24h com resposta em 1h. Orçamento grátis e preços transparentes. Ligue já!"
+description: "Precisa de electricista urgente em Bragança? Serviço 24h com resposta em 1h. estimativa sem custo e preços transparentes. Ligue já!"
 slug: electricista-24h-braganca
 date: 2026-02-18
 author: 
@@ -51,7 +51,7 @@ Com peças de reposição no veículo e ferramentas profissionais, resolvemos a 
 | Troca de disjuntor | €40-€80 | €60 | 45-60 min |
 | Restauro de corte total | €80-€150 | €120 | 1-3 horas |
 
-*Nota: Preços podem variar conforme complexidade e materiais necessários. Orçamento sempre gratuito.*
+*Nota: Preços podem variar conforme complexidade e materiais necessários. orçamento por escrito antes da intervenção.*
 
 ## Zonas de Intervenção em Bragança
 
@@ -102,7 +102,7 @@ Quando a electricidade falha, cada minuto conta. Com o nosso serviço **electric
 - **WhatsApp:** [Enviar mensagem](https://wa.me/351932321892)
 - **Horário:** Atendimento 24h/7d, 7 dias por semana
 
-**Serviço garantido em 1h na zona urbana de Bragança. Orçamento sempre grátis e sem compromisso.**
+**Serviço garantido em 1h na zona urbana de Bragança. orçamento por escrito antes da intervenção e sem compromisso.**
 
 ---
 

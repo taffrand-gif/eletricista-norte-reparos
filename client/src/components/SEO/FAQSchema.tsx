@@ -63,7 +63,7 @@ question: "têm experiência ?",
  },
  {
  question: "Fazem sem compromisso?",
- answer: "Sim, o orçamento é sempre gratuito e sem compromisso. Só paga se aprovar o serviço."
+ answer: "Sim, o orçamento por escrito antes da intervenção e sem compromisso. Só paga se aprovar o serviço."
  },
  {
  question: "Cobram deslocação?",

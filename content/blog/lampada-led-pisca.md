@@ -266,7 +266,7 @@ Use esta tabela para identificar a causa:
 | Arranjo quadro elétrico | €80-300 |
 | Urgência 24h | +€50-80 |
 
-> 💡 **Precisa de eletricista?** Certificado em Bragança: **[932 321 892](tel:+351932321892)** — Diagnóstico rápido, orçamento grátis.
+> 💡 **Precisa de eletricista?** Certificado em Bragança: **[932 321 892](tel:+351932321892)** — Diagnóstico rápido, estimativa sem custo.
 
 ## 🛡️ Prevenção: Como Evitar Lâmpadas a Piscar
 
@@ -349,7 +349,7 @@ Na maioria dos casos, lâmpadas LED a piscar têm **solução simples e barata**
 ✅ Técnico em sua casa em 30-45 minutos 
 ✅ Cobrimos Bragança, Mirandela, Trás-os-Montes e toda a região
 
-**Não viva com lâmpadas a piscar!** É irritante e pode indicar problema elétrico grave. Contacte-nos já para orçamento grátis.
+**Não viva com lâmpadas a piscar!** É irritante e pode indicar problema elétrico grave. Contacte-nos já para estimativa sem custo.
 
 ---
 

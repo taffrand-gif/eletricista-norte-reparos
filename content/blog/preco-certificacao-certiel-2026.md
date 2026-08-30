@@ -424,7 +424,7 @@ Se sabe que tem problemas (ex: falta diferencial), corrija antes da inspeção. 
 ✅ Eletricista Fichas eletrotécnicas assinadas por técnico profissional
 ✅ Preços transparentes sem surpresas
 ✅ Certificado em 3-5 dias úteis
-✅ Orçamento gratuito por telefone
+✅ estimativa sem custo
 ✅ Correções incluídas no serviço
 
 **WhatsApp:** [Clique para agendar](https://wa.me/351932321892?text=Olá, preciso de Fichas eletrotécnicas assinadas por técnico profissional)

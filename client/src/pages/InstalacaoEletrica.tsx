@@ -278,7 +278,7 @@ export default function InstalacaoEletrica() {
  <div className="mt-8 p-4 bg-amber-50 rounded-lg">
  <p className="text-amber-800 font-semibold">
  💡 <strong>Nota:</strong> Os preços variam conforme dimensões, materiais escolhidos e complexidade. 
- Orçamento personalizado gratuito no local.
+ orçamento por escrito antes da intervenção no local.
  </p>
  </div>
  

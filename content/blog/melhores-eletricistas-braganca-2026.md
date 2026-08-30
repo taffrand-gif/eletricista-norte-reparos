@@ -416,7 +416,7 @@ Explicamos tudo em português simples
 
 **Ligue agora: 932 321 892**
 
-✅ Orçamento gratuito sem compromisso
+✅ estimativa sem custo
 ✅ Fichas eletrotécnicas assinadas por técnico profissional verificável
 ✅ 15+ anos experiência
 ✅ Garantia 5 anos

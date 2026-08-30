@@ -348,7 +348,7 @@ Teste: feche todas as torneiras e veja se o contador continua a rodar. Se sim, h
 
 **Norte Reparos (canalizador-norte-reparos.pt):**
 - 12+ anos de experiência em Trás-os-Montes
-- Orçamento grátis por telefone
+- estimativa sem custo por telefone
 - Preços tabelados por zona
 - Equipamento profissional (Ridgid, FLIR, endoscópios)
 - Fatura + relatório sempre
@@ -416,4 +416,4 @@ A **Norte Reparos** é especializada em canalização e eletricidade em Trás-os
 
 **Preços tabelados por zona - sem surpresas.**
 
-[Pedir orçamento grátis por telefone](tel:+351928484451)
+[Pedir estimativa sem custo por telefone](tel:+351928484451)
