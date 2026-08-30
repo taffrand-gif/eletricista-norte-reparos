@@ -130,3 +130,8 @@ public/e1ede796962ebc575aaaa6dc.txt
 
 .worktrees/
 _indexing/
+
+# 2026-08-30 — exclusions supplémentaires (cf. PR og-image-bak-enr)
+*.bak-*
+*.orig
+*.rej
