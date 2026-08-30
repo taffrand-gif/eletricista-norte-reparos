@@ -80,7 +80,7 @@ Investir em serviços profissionais de electricista empresas não é apenas uma 
 - **WhatsApp:** [Enviar mensagem](https://wa.me/351932321892)
 - **Email:** descreva o problema para análise preliminar
 
-**Orçamento gratuito no local. Resposta em 1h para emergências. Garantia de 12-36 meses conforme serviço.**
+**orçamento por escrito antes da intervenção no local. Resposta em 1h para emergências. Garantia de 12-36 meses conforme serviço.**
 
 ---
 

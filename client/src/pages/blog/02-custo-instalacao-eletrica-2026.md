@@ -1,6 +1,6 @@
 ---
 title: "Custo Instalação Elétrica Completa 2026 - Tabela Preços Atualizada"
-description: "Quanto custa uma instalação elétrica completa em 2026? Tabela de preços detalhada por m², divisões e materiais. Orçamento grátis."
+description: "Quanto custa uma instalação elétrica completa em 2026? Tabela de preços detalhada por m², divisões e materiais. estimativa sem custo."
 slug: custo-instalacao-eletrica-completa-2026
 date: 2026-02-18
 author: 

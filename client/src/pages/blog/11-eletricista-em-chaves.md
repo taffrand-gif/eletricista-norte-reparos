@@ -1,6 +1,6 @@
 ---
 title: "Electricista em Chaves - Zona de Intervenção e Serviços"
-description: "Electricista profissional em Chaves e arredores. Serviços 24h, instalações e manutenção. Orçamento grátis e rápido."
+description: "Electricista profissional em Chaves e arredores. Serviços 24h, instalações e manutenção. estimativa sem custo e rápido."
 slug: electricista-em-chaves
 date: 2026-03-01
 author: 
@@ -65,7 +65,7 @@ Investir em serviços profissionais de electricista não é apenas uma questão 
 - **WhatsApp:** [Enviar mensagem](https://wa.me/351932321892)
 - **Email:** descreva o problema para análise preliminar
 
-**Orçamento gratuito no local. Resposta em 1h para emergências. Garantia de 12-36 meses conforme serviço.**
+**orçamento por escrito antes da intervenção no local. Resposta em 1h para emergências. Garantia de 12-36 meses conforme serviço.**
 
 ---
 

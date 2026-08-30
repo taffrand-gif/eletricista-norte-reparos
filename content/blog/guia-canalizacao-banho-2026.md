@@ -317,6 +317,6 @@ Base de duche, sanita.
 - 📍 **Sede:** Trás-os-Montes
 
 **Preços tabelados por zona — sem surpresas.**
-**Orçamento grátis por telefone — sem compromisso.**
+**estimativa sem custo por telefone — sem compromisso.**
 
 [Pedir orçamento agora](tel:+351928484451)

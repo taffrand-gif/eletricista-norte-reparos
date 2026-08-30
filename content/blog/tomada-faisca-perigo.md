@@ -207,7 +207,7 @@ Uma tomada a fazer faíscas **não é um problema pequeno** que pode esperar. É
 **** - eletricista com experiência em Trás-os-Montes 
 ✅ Emergências 24h/7 dias 
 ✅ Fichas eletrotécnicas assinadas por técnico profissional 
-✅ Orçamento grátis sem compromisso 
+✅ estimativa sem custo sem compromisso 
 ✅ Garantia de 2 anos 
 ✅ Técnico em menos de 2h (urgências)
 

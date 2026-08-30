@@ -402,7 +402,7 @@ export default function IluminacaoExteriorJardim() {
  </tbody>
  </table>
  <p className="text-xs text-gray-600 mt-4">
- * Valores incluem material e instalação. Orçamento personalizado gratuito.
+ * Valores incluem material e instalação. orçamento por escrito antes da intervenção.
  </p>
  </div>
  </div>

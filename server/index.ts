@@ -61,7 +61,7 @@ async function startServer() {
  const ROUTE_TITLES: Record<string, { title: string; description: string; canonical: string }> = {
  "/contactos": {
  title: "Contactos | Norte Reparos - Eletricista Profissional",
- description: "Entre em contacto connosco. Eletricista profissional Atendimento 24h/7d/dia. Ligue 932 321 892. Orçamento gratuito.",
+ description: "Entre em contacto connosco. Eletricista profissional Atendimento 24h/7d/dia. Ligue 932 321 892. orçamento por escrito antes da intervenção.",
  canonical: "https://eletricista-norte-reparos.pt/contactos"
  },
  "/equipa": {

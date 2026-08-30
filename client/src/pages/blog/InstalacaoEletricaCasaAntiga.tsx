@@ -415,7 +415,7 @@ export default function InstalacaoEletricaCasaAntiga() {
  </tbody>
  </table>
  <p className="text-xs text-gray-600 mt-4">
- * Valores incluem material, mão-de-obra e certificação. Orçamento personalizado gratuito.
+ * Valores incluem material, mão-de-obra e certificação. orçamento por escrito antes da intervenção.
  </p>
  </div>
  </div>
