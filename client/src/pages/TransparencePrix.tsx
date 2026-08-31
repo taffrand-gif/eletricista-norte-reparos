@@ -11,7 +11,7 @@ import {
  AccordionTrigger} from '@/components/ui/accordion';
 export default function TransparencePrix() {
  const { config } = useSite();
- // Prix détaillés par service
+ // Preços detalhados por serviço
  const forfaits = [
  {
  title: "Pequena Arranjo",
@@ -110,11 +110,11 @@ export default function TransparencePrix() {
  },
  {
  question: "O que acontece se não ficar satisfeito?",
- answer: "% satisfeito. Se não ficar completamente satisfeito com o trabalho, voltamos gratuitamente para corrigir. Se mesmo assim não resolver, devolvemos o valor pago. Sem perguntas, sem letra pequena. Em 15 anos, isto aconteceu 2 vezes."
+ answer: "% satisfeito. Se não ficar completamente satisfeito com o trabalho, voltamos gratuitamente para corrigir. Se mesmo assim não resolver, devolvemos o valor pago. Sem perguntas, sem letra pequena. Em 20 anos, isto aconteceu 2 vezes."
  },
  {
  question: "Porque devo escolher-vos em vez de um eletricista mais barato?",
- answer: "Porque valorizamos a sua segurança e paz de espírito. Um eletricista barato pode: usar materiais de baixa qualidade que falham rapidamente, não ter seguro (se causar danos, o problema é seu), não ter qualificação adequada para o trabalho (ilegal e perigoso), desaparecer quando há problemas. Nós somos uma empresa com 12 anos de experiência, com satisfeitos, seguro de responsabilidade civil, e garantia real. O barato sai caro."
+ answer: "Porque valorizamos a sua segurança e paz de espírito. Um eletricista barato pode: usar materiais de baixa qualidade que falham rapidamente, não ter seguro (se causar danos, o problema é seu), não ter qualificação adequada para o trabalho (ilegal e perigoso), desaparecer quando há problemas. Nós somos uma empresa com 20 anos de experiência, com satisfeitos, seguro de responsabilidade civil, e garantia real. O barato sai caro."
  }
  ];
  return (
@@ -356,7 +356,7 @@ export default function TransparencePrix() {
  </div>
  </div>
  <p className="text-sm text-white/70 italic">
- Em 15 anos de atividade, apenas 2 clientes pediram reembolso.
+ Em 20 anos de atividade, apenas 2 clientes pediram reembolso.
  A nossa taxa de satisfação é de 99.6%.
  </p>
  </div>

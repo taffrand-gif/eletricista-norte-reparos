@@ -1,13 +1,13 @@
 // scripts/prerender-guias-enr.mjs
-// Génère les HTML statiques /blog/guia-*.html à partir des composants React (.tsx).
-// Approche pragmatique : on copie-colle le contenu Helmet + corps verbatim depuis le .tsx
-// dans un template HTML minimal compatible cleanUrls:true.
+// Gera os HTML estáticos /blog/guia-*.html a partir dos componentes React (.tsx).
+// Abordagem pragmática: copia-se o conteúdo Helmet + corpo verbatim desde o .tsx
+// para um template HTML minimal compatível com cleanUrls:true.
 //
-// Anti-régression R11/R12/R145/§12 : zéro invention. Le script extrait le contenu EXISTANT
-// des .tsx (Helmet + body verbatim) et le wrap dans une coquille HTML SEO-friendly.
-// Aucun ajout de prix/délai/téléphone/claim. Pas de modification des .tsx.
+// Anti-regressão R11/R12/R145/§12: zero invenção. O script extrai o conteúdo EXISTENTE
+// dos .tsx (Helmet + body verbatim) e envolve-o numa casca HTML SEO-friendly.
+// Sem adição de preço/prazo/telefone/alegação. Sem modificação dos .tsx.
 //
-// ENR only. Génère les deux guides ENR depuis les composants TSX.
+// Apenas ENR. Gera os dois guias ENR desde os componentes TSX.
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -31,13 +31,13 @@ const SLUGS = [
 ];
 
 /**
- * Convertit le JSX hardcodé du composant en HTML pré-rendu.
- * Stratégie : remplacer les `className=` par `class=`, convertir la structure JSX simple.
- * Comme les composants Guia n'ont AUCUN hook React (vérifié), le rendu = le DOM statique.
+ * Converte o JSX hardcoded do componente em HTML pré-renderizado.
+ * Estratégia: substituir `className=` por `class=`, converter a estrutura JSX simples.
+ * Como os componentes Guia NÃO têm hook React (verificado), a renderização = o DOM estático.
  *
- * Approche encore plus simple : le composant Guia génère du HTML purement statique
- * (pas de useState/useEffect, juste du JSX avec className). On extrait la section <article>
- * directement, on convertit className → class, et on wrap.
+ * Abordagem ainda mais simples: o componente Guia gera HTML puramente estático
+ * (sem useState/useEffect, apenas JSX com className). Extraímos a secção <article>
+ * diretamente, convertemos className → class, e envolvemos.
  */
 function extractArticleJsx(tsxContent) {
   // Find the <article ...>...</article> block
@@ -52,7 +52,7 @@ function extractArticleJsx(tsxContent) {
 
 /**
  * Convertit className → class (JSX → HTML), converts simple self-closing tags.
- * Assez naïf mais suffisant pour ces composants statiques.
+ * Bastante ingénuo mas suficiente para estes componentes estáticos.
  */
 function jsxToHtml(jsx) {
   let html = jsx;
@@ -63,7 +63,7 @@ function jsxToHtml(jsx) {
   // normalization, NOT content invention: both paths resolve to the same HTML.
   html = html.replace(/href="\/blog"/g, 'href="/blog/"');
   // <br>, <hr>, <img> auto-closing (but our Guias don't use them)
-  // Convert HTML entities that are JSX-safe in source
+  // Converter entidades HTML que são JSX-safe no código fonte
   return html;
 }
 
@@ -116,8 +116,8 @@ function extractCanonical(helmetBlock) {
 function buildHtmlPage({ slug, canonical, title, description, jsonLds, bodyJsx }) {
   const ldScripts = jsonLds.map(ld => `    <script type="application/ld+json">\n${ld}\n    </script>`).join('\n');
 
-  // Note: on conserve le JSX (et ses {...} ternaires éventuels résolus en texte littéral) :
-  // nos Guia n'ont AUCUN ternaire dans le body, donc c'est safe de le stringify tel quel.
+  // Nota: conservamos o JSX (e os seus {...} ternários eventuais resolvidos em texto literal):
+  // os Guia NÃO têm ternários no body, portanto é seguro fazer stringify tal qual.
   // Convert className -> class
   const bodyHtml = jsxToHtml(bodyJsx);
 
@@ -142,8 +142,8 @@ function buildHtmlPage({ slug, canonical, title, description, jsonLds, bodyJsx }
   <meta name="theme-color" content="#dc2626" />
 ${ldScripts}
   <style>
-    /* Coquille minimale pour rendre le HTML visuellement correct quand Googlebot le fetch
-       sans hydratation. Tailwind/CSS du bundle n'est PAS dans cette page statique. */
+    /* Casca mínima para tornar o HTML visualmente correto quando o Googlebot o fetch
+       sem hidratação. Tailwind/CSS do bundle NÃO está nesta página estática. */
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; margin: 0; color: #1f2937; background: #ffffff; line-height: 1.6; }
     a { color: #dc2626; text-decoration: none; }
     a:hover { text-decoration: underline; }

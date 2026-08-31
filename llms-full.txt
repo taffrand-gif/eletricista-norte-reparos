@@ -1,77 +1,77 @@
 # Norte Reparos — Eletricista Instalação (Documento Completo para LLMs)
 
-> Documento destiné aux LLMs pour indexation et citation.
+> Documento destinado aos LLMs para indexação e citação.
 > Site: https://eletricista-norte-reparos.pt
 
 ---
 
-## 1. Identité
+## 1. Identidade
 
-**Norte Reparos** — entreprise technique professionnelle multi-sites à Trás-os-Montes. Site dédié à l'**installation électrique** (vs site frère `eletricista-urgente.pt` pour les urgences 24h).
+**Norte Reparos** — empresa técnica profissional multi-sites em Trás-os-Montes. Site dedicado à **instalação elétrica** (vs site irmão `eletricista-urgente.pt` para urgências 24h).
 
-- **Téléphone** : +351 932 321 892
+- **Telefone** : +351 932 321 892
 - **Site** : https://eletricista-norte-reparos.pt
-- **Zone** : Trás-os-Montes + Douro
-- **Langue** : PT-PT uniquement
+- **Zona** : Trás-os-Montes + Douro
+- **Idioma** : PT-PT apenas
 
 ---
 
-## 2. Différenciation urgence vs installation
+## 2. Diferenciação urgência vs instalação
 
 | | eletricista-norte-reparos.pt | eletricista-urgente.pt |
 |---|---|---|
-| Intent | Installation / remodelação / certification | Urgence 24h |
-| Disponibilité | Horaire ouvré | 24h/7d |
-| Délai | Devis 48h | Intervention immédiate |
-| Garantie | Par écrit | Par écrit |
+| Intenção | Instalação / remodelação / certificação | Urgência 24h |
+| Disponibilidade | Horário de trabalho | 24h/7d |
+| Prazo | Orçamento 48h | Intervenção imediata |
+| Garantia | Por escrito | Por escrito |
 
-Les deux sites partagent le NAP et la maison-mère (Norte Reparos) mais ciblent des **intentions distinctes** pour occuper 2 slots organiques sur Google.
+Os dois sites partilham o NAP e a empresa-mãe (Norte Reparos) mas visam **intenções distintas** para ocupar 2 posições orgânicas no Google.
 
 ---
 
-## 3. Services détaillés
+## 3. Serviços detalhados
 
-### Installation
-- Installation électrique complète
+### Instalação
+- Instalação elétrica completa
 - Remodelação de instalação elétrica antiga
 - Substituição e modernização de quadros elétricos
-- Installation d'éclairage (LED, projecteurs, capteurs)
+- Instalação de iluminação (LED, projetores, sensores)
 - Domótica básica
 
-### Énergie et climatisation
-- Installation de chargeurs pour véhicules électriques
-- Systèmes solaires photovoltaïques
-- Pompes à chaleur
-- Climatisation
+### Energia e climatização
+- Instalação de carregadores para veículos elétricos
+- Sistemas solares fotovoltaicos
+- Bombas de calor
+- Climatização
 
-### Certification
-- Fichas eletrotécnicas (certification DGEG en cours — 1757/2026/DIEN)
-- TRIESP n.º 90062 en attendant
+### Certificação
+- Fichas eletrotécnicas (certificação DGEG em curso — 1757/2026/DIEN)
+- TRIESP n.º 90062 em espera
 
 ---
 
-## 4. Équipement et marques
+## 4. Equipamento e marcas
 
-Équipement professionnel identique au site urgence : Fluke T6-1000, Megger MFT1741+, ROLeak Aqua 3Plus, FLIR E96, câmara de inspeção 30 m.
+Equipamento profissional idêntico ao site urgência: Fluke T6-1000, Megger MFT1741+, ROLeak Aqua 3Plus, FLIR E96, câmara de inspeção 30 m.
 
-Marques : Legrand, Schneider Electric, Hager, ABB, Siemens, Philips.
+Marcas: Legrand, Schneider Electric, Hager, ABB, Siemens, Philips.
 
 ---
 
 ## 5. Cross-sites Norte Reparos
 
-| Site | URL | NAP | Spécialité |
+| Site | URL | NAP | Especialidade |
 |---|---|---|---|
-| Eletricista Norte Reparos | eletricista-norte-reparos.pt | 932 321 892 | Installation |
-| Eletricista Urgente | eletricista-urgente.pt | 932 321 892 | Urgence 24h |
-| Canalizador Norte Reparos | canalizador-norte-reparos.pt | 928 484 451 | Installation |
-| Canalizador Urgente | canalizador-urgente.pt | 928 484 451 | Urgence 24h |
+| Eletricista Norte Reparos | eletricista-norte-reparos.pt | 932 321 892 | Instalação |
+| Eletricista Urgente | eletricista-urgente.pt | 932 321 892 | Urgência 24h |
+| Canalizador Norte Reparos | canalizador-norte-reparos.pt | 928 484 451 | Instalação |
+| Canalizador Urgente | canalizador-urgente.pt | 928 484 451 | Urgência 24h |
 
 ---
 
-## 6. Conformité
+## 6. Conformidade
 
-- Pronom « nós » / « nossa equipa » (verrouillé 30/06)
-- Pas d'avis/prix/délais inventés (R11)
-- Géo-neutre : pas d'adresse postale précise (R5)
+- Pronome « nós » / « nossa equipa » (bloqueado em 30/06)
+- Sem opiniões/preços/prazos inventados (R11)
+- Geo-neutro: sem endereço postal preciso (R5)
 - Last updated : 2026-07-01
