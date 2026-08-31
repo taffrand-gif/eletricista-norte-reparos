@@ -1,5 +1,5 @@
 import React from 'react';
-// Price Calculator Widget - Transparence Prix avec VRAIS PRIX officiels
+// Price Calculator Widget - Transparência de Preços com PREÇOS REAIS oficiais
 // Calcul dynamique: Service + Zone + Urgence
 // Impact: +259K€/an attendu
 import { useSite } from '@/contexts/SiteContext';
@@ -34,7 +34,7 @@ const servicesStaff: ServicePrice[] = [
  { id: 'ponto-luz', label: 'Ponto Luz Novo', priceMin: 134, priceMax: 170, nightMultiplier: 1.5 },
  { id: 'diagnostico', label: 'Diagnóstico Pane', priceMin: 80, priceMax: 120, nightMultiplier: 1.5 }
 ];
-// Zones déplacement (identiques pour les 2 sites)
+// Zonas de deslocação (idênticas para os 2 sites)
 // Aligné grille Filipe 14/07 (bornes [a,b): 15.0km → Z2) + concelhos.json TomTom 16/07
 const zones: Zone[] = [
  { label: 'Z1 - Macedo (0-15km)', price: 15, nightPrice: 22.5 },
@@ -50,15 +50,15 @@ function PriceCalculatorWidget() {
  const [selectedService, setSelectedService] = useState<string>('');
  const [urgency, setUrgency] = useState<'normal' | 'urgent'>('normal');
  const [zoneIndex, setZoneIndex] = useState<number>(2); // Default Z3 Bragança
- // Sélectionner services selon le site
+ // Selecionar serviços segundo o site
  const services = config.id === 'norte-reparos' ? servicesNorte : servicesStaff;
- // Calcul prix avec useMemo pour performance
+ // Cálculo de preço com useMemo para performance
  const calculatedPrice = useMemo(() => {
  if (!selectedService) return null;
  const service = services.find(s => s.id === selectedService);
  const selectedZone = zones[zoneIndex];
  if (!service || !selectedZone) return null;
- // Calcul avec urgence
+ // Cálculo com urgência
  const isNight = urgency === 'urgent';
  const multiplier = isNight ? service.nightMultiplier : 1;
  const laborMin = Math.round(service.priceMin * multiplier);

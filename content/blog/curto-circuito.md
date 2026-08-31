@@ -13,7 +13,7 @@ priority: "HIGH DEMAND"
 
 **Ouviu falar de curto-circuito mas não sabe exatamente o que é?** Este fenómeno elétrico perigoso é responsável por **30-40% dos incêndios domésticos** em Portugal e pode causar danos graves em aparelhos, instalações elétricas, e até ferimentos ou morte. Felizmente, com **proteções adequadas e manutenção preventiva**, pode evitar 95% dos curtos-circuitos.
 
-Neste guia completo, vamos explicar **o que é um curto-circuito**, as causas principais, sinais de perigo, como prevenir, e as proteções obrigatórias. Com mais de 15 anos de experiência em instalações elétricas na região de Bragança, ajudamos centenas de famílias a proteger as suas casas.
+Neste guia completo, vamos explicar **o que é um curto-circuito**, as causas principais, sinais de perigo, como prevenir, e as proteções obrigatórias. Com mais de 20 anos de experiência em instalações elétricas na região de Bragança, ajudamos centenas de famílias a proteger as suas casas.
 
 **📞 Suspeita de curto-circuito? Ligue já: [932 321 892](tel:+351932321892)** 
 **💬 WhatsApp urgente: [Clique aqui](https://wa.me/351932321892?text=Olá%2C%20suspeito%20de%20curto-circuito%20na%20minha%20casa.%20Podem%20ajudar%3F)**
@@ -510,7 +510,7 @@ Curto-circuito é um **perigo real e grave**, responsável por **30-40% dos inc�
 **💬 WhatsApp: [Clique aqui](https://wa.me/351932321892?text=Olá%2C%20quero%20inspeção%20elétrica%20completa.)**
 
 **✅ Garantias :**
-- Eletricistas com experiência com 15+ anos de experiência
+- Eletricistas com experiência com 20 anos de experiência
 - Equipamento profissional (megóhmetro, testadores)
 - Relatório detalhado
 - Orçamento transparente
