@@ -36,7 +36,7 @@ Chegamos em até **1 hora** na zona urbana de Bragança com equipamento de diagn
 - **Câmaras térmicas FLIR** para identificar sobreaquecimentos
 
 ### 3. Orçamento Transparente
-Apresentamos um **orçamento detalhado e grátis** antes de qualquer intervenção. Sem surpresas, sem custos ocultos.
+Apresentamos o **orçamento por escrito** antes de qualquer intervenção. A estimativa é sem custo à distância; a deslocação é faturada por zona Z1 15 € a Z6 65 €. Sem surpresas, sem custos ocultos.
 
 ### 4. Arranjo Imediata
 Com peças de reposição no veículo e ferramentas profissionais, resolvemos a maioria das emergências na primeira visita.

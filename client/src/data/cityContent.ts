@@ -33,7 +33,7 @@ export const eletricistaCityContent: Record<string, CityContent> = {
  population: "35 000 habitants",
  logements: "12 000 logements dont 60% construits avant 1990",
  problemesFrequents: "Avarias elétricas em instalações antigas (casos habituais da região), quadros elétricos obsoletos, curto-circuitos",
- delaiIntervention: "Resposta por telefone — orçamento prévio gratuito",
+ delaiIntervention: "Resposta por telefone — orçamento por escrito",
  testimonials: [
 {
 name: "Cliente",
@@ -66,7 +66,7 @@ date: "2026"
  population: "23 000 habitants",
  logements: "8 500 logements dont 55% construits avant 1985",
  problemesFrequents: "Quadros elétricos antigos (casos habituais da região), avarias em aquecimento elétrico, tomadas sem terra",
- delaiIntervention: "Resposta por telefone — orçamento prévio gratuito",
+ delaiIntervention: "Resposta por telefone — orçamento por escrito",
  testimonials: [
 {
 name: "Cliente",
@@ -99,7 +99,7 @@ date: "2026"
  population: "15 000 habitants",
  logements: "5 500 logements dont 50% em zonas rurais",
  problemesFrequents: "Avarias em bombas de água elétricas (casos habituais da região), instalações sem certificação, problemas de tensão",
- delaiIntervention: "Resposta por telefone — orçamento prévio gratuito",
+ delaiIntervention: "Resposta por telefone — orçamento por escrito",
  testimonials: [
 {
 name: "Cliente",
@@ -132,7 +132,7 @@ date: "2026"
  population: "41 000 habitants",
  logements: "14 000 logements dont 65% construits avant 1995",
  problemesFrequents: "Avarias em aquecimento central elétrico (casos habituais da região), quadros obsoletos, problemas de potência",
- delaiIntervention: "Resposta por telefone — orçamento prévio gratuito",
+ delaiIntervention: "Resposta por telefone — orçamento por escrito",
  testimonials: [
 {
 name: "Cliente",
@@ -165,7 +165,7 @@ date: "2026"
  population: "51 000 habitants",
  logements: "18 000 logements dont 70% em zona urbana",
  problemesFrequents: "Avarias em prédios (casos habituais da região), quadros elétricos sobrecarregados, problemas de iluminação",
- delaiIntervention: "Resposta por telefone — orçamento prévio gratuito",
+ delaiIntervention: "Resposta por telefone — orçamento por escrito",
  testimonials: [
 {
 name: "Cliente",
@@ -198,7 +198,7 @@ date: "2026"
  population: "9 000 habitants",
  logements: "3 500 logements maioritariamente rurais",
  problemesFrequents: "Avarias em casas isoladas (casos habituais da região), instalações antigas sem terra, geradores",
- delaiIntervention: "Resposta por telefone — orçamento prévio gratuito",
+ delaiIntervention: "Resposta por telefone — orçamento por escrito",
  testimonials: [
 {
 name: "Cliente",
@@ -231,7 +231,7 @@ date: "2026"
  population: "7 500 habitants",
  logements: "2 800 logements em zona fronteiriça",
  problemesFrequents: "Avarias em casas antigas (casos habituais da região), instalações obsoletas, problemas de tensão",
- delaiIntervention: "Resposta por telefone — orçamento prévio gratuito",
+ delaiIntervention: "Resposta por telefone — orçamento por escrito",
  testimonials: [
 {
 name: "Cliente",
@@ -264,7 +264,7 @@ date: "2026"
  population: "9 500 habitants",
  logements: "3 800 logements em zona rural",
  problemesFrequents: "Avarias em quintas (casos habituais da região), instalações agrícolas, bombas elétricas",
- delaiIntervention: "Resposta por telefone — orçamento prévio gratuito",
+ delaiIntervention: "Resposta por telefone — orçamento por escrito",
  testimonials: [
 {
 name: "Cliente",
@@ -297,7 +297,7 @@ date: "2026"
  population: "5 000 habitants",
  logements: "2 000 logements rurais",
  problemesFrequents: "Avarias em casas antigas (casos habituais da região), instalações sem certificação, bombas elétricas",
- delaiIntervention: "Resposta por telefone — orçamento prévio gratuito",
+ delaiIntervention: "Resposta por telefone — orçamento por escrito",
  testimonials: [
 {
 name: "Cliente",
@@ -330,7 +330,7 @@ date: "2026"
  population: "7 000 habitants",
  logements: "2 700 logements",
  problemesFrequents: "Avarias elétricas (casos habituais da região), quadros obsoletos, instalações antigas",
- delaiIntervention: "Resposta por telefone — orçamento prévio gratuito",
+ delaiIntervention: "Resposta por telefone — orçamento por escrito",
  testimonials: [
 {
 name: "Cliente",

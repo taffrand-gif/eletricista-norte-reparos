@@ -36,7 +36,7 @@ function ForfaitsGrid({ className = '' }: ForfaitsGridProps) {
  'Deslocação incluída (Zona 1)',
  'Diagnóstico aprofundado',
  'Diagnóstico detalhado',
- 'Orçamento reparação gratuito'
+ 'Orçamento reparação por escrito'
  ],
  popular: true
  },
