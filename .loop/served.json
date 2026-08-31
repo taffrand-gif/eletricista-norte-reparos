@@ -1,0 +1,30 @@
+{
+  "repo": "eletricista-norte-reparos",
+  "regime": "BUILD",
+  "outputDirectory": "dist/public",
+  "servi": [
+    "^client/public/",
+    "^client/src/",
+    "^client/index\\.html$",
+    "^public/",
+    "^vite\\.config\\.ts$",
+    "^package\\.json$",
+    "^scripts/prerender\\-routes\\-enr\\.mjs$",
+    "^scripts/optimize\\-images\\.js$",
+    "^vercel\\.json$"
+  ],
+  "jamais_servi": [],
+  "justification": [
+    "^client/public/ — publicDir de vite, copié tel quel dans outDir",
+    "^client/src/ — compilé dans outDir",
+    "^client/index\\.html$ — point d'entrée vite",
+    "^public/ — alimente client/public via la chaîne prebuild",
+    "^vite\\.config\\.ts$ — définit root, outDir et le contenu de la sortie",
+    "^package\\.json$ — définit la chaîne prebuild/build/postbuild",
+    "^scripts/prerender-routes-enr.mjs$ — invoqué par la chaîne build/optimize-images/postbuild/prebuild",
+    "^scripts/optimize-images.js$ — invoqué par la chaîne build/optimize-images/postbuild/prebuild",
+    "server/** EXCLU — bundlé par esbuild vers dist/, jamais publié : outputDirectory ne contient que dist/public",
+    "scripts/** EXCLU en bloc — seuls les scripts effectivement invoqués sont retenus",
+    "^vercel.json$ — rewrites et headers changent ce qui est servi"
+  ]
+}
