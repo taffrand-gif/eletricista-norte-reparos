@@ -298,7 +298,7 @@ priority: "HIGH DEMAND"
 | Com Fichas eletrotécnicas assinadas por técnico profissional | Incluído |
 | Urgência 24h | +€100-200 |
 
-> 💡 **Precisa de inspeção ou substituição?** Eletricista com experiência: **[932 321 892](tel:+351932321892)** — estimativa sem custo, trabalho garantido.
+> 💡 **Precisa de inspeção ou substituição?** Eletricista com experiência: **[932 321 892](tel:+351932321892)** — Estimativa sem custo, trabalho garantido.
 
 ## 🛡️ Segurança do Quadro Elétrico
 
@@ -447,7 +447,7 @@ O quadro elétrico é **essencial para segurança** da sua casa:
 ✅ Instalação de quadros novos 
 ✅ Fichas eletrotécnicas assinadas por técnico profissional incluído 
 ✅ Garantia 2 anos no serviço 
-✅ estimativa sem custo sem compromisso 
+✅ Orçamento por escrito, sem compromisso 
 ✅ Cobrimos Bragança, Mirandela, Trás-os-Montes e toda a região
 
 **Não arrisque a segurança da sua família!** Quadro elétrico bem mantido previne incêndios e choques. Contacte-nos já.

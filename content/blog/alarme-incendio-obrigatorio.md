@@ -483,7 +483,7 @@ Em Trás-os-Montes, onde muitas casas usam aquecimento a lenha, esquentadores a 
 ✅ Instalação de detetores de incêndio 
 ✅ Sistemas interligados 
 ✅ Consultoria de segurança 
-✅ estimativa sem custo sem compromisso 
+✅ Orçamento por escrito, sem compromisso 
 ✅ Garantia de 2 anos 
 
 **📞 Ligue Agora:** [932 321 892](tel:+351932321892) 

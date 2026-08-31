@@ -415,7 +415,7 @@ Escolher o cabo elétrico correto é **essencial para segurança e eficiência**
 ✅ Fichas eletrotécnicas assinadas por técnico profissional incluído 
 ✅ Materiais de qualidade certificados 
 ✅ Garantia 2 anos no serviço 
-✅ estimativa sem custo sem compromisso 
+✅ Orçamento por escrito, sem compromisso 
 ✅ Cobrimos Bragança, Mirandela, Trás-os-Montes e toda a região
 
 **Cabo errado = risco de incêndio!** Não arrisque. Contacte-nos já para instalação profissional e segura.

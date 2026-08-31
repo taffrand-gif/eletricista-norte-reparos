@@ -409,7 +409,7 @@ Em Trás-os-Montes, onde muitas casas têm poucas tomadas (construções antigas
 ✅ Instalação de tomadas adicionais 
 ✅ Upgrade de quadro elétrico 
 ✅ Fichas eletrotécnicas assinadas por técnico profissional 
-✅ estimativa sem custo sem compromisso 
+✅ Orçamento por escrito, sem compromisso 
 ✅ Garantia de 2 anos 
 
 **📞 Ligue Agora:** [932 321 892](tel:+351932321892) 
