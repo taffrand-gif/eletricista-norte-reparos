@@ -347,7 +347,7 @@ Teste: feche todas as torneiras e veja se o contador continua a rodar. Se sim, h
 - Equipa de 2+ pessoas (para obras grandes)
 
 **Norte Reparos (canalizador-norte-reparos.pt):**
-- 12+ anos de experiência em Trás-os-Montes
+- 20 anos de experiência em Trás-os-Montes
 - estimativa sem custo por telefone
 - Preços tabelados por zona
 - Equipamento profissional (Ridgid, FLIR, endoscópios)

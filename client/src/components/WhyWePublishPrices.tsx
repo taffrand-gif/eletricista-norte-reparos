@@ -116,7 +116,7 @@ function WhyWePublishPrices({ className = '' }: WhyWePublishPricesProps) {
  </li>
  <li className="flex items-start gap-3">
  <span className="text-green-500 text-xl mt-0.5">✓</span>
- <span className="text-gray-700">Prix validé au téléphone avant déplacement</span>
+ <span className="text-gray-700">Preço validado por telefone antes da deslocação</span>
  </li>
  <li className="flex items-start gap-3">
  <span className="text-green-500 text-xl mt-0.5">✓</span>

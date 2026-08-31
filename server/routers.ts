@@ -46,7 +46,7 @@ export const appRouter = router({
  // Envoyer notification au propriétaire
  const success = await notifyOwner({
  title: `Nouveau message de contact - ${name}`,
- content: `**Nom:** ${name}\n**Email:** ${email}\n**Téléphone:** ${phone}\n\n**Message:**\n${message}`});
+ content: `**Nom:** ${name}\n**Email:** ${email}\n**Phone:** ${phone}\n\n**Message:**\n${message}`});
  
  return { success };
  })}),
@@ -86,7 +86,7 @@ export const appRouter = router({
  // Notifier le propriétaire
  await notifyOwner({
  title: `📅 Nouvelle réservation - ${input.name}`,
- content: `**Nom:** ${input.name}\n**Email:** ${input.email}\n**Téléphone:** ${input.phone}\n**Service:** ${input.serviceType}\n**Ville:** ${input.city}\n**Date:** ${input.preferredDate}\n**Heure:** ${input.preferredTime}\n\n**Description:**\n${input.description || "Aucune description"}`});
+ content: `**Nom:** ${input.name}\n**Email:** ${input.email}\n**Phone:** ${input.phone}\n**Service:** ${input.serviceType}\n**Ville:** ${input.city}\n**Date:** ${input.preferredDate}\n**Heure:** ${input.preferredTime}\n\n**Description:**\n${input.description || "Aucune description"}`});
  
  return { success: true };
  }),
@@ -202,7 +202,7 @@ export const appRouter = router({
  const urgencyEmoji = input.urgency === "urgent" ? "🚨" : "📝";
  await notifyOwner({
  title: `${urgencyEmoji} Nouvelle demande de devis - ${input.name}`,
- content: `**Nom:** ${input.name}\n**Email:** ${input.email}\n**Téléphone:** ${input.phone}\n**Ville:** ${input.city}\n**Service:** ${input.serviceType}\n**Urgence:** ${input.urgency === "urgent" ? "🚨 URGENT" : "Normale"}\n\n**Description:**\n${input.description}${input.photoUrls && input.photoUrls.length > 0 ? `\n\n**Photos jointes:** ${input.photoUrls.length}` : ""}\n\n**Action:** ${input.urgency === "urgent" ? "⚠️ Contactar resposta prioritária!" : "Contactar em 2-4h"}`});
+ content: `**Nom:** ${input.name}\n**Email:** ${input.email}\n**Phone:** ${input.phone}\n**Ville:** ${input.city}\n**Service:** ${input.serviceType}\n**Urgence:** ${input.urgency === "urgent" ? "🚨 URGENT" : "Normale"}\n\n**Description:**\n${input.description}${input.photoUrls && input.photoUrls.length > 0 ? `\n\n**Photos jointes:** ${input.photoUrls.length}` : ""}\n\n**Action:** ${input.urgency === "urgent" ? "⚠️ Contactar resposta prioritária!" : "Contactar em 2-4h"}`});
  
  return { success: true };
  }),
