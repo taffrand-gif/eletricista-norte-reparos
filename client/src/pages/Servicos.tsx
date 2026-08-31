@@ -198,8 +198,8 @@ export default function Servicos() {
  answer: "Necessita do projeto elétrico aprovado, boletins de ensaio dos materiais utilizados e memorial descritivo da instalação. Nós tratamos de toda a burocracia."
  },
  {
- question: "O orçamento é gratuito?",
- answer: "Sim, todos os nossos orçamentos são gratuitos e sem compromisso. Incluem análise técnica no local e proposta detalhada por escrito."
+ question: "O orçamento tem custo?",
+ answer: "Por telefone ou WhatsApp, com fotos ou vídeo, a estimativa não tem custo. Se for necessária deslocação ao local, a deslocação é faturada segundo a tabela por zona (Z1 15 € a Z6 65 €), e o orçamento por escrito é entregue antes de qualquer intervenção."
  }
  ]}
  />
