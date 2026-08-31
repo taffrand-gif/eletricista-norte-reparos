@@ -562,7 +562,7 @@ Neste guia completo, vou mostrar-lhe:
 ✅ Sistemas interligados (wireless ou cabo) 
 ✅ Manutenção e testes 
 ✅ Consultoria de segurança 
-✅ estimativa sem custo sem compromisso 
+✅ Orçamento por escrito, sem compromisso 
 
 **📞 Ligue já: [932 321 892](tel:+351932321892)**
 
@@ -594,7 +594,7 @@ Um detetor de fumo é o **investimento mais importante** que pode fazer para pro
 
 **Ligue JÁ: [932 321 892](tel:+351932321892)**
 
-**Eletricista com experiência • Instalação profissional • Consultoria de segurança • estimativa sem custo**
+**Eletricista com experiência • Instalação profissional • Consultoria de segurança • Orçamento por escrito**
 
 ---
 

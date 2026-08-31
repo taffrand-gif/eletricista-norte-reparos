@@ -349,7 +349,7 @@ priority: "SEASONAL"
 
 **Tempo de instalação:** 1-2 horas
 
-> 💡 **Quer instalação profissional?** Eletricista em Bragança: **[932 321 892](tel:+351932321892)** — estimativa sem custo, fixação segura garantida.
+> 💡 **Quer instalação profissional?** Eletricista em Bragança: **[932 321 892](tel:+351932321892)** — Estimativa sem custo, fixação segura garantida.
 
 ## ⚠️ Erros Comuns a Evitar
 

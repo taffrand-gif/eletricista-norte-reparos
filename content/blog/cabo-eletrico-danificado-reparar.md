@@ -446,7 +446,7 @@ Em Trás-os-Montes, onde muitas casas têm instalações antigas (30-40 anos) e 
 ✅ Substituição de cabos danificados 
 ✅ Inspeção de instalações elétricas 
 ✅ Fichas eletrotécnicas assinadas por técnico profissional 
-✅ estimativa sem custo sem compromisso 
+✅ Orçamento por escrito, sem compromisso 
 ✅ Atendimento em menos de 2h (urgências) 
 
 **📞 Ligue Agora:** [932 321 892](tel:+351932321892) 

@@ -7,7 +7,7 @@ category: "Preços"
 excerpt: "Descubra os preços reais para chamar um eletricista ao domingo em 2026. Tabela completa de preços, comparações e quando vale a pena."
 image: "/images-optimized/blog/blog-urgencia-domingo.webp"
 metaTitle: "Quanto Custa Eletricista Domingo 2026 | Preços Reais"
-metaDescription: "Eletricista domingo: 100€/h + deslocação. Sábado 90€/h. Dias úteis 70€/h. Preços 2026. estimativa sem custo. Ligue 932 321 892!"
+metaDescription: "Eletricista domingo: 100€/h + deslocação. Sábado 90€/h. Dias úteis 70€/h. Preços 2026. Estimativa sem custo. Ligue 932 321 892!"
 keywords: ["quanto custa eletricista domingo", "preço eletricista fim de semana", "eletricista domingo urgente", "eletricista sábado preço"]
 faqSchema:
  - question: "Quanto custa eletricista ao domingo?"
@@ -264,7 +264,7 @@ Chamar um eletricista ao domingo custa mais por várias razões legítimas:
 **Ligue agora: 932 321 892**
 
 ✅ Atendimento mediante confirmação Atendimento 24h/7d
-✅ estimativa sem custo
+✅ Estimativa sem custo por telefone
 ✅ Resposta mediante confirmação garantida-90 minutos
 ✅ Preços transparentes sem surpresas
 ✅ Garantia 12 meses

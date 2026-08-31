@@ -389,7 +389,7 @@ Quadros com fusíveis não cumprem RTIEBT (Regras Técnicas Instalações Elétr
 
 **Ligue agora: 932 321 892**
 
-✅ estimativa sem custo
+✅ Orçamento por escrito, sem compromisso
 ✅ Quadros certificados (Schneider, Legrand)
 ✅ Instalação em 2-4 horas
 ✅ Fichas eletrotécnicas assinadas por técnico profissional incluída
