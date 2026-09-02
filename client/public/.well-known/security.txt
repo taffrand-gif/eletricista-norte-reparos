@@ -1,7 +1,7 @@
 # Security Policy for 
 # https://eletricista-norte-reparos.pt
 
-Contact: mailto:Xpvqvmmwp4@privaterelay.appleid.com
+Contact: mailto:geral@eletricista-norte-reparos.pt
 Contact: https://wa.me/351932321892
 Expires: 2027-02-22T18:00:00.000Z
 Preferred-Languages: pt, en
