@@ -27,13 +27,15 @@
 ## 🗺️ ROADMAP MONOPOLE — TODO ce repo (ENR) — owner exécution : **Hermes**
 
 <!-- CHANTIERS:BEGIN -->
-| ID | Chantier | Prio | Statut | PR | Gate |
-|---|---|---|---|---|---|
-| B1 | Homepage "installation/devis/méthode" | HAUTE | FAIT | — | — |
-| B2 | Schema.org FAQPage sur pages /zonas/ | HAUTE | FAIT | #72 | — |
-| B3 | H1 sémantique | HAUTE | FAIT | — | — |
-| B4 | Différenciation services électriques | HAUTE | A_VERIFIER |  | — |
-| C1 | Backlinks (continu, S5+) | BASSE | HORS_CODE |  | — |
+| ID | Chantier | Prio | Statut | PR | Gate | Prédicat (reproductible) |
+|---|---|---|---|---|---|---|
+| B1 | Homepage "installation/devis/méthode" | HAUTE | FAIT | — | — | — |
+| B2 | Schema.org FAQPage sur pages /zonas/ | HAUTE | FAIT | #72 | — | — |
+| B3 | H1 sémantique | HAUTE | FAIT | — | — | — |
+| B4 | Différenciation services électriques | HAUTE | A_VERIFIER |  | — | — |
+| C1 | Backlinks (continu, S5+) | BASSE | HORS_CODE |  | — | — |
+| X-R12 | « mesma pessoa » / « mesmo técnico » servis en production | HAUTE | A_FAIRE | — | — | `mesma pessoa\|mesmo t[ée]cnico` · **production ENR 6** — `client/public/.well-known/ai-plugin.json` · `client/public/blog/blog-problemas-eletricos-inverno.html` · `client/public/carregador-veiculo-eletrico.html` · `client/public/certiel-dgeg.html` · `public/blog/blog-problemas-eletricos-inverno.html` · `tools/verify-money-pages-pilot.py`. Ce dernier est un **faux positif** (regex de détection). **Travail réel : 5 fichiers**, dont un doublon `client/public/` ↔ `public/` — le servi est `client/public/`. `AGENTS.md` ENR ne porte AUCUNE prescription (0 occurrence). Contrôle positif `mesm` = 706. |
+| X-MAIL | Email `privaterelay.appleid.com` publié comme contact | HAUTE | A_FAIRE | — | — | `privaterelay\.appleid\.com` · **production ENR 2** — `client/public/.well-known/ai-plugin.json` · `client/public/.well-known/security.txt`. Contrôle positif `appleid` = 2. |
 <!-- CHANTIERS:END -->
 
 > Roadmap phasée maître : `~/work/Sites/MONOPOLE_SEO_2026Q3.md` §ROADMAP PHASÉE. Ici = todos concrets ENR. Claude+Filipe conçoivent, Hermes coche.
