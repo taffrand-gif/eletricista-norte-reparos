@@ -24,7 +24,7 @@ function ForfaitsGrid({ className = '' }: ForfaitsGridProps) {
  'Deslocação incluída (Zona 1)',
  'Instalação completa',
  'Teste de funcionamento',
- 'Garantia 6 meses'
+ 'Garantia 12 meses'
  ]
  },
  {
@@ -110,7 +110,7 @@ function ForfaitsGrid({ className = '' }: ForfaitsGridProps) {
  'Estudo personalizado',
  'Plano elétrico',
  'Material de qualidade',
- 'Garantia 6 meses'
+ 'Garantia 12 meses'
  ]
  }
  ];

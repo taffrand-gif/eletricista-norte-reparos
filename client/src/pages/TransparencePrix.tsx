@@ -32,7 +32,7 @@ export default function TransparencePrix() {
  "Diagnóstico completo com multímetro",
  "Resolução de avarias elétricas",
  "Arranjo de curto-circuitos",
- "Garantia 6 meses"
+ "Garantia 12 meses"
  ]
  },
  {

@@ -423,7 +423,7 @@ export default function PoupancaEnergiaInverno() {
  <td className="py-3">Vedantes portas/janelas</td>
  <td className="text-center py-3">50€</td>
  <td className="text-center py-3 text-green-600 font-bold">100€</td>
- <td className="text-right py-3 font-bold">6 meses</td>
+ <td className="text-right py-3 font-bold">12 meses</td>
  </tr>
  <tr>
  <td className="py-3">Sensores de movimento (3x)</td>
