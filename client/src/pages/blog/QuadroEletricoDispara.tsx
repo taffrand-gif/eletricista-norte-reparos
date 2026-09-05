@@ -1016,7 +1016,7 @@ const QuadroEletricoDispara: React.FC = () => {
  <span className="text-2xl">✅</span>
  <div>
  <p className="font-bold">Certificado + Garantia</p>
- <p className="text-sm text-white/80">Trabalho certificado com 6 meses garantia</p>
+ <p className="text-sm text-white/80">Trabalho certificado com 12 meses garantia</p>
  </div>
  </div>
  </div>
