@@ -188,10 +188,29 @@ def parse_registry(path):
             continue
         out.append(Chantier(zip(header, cells)))
     if ignorees:
+        # Deux refus de natures differentes, longtemps confondus en un seul.
+        # « Je ne sais pas lire CETTE ligne » n'est pas « je ne peux pas
+        # continuer surement ». Le 02/09, une 8e colonne sur la seule ligne
+        # X-MAIL a rejete le registre CNR en entier : quatorze lignes
+        # lisibles sont mortes avec elle, et le depot n'a plus rien
+        # dispatche pendant cinq nuits (corrige par la PR #398, qui reparait
+        # la ligne sans toucher a la garde qui l'avait amplifiee).
+        #
+        # La ligne illisible reste ecartee et nommee — un chantier ne
+        # disparait jamais en silence, c'est l'acquis a conserver. Ce qui
+        # change : les lignes lisibles continuent d'etre dispatchables.
         for r, got, want in ignorees:
             print(f"ERREUR: ligne de registre illisible ({got} colonnes, "
-                  f"{want} attendues) : {r}…", file=sys.stderr)
-        sys.exit("Registre invalide — corriger avant tout dispatch.")
+                  f"{want} attendues) — chantier ECARTE : {r}…",
+                  file=sys.stderr)
+        print(f"ERREUR: {len(ignorees)} ligne(s) ecartee(s) sur "
+              f"{len(rows) - 1}, {len(out)} lisible(s) conservee(s) — "
+              f"corriger {os.path.basename(path)}.", file=sys.stderr)
+        # Aucune ligne lisible n'est PAS une degradation : c'est une panne de
+        # lecture du registre, et la refuser reste le comportement correct.
+        if not out:
+            sys.exit("Registre invalide — AUCUNE ligne lisible, "
+                     "corriger avant tout dispatch.")
     return out
 
 
