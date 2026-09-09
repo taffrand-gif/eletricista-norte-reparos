@@ -120,15 +120,35 @@ HORS_PRODUCTION = [
     # servi) : sur 129 fichiers de `public/` sans jumeau dans l'arbre servi,
     # 127 rendent 404 et 1 rend 410. L'arbre servi est `client/public/` sur
     # CNR/ENR et la racine du depot sur CU/EU.
-    # EXCEPTION NOMMEE, et elle n'est pas theorique : `public/sitemap.xml`
-    # de CNR rend 200, octet a octet (463030 o, md5 7ccecc7d), sans aucune
-    # autre copie dans le depot — c'est la SOURCE lue par `prebuild` ->
-    # `sync-client-sitemap.mjs`, et `client/public/sitemap.xml` n'existe pas
-    # dans l'arbre. Une exclusion `^public/` seche marquerait hors production
-    # le seul fichier de la racine qui l'est vraiment. Sans effet sur X-R12
-    # (un sitemap ne porte pas de prose), mais le trou n'aurait pas survecu
-    # au premier motif touchant du XML.
-    r'^public/(?!sitemap.*\.xml$)',
+    # L'EXCEPTION `sitemap.*\.xml` A ETE RETIREE DE CETTE COPIE — elle etait
+    # justifiee par un fait de CNR, transpose sans mesure dans le fichier
+    # d'ENR. Le 09/09/2026, les CINQ sitemaps de la racine ont ete compares
+    # a ce que sert reellement `eletricista-norte-reparos.pt` (HTTP 200,
+    # md5 du corps recu contre md5 des deux copies du depot) :
+    #
+    #   fichier              prod       client/public   public/ (racine)
+    #   sitemap.xml          d0226b0c   d0226b0c  ==    e943af91  !=
+    #   sitemap-index.xml    21144170   21144170  ==    b2b8ff39  !=
+    #   sitemap-blog.xml     67686455   67686455  ==    16ee0ced  !=
+    #   sitemap-pages.xml    05939c5d   05939c5d  ==    d071398b  !=
+    #   sitemap-dynamic.xml  33c80b75   33c80b75  ==    0b3c3724  !=
+    #
+    # Sur ENR l'exception n'a donc AUCUNE instance : les cinq copies de la
+    # racine different octet a octet de ce qui est servi, et les cinq jumeaux
+    # `client/public/` sont servis a l'octet pres. Le commentaire d'origine le
+    # disait lui-meme (« `public/sitemap.xml` de CNR »), mais le motif, lui,
+    # ne nommait pas de depot : ecrit une fois, copie quatre fois. C'est le
+    # meme defaut que celui qu'il pretendait corriger — un perimetre affirme
+    # au lieu d'etre mesure — a ceci pres qu'il gardait 5 fichiers morts
+    # DANS le perimetre de production au lieu de les en sortir.
+    #
+    # Verifie sur les quatre depots le 09/09/2026 ; l'exception ne survit que
+    # sur CNR, et pour UN SEUL fichier (`public/sitemap.xml`, prod=racine ;
+    # index/blog/pages y rendent 404, dynamic est servi depuis client/public).
+    # Sur CU et EU, `/sitemap.xml` rend 200 avec un corps qui ne correspond
+    # a AUCUNE des deux copies du depot — il est produit au build.
+    # Cette copie est celle d'ENR : exclusion seche, sans exception.
+    r'^public/',
     # `tools/` — PREDICATS DE DETECTION. La locution y est le motif cherche,
     # pas une affirmation de l'entreprise : `tools/verify-busca-fuga-pilot.py`
     # (CNR) et `tools/verify-money-pages-pilot.py` (ENR) faisaient a eux seuls
