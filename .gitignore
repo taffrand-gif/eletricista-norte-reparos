@@ -135,3 +135,6 @@ _indexing/
 *.bak-*
 *.orig
 *.rej
+
+# 2026-09-17 — scratch directory (scripts Python jetables des workers kanban)
+_scripts/
