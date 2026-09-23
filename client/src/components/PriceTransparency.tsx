@@ -67,7 +67,7 @@ function PriceTransparency() {
  {/* Header */}
  <div className="text-center mb-12">
  <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-100 text-green-800 rounded-full font-bold text-sm mb-4">
- 💰 Orçamento Gratuito por Telefone
+ 💰 Orçamento por Escrito por Telefone
  </div>
  <h2 className="text-4xl md:text-5xl font-black mb-6">
  Preço Transparente — Sem Surpresas

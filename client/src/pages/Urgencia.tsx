@@ -335,21 +335,21 @@ function Urgencia() {
  <div className="bg-gray-50 rounded-xl p-6">
  <h3 className="font-bold text-gray-900 mb-2">Dias Úteis (8h-18h)</h3>
  <p className="text-3xl font-black text-orange-600">70€/h</p>
- <p className="text-sm text-gray-600">+ deslocação conforme zona</p>
+ <p className="text-sm text-gray-600">+ deslocação conforme o caso</p>
  </div>
  <div className="bg-blue-50 rounded-xl p-6 border-2 border-blue-200">
  <h3 className="font-bold text-gray-900 mb-2">Sábado</h3>
  <p className="text-3xl font-black text-blue-600">90€/h</p>
- <p className="text-sm text-gray-600">+ deslocação conforme zona</p>
+ <p className="text-sm text-gray-600">+ deslocação conforme o caso</p>
  </div>
  <div className="bg-red-50 rounded-xl p-6 border-2 border-red-200">
  <h3 className="font-bold text-gray-900 mb-2">Domingo/Feriado</h3>
  <p className="text-3xl font-black text-red-600">100€/h</p>
- <p className="text-sm text-gray-600">+ deslocação conforme zona</p>
+ <p className="text-sm text-gray-600">+ deslocação conforme o caso</p>
  </div>
  <div className="bg-purple-50 rounded-xl p-6 border-2 border-purple-200">
- <h3 className="font-bold text-gray-900 mb-2">Noturno (18h-8h)</h3>
- <p className="text-3xl font-black text-purple-600">+50%</p>
+ <h3 className="font-bold text-gray-900 mb-2">Noite, fim de semana e feriado: 100 €/hora + deslocação 50 €</h3>
+ <p className="text-3xl font-black text-purple-600">100 €/hora + deslocação 50 €</p>
  <p className="text-sm text-gray-600">Sobre mão de obra + deslocação</p>
  </div>
  </div>
@@ -357,11 +357,11 @@ function Urgencia() {
  <h3 className="font-bold text-gray-900 mb-4">Exemplo: Urgência Domingo 22h em Bragança</h3>
  <div className="space-y-2 text-gray-700">
  <div className="flex justify-between">
- <span>Deslocação Zona 3:</span>
- <span className="font-bold">35€</span>
+ <span>Deslocação </span>
+ <span className="font-bold">30€</span>
  </div>
  <div className="flex justify-between">
- <span>Majoração noturna deslocação (+50%):</span>
+ <span>Deslocação 30 € (50 € noite/fim de semana) · 70 €/hora (100 €/hora noite/fim de semana)</span>
  <span className="font-bold">+17,50€</span>
  </div>
  <div className="flex justify-between">
@@ -369,7 +369,7 @@ function Urgencia() {
  <span className="font-bold">100€</span>
  </div>
  <div className="flex justify-between">
- <span>Majoração noturna MO (+50%):</span>
+ <span>Noite, fim de semana e feriado: 100 €/hora + deslocação 50 €</span>
  <span className="font-bold">+50€</span>
  </div>
  <hr className="border-gray-300" />

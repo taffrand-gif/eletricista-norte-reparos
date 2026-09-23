@@ -66,7 +66,7 @@ function QuoteForm() {
  return (
  <Card className="w-full max-w-2xl mx-auto">
  <CardHeader>
- <CardTitle className="text-2xl " style={{color: gradient.from}}>Pedir Orçamento Gratuito</CardTitle>
+ <CardTitle className="text-2xl " style={{color: gradient.from}}>Pedir Orçamento por Escrito</CardTitle>
  <CardDescription>
  Preencha o formulário abaixo e receberá um orçamento personalizado sem compromisso.
  </CardDescription>
@@ -200,7 +200,7 @@ function QuoteForm() {
  disabled={isSubmitting}
  className="w-full hover: text-white font-bold py-6 text-lg" style={{backgroundColor: gradient.from}}
  >
- {isSubmitting ? "A enviar..." : "📝 Pedir Orçamento Gratuito"}
+ {isSubmitting ? "A enviar..." : "📝 Pedir Orçamento por Escrito"}
  </Button>
  <p className="text-sm text-gray-500 text-center">
  Ao enviar este formulário, concorda com o processamento dos seus dados pessoais para efeitos de orçamento.

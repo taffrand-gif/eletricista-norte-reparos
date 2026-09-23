@@ -213,7 +213,7 @@ Diagnóstico preciso em 15-45 minutos. Orçamento antes de arranjar.`
  },
  {
  title: 'Preços Urgência',
- content: `Horário normal (8h-20h dias úteis): Desde 70€. Majoração +50% (noites, fins de semana e feriados). Horário noturno (20h-8h): incluído na majoração. Deslocação gratuita. Orçamento telefónico antes de sair. Pagamento: dinheiro, MB Way, Multibanco.`
+ content: `Dias úteis (9h–17h): 70€/h + deslocação 30€. Noite (17h–9h), fins de semana e feriados: 100€/h + deslocação 50€. Cada hora começada é devida. Orçamento telefónico antes de sair. Pagamento: dinheiro, MB Way, Multibanco.`
  }
  ],
  cta: 'Urgência elétrica? **Ligue já 932 321 892** - Atendimento 24h!'

@@ -5,7 +5,7 @@ export default function Orcamento() {
  const { businessName, phone } = ACTIVE_CONFIG;
  
  useSEO({
- title: `Pedir Orçamento Gratuito | ${businessName}`,
+ title: `Pedir Orçamento por Escrito | ${businessName}`,
  description: `Peça um sem compromisso e sem compromisso. Resposta mediante contacto e preços competitivos. Contacte-nos: ${phone}`,
  keywords: "sem compromisso, pedir orçamento, orçamento sem compromisso, preços competitivos"});
  return (
@@ -15,7 +15,7 @@ export default function Orcamento() {
  <div className="container">
  <div className="max-w-3xl mx-auto text-center">
  <h1 className="text-4xl sm:text-5xl font-bold mb-4">
- Pedir Orçamento Gratuito
+ Pedir Orçamento por Escrito
  </h1>
  <p className="text-xl sm:text-2xl mb-6">
  Resposta mediante contacto e sem compromisso

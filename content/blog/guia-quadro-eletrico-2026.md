@@ -29,7 +29,7 @@ Modernizar, substituir.
 
 Modernizar, substituir.
 
-Este guia aplica-se a Portugal continental em 2026, com foco na região de Trás-os-Montes (Bragança, Vila Real, Guarda). Os preços mencionados incluem IVA e são médios de mercado — podem variar conforme zona, urgência, e complexidade.
+Este guia aplica-se a Portugal continental em 2026, com foco na região de Trás-os-Montes (Bragança, Vila Real, Guarda). Os preços mencionados incluem IVA e são médios de mercado — podem variar conforme o caso, urgência, e complexidade.
 
 **Quando este tema é relevante para si:**
 - Está a construir ou remodelar casa
@@ -53,15 +53,15 @@ Existem várias categorias a considerar antes de avançar:
 
 **B. Por urgência**
 - Normal (dias úteis 8h-18h): preço base
-- Noite (18h-8h): +50%
-- Sábado: hora a 80-90€
-- Domingo/Feriado: 90-95€/h
+Noite, fim de semana e feriado: 100 €/hora + deslocação 50 €
+Noite, fim de semana e feriado: 100 €/hora + deslocação 50 €
+Noite, fim de semana e feriado: 100 €/hora + deslocação 50 €
 
-**C. Por zona geográfica**
-- Z1 (0-30 km de Trás-os-Montes): 20€ deslocação
-- Z2 (31-50 km): 25€ deslocação
-- Z3 (51-90 km): 30€ deslocação
-- Z4 (91-130 km): 40€ deslocação
+**C. 
+Deslocação 30 € (50 € noite/fim de semana)
+Deslocação 30 € (50 € noite/fim de semana)
+Deslocação 30 € (50 € noite/fim de semana)
+Deslocação 30 € (50 € noite/fim de semana)
 
 **D. Por tipo de profissional**
 - Certificado/inscrito (, ADENE, etc.)
@@ -76,7 +76,7 @@ Existem várias categorias a considerar antes de avançar:
 Os preços médios nacionais em 2026:
 
 **Canalizador:**
-- Hora de trabalho: 25-90€ (varia muito por zona e urgência)
+Deslocação 30 € (50 € noite/fim de semana) · 70 €/hora (100 €/hora noite/fim de semana)
 - Deslocação: 15-50€
 - Mão de obra diária (8h): 200-500€
 - Mão de obra semanal: 1000-2500€
@@ -316,7 +316,7 @@ Modernizar, substituir.
 - 📧 **Email:** geral@eletricista-norte-reparos.pt
 - 📍 **Sede:** Trás-os-Montes
 
-**Preços tabelados por zona — sem surpresas.**
+**Deslocação com preço único — sem surpresas.**
 **estimativa sem custo por telefone — sem compromisso.**
 
 [Pedir orçamento agora](tel:+351928484451)

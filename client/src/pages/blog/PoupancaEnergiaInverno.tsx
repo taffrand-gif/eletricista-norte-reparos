@@ -54,7 +54,7 @@ export default function PoupancaEnergiaInverno() {
  "mainEntity": [
  { "@type": "Question", "name": "Qual o método mais eficaz para poupar no aquecimento?", "acceptedAnswer": { "@type": "Answer", "text": "Substituir aquecedores antigos por bomba de calor (ar condicionado inverter). São 3-4x mais eficientes e podem poupar até 60% na conta de aquecimento. Investimento: 600€-1.500€ por unidade." } },
  { "@type": "Question", "name": "Quanto poupo ao substituir lâmpadas por LED?", "acceptedAnswer": { "@type": "Answer", "text": "LED consome 80% menos que incandescentes e dura 15-20 anos. Poupança: 50-80% na iluminação. Como no inverno as luzes ficam acesas mais tempo, o retorno é ainda mais rápido. Cada lâmpada custa entre 5€ e 15€." } },
- { "@type": "Question", "name": "Vale a pena mudar para tarifa bi-horária de eletricidade?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. Ao usar máquinas de roupa, louça e carregamentos no período noturno (mais barato), pode poupar 20-30% na conta de luz. A mudança de tarifa é gratuita junto da sua comercializadora de energia." } },
+ { "@type": "Question", "name": "Vale a pena mudar para tarifa bi-horária de eletricidade?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. À noite (17h–9h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €. A mudança de tarifa é gratuita junto da sua comercializadora de energia." } },
  { "@type": "Question", "name": "Quanto consomem os aparelhos elétricos em standby?", "acceptedAnswer": { "@type": "Answer", "text": "TV, computador e consolas em standby consomem 10-15W cada continuamente, representando 5-10% do consumo total. Solução simples: use réguas de tomadas com interruptor (10€-30€) para desligar completamente." } },
  { "@type": "Question", "name": "Qual a poupança ao usar termostato programável?", "acceptedAnswer": { "@type": "Answer", "text": "Um termostato programável pode poupar 20-30% no aquecimento ao regular automaticamente a temperatura. Programar para 19-21°C e desligar quando sai de casa. Investimento: 50€-200€." } }
  ]
@@ -290,7 +290,7 @@ export default function PoupancaEnergiaInverno() {
  <span className="text-xs text-gray-600">Menos eficiente</span>
  </td>
  <td className="text-center py-3">2.000W</td>
- <td className="text-right py-3 font-bold text-red-600">90€ - 110€</td>
+ <td className="text-right py-3 font-bold text-red-600"></td>
  </tr>
  </tbody>
  </table>
@@ -318,7 +318,7 @@ export default function PoupancaEnergiaInverno() {
  <h3 className="font-bold text-blue-700">Vazio (Noite)</h3>
  </div>
  <p className="text-sm text-gray-700 mb-2">
- <strong>Horário:</strong> 22h-8h (dias úteis)<br/>
+ <strong>Horário:</strong> <br/>
  Todo o dia (fins de semana)
  </p>
  <p className="text-2xl font-black text-blue-700">~0,12€/kWh</p>

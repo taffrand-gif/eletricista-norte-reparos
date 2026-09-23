@@ -4,7 +4,7 @@ slug: "quadro-eletrico-antigo-modernizar"
 category: "Modernização Elétrica"
 date: "2026-03-04"
 author: ""
-excerpt: "Quadro elétrico com mais de 20 anos é perigoso! Descubra os 8 sinais de que precisa modernizar, benefícios (segurança +90%, disjuntor diferencial), custos em Trás-os-Montes (€300-800)."
+excerpt: "Quadro elétrico com mais de 20 anos é perigoso! À noite (17h–9h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €.
 keywords: ["quadro elétrico antigo", "modernizar quadro elétrico", "substituir quadro elétrico", "disjuntor diferencial", "eletricista Trás-os-Montes", "Fichas eletrotécnicas assinadas por técnico profissional", "upgrade elétrico"]
 priority: "HIGH DEMAND"
 ---
@@ -18,7 +18,7 @@ Em Trás-os-Montes, onde muitas casas têm 30-40 anos, quadros elétricos antigo
 **Neste guia completo**, vamos explicar:
 - ✅ 8 sinais de que precisa modernizar
 - ✅ Diferenças entre quadro antigo vs moderno
-- ✅ Benefícios da modernização (segurança +90%)
+Noite, fim de semana e feriado: 100 €/hora + deslocação 50 €
 - ✅ O que inclui um upgrade completo
 - ✅ Custos em Trás-os-Montes (€300-800)
 - ✅ Fichas eletrotécnicas assinadas por técnico profissional obrigatória
@@ -170,7 +170,7 @@ Em Trás-os-Montes, onde muitas casas têm 30-40 anos, quadros elétricos antigo
 - ✅ Caixa plástica isolada
 
 **Benefícios:**
-- Segurança +90%
+Noite, fim de semana e feriado: 100 €/hora + deslocação 50 €
 - Protege contra choque elétrico
 - Protege aparelhos (TV, PC, etc.)
 - Não desarma sem motivo
@@ -251,7 +251,7 @@ Em Trás-os-Montes, onde muitas casas têm 30-40 anos, quadros elétricos antigo
 
 ## 🛡️ Benefícios da Modernização
 
-### 1. Segurança +90%
+### 1. Noite, fim de semana e feriado: 100 €/hora + deslocação 50 €
 
 **Proteção contra choque elétrico:**
 - Disjuntor diferencial 30mA desarma em 0,03 segundos

@@ -34,7 +34,7 @@ A Norte Reparos dispõe de **Técnico Responsável de Instalações Elétricas i
 
 A inscrição está em vigor; o técnico responsável acompanha a execução e a entrega da documentação legal. A equipa possui seguro de responsabilidade civil válido (mínimo € 50.000, conforme exigência legal).
 
-Emissão de Ficha Eletrotécnica e Termo de Responsabilidade: a partir de **350 €** (valor do serviço de certificação; não constitui preço de instalação, que segue a grelha Z1–Z6 abaixo).
+Emissão de Ficha Eletrotécnica e Termo de Responsabilidade: a partir de **350 €** (valor do serviço de certificação
 
 Páginas de referência:
 
@@ -45,14 +45,9 @@ Páginas de referência:
 
 | Zona | Distância aprox. | Deslocação | Mão de obra |
 |---|---|---|---|
-| **Z1** | 0–15 km | **15 €** | **70 €/h** |
-| **Z2** | 15–30 km | **25 €** | **70 €/h** |
-| **Z3** | 30–50 km | **35 €** | **70 €/h** |
-| **Z4** | 50–70 km | **45 €** | **70 €/h** |
-| **Z5** | 70–90 km | **55 €** | **70 €/h** |
-| **Z6** | 90–140 km | **65 €** | **70 €/h** |
-
-- **Acréscimo** noturno (20h–8h), fins de semana e feriados: **+50 %**
+| Dias úteis (9h–17h) | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | 30 € + 70 €/hora |
+| Noite (17h–9h), fins de semana e feriados | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | Qualquer localidade servida | 50 € + 100 €/hora |
+Noite, fim de semana e feriado: 100 €/hora + deslocação 50 €
 - **Orçamento por escrito** antes de qualquer intervenção, sem surpresas
 - **Fatura** com NIF emitida no final de cada trabalho
 - **Seguro** de responsabilidade civil profissional
@@ -61,17 +56,17 @@ Páginas de referência:
 
 ## 5. Cobertura regional (34 concelhos oficiais)
 
-Z1 (15 €) — Macedo de Cavaleiros.
+Macedo de Cavaleiros.
 
-Z2 (25 €) — Mirandela · Vila Flor · Alfândega da Fé · Carrazeda de Ansiães.
+Mirandela · Vila Flor · Alfândega da Fé · Carrazeda de Ansiães.
 
-Z3 (35 €) — Bragança · Vinhais · Vimioso · Torre de Moncorvo · Mogadouro · Freixo de Espada à Cinta.
+Bragança · Vinhais · Vimioso · Torre de Moncorvo · Mogadouro · Freixo de Espada à Cinta.
 
-Z4 (45 €) — Miranda do Douro · Vila Nova de Foz Côa · São João da Pesqueira · Murça · Valpaços.
+Miranda do Douro · Vila Nova de Foz Côa · São João da Pesqueira · Murça · Valpaços.
 
-Z5 (55 €) — Vila Real · Alijó · Sabrosa · Tabuaço · Armamar · Peso da Régua · Lamego · Santa Marta de Penaguião · Mesão Frio.
+Vila Real · Alijó · Sabrosa · Tabuaço · Armamar · Peso da Régua · Lamego · Santa Marta de Penaguião · Mesão Frio.
 
-Z6 (65 €) — Chaves · Vila Pouca de Aguiar · Boticas · Montalegre · Ribeira de Pena · Mondim de Basto · Moimenta da Beira · Sernancelhe · Penedono.
+Chaves · Vila Pouca de Aguiar · Boticas · Montalegre · Ribeira de Pena · Mondim de Basto · Moimenta da Beira · Sernancelhe · Penedono.
 
 Cobertura adicional: dezenas de freguesias e aldeias do Nordeste Transmontano. Confirmar cobertura por telefone antes de cada deslocação.
 
@@ -140,8 +135,8 @@ Legrand · Schneider Electric · Hager · ABB · Siemens · Philips
 
 ## 11. Perguntas frequentes
 
-**Fazem orçamentos grátis?**
-A estimativa não tem custo quando é feita à distância (telefone ou WhatsApp, com fotos ou vídeo). Se for necessária deslocação ao local, a deslocação é faturada segundo a tabela por zona (Z1 15 € a Z6 65 €). O orçamento por escrito é sempre entregue antes de qualquer intervenção.
+**Fazem orçamentos por escrito?**
+A estimativa não tem custo quando é feita à distância (telefone ou WhatsApp, com fotos ou vídeo). A deslocação tem preço único em qualquer localidade servida: 30 € em dias úteis (9h–17h) e 50 € à noite, fins de semana e feriados. O orçamento por escrito é sempre entregue antes de qualquer intervenção.
 
 **Qual é o prazo de garantia?**
 Garantia por escrito, conforme âmbito dos trabalhos. Detalhes no orçamento.

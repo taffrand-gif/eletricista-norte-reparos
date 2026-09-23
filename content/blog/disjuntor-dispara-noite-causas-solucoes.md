@@ -357,7 +357,7 @@ Se suspeita sobrecarga:
 - Testar disjuntores (botão TEST)
 - Verificar sinais aquecimento
 
-**Custo:** 80-120€/ano
+
 **Poupança:** Evita arranjos 200-500€
 
 ### 2. Não Sobrecarregar

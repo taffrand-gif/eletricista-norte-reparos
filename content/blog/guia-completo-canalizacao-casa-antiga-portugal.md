@@ -264,7 +264,7 @@ Teste: feche todas as torneiras e veja se o contador continua a rodar. Se sim, h
 - Primavera (Março-Maio)
 - Outono (Setembro-Outubro)
 - Evitar Inverno (geadas complicam testes)
-- Evitar Verão de pico (preços +20%)
+Noite, fim de semana e feriado: 100 €/hora + deslocação 50 €
 
 ## Cuidados pós-obra - como manter a nova canalização
 
@@ -349,7 +349,7 @@ Teste: feche todas as torneiras e veja se o contador continua a rodar. Se sim, h
 **Norte Reparos (canalizador-norte-reparos.pt):**
 - 20 anos de experiência em Trás-os-Montes
 - estimativa sem custo por telefone
-- Preços tabelados por zona
+- Deslocação com preço único
 - Equipamento profissional (Ridgid, FLIR, endoscópios)
 - Fatura + relatório sempre
 - Garantia de 1 ano em todos os trabalhos
@@ -414,6 +414,6 @@ A **Norte Reparos** é especializada em canalização e eletricidade em Trás-os
 - Substituição completa de canalização
 - E muito mais
 
-**Preços tabelados por zona - sem surpresas.**
+**Deslocação com preço único - sem surpresas.**
 
 [Pedir estimativa sem custo por telefone](tel:+351928484451)

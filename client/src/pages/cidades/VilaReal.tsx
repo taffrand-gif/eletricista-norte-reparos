@@ -30,7 +30,7 @@ export default function VilaReal() {
  },
  ];
  useEffect(() => {
- document.title = "⚡ Eletricista Vila Real — Orçamento Grátis | Garantia Escrita";
+ document.title = "⚡ Eletricista Vila Real — Orçamento por Escrito | Garantia Escrita";
  
  // Optimized meta description
  let metaDescription = document.querySelector('meta[name="description"]');

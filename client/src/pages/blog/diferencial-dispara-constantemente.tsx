@@ -267,7 +267,7 @@ export default function DiferencialDisparaConstantemente() {
  <tr>
  <td className="px-6 py-4 text-sm font-semibold text-gray-900">Urgência 24h</td>
  <td className="px-6 py-4 text-sm text-gray-700">Acréscimo noite/fim-de-semana</td>
- <td className="px-6 py-4 text-sm text-gray-900">+50%</td>
+ <td className="px-6 py-4 text-sm text-gray-900">100 €/hora + deslocação 50 €</td>
  </tr>
  </tbody>
  </table>

@@ -21,6 +21,7 @@ import GoogleReviews from '@/components/GoogleReviews';
 import Blog from '@/components/Blog';
 import Contactos from '@/components/Contactos';
 import Footer from '@/components/Footer';
+import CalendlyCTA from '@/components/CalendlyCTA';
 import SEOHead from '@/components/SEOHead';
 import { ScrollToTop } from '@/components/ScrollToTop';
 import { useSite } from '@/contexts/SiteContext';
@@ -37,6 +38,7 @@ export default function OptimizedHome() {
  <main>
  <PremiumBar />
  <InnovativeHero />
+ <div className="text-center py-4 bg-white"><CalendlyCTA /></div>
  <TrustBanner />
  <Diagnostico />
  <OrcamentoGratuitoBadge />

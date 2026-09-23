@@ -24,7 +24,7 @@ Se vai colocar a sua casa em Mirandela no mercado de arrendamento, é obrigatór
 
 ## Cobertura e preços
 
-Mirandela fica na nossa Zona 1, com deslocação a 25€ e hora a 80€. Estamos lá Atendimento mediante confirmação. Para emergências, Resposta mediante confirmação garantida.
+Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. Estamos lá Atendimento mediante confirmação. Para emergências, Resposta mediante confirmação garantida.
 
 
 

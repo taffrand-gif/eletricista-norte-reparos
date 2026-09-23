@@ -199,7 +199,7 @@ export default function Servicos() {
  },
  {
  question: "O orçamento tem custo?",
- answer: "Por telefone ou WhatsApp, com fotos ou vídeo, a estimativa não tem custo. Se for necessária deslocação ao local, a deslocação é faturada segundo a tabela por zona (Z1 15 € a Z6 65 €), e o orçamento por escrito é entregue antes de qualquer intervenção."
+ answer: "Por telefone ou WhatsApp, com fotos ou vídeo, a estimativa não tem custo. A deslocação tem preço único em qualquer localidade servida: 30 € em dias úteis (9h–17h) e 50 € à noite, fins de semana e feriados. Orçamento por escrito antes de qualquer intervenção.
  }
  ]}
  />

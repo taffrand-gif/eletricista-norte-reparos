@@ -244,7 +244,7 @@ export default function InstalacaoTomadasSeguranca() {
  <tr>
  <td className="px-6 py-4 text-sm text-gray-900">Circuito novo (até 10m)</td>
  <td className="px-6 py-4 text-sm text-gray-700">30-50€</td>
- <td className="px-6 py-4 text-sm text-gray-700">80-120€</td>
+ <td className="px-6 py-4 text-sm text-gray-700"></td>
  <td className="px-6 py-4 text-sm font-semibold text-gray-900">110-170€</td>
  </tr>
  </tbody>
@@ -348,7 +348,7 @@ export default function InstalacaoTomadasSeguranca() {
  </a>
  </div>
  <p className="text-blue-100 text-sm mt-4">
- ✓ Orçamento Gratuito ✓ certificação elétrica Incluída ✓ Garantia 2 Anos
+ ✓ Orçamento por Escrito ✓ certificação elétrica Incluída ✓ Garantia 2 Anos
  </p>
  </div>
  {/* Related Articles */}

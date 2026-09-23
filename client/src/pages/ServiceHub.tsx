@@ -96,7 +96,7 @@ export default function ServiceHub() {
  href={`https://wa.me/${ACTIVE_CONFIG.whatsappNumber}?text=${encodeURIComponent(`Olá! Preciso de ${service.name}. Podem fazer orçamento?`)}`}
  className="inline-block bg-green-600 hover:bg-green-700 text-white font-bold px-8 py-4 rounded-xl text-lg transition-colors"
  >
- 💬 Pedir Orçamento Gratuito
+ 💬 Pedir Orçamento por Escrito
  </a>
  </div>
  </div>

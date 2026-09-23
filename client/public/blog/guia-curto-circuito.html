@@ -260,15 +260,15 @@ window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {
           <section class="my-10 bg-orange-50 border-l-4 border-orange-600 p-6 rounded-r-lg">
             <h2 class="text-2xl font-bold text-gray-900 mb-4">Factos verificáveis Norte Reparos</h2>
             <p class="text-gray-800 mb-3"><strong>Mão de obra:</strong> 70 €/h para eletricidade, segundo a grelha interna R12.</p>
-            <p class="text-gray-800 mb-3"><strong>Deslocação:</strong> Z1 = 15 €, Z2 = 25 €, Z3 = 35 €, Z4 = 45 €, Z5 = 55 € e Z6 = 65 €. Em noite, fim de semana ou feriado, aplica-se +50% à mão de obra.</p>
+            <p class="text-gray-800 mb-3">Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €.</p>
             <p class="text-gray-800 mb-2"><strong>Exemplos de distância TomTom na região de Trás-os-Montes:</strong></p>
             <ul class="list-disc pl-6 space-y-1 mb-3">
-              <li>Macedo de Cavaleiros: 0,0 km · Z1 · 15 €</li>
-              <li>Mirandela: 27,4 km · Z2 · 25 €</li>
-              <li>Bragança: 42,4 km · Z3 · 35 €</li>
-              <li>Chaves: 74,7 km · Z5 · 55 €</li>
-              <li>Vila Real: 85,7 km · Z5 · 55 €</li>
-              <li>Miranda do Douro: 92,2 km · Z6 · 65 €</li>
+              <li>Macedo de Cavaleiros: 0,0 km · 15 €</li>
+              <li>Mirandela: 27,4 km · 25 €</li>
+              <li>Bragança: 42,4 km · 35 €</li>
+              <li>Chaves: 74,7 km · 55 €</li>
+              <li>Vila Real: 85,7 km · 55 €</li>
+              <li>Miranda do Douro: 92,2 km · 65 €</li>
             </ul>
             <p class="text-gray-800 mb-3"><strong>Equipamento real:</strong> Fluke T6-1000, Megger MFT1741+, FLIR E96 e câmara de inspeção de 30 m.</p>
             <p class="text-sm text-gray-600">Fontes internas: grelha de zonas verrouillée em 14/07/2026; <code>preco-deslocacao.py</code>; dados TomTom reais em <code>_audit/zonas-distances-concelhos.json</code> (data/concelhos.json).</p>
@@ -298,7 +298,7 @@ window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {
             </div>
             <div>
               <h3 class="font-bold text-gray-900 mb-2 text-xl">Quanto custa prevenir/reparar curto-circuitos?</h3>
-              <p class="text-gray-700">A tarifa interna de eletricista é 70 €/h. A deslocação segue a grelha Z1 = 15 €, Z2 = 25 €, Z3 = 35 €, Z4 = 45 €, Z5 = 55 € e Z6 = 65 €; em noite, fim de semana ou feriado aplica-se +50% à mão de obra. O orçamento por escrito é preparado antes da intervenção, sem surpresas; o trabalho depende do diagnóstico.</p>
+              <p class="text-gray-700">A tarifa interna de eletricista é 70 €/h. A deslocação segue a grelha deslocação 30 € em dias úteis e 50 € à noite, fins de semana e feriados; mão de obra: 70 €/hora em dias úteis (9h–17h) e 100 €/hora à noite (17h–9h), fins de semana e feriados. O orçamento por escrito é preparado antes da intervenção, sem surpresas; o trabalho depende do diagnóstico.</p>
             </div>
             <div>
               <h3 class="font-bold text-gray-900 mb-2 text-xl">Posso prevenir com DPS (dispositivo de proteção contra sobretensões)?</h3>

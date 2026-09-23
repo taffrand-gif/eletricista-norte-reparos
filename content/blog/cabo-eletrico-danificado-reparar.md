@@ -289,7 +289,7 @@ Em Trás-os-Montes, onde muitas casas têm instalações antigas (30-40 anos) e 
 | Substituir cabo 10m (acessível) | €150-250 | 2-3h | Cabo + instalação |
 | Substituir cabo em parede (5m) | €200-400 | 3-5h | Cabo + rasgar/tapar parede |
 | Substituir cabo em parede (10m) | €350-700 | 5-8h | Cabo + rasgar/tapar parede |
-| Emergência 24h | +50% | Imediato | Atendimento urgente |
+| Emergência 24h | 100 €/hora + deslocação 50 € | Imediato | Atendimento urgente |
 
 ### Materiais (Compra)
 
@@ -401,7 +401,7 @@ Em Trás-os-Montes, onde muitas casas têm instalações antigas (30-40 anos) e 
 
 ### 3. Quanto custa substituir cabo danificado?
 
-**Resposta:** Cabo de aparelho: €5-50 (DIY). Cabo fixo acessível: €80-250. Cabo dentro de parede: €200-700. Emergência 24h: +50%.
+**Resposta:** Cabo de aparelho: €5-50 (DIY). Cabo fixo acessível: €80-250. Cabo dentro de parede: €200-700. À noite (17h–9h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €.
 
 ### 4. Posso substituir cabo de aparelho eu mesmo?
 

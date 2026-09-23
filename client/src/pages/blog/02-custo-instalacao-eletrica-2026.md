@@ -133,7 +133,7 @@ O preço de uma instalação elétrica completa varia significativamente conform
 **Resposta:** Sim, mas recomendamos a orientação do electricista para garantir compatibilidade. Alguns profissionais oferecem desconto na mão-de-obra se o cliente fornecer materiais.
 
 ### Há diferença de preço entre zonas urbanas e rurais?
-**Resposta:** Sim, em zonas rurais pode haver acréscimo de 10-20% devido a deslocamentos e logística.
+Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €.
 
 ### Oferecem financiamento ou pagamento faseado?
 **Resposta:** Sim, para obras acima de €3.000 oferecemos planos de pagamento em 3-12 meses sem juros.

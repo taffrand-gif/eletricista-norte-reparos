@@ -14,7 +14,7 @@ import { getCidadesProximas } from '@/data/cidadesProximas';
 export default function MacedoCavaleiros() {
  const { config } = useSite();
  useEffect(() => {
- document.title = "⚡ Eletricista Macedo Cavaleiros — Orçamento Grátis | Garantia Escrita";
+ document.title = "⚡ Eletricista Macedo Cavaleiros — Orçamento por Escrito | Garantia Escrita";
  
  let metaDescription = document.querySelector('meta[name="description"]');
  if (!metaDescription) {

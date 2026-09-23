@@ -548,7 +548,7 @@ Preços médios em Trás-os-Montes (2026):
 - **Reparação média** (secção de cabo): 150-300€
 - **Reparação complexa** (quadro elétrico, circuito dedicado): 300-600€
 
-Urgências noturnas/fim de semana: +50%. estimativa sem custo por telefone: **+351 932 321 892**.
+À noite (17h–9h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €. estimativa sem custo por telefone: **+351 932 321 892**.
 
 ### Como saber se houve curto-circuito?
 **5 sinais típicos**:

@@ -3,20 +3,20 @@ import { Link } from 'wouter';
 import AnswerFirstFAQSchema from '@/components/SEO/AnswerFirstFAQSchema';
 
 export default function QuantoCustaEletricistaBraganca() {
- // GEO1 — alignement grille verrouillée R12 §12 (70€/h + Z1-Z6 + +50%)
- // Les fourchettes locales "25-35€/hora" / "45-65€/hora" etc. étaient
+ // GEO1 — Mão de obra: 70 €/hora em dias úteis (9h–17h) e 100 €/hora à noite (17h–9h), fins de semana e feriados.
+ // Les fourchettes locales "25-35€/hora" / "45-70€/hora" etc. étaient
  // hors-grille (R11) ; remplacées par la formule officielle Norte Reparos.
  const pageUrl = 'https://eletricista-norte-reparos.pt/blog/quanto-custa-eletricista-braganca';
  const faqs = [
  {
  question: 'Quanto custa um eletricista em Bragança por hora?',
  answer:
- 'A Norte Reparos pratica 70€/hora em horário comercial (segunda a sexta, 9h-18h) em Bragança e região. Em período noturno (20h-8h), sábado, domingo ou feriado, aplica-se majoração de +50% sobre o tarifário hora (perfazendo 105€/h) e sobre a deslocação. Não há "tarifa de urgência" paralela — é o mesmo tarifário com majoração legal.',
+ 'A Norte Reparos pratica 70€/hora em horário comercial (segunda a sexta, 9h-18h) em Bragança e região. Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. Não há "tarifa de urgência" paralela — é o mesmo tarifário com majoração legal.',
  },
  {
  question: 'Quanto custa deslocação para Bragança?',
  answer:
- 'Bragança está na Zona 3 (44-65 km de Macedo de Cavaleiros). A deslocação Z3 custa 35€ em horário normal e 52,50€ em período majorado (noite/WE/feriado). O preço final combina deslocação + horas × 70€/h (ou 105€/h majorado) + materiais especificados por escrito.',
+ 'Bragança está (44-65 km de Macedo de Cavaleiros). A deslocação custa 30€ em horário normal e 52,50€ em período majorado (noite/WE/feriado). O preço final combina deslocação + horas × 70€/h (ou 105€/h majorado) + materiais especificados por escrito.',
  },
  {
  question: 'Quanto custa instalar tomada em Bragança?',
@@ -31,7 +31,7 @@ export default function QuantoCustaEletricistaBraganca() {
  {
  question: 'Como poupar em serviços de eletricista em Bragança?',
  answer:
- 'Agrupar vários trabalhos numa única visita (reduz a deslocação), comparar 2-3 orçamentos por escrito antes de avançar, preferir horário comercial (sem majoração +50%), e fazer manutenção preventiva anual. A nossa política é o preço combinado por escrito ser o preço final — sem surpresas.',
+ Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. A nossa política é o preço combinado por escrito ser o preço final — sem surpresas.',
  },
  ];
  return (
@@ -48,7 +48,7 @@ export default function QuantoCustaEletricistaBraganca() {
  <title>Quanto Custa Eletricista em Bragança? (Tarifário Norte Reparos 2026) | Norte Reparos</title>
  <meta
  name="description"
- content="Quanto custa um eletricista em Bragança em 2026? Tarifário Norte Reparos: 70€/h horário normal, +50% noite/WE/feriado, deslocação Z3 35€ para Bragança. Orçamento por escrito."
+ content="Quanto custa um eletricista em Bragança em 2026? Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. Orçamento por escrito."
  />
  <link rel="canonical" href={pageUrl} />
  <script type="application/ld+json">
@@ -56,7 +56,7 @@ export default function QuantoCustaEletricistaBraganca() {
  "@context": "https://schema.org",
  "@type": "Article",
  "headline": "Quanto Custa Eletricista em Bragança? (Tarifário Norte Reparos 2026)",
- "description": "Tabela oficial Norte Reparos para Bragança: 70€/h horário normal, majoração +50% em período majorado, deslocação Z3 35€ (52,50€ majorado). Orçamento por escrito antes de qualquer intervenção.",
+ Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. Orçamento por escrito antes de qualquer intervenção.",
  "author": { "@type": "Organization", "name": "Norte Reparos" },
  "publisher": { "@type": "Organization", "name": "Norte Reparos", "url": "https://eletricista-norte-reparos.pt" },
  "datePublished": "2026-03-03",
@@ -88,7 +88,7 @@ export default function QuantoCustaEletricistaBraganca() {
  Resposta direta:
  </p>
  <p className="text-gray-800">
- A Norte Reparos pratica em Bragança <strong>70€/hora</strong> em horário comercial (segunda a sexta, 9h-18h). No período noturno, sábado, domingo ou feriado, aplica-se uma <strong>majoração de +50%</strong> sobre o tarifário hora (perfazendo 105€/h) e sobre a deslocação. Para Bragança (Z3), a deslocação é <strong>35€</strong> em horário normal, <strong>52,50€</strong> em período majorado. O preço final combina deslocação + horas × tarifário hora + materiais orçados por escrito.
+ A Norte Reparos pratica em Bragança <strong>70€/hora</strong> em horário comercial (segunda a sexta, 9h-18h). Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. Para Bragança, a deslocação é <strong>30€</strong> em horário normal, <strong>52,50€</strong> em período majorado. O preço final combina deslocação + horas × tarifário hora + materiais orçados por escrito.
  </p>
  </div>
  <p className="lead text-xl text-gray-700 mb-8">
@@ -98,11 +98,11 @@ export default function QuantoCustaEletricistaBraganca() {
  Tarifário Norte Reparos — fórmula de cálculo
  </h2>
  <p>
- O preço final combina três variáveis publicadas: a deslocação até si (em função da zona), o tempo de trabalho (em horas × tarifário hora), e os materiais especificados por escrito. Não usamos forfaits, nem "pacotes" — o preço final é transparente e resulta apenas destas variáveis.
+ Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. Não usamos forfaits, nem "pacotes" — o preço final é transparente e resulta apenas destas variáveis.
  </p>
  <div className="bg-gray-50 rounded-lg p-6 my-8">
  <h3 className="text-2xl font-bold text-gray-900 mb-4">
- Tabela oficial Norte Reparos — Bragança (Z3)
+ Tabela oficial Norte Reparos — Bragança
  </h3>
  <div className="overflow-x-auto">
  <table className="min-w-full divide-y divide-gray-200">
@@ -123,12 +123,12 @@ export default function QuantoCustaEletricistaBraganca() {
  <tr>
  <td className="px-6 py-4 text-sm text-gray-900">Mão de obra</td>
  <td className="px-6 py-4 text-sm text-gray-900">70€/h</td>
- <td className="px-6 py-4 text-sm text-gray-900">105€/h (70€ + 50%)</td>
+ <td className="px-6 py-4 text-sm text-gray-900">Noite, fim de semana e feriado: 100 €/hora + deslocação 50 €</td>
  </tr>
  <tr>
- <td className="px-6 py-4 text-sm text-gray-900">Deslocação Z3 (Bragança)</td>
- <td className="px-6 py-4 text-sm text-gray-900">35€</td>
- <td className="px-6 py-4 text-sm text-gray-900">52,50€ (35€ + 50%)</td>
+ <td className="px-6 py-4 text-sm text-gray-900">Deslocação (Bragança)</td>
+ <td className="px-6 py-4 text-sm text-gray-900">30€</td>
+ <td className="px-6 py-4 text-sm text-gray-900">Noite, fim de semana e feriado: 100 €/hora + deslocação 50 €</td>
  </tr>
  <tr>
  <td className="px-6 py-4 text-sm text-gray-900">Materiais</td>
@@ -139,7 +139,7 @@ export default function QuantoCustaEletricistaBraganca() {
  </table>
  </div>
  <p className="text-sm text-gray-600 mt-4">
- * Bragança está na Zona 3 (44-65 km de Macedo de Cavaleiros). Para saber a sua zona, indique-nos a sua localidade ao pedir orçamento.
+ * Bragança está (44-65 km de Macedo de Cavaleiros). Para saber a sua zona, indique-nos a sua localidade ao pedir orçamento.
  </p>
  </div>
  <p>
@@ -173,7 +173,7 @@ export default function QuantoCustaEletricistaBraganca() {
  Serviços mais comuns e como se orçamentam
  </h2>
  <p>
- Todos os serviços abaixo seguem a mesma fórmula: deslocação Z3 (35€) + horas × 70€/h + materiais por linha no orçamento escrito. Não publicamos preços forfait porque o custo varia muito com o estado real da instalação (casas antigas em granito, distâncias internas, complexidade da cablagem).
+ Todos os serviços abaixo seguem a mesma fórmula: deslocação (30€) + horas × 70€/h + materiais por linha no orçamento escrito. Não publicamos preços forfait porque o custo varia muito com o estado real da instalação (casas antigas em granito, distâncias internas, complexidade da cablagem).
  </p>
  <div className="bg-gray-50 rounded-lg p-6 my-8">
  <h3 className="text-2xl font-bold text-gray-900 mb-4">
@@ -194,61 +194,61 @@ export default function QuantoCustaEletricistaBraganca() {
  <tbody className="bg-white divide-y divide-gray-200">
  <tr>
  <td className="px-6 py-4 text-sm text-gray-900">Instalar tomada simples</td>
- <td className="px-6 py-4 text-sm text-gray-900">35€ (Z3) + ~1h × 70€/h + tomada (se fornecida)</td>
+ <td className="px-6 py-4 text-sm text-gray-900">35€ + ~1h × 70€/h + tomada (se fornecida)</td>
  </tr>
  <tr>
  <td className="px-6 py-4 text-sm text-gray-900">Instalar tomada com terra (Schuko)</td>
- <td className="px-6 py-4 text-sm text-gray-900">35€ (Z3) + ~1-2h × 70€/h + tomada Schuko</td>
+ <td className="px-6 py-4 text-sm text-gray-900">35€ + ~1-2h × 70€/h + tomada Schuko</td>
  </tr>
  <tr>
  <td className="px-6 py-4 text-sm text-gray-900">Instalar tomada USB dupla</td>
- <td className="px-6 py-4 text-sm text-gray-900">35€ (Z3) + ~1-2h × 70€/h + tomada USB</td>
+ <td className="px-6 py-4 text-sm text-gray-900">35€ + ~1-2h × 70€/h + tomada USB</td>
  </tr>
  <tr>
  <td className="px-6 py-4 text-sm text-gray-900">Instalar interruptor simples</td>
- <td className="px-6 py-4 text-sm text-gray-900">35€ (Z3) + ~1h × 70€/h + interruptor</td>
+ <td className="px-6 py-4 text-sm text-gray-900">35€ + ~1h × 70€/h + interruptor</td>
  </tr>
  <tr>
  <td className="px-6 py-4 text-sm text-gray-900">Instalar interruptor duplo/triplo</td>
- <td className="px-6 py-4 text-sm text-gray-900">35€ (Z3) + ~1-2h × 70€/h + interruptor</td>
+ <td className="px-6 py-4 text-sm text-gray-900">35€ + ~1-2h × 70€/h + interruptor</td>
  </tr>
  <tr>
  <td className="px-6 py-4 text-sm text-gray-900">Instalar candeeiro teto</td>
- <td className="px-6 py-4 text-sm text-gray-900">35€ (Z3) + ~1-2h × 70€/h + candeeiro (se fornecido)</td>
+ <td className="px-6 py-4 text-sm text-gray-900">35€ + ~1-2h × 70€/h + candeeiro (se fornecido)</td>
  </tr>
  <tr>
  <td className="px-6 py-4 text-sm text-gray-900">Instalar foco LED embutido</td>
- <td className="px-6 py-4 text-sm text-gray-900">35€ (Z3) + ~1h × 70€/h + foco LED (por unidade)</td>
+ <td className="px-6 py-4 text-sm text-gray-900">35€ + ~1h × 70€/h + foco LED (por unidade)</td>
  </tr>
  <tr>
  <td className="px-6 py-4 text-sm text-gray-900">Substituir disjuntor</td>
- <td className="px-6 py-4 text-sm text-gray-900">35€ (Z3) + ~1h × 70€/h + disjuntor</td>
+ <td className="px-6 py-4 text-sm text-gray-900">35€ + ~1h × 70€/h + disjuntor</td>
  </tr>
  <tr>
  <td className="px-6 py-4 text-sm text-gray-900">Substituir diferencial</td>
- <td className="px-6 py-4 text-sm text-gray-900">35€ (Z3) + ~1h × 70€/h + diferencial 30mA</td>
+ <td className="px-6 py-4 text-sm text-gray-900">35€ + ~1h × 70€/h + diferencial 30mA</td>
  </tr>
  <tr>
  <td className="px-6 py-4 text-sm text-gray-900">Substituir quadro elétrico completo</td>
- <td className="px-6 py-4 text-sm text-gray-900">35€ (Z3) + horas × 70€/h + quadro + disjuntores + diferencial (orçados)</td>
+ <td className="px-6 py-4 text-sm text-gray-900">30€ + horas × 70€/h + quadro + disjuntores + diferencial (orçados)</td>
  </tr>
  <tr>
  <td className="px-6 py-4 text-sm text-gray-900">Diagnóstico de avaria</td>
- <td className="px-6 py-4 text-sm text-gray-900">35€ (Z3) + ~1h × 70€/h</td>
+ <td className="px-6 py-4 text-sm text-gray-900">35€ + ~1h × 70€/h</td>
  </tr>
  <tr>
  <td className="px-6 py-4 text-sm text-gray-900">Arranjo curto-circuito</td>
- <td className="px-6 py-4 text-sm text-gray-900">35€ (Z3) + horas × 70€/h + materiais (cabo, tomada, etc.)</td>
+ <td className="px-6 py-4 text-sm text-gray-900">30€ + horas × 70€/h + materiais (cabo, tomada, etc.)</td>
  </tr>
  <tr>
  <td className="px-6 py-4 text-sm text-gray-900">Certificação elétrica</td>
- <td className="px-6 py-4 text-sm text-gray-900">35€ (Z3) + horas × 70€/h + emissão do boletim (incluído)</td>
+ <td className="px-6 py-4 text-sm text-gray-900">30€ + horas × 70€/h + emissão do boletim (incluído)</td>
  </tr>
  </tbody>
  </table>
  </div>
  <p className="text-sm text-gray-600 mt-4">
- * Fórmula Norte Reparos: deslocação segundo a zona + horas × tarifário hora (70€/h, ou 105€/h em período majorado) + materiais orçados à parte por escrito. Não publicamos preços forfait porque o custo real varia com o estado da instalação. Para Bragança (Z3) a deslocação é 35€ em horário normal e 52,50€ em período majorado.
+ * Fórmula Norte Reparos: deslocação segundo a zona + horas × tarifário hora (70€/h, ou 105€/h em período majorado) + materiais orçados à parte por escrito. Não publicamos preços forfait porque o custo real varia com o estado da instalação. Para Bragança a deslocação é 30€ em horário normal e 52,50€ em período majorado.
  </p>
  </div>
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
@@ -310,7 +310,7 @@ export default function QuantoCustaEletricistaBraganca() {
  Quanto custa um eletricista em Bragança por hora?
  </h3>
  <p className="text-gray-700">
- A Norte Reparos pratica 70€/hora em horário comercial (segunda a sexta, 9h-18h) em Bragança e região. Em período noturno (20h-8h), sábado, domingo ou feriado, aplica-se majoração de +50% sobre o tarifário hora (perfazendo 105€/h) e sobre a deslocação. Não há "tarifa de urgência" paralela — é o mesmo tarifário com majoração legal aplicada.
+ A Norte Reparos pratica 70€/hora em horário comercial (segunda a sexta, 9h-18h) em Bragança e região. Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. Não há "tarifa de urgência" paralela — é o mesmo tarifário com majoração legal aplicada.
  </p>
  </div>
  <div className="border-l-4 border-orange-600 pl-4">
@@ -318,7 +318,7 @@ export default function QuantoCustaEletricistaBraganca() {
  Quanto custa a deslocação para Bragança?
  </h3>
  <p className="text-gray-700">
- Bragança está na Zona 3 (44-65 km de Macedo de Cavaleiros). A deslocação Z3 custa 35€ em horário normal e 52,50€ em período majorado (noite, sábado, domingo ou feriado). O preço final combina a deslocação + horas × tarifário hora (70€/h ou 105€/h majorado) + materiais especificados por escrito.
+ Bragança está (44-65 km de Macedo de Cavaleiros). A deslocação custa 30€ em horário normal e 52,50€ em período majorado (noite, sábado, domingo ou feriado). O preço final combina a deslocação + horas × tarifário hora (70€/h ou 105€/h majorado) + materiais especificados por escrito.
  </p>
  </div>
  <div className="border-l-4 border-orange-600 pl-4">
@@ -342,13 +342,13 @@ export default function QuantoCustaEletricistaBraganca() {
  Como poupar em serviços de eletricista em Bragança?
  </h3>
  <p className="text-gray-700">
- Agrupar vários trabalhos numa única visita (reduz a deslocação), comparar 2-3 orçamentos por escrito antes de avançar, preferir horário comercial (sem majoração +50%), e fazer manutenção preventiva anual. A nossa política é o preço combinado por escrito ser o preço final — sem surpresas.
+ Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. A nossa política é o preço combinado por escrito ser o preço final — sem surpresas.
  </p>
  </div>
  </div>
  <div className="bg-orange-50 border-2 border-orange-600 rounded-lg p-8 my-12">
  <h3 className="text-2xl font-bold text-gray-900 mb-4">
- Orçamento Gratuito e Transparente
+ Orçamento por Escrito e Transparente
  </h3>
  <p className="text-gray-800 mb-6">
  Eletricistas com experiência em Bragança e Trás-os-Montes. Preços justos, sem surpresas. Orçamento detalhado antes de começar. Garantia do serviço.

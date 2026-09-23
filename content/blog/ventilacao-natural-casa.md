@@ -120,7 +120,7 @@ keywords: ["ventilação natural", "arrefecer casa", "sem ar condicionado", "ver
 - Grátis
 
 **Rotina**:
-- 22h-8h: Janelas abertas
+
 - 8h-22h: Janelas fechadas + estores
 
 ## 🏠 Ventilação em Trás-os-Montes
@@ -269,7 +269,7 @@ keywords: ["ventilação natural", "arrefecer casa", "sem ar condicionado", "ver
 
 **Exceção**: Se vento forte + sombra, ventilação cruzada
 
-### Verão Noite (22h-8h)
+Noite, fim de semana e feriado: 100 €/hora + deslocação 50 €
 
 **Objetivo**: Arrefecer massa térmica
 
@@ -481,7 +481,7 @@ Atendemos **86 cidades** em Trás-os-Montes:
 **Sim**, especialmente Trás-os-Montes. Noites frescas (15-20°C) + casas pedra (massa térmica) = arrefece 5-10°C. Ventilação noturna + fechar dia = conforto sem AC. Grátis.
 
 ### Como ventilar casa verão?
-**Noite** (22h-8h): Abrir TODAS janelas, arrefecer massa térmica. **Dia** (8h-22h): Fechar janelas + estores, manter fresco. Ventilação cruzada se vento. Reduz AC 50-80%.
+À noite (17h–9h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €. **Dia** (8h-22h): Fechar janelas + estores, manter fresco. Ventilação cruzada se vento. Reduz AC 50-80%.
 
 ### Que melhorias fazer?
 **Prioridade**: Estores exteriores (€600-1,500, bloqueia sol 70-80%). Depois: claraboias (€500-1,500, efeito chaminé), ventiladores teto (€80-300, circula ar). ROI 2-5 anos.

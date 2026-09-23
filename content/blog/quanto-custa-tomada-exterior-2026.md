@@ -197,7 +197,7 @@ Precisa de tomada no jardim, garagem ou terraço? Este guia completo explica qua
 - Cabo XV 15m: 67,50€
 - Disjuntor 16A: 12€
 - Mão obra 1.5h: 105€
-- Deslocação: 25€
+- Deslocação: 30€
 - **TOTAL: 257,50€**
 
 ### PASSO 3: Instalação Cabo (1-2h)
@@ -259,7 +259,7 @@ Precisa de tomada no jardim, garagem ou terraço? Este guia completo explica qua
 3. Verificar não há fugas corrente
 4. Confirmar terra funcional
 
-**Duração total:** 2-4 horas (conforme distância)
+Deslocação 30 € (50 € noite/fim de semana)
 
 ## Erros Comuns a Evitar
 
@@ -354,7 +354,7 @@ Precisa de tomada no jardim, garagem ou terraço? Este guia completo explica qua
 **Não recomendado.** Instalação elétrica exterior requer conhecimentos específicos (normas IP, cabos adequados, diferencial). Erro pode causar choque fatal. Além disso, seguro pode não cobrir se não for feito por profissional.
 
 ### 2. Quanto tempo dura a instalação?
-**2-4 horas** conforme distância. Instalação simples (5m): 2h. Instalação longa (30m enterrado): 4h.
+A deslocação tem preço único em qualquer localidade servida: 30 € em dias úteis (9h–17h) e 50 € à noite, fins de semana e feriados. Instalação simples (5m): 2h. Instalação longa (30m enterrado): 4h.
 
 ### 3. Preciso de Fichas eletrotécnicas assinadas por técnico profissional?
 **Não obrigatório** para adicionar 1 tomada. Mas se fizer remodelação >50% instalação, sim.

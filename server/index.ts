@@ -71,7 +71,7 @@ async function startServer() {
  },
  "/precos-eletricista": {
  title: "Preços Eletricista | Norte Reparos - Tabela Trás-os-Montes",
- description: "Tabela de preços do eletricista em Trás-os-Montes. Desde 70€/h, majoração +50% noites/fins de semana/feriados, deslocação por zona Z1-Z6 (15-65€).",
+ description: "Tabela de preços do eletricista em Trás-os-Montes. 70€/h + deslocação 30€ em dias úteis (9h–17h); 100€/h + deslocação 50€ à noite, fins de semana e feriados.",
  canonical: "https://eletricista-norte-reparos.pt/precos-eletricista"
  },
  "/areas-atuacao": {

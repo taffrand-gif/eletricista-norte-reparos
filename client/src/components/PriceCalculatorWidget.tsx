@@ -13,73 +13,58 @@ interface ServicePrice {
  priceMax: number;
  nightMultiplier: number;
 }
-interface Zone {
- label: string;
- price: number;
- nightPrice: number;
-}
 // NORTE REPAROS - Grille tarifaire officielle 2026
 const servicesNorte: ServicePrice[] = [
- { id: 'sanita', label: 'Desentupimento Sanita', priceMin: 120, priceMax: 120, nightMultiplier: 1.5 },
- { id: 'fuga', label: 'Fuga Água (urgência)', priceMin: 140, priceMax: 180, nightMultiplier: 1.5 },
- { id: 'esquentador', label: 'Esquentador (arranjo)', priceMin: 180, priceMax: 300, nightMultiplier: 1.5 },
- { id: 'torneira', label: 'Arranjo Torneira', priceMin: 58, priceMax: 115, nightMultiplier: 1.5 },
- { id: 'autoclismo', label: 'Autoclismo', priceMin: 40, priceMax: 135, nightMultiplier: 1.5 }
+ { id: 'sanita', label: 'Desentupimento Sanita', priceMin: 120, priceMax: 120, nightMultiplier: 100 / 70 },
+ { id: 'fuga', label: 'Fuga Água (urgência)', priceMin: 140, priceMax: 180, nightMultiplier: 100 / 70 },
+ { id: 'esquentador', label: 'Esquentador (arranjo)', priceMin: 180, priceMax: 300, nightMultiplier: 100 / 70 },
+ { id: 'torneira', label: 'Arranjo Torneira', priceMin: 58, priceMax: 115, nightMultiplier: 100 / 70 },
+ { id: 'autoclismo', label: 'Autoclismo', priceMin: 40, priceMax: 135, nightMultiplier: 100 / 70 }
 ];
 // - Grille tarifaire officielle 2026
 const servicesStaff: ServicePrice[] = [
- { id: 'tomada', label: 'Tomada Nova', priceMin: 66, priceMax: 90, nightMultiplier: 1.5 },
- { id: 'disjuntor', label: 'Disjuntor', priceMin: 75, priceMax: 95, nightMultiplier: 1.5 },
- { id: 'quadro', label: 'Quadro 12 módulos', priceMin: 370, priceMax: 650, nightMultiplier: 1.5 },
- { id: 'ponto-luz', label: 'Ponto Luz Novo', priceMin: 134, priceMax: 170, nightMultiplier: 1.5 },
- { id: 'diagnostico', label: 'Diagnóstico Pane', priceMin: 80, priceMax: 120, nightMultiplier: 1.5 }
+ { id: 'tomada', label: 'Tomada Nova', priceMin: 66, priceMax: 90, nightMultiplier: 100 / 70 },
+ { id: 'disjuntor', label: 'Disjuntor', priceMin: 75, priceMax: 95, nightMultiplier: 100 / 70 },
+ { id: 'quadro', label: 'Quadro 12 módulos', priceMin: 370, priceMax: 650, nightMultiplier: 100 / 70 },
+ { id: 'ponto-luz', label: 'Ponto Luz Novo', priceMin: 134, priceMax: 170, nightMultiplier: 100 / 70 },
+ { id: 'diagnostico', label: 'Diagnóstico Pane', priceMin: 80, priceMax: 120, nightMultiplier: 100 / 70 }
 ];
-// Zonas de deslocação (idênticas para os 2 sites)
-// Aligné grille Filipe 14/07 (bornes [a,b): 15.0km → Z2) + concelhos.json TomTom 16/07
-const zones: Zone[] = [
- { label: 'Z1 - Macedo (0-15km)', price: 15, nightPrice: 22.5 },
- { label: 'Z2 - Mirandela (15-30km)', price: 25, nightPrice: 37.5 },
- { label: 'Z3 - Bragança/Vila Flor/Vinhais (30-50km)', price: 35, nightPrice: 52.5 },
- { label: 'Z4 - Torre Moncorvo/Murça (50-70km)', price: 45, nightPrice: 67.5 },
- { label: 'Z5 - Chaves/Vila Real (70-90km)', price: 55, nightPrice: 82.5 },
- { label: 'Z6 - Miranda Douro/Lamego/Montalegre (90-140km)', price: 65, nightPrice: 97.5 }
-];
+// Grelha única 2026-09-23 : deslocação 30€ (dias úteis 9h–17h) / 50€ (noite, fins de semana, feriados)
+const TRAVEL_DAY = 30;
+const TRAVEL_NIGHT = 50;
 function PriceCalculatorWidget() {
  const { config } = useSite();
  const { trackPhoneClick, trackWhatsAppClick } = useAnalytics();
  const [selectedService, setSelectedService] = useState<string>('');
  const [urgency, setUrgency] = useState<'normal' | 'urgent'>('normal');
- const [zoneIndex, setZoneIndex] = useState<number>(2); // Default Z3 Bragança
  // Selecionar serviços segundo o site
  const services = config.id === 'norte-reparos' ? servicesNorte : servicesStaff;
  // Cálculo de preço com useMemo para performance
  const calculatedPrice = useMemo(() => {
  if (!selectedService) return null;
  const service = services.find(s => s.id === selectedService);
- const selectedZone = zones[zoneIndex];
- if (!service || !selectedZone) return null;
+ if (!service) return null;
  // Cálculo com urgência
  const isNight = urgency === 'urgent';
  const multiplier = isNight ? service.nightMultiplier : 1;
  const laborMin = Math.round(service.priceMin * multiplier);
  const laborMax = Math.round(service.priceMax * multiplier);
- const travel = isNight ? selectedZone.nightPrice : selectedZone.price;
+ const travel = isNight ? TRAVEL_NIGHT : TRAVEL_DAY;
  return {
  laborMin,
  laborMax,
  travel,
  totalMin: laborMin + travel,
  totalMax: laborMax + travel,
- serviceName: service.label,
- zoneName: selectedZone.label
+ serviceName: service.label
  };
- }, [selectedService, urgency, zoneIndex, services]);
+ }, [selectedService, urgency, services]);
  const handlePhoneClick = () => {
  trackPhoneClick(config.phone);
  };
  const handleWhatsAppClick = () => {
  const message = calculatedPrice
- ? `Olá! Vi o calculador de preços. Preciso de: ${calculatedPrice.serviceName}. Zona: ${calculatedPrice.zoneName}. Preço estimado: ${calculatedPrice.totalMin}-${calculatedPrice.totalMax}€`
+ ? `Olá! Vi o calculador de preços. Preciso de: ${calculatedPrice.serviceName}. Preço estimado: ${calculatedPrice.totalMin}-${calculatedPrice.totalMax}€`
  : `Olá! Gostaria de um sem compromisso.`;
  trackWhatsAppClick('PriceCalculatorWidget');
  window.open(`https://wa.me/${config.whatsapp}?text=${encodeURIComponent(message)}`, '_blank');
@@ -134,7 +119,7 @@ function PriceCalculatorWidget() {
  {/* Urgency Selector */}
  <div className="mb-6">
  <label className="block text-lg font-bold text-gray-900 mb-3">
- 2. Urgência
+ 2. Horário
  </label>
  <div className="grid grid-cols-2 gap-4">
  <button
@@ -147,7 +132,7 @@ function PriceCalculatorWidget() {
  }}
  aria-pressed={urgency === 'normal'}
  >
- Normal
+ Dias úteis 9h–17h
  </button>
  <button
  onClick={() => setUrgency('urgent')}
@@ -159,32 +144,9 @@ function PriceCalculatorWidget() {
  }}
  aria-pressed={urgency === 'urgent'}
  >
- Urgente (+50%)
+ Noite, fim de semana ou feriado
  </button>
  </div>
- </div>
- {/* Zone Selector */}
- <div className="mb-8">
- <label htmlFor="zone-select" className="block text-lg font-bold text-gray-900 mb-3">
- 3. Zona de Deslocação
- </label>
- <select
- id="zone-select"
- value={zoneIndex}
- onChange={(e) => setZoneIndex(Number(e.target.value))}
- className="w-full p-4 rounded-xl border-2 focus:outline-none text-lg transition-all"
- style={{
- borderColor: config.colors.primary,
- backgroundColor: 'white'
- }}
- aria-label="Selecione a zona de deslocação"
- >
- {zones.map((zone, index) => (
- <option key={index} value={index}>
- {zone.label} (+{urgency === 'urgent' ? zone.nightPrice : zone.price}€)
- </option>
- ))}
- </select>
  </div>
  {/* Result Box */}
  {calculatedPrice && (
@@ -220,8 +182,8 @@ function PriceCalculatorWidget() {
  </p>
  {urgency === 'urgent' && (
  <p className="flex justify-between text-orange-600">
- <span>Urgência 24h:</span>
- <span className="font-semibold">+50%</span>
+ <span>Noite / fim de semana / feriado:</span>
+ <span className="font-semibold">100€/h + 50€</span>
  </p>
  )}
  </div>

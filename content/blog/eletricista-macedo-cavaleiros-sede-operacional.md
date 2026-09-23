@@ -22,7 +22,7 @@ Toda a região em redor de Macedo está coberta com tempos de resposta curtos. M
 
 Em Macedo fazemos: diagnóstico e reparação de avarias, substituição de quadros elétricos, instalação de iluminação LED interior e exterior, certificação elétrica, instalação de carregadores para veículos elétricos, sistemas solares fotovoltaicos. Temos experiência e emitimos documentação oficial.
 
-## Preços Macedo — Zona 1
+## Preços Macedo — Deslocação 30 € (50 € noite/fim de semana)
 
 Por ser a nossa sede, os preços em Macedo são os mais baixos: deslocação 20€ (ou incluída no centro), hora a 80€/h. Para um diagnóstico típico + reparação de 1-2 horas, o investimento ronda os 100€-180€. Ligue 932 321 892 agora.
 

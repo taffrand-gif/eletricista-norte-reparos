@@ -189,7 +189,7 @@ const PouparEnergiaEletricaDicas: React.FC = () => {
  </section>
  <section id="horarios" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">5. ⏰ Aproveitar as Tarifas Bi-Horárias</h2>
- <p>Se tem contrato bi-horário ou tri-horário, concentre os consumos maiores nas horas de vazio (geralmente das 22h às 8h nos dias úteis e fins de semana completos).</p>
+ <p>À noite (17h–9h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €.</p>
  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
  <div className="bg-white p-6 rounded-xl border border-gray-200">
  <h3 className="font-bold text-gray-900 mb-3">Horas de Vazio (mais barato)</h3>

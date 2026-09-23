@@ -10,7 +10,7 @@ keywords: ["reduzir consumo eletricidade", "poupar luz", "conta luz alta", "efic
 
 # Reduzir Consumo Eletricidade: 20 Formas Poupar 30-50% Conta Luz
 
-**Conta luz €150-300/mês? Quer reduzir 30-50%?** Com 20 medidas práticas, **poupa €300-800/ano** sem sacrificar conforto. LED poupa 80%, eletrodomésticos A+++ 40%, tarifa bi-horária 30%, eliminar standby 10%. Neste guia completo, explicamos cada medida, investimento necessário, poupança real e ROI. Comece hoje, veja resultados próxima fatura.
+**Conta luz €150-300/mês? Quer reduzir 30-50%?** Com 20 medidas práticas, **poupa €300-800/ano** sem sacrificar conforto. À noite (17h–9h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €. Neste guia completo, explicamos cada medida, investimento necessário, poupança real e ROI. Comece hoje, veja resultados próxima fatura.
 
 ## 💡 20 Formas Poupar Eletricidade
 
@@ -57,7 +57,7 @@ keywords: ["reduzir consumo eletricidade", "poupar luz", "conta luz alta", "efic
 - Paga igual dia/noite
 
 **Solução bi-horária**:
-- Vazio (22h-8h): €0.10-0.15/kWh
+
 - Ponta (9h-21h): €0.25-0.35/kWh
 - Usar máquinas noite
 
@@ -532,7 +532,7 @@ Atendemos **86 cidades** em Trás-os-Montes:
 **Sim**. Poupa 80%, dura 25x mais. Investimento €5-15/lâmpada. Poupança €5-15/ano cada. ROI 6-12 meses. Trocar todas hoje.
 
 ### Tarifa bi-horária compensa?
-**Sim** se: usa máquinas noite, carrega VE, aquecimento programável. Poupança 20-40%. Mudança grátis online. Usar vazio (22h-8h) €0.12/kWh vs ponta €0.30/kWh.
+**Sim** se: usa máquinas noite, carrega VE, aquecimento programável. Poupança 20-40%. Mudança grátis online. 
 
 ### Standby gasta muito?
 **Sim**. 10-20 aparelhos standby = 100-200 kWh/ano = €50-100. Réguas com interruptor €20-100. ROI 3-12 meses. Desligar completamente.

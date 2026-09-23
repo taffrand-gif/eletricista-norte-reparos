@@ -38,7 +38,7 @@ O código IP indica a proteção contra sólidos e líquidos:
 |-------|-----------|----------------|
 | Terraço coberto | IP44 | IP54 |
 | Jardim exposto | IP54 | IP65 |
-| Piscina (zona 2) | IP65 | IP67 |
+| Piscina | IP65 | IP67 |
 | Garagem fechada | IP20 | IP44 |
 | Alpendre | IP44 | IP54 |
 | Fachada exterior | IP54 | IP65 |
@@ -55,7 +55,7 @@ O código IP indica a proteção contra sólidos e líquidos:
 5. **Distâncias de segurança:**
  - Mínimo 60cm do solo (zonas secas)
  - Mínimo 120cm do solo (zonas húmidas/jardim)
- - Mínimo 2,5m de piscinas (zona 2)
+ - Mínimo 2,5m de piscinas
 
 ### Certificação Obrigatória
 
@@ -97,7 +97,7 @@ O código IP indica a proteção contra sólidos e líquidos:
 - Multímetro (testar tensão)
 - Nível de bolha
 
-**Custo total materiais:** €80-180 (dependendo da distância e qualidade)
+A deslocação tem preço único em qualquer localidade servida: 30 € em dias úteis (9h–17h) e 50 € à noite, fins de semana e feriados.
 
 ## 🔧 Passo a Passo: Instalação de Tomada Exterior
 

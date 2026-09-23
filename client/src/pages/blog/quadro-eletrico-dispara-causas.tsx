@@ -291,7 +291,7 @@ export default function QuadroEletricoDisparaCausas() {
  </tr>
  <tr>
  <td className="px-6 py-4 text-sm text-gray-900">Substituição disjuntor simples</td>
- <td className="px-6 py-4 text-sm text-gray-900">80-120€</td>
+ <td className="px-6 py-4 text-sm text-gray-900"></td>
  <td className="px-6 py-4 text-sm text-gray-900">150-200€</td>
  </tr>
  <tr>

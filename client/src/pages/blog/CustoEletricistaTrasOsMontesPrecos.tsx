@@ -208,7 +208,7 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <a href="/eletricista-mirandela" className="text-amber-600 underline mx-1">Mirandela</a>) 
  exigem ferramentas especiais e mais tempo. Paredes grossas dificultam passagem de tubos.
  </p>
- <p className="text-amber-700 font-semibold mt-2">Acréscimo: 25-50%</p>
+ <p className="text-amber-700 font-semibold mt-2">Noite, fim de semana e feriado: 100 €/hora + deslocação 50 €</p>
  </div>
  
  <div className="bg-white p-6 rounded-xl border border-gray-200">
@@ -219,7 +219,7 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <a href="/eletricista-mogadouro" className="text-amber-600 underline mx-1">Mogadouro</a>) 
  têm custos de deslocação significativos. Estradas estreitas limitam veículos e equipamentos grandes.
  </p>
- <p className="text-amber-700 font-semibold mt-2">Acréscimo: 15-35%</p>
+ <p className="text-amber-700 font-semibold mt-2">Noite, fim de semana e feriado: 100 €/hora + deslocação 50 €</p>
  </div>
  <div className="bg-white p-6 rounded-xl border border-gray-200">
  <h3 className="font-bold text-gray-900 mb-3">🏚️ Idade da Instalação</h3>
@@ -227,7 +227,7 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  Casas anteriores a 1970 frequentemente têm fios de chumbo, caixas de madeira, 
  instalações sem terra. Requerem diagnóstico detalhado e adaptações especiais.
  </p>
- <p className="text-amber-700 font-semibold mt-2">Acréscimo: 30-60%</p>
+ <p className="text-amber-700 font-semibold mt-2">Noite, fim de semana e feriado: 100 €/hora + deslocação 50 €</p>
  </div>
  <div className="bg-white p-6 rounded-xl border border-gray-200">
  <h3 className="font-bold text-gray-900 mb-3">🌦️ Condições Climáticas</h3>
@@ -235,7 +235,7 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  Invernos rigorosos exigem materiais resistentes a humidade e geada. 
  Trabalhos exteriores podem ser adiados por condições meteorológicas.
  </p>
- <p className="text-amber-700 font-semibold mt-2">Acréscimo: 10-25% (trabalhos exteriores)</p>
+ <p className="text-amber-700 font-semibold mt-2">Noite, fim de semana e feriado: 100 €/hora + deslocação 50 €</p>
  </div>
  </div>
  <div className="mt-8 bg-blue-50 border border-blue-200 rounded-xl p-6">
@@ -254,13 +254,13 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <tr className="border-b border-gray-200">
  <td className="py-3 px-4 font-semibold">Vila Real cidade</td>
  <td className="py-3 px-4">70€</td>
- <td className="py-3 px-4">+50%</td>
+ <td className="py-3 px-4">100 €/hora + deslocação 50 €</td>
  <td className="py-3 px-4">Até 15km</td>
  </tr>
  <tr className="border-b border-gray-200">
  <td className="py-3 px-4 font-semibold">Bragança cidade</td>
  <td className="py-3 px-4">70€</td>
- <td className="py-3 px-4">+50%</td>
+ <td className="py-3 px-4">100 €/hora + deslocação 50 €</td>
  <td className="py-3 px-4">Até 20km</td>
  </tr>
  <tr className="border-b border-gray-200">
@@ -272,7 +272,7 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <tr>
  <td className="py-3 px-4 font-semibold">Zonas remotas</td>
  <td className="py-3 px-4">50-70€</td>
- <td className="py-3 px-4">80-120€</td>
+ <td className="py-3 px-4"></td>
  <td className="py-3 px-4">Negociável</td>
  </tr>
  </tbody>

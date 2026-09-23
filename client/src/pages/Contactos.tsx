@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CalendlyCTA from '@/components/CalendlyCTA';
 import { ACTIVE_CONFIG } from "../../../shared/serviceConfig";
 import { useSEO } from "@/hooks/useSEO";
 import { toast } from "sonner";
@@ -204,6 +205,7 @@ export default function Contactos() {
  >
  📞 LIGUE AGORA: {formattedPhone}
  </button>
+ <CalendlyCTA className="w-full mt-3" />
  </div>
  </div>
  {/* Contact/Booking Form */}

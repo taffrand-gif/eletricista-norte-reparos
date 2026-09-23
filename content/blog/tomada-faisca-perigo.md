@@ -116,7 +116,7 @@ Uma tomada que faz faíscas não é normal e representa um **risco grave de inc�
 | Refazer ligação elétrica | €80-120 | 1-2h |
 | Substituir cabo até quadro | €150-250 | 2-4h |
 | Instalar disjuntor adicional | €100-180 | 1-2h |
-| Arranjo emergência 24h | +50% | Imediato |
+| Arranjo emergência 24h | 100 €/hora + deslocação 50 € | Imediato |
 
 ---
 

@@ -82,7 +82,7 @@ Pedir apólice seguro (nome, validade, valor)
 
 **Preços mercado Bragança 2026:**
 - Mão obra dias úteis: 60-80€/h
-- Deslocação: 15-35€ (conforme zona)
+- Deslocação: 30 € (conforme o caso)
 - Material: ao custo + 10-20%
 
 ### 5. Disponibilidade e Pontualidade
@@ -196,7 +196,7 @@ Exemplo: "Já instalou quadros trifásicos?"
 Mercado: 60-80€/h dias úteis
 
 **6. Cobra deslocação? Quanto?**
-Mercado: 15-35€ conforme zona
+Mercado: 15-35€ conforme o caso
 
 **7. Material está incluído ou é à parte?**
 Preferível: Discriminado no orçamento

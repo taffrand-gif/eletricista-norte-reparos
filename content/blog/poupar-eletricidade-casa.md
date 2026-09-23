@@ -358,7 +358,7 @@ Sim! Frigorífico > 10 anos consome 2× mais que novo A+++. Máquina lavar > 15 
 Use medidor de consumo (€15-40). Ligue em cada aparelho e veja consumo. Ou verifique etiqueta energética. Geralmente: aquecimento/AC > cozinha > água quente > iluminação.
 
 **8. Tarifa bi-horária compensa?**
-Depende. Se usa mais eletricidade à noite/fim de semana: sim (30-40% mais barato). Se uso é uniforme: não compensa. Analise seu padrão de consumo.
+Depende. À noite (17h–9h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €. Se uso é uniforme: não compensa. Analise seu padrão de consumo.
 
 ## 🎯 Conclusão: Poupar Eletricidade é Possível
 

@@ -222,7 +222,7 @@ export default function InstalacaoEletrica() {
   A <strong>remodelação elétrica</strong> consiste em substituir total ou parcialmente uma instalação envelhecida ou não conforme. É o caso mais frequente em Trás-os-Montes: casas antigas com cabos de tecido, quadros sem diferencial, tomadas em série sem terra. Quando a instalação não passa na inspeção — ou quando o proprietário decide legalizar antes de vender ou arrendar — entramos com obra faseada para minimizar a interrupção.
   </p>
   <p className="text-lg text-gray-700 mt-4">
-  A remodelação começa sempre por um <strong>diagnóstico elétrico</strong> no local, seguido de orçamento escrito detalhado (materiais + mão de obra 70€/h + deslocação por zona). Após a intervenção, emitimos a Ficha Eletrotécnica e o Termo de Responsabilidade — a partir de 350€ para o serviço de certificação prestado pelo nosso TRIESP n.º 90062, conforme a tabela de preços de certificação DGEG. O serviço completo de remodelação (T3 típica) anda entre 800€ e 2.000€, conforme dimensões e materiais.
+  Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. Orçamento por escrito antes de qualquer intervenção. Após a intervenção, emitimos a Ficha Eletrotécnica e o Termo de Responsabilidade — a partir de 350€ para o serviço de certificação prestado pelo nosso TRIESP n.º 90062, conforme a tabela de preços de certificação DGEG. O serviço completo de remodelação (T3 típica) anda entre 800€ e 2.000€, conforme dimensões e materiais.
   </p>
 
   <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
@@ -337,7 +337,7 @@ export default function InstalacaoEletrica() {
  },
  {
  question: "Quanto custa uma instalação elétrica completa?",
- answer: "O preço depende do tipo de obra. Uma casa T3 obra nova anda tipicamente entre 1.500€ e 3.000€; uma remodelação completa entre 800€ e 2.000€; uma instalação comercial pequena (50 m²) entre 2.500€ e 5.000€. O serviço certificado de emissão de Ficha Eletrotécnica e Termo de Responsabilidade tem preço de partida de 350€, mediante orçamento escrito antes de qualquer intervenção. Mão de obra avulsa: 70€/h + deslocação por zona. Não cobramos nada antes de apresentar o orçamento."
+ answer: "O preço depende do tipo de obra. Uma casa T3 obra nova anda tipicamente entre 1.500€ e 3.000€; uma remodelação completa entre 800€ e 2.000€; uma instalação comercial pequena (50 m²) entre 2.500€ e 5.000€. O serviço certificado de emissão de Ficha Eletrotécnica e Termo de Responsabilidade tem preço de partida de 350€, mediante orçamento escrito antes de qualquer intervenção. Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. Não cobramos nada antes de apresentar o orçamento."
  },
  {
  question: "Quem pode fazer uma instalação elétrica em Portugal?",

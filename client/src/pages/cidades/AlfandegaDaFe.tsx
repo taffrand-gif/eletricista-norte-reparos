@@ -71,7 +71,7 @@ export default function AlfandegaDaFe() {
  },
 {
  question: "Qual o custo de deslocação a Alfândega da Fé?",
- answer: "A deslocação é de 25€ (Zona 2). Cobrimos todo o conselho incluindo as freguesias.",
+ answer: "A deslocação é de 30€. Cobrimos todo o conselho incluindo as freguesias.",
  },
  ];
  return (
