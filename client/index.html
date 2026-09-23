@@ -106,12 +106,16 @@ gtag('config', 'G-P0521CSGHY', {
 'anonymize_ip': true,
 'cookie_flags': 'SameSite=None;Secure'
 });
-window.trackPhoneClick = function(phone) {
-gtag('event', 'phone_click', {'event_category': 'conversion', 'event_label': phone, 'value': 1});
+// — Standardized helpers (mission t_422cb028) —
+// GA4 event name standardisation across all 4 sites: click_tel (was phone_click), click_whatsapp (was whatsapp_click).
+// Old helper names are kept as wrappers so existing React components don't break.
+window.trackTelClick = function(phone) {
+gtag('event', 'click_tel', {'event_category': 'conversion', 'event_label': phone, 'value': 1});
 };
 window.trackWhatsAppClick = function(source) {
-gtag('event', 'whatsapp_click', {'event_category': 'conversion', 'event_label': source, 'value': 1});
+gtag('event', 'click_whatsapp', {'event_category': 'conversion', 'event_label': source, 'value': 1});
 };
+window.trackPhoneClick = window.trackTelClick; // React shell legacy callers (Hero.tsx, MobileBottomNav.tsx, ...)
 window.trackQuoteCalculated = function(service, price) {
 gtag('event', 'quote_calculated', {'event_category': 'engagement', 'event_label': service, 'value': price});
 };
