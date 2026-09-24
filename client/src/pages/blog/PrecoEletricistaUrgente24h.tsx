@@ -21,7 +21,7 @@ export default function PrecoEletricistaUrgente24h() {
                 "name": "Quanto custa um eletricista urgente 24h?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  Mão de obra: 70 €/hora em dias úteis (9h–17h) e 100 €/hora à noite (17h–9h), fins de semana e feriados. — À noite (17h–9h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €. Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. O orçamento é sempre por escrito antes de qualquer deslocação."
+                  "text": "Mão de obra: 70 €/hora em dias úteis (9h–17h) e 100 €/hora à noite (17h–9h), fins de semana e feriados. — À noite (17h–9h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €. Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. O orçamento é sempre por escrito antes de qualquer deslocação."
                 }
               },
               {
@@ -29,7 +29,7 @@ export default function PrecoEletricistaUrgente24h() {
                 "name": "Quando se aplica a majoração de urgência?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  À noite (17h–9h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €. Não há janela curta 'urgente' — é o mesmo tarifário com a majoração aplicada às horas e à deslocação."
+                  "text": "À noite (17h–9h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €. Não há janela curta 'urgente' — é o mesmo tarifário com a majoração aplicada às horas e à deslocação."
                 }
               },
               {
@@ -72,7 +72,7 @@ export default function PrecoEletricistaUrgente24h() {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "Quanto Custa um Eletricista Urgente 24h?",
-            Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. Orçamento por escrito.",
+            "description": "Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. Orçamento por escrito.\",",
             "author": { "@type": "Organization", "name": "Norte Reparos" },
             "publisher": { "@type": "Organization", "name": "Norte Reparos", "url": "https://eletricista-norte-reparos.pt" },
             "datePublished": "2026-07-10",
@@ -150,7 +150,7 @@ export default function PrecoEletricistaUrgente24h() {
           <div className="space-y-6">
             <div>
               <h3 className="font-bold text-gray-900 mb-2 text-xl">Quanto custa um eletricista urgente 24h?</h3>
-              <p className="text-gray-700">105€/h no período majorado (noite, sábado, domingo, feriado), mais deslocação majorada. Orçamento por escrito sempre antes da deslocação.</p>
+              <p className="text-gray-700">100€/hora no período majorado (noite, fim de semana e feriado), mais deslocação de 50€. Orçamento por escrito sempre antes da deslocação.</p>
             </div>
             <div>
               <h3 className="font-bold text-gray-900 mb-2 text-xl">Há tarifa 'urgente' separada do tarifário normal?</h3>

@@ -31,9 +31,8 @@ function PriceCalculator() {
 
  if (service && zone) {
  const zonePrice = parseInt(zone.price.replace(/[^\d]/g, ''), 10);
- const basePrice = service.basePrice;
- const multiplier = urgency === 'urgent' ? config.urgencyMultiplier : 1;
- const total = Math.round(basePrice * multiplier) + zonePrice;
+ const basePrice = urgency === 'urgent' ? 100 : 70;
+ const total = basePrice + zonePrice;
 
  setBreakdown({ base: basePrice, zone: zonePrice, total });
  setCalculatedPrice(total);
@@ -75,7 +74,7 @@ function PriceCalculator() {
  <SelectContent>
  {config.services.map((service) => (
  <SelectItem key={service.id} value={service.id}>
- {service.label} (desde {service.basePrice}€)
+ {service.label}
  </SelectItem>
  ))}
  </SelectContent>
@@ -127,21 +126,13 @@ function PriceCalculator() {
 
  <div className="bg-gray-50 rounded-lg p-3 mb-4 text-left text-sm space-y-1">
  <div className="flex justify-between">
- <span>Serviço base:</span>
+ <span>Mão de obra (1 hora):</span>
  <span className="font-bold">{breakdown.base}€</span>
  </div>
  <div className="flex justify-between">
  <span>Deslocação:</span>
  <span className="font-bold">{breakdown.zone}€</span>
  </div>
- {urgency === 'urgent' && (
- <div className="flex justify-between text-red-600">
- <span>Tarifa noite / fim de semana / feriado (100 €/h):</span>
- <span className="font-bold">
- +{Math.round(breakdown.total - (breakdown.base + breakdown.zone))}€
- </span>
- </div>
- )}
  <div className="border-t pt-1 mt-1 flex justify-between font-bold text-base">
  <span>TOTAL:</span>
  <span style={{ color: config.colors.primary }}>{breakdown.total}€</span>

@@ -15,7 +15,7 @@ export default function TransparencePrix() {
  const forfaits = [
  {
  title: "Pequena Arranjo",
- price: "30€ - 45€",
+ price: "30€ + 70€/hora (dia); 50€ + 100€/hora (noite/fim de semana/feriado)",
  duration: "30 min",
  includes: [
  "Troca de tomadas ou interruptores",
@@ -26,7 +26,7 @@ export default function TransparencePrix() {
  },
  {
  title: "Intervenção Standard",
- price: "50€ - 80€",
+ price: "30€ + 70€/hora (dia); 50€ + 100€/hora (noite/fim de semana/feriado)",
  duration: "1h",
  includes: [
  "Diagnóstico completo com multímetro",
@@ -37,7 +37,7 @@ export default function TransparencePrix() {
  },
  {
  title: "Quadro Elétrico Básico",
- price: "200€ - 300€",
+ price: "30€ + 70€/hora (dia); 50€ + 100€/hora (noite/fim de semana/feriado)",
  duration: "2-3h",
  includes: [
  "Quadro 4-6 circuitos",
@@ -48,7 +48,7 @@ export default function TransparencePrix() {
  },
  {
  title: "Quadro Elétrico Completo",
- price: "370€ - 650€",
+ price: "30€ + 70€/hora (dia); 50€ + 100€/hora (noite/fim de semana/feriado)",
  duration: "3-5h",
  includes: [
  "Quadro 8-12 circuitos",
@@ -59,7 +59,7 @@ export default function TransparencePrix() {
  },
  {
  title: "Vistoria de Segurança Elétrica",
- price: "150€ - 300€",
+ price: "30€ + 70€/hora (dia); 50€ + 100€/hora (noite/fim de semana/feriado)",
  duration: "1-2h",
  includes: [
  "Vistoria técnica completa",
@@ -70,7 +70,7 @@ export default function TransparencePrix() {
  },
  {
  title: "Intervenção Urgente",
- 
+ price: "30 € + 70 €/hora (dia); 50 € + 100 €/hora (noite, fim de semana e feriado)",
  duration: "Imediato",
  includes: [
  "Chegada Atendimento mediante confirmação",
@@ -83,8 +83,8 @@ export default function TransparencePrix() {
  // Taux horaire et majorations (RÈGLE OFFICIELLE Philippe)
  const tauxHoraire = {
  base: "70€/hora",
- Noite, fim de semana e feriado: 100 €/hora + deslocação 50 €
- deplacement: "15€ - 65€ (conforme o caso)"
+ majoracao: "Noite, fim de semana e feriado: 100 €/hora + deslocação 50 €",
+ deplacement: "30 € (dia) / 50 € (noite, fim de semana e feriado)"
  };
  // FAQ Prix
  const faqPrix = [
@@ -121,7 +121,7 @@ export default function TransparencePrix() {
  <>
  <SEOHead
  title={`Transparência de Preços - Um eletricista profissional de Trás-os-Montes que Publica os Seus Preços | ${config.name}`}
- description="Somos Um eletricista profissional em Trás-os-Montes com preços 100% transparentes publicados online. Veja todos os nossos preços, sem surpresas, sem letra pequena. Pequena arranjo desde 30€, quadros elétricos desde 150€. Garantia satisfeito ."
+ description="Somos Um eletricista profissional em Trás-os-Montes com preços 100% transparentes publicados online. Veja todos os nossos preços, sem surpresas, sem letra pequena. serviços elétricos com mão de obra e deslocação segundo a grelha horária oficial. Garantia satisfeito ."
  />
  <Header />
  <main>

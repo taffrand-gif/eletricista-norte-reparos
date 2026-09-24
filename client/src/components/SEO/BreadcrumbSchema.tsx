@@ -1,5 +1,4 @@
 // BreadcrumbSchema - Rich Snippets pour Google
-À noite (17h–9h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €.
 interface BreadcrumbItem {
  name: string;
  url: string;

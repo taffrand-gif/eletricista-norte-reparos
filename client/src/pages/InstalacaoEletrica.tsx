@@ -245,7 +245,7 @@ export default function InstalacaoEletrica() {
  <div className="border-b pb-4">
  <div className="flex justify-between items-center mb-2">
  <h4 className="text-lg font-semibold text-gray-900">Casa T3 Obra Nova</h4>
- <span className="bg-amber-100 text-amber-800 font-bold px-4 py-2 rounded-full">€1.500 - €3.000</span>
+ <span className="bg-amber-100 text-amber-800 font-bold px-4 py-2 rounded-full">Orçamento por escrito</span>
  </div>
  <p className="text-gray-600">Instalação completa desde o quadro até às tomadas</p>
  </div>
@@ -253,7 +253,7 @@ export default function InstalacaoEletrica() {
  <div className="border-b pb-4">
  <div className="flex justify-between items-center mb-2">
  <h4 className="text-lg font-semibold text-gray-900">Remodelação Completa (T3)</h4>
- <span className="bg-amber-100 text-amber-800 font-bold px-4 py-2 rounded-full">€800 - €2.000</span>
+ <span className="bg-amber-100 text-amber-800 font-bold px-4 py-2 rounded-full">Orçamento por escrito</span>
  </div>
  <p className="text-gray-600">Substituição de instalação antiga por nova</p>
  </div>
@@ -261,7 +261,7 @@ export default function InstalacaoEletrica() {
  <div className="border-b pb-4">
  <div className="flex justify-between items-center mb-2">
  <h4 className="text-lg font-semibold text-gray-900">Loja/Comércio (50m²)</h4>
- <span className="bg-amber-100 text-amber-800 font-bold px-4 py-2 rounded-full">€2.500 - €5.000</span>
+ <span className="bg-amber-100 text-amber-800 font-bold px-4 py-2 rounded-full">Orçamento por escrito</span>
  </div>
  <p className="text-gray-600">Iluminação comercial, tomadas força, sinalética</p>
  </div>
@@ -269,7 +269,7 @@ export default function InstalacaoEletrica() {
  <div className="border-b pb-4">
  <div className="flex justify-between items-center mb-2">
  <h4 className="text-lg font-semibold text-gray-900">Por Ponto Elétrico</h4>
- <span className="bg-amber-100 text-amber-800 font-bold px-4 py-2 rounded-full">€40 - €80</span>
+ <span className="bg-amber-100 text-amber-800 font-bold px-4 py-2 rounded-full">70 €/hora + materiais</span>
  </div>
  <p className="text-gray-600">Tomada, interruptor ou ponto de luz (mão de obra + material)</p>
  </div>

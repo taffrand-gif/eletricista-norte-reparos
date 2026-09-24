@@ -247,22 +247,22 @@ export default function DiferencialDisparaConstantemente() {
  <tr>
  <td className="px-6 py-4 text-sm font-semibold text-gray-900">Diagnóstico</td>
  <td className="px-6 py-4 text-sm text-gray-700">Identificar causa do disparo</td>
- <td className="px-6 py-4 text-sm text-gray-900">40-70€</td>
+ <td className="px-6 py-4 text-sm text-gray-900">70 €/hora + deslocação</td>
  </tr>
  <tr>
  <td className="px-6 py-4 text-sm font-semibold text-gray-900">Substituir diferencial</td>
  <td className="px-6 py-4 text-sm text-gray-700">Diferencial 40A/30mA + instalação</td>
- <td className="px-6 py-4 text-sm text-gray-900">100-180€</td>
+ <td className="px-6 py-4 text-sm text-gray-900">Orçamento por escrito</td>
  </tr>
  <tr>
  <td className="px-6 py-4 text-sm font-semibold text-gray-900">Arranjar fuga instalação</td>
  <td className="px-6 py-4 text-sm text-gray-700">Isolar cabo, secar caixa, etc</td>
- <td className="px-6 py-4 text-sm text-gray-900">80-200€</td>
+ <td className="px-6 py-4 text-sm text-gray-900">Orçamento por escrito</td>
  </tr>
  <tr>
  <td className="px-6 py-4 text-sm font-semibold text-gray-900">Substituir cabo danificado</td>
  <td className="px-6 py-4 text-sm text-gray-700">Até 10 metros de cabo novo</td>
- <td className="px-6 py-4 text-sm text-gray-900">120-250€</td>
+ <td className="px-6 py-4 text-sm text-gray-900">Orçamento por escrito</td>
  </tr>
  <tr>
  <td className="px-6 py-4 text-sm font-semibold text-gray-900">Urgência 24h</td>

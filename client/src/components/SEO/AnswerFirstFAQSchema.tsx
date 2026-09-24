@@ -1,6 +1,5 @@
 // GEO1 — FAQPage JSON-LD unificado + answer-first schema
 // Réutilisé par 5 pages top money ENR/CNR pour maximiser citabilité IA
-Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €.
 //                    R145 (jamais de délai chiffré), §12 (pronom "nossa equipa"/"garantimos")
 import React from 'react';
 

@@ -16,7 +16,7 @@ export default function QuantoCustaEletricistaBraganca() {
  {
  question: 'Quanto custa deslocação para Bragança?',
  answer:
- 'Bragança está (44-65 km de Macedo de Cavaleiros). A deslocação custa 30€ em horário normal e 52,50€ em período majorado (noite/WE/feriado). O preço final combina deslocação + horas × 70€/h (ou 105€/h majorado) + materiais especificados por escrito.',
+ 'Bragança está (44-65 km de Macedo de Cavaleiros). A deslocação custa 30€ em horário normal e 50€ em período majorado (noite/WE/feriado). O preço final combina deslocação + horas × 70€/h (ou 100€/h majorado) + materiais especificados por escrito.',
  },
  {
  question: 'Quanto custa instalar tomada em Bragança?',
@@ -30,8 +30,7 @@ export default function QuantoCustaEletricistaBraganca() {
  },
  {
  question: 'Como poupar em serviços de eletricista em Bragança?',
- answer:
- Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. A nossa política é o preço combinado por escrito ser o preço final — sem surpresas.',
+ answer: "Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. A nossa política é o preço combinado por escrito ser o preço final — sem surpresas.',",
  },
  ];
  return (
@@ -56,7 +55,7 @@ export default function QuantoCustaEletricistaBraganca() {
  "@context": "https://schema.org",
  "@type": "Article",
  "headline": "Quanto Custa Eletricista em Bragança? (Tarifário Norte Reparos 2026)",
- Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. Orçamento por escrito antes de qualquer intervenção.",
+ "description": "Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. Orçamento por escrito antes de qualquer intervenção.\",",
  "author": { "@type": "Organization", "name": "Norte Reparos" },
  "publisher": { "@type": "Organization", "name": "Norte Reparos", "url": "https://eletricista-norte-reparos.pt" },
  "datePublished": "2026-03-03",
@@ -248,7 +247,7 @@ export default function QuantoCustaEletricistaBraganca() {
  </table>
  </div>
  <p className="text-sm text-gray-600 mt-4">
- * Fórmula Norte Reparos: deslocação segundo a zona + horas × tarifário hora (70€/h, ou 105€/h em período majorado) + materiais orçados à parte por escrito. Não publicamos preços forfait porque o custo real varia com o estado da instalação. Para Bragança a deslocação é 30€ em horário normal e 52,50€ em período majorado.
+ * Fórmula Norte Reparos: deslocação segundo a zona + horas × tarifário hora (70€/h, ou 100€/h em período majorado) + materiais orçados à parte por escrito. Não publicamos preços forfait porque o custo real varia com o estado da instalação. Para Bragança a deslocação é 30€ em horário normal e 50€ em período majorado.
  </p>
  </div>
  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
@@ -318,7 +317,7 @@ export default function QuantoCustaEletricistaBraganca() {
  Quanto custa a deslocação para Bragança?
  </h3>
  <p className="text-gray-700">
- Bragança está (44-65 km de Macedo de Cavaleiros). A deslocação custa 30€ em horário normal e 52,50€ em período majorado (noite, sábado, domingo ou feriado). O preço final combina a deslocação + horas × tarifário hora (70€/h ou 105€/h majorado) + materiais especificados por escrito.
+ Bragança está (44-65 km de Macedo de Cavaleiros). A deslocação custa 30€ em horário normal e 50€ em período majorado (noite, sábado, domingo ou feriado). O preço final combina a deslocação + horas × tarifário hora (70€/h ou 100€/h majorado) + materiais especificados por escrito.
  </p>
  </div>
  <div className="border-l-4 border-orange-600 pl-4">

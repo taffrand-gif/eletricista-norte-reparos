@@ -98,7 +98,7 @@ export const siteConfig: SiteConfig = {
  id: 'eletricista-norte-reparos',
  name: 'Eletricista Profissional',
  title: 'Eletricista para instalação, reparação e remodelação em Trás-os-Montes | Norte Reparos',
- description: 'Eletricista para instalação, reparação e remodelação em Trás-os-Montes. Orçamento por escrito em 48h, garantia 1 ano. Bragança, Vila Real, Mirandela, Chaves.',
+ description: 'Eletricista para instalação, reparação e remodelação em Trás-os-Montes. Orçamento por escrito após análise do pedido, garantia 1 ano. Bragança, Vila Real, Mirandela, Chaves.',
  phone: '932 321 892',
  whatsapp: '351932321892',
  whatsappMessage: 'Olá, preciso de um eletricista em Trás-os-Montes. Podem dar-me um orçamento?',
@@ -114,16 +114,16 @@ export const siteConfig: SiteConfig = {
 
  hero: {
  title: 'Eletricista para instalação e reparação — Trás-os-Montes',
- subtitle: 'Instalação, remodelação e diagnóstico elétrico ao seu domicílio. Orçamento por escrito em 48h, garantia 1 ano.',
+ subtitle: 'Instalação, remodelação e diagnóstico elétrico ao seu domicílio. Orçamento por escrito após análise do pedido, garantia 1 ano.',
  backgroundImage: '/images-optimized/hero/hero-electrician-portugal.jpg',
  ogImage: '/images-optimized/hero/hero-electrician-portugal.jpg'
  },
 
  services: [
- { id: 'avaria-eletrica', label: 'Reparação Avaria Elétrica', basePrice: 80 },
- { id: 'quadro-eletrico', label: 'Quadro Elétrico', basePrice: 250 },
- { id: 'instalacao-eletrica', label: 'Instalação Elétrica', basePrice: 200 },
- { id: 'iluminacao-led', label: 'Iluminação LED', basePrice: 75 },
+ { id: 'avaria-eletrica', label: 'Reparação Avaria Elétrica', basePrice: 70 },
+ { id: 'quadro-eletrico', label: 'Quadro Elétrico', basePrice: 70 },
+ { id: 'instalacao-eletrica', label: 'Instalação Elétrica', basePrice: 70 },
+ { id: 'iluminacao-led', label: 'Iluminação LED', basePrice: 70 },
  ],
 
  // Pricing Zones - NOVA GRELHA 2026

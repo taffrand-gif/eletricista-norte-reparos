@@ -1,5 +1,4 @@
 // FAQSchema - Featured Snippets pour Google
-À noite (17h–9h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €.
 interface FAQ {
  question: string;
  answer: string;
@@ -67,7 +66,7 @@ question: "têm experiência ?",
  },
  {
  question: "Cobram deslocação?",
- answer: "Não. A deslocação tem preço único em qualquer localidade servida: 30 € em dias úteis (9h–17h) e 50 € à noite, fins de semana e feriados.
+ answer: "Não. A deslocação tem preço único em qualquer localidade servida: 30 € em dias úteis (9h–17h) e 50 € à noite, fins de semana e feriados."
  },
  {
  question: "O que fazer em caso de curto-circuito?",
