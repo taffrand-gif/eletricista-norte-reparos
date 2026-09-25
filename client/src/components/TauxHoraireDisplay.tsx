@@ -72,36 +72,6 @@ function TauxHoraireDisplay({ className = '' }: TauxHoraireDisplayProps) {
  </p>
  </div>
  </div>
- {/* Exemplo de cálculo */}
- <div className="mt-8 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 border-2 border-blue-200">
- <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
- Exemplo de cálculo
- </h3>
- <div className="max-w-2xl mx-auto">
- <div className="bg-white rounded-xl p-6 space-y-3">
- <div className="flex justify-between items-center">
- <span className="text-gray-700">Deslocação a Bragança (dia útil)</span>
- <span className="font-bold text-gray-900">30€</span>
- </div>
- <div className="flex justify-between items-center">
- <span className="text-gray-700">Mão de obra (2h, dia útil)</span>
- <span className="font-bold text-gray-900">140€</span>
- </div>
- <div className="flex justify-between items-center">
- <span className="text-gray-700">Material</span>
- <span className="font-bold text-gray-900">25€</span>
- </div>
- <hr className="border-gray-300" />
- <div className="flex justify-between items-center text-lg">
- <span className="font-bold text-gray-900">TOTAL</span>
- <span className="text-3xl font-black" style={{ color: accentColor }}>195€</span>
- </div>
- </div>
- <p className="text-sm text-gray-600 text-center mt-4">
- Preço comunicado e validado antes do início dos trabalhos. Sem surpresas.
- </p>
- </div>
- </div>
  </div>
  </section>
  );

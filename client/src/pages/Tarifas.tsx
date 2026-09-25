@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet-async';
 import { useSite } from '@/contexts/SiteContext';
 import CalendlyCTA from '@/components/CalendlyCTA';
 import TauxHoraireDisplay from '@/components/TauxHoraireDisplay';
-import ForfaitsGrid from '@/components/ForfaitsGrid';
 import WhyWePublishPrices from '@/components/WhyWePublishPrices';
 import FloatingCTA from '@/components/FloatingCTA';
 import MobileStickyBar from '@/components/MobileStickyBar';
@@ -63,7 +62,6 @@ function Tarifas() {
  </section>
  {/* Main Content */}
  <TauxHoraireDisplay />
- <ForfaitsGrid />
  <WhyWePublishPrices />
  {/* Final Trust Section */}
  <section className="py-16 bg-gray-900 text-white">

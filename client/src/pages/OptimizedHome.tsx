@@ -8,7 +8,6 @@ import OrcamentoGratuitoBadge from '@/components/OrcamentoGratuitoBadge';
 import OptimizedServices from '@/components/OptimizedServices';
 import StatsCounters from '@/components/StatsCounters';
 import CalculadorPreco from '@/components/CalculadorPreco';
-import PriceTable from '@/components/PriceTable';
 import ZonaIntervencao from '@/components/ZonaIntervencao';
 import Equipa from '@/components/Equipa';
 import Garantias from '@/components/Garantias';
