@@ -44,8 +44,6 @@ export default function OptimizedHome() {
  <StatsCounters />
 
  {/* Secção tabela de preços */}
- <PriceTable />
-
  {/* Secção Zona de Intervenção */}
  <ZonaIntervencao />
 
