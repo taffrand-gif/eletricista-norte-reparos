@@ -19,7 +19,7 @@ function ForfaitsGrid({ className = '' }: ForfaitsGridProps) {
  icon: '🔌',
  title: 'Instalação Tomada/Interruptor',
  description: 'Adição ou substituição de tomada ou interruptor',
- priceRange: '65-120€',
+ priceRange: 'A partir de 100€',
  details: [
  'Deslocação incluída (30€, dias úteis)',
  'Instalação completa',
@@ -44,7 +44,7 @@ function ForfaitsGrid({ className = '' }: ForfaitsGridProps) {
  icon: '💡',
  title: 'Instalação Luminária',
  description: 'Instalação de candeeiro, aplique ou foco',
- priceRange: '65-120€',
+ priceRange: 'A partir de 100€',
  details: [
  'Deslocação incluída (30€, dias úteis)',
  'Instalação segura',
@@ -164,7 +164,7 @@ function ForfaitsGrid({ className = '' }: ForfaitsGridProps) {
  >
  {forfait.priceRange}
  </div>
- <p className="text-xs text-gray-500">Zone 1 - Matériel standard inclus</p>
+ <p className="text-xs text-gray-500">Deslocação incluída - Matériel standard inclus</p>
  </div>
  {/* Details */}
  <ul className="space-y-2 mb-6">

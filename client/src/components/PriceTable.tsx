@@ -41,16 +41,16 @@ export default function PriceTable() {
  <div className="mb-16">
  <h3 className="text-2xl font-bold mb-6 flex items-center">
  <MapPin className="w-6 h-6 mr-2 text-[var(--site-primary)]" />
- Zonas de Deslocação
+ Deslocação — preço único
  </h3>
  <div className="overflow-x-auto shadow-lg rounded-lg border border-gray-200">
  <table className="w-full text-left border-collapse">
  <thead>
  <tr className="bg-gray-100 text-gray-700 uppercase text-sm leading-normal">
- <th className="py-3 px-6">Zona</th>
+ <th className="py-3 px-6">Horário</th>
  <th className="py-3 px-6">Localidades</th>
  <th className="py-3 px-6 text-center">Custo Deslocação</th>
- <th className="py-3 px-6 text-center">Tempo Chegada</th>
+ <th className="py-3 px-6 text-center">Mão de obra</th>
  </tr>
  </thead>
  <tbody className="text-gray-600 text-sm font-light">
@@ -105,19 +105,19 @@ export default function PriceTable() {
  <div className="bg-blue-50 p-6 rounded-lg border border-blue-100">
  <h4 className="font-bold text-blue-900 mb-2">"Moro em Macedo e preciso trocar um disjuntor."</h4>
  <ul className="space-y-1 text-blue-800 text-sm">
- <li className="flex justify-between"><span>Deslocação (Zona 1):</span> <span>15€</span></li>
- <li className="flex justify-between"><span>Mão de Obra (mín. 1h):</span> <span>35€</span></li>
- <li className="border-t border-blue-200 mt-2 pt-2 font-bold flex justify-between text-lg"><span>Total:</span> <span>50€</span></li>
+ <li className="flex justify-between"><span>Deslocação (dias úteis 9h–17h):</span> <span>30€</span></li>
+ <li className="flex justify-between"><span>Mão de Obra (mín. 1h a 70€/h):</span> <span>70€</span></li>
+ <li className="border-t border-blue-200 mt-2 pt-2 font-bold flex justify-between text-lg"><span>Total:</span> <span>100€</span></li>
  </ul>
  </div>
  <div className="bg-amber-50 p-6 rounded-lg border border-amber-100">
  <h4 className="font-bold text-amber-900 mb-2">"Urgência em Bragança num Domingo."</h4>
  <ul className="space-y-1 text-amber-800 text-sm">
- <li className="flex justify-between"><span>Deslocação (Zona 3):</span> <span>35€</span></li>
- <li className="flex justify-between"><span>Intervenção Urgência (1h):</span> <span>100€</span></li>
- <li className="border-t border-amber-200 mt-2 pt-2 font-bold flex justify-between text-lg"><span>Total:</span> <span>135€</span></li>
+ <li className="flex justify-between"><span>Deslocação (noite/fim de semana/feriado):</span> <span>50€</span></li>
+ <li className="flex justify-between"><span>Intervenção Urgência (mín. 1h a 100€/h):</span> <span>100€</span></li>
+ <li className="border-t border-amber-200 mt-2 pt-2 font-bold flex justify-between text-lg"><span>Total:</span> <span>150€</span></li>
  </ul>
- <p className="text-xs text-amber-700 mt-2 italic">Preço anunciado ao telefone ANTES de sair.</p>
+ <p className="text-xs text-amber-700 mt-2 italic">Cada hora começada é devida. Preço anunciado ao telefone ANTES de sair.</p>
  </div>
  </div>
  <div className="mt-8 bg-gray-900 text-white p-6 rounded-lg text-center">

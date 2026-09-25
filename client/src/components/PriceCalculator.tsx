@@ -27,10 +27,9 @@ function PriceCalculator() {
 
  const handleCalculate = useCallback(() => {
  const service = config.services.find(s => s.id === selectedService);
- const zone = config.pricingZones.find(z => z.zone === (urgency === 'urgent' ? 'NOITE' : 'DIA'));
 
- if (service && zone) {
- const zonePrice = parseInt(zone.price.replace(/[^\d]/g, ''), 10);
+ if (service) {
+ const zonePrice = urgency === 'urgent' ? 50 : 30;
  const basePrice = urgency === 'urgent' ? 100 : 70;
  const total = basePrice + zonePrice;
 

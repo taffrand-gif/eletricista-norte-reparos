@@ -1,6 +1,6 @@
 ---
 title: "Electricista 24h em Bragança - Preços + Contacto Urgente"
-description: "Precisa de electricista urgente em Bragança? Serviço 24h com resposta em 1h. estimativa sem custo e preços transparentes. Ligue já!"
+description: "Precisa de electricista urgente em Bragança? Serviço 24h/7d, estimativa sem custo e preços transparentes. Ligue já!"
 slug: electricista-24h-braganca
 date: 2026-02-18
 author: 
@@ -10,7 +10,7 @@ tags: [electricista, bragança, urgente, 24h, arranjo]
 
 # Electricista 24h em Bragança - Preços + Contacto Urgente
 
-**Problemas elétricos não esperam por horários de expediente.** Se está em Bragança e precisa de um electricista urgente, o nosso serviço Atendimento 24h/7d está disponível para resolver qualquer emergência eléctrica. Com resposta garantida em até 1 hora, equipamento profissional e preços transparentes, somos a solução confiável para residentes e empresas na região de Trás-os-Montes.
+**Problemas elétricos não esperam por horários de expediente.** Se está em Bragança e precisa de um electricista urgente, o nosso serviço Atendimento 24h/7d está disponível para resolver qualquer emergência eléctrica. Com equipamento profissional e preços transparentes, somos a solução confiável para residentes e empresas na região de Trás-os-Montes.
 
 ## Por Que Escolher um Electricista 24h em Bragança?
 
@@ -36,7 +36,7 @@ Chegamos em até **1 hora** na zona urbana de Bragança com equipamento de diagn
 - **Câmaras térmicas FLIR** para identificar sobreaquecimentos
 
 ### 3. Orçamento Transparente
-Apresentamos o **orçamento por escrito** antes de qualquer intervenção. A estimativa é sem custo à distância; a deslocação é faturada por zona Z1 15 € a Z6 65 €. Sem surpresas, sem custos ocultos.
+Apresentamos o **orçamento por escrito** antes de qualquer intervenção. A deslocação tem preço único: 30 € em dias úteis (9h–17h) e 50 € à noite, fins de semana e feriados, sem variação por zona ou distância. Sem surpresas, sem custos ocultos.
 
 ### 4. Arranjo Imediata
 Com peças de reposição no veículo e ferramentas profissionais, resolvemos a maioria das emergências na primeira visita.
@@ -72,10 +72,10 @@ Trabalhamos apenas com equipamento de marcas reconhecidas:
 ## Perguntas Frequentes - Electricista 24h Bragança
 
 ### Quanto tempo demora a resposta?
-**Resposta:** Garantimos contacto Atendimento mediante confirmação e chegada ao local em até 1 hora na zona urbana de Bragança.
+**Resposta:** Confirmamos a janela de chegada por telefone antes da deslocação; não publicamos promessas de minutos.
 
 ### Os preços são mais caros à noite ou fim de semana?
-**Resposta:** Aplicamos uma sobretaxa moderada de 20% para serviços entre 22h-8h e fins de semana, mas mantemos transparência total no orçamento.
+**Resposta:** Sim. Dias úteis (9h–17h): 70 €/hora. Noite (17h–9h), fins de semana e feriados: 100 €/hora. Mantemos transparência total no orçamento.
 
 ### Que tipos de pagamento aceitam?
 **Resposta:** Aceitamos dinheiro, transferência bancária, MB Way e cartão de débito/crédito.
@@ -102,7 +102,7 @@ Quando a electricidade falha, cada minuto conta. Com o nosso serviço **electric
 - **WhatsApp:** [Enviar mensagem](https://wa.me/351932321892)
 - **Horário:** Atendimento 24h/7d, 7 dias por semana
 
-**Serviço garantido em 1h na zona urbana de Bragança. orçamento por escrito antes da intervenção e sem compromisso.**
+**Orçamento por escrito antes da intervenção e sem compromisso.**
 
 ---
 
