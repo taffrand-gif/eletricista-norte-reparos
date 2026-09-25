@@ -4,9 +4,9 @@ export default function Equipa() {
  const badges = [
  {
  icon: <Award className="w-10 h-10" />,
- stat: '350+',
- label: 'Instalações Arranjadas',
- desc: 'Casas de pedra de Bragança, quadros dos anos 70 de Macedo. Já vi tudo, já resolvi tudo.'},
+   stat: '—',
+   label: 'Serviço elétrico',
+   desc: 'Diagnóstico e intervenção conforme o serviço solicitado.'},
  {
  icon: <Shield className="w-10 h-10" />,
  stat: 'FLIR',
