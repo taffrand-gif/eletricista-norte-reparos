@@ -1,5 +1,4 @@
 // BreadcrumbSchema - Rich Snippets pour Google
-// Affiche le fil d'Ariane dans les résultats de recherche (+15% CTR)
 interface BreadcrumbItem {
  name: string;
  url: string;

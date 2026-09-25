@@ -30,8 +30,8 @@ export default function Chaves() {
  },
  ];
  useEffect(() => {
- document.title = "⚡ Eletricista Chaves — Orçamento Grátis | Garantia Escrita";
- 
+ document.title = "⚡ Eletricista Chaves — Orçamento por Escrito | Garantia Escrita";
+
  // Optimized meta description
  let metaDescription = document.querySelector('meta[name="description"]');
  if (!metaDescription) {
@@ -48,8 +48,8 @@ export default function Chaves() {
  document.head.appendChild(metaKeywords);
  }
  metaKeywords.setAttribute('content', 'eletricista 24h chaves, eletricista Atendimento 24h/7d chaves, eletricista chaves, eletricista profissional chaves, instalação elétrica chaves, quadro elétrico chaves, diagnóstico elétrico chaves, arranjo elétrica chaves, eletricista trás-os-montes');
- 
- 
+
+
  // Canonical URL
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
@@ -58,7 +58,7 @@ export default function Chaves() {
  document.head.appendChild(canonical);
  }
  canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/eletricista-chaves');
- 
+
  // Schema.org LocalBusiness para Chaves
  const schemaScript = document.createElement('script');
  schemaScript.type = 'application/ld+json';
@@ -123,9 +123,9 @@ export default function Chaves() {
  <>
  <SEOHead />
  <StructuredData />
- 
+
  <Header />
- 
+
  <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
  {/* Hero section específica de Chaves */}
  <section className="bg-gradient-to-r from-amber-600 to-amber-800 text-white py-16">
@@ -139,12 +139,12 @@ export default function Chaves() {
 <h1 className="text-4xl md:text-5xl font-bold mb-6">
  Eletricista Profissional em <span className="text-blue-900">Chaves</span>
  </h1>
- 
+
  <p className="text-xl mb-8">
- Serviços de eletricista em Chaves e arredores. 
+ Serviços de eletricista em Chaves e arredores.
  Especialistas em instalações para termas, hotéis e turismo termal.
  </p>
- 
+
  <div className="flex flex-col sm:flex-row gap-4">
  <a
  href={`tel:${businessInfo.phone}`}
@@ -172,7 +172,7 @@ export default function Chaves() {
  <h2 className="text-3xl font-bold text-gray-900 mb-6">
  Especialistas em Eletricidade para o Turismo Termal
  </h2>
- 
+
  <div className="space-y-6">
  <div className="bg-white p-6 rounded-xl shadow-lg border border-amber-100">
  <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-3">
@@ -186,7 +186,7 @@ export default function Chaves() {
  hoteleiros da região.
  </p>
  </div>
- 
+
  <div className="bg-white p-6 rounded-xl shadow-lg border border-amber-100">
  <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-3">
  <span className="text-amber-600">⚡</span>
@@ -201,13 +201,13 @@ export default function Chaves() {
  </div>
  </div>
  </div>
- 
+
  <div>
  <div className="bg-gradient-to-br from-amber-50 to-white rounded-2xl p-8 shadow-xl border border-amber-200">
  <h3 className="text-2xl font-bold text-gray-900 mb-6">
  Cobertura em <span className="text-amber-600">Chaves</span>
  </h3>
- 
+
  <div className="grid grid-cols-2 gap-4 mb-8">
  {[
  'Centro Histórico', 'Termas de Chaves', 'Zona Hoteleira',
@@ -221,7 +221,7 @@ export default function Chaves() {
  </div>
  ))}
  </div>
- 
+
  <div className="bg-blue-50 p-6 rounded-xl border border-blue-200">
  <h4 className="text-lg font-bold text-gray-900 mb-3">
  🏊 Serviços para Instalações Termais
@@ -252,7 +252,7 @@ export default function Chaves() {
  <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
  Perguntas sobre <span className="text-amber-600">Eletricista em Chaves</span>
  </h2>
- 
+
  <div className="max-w-3xl mx-auto space-y-6">
  <div className="bg-white p-6 rounded-xl shadow-md">
  <h3 className="text-xl font-bold text-gray-900 mb-3">
@@ -265,7 +265,7 @@ export default function Chaves() {
  por minerais das águas termais.
  </p>
  </div>
- 
+
  <div className="bg-white p-6 rounded-xl shadow-md">
  <h3 className="text-xl font-bold text-gray-900 mb-3">
  Trabalham em estabelecimentos hoteleiros de Chaves?
@@ -277,7 +277,7 @@ export default function Chaves() {
  nas operações do estabelecimento.
  </p>
  </div>
- 
+
  <div className="bg-white p-6 rounded-xl shadow-md">
  <h3 className="text-xl font-bold text-gray-900 mb-3">
  Como lidam com a sazonalidade do turismo em Chaves?
@@ -302,7 +302,7 @@ export default function Chaves() {
  Conhecemos as necessidades elétricas do turismo termal de Chaves.
  Desde hotéis históricos até modernas termas.
  </p>
- 
+
  <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
  <a
  href={`tel:${businessInfo.phone}`}
@@ -319,11 +319,11 @@ export default function Chaves() {
  💬 WhatsApp para Chaves
  </a>
  </div>
- 
+
  <p className="text-amber-200">
  🏨 <strong>Especialistas em hotéis e termas</strong> • 💧 <strong>Ambientes húmidos</strong> • ⏱️ <strong>Horários flexíveis</strong>
  </p>
- 
+
  {/* Cross-link subtil */}
  <div className="mt-12 p-4 bg-white/20 rounded-xl max-w-md mx-auto">
  <p className="text-lg">
@@ -336,7 +336,7 @@ export default function Chaves() {
  </div>
  </section>
  {/* Related Cities - Maillage interno SEO */}
- 
+
  <section className="py-16">
  <div className="container max-w-4xl">
  <h2 className="text-3xl font-black text-center mb-12">Perguntas Frequentes - Chaves</h2>
@@ -349,13 +349,13 @@ export default function Chaves() {
  cidades={cidadesProximas}
  serviceType="eletricista"
  />
- 
- <RelatedCities 
- currentCity="Chaves" 
- currentCitySlug="eletricista-chaves" 
+
+ <RelatedCities
+ currentCity="Chaves"
+ currentCitySlug="eletricista-chaves"
  />
  </main>
- 
+
  <Footer />
 </>
  );

@@ -13,7 +13,7 @@ export default function TrustBadges() {
  description: 'Intervenção gratuita'},
  {
  icon: '📞',
- title: 'Orçamento Grátis',
+ title: 'Orçamento por Escrito',
  description: 'Confirmação imediata por telefone'},
  {
  icon: '✅',

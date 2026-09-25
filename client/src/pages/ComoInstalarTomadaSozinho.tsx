@@ -234,7 +234,7 @@ export default function ComoInstalarTomadaSozinho() {
  className="inline-flex items-center gap-2 bg-[#FF6B35] hover:bg-[#e55a2b] text-white font-bold px-8 py-4 rounded-lg text-xl transition-colors shadow-lg"
  >
  <Phone className="w-6 h-6" />
- Orçamento Grátis: {config.phone}
+ Orçamento por Escrito: {config.phone}
  </a>
  </div>
  </div>

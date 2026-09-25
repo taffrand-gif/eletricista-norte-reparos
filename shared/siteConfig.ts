@@ -1,8 +1,7 @@
 // Configuração para Norte-Reparos - Eletricista
 // Site eletricista-norte-reparos.pt
 // Preços sem IVA - NOVA GRELHA TARIFÁRIA 2026
-// Z1-Z6 com preços de deslocação + taxa horária 70€/h
-// Surcharge urgência: 50% (×1.5)
+// Grelha única: 70€/h + 30€ (dias úteis 9h–17h) · 100€/h + 50€ (noite, fins de semana, feriados)
 
 export type SiteId = 'norte-reparos' | 'eletricista-norte-reparos';
 
@@ -51,8 +50,8 @@ export interface SiteConfig {
  }>;
 
  // Pricing config
- urgencyMultiplier: number; // 1.5 = +50% pour urgence
- hourlyRate: number; // 70€/h
+ urgencyMultiplier: number; // fator mão de obra noite/fim de semana/feriado (100/70)
+ hourlyRate: number; // 70€/h (dias úteis)
 
  // Company info
  company: {
@@ -92,20 +91,14 @@ export interface SiteConfig {
 }
 
 // GRELHA TARIFÁRIA 2026
-// Z1: 15€ — Macedo e conselho — < resposta prioritária
-// Z2: 25€ — Mirandela, Vila Flor, Alfândega, Carrazeda — < resposta prioritária
-// Z3: 35€ — Bragança, Vinhais, Vimioso, Torre Moncorvo, Mogadouro, Freixo — < resposta prioritária
-// Z4: 45€ — Miranda do Douro, Foz Côa, S.João Pesqueira, Murça, Valpaços — 45-resposta prioritária
-// Z5: 55€ — Vila Real, Alijó, Sabrosa, Tabuaço, Armamar, Régua, Lamego, Sta Marta, Mesão Frio — 60-resposta prioritária
-// Z6: 65€ — Chaves, Vila Pouca, Boticas, Montalegre, Ribeira de Pena, Mondim, Moimenta, Sernancelhe, Penedono — sob marcação
-// Urgência: ×1.5 (50% supplement)
-// Taxa horária: 70€/h
+// Grelha única 2026-09-23: dias úteis 9h–17h = 70€/h + deslocação 30€ ;
+// noite (17h–9h), fins de semana, feriados = 100€/h + deslocação 50€. Cada hora começada é devida.
 
 export const siteConfig: SiteConfig = {
  id: 'eletricista-norte-reparos',
  name: 'Eletricista Profissional',
  title: 'Eletricista para instalação, reparação e remodelação em Trás-os-Montes | Norte Reparos',
- description: 'Eletricista para instalação, reparação e remodelação em Trás-os-Montes. Orçamento por escrito em 48h, garantia 1 ano. Bragança, Vila Real, Mirandela, Chaves.',
+ description: 'Eletricista para instalação, reparação e remodelação em Trás-os-Montes. Orçamento por escrito após análise do pedido, garantia 1 ano. Bragança, Vila Real, Mirandela, Chaves.',
  phone: '932 321 892',
  whatsapp: '351932321892',
  whatsappMessage: 'Olá, preciso de um eletricista em Trás-os-Montes. Podem dar-me um orçamento?',
@@ -121,37 +114,28 @@ export const siteConfig: SiteConfig = {
 
  hero: {
  title: 'Eletricista para instalação e reparação — Trás-os-Montes',
- subtitle: 'Instalação, remodelação e diagnóstico elétrico ao seu domicílio. Orçamento por escrito em 48h, garantia 1 ano.',
+ subtitle: 'Instalação, remodelação e diagnóstico elétrico ao seu domicílio. Orçamento por escrito após análise do pedido, garantia 1 ano.',
  backgroundImage: '/images-optimized/hero/hero-electrician-portugal.jpg',
  ogImage: '/images-optimized/hero/hero-electrician-portugal.jpg'
  },
 
  services: [
- { id: 'avaria-eletrica', label: 'Reparação Avaria Elétrica', basePrice: 80 },
- { id: 'quadro-eletrico', label: 'Quadro Elétrico', basePrice: 250 },
- { id: 'instalacao-eletrica', label: 'Instalação Elétrica', basePrice: 200 },
- { id: 'iluminacao-led', label: 'Iluminação LED', basePrice: 75 },
+ { id: 'avaria-eletrica', label: 'Reparação Avaria Elétrica', basePrice: 70 },
+ { id: 'quadro-eletrico', label: 'Quadro Elétrico', basePrice: 70 },
+ { id: 'instalacao-eletrica', label: 'Instalação Elétrica', basePrice: 70 },
+ { id: 'iluminacao-led', label: 'Iluminação LED', basePrice: 70 },
  ],
 
  // Pricing Zones - NOVA GRELHA 2026
  pricingZones: [
- // Z1 - Macedo de Cavaleiros + redor
- { zone: 'Z1', name: 'Macedo de Cavaleiros', cities: 'Macedo de Cavaleiros, Torre de Dona Chama', price: '15€', time: 'A confirmar' },
- // Z2 - Mirandela, Vila Flor, Alfândega, Carrazeda
- { zone: 'Z2', name: 'Zona 2', cities: 'Mirandela, Vila Flor, Alfândega da Fé, Carrazeda de Ansiães', price: '25€', time: 'A confirmar' },
- // Z3 - Bragança, Vinhais, Vimioso, Torre Moncorvo, Mogadouro, Freixo
- { zone: 'Z3', name: 'Zona 3', cities: 'Bragança, Vinhais, Vimioso, Torre de Moncorvo, Mogadouro, Freixo de Espada à Cinta', price: '35€', time: 'A confirmar' },
- // Z4 - Miranda do Douro, Foz Côa, S.João Pesqueira, Murça, Valpaços
- { zone: 'Z4', name: 'Zona 4', cities: 'Miranda do Douro, Vila Nova de Foz Côa, São João da Pesqueira, Murça, Valpaços', price: '45€', time: 'A confirmar' },
- // Z5 - Vila Real, Alijó, Sabrosa, Tabuaço, Armamar, Régua, Lamego, Sta Marta, Mesão Frio
- { zone: 'Z5', name: 'Zona 5', cities: 'Vila Real, Alijó, Sabrosa, Tabuaço, Armamar, Peso da Régua, Lamego, Santa Marta de Penaguião, Mesão Frio', price: '55€', time: 'A confirmar' },
- // Z6 - Chaves, Vila Pouca, Boticas, Montalegre, Ribeira de Pena, Mondim, Moimenta, Sernancelhe, Penedono
- { zone: 'Z6', name: 'Zona 6', cities: 'Chaves, Vila Pouca de Aguiar, Boticas, Montalegre, Ribeira de Pena, Mondim de Basto, Moimenta da Beira, Sernancelhe, Penedono', price: '65€', time: 'Sob marcação' },
+ // Grelha única 2026-09-23 — deslocação independente da localidade
+ { zone: 'DIA', name: 'Dias úteis 9h–17h', cities: 'Todas as localidades servidas', price: '30€', time: 'Mão de obra 70€/h' },
+ { zone: 'NOITE', name: 'Noite (17h–9h), fins de semana e feriados', cities: 'Todas as localidades servidas', price: '50€', time: 'Mão de obra 100€/h' },
  ],
 
  // NOVO: Urgência + Taxa Horária
- urgencyMultiplier: 1.5, // +50% pour urgence / fim de semana
- hourlyRate: 70, // 70€/h
+ urgencyMultiplier: 100 / 70, // 100€/h noite / fim de semana / feriado
+ hourlyRate: 70, // 70€/h dias úteis
 
  company: {
  fullName: 'Eletricista Profissional',
@@ -201,33 +185,13 @@ export const siteConfig: SiteConfig = {
 // Helper function to get local price by zone
 export function getLocalPrice(zone: string): string {
  const zoneData = siteConfig.pricingZones.find(z => z.zone === zone);
- return zoneData ? zoneData.price : '15€';
+ return zoneData ? zoneData.price : '30€';
 }
 
 // Helper function to get zone for a city
 export function getZoneForCity(cityName: string): string {
- const lowerCity = cityName.toLowerCase();
- const zoneMap: Record<string, string> = {
- // Z1
- 'macedo de cavaleiros': 'Z1', 'torre de dona chama': 'Z1',
- // Z2
- 'mirandela': 'Z2', 'vila flor': 'Z2', 'alfândega da fé': 'Z2', 'carrazeda de ansiães': 'Z2',
- // Z3
- 'bragança': 'Z3', 'vinhais': 'Z3', 'vimioso': 'Z3', 'torre de moncorvo': 'Z3',
- 'mogadouro': 'Z3', 'freixo de espada à cinta': 'Z3',
- // Z4
- 'miranda do douro': 'Z4', 'vila nova de foz côa': 'Z4', 'são joão da pesqueira': 'Z4',
- 'murça': 'Z4', 'valpaços': 'Z4',
- // Z5
- 'vila real': 'Z5', 'alijó': 'Z5', 'sabrosa': 'Z5', 'tabuaço': 'Z5',
- 'armamar': 'Z5', 'peso da régua': 'Z5', 'lamego': 'Z5',
- 'santa marta de penaguião': 'Z5', 'mesão frio': 'Z5',
- // Z6
- 'chaves': 'Z6', 'vila pouca de aguiar': 'Z6', 'boticas': 'Z6', 'montalegre': 'Z6',
- 'ribeira de pena': 'Z6', 'mondim de basto': 'Z6', 'moimenta da beira': 'Z6',
- 'sernancelhe': 'Z6', 'penedono': 'Z6',
- };
- return zoneMap[lowerCity] || 'Z3';
+ void cityName; // preço único: a deslocação não depende da localidade
+ return 'DIA';
 }
 
 export function getCurrentSiteConfig(): SiteConfig {

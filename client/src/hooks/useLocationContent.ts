@@ -49,19 +49,9 @@ function getDistanceToCity(cityName: string): number {
  }
  return Math.round(calculateDistance(BASE_LAT, BASE_LON, coords.lat, coords.lon));
 }
-// Calculate arrival time based on distance
-function getArrivalTime(distance: number): string {
- if (distance <= 20) return '30-40 minutos';
- if (distance <= 40) return '40-50 minutos';
- if (distance <= 60) return '50-60 minutos';
- return '60-90 minutos';
-}
-// Calculate price adjustment based on distance
-function getPriceAdjustment(distance: number): number {
- if (distance <= 20) return 0;
- if (distance <= 50) return 10;
- if (distance <= 100) return 20;
- return 30;
+// Do not promise a numeric arrival time or vary the official displacement fee by distance.
+function getArrivalTime(): string {
+ return 'Disponibilidade mediante contacto';
 }
 // Get region name
 function getRegion(cityName: string): string {
@@ -78,8 +68,8 @@ export function useLocationContent(): LocationContentConfig {
  return useMemo(() => {
  const city = getCurrentCity();
  const distance = getDistanceToCity(city);
- const arrivalTime = getArrivalTime(distance);
- const priceAdjustment = getPriceAdjustment(distance);
+ const arrivalTime = getArrivalTime();
+ const priceAdjustment = 0;
  const region = getRegion(city);
  return {
  city,

@@ -30,8 +30,8 @@ export default function VilaReal() {
  },
  ];
  useEffect(() => {
- document.title = "⚡ Eletricista Vila Real — Orçamento Grátis | Garantia Escrita";
- 
+ document.title = "⚡ Eletricista Vila Real — Orçamento por Escrito | Garantia Escrita";
+
  // Optimized meta description
  let metaDescription = document.querySelector('meta[name="description"]');
  if (!metaDescription) {
@@ -48,8 +48,8 @@ export default function VilaReal() {
  document.head.appendChild(metaKeywords);
  }
  metaKeywords.setAttribute('content', 'eletricista 24h vila real, eletricista Atendimento 24h/7d vila real, eletricista vila real, eletricista profissional vila real, instalação elétrica vila real, quadro elétrico vila real, diagnóstico elétrico vila real, arranjo elétrica vila real, eletricista trás-os-montes');
- 
- 
+
+
  // Canonical URL
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
@@ -58,7 +58,7 @@ export default function VilaReal() {
  document.head.appendChild(canonical);
  }
  canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/eletricista-vila-real');
- 
+
  // Schema.org LocalBusiness for Vila Real
  const schemaScript = document.createElement('script');
  schemaScript.type = 'application/ld+json';
@@ -114,9 +114,9 @@ export default function VilaReal() {
  <>
  <SEOHead />
  <StructuredData />
- 
+
  <Header />
- 
+
  <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
  {/* Hero section spécifique à Vila Real */}
  <section className="bg-gradient-to-r from-amber-600 to-amber-800 text-white py-16">
@@ -130,12 +130,12 @@ export default function VilaReal() {
 <h1 className="text-4xl md:text-5xl font-bold mb-6">
  Eletricista Profissional em <span className="text-blue-900">Vila Real</span>
  </h1>
- 
+
  <p className="text-xl mb-8">
- Serviços de eletricista em Vila Real e arredores. 
+ Serviços de eletricista em Vila Real e arredores.
  experiência em Trás-os-Montes a servir a região de Trás-os-Montes.
  </p>
- 
+
  <div className="flex flex-col sm:flex-row gap-4">
  <a
  href={`tel:${businessInfo.phone}`}
@@ -163,7 +163,7 @@ export default function VilaReal() {
  <h2 className="text-3xl font-bold text-gray-900 mb-6">
  Porque escolher um eletricista em Vila Real da Eletricista Profissional?
  </h2>
- 
+
  <div className="space-y-6">
  <div className="bg-white p-6 rounded-xl shadow-lg border border-amber-100">
  <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-3">
@@ -171,14 +171,14 @@ export default function VilaReal() {
  Conhecimento Local de Vila Real
  </h3>
  <p className="text-gray-600">
- Conhecemos profundamente a infraestrutura elétrica de Vila Real. 
+ Conhecemos profundamente a infraestrutura elétrica de Vila Real.
  Trabalhamos em diversos bairros como {[
  'São Pedro', 'Mateus', 'Parque Corgo', 'Lordelo', 'Vila Real Centro',
  'Bairro da Ponte', 'Bairro da Rainha', 'Bairro da Corga'
  ].join(', ')} e entendemos as particularidades de cada zona.
  </p>
  </div>
- 
+
  <div className="bg-white p-6 rounded-xl shadow-lg border border-amber-100">
  <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-3">
  <span className="text-amber-600">⚡</span>
@@ -205,13 +205,13 @@ export default function VilaReal() {
  </div>
  </div>
  </div>
- 
+
  <div>
  <div className="bg-gradient-to-br from-amber-50 to-white rounded-2xl p-8 shadow-xl border border-amber-200">
  <h3 className="text-2xl font-bold text-gray-900 mb-6">
  Áreas de Atuação em <span className="text-amber-600">Vila Real</span>
  </h3>
- 
+
  <div className="grid grid-cols-2 gap-4 mb-8">
  {[
  'Centro Histórico', 'São Pedro', 'Mateus', 'Lordelo',
@@ -224,7 +224,7 @@ export default function VilaReal() {
  </div>
  ))}
  </div>
- 
+
  <div className="bg-blue-50 p-6 rounded-xl border border-blue-200">
  <h4 className="text-lg font-bold text-gray-900 mb-3">
  ⏱️ Tempo de Resposta em Vila Real
@@ -288,10 +288,10 @@ export default function VilaReal() {
  Precisa de um Eletricista em <span className="text-amber-300">Vila Real</span>?
  </h2>
  <p className="text-xl mb-8 max-w-2xl mx-auto">
- Contacte-nos agora para um sem compromisso. 
+ Contacte-nos agora para um sem compromisso.
  Atendemos toda a cidade de Vila Real e arredores.
  </p>
- 
+
  <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
  <a
  href={`tel:${businessInfo.phone}`}
@@ -308,14 +308,14 @@ export default function VilaReal() {
  💬 WhatsApp para Vila Real
  </a>
  </div>
- 
+
  <p className="text-amber-200">
  🚗 <strong>Deslocação com preço tabelado</strong> em Vila Real • ⏱️ <strong>Urgências 24h</strong> • 💰 <strong>Orçamento sem compromisso</strong>
  </p>
  </div>
  </section>
  {/* Related Cities - Maillage interno SEO */}
- 
+
  <section className="py-16">
  <div className="container max-w-4xl">
  <h2 className="text-3xl font-black text-center mb-12">Perguntas Frequentes - Vila Real</h2>
@@ -328,13 +328,13 @@ export default function VilaReal() {
  cidades={cidadesProximas}
  serviceType="eletricista"
  />
- 
- <RelatedCities 
- currentCity="Vila Real" 
- currentCitySlug="eletricista-vilareal" 
+
+ <RelatedCities
+ currentCity="Vila Real"
+ currentCitySlug="eletricista-vilareal"
  />
  </main>
- 
+
  <Footer />
 </>
  );

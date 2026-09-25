@@ -16,7 +16,7 @@ function FAQLocal() {
  answer: 'Sim, a Eletricista Profissional faz instalação, remodelação e diagnóstico elétrico em Mirandela e em todo o distrito de Bragança, ao seu domicílio. Orçamento por escrito em 48h e garantia 1 ano.'},
  {
  question: 'Quanto custa um eletricista em Bragança?',
- answer: 'O preço de um eletricista em Bragança varia conforme o serviço: diagnóstico (80-120€), reparação de avaria elétrica (150-210€), substituição de quadro elétrico 12 módulos (370-650€), diagnóstico elétrico (150-300€). Todos os preços sem IVA. Sem compromisso.'},
+ answer: 'Todos os preços sem IVA. Sem compromisso.'},
  {
  question: 'Fazem diagnóstico elétrico na zona de Bragança?',
  answer: 'Sim, fazemos inspeção elétrica para venda de imóveis, arrendamento e instalações novas na zona de Bragança. Prazo: 3-5 dias úteis. Preço: a partir de 150€ (sem IVA).'},

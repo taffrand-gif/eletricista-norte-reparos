@@ -333,49 +333,31 @@ function Urgencia() {
  <div className="bg-white rounded-2xl p-8 shadow-xl">
  <div className="grid md:grid-cols-2 gap-6 mb-8">
  <div className="bg-gray-50 rounded-xl p-6">
- <h3 className="font-bold text-gray-900 mb-2">Dias Úteis (8h-18h)</h3>
- <p className="text-3xl font-black text-orange-600">70€/h</p>
- <p className="text-sm text-gray-600">+ deslocação conforme zona</p>
- </div>
- <div className="bg-blue-50 rounded-xl p-6 border-2 border-blue-200">
- <h3 className="font-bold text-gray-900 mb-2">Sábado</h3>
- <p className="text-3xl font-black text-blue-600">90€/h</p>
- <p className="text-sm text-gray-600">+ deslocação conforme zona</p>
- </div>
- <div className="bg-red-50 rounded-xl p-6 border-2 border-red-200">
- <h3 className="font-bold text-gray-900 mb-2">Domingo/Feriado</h3>
- <p className="text-3xl font-black text-red-600">100€/h</p>
- <p className="text-sm text-gray-600">+ deslocação conforme zona</p>
+ <h3 className="font-bold text-gray-900 mb-2">Dias úteis (9h–17h)</h3>
+ <p className="text-3xl font-black text-orange-600">70€/h + 30€</p>
+ <p className="text-sm text-gray-600">Deslocação única de 30€</p>
  </div>
  <div className="bg-purple-50 rounded-xl p-6 border-2 border-purple-200">
- <h3 className="font-bold text-gray-900 mb-2">Noturno (18h-8h)</h3>
- <p className="text-3xl font-black text-purple-600">+50%</p>
- <p className="text-sm text-gray-600">Sobre mão de obra + deslocação</p>
+ <h3 className="font-bold text-gray-900 mb-2">Noite (17h–9h), fins de semana e feriados</h3>
+ <p className="text-3xl font-black text-purple-600">100€/h + 50€</p>
+ <p className="text-sm text-gray-600">Deslocação única de 50€</p>
  </div>
  </div>
  <div className="bg-gradient-to-r from-orange-50 to-red-50 rounded-xl p-6 border-2 border-orange-200">
- <h3 className="font-bold text-gray-900 mb-4">Exemplo: Urgência Domingo 22h em Bragança</h3>
+ <h3 className="font-bold text-gray-900 mb-4">Exemplo: urgência domingo às 22h em Bragança</h3>
  <div className="space-y-2 text-gray-700">
  <div className="flex justify-between">
- <span>Deslocação Zona 3:</span>
- <span className="font-bold">35€</span>
+ <span>Deslocação</span>
+ <span className="font-bold">50€</span>
  </div>
  <div className="flex justify-between">
- <span>Majoração noturna deslocação (+50%):</span>
- <span className="font-bold">+17,50€</span>
- </div>
- <div className="flex justify-between">
- <span>Mão de obra Domingo (1h):</span>
+ <span>Mão de obra (1h):</span>
  <span className="font-bold">100€</span>
- </div>
- <div className="flex justify-between">
- <span>Majoração noturna MO (+50%):</span>
- <span className="font-bold">+50€</span>
  </div>
  <hr className="border-gray-300" />
  <div className="flex justify-between text-xl font-black text-orange-600">
  <span>TOTAL:</span>
- <span>202,50€</span>
+ <span>150€</span>
  </div>
  </div>
  <p className="text-sm text-gray-600 mt-4 italic text-center">

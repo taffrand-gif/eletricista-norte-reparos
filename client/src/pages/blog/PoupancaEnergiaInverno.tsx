@@ -6,7 +6,7 @@ import { Phone, Snowflake, Lightbulb, Moon, ThermometerSnowflake, CheckCircle, T
 export default function PoupancaEnergiaInverno() {
  useEffect(() => {
  document.title = "Poupar Energia no Inverno em Trás-os-Montes: 10 Dicas Práticas 2026 | ";
- 
+
  let metaDescription = document.querySelector('meta[name="description"]');
  if (!metaDescription) {
  metaDescription = document.createElement('meta');
@@ -54,7 +54,7 @@ export default function PoupancaEnergiaInverno() {
  "mainEntity": [
  { "@type": "Question", "name": "Qual o método mais eficaz para poupar no aquecimento?", "acceptedAnswer": { "@type": "Answer", "text": "Substituir aquecedores antigos por bomba de calor (ar condicionado inverter). São 3-4x mais eficientes e podem poupar até 60% na conta de aquecimento. Investimento: 600€-1.500€ por unidade." } },
  { "@type": "Question", "name": "Quanto poupo ao substituir lâmpadas por LED?", "acceptedAnswer": { "@type": "Answer", "text": "LED consome 80% menos que incandescentes e dura 15-20 anos. Poupança: 50-80% na iluminação. Como no inverno as luzes ficam acesas mais tempo, o retorno é ainda mais rápido. Cada lâmpada custa entre 5€ e 15€." } },
- { "@type": "Question", "name": "Vale a pena mudar para tarifa bi-horária de eletricidade?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. Ao usar máquinas de roupa, louça e carregamentos no período noturno (mais barato), pode poupar 20-30% na conta de luz. A mudança de tarifa é gratuita junto da sua comercializadora de energia." } },
+ { "@type": "Question", "name": "Vale a pena mudar para tarifa bi-horária de eletricidade?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. À noite (17h–9h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €. A mudança de tarifa é gratuita junto da sua comercializadora de energia." } },
  { "@type": "Question", "name": "Quanto consomem os aparelhos elétricos em standby?", "acceptedAnswer": { "@type": "Answer", "text": "TV, computador e consolas em standby consomem 10-15W cada continuamente, representando 5-10% do consumo total. Solução simples: use réguas de tomadas com interruptor (10€-30€) para desligar completamente." } },
  { "@type": "Question", "name": "Qual a poupança ao usar termostato programável?", "acceptedAnswer": { "@type": "Answer", "text": "Um termostato programável pode poupar 20-30% no aquecimento ao regular automaticamente a temperatura. Programar para 19-21°C e desligar quando sai de casa. Investimento: 50€-200€." } }
  ]
@@ -163,14 +163,14 @@ export default function PoupancaEnergiaInverno() {
  <div className="container max-w-3xl">
  <div className="prose prose-lg max-w-none">
  <p className="text-xl text-gray-700 leading-relaxed">
- O <strong>inverno em Trás-os-Montes</strong> é rigoroso. Temperaturas negativas, neve e geada 
+ O <strong>inverno em Trás-os-Montes</strong> é rigoroso. Temperaturas negativas, neve e geada
  fazem disparar o consumo de energia — especialmente aquecimento.
  </p>
  <p className="text-gray-700">
- Mas com as estratégias certas, pode reduzir a conta de luz em 30-50% sem passar frio. 
- Seja em <a href="/eletricista-chaves" className="text-orange-500 hover:underline">Chaves</a>, 
- <a href="/eletricista-braganca" className="text-orange-500 hover:underline"> Bragança</a> ou 
- <a href="/eletricista-montalegre" className="text-orange-500 hover:underline"> Montalegre</a>, 
+ Mas com as estratégias certas, pode reduzir a conta de luz em 30-50% sem passar frio.
+ Seja em <a href="/eletricista-chaves" className="text-orange-500 hover:underline">Chaves</a>,
+ <a href="/eletricista-braganca" className="text-orange-500 hover:underline"> Bragança</a> ou
+ <a href="/eletricista-montalegre" className="text-orange-500 hover:underline"> Montalegre</a>,
  estas dicas funcionam.
  </p>
  </div>
@@ -205,7 +205,7 @@ export default function PoupancaEnergiaInverno() {
  </div>
  <div className="bg-orange-50 p-4 rounded-lg border-l-4 border-orange-500">
  <p className="text-sm text-gray-700">
- <strong>Resultado:</strong> A conta de luz no inverno pode ser 2-3x superior ao verão. 
+ <strong>Resultado:</strong> A conta de luz no inverno pode ser 2-3x superior ao verão.
  Mas não tem de ser assim!
  </p>
  </div>
@@ -290,13 +290,13 @@ export default function PoupancaEnergiaInverno() {
  <span className="text-xs text-gray-600">Menos eficiente</span>
  </td>
  <td className="text-center py-3">2.000W</td>
- <td className="text-right py-3 font-bold text-red-600">90€ - 110€</td>
+ <td className="text-right py-3 font-bold text-red-600"></td>
  </tr>
  </tbody>
  </table>
  <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-500 mt-4">
  <p className="text-sm text-gray-700">
- <strong>Conclusão:</strong> Substituir aquecedores tradicionais por bomba de calor inverter 
+ <strong>Conclusão:</strong> Substituir aquecedores tradicionais por bomba de calor inverter
  poupa <strong>60€-70€/mês</strong> por divisão!
  </p>
  </div>
@@ -318,7 +318,7 @@ export default function PoupancaEnergiaInverno() {
  <h3 className="font-bold text-blue-700">Vazio (Noite)</h3>
  </div>
  <p className="text-sm text-gray-700 mb-2">
- <strong>Horário:</strong> 22h-8h (dias úteis)<br/>
+ <strong>Horário:</strong> <br/>
  Todo o dia (fins de semana)
  </p>
  <p className="text-2xl font-black text-blue-700">~0,12€/kWh</p>
@@ -336,7 +336,7 @@ export default function PoupancaEnergiaInverno() {
  </div>
  <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
  <p className="text-sm text-gray-700">
- <strong>Estratégia:</strong> Programe máquinas de lavar, aquecimento de água e carregamento 
+ <strong>Estratégia:</strong> Programe máquinas de lavar, aquecimento de água e carregamento
  de dispositivos para o período noturno. Poupança: <strong>20-30%</strong>.
  </p>
  </div>
@@ -435,7 +435,7 @@ export default function PoupancaEnergiaInverno() {
  </table>
  <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-500 mt-4">
  <p className="text-sm text-gray-700">
- <strong>Total:</strong> Investimento de ~1.300€ poupa <strong>850€/ano</strong>. 
+ <strong>Total:</strong> Investimento de ~1.300€ poupa <strong>850€/ano</strong>.
  Retorno em menos de 2 anos!
  </p>
  </div>
@@ -450,7 +450,7 @@ export default function PoupancaEnergiaInverno() {
  Reduza a Conta de Luz Este Inverno
  </h2>
  <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
- Instalação de LED, bombas de calor, sensores e otimização elétrica. 
+ Instalação de LED, bombas de calor, sensores e otimização elétrica.
  Sem compromisso em Trás-os-Montes.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">

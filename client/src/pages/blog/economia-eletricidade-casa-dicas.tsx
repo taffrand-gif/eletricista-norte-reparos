@@ -134,10 +134,10 @@ export default function EconomiaEletricidadeCasaDicas() {
  </p>
  <p><strong>Solução:</strong> Réguas com interruptor para desligar tudo à noite e quando sai de casa.</p>
  <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">3. Frigorífico Eficiente (A+++)</h3>
- <p><strong>Poupança: 80-120€/ano | Investimento: 400-700€ | Retorno: 4-6 anos</strong></p>
+ <p><strong>Investimento: 400-700€ | Retorno: 4-6 anos</strong></p>
  <p>
  Frigorífico antigo (classe B/C) consome 500-700 kWh/ano (100-140€). Frigorífico A+++ consome 150-200 kWh/ano (30-40€).
- <strong> Poupança: 80-120€/ano durante 15-20 anos.</strong>
+ <strong> </strong>
  </p>
  <p><strong>Dicas uso:</strong></p>
  <ul>
@@ -266,7 +266,7 @@ export default function EconomiaEletricidadeCasaDicas() {
  </div>
  <div className="flex justify-between">
  <span>Frigorífico A+++ (3):</span>
- <span className="font-semibold">80-120€/ano</span>
+ <span className="font-semibold"></span>
  </div>
  <div className="flex justify-between">
  <span>Água fria + Secar ar (4+5):</span>
@@ -327,7 +327,7 @@ export default function EconomiaEletricidadeCasaDicas() {
  <div className="bg-gray-50 rounded-lg p-6">
  <h4 className="font-bold text-gray-900 mb-2">Tarifa bi-horária compensa?</h4>
  <p className="text-gray-700 mb-0">
- Compensa se consegue concentrar 50%+ consumo em horas vazio (22h-8h). Ideal para quem tem aquecimento elétrico programável,
+ À noite (17h–9h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €. Ideal para quem tem aquecimento elétrico programável,
  máquinas lavar com timer, carregador veículo elétrico. Poupança: 15-25% na conta.
  </p>
  </div>

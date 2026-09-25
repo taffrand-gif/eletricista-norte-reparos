@@ -1,5 +1,4 @@
 // FAQSchema - Featured Snippets pour Google
-// Affiche les FAQ directement dans les résultats (+10% visibilité)
 interface FAQ {
  question: string;
  answer: string;
@@ -35,7 +34,7 @@ export const eletricistaFAQs: FAQ[] = [
  },
  {
  question: "Quanto tempo demora a chegar em caso de urgência elétrica?",
- answer: "Confirmamos a deslocação antes de intervir — Bragança (Z3, 35 €) e aldeias circundantes. Serviço 24h/7 dias incluindo feriados, orçamento por escrito."
+ answer: "Confirmamos a deslocação antes de intervir — Bragança (30 €) e aldeias circundantes. Serviço 24h/7 dias incluindo feriados, orçamento por escrito."
  },
  {
 question: "têm experiência ?",
@@ -67,7 +66,7 @@ question: "têm experiência ?",
  },
  {
  question: "Cobram deslocação?",
- answer: "Não. A deslocação tem preço tabelado por zona (Z1-Z6), calculado a partir de Macedo de Cavaleiros."
+ answer: "Não. A deslocação tem preço único em qualquer localidade servida: 30 € em dias úteis (9h–17h) e 50 € à noite, fins de semana e feriados."
  },
  {
  question: "O que fazer em caso de curto-circuito?",

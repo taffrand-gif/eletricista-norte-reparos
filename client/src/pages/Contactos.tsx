@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CalendlyCTA from '@/components/CalendlyCTA';
 import { ACTIVE_CONFIG } from "../../../shared/serviceConfig";
 import { useSEO } from "@/hooks/useSEO";
 import { toast } from "sonner";
@@ -8,7 +9,7 @@ import { trpc } from "@/lib/trpc";
 export default function Contactos() {
  const config = ACTIVE_CONFIG;
  const formattedPhone = `${config.phone.slice(0, 3)} ${config.phone.slice(3, 6)} ${config.phone.slice(6)}`;
- 
+
  const [formType, setFormType] = useState<"contact" | "booking">("contact");
  const [formData, setFormData] = useState({
  name: "",
@@ -21,15 +22,15 @@ export default function Contactos() {
  address: "",
  preferredDate: "",
  preferredTime: ""});
- 
+
  // Récupérer les créneaux disponibles pour la date sélectionnée
  const { data: availableSlotsData } = trpc.bookings.getAvailableSlots.useQuery(
  { date: formData.preferredDate },
  { enabled: !!formData.preferredDate && formType === "booking" }
  );
- 
+
  const availableSlots = availableSlotsData?.availableSlots || [];
- 
+
  // Réinitialiser l'heure quand la date change
  const handleDateChange = (date: string) => {
  setFormData({ ...formData, preferredDate: date, preferredTime: "" });
@@ -53,10 +54,10 @@ export default function Contactos() {
  const sendMessage = trpc.contact.sendMessage.useMutation({
  onSuccess: () => {
  toast.success("Mensagem enviada com sucesso! Entraremos em contacto em breve.");
- setFormData({ 
- name: "", 
- email: "", 
- phone: "", 
+ setFormData({
+ name: "",
+ email: "",
+ phone: "",
  message: "",
  city: "",
  serviceType: "",
@@ -70,10 +71,10 @@ export default function Contactos() {
  const createBooking = trpc.bookings.create.useMutation({
  onSuccess: () => {
  toast.success("Pedido de reserva enviado com sucesso! Entraremos em contacto para confirmar.");
- setFormData({ 
- name: "", 
- email: "", 
- phone: "", 
+ setFormData({
+ name: "",
+ email: "",
+ phone: "",
  message: "",
  city: "",
  serviceType: "",
@@ -86,7 +87,7 @@ export default function Contactos() {
  }});
  const handleSubmit = (e: React.FormEvent) => {
  e.preventDefault();
- 
+
  if (formType === "contact") {
  sendMessage.mutate({
  name: formData.name,
@@ -204,6 +205,7 @@ export default function Contactos() {
  >
  📞 LIGUE AGORA: {formattedPhone}
  </button>
+ <CalendlyCTA className="w-full mt-3" />
  </div>
  </div>
  {/* Contact/Booking Form */}
@@ -357,10 +359,10 @@ export default function Contactos() {
  disabled={!formData.preferredDate}
  >
  <option value="">
- {!formData.preferredDate 
- ? "Selecione primeiro uma data" 
- : availableSlots.length === 0 
- ? "Nenhum horário disponível" 
+ {!formData.preferredDate
+ ? "Selecione primeiro uma data"
+ : availableSlots.length === 0
+ ? "Nenhum horário disponível"
  : "Selecione um horário..."}
  </option>
  {availableSlots.map((slot) => (
@@ -402,10 +404,10 @@ export default function Contactos() {
  disabled={isSubmitting}
  className="w-full bg-red-600 hover:bg-red-700 text-white font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-colors text-base sm:text-lg disabled:opacity-50 disabled:cursor-not-allowed"
  >
- {isSubmitting 
- ? "A enviar..." 
- : formType === "booking" 
- ? "📅 Solicitar Visita" 
+ {isSubmitting
+ ? "A enviar..."
+ : formType === "booking"
+ ? "📅 Solicitar Visita"
  : "💬 Enviar Mensagem"
  }
  </button>

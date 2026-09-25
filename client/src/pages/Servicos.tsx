@@ -12,7 +12,7 @@ export default function Servicos() {
  const { config } = useSite();
  useEffect(() => {
  document.title = "Serviços Eletricista Trás-os-Montes | 932 321 892";
- 
+
  // Update meta description
  let metaDescription = document.querySelector('meta[name="description"]');
  if (!metaDescription) {
@@ -80,9 +80,9 @@ export default function Servicos() {
  <>
  <SEOHeadEnhanced pageType="service" />
  <StructuredData />
- 
+
  <Header />
- 
+
  <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
  {/* Hero section */}
  <section className="bg-gradient-to-r from-amber-600 to-amber-800 text-white py-16">
@@ -91,7 +91,7 @@ export default function Servicos() {
  Serviços de <span className="text-blue-900">Eletricista</span> em Trás-os-Montes
  </h1>
  <p className="text-xl mb-8 max-w-3xl">
- Serviços elétricos completos para residências, comércios e indústrias. 
+ Serviços elétricos completos para residências, comércios e indústrias.
  Profissionais com experiência, materiais de qualidade e garantia no serviço.
  </p>
  <div className="flex flex-col sm:flex-row gap-4">
@@ -135,11 +135,11 @@ export default function Servicos() {
  {service.priceRange}
  </span>
  </div>
- 
+
  <p className="text-gray-600 mb-6 text-lg">
  {service.description}
  </p>
- 
+
  <h3 className="text-xl font-semibold text-gray-900 mb-4">O que inclui:</h3>
  <ul className="space-y-3 mb-8">
  {service.features.map((feature, idx) => (
@@ -149,7 +149,7 @@ export default function Servicos() {
  </li>
  ))}
  </ul>
- 
+
  <div className="flex flex-col sm:flex-row gap-4">
  <a
  href={`tel:${ACTIVE_CONFIG.phone}`}
@@ -199,7 +199,7 @@ export default function Servicos() {
  },
  {
  question: "O orçamento tem custo?",
- answer: "Por telefone ou WhatsApp, com fotos ou vídeo, a estimativa não tem custo. Se for necessária deslocação ao local, a deslocação é faturada segundo a tabela por zona (Z1 15 € a Z6 65 €), e o orçamento por escrito é entregue antes de qualquer intervenção."
+ answer: "Por telefone ou WhatsApp, com fotos ou vídeo, a estimativa não tem custo. A deslocação tem preço único em qualquer localidade servida: 30 € em dias úteis (9h–17h) e 50 € à noite, fins de semana e feriados. Orçamento por escrito antes de qualquer intervenção."
  }
  ]}
  />
@@ -211,7 +211,7 @@ export default function Servicos() {
  Precisa de um Eletricista em Trás-os-Montes?
  </h2>
  <p className="text-xl mb-8 max-w-2xl mx-auto">
- Contacte-nos agora para um sem compromisso e sem compromisso. 
+ Contacte-nos agora para um sem compromisso e sem compromisso.
  Atendemos urgências Atendimento 24h/7d.
  </p>
  <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -233,7 +233,7 @@ export default function Servicos() {
  </div>
  </section>
  </main>
- 
+
  <Footer />
 </>
  );

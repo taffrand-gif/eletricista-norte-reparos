@@ -30,8 +30,8 @@ export default function Braganca() {
  },
  ];
  useEffect(() => {
- document.title = "⚡ Eletricista Bragança — Orçamento Grátis | Garantia Escrita";
- 
+ document.title = "⚡ Eletricista Bragança — Orçamento por Escrito | Garantia Escrita";
+
  // Optimized meta description
  let metaDescription = document.querySelector('meta[name="description"]');
  if (!metaDescription) {
@@ -48,8 +48,8 @@ export default function Braganca() {
  document.head.appendChild(metaKeywords);
  }
  metaKeywords.setAttribute('content', 'eletricista 24h bragança, eletricista Atendimento 24h/7d bragança, eletricista bragança, eletricista profissional bragança, instalação elétrica bragança, quadro elétrico bragança, diagnóstico elétrico bragança, arranjo elétrica bragança, eletricista trás-os-montes');
- 
- 
+
+
  // Canonical URL
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
@@ -58,7 +58,7 @@ export default function Braganca() {
  document.head.appendChild(canonical);
  }
  canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/eletricista-braganca');
- 
+
  // Schema.org LocalBusiness for Bragança
  const schemaScript = document.createElement('script');
  schemaScript.type = 'application/ld+json';
@@ -113,9 +113,9 @@ export default function Braganca() {
  <>
  <SEOHead />
  <StructuredData />
- 
+
  <Header />
- 
+
  <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
  {/* Hero section spécifique à Bragança */}
  <section className="bg-gradient-to-r from-amber-600 to-amber-800 text-white py-16">
@@ -126,16 +126,16 @@ export default function Braganca() {
  { label: 'Trás-os-Montes', href: '/tras-os-montes' },
  { label: 'Bragança', href: '/eletricista-braganca' }
  ]} />
- 
+
  <h1 className="text-4xl md:text-5xl font-bold mb-6">
  Eletricista Profissional em <span className="text-blue-900">Bragança</span>
  </h1>
- 
+
  <p className="text-xl mb-8">
- Serviços de eletricista em Bragança e arredores. 
+ Serviços de eletricista em Bragança e arredores.
  Especialistas em instalações elétricas para o clima frio da região.
  </p>
- 
+
  <div className="flex flex-col sm:flex-row gap-4">
  <a
  href={`tel:${businessInfo.phone}`}
@@ -163,7 +163,7 @@ export default function Braganca() {
  <h2 className="text-3xl font-bold text-gray-900 mb-6">
  Especialistas em Eletricidade para o Clima de Bragança
  </h2>
- 
+
  <div className="space-y-6">
  <div className="bg-white p-6 rounded-xl shadow-lg border border-amber-100">
  <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-3">
@@ -176,7 +176,7 @@ export default function Braganca() {
  e soluções energéticas eficientes para o clima local.
  </p>
  </div>
- 
+
  <div className="bg-white p-6 rounded-xl shadow-lg border border-amber-100">
  <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-3">
  <span className="text-amber-600">🏰</span>
@@ -190,13 +190,13 @@ export default function Braganca() {
  </div>
  </div>
  </div>
- 
+
  <div>
  <div className="bg-gradient-to-br from-amber-50 to-white rounded-2xl p-8 shadow-xl border border-amber-200">
  <h3 className="text-2xl font-bold text-gray-900 mb-6">
  Cobertura em <span className="text-amber-600">Bragança</span>
  </h3>
- 
+
  <div className="grid grid-cols-2 gap-4 mb-8">
  {[
  'Centro Histórico', 'Santa Maria', 'São Vicente', 'Sé',
@@ -209,7 +209,7 @@ export default function Braganca() {
  </div>
  ))}
  </div>
- 
+
  <div className="bg-blue-50 p-6 rounded-xl border border-blue-200">
  <h4 className="text-lg font-bold text-gray-900 mb-3">
  🏘️ Tipos de Imóveis em Bragança
@@ -240,7 +240,7 @@ export default function Braganca() {
  <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
  Perguntas sobre <span className="text-amber-600">Eletricista em Bragança</span>
  </h2>
- 
+
  <div className="max-w-3xl mx-auto space-y-6">
  <div className="bg-white p-6 rounded-xl shadow-md">
  <h3 className="text-xl font-bold text-gray-900 mb-3">
@@ -252,7 +252,7 @@ export default function Braganca() {
  projetadas para suportar as condições climáticas únicas de Bragança.
  </p>
  </div>
- 
+
  <div className="bg-white p-6 rounded-xl shadow-md">
  <h3 className="text-xl font-bold text-gray-900 mb-3">
  Atendem propriedades rurais nos arredores de Bragança?
@@ -264,7 +264,7 @@ export default function Braganca() {
  infraestrutura para turismo rural.
  </p>
  </div>
- 
+
  <div className="bg-white p-6 rounded-xl shadow-md">
  <h3 className="text-xl font-bold text-gray-900 mb-3">
  Qual a disponibilidade durante o inverno rigoroso de Bragança?
@@ -309,10 +309,10 @@ export default function Braganca() {
  Eletricista em <span className="text-amber-300">Bragança</span> - Serviço Confiável
  </h2>
  <p className="text-xl mb-8 max-w-2xl mx-auto">
- Conhecemos as particularidades elétricas de Bragança. 
+ Conhecemos as particularidades elétricas de Bragança.
  Desde o centro histórico até às propriedades rurais mais remotas.
  </p>
- 
+
  <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
  <a
  href={`tel:${businessInfo.phone}`}
@@ -329,7 +329,7 @@ export default function Braganca() {
  💬 WhatsApp para Bragança
  </a>
  </div>
- 
+
  <p className="text-amber-200">
  ❄️ <strong>Especialistas em clima frio</strong> • 🏰 <strong>Património histórico</strong> • 🚜 <strong>Propriedades rurais</strong>
  </p>
@@ -354,7 +354,7 @@ export default function Braganca() {
  currentCitySlug="eletricista-braganca"
  />
  </main>
- 
+
  <Footer />
 </>
  );

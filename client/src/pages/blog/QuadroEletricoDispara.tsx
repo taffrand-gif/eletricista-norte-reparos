@@ -29,7 +29,7 @@ const QuadroEletricoDispara: React.FC = () => {
  {"@type": "Question", "name": "Porque é que o quadro elétrico dispara constantemente?", "acceptedAnswer": {"@type": "Answer", "text": "As 3 causas mais comuns: Sobrecarga: demasiados aparelhos ligados ao mesmo circuito; Curto-circuito: fio danificado ou ligação mal feita; Fuga de corrente: isolamento danificado ou humidade."}},
  {"@type": "Question", "name": "Posso religar o disjuntor várias vezes?", "acceptedAnswer": {"@type": "Answer", "text": "Pode religar 1-2 vezes se disparou por sobrecarga pontual. Não religue repetidamente se dispara imediatamente ou há cheiro a queimado. Nunca force a alavanca se não sobe facilmente — o disjuntor pode estar danificado."}},
  {"@type": "Question", "name": "Como sei se é sobrecarga no quadro elétrico?", "acceptedAnswer": {"@type": "Answer", "text": "Sinais de sobrecarga: dispara quando liga aparelho potente (forno, aquecedor, máquina lavar), dispara sempre no mesmo circuito, tomadas ou fios ficam quentes, luzes diminuem intensidade ao ligar um aparelho."}},
- {"@type": "Question", "name": "Quanto custa resolver quadro elétrico que dispara?", "acceptedAnswer": {"@type": "Answer", "text": "Custos típicos em Trás-os-Montes: substituir disjuntor defeituoso 40-100€, reparar curto-circuito 80-200€, resolver fuga de corrente 60-150€. Diagnóstico profissional: 40-80€."}},
+ {"@type": "Question", "name": "Quanto custa resolver quadro elétrico que dispara?", "acceptedAnswer": {"@type": "Answer", "text": "A mão de obra segue a tarifa de 70 €/hora em dias úteis (9h–17h) ou 100 €/hora à noite, fins de semana e feriados. A deslocação é 30 € em dias úteis ou 50 € fora desse horário. O orçamento por escrito confirma materiais e complexidade antes do trabalho."}},
  {"@type": "Question", "name": "É perigoso o quadro elétrico disparar?", "acceptedAnswer": {"@type": "Answer", "text": "Sobrecarga ocasional não é perigosa se resolver rapidamente. Curto-circuito é perigoso — pode causar incêndio. Fuga de corrente é muito perigosa — risco de choque fatal. Nunca ignore problema recorrente."}}
  ]
  }) }} />
@@ -471,7 +471,7 @@ const QuadroEletricoDispara: React.FC = () => {
  <h3 className="text-2xl font-bold text-gray-900 mb-3">Resolver Curto-Circuito</h3>
  <div className="bg-cyan-50 p-4 rounded-lg mb-4">
  <p className="font-bold text-cyan-900 mb-2">Eficácia: ⭐⭐⭐⭐⭐ (Requer eletricista)</p>
- <p className="text-cyan-800 text-sm">Resolve uma parte dos casos | Custo: 80-200€ | Tempo: 1-2 horas</p>
+ <p className="text-cyan-800 text-sm">Resolve uma parte dos casos | Custo: orçamento por escrito | Tempo: conforme diagnóstico</p>
  </div>
  </div>
  </div>
@@ -505,7 +505,7 @@ const QuadroEletricoDispara: React.FC = () => {
  <h3 className="text-2xl font-bold text-gray-900 mb-3">Resolver Fuga de Corrente</h3>
  <div className="bg-cyan-50 p-4 rounded-lg mb-4">
  <p className="font-bold text-cyan-900 mb-2">Eficácia: ⭐⭐⭐⭐ (Requer inspeção)</p>
- <p className="text-cyan-800 text-sm">Resolve uma parte dos casos | Custo: 60-150€ | Tempo: 1-3 horas</p>
+ <p className="text-cyan-800 text-sm">Resolve uma parte dos casos | Custo: orçamento por escrito | Tempo: conforme diagnóstico</p>
  </div>
  </div>
  </div>
@@ -573,7 +573,7 @@ const QuadroEletricoDispara: React.FC = () => {
  <h3 className="text-2xl font-bold text-gray-900 mb-3">Substituir Disjuntor Defeituoso</h3>
  <div className="bg-cyan-50 p-4 rounded-lg mb-4">
  <p className="font-bold text-cyan-900 mb-2">Eficácia: ⭐⭐⭐⭐⭐ (Solução definitiva)</p>
- <p className="text-cyan-800 text-sm">Resolve uma parte dos casos | Custo: 40-100€ | Tempo: variável</p>
+ <p className="text-cyan-800 text-sm">Resolve uma parte dos casos | Custo: orçamento por escrito | Tempo: conforme diagnóstico</p>
  </div>
  </div>
  </div>
@@ -752,7 +752,7 @@ const QuadroEletricoDispara: React.FC = () => {
  </div>
  <div className="bg-white p-6 rounded-xl border-2 border-gray-200 mb-8">
  <h3 className="font-bold text-gray-900 mb-4 text-xl">💰 Custos de Intervenção</h3>
- 
+
  <table className="w-full text-sm">
  <thead>
  <tr className="border-b-2 border-gray-200">
@@ -763,19 +763,19 @@ const QuadroEletricoDispara: React.FC = () => {
  <tbody>
  <tr className="border-b border-gray-100">
  <td className="py-2">Diagnóstico e inspeção</td>
- <td className="text-right py-2 font-semibold">40-80€</td>
+ <td className="text-right py-2 font-semibold">Orçamento por escrito</td>
  </tr>
  <tr className="border-b border-gray-100">
  <td className="py-2">Substituir disjuntor</td>
- <td className="text-right py-2 font-semibold">40-100€</td>
+ <td className="text-right py-2 font-semibold">Orçamento por escrito</td>
  </tr>
  <tr className="border-b border-gray-100">
  <td className="py-2">Reparar curto-circuito</td>
- <td className="text-right py-2 font-semibold">80-200€</td>
+ <td className="text-right py-2 font-semibold">Orçamento por escrito</td>
  </tr>
  <tr className="border-b border-gray-100">
  <td className="py-2">Resolver fuga de corrente</td>
- <td className="text-right py-2 font-semibold">60-150€</td>
+ <td className="text-right py-2 font-semibold">Orçamento por escrito</td>
  </tr>
  <tr className="border-b border-gray-100">
  <td className="py-2">Instalar circuito novo</td>
@@ -897,15 +897,15 @@ const QuadroEletricoDispara: React.FC = () => {
  </tr>
  <tr className="border-b">
  <td className="py-2">Substituir disjuntor defeituoso</td>
- <td className="text-right py-2 font-semibold">40-100€</td>
+ <td className="text-right py-2 font-semibold">Orçamento por escrito</td>
  </tr>
  <tr className="border-b">
  <td className="py-2">Reparar curto-circuito</td>
- <td className="text-right py-2 font-semibold">80-200€</td>
+ <td className="text-right py-2 font-semibold">Orçamento por escrito</td>
  </tr>
  <tr className="border-b">
  <td className="py-2">Resolver fuga de corrente</td>
- <td className="text-right py-2 font-semibold">60-150€</td>
+ <td className="text-right py-2 font-semibold">Orçamento por escrito</td>
  </tr>
  <tr>
  <td className="py-2">Aumentar potência contratada</td>
@@ -914,7 +914,7 @@ const QuadroEletricoDispara: React.FC = () => {
  </table>
  </div>
  <p className="text-cyan-700 font-semibold">
- 💡 Diagnóstico profissional: 40-80€ (identifica causa exata)
+ 💡 Diagnóstico profissional: Orçamento por escrito (identifica causa exata)
  </p>
  </div>
  <div className="bg-gray-50 p-6 rounded-xl">

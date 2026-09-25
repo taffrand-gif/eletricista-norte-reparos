@@ -21,11 +21,11 @@ const urgencies = [
  { icon: '🗓️', label: 'Sem pressa', value: 'sem-pressa' },
 ];
 const cities = [
- { label: 'Trás-os-Montes', value: 'macedo', zone: 1, price: 15, time: 'A confirmar' },
- { label: 'Mirandela', value: 'mirandela', zone: 2, price: 25, time: 'A confirmar' },
- { label: 'Bragança', value: 'braganca', zone: 3, price: 35, time: 'A confirmar' },
- { label: 'Vila Real', value: 'vila-real', zone: 5, price: 55, time: 'A confirmar' },
- { label: 'Chaves', value: 'chaves', zone: 5, price: 55, time: 'A confirmar' },
+ { label: 'Trás-os-Montes', value: 'macedo', zone: 0, price: 30, time: 'A confirmar' },
+ { label: 'Mirandela', value: 'mirandela', zone: 0, price: 30, time: 'A confirmar' },
+ { label: 'Bragança', value: 'braganca', zone: 0, price: 30, time: 'A confirmar' },
+ { label: 'Vila Real', value: 'vila-real', zone: 0, price: 30, time: 'A confirmar' },
+ { label: 'Chaves', value: 'chaves', zone: 0, price: 30, time: 'A confirmar' },
  { label: 'Outra cidade', value: 'outra', zone: 0, price: 0, time: '' },
 ];
 export default function Diagnostico() {
@@ -155,7 +155,7 @@ export default function Diagnostico() {
  ⏱️ Chegada estimada: <strong>{selectedCity.time}</strong>
  </p>
  <p className="text-gray-600">
- 💰 Deslocação: <strong>{selectedCity.price}€</strong> + mão de obra ({isPlumber ? '65€/h' : '70€/h'})
+ 💰 Deslocação: <strong>{selectedCity.price}€</strong> + mão de obra (70€/h) em dias úteis 9h–17h; noite, fins de semana e feriados: 100€/h + 50€
  </p>
  </div>
  <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">

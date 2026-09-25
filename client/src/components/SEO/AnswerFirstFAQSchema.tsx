@@ -1,6 +1,5 @@
 // GEO1 — FAQPage JSON-LD unificado + answer-first schema
 // Réutilisé par 5 pages top money ENR/CNR pour maximiser citabilité IA
-// Règles appliquées : R11 (zéro invention), R12 (grille tarifa + zonas + +50% nuit/WE/feriado),
 //                    R145 (jamais de délai chiffré), §12 (pronom "nossa equipa"/"garantimos")
 import React from 'react';
 

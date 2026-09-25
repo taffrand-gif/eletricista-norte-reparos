@@ -8,7 +8,7 @@ export default function PrecoEletricistaUrgente24h() {
         <title>Quanto Custa um Eletricista Urgente 24h? Piquete noturno e fim-de-semana | Norte Reparos</title>
         <meta
           name="description"
-          content="Quanto custa um eletricista urgente 24h em Trás-os-Montes? Majoração +50% noite (18h-8h), sábado, domingo e feriados Norte Reparos. Tabela clara, sem surpresas. Orçamento por escrito antes de qualquer intervenção."
+          content="Quanto custa um eletricista urgente 24h em Trás-os-Montes? À noite (17h–9h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €. Tabela clara, sem surpresas. Orçamento por escrito antes de qualquer intervenção."
         />
         <link rel="canonical" href="https://eletricista-norte-reparos.pt/blog/preco-eletricista-urgente-24h" />
         <script type="application/ld+json">
@@ -21,7 +21,7 @@ export default function PrecoEletricistaUrgente24h() {
                 "name": "Quanto custa um eletricista urgente 24h?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Norte Reparos aplica o tarifário hora de 70€/h em horário normal (2ª-6ª, 9h-18h) e 105€/h no período noturno (18h-8h), sábados, domingos e feriados — majoração de +50%. A deslocação segue a tabela Z1-Z6 (15€ a 65€) com a mesma majoração +50% no horário noturno/fim-de-semana/feriado. O orçamento é sempre por escrito antes de qualquer deslocação."
+                  "text": "Mão de obra: 70 €/hora em dias úteis (9h–17h) e 100 €/hora à noite (17h–9h), fins de semana e feriados. — À noite (17h–9h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €. Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. O orçamento é sempre por escrito antes de qualquer deslocação."
                 }
               },
               {
@@ -29,7 +29,7 @@ export default function PrecoEletricistaUrgente24h() {
                 "name": "Quando se aplica a majoração de urgência?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "A majoração de +50% aplica-se a partir das 18h de cada dia até às 8h do dia seguinte, todos os sábados, domingos e feriados nacionais. Não há janela curta 'urgente' — é o mesmo tarifário com a majoração aplicada às horas e à deslocação."
+                  "text": "À noite (17h–9h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €. Não há janela curta 'urgente' — é o mesmo tarifário com a majoração aplicada às horas e à deslocação."
                 }
               },
               {
@@ -45,7 +45,7 @@ export default function PrecoEletricistaUrgente24h() {
                 "name": "Quanto tempo demora um eletricista urgente a chegar?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Depende da zona. Em horário comercial e zonas Z1-Z2 (Macedo de Cavaleiros, Mirandela, Bragança sul), costumamos chegar no próprio dia. Em zonas Z3-Z6 e em horário noturno/fim-de-semana/feriado, é necessário agendar conforme disponibilidade. Damos sempre uma estimativa por telefone antes de confirmar a deslocação."
+                  "text": "Depende da zona. A deslocação tem preço único em qualquer localidade servida: 30 € em dias úteis (9h–17h) e 50 € à noite, fins de semana e feriados. Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. Damos sempre uma estimativa por telefone antes de confirmar a deslocação."
                 }
               },
               {
@@ -72,7 +72,7 @@ export default function PrecoEletricistaUrgente24h() {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "Quanto Custa um Eletricista Urgente 24h?",
-            "description": "Tarifário Norte Reparos para piquete elétrico 24h em Trás-os-Montes: 70€/h base + majoração +50% noite/WE/feriado, deslocação Z1-Z6. Orçamento por escrito.",
+            "description": "Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. Orçamento por escrito.\",",
             "author": { "@type": "Organization", "name": "Norte Reparos" },
             "publisher": { "@type": "Organization", "name": "Norte Reparos", "url": "https://eletricista-norte-reparos.pt" },
             "datePublished": "2026-07-10",
@@ -100,13 +100,13 @@ export default function PrecoEletricistaUrgente24h() {
           <div className="bg-red-50 border-l-4 border-red-600 p-6 mb-8">
             <p className="text-lg font-semibold text-gray-900 mb-2">Resposta direta:</p>
             <p className="text-gray-800">
-              Em Trás-os-Montes, o tarifário hora para <strong>eletricista urgente</strong> é o nosso tarifário normal com <strong>majoração de +50%</strong>: <strong>105€/h</strong> no período noturno (18h-8h), sábado, domingo e feriado. A deslocação Z1-Z6 (15€ a 65€ em horário normal) sofre a mesma majoração, ficando entre 22,50€ e 97,50€. Orçamento por escrito sempre, antes de qualquer deslocação.
+              Mão de obra: 70 €/hora em dias úteis (9h–17h) e 100 €/hora à noite (17h–9h), fins de semana e feriados. A deslocação (30 € em horário normal) sofre a mesma majoração, ficando entre 22,50€ e 97,50€. Orçamento por escrito sempre, antes de qualquer deslocação.
             </p>
           </div>
 
           <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">1. O que conta como 'urgência'?</h2>
           <p>
-            'Urgência' aplica-se ao <strong>período noturno</strong> (entre as 18h e as 8h do dia seguinte), aos <strong>sábados, domingos e feriados nacionais</strong>. Dentro desse período, aplicamos a majoração de +50% ao tarifário hora (70€ → 105€) e à deslocação. Não cobramos uma 'taxa de urgência' separada — é o mesmo serviço com a majoração aplicada nas horas e no custo de viagem.
+            'Urgência' aplica-se ao <strong>período noturno</strong> (entre as 18h e as 8h do dia seguinte), aos <strong>sábados, domingos e feriados nacionais</strong>. Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. Não cobramos uma 'taxa de urgência' separada — é o mesmo serviço com a majoração aplicada nas horas e no custo de viagem.
           </p>
 
           <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">2. Tabela urgência 24h — Trás-os-Montes</h2>
@@ -121,43 +121,7 @@ export default function PrecoEletricistaUrgente24h() {
                 </tr>
               </thead>
               <tbody>
-                <tr className="bg-white">
-                  <td className="border border-gray-300 px-3 py-2 font-semibold">Z1</td>
-                  <td className="border border-gray-300 px-3 py-2">22,50€</td>
-                  <td className="border border-gray-300 px-3 py-2">105€</td>
-                  <td className="border border-gray-300 px-3 py-2">127,50€</td>
-                </tr>
-                <tr className="bg-red-50">
-                  <td className="border border-gray-300 px-3 py-2 font-semibold">Z2</td>
-                  <td className="border border-gray-300 px-3 py-2">37,50€</td>
-                  <td className="border border-gray-300 px-3 py-2">105€</td>
-                  <td className="border border-gray-300 px-3 py-2">142,50€</td>
-                </tr>
-                <tr className="bg-white">
-                  <td className="border border-gray-300 px-3 py-2 font-semibold">Z3</td>
-                  <td className="border border-gray-300 px-3 py-2">52,50€</td>
-                  <td className="border border-gray-300 px-3 py-2">105€</td>
-                  <td className="border border-gray-300 px-3 py-2">157,50€</td>
-                </tr>
-                <tr className="bg-red-50">
-                  <td className="border border-gray-300 px-3 py-2 font-semibold">Z4</td>
-                  <td className="border border-gray-300 px-3 py-2">67,50€</td>
-                  <td className="border border-gray-300 px-3 py-2">105€</td>
-                  <td className="border border-gray-300 px-3 py-2">172,50€</td>
-                </tr>
-                <tr className="bg-white">
-                  <td className="border border-gray-300 px-3 py-2 font-semibold">Z5</td>
-                  <td className="border border-gray-300 px-3 py-2">82,50€</td>
-                  <td className="border border-gray-300 px-3 py-2">105€</td>
-                  <td className="border border-gray-300 px-3 py-2">187,50€</td>
-                </tr>
-                <tr className="bg-red-50">
-                  <td className="border border-gray-300 px-3 py-2 font-semibold">Z6</td>
-                  <td className="border border-gray-300 px-3 py-2">97,50€</td>
-                  <td className="border border-gray-300 px-3 py-2">105€</td>
-                  <td className="border border-gray-300 px-3 py-2">202,50€</td>
-                </tr>
-              </tbody>
+                <tr className="bg-white"><td className="border border-gray-300 px-3 py-2 font-semibold">Dias úteis (9h–17h)</td><td className="border border-gray-300 px-3 py-2">Qualquer localidade servida</td><td className="border border-gray-300 px-3 py-2">Qualquer localidade servida</td><td className="border border-gray-300 px-3 py-2">Deslocação 30 € · 70 €/hora</td></tr><tr className="bg-white"><td className="border border-gray-300 px-3 py-2 font-semibold">Noite (17h–9h), fins de semana e feriados</td><td className="border border-gray-300 px-3 py-2">Qualquer localidade servida</td><td className="border border-gray-300 px-3 py-2">Qualquer localidade servida</td><td className="border border-gray-300 px-3 py-2">Deslocação 50 € · 100 €/hora</td></tr></tbody>
             </table>
           </div>
           <p className="text-sm text-gray-600">
@@ -186,15 +150,15 @@ export default function PrecoEletricistaUrgente24h() {
           <div className="space-y-6">
             <div>
               <h3 className="font-bold text-gray-900 mb-2 text-xl">Quanto custa um eletricista urgente 24h?</h3>
-              <p className="text-gray-700">105€/h no período majorado (noite, sábado, domingo, feriado), mais deslocação Z1-Z6 majorada. Orçamento por escrito sempre antes da deslocação.</p>
+              <p className="text-gray-700">100€/hora no período majorado (noite, fim de semana e feriado), mais deslocação de 50€. Orçamento por escrito sempre antes da deslocação.</p>
             </div>
             <div>
               <h3 className="font-bold text-gray-900 mb-2 text-xl">Há tarifa 'urgente' separada do tarifário normal?</h3>
-              <p className="text-gray-700">Não. É o mesmo serviço com majoração de +50% aplicada às horas e à deslocação — publicamos a fórmula para não haver surpresas.</p>
+              <p className="text-gray-700">Não. Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. — publicamos a fórmula para não haver surpresas.</p>
             </div>
             <div>
               <h3 className="font-bold text-gray-900 mb-2 text-xl">Demora quanto tempo a chegar?</h3>
-              <p className="text-gray-700">Em Z1-Z2 e horário comercial, costuma ser no próprio dia. Z3-Z6 ou noturno/feriado — depende da disponibilidade, confirmada por telefone antes da deslocação.</p>
+              <p className="text-gray-700">À noite (17h–9h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €. — depende da disponibilidade, confirmada por telefone antes da deslocação.</p>
             </div>
             <div>
               <h3 className="font-bold text-gray-900 mb-2 text-xl">E se for um falso alarme?</h3>
@@ -202,7 +166,7 @@ export default function PrecoEletricistaUrgente24h() {
             </div>
             <div>
               <h3 className="font-bold text-gray-900 mb-2 text-xl">Trabalha 24h mesmo?</h3>
-              <p className="text-gray-700">Sim, em Trás-os-Montes, com piquete ativo no horário majorado. Zonas mais distantes (Z5-Z6) podem exigir agendamento.</p>
+              <p className="text-gray-700">Sim, em Trás-os-Montes, com piquete ativo no horário majorado. Zonas mais distantes podem exigir agendamento.</p>
             </div>
           </div>
 

@@ -54,11 +54,11 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <span>📅 18 Fev 2026</span>
  <span>👁️ 3.5K visualizações</span>
  </div>
- 
+
  <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
  Quanto Custa um Eletricista em Trás-os-Montes? Guia de Preços 2026
  </h1>
- 
+
  <div className="flex items-center gap-4">
  <div className="w-12 h-12 bg-amber-200 rounded-full flex items-center justify-center">
  <span className="text-2xl">💰</span>
@@ -87,16 +87,16 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <div className="prose prose-lg max-w-none mb-10">
  <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-lg mb-8">
  <p className="text-amber-800 font-semibold text-lg">
- 💡 Dados Reais 2025: Analisámos 200+ orçamentos executados em <Link to="/servicos">Trás-os-Montes</Link>. 
- Os preços apresentados refletem a realidade regional, considerando deslocações longas, 
+ 💡 Dados Reais 2025: Analisámos 200+ orçamentos executados em <Link to="/servicos">Trás-os-Montes</Link>.
+ Os preços apresentados refletem a realidade regional, considerando deslocações longas,
  especificidades das casas antigas e disponibilidade limitada de profissionais qualificados.
  </p>
  </div>
  <p className="text-xl text-gray-700 mb-6">
- Contratar um eletricista em <Link to="/servicos">Trás-os-Montes</Link> envolve variáveis únicas da região: distâncias grandes, 
- casas com décadas (ou séculos) de idade, condições climáticas rigorosas e menor disponibilidade 
- de profissionais especializados. Neste guia completo, apresento uma tabela detalhada de preços 
- médios para 2026, fatores específicos da região que influenciam os custos, e como garantir 
+ Contratar um eletricista em <Link to="/servicos">Trás-os-Montes</Link> envolve variáveis únicas da região: distâncias grandes,
+ casas com décadas (ou séculos) de idade, condições climáticas rigorosas e menor disponibilidade
+ de profissionais especializados. Neste guia completo, apresento uma tabela detalhada de preços
+ médios para 2026, fatores específicos da região que influenciam os custos, e como garantir
  orçamentos justos e transparentes.
  </p>
  </div>
@@ -116,7 +116,7 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <div className="prose prose-lg max-w-none">
  <section id="tabela-precos" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">📊 Tabela Completa de Preços 2026 - Serviços Elétricos</h2>
- 
+
  <div className="overflow-x-auto">
  <table className="min-w-full bg-white border border-gray-300 rounded-xl">
  <thead>
@@ -198,44 +198,44 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  </section>
  <section id="fatores-regiao" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">📍 Fatores Específicos de Trás-os-Montes que Influenciam Preços</h2>
- 
+
  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
  <div className="bg-white p-6 rounded-xl border border-gray-200">
  <h3 className="font-bold text-gray-900 mb-3">🏠 Tipo de Construção</h3>
  <p className="text-gray-700">
- Casas de granito ou pedra (comuns em 
- <a href="/eletricista-braganca" className="text-amber-600 underline mx-1">Bragança</a> e 
- <a href="/eletricista-mirandela" className="text-amber-600 underline mx-1">Mirandela</a>) 
+ Casas de granito ou pedra (comuns em
+ <a href="/eletricista-braganca" className="text-amber-600 underline mx-1">Bragança</a> e
+ <a href="/eletricista-mirandela" className="text-amber-600 underline mx-1">Mirandela</a>)
  exigem ferramentas especiais e mais tempo. Paredes grossas dificultam passagem de tubos.
  </p>
- <p className="text-amber-700 font-semibold mt-2">Acréscimo: 25-50%</p>
+ <p className="text-amber-700 font-semibold mt-2">Noite, fim de semana e feriado: 100 €/hora + deslocação 50 €</p>
  </div>
- 
+
  <div className="bg-white p-6 rounded-xl border border-gray-200">
  <h3 className="font-bold text-gray-900 mb-3">🗺️ Distância e Acesso</h3>
  <p className="text-gray-700">
- Aldeias remotas (ex: 
- <a href="/eletricista-vinhais" className="text-amber-600 underline mx-1">Vinhais</a>, 
- <a href="/eletricista-mogadouro" className="text-amber-600 underline mx-1">Mogadouro</a>) 
+ Aldeias remotas (ex:
+ <a href="/eletricista-vinhais" className="text-amber-600 underline mx-1">Vinhais</a>,
+ <a href="/eletricista-mogadouro" className="text-amber-600 underline mx-1">Mogadouro</a>)
  têm custos de deslocação significativos. Estradas estreitas limitam veículos e equipamentos grandes.
  </p>
- <p className="text-amber-700 font-semibold mt-2">Acréscimo: 15-35%</p>
+ <p className="text-amber-700 font-semibold mt-2">Noite, fim de semana e feriado: 100 €/hora + deslocação 50 €</p>
  </div>
  <div className="bg-white p-6 rounded-xl border border-gray-200">
  <h3 className="font-bold text-gray-900 mb-3">🏚️ Idade da Instalação</h3>
  <p className="text-gray-700">
- Casas anteriores a 1970 frequentemente têm fios de chumbo, caixas de madeira, 
+ Casas anteriores a 1970 frequentemente têm fios de chumbo, caixas de madeira,
  instalações sem terra. Requerem diagnóstico detalhado e adaptações especiais.
  </p>
- <p className="text-amber-700 font-semibold mt-2">Acréscimo: 30-60%</p>
+ <p className="text-amber-700 font-semibold mt-2">Noite, fim de semana e feriado: 100 €/hora + deslocação 50 €</p>
  </div>
  <div className="bg-white p-6 rounded-xl border border-gray-200">
  <h3 className="font-bold text-gray-900 mb-3">🌦️ Condições Climáticas</h3>
  <p className="text-gray-700">
- Invernos rigorosos exigem materiais resistentes a humidade e geada. 
+ Invernos rigorosos exigem materiais resistentes a humidade e geada.
  Trabalhos exteriores podem ser adiados por condições meteorológicas.
  </p>
- <p className="text-amber-700 font-semibold mt-2">Acréscimo: 10-25% (trabalhos exteriores)</p>
+ <p className="text-amber-700 font-semibold mt-2">Noite, fim de semana e feriado: 100 €/hora + deslocação 50 €</p>
  </div>
  </div>
  <div className="mt-8 bg-blue-50 border border-blue-200 rounded-xl p-6">
@@ -254,13 +254,13 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <tr className="border-b border-gray-200">
  <td className="py-3 px-4 font-semibold">Vila Real cidade</td>
  <td className="py-3 px-4">70€</td>
- <td className="py-3 px-4">+50%</td>
+ <td className="py-3 px-4">100 €/hora + deslocação 50 €</td>
  <td className="py-3 px-4">Até 15km</td>
  </tr>
  <tr className="border-b border-gray-200">
  <td className="py-3 px-4 font-semibold">Bragança cidade</td>
  <td className="py-3 px-4">70€</td>
- <td className="py-3 px-4">+50%</td>
+ <td className="py-3 px-4">100 €/hora + deslocação 50 €</td>
  <td className="py-3 px-4">Até 20km</td>
  </tr>
  <tr className="border-b border-gray-200">
@@ -272,7 +272,7 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <tr>
  <td className="py-3 px-4 font-semibold">Zonas remotas</td>
  <td className="py-3 px-4">50-70€</td>
- <td className="py-3 px-4">80-120€</td>
+ <td className="py-3 px-4"></td>
  <td className="py-3 px-4">Negociável</td>
  </tr>
  </tbody>
@@ -282,13 +282,13 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  </section>
  <section id="instalacoes" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">🔌 Preços de Instalações Novas - Análise Detalhada</h2>
- 
+
  <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-lg mb-6">
  <h3 className="font-bold text-amber-800 text-lg mb-2">Custo por Metro Quadrado (Instalação Nova):</h3>
  <p className="text-amber-700">
- Para casas novas ou renovações completas, o preço médio em <Link to="/servicos">Trás-os-Montes</Link> é de 
+ Para casas novas ou renovações completas, o preço médio em <Link to="/servicos">Trás-os-Montes</Link> é de
  <strong> 45-75€/m²</strong>, dependendo do nível de acabamento (económico, standard, premium).
- Este valor inclui projeto, materiais básicos e mão-de-obra, mas exclui eletrodomésticos 
+ Este valor inclui projeto, materiais básicos e mão-de-obra, mas exclui eletrodomésticos
  e iluminação decorativa.
  </p>
  </div>
@@ -353,26 +353,26 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <div className="mt-6 p-6 bg-green-50 border border-green-200 rounded-xl">
  <h4 className="font-bold text-green-800 text-lg mb-2">💡 Dica para Poupar:</h4>
  <p className="text-green-700">
- Para renovações, considere fazer a <strong>demolição e preparo</strong> você mesmo 
- (retirar tomadas antigas, abrir roços simples). Isto pode reduzir a mão-de-obra em 
+ Para renovações, considere fazer a <strong>demolição e preparo</strong> você mesmo
+ (retirar tomadas antigas, abrir roços simples). Isto pode reduzir a mão-de-obra em
  20-30%. Mas <strong>NUNCA</strong> mexa na parte elétrica ativa - deixe sempre para o profissional.
  </p>
  </div>
  </section>
  <section id="economizar" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">💡 Como Economizar sem Comprometer a Segurança</h2>
- 
+
  <div className="bg-white p-8 rounded-2xl border border-gray-200">
  <h3 className="text-2xl font-bold text-gray-900 mb-6">Estratégias Inteligentes para Trás-os-Montes:</h3>
- 
+
  <div className="space-y-6">
  <div className="flex items-start gap-4">
  <div className="bg-amber-100 text-amber-800 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">1</div>
  <div>
  <h4 className="font-bold text-gray-900 mb-2">Agrupar pequenos trabalhos</h4>
  <p className="text-gray-700">
- Em vez de chamar o eletricista para cada tomada avariada, faça uma lista de 
- tudo o que precisa e marque uma intervenção única. Reduz custos de deslocação 
+ Em vez de chamar o eletricista para cada tomada avariada, faça uma lista de
+ tudo o que precisa e marque uma intervenção única. Reduz custos de deslocação
  e muitas vezes obtém desconto por volume.
  </p>
  </div>
@@ -382,8 +382,8 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <div>
  <h4 className="font-bold text-gray-900 mb-2">Comprar os materiais você mesmo</h4>
  <p className="text-gray-700">
- Peça lista de materiais ao eletricista e compre você em grandes superfícies 
- (Leroy Merlin, AKI) ou online. Economiza 15-30% na margem do profissional. 
+ Peça lista de materiais ao eletricista e compre você em grandes superfícies
+ (Leroy Merlin, AKI) ou online. Economiza 15-30% na margem do profissional.
  Mas <strong>compre exatamente o especificado</strong> - não troque marcas.
  </p>
  </div>
@@ -393,8 +393,8 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <div>
  <h4 className="font-bold text-gray-900 mb-2">Evitar emergências</h4>
  <p className="text-gray-700">
- A manutenção preventiva custa 80-150€/ano. Uma emergência noturna custa 
- 200-500€. Em <Link to="/servicos">Trás-os-Montes</Link>, faça revisão anual antes do inverno (Out-Nov) 
+ A manutenção preventiva custa 80-150€/ano. Uma emergência noturna custa
+ 200-500€. Em <Link to="/servicos">Trás-os-Montes</Link>, faça revisão anual antes do inverno (Out-Nov)
  para evitar avarias quando os preços são mais altos.
  </p>
  </div>
@@ -404,7 +404,7 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <div>
  <h4 className="font-bold text-gray-900 mb-2">Negociar pacotes com vizinhos</h4>
  <p className="text-gray-700">
- Em aldeias, combine com 2-3 vizinhos para terem trabalhos no mesmo dia. 
+ Em aldeias, combine com 2-3 vizinhos para terem trabalhos no mesmo dia.
  O eletricista faz deslocação única e pode dar desconto de 10-20% a todos.
  </p>
  </div>
@@ -439,7 +439,7 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  {/* FAQ Section with JSON-LD Schema */}
  <section className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">❓ Perguntas Frequentes sobre Preços de Eletricista</h2>
- 
+
  <div className="space-y-6">
  <div className="bg-white p-6 rounded-xl border border-gray-200">
  <h3 className="font-bold text-gray-900 mb-2">Porque é que os eletricistas em Trás-os-Montes são mais caros que no Porto?</h3>
@@ -455,11 +455,11 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  No entanto, a qualidade e atenção ao detalhe são frequentemente superiores.
  </p>
  </div>
- 
+
  <div className="bg-white p-6 rounded-xl border border-gray-200">
  <h3 className="font-bold text-gray-900 mb-2">É normal pagar deslocação à parte em Trás-os-Montes?</h3>
  <p className="text-gray-700">
- <strong>Sim, é prática quase universal na região</strong>, especialmente para distâncias 
+ <strong>Sim, é prática quase universal na região</strong>, especialmente para distâncias
  superiores a 30km. A forma mais comum de cálculo é:
  <ul className="mt-2 space-y-1">
  <li>• <strong>Até 30km:</strong> Incluído no preço/hora ou no orçamento global</li>
@@ -467,7 +467,7 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <li>• <strong>61-100km:</strong> +0,80€/km + possível custo de portagem</li>
  <li>• <strong>Acima de 100km:</strong> Preço negociável, muitas vezes inclui diária</li>
  </ul>
- <strong>Sempre pergunte sobre política de deslocações antes de marcar.</strong> Profissionais 
+ <strong>Sempre pergunte sobre política de deslocações antes de marcar.</strong> Profissionais
  transparentes terão tabela clara para apresentar.
  </p>
  </div>
@@ -481,8 +481,8 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <li>• <strong>T4+ (acima 120m²):</strong> 300-500€+</li>
  <li>• <strong>Comercial (pequeno):</strong> 400-800€</li>
  </ul>
- Este valor <strong>inclui</strong>: vistoria completa, testes de segurança, emissão do 
- Boletim de Instalação Elétrica (BIE) e registo no sistema oficial. <strong>Não inclui</strong> 
+ Este valor <strong>inclui</strong>: vistoria completa, testes de segurança, emissão do
+ Boletim de Instalação Elétrica (BIE) e registo no sistema oficial. <strong>Não inclui</strong>
  arranjos necessárias para aprovação - essas são cobradas à parte.
  A certificação é válida por 5-8 anos dependendo do tipo de instalação.
  </p>
@@ -534,9 +534,9 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <div className="md:w-3/4">
  <h3 className="text-2xl font-bold text-gray-900 mb-2">Sobre o Autor</h3>
  <p className="text-gray-700 mb-4">
- <strong>Técnico Mendes</strong> é gestor de projetos elétricos com experiência em Trás-os-Montes 
- na região de <Link to="/servicos">Trás-os-Montes</Link>. Já coordenou mais de 300 projetos de instalação e renovação elétrica, 
- desde pequenas arranjos a instalações completas em casas centenárias. Especialista em 
+ <strong>Técnico Mendes</strong> é gestor de projetos elétricos com experiência em Trás-os-Montes
+ na região de <Link to="/servicos">Trás-os-Montes</Link>. Já coordenou mais de 300 projetos de instalação e renovação elétrica,
+ desde pequenas arranjos a instalações completas em casas centenárias. Especialista em
  orçamentação transparente e adaptação de soluções técnicas à realidade económica regional.
  </p>
  <p className="text-gray-600">
@@ -570,7 +570,7 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  </a>
  </div>
  </div>
- 
+
  {/* Contextual links for SEO */}
  <div className="mt-12 bg-orange-50 rounded-xl p-6">
  <h3 className="text-2xl font-bold text-gray-900 mb-4">⚡ Eletricista na Sua Zona</h3>
@@ -594,10 +594,10 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  </div>
  </article>
  {/* Related Articles - Maillage interno SEO */}
- <RelatedArticles 
- currentArticleSlug="custoeletricistatrasosmontesprecos" 
+ <RelatedArticles
+ currentArticleSlug="custoeletricistatrasosmontesprecos"
  />
- 
+
  </BlogLayout>
  );
 };

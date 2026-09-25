@@ -39,7 +39,7 @@ export const electricFaqs: FAQItem[] = [
  },
  {
  question: "Qual é o raio de ação máximo?",
- answer: "Atendemos num raio de cerca de 130 km a partir de Macedo de Cavaleiros. A deslocação tem preço tabelado por zona (Z1 a Z6). Cobrimos praticamente todo o Nordeste Transmontano."
+ answer: "Atendemos num raio de cerca de 130 km a partir de Macedo de Cavaleiros. A deslocação tem preço único: 30 € em dias úteis (9h–17h), 50 € à noite, fins de semana e feriados. Cobrimos praticamente todo o Nordeste Transmontano."
  },
  {
  question: "Quanto tempo demora uma instalação elétrica nova?",

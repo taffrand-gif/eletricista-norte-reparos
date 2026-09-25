@@ -7,7 +7,7 @@ import { Calendar, Clock, ArrowRight } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 export default function Blog() {
  const config = ACTIVE_CONFIG;
- 
+
  useSEO({
  title: `Blog - ${config.name}`,
  description: `Dicas, guias e artigos sobre eletricidade em Bragança e Trás-os-Montes.`});
@@ -25,7 +25,7 @@ export default function Blog() {
  return (
  <div className="min-h-screen flex flex-col">
  <Header />
- 
+
  <main className="flex-1">
  {/* Hero Section */}
  <section className="bg-gradient-to-br from-red-600 to-red-700 text-white py-16">
@@ -56,18 +56,18 @@ export default function Blog() {
  </span>
  </div>
  </div>
- 
+
  <CardHeader>
  <h2 className="text-2xl font-bold text-gray-900 group-hover:text-red-600 transition-colors">
  {article.title}
  </h2>
  </CardHeader>
- 
+
  <CardContent>
  <p className="text-gray-600 mb-4 line-clamp-3">
  {article.excerpt}
  </p>
- 
+
  <div className="flex items-center gap-4 text-sm text-gray-500 mb-4">
  <div className="flex items-center gap-1">
  <Calendar className="h-4 w-4" />
@@ -78,7 +78,7 @@ export default function Blog() {
  <span>{article.readTime}</span>
  </div>
  </div>
- 
+
  <Link href={`/blog/${article.id}`}>
  <a className="inline-flex items-center gap-2 text-red-600 font-semibold hover:text-red-700 transition-colors">
  Ler artigo completo
@@ -120,7 +120,7 @@ export default function Blog() {
  </a>
  <Link href="/#contactos">
  <a className="bg-white text-red-600 border-2 border-red-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-red-50 transition-colors">
- Pedir Orçamento Gratuito
+ Pedir Orçamento por Escrito
  </a>
  </Link>
  </div>

@@ -12,7 +12,7 @@ export default function InstalacaoEletrica() {
  const { config } = useSite();
  useEffect(() => {
  document.title = "Instalação Elétrica Completa em Trás-os-Montes | Eletricista Profissional";
- 
+
  // Update meta description
  let metaDescription = document.querySelector('meta[name="description"]');
  if (!metaDescription) {
@@ -85,9 +85,9 @@ export default function InstalacaoEletrica() {
  <>
  <SEOHeadEnhanced pageType="service" />
  <StructuredData customSchema={serviceSchema} />
- 
+
  <Header />
- 
+
  <main className="min-h-screen bg-gradient-to-b from-white to-amber-50">
  {/* Hero section */}
  <section className="bg-gradient-to-r from-amber-600 to-amber-800 text-white py-16">
@@ -96,7 +96,7 @@ export default function InstalacaoEletrica() {
  Instalação <span className="text-blue-900">Elétrica Completa</span> em Trás-os-Montes
  </h1>
  <p className="text-xl mb-8 max-w-3xl">
- Instalação elétrica completa para residências, comércios e indústrias. 
+ Instalação elétrica completa para residências, comércios e indústrias.
  Desde o quadro principal até às tomadas finais, com trabalho detalhado.
  </p>
  <div className="flex flex-col sm:flex-row gap-4">
@@ -126,13 +126,13 @@ export default function InstalacaoEletrica() {
  <h2 className="text-3xl font-bold text-gray-900 mb-6">
  Eletricista Profissional para Instalação Completa
  </h2>
- 
+
  <div className="space-y-6 text-lg text-gray-700">
  <p>
- Especializados em <strong>instalação elétrica</strong> e serviço de <strong>eletricista instalação</strong> em toda a região de Trás-os-Montes. 
+ Especializados em <strong>instalação elétrica</strong> e serviço de <strong>eletricista instalação</strong> em toda a região de Trás-os-Montes.
  Trabalhamos em obras novas, remodelações completas e expansões elétricas.
  </p>
- 
+
  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Processo de Instalação</h3>
  <ol className="space-y-4 list-decimal pl-5">
  <li><strong>Projeto:</strong> Planeamento detalhado da instalação conforme necessidades</li>
@@ -142,7 +142,7 @@ export default function InstalacaoEletrica() {
  <li><strong>Iluminação:</strong> Montagem de sistemas de iluminação interior/exterior</li>
  <li><strong>Testes e trabalho elétrico:</strong> Verificação de segurança e execução do trabalho elétrico</li>
  </ol>
- 
+
  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Componentes da Instalação</h3>
  <ul className="space-y-3">
  <li className="flex items-center gap-3">
@@ -170,7 +170,7 @@ export default function InstalacaoEletrica() {
  <span><strong>Cabeamento:</strong> Cabos com isolamento duplo, seções adequadas</span>
  </li>
  </ul>
- 
+
  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Vantagens da Instalação Profissional</h3>
   <ul className="space-y-2">
   <li className="flex items-center gap-3">
@@ -222,7 +222,7 @@ export default function InstalacaoEletrica() {
   A <strong>remodelação elétrica</strong> consiste em substituir total ou parcialmente uma instalação envelhecida ou não conforme. É o caso mais frequente em Trás-os-Montes: casas antigas com cabos de tecido, quadros sem diferencial, tomadas em série sem terra. Quando a instalação não passa na inspeção — ou quando o proprietário decide legalizar antes de vender ou arrendar — entramos com obra faseada para minimizar a interrupção.
   </p>
   <p className="text-lg text-gray-700 mt-4">
-  A remodelação começa sempre por um <strong>diagnóstico elétrico</strong> no local, seguido de orçamento escrito detalhado (materiais + mão de obra 70€/h + deslocação por zona). Após a intervenção, emitimos a Ficha Eletrotécnica e o Termo de Responsabilidade — a partir de 350€ para o serviço de certificação prestado pelo nosso TRIESP n.º 90062, conforme a tabela de preços de certificação DGEG. O serviço completo de remodelação (T3 típica) anda entre 800€ e 2.000€, conforme dimensões e materiais.
+  Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. Orçamento por escrito antes de qualquer intervenção. Após a intervenção, emitimos a Ficha Eletrotécnica e o Termo de Responsabilidade — a partir de 350€ para o serviço de certificação prestado pelo nosso TRIESP n.º 90062, conforme a tabela de preços de certificação DGEG. O serviço completo de remodelação (T3 típica) anda entre 800€ e 2.000€, conforme dimensões e materiais.
   </p>
 
   <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
@@ -240,48 +240,48 @@ export default function InstalacaoEletrica() {
   {/* Right column: Pricing and coverage */}
  <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-200">
  <h3 className="text-2xl font-bold text-gray-900 mb-6">Preços Indicativos</h3>
- 
+
  <div className="space-y-6">
  <div className="border-b pb-4">
  <div className="flex justify-between items-center mb-2">
  <h4 className="text-lg font-semibold text-gray-900">Casa T3 Obra Nova</h4>
- <span className="bg-amber-100 text-amber-800 font-bold px-4 py-2 rounded-full">€1.500 - €3.000</span>
+ <span className="bg-amber-100 text-amber-800 font-bold px-4 py-2 rounded-full">Orçamento por escrito</span>
  </div>
  <p className="text-gray-600">Instalação completa desde o quadro até às tomadas</p>
  </div>
- 
+
  <div className="border-b pb-4">
  <div className="flex justify-between items-center mb-2">
  <h4 className="text-lg font-semibold text-gray-900">Remodelação Completa (T3)</h4>
- <span className="bg-amber-100 text-amber-800 font-bold px-4 py-2 rounded-full">€800 - €2.000</span>
+ <span className="bg-amber-100 text-amber-800 font-bold px-4 py-2 rounded-full">Orçamento por escrito</span>
  </div>
  <p className="text-gray-600">Substituição de instalação antiga por nova</p>
  </div>
- 
+
  <div className="border-b pb-4">
  <div className="flex justify-between items-center mb-2">
  <h4 className="text-lg font-semibold text-gray-900">Loja/Comércio (50m²)</h4>
- <span className="bg-amber-100 text-amber-800 font-bold px-4 py-2 rounded-full">€2.500 - €5.000</span>
+ <span className="bg-amber-100 text-amber-800 font-bold px-4 py-2 rounded-full">Orçamento por escrito</span>
  </div>
  <p className="text-gray-600">Iluminação comercial, tomadas força, sinalética</p>
  </div>
- 
+
  <div className="border-b pb-4">
  <div className="flex justify-between items-center mb-2">
  <h4 className="text-lg font-semibold text-gray-900">Por Ponto Elétrico</h4>
- <span className="bg-amber-100 text-amber-800 font-bold px-4 py-2 rounded-full">€40 - €80</span>
+ <span className="bg-amber-100 text-amber-800 font-bold px-4 py-2 rounded-full">70 €/hora + materiais</span>
  </div>
  <p className="text-gray-600">Tomada, interruptor ou ponto de luz (mão de obra + material)</p>
  </div>
  </div>
- 
+
  <div className="mt-8 p-4 bg-amber-50 rounded-lg">
  <p className="text-amber-800 font-semibold">
- 💡 <strong>Nota:</strong> Os preços variam conforme dimensões, materiais escolhidos e complexidade. 
+ 💡 <strong>Nota:</strong> Os preços variam conforme dimensões, materiais escolhidos e complexidade.
  orçamento por escrito antes da intervenção no local.
  </p>
  </div>
- 
+
  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">O que Inclui o Serviço</h3>
  <ul className="space-y-2 text-sm">
  <li className="flex items-start gap-3">
@@ -309,7 +309,7 @@ export default function InstalacaoEletrica() {
  <span>Limpeza da área de trabalho</span>
  </li>
  </ul>
- 
+
  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Zonas de Atuação</h3>
  <div className="grid grid-cols-2 gap-3">
  {[
@@ -337,7 +337,7 @@ export default function InstalacaoEletrica() {
  },
  {
  question: "Quanto custa uma instalação elétrica completa?",
- answer: "O preço depende do tipo de obra. Uma casa T3 obra nova anda tipicamente entre 1.500€ e 3.000€; uma remodelação completa entre 800€ e 2.000€; uma instalação comercial pequena (50 m²) entre 2.500€ e 5.000€. O serviço certificado de emissão de Ficha Eletrotécnica e Termo de Responsabilidade tem preço de partida de 350€, mediante orçamento escrito antes de qualquer intervenção. Mão de obra avulsa: 70€/h + deslocação por zona. Não cobramos nada antes de apresentar o orçamento."
+ answer: "O preço depende do tipo de obra. Uma casa T3 obra nova anda tipicamente entre 1.500€ e 3.000€; uma remodelação completa entre 800€ e 2.000€; uma instalação comercial pequena (50 m²) entre 2.500€ e 5.000€. O serviço certificado de emissão de Ficha Eletrotécnica e Termo de Responsabilidade tem preço de partida de 350€, mediante orçamento escrito antes de qualquer intervenção. Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. Não cobramos nada antes de apresentar o orçamento."
  },
  {
  question: "Quem pode fazer uma instalação elétrica em Portugal?",
@@ -395,7 +395,7 @@ export default function InstalacaoEletrica() {
  Precisa de Instalação Elétrica em Trás-os-Montes?
  </h2>
  <p className="text-xl mb-8 max-w-2xl mx-auto">
- Contacte-nos agora para um sem compromisso e sem compromisso. 
+ Contacte-nos agora para um sem compromisso e sem compromisso.
  Trabalhamos em obras novas, remodelações e expansões elétricas.
  </p>
  <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -417,7 +417,7 @@ export default function InstalacaoEletrica() {
  </div>
  </section>
  </main>
- 
+
  <Footer />
  </>
  );

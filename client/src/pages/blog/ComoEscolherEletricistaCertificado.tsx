@@ -36,7 +36,7 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  {"@type": "HowToStep", "name": "Solicite orçamento detalhado por escrito", "text": "Um profissional sério dá orçamento escrito com descrição dos trabalhos, materiais incluídos, mão de obra e prazo. Recuse orçamentos verbais."},
  {"@type": "HowToStep", "name": "Confirme seguro de responsabilidade civil", "text": "Peça comprovativo do seguro de responsabilidade civil. Este seguro cobre danos causados durante a obra."},
  {"@type": "HowToStep", "name": "Verifique o prazo e condições de garantia", "text": "Exija garantia mínima de 12 meses nos trabalhos. Confirme o que está coberto e o processo para reclamar."},
- {"@type": "HowToStep", "name": "Compare preços com contexto regional", "text": "Em Trás-os-Montes, a deslocação tem custo (15-65€ conforme zona). Preços muito baixos sem deslocação são sinal de alerta."}
+ {"@type": "HowToStep", "name": "Compare preços com contexto regional", "text": "Em Trás-os-Montes, a deslocação tem custo (30 € conforme o caso). Preços muito baixos sem deslocação são sinal de alerta."}
  ]
  }) }} />
  <script
@@ -69,11 +69,11 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  <span>📅 18 Fev 2026</span>
  <span>👁️ 2.5K visualizações</span>
  </div>
- 
+
  <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
  Como Escolher um eletricista com experiência em Trás-os-Montes
  </h1>
- 
+
  <div className="flex items-center gap-4">
  <div className="w-12 h-12 bg-amber-200 rounded-full flex items-center justify-center">
  <span className="text-2xl">⚡</span>
@@ -102,15 +102,15 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  <div className="prose prose-lg max-w-none mb-10">
  <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-lg mb-8">
  <p className="text-amber-800 font-semibold text-lg">
- ⚠️ Atenção: Em <Link to="/servicos">Trás-os-Montes</Link>, uma parte significativa dos acidentes elétricos domésticos são causados por 
- intervenções de eletricistas não qualificados. Escolher mal pode custar muito mais 
+ ⚠️ Atenção: Em <Link to="/servicos">Trás-os-Montes</Link>, uma parte significativa dos acidentes elétricos domésticos são causados por
+ intervenções de eletricistas não qualificados. Escolher mal pode custar muito mais
  do que o preço do serviço - pode custar vidas ou danos patrimoniais irreparáveis.
  </p>
  </div>
  <p className="text-xl text-gray-700 mb-6">
- Contratar um eletricista em <Link to="/servicos">Trás-os-Montes</Link> não é como contratar qualquer outro prestador de serviços. 
- A eletricidade não perdoa erros, e as especificidades da região - casas antigas, condições climáticas 
- rigorosas, distâncias grandes - exigem profissionais com conhecimento local específico. 
+ Contratar um eletricista em <Link to="/servicos">Trás-os-Montes</Link> não é como contratar qualquer outro prestador de serviços.
+ A eletricidade não perdoa erros, e as especificidades da região - casas antigas, condições climáticas
+ rigorosas, distâncias grandes - exigem profissionais com conhecimento local específico.
  Neste guia completo, partilho os 7 critérios essenciais para fazer a escolha certa.
  </p>
  </div>
@@ -131,7 +131,7 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  <div className="prose prose-lg max-w-none">
  <section id="certificacoes" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">📜 1. Certificações Obrigatórias e Recomendadas</h2>
- 
+
  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
  <div className="bg-white p-6 rounded-xl border border-gray-200">
  <h3 className="font-bold text-gray-900 mb-3">✅ OBRIGATÓRIAS</h3>
@@ -154,7 +154,7 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  </li>
  </ul>
  </div>
- 
+
  <div className="bg-white p-6 rounded-xl border border-gray-200">
  <h3 className="font-bold text-gray-900 mb-3">⭐ RECOMENDADAS</h3>
  <ul className="space-y-2 text-gray-700">
@@ -180,15 +180,15 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  <div className="bg-red-50 border border-red-200 rounded-xl p-6 mt-6">
  <h3 className="font-bold text-red-800 text-lg mb-2">🚨 VERIFICAÇÃO ESSENCIAL:</h3>
  <p className="text-red-700">
- Peça para ver os <strong>certificados originais</strong>, não fotocópias. Verifique validade e 
- se o nome coincide com o do profissional. Em <Link to="/servicos">Trás-os-Montes</Link>, infelizmente, ainda circulam 
+ Peça para ver os <strong>certificados originais</strong>, não fotocópias. Verifique validade e
+ se o nome coincide com o do profissional. Em <Link to="/servicos">Trás-os-Montes</Link>, infelizmente, ainda circulam
  "eletricistas" com certificados falsos. Desconfie de preços muito abaixo do mercado.
  </p>
  </div>
  </section>
  <section id="experiencia-local" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">📍 2. Experiência Local em Trás-os-Montes - Porque é Crucial</h2>
- 
+
  <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-lg mb-6">
  <h3 className="font-bold text-amber-800 text-lg mb-2">Problemas Específicos da Região:</h3>
  <ul className="text-amber-700 space-y-1">
@@ -235,16 +235,16 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  <div className="mt-6 p-6 bg-blue-50 border border-blue-200 rounded-xl">
  <h4 className="font-bold text-blue-800 text-lg mb-2">💡 Dica Local:</h4>
  <p className="text-blue-700">
- Prefira eletricistas com experiência comprovada na sua zona específica. Um profissional de 
- <a href="/eletricista-braganca" className="text-blue-600 underline mx-1">Bragança</a> 
- conhece melhor os problemas das casas de granito do que um de Lisboa. Peça referências 
+ Prefira eletricistas com experiência comprovada na sua zona específica. Um profissional de
+ <a href="/eletricista-braganca" className="text-blue-600 underline mx-1">Bragança</a>
+ conhece melhor os problemas das casas de granito do que um de Lisboa. Peça referências
  de trabalhos em casas similares à sua na mesma região.
  </p>
  </div>
  </section>
  <section id="sinais-alerta" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">🚩 6. 5 Sinais de Alerta para Fugir mediante confirmação</h2>
- 
+
  <div className="space-y-6">
  <div className="bg-white p-6 rounded-xl border border-red-200">
  <div className="flex items-start gap-4">
@@ -252,8 +252,8 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  <div>
  <h3 className="font-bold text-gray-900 mb-2">Não apresenta certificados originais</h3>
  <p className="text-gray-700">
- "Deixei em casa", "Estão a renovar", "Posso mostrar foto" são desculpas comuns. 
- Um profissional sério tem os documentos consigo ou pode apresentar digitalmente 
+ "Deixei em casa", "Estão a renovar", "Posso mostrar foto" são desculpas comuns.
+ Um profissional sério tem os documentos consigo ou pode apresentar digitalmente
  de forma verificável.
  </p>
  </div>
@@ -265,7 +265,7 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  <div>
  <h3 className="font-bold text-gray-900 mb-2">Orçamento apenas verbal ou em papel rascunho</h3>
  <p className="text-gray-700">
- Exija orçamento por escrito com empresa identificada, NIF, descrição detalhada, 
+ Exija orçamento por escrito com empresa identificada, NIF, descrição detalhada,
  preços unitários, prazo e garantia. Orçamentos em guardanapos são sinal de amadorismo.
  </p>
  </div>
@@ -277,8 +277,8 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  <div>
  <h3 className="font-bold text-gray-900 mb-2">Preço muito abaixo do mercado</h3>
  <p className="text-gray-700">
- Em <Link to="/servicos">Trás-os-Montes</Link>, um serviço de qualidade tem custos. Desconfie de preços muito abaixo 
- abaixo da média. Geralmente compensam com materiais de baixa qualidade, 
+ Em <Link to="/servicos">Trás-os-Montes</Link>, um serviço de qualidade tem custos. Desconfie de preços muito abaixo
+ abaixo da média. Geralmente compensam com materiais de baixa qualidade,
  mão-de-obra não qualificada ou cortes na segurança.
  </p>
  </div>
@@ -290,8 +290,8 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  <div>
  <h3 className="font-bold text-gray-900 mb-2">Pressão para decidir mediante confirmação</h3>
  <p className="text-gray-700">
- "Só hoje está este preço", "Se não fechar agora não volto", "Tenho outra obra à espera" 
- são táticas de venda agressiva. Profissionais sérios dão tempo para decisão e 
+ "Só hoje está este preço", "Se não fechar agora não volto", "Tenho outra obra à espera"
+ são táticas de venda agressiva. Profissionais sérios dão tempo para decisão e
  não pressionam clientes.
  </p>
  </div>
@@ -303,8 +303,8 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  <div>
  <h3 className="font-bold text-gray-900 mb-2">Não fornece referências verificáveis</h3>
  <p className="text-gray-700">
- "Todos os meus clientes estão satisfeitos" não é referência. Peça contactos de 
- 2-3 clientes recentes em trabalhos similares. Ligue e confirme. Profissionais 
+ "Todos os meus clientes estão satisfeitos" não é referência. Peça contactos de
+ 2-3 clientes recentes em trabalhos similares. Ligue e confirme. Profissionais
  sérios terão clientes dispostos a recomendar.
  </p>
  </div>
@@ -314,7 +314,7 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  </section>
  <section id="perguntas" className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">❓ 7. 10 Perguntas para Fazer Antes de Contratar</h2>
- 
+
  <div className="bg-white p-8 rounded-2xl border border-gray-200">
  <div className="space-y-8">
  <div>
@@ -395,7 +395,7 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  {/* FAQ Section with JSON-LD Schema */}
  <section className="mb-12">
  <h2 className="text-3xl font-bold text-gray-900 mb-6">❓ Perguntas Frequentes sobre Eletricistas em Trás-os-Montes</h2>
- 
+
  <div className="space-y-6">
  <div className="bg-white p-6 rounded-xl border border-gray-200">
  <h3 className="font-bold text-gray-900 mb-2">Qual a diferença entre um eletricista "certificado" e "autorizado"?</h3>
@@ -409,7 +409,7 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  O ideal é um profissional que seja <strong>certificado E autorizado</strong>, preferencialmente integrado em empresa instaladora autorizada.
  </p>
  </div>
- 
+
  <div className="bg-white p-6 rounded-xl border border-gray-200">
  <h3 className="font-bold text-gray-900 mb-2">Um eletricista do Porto ou Lisboa pode trabalhar em Trás-os-Montes?</h3>
  <p className="text-gray-700">
@@ -516,7 +516,7 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  </a>
  </div>
  </div>
- 
+
  {/* Contextual links for SEO */}
  <div className="mt-12 bg-orange-50 rounded-xl p-6">
  <h3 className="text-2xl font-bold text-gray-900 mb-4">⚡ Eletricista na Sua Zona</h3>
@@ -540,10 +540,10 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  </div>
  </article>
  {/* Related Articles - Maillage interno SEO */}
- <RelatedArticles 
- currentArticleSlug="comoescolhereletricistacertificado" 
+ <RelatedArticles
+ currentArticleSlug="comoescolhereletricistacertificado"
  />
- 
+
  </BlogLayout>
  );
 };

@@ -6,7 +6,7 @@ import { Phone, AlertTriangle, CheckCircle, Zap } from 'lucide-react';
 export default function QuadroEletricoAntigo() {
  useEffect(() => {
  document.title = "Quadro Elétrico Antigo com Fusíveis - Quando e Porquê Trocar | Guia 2026";
- 
+
  let metaDescription = document.querySelector('meta[name="description"]');
  if (!metaDescription) {
  metaDescription = document.createElement('meta');
@@ -72,7 +72,7 @@ export default function QuadroEletricoAntigo() {
  "mainEntity": [
  { "@type": "Question", "name": "Quais os sinais de que preciso trocar o quadro elétrico?", "acceptedAnswer": { "@type": "Answer", "text": "Fusíveis de porcelana ou vidro, quadro de madeira ou baquelite, fios de alumínio, fusíveis que saltam frequentemente, cheiro a queimado no quadro ou mais de 25 anos sem intervenção são sinais de que deve trocar o quadro." } },
  { "@type": "Question", "name": "Quanto custa trocar o quadro elétrico?", "acceptedAnswer": { "@type": "Answer", "text": "Num apartamento (T1-T3) o quadro de 8-12 módulos com instalação custa entre 200€ e 350€. Numa moradia, um quadro de 18-24 módulos com instalação custa entre 350€ e 600€. Valores indicativos que incluem quadro, disjuntores, diferencial 30mA e mão de obra." } },
- { "@type": "Question", "name": "Quais as vantagens de um quadro elétrico moderno?", "acceptedAnswer": { "@type": "Answer", "text": "Um quadro moderno tem proteção diferencial que corta a corrente em 30ms se houver fuga, disjuntores rearmáveis em vez de fusíveis queimados, circuitos separados por zona da casa e está preparado para o futuro (carregador de carro elétrico, ar condicionado)." } },
+ { "@type": "Question", "name": "Quais as vantagens de um quadro elétrico moderno?", "acceptedAnswer": { "@type": "Answer", "text": "A deslocação tem preço único em qualquer localidade servida: 30 € em dias úteis (9h–17h) e 50 € à noite, fins de semana e feriados." } },
  { "@type": "Question", "name": "Os fusíveis antigos protegem contra eletrocussão?", "acceptedAnswer": { "@type": "Answer", "text": "Não. Os fusíveis antigos não protegem contra fugas de corrente, que são o maior risco de eletrocussão. Quadros com mais de 30 anos estão associados a uma parte significativa dos incêndios domésticos de origem elétrica em Portugal." } },
  { "@type": "Question", "name": "Quanto tempo demora a substituição do quadro?", "acceptedAnswer": { "@type": "Answer", "text": "A instalação do novo quadro demora habitualmente 3 a 5 horas, com mínima interrupção de corrente. Inclui inspeção, orçamento fechado, instalação e testes com declaração de conformidade." } }
  ]
@@ -110,7 +110,7 @@ export default function QuadroEletricoAntigo() {
  {/* Content */}
  <article className="py-16">
  <div className="container max-w-3xl">
- 
+
  {/* Alerta */}
  <div className="mb-12 p-6 bg-red-50 border-l-4 border-red-500 rounded-r-xl">
  <div className="flex items-start gap-4">
@@ -118,8 +118,8 @@ export default function QuadroEletricoAntigo() {
  <div>
  <h2 className="text-xl font-bold text-red-700 mb-2">Sabia que...</h2>
  <p className="text-gray-700">
- Quadros elétricos com mais de 30 anos são responsáveis por <strong>40% dos incêndios 
- domésticos de origem elétrica</strong> em Portugal. Os fusíveis antigos não protegem 
+ Quadros elétricos com mais de 30 anos são responsáveis por <strong>40% dos incêndios
+ domésticos de origem elétrica</strong> em Portugal. Os fusíveis antigos não protegem
  contra fugas de corrente - o maior risco de eletrocussão.
  </p>
  </div>

@@ -19,9 +19,9 @@ function ForfaitsGrid({ className = '' }: ForfaitsGridProps) {
  icon: '🔌',
  title: 'Instalação Tomada/Interruptor',
  description: 'Adição ou substituição de tomada ou interruptor',
- priceRange: '50-105€',
+ priceRange: '65-120€',
  details: [
- 'Deslocação incluída (Zona 1)',
+ 'Deslocação incluída (30€, dias úteis)',
  'Instalação completa',
  'Teste de funcionamento',
  'Garantia 12 meses'
@@ -31,9 +31,9 @@ function ForfaitsGrid({ className = '' }: ForfaitsGridProps) {
  icon: '🔍',
  title: 'Pesquisa de Avaria',
  description: 'Diagnóstico completo instalação elétrica',
- priceRange: '85-140€',
+ priceRange: '100-155€',
  details: [
- 'Deslocação incluída (Zona 1)',
+ 'Deslocação incluída (30€, dias úteis)',
  'Diagnóstico aprofundado',
  'Diagnóstico detalhado',
  'Orçamento reparação por escrito'
@@ -44,9 +44,9 @@ function ForfaitsGrid({ className = '' }: ForfaitsGridProps) {
  icon: '💡',
  title: 'Instalação Luminária',
  description: 'Instalação de candeeiro, aplique ou foco',
- priceRange: '50-105€',
+ priceRange: '65-120€',
  details: [
- 'Deslocação incluída (Zona 1)',
+ 'Deslocação incluída (30€, dias úteis)',
  'Instalação segura',
  'Ligação elétrica',
  'Limpeza após trabalhos'
@@ -56,9 +56,9 @@ function ForfaitsGrid({ className = '' }: ForfaitsGridProps) {
  icon: '⚡',
  title: 'Reparação Disjuntor',
  description: 'Quadro que dispara - diagnóstico e reparação',
- priceRange: '85-210€',
+ priceRange: '100-225€',
  details: [
- 'Deslocação incluída (Zona 1)',
+ 'Deslocação incluída (30€, dias úteis)',
  'Identificação problema',
  'Substituição se necessário',
  'Conformidade normas'
@@ -69,9 +69,9 @@ function ForfaitsGrid({ className = '' }: ForfaitsGridProps) {
  icon: '🏠',
  title: 'Modernização Quadro Simples',
  description: 'Atualização quadro elétrico básico',
- priceRange: '165-365€',
+ priceRange: '180-380€',
  details: [
- 'Deslocação incluída (Zona 1)',
+ 'Deslocação incluída (30€, dias úteis)',
  'Novo quadro modular',
  'Disjuntores novos',
  'Etiquetagem circuitos'
@@ -81,9 +81,9 @@ function ForfaitsGrid({ className = '' }: ForfaitsGridProps) {
  icon: '🔧',
  title: 'Quadro Elétrico Completo',
  description: 'Instalação quadro novo com proteção',
- priceRange: '215-515€',
+ priceRange: '230-530€',
  details: [
- 'Deslocação incluída (Zona 1)',
+ 'Deslocação incluída (30€, dias úteis)',
  'Quadro completo às normas',
  'Diferencial 30mA',
  'Para-raios incluído'
@@ -93,9 +93,9 @@ function ForfaitsGrid({ className = '' }: ForfaitsGridProps) {
  icon: '📋',
  title: 'diagnóstico elétrico',
  description: 'Diagnóstico e reparação elétrica da instalação',
- priceRange: '95-215€',
+ priceRange: '110-230€',
  details: [
- 'Deslocação incluída (Zona 1)',
+ 'Deslocação incluída (30€, dias úteis)',
  'Inspeção completa',
  'Reparação elétrica',
  'Diagnóstico detalhado'
@@ -201,7 +201,7 @@ function ForfaitsGrid({ className = '' }: ForfaitsGridProps) {
  <div className="text-3xl mb-2">📍</div>
  <h4 className="font-bold text-gray-900 mb-1">Zonas de Deslocação</h4>
  <p className="text-sm text-gray-600">
- Preços indicados para Zona 1 (≤15km). Outras zonas: ver tabela tarifária.
+ Preços indicados para dias úteis 9h–17h (70€/h + deslocação 30€), qualquer localidade servida.
  </p>
  </div>
  <div className="text-center">
@@ -215,7 +215,7 @@ function ForfaitsGrid({ className = '' }: ForfaitsGridProps) {
  <div className="text-3xl mb-2">⏰</div>
  <h4 className="font-bold text-gray-900 mb-1">Acréscimos</h4>
  <p className="text-sm text-gray-600">
- +50% (noites, fins de semana e feriados)
+ Noite (17h–9h), fins de semana e feriados: 100€/h + deslocação 50€
  </p>
  </div>
  </div>

@@ -14,8 +14,8 @@ import { getCidadesProximas } from '@/data/cidadesProximas';
 export default function MacedoCavaleiros() {
  const { config } = useSite();
  useEffect(() => {
- document.title = "⚡ Eletricista Macedo Cavaleiros — Orçamento Grátis | Garantia Escrita";
- 
+ document.title = "⚡ Eletricista Macedo Cavaleiros — Orçamento por Escrito | Garantia Escrita";
+
  let metaDescription = document.querySelector('meta[name="description"]');
  if (!metaDescription) {
  metaDescription = document.createElement('meta');
@@ -105,7 +105,7 @@ export default function MacedoCavaleiros() {
  return (
  <div className="min-h-screen flex flex-col">
  <Header />
- 
+
  <main className="flex-grow">
  {/* Hero Section */}
  <section

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useSite } from '@/contexts/SiteContext';
+import CalendlyCTA from '@/components/CalendlyCTA';
 import TauxHoraireDisplay from '@/components/TauxHoraireDisplay';
 import ForfaitsGrid from '@/components/ForfaitsGrid';
 import WhyWePublishPrices from '@/components/WhyWePublishPrices';
@@ -107,6 +108,7 @@ function Tarifas() {
  💬 Enviar WhatsApp
  </a>
  </div>
+ <div className="text-center mt-4"><CalendlyCTA /></div>
  </div>
  </section>
  <FloatingCTA />

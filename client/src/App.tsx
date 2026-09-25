@@ -15,7 +15,6 @@ import CookieConsent from "./components/CookieConsent";
 import OptimizedHome from "./pages/OptimizedHome";
 import SkipLink from '@/components/SkipLink';
 // Lazy load conversion widgets (below-fold)
-const ExitIntentPopup = lazy(() => import('@/components/ExitIntentPopup'));
 const QuoteCalculator = lazy(() => import('@/components/QuoteCalculator'));
 const LocationDetector = lazy(() => import('@/components/LocationDetector'));
 // Lazy load all pages except homepage for better LCP
@@ -201,7 +200,6 @@ function App() {
 <Toaster />
  <StructuredData />
  <Suspense fallback={null}>
- <ExitIntentPopup />
  <QuoteCalculator />
  <LocationDetector />
  </Suspense>
