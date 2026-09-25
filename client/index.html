@@ -165,37 +165,15 @@ body { margin: 0; font-family: 'Poppins', system-ui, -apple-system, sans-serif; 
 </head>
 
 <body>
-<div style="background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%); padding: 20px; text-align: center; color: white; font-family: 'Poppins', sans-serif;">
-<div style="font-size: 24px; margin-bottom: 10px;">
-📞 URGÊNCIA 24H? LIGUE JÁ: <a href="tel:+351932321892" style="color: white; text-decoration: none;">+351 932 321 892</a>
-</div>
-<div style="font-size: 14px; margin-top: 8px;">
-✅ Atendimento 24h | ✅ Orçamento por escrito | ✅ Orçamento por escrito
-</div>
+<div class="zone-banner">
+<div style="font-size: 24px; margin-bottom: 10px;">INTERVENÇÃO PLANEADA: PEDIR ORÇAMENTO</div>
+<div style="font-size: 16px; margin-top: 10px;">Instalações, diagnósticos e remodelações elétricas em Trás-os-Montes</div>
+<div style="font-size: 14px; margin-top: 8px;">Orçamento por escrito em 48h | Visitas com marcação | Preços transparentes</div>
+<div style="font-size: 13px; margin-top: 10px;"><a href="https://calendly.com/norte-reparos/intervencao" style="color:white;text-decoration:underline;">Marcar uma intervenção não urgente</a></div>
 </div>
 <div id="root"></div>
 <script type="module" src="/src/main.tsx"></script>
-<script>
-let gtmLoaded = false;
-function loadGTM() {
-if (gtmLoaded) return;
-gtmLoaded = true;
-const script = document.createElement('script');
-script.async = true;
-script.src = 'https://www.googletagmanager.com/gtag/js?id=G-P0521CSGHY';
-document.head.appendChild(script);
-script.onload = function() {
-window.dataLayer = window.dataLayer || [];
- function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-P0521CSGHY');
-};
-}
-['scroll', 'click', 'touchstart', 'mousemove'].forEach(event => {
-window.addEventListener(event, loadGTM, { once: true, passive: true });
-});
-setTimeout(loadGTM, 5000);
-</script>
+
 <script>
 window.addEventListener('error', function(event) {
 console.error('Global error caught:', event.error);
