@@ -4,6 +4,18 @@
   "devCommand": "npm run dev",
   "installCommand": "npm install --legacy-peer-deps",
   "framework": "vite",
+  "redirects": [
+    {
+      "source": "/contactos",
+      "destination": "/contacto",
+      "permanent": true
+    },
+    {
+      "source": "/contactos.html",
+      "destination": "/contacto",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/eletricista-:city",
@@ -48,14 +60,6 @@
     {
       "source": "/perguntas-frequentes",
       "destination": "/perguntas-frequentes.html"
-    },
-    {
-      "source": "/contactos",
-      "destination": "/contacto.html"
-    },
-    {
-      "source": "/contactos.html",
-      "destination": "/contacto.html"
     },
     {
       "source": "/sobre",
