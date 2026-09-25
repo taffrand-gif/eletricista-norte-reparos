@@ -21,7 +21,6 @@ const Testimonials = lazy(() => import('@/components/Testimonials'));
 const BeforeAfter = lazy(() => import('@/components/BeforeAfter'));
 const FAQ = lazy(() => import('@/components/FAQ'));
 // Phase 2 - Transparence Prix + Garanties
-const PriceCalculatorWidget = lazy(() => import('@/components/PriceCalculatorWidget'));
 const PriceTransparency = lazy(() => import('@/components/PriceTransparency'));
 const GuaranteeSection = lazy(() => import('@/components/GuaranteeSection'));
 const TrustBadges = lazy(() => import('@/components/TrustBadges'));
@@ -64,7 +63,6 @@ export default function Home() {
  <Suspense fallback={null}><EquipamentoProfissional /></Suspense>
  <Suspense fallback={null}><TransparenciaTotal /></Suspense>
  {/* PHASE 2 - TRANSPARENCE PRIX */}
- <Suspense fallback={null}><PriceCalculatorWidget /></Suspense>
  <Suspense fallback={null}><PriceTransparency /></Suspense>
  {/* 2. VALEUR DIFFÉRENCIANTE - 10 problèmes résolus */}
  <Suspense fallback={null}><WhyDifferent /></Suspense>
