@@ -30,7 +30,11 @@ export default function CookieConsent() {
       applyConsent(saved);
       return;
     }
-    const t = setTimeout(() => setIsVisible(true), 400);
+    // Pages pré-rendues : le bandeau statique rgpd-banner-enr est déjà là → un seul bandeau.
+    const t = setTimeout(() => {
+      if (document.getElementById('rgpd-banner-enr') || localStorage.getItem(KEY)) return;
+      setIsVisible(true);
+    }, 400);
     return () => clearTimeout(t);
   }, []);
 
