@@ -18,7 +18,7 @@ export default function CityPage() {
  return null;
  }
  const config = ACTIVE_CONFIG;
- const formattedPhone = `${config.phone.slice(0, 3)} ${config.phone.slice(3, 6)} ${config.phone.slice(6)}`;
+ const formattedPhone = config.phone.replace(/^\+351/, '').replace(/(\d{3})(\d{3})(\d{3})/, '$1 $2 $3');
  const interventionsCount = getInterventionsCount(city.name);
  // SEO optimisé pour les pages locales
  const cityUrl = `https://${config.domain}/servicos/${city.slug}`;
@@ -50,11 +50,11 @@ export default function CityPage() {
  (window as any).gtag('event', 'conversion', {
  'send_to': `${config.googleAdsId}/${config.googleAdsConversionLabel}`,
  'event_callback': () => {
- window.location.href = `tel:+351${config.phone.replace(/\s/g, "")}`;
+ window.location.href = `tel:${config.phone.replace(/\s/g, "")}`;
  }
  });
  } else {
- window.location.href = `tel:+351${config.phone.replace(/\s/g, "")}`;
+ window.location.href = `tel:${config.phone.replace(/\s/g, "")}`;
  }
  };
  const heroImage = config.type === 'plomberie' ? IMAGES.plomberie.hero : IMAGES.electricite.hero;
@@ -78,6 +78,7 @@ export default function CityPage() {
  </p>
  <button
  onClick={handlePhoneClick}
+ data-track="phone_click"
  className="bg-red-600 hover:bg-red-700 text-white text-2xl font-bold px-12 py-4 rounded-lg transition-colors inline-flex items-center gap-3"
  >
  <span>📞</span>
@@ -119,6 +120,7 @@ export default function CityPage() {
  <div className="text-center my-12">
  <button
  onClick={handlePhoneClick}
+ data-track="phone_click"
  className="bg-red-600 hover:bg-red-700 text-white text-xl font-bold px-10 py-3 rounded-lg transition-colors"
  >
  LIGUE AGORA: {formattedPhone}
@@ -204,6 +206,7 @@ export default function CityPage() {
  <div className="text-center mt-12">
  <button
  onClick={handlePhoneClick}
+ data-track="phone_click"
  className="bg-red-600 hover:bg-red-700 text-white text-xl font-bold px-10 py-3 rounded-lg transition-colors"
  >
  CONTACTE-NOS AGORA: {formattedPhone}

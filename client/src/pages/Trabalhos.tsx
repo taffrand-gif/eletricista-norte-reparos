@@ -54,7 +54,7 @@ export default function Trabalhos() {
  <section className="bg-gray-50 py-16">
  <div className="container text-center">
  <h2 className="text-3xl font-bold mb-4">Precisa de um Serviço?</h2>
- <a href={`tel:+351${config.phone.replace(/\s/g, "")}`} className="bg-red-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-red-700 inline-block">
+ <a href={`tel:${config.phone.replace(/\s/g, "")}`} className="bg-red-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-red-700 inline-block">
  📞 Ligue: {config.phone}
  </a>
  </div>

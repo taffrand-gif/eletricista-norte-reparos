@@ -75,7 +75,7 @@ export default function BlogArticle() {
  <div className="mt-12 bg-red-50 border-2 border-red-200 rounded-lg p-8">
  <h3 className="text-2xl font-bold mb-4">Precisa de Ajuda?</h3>
  <div className="flex flex-col sm:flex-row gap-4">
- <a href={`tel:+351${config.phone.replace(/\s/g, "")}`} className="bg-red-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-red-700 text-center">
+ <a href={`tel:${config.phone.replace(/\s/g, "")}`} className="bg-red-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-red-700 text-center">
  📞 {config.phone}
  </a>
  <Link href="/#contactos">

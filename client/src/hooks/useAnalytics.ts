@@ -18,18 +18,10 @@ export const useAnalytics = () => {
  window.gtag('event', eventName, params);
  }
  };
- const trackPhoneClick = (phoneNumber: string) => {
- trackEvent('phone_call_click', {
- event_category: 'conversion',
- event_label: `Phone: ${phoneNumber}`,
- value: 1});
- };
- const trackWhatsAppClick = (source: string) => {
- trackEvent('whatsapp_click', {
- event_category: 'conversion',
- event_label: `WhatsApp: ${source}`,
- value: 1});
- };
+ // Clics téléphone et WhatsApp : mesurés une seule fois par /call-tracking.js (écouteur délégué).
+ // Ces fonctions restent pour la compatibilité des composants, sans émettre d'événement.
+ const trackPhoneClick = (_phoneNumber: string) => {};
+ const trackWhatsAppClick = (_source: string) => {};
  const trackQuoteCalculated = (service: string, urgency: string, price: string) => {
  trackEvent('quote_calculated', {
  event_category: 'engagement',
@@ -48,12 +40,8 @@ export const useAnalytics = () => {
  event_category: 'engagement',
  event_label: 'Exit Intent Triggered'});
  };
- const trackExitPopupConversion = (action: string) => {
- trackEvent('exit_popup_conversion', {
- event_category: 'conversion',
- event_label: `Exit Popup: ${action}`,
- value: 1});
- };
+ // Clic contact dans le popup : mesuré par /call-tracking.js (link_position = "popup"), pas de second événement.
+ const trackExitPopupConversion = (_action: string) => {};
  const trackScrollDepth = (percentage: number) => {
  trackEvent('scroll_depth', {
  event_category: 'engagement',
