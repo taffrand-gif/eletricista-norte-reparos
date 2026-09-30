@@ -1,6 +1,6 @@
 <!doctype html><html lang="pt-PT"><head> <script>
 // A/B Testing: 50/50 split
-(function { const AB_KEY = 'nr_ab_home_2026'; const VARIANTS = ['A', 'B']; let variant = localStorage.getItem(AB_KEY); if (!variant) { variant = VARIANTS[Math.floor(Math.random * 2)]; localStorage.setItem(AB_KEY, variant); } document.documentElement.setAttribute('data-ab-variant', variant); // Track impression if (typeof fetch !== 'undefined') { fetch('/admin/track', { method: 'POST', body: JSON.stringify({ event: 'ab_view', variant: variant, page: window.location.pathname, ts: Date.now }), headers: { 'Content-Type': 'application/json' } }).catch( => {}); }
+(function(){ const AB_KEY = 'nr_ab_home_2026'; const VARIANTS = ['A', 'B']; let variant = localStorage.getItem(AB_KEY); if (!variant) { variant = VARIANTS[Math.floor(Math.random * 2)]; localStorage.setItem(AB_KEY, variant); } document.documentElement.setAttribute('data-ab-variant', variant); // Track impression if (typeof fetch !== 'undefined') { fetch('/admin/track', { method: 'POST', body: JSON.stringify({ event: 'ab_view', variant: variant, page: window.location.pathname, ts: Date.now }), headers: { 'Content-Type': 'application/json' } }).catch( => {}); }
 });
 </script>
 <style>
@@ -29,7 +29,7 @@ gtag('consent', 'default', {
 <!-- /RGPD Consent Mode v2 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-P0521CSGHY"></script><script>
 window.dataLayer = window.dataLayer | [];
-function gtag{dataLayer.push(arguments);}
+function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date);
 gtag('config', 'G-P0521CSGHY', {
 'send_page_view': true,
@@ -67,16 +67,16 @@ body { margin: 0; font-family: 'Poppins', system-ui, -apple-system, sans-serif; 
 ✅ atendimento | ✅ Orçamento por escrito | ✅ Orçamento por escrito
 </div></div><nav role="navigation" aria-label="Menu principal"><!-- nav loaded by JS --></nav><script type="module" src="/src/main.tsx"></script><script>
 let gtmLoaded = false;
-function loadGTM {
+function loadGTM(){
 if (gtmLoaded) return;
 gtmLoaded = true;
 const script = document.createElement('script');
 script.async = true;
 script.src = 'https://www.googletagmanager.com/gtag/js?id=G-P0521CSGHY';
 document.head.appendChild(script);
-script.onload = function {
+script.onload = function(){
 window.dataLayer = window.dataLayer | [];
-function gtag{dataLayer.push(arguments);}
+function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date);
 gtag('config', 'G-P0521CSGHY');
 };
