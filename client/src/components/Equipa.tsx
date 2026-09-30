@@ -16,7 +16,7 @@ export default function Equipa() {
  icon: <Clock className="w-10 h-10" />,
  stat: 'A confirmar',
  label: 'Chegada a Bragança',
- desc: 'Preço dito ao telefone antes de sair. Se disser 80€, são 80€. Nunca mais.'},
+ desc: 'Preço dito ao telefone antes de sair e confirmado por escrito. Sem surpresas na fatura.'},
 ];
  return (
  <section id="equipa" className="py-20 bg-white">

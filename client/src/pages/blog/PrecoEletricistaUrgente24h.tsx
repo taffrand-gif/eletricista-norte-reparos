@@ -45,7 +45,7 @@ export default function PrecoEletricistaUrgente24h() {
                 "name": "Quanto tempo demora um eletricista urgente a chegar?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Depende da zona. A deslocação tem preço único em qualquer localidade servida: 30 € em dias úteis (9h–17h) e 50 € à noite, fins de semana e feriados. Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. Damos sempre uma estimativa por telefone antes de confirmar a deslocação."
+                  "text": "Depende da localidade e da disponibilidade da equipa. A deslocação tem preço único em qualquer localidade servida: 30 € em dias úteis (9h–17h) e 50 € à noite, fins de semana e feriados. Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. Damos sempre uma estimativa por telefone antes de confirmar a deslocação."
                 }
               },
               {
@@ -61,7 +61,7 @@ export default function PrecoEletricistaUrgente24h() {
                 "name": "E se for um falso alarme?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Se for deslocação ao local e não houver trabalho a fazer, cobramos apenas a deslocação pela zona aplicada ao horário respetivo (normal ou majorado), mais o tempo de diagnóstico. Sempre com orçamento por escrito antes da deslocação, para saber o que vai pagar."
+                  "text": "Se for deslocação ao local e não houver trabalho a fazer, cobramos apenas a deslocação do horário respetivo (30 € em dias úteis, 9h–17h; 50 € à noite, fins de semana e feriados), mais o tempo de diagnóstico. Sempre com orçamento por escrito antes da deslocação, para saber o que vai pagar."
                 }
               }
             ]
@@ -100,13 +100,13 @@ export default function PrecoEletricistaUrgente24h() {
           <div className="bg-red-50 border-l-4 border-red-600 p-6 mb-8">
             <p className="text-lg font-semibold text-gray-900 mb-2">Resposta direta:</p>
             <p className="text-gray-800">
-              Mão de obra: 70 €/hora em dias úteis (9h–17h) e 100 €/hora à noite (17h–9h), fins de semana e feriados. A deslocação (30 € em horário normal) sofre a mesma majoração, ficando entre 22,50€ e 97,50€. Orçamento por escrito sempre, antes de qualquer deslocação.
+              Mão de obra: 70 €/hora em dias úteis (9h–17h) e 100 €/hora à noite (17h–9h), fins de semana e feriados. A deslocação é de 30 € em dias úteis (9h–17h) e de 50 € à noite, aos fins de semana e feriados. Orçamento por escrito sempre, antes de qualquer deslocação.
             </p>
           </div>
 
           <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">1. O que conta como 'urgência'?</h2>
           <p>
-            'Urgência' aplica-se ao <strong>período noturno</strong> (entre as 18h e as 8h do dia seguinte), aos <strong>sábados, domingos e feriados nacionais</strong>. Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. Não cobramos uma 'taxa de urgência' separada — é o mesmo serviço com a majoração aplicada nas horas e no custo de viagem.
+            'Urgência' aplica-se ao <strong>período noturno</strong> (entre as 17h e as 9h do dia seguinte), aos <strong>sábados, domingos e feriados nacionais</strong>. Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. Não cobramos uma 'taxa de urgência' separada — é o mesmo serviço com a majoração aplicada nas horas e no custo de viagem.
           </p>
 
           <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">2. Tabela urgência 24h — Trás-os-Montes</h2>
@@ -114,18 +114,17 @@ export default function PrecoEletricistaUrgente24h() {
             <table className="w-full border-collapse">
               <thead>
                 <tr className="bg-red-600 text-white">
-                  <th className="border border-gray-300 px-3 py-2 text-left">Zona</th>
-                  <th className="border border-gray-300 px-3 py-2 text-left">Deslocação majorada</th>
-                  <th className="border border-gray-300 px-3 py-2 text-left">Hora majorada</th>
-                  <th className="border border-gray-300 px-3 py-2 text-left">Exemplo (1h)</th>
+                  <th className="border border-gray-300 px-3 py-2 text-left">Horário</th>
+                  <th className="border border-gray-300 px-3 py-2 text-left">Deslocação</th>
+                  <th className="border border-gray-300 px-3 py-2 text-left">Mão de obra</th>
                 </tr>
               </thead>
               <tbody>
-                <tr className="bg-white"><td className="border border-gray-300 px-3 py-2 font-semibold">Dias úteis (9h–17h)</td><td className="border border-gray-300 px-3 py-2">Qualquer localidade servida</td><td className="border border-gray-300 px-3 py-2">Qualquer localidade servida</td><td className="border border-gray-300 px-3 py-2">Deslocação 30 € · 70 €/hora</td></tr><tr className="bg-white"><td className="border border-gray-300 px-3 py-2 font-semibold">Noite (17h–9h), fins de semana e feriados</td><td className="border border-gray-300 px-3 py-2">Qualquer localidade servida</td><td className="border border-gray-300 px-3 py-2">Qualquer localidade servida</td><td className="border border-gray-300 px-3 py-2">Deslocação 50 € · 100 €/hora</td></tr></tbody>
+                <tr className="bg-white"><td className="border border-gray-300 px-3 py-2 font-semibold">Dias úteis (9h–17h)</td><td className="border border-gray-300 px-3 py-2">30 €</td><td className="border border-gray-300 px-3 py-2">70 €/hora</td></tr><tr className="bg-white"><td className="border border-gray-300 px-3 py-2 font-semibold">Noite (17h–9h), fins de semana e feriados</td><td className="border border-gray-300 px-3 py-2">50 €</td><td className="border border-gray-300 px-3 py-2">100 €/hora</td></tr></tbody>
             </table>
           </div>
           <p className="text-sm text-gray-600">
-            Valores para 1 hora de mão de obra no período majorado. Materiais sempre à parte, especificados no orçamento por escrito.
+            Valores por hora de mão de obra e por deslocação, iguais em qualquer localidade servida. Materiais sempre à parte, especificados no orçamento por escrito.
           </p>
 
           <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">3. Casos em que deve chamar logo</h2>
@@ -162,7 +161,7 @@ export default function PrecoEletricistaUrgente24h() {
             </div>
             <div>
               <h3 className="font-bold text-gray-900 mb-2 text-xl">E se for um falso alarme?</h3>
-              <p className="text-gray-700">Cobramos apenas deslocação majorada + tempo de diagnóstico. Avisamos antes de avançar, para decidir conscientemente.</p>
+              <p className="text-gray-700">Cobramos apenas a deslocação (50 € à noite, fins de semana e feriados) e o tempo de diagnóstico. Avisamos antes de avançar, para decidir conscientemente.</p>
             </div>
             <div>
               <h3 className="font-bold text-gray-900 mb-2 text-xl">Trabalha 24h mesmo?</h3>
