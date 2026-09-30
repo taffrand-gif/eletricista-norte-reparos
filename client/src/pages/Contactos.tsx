@@ -8,7 +8,7 @@ import { toast } from "sonner";
 import { trpc } from "@/lib/trpc";
 export default function Contactos() {
  const config = ACTIVE_CONFIG;
- const formattedPhone = `${config.phone.slice(0, 3)} ${config.phone.slice(3, 6)} ${config.phone.slice(6)}`;
+ const formattedPhone = config.phone.replace(/^\+351/, '').replace(/(\d{3})(\d{3})(\d{3})/, '$1 $2 $3');
 
  const [formType, setFormType] = useState<"contact" | "booking">("contact");
  const [formData, setFormData] = useState({
@@ -44,11 +44,11 @@ export default function Contactos() {
  (window as any).gtag('event', 'conversion', {
  'send_to': `${config.googleAdsId}/${config.googleAdsConversionLabel}`,
  'event_callback': () => {
- window.location.href = `tel:+351${config.phone.replace(/\s/g, "")}`;
+ window.location.href = `tel:${config.phone.replace(/\s/g, "")}`;
  }
  });
  } else {
- window.location.href = `tel:+351${config.phone.replace(/\s/g, "")}`;
+ window.location.href = `tel:${config.phone.replace(/\s/g, "")}`;
  }
  };
  const sendMessage = trpc.contact.sendMessage.useMutation({
@@ -142,6 +142,7 @@ export default function Contactos() {
  <h3 className="font-bold text-base sm:text-lg text-gray-900 mb-2">Telefone</h3>
  <button
  onClick={handlePhoneClick}
+ data-track="phone_click"
  className="text-red-600 hover:text-red-700 font-semibold text-lg sm:text-xl"
  >
  {formattedPhone}
@@ -201,6 +202,7 @@ export default function Contactos() {
  </p>
  <button
  onClick={handlePhoneClick}
+ data-track="phone_click"
  className="bg-red-600 hover:bg-red-700 text-white font-bold px-6 sm:px-8 py-2 sm:py-3 rounded-lg transition-colors w-full text-sm sm:text-base"
  >
  📞 LIGUE AGORA: {formattedPhone}

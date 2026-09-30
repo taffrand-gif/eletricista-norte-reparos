@@ -113,7 +113,7 @@ export default function Blog() {
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a
- href={`tel:+351${config.phone.replace(/\s/g, "")}`}
+ href={`tel:${config.phone.replace(/\s/g, "")}`}
  className="bg-red-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-red-700 transition-colors inline-flex items-center justify-center gap-2"
  >
  📞 Ligue AGORA: {config.phone}
