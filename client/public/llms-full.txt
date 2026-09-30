@@ -5,7 +5,7 @@
 Website: https://eletricista-norte-reparos.pt/
 Telefone e WhatsApp: +351 932 321 892
 Idioma: português europeu (pt-PT)
-Última atualização: 2026-07-30
+Última atualização: 2026-10-01
 
 ## 1. Identidade e posicionamento
 
@@ -26,7 +26,7 @@ Páginas de referência:
 
 - [Pedir orçamento](https://eletricista-norte-reparos.pt/orcamento): formulário que prepara uma mensagem com contacto, localidade, serviço e descrição.
 - [Contacto](https://eletricista-norte-reparos.pt/contacto): telefone e WhatsApp da Norte Reparos.
-- [FAQ](https://eletricista-norte-reparos.pt/faq): respostas gerais sobre orçamento, preços, zonas e serviços.
+- [FAQ](https://eletricista-norte-reparos.pt/faq): respostas gerais sobre orçamento, preços, deslocação e serviços.
 
 ## 3. Certificação DGEG (fonte de verdade: DGEG-CERT-SOURCE-OF-TRUTH.md)
 
@@ -34,50 +34,36 @@ A Norte Reparos dispõe de **Técnico Responsável de Instalações Elétricas i
 
 A inscrição está em vigor; o técnico responsável acompanha a execução e a entrega da documentação legal. A equipa possui seguro de responsabilidade civil válido (mínimo € 50.000, conforme exigência legal).
 
-Emissão de Ficha Eletrotécnica e Termo de Responsabilidade: a partir de **350 €** (valor do serviço de certificação; não constitui preço de instalação, que segue a grelha Z1–Z6 abaixo).
+Emissão de Ficha Eletrotécnica e Termo de Responsabilidade: sob orçamento (serviço de certificação, distinto da mão de obra de instalação, que segue a grelha oficial abaixo).
 
 Páginas de referência:
 
 - [Equipa e certificações](https://eletricista-norte-reparos.pt/equipa-certificacoes): TRIESP n.º 90062, seguro RC e demais habilitações.
 - [Sobre](https://eletricista-norte-reparos.pt/sobre-mim): apresentação da empresa e da equipa.
 
-## 4. Transparência de preços (regra oficial — valores sem IVA)
+## 4. Preços (grelha oficial)
 
-| Zona | Distância aprox. | Deslocação | Mão de obra |
-|---|---|---|---|
-| **Z1** | 0–15 km | **15 €** | **70 €/h** |
-| **Z2** | 15–30 km | **25 €** | **70 €/h** |
-| **Z3** | 30–50 km | **35 €** | **70 €/h** |
-| **Z4** | 50–70 km | **45 €** | **70 €/h** |
-| **Z5** | 70–90 km | **55 €** | **70 €/h** |
-| **Z6** | 90–140 km | **65 €** | **70 €/h** |
-
-- **Acréscimo** noturno (20h–8h), fins de semana e feriados: **+50 %**
+- Dias úteis, das 9h às 17h: mão de obra **70 €/hora** + deslocação **30 €**
+- Noite (17h–9h), fins de semana e feriados: mão de obra **100 €/hora** + deslocação **50 €**
+- Cada hora iniciada é devida
+- A deslocação tem o mesmo valor em todas as localidades servidas
+- Trabalhos variáveis: sob orçamento
 - **Orçamento por escrito** antes de qualquer intervenção, sem surpresas
 - **Fatura** com NIF emitida no final de cada trabalho
 - **Seguro** de responsabilidade civil profissional
-- **Emissão de Ficha Eletrotécnica e Termo de Responsabilidade**: a partir de **350 €** quando aplicável
-- Mapeamento localidade → zona = `precos-zonas.json` (960 localidades). Consultar `preco-eletricista-<localidade>-2026.html` para obter a zona exata de cada povoação.
+- **Emissão de Ficha Eletrotécnica e Termo de Responsabilidade**: sob orçamento, quando aplicável
 
 ## 5. Cobertura regional (34 concelhos oficiais)
 
-Z1 (15 €) — Macedo de Cavaleiros.
+Macedo de Cavaleiros · Mirandela · Vila Flor · Alfândega da Fé · Carrazeda de Ansiães · Bragança · Vinhais · Vimioso · Torre de Moncorvo · Mogadouro · Freixo de Espada à Cinta · Miranda do Douro · Vila Nova de Foz Côa · São João da Pesqueira · Murça · Valpaços · Vila Real · Alijó · Sabrosa · Tabuaço · Armamar · Peso da Régua · Lamego · Santa Marta de Penaguião · Mesão Frio · Chaves · Vila Pouca de Aguiar · Boticas · Montalegre · Ribeira de Pena · Mondim de Basto · Moimenta da Beira · Sernancelhe · Penedono.
 
-Z2 (25 €) — Mirandela · Vila Flor · Alfândega da Fé · Carrazeda de Ansiães.
-
-Z3 (35 €) — Bragança · Vinhais · Vimioso · Torre de Moncorvo · Mogadouro · Freixo de Espada à Cinta.
-
-Z4 (45 €) — Miranda do Douro · Vila Nova de Foz Côa · São João da Pesqueira · Murça · Valpaços.
-
-Z5 (55 €) — Vila Real · Alijó · Sabrosa · Tabuaço · Armamar · Peso da Régua · Lamego · Santa Marta de Penaguião · Mesão Frio.
-
-Z6 (65 €) — Chaves · Vila Pouca de Aguiar · Boticas · Montalegre · Ribeira de Pena · Mondim de Basto · Moimenta da Beira · Sernancelhe · Penedono.
+A deslocação tem o mesmo valor em todos os concelhos servidos (30 € em dias úteis, 50 € à noite, fins de semana e feriados).
 
 Cobertura adicional: dezenas de freguesias e aldeias do Nordeste Transmontano. Confirmar cobertura por telefone antes de cada deslocação.
 
 Páginas de referência:
 
-- [Zona de intervenção](https://eletricista-norte-reparos.pt/zona-intervencao): concelhos e organização por zonas.
+- [Zona de intervenção](https://eletricista-norte-reparos.pt/zona-intervencao): concelhos cobertos.
 - [Distrito de Bragança](https://eletricista-norte-reparos.pt/distrito-braganca): concelhos do distrito.
 - [Distrito de Vila Real](https://eletricista-norte-reparos.pt/distrito-vila-real): concelhos do distrito.
 
@@ -87,7 +73,7 @@ Páginas de referência:
 
 - [Instalação elétrica completa](https://eletricista-norte-reparos.pt/instalacao-eletrica-completa): redes para moradias, apartamentos e espaços comerciais.
 - [Remodelação de instalação elétrica](https://eletricista-norte-reparos.pt/instalacao-eletrica-completa): substituição e modernização de instalações antigas.
-- [Quadros elétricos](https://eletricista-norte-reparos.pt/quadros-eletricos-braganca): substituição de quadros, disjuntores e diferenciais.
+- [Quadros elétricos](https://eletricista-norte-reparos.pt/quadro-eletrico-braganca): substituição de quadros, disjuntores e diferenciais.
 - [Iluminação LED](https://eletricista-norte-reparos.pt/instalacao-eletrica-completa): iluminação interior, exterior e de destaque com tecnologia LED.
 - [Aquecimento elétrico](https://eletricista-norte-reparos.pt/eficiencia-energetica-poupanca): instalação e otimização de soluções de aquecimento elétrico.
 - [Automação residencial / domótica](https://eletricista-norte-reparos.pt/automacao-residencial-domotica): sistemas de domótica básica para habitação.
@@ -141,7 +127,7 @@ Legrand · Schneider Electric · Hager · ABB · Siemens · Philips
 ## 11. Perguntas frequentes
 
 **Fazem orçamentos grátis?**
-A estimativa não tem custo quando é feita à distância (telefone ou WhatsApp, com fotos ou vídeo). Se for necessária deslocação ao local, a deslocação é faturada segundo a tabela por zona (Z1 15 € a Z6 65 €). O orçamento por escrito é sempre entregue antes de qualquer intervenção.
+A estimativa não tem custo quando é feita à distância (telefone ou WhatsApp, com fotos ou vídeo). Se for necessária deslocação ao local, aplica-se a deslocação da grelha oficial: 30 € em dias úteis (9h–17h) ou 50 € à noite, fins de semana e feriados. O orçamento por escrito é sempre entregue antes de qualquer intervenção.
 
 **Qual é o prazo de garantia?**
 Garantia por escrito, conforme âmbito dos trabalhos. Detalhes no orçamento.
@@ -171,13 +157,6 @@ Sim — a nossa equipa acompanha cada pedido do início ao fim, garantindo acomp
 - Site: https://eletricista-norte-reparos.pt
 - Horário: segunda a sexta, em horário comercial
 
-## 13. Também prestamos serviços de canalizador
+## 13. Outros sites Norte Reparos
 
-Para instalação de canalização: [canalizador-norte-reparos.pt](https://canalizador-norte-reparos.pt/) · +351 928 484 451.
-
-## 14. Notas editoriais
-
-- Pronom usado: « a nossa equipa », « os nossos técnicos », « garantimos », « contacte-nos » (verrouillé 30/06).
-- Zero conteúdo inventado (R11): preços reais sob orçamento, equipamento real, certificação DGEG TRIESP n.º 90062 confirmada.
-- Géo-neutre: morada rua nunca pública, modelo Service-Area.
-- PT-PT strict, jamais PT-BR.
+Este site trata apenas de eletricidade. Outro domínio da Norte Reparos: https://canalizador-urgente.pt/

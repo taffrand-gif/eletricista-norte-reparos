@@ -5,7 +5,7 @@
 Site oficial: https://eletricista-norte-reparos.pt/
 Telefone e WhatsApp: +351 932 321 892
 Idioma: português europeu (pt-PT)
-Última atualização: 2026-07-30
+Última atualização: 2026-10-01
 
 ## Informação essencial
 
@@ -13,7 +13,7 @@ Idioma: português europeu (pt-PT)
 - Atividade: serviços de eletricidade em Trás-os-Montes e Douro (instalação, remodelação, certificação e manutenção programada)
 - Área de intervenção: concelhos dos distritos de Bragança, Vila Real e zonas adjacentes, raio ~130 km em torno de Macedo de Cavaleiros
 - Processo comercial: diagnóstico quando necessário e orçamento por escrito antes do início do trabalho
-- Preço-hora de referência publicado: 70 €/h; deslocação comunicada conforme a zona aplicável
+- Preços: 70 €/hora + deslocação 30 € em dias úteis (9h–17h); 100 €/hora + deslocação 50 € à noite (17h–9h), fins de semana e feriados
 - Urgências: consultar o domínio dedicado https://eletricista-urgente.pt/
 
 ## Certificação (DGEG)
@@ -22,23 +22,17 @@ A Norte Reparos dispõe de **Técnico Responsável de Instalações Elétricas i
 
 A inscrição está em vigor (data de registo confirmada pela DGEG); o técnico responsável acompanha a execução e a entrega da documentação legal.
 
-## Transparência de preços (regra oficial — valores sem IVA)
+## Preços (grelha oficial)
 
-| Zona | Distância aprox. | Deslocação | Mão de obra |
-|---|---|---|---|
-| **Z1** | 0–15 km | **15 €** | **70 €/h** |
-| **Z2** | 15–30 km | **25 €** | **70 €/h** |
-| **Z3** | 30–50 km | **35 €** | **70 €/h** |
-| **Z4** | 50–70 km | **45 €** | **70 €/h** |
-| **Z5** | 70–90 km | **55 €** | **70 €/h** |
-| **Z6** | 90–140 km | **65 €** | **70 €/h** |
-
-- **Acréscimo** noturno (20h–8h), fins de semana e feriados: **+50 %**
+- Dias úteis, das 9h às 17h: mão de obra **70 €/hora** + deslocação **30 €**
+- Noite (17h–9h), fins de semana e feriados: mão de obra **100 €/hora** + deslocação **50 €**
+- Cada hora iniciada é devida
+- A deslocação tem o mesmo valor em todas as localidades servidas
+- Trabalhos variáveis: sob orçamento
 - **Orçamento por escrito** antes de qualquer intervenção, sem surpresas
 - **Fatura** com NIF emitida no final de cada trabalho
 - **Seguro** de responsabilidade civil profissional
-- **Emissão de Ficha Eletrotécnica e Termo de Responsabilidade**: a partir de **350 €** (quando aplicável à legalização da instalação)
-- Mapeamento localidade → zona = `precos-zonas.json` (960 localidades). Consultar `preco-eletricista-<localidade>-2026.html` para obter a zona exata de cada povoação.
+- **Emissão de Ficha Eletrotécnica e Termo de Responsabilidade**: sob orçamento (quando aplicável à legalização da instalação)
 
 ## Páginas principais
 
@@ -47,9 +41,9 @@ A inscrição está em vigor (data de registo confirmada pela DGEG); o técnico 
 - [Pedir orçamento](https://eletricista-norte-reparos.pt/orcamento): formulário e contacto por WhatsApp para descrever o trabalho e pedir proposta escrita.
 - [Contacto](https://eletricista-norte-reparos.pt/contacto): telefone, WhatsApp e canais de contacto da Norte Reparos.
 - [Sobre](https://eletricista-norte-reparos.pt/sobre-mim): apresentação da empresa, da equipa e da cobertura regional.
-- [Zona de intervenção](https://eletricista-norte-reparos.pt/zona-intervencao): concelhos e organização da cobertura por zonas.
+- [Zona de intervenção](https://eletricista-norte-reparos.pt/zona-intervencao): concelhos cobertos.
 - [Perguntas frequentes](https://eletricista-norte-reparos.pt/faq): respostas sobre serviços, orçamento, deslocação e contacto.
-- [Guia de preços 2026](https://eletricista-norte-reparos.pt/guia-precos-eletricista): valores médios por tipologia de trabalho e por zona.
+- [Guia de preços 2026](https://eletricista-norte-reparos.pt/guia-precos-eletricista): grelha oficial e fatores que influenciam o orçamento.
 - [Equipa e certificações](https://eletricista-norte-reparos.pt/equipa-certificacoes): TRIESP n.º 90062, seguro RC e demais habilitações.
 - [Equipamento recomendado](https://eletricista-norte-reparos.pt/equipamento-recomendado): marcas e instrumentos efetivamente utilizados.
 - [Garantias e seguros](https://eletricista-norte-reparos.pt/garantias-e-seguros): condições de garantia e cobertura de responsabilidade civil.
@@ -58,7 +52,7 @@ A inscrição está em vigor (data de registo confirmada pela DGEG); o técnico 
 
 - [Instalação elétrica completa](https://eletricista-norte-reparos.pt/instalacao-eletrica-completa): redes para moradias, apartamentos e espaços comerciais.
 - [Remodelação de instalação elétrica](https://eletricista-norte-reparos.pt/instalacao-eletrica-completa): substituição e modernização de instalações antigas.
-- [Quadros elétricos](https://eletricista-norte-reparos.pt/quadros-eletricos-braganca): substituição de quadros, disjuntores e diferenciais.
+- [Quadros elétricos](https://eletricista-norte-reparos.pt/quadro-eletrico-braganca): substituição de quadros, disjuntores e diferenciais.
 - [Iluminação LED](https://eletricista-norte-reparos.pt/instalacao-eletrica-completa): iluminação interior, exterior e de destaque com tecnologia LED.
 - [Aquecimento elétrico](https://eletricista-norte-reparos.pt/eficiencia-energetica-poupanca): instalação e otimização de soluções de aquecimento elétrico.
 - [Automação residencial / domótica](https://eletricista-norte-reparos.pt/automacao-residencial-domotica): sistemas de domótica básica para habitação.
@@ -70,7 +64,7 @@ A inscrição está em vigor (data de registo confirmada pela DGEG); o técnico 
 ## Certificação e legalização
 
 - [Certificação DGEG](https://eletricista-norte-reparos.pt/equipa-certificacoes): TRIESP n.º 90062 e domínio de Execução em Baixa Tensão.
-- [Emissão de Ficha Eletrotécnica e Termo de Responsabilidade](https://eletricista-norte-reparos.pt/equipa-certificacoes): a partir de 350 € nos termos da Lei n.º 14/2015.
+- [Emissão de Ficha Eletrotécnica e Termo de Responsabilidade](https://eletricista-norte-reparos.pt/equipa-certificacoes): sob orçamento, nos termos da Lei n.º 14/2015.
 
 ## Equipamento profissional
 
@@ -102,13 +96,6 @@ Legrand · Schneider Electric · Hager · ABB · Siemens · Philips
 - [Glossário técnico](https://eletricista-norte-reparos.pt/glossario-tecnico): termos elétricos e do DGEG explicados.
 - [Glossário técnico](https://eletricista-norte-reparos.pt/glossario-tecnico): termos elétricos e do DGEG explicados.
 
-## Também prestamos serviços de canalizador
+## Outros sites Norte Reparos
 
-Para instalação de canalização: [canalizador-norte-reparos.pt](https://canalizador-norte-reparos.pt/) · +351 928 484 451.
-
-## Notas editoriais
-
-- Pronom usado: « a nossa equipa », « os nossos técnicos », « garantimos », « contacte-nos » (verrouillé 30/06).
-- Zero conteúdo inventado (R11): preços reais sob orçamento, equipamento real, certificação DGEG TRIESP n.º 90062 confirmada.
-- Géo-neutre: morada rua nunca pública, modelo Service-Area.
-- PT-PT strict, jamais PT-BR.
+Este site trata apenas de eletricidade. Outro domínio da Norte Reparos: https://canalizador-urgente.pt/
