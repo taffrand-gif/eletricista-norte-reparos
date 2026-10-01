@@ -36,6 +36,7 @@ export default function Contactos() {
  _captcha: "false"})});
  if (res.ok) {
  toast.success('Mensagem enviada com sucesso! Entraremos em contacto em breve.');
+			(window as Window & { gtag?: (...args: unknown[]) => void }).gtag?.('event', 'generate_lead', { method: 'formsubmit', site: 'enr' });
  setFormData({ name: '', phone: '', email: '', message: '' });
  } else {
  throw new Error("Erro");
