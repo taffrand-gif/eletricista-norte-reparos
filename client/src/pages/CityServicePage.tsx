@@ -292,7 +292,7 @@ function getCitySpecificFAQs(citySlug: string, serviceSlug: string) {
  'avarias-urgentes': [
  {
  question: 'Atendem nas aldeias de Mirandela como Fradizela ou Torre de Dona Chama?',
- answer: 'Sim, atendemos em todas as freguesias de Mirandela, incluindo Fradizela, Torre de Dona Chama, Cobro, Mascarenhas e todas as aldeias circundantes. O tempo de resposta pode variar entre 40-90 minutos dependendo da localização.'
+ answer: 'Sim, atendemos em todas as freguesias de Mirandela, incluindo Fradizela, Torre de Dona Chama, Cobro, Mascarenhas e todas as aldeias circundantes. A disponibilidade é confirmada por telefone antes de qualquer deslocação.'
  },
  {
  question: 'Têm experiência com instalações elétricas antigas no centro histórico de Mirandela?',
@@ -407,7 +407,7 @@ function getWhyChooseUs(citySlug: string, serviceSlug: string) {
  {
  icon: '⚡',
  title: 'Resposta mediante contacto 24h',
- description: 'Equipa local baseada em Mirandela com tempo de resposta de 30-60 minutos no centro urbano e 60-90 minutos nas freguesias rurais. Disponíveis todos os dias do ano.'
+ description: 'Equipa local baseada em Mirandela. A disponibilidade é confirmada por telefone antes de qualquer deslocação. Disponíveis todos os dias do ano.'
  },
  {
  icon: '📋',
