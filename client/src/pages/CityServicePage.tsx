@@ -272,11 +272,11 @@ function generateFAQs(service: any, city: any, isPlumber: boolean) {
  },
  {
  question: `Atendem em ${city.name} ao fim de semana?`,
- answer: `Sim, estamos disponíveis Atendimento 24h/7d, 7 dias por semana, incluindo fins de semana e feriados em ${city.name}. Para urgências, o tempo de resposta é de 30-90 minutos.`
+ answer: `Sim, estamos disponíveis Atendimento 24h/7d, 7 dias por semana, incluindo fins de semana e feriados em ${city.name}. Para urgências, a disponibilidade é confirmada por telefone antes de qualquer deslocação. Orçamento por escrito antes de qualquer intervenção.`
  },
  {
  question: `Quanto tempo demora a chegar a ${city.name}?`,
- answer: `O tempo de resposta para ${city.name} é normalmente entre 30 a 90 minutos, dependendo da localização exata e disponibilidade. Para urgências, priorizamos sempre a rapidez.`
+ answer: `A disponibilidade é confirmada por telefone antes de qualquer deslocação. Orçamento por escrito antes de qualquer intervenção.`
  }
  ];
  // Add city-specific FAQs
