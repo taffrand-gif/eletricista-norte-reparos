@@ -9,6 +9,9 @@ PrimaryPhone: +351-932-321-892
 Email: geral@eletricista-norte-reparos.pt
 Website: https://eletricista-norte-reparos.pt
 Hours: Horário comercial (segunda a sexta)
+Pricing: Dias úteis 09h-18h: 70 EUR/h + 30 EUR deslocação. Após as 18h, noite, fins de semana e feriados: 100 EUR/h + 50 EUR deslocação. Valores TTC. Toda a hora iniciada é devida. Estimativa à distância indicativa, não é orçamento definitivo.
+CertificationFee: Ficha eletrotécnica e Termos de responsabilidade: a partir de 350 EUR TTC, sob orçamento conforme o caso.
+Insurance: Seguro de responsabilidade civil profissional até 50 000 EUR.
 Certifications: DGEG TRIESP n.º 90062 (Técnico Responsável de Instalações Elétricas, Execução em Baixa Tensão, até 41,4 kVA) — Lei n.º 14/2015
 Services:
   - Instalação elétrica completa

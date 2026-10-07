@@ -13,12 +13,12 @@ Idioma: português europeu (pt-PT)
 - Atividade: serviços de eletricidade em Trás-os-Montes e Douro (instalação, remodelação, certificação e manutenção programada)
 - Área de intervenção: concelhos dos distritos de Bragança, Vila Real e zonas adjacentes, raio ~130 km em torno de Macedo de Cavaleiros
 - Processo comercial: diagnóstico quando necessário e orçamento por escrito antes do início do trabalho
-- Preços publicados: dias úteis (09h–17h) 70 €/h de mão de obra + 30 € de deslocação; noite, fins de semana e feriados 100 €/h + 50 € de deslocação; cada hora iniciada é devida; deslocação igual em todas as localidades
+- Preços publicados: dias úteis (09h–18h) 70 €/h de mão de obra + 30 € de deslocação; após as 18h, noite, fins de semana e feriados 100 €/h + 50 € de deslocação; valores TTC; toda a hora iniciada é devida
 - Urgências: consultar o domínio dedicado https://eletricista-urgente.pt/
 
 ## Certificação (DGEG)
 
-A Norte Reparos dispõe de **Técnico Responsável de Instalações Elétricas inscrito na DGEG — TRIESP n.º 90062** (domínio Execução em Baixa Tensão, instalações até 41,4 kVA). Emitimos **Ficha Eletrotécnica** e **Termo de Responsabilidade** (Lei n.º 14/2015). A equipa possui seguro de responsabilidade civil válido.
+A Norte Reparos dispõe de **Técnico Responsável de Instalações Elétricas inscrito na DGEG — TRIESP n.º 90062** (domínio Execução em Baixa Tensão, instalações até 41,4 kVA). Emitimos **Ficha Eletrotécnica** e **Termo de Responsabilidade** (Lei n.º 14/2015). Seguro de responsabilidade civil profissional até 50 000 €.
 
 A inscrição está em vigor (data de registo confirmada pela DGEG); o técnico responsável acompanha a execução e a entrega da documentação legal.
 
@@ -26,14 +26,16 @@ A inscrição está em vigor (data de registo confirmada pela DGEG); o técnico 
 
 | Período | Mão de obra | Deslocação |
 |---|---|---|
-| Dias úteis, 09h–17h | **70 €/h** | **30 €** |
-| Noite (17h–09h), fins de semana e feriados | **100 €/h** | **50 €** |
+| Dias úteis, 09h–18h | **70 €/h** | **30 €** |
+| Após as 18h, noite, fins de semana e feriados | **100 €/h** | **50 €** |
 
-- Cada hora iniciada é devida ; a deslocação é igual em todas as localidades
+- Valores em euros, TTC. Toda a hora iniciada é devida; a deslocação é devida sempre que há deslocação ao local
+- Durações indicativas: cada situação é diferente e pode demorar mais ou menos tempo; o preço final depende do diagnóstico e da intervenção real
+- Uma estimativa à distância (descrição detalhada e fotos) é meramente indicativa e não é um orçamento definitivo
 - **Orçamento por escrito** antes de qualquer intervenção, sem surpresas
 - **Fatura** com NIF emitida no final de cada trabalho
-- **Seguro** de responsabilidade civil profissional
-- **Emissão de Ficha Eletrotécnica e Termo de Responsabilidade**: **sob orçamento** (quando aplicável à legalização da instalação)
+- Seguro de responsabilidade civil profissional até 50 000 €.
+- Ficha eletrotécnica e Termos de responsabilidade: a partir de 350 € TTC, sob orçamento conforme o caso.
 
 ## Páginas principais
 
