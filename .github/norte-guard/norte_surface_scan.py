@@ -37,10 +37,11 @@ RULES = [  # (id, severity, regex, only_site_trade or None)
     ("OLD_WINDOW_09_17", "BLOCK", re.compile(r"09\s?h?(?:00)?\s?[–-]\s?17\s?h?|17h\s?[–-]\s?09h", re.I), None),
     ("ROLEAK", "BLOCK", re.compile(r"roleak", re.I), None),
     ("INTERNAL_NOTE", "BLOCK", re.compile(r"Notas editoriais|Pronoun|Pronom|NÃO publicar|PRICING-CANONIQUE|slots? organiques?|instruction.{0,20}(agent|gerador)", re.I), None),
+    ("UNVALIDATED_FROM_PRICE", "BLOCK", re.compile(r"a partir de (?!350\b)\d{2,4}\s?(€|EUR)(?!\s?/\s?h)", re.I), None),
     ("MESMA_PESSOA", "BLOCK", re.compile(r"mesma pessoa|même personne", re.I), None),
     ("FREE_QUOTE_TRAVEL", "WARN", re.compile(r"or[çc]amento gr[aá]tis|gratuito|devis gratuit", re.I), None),
     ("ARRIVAL_DELAY", "BLOCK", re.compile(r"(chegad|chegamos|chegar|arrival|arriv)[^.\n]{0,60}\d+\s?(?:[–-]\s?\d+\s?)?(min|minutos|horas)\b|\b\d+\s?[–-]\s?\d+\s?min[^.\n]{0,30}(chegad|chegamos|chegar)", re.I), None),
-    ("IVA_UNCONFIRMED", "BLOCK", re.compile(r"sem IVA|\+\s?IVA|IVA n[ãa]o inclu", re.I), None),
+    ("IVA_UNCONFIRMED", "BLOCK", re.compile(r"sem IVA|\+\s?IVA|IVA n[ãa]o inclu|isento de IVA|art\.?º? 53", re.I), None),
     ("FICHA_350_ON_PLUMB", "BLOCK", re.compile(r"350\s?(€|EUR)|Ficha eletrot|Termos? de responsabilidade|50\s?000\s?(€|EUR)|responsabilidade civil profissional", re.I), "plumb"),
 ]
 SEV_ORDER = {"BLOCK": 0, "WARN": 1, "INFO": 2}
