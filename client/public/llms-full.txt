@@ -32,9 +32,9 @@ Páginas de referência:
 
 A Norte Reparos dispõe de **Técnico Responsável de Instalações Elétricas inscrito na DGEG — TRIESP n.º 90062** (domínio Execução em Baixa Tensão, instalações até 41,4 kVA). Emitimos **Ficha Eletrotécnica** e **Termo de Responsabilidade** (Lei n.º 14/2015, de 16 de fevereiro).
 
-A inscrição está em vigor; o técnico responsável acompanha a execução e a entrega da documentação legal. A equipa possui seguro de responsabilidade civil válido.
+A inscrição está em vigor; o técnico responsável acompanha a execução e a entrega da documentação legal. Seguro de responsabilidade civil profissional até 50 000 €.
 
-Emissão de Ficha Eletrotécnica e Termo de Responsabilidade: **sob orçamento** (valor do serviço de certificação; não constitui preço de instalação, que segue a grelha de preços indicada abaixo).
+Ficha eletrotécnica e Termos de responsabilidade: a partir de 350 € TTC, sob orçamento conforme o caso. Este valor não é um preço horário nem se aplica a cada intervenção.
 
 Páginas de referência:
 
@@ -45,14 +45,16 @@ Páginas de referência:
 
 | Período | Mão de obra | Deslocação |
 |---|---|---|
-| Dias úteis, 09h–17h | **70 €/h** | **30 €** |
-| Noite (17h–09h), fins de semana e feriados | **100 €/h** | **50 €** |
+| Dias úteis, 09h–18h | **70 €/h** | **30 €** |
+| Após as 18h, noite, fins de semana e feriados | **100 €/h** | **50 €** |
 
-- Cada hora iniciada é devida ; a deslocação é igual em todas as localidades
+- Valores em euros, TTC. Toda a hora iniciada é devida; a deslocação é devida sempre que há deslocação ao local
+- Durações indicativas: cada situação é diferente e pode demorar mais ou menos tempo; o preço final depende do diagnóstico e da intervenção real
+- Uma estimativa à distância (descrição detalhada e fotos) é meramente indicativa e não é um orçamento definitivo
 - **Orçamento por escrito** antes de qualquer intervenção, sem surpresas
 - **Fatura** com NIF emitida no final de cada trabalho
-- **Seguro** de responsabilidade civil profissional
-- **Emissão de Ficha Eletrotécnica e Termo de Responsabilidade**: **sob orçamento** quando aplicável
+- Seguro de responsabilidade civil profissional até 50 000 €.
+- Ficha eletrotécnica e Termos de responsabilidade: a partir de 350 € TTC, sob orçamento conforme o caso.
 
 ## 5. Cobertura regional (34 concelhos oficiais)
 
@@ -135,7 +137,7 @@ Legrand · Schneider Electric · Hager · ABB · Siemens · Philips
 ## 11. Perguntas frequentes
 
 **Fazem orçamentos grátis?**
-A estimativa não tem custo quando é feita à distância (telefone ou WhatsApp, com fotos ou vídeo). Se for necessária deslocação ao local, a deslocação é faturada segundo a grelha oficial (30 € em dias úteis, 50 € à noite, ao fim de semana e feriados). O orçamento por escrito é sempre entregue antes de qualquer intervenção.
+Não há orçamento gratuito quando a deslocação ao local é necessária: a deslocação (30 € em dias úteis das 09h às 18h; 50 € após as 18h, à noite, ao fim de semana e em feriados) e a mão de obra (70 €/h ou 100 €/h) são devidas, e toda a hora iniciada é devida. Com descrição detalhada e fotos, pode ser dada uma estimativa à distância; é indicativa, cada situação é diferente e não é um orçamento definitivo. O preço final depende do diagnóstico e da intervenção real.
 
 **Qual é o prazo de garantia?**
 Garantia por escrito, conforme âmbito dos trabalhos. Detalhes no orçamento.
