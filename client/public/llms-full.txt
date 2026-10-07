@@ -98,7 +98,6 @@ Páginas de referência:
 
 - **Fluke T6-1000** — testador de tensão e corrente sem contacto.
 - **Megger MFT1741+** — testador multifunções de instalação.
-- **ROLeak Aqua 3Plus** — deteção acústica de fugas e defeitos.
 - **FLIR E96** — câmara térmica 43 200 px.
 - **Câmara de inspeção 30 m** — observação interior de condutas e espaços confinados.
 

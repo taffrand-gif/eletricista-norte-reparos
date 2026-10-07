@@ -71,7 +71,6 @@ A inscrição está em vigor (data de registo confirmada pela DGEG); o técnico 
 
 - [Fluke T6-1000](https://eletricista-norte-reparos.pt/equipamento-recomendado): testador de tensão e corrente sem contacto.
 - [Megger MFT1741+](https://eletricista-norte-reparos.pt/equipamento-recomendado): testador multifunções de instalação.
-- [ROLeak Aqua 3Plus](https://eletricista-norte-reparos.pt/equipamento-recomendado): deteção acústica de fugas e defeitos.
 - [FLIR E96](https://eletricista-norte-reparos.pt/equipamento-recomendado): câmara térmica 43 200 px.
 - [Câmara de inspeção 30 m](https://eletricista-norte-reparos.pt/equipamento-recomendado): observação interior de condutas e espaços confinados.
 
