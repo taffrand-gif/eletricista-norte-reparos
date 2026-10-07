@@ -15,4 +15,10 @@ printf '## Site irmão (eletricidade)\nEletricidade: disjuntores, DGEG, eletrici
 python3 $H/norte_surface_scan.py --site CU --root $T/cu >/dev/null; t "sibling section allowed" 0 $?
 printf 'Ligue 932 321 892\n' >> $T/cu/llms.txt
 python3 $H/norte_surface_scan.py --site CU --root $T/cu >/dev/null; t "sibling phone blocked" 1 $?
+python3 $H/norte_surface_scan.py --site CU --root $T/cu --md $T/o.md >/dev/null; grep -q '^# norte_surface_scan' $T/o.md && grep -q 'BLOCK' $T/o.md; t "markdown report readable" 0 $?
+mkdir -p $T/cu/.worktrees/x $T/cu/_audit; printf 'Z1: 15 EUR\n' > $T/cu/_audit/ai.txt; printf '<p>Z1</p>' > $T/cu/.worktrees/x/a.html
+printf 'Tel 928 484 451\n09h–18h 70 €/h + 30 € deslocação\n' > $T/cu/llms.txt
+python3 $H/norte_surface_scan.py --site CU --root $T/cu --html >/dev/null; t "worktrees/_audit ignored" 0 $?
+printf 'Tarifa antiga: Z2 25 EUR\n' >> $T/cu/llms.txt
+python3 $H/norte_surface_scan.py --site CU --root $T/cu >/dev/null; t "exit1 old grid" 1 $?
 exit $f
