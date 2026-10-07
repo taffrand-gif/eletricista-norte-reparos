@@ -70,6 +70,8 @@ def scan_text(site, path, text, cfg):
                 if rid == "FICHA_350_ON_PLUMB" and n in sib:
                     pass
                 s = sev
+                if rid == "ARRIVAL_DELAY" and re.search(r"\b(n[ãa]o|nunca|sem)\s+(usa|usamos|prometemos|prometer|garant)", l, re.I):
+                    continue
                 if rid == "FREE_QUOTE_TRAVEL" and re.search(r"\b(n[ãa]o|sem)\b|\?\*?\*?$", l, re.I):
                     continue
                 if hist and rid in ("ZONE_GRID", "OLD_RATE_65", "PLUS_50_PCT", "OLD_WINDOW_09_17"):
