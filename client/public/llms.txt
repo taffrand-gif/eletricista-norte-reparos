@@ -13,7 +13,7 @@ Idioma: português europeu (pt-PT)
 - Atividade: serviços de eletricidade em Trás-os-Montes e Douro (instalação, remodelação, certificação e manutenção programada)
 - Área de intervenção: concelhos dos distritos de Bragança, Vila Real e zonas adjacentes, raio ~130 km em torno de Macedo de Cavaleiros
 - Processo comercial: diagnóstico quando necessário e orçamento por escrito antes do início do trabalho
-- Preços publicados: dias úteis (09h–17h) 70 €/h de mão de obra + 30 € de deslocação; noite, fins de semana e feriados 100 €/h + 50 € de deslocação; cada hora iniciada é devida; deslocação igual em todas as localidades
+- Preços publicados: dias úteis (09h–18h) 70 €/h de mão de obra + 30 € de deslocação; noite, fins de semana e feriados 100 €/h + 50 € de deslocação; cada hora iniciada é devida; deslocação igual em todas as localidades
 - Urgências: consultar o domínio dedicado https://eletricista-urgente.pt/
 
 ## Certificação (DGEG)
@@ -26,7 +26,7 @@ A inscrição está em vigor (data de registo confirmada pela DGEG); o técnico 
 
 | Período | Mão de obra | Deslocação |
 |---|---|---|
-| Dias úteis, 09h–17h | **70 €/h** | **30 €** |
+| Dias úteis, 09h–18h | **70 €/h** | **30 €** |
 | Noite (17h–09h), fins de semana e feriados | **100 €/h** | **50 €** |
 
 - Cada hora iniciada é devida ; a deslocação é igual em todas as localidades

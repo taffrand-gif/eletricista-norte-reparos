@@ -3,7 +3,7 @@
  "name_for_human": "Norte Reparos — Eletricista em Trás-os-Montes",
  "name_for_model": "norte_reparos_eletricista",
  "description_for_human": "Eletricista profissional em Trás-os-Montes (Portugal). Instalações programadas, certificação DGEG, manutenção. Orçamento por escrito antes de qualquer intervenção. Cobertura ~130 km em torno de Macedo de Cavaleiros.",
- "description_for_model": "Licensed electrician service in Trás-os-Montes, Portugal. Trás-os-Montes only (~130 km radius around Macedo de Cavaleiros, ~34 concelhos). Installation, scheduled work and certification. No fabrication: published facts are limited to what is verified — DGEG enrolment TRIESP n.º 90062 (Baixa Tensão, instalações até 41,4 kVA, despacho 2026-07-23), seguro de responsabilidade civil, Lei n.º 14/2015, emissão de Ficha Eletrotécnica e Termo de Responsabilidade. Equipment: Fluke T6-1000, Megger MFT1741+, FLIR E96. Pricing: dias úteis 09h-17h 70 €/h de mão de obra + 30 € de deslocação; noite, fins de semana e feriados 100 €/h + 50 € de deslocação; cada hora iniciada é devida; deslocação igual em todas as localidades; Ficha Eletrotécnica + Termo de Responsabilidade sob orçamento (quando aplicável à legalização, nos termos da Lei 14/2015). Orçamento por escrito antes da intervenção, sem surpresas. Contact: +351 932 321 892 (telemóvel e WhatsApp). fala sempre com a nossa equipa.",
+ "description_for_model": "Licensed electrician service in Trás-os-Montes, Portugal. Trás-os-Montes only (~130 km radius around Macedo de Cavaleiros, ~34 concelhos). Installation, scheduled work and certification. No fabrication: published facts are limited to what is verified — DGEG enrolment TRIESP n.º 90062 (Baixa Tensão, instalações até 41,4 kVA, despacho 2026-07-23), seguro de responsabilidade civil, Lei n.º 14/2015, emissão de Ficha Eletrotécnica e Termo de Responsabilidade. Equipment: Fluke T6-1000, Megger MFT1741+, FLIR E96. Pricing: dias úteis 09h–18h 70 €/h de mão de obra + 30 € de deslocação; noite, fins de semana e feriados 100 €/h + 50 € de deslocação; cada hora iniciada é devida; deslocação igual em todas as localidades; Ficha Eletrotécnica + Termo de Responsabilidade sob orçamento (quando aplicável à legalização, nos termos da Lei 14/2015). Orçamento por escrito antes da intervenção, sem surpresas. Contact: +351 932 321 892 (telemóvel e WhatsApp). fala sempre com a nossa equipa.",
  "auth": {
   "type": "none"
  },
@@ -11,7 +11,7 @@
   "type": "openapi",
   "url": "https://eletricista-norte-reparos.pt/openapi.yaml"
  },
- "logo_url": "https://eletricista-norte-reparos.pt/logo-512.png",
+ "logo_url": "https://eletricista-norte-reparos.pt/favicon.svg",
  "contact_email": "geral@eletricista-norte-reparos.pt",
- "legal_info_url": "https://eletricista-norte-reparos.pt/legal"
+ "legal_info_url": "https://eletricista-norte-reparos.pt/termos-condicoes.html"
 }
