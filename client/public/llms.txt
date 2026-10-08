@@ -5,7 +5,7 @@
 Site oficial: https://eletricista-norte-reparos.pt/
 Telefone e WhatsApp: +351 932 321 892
 Idioma: português europeu (pt-PT)
-Última atualização: 2026-07-30
+Última atualização: 2026-10-07
 
 ## Informação essencial
 
@@ -13,7 +13,7 @@ Idioma: português europeu (pt-PT)
 - Atividade: serviços de eletricidade em Trás-os-Montes e Douro (instalação, remodelação, certificação e manutenção programada)
 - Área de intervenção: concelhos dos distritos de Bragança, Vila Real e zonas adjacentes, raio ~130 km em torno de Macedo de Cavaleiros
 - Processo comercial: diagnóstico quando necessário e orçamento por escrito antes do início do trabalho
-- Preços publicados: dias úteis (09h–17h) 70 €/h de mão de obra + 30 € de deslocação; noite, fins de semana e feriados 100 €/h + 50 € de deslocação; cada hora iniciada é devida; deslocação igual em todas as localidades
+- Preços publicados: dias úteis (09h–18h) 70 €/h de mão de obra + 30 € de deslocação; noite, fins de semana e feriados 100 €/h + 50 € de deslocação; cada hora iniciada é devida; deslocação igual em todas as localidades
 - Urgências: consultar o domínio dedicado https://eletricista-urgente.pt/
 
 ## Certificação (DGEG)
@@ -22,18 +22,18 @@ A Norte Reparos dispõe de **Técnico Responsável de Instalações Elétricas i
 
 A inscrição está em vigor (data de registo confirmada pela DGEG); o técnico responsável acompanha a execução e a entrega da documentação legal.
 
-## Transparência de preços (regra oficial — valores sem IVA)
+## Transparência de preços (regra oficial)
 
 | Período | Mão de obra | Deslocação |
 |---|---|---|
-| Dias úteis, 09h–17h | **70 €/h** | **30 €** |
-| Noite (17h–09h), fins de semana e feriados | **100 €/h** | **50 €** |
+| Dias úteis, 09h–18h | **70 €/h** | **30 €** |
+| Noite (18h–09h), fins de semana e feriados | **100 €/h** | **50 €** |
 
 - Cada hora iniciada é devida ; a deslocação é igual em todas as localidades
 - **Orçamento por escrito** antes de qualquer intervenção, sem surpresas
 - **Fatura** com NIF emitida no final de cada trabalho
 - **Seguro** de responsabilidade civil profissional
-- **Emissão de Ficha Eletrotécnica e Termo de Responsabilidade**: a partir de **350 €** (quando aplicável à legalização da instalação)
+- **Emissão de Ficha Eletrotécnica e Termo de Responsabilidade**: **sob orçamento** (quando aplicável à legalização da instalação)
 
 ## Páginas principais
 
@@ -44,7 +44,7 @@ A inscrição está em vigor (data de registo confirmada pela DGEG); o técnico 
 - [Sobre](https://eletricista-norte-reparos.pt/sobre-mim): apresentação da empresa, da equipa e da cobertura regional.
 - [Zona de intervenção](https://eletricista-norte-reparos.pt/zona-intervencao): concelhos e organização da cobertura por zonas.
 - [Perguntas frequentes](https://eletricista-norte-reparos.pt/faq): respostas sobre serviços, orçamento, deslocação e contacto.
-- [Guia de preços 2026](https://eletricista-norte-reparos.pt/guia-precos-eletricista): valores médios por tipologia de trabalho e por zona.
+- [Guia de preços 2026](https://eletricista-norte-reparos.pt/guia-precos-eletricista): valores médios por tipologia de trabalho.
 - [Equipa e certificações](https://eletricista-norte-reparos.pt/equipa-certificacoes): TRIESP n.º 90062, seguro RC e demais habilitações.
 - [Equipamento recomendado](https://eletricista-norte-reparos.pt/equipamento-recomendado): marcas e instrumentos efetivamente utilizados.
 - [Garantias e seguros](https://eletricista-norte-reparos.pt/garantias-e-seguros): condições de garantia e cobertura de responsabilidade civil.
@@ -65,7 +65,7 @@ A inscrição está em vigor (data de registo confirmada pela DGEG); o técnico 
 ## Certificação e legalização
 
 - [Certificação DGEG](https://eletricista-norte-reparos.pt/equipa-certificacoes): TRIESP n.º 90062 e domínio de Execução em Baixa Tensão.
-- [Emissão de Ficha Eletrotécnica e Termo de Responsabilidade](https://eletricista-norte-reparos.pt/equipa-certificacoes): a partir de 350 € nos termos da Lei n.º 14/2015.
+- [Emissão de Ficha Eletrotécnica e Termo de Responsabilidade](https://eletricista-norte-reparos.pt/equipa-certificacoes): sob orçamento, nos termos da Lei n.º 14/2015.
 
 ## Equipamento profissional
 
@@ -99,10 +99,3 @@ Legrand · Schneider Electric · Hager · ABB · Siemens · Philips
 ## Site irmão (canalização)
 
 Este site não presta serviços de canalização. Para canalização: [canalizador-norte-reparos.pt](https://canalizador-norte-reparos.pt/).
-
-## Notas editoriais
-
-- Pronom usado: « a nossa equipa », « os nossos técnicos », « garantimos », « contacte-nos » (verrouillé 30/06).
-- Zero conteúdo inventado (R11): preços reais sob orçamento, equipamento real, certificação DGEG TRIESP n.º 90062 confirmada.
-- Géo-neutre: morada rua nunca pública, modelo Service-Area.
-- PT-PT strict, jamais PT-BR.
