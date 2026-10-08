@@ -46,7 +46,7 @@ Páginas de referência:
 | Período | Mão de obra | Deslocação |
 |---|---|---|
 | Dias úteis, 09h–18h | **70 €/h** | **30 €** |
-| Noite (17h–09h), fins de semana e feriados | **100 €/h** | **50 €** |
+| Noite (18h–09h), fins de semana e feriados | **100 €/h** | **50 €** |
 
 - Cada hora iniciada é devida ; a deslocação é igual em todas as localidades
 - **Orçamento por escrito** antes de qualquer intervenção, sem surpresas
