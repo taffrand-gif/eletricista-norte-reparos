@@ -3,17 +3,17 @@ import { Link } from 'wouter';
 import AnswerFirstFAQSchema from '@/components/SEO/AnswerFirstFAQSchema';
 
 export default function QuantoCustaEletricistaHoraPortugal() {
- // GEO1 — Mão de obra: 70 €/hora em dias úteis (9h–17h) e 100 €/hora à noite (17h–9h), fins de semana e feriados.
+ // GEO1 — Mão de obra: 70 €/hora em dias úteis (09h–18h) e 100 €/hora à noite (18h–09h), fins de semana e feriados.
  // Aucune fabrication prix : tout est aligné sur la grille officielle §12
  const pageUrl = 'https://eletricista-norte-reparos.pt/blog/quanto-custa-eletricista-hora-portugal';
  const faqs = [
  {
  question: 'Quanto custa um eletricista à hora em Portugal em 2026?',
- answer: "Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. O preço final é sempre calculado como: deslocação única de 30 € em horário útil ou 50 € em período majorado + horas de mão de obra × tarifário hora aplicável. Orçamento por escrito antes de qualquer intervenção.',",
+ answer: "Dias úteis (09h–18h): mão de obra 70 €/hora e deslocação 30 €. Noite (18h–09h), fins de semana e feriados: 100 €/hora e deslocação 50 €. O preço final é sempre calculado como: deslocação única de 30 € em horário útil ou 50 € em período majorado + horas de mão de obra × tarifário hora aplicável. Orçamento por escrito antes de qualquer intervenção.',",
  },
  {
  question: 'Qual é a diferença de preço entre horário normal e urgência?',
- answer: "Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. Não há tarifa diferente publicada para \"urgência\" — é o mesmo tarifário com a majoração legal aplicada às horas e ao custo de deslocação.',",
+ answer: "Dias úteis (09h–18h): mão de obra 70 €/hora e deslocação 30 €. Noite (18h–09h), fins de semana e feriados: 100 €/hora e deslocação 50 €. Não há tarifa diferente publicada para \"urgência\" — é o mesmo tarifário com a majoração legal aplicada às horas e ao custo de deslocação.',",
  },
  {
  question: 'O que está incluído no preço à hora de um eletricista?',
@@ -50,7 +50,7 @@ export default function QuantoCustaEletricistaHoraPortugal() {
  <title>Quanto Custa um Eletricista à Hora em Portugal em 2026? | Norte Reparos</title>
  <meta
  name="description"
- content="Quanto custa um eletricista à hora em Portugal em 2026? Mão de obra: 70 €/hora em dias úteis (9h–17h) e 100 €/hora à noite (17h–9h), fins de semana e feriados. A deslocação tem preço único em qualquer localidade servida: 30 € em dias úteis (9h–17h) e 50 € à noite, fins de semana e feriados. Orçamento por escrito antes de qualquer intervenção."
+ content="Quanto custa um eletricista à hora em Portugal em 2026? Mão de obra: 70 €/hora em dias úteis (09h–18h) e 100 €/hora à noite (18h–09h), fins de semana e feriados. A deslocação tem preço único em qualquer localidade servida: 30 € em dias úteis (09h–18h) e 50 € à noite, fins de semana e feriados. Orçamento por escrito antes de qualquer intervenção."
  />
  <link rel="canonical" href={pageUrl} />
   <script type="application/ld+json">
@@ -58,7 +58,7 @@ export default function QuantoCustaEletricistaHoraPortugal() {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Quanto Custa um Eletricista à Hora em Portugal em 2026?",
-  "description": "Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. Orçamento por escrito antes de qualquer intervenção.\",",
+  "description": "Dias úteis (09h–18h): mão de obra 70 €/hora e deslocação 30 €. Noite (18h–09h), fins de semana e feriados: 100 €/hora e deslocação 50 €. Orçamento por escrito antes de qualquer intervenção.\",",
   "author": { "@type": "Organization", "name": "Norte Reparos" },
   "publisher": { "@type": "Organization", "name": "Norte Reparos", "url": "https://eletricista-norte-reparos.pt" },
   "datePublished": "2026-07-10",
@@ -86,13 +86,13 @@ export default function QuantoCustaEletricistaHoraPortugal() {
           <div className="bg-orange-50 border-l-4 border-orange-600 p-6 mb-8">
             <p className="text-lg font-semibold text-gray-900 mb-2">Resposta direta:</p>
             <p className="text-gray-800">
-              Em Portugal, a Norte Reparos cobra <strong>70€ por hora</strong> em horário normal (dias úteis, 9h–17h). Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. — perfazendo 100€/hora de mão de obra, mais 50€ de deslocação. O preço final de cada trabalho é: <strong>deslocação única de 30 € em horário útil ou 50 € em período majorado + horas × tarifário hora</strong>. Fornecemos sempre orçamento por escrito antes de qualquer intervenção.
+              Em Portugal, a Norte Reparos cobra <strong>70€ por hora</strong> em horário normal (dias úteis, 09h–18h). Dias úteis (09h–18h): mão de obra 70 €/hora e deslocação 30 €. Noite (18h–09h), fins de semana e feriados: 100 €/hora e deslocação 50 €. — perfazendo 100€/hora de mão de obra, mais 50€ de deslocação. O preço final de cada trabalho é: <strong>deslocação única de 30 € em horário útil ou 50 € em período majorado + horas × tarifário hora</strong>. Fornecemos sempre orçamento por escrito antes de qualquer intervenção.
             </p>
           </div>
 
           <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">1. Tabela Norte Reparos 2026 — Preços por hora</h2>
           <p>
-            A Norte Reparos pratica um tarifário hora único e público. Não usamos forfaits, nem 'pacotes' — A deslocação tem preço único em qualquer localidade servida: 30 € em dias úteis (9h–17h) e 50 € à noite, fins de semana e feriados.
+            A Norte Reparos pratica um tarifário hora único e público. Não usamos forfaits, nem 'pacotes' — A deslocação tem preço único em qualquer localidade servida: 30 € em dias úteis (09h–18h) e 50 € à noite, fins de semana e feriados.
           </p>
           <div className="overflow-x-auto my-6">
             <table className="w-full border-collapse">
@@ -105,7 +105,7 @@ export default function QuantoCustaEletricistaHoraPortugal() {
               </thead>
               <tbody>
                 <tr className="bg-white">
-                  <td className="border border-gray-300 px-3 py-2">Dias úteis (9h–17h)</td>
+                  <td className="border border-gray-300 px-3 py-2">Dias úteis (09h–18h)</td>
                   <td className="border border-gray-300 px-3 py-2 font-semibold">70€/h</td>
                   <td className="border border-gray-300 px-3 py-2">—</td>
                 </tr>
@@ -120,7 +120,7 @@ export default function QuantoCustaEletricistaHoraPortugal() {
 
           <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">2. Deslocação a Trás-os-Montes</h2>
           <p>
-            A deslocação é um forfait único por intervenção, independentemente da distância dentro da área servida: 30 € em dias úteis (9h–17h) e 50 € à noite, fins de semana e feriados. Para confirmar a cobertura, indique-nos o nome da sua localidade ao pedir orçamento.
+            A deslocação é um forfait único por intervenção, independentemente da distância dentro da área servida: 30 € em dias úteis (09h–18h) e 50 € à noite, fins de semana e feriados. Para confirmar a cobertura, indique-nos o nome da sua localidade ao pedir orçamento.
           </p>
           <div className="overflow-x-auto my-6">
             <table className="w-full border-collapse">
@@ -133,7 +133,7 @@ export default function QuantoCustaEletricistaHoraPortugal() {
                 </tr>
               </thead>
               <tbody>
-                <tr className="bg-white"><td className="border border-gray-300 px-3 py-2 font-semibold">Dias úteis (9h–17h)</td><td className="border border-gray-300 px-3 py-2">Qualquer localidade servida</td><td className="border border-gray-300 px-3 py-2">Qualquer localidade servida</td><td className="border border-gray-300 px-3 py-2">Deslocação 30 € · 70 €/hora</td></tr><tr className="bg-white"><td className="border border-gray-300 px-3 py-2 font-semibold">Noite (17h–9h), fins de semana e feriados</td><td className="border border-gray-300 px-3 py-2">Qualquer localidade servida</td><td className="border border-gray-300 px-3 py-2">Qualquer localidade servida</td><td className="border border-gray-300 px-3 py-2">Deslocação 50 € · 100 €/hora</td></tr></tbody>
+                <tr className="bg-white"><td className="border border-gray-300 px-3 py-2 font-semibold">Dias úteis (09h–18h)</td><td className="border border-gray-300 px-3 py-2">Qualquer localidade servida</td><td className="border border-gray-300 px-3 py-2">Qualquer localidade servida</td><td className="border border-gray-300 px-3 py-2">Deslocação 30 € · 70 €/hora</td></tr><tr className="bg-white"><td className="border border-gray-300 px-3 py-2 font-semibold">Noite (18h–09h), fins de semana e feriados</td><td className="border border-gray-300 px-3 py-2">Qualquer localidade servida</td><td className="border border-gray-300 px-3 py-2">Qualquer localidade servida</td><td className="border border-gray-300 px-3 py-2">Deslocação 50 € · 100 €/hora</td></tr></tbody>
             </table>
           </div>
           <p className="text-sm text-gray-600">
@@ -159,7 +159,7 @@ export default function QuantoCustaEletricistaHoraPortugal() {
           <div className="space-y-6">
             <div>
               <h3 className="font-bold text-gray-900 mb-2 text-xl">Quanto custa um eletricista à hora em Portugal em 2026?</h3>
-              <p className="text-gray-700">70€/h em horário comercial na Norte Reparos; mão de obra: 70 €/hora em dias úteis (9h–17h) e 100 €/hora à noite (17h–9h), fins de semana e feriados. Mais deslocação (30 €). Materiais à parte, especificados no orçamento por escrito.</p>
+              <p className="text-gray-700">70€/h em horário comercial na Norte Reparos; mão de obra: 70 €/hora em dias úteis (09h–18h) e 100 €/hora à noite (18h–09h), fins de semana e feriados. Mais deslocação (30 €). Materiais à parte, especificados no orçamento por escrito.</p>
             </div>
             <div>
               <h3 className="font-bold text-gray-900 mb-2 text-xl">Posso pedir um orçamento sem compromisso?</h3>
@@ -167,7 +167,7 @@ export default function QuantoCustaEletricistaHoraPortugal() {
             </div>
             <div>
               <h3 className="font-bold text-gray-900 mb-2 text-xl">Trabalha em regime de urgência 24h?</h3>
-              <p className="text-gray-700">Sim — À noite (17h–9h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €.</p>
+              <p className="text-gray-700">Sim — À noite (18h–09h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €.</p>
             </div>
             <div>
               <h3 className="font-bold text-gray-900 mb-2 text-xl">Emite fatura com NIF?</h3>

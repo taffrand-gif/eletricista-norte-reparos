@@ -109,7 +109,7 @@ Diagnóstico preciso em 15-45 minutos. Orçamento antes de arranjar.`
  {
  title: 'Arranjos Típicas',
  content: `**Substituição disjuntor**: 75-95€ (inclui disjuntor). **Arranjo tomada queimada**: 58-78€. **Substituição cabo danificado**: 110-160€ (até 10m). **Arranjo curto-circuito**: 150-210€. **Substituição quadro elétrico**: 370-650€ (12 módulos). **Ligação terra**: 180-250€.
-**Urgências 24h**: Acréscimo 50€ (noturno/fins de semana). Mensagem direta-90 minutos conforme localização.
+**Urgências 24h**: Acréscimo 50€ (noturno/fins de semana). A janela de chegada é confirmada por telefone e depende da situação operacional.
 **Garantia**: 12 meses em todas as arranjos. Se o problema voltar, arranjamos gratuitamente.`
  }
  ],
@@ -195,7 +195,7 @@ Diagnóstico preciso em 15-45 minutos. Orçamento antes de arranjar.`
  slug: 'urgencias-24h',
  title: 'Urgências Elétricas 24h',
  subtitle: 'Eletricista de Urgência em Toda a Região',
- description: 'Serviço urgência 24h/7 dias para avarias graves, curto-circuitos, quedas de corrente. Mensagem direta-90 minutos.',
+ description: 'Serviço urgência 24h/7 dias para avarias graves, curto-circuitos, quedas de corrente. A janela de chegada é confirmada por telefone e depende da situação operacional.',
  icon: '🚨',
  price: 'Desde 100€',
  priceDetails: 'Acréscimo 50€ horário noturno',
@@ -213,7 +213,7 @@ Diagnóstico preciso em 15-45 minutos. Orçamento antes de arranjar.`
  },
  {
  title: 'Preços Urgência',
- content: `Dias úteis (9h–17h): 70€/h + deslocação 30€. Noite (17h–9h), fins de semana e feriados: 100€/h + deslocação 50€. Cada hora começada é devida. Orçamento telefónico antes de sair. Pagamento: dinheiro, MB Way, Multibanco.`
+ content: `Dias úteis (09h–18h): 70€/h + deslocação 30€. Noite (18h–09h), fins de semana e feriados: 100€/h + deslocação 50€. Cada hora começada é devida. Orçamento telefónico antes de sair. Pagamento: dinheiro, MB Way, Multibanco.`
  }
  ],
  cta: 'Urgência elétrica? **Ligue já 932 321 892** - Atendimento 24h!'

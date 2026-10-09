@@ -135,7 +135,6 @@ export default function Diagnostico() {
  backgroundColor: city === c.value ? `${accentColor}10` : 'white'}}
  >
  <span className="text-lg font-semibold text-gray-800">📍 {c.label}</span>
- {c.time && <span className="text-sm text-gray-500">{c.time} · {c.price}€</span>}
  </button>
  ))}
  </div>
@@ -152,10 +151,10 @@ export default function Diagnostico() {
  ✅ Técnico Atendimento 24h em {selectedCity.label}
  </p>
  <p className="text-gray-600 mt-1">
- ⏱️ Chegada estimada: <strong>{selectedCity.time}</strong>
+ ⏱️ A janela de chegada é confirmada por telefone e depende da situação operacional.
  </p>
  <p className="text-gray-600">
- 💰 Deslocação: <strong>{selectedCity.price}€</strong> + mão de obra (70€/h) em dias úteis 9h–17h; noite, fins de semana e feriados: 100€/h + 50€
+ 💰 Deslocação: <strong>30€</strong> + mão de obra (70€/h) em dias úteis 09h–18h; noite, fins de semana e feriados: 100€/h + deslocação 50€. Cada hora começada é devida.
  </p>
  </div>
  <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">

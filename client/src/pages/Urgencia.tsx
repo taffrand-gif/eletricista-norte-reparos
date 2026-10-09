@@ -333,12 +333,12 @@ function Urgencia() {
  <div className="bg-white rounded-2xl p-8 shadow-xl">
  <div className="grid md:grid-cols-2 gap-6 mb-8">
  <div className="bg-gray-50 rounded-xl p-6">
- <h3 className="font-bold text-gray-900 mb-2">Dias úteis (9h–17h)</h3>
+ <h3 className="font-bold text-gray-900 mb-2">Dias úteis (09h–18h)</h3>
  <p className="text-3xl font-black text-orange-600">70€/h + 30€</p>
  <p className="text-sm text-gray-600">Deslocação única de 30€</p>
  </div>
  <div className="bg-purple-50 rounded-xl p-6 border-2 border-purple-200">
- <h3 className="font-bold text-gray-900 mb-2">Noite (17h–9h), fins de semana e feriados</h3>
+ <h3 className="font-bold text-gray-900 mb-2">Noite (18h–09h), fins de semana e feriados</h3>
  <p className="text-3xl font-black text-purple-600">100€/h + 50€</p>
  <p className="text-sm text-gray-600">Deslocação única de 50€</p>
  </div>

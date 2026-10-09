@@ -36,7 +36,7 @@ Chegamos em até **1 hora** na zona urbana de Bragança com equipamento de diagn
 - **Câmaras térmicas FLIR** para identificar sobreaquecimentos
 
 ### 3. Orçamento Transparente
-Apresentamos o **orçamento por escrito** antes de qualquer intervenção. A deslocação tem preço único: 30 € em dias úteis (9h–17h) e 50 € à noite, fins de semana e feriados, sem variação por zona ou distância. Sem surpresas, sem custos ocultos.
+Apresentamos o **orçamento por escrito** antes de qualquer intervenção. A deslocação tem preço único: 30 € em dias úteis (09h–18h) e 50 € à noite, fins de semana e feriados, sem variação por zona ou distância. Sem surpresas, sem custos ocultos.
 
 ### 4. Arranjo Imediata
 Com peças de reposição no veículo e ferramentas profissionais, resolvemos a maioria das emergências na primeira visita.
@@ -75,7 +75,7 @@ Trabalhamos apenas com equipamento de marcas reconhecidas:
 **Resposta:** Confirmamos a janela de chegada por telefone antes da deslocação; não publicamos promessas de minutos.
 
 ### Os preços são mais caros à noite ou fim de semana?
-**Resposta:** Sim. Dias úteis (9h–17h): 70 €/hora. Noite (17h–9h), fins de semana e feriados: 100 €/hora. Mantemos transparência total no orçamento.
+**Resposta:** Sim. Dias úteis (09h–18h): 70 €/hora. Noite (18h–09h), fins de semana e feriados: 100 €/hora. Mantemos transparência total no orçamento.
 
 ### Que tipos de pagamento aceitam?
 **Resposta:** Aceitamos dinheiro, transferência bancária, MB Way e cartão de débito/crédito.
