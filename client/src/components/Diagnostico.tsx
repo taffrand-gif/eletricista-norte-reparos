@@ -155,7 +155,7 @@ export default function Diagnostico() {
  ⏱️ Chegada estimada: <strong>{selectedCity.time}</strong>
  </p>
  <p className="text-gray-600">
- 💰 Deslocação: <strong>{selectedCity.price}€</strong> + mão de obra (70€/h) em dias úteis 9h–17h; noite, fins de semana e feriados: 100€/h + 50€
+ 💰 Deslocação: <strong>{selectedCity.price}€</strong> + mão de obra (70€/h) em dias úteis 9h–18h; noite, fins de semana e feriados: 100€/h + 50€
  </p>
  </div>
  <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
