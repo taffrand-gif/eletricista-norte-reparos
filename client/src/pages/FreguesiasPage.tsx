@@ -76,7 +76,7 @@ export default function FreguesiasPage() {
  const faqs = [
  {
  question: `Atendem em ${freguesia.name}?`,
- answer: `Sim, atendemos ${freguesia.name} e toda a região de ${parentCity.name}. Tempo de chegada: 30-45 minutos.`
+ answer: `Sim, atendemos ${freguesia.name} e toda a região de ${parentCity.name}. A janela de chegada é confirmada por telefone e depende da situação operacional.`
  },
  {
  question: `Qual o custo de deslocação a ${freguesia.name}?`,
@@ -167,7 +167,7 @@ export default function FreguesiasPage() {
  </div>
  <h3 className="text-xl font-bold mb-2">Resposta mediante contacto</h3>
  <p className="text-gray-600">
- Resposta mediante contacto garantida-45 minutos para urgências
+ A janela de chegada é confirmada por telefone e depende da situação operacional.
  </p>
  </div>
  <div className="bg-white p-6 rounded-xl shadow-lg text-center">

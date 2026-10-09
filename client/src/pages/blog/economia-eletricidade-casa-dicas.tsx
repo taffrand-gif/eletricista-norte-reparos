@@ -327,7 +327,7 @@ export default function EconomiaEletricidadeCasaDicas() {
  <div className="bg-gray-50 rounded-lg p-6">
  <h4 className="font-bold text-gray-900 mb-2">Tarifa bi-horária compensa?</h4>
  <p className="text-gray-700 mb-0">
- À noite (17h–9h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €. Ideal para quem tem aquecimento elétrico programável,
+ À noite (18h–09h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €. Ideal para quem tem aquecimento elétrico programável,
  máquinas lavar com timer, carregador veículo elétrico. Poupança: 15-25% na conta.
  </p>
  </div>
