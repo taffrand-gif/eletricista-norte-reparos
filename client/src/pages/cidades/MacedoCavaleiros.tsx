@@ -120,13 +120,13 @@ export default function MacedoCavaleiros() {
  { label: 'Macedo de Cavaleiros', href: '/eletricista-macedo-cavaleiros' }
  ]} />
  <span className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-bold mb-4">
- ⚡ sede no norte de Portugal
+ ⚡ Eletricista ao domicílio
  </span>
  <h1 className="text-4xl md:text-6xl font-black mb-6">
  Eletricista em Macedo de Cavaleiros
  </h1>
  <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
- A nossa base é aqui. Chegamos Resposta mediante contacto garantida. Serviço 24h para urgências elétricas.
+ Intervenção ao domicílio, no local do cliente. Serviço 24h para urgências elétricas.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a
@@ -156,27 +156,27 @@ export default function MacedoCavaleiros() {
  <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
  <MapPin className="w-8 h-8 text-orange-500" />
  </div>
- <h3 className="text-xl font-bold mb-2">Sede Local</h3>
+ <h3 className="text-xl font-bold mb-2">Ao seu domicílio</h3>
  <p className="text-gray-600">
- Estamos sediados em Macedo de Cavaleiros. Conhecemos cada rua, cada bairro, cada aldeia.
+ Deslocamo-nos a sua casa ou ao local da obra, em Macedo de Cavaleiros e arredores.
  </p>
  </div>
  <div className="bg-white p-6 rounded-xl shadow-lg text-center">
  <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
  <Clock className="w-8 h-8 text-orange-500" />
  </div>
- <h3 className="text-xl font-bold mb-2">Menos de 30 Min</h3>
+ <h3 className="text-xl font-bold mb-2">Resposta rápida</h3>
  <p className="text-gray-600">
- Tempo de resposta mais rápido da região. Em urgências, estamos consigo em minutos.
+ Em urgências, ligue e combinamos a intervenção.
  </p>
  </div>
  <div className="bg-white p-6 rounded-xl shadow-lg text-center">
  <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
  <Shield className="w-8 h-8 text-orange-500" />
  </div>
- <h3 className="text-xl font-bold mb-2">Deslocação 10€</h3>
+ <h3 className="text-xl font-bold mb-2">Deslocação 30€</h3>
  <p className="text-gray-600">
- Taxa de deslocação mais baixa para Macedo e arredores. Sem surpresas no orçamento.
+ Dias úteis (09h–18h): 30 €. Noite, fins de semana e feriados: 50 €. Cada hora começada é devida.
  </p>
  </div>
  </div>
@@ -192,7 +192,7 @@ export default function MacedoCavaleiros() {
  {[
  { icon: Zap, title: "Urgências Elétricas 24h", desc: "Curto-circuitos, apagões, disjuntores a disparar" },
  { icon: Shield, title: "Quadros Elétricos", desc: "Substituição, modernização, colocação às normas" },
- { title: "Diagnóstico elétrico", desc: "Para venda, arrendamento ou nova ligação EDP" },
+ { icon: Zap, title: "Diagnóstico elétrico", desc: "Para venda, arrendamento ou nova ligação EDP" },
  { icon: Zap, title: "Instalações Novas", desc: "Casas, lojas, armazéns, explorações agrícolas" },
  ].map((service, index) => (
  <div key={index} className="flex items-start gap-4 p-6 bg-gray-50 rounded-xl">
@@ -250,7 +250,7 @@ export default function MacedoCavaleiros() {
  Precisa de Eletricista em Macedo de Cavaleiros?
  </h2>
  <p className="text-xl mb-8 opacity-90">
- Ligue agora. Estamos a menos de 30 minutos de si.
+ Ligue agora e combine a intervenção.
  </p>
  <a
  href={`tel:${businessInfo.phone}`}

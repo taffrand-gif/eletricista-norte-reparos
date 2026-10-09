@@ -66,7 +66,7 @@ export default function TorreMoncorvo() {
  }, []);
  const cidadesProximas = getCidadesProximas('torre-moncorvo');
  const faqs = [
- { question: "Quanto tempo demora a chegar a Torre de Moncorvo?", answer: "Chegamos a Torre de Moncorvo em aproximadamente 50-60 minutos. Cobrimos todo o concelho." },
+ { question: "Quanto tempo demora a chegar a Torre de Moncorvo?", answer: "O prazo de chegada é combinado por telefone, consoante a disponibilidade. Cobrimos todo o concelho." },
  {
  question: "Qual o custo de deslocação a Torre de Moncorvo?",
  answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
@@ -95,7 +95,7 @@ export default function TorreMoncorvo() {
  {[
  { icon: Zap, title: "Urgências Elétricas 24h", desc: "Apagões, curto-circuitos, disjuntores a disparar" },
  { icon: Shield, title: "Quintas Vinícolas", desc: "Instalações para adegas, lagares, sistemas de refrigeração" },
- { title: "Diagnóstico elétrico", desc: "Obrigatória para turismo rural e alojamento local" },
+ { icon: Zap, title: "Diagnóstico elétrico", desc: "Obrigatória para turismo rural e alojamento local" },
  { icon: Zap, title: "Quadros Elétricos", desc: "Modernização e aumento de potência" },
  ].map((service, index) => (
  <div key={index} className="flex items-start gap-4 p-6 bg-white rounded-xl shadow">

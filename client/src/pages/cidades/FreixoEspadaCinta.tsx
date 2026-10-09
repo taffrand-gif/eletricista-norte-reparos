@@ -64,7 +64,7 @@ export default function FreixoEspadaCinta() {
  }, []);
  const cidadesProximas = getCidadesProximas('freixo-espada-cinta');
  const faqs = [
- { question: "Chegam a Freixo de Espada à Cinta?", answer: "Sim, cobrimos todo o concelho de Freixo de Espada à Cinta. Tempo de chegada: 60-70 minutos." },
+ { question: "Chegam a Freixo de Espada à Cinta?", answer: "Sim, cobrimos todo o concelho de Freixo de Espada à Cinta. O prazo de chegada é combinado por telefone, consoante a disponibilidade." },
  {
  question: "Qual o custo de deslocação a Freixo de Espada à Cinta?",
  answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
@@ -93,7 +93,7 @@ export default function FreixoEspadaCinta() {
  { icon: Zap, title: "Urgências Elétricas 24h", desc: "Apagões, curto-circuitos, disjuntores" },
  { icon: Shield, title: "Casas de Aldeia", desc: "Reabilitação elétrica de casas tradicionais" },
  { icon: CheckCircle, title: "Turismo Rural", desc: "Instalações para alojamento local" },
- { title: "Diagnóstico elétrico", desc: "Para venda ou arrendamento" },
+ { icon: Zap, title: "Diagnóstico elétrico", desc: "Para venda ou arrendamento" },
  ].map((service, index) => (
  <div key={index} className="flex items-start gap-4 p-6 bg-white rounded-xl shadow">
  <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0"><service.icon className="w-6 h-6 text-white" /></div>
