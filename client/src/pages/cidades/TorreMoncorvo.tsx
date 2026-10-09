@@ -95,7 +95,7 @@ export default function TorreMoncorvo() {
  {[
  { icon: Zap, title: "Urgências Elétricas 24h", desc: "Apagões, curto-circuitos, disjuntores a disparar" },
  { icon: Shield, title: "Quintas Vinícolas", desc: "Instalações para adegas, lagares, sistemas de refrigeração" },
- { title: "Diagnóstico elétrico", desc: "Obrigatória para turismo rural e alojamento local" },
+ { icon: Zap, title: "Diagnóstico elétrico", desc: "Obrigatória para turismo rural e alojamento local" },
  { icon: Zap, title: "Quadros Elétricos", desc: "Modernização e aumento de potência" },
  ].map((service, index) => (
  <div key={index} className="flex items-start gap-4 p-6 bg-white rounded-xl shadow">

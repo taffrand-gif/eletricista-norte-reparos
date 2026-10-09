@@ -104,7 +104,7 @@ export default function Sabrosa() {
  { icon: Zap, title: "Quintas do Douro", desc: "Instalações completas para adegas, caves e produção vinícola" },
  { icon: Shield, title: "Espaços Culturais", desc: "Iluminação técnica para museus, galerias e centros interpretativos" },
  { icon: CheckCircle, title: "Turismo Premium", desc: "Sistemas elétricos para hotéis de charme e casas de turismo rural" },
- { title: "Diagnóstico elétrico", desc: "Diagnóstico elétrico para venda, arrendamento e legalização de imóveis" },
+ { icon: Zap, title: "Diagnóstico elétrico", desc: "Diagnóstico elétrico para venda, arrendamento e legalização de imóveis" },
  ].map((service, index) => (
  <div key={index} className="flex items-start gap-4 p-6 bg-white rounded-xl shadow">
  <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">

@@ -192,7 +192,7 @@ export default function MacedoCavaleiros() {
  {[
  { icon: Zap, title: "Urgências Elétricas 24h", desc: "Curto-circuitos, apagões, disjuntores a disparar" },
  { icon: Shield, title: "Quadros Elétricos", desc: "Substituição, modernização, colocação às normas" },
- { title: "Diagnóstico elétrico", desc: "Para venda, arrendamento ou nova ligação EDP" },
+ { icon: Zap, title: "Diagnóstico elétrico", desc: "Para venda, arrendamento ou nova ligação EDP" },
  { icon: Zap, title: "Instalações Novas", desc: "Casas, lojas, armazéns, explorações agrícolas" },
  ].map((service, index) => (
  <div key={index} className="flex items-start gap-4 p-6 bg-gray-50 rounded-xl">
