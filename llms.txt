@@ -46,7 +46,7 @@ Bragança, Mirandela, Chaves, Macedo de Cavaleiros, Vila Real, Mogadouro, Vinhai
 - Fluke
 - Megger MFT1741+ (testador de instalação multifunção)
 - ROLeak Aqua 3Plus (deteção acústica)
-- FLIR E96 (câmara térmica 43 200 px)
+- FLIR E96 (câmara térmica)
 - Câmara de inspeção 30 m
 
 ## Marcas de materiais (verídicas)
