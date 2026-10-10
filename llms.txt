@@ -43,7 +43,7 @@ A certificação DGEG está concluída: Filipe Bragança é Técnico Responsáve
 Bragança, Mirandela, Chaves, Macedo de Cavaleiros, Vila Real, Mogadouro, Vinhais, Miranda do Douro, Alfândega da Fé, Vila Flor, Carrazeda de Ansiães, Torre de Moncorvo, Freixo de Espada à Cinta, Vimioso, Valpaços, Murça, Lamego, Peso da Régua, Alijó, Sabrosa.
 
 ## Equipamento profissional
-- Fluke T6-1000 (testador tensão/corrente sem contacto)
+- Fluke
 - Megger MFT1741+ (testador de instalação multifunção)
 - ROLeak Aqua 3Plus (deteção acústica)
 - FLIR E96 (câmara térmica 43 200 px)

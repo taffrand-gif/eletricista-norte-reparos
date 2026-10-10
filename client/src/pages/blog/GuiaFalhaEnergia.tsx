@@ -220,7 +220,7 @@ export default function GuiaFalhaEnergia() {
               <li>Vila Real: 85,7 km · 55 €</li>
               <li>Miranda do Douro: 92,2 km · 65 €</li>
             </ul>
-            <p className="text-gray-800 mb-3"><strong>Equipamento real:</strong> Fluke T6-1000, Megger MFT1741+, FLIR E96 e câmara de inspeção de 30 m.</p>
+            <p className="text-gray-800 mb-3"><strong>Equipamento real:</strong> Fluke, Megger MFT1741+, FLIR E96 e câmara de inspeção de 30 m.</p>
             <p className="text-sm text-gray-600">Fontes internas: grelha de zonas verrouillée em 14/07/2026; <code>preco-deslocacao.py</code>; dados TomTom reais em <code>_audit/zonas-distances-concelhos.json</code> (data/concelhos.json).</p>
           </section>
 

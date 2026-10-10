@@ -12,7 +12,7 @@ export default function PremiumBar() {
  ]
  : [
  { icon: '🔬', label: 'Câmara FLIR' },
-{ icon: '📊', label: 'Fluke T6-1000' },
+{ icon: '📊', label: 'Fluke' },
  ];
  return (
  <div className="bg-gray-900 text-white py-3 overflow-hidden">

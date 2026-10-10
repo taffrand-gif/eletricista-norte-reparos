@@ -52,7 +52,7 @@ Os dois sites partilham o NAP e a empresa-mãe (Norte Reparos) mas visam **inten
 
 ## 4. Equipamento e marcas
 
-Equipamento profissional idêntico ao site urgência: Fluke T6-1000, Megger MFT1741+, ROLeak Aqua 3Plus, FLIR E96, câmara de inspeção 30 m.
+Equipamento profissional idêntico ao site urgência: Fluke, Megger MFT1741+, ROLeak Aqua 3Plus, FLIR E96, câmara de inspeção 30 m.
 
 Marcas: Legrand, Schneider Electric, Hager, ABB, Siemens, Philips.
 
