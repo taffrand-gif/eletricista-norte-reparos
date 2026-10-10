@@ -22,6 +22,8 @@ import sys
 from pathlib import Path
 from collections import Counter
 
+raise SystemExit("DÉSACTIVÉ (2026-10-10) : ce script réintroduit la grille Z1–Z6 / prix par distance, interdite (_governance/10-SAFETY.md, 20-BUSINESS-FACTS.json). Ne pas exécuter.")
+
 # Grille verrouillée (max_km_inclusif, zone_label_sans_Z, prix_eur)
 ZONES = [
     (15,  '1', 15),
