@@ -104,7 +104,7 @@ Páginas de referência:
 - **Fluke** — equipamento de medição elétrica
 - **Megger MFT1741+** — testador multifunções de instalação.
 - **ROLeak Aqua 3Plus** — deteção acústica de fugas e defeitos.
-- **FLIR E96** — câmara térmica 43 200 px.
+- **FLIR E96** — câmara térmica.
 - **Câmara de inspeção 30 m** — observação interior de condutas e espaços confinados.
 
 Páginas de referência:
