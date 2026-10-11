@@ -27,7 +27,7 @@
  {"name": "Iluminação interior/exterior", "price_range": "50€-200€"},
  {"name": "Aquecimento elétrico", "price_range": "100€-500€"}
  ],
- "equipment": ["Ridgid Professional", "Multímetros Fluke", "Câmara Térmica FLIR", "Testadores certificados"],
+ "equipment": ["Ridgid Professional", "Equipamentos de medição Fluke", "Câmara Térmica FLIR", "Testadores certificados"],
  "cities_served": [
  {"name": "Trás-os-Montes", "distance_km": 0, "time_min": 0},
  {"name": "Bragança", "distance_km": 27, "time_min": 25},

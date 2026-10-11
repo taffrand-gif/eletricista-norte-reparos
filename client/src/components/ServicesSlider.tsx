@@ -44,7 +44,7 @@ export function ServicesSlider() {
  {
  icon: '⚡',
  title: 'Equipamento Fluke',
- description: 'Multímetros e testadores Fluke profissionais',
+ description: 'Equipamentos de medição Fluke',
  image: 'https://private-us-east-1.manuscdn.com/sessionFile/RsLgvajqRJaxpcBIQSqPn3/sandbox/cGarJCzSXRwXZJiJ3R4476-img-2_1770610666000_na1fn_c2xpZGVyLWVsZWN0cmljYWwtZmx1a2U.jpg?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvUnNMZ3ZhanFSSmF4cGNCSVFTcVBuMy9zYW5kYm94L2NHYXJKQ3pTWFJ3WFpKaUozUjQ0NzYtaW1nLTJfMTc3MDYxMDY2NjAwMF9uYTFmbl9jMnhwWkdWeUxXVnNaV04wY21sallXd3RabXgxYTJVLmpwZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=fqRuW~w-rZ4effYafa0WCHscHJakKQk8dvoSs6tp2uuqVjbT~3v44nXdNnbBq1w1CYYEPsvd0~da0kdXnsWqLQWdlZ7KFJVrjPuIlflK0wmA-3H~RqVXu8O5yjUl0t-dT1WcO-h-U~cTeSCoHyB1-Acpxp4thgIwux0eHjRTJeqocpKNPV-1flk-nF3Hz-tO94xBJdnCOcqeZz~ne-Sq2r5EuQ5veb37I6ZXHYx92QQrcSjBYwHoz2I10MQ8VzPBTPX4FdzEAFS~q5YC5jqh8Vy~GJlfa6pOw~7goj0am1rBTcN8Y~SIAsrcgqujDoqlGV1Wt6YIyVXZxx9SQ61VBQ__'
  },
  {

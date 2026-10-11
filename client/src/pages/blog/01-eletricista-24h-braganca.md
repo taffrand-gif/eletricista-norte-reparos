@@ -31,7 +31,7 @@ Ao ligar para **+351 932 321 892**, nossa equipa responde imediatamente e agenda
 
 ### 2. Diagnóstico no Local
 Chegamos em até **1 hora** na zona urbana de Bragança com equipamento de diagnóstico profissional:
-- **Multímetros digitais Fluke** para medições precisas
+- **Equipamentos de medição Fluke** para medições precisas
 - **Detetores de tensão sem contacto** para segurança
 - **Câmaras térmicas FLIR** para identificar sobreaquecimentos
 
