@@ -122,7 +122,7 @@ Corrente "escapa" para terra através isolamento danificado.
 
 **Solução:**
 - **Fuga em aparelho:** Reparar ou substituir
-- **Fuga na instalação:** Eletricista com megger (testador isolamento)
+- **Fuga na instalação:** Eletricista com equipamento de ensaio adequado
 
 **Preço arranjo:** 80-150€ (diagnóstico + arranjo simples)
 

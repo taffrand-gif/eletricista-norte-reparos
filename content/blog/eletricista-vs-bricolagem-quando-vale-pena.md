@@ -152,7 +152,7 @@ Pode fazer trabalhos elétricos sozinho ou deve chamar eletricista? Este guia co
 
 **Porquê IMPOSSÍVEL:**
 - Só eletricistas com experiência podem emitir
-- Precisa equipamento profissional (megger)
+- Precisa equipamento profissional
 - Precisa conhecimento normas RTIEBT
 - Responsabilidade legal
 
