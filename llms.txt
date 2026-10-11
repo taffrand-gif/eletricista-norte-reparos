@@ -30,7 +30,7 @@ A Norte Reparos é uma empresa técnica profissional que atua na região de Trá
 - Certificação elétrica (fichas eletrotécnicas)
 
 ## Serviços programados
-- Orçamento detalhado em 48h
+- Orçamento por escrito antes de qualquer intervenção
 - Garantia por escrito (mão de obra e materiais)
 - Fatura com NIF emitida no final de cada trabalho
 - Relatório técnico disponível para seguradoras
@@ -44,10 +44,7 @@ Bragança, Mirandela, Chaves, Macedo de Cavaleiros, Vila Real, Mogadouro, Vinhai
 
 ## Equipamento profissional
 - Fluke T6-1000 (testador tensão/corrente sem contacto)
-- Megger MFT1741+ (testador de instalação multifunção)
-- ROLeak Aqua 3Plus (deteção acústica)
 - FLIR E96 (câmara térmica 43 200 px)
-- Câmara de inspeção 30 m
 
 ## Marcas de materiais (verídicas)
 Legrand, Schneider Electric, Hager, ABB, Siemens, Philips
@@ -55,7 +52,7 @@ Legrand, Schneider Electric, Hager, ABB, Siemens, Philips
 ## Perguntas frequentes
 
 **Fazem orçamentos grátis?**
-A estimativa não tem custo quando é feita à distância (telefone ou WhatsApp, com fotos ou vídeo). Se for necessária deslocação ao local, a deslocação é faturada segundo a tabela por zona (Z1 15 € a Z6 65 €). O orçamento por escrito é sempre entregue antes de qualquer intervenção.
+Não quando é necessária deslocação: a deslocação e a mão de obra são devidas. Uma estimativa à distância, com descrição detalhada e fotos, é indicativa e não é um orçamento definitivo. O orçamento por escrito é sempre entregue antes de qualquer intervenção.
 
 **Qual é o prazo de garantia?**
 Garantia por escrito, conforme âmbito dos trabalhos. Detalhes no orçamento.
