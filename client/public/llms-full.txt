@@ -102,7 +102,6 @@ Páginas de referência:
 ## 7. Equipamento profissional (verídico, efetivamente utilizado)
 
 - **Fluke** — equipamento de medição elétrica
-- **Megger MFT1741+** — testador multifunções de instalação.
 - **ROLeak Aqua 3Plus** — deteção acústica de fugas e defeitos.
 - **FLIR E96** — câmara térmica.
 - **Câmara de inspeção 30 m** — observação interior de condutas e espaços confinados.

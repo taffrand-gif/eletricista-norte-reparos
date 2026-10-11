@@ -275,7 +275,6 @@ Instalação com +20 anos sem certificado.
 **2. Isolamento**
 - Mede resistência isolamento cabos
 - Mínimo 1 MΩ (megaohm)
-- Equipamento: Megger
 
 **3. Diferencial**
 - Testa disparo em <30ms

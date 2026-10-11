@@ -148,7 +148,6 @@ A Fichas eletrotécnicas assinadas por técnico profissional é obrigatória por
 
 **Equipamento usado:**
 - Multímetro digital
-- Megger (testador isolamento)
 - Testador diferencial
 - Testador polaridade
 
