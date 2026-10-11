@@ -54,7 +54,7 @@ function WhyDifferent() {
  icon: '❓',
  title: 'Diagnóstico Errado',
  others: 'Adivinha, cobra extra depois',
- us: 'Multímetro profissional Fluke + Diagnóstico',
+ us: 'Equipamento de medição Fluke + Diagnóstico',
  value: 'Economiza €150 (precisão)'},
  {
  icon: '🚫',
