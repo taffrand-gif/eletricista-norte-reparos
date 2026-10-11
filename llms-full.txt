@@ -22,7 +22,6 @@
 |---|---|---|
 | Intenção | Instalação / remodelação / certificação | Urgência 24h |
 | Disponibilidade | Horário de trabalho | 24h/7d |
-| Prazo | Orçamento 48h | Intervenção imediata |
 | Garantia | Por escrito | Por escrito |
 
 Os dois sites partilham o NAP e a empresa-mãe (Norte Reparos) mas visam **intenções distintas** para ocupar 2 posições orgânicas no Google.
@@ -52,7 +51,7 @@ Os dois sites partilham o NAP e a empresa-mãe (Norte Reparos) mas visam **inten
 
 ## 4. Equipamento e marcas
 
-Equipamento profissional idêntico ao site urgência: Fluke T6-1000, Megger MFT1741+, ROLeak Aqua 3Plus, FLIR E96, câmara de inspeção 30 m.
+Equipamento profissional: equipamento de medição Fluke, FLIR E96.
 
 Marcas: Legrand, Schneider Electric, Hager, ABB, Siemens, Philips.
 

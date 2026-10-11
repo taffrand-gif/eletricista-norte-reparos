@@ -11,7 +11,7 @@ PrimaryPhone: +351-932-321-892
 WhatsApp: +351-932-321-892
 Website: https://eletricista-norte-reparos.pt
 Pricing:
-  QuotePolicy: Orçamento por escrito em 48h, sem compromisso
+  QuotePolicy: Orçamento por escrito antes de qualquer intervenção
   Billing: Fatura com NIF no final de cada trabalho
 Services:
   - Instalação elétrica completa
@@ -24,14 +24,11 @@ Services:
   - Certificação elétrica (fichas eletrotécnicas)
 Equipment:
   - Fluke T6-1000 (testador tensão/corrente sem contacto)
-  - Megger MFT1741+ (testador de instalação multifunção)
-  - ROLeak Aqua 3Plus (deteção acústica)
   - FLIR E96 (câmara térmica 43 200 px)
-  - Câmara de inspeção 30 m
 Brands:
   - Legrand, Schneider Electric, Hager
   - ABB, Siemens, Philips
-QuotePolicy: Orçamento detalhado em 48h, sem compromisso
+QuotePolicy: Orçamento por escrito antes de qualquer intervenção
 Billing: Fatura com NIF emitida no final de cada trabalho
 Insurance: Responsabilidade civil profissional coberta
 Certifications: DGEG TRIESP n.º 90062 (Técnico Responsável, Execução em Baixa Tensão, até 41,4 kVA)
