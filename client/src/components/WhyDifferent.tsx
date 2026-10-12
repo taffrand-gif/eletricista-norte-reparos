@@ -24,7 +24,7 @@ function WhyDifferent() {
  icon: '📜',
  title: 'Sem Orçamento por escrito',
  others: 'Instalação sem certificação legal',
- us: 'garantia incluída sempre',
+ us: 'Orçamento por escrito antes de intervir',
  value: 'Economiza €150 (aceite seguradora)'},
  {
  icon: '🔥',
@@ -42,7 +42,7 @@ function WhyDifferent() {
  icon: '🔧',
  title: 'Problema Volta Após 1 Mês',
  others: 'Remendo temporário, volta logo',
- us: 'Garantia 12 meses instalações',
+ us: 'Diagnóstico + orçamento por escrito',
  value: 'Economiza €250 (tranquilidade)'},
  {
  icon: '⏰',
@@ -64,9 +64,9 @@ function WhyDifferent() {
  value: 'Economiza €200 (urgência real)'},
  {
  icon: '📄',
- title: 'Sem Fatura, Sem Garantia',
+ title: 'Sem Fatura, Sem Orçamento',
  others: 'Trabalho por fora, desaparece',
- us: 'Fatura + Orçamento por escrito + Garantia',
+ us: 'Fatura com NIF + Orçamento por escrito',
  value: 'Economiza €200 (segurança legal)'},
  {
  icon: '🔌',
@@ -86,7 +86,7 @@ function WhyDifferent() {
  </h2>
  <p className="text-xl text-gray-600 max-w-3xl mx-auto">
  Já teve estes problemas? Nós resolvemos de forma DIFERENTE.
- Por isso damos garantias reais que outros não dão.
+ Por isso trabalhamos com orçamento por escrito e fatura com NIF.
  </p>
  </div>
  {/* Problems Grid */}
@@ -140,11 +140,10 @@ function WhyDifferent() {
  style={{ borderColor: config.colors.primary }}
  >
  <h3 className="text-2xl font-black mb-4">
- ✅ Garantia 12 Meses + diagnóstico elétrico
+ ✅ Orçamento por escrito + diagnóstico elétrico
  </h3>
  <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
- Se o problema voltar em 12 meses, voltamos GRATUITAMENTE.
- garantia incluída. Conforme legislação portuguesa.
+ Orçamento por escrito antes de qualquer intervenção. Seguro de responsabilidade civil profissional até 50.000 €.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a
@@ -164,7 +163,7 @@ function WhyDifferent() {
  </a>
  </div>
  <p className="text-sm text-gray-500 mt-4">
- Atendimento 24h/7d • Confirmação por telefone • garantia incluída
+ Atendimento 24h/7d • Confirmação por telefone • seguro RC profissional
  </p>
  </div>
  {/* Social Proof */}
