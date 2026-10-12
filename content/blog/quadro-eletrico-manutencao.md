@@ -298,7 +298,7 @@ priority: "HIGH DEMAND"
 | Com Fichas eletrotécnicas assinadas por técnico profissional | Incluído |
 | Urgência 24h | +€100-200 |
 
-> 💡 **Precisa de inspeção ou substituição?** Eletricista com experiência: **[932 321 892](tel:+351932321892)** — Estimativa sem custo, trabalho garantido.
+>Podemos indicar uma estimativa à distância quando a descrição e as fotografias permitem avaliar melhor a situação. O valor final depende do diagnóstico e do tempo efetivamente necessário.
 
 ## 🛡️ Segurança do Quadro Elétrico
 
