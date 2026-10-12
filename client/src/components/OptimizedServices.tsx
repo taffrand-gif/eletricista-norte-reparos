@@ -38,17 +38,17 @@ const electricFeatures: Record<string, string[]> = {
  'Instalação Elétrica Completa': [
  'Materiais certificados (Schneider, Legrand)',
  'Cumprimento normativo RCCTE',
- 'Garantia na instalação'
+ 'Orçamento por escrito antes de intervir'
  ],
  'Arranjo de Avarias Elétricas': [
  'Diagnóstico no local',
  'Arranjo rápida',
- 'Peças originais com garantia'
+ 'Orçamento por escrito antes de intervir'
  ],
  'Quadros Elétricos Modernos': [
  'Quadros modulares com disjuntores diferenciais',
  'Identificação clara dos circuitos',
- 'Garantia incluída'
+ 'Orçamento por escrito antes de intervir'
  ],
  'Iluminação Interior/Exterior': [
  'Projeto luminotécnico',
@@ -76,7 +76,7 @@ const plumbFeatures: Record<string, string[]> = {
  'Arranjo de Fugas de Água': [
  'Deteção precisa de fugas',
  'Arranjo definitiva',
- 'Garantia no serviço'
+ 'Orçamento por escrito antes de intervir'
  ],
  'Instalação Sanitários': [
  'Materiais de qualidade',
@@ -91,7 +91,7 @@ const plumbFeatures: Record<string, string[]> = {
  'Canalização Nova': [
  'Materiais certificados',
  'Projeto personalizado',
- 'Garantia na instalação'
+ 'Orçamento por escrito antes de intervir'
  ],
  'Urgências 24h': [
  'Disponível 24h/7d',
@@ -135,7 +135,7 @@ const OptimizedServices: React.FC = () => {
  {services.map((service, index) => {
  const imageName = serviceImages[service] || 'service-instalacao.jpg';
  const description = serviceDescriptions[service] || 'Serviço profissional de qualidade.';
- const features = serviceFeatures[service] || ['Materiais de qualidade', 'Técnicos com experiência', 'Garantia no serviço'];
+ const features = serviceFeatures[service] || ['Materiais de qualidade', 'Técnicos com experiência', 'Orçamento por escrito antes de intervir'];
  return (
  <div
  key={index}
@@ -201,7 +201,7 @@ const OptimizedServices: React.FC = () => {
  </li>
  <li className="flex items-center gap-3">
  <div className="bg-amber-100 text-amber-600 p-2 rounded-full">📋</div>
- <span className="text-gray-700">Trabalho e garantia completa</span>
+ <span className="text-gray-700">Orçamento por escrito antes de intervir</span>
  </li>
  <li className="flex items-center gap-3">
  <div className="bg-amber-100 text-amber-600 p-2 rounded-full">💰</div>

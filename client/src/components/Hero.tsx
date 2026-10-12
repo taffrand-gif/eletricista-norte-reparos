@@ -86,7 +86,7 @@ function Hero() {
  minHeight: '56px'}}
  aria-label="Contactar via WhatsApp"
  >
- 💬 WhatsApp Grátis
+ 💬 WhatsApp
  </a>
  </div>
  {/* Indicadores de confiança abaixo do CTA */}

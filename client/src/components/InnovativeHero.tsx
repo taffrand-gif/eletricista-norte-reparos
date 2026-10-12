@@ -8,7 +8,7 @@ const InnovativeHero: React.FC = () => {
  const statsData = isPlumber
  ? [
  { icon: '💧', value: '24h/7d', label: 'Disponibilidade' },
- { icon: '🔬', value: 'Ridgid', label: 'Câmara Inspeção' },
+ { icon: '🔬', value: 'Câmara', label: 'Inspeção' },
  { icon: '🛡️', value: 'Profissional', label: 'Service documenté' },
  { icon: '📞', value: 'A confirmar', label: 'Janela de chegada' },
  ]

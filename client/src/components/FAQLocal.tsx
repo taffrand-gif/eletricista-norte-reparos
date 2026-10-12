@@ -13,19 +13,19 @@ function FAQLocal() {
  const localFaqs = [
  {
  question: 'Fazem instalação e reparação elétrica em Mirandela?',
- answer: 'Sim, a Eletricista Profissional faz instalação, remodelação e diagnóstico elétrico em Mirandela e em todo o distrito de Bragança, ao seu domicílio. Orçamento por escrito em 48h e garantia 1 ano.'},
+ answer: 'Sim, a Eletricista Profissional faz instalação, remodelação e diagnóstico elétrico em Mirandela e em todo o distrito de Bragança, ao seu domicílio. Orçamento por escrito antes de qualquer intervenção.'},
  {
  question: 'Quanto custa um eletricista em Bragança?',
- answer: 'Todos os preços sem IVA. Sem compromisso.'},
+ answer: 'Montantes TTC: 70 €/h em dias úteis (09h–18h) e 100 €/h à noite, fins de semana e feriados, mais deslocação de 30 € ou 50 €. Cada hora começada é devida. Orçamento por escrito antes de qualquer intervenção.'},
  {
  question: 'Fazem diagnóstico elétrico na zona de Bragança?',
- answer: 'Sim, fazemos inspeção elétrica para venda de imóveis, arrendamento e instalações novas na zona de Bragança. Prazo: 3-5 dias úteis. Preço: a partir de 150€ (sem IVA).'},
+ answer: 'Sim, fazemos inspeção elétrica para venda de imóveis, arrendamento e instalações novas na zona de Bragança.'},
  {
  question: 'Trabalham em Miranda do Douro e na zona raiana?',
  answer: 'Sim, prestamos serviço de instalação, remodelação e diagnóstico elétrico em Miranda do Douro e em toda a zona raiana: substituição de quadros elétricos, remodelação de instalações e diagnóstico elétrico. Orçamento por escrito em 48h. Ligue 932 321 892.'},
  {
  question: 'Instalam quadros elétricos em Vila Flor e Torre de Moncorvo?',
- answer: 'Sim, fazemos substituição e modernização de quadros elétricos em Vila Flor, Torre de Moncorvo e todas as localidades do distrito de Bragança. Preço: 370-650€ para quadro 12 módulos (sem IVA). Inclui quadro novo, disjuntores diferenciais, instalação completa e garantia.'},
+ answer: 'Sim, fazemos substituição e modernização de quadros elétricos em Vila Flor, Torre de Moncorvo e todas as localidades do distrito de Bragança.'},
  {
  question: 'Qual o eletricista mais perto de Mogadouro?',
  answer: 'A Eletricista Profissional é o eletricista em Mogadouro. Cobrimos Mogadouro e todas as suas freguesias. Serviço ao seu domicílio, com orçamento por escrito em 48h.'},
