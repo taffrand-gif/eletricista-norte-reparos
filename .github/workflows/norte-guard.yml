@@ -1,0 +1,20 @@
+name: norte-guard (avertissement)
+# Garde-fou lecture seule des fichiers servis (client/public). MODE AVERTISSEMENT : ne bloque pas.
+# Pour le rendre bloquant: retirer 'continue-on-error' ET passer --mode block, une fois les résidus connus classés (voir rapport 94).
+on:
+  pull_request:
+    paths: ['client/public/**', 'client/src/**', 'shared/**', 'vercel.json']
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: norte_guard_extra (warn)
+        run: |
+          python3 scripts/guard/norte_guard_extra.py --site ENR --root . --csv guard-enr.csv --max-print 20 --mode warn | tee guard-enr.out
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: norte-guard-enr, path: 'guard-enr.*' }
