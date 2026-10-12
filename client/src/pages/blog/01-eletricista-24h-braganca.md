@@ -1,6 +1,6 @@
 ---
 title: "Electricista 24h em Bragança - Preços + Contacto Urgente"
-description: "Precisa de electricista urgente em Bragança? Serviço 24h/7d, estimativa sem custo e preços transparentes. Ligue já!"
+description: "Podemos indicar uma estimativa à distância quando a descrição e as fotografias permitem avaliar melhor a situação. O valor final depende do diagnóstico e do tempo efetivamente necessário. Ligue já!"
 slug: electricista-24h-braganca
 date: 2026-02-18
 author: 
