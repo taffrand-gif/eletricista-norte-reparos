@@ -8,7 +8,7 @@ const InnovativeHero: React.FC = () => {
  const statsData = isPlumber
  ? [
  { icon: '💧', value: '24h/7d', label: 'Disponibilidade' },
- { icon: '🔬', value: 'Ridgid', label: 'Câmara Inspeção' },
+ { icon: '🔬', value: 'Câmara', label: 'Inspeção' },
  { icon: '🛡️', value: 'Profissional', label: 'Service documenté' },
  { icon: '📞', value: 'A confirmar', label: 'Janela de chegada' },
  ]
@@ -20,7 +20,7 @@ const InnovativeHero: React.FC = () => {
  ];
  const badgeText = isPlumber
  ? 'CANALIZADOR — DISPONÍVEL 24H/7D'
- : 'eletricista com experiência — ORÇAMENTO POR ESCRITO EM 48H';
+ : 'eletricista com experiência — ORÇAMENTO POR ESCRITO ANTES DE INTERVIR';
  const badgeEmoji = isPlumber ? '💧' : '⚡';
  const gradientFrom = isPlumber ? 'from-blue-600' : 'from-amber-500';
  const gradientVia = isPlumber ? 'via-blue-700' : 'via-amber-600';

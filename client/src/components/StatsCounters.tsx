@@ -51,18 +51,11 @@ export default function StatsCounters() {
  const { config } = useSite();
  const isPlumber = config.id === 'norte-reparos';
  const accentColor = isPlumber ? '#0e7490' : '#FF6B35';
- const stats = isPlumber
- ? [
- { value: 500, suffix: '+', label: 'Canalizações Arranjadas', icon: '💧' },
- { value: 10, suffix: '+', label: 'Anos de Experiência', icon: '⭐' },
- { value: 40, label: 'Min Chegada a Bragança', icon: '⏱️' },
- { value: 4.9, suffix: '/5', label: 'Avaliação Clientes', icon: '🌟' },
- ]
- : [
+ const stats = [
  { value: 24, suffix: '/7', label: 'Serviço disponível', icon: '⚡' },
  { value: 70, suffix: '€', label: 'Preço hora (sem surpresas)', icon: '💶' },
  { value: 100, suffix: '%', label: 'Orçamento prévio', icon: '📋' },
- { value: 2, suffix: ' anos', label: 'Garantia nos trabalhos', icon: '🛡️' },
+ { value: 100, suffix: '%', label: 'Fatura com NIF', icon: '🧾' },
  ];
  return (
  <section className="py-16 bg-gradient-to-br from-gray-50 to-gray-100">
@@ -97,9 +90,7 @@ export default function StatsCounters() {
  </div>
  <div className="text-center mt-12">
  <p className="text-gray-600 text-sm max-w-2xl mx-auto">
- {isPlumber
- ? 'Mais de 500 famílias em Trás-os-Montes confiam no nosso trabalho. Fugas resolvidas, entupimentos eliminados, casas de banho renovadas — sempre com garantia e transparência total.'
- : 'Mais de 350 instalações elétricas realizadas em Trás-os-Montes. Quadros modernizados, certificações emitidas, problemas resolvidos — sempre com equipamento profissional Fluke e FLIR.'}
+ Orçamento por escrito antes de qualquer intervenção, faturação horária e equipamento profissional.
  </p>
  </div>
  </div>

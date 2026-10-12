@@ -56,8 +56,8 @@ function TransparenciaTotal({ className = '' }: TransparenciaTotalProps) {
  <li className="flex items-start gap-3">
  <span className="text-green-500 text-xl mt-1">✓</span>
  <div>
- <p className="font-bold text-gray-900">Garantias Por Escrito</p>
- <p className="text-sm text-gray-600">3-6 meses mão de obra documentado</p>
+ <p className="font-bold text-gray-900">Orçamento por escrito</p>
+ <p className="text-sm text-gray-600">Antes de qualquer intervenção</p>
  </div>
  </li>
  </ul>
@@ -93,8 +93,8 @@ function TransparenciaTotal({ className = '' }: TransparenciaTotalProps) {
  <li className="flex items-start gap-3">
  <span className="text-red-500 text-xl mt-1">✗</span>
  <div>
- <p className="font-bold text-gray-900">"Garantia" Verbal</p>
- <p className="text-sm text-gray-600">Que desaparece quando precisa</p>
+ <p className="font-bold text-gray-900">Preço Só Verbal</p>
+ <p className="text-sm text-gray-600">Sem nada por escrito antes da intervenção</p>
  </div>
  </li>
  </ul>

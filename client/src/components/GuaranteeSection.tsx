@@ -15,59 +15,12 @@ interface Guarantee {
 function GuaranteeSection() {
  const { config } = useSite();
  const { trackPhoneClick, trackWhatsAppClick } = useAnalytics();
- // Garanties spécifiques selon le site
- const guarantees: Guarantee[] = config.id === 'norte-reparos'
- ? [
- {
- icon: '🛡️',
- title: 'Garantia 2 Anos',
- description: 'Se o problema voltar em 2 anos, intervenção gratuita. Sem letra pequena.',
- badge: 'Escrita'
- },
- {
- icon: '🔧',
- title: 'Equipamento Profissional',
- description: 'Ridgid K-9102 + Câmara 30m + FLIR — Resolve na primeira vez',
- badge: 'Pro'
- },
- {
- icon: '👨‍🔧',
- title: 'técnico com experiência',
- description: 'experiência em Trás-os-Montes — Sabe o que faz',
- badge: '12+ anos'
- },
- {
- icon: '✅',
- title: 'Material Homologado',
- description: 'Garantia 12 meses — Não voltamos daqui a 2 semanas',
- badge: '12 meses'
- }
- ]
- : [
- {
- icon: '🛡️',
- title: 'Garantia 2 Anos',
- description: 'Se o problema voltar em 2 anos, intervenção gratuita. Sem letra pequena.',
- badge: 'Escrita'
- },
- {
- icon: '🔧',
- title: 'Equipamento Profissional',
- description: 'Fluke + FLIR + Analisador redes — Resolve na primeira vez',
- badge: 'Pro'
- },
- {
- icon: '👨‍🔧',
- title: 'técnico com experiência',
- description: 'experiência em Trás-os-Montes + — Sabe o que faz',
- badge: ''
- },
- {
- icon: '✅',
- title: 'Material Homologado',
- description: 'Schneider/Hager/Legrand — Não voltamos daqui a 2 semanas',
- badge: 'Premium'
- }
+ // Faits confirmés uniquement : RC profissional até 50.000 €, orçamento por escrito, faturação horária (20-BUSINESS-FACTS)
+ const guarantees: Guarantee[] = [
+ { icon: '🧾', title: 'Orçamento por escrito', description: 'Antes de qualquer intervenção, sem surpresas na fatura.', badge: 'Transparência' },
+ { icon: '🔧', title: 'Equipamento profissional', description: 'Equipamento profissional adequado à intervenção.', badge: 'Pro' },
+ { icon: '🛡️', title: 'Seguro de responsabilidade civil', description: 'Seguro de responsabilidade civil profissional até 50.000 €.', badge: 'RC' },
+ { icon: '⏱️', title: 'Faturação horária clara', description: 'Mão de obra por hora e deslocação indicadas antes da intervenção. Cada hora iniciada é devida.', badge: 'Claro' }
  ];
  const handlePhoneClick = () => {
  trackPhoneClick(config.phone);
@@ -82,13 +35,13 @@ function GuaranteeSection() {
  {/* Header */}
  <div className="text-center mb-12">
  <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-100 text-green-800 rounded-full font-bold text-sm mb-4">
- 🛡️ Garantia Escrita — Sem Letra Pequena
+ 🛡️ Seguro e compromissos
  </div>
  <h2 className="text-4xl md:text-5xl font-black mb-6">
- Garantia 2 Anos — Se Voltar, Voltamos Grátis
+ Seguro e compromissos — sem surpresas
  </h2>
  <p className="text-xl text-gray-600 max-w-3xl mx-auto">
- Arranjo definitiva, não temporária. Por isso garantimos 2 anos.
+ Orçamento por escrito e faturação horária clara.
  </p>
  </div>
  {/* Guarantees Grid */}
@@ -120,11 +73,10 @@ function GuaranteeSection() {
  {/* CTA Banner */}
  <div className="bg-white p-8 rounded-xl border-4 border-green-500 text-center">
  <h3 className="text-2xl font-black mb-4">
- Arranjo com Garantia — Ligue Já
+ Peça o seu orçamento — Ligue Já
  </h3>
  <p className="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
- Trabalho garantido 2 anos. Se o problema voltar, voltamos gratuitamente.
- Sem letra pequena, sem desculpas.
+ Orçamento por escrito antes de qualquer intervenção, sem surpresas na fatura.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a
@@ -138,7 +90,7 @@ function GuaranteeSection() {
  Ligar: {config.phone}
  </a>
  <a
- href={`https://wa.me/${config.whatsapp}?text=${encodeURIComponent('Olá! Quero uma arranjo com garantia escrita.')}`}
+ href={`https://wa.me/${config.whatsapp}?text=${encodeURIComponent('Olá! Quero um orçamento por escrito.')}`}
  onClick={handleWhatsAppClick}
  target="_blank"
  rel="noopener noreferrer"
@@ -150,14 +102,7 @@ function GuaranteeSection() {
  </a>
  </div>
  <p className="text-sm text-gray-500 mt-4">
- ✅ Garantia escrita • ✅ Equipamento profissional • ✅ Técnico com experiência
- </p>
- </div>
- {/* Social Proof */}
- <div className="mt-8 text-center">
- <p className="text-gray-600">
- <strong className="text-gray-900">0 reclamações</strong> em 2 anos •{' '}
- <strong className="text-gray-900">trabalhos em Trás-os-Montes</strong> garantidos
+ ✅ Orçamento por escrito • ✅ Equipamento profissional • ✅ Técnico com experiência
  </p>
  </div>
  </div>

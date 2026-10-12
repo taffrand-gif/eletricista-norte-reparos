@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 const trustItems = [
  { icon: '🕐', label: 'Disponível Atendimento 24h/7d' },
  { icon: '💰', label: 'Orçamento por Escrito' },
- { icon: '✅', label: 'Garantia de Serviço' },
+ { icon: '✅', label: 'Fatura com NIF' },
  { icon: '📍', label: 'Toda Trás-os-Montes' },
 ];
 function useCountUp(target: number, duration: number = 2000, start: boolean = false) {
@@ -73,11 +73,7 @@ export default function TrustBanner() {
  {/* Counter */}
  <div className="text-center">
  <p className="text-lg font-bold text-gray-800">
- Mais de{' '}
- <span className="text-3xl" style={{ color: config.colors.primary }}>
- {displayCount}+
- </span>{' '}
- intervenções realizadas
+ Orçamento por escrito antes de qualquer intervenção
  </p>
  </div>
  </div>

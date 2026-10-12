@@ -2,15 +2,7 @@ import React from 'react';
 import { useSite } from '@/contexts/SiteContext';
 export default function PremiumBar() {
  const { config } = useSite();
- const isPlumber = config.id === 'norte-reparos';
- const items = isPlumber
- ? [
- { icon: '🔬', label: 'Câmara Térmica' },
- { icon: '🔧', label: 'Ridgid FlexShaft K9-102' },
- { icon: '🔍', label: 'Endoscópio HD' },
- { icon: '📡', label: 'Geofone Deteção' },
- ]
- : [
+ const items = [
  { icon: '🔬', label: 'Câmara FLIR' },
 { icon: '📊', label: 'Fluke T6-1000' },
  ];

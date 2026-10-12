@@ -23,20 +23,15 @@ export default function Garantias() {
  desc: 'Trabalho elétrico conforme para seguros e condomínios, enviado por email na mesma noite. Sem inventar culpados.',
  pain: 'Nunca mais perca prazos do seguro por falta de documentos.'},
  {
- icon: '🔄',
- title: 'Garantia de Retorno',
- desc: 'Se o problema voltar dentro de 12 meses, voltamos sem cobrar deslocação. Garantia escrita.',
- pain: 'Está farto de pagar caro e ficar com a fuga por resolver?'},
+ icon: '🛡️',
+ title: 'Seguro RC profissional',
+ desc: 'Seguro de responsabilidade civil profissional até 50.000 €.',
+ pain: 'Cobertura por seguro de responsabilidade civil profissional.'},
  {
  icon: '🤝',
  title: 'Sem Pressões, Sem Gritos',
  desc: 'Trabalhamos na sua casa como gostamos que trabalhem na nossa. Explicamos tudo com calma, ponto por ponto.',
  pain: 'Nada de ameaças ou aumentos de preço à porta.'},
- {
- icon: '📞',
- title: 'Amanhã Ainda Atendemos',
- desc: 'Desentupimos hoje e amanhã ainda atendemos o telefone. SMS de seguimento no dia seguinte.',
- pain: 'Chega de canalizadores fantasma que desaparecem após pagamento.'},
  ]
  : [
  {
@@ -50,10 +45,10 @@ export default function Garantias() {
  desc: 'Explicamos o problema e o custo antes de começar. Por escrito no WhatsApp se preferir. Sem surpresas à porta.',
  pain: 'Sem taxas escondidas, sem "surpresas" depois de abrir parede.'},
  {
- icon: '🔄',
- title: 'Garantia de Retorno',
- desc: 'Se a avaria voltar dentro de 12 meses, voltamos sem cobrar deslocação. Garantia escrita.',
- pain: 'Instalações seguras, dentro das normas — sem jeitos que ardem daqui a 6 meses.'},
+ icon: '🛡️',
+ title: 'Seguro RC profissional',
+ desc: 'Seguro de responsabilidade civil profissional até 50.000 €.',
+ pain: 'Cobertura por seguro de responsabilidade civil profissional.'},
  {
  icon: '📄',
  title: 'Diagnóstico elétrico completo',
@@ -64,18 +59,13 @@ export default function Garantias() {
  title: 'Sem Pressões, Sem Gritos',
  desc: 'Trabalhamos na sua casa como gostamos que trabalhem na nossa. Explicamos tudo com calma, ponto por ponto.',
  pain: 'Nada de ameaças ou aumentos de preço à porta.'},
- {
- icon: '📞',
- title: 'Amanhã Ainda Atendemos',
- desc: 'Arranjamos hoje e amanhã ainda atendemos o telefone. SMS de seguimento no dia seguinte.',
- pain: 'Se o nosso trabalho causar dano, assumimos a responsabilidade.'},
  ];
  return (
  <section className="py-16 bg-white">
  <div className="container mx-auto px-4 max-w-6xl">
  <div className="text-center mb-12">
  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
- As Nossas Garantias — Por Escrito
+ Os Nossos Compromissos
  </h2>
  <p className="text-lg text-gray-600 max-w-3xl mx-auto">
  {isPlumber

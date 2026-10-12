@@ -12,7 +12,7 @@ export default function OrcamentoGratuitoBadge() {
  <Shield className="w-8 h-8" />
  <div>
  <span className="text-2xl font-black tracking-wide">ORÇAMENTO por Escrito</span>
- <p className="text-green-100 text-sm">Sem compromisso • Orçamento por escrito em 48h</p>
+ <p className="text-green-100 text-sm">Sem compromisso • Orçamento por escrito antes de qualquer intervenção</p>
  </div>
  </div>
  <a

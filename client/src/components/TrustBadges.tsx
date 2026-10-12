@@ -5,12 +5,10 @@ export default function TrustBadges() {
  const badges = [
  {
  icon: '💰',
- title: 'Preço Fixo Garantido',
- description: 'Sem surpresas na fatura'},
+ title: 'Sem surpresas na fatura', description: 'Orçamento por escrito antes de intervir'},
 {
  icon: '🛡️',
- title: 'Garantia Escrita',
- description: 'Intervenção gratuita'},
+ title: 'Seguro RC profissional', description: 'Até 50.000 €'},
  {
  icon: '📞',
  title: 'Orçamento por Escrito',
@@ -21,8 +19,7 @@ export default function TrustBadges() {
  description: 'Transparência total'},
  {
  icon: '🏆',
- title: 'Trabalho Garantido',
- description: isPlumber ? 'Por escrito' : 'Por escrito'},
+ title: 'Fatura com NIF', description: 'Sempre emitida'},
  {
  icon: '⚡',
  title: 'Resposta mediante contacto',
@@ -33,8 +30,7 @@ export default function TrustBadges() {
  description: 'Satisfeitos'},
  {
  icon: '🔒',
- title: 'Seguro',
- description: 'Totalmente segurado'},
+ title: 'Faturação horária', description: 'Cada hora iniciada é devida'},
  ];
  return (
  <section className="py-12 bg-gray-50">
@@ -72,21 +68,16 @@ export default function TrustBadges() {
  <div className="text-5xl">✓</div>
  <div className="text-left">
  <h3 className="text-xl font-bold mb-1">
- Garantia de Orçamento por escrito
+ Orçamento por escrito
  </h3>
  <p className="text-sm opacity-90">
- Se não ficar satisfeito, voltamos gratuitamente até resolver. Sem custos adicionais.
+ Antes de qualquer intervenção, sem surpresas na fatura.
  </p>
  </div>
  </div>
  </div>
  {/* Trust indicators */}
  <div className="mt-8 text-center space-y-2">
- <div className="flex items-center justify-center gap-2 text-gray-600">
- <span className="text-yellow-500">⭐⭐⭐⭐⭐</span>
- <span className="font-semibold"></span>
- <span className="text-sm">(com feedback verificado)</span>
- </div>
  <p className="text-sm text-gray-500">
  Empresa registada e segurada | NIF: 248 197 770
  </p>
