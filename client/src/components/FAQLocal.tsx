@@ -22,13 +22,13 @@ function FAQLocal() {
  answer: 'Sim, fazemos inspeção elétrica para venda de imóveis, arrendamento e instalações novas na zona de Bragança.'},
  {
  question: 'Trabalham em Miranda do Douro e na zona raiana?',
- answer: 'Sim, prestamos serviço de instalação, remodelação e diagnóstico elétrico em Miranda do Douro e em toda a zona raiana: substituição de quadros elétricos, remodelação de instalações e diagnóstico elétrico. Orçamento por escrito em 48h. Ligue 932 321 892.'},
+ answer: 'Sim, prestamos serviço de instalação, remodelação e diagnóstico elétrico em Miranda do Douro e em toda a zona raiana: substituição de quadros elétricos, remodelação de instalações e diagnóstico elétrico. Orçamento por escrito antes de qualquer intervenção. Ligue 932 321 892.'},
  {
  question: 'Instalam quadros elétricos em Vila Flor e Torre de Moncorvo?',
  answer: 'Sim, fazemos substituição e modernização de quadros elétricos em Vila Flor, Torre de Moncorvo e todas as localidades do distrito de Bragança.'},
  {
  question: 'Qual o eletricista mais perto de Mogadouro?',
- answer: 'A Eletricista Profissional é o eletricista em Mogadouro. Cobrimos Mogadouro e todas as suas freguesias. Serviço ao seu domicílio, com orçamento por escrito em 48h.'},
+ answer: 'A Eletricista Profissional é o eletricista em Mogadouro. Cobrimos Mogadouro e todas as suas freguesias. Serviço ao seu domicílio, com orçamento por escrito antes de qualquer intervenção.'},
  ];
  return (
  <section className="py-16 bg-white">

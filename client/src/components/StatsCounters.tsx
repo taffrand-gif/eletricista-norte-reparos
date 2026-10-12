@@ -55,7 +55,7 @@ export default function StatsCounters() {
  { value: 24, suffix: '/7', label: 'Serviço disponível', icon: '⚡' },
  { value: 70, suffix: '€', label: 'Preço hora (sem surpresas)', icon: '💶' },
  { value: 100, suffix: '%', label: 'Orçamento prévio', icon: '📋' },
- { value: 50000, suffix: ' €', label: 'Seguro RC profissional (até)', icon: '🛡️' },
+ { value: 100, suffix: '%', label: 'Fatura com NIF', icon: '🧾' },
  ];
  return (
  <section className="py-16 bg-gradient-to-br from-gray-50 to-gray-100">

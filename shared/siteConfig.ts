@@ -98,7 +98,7 @@ export const siteConfig: SiteConfig = {
  id: 'eletricista-norte-reparos',
  name: 'Eletricista Profissional',
  title: 'Eletricista para instalação, reparação e remodelação em Trás-os-Montes | Norte Reparos',
- description: 'Eletricista para instalação, reparação e remodelação em Trás-os-Montes. Orçamento por escrito após análise do pedido, garantia 1 ano. Bragança, Vila Real, Mirandela, Chaves.',
+ description: 'Eletricista para instalação, reparação e remodelação em Trás-os-Montes. Orçamento por escrito após análise do pedido. Bragança, Vila Real, Mirandela, Chaves.',
  phone: '932 321 892',
  whatsapp: '351932321892',
  whatsappMessage: 'Olá, preciso de um eletricista em Trás-os-Montes. Podem dar-me um orçamento?',
@@ -114,7 +114,7 @@ export const siteConfig: SiteConfig = {
 
  hero: {
  title: 'Eletricista para instalação e reparação — Trás-os-Montes',
- subtitle: 'Instalação, remodelação e diagnóstico elétrico ao seu domicílio. Orçamento por escrito após análise do pedido, garantia 1 ano.',
+ subtitle: 'Instalação, remodelação e diagnóstico elétrico ao seu domicílio. Orçamento por escrito após análise do pedido.',
  backgroundImage: '/images-optimized/hero/hero-electrician-portugal.jpg',
  ogImage: '/images-optimized/hero/hero-electrician-portugal.jpg'
  },
