@@ -147,7 +147,6 @@ export default function Service() {
  { slug: 'manutencao-preventiva', title: 'Manutenção', icon: '🛠️' },
  { slug: 'urgencias-24h', title: 'Urgências 24h', icon: '🚨' },
  { slug: 'inspecao-cctv', title: 'Inspeção CCTV', icon: '📹' },
- { slug: 'limpeza-fossas', title: 'Limpeza Fossas', icon: '🚛' }
  ]
  .filter(s => s.slug !== slug)
  .slice(0, 3)
