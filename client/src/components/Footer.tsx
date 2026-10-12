@@ -96,25 +96,17 @@ function Footer() {
  {/* Certificações e Garantias */}
  <div className="pt-8 border-t-2 border-white/20">
  <div className="text-center mb-6">
- <h4 className="text-lg font-bold mb-4">🏆 Certificações e Garantias</h4>
+ <h4 className="text-lg font-bold mb-4">🏆 Seguro e compromissos</h4>
  <div className="flex flex-wrap justify-center gap-6 items-center">
  {/* Badge */}
  <div className="bg-white/10 backdrop-blur-sm rounded-xl px-6 py-4 border-2 border-white/30 hover:bg-white/20 transition-all">
  <div className="text-2xl mb-2">⚡</div>
- <div className="text-sm font-bold text-white">Garantia por Escrito</div>
- <div className="text-xs text-gray-100">Em todos os trabalhos</div>
- </div>
- {/* Badge Isenção IVA */}
- <div className="bg-white/10 backdrop-blur-sm rounded-xl px-6 py-4 border-2 border-white/30 hover:bg-white/20 transition-all">
- <div className="text-2xl mb-2">📄</div>
- <div className="text-sm font-bold text-white">Isenção IVA</div>
- <div className="text-xs text-gray-100">Art.º 53.º CIVA</div>
+ <div className="text-sm font-bold text-white">Orçamento por escrito</div> <div className="text-xs text-gray-100">Antes de qualquer intervenção</div>
  </div>
  {/* Badge Garantia */}
  <div className="bg-white/10 backdrop-blur-sm rounded-xl px-6 py-4 border-2 border-white/30 hover:bg-white/20 transition-all">
  <div className="text-2xl mb-2">🛡️</div>
- <div className="text-sm font-bold text-white">Garantia Escrita</div>
- <div className="text-xs text-gray-100">6 meses mão de obra</div>
+ <div className="text-sm font-bold text-white">Seguro RC profissional</div> <div className="text-xs text-gray-100">Até 50.000 €</div>
  </div>
  {/* Badge Preços Transparentes */}
  <div className="bg-white/10 backdrop-blur-sm rounded-xl px-6 py-4 border-2 border-white/30 hover:bg-white/20 transition-all">
@@ -125,8 +117,7 @@ function Footer() {
  {/* Badge Equipamento PRO */}
  <div className="bg-white/10 backdrop-blur-sm rounded-xl px-6 py-4 border-2 border-white/30 hover:bg-white/20 transition-all">
  <div className="text-2xl mb-2">🔧</div>
- <div className="text-sm font-bold text-white">Equipamento PRO</div>
- <div className="text-xs text-gray-100">€10.000+ investido</div>
+ <div className="text-sm font-bold text-white">Equipamento profissional</div> <div className="text-xs text-gray-100">Adequado à intervenção</div>
  </div>
  </div>
  </div>

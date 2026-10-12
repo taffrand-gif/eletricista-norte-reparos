@@ -54,7 +54,7 @@ question: "têm experiência ?",
  },
  {
  question: "Fazem diagnóstico elétrico?",
- answer: "Sim, fazemos inspeção elétrica detalhada para casas, apartamentos e estabelecimentos comerciais. Preço: €150. Entrega em 48h."
+ answer: "Sim, fazemos inspeção elétrica detalhada para casas, apartamentos e estabelecimentos comerciais."
  },
  {
  question: "Aceitam pagamento com cartão?",

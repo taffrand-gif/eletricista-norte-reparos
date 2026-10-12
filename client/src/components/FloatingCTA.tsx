@@ -83,7 +83,7 @@ function FloatingCTA() {
  aria-label="Contactar via WhatsApp"
  >
  <MessageCircle className="w-5 h-5" />
- <span>💬 WhatsApp Grátis</span>
+ <span>💬 WhatsApp</span>
  </a>
  <CalendlyCTA className="w-full" />
  {/* Petit texte avec preuve sociale */}

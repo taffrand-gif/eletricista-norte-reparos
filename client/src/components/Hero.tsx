@@ -19,7 +19,7 @@ function Hero() {
  return config.hero.title;
  }, [config.hero.title]);
  const personalizedSubtitle = useMemo(() => {
- return `Instalação e reparação elétrica ao seu domicílio em Trás-os-Montes. Orçamento por escrito, garantia 1 ano.`;
+ return `Instalação e reparação elétrica ao seu domicílio em Trás-os-Montes. Orçamento por escrito antes de qualquer intervenção.`;
  }, []);
  const whatsappMessage = usePersonalizedWhatsAppMessage(config.whatsappMessage);
  return (
@@ -86,7 +86,7 @@ function Hero() {
  minHeight: '56px'}}
  aria-label="Contactar via WhatsApp"
  >
- 💬 WhatsApp Grátis
+ 💬 WhatsApp
  </a>
  </div>
  {/* Indicadores de confiança abaixo do CTA */}
@@ -96,7 +96,7 @@ function Hero() {
  </div>
  <div className="hidden sm:block text-white/50">•</div>
  <div className="font-semibold">
- ✓ Garantia 1 ano
+ ✓ Seguro RC profissional
  </div>
  <div className="hidden sm:block text-white/50">•</div>
  <div className="font-semibold">
