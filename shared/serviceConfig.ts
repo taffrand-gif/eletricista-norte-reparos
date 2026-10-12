@@ -130,7 +130,7 @@ export const electriciteConfig: ServiceConfig = {
  },
  accentColor: '#FF6B35',
  heroTitle: 'Eletricista para instalação e reparação — Trás-os-Montes',
- heroSubtitle: 'Instalação, remodelação e diagnóstico elétrico ao seu domicílio. Orçamento por escrito em 48h, garantia 1 ano.',
+ heroSubtitle: 'Instalação, remodelação e diagnóstico elétrico ao seu domicílio. Orçamento por escrito em 48h, ',
  heroEmoji: '⚡',
  serviceEmoji: '🔌',
  services: [
