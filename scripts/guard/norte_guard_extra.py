@@ -4,7 +4,7 @@ usage: norte_guard_extra.py --site CNR|CU|ENR|EU --root REPO [--csv out.csv] [--
 Code retour: --mode warn (défaut) toujours 0 · --mode block: 0 aucun BLOCK, 1 au moins un BLOCK · 2 erreur d'usage. N'écrit JAMAIS dans --root (sorties seulement où demandé).
 Périmètre = fichiers réellement servis: base = client/public (CNR/ENR, Vite) ou racine (CU/EU), hors node_modules/dist/_archive*/_audit/_prototype/tools/scripts/*.md ; les .md ne sont pas servis.
 Chaque constat porte: règle, sévérité, fichier, état d'indexation (indexable|noindex|n/a), extrait. Exceptions documentées dans un JSON {"RULE": ["regex de fichier ou d'extrait", ...], "_raison": "..."}.
-Règles: SISTER_PHONE, ROLEAK, PLUMBING_CONTENT (elec), ELEC_CONTENT (plumb), INTERNAL_FILE_EXPOSED (boucle 2), STAFF_SEEKERS, EQUIP_SEPARATION, EQUIP_UNCONFIRMED, WARRANTY_UNCONFIRMED, FREE_ESTIMATE, OLD_FEES, PRICERANGE, EQUIP_PRICE_AS_INTERVENTION, DEAD_INTERNAL_LINK, VERCEL_DEAD_ROUTE,
+Règles: OLD_HOURS (09h–17h, 8h-20h), BRAND_PROOF (warn), SISTER_PHONE, ROLEAK, PLUMBING_CONTENT (elec), ELEC_CONTENT (plumb), INTERNAL_FILE_EXPOSED (boucle 2), STAFF_SEEKERS, EQUIP_SEPARATION, EQUIP_UNCONFIRMED, WARRANTY_UNCONFIRMED, FREE_ESTIMATE, OLD_FEES, PRICERANGE, EQUIP_PRICE_AS_INTERVENTION, DEAD_INTERNAL_LINK, VERCEL_DEAD_ROUTE,
 OUT_OF_COVERAGE_INDEXABLE, DUPLICATION, SEPTIC_SERVICE, BAD_JSONLD. (Z1–Z6, 65 €/h, +50 %, ROLeak, délais, mesma pessoa, sitemap/noindex, numéro du métier frère: norte_surface_scan.py.)"""
 import argparse, csv, hashlib, json, os, re, sys, collections
 from pathlib import Path
@@ -67,6 +67,10 @@ RULES = [
  ("ROLEAK", "BLOCK", re.compile(r"(?i)ro-?leak"), None),
  ("PLUMBING_CONTENT", "BLOCK", PLUMB_RX, "elec"),
  ("ELEC_CONTENT", "BLOCK", ELEC_RX, "plumb"),
+ ("OLD_HOURS", "BLOCK", re.compile(r"\b0?9h\s?[–-]\s?17h|\b17h\s?[–-]\s?0?9h|\b0?8h\s?[–-]\s?20h"), None),
+ ("WARRANTY_UNCONFIRMED", "BLOCK", re.compile(r"(?i)garantia (?:alargada|extensa|incluída|todos os trabalhos|no servi[çc]o)|a mesma garantia|serve para garantia|d[ãa]o garantia\?|trabalho garantido"), None),
+ ("ARRIVAL_PROMISE", "BLOCK", re.compile(r"(?i)\b30\s?[-–]\s?45\s?min|tempo de chegada\s?:\s?\d|chegamos [^.<]{0,30}em aproximadamente \d"), None),
+ ("BRAND_PROOF", "WARN", re.compile(r"(?i)(?:trabalhamos com|utilizamos|usamos|materiais de|marcas de)[^.<]{0,60}(?:Legrand|Schneider|Hager|Siemens|Efapel)"), None),
  ("SEPTIC_SERVICE", "BLOCK", re.compile(r"(?i)(?:limpeza|desentupimento|esvaziamento|bombagem|vidange|curagem|repara[çc][aã]o|instala[çc][aã]o|manuten[çc][aã]o)\s+de\s+fossas?\s+s[ée]pticas?|fossas?\s+s[ée]pticas?\s+(?:urgente|24h)"), None),
 ]
 def html_meta(t):
@@ -125,6 +129,7 @@ def main():
             for m in rx.finditer(src):
                 ex = re.sub(r"\s+", " ", src[max(0, m.start() - 60):m.end() + 60])
                 if rid in ("FREE_ESTIMATE", "WARRANTY_UNCONFIRMED") and NEG.search(ex) and rid == "FREE_ESTIMATE": continue
+                if rid == "ARRIVAL_PROMISE" and re.search(r"(?i)n[ãa]o (?:promete|prometemos|comunicamos|anuncia)|nunca promet|sem promessa", ex): continue  # négation explicite = pas une promesse
                 if rid == "WARRANTY_UNCONFIRMED" and re.search(r"(?i)garantia (?:do )?fabricante|garantia legal", ex): continue
                 add(rid, sev, f, idx, ex); break  # un constat par fichier et règle (compte de fichiers, pas d'occurrences)
         if is_html:

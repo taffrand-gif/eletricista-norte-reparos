@@ -35,7 +35,7 @@ cat > $T/badelec/index.html <<'H'
 H
 cp $T/badelec/index.html $T/badelec/design-preview-x.html
 cat > $T/badplumb/index.html <<'H'
-<html><head><link rel="canonical" href="https://x.pt/"></head><body><p>Ligue 932 321 892. Substituição de quadro elétrico e curto-circuito.</p></body></html>
+<html><head><link rel="canonical" href="https://x.pt/"></head><body><p>Ligue 932 321 892. Substituição de quadro elétrico e curto-circuito. Dias úteis (9h–17h) 70 €/h. Garantia alargada. Tempo de chegada: 30-45 minutos. Trabalhamos com Legrand.</p></body></html>
 H
 cat > $T/fp/index.html <<'H'
 <html><head><link rel="canonical" href="https://x.pt/"></head><body><p>Seguro de responsabilidade civil profissional até 50.000 €. Ficha eletrotécnica a partir de 350 €. Fuga de corrente no diferencial. Duração estimada do trabalho: 2 horas.</p><p><a href="https://canalizador-urgente.pt/">Precisa de canalizador?</a></p></body></html>
@@ -46,10 +46,10 @@ python3 $D/norte_guard_extra.py --site EU --root $T/fp --csv $T/fp.csv --max-pri
 [ $rc_be -eq 1 ] && [ $rc_bp -eq 1 ] || { echo "FAIL: badelec rc=$rc_be badplumb rc=$rc_bp (attendu 1/1)"; fail=1; }
 [ $rc_fp -eq 0 ] || { echo "FAIL: faux positifs (50.000 €, 350 €, lien frère, fuga de corrente, durée estimée) rc=$rc_fp"; cat $T/fp.csv; fail=1; }
 for r in SISTER_PHONE ROLEAK PLUMBING_CONTENT INTERNAL_FILE_EXPOSED; do grep -q "^$r," $T/badelec.csv || { echo "FAIL: règle $r non déclenchée (EU)"; fail=1; }; done
-for r in SISTER_PHONE ELEC_CONTENT; do grep -q "^$r," $T/badplumb.csv || { echo "FAIL: règle $r non déclenchée (CU)"; fail=1; }; done
+for r in SISTER_PHONE ELEC_CONTENT OLD_HOURS WARRANTY_UNCONFIRMED ARRIVAL_PROMISE BRAND_PROOF; do grep -q "^$r," $T/badplumb.csv || { echo "FAIL: règle $r non déclenchée (CU)"; fail=1; }; done
 echo '{"STAFF_SEEKERS": ["index\\.html"], "_raison": "test exception"}' > $T/exc.json
 python3 $D/norte_guard_extra.py --site CU --root $T/bad --csv $T/exc.csv --exceptions $T/exc.json --max-print 0 --mode block > /dev/null
 grep -q "^STAFF_SEEKERS," $T/exc.csv && { echo "FAIL: exception non appliquée"; fail=1; }
 h1=$(find $T/bad $T/good -type f | sort | xargs shasum | shasum)
 [ "$h0" = "$h1" ] && echo "lecture seule: arbres inchangés (hash identique avant/après)" || { echo "FAIL: arbre modifié"; fail=1; }
-[ $fail -eq 0 ] && echo "OK test_norte_guard_extra (témoin positif ×21 règles (+ faux positifs documentés), négatif 0 BLOCK, rc 1/0, mode warn rc 0, priceRange officielle, exceptions)" || exit 1
+[ $fail -eq 0 ] && echo "OK test_norte_guard_extra (témoin positif ×25 règles (+ faux positifs documentés), négatif 0 BLOCK, rc 1/0, mode warn rc 0, priceRange officielle, exceptions)" || exit 1
