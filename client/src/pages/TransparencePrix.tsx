@@ -32,7 +32,7 @@ export default function TransparencePrix() {
  "Diagnóstico completo com multímetro",
  "Resolução de avarias elétricas",
  "Arranjo de curto-circuitos",
- "Garantia 12 meses"
+ "Fatura com NIF"
  ]
  },
  {
@@ -43,7 +43,7 @@ export default function TransparencePrix() {
  "Quadro 4-6 circuitos",
  "Disjuntores de qualidade",
  "Instalação completa",
- "garantia 12 meses incluída"
+ "Fatura com NIF"
  ]
  },
  {
@@ -54,7 +54,7 @@ export default function TransparencePrix() {
  "Quadro 8-12 circuitos",
  "Disjuntores diferencial + magnetotérmicos",
  "Instalação e ligação",
- "garantia 12 meses"
+ "Fatura com NIF"
  ]
  },
  {
@@ -71,9 +71,9 @@ export default function TransparencePrix() {
  {
  title: "Intervenção Urgente",
  price: "30 € + 70 €/hora (dia); 50 € + 100 €/hora (noite, fim de semana e feriado)",
- duration: "Imediato",
+ duration: "Conforme disponibilidade",
  includes: [
- "Chegada Atendimento mediante confirmação",
+ "Disponibilidade confirmada por telefone",
  "Disponível Atendimento 24h/7d",
  "Fins de semana e feriados",
  "Resolução no local"
@@ -84,44 +84,34 @@ export default function TransparencePrix() {
  const tauxHoraire = {
  base: "70€/hora",
  majoracao: "Noite, fim de semana e feriado: 100 €/hora + deslocação 50 €",
+ weekend: "100 €/hora",
+ urgent: "100 €/hora",
  deplacement: "30 € (dia) / 50 € (noite, fim de semana e feriado)"
  };
  // FAQ Prix
  const faqPrix = [
  {
- question: "Porque os vossos preços são 15-20% mais elevados que a concorrência?",
- answer: "Os nossos preços refletem a qualidade superior do serviço: eletricistas com vasta experiência em Trás-os-Montes, materiais de marcas profissionais reconhecidas, garantia sobre os trabalhos realizados, chegada garantida Atendimento mediante confirmação, e trabalho conforme legislação portuguesa. Não fazemos trabalhos 'baratos' que falham em 6 meses. Investimos em formação contínua e equipamento profissional. O barato sai caro em eletricidade - um trabalho mal feito pode causar incêndios."
+ question: "Como é calculado o preço?",
+ answer: "Mão de obra à hora e deslocação, segundo a grelha publicada nesta página (valores TTC): das 09h00 às 18h00, 70 €/hora e 30 € de deslocação; à noite, aos fins de semana e feriados, 100 €/hora e 50 € de deslocação. Cada hora iniciada é devida. O trabalho é executado conforme a legislação portuguesa e com fatura."
  },
  {
- question: "O preço final pode ser diferente do orçamento?",
- answer: "Não. O preço que anunciamos ao telefone é o preço final. Se durante a intervenção descobrirmos problemas adicionais, paramos e explicamos o que encontrámos, quanto custará resolver, e só continuamos com a sua autorização. Zero surpresas na fatura. Garantido."
- },
- {
- question: "Posso pagar em prestações?",
- answer: "Para intervenções acima de 200€, aceitamos pagamento em 2x sem juros (50% no início, 50% no final). Para projetos acima de 500€, podemos negociar planos de pagamento personalizados. Aceitamos multibanco, MB WAY, transferência e dinheiro."
+ question: "O preço final pode ser diferente da estimativa?",
+ answer: "Pode. O valor final depende do tempo de trabalho efetivo e do material necessário. Se durante a intervenção surgirem problemas adicionais, paramos, explicamos o que encontrámos e só continuamos com a sua autorização."
  },
  {
  question: "A deslocação está incluída no preço?",
- answer: "Não. Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. É cobrado uma única vez por intervenção, mesmo que demore vários dias."
- },
- {
- question: "Oferecem desconto para clientes regulares?",
- answer: "Sim. Clientes que nos chamam 3+ vezes por ano recebem 10% de desconto em todas as intervenções seguintes. Condomínios e empresas têm condições especiais. Contacte-nos para saber mais."
- },
- {
- question: "O que acontece se não ficar satisfeito?",
- answer: "% satisfeito. Se não ficar completamente satisfeito com o trabalho, voltamos gratuitamente para corrigir. Se mesmo assim não resolver, devolvemos o valor pago. Sem perguntas, sem letra pequena. Em 20 anos, isto aconteceu 2 vezes."
+ answer: "Não. Das 09h00 às 18h00: mão de obra 70 €/hora e deslocação 30 €. Noite (18h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. É cobrado uma única vez por intervenção, mesmo que demore vários dias."
  },
  {
  question: "Porque devo escolher-vos em vez de um eletricista mais barato?",
- answer: "Porque valorizamos a sua segurança e paz de espírito. Um eletricista barato pode: usar materiais de baixa qualidade que falham rapidamente, não ter seguro (se causar danos, o problema é seu), não ter qualificação adequada para o trabalho (ilegal e perigoso), desaparecer quando há problemas. Nós somos uma empresa com 20 anos de experiência, com satisfeitos, seguro de responsabilidade civil, e garantia real. O barato sai caro."
+ answer: "Porque um trabalho elétrico mal feito pode causar danos graves. Trabalhamos conforme a legislação portuguesa, com fatura e com seguro de responsabilidade civil profissional até 50.000 €."
  }
  ];
  return (
  <>
  <SEOHead
  title={`Transparência de Preços - Um eletricista profissional de Trás-os-Montes que Publica os Seus Preços | ${config.name}`}
- description="Somos Um eletricista profissional em Trás-os-Montes com preços 100% transparentes publicados online. Veja todos os nossos preços, sem surpresas, sem letra pequena. serviços elétricos com mão de obra e deslocação segundo a grelha horária oficial. Garantia satisfeito ."
+ description="Somos Um eletricista profissional em Trás-os-Montes com preços 100% transparentes publicados online. Veja todos os nossos preços, sem surpresas, sem letra pequena. serviços elétricos com mão de obra e deslocação segundo a grelha horária oficial. "
  />
  <Header />
  <main>
@@ -134,12 +124,12 @@ export default function TransparencePrix() {
  <div className="container relative z-10">
  <div className="max-w-4xl mx-auto text-center">
  <div className="inline-block mb-6 px-6 py-2 bg-[var(--site-primary)] text-white font-bold rounded-full text-sm">
- 🏆 TRANSPARÊNCIA TOTAL
+ TRANSPARÊNCIA DE PREÇOS
  </div>
  <h1 className="text-5xl md:text-6xl font-black mb-6 leading-tight">
- O <span className="text-[var(--site-primary)]">ÚNICO</span> Eletricista de<br />
- Trás-os-Montes que<br />
- Publica os Seus Preços
+ Eletricista em<br />
+ Trás-os-Montes com<br />
+ <span className="text-[var(--site-primary)]">Preços Publicados</span>
  </h1>
  <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
  Enquanto a concorrência esconde os preços e dá "surpresas" na fatura,<br />
@@ -148,15 +138,15 @@ export default function TransparencePrix() {
  <div className="flex flex-wrap justify-center gap-4 mb-12">
  <div className="flex items-center gap-2 bg-white/10 px-6 py-3 rounded-lg backdrop-blur-sm">
  <Check className="w-5 h-5 text-green-400" />
- <span className="font-semibold">Preços Fixos</span>
+ <span className="font-semibold">Preços Publicados</span>
  </div>
  <div className="flex items-center gap-2 bg-white/10 px-6 py-3 rounded-lg backdrop-blur-sm">
  <Check className="w-5 h-5 text-green-400" />
- <span className="font-semibold">Zero Surpresas</span>
+ <span className="font-semibold">Orçamento por Escrito</span>
  </div>
  <div className="flex items-center gap-2 bg-white/10 px-6 py-3 rounded-lg backdrop-blur-sm">
  <Check className="w-5 h-5 text-green-400" />
- <span className="font-semibold">Garantia Escrita</span>
+ <span className="font-semibold">Fatura com NIF</span>
  </div>
  </div>
  <a
@@ -177,7 +167,7 @@ export default function TransparencePrix() {
  Todos os Nossos <span className="text-[var(--site-primary)]">Preços</span>
  </h2>
  <p className="text-xl text-gray-600 max-w-3xl mx-auto">
- Valores sem IVA (Art. 53º CIVA). O que vê é o que paga. Sempre.
+ Valores TTC (IVA incluído). Mão de obra à hora e deslocação, segundo a grelha oficial.
  </p>
  </div>
  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
@@ -227,7 +217,7 @@ export default function TransparencePrix() {
  </div>
  </div>
  <p className="text-sm text-gray-600">
- Para trabalhos que não se enquadram nos forfaits acima. Mínimo 1 hora.
+ Para trabalhos que não se enquadram nos exemplos acima. Cada hora iniciada é devida.
  </p>
  </div>
  <div className="bg-white p-8 rounded-xl border-4 border-gray-200">
@@ -239,7 +229,7 @@ export default function TransparencePrix() {
  </div>
  </div>
  <p className="text-sm text-gray-600">
- À noite (17h–9h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €. Mínimo 30 minutos.
+ À noite (18h–9h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €. Cada hora iniciada é devida.
  </p>
  </div>
  <div className="bg-white p-8 rounded-xl border-4 border-gray-200">
@@ -251,7 +241,7 @@ export default function TransparencePrix() {
  </div>
  </div>
  <p className="text-sm text-gray-600">
- Noite, fim de semana e feriado: 100 €/hora + deslocação 50 € Fração mínima 1h.
+ Noite, fim de semana e feriado: 100 €/hora + deslocação 50 €. Cada hora iniciada é devida.
  </p>
  </div>
  <div className="bg-white p-8 rounded-xl border-4 border-gray-200">
@@ -276,11 +266,11 @@ export default function TransparencePrix() {
  <div className="max-w-4xl mx-auto">
  <div className="text-center mb-16">
  <h2 className="text-4xl md:text-5xl font-black mb-4">
- Porque os Nossos Preços São<br />
- <span className="text-[var(--site-primary)]">15-20% Mais Elevados?</span>
+ O Que Está<br />
+ <span className="text-[var(--site-primary)]">Por Trás do Preço</span>
  </h2>
  <p className="text-xl text-gray-600">
- Transparência total: eis onde vai o seu dinheiro
+ Mão de obra, deslocação e fatura, sem texto escondido
  </p>
  </div>
  <div className="grid md:grid-cols-2 gap-8">
@@ -288,32 +278,31 @@ export default function TransparencePrix() {
  <Award className="w-12 h-12 text-blue-600 mb-4" />
  <h3 className="text-xl font-bold mb-3 text-gray-900">eletricistas com experiência</h3>
  <p className="text-gray-700 leading-relaxed">
- Todos os nossos técnicos têm formação adequada e experiência em Trás-os-Montes.
- Formação contínua obrigatória. Não contratamos "ajudantes" sem qualificação.
+ Trabalho executado por técnico qualificado, conforme a legislação portuguesa
+ e as normas aplicáveis.
  </p>
  </div>
  <div className="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-xl border-2 border-green-200">
  <Shield className="w-12 h-12 text-green-600 mb-4" />
- <h3 className="text-xl font-bold mb-3 text-gray-900">Materiais Premium</h3>
+ <h3 className="text-xl font-bold mb-3 text-gray-900">Materiais adequados</h3>
  <p className="text-gray-700 leading-relaxed">
- Usamos apenas marcas de topo: Legrand, Schneider Electric, ABB.
- Materiais baratos falham em 6 meses. Os nossos duram 10+ anos.
+ Materiais adequados a cada instalação, conforme as normas aplicáveis.
  </p>
  </div>
  <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-xl border-2 border-purple-200">
  <TrendingUp className="w-12 h-12 text-purple-600 mb-4" />
- <h3 className="text-xl font-bold mb-3 text-gray-900">Garantia Alargada</h3>
+ <h3 className="text-xl font-bold mb-3 text-gray-900">Estimativa clara</h3>
  <p className="text-gray-700 leading-relaxed">
- 12 meses em instalações, 6 meses em arranjos. A concorrência dá 3 meses (quando dá).
- Voltamos gratuitamente se houver problemas.
+ Estimativa indicativa à distância, com descrição e fotos suficientes.
+ Orçamento por escrito antes das intervenções planeadas.
  </p>
  </div>
  <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-8 rounded-xl border-2 border-orange-200">
  <Users className="w-12 h-12 text-orange-600 mb-4" />
  <h3 className="text-xl font-bold mb-3 text-gray-900">Seguro & Legalidade</h3>
  <p className="text-gray-700 leading-relaxed">
- A nossa equipa opera com <strong>seguro de Acidentes de Trabalho</strong> e <strong>seguro de Responsabilidade Civil Profissional</strong>.
- Faturas legais. Muitos "baratos" trabalham ilegalmente.
+ Seguro de responsabilidade civil profissional até 50.000 €.
+ Fatura legal em todas as intervenções.
  </p>
  </div>
  </div>
@@ -323,42 +312,37 @@ export default function TransparencePrix() {
  </p>
  <p className="text-gray-300 text-lg leading-relaxed max-w-2xl mx-auto">
  Um trabalho elétrico mal feito pode causar incêndios, eletrocussões, e danos em equipamentos.
- Poupar 20€ hoje pode custar-lhe milhares amanhã. Nós garantimos segurança e qualidade.
+ Poupar 20€ hoje pode custar-lhe milhares amanhã. Trabalhamos com segurança e conforme as normas.
  </p>
  </div>
  </div>
  </div>
  </section>
- {/* Garanties */}
+ {/* Seguro e fatura */}
  <section className="py-20 bg-gradient-to-br from-[var(--site-primary)] to-[var(--site-primary-dark)] text-white">
  <div className="container">
  <div className="max-w-4xl mx-auto text-center">
  <Shield className="w-16 h-16 mx-auto mb-6" />
  <h2 className="text-4xl md:text-5xl font-black mb-6">
- % Satisfeito<br />
+ Seguro e Fatura<br />
  </h2>
  <p className="text-xl text-white/90 mb-12 leading-relaxed">
- Se não ficar completamente satisfeito com o nosso trabalho, voltamos gratuitamente para corrigir.
- Se mesmo assim não resolver, devolvemos o valor pago. Sem perguntas, sem letra pequena.
+ Fatura legal em todas as intervenções, com NIF. Seguro de responsabilidade civil profissional até 50.000 €.
  </p>
  <div className="grid md:grid-cols-3 gap-6 mb-12">
  <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
- <div className="text-3xl font-black mb-2">12 meses</div>
- <div className="text-white/80">Garantia Instalações</div>
+ <div className="text-3xl font-black mb-2">70 €/hora</div>
+ <div className="text-white/80">09h00–18h00 + 30 € de deslocação</div>
  </div>
  <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
- <div className="text-3xl font-black mb-2">6 meses</div>
- <div className="text-white/80">Garantia Arranjos</div>
+ <div className="text-3xl font-black mb-2">100 €/hora</div>
+ <div className="text-white/80">Noite, fim de semana, feriado + 50 € de deslocação</div>
  </div>
  <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
- <div className="text-3xl font-black mb-2">AT + RC</div>
- <div className="text-white/80">Seguros Profissionais</div>
+ <div className="text-3xl font-black mb-2">TTC</div>
+ <div className="text-white/80">IVA incluído</div>
  </div>
  </div>
- <p className="text-sm text-white/70 italic">
- Em 20 anos de atividade, apenas 2 clientes pediram reembolso.
- A nossa taxa de satisfação é de 99.6%.
- </p>
  </div>
  </div>
  </section>
@@ -399,12 +383,12 @@ export default function TransparencePrix() {
  <div className="container">
  <div className="max-w-3xl mx-auto text-center">
  <h2 className="text-4xl md:text-5xl font-black mb-6">
- Pronto para um Orçamento<br />
- <span className="text-[var(--site-primary)]">100% Transparente?</span>
+ Pronto para pedir<br />
+ <span className="text-[var(--site-primary)]">uma estimativa?</span>
  </h2>
  <p className="text-xl text-gray-300 mb-8 leading-relaxed">
  Ligue agora. Diga-nos onde está e o que precisa.
- Damos-lhe o preço exato ao telefone. Sem surpresas na fatura.
+ Pode pedir uma estimativa indicativa à distância, com descrição e fotos do trabalho.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a
