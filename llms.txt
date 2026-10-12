@@ -44,9 +44,7 @@ Bragança, Mirandela, Chaves, Macedo de Cavaleiros, Vila Real, Mogadouro, Vinhai
 
 ## Equipamento profissional
 - Fluke
-- ROLeak Aqua 3Plus (deteção acústica)
 - FLIR E96 (câmara térmica)
-- Câmara de inspeção 30 m
 
 ## Marcas de materiais (verídicas)
 Legrand, Schneider Electric, Hager, ABB, Siemens, Philips
