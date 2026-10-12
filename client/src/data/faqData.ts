@@ -7,7 +7,7 @@ export interface FAQItem {
 export const electricFaqs: FAQItem[] = [
  {
  question: "Quanto custa um eletricista em Trás-os-Montes?",
- answer: "Os preços variam conforme o serviço: diagnóstico 80-120€, instalação de tomada nova 138-182€, substituição tomada 66-90€, arranjo curto-circuito 150-210€, quadro elétrico 12 módulos 370-650€. Oferecemos preço fixo confirmado por telefone. Contacte-nos para orçamento sem compromisso."
+ answer: "Mão de obra: 70 €/hora das 09h às 18h; 100 €/hora à noite, ao fim de semana e em feriados. Deslocação: 30 € ou 50 € conforme o horário. Valores TTC; qualquer hora iniciada é devida. Com descrição e fotos suficientes, damos uma estimativa indicativa à distância; o valor final depende do que se encontra no local."
  },
  {
  question: "Como funciona o orçamento por escrito?",
@@ -27,7 +27,7 @@ export const electricFaqs: FAQItem[] = [
  },
  {
  question: "Fazem diagnóstico elétrico ?",
- answer: "De momento não emitimos certificados oficiais. Fazemos o trabalho elétrico da instalação e identificamos o que precisa de ser corrigido."
+ answer: "Identificamos o que precisa de ser corrigido na instalação. Ficha eletrotécnica e Termos de responsabilidade: a partir de 350 € TTC, sob orçamento conforme o caso."
  },
  {
  question: "Instalam painéis solares na região?",
@@ -39,19 +39,11 @@ export const electricFaqs: FAQItem[] = [
  },
  {
  question: "Qual é o raio de ação máximo?",
- answer: "Atendemos num raio de cerca de 130 km a partir de Macedo de Cavaleiros. A deslocação tem preço único: 30 € em dias úteis (9h–17h), 50 € à noite, fins de semana e feriados. Cobrimos praticamente todo o Nordeste Transmontano."
+ answer: "Atendemos num raio de cerca de 130 km por estrada a partir de Macedo de Cavaleiros. A deslocação custa 30 € das 09h às 18h e 50 € à noite, ao fim de semana e em feriados (TTC; mínimo 30 € em qualquer deslocação)."
  },
  {
  question: "Quanto tempo demora uma instalação elétrica nova?",
- answer: "Uma instalação completa numa casa média (T3) leva 3-5 dias. Instalação de quadro elétrico: 1 dia. Arranjo de avaria simples: 1-2 horas. Projetos complexos (automação) podem levar 1-2 semanas."
- },
- {
- question: "Dão garantia no trabalho realizado?",
- answer: "Sim, damos garantia de 24 meses em todos os trabalhos realizados. A garantia cobre mão de obra e materiais fornecidos por nós. Em caso de problema relacionado, voltamos gratuitamente para resolver."
- },
- {
- question: "Quais métodos de pagamento aceitam?",
- answer: "Aceitamos dinheiro, multibanco, transferência bancária, MB WAY e cheque. Para serviços superiores a 500€, podemos acordar pagamento faseado. Emitimos fatura-recibo com IVA à taxa legal."
+ answer: "A duração depende do âmbito e do local. Indicamos uma estimativa depois de ver a descrição ou as fotos do trabalho."
  },
  {
  question: "Quando devo trocar o quadro elétrico antigo?",
@@ -75,7 +67,7 @@ export const electricFaqs: FAQItem[] = [
  },
  {
  question: "Fazem serviços para empresas e indústrias?",
- answer: "Sim, atendemos particulares, empresas, comércios, restaurantes, armazéns e pequenas indústrias. Para empresas, oferecemos contratos de manutenção preventiva com inspeções periódicas e desconto em intervenções."
+ answer: "Sim, atendemos particulares, empresas, comércios, restaurantes, armazéns e pequenas indústrias."
  },
  {
  question: "Como posso poupar energia elétrica?",
