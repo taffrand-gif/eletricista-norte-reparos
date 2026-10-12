@@ -317,6 +317,6 @@ Preço muito abaixo do mercado, sem fatura, pressão para decidir rápido, sem r
 - 📍 **Sede:** Trás-os-Montes
 
 **Preços tabelados por zona — sem surpresas.**
-**estimativa sem custo por telefone — sem compromisso.**
+**estimativa à distância com descrição e fotografias — valor final depende do diagnóstico.**
 
 [Pedir orçamento agora](tel:+351928484451)

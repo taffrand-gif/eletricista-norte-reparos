@@ -382,7 +382,7 @@ Precisa de tomada no jardim, garagem ou terraço? Este guia completo explica qua
 
 **Ligue agora: 932 321 892**
 
-✅ Estimativa sem custo por telefone
+✅ Estimativa à distância (descrição e fotografias)
 ✅ Material certificado (Legrand, Schneider)
 ✅ Instalação conforme normas RTIEBT
 ✅ Garantia 5 anos

@@ -380,7 +380,7 @@ Luz a piscar pode ser desde um problema simples (lâmpada solta - €0) até gra
 ### 📞 Precisa de Ajuda Profissional?
 
 **** - eletricista com experiência em Trás-os-Montes 
-✅ Diagnóstico grátis por telefone 
+✅ Estimativa à distância (descrição e fotografias) 
 ✅ Emergências 24h/7 dias 
 ✅ Fichas eletrotécnicas assinadas por técnico profissional 
 ✅ Orçamento sem compromisso 

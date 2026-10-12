@@ -34,7 +34,7 @@ function PriceTransparency() {
  icon: '✅',
  items: [
  'Preço fixo ANTES de sair',
- 'Estimativa sem custo por telefone, por escrito',
+ 'Estimativa à distância, indicativa (descrição e fotografias)',
  'Garantia do serviço escrita',
  'Sem surpresas',
  'Preço combinado por escrito'
