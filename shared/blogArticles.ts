@@ -191,7 +191,7 @@ Se a sua casa tem mais de 25 anos e nunca foi renovada, pode ter problemas.
 
 A segurança elétrica não é algo para ignorar. Se notar qualquer um destes sinais, não hesite em contactar um eletricista profissional. É melhor prevenir do que remediar, especialmente quando se trata de eletricidade.
 
-A **Eletricista Profissional** está disponível Atendimento 24h/7d para emergências elétricas em Bragança e arredores. Técnicos com experiência, intervenção rápida e trabalho garantido.
+A **Eletricista Profissional** está disponível Atendimento 24h/7d para emergências elétricas em Bragança e arredores. Técnicos com experiência, intervenção rápida.
 
 **Ligue agora: 932 321 892**
 `

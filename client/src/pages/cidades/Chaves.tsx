@@ -30,7 +30,7 @@ export default function Chaves() {
  },
  ];
  useEffect(() => {
- document.title = "⚡ Eletricista Chaves — Orçamento por Escrito | Garantia Escrita";
+ document.title = "⚡ Eletricista Chaves — Orçamento por Escrito | Norte Reparos";
 
  // Optimized meta description
  let metaDescription = document.querySelector('meta[name="description"]');

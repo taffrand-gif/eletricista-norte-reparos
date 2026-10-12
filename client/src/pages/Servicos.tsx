@@ -31,7 +31,6 @@ export default function Servicos() {
  'Instalação de tomadas e interruptores',
  'Proteção com disjuntores diferenciais',
  'Cumprimento das normas de segurança',
- 'Garantia no material e mão de obra'
  ],
  image: '/images-optimized/services/service-quadro-eletrico.jpg',
  priceRange: 'A partir de €200'
@@ -92,7 +91,7 @@ export default function Servicos() {
  </h1>
  <p className="text-xl mb-8 max-w-3xl">
  Serviços elétricos completos para residências, comércios e indústrias.
- Profissionais com experiência, materiais de qualidade e garantia no serviço.
+ Profissionais com experiência, materiais de qualidade.
  </p>
  <div className="flex flex-col sm:flex-row gap-4">
  <a
@@ -186,8 +185,8 @@ export default function Servicos() {
  answer: "Sim. Para venda ou arrendamento de imóveis em Portugal, a instalação elétrica exige diagnóstico e reparação. A periodicidade de re-inspeção e a validade aplicável seguem a regulamentação em vigor — consulte o técnico responsável pelo seu caso para confirmar prazos e requisitos."
  },
  {
- question: "Oferecem garantia nos serviços?",
- answer: "Sim, oferecemos garantia escrita em todos os serviços de mão de obra e garantia do fabricante nos materiais fornecidos por nós."
+ question: "Como é cobrado o serviço?",
+ answer: "Mão de obra a 70 €/h (09h–18h) ou 100 €/h (noite, fins de semana e feriados), mais deslocação de 30 € ou 50 € quando há deslocação. Cada hora iniciada é devida. Orçamento por escrito antes da intervenção."
  },
  {
  question: "Trabalham com urgências Atendimento 24h/7d?",

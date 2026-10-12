@@ -173,7 +173,7 @@ function CalculadorPreco() {
  </div>
  </div>
  <p className="text-xs text-gray-500 mb-6">
- * Estimativa para {city}. Preço exato comunicado ao telefone antes de sair. Sem surpresas garantido. Dias úteis 9h–17h: 70 €/h + deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/h + deslocação 50 €. Cada hora começada é devida.
+ * Estimativa para {city}. Preço exato comunicado ao telefone antes de sair. Sem surpresas. Dias úteis 9h–17h: 70 €/h + deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/h + deslocação 50 €. Cada hora começada é devida.
  </p>
  <a
  href={`https://wa.me/${whatsapp}?text=${waMsg}`}

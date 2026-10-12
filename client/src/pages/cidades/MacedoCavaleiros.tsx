@@ -14,7 +14,7 @@ import { getCidadesProximas } from '@/data/cidadesProximas';
 export default function MacedoCavaleiros() {
  const { config } = useSite();
  useEffect(() => {
- document.title = "⚡ Eletricista Macedo Cavaleiros — Orçamento por Escrito | Garantia Escrita";
+ document.title = "⚡ Eletricista Macedo Cavaleiros — Orçamento por Escrito | Norte Reparos";
 
  let metaDescription = document.querySelector('meta[name="description"]');
  if (!metaDescription) {
@@ -126,7 +126,7 @@ export default function MacedoCavaleiros() {
  Eletricista em Macedo de Cavaleiros
  </h1>
  <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
- A nossa base é aqui. Chegamos Resposta mediante contacto garantida. Serviço 24h para urgências elétricas.
+ A nossa base é aqui. O atendimento é confirmado por telefone. Serviço 24h para urgências elétricas.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a

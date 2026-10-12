@@ -20,7 +20,7 @@ export default function InstalacaoEletrica() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Instalação elétrica completa em Trás-os-Montes: obra nova, remodelação, diagnóstico. Eletricista profissional, materiais de qualidade, garantia no serviço. Sem compromisso.');
+ metaDescription.setAttribute('content', 'Instalação elétrica completa em Trás-os-Montes: obra nova, remodelação, diagnóstico. Eletricista profissional, materiais de qualidade. Sem compromisso.');
  }, [config]);
  // Schema.org Service JSON-LD
  const serviceSchema = {
@@ -151,7 +151,7 @@ export default function InstalacaoEletrica() {
  </li>
  <li className="flex items-center gap-3">
  <span className="text-amber-500 text-xl">🔌</span>
- <span><strong>Tomadas e interruptores:</strong> Marcas de qualidade (Schneider, Hager)</span>
+ <span><strong>Tomadas e interruptores:</strong> Material de qualidade</span>
  </li>
  <li className="flex items-center gap-3">
  <span className="text-amber-500 text-xl">💡</span>
@@ -191,7 +191,6 @@ export default function InstalacaoEletrica() {
   </li>
   <li className="flex items-center gap-3">
   <span className="text-green-500">✓</span>
-  <span><strong>Garantia:</strong> Trabalho profissional com garantia extensa</span>
   </li>
   </ul>
 
@@ -212,7 +211,7 @@ export default function InstalacaoEletrica() {
   Para <strong>instalações elétricas comerciais e industriais</strong> (lojas, restaurantes, escritórios, pequenos armazéns até 41,4 kVA), o foco muda: trifásico quando a potência o exige, quadros de distribuição sectoriais, iluminação técnica (spots LED reguláveis, sinalética de emergência), tomadas específicas para equipamentos profissionais e proteção diferenciada por circuito. A nossa equipa dimensiona o projeto consoante o caudal de utilização real, não apenas pela área — é o que evita disparos de disjuntor em hora de ponta.
   </p>
   <p className="text-lg text-gray-700 mt-4">
-  Trabalhamos com as marcas de referência do setor (Schneider, Hager, ABB, Siemens, Legrand, Philips) e respeitamos as normas de instalações elétricas de serviço particular em vigor. Cada obra entrega <strong>Ficha Eletrotécnica + Termo de Responsabilidade</strong> assinados pelo nosso Técnico Responsável DGEG — documentos válidos para a seguradora multi-risco, para o licenciamento camarário e para a vistoria do comercializador.
+  Respeitamos as normas de instalações elétricas de serviço particular em vigor. Cada obra entrega <strong>Ficha Eletrotécnica + Termo de Responsabilidade</strong> assinados pelo nosso Técnico Responsável DGEG — documentos válidos para a seguradora multi-risco, para o licenciamento camarário e para a vistoria do comercializador.
   </p>
 
   <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
@@ -232,7 +231,7 @@ export default function InstalacaoEletrica() {
   O <strong>quadro elétrico</strong> é o coração da instalação: concentra disjuntores diferenciais (proteção de pessoas), magnetotérmicos (proteção de cabos), barramento de terra e, cada vez mais, espaço para um carregador de veículo elétrico em casa. Um quadro bem dimensionado é a diferença entre uma instalação que dispara a cada pico e uma que simplesmente funciona durante décadas.
   </p>
   <p className="text-lg text-gray-700 mt-4">
-  A nossa equipa instala quadros novos (Schneider, Hager, ABB) e substitui quadros antigos sem diferencial ou com proteções desadequadas. Cada substituição termina com testes de continuidade, resistência de isolamento e disparo dos diferenciais — registados na Ficha Eletrotécnica emitida pelo nosso Técnico Responsável DGEG (TRIESP n.º 90062). Para além do quadro, verificamos a potência contratada e, se necessário, tratamos do aumento de potência até 41,4 kVA com o respetivo termo de responsabilidade.
+  A nossa equipa instala quadros novos e substitui quadros antigos sem diferencial ou com proteções desadequadas. Cada substituição termina com testes de continuidade, resistência de isolamento e disparo dos diferenciais — registados na Ficha Eletrotécnica emitida pelo nosso Técnico Responsável DGEG (TRIESP n.º 90062). Para além do quadro, verificamos a potência contratada e, se necessário, tratamos do aumento de potência até 41,4 kVA com o respetivo termo de responsabilidade.
   </p>
   </div>
   </div>

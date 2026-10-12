@@ -141,7 +141,7 @@ export default function QuantoTempoDemoraInstalarTomada() {
  <>
  <Helmet>
  <title>Quanto Tempo Demora Instalar Tomada? Tempos Reais 2026 | 932 321 892</title>
- <meta name="description" content="Quanto tempo demora instalar tomada? 1-5h dependendo tipo. Simples: 1-2h, Nova com cabos: 2-3h, Cabos novos: 3-5h. Garantia incluída. Marcação: 932 321 892" />
+ <meta name="description" content="Quanto tempo demora instalar tomada? 1-5h dependendo tipo. Simples: 1-2h, Nova com cabos: 2-3h, Cabos novos: 3-5h. Marcação: 932 321 892" />
  <script type="application/ld+json">
  {JSON.stringify(schemaData)}
  </script>
@@ -236,7 +236,6 @@ export default function QuantoTempoDemoraInstalarTomada() {
  <ul className="text-sm text-gray-700 space-y-1">
  <li>• diagnóstico elétrico</li>
  <li>• Teste segurança</li>
- <li>• Garantia do serviço</li>
  </ul>
  </div>
  </div>
@@ -329,7 +328,7 @@ export default function QuantoTempoDemoraInstalarTomada() {
  Instalar Tomada? Feito em 1 Dia
  </h2>
  <p className="text-xl mb-8 max-w-2xl mx-auto">
- Instalação completa 1-5h com garantia incluída.
+ Instalação completa 1-5h.
  Pode usar tomada imediatamente após.
  </p>
  <a
