@@ -67,7 +67,7 @@ export default function Zonas() {
  }
  metaDescription.setAttribute(
  'content',
- 'Eletricista profissional em 34 cidades de Trás-os-Montes. 130km de Cavaleiros. Orçamento por escrito em 48h. Bragança, Vila Real, Chaves, Mirandela e toda a região.'
+ 'Eletricista profissional em 34 cidades de Trás-os-Montes. 130km de Cavaleiros. Orçamento por escrito antes de qualquer intervenção. Bragança, Vila Real, Chaves, Mirandela e toda a região.'
  );
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
@@ -151,7 +151,7 @@ export default function Zonas() {
  <div className="flex flex-wrap justify-center gap-6 text-lg">
  <div className="flex items-center">
  <Clock className="w-6 h-6 mr-2" />
- <span>Orçamento por escrito em 48h</span>
+ <span>Orçamento por escrito antes de qualquer intervenção</span>
  </div>
  <div className="flex items-center">
  <MapPin className="w-6 h-6 mr-2" />

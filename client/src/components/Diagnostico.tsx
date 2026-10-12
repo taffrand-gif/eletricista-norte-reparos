@@ -58,7 +58,7 @@ export default function Diagnostico() {
  Qual é o seu problema agora?
  </h2>
  <p className="text-lg text-gray-600">
- Responda em 3 passos — receba estimativa imediata
+ Responda em 3 passos
  </p>
  </div>
  <div className="bg-white rounded-2xl shadow-lg p-8">

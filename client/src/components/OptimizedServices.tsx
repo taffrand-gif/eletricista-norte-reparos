@@ -36,7 +36,7 @@ const plumbDescriptions: Record<string, string> = {
 // Features pour électricité
 const electricFeatures: Record<string, string[]> = {
  'Instalação Elétrica Completa': [
- 'Materiais certificados (Schneider, Legrand)',
+ 'Materiais certificados',
  'Cumprimento normativo RCCTE',
  'Orçamento por escrito antes de intervir'
  ],
@@ -61,7 +61,7 @@ const electricFeatures: Record<string, string[]> = {
  'Lista de anomalias e recomendações'
  ],
  'Urgências 24h': [
- 'Orçamento por escrito em 48h',
+ 'Orçamento por escrito antes de qualquer intervenção',
  'A nossa equipa com equipamento profissional de diagnóstico',
  'Orçamento no local'
  ]

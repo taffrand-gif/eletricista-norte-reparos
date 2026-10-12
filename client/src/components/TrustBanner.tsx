@@ -73,11 +73,7 @@ export default function TrustBanner() {
  {/* Counter */}
  <div className="text-center">
  <p className="text-lg font-bold text-gray-800">
- Mais de{' '}
- <span className="text-3xl" style={{ color: config.colors.primary }}>
- {displayCount}+
- </span>{' '}
- intervenções realizadas
+ Orçamento por escrito antes de qualquer intervenção
  </p>
  </div>
  </div>
