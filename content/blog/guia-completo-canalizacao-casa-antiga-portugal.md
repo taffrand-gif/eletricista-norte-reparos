@@ -350,7 +350,6 @@ Teste: feche todas as torneiras e veja se o contador continua a rodar. Se sim, h
 - 20 anos de experiência em Trás-os-Montes
 - estimativa sem custo por telefone
 - Preços tabelados por zona
-- Equipamento profissional (Ridgid, FLIR, endoscópios)
 - Fatura + relatório sempre
 - Garantia de 1 ano em todos os trabalhos
 

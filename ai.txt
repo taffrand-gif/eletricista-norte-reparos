@@ -24,9 +24,7 @@ Services:
   - Certificação elétrica (fichas eletrotécnicas)
 Equipment:
   - Fluke
-  - ROLeak Aqua 3Plus (deteção acústica)
   - FLIR E96 (câmara térmica)
-  - Câmara de inspeção 30 m
 Brands:
   - Legrand, Schneider Electric, Hager
   - ABB, Siemens, Philips
