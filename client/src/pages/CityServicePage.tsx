@@ -304,7 +304,7 @@ function getCitySpecificFAQs(citySlug: string, serviceSlug: string) {
  'avarias-urgentes': [
  {
  question: 'Atendem em Trás-os-Montes durante a noite?',
- answer: 'Sim, o nosso serviço de urgências em Trás-os-Montes está Atendimento 24h/7d/7d. Sabemos que avarias elétricas não escolhem hora, por isso garantimos Resposta mediante contacto mesmo de madrugada ou ao fim de semana.'
+ answer: 'Sim, o nosso serviço de urgências em Trás-os-Montes está Atendimento 24h/7d/7d. Sabemos que avarias elétricas não escolhem hora, por isso respondemos mediante contacto mesmo de madrugada ou ao fim de semana.'
  },
  {
  question: 'Trabalham com instalações trifásicas em Trás-os-Montes?',
@@ -331,7 +331,7 @@ function getCityAboutSection(citySlug: string) {
  O centro histórico de Mirandela apresenta desafios únicos em termos de instalações elétricas. Muitos edifícios datam dos séculos XVIII e XIX, com sistemas elétricos instalados nos anos 60 e 70 que necessitam de modernização urgente. As casas tradicionais transmontanas, com paredes grossas de pedra e estruturas de madeira, requerem técnicas especializadas para instalação elétrica que respeitem o património arquitetónico.
  </p>
  <p>
- A nossa equipa conhece profundamente as especificidades de Mirandela, desde o centro histórico até às freguesias rurais como Fradizela, Torre de Dona Chama, Cobro e Mascarenhas. Trabalhamos regularmente em quintas agrícolas, explorações vitivinícolas e estabelecimentos comerciais da região, garantindo sempre conformidade com as normas e respeito pelas características únicas de cada edifício.
+ A nossa equipa conhece profundamente as especificidades de Mirandela, desde o centro histórico até às freguesias rurais como Fradizela, Torre de Dona Chama, Cobro e Mascarenhas. Trabalhamos regularmente em quintas agrícolas, explorações vitivinícolas e estabelecimentos comerciais da região, trabalhando de acordo com as normas aplicáveis e respeito pelas características únicas de cada edifício.
  </p>
  </>
  ),
@@ -344,7 +344,7 @@ function getCityAboutSection(citySlug: string) {
  A economia local baseia-se fortemente na agricultura, pecuária e pequena indústria, o que significa que muitas instalações elétricas na região são trifásicas e de maior complexidade. Explorações agrícolas, adegas, lagares de azeite e unidades de transformação alimentar requerem sistemas elétricos robustos e fiáveis. A nossa equipa tem experiência especializada em instalações industriais e agrícolas, garantindo segurança e eficiência energética.
  </p>
  <p>
- Conhecemos bem as particularidades de Trás-os-Montes e das suas aldeias circundantes. Desde o centro urbano até às zonas mais rurais, garantimos Resposta mediante contacto a qualquer emergência elétrica. Trabalhamos regularmente com bombas de água para rega, sistemas de refrigeração para armazéns agrícolas, e instalações elétricas em edifícios de turismo rural, sempre com diagnóstico elétrico e cumprimento rigoroso das normas de segurança.
+ Conhecemos bem as particularidades de Trás-os-Montes e das suas aldeias circundantes. Desde o centro urbano até às zonas mais rurais, respondemos mediante contacto a qualquer emergência elétrica. Trabalhamos regularmente com bombas de água para rega, sistemas de refrigeração para armazéns agrícolas, e instalações elétricas em edifícios de turismo rural, sempre com diagnóstico elétrico e cumprimento rigoroso das normas de segurança.
  </p>
  </>
  )
@@ -411,7 +411,7 @@ function getWhyChooseUs(citySlug: string, serviceSlug: string) {
  },
  {
  icon: '📋',
- title: 'diagnóstico elétrico Garantida',
+ title: 'Diagnóstico elétrico',
  description: 'Todos os trabalhos incluem inspeção elétrica detalhada. Regularizamos instalações antigas e fazemos o trabalho elétrico para venda ou arrendamento de imóveis.'
  }
  ]
