@@ -4,7 +4,7 @@ usage: norte_guard_extra.py --site CNR|CU|ENR|EU --root REPO [--csv out.csv] [--
 Code retour: --mode warn (défaut) toujours 0 · --mode block: 0 aucun BLOCK, 1 au moins un BLOCK · 2 erreur d'usage. N'écrit JAMAIS dans --root (sorties seulement où demandé).
 Périmètre = fichiers réellement servis: base = client/public (CNR/ENR, Vite) ou racine (CU/EU), hors node_modules/dist/_archive*/_audit/_prototype/tools/scripts/*.md ; les .md ne sont pas servis.
 Chaque constat porte: règle, sévérité, fichier, état d'indexation (indexable|noindex|n/a), extrait. Exceptions documentées dans un JSON {"RULE": ["regex de fichier ou d'extrait", ...], "_raison": "..."}.
-Règles: STAFF_SEEKERS, EQUIP_SEPARATION, EQUIP_UNCONFIRMED, WARRANTY_UNCONFIRMED, FREE_ESTIMATE, OLD_FEES, PRICERANGE, EQUIP_PRICE_AS_INTERVENTION, DEAD_INTERNAL_LINK, VERCEL_DEAD_ROUTE,
+Règles: SISTER_PHONE, ROLEAK, PLUMBING_CONTENT (elec), ELEC_CONTENT (plumb), INTERNAL_FILE_EXPOSED (boucle 2), STAFF_SEEKERS, EQUIP_SEPARATION, EQUIP_UNCONFIRMED, WARRANTY_UNCONFIRMED, FREE_ESTIMATE, OLD_FEES, PRICERANGE, EQUIP_PRICE_AS_INTERVENTION, DEAD_INTERNAL_LINK, VERCEL_DEAD_ROUTE,
 OUT_OF_COVERAGE_INDEXABLE, DUPLICATION, SEPTIC_SERVICE, BAD_JSONLD. (Z1–Z6, 65 €/h, +50 %, ROLeak, délais, mesma pessoa, sitemap/noindex, numéro du métier frère: norte_surface_scan.py.)"""
 import argparse, csv, hashlib, json, os, re, sys, collections
 from pathlib import Path
@@ -26,6 +26,11 @@ def served_files(root, site):
                 out.append(Path(dp) / f)
     return sorted(out)
 
+SIB_A = re.compile(r"(?is)<a\s[^>]*href=\"[^\"]*(?:canalizador|eletricista)-(?:norte-reparos|urgente)\.pt[^\"]*\"[^>]*>.*?</a>")
+FP_PLUMB = re.compile(r"(?i)canaliza[cç][aã]o el[eé]tric|canaliza[cç][oõ]es? el[eé]tric|fuga[s]? de corrente|fuga[s]? el[eé]tric|bomba de [aá]gua[^.<]{0,40}(?:quadro|el[eé]tric|disjuntor)|precisa de canalizador|canalizador (?:profissional|urgente)? ?\??$")
+PLUMB_RX = re.compile(r"(?i)desentup|torneira|autoclism|esquentador|termoacumulador|fuga[s]? de [aá]gua|entupiment|canos? rebentad|picagem de [aá]gua|sanita")
+ELEC_RX = re.compile(r"(?i)quadro el[eé]trico|curto-circuito|certiel|\bdgeg\b|ficha eletrot[eé]cnica|certifica[cç][aã]o el[eé]trica|disjuntor diferencial")
+INTERNAL_NAMES = re.compile(r"(?i)(?:^|/)(?:design-preview[^/]*|precos-zonas\.json|PRICING\.md|AGENTS\.md|CLAUDE\.md|context\.md|SEO_PLAN\.md|JOURNAL\.md|LECONS\.md|MARKETING\.md|[^/]*\.(?:py|sh|csv|bak[^/]*|orig|rej|log)|[^/]*\.PRE(?:-[^/]*)?)$|(?:^|/)(?:_audit|_reports|_outils|\.openclaw|\.hermes|\.loop|scripts|tools|tests|client/src)/")
 NEG = re.compile(r"(?i)\bn[ãa]o\b|sem\s+or[çc]amento\s+gratuito|fazem or[çc]amentos? gr[aá]tis\?|há .{0,30}gr[aá]tis\?")
 RULES = [
  ("STAFF_SEEKERS", "BLOCK", re.compile(r"(?i)staff-?seekers"), None),
@@ -41,6 +46,11 @@ RULES = [
  ("OLD_RATE_65", "BLOCK", re.compile(r"\b65\s?€\s?/\s?h|\b65\s?€/hora"), None),
  ("RC_500K", "BLOCK", re.compile(r"(?i)(?:responsabilidade civil|\bRC\b|seguro)[^.<\n]{0,60}\b500[. ]?000|\b500[. ]?000\s?€?[^.<\n]{0,40}(?:responsabilidade|seguro)"), None),
  ("ARRIVAL_PROMISE", "BLOCK", re.compile(r"(?i)aten[çc][aã]o imediata|chegamos em \d+|chegada em \d+\s?min|resposta imediata|garantimos resposta"), None),
+ ("SISTER_PHONE", "BLOCK", re.compile(r"928[\s.\-]?484[\s.\-]?451"), "elec"),
+ ("SISTER_PHONE", "BLOCK", re.compile(r"932[\s.\-]?321[\s.\-]?892"), "plumb"),
+ ("ROLEAK", "BLOCK", re.compile(r"(?i)ro-?leak"), None),
+ ("PLUMBING_CONTENT", "BLOCK", PLUMB_RX, "elec"),
+ ("ELEC_CONTENT", "BLOCK", ELEC_RX, "plumb"),
  ("SEPTIC_SERVICE", "BLOCK", re.compile(r"(?i)(?:limpeza|desentupimento|esvaziamento|bombagem|vidange|curagem|repara[çc][aã]o|instala[çc][aã]o|manuten[çc][aã]o)\s+de\s+fossas?\s+s[ée]pticas?|fossas?\s+s[ée]pticas?\s+(?:urgente|24h)"), None),
 ]
 def html_meta(t):
@@ -90,7 +100,12 @@ def main():
         scan_src = t if f.suffix in (".html", ".htm") else t
         for rid, sev, rx, only in RULES:
             if only and only != trade: continue
-            src = scan_src if rid in ("EQUIP_UNCONFIRMED", "STAFF_SEEKERS", "SEPTIC_SERVICE") else body
+            if rid in ("PLUMBING_CONTENT", "ELEC_CONTENT"):
+                src = FP_PLUMB.sub(" ", visible(SIB_A.sub(" ", t))) if is_html else ""
+                if is_html:
+                    for b in re.findall(r'<script type="application/ld\+json">(.*?)</script>', t, re.S):
+                        src += " " + re.sub(r'"(?:sameAs|url|@id|item|image|logo|mainEntityOfPage)"\s*:\s*(?:\[[^\]]*\]|"[^"]*")', "", b)
+            else: src = scan_src if rid in ("EQUIP_UNCONFIRMED", "STAFF_SEEKERS", "SEPTIC_SERVICE", "SISTER_PHONE", "ROLEAK") else body
             for m in rx.finditer(src):
                 ex = re.sub(r"\s+", " ", src[max(0, m.start() - 60):m.end() + 60])
                 if rid in ("FREE_ESTIMATE", "WARRANTY_UNCONFIRMED") and NEG.search(ex) and rid == "FREE_ESTIMATE": continue
@@ -114,6 +129,24 @@ def main():
                 dup[hashlib.sha1(norm.encode()).hexdigest()[:10]].append(f)
     for h, fl in dup.items():
         if len(fl) >= 50: add("DUPLICATION", "WARN", fl[0], "indexable", f"{len(fl)} pages indexables au texte identique hors lieux/chiffres (ex. {fl[1].name})")
+    # fichiers internes exposés (nom/chemin), hors .vercelignore (CU/EU : racine du dépôt)
+    import fnmatch
+    vi = root / ".vercelignore"; pats = [l.strip() for l in vi.read_text(encoding="utf-8").splitlines() if l.strip() and not l.strip().startswith("#")] if (vi.exists() and a.site in ("CU", "EU")) else []
+    def vignored(rel):
+        for pt in pats:
+            if pt.endswith("/"):
+                d = pt.strip("/")
+                if rel.startswith(d + "/") or ("/" + d + "/") in ("/" + rel): return True
+            elif pt.startswith("/"):
+                if fnmatch.fnmatch(rel, pt[1:]): return True
+            elif fnmatch.fnmatch(rel, pt) or fnmatch.fnmatch(os.path.basename(rel), pt) or rel == pt: return True
+        return False
+    for dp, dn, fn in os.walk(base):
+        dn[:] = [d for d in dn if d not in (".git", "node_modules", "dist") ]
+        for fx in fn:
+            fp = Path(dp) / fx; rel = str(fp.relative_to(base))
+            if INTERNAL_NAMES.search(rel) and not vignored(rel) and not rel.startswith(("_archive", "_prototype")):
+                add("INTERNAL_FILE_EXPOSED", "BLOCK", fp, "n/a", rel)
     # routes Vercel mortes
     vj = root / "vercel.json"
     if vj.exists():
