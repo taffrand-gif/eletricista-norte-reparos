@@ -160,7 +160,7 @@ Diagnóstico preciso em 15-45 minutos. Orçamento antes de arranjar.`
  slug: 'iluminacao-led',
  title: 'Iluminação LED',
  subtitle: 'Economize até 80% na Fatura de Eletricidade',
- description: 'Substituição de lâmpadas incandescentes/halógenas por LED. Iluminação interior, exterior, comercial. Poupança garantida.',
+ description: 'Substituição de lâmpadas incandescentes/halógenas por LED. Iluminação interior, exterior, comercial.',
  icon: '💡',
  price: 'Desde 25€',
  priceDetails: 'Por ponto de luz',
@@ -246,14 +246,14 @@ Diagnóstico preciso em 15-45 minutos. Orçamento antes de arranjar.`
  },
  {
  title: 'Preços',
- content: `Apartamento T1-T2: 150€, Casa T3-T4: 200€, Casa T4+: 280€, Comércio/Indústria: desde 350€. Inclui inspeção completa, testes, trabalho garantido. 10% desconto para clientes com contrato manutenção.`
+ content: `Apartamento T1-T2: 150€, Casa T3-T4: 200€, Casa T4+: 280€, Comércio/Indústria: desde 350€. Inclui inspeção completa e testes. 10% desconto para clientes com contrato manutenção.`
  }
  ],
  cta: 'Precisa de inspeção? **Ligue 932 321 892** para agendar!'
  },
  seo: {
  metaTitle: 'Inspeção Elétrica Bragança | Diagnóstico | Eletricista Profissional',
- metaDescription: 'Inspeção elétrica completa em Bragança. Testes, trabalho garantido. Identifica problemas de segurança. Desde 150€. Ligue 932 321 892!',
+ metaDescription: 'Inspeção elétrica completa em Bragança. Testes. Identifica problemas de segurança. Desde 150€. Ligue 932 321 892!',
  keywords: ['inspeção elétrica bragança', 'diagnóstico elétrico', 'teste isolamento', 'certificado elétrico']
  }
  }

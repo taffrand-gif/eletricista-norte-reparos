@@ -30,7 +30,7 @@ export default function Mirandela() {
  },
  ];
  useEffect(() => {
- document.title = "⚡ Eletricista Mirandela — Orçamento por Escrito | Garantia Escrita";
+ document.title = "⚡ Eletricista Mirandela — Orçamento por Escrito | Norte Reparos";
 
  // Optimized meta description
  let metaDescription = document.querySelector('meta[name="description"]');

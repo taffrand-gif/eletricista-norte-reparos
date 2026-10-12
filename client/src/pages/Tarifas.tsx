@@ -76,17 +76,17 @@ function Tarifas() {
  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
  <div className="text-4xl mb-3">⚡</div>
  <h3 className="font-bold mb-2">Resposta mediante contacto</h3>
- <p className="text-sm text-gray-300">Atendemos Resposta mediante contacto garantida</p>
+ <p className="text-sm text-gray-300">Atendimento confirmado por telefone</p>
  </div>
  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
  <div className="text-4xl mb-3">✅</div>
- <h3 className="font-bold mb-2">Preço Garantido</h3>
+ <h3 className="font-bold mb-2">Preço Tabelado</h3>
  <p className="text-sm text-gray-300">O que vê é o que paga</p>
  </div>
  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
  <div className="text-4xl mb-3">🛡️</div>
  <h3 className="font-bold mb-2"></h3>
- <p className="text-sm text-gray-300">Orçamento por escrito garantida</p>
+ <p className="text-sm text-gray-300">Orçamento por escrito antes da intervenção</p>
  </div>
  </div>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">

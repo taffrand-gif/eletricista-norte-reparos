@@ -136,7 +136,7 @@ export default function QuantoTempoQuadro() {
  <>
  <Helmet>
  <title>Quanto Tempo Demora Trocar Quadro Elétrico? Tempos Reais 2026 | 932 321 892</title>
- <meta name="description" content="Quanto tempo demora trocar quadro elétrico? 3-8h dependendo tamanho. T1/T2: 3-5h, T3/T4: 4-6h, Moradia: 5-8h. Garantia incluída. Marcação: 932 321 892" />
+ <meta name="description" content="Quanto tempo demora trocar quadro elétrico? 3-8h dependendo tamanho. T1/T2: 3-5h, T3/T4: 4-6h, Moradia: 5-8h. Marcação: 932 321 892" />
  <script type="application/ld+json">
  {JSON.stringify(schemaData)}
  </script>
@@ -231,7 +231,6 @@ export default function QuantoTempoQuadro() {
  <ul className="text-sm text-gray-700 space-y-1">
  <li>• diagnóstico elétrico</li>
  <li>• Teste todos circuitos</li>
- <li>• Garantia do serviço</li>
  </ul>
  </div>
  </div>
@@ -358,7 +357,7 @@ export default function QuantoTempoQuadro() {
  Trocar Quadro Elétrico? Feito em 1 Dia
  </h2>
  <p className="text-xl mb-8 max-w-2xl mx-auto">
- Instalação completa 3-8h com garantia incluída.
+ Instalação completa 3-8h.
  Marcação: começamos de manhã, terminamos tarde.
  </p>
  <a
