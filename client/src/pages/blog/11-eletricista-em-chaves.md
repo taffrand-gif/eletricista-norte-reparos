@@ -1,6 +1,6 @@
 ---
 title: "Electricista em Chaves - Zona de Intervenção e Serviços"
-description: "Electricista profissional em Chaves e arredores. Serviços 24h, instalações e manutenção. estimativa sem custo e rápido."
+description: "Electricista profissional em Chaves e arredores. Serviços 24h, instalações e manutenção. Podemos indicar uma estimativa à distância quando a descrição e as fotografias permitem avaliar melhor a situação. O valor final depende do diagnóstico e do tempo efetivamente necessário."
 slug: electricista-em-chaves
 date: 2026-03-01
 author: 

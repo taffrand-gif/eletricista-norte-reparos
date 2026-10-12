@@ -235,7 +235,7 @@ O código IP indica a proteção contra sólidos e líquidos:
 
 **Tempo de instalação:** 1-2 horas
 
-> 💡 **Quer instalação profissional?** Eletricista com experiência em Bragança: **[932 321 892](tel:+351932321892)** — Estimativa sem custo, certificado incluído.
+>Podemos indicar uma estimativa à distância quando a descrição e as fotografias permitem avaliar melhor a situação. O valor final depende do diagnóstico e do tempo efetivamente necessário.
 
 ## ⚠️ Erros Comuns a Evitar
 
