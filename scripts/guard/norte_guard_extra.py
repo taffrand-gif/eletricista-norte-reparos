@@ -15,7 +15,22 @@ SKIP_DIR = {"node_modules", "dist", ".git", "_audit", "_prototype", "tools", "sc
 SERVED_EXT = (".html", ".htm", ".txt", ".js", ".json", ".xml")
 SKIP_NAME = {"vercel.json", "package.json", "package-lock.json", "tsconfig.json", "components.json"}
 
+import fnmatch
+def load_vignore(root, site):
+    vi = Path(root) / ".vercelignore"
+    return [l.strip() for l in vi.read_text(encoding="utf-8").splitlines() if l.strip() and not l.strip().startswith("#")] if (vi.exists() and site in ("CU", "EU")) else []
+def vignored_rel(rel, pats):
+    for pt in pats:
+        if pt.endswith("/"):
+            d = pt.strip("/")
+            if rel.startswith(d + "/") or ("/" + d + "/") in ("/" + rel): return True
+        elif pt.startswith("/"):
+            if fnmatch.fnmatch(rel, pt[1:]): return True
+        elif fnmatch.fnmatch(rel, pt) or fnmatch.fnmatch(os.path.basename(rel), pt) or rel == pt: return True
+    return False
+
 def served_files(root, site):
+    VPATS = load_vignore(root, site)
     base = Path(root) / BASE[site]
     out = []
     for dp, dn, fn in os.walk(base):
@@ -23,6 +38,7 @@ def served_files(root, site):
         dn[:] = [d for d in dn if d not in SKIP_DIR and not d.startswith("_archive") and not d.startswith("_prototype") and not d.startswith(".")]
         for f in fn:
             if f.endswith(SERVED_EXT) and f not in SKIP_NAME and not f.startswith("."):
+                if site in ("CU", "EU") and vignored_rel(str((Path(dp) / f).relative_to(root)), VPATS): continue
                 out.append(Path(dp) / f)
     return sorted(out)
 
@@ -130,17 +146,8 @@ def main():
     for h, fl in dup.items():
         if len(fl) >= 50: add("DUPLICATION", "WARN", fl[0], "indexable", f"{len(fl)} pages indexables au texte identique hors lieux/chiffres (ex. {fl[1].name})")
     # fichiers internes exposés (nom/chemin), hors .vercelignore (CU/EU : racine du dépôt)
-    import fnmatch
-    vi = root / ".vercelignore"; pats = [l.strip() for l in vi.read_text(encoding="utf-8").splitlines() if l.strip() and not l.strip().startswith("#")] if (vi.exists() and a.site in ("CU", "EU")) else []
-    def vignored(rel):
-        for pt in pats:
-            if pt.endswith("/"):
-                d = pt.strip("/")
-                if rel.startswith(d + "/") or ("/" + d + "/") in ("/" + rel): return True
-            elif pt.startswith("/"):
-                if fnmatch.fnmatch(rel, pt[1:]): return True
-            elif fnmatch.fnmatch(rel, pt) or fnmatch.fnmatch(os.path.basename(rel), pt) or rel == pt: return True
-        return False
+    pats = load_vignore(root, a.site)
+    vignored = lambda rel: vignored_rel(rel, pats)
     for dp, dn, fn in os.walk(base):
         dn[:] = [d for d in dn if d not in (".git", "node_modules", "dist") ]
         for fx in fn:
