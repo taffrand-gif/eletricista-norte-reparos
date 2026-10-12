@@ -475,7 +475,7 @@ Atendemos **86 cidades** em Trás-os-Montes:
 
 ## 💬 Contacte-nos
 
-### Avaliação Grátis
+### Avaliação à distância
 📞 **+351 932 321 892**
 💬 **[WhatsApp](https://wa.me/351932321892?text=Proteção%20sobretensão)**
 

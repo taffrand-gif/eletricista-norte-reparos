@@ -53,7 +53,7 @@ export const SERVICES: Service[] = [
  },
  {
  title: 'Processo Profissional',
- content: `**FASE 1**: Visita técnica gratuita → Levantamento necessidades → Projeto elétrico (se necessário) → Orçamento detalhado.
+ content: `**FASE 1**: Visita técnica → Levantamento necessidades → Projeto elétrico (se necessário) → Orçamento detalhado.
 **FASE 2**: Compra materiais certificados → Preparo obra → Proteção superfícies → Abertura roços (se necessário).
 **FASE 3**: Instalação tubagens e caixas → Passagem cabos → Montagem quadro elétrico → Ligação tomadas/interruptores/iluminação → Ligação terra.
 **FASE 4**: Testes elétricos (continuidade, isolamento, diferencial) → diagnóstico elétrico → Garantia → Limpeza completa.
@@ -64,7 +64,7 @@ export const SERVICES: Service[] = [
  content: `**Instalação Completa Casa Nova**: T1 desde 2.500€, T2 desde 3.500€, T3 desde 4.500€, T4+ desde 6.000€ (inclui materiais + mão de obra).
 **Remodelação Parcial**: Quarto 400€, Cozinha 600€, Casa de banho 500€, Sala 500€.
 **Serviços Avulsos**: Quadro elétrico 370-650€ (12 módulos), Tomada nova 138-182€, Tomada substituição 66-90€, Interruptor 58-78€, Ponto de luz 60-85€, Ligação máquina lavar 110-145€, Portão automático 280-420€.
-**Todos os preços incluem**: Materiais certificados, mão de obra, diagnóstico elétrico, garantia 5 anos. Deslocação gratuita em Bragança e arredores.`
+**Todos os preços incluem**: Materiais certificados, mão de obra, diagnóstico elétrico, garantia 5 anos. Deslocação cobrada quando há deslocação (30 € ou 50 €).`
  }
  ],
  cta: 'Precisa de instalação elétrica? **Ligue já 932 321 892** para sem compromisso!'
