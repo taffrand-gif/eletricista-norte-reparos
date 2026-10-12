@@ -36,6 +36,11 @@ RULES = [
  ("FREE_ESTIMATE", "BLOCK", re.compile(r"(?i)or[çc]amento\s*(?:</div><div[^>]*>\s*)?(?:gratuito|gr[aá]tis)|estimativas? (?:sem custo|gratuita|gr[aá]tis)|diagn[oó]stico (?:gratuito|gr[aá]tis)|desloca[çc][aã]o (?:gratuita|inclu[ií]da)|desloca[çc][aã]o é de \d+ ?€ e est[aá] inclu[ií]da|visita (?:t[eé]cnica )?gratuita|avalia[çc][aã]o gr[aá]tis"), None),
  ("OLD_FEES", "BLOCK", re.compile(r"(?i)\b(?:15|25|35|45|55|65)\s?€\s*(?:de\s*)?(?:desloca|taxa de sa[ií]da)|desloca[çc][aã]o[^.<]{0,25}\b(?:15|25|35|45|55|65)\s?€|\bzona\s+Z?[1-6]\b(?=[^.<]{0,40}€)|\bZ[1-6]\s?=\s?\d+"), None),
  ("EQUIP_PRICE_AS_INTERVENTION", "BLOCK", re.compile(r"€\s?\d{1,2}\.\d{3}\+?|€\s?\d{1,3}\.?\d*\+?\s*(?:em equipamento|investid)|em Equipamento Certificado"), None),
+ ("ZONE_GRID", "BLOCK", re.compile(r"\bZ[1-6]\b\s*(?:[:=]\s*\*{0,2}\d|\|\s*(?:\d|\*))|\|\s*\*{0,2}Z[1-6]\*{0,2}\s*\||Z1\s?[-–]\s?Z6"), None),
+ ("PLUS_50_PCT", "BLOCK", re.compile(r"(?i)\+\s?50\s?%|acr[ée]scimo de 50\s?%|majora[çc][aã]o[^.<]{0,20}50\s?%"), None),
+ ("OLD_RATE_65", "BLOCK", re.compile(r"\b65\s?€\s?/\s?h|\b65\s?€/hora"), None),
+ ("RC_500K", "BLOCK", re.compile(r"(?i)(?:responsabilidade civil|\bRC\b|seguro)[^.<\n]{0,60}\b500[. ]?000|\b500[. ]?000\s?€?[^.<\n]{0,40}(?:responsabilidade|seguro)"), None),
+ ("ARRIVAL_PROMISE", "BLOCK", re.compile(r"(?i)aten[çc][aã]o imediata|chegamos em \d+|chegada em \d+\s?min|resposta imediata|garantimos resposta"), None),
  ("SEPTIC_SERVICE", "BLOCK", re.compile(r"(?i)(?:limpeza|desentupimento|esvaziamento|bombagem|vidange|curagem|repara[çc][aã]o|instala[çc][aã]o|manuten[çc][aã]o)\s+de\s+fossas?\s+s[ée]pticas?|fossas?\s+s[ée]pticas?\s+(?:urgente|24h)"), None),
 ]
 def html_meta(t):

@@ -12,6 +12,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: '3.12' }
+      - name: tests unitaires du garde-fou (témoins positifs/négatifs)
+        run: bash scripts/guard/test_norte_guard_extra.sh
       - name: norte_guard_extra (warn)
         run: |
           python3 scripts/guard/norte_guard_extra.py --site ENR --root . --csv guard-enr.csv --max-print 20 --mode warn | tee guard-enr.out
