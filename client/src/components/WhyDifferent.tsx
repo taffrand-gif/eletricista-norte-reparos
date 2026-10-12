@@ -9,7 +9,6 @@ interface Problem {
  title: string;
  others: string;
  us: string;
- value: string;
 }
 function WhyDifferent() {
  const { config } = useSite();
@@ -18,62 +17,52 @@ function WhyDifferent() {
  icon: '⚡',
  title: 'Disjuntor Continua Disparar',
  others: 'Troca disjuntor, problema continua',
- us: 'Diagnóstico termográfico + Causa raiz',
- value: 'Economiza €200 (solução definitiva)'},
+ us: 'Diagnóstico termográfico + Causa raiz'},
  {
  icon: '📜',
  title: 'Sem Orçamento por escrito',
  others: 'Instalação sem certificação legal',
- us: 'Orçamento por escrito antes de intervir',
- value: 'Economiza €150 (aceite seguradora)'},
+ us: 'Orçamento por escrito antes de intervir'},
  {
  icon: '🔥',
  title: 'Instalação Perigosa',
  others: 'Cabos quentes, risco incêndio',
- us: 'Teste termográfico + Normas CE',
- value: 'Economiza €500 (segurança vida)'},
+ us: 'Teste termográfico + Normas CE'},
  {
  icon: '💸',
  title: 'Preço Absurdo vs Outros',
- others: 'Cobra €300, outro faz €100',
- us: 'Preços transparentes site + Sem IVA',
- value: 'Economiza €100 (honestidade)'},
+ others: 'Preço só conhecido no fim',
+ us: 'Preços transparentes site + Sem IVA'},
  {
  icon: '🔧',
  title: 'Problema Volta Após 1 Mês',
  others: 'Remendo temporário, volta logo',
- us: 'Diagnóstico + orçamento por escrito',
- value: 'Economiza €250 (tranquilidade)'},
+ us: 'Diagnóstico + orçamento por escrito'},
  {
  icon: '⏰',
  title: 'Nunca Chega No Horário',
  others: 'Disse 1h, chega 4h depois',
- us: 'GPS tracking + se atrasar',
- value: 'Economiza tempo + €50'},
+ us: 'GPS tracking + se atrasar'},
  {
  icon: '❓',
  title: 'Diagnóstico Errado',
  others: 'Adivinha, cobra extra depois',
- us: 'Equipamento de medição Fluke + Diagnóstico',
- value: 'Economiza €150 (precisão)'},
+ us: 'Equipamento de medição Fluke + Diagnóstico'},
  {
  icon: '🚫',
  title: 'Não Atende Urgência Noite',
  others: '24h falso, não atende madrugada',
- us: 'Telefone 24h REAL + Técnico piquete',
- value: 'Economiza €200 (urgência real)'},
+ us: 'Telefone 24h REAL + Técnico piquete'},
  {
  icon: '📄',
  title: 'Sem Fatura, Sem Orçamento',
  others: 'Trabalho por fora, desaparece',
- us: 'Fatura com NIF + Orçamento por escrito',
- value: 'Economiza €200 (segurança legal)'},
+ us: 'Fatura com NIF + Orçamento por escrito'},
  {
  icon: '🔌',
  title: 'Quadro Mal Dimensionado',
  others: 'Não calcula carga, sobrecarga',
- us: 'Cálculo profissional + Proteção adequada',
- value: 'Economiza €300 (evita incêndio)'},
+ us: 'Cálculo profissional + Proteção adequada'},
  ], []);
  return (
  <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
@@ -121,14 +110,6 @@ function WhyDifferent() {
  </p>
  <p className="text-gray-900 font-semibold">{problem.us}</p>
  </div>
- </div>
- {/* Value */}
- <div
- className="mt-4 p-3 rounded-lg text-center font-bold"
- style={{ backgroundColor: `${config.colors.primary}15` }}
- >
- <span className="text-2xl mr-2">💰</span>
- <span style={{ color: config.colors.primary }}>{problem.value}</span>
  </div>
  </div>
  </div>

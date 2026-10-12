@@ -27,11 +27,11 @@ function FAQ() {
  question: 'Como detetar problema elétrico perigoso?',
  answer: 'Sinais de perigo elétrico: 1) Disjuntor dispara constantemente, 2) Tomadas quentes ao toque, 3) Cheiro a queimado, 4) Faíscas ou estalidos, 5) Luzes piscando, 6) Fios expostos. Se notar qualquer sinal, desligue disjuntor geral e ligue 932 321 892.'},
  {
- question: 'Qual a garantia do trabalho de eletricista?',
- answer: 'Oferecemos garantia de 12 meses em todas as instalações elétricas e 6 meses em arranjos. Se o problema voltar no período de garantia, voltamos gratuitamente. Garantia cobre mão de obra e materiais. Orçamento por escrito e garantia fornecidos após conclusão.'},
+ question: 'Que compromissos assumem em cada intervenção?',
+ answer: 'Orçamento por escrito antes de qualquer intervenção, faturação horária com fatura e NIF, e seguro de responsabilidade civil profissional até 50.000 €.'},
  {
  question: 'O que está incluído no serviço de eletricista?',
- answer: 'O serviço inclui: diagnóstico com multímetro profissional, mão de obra especializada, materiais básicos (disjuntores, cabos, tomadas), certificação elétrica quando aplicável, limpeza após intervenção, garantia. Não incluído: quadros elétricos completos, obras de alvenaria. Orçamento detalhado antes de iniciar.'},
+ answer: 'O serviço inclui: diagnóstico com multímetro profissional, mão de obra especializada, materiais básicos (disjuntores, cabos, tomadas), certificação elétrica quando aplicável, limpeza após intervenção. Não incluído: quadros elétricos completos, obras de alvenaria. Orçamento detalhado antes de iniciar.'},
  {
  question: 'Aceitam pagamento com cartão e MB WAY?',
  answer: 'Sim, aceitamos pagamento por multibanco, MB WAY, transferência bancária, e dinheiro. Pagamento apenas após conclusão do serviço e sua total satisfação. Fatura fornecida. Sem IVA (Art. 53º CIVA).'},

@@ -74,7 +74,7 @@ export default function Diagnostico() {
  </div>
  <div className="text-center mb-6 text-sm text-gray-500 italic">
  {step === 1 && '💰 Preço combinado antes de começar. Sem surpresas.'}
- {step === 2 && '📋 Fatura com NIF sempre emitida. Garantia 12 meses.'}
+ {step === 2 && '📋 Fatura com NIF sempre emitida.'}
  {step === 3 && '🤝 Sem pressões. Explicamos tudo com calma.'}
  </div>
  {/* Step 1: Problem */}

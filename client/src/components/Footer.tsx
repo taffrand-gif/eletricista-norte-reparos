@@ -103,12 +103,6 @@ function Footer() {
  <div className="text-2xl mb-2">⚡</div>
  <div className="text-sm font-bold text-white">Orçamento por escrito</div> <div className="text-xs text-gray-100">Antes de qualquer intervenção</div>
  </div>
- {/* Badge Isenção IVA */}
- <div className="bg-white/10 backdrop-blur-sm rounded-xl px-6 py-4 border-2 border-white/30 hover:bg-white/20 transition-all">
- <div className="text-2xl mb-2">📄</div>
- <div className="text-sm font-bold text-white">Isenção IVA</div>
- <div className="text-xs text-gray-100">Art.º 53.º CIVA</div>
- </div>
  {/* Badge Garantia */}
  <div className="bg-white/10 backdrop-blur-sm rounded-xl px-6 py-4 border-2 border-white/30 hover:bg-white/20 transition-all">
  <div className="text-2xl mb-2">🛡️</div>

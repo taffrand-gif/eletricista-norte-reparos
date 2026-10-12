@@ -23,7 +23,7 @@ function PriceTransparency() {
  items: [
  'Preço só no final',
  'Taxas escondidas',
- 'Sem garantia escrita',
+ 'Sem nada por escrito',
  '"Depois vemos o preço"',
  'Surpresas na fatura'
  ],
@@ -33,16 +33,16 @@ function PriceTransparency() {
  title: config.name,
  icon: '✅',
  items: [
- 'Preço fixo ANTES de sair',
- 'Estimativa sem custo por telefone, por escrito',
- 'Garantia do serviço escrita',
+ 'Orçamento por escrito ANTES de intervir',
+ 'Estimativa à distância indicativa; valor final conforme o diagnóstico',
+ 'Orçamento por escrito antes de intervir',
  'Sem surpresas',
  'Preço combinado por escrito'
  ],
  highlight: true
  },
  {
- title: 'Você Economiza',
+ title: 'Para si',
  icon: '💰',
  items: [
  'Sem stress',

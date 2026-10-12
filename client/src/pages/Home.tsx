@@ -18,7 +18,6 @@ import { useSite } from '@/contexts/SiteContext';
 const WhyDifferent = lazy(() => import('@/components/WhyDifferent'));
 const PriceCalculator = lazy(() => import('@/components/PriceCalculator'));
 const Testimonials = lazy(() => import('@/components/Testimonials'));
-const BeforeAfter = lazy(() => import('@/components/BeforeAfter'));
 const FAQ = lazy(() => import('@/components/FAQ'));
 // Phase 2 - Transparence Prix + Garanties
 const PriceTransparency = lazy(() => import('@/components/PriceTransparency'));
@@ -73,7 +72,6 @@ export default function Home() {
  <Suspense fallback={null}><PriceCalculator /></Suspense>
  {/* 4. PROVA SOCIAL - Témoignages + Before/After */}
  <Suspense fallback={null}><Testimonials /></Suspense>
- <Suspense fallback={null}><BeforeAfter /></Suspense>
  {/* PHASE 4 - MAILLAGE INTERNE SEO */}
  <Suspense fallback={null}><BlogPreview /></Suspense>
  <Suspense fallback={null}><CitiesGrid /></Suspense>
