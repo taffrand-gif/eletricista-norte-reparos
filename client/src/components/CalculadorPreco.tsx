@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { useSite } from '@/contexts/SiteContext';
 import { useLocationContent, usePersonalizedWhatsAppMessage } from '@/hooks/useLocationContent';
 // memo removed from 'react';
-// Grelha única 2026-09-23 : deslocação 30 € (dias úteis 9h–17h) / 50 € (noite 17h–9h, fins de semana, feriados)
+// Grelha única 2026-09-23 : deslocação 30 € (dias úteis 09h–18h) / 50 € (noite 18h–09h, fins de semana, feriados)
 // Mão de obra 70 €/h / 100 €/h — cada hora começada é devida
 const TRAVEL_DAY = 30;
 const TRAVEL_NIGHT = 50;
@@ -122,7 +122,7 @@ function CalculadorPreco() {
  </div>
  {/* Urgency toggle */}
  <div className="mb-8">
- <label className="block text-sm font-bold text-gray-700 mb-2">🕐 É à noite (17h–9h), fim de semana ou feriado?</label>
+ <label className="block text-sm font-bold text-gray-700 mb-2">🕐 É à noite (18h–09h), fim de semana ou feriado?</label>
  <div className="flex gap-4">
  <button
  onClick={() => setIsUrgent(false)}
@@ -173,7 +173,7 @@ function CalculadorPreco() {
  </div>
  </div>
  <p className="text-xs text-gray-500 mb-6">
- * Estimativa para {city}. Preço exato comunicado ao telefone antes de sair. Sem surpresas garantido. Dias úteis 9h–17h: 70 €/h + deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/h + deslocação 50 €. Cada hora começada é devida.
+ * Estimativa para {city}. Preço exato comunicado ao telefone antes de sair. Sem surpresas garantido. Dias úteis 09h–18h: 70 €/h + deslocação 30 €. Noite (18h–09h), fins de semana e feriados: 100 €/h + deslocação 50 €. Cada hora começada é devida.
  </p>
  <a
  href={`https://wa.me/${whatsapp}?text=${waMsg}`}
