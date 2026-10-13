@@ -42,7 +42,7 @@ function Footer() {
  <li><a href="/instalacao-eletrica-completa" className="text-gray-200 hover:text-white transition-colors">Instalação Elétrica</a></li>
  <li><a href="/quadros-eletricos-modernizacao" className="text-gray-200 hover:text-white transition-colors">Quadros Elétricos</a></li>
  <li><a href="/reparacao-avarias-eletricas" className="text-gray-200 hover:text-white transition-colors">Arranjo Avarias</a></li>
- <li><a href="/iluminacao-led-profissional" className="text-gray-200 hover:text-white transition-colors">Iluminação LED</a></li>
+ <li><a href="/iluminacao" className="text-gray-200 hover:text-white transition-colors">Iluminação LED</a></li>
  </ul>
  </div>
  {/* Zonas */}
@@ -62,8 +62,8 @@ function Footer() {
  <h4 className="text-lg font-black mb-4">Blog</h4>
  <ul className="space-y-2 text-sm">
  <li><a href="/blog/como-escolher-eletricista-certificado" className="text-gray-200 hover:text-white transition-colors">Como Escolher Eletricista</a></li>
- <li><a href="/blog/quadro-eletrico-disjuntores-disparar" className="text-gray-200 hover:text-white transition-colors">Disjuntores Disparam</a></li>
- <li><a href="/blog/certificacao-obrigatoria" className="text-gray-200 hover:text-white transition-colors">diagnóstico elétrico</a></li>
+ <li><a href="/blog/disjuntor-a-saltar-guia-completo" className="text-gray-200 hover:text-white transition-colors">Disjuntores Disparam</a></li>
+ <li><a href="/blog/certificacao-dgeg-guia-2026" className="text-gray-200 hover:text-white transition-colors">Certificação elétrica</a></li>
  <li><a href="/blog" className="text-gray-200 hover:text-white transition-colors font-semibold">Ver todos →</a></li>
  </ul>
  </div>

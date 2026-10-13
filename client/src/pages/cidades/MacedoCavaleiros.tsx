@@ -116,7 +116,7 @@ export default function MacedoCavaleiros() {
  <div className="container text-center text-white">
  <Breadcrumbs items={[
  { label: 'Eletricista', href: '/' },
- { label: 'Trás-os-Montes', href: '/tras-os-montes' },
+ { label: 'Trás-os-Montes', href: '/distritos/tras-os-montes' },
  { label: 'Macedo de Cavaleiros', href: '/eletricista-macedo-cavaleiros' }
  ]} />
  <span className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-bold mb-4">
