@@ -42,7 +42,7 @@ function Footer() {
  <li><a href="/instalacao-eletrica-completa" className="text-gray-200 hover:text-white transition-colors">Instalação Elétrica</a></li>
  <li><a href="/quadros-eletricos-modernizacao" className="text-gray-200 hover:text-white transition-colors">Quadros Elétricos</a></li>
  <li><a href="/reparacao-avarias-eletricas" className="text-gray-200 hover:text-white transition-colors">Arranjo Avarias</a></li>
- <li><a href="/iluminacao-led-profissional" className="text-gray-200 hover:text-white transition-colors">Iluminação LED</a></li>
+ <li><a href="/iluminacao" className="text-gray-200 hover:text-white transition-colors">Iluminação LED</a></li>
  </ul>
  </div>
  {/* Zonas */}
@@ -62,8 +62,8 @@ function Footer() {
  <h4 className="text-lg font-black mb-4">Blog</h4>
  <ul className="space-y-2 text-sm">
  <li><a href="/blog/como-escolher-eletricista-certificado" className="text-gray-200 hover:text-white transition-colors">Como Escolher Eletricista</a></li>
- <li><a href="/blog/quadro-eletrico-disjuntores-disparar" className="text-gray-200 hover:text-white transition-colors">Disjuntores Disparam</a></li>
- <li><a href="/blog/certificacao-obrigatoria" className="text-gray-200 hover:text-white transition-colors">diagnóstico elétrico</a></li>
+ <li><a href="/blog/disjuntor-a-saltar-guia-completo" className="text-gray-200 hover:text-white transition-colors">Disjuntores Disparam</a></li>
+ <li><a href="/blog/certificacao-dgeg-guia-2026" className="text-gray-200 hover:text-white transition-colors">Certificação elétrica</a></li>
  <li><a href="/blog" className="text-gray-200 hover:text-white transition-colors font-semibold">Ver todos →</a></li>
  </ul>
  </div>
@@ -96,25 +96,25 @@ function Footer() {
  {/* Certificações e Garantias */}
  <div className="pt-8 border-t-2 border-white/20">
  <div className="text-center mb-6">
- <h4 className="text-lg font-bold mb-4">🏆 Certificações e Garantias</h4>
+ <h4 className="text-lg font-bold mb-4">🏆 Seguro e compromissos</h4>
  <div className="flex flex-wrap justify-center gap-6 items-center">
  {/* Badge */}
  <div className="bg-white/10 backdrop-blur-sm rounded-xl px-6 py-4 border-2 border-white/30 hover:bg-white/20 transition-all">
  <div className="text-2xl mb-2">⚡</div>
- <div className="text-sm font-bold text-white">Garantia por Escrito</div>
- <div className="text-xs text-gray-100">Em todos os trabalhos</div>
+ <div className="text-sm font-bold text-white">Orçamento por escrito</div>
+ <div className="text-xs text-gray-100">Antes de qualquer intervenção</div>
  </div>
- {/* Badge Isenção IVA */}
+ {/* Badge Preços TTC */}
  <div className="bg-white/10 backdrop-blur-sm rounded-xl px-6 py-4 border-2 border-white/30 hover:bg-white/20 transition-all">
  <div className="text-2xl mb-2">📄</div>
- <div className="text-sm font-bold text-white">Isenção IVA</div>
- <div className="text-xs text-gray-100">Art.º 53.º CIVA</div>
+ <div className="text-sm font-bold text-white">Preços TTC</div>
+ <div className="text-xs text-gray-100">IVA incluído</div>
  </div>
- {/* Badge Garantia */}
+ {/* Badge Seguro RC */}
  <div className="bg-white/10 backdrop-blur-sm rounded-xl px-6 py-4 border-2 border-white/30 hover:bg-white/20 transition-all">
  <div className="text-2xl mb-2">🛡️</div>
- <div className="text-sm font-bold text-white">Garantia Escrita</div>
- <div className="text-xs text-gray-100">6 meses mão de obra</div>
+ <div className="text-sm font-bold text-white">Seguro RC profissional</div>
+ <div className="text-xs text-gray-100">Até 50.000 €</div>
  </div>
  {/* Badge Preços Transparentes */}
  <div className="bg-white/10 backdrop-blur-sm rounded-xl px-6 py-4 border-2 border-white/30 hover:bg-white/20 transition-all">
@@ -138,7 +138,7 @@ function Footer() {
  Morada: Trás-os-Montes, Portugal
  </div>
  <div className="mt-3 text-xs text-gray-300">
- <strong>Outros serviços:</strong> Precisa de canalizador profissional? Visite <a href="https://canalizador-norte-reparos.pt" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">canalizador-norte-reparos.pt</a>
+ <strong>Canalização:</strong> consulte o site dedicado <a href="https://canalizador-norte-reparos.pt" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">canalizador-norte-reparos.pt</a>
  </div>
  <div className="mt-2 text-xs text-gray-300">
  <strong>Urgência imediata?</strong> <a href="https://eletricista-urgente.pt" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">eletricista-urgente.pt</a> • <a href="https://canalizador-urgente.pt" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">canalizador-urgente.pt</a>

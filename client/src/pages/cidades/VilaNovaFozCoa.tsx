@@ -18,7 +18,7 @@ export default function VilaNovaFozCoa() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Eletricista em Vila Nova de Foz Côa, Património UNESCO. Instalações para museus, quintas do Douro e turismo cultural. diagnóstico elétrico. Sem compromisso.');
+ metaDescription.setAttribute('content', 'Eletricista em Vila Nova de Foz Côa, Património UNESCO. Instalações para museus, quintas do Douro e turismo cultural. diagnóstico elétrico. Orçamento por escrito antes de qualquer intervenção.');
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');
@@ -104,7 +104,7 @@ export default function VilaNovaFozCoa() {
  { icon: Zap, title: "Espaços Culturais", desc: "Iluminação técnica para museus, galerias e centros interpretativos" },
  { icon: Shield, title: "Quintas do Douro", desc: "Instalações para adegas, caves e produção vinícola do vale do Côa" },
  { icon: CheckCircle, title: "Turismo Cultural", desc: "Sistemas elétricos para hotéis, pousadas e alojamento turístico" },
- { title: "Diagnóstico elétrico", desc: "Diagnóstico para imóveis, comércio e espaços públicos" },
+ { icon: Zap, title: "Diagnóstico elétrico", desc: "Diagnóstico para imóveis, comércio e espaços públicos" },
  ].map((service, index) => (
  <div key={index} className="flex items-start gap-4 p-6 bg-white rounded-xl shadow">
  <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -135,6 +135,17 @@ export default function VilaNovaFozCoa() {
  </div>
  </section>
  {/* Cidades Próximas - Internal Linking */}
+ <section className="py-12 bg-gray-50">
+ <div className="container max-w-3xl mx-auto px-4">
+ <h2 className="text-2xl font-black mb-4 text-center">Preços (TTC)</h2>
+ <ul className="space-y-2 text-gray-700">
+ <li><strong>Dias úteis, 09h00–18h00:</strong> 70 €/hora + 30 € de deslocação.</li>
+ <li><strong>Noite, fins de semana e feriados:</strong> 100 €/hora + 50 € de deslocação.</li>
+ <li>Toda a hora iniciada é devida. A deslocação é sempre cobrada.</li>
+ <li>Orçamento por escrito antes de qualquer intervenção. Pode pedir uma estimativa indicativa à distância, com descrição detalhada e fotografias.</li>
+ </ul>
+ </div>
+ </section>
  <CidadesProximas
  currentCity="Vila Nova de Foz Côa"
  cidades={cidadesProximas}

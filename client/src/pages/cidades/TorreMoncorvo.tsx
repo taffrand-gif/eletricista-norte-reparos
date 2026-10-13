@@ -19,7 +19,7 @@ export default function TorreMoncorvo() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Tomada queimada em Torre de Moncorvo? Arranjo no próprio dia. diagnóstico elétrico, sem compromisso. Ligue: 932 321 892');
+ metaDescription.setAttribute('content', 'Tomada queimada em Torre de Moncorvo? Arranjo de avarias elétricas e diagnóstico elétrico. Orçamento por escrito antes de qualquer intervenção. Ligue: 932 321 892');
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');
@@ -66,7 +66,7 @@ export default function TorreMoncorvo() {
  }, []);
  const cidadesProximas = getCidadesProximas('torre-moncorvo');
  const faqs = [
- { question: "Quanto tempo demora a chegar a Torre de Moncorvo?", answer: "Chegamos a Torre de Moncorvo em aproximadamente 50-60 minutos. Cobrimos todo o concelho." },
+ { question: "Quanto tempo demora a chegar a Torre de Moncorvo?", answer: "O prazo de chegada é combinado por telefone, consoante a disponibilidade. Cobrimos todo o concelho." },
  {
  question: "Qual o custo de deslocação a Torre de Moncorvo?",
  answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
@@ -95,7 +95,7 @@ export default function TorreMoncorvo() {
  {[
  { icon: Zap, title: "Urgências Elétricas 24h", desc: "Apagões, curto-circuitos, disjuntores a disparar" },
  { icon: Shield, title: "Quintas Vinícolas", desc: "Instalações para adegas, lagares, sistemas de refrigeração" },
- { title: "Diagnóstico elétrico", desc: "Obrigatória para turismo rural e alojamento local" },
+ { icon: Zap, title: "Diagnóstico elétrico", desc: "Obrigatória para turismo rural e alojamento local" },
  { icon: Zap, title: "Quadros Elétricos", desc: "Modernização e aumento de potência" },
  ].map((service, index) => (
  <div key={index} className="flex items-start gap-4 p-6 bg-white rounded-xl shadow">
@@ -116,6 +116,17 @@ export default function TorreMoncorvo() {
  </section>
  {/* Related Cities - Maillage interno SEO */}
  {/* Cidades Próximas - Internal Linking */}
+ <section className="py-12 bg-gray-50">
+ <div className="container max-w-3xl mx-auto px-4">
+ <h2 className="text-2xl font-black mb-4 text-center">Preços (TTC)</h2>
+ <ul className="space-y-2 text-gray-700">
+ <li><strong>Dias úteis, 09h00–18h00:</strong> 70 €/hora + 30 € de deslocação.</li>
+ <li><strong>Noite, fins de semana e feriados:</strong> 100 €/hora + 50 € de deslocação.</li>
+ <li>Toda a hora iniciada é devida. A deslocação é sempre cobrada.</li>
+ <li>Orçamento por escrito antes de qualquer intervenção. Pode pedir uma estimativa indicativa à distância, com descrição detalhada e fotografias.</li>
+ </ul>
+ </div>
+ </section>
  <CidadesProximas
  currentCity="Torre de Moncorvo"
  cidades={cidadesProximas}

@@ -34,7 +34,7 @@ function RelatedCities({ currentCity, currentCitySlug }: RelatedCitiesProps) {
  { name: 'Mondim de Basto', slug: 'eletricista-mondim-de-basto', region: 'Vila Real' },
  { name: 'Peso da Régua', slug: 'eletricista-peso-da-regua', region: 'Vila Real' },
  { name: 'Lamego', slug: 'eletricista-lamego', region: 'Viseu' },
- { name: 'Moimenta da Beira', slug: 'eletricista-moimenta-da-beira', region: 'Viseu' },
+ { name: 'Moimenta da Beira', slug: 'eletricista-moimenta', region: 'Viseu' },
  { name: 'Vila Nova de Foz Côa', slug: 'eletricista-vila-nova-foz-coa', region: 'Guarda' },
  { name: 'Sernancelhe', slug: 'eletricista-sernancelhe', region: 'Viseu' },
  { name: 'Penedono', slug: 'eletricista-penedono', region: 'Viseu' },

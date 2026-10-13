@@ -19,7 +19,7 @@ export default function MirandaDouro() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Sem eletricidade em Miranda do Douro? Estamos aí hoje. Arranjo urgente, orçamento sem compromisso. Ligue: 932 321 892');
+ metaDescription.setAttribute('content', 'Sem eletricidade em Miranda do Douro? Arranjo urgente de avarias elétricas. Orçamento por escrito antes de qualquer intervenção. Ligue: 932 321 892');
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');
@@ -66,7 +66,7 @@ export default function MirandaDouro() {
  }, []);
  const cidadesProximas = getCidadesProximas('miranda-douro');
  const faqs = [
- { question: "Quanto tempo demora a chegar a Miranda do Douro?", answer: "Chegamos a Miranda do Douro em aproximadamente 45-60 minutos. Cobrimos todo o concelho incluindo Sendim e Duas Igrejas." },
+ { question: "Quanto tempo demora a chegar a Miranda do Douro?", answer: "O prazo de chegada é combinado por telefone, consoante a disponibilidade. Cobrimos todo o concelho incluindo Sendim e Duas Igrejas." },
  {
  question: "Qual o custo de deslocação a Miranda do Douro?",
  answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
@@ -96,7 +96,7 @@ export default function MirandaDouro() {
  { icon: Zap, title: "Urgências Elétricas 24h", desc: "Apagões, curto-circuitos, disjuntores a disparar" },
  { icon: Shield, title: "Casas de Aldeia", desc: "Reabilitação elétrica de casas tradicionais mirandesas" },
  { icon: CheckCircle, title: "Turismo Rural", desc: "Instalações para alojamento local e casas de férias" },
- { title: "Diagnóstico elétrico", desc: "Obrigatória para arrendamento turístico" },
+ { icon: Zap, title: "Diagnóstico elétrico", desc: "Obrigatória para arrendamento turístico" },
  ].map((service, index) => (
  <div key={index} className="flex items-start gap-4 p-6 bg-white rounded-xl shadow">
  <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0"><service.icon className="w-6 h-6 text-white" /></div>
@@ -126,6 +126,17 @@ export default function MirandaDouro() {
  </section>
  {/* Related Cities - Maillage interno SEO */}
  {/* Cidades Próximas - Internal Linking */}
+ <section className="py-12 bg-gray-50">
+ <div className="container max-w-3xl mx-auto px-4">
+ <h2 className="text-2xl font-black mb-4 text-center">Preços (TTC)</h2>
+ <ul className="space-y-2 text-gray-700">
+ <li><strong>Dias úteis, 09h00–18h00:</strong> 70 €/hora + 30 € de deslocação.</li>
+ <li><strong>Noite, fins de semana e feriados:</strong> 100 €/hora + 50 € de deslocação.</li>
+ <li>Toda a hora iniciada é devida. A deslocação é sempre cobrada.</li>
+ <li>Orçamento por escrito antes de qualquer intervenção. Pode pedir uma estimativa indicativa à distância, com descrição detalhada e fotografias.</li>
+ </ul>
+ </div>
+ </section>
  <CidadesProximas
  currentCity="Miranda do Douro"
  cidades={cidadesProximas}

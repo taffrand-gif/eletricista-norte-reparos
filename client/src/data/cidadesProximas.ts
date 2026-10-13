@@ -22,7 +22,7 @@ export const cidadesProximasMirandela = [
  { name: 'Bragança', slug: 'braganca', distance: '65km', zona: 4 },
  { name: 'Murça', slug: 'murca', distance: '35km', zona: 3 },
  { name: 'Alfândega da Fé', slug: 'alfandega-da-fe', distance: '40km', zona: 3 },
- { name: 'Carrazeda de Ansiães', slug: 'carrazeda-ansiaes', distance: '45km', zona: 3 }
+ { name: 'Carrazeda de Ansiães', slug: 'carrazeda-de-ansiaes', distance: '45km', zona: 3 }
 ];
 export const cidadesProximasVilaReal = [
  { name: 'Peso da Régua', slug: 'peso-regua', distance: '25km', zona: 2 },
@@ -60,7 +60,7 @@ export const cidadesProximasTorreMoncorvo = [
  { name: 'Mogadouro', slug: 'mogadouro', distance: '25km', zona: 2 },
  { name: 'Alfândega da Fé', slug: 'alfandega-da-fe', distance: '30km', zona: 3 },
  { name: 'Freixo de Espada à Cinta', slug: 'freixo-espada-cinta', distance: '20km', zona: 2 },
- { name: 'Carrazeda de Ansiães', slug: 'carrazeda-ansiaes', distance: '35km', zona: 3 },
+ { name: 'Carrazeda de Ansiães', slug: 'carrazeda-de-ansiaes', distance: '35km', zona: 3 },
  { name: 'Vila Flor', slug: 'vila-flor', distance: '40km', zona: 3 },
  { name: 'Trás-os-Montes', slug: 'macedo-cavaleiros', distance: '45km', zona: 3 }
 ];
@@ -68,7 +68,7 @@ export const cidadesProximasLamego = [
  { name: 'Peso da Régua', slug: 'peso-regua', distance: '12km', zona: 1 },
  { name: 'Tabuaço', slug: 'tabuaco', distance: '20km', zona: 2 },
  { name: 'Armamar', slug: 'armamar', distance: '25km', zona: 2 },
- { name: 'São João da Pesqueira', slug: 'sao-joao-pesqueira', distance: '30km', zona: 3 },
+ { name: 'São João da Pesqueira', slug: 'sao-joao-da-pesqueira', distance: '30km', zona: 3 },
  { name: 'Vila Real', slug: 'vila-real', distance: '35km', zona: 3 },
  { name: 'Sernancelhe', slug: 'sernancelhe', distance: '40km', zona: 3 }
 ];
@@ -86,14 +86,14 @@ export const cidadesProximasAlfandegaFe = [
  { name: 'Mogadouro', slug: 'mogadouro', distance: '45km', zona: 3 },
  { name: 'Mirandela', slug: 'mirandela', distance: '40km', zona: 3 },
  { name: 'Vila Flor', slug: 'vila-flor', distance: '25km', zona: 2 },
- { name: 'Carrazeda de Ansiães', slug: 'carrazeda-ansiaes', distance: '35km', zona: 3 }
+ { name: 'Carrazeda de Ansiães', slug: 'carrazeda-de-ansiaes', distance: '35km', zona: 3 }
 ];
 export const cidadesProximasVilaFlor = [
  { name: 'Mirandela', slug: 'mirandela', distance: '30km', zona: 3 },
  { name: 'Alfândega da Fé', slug: 'alfandega-da-fe', distance: '25km', zona: 2 },
  { name: 'Trás-os-Montes', slug: 'macedo-cavaleiros', distance: '45km', zona: 3 },
  { name: 'Torre de Moncorvo', slug: 'torre-moncorvo', distance: '40km', zona: 3 },
- { name: 'Carrazeda de Ansiães', slug: 'carrazeda-ansiaes', distance: '20km', zona: 2 },
+ { name: 'Carrazeda de Ansiães', slug: 'carrazeda-de-ansiaes', distance: '20km', zona: 2 },
  { name: 'Murça', slug: 'murca', distance: '35km', zona: 3 }
 ];
 export const cidadesProximasVimioso = [
@@ -118,7 +118,7 @@ export const cidadesProximasFreixoEspadaCinta = [
  { name: 'Miranda do Douro', slug: 'miranda-douro', distance: '60km', zona: 4 },
  { name: 'Vila Nova de Foz Côa', slug: 'vila-nova-foz-coa', distance: '35km', zona: 3 },
  { name: 'Alfândega da Fé', slug: 'alfandega-da-fe', distance: '45km', zona: 3 },
- { name: 'Carrazeda de Ansiães', slug: 'carrazeda-ansiaes', distance: '40km', zona: 3 }
+ { name: 'Carrazeda de Ansiães', slug: 'carrazeda-de-ansiaes', distance: '40km', zona: 3 }
 ];
 export const cidadesProximasCarrazedaAnsiaes = [
  { name: 'Vila Flor', slug: 'vila-flor', distance: '20km', zona: 2 },
@@ -134,7 +134,7 @@ export const cidadesProximasAlijo = [
  { name: 'Murça', slug: 'murca', distance: '25km', zona: 2 },
  { name: 'Peso da Régua', slug: 'peso-regua', distance: '30km', zona: 3 },
  { name: 'Mirandela', slug: 'mirandela', distance: '50km', zona: 4 },
- { name: 'Carrazeda de Ansiães', slug: 'carrazeda-ansiaes', distance: '40km', zona: 3 }
+ { name: 'Carrazeda de Ansiães', slug: 'carrazeda-de-ansiaes', distance: '40km', zona: 3 }
 ];
 export const cidadesProximasSabrosa = [
  { name: 'Vila Real', slug: 'vila-real', distance: '15km', zona: 2 },
@@ -148,7 +148,7 @@ export const cidadesProximasMurca = [
  { name: 'Vila Real', slug: 'vila-real', distance: '35km', zona: 3 },
  { name: 'Alijó', slug: 'alijo', distance: '25km', zona: 2 },
  { name: 'Mirandela', slug: 'mirandela', distance: '35km', zona: 3 },
- { name: 'Carrazeda de Ansiães', slug: 'carrazeda-ansiaes', distance: '30km', zona: 3 },
+ { name: 'Carrazeda de Ansiães', slug: 'carrazeda-de-ansiaes', distance: '30km', zona: 3 },
  { name: 'Vila Flor', slug: 'vila-flor', distance: '35km', zona: 3 },
  { name: 'Sabrosa', slug: 'sabrosa', distance: '30km', zona: 3 }
 ];
@@ -194,7 +194,7 @@ export const cidadesProximasRibeiraPena = [
 ];
 export const cidadesProximasTabuaco = [
  { name: 'Lamego', slug: 'lamego', distance: '20km', zona: 2 },
- { name: 'São João da Pesqueira', slug: 'sao-joao-pesqueira', distance: '15km', zona: 2 },
+ { name: 'São João da Pesqueira', slug: 'sao-joao-da-pesqueira', distance: '15km', zona: 2 },
  { name: 'Armamar', slug: 'armamar', distance: '25km', zona: 2 },
  { name: 'Peso da Régua', slug: 'peso-regua', distance: '30km', zona: 3 },
  { name: 'Vila Real', slug: 'vila-real', distance: '45km', zona: 3 },
@@ -227,7 +227,7 @@ export const cidadesProximasSantaMartaPenaguiao = [
 export const cidadesProximasArmamar = [
  { name: 'Lamego', slug: 'lamego', distance: '25km', zona: 2 },
  { name: 'Tabuaço', slug: 'tabuaco', distance: '25km', zona: 2 },
- { name: 'São João da Pesqueira', slug: 'sao-joao-pesqueira', distance: '30km', zona: 3 },
+ { name: 'São João da Pesqueira', slug: 'sao-joao-da-pesqueira', distance: '30km', zona: 3 },
  { name: 'Peso da Régua', slug: 'peso-regua', distance: '35km', zona: 3 },
  { name: 'Mesão Frio', slug: 'mesao-frio', distance: '30km', zona: 3 },
  { name: 'Sernancelhe', slug: 'sernancelhe', distance: '40km', zona: 3 }
@@ -237,16 +237,16 @@ export const cidadesProximasSernancelhe = [
  { name: 'Tabuaço', slug: 'tabuaco', distance: '35km', zona: 3 },
  { name: 'Armamar', slug: 'armamar', distance: '40km', zona: 3 },
  { name: 'Penedono', slug: 'penedono', distance: '30km', zona: 3 },
- { name: 'Moimenta da Beira', slug: 'moimenta-beira', distance: '25km', zona: 2 },
+ { name: 'Moimenta da Beira', slug: 'moimenta', distance: '25km', zona: 2 },
  { name: 'Vila Nova de Foz Côa', slug: 'vila-nova-foz-coa', distance: '50km', zona: 4 }
 ];
 export const cidadesProximasPenedono = [
  { name: 'Sernancelhe', slug: 'sernancelhe', distance: '30km', zona: 3 },
- { name: 'Moimenta da Beira', slug: 'moimenta-beira', distance: '20km', zona: 2 },
+ { name: 'Moimenta da Beira', slug: 'moimenta', distance: '20km', zona: 2 },
  { name: 'Tabuaço', slug: 'tabuaco', distance: '40km', zona: 3 },
  { name: 'Vila Nova de Foz Côa', slug: 'vila-nova-foz-coa', distance: '45km', zona: 3 },
  { name: 'Lamego', slug: 'lamego', distance: '50km', zona: 4 },
- { name: 'São João da Pesqueira', slug: 'sao-joao-pesqueira', distance: '45km', zona: 3 }
+ { name: 'São João da Pesqueira', slug: 'sao-joao-da-pesqueira', distance: '45km', zona: 3 }
 ];
 export const cidadesProximasMoimentaBeira = [
  { name: 'Penedono', slug: 'penedono', distance: '20km', zona: 2 },
@@ -254,15 +254,15 @@ export const cidadesProximasMoimentaBeira = [
  { name: 'Tabuaço', slug: 'tabuaco', distance: '45km', zona: 3 },
  { name: 'Lamego', slug: 'lamego', distance: '55km', zona: 4 },
  { name: 'Vila Nova de Foz Côa', slug: 'vila-nova-foz-coa', distance: '60km', zona: 4 },
- { name: 'São João da Pesqueira', slug: 'sao-joao-pesqueira', distance: '50km', zona: 4 }
+ { name: 'São João da Pesqueira', slug: 'sao-joao-da-pesqueira', distance: '50km', zona: 4 }
 ];
 export const cidadesProximasVilaNovaFozCoa = [
  { name: 'Freixo de Espada à Cinta', slug: 'freixo-espada-cinta', distance: '35km', zona: 3 },
  { name: 'Torre de Moncorvo', slug: 'torre-moncorvo', distance: '45km', zona: 3 },
- { name: 'São João da Pesqueira', slug: 'sao-joao-pesqueira', distance: '35km', zona: 3 },
+ { name: 'São João da Pesqueira', slug: 'sao-joao-da-pesqueira', distance: '35km', zona: 3 },
  { name: 'Penedono', slug: 'penedono', distance: '45km', zona: 3 },
  { name: 'Sernancelhe', slug: 'sernancelhe', distance: '50km', zona: 4 },
- { name: 'Moimenta da Beira', slug: 'moimenta-beira', distance: '60km', zona: 4 }
+ { name: 'Moimenta da Beira', slug: 'moimenta', distance: '60km', zona: 4 }
 ];
 // Fonction helper pour obtenir les cidades próximas
 export function getCidadesProximas(citySlug: string) {
