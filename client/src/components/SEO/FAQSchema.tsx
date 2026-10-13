@@ -66,7 +66,7 @@ question: "têm experiência ?",
  },
  {
  question: "Cobram deslocação?",
- answer: "Não. A deslocação tem preço único em qualquer localidade servida: 30 € em dias úteis (9h–17h) e 50 € à noite, fins de semana e feriados."
+ answer: "Não. A deslocação tem preço único em qualquer localidade servida: 30 € em dias úteis (09h–18h) e 50 € à noite, fins de semana e feriados."
  },
  {
  question: "O que fazer em caso de curto-circuito?",
