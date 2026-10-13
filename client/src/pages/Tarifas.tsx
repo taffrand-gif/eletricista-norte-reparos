@@ -12,7 +12,7 @@ function Tarifas() {
  return (
  <>
  <Helmet>
- <title>Tarifas Transparentes - {config.name}</title>
+ <title>{`Tarifas Transparentes - ${config.name}`}</title>
  <meta
  name="description"
  content="Preços claros e transparentes. Sem surpresas. Consulte os nossos tarifários completos antes de ligar."
