@@ -16,7 +16,7 @@ export default function ComoInstalarTomadaSozinho() {
  },
  {
  question: "Quanto custa eletricista para instalar tomada?",
- answer: "Instalar tomada simples: 40-80€ (inclui deslocação, instalação, material). Instalar tomada com cablagem nova: 80-150€. Preço inclui segurança e legalidade. Orçamento por escrito: 932 321 892"
+ answer: "O preço depende do tempo de trabalho: 70 €/h em dias úteis (09h–18h) e 100 €/h à noite, fins de semana e feriados, mais deslocação (30 € ou 50 € conforme o horário), TTC. Hora iniciada é devida. Orçamento por escrito antes da intervenção: 932 321 892"
  },
  {
  question: "É perigoso instalar tomada sem ser eletricista?",
@@ -96,7 +96,7 @@ export default function ComoInstalarTomadaSozinho() {
  "Testa tomada com equipamento profissional",
  "Emite Orçamento por escrito (obrigatório)",
  "Garante conformidade com normas portuguesas",
- "Dá garantia do trabalho (2 anos)"
+ "Entrega orçamento por escrito antes da intervenção"
  ];
  return (
  <>
@@ -148,7 +148,7 @@ export default function ComoInstalarTomadaSozinho() {
  ⚠️ Riscos de Instalar Tomada Sozinho
  </h2>
  <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
- Não vale a pena arriscar. Eletricista custa 40-80€. Vida não tem preço.
+ Não vale a pena arriscar. Um eletricista habilitado trabalha com orçamento por escrito. Vida não tem preço.
  </p>
  <div className="max-w-5xl mx-auto space-y-4">
  {riscos.map((item, index) => (
@@ -209,7 +209,7 @@ export default function ComoInstalarTomadaSozinho() {
  <section className="py-16 bg-white">
  <div className="container mx-auto px-4">
  <h2 className="text-3xl font-bold text-center mb-4">
- ✅ O Que Faz eletricista com experiência (40-80€)
+ ✅ O Que Faz eletricista com experiência
  </h2>
  <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
  Não é só "ligar 3 fios". É segurança e legalidade.
@@ -224,8 +224,8 @@ export default function ComoInstalarTomadaSozinho() {
  </div>
  <div className="mt-8 text-center">
  <p className="text-gray-600 mb-4">
- ✅ Preço: 40-80€ (instalação simples)<br />
- ✅ Inclui: deslocação, material, diagnóstico elétrico<br />
+ ✅ Preço: 70 €/h em dias úteis (09h–18h) e 100 €/h à noite, fins de semana e feriados, mais deslocação (30 € ou 50 € conforme o horário), TTC<br />
+ ✅ Inclui: diagnóstico elétrico e orçamento por escrito<br />
  ✅ Legal e seguro
  </p>
  <a
@@ -287,7 +287,7 @@ export default function ComoInstalarTomadaSozinho() {
  Precisa Instalar Tomada? Chame eletricista com experiência
  </h2>
  <p className="text-xl mb-8 max-w-2xl mx-auto">
-40-80€ por tomada. Legal, seguro e rápido (1-2h).
+Orçamento por escrito antes da intervenção. Legal e seguro.
  </p>
  <a
  href={`tel:${config.phone.replace(/\s/g, "")}`}
