@@ -222,7 +222,7 @@ export default function StructuredData() {
  "@context": "https://schema.org",
  "@type": "Service",
  "name": `${serviceName} em ${currentCity.city}`,
- "description": `${serviceName} profissional em ${currentCity.city}, Trás-os-Montes. Serviço 24h, urgências, sem compromisso.`,
+ "description": `${serviceName} profissional em ${currentCity.city}, Trás-os-Montes. Serviço 24h, urgências, orçamento por escrito antes de qualquer intervenção.`,
  "provider": {
  "@id": `https://${config.domain}/#organization`
  },

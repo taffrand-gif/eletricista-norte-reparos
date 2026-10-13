@@ -14,7 +14,7 @@ import { getCidadesProximas } from '@/data/cidadesProximas';
 export default function MacedoCavaleiros() {
  const { config } = useSite();
  useEffect(() => {
- document.title = "⚡ Eletricista Macedo Cavaleiros — Orçamento por Escrito | Garantia Escrita";
+ document.title = "⚡ Eletricista Macedo Cavaleiros — Orçamento por Escrito | Norte Reparos";
 
  let metaDescription = document.querySelector('meta[name="description"]');
  if (!metaDescription) {
@@ -262,6 +262,17 @@ export default function MacedoCavaleiros() {
  </div>
  </section>
  {/* Cidades Próximas - Internal Linking */}
+ <section className="py-12 bg-gray-50">
+ <div className="container max-w-3xl mx-auto px-4">
+ <h2 className="text-2xl font-black mb-4 text-center">Preços (TTC)</h2>
+ <ul className="space-y-2 text-gray-700">
+ <li><strong>Dias úteis, 09h00–18h00:</strong> 70 €/hora + 30 € de deslocação.</li>
+ <li><strong>Noite, fins de semana e feriados:</strong> 100 €/hora + 50 € de deslocação.</li>
+ <li>Toda a hora iniciada é devida. A deslocação é sempre cobrada.</li>
+ <li>Orçamento por escrito antes de qualquer intervenção. Pode pedir uma estimativa indicativa à distância, com descrição detalhada e fotografias.</li>
+ </ul>
+ </div>
+ </section>
  <CidadesProximas
  currentCity="Macedo de Cavaleiros"
  cidades={cidadesProximas}

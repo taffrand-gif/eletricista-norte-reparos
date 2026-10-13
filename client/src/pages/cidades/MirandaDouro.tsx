@@ -19,7 +19,7 @@ export default function MirandaDouro() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Sem eletricidade em Miranda do Douro? Estamos aí hoje. Arranjo urgente, orçamento sem compromisso. Ligue: 932 321 892');
+ metaDescription.setAttribute('content', 'Sem eletricidade em Miranda do Douro? Arranjo urgente de avarias elétricas. Orçamento por escrito antes de qualquer intervenção. Ligue: 932 321 892');
  let canonical = document.querySelector('link[rel="canonical"]');
  if (!canonical) {
  canonical = document.createElement('link');
@@ -126,6 +126,17 @@ export default function MirandaDouro() {
  </section>
  {/* Related Cities - Maillage interno SEO */}
  {/* Cidades Próximas - Internal Linking */}
+ <section className="py-12 bg-gray-50">
+ <div className="container max-w-3xl mx-auto px-4">
+ <h2 className="text-2xl font-black mb-4 text-center">Preços (TTC)</h2>
+ <ul className="space-y-2 text-gray-700">
+ <li><strong>Dias úteis, 09h00–18h00:</strong> 70 €/hora + 30 € de deslocação.</li>
+ <li><strong>Noite, fins de semana e feriados:</strong> 100 €/hora + 50 € de deslocação.</li>
+ <li>Toda a hora iniciada é devida. A deslocação é sempre cobrada.</li>
+ <li>Orçamento por escrito antes de qualquer intervenção. Pode pedir uma estimativa indicativa à distância, com descrição detalhada e fotografias.</li>
+ </ul>
+ </div>
+ </section>
  <CidadesProximas
  currentCity="Miranda do Douro"
  cidades={cidadesProximas}
