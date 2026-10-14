@@ -180,7 +180,7 @@ export default function TransparencePrix() {
  Valores sem IVA (Art. 53º CIVA). O que vê é o que paga. Sempre.
  </p>
  </div>
- <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+ <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
  {forfaits.map((forfait, idx) => (
  <div
  key={idx}
