@@ -73,7 +73,6 @@
 <link rel="preconnect" href="https://www.google-analytics.com" crossorigin />
 <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
 <link rel="dns-prefetch" href="https://www.google-analytics.com" />
-<link rel="dns-prefetch" href="https://ipapi.co" />
 <link rel="dns-prefetch" href="https://nominatim.openstreetmap.org" />
 
 <!-- Google Analytics 4 -->
@@ -111,9 +110,6 @@ gtag('event', 'phone_click', {'event_category': 'conversion', 'event_label': pho
 };
 window.trackWhatsAppClick = function(source) {
 gtag('event', 'whatsapp_click', {'event_category': 'conversion', 'event_label': source, 'value': 1});
-};
-window.trackQuoteCalculated = function(service, price) {
-gtag('event', 'quote_calculated', {'event_category': 'engagement', 'event_label': service, 'value': price});
 };
 </script>
 
