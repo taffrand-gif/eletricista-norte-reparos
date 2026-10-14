@@ -14,7 +14,6 @@ import CookieConsent from "./components/CookieConsent";
 import OptimizedHome from "./pages/OptimizedHome";
 import SkipLink from '@/components/SkipLink';
 // Lazy load conversion widgets (below-fold)
-const QuoteCalculator = lazy(() => import('@/components/QuoteCalculator'));
 // Lazy load all pages except homepage for better LCP
 const Servicos = lazy(() => import("@/pages/Servicos"));
 const InstalacaoEletrica = lazy(() => import("@/pages/InstalacaoEletrica"));
@@ -197,7 +196,6 @@ function App() {
 <Toaster />
  <StructuredData />
  <Suspense fallback={null}>
- <QuoteCalculator />
  </Suspense>
  <Router />
  <FloatingCTA />
