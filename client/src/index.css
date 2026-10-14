@@ -324,6 +324,27 @@ html {
  }
 }
 
+/* Bandeau RGPD statique (#rgpd-banner-enr : position fixed, bottom 0, z-index 10000, style inline) vs barre mobile « Contacto rápido »
+   (MobileStickyBar : fixed bottom 0, 64px, md:hidden). Le bandeau recouvrait la barre (Ligar + WhatsApp) tant que le visiteur n'avait pas choisi.
+   Mesuré (Playwright, 320-767 px) : barre = 64px à tous les viewports ≤ 767 ; bandeau = 202px à 320 (max), 182px à 360-390, 161px à 414-430, 89px à 700-767.
+   On place donc le bandeau AU-DESSUS de la barre (bottom: 64px) et on réserve sous le contenu barre + bandeau (64 + 203 = 267px) pour que le dernier CTA reste atteignable.
+   Barre : uniquement quand elle existe sur la page ; !important car le bandeau est stylé en inline par le script statique ; sans bandeau (choix mémorisé) rien ne change. */
+@media (max-width: 767px) {
+ body:has([aria-label="Contacto rápido"]) #rgpd-banner-enr {
+ bottom: 64px !important;
+ }
+ body:has([aria-label="Contacto rápido"]):has(#rgpd-banner-enr) {
+ padding-bottom: 267px;
+ }
+}
+/* Desktop/tablette ≥768px (barre masquée) : le bandeau (fixed bottom:0) recouvrait le dernier lien tel du pied de page en fin de défilement.
+   Mesuré : bandeau = 89px à 768-820, 69px à ≥1024 → réserve de 89px tant que le bandeau est affiché. */
+@media (min-width: 768px) {
+ body:has(#rgpd-banner-enr) {
+ padding-bottom: 89px;
+ }
+}
+
 /* ============================================
  FONT DISPLAY — Éviter le FOIT
  ============================================ */
