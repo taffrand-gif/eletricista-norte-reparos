@@ -1,6 +1,6 @@
 // Configuração para Norte-Reparos - Eletricista
 // Site eletricista-norte-reparos.pt
-// Preços sem IVA - NOVA GRELHA TARIFÁRIA 2026
+// Preços TTC (IVA incluído) - NOVA GRELHA TARIFÁRIA 2026
 // Grelha única: 70€/h + 30€ (dias úteis 9h–17h) · 100€/h + 50€ (noite, fins de semana, feriados)
 
 export type SiteId = 'norte-reparos' | 'eletricista-norte-reparos';
