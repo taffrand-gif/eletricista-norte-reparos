@@ -22,19 +22,6 @@ export const useAnalytics = () => {
  // Ces fonctions restent pour la compatibilité des composants, sans émettre d'événement.
  const trackPhoneClick = (_phoneNumber: string) => {};
  const trackWhatsAppClick = (_source: string) => {};
- const trackQuoteCalculated = (service: string, urgency: string, price: string) => {
- trackEvent('quote_calculated', {
- event_category: 'engagement',
- event_label: `Service: ${service}`,
- urgency,
- estimated_price: price});
- };
- const trackQuoteSentWhatsApp = (service: string) => {
- trackEvent('quote_sent_whatsapp', {
- event_category: 'conversion',
- event_label: `Service: ${service}`,
- value: 1});
- };
  const trackExitPopupShown = () => {
  trackEvent('exit_popup_shown', {
  event_category: 'engagement',
@@ -58,8 +45,6 @@ export const useAnalytics = () => {
  trackEvent,
  trackPhoneClick,
  trackWhatsAppClick,
- trackQuoteCalculated,
- trackQuoteSentWhatsApp,
  trackExitPopupShown,
  trackExitPopupConversion,
  trackScrollDepth,
