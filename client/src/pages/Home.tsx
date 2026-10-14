@@ -2,7 +2,6 @@
 // Main landing page - SIMPLIFIED to 5 sections for maximum conversion
 // 1. Hero with massive title and CTA
 // 2. WhyDifferent - 10 problems solved differently
-// 3. PriceCalculator - Single optimized calculator
 // 4. Social Proof - Testimonials + Before/After
 // 5. FAQ + Footer - Reassurance and conversion
 // Impact: -60% scroll, +50-100% conversion expected
@@ -16,7 +15,6 @@ import MobileBottomNav from '@/components/MobileBottomNav';
 import { useSite } from '@/contexts/SiteContext';
 // Lazy load below-the-fold components - HOMEPAGE PREMIUM (5 sections only)
 const WhyDifferent = lazy(() => import('@/components/WhyDifferent'));
-const PriceCalculator = lazy(() => import('@/components/PriceCalculator'));
 const Testimonials = lazy(() => import('@/components/Testimonials'));
 const BeforeAfter = lazy(() => import('@/components/BeforeAfter'));
 const FAQ = lazy(() => import('@/components/FAQ'));
@@ -69,8 +67,6 @@ export default function Home() {
  {/* PHASE 2 - GARANTIES */}
  <Suspense fallback={null}><GuaranteeSection /></Suspense>
  <Suspense fallback={null}><TrustBadges /></Suspense>
- {/* 3. CALCULATEUR ROI - 1 seul, optimisé */}
- <Suspense fallback={null}><PriceCalculator /></Suspense>
  {/* 4. PROVA SOCIAL - Témoignages + Before/After */}
  <Suspense fallback={null}><Testimonials /></Suspense>
  <Suspense fallback={null}><BeforeAfter /></Suspense>
