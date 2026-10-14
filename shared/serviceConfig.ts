@@ -113,7 +113,7 @@ export const plumberieConfig: ServiceConfig = {
 
 // Configuration Electricidade (Eletricista Profissional)
 // Alinhado com shared/siteConfig.ts e branches élec dos ternários
-// (WhyWePublishPrices, PriceCalculatorWidget, etc. → cor #FF6B35, tel 932)
+// (WhyWePublishPrices, etc. → cor #FF6B35, tel 932)
 export const electriciteConfig: ServiceConfig = {
  type: 'electricite',
  name: 'Eletricista',
