@@ -10,25 +10,27 @@ import {
  AccordionTrigger} from '@/components/ui/accordion';
 function FAQLocal() {
  const { config } = useSite();
+ const priceNote = 'Mão de obra: 70 € por hora em dias úteis (09h-18h), mais 30 € de deslocação; à noite, aos fins de semana e feriados: 100 € por hora, mais 50 € de deslocação. Valores TTC, IVA incluído. Cada hora iniciada é devida.';
+ const availabilityNote = 'A disponibilidade é confirmada conforme a localização e a situação operacional.';
  const localFaqs = [
  {
  question: 'Fazem instalação e reparação elétrica em Mirandela?',
- answer: 'Sim, a Eletricista Profissional faz instalação, remodelação e diagnóstico elétrico em Mirandela e em todo o distrito de Bragança, ao seu domicílio. Orçamento por escrito em 48h e garantia 1 ano.'},
+ answer: `Sim, a Eletricista Profissional faz instalação, remodelação e diagnóstico elétrico em Mirandela, ao seu domicílio. ${availabilityNote} Antes da intervenção, apresentamos orçamento por escrito.`},
  {
  question: 'Quanto custa um eletricista em Bragança?',
- answer: 'Todos os preços sem IVA. Sem compromisso.'},
+ answer: `${priceNote} O valor final depende do diagnóstico e da intervenção; o orçamento por escrito é apresentado antes de começar.`},
  {
  question: 'Fazem diagnóstico elétrico na zona de Bragança?',
- answer: 'Sim, fazemos inspeção elétrica para venda de imóveis, arrendamento e instalações novas na zona de Bragança. Prazo: 3-5 dias úteis. Preço: a partir de 150€ (sem IVA).'},
+ answer: `Sim, fazemos inspeção elétrica para venda de imóveis, arrendamento e instalações novas na zona de Bragança. O valor depende do diagnóstico e da intervenção. ${priceNote}`},
  {
- question: 'Trabalham em Miranda do Douro e na zona raiana?',
- answer: 'Sim, prestamos serviço de instalação, remodelação e diagnóstico elétrico em Miranda do Douro e em toda a zona raiana: substituição de quadros elétricos, remodelação de instalações e diagnóstico elétrico. Orçamento por escrito em 48h. Ligue 932 321 892.'},
+ question: 'Trabalham em Miranda do Douro?',
+ answer: `Sim, prestamos serviço de instalação, remodelação e diagnóstico elétrico em Miranda do Douro: substituição de quadros elétricos, remodelação de instalações e diagnóstico elétrico. ${availabilityNote} Ligue 932 321 892.`},
  {
  question: 'Instalam quadros elétricos em Vila Flor e Torre de Moncorvo?',
- answer: 'Sim, fazemos substituição e modernização de quadros elétricos em Vila Flor, Torre de Moncorvo e todas as localidades do distrito de Bragança. Preço: 370-650€ para quadro 12 módulos (sem IVA). Inclui quadro novo, disjuntores diferenciais, instalação completa e garantia.'},
+ answer: `Sim, fazemos substituição e modernização de quadros elétricos em Vila Flor e Torre de Moncorvo. O valor depende do quadro e da instalação existente, e o orçamento por escrito é apresentado antes da intervenção. ${priceNote} ${availabilityNote}`},
  {
  question: 'Qual o eletricista mais perto de Mogadouro?',
- answer: 'A Eletricista Profissional é o eletricista em Mogadouro. Cobrimos Mogadouro e todas as suas freguesias. Serviço ao seu domicílio, com orçamento por escrito em 48h.'},
+ answer: `A Eletricista Profissional atende em Mogadouro, ao seu domicílio. ${availabilityNote} O orçamento por escrito é apresentado antes da intervenção.`},
  ];
  return (
  <section className="py-16 bg-white">
