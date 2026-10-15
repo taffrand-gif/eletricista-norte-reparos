@@ -18,7 +18,7 @@ function FloatingCTA() {
  const whatsappUrl = `https://wa.me/${config.whatsapp || '351932321892'}?text=${encodeURIComponent(whatsappMessage)}`;
  if (!isVisible) return null;
  return (
- <div id="floating-cta-react" className={`fixed bottom-4 right-4 z-50 transition-all duration-300 hidden md:block ${isMinimized ? 'w-12 h-12' : 'w-auto'}`}>
+ <div id="floating-cta-react" style={{ bottom: 'calc(1rem + var(--rgpd-banner-h, 0px))' }} className={`fixed bottom-4 right-4 z-50 transition-all duration-300 hidden md:block ${isMinimized ? 'w-12 h-12' : 'w-auto'}`}>
  {isMinimized ? (
  // Botão minimizado
  <button
