@@ -503,7 +503,7 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  </a>
  <a href="/eletricista-braganca" className="bg-white p-4 rounded-xl text-center hover:shadow-md transition-shadow">
  <span className="font-semibold text-amber-700">Bragança</span>
- <p className="text-sm text-gray-600 mt-1">12 anos de atividade</p>
+ <p className="text-sm text-gray-600 mt-1">Mais de 20 anos de experiência profissional</p>
  </a>
  <a href="/eletricista-chaves" className="bg-white p-4 rounded-xl text-center hover:shadow-md transition-shadow">
  <span className="font-semibold text-amber-700">Chaves</span>
