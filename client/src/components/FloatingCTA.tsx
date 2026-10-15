@@ -12,7 +12,11 @@ function FloatingCTA() {
  const { trackPhoneClick, trackWhatsAppClick } = useAnalytics();
  const { city, arrivalTime } = useLocationContent();
  const [isVisible, setIsVisible] = useState(true);
- const [isMinimized, setIsMinimized] = useState(false);
+ // Tant que le bandeau de consentement est affiché, le CTA démarre réduit (bouton 48 px) : la carte complète
+ // remontée au-dessus du bandeau recouvrirait le contenu de la page. Un clic l'ouvre.
+ const [isMinimized, setIsMinimized] = useState(
+ () => typeof document !== 'undefined' && !!document.querySelector('#rgpd-banner-enr, [aria-label="Consentimento de cookies"]')
+ );
  // Mensagem WhatsApp pré-preenchida com localização
  const whatsappMessage = usePersonalizedWhatsAppMessage(config.whatsappMessage);
  const whatsappUrl = `https://wa.me/${config.whatsapp || '351932321892'}?text=${encodeURIComponent(whatsappMessage)}`;
