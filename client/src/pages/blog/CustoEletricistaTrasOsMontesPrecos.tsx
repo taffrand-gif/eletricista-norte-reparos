@@ -52,7 +52,6 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  </span>
  <span>⏱️ Leitura rápida</span>
  <span>📅 18 Fev 2026</span>
- <span>👁️ 3.5K visualizações</span>
  </div>
 
  <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -64,8 +63,8 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <span className="text-2xl">💰</span>
  </div>
  <div>
- <p className="font-semibold text-gray-900">Técnico Mendes</p>
- <p className="text-gray-600">Gestor de Projetos Elétricos com 10+ anos na região</p>
+ <p className="font-semibold text-gray-900">Equipa Norte Reparos</p>
+ <p className="text-gray-600">Eletricidade em Trás-os-Montes</p>
  </div>
  </div>
  </div>
@@ -532,12 +531,9 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  </div>
  </div>
  <div className="md:w-3/4">
- <h3 className="text-2xl font-bold text-gray-900 mb-2">Sobre o Autor</h3>
+ <h3 className="text-2xl font-bold text-gray-900 mb-2">Sobre a Equipa</h3>
  <p className="text-gray-700 mb-4">
- <strong>Técnico Mendes</strong> é gestor de projetos elétricos com experiência em Trás-os-Montes
- na região de <Link to="/servicos">Trás-os-Montes</Link>. Já coordenou mais de 300 projetos de instalação e renovação elétrica,
- desde pequenas arranjos a instalações completas em casas centenárias. Especialista em
- orçamentação transparente e adaptação de soluções técnicas à realidade económica regional.
+ Artigo preparado pela equipa Norte Reparos, com mais de 20 anos de experiência profissional. A informação é geral: cada situação é avaliada caso a caso, com orçamento por escrito antes de qualquer intervenção.
  </p>
  <p className="text-gray-600">
  Para análise de orçamentos ou planeamento de projetos elétricos, contacte através do telefone ou WhatsApp.

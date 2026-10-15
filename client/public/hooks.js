@@ -1,7 +1,6 @@
 /* hooks.js — Conversion hooks for Norte Reparos
  1. WhatsApp buttons by problem type
  2. Dynamic "Atendimento 24h" widget
- 3. "Último trabalho" badge
  4. Exit-intent popup
 */
 (function() {
@@ -146,29 +145,6 @@
  existing.replaceWith(container);
  }
 
- function createLastWorkBadge() {
- if (!cityName) return;
-
- var works = [
- 'Reparação Quadro Elétrico', 'Instalação Iluminação LED', 'certificação elétrica',
- 'Reparação Curto-Circuito', 'Instalação Tomadas', 'Manutenção Elétrica'
- ];
- var dayOfYear = Math.floor((new Date() - new Date(new Date().getFullYear(), 0, 0)) / 86400000);
- var work = works[dayOfYear % works.length];
- var daysAgo = (dayOfYear % 5) + 1;
-
- var badge = document.createElement('div');
- badge.style.cssText = 'background:#fff3e0;border-left:4px solid #FF6B35;padding:12px 16px;border-radius:8px;margin:20px 0;font-size:14px;';
- badge.innerHTML = '🔧 <strong>Última intervenção em ' + cityName + ':</strong> há ' + daysAgo + ' dia' + (daysAgo > 1 ? 's' : '') + ' — ' + work;
-
- var hero = document.querySelector('.hero, [class*="hero"], .header, .urgence-box, .distance-box, .content');
- if (hero && hero.nextSibling) {
- hero.parentNode.insertBefore(badge, hero.nextSibling);
- } else if (hero) {
- hero.appendChild(badge);
- }
- }
-
  function createExitIntent() {
  var shown = false;
 
@@ -235,7 +211,6 @@
  createAvailabilityWidget();
  // createWhatsAppButtons() removed — inline .whatsapp-float + .phone-float buttons
  // in HTML pages are sufficient. This eliminates duplicate floating buttons.
- createLastWorkBadge();
  createExitIntent();
  }
 })();

@@ -77,7 +77,6 @@ const ComoInstalarCandeeiroTeto: React.FC = () => {
  </span>
  <span>⏱️ Leitura rápida</span>
  <span>📅 13 Fev 2026</span>
- <span>👁️ 1.2K visualizações</span>
  </div>
  
  <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -89,8 +88,8 @@ const ComoInstalarCandeeiroTeto: React.FC = () => {
  <span className="text-2xl">🔌</span>
  </div>
  <div>
- <p className="font-semibold text-gray-900">João Silva</p>
- <p className="text-gray-600">eletricista com vasta experiência em Trás-os-Montes</p>
+ <p className="font-semibold text-gray-900">Equipa Norte Reparos</p>
+ <p className="text-gray-600">Eletricidade em Trás-os-Montes</p>
  </div>
  </div>
  </div>
@@ -285,11 +284,9 @@ const ComoInstalarCandeeiroTeto: React.FC = () => {
  </div>
  </div>
  <div className="md:w-3/4">
- <h3 className="text-2xl font-bold text-gray-900 mb-2">Sobre o Autor</h3>
+ <h3 className="text-2xl font-bold text-gray-900 mb-2">Sobre a Equipa</h3>
  <p className="text-gray-700 mb-4">
- <strong>João Silva</strong> é eletricista com vasta experiência em Trás-os-Montes. 
- Especialista em instalações residenciais e comerciais, já realizou mais de 500 intervenções na região. 
- Acredita na importância da educação sobre segurança elétrica para prevenir acidentes domésticos.
+ Artigo preparado pela equipa Norte Reparos, com mais de 20 anos de experiência profissional. A informação é geral: cada situação é avaliada caso a caso, com orçamento por escrito antes de qualquer intervenção.
  </p>
  <p className="text-gray-600">
  Para questões técnicas ou orçamentos, contacte através do telefone ou WhatsApp acima.

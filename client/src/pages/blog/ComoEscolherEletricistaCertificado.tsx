@@ -67,7 +67,6 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  </span>
  <span>⏱️ Leitura rápida</span>
  <span>📅 18 Fev 2026</span>
- <span>👁️ 2.5K visualizações</span>
  </div>
 
  <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -79,8 +78,8 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  <span className="text-2xl">⚡</span>
  </div>
  <div>
- <p className="font-semibold text-gray-900">A equipa Norte Reparos</p>
- <p className="text-gray-600">12 anos de atividade na região</p>
+ <p className="font-semibold text-gray-900">Equipa Norte Reparos</p>
+ <p className="text-gray-600">Eletricidade em Trás-os-Montes</p>
  </div>
  </div>
  </div>
@@ -481,9 +480,9 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  </div>
  </div>
  <div className="md:w-3/4">
- <h3 className="text-2xl font-bold text-gray-900 mb-2">Sobre a Autora</h3>
+ <h3 className="text-2xl font-bold text-gray-900 mb-2">Sobre a Equipa</h3>
  <p className="text-gray-700 mb-4">
- A equipa Norte Reparos, com 12 anos de atividade na região de <Link to="/servicos">Trás-os-Montes</Link>, é especializada em segurança elétrica. Partilhamos critérios práticos para ajudar os clientes a avaliar prestadores de serviços elétricos e a fazer escolhas informadas.
+ Artigo preparado pela equipa Norte Reparos, com mais de 20 anos de experiência profissional. A informação é geral: cada situação é avaliada caso a caso, com orçamento por escrito antes de qualquer intervenção.
  </p>
  <p className="text-gray-600">
  Para avaliação de eletricistas ou dúvidas sobre certificações, contacte através do telefone ou WhatsApp acima.
@@ -504,7 +503,7 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  </a>
  <a href="/eletricista-braganca" className="bg-white p-4 rounded-xl text-center hover:shadow-md transition-shadow">
  <span className="font-semibold text-amber-700">Bragança</span>
- <p className="text-sm text-gray-600 mt-1">12 anos de atividade</p>
+ <p className="text-sm text-gray-600 mt-1">Mais de 20 anos de experiência profissional</p>
  </a>
  <a href="/eletricista-chaves" className="bg-white p-4 rounded-xl text-center hover:shadow-md transition-shadow">
  <span className="font-semibold text-amber-700">Chaves</span>
