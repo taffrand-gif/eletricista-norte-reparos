@@ -12,6 +12,7 @@ import FloatingCTA from "./components/FloatingCTA";
 import MobileStickyBar from "./components/MobileStickyBar";
 import StructuredData from "./components/StructuredData";
 import CookieConsent from "./components/CookieConsent";
+import { useRgpdBannerOffset } from "./hooks/useRgpdBannerOffset";
 import OptimizedHome from "./pages/OptimizedHome";
 import SkipLink from '@/components/SkipLink';
 // Lazy load conversion widgets (below-fold)
@@ -189,6 +190,7 @@ function Router() {
 // to keep consistent foreground/background color across components
 // - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
 function App() {
+ useRgpdBannerOffset();
  return (
  <ErrorBoundary>
  <HelmetProvider>
