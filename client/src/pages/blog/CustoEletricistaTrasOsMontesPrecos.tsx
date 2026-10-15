@@ -7,11 +7,11 @@ import RelatedArticles from '@/components/RelatedArticles';
 const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  useSEO({
  title: 'Quanto Custa um Eletricista em Trás-os-Montes? Guia de Preços 2026',
- description: 'Tabela completa de preços para serviços elétricos em Trás-os-Montes. Instalações, arranjos, certificação e custos por hora.',
+ description: 'Como é calculado o preço de um eletricista em Trás-os-Montes: 70 €/hora em dias úteis (09h-18h) e 100 €/hora à noite, aos fins de semana e feriados, mais deslocação. Valores TTC.',
  keywords: 'preço eletricista, custo instalação elétrica, preços eletricista Trás-os-Montes, quanto custa eletricista, orçamento instalação elétrica',
  schema: generateArticleSchema({
  title: 'Quanto Custa um Eletricista em Trás-os-Montes? Guia de Preços 2026',
- description: 'Tabela completa de preços para serviços elétricos em Trás-os-Montes. Instalações, arranjos, certificação e custos por hora.',
+ description: 'Como é calculado o preço de um eletricista em Trás-os-Montes: 70 €/hora em dias úteis (09h-18h) e 100 €/hora à noite, aos fins de semana e feriados, mais deslocação. Valores TTC.',
  author: 'Norte Reparos',
  publishedTime: '2026-02-18',
  modifiedTime: '2026-06-17',
@@ -22,7 +22,7 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  return (
  <BlogLayout
  title="Quanto Custa um Eletricista em Trás-os-Montes? Guia de Preços 2026"
- description="Tabela detalhada e transparente de preços para todos os serviços elétricos na região de Trás-os-Montes"
+ description="Como é calculado o preço de um eletricista em Trás-os-Montes: mão de obra à hora e deslocação, valores TTC"
  >
  <script
  type="application/ld+json"
@@ -80,33 +80,30 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  height={400}
  />
  <p className="text-sm text-gray-500 text-center mt-2">
- Orçamentos transparentes e detalhados para serviços elétricos em toda a região
+ Orçamentos por escrito para serviços elétricos em Trás-os-Montes
  </p>
  </div>
  {/* Introduction */}
  <div className="prose prose-lg max-w-none mb-10">
  <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-lg mb-8">
  <p className="text-amber-800 font-semibold text-lg">
- 💡 Dados Reais 2025: Analisámos 200+ orçamentos executados em <Link to="/servicos">Trás-os-Montes</Link>.
- Os preços apresentados refletem a realidade regional, considerando deslocações longas,
- especificidades das casas antigas e disponibilidade limitada de profissionais qualificados.
+ 💡 Como se calcula o preço em <Link to="/servicos">Trás-os-Montes</Link>: O preço é confirmado conforme a intervenção. O trabalho é faturado à hora e a deslocação é cobrada quando há deslocação da equipa.
  </p>
  </div>
  <p className="text-xl text-gray-700 mb-6">
  Contratar um eletricista em <Link to="/servicos">Trás-os-Montes</Link> envolve variáveis únicas da região: distâncias grandes,
  casas com décadas (ou séculos) de idade, condições climáticas rigorosas e menor disponibilidade
- de profissionais especializados. Neste guia completo, apresento uma tabela detalhada de preços
- médios para 2026, fatores específicos da região que influenciam os custos, e como garantir
- orçamentos justos e transparentes.
+ de profissionais especializados. Neste guia, explico como é calculado o preço (mão de obra à hora e deslocação),
+ os fatores específicos da região que influenciam o tempo de trabalho, e como pedir um orçamento por escrito.
  </p>
  </div>
  {/* Table of contents */}
  <div className="bg-gray-50 rounded-2xl p-6 mb-10">
  <h2 className="text-2xl font-bold text-gray-900 mb-4">📋 Neste Artigo</h2>
  <ul className="space-y-2">
- <li><a href="#tabela-precos" className="text-amber-600 hover:text-amber-700">Tabela Completa de Preços 2026</a></li>
+ <li><a href="#tabela-precos" className="text-amber-600 hover:text-amber-700">Como é Calculado o Preço</a></li>
  <li><a href="#fatores-regiao" className="text-amber-600 hover:text-amber-700">Fatores Específicos de Trás-os-Montes</a></li>
- <li><a href="#instalacoes" className="text-amber-600 hover:text-amber-700">Preços de Instalações Novas</a></li>
+ <li><a href="#instalacoes" className="text-amber-600 hover:text-amber-700">Instalações Novas</a></li>
  <li><a href="#arranjacoes" className="text-amber-600 hover:text-amber-700">Preços de Arranjos e Emergências</a></li>
  <li><a href="#certificacao" className="text-amber-600 hover:text-amber-700">Certificação e Legalização</a></li>
  <li><a href="#economizar" className="text-amber-600 hover:text-amber-700">Como Economizar sem Comprometer Segurança</a></li>
@@ -115,72 +112,27 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  {/* Content sections */}
  <div className="prose prose-lg max-w-none">
  <section id="tabela-precos" className="mb-12">
- <h2 className="text-3xl font-bold text-gray-900 mb-6">📊 Tabela Completa de Preços 2026 - Serviços Elétricos</h2>
+ <h2 className="text-3xl font-bold text-gray-900 mb-6">📊 Como é Calculado o Preço — Mão de Obra e Deslocação</h2>
 
  <div className="overflow-x-auto">
  <table className="min-w-full bg-white border border-gray-300 rounded-xl">
  <thead>
  <tr className="bg-amber-600 text-white">
- <th className="py-4 px-6 text-left font-bold">Serviço</th>
- <th className="py-4 px-6 text-left font-bold">Preço Mínimo</th>
- <th className="py-4 px-6 text-left font-bold">Preço Médio</th>
- <th className="py-4 px-6 text-left font-bold">Preço Máximo</th>
+ <th className="py-4 px-6 text-left font-bold">Período</th>
+ <th className="py-4 px-6 text-left font-bold">Mão de obra</th>
+ <th className="py-4 px-6 text-left font-bold">Deslocação</th>
  </tr>
  </thead>
  <tbody>
  <tr className="border-b border-gray-200 hover:bg-amber-50">
- <td className="py-4 px-6 font-semibold">Instalação ponto luz simples</td>
- <td className="py-4 px-6">45€</td>
- <td className="py-4 px-6">65€</td>
- <td className="py-4 px-6">95€</td>
- </tr>
- <tr className="border-b border-gray-200 hover:bg-amber-50">
- <td className="py-4 px-6 font-semibold">Instalação tomada simples</td>
- <td className="py-4 px-6">40€</td>
- <td className="py-4 px-6">55€</td>
- <td className="py-4 px-6">80€</td>
- </tr>
- <tr className="border-b border-gray-200 hover:bg-amber-50">
- <td className="py-4 px-6 font-semibold">Instalação interruptor</td>
- <td className="py-4 px-6">35€</td>
- <td className="py-4 px-6">50€</td>
- <td className="py-4 px-6">70€</td>
- </tr>
- <tr className="border-b border-gray-200 hover:bg-amber-50">
- <td className="py-4 px-6 font-semibold">Substituição quadro elétrico completo</td>
- <td className="py-4 px-6">450€</td>
- <td className="py-4 px-6">750€</td>
- <td className="py-4 px-6">1.200€</td>
- </tr>
- <tr className="border-b border-gray-200 hover:bg-amber-50">
- <td className="py-4 px-6 font-semibold">Instalação candeeiro teto</td>
- <td className="py-4 px-6">50€</td>
- <td className="py-4 px-6">75€</td>
- <td className="py-4 px-6">110€</td>
- </tr>
- <tr className="border-b border-gray-200 hover:bg-amber-50">
- <td className="py-4 px-6 font-semibold">Arranjo avaria simples</td>
- <td className="py-4 px-6">60€</td>
- <td className="py-4 px-6">90€</td>
- <td className="py-4 px-6">140€</td>
- </tr>
- <tr className="border-b border-gray-200 hover:bg-amber-50">
- <td className="py-4 px-6 font-semibold">Diagnóstico avaria complexa</td>
- <td className="py-4 px-6">80€</td>
- <td className="py-4 px-6">120€</td>
- <td className="py-4 px-6">180€</td>
- </tr>
- <tr className="border-b border-gray-200 hover:bg-amber-50">
- <td className="py-4 px-6 font-semibold">Instalação ventilador teto</td>
- <td className="py-4 px-6">90€</td>
- <td className="py-4 px-6">130€</td>
- <td className="py-4 px-6">190€</td>
+ <td className="py-4 px-6 font-semibold">Dias úteis, das 09h às 18h</td>
+ <td className="py-4 px-6">70 €/hora</td>
+ <td className="py-4 px-6">30 €</td>
  </tr>
  <tr className="hover:bg-amber-50">
- <td className="py-4 px-6 font-semibold">Certificação elétrica (Boletim)</td>
- <td className="py-4 px-6">150€</td>
- <td className="py-4 px-6">250€</td>
- <td className="py-4 px-6">400€</td>
+ <td className="py-4 px-6 font-semibold">Noite, fins de semana e feriados</td>
+ <td className="py-4 px-6">100 €/hora</td>
+ <td className="py-4 px-6">50 €</td>
  </tr>
  </tbody>
  </table>
@@ -188,11 +140,11 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-6 mt-6">
  <h3 className="font-bold text-yellow-800 text-lg mb-2">📝 Notas Importantes:</h3>
  <ul className="text-yellow-700 space-y-2">
- <li>• <strong>Todos os preços incluem IVA a 23%</strong> (salvo indicação contrária</li>
- <li>• <strong>Deslocação:</strong> Incluída até 30km. Acima: +0,60€/km (ida e volta</li>
- <li>• <strong>Materiais:</strong> Não incluídos (ver tabela de materiais abaixo</li>
- <li>• <strong>Emergências:</strong> Fora horário comercial: +40-60% sobre preço base</li>
- <li>• <strong>Casas anteriores a 1980:</strong> +20-40% devido a complexidade</li>
+ <li>• <strong>Valores TTC</strong>, IVA incluído.</li>
+ <li>• <strong>Cada hora iniciada é devida.</strong></li>
+ <li>• <strong>Deslocação:</strong> cobrada quando há deslocação da equipa.</li>
+ <li>• <strong>Estimativa à distância:</strong> possível apenas com descrição e fotografias suficientes.</li>
+ <li>• <strong>Sem orçamento gratuito</strong> quando há deslocação ao local.</li>
  </ul>
  </div>
  </section>
@@ -238,117 +190,16 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <p className="text-amber-700 font-semibold mt-2">Noite, fim de semana e feriado: 100 €/hora + deslocação 50 €</p>
  </div>
  </div>
- <div className="mt-8 bg-blue-50 border border-blue-200 rounded-xl p-6">
- <h3 className="font-bold text-blue-800 text-lg mb-2">📊 Comparativo Regional (Preços por Hora):</h3>
- <div className="overflow-x-auto">
- <table className="min-w-full bg-white border border-gray-300">
- <thead>
- <tr className="bg-blue-100">
- <th className="py-3 px-4 text-left font-bold">Região/Zona</th>
- <th className="py-3 px-4 text-left font-bold">Preço/hora (normal)</th>
- <th className="py-3 px-4 text-left font-bold">Majoração (regra)</th>
- <th className="py-3 px-4 text-left font-bold">Deslocação incluída</th>
- </tr>
- </thead>
- <tbody>
- <tr className="border-b border-gray-200">
- <td className="py-3 px-4 font-semibold">Vila Real cidade</td>
- <td className="py-3 px-4">70€</td>
- <td className="py-3 px-4">100 €/hora + deslocação 50 €</td>
- <td className="py-3 px-4">Até 15km</td>
- </tr>
- <tr className="border-b border-gray-200">
- <td className="py-3 px-4 font-semibold">Bragança cidade</td>
- <td className="py-3 px-4">70€</td>
- <td className="py-3 px-4">100 €/hora + deslocação 50 €</td>
- <td className="py-3 px-4">Até 20km</td>
- </tr>
- <tr className="border-b border-gray-200">
- <td className="py-3 px-4 font-semibold">Aldeias (geral)</td>
- <td className="py-3 px-4">45-60€</td>
- <td className="py-3 px-4">70-95€</td>
- <td className="py-3 px-4">Até 10km</td>
- </tr>
- <tr>
- <td className="py-3 px-4 font-semibold">Zonas remotas</td>
- <td className="py-3 px-4">50-70€</td>
- <td className="py-3 px-4"></td>
- <td className="py-3 px-4">Negociável</td>
- </tr>
- </tbody>
- </table>
- </div>
- </div>
  </section>
  <section id="instalacoes" className="mb-12">
- <h2 className="text-3xl font-bold text-gray-900 mb-6">🔌 Preços de Instalações Novas - Análise Detalhada</h2>
+ <h2 className="text-3xl font-bold text-gray-900 mb-6">🔌 Instalações Novas — Como se Forma o Valor</h2>
 
  <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-lg mb-6">
- <h3 className="font-bold text-amber-800 text-lg mb-2">Custo por Metro Quadrado (Instalação Nova):</h3>
  <p className="text-amber-700">
- Para casas novas ou renovações completas, o preço médio em <Link to="/servicos">Trás-os-Montes</Link> é de
- <strong> 45-75€/m²</strong>, dependendo do nível de acabamento (económico, standard, premium).
- Este valor inclui projeto, materiais básicos e mão-de-obra, mas exclui eletrodomésticos
- e iluminação decorativa.
+ Numa casa nova ou numa renovação completa em <Link to="/servicos">Trás-os-Montes</Link>, o valor depende do projeto,
+ do número de circuitos, do material e das horas de trabalho. O preço é confirmado conforme a intervenção. O trabalho é faturado à hora e a deslocação é cobrada quando há deslocação da equipa.
+ A mão de obra é de 70 €/hora em dias úteis (09h-18h), valores TTC. O orçamento é apresentado por escrito antes da obra.
  </p>
- </div>
- <h3 className="text-2xl font-bold text-gray-900 mb-4">Exemplo: Casa T3 120m² em Trás-os-Montes</h3>
- <div className="overflow-x-auto">
- <table className="min-w-full bg-white border border-gray-300 rounded-xl">
- <thead>
- <tr className="bg-amber-600 text-white">
- <th className="py-4 px-6 text-left font-bold">Item</th>
- <th className="py-4 px-6 text-left font-bold">Quantidade</th>
- <th className="py-4 px-6 text-left font-bold">Preço Unitário</th>
- <th className="py-4 px-6 text-left font-bold">Subtotal</th>
- <th className="py-4 px-6 text-left font-bold">Notas</th>
- </tr>
- </thead>
- <tbody>
- <tr className="border-b border-gray-200 hover:bg-amber-50">
- <td className="py-4 px-6 font-semibold">Quadro elétrico completo</td>
- <td className="py-4 px-6">1</td>
- <td className="py-4 px-6">370-650€</td>
- <td className="py-4 px-6">370-650€</td>
- <td className="py-4 px-6">Inclui diferencial, magnetotérmicos</td>
- </tr>
- <tr className="border-b border-gray-200 hover:bg-amber-50">
- <td className="py-4 px-6 font-semibold">Pontos de luz</td>
- <td className="py-4 px-6">25-30</td>
- <td className="py-4 px-6">60-85€</td>
- <td className="py-4 px-6">1.500-2.550€</td>
- <td className="py-4 px-6">Depende do tipo de luminária</td>
- </tr>
- <tr className="border-b border-gray-200 hover:bg-amber-50">
- <td className="py-4 px-6 font-semibold">Tomadas</td>
- <td className="py-4 px-6">35-40</td>
- <td className="py-4 px-6">66-90€</td>
- <td className="py-4 px-6">2.310-3.600€</td>
- <td className="py-4 px-6">Inclui tomadas USB, TV, internet</td>
- </tr>
- <tr className="border-b border-gray-200 hover:bg-amber-50">
- <td className="py-4 px-6 font-semibold">Projeto e certificação</td>
- <td className="py-4 px-6">1</td>
- <td className="py-4 px-6">400-800€</td>
- <td className="py-4 px-6">400-800€</td>
- <td className="py-4 px-6">Obrigatório para casas novas</td>
- </tr>
- <tr className="hover:bg-amber-50">
- <td className="py-4 px-6 font-semibold">Mão-de-obra total</td>
- <td className="py-4 px-6">80-120h</td>
- <td className="py-4 px-6">70€/h</td>
- <td className="py-4 px-6">5.600-8.400€</td>
- <td className="py-4 px-6">Depende da complexidade</td>
- </tr>
- <tr className="bg-amber-50 font-bold">
- <td className="py-4 px-6">TOTAL ESTIMADO</td>
- <td className="py-4 px-6"></td>
- <td className="py-4 px-6"></td>
- <td className="py-4 px-6">6.400-12.850€</td>
- <td className="py-4 px-6">IVA incluído (23%)</td>
- </tr>
- </tbody>
- </table>
  </div>
  <div className="mt-6 p-6 bg-green-50 border border-green-200 rounded-xl">
  <h4 className="font-bold text-green-800 text-lg mb-2">💡 Dica para Poupar:</h4>
@@ -372,8 +223,7 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <h4 className="font-bold text-gray-900 mb-2">Agrupar pequenos trabalhos</h4>
  <p className="text-gray-700">
  Em vez de chamar o eletricista para cada tomada avariada, faça uma lista de
- tudo o que precisa e marque uma intervenção única. Reduz custos de deslocação
- e muitas vezes obtém desconto por volume.
+ tudo o que precisa e marque uma intervenção única: paga uma só deslocação.
  </p>
  </div>
  </div>
@@ -393,9 +243,9 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <div>
  <h4 className="font-bold text-gray-900 mb-2">Evitar emergências</h4>
  <p className="text-gray-700">
- A manutenção preventiva custa 80-150€/ano. Uma emergência noturna custa
- 200-500€. Em <Link to="/servicos">Trás-os-Montes</Link>, faça revisão anual antes do inverno (Out-Nov)
- para evitar avarias quando os preços são mais altos.
+ Uma intervenção à noite, ao fim de semana ou num feriado é faturada a 100 €/hora, mais 50 € de deslocação,
+ contra 70 €/hora e 30 € de deslocação em dias úteis (09h-18h). Em <Link to="/servicos">Trás-os-Montes</Link>, faça revisão anual antes do inverno (Out-Nov)
+ para evitar avarias fora do horário normal.
  </p>
  </div>
  </div>
@@ -404,8 +254,8 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <div>
  <h4 className="font-bold text-gray-900 mb-2">Negociar pacotes com vizinhos</h4>
  <p className="text-gray-700">
- Em aldeias, combine com 2-3 vizinhos para terem trabalhos no mesmo dia.
- O eletricista faz deslocação única e pode dar desconto de 10-20% a todos.
+ Em aldeias, combine com 2-3 vizinhos para terem trabalhos no mesmo dia,
+ numa só deslocação da equipa.
  </p>
  </div>
  </div>
@@ -459,32 +309,18 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <div className="bg-white p-6 rounded-xl border border-gray-200">
  <h3 className="font-bold text-gray-900 mb-2">É normal pagar deslocação à parte em Trás-os-Montes?</h3>
  <p className="text-gray-700">
- <strong>Sim, é prática quase universal na região</strong>, especialmente para distâncias
- superiores a 30km. A forma mais comum de cálculo é:
+ <strong>Sim.</strong> Na Norte Reparos, a deslocação é cobrada quando há deslocação da equipa:
  <ul className="mt-2 space-y-1">
- <li>• <strong>Até 30km:</strong> Incluído no preço/hora ou no orçamento global</li>
- <li>• <strong>31-60km:</strong> +0,60€/km (ida e volta) sobre a distância total</li>
- <li>• <strong>61-100km:</strong> +0,80€/km + possível custo de portagem</li>
- <li>• <strong>Acima de 100km:</strong> Preço negociável, muitas vezes inclui diária</li>
+ <li>• <strong>Dias úteis (09h-18h):</strong> 30 € de deslocação, mais 70 €/hora de mão de obra</li>
+ <li>• <strong>Noite, fins de semana e feriados:</strong> 50 € de deslocação, mais 100 €/hora de mão de obra</li>
  </ul>
- <strong>Sempre pergunte sobre política de deslocações antes de marcar.</strong> Profissionais
- transparentes terão tabela clara para apresentar.
+ Valores TTC, IVA incluído. A disponibilidade é confirmada conforme a localização e a situação operacional.
  </p>
  </div>
  <div className="bg-white p-6 rounded-xl border border-gray-200">
  <h3 className="font-bold text-gray-900 mb-2">Quanto custa a certificação elétrica (Boletim) em Trás-os-Montes?</h3>
  <p className="text-gray-700">
- O preço varia conforme a dimensão da instalação:
- <ul className="mt-2 space-y-1">
- <li>• <strong>T0/T1 (até 50m²):</strong> 150-250€</li>
- <li>• <strong>T2/T3 (50-120m²):</strong> 200-350€</li>
- <li>• <strong>T4+ (acima 120m²):</strong> 300-500€+</li>
- <li>• <strong>Comercial (pequeno):</strong> 400-800€</li>
- </ul>
- Este valor <strong>inclui</strong>: vistoria completa, testes de segurança, emissão do
- Boletim de Instalação Elétrica (BIE) e registo no sistema oficial. <strong>Não inclui</strong>
- arranjos necessárias para aprovação - essas são cobradas à parte.
- A certificação é válida por 5-8 anos dependendo do tipo de instalação.
+ O preço é confirmado conforme a intervenção. O trabalho é faturado à hora e a deslocação é cobrada quando há deslocação da equipa. Valores TTC, IVA incluído.
  </p>
  </div>
  </div>
@@ -507,7 +343,7 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  "name": "É normal pagar deslocação à parte em Trás-os-Montes?",
  "acceptedAnswer": {
  "@type": "Answer",
- "text": "Sim, é prática quase universal, especialmente acima de 30km. Até 30km: incluído; 31-60km: +0,60€/km; 61-100km: +0,80€/km + portagens; Acima 100km: preço negociável com possível diária. Sempre pergunte sobre política de deslocações antes de marcar."
+ "text": "Na Norte Reparos, a deslocação é cobrada quando há deslocação da equipa: 30 € em dias úteis (09h-18h) e 50 € à noite, aos fins de semana e feriados, mais a mão de obra à hora (70 €/hora ou 100 €/hora). Valores TTC. A disponibilidade é confirmada conforme a localização e a situação operacional."
  }
  },
  {
@@ -515,7 +351,7 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  "name": "Quanto custa a certificação elétrica (Boletim) em Trás-os-Montes?",
  "acceptedAnswer": {
  "@type": "Answer",
- "text": "T0/T1: 150-250€; T2/T3: 200-350€; T4+: 300-500€+; Comercial pequeno: 400-800€. Inclui vistoria, testes, emissão do BIE e registo. Não inclui arranjos necessárias para aprovação. Validade: 5-8 anos conforme tipo de instalação."
+ "text": "O preço é confirmado conforme a intervenção. O trabalho é faturado à hora e a deslocação é cobrada quando há deslocação da equipa. Valores TTC, IVA incluído."
  }
  }
  ]
@@ -547,26 +383,22 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  </div>
  {/* Internal links to city pages */}
  <div className="mt-12 bg-gradient-to-r from-amber-50 to-amber-100 rounded-2xl p-8">
- <h3 className="text-2xl font-bold text-gray-900 mb-6">📍 Preços por Localidade em Trás-os-Montes</h3>
+ <h3 className="text-2xl font-bold text-gray-900 mb-6">📍 Eletricista por Localidade em Trás-os-Montes</h3>
  <p className="text-gray-700 mb-6">
- Consultoria gratuita sobre preços específicos para a sua zona:
+ A disponibilidade é confirmada conforme a localização e a situação operacional.
  </p>
  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
  <a href="/eletricista-vila-real" className="bg-white p-4 rounded-xl text-center hover:shadow-md transition-shadow">
  <span className="font-semibold text-amber-700">Vila Real</span>
- <p className="text-sm text-gray-600 mt-1">Desde 35€/hora</p>
  </a>
  <a href="/eletricista-braganca" className="bg-white p-4 rounded-xl text-center hover:shadow-md transition-shadow">
  <span className="font-semibold text-amber-700">Bragança</span>
- <p className="text-sm text-gray-600 mt-1">Desde 40€/hora</p>
  </a>
  <a href="/eletricista-chaves" className="bg-white p-4 rounded-xl text-center hover:shadow-md transition-shadow">
  <span className="font-semibold text-amber-700">Chaves</span>
- <p className="text-sm text-gray-600 mt-1">Desde 45€/hora</p>
  </a>
  <a href="/eletricista-macedo-cavaleiros" className="bg-white p-4 rounded-xl text-center hover:shadow-md transition-shadow">
  <span className="font-semibold text-amber-700">Trás-os-Montes</span>
- <p className="text-sm text-gray-600 mt-1">Desde 42€/hora</p>
  </a>
  </div>
  </div>
@@ -575,7 +407,7 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <div className="mt-12 bg-orange-50 rounded-xl p-6">
  <h3 className="text-2xl font-bold text-gray-900 mb-4">⚡ Eletricista na Sua Zona</h3>
  <p className="text-gray-700 mb-4">
- Servimos toda a região de <Link to="/servicos">Trás-os-Montes</Link>:
+ Eletricista em <Link to="/servicos">Trás-os-Montes</Link>. A disponibilidade é confirmada conforme a localização e a situação operacional.
  </p>
  <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
  <Link to="/eletricista-braganca" className="bg-white p-3 rounded-lg text-center hover:shadow transition-shadow">
