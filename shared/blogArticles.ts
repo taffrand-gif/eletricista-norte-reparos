@@ -424,7 +424,7 @@ Implementando todas estas medidas:
 
 Poupar energia não significa sacrificar conforto. Com pequenas mudanças de hábitos e investimentos inteligentes, pode reduzir significativamente a fatura elétrica enquanto contribui para um futuro mais sustentável.
 
-A **Eletricista Profissional** pode ajudá-lo a otimizar a sua instalação elétrica, instalar iluminação LED e preparar a casa para painéis solares. Contacte-nos para uma avaliação gratuita.
+A **Eletricista Profissional** pode ajudá-lo a otimizar a sua instalação elétrica, instalar iluminação LED e preparar a casa para painéis solares. Contacte-nos para uma avaliação, com orçamento por escrito antes de qualquer intervenção.
 
 **Ligue agora: 932 321 892**
 `
@@ -993,7 +993,7 @@ Painéis valorizam o imóvel. Pode vender com eles ou removê-los.
 
 Instalar painéis solares é um investimento inteligente que se paga a si próprio em poucos anos, enquanto contribui para um futuro mais sustentável. Com os incentivos disponíveis em Portugal, nunca houve melhor altura para fazer a transição para energia solar.
 
-A **Eletricista Profissional** é especialista em instalação de painéis solares em Bragança. Fazemos todo o processo desde o projeto até à ativação, incluindo certificação e registo na. Contacte-nos para uma avaliação gratuita.
+A **Eletricista Profissional** é especialista em instalação de painéis solares em Bragança. Fazemos todo o processo desde o projeto até à ativação, incluindo certificação e registo na. Contacte-nos para uma avaliação, com orçamento por escrito antes de qualquer intervenção.
 
 **Ligue agora: 932 321 892**
 `
