@@ -67,15 +67,15 @@ export default function Sabrosa() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Sabrosa?",
- answer: "Chegamos a Sabrosa em aproximadamente 60-75 minutos a partir de Trás-os-Montes. Cobrimos todo o conselho.",
+ answer: "Chegamos a Sabrosa em aproximadamente 60-75 minutos a partir de Trás-os-Montes. A disponibilidade é confirmada conforme a localização e a situação operacional.",
  },
  {
  question: "Fazem instalações para espaços culturais e museus em Sabrosa?",
- answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ answer: "Confirmamos a deslocação por telefone. A disponibilidade é confirmada conforme a localização e a situação operacional.",
  },
  {
  question: "Qual o custo de deslocação a Sabrosa?",
- answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ answer: "Confirmamos a deslocação por telefone. A disponibilidade é confirmada conforme a localização e a situação operacional.",
  },
 ];
 
