@@ -1,12 +1,13 @@
 import React from 'react';
 // CTA flottant bottom - Quick Win #2
 // Style Hormozi : Multiples points de conversion, sticky, minimal
-import { useState, memo } from 'react';
+import { useState, useEffect, memo } from 'react';
 import { Phone, MessageCircle, X } from 'lucide-react';
 import { useSite } from '@/contexts/SiteContext';
 import CalendlyCTA from '@/components/CalendlyCTA';
 import { useAnalytics } from '@/hooks/useAnalytics';
 import { useLocationContent, usePersonalizedWhatsAppMessage } from '@/hooks/useLocationContent';
+const RGPD_BANNER = '#rgpd-banner-enr, [aria-label="Consentimento de cookies"]';
 function FloatingCTA() {
  const { config } = useSite();
  const { trackPhoneClick, trackWhatsAppClick } = useAnalytics();
@@ -15,8 +16,20 @@ function FloatingCTA() {
  // Tant que le bandeau de consentement est affiché, le CTA démarre réduit (bouton 48 px) : la carte complète
  // remontée au-dessus du bandeau recouvrirait le contenu de la page. Un clic l'ouvre.
  const [isMinimized, setIsMinimized] = useState(
- () => typeof document !== 'undefined' && !!document.querySelector('#rgpd-banner-enr, [aria-label="Consentimento de cookies"]')
+ () => typeof document !== 'undefined' && !!document.querySelector(RGPD_BANNER)
  );
+ // Bandeau affiché après le montage (bandeau React de secours, 400 ms) : réduire dès son apparition.
+ useEffect(() => {
+ if (document.querySelector(RGPD_BANNER)) return;
+ const observer = new MutationObserver(() => {
+ if (document.querySelector(RGPD_BANNER)) {
+ setIsMinimized(true);
+ observer.disconnect();
+ }
+ });
+ observer.observe(document.body, { childList: true, subtree: true });
+ return () => observer.disconnect();
+ }, []);
  // Mensagem WhatsApp pré-preenchida com localização
  const whatsappMessage = usePersonalizedWhatsAppMessage(config.whatsappMessage);
  const whatsappUrl = `https://wa.me/${config.whatsapp || '351932321892'}?text=${encodeURIComponent(whatsappMessage)}`;
