@@ -137,7 +137,7 @@ export default function QuantoCustaEletricistaHoraPortugal() {
             </table>
           </div>
           <p className="text-sm text-gray-600">
-            Exemplo real: uma intervenção de 2 horas em horário normal, em Macedo de Cavaleiros = 30€ + 2 × 70€ = <strong>170€ (antes de materiais)</strong>. Mesmo trabalho ao sábado em Chaves = 50€ + 2 × 100€ = <strong>250€</strong>. Materiais sempre orçados à parte por escrito.
+            Exemplo de cálculo: uma intervenção de 2 horas em horário normal, em Macedo de Cavaleiros = 30€ + 2 × 70€ = <strong>170€ (antes de materiais)</strong>. Mesmo trabalho ao sábado em Chaves = 50€ + 2 × 100€ = <strong>250€</strong>. Materiais sempre orçados à parte por escrito.
           </p>
 
           <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">3. Materiais: à parte, especificados por escrito</h2>
