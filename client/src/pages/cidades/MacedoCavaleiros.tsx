@@ -87,19 +87,19 @@ export default function MacedoCavaleiros() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Macedo de Cavaleiros?",
- answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+ answer: "Chegamos rapidamente. A disponibilidade é confirmada conforme a localização e a situação operacional.",
  },
  {
  question: "Trabalham aos fins de semana em Macedo?",
- answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+ answer: "Chegamos rapidamente. A disponibilidade é confirmada conforme a localização e a situação operacional.",
  },
  {
  question: "Qual o custo de deslocação a Macedo de Cavaleiros?",
- answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+ answer: "Chegamos rapidamente. A disponibilidade é confirmada conforme a localização e a situação operacional.",
  },
  {
  question: "Fazem diagnóstico elétrico em Macedo?",
- answer: "Chegamos rapidamente. Cobrimos todo o conselho.",
+ answer: "Chegamos rapidamente. A disponibilidade é confirmada conforme a localização e a situação operacional.",
  },
  ];
  return (
