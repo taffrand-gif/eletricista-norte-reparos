@@ -22,23 +22,18 @@ A Norte Reparos dispõe de **Técnico Responsável de Instalações Elétricas i
 
 A inscrição está em vigor (data de registo confirmada pela DGEG); o técnico responsável acompanha a execução e a entrega da documentação legal.
 
-## Transparência de preços (regra oficial — valores sem IVA)
+## Transparência de preços (regra oficial — valores TTC)
 
-| Zona | Distância aprox. | Deslocação | Mão de obra |
-|---|---|---|---|
-| **Z1** | 0–15 km | **15 €** | **70 €/h** |
-| **Z2** | 15–30 km | **25 €** | **70 €/h** |
-| **Z3** | 30–50 km | **35 €** | **70 €/h** |
-| **Z4** | 50–70 km | **45 €** | **70 €/h** |
-| **Z5** | 70–90 km | **55 €** | **70 €/h** |
-| **Z6** | 90–140 km | **65 €** | **70 €/h** |
+| Horário | Mão de obra | Deslocação |
+|---|---|---|
+| Dias úteis, 09h–18h | **70 €/h** | **30 €** |
+| Depois das 18h, noite, fins de semana e feriados | **100 €/h** | **50 €** |
 
-- **Acréscimo** noturno (20h–8h), fins de semana e feriados: **+50 %**
+- Valores TTC, IVA incluído. Toda a hora iniciada é devida. A deslocação é devida sempre que há deslocação, com o mesmo valor para todas as localidades servidas.
 - **Orçamento por escrito** antes de qualquer intervenção, sem surpresas
 - **Fatura** com NIF emitida no final de cada trabalho
 - **Seguro** de responsabilidade civil profissional
 - **Emissão de Ficha Eletrotécnica e Termo de Responsabilidade**: a partir de **350 €** (quando aplicável à legalização da instalação)
-- Mapeamento localidade → zona = `precos-zonas.json` (960 localidades). Consultar `preco-eletricista-<localidade>-2026.html` para obter a zona exata de cada povoação.
 
 ## Páginas principais
 
@@ -76,7 +71,6 @@ A inscrição está em vigor (data de registo confirmada pela DGEG); o técnico 
 
 - [Fluke T6-1000](https://eletricista-norte-reparos.pt/equipamento-recomendado): testador de tensão e corrente sem contacto.
 - [Megger MFT1741+](https://eletricista-norte-reparos.pt/equipamento-recomendado): testador multifunções de instalação.
-- [ROLeak Aqua 3Plus](https://eletricista-norte-reparos.pt/equipamento-recomendado): deteção acústica de fugas e defeitos.
 - [FLIR E96](https://eletricista-norte-reparos.pt/equipamento-recomendado): câmara térmica 43 200 px.
 - [Câmara de inspeção 30 m](https://eletricista-norte-reparos.pt/equipamento-recomendado): observação interior de condutas e espaços confinados.
 
@@ -101,10 +95,6 @@ Legrand · Schneider Electric · Hager · ABB · Siemens · Philips
 - [5 sinais de instalação elétrica perigosa](https://eletricista-norte-reparos.pt/5-sinais-instalacao-eletrica-perigosa): identificação de riscos elétricos comuns.
 - [Glossário técnico](https://eletricista-norte-reparos.pt/glossario-tecnico): termos elétricos e do DGEG explicados.
 - [Glossário técnico](https://eletricista-norte-reparos.pt/glossario-tecnico): termos elétricos e do DGEG explicados.
-
-## Também prestamos serviços de canalizador
-
-Para instalação de canalização: [canalizador-norte-reparos.pt](https://canalizador-norte-reparos.pt/) · +351 928 484 451.
 
 ## Notas editoriais
 
