@@ -201,7 +201,7 @@ function ForfaitsGrid({ className = '' }: ForfaitsGridProps) {
  <div className="text-3xl mb-2">📍</div>
  <h4 className="font-bold text-gray-900 mb-1">Zonas de Deslocação</h4>
  <p className="text-sm text-gray-600">
- Preços indicados para dias úteis 9h–17h (70€/h + deslocação 30€), qualquer localidade servida.
+ Preços indicados para dias úteis 09h–18h (70€/h + deslocação 30€), qualquer localidade servida.
  </p>
  </div>
  <div className="text-center">
@@ -215,7 +215,7 @@ function ForfaitsGrid({ className = '' }: ForfaitsGridProps) {
  <div className="text-3xl mb-2">⏰</div>
  <h4 className="font-bold text-gray-900 mb-1">Acréscimos</h4>
  <p className="text-sm text-gray-600">
- Noite (17h–9h), fins de semana e feriados: 100€/h + deslocação 50€
+ Noite (18h–09h), fins de semana e feriados: 100€/h + deslocação 50€
  </p>
  </div>
  </div>

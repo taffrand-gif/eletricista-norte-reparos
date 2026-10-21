@@ -220,7 +220,7 @@ export default function GuiaCurtoCircuito() {
           <section className="my-10 bg-orange-50 border-l-4 border-orange-600 p-6 rounded-r-lg">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Factos verificáveis Norte Reparos</h2>
             <p className="text-gray-800 mb-3"><strong>Mão de obra:</strong> 70 €/h para eletricidade, segundo a grelha interna R12.</p>
-            <p className="text-gray-800 mb-3"><strong>Deslocação:</strong> Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €.</p>
+            <p className="text-gray-800 mb-3"><strong>Deslocação:</strong> Dias úteis (09h–18h): mão de obra 70 €/hora e deslocação 30 €. Noite (18h–09h), fins de semana e feriados: 100 €/hora e deslocação 50 €.</p>
             <p className="text-gray-800 mb-2"><strong>Exemplos de distância TomTom desde Macedo de Cavaleiros:</strong></p>
             <ul className="list-disc pl-6 space-y-1 mb-3">
               <li>Macedo de Cavaleiros: 0,0 km · 15 €</li>
@@ -250,7 +250,7 @@ export default function GuiaCurtoCircuito() {
             </div>
             <div>
               <h3 className="font-bold text-gray-900 mb-2 text-xl">Quanto custa prevenir/reparar curto-circuitos?</h3>
-              <p className="text-gray-700">A tarifa interna de eletricista é 70 €/h. A deslocação segue a grelha deslocação 30 € em dias úteis e 50 € à noite, fins de semana e feriados; mão de obra: 70 €/hora em dias úteis (9h–17h) e 100 €/hora à noite (17h–9h), fins de semana e feriados. O orçamento por escrito é preparado antes da intervenção, sem surpresas; o trabalho depende do diagnóstico.</p>
+              <p className="text-gray-700">A tarifa interna de eletricista é 70 €/h. A deslocação segue a grelha deslocação 30 € em dias úteis e 50 € à noite, fins de semana e feriados; mão de obra: 70 €/hora em dias úteis (09h–18h) e 100 €/hora à noite (18h–09h), fins de semana e feriados. O orçamento por escrito é preparado antes da intervenção, sem surpresas; o trabalho depende do diagnóstico.</p>
             </div>
             <div>
               <h3 className="font-bold text-gray-900 mb-2 text-xl">Posso prevenir com DPS (dispositivo de proteção contra sobretensões)?</h3>
