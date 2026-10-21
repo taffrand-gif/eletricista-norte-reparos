@@ -37,3 +37,8 @@ blog/*.md
 *.save
 *.tmp
 *~
+
+# RETOUR 266 (2026-10-21) : pages internes /admin/* servies en 200 en production
+# (dashboard interne, ancienne grille, « garantia de 12 meses », page Track vide).
+# Aucun lien entrant, aucun usage par call-tracking.js. Exclues du déploiement (404).
+/client/public/admin/
