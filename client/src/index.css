@@ -335,3 +335,17 @@ html {
 .hero-title-shadow {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+/* Bandeau RGPD (statique #rgpd-banner-enr ou React [data-rgpd-banner]) : ne recouvre aucun CTA flottant.
+   Mobile : au-dessus de MobileStickyBar (64 px). Desktop : carte en bas à gauche, à gauche de FloatingCTA (327 px + 16 px). */
+@media (max-width: 767px) {
+  #rgpd-banner-enr, [data-rgpd-banner] { bottom: 64px !important; }
+}
+@media (min-width: 768px) {
+  #rgpd-banner-enr, [data-rgpd-banner] {
+    left: 16px !important; right: auto !important; bottom: 16px !important;
+    max-width: min(440px, calc(100vw - 375px)); border-radius: 12px; justify-content: flex-start !important;
+  }
+}
+/* Bouton « Ver Preços » masqué tant que le choix RGPD n'est pas fait (même coin que le bandeau). */
+body:has(#rgpd-banner-enr) .quote-fab, body:has([data-rgpd-banner]) .quote-fab { display: none; }
