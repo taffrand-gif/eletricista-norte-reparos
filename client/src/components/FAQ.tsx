@@ -34,7 +34,7 @@ function FAQ() {
  answer: 'O serviço inclui: diagnóstico com multímetro profissional, mão de obra especializada, materiais básicos (disjuntores, cabos, tomadas), certificação elétrica quando aplicável, limpeza após intervenção, garantia. Não incluído: quadros elétricos completos, obras de alvenaria. Orçamento detalhado antes de iniciar.'},
  {
  question: 'Aceitam pagamento com cartão e MB WAY?',
- answer: 'Sim, aceitamos pagamento por multibanco, MB WAY, transferência bancária, e dinheiro. Pagamento apenas após conclusão do serviço e sua total satisfação. Fatura fornecida. Sem IVA (Art. 53º CIVA).'},
+ answer: 'Sim, aceitamos pagamento por multibanco, MB WAY, transferência bancária, e dinheiro. Pagamento apenas após conclusão do serviço e sua total satisfação. Fatura fornecida. IVA incluído.'},
  ], []);
  // Inject FAQPage Schema
  useEffect(() => {

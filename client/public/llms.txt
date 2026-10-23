@@ -22,7 +22,7 @@ A Norte Reparos dispõe de **Técnico Responsável de Instalações Elétricas i
 
 A inscrição está em vigor (data de registo confirmada pela DGEG); o técnico responsável acompanha a execução e a entrega da documentação legal.
 
-## Transparência de preços (regra oficial — valores sem IVA)
+## Transparência de preços (regra oficial — valores com IVA incluído)
 
 | Zona | Distância aprox. | Deslocação | Mão de obra |
 |---|---|---|---|

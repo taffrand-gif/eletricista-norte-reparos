@@ -104,11 +104,11 @@ function Footer() {
  <div className="text-sm font-bold text-white">Garantia por Escrito</div>
  <div className="text-xs text-gray-100">Em todos os trabalhos</div>
  </div>
- {/* Badge Isenção IVA */}
+ {/* Badge IVA incluído */}
  <div className="bg-white/10 backdrop-blur-sm rounded-xl px-6 py-4 border-2 border-white/30 hover:bg-white/20 transition-all">
  <div className="text-2xl mb-2">📄</div>
- <div className="text-sm font-bold text-white">Isenção IVA</div>
- <div className="text-xs text-gray-100">Art.º 53.º CIVA</div>
+ <div className="text-sm font-bold text-white">IVA incluído</div>
+ <div className="text-xs text-gray-100">Em todos os preços</div>
  </div>
  {/* Badge Garantia */}
  <div className="bg-white/10 backdrop-blur-sm rounded-xl px-6 py-4 border-2 border-white/30 hover:bg-white/20 transition-all">
