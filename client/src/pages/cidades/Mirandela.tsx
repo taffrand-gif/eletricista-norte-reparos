@@ -1,5 +1,4 @@
-// Page SEO optimizada para "Eletricista Mirandela"
-// 100% unique content, conforme políticas Google
+// Página local para "Eletricista Mirandela"
 import Header from '@/components/Header';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import CidadesProximas from '@/components/CidadesProximas';
@@ -8,354 +7,257 @@ import RelatedCities from '@/components/RelatedCities';
 import SEOHead from '@/components/SEOHead';
 import StructuredData from '@/components/StructuredData';
 import { useSite } from '@/contexts/SiteContext';
-import { businessInfo, getCityAddress } from '@/../../shared/napConfig';
+import { businessInfo } from '@/../../shared/napConfig';
 import { getCidadesProximas } from '@/data/cidadesProximas';
 import { useEffect } from 'react';
 import FAQSection from '@/components/FAQSection';
+
 export default function Mirandela() {
- const { config } = useSite();
- // FAQ Mirandela (déclaré hors useEffect pour éviter TS2448/TS2454)
- const faqs = [
- {
- question: "Qual o custo de deslocação a Mirandela?",
- answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
- },
- {
- question: "Fazem urgências Atendimento 24h/7d em Mirandela?",
- answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
- },
- {
- question: "Fornecem diagnóstico elétrico em Mirandela?",
- answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
- },
- ];
- useEffect(() => {
- document.title = "⚡ Eletricista Mirandela — Orçamento por Escrito | Garantia Escrita";
+  const { config } = useSite();
+  const faqs = [
+    {
+      question: 'Que serviços elétricos fazem em Mirandela?',
+      answer: 'Avaliamos avarias, tomadas, interruptores, iluminação, quadros elétricos e trabalhos planeados de instalação ou remodelação, conforme o diagnóstico no local.',
+    },
+    {
+      question: 'Como funcionam os preços?',
+      answer: 'Em dias úteis, das 09:00 às 18:00, são 70 €/hora mais 30 € de deslocação. À noite, fins de semana, feriados e fora desse horário, são 100 €/hora mais 50 € de deslocação. Os valores incluem IVA e toda a hora iniciada é devida.',
+    },
+    {
+      question: 'Que informação devo enviar antes de ligar?',
+      answer: 'Indique a localidade, o sintoma e o que já verificou. Uma fotografia do quadro, tomada ou equipamento pode ajudar quando for pertinente. A estimativa à distância é indicativa; a deslocação é faturada quando ocorre.',
+    },
+  ];
 
- // Optimized meta description
- let metaDescription = document.querySelector('meta[name="description"]');
- if (!metaDescription) {
- metaDescription = document.createElement('meta');
- metaDescription.setAttribute('name', 'description');
- document.head.appendChild(metaDescription);
- }
- metaDescription.setAttribute('content', 'Eletricista em Mirandela e arredores. Técnicos com experiência e equipamento profissional. Orçamento por escrito. Ligue 932 321 892.');
- // SEO meta keywords
- let metaKeywords = document.querySelector('meta[name="keywords"]');
- if (!metaKeywords) {
- metaKeywords = document.createElement('meta');
- metaKeywords.setAttribute('name', 'keywords');
- document.head.appendChild(metaKeywords);
- }
- metaKeywords.setAttribute('content', 'eletricista 24h mirandela, eletricista Atendimento 24h/7d mirandela, eletricista mirandela, eletricista profissional mirandela, instalação elétrica mirandela, quadro elétrico mirandela, diagnóstico elétrico mirandela, arranjo elétrica mirandela, eletricista trás-os-montes');
+  useEffect(() => {
+    document.title = 'Eletricista em Mirandela | Norte Reparos';
 
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (!metaDescription) {
+      metaDescription = document.createElement('meta');
+      metaDescription.setAttribute('name', 'description');
+      document.head.appendChild(metaDescription);
+    }
+    metaDescription.setAttribute('content', 'Eletricista em Mirandela para avarias, instalações, quadros e iluminação. Ligue ou envie WhatsApp: indique localidade e sintoma; a estimativa à distância é indicativa.');
 
- // Canonical URL
- let canonical = document.querySelector('link[rel="canonical"]');
- if (!canonical) {
- canonical = document.createElement('link');
- canonical.setAttribute('rel', 'canonical');
- document.head.appendChild(canonical);
- }
- canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/eletricista-mirandela');
+    let metaKeywords = document.querySelector('meta[name="keywords"]');
+    if (!metaKeywords) {
+      metaKeywords = document.createElement('meta');
+      metaKeywords.setAttribute('name', 'keywords');
+      document.head.appendChild(metaKeywords);
+    }
+    metaKeywords.setAttribute('content', 'eletricista mirandela, avarias elétricas mirandela, instalação elétrica mirandela, quadro elétrico mirandela, iluminação mirandela');
 
- // Schema.org LocalBusiness para Mirandela
- const schemaScript = document.createElement('script');
- schemaScript.type = 'application/ld+json';
- schemaScript.text = JSON.stringify({
- "@context": "https://schema.org",
- "@type": "LocalBusiness",
- "name": "Eletricista Profissional — Eletricista em Mirandela",
- "image": "/images-optimized/hero/hero-electrician-portugal.jpg",
- "description": "Eletricista profissional em Mirandela, Trás-os-Montes. Instalação, arranjo e reparação elétrica para agricultura e indústria.",
- "address": getCityAddress('mirandela'),
- "geo": {
- "@type": "GeoCoordinates",
- "latitude": "41.4872",
- "longitude": "-7.1869"
- },
- "telephone": businessInfo.phone,
- "openingHours": "Mo-Su 00:00-23:59",
- "priceRange":"€€",
- "areaServed": {
- "@type": "City",
- "name": "Mirandela"
- },
- "serviceArea": {
- "@type": "GeoCircle",
- "geoMidpoint": {
- "@type": "GeoCoordinates",
- "latitude": "41.4872",
- "longitude": "-7.1869"
- },
- "geoRadius": "15000"
- },
- "sameAs": [
- `https://wa.me/${businessInfo.whatsapp}?text=${encodeURIComponent("Olá, preciso de um eletricista em Trás-os-Montes. Podem dar-me um orçamento?")}`
- ]
- });
- document.head.appendChild(schemaScript);
- // FAQ Schema
- const faqSchema = document.createElement('script');
- faqSchema.type = 'application/ld+json';
- faqSchema.setAttribute('data-faq-schema', 'true');
- faqSchema.text = JSON.stringify({
- "@context": "https://schema.org",
- "@type": "FAQPage",
- "mainEntity": faqs.map(faq => ({
- "@type": "Question",
- "name": faq.question,
- "acceptedAnswer": {
- "@type": "Answer",
- "text": faq.answer
- }
- }))
- });
- document.head.appendChild(faqSchema);
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/eletricista-mirandela');
 
-  return () => {
-  document.head.removeChild(schemaScript);
- document.head.removeChild(faqSchema);
- };
- }, [config]);
- const cidadesProximas = getCidadesProximas('mirandela');
- return (
- <>
- <SEOHead />
- <StructuredData />
+    const schemaScript = document.createElement('script');
+    schemaScript.type = 'application/ld+json';
+    schemaScript.text = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'LocalBusiness',
+      'name': 'Eletricista Profissional — Eletricista em Mirandela',
+      'image': '/images-optimized/hero/hero-electrician-portugal.jpg',
+      'description': 'Serviços de eletricidade em Mirandela para avarias, instalações, quadros e iluminação. A nossa equipa confirma por telefone a informação necessária e a janela de chegada.',
+      'telephone': businessInfo.phone,
+      'areaServed': {
+        '@type': 'City',
+        'name': 'Mirandela',
+      },
+      'sameAs': [
+        `https://wa.me/${businessInfo.whatsapp}?text=${encodeURIComponent('Olá, preciso de um eletricista em Mirandela. Podem ajudar-me a avaliar a situação?')}`,
+      ],
+    });
+    document.head.appendChild(schemaScript);
 
- <Header />
+    const faqSchema = document.createElement('script');
+    faqSchema.type = 'application/ld+json';
+    faqSchema.setAttribute('data-faq-schema', 'true');
+    faqSchema.text = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      'mainEntity': faqs.map((faq) => ({
+        '@type': 'Question',
+        'name': faq.question,
+        'acceptedAnswer': {
+          '@type': 'Answer',
+          'text': faq.answer,
+        },
+      })),
+    });
+    document.head.appendChild(faqSchema);
 
- <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
- {/* Hero section específica de Mirandela */}
- <section className="bg-gradient-to-r from-amber-600 to-amber-800 text-white py-16">
- <div className="container mx-auto px-4">
- <div className="max-w-4xl">
- <Breadcrumbs items={[
- { label: 'Eletricista', href: '/' },
- { label: 'Trás-os-Montes', href: '/tras-os-montes' },
- { label: 'Mirandela', href: '/eletricista-mirandela' }
- ]} />
-<h1 className="text-4xl md:text-5xl font-bold mb-6">
- Eletricista Profissional em <span className="text-blue-900">Mirandela</span>
- </h1>
+    return () => {
+      document.head.removeChild(schemaScript);
+      document.head.removeChild(faqSchema);
+    };
+  }, [config]);
 
- <p className="text-xl mb-8">
- Serviços de eletricista em Mirandela e arredores.
- Especialistas em instalações para agricultura, indústria alimentar e olivicultura.
- </p>
+  const cidadesProximas = getCidadesProximas('mirandela');
 
- <div className="flex flex-col sm:flex-row gap-4">
- <a
- href={`tel:${businessInfo.phone}`}
- className="bg-white text-amber-700 hover:bg-gray-100 font-bold px-8 py-4 rounded-lg text-lg transition-colors"
- >
- 📞 Eletricista Mirandela: {businessInfo.phoneFormatted}
- </a>
- <a
- href={`https://wa.me/${businessInfo.whatsapp}?text=Olá, preciso de um eletricista em Mirandela`}
- target="_blank"
- rel="noopener noreferrer"
- className="bg-blue-900 hover:bg-blue-800 text-white font-bold px-8 py-4 rounded-lg text-lg transition-colors"
- >
- 💬 WhatsApp para Mirandela
- </a>
- </div>
- </div>
- </div>
- </section>
- {/* Conteúdo específico de Mirandela */}
- <section className="py-16">
- <div className="container mx-auto px-4">
- <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
- <div>
- <h2 className="text-3xl font-bold text-gray-900 mb-6">
- Especialistas em Eletricidade para a Economia Local
- </h2>
+  return (
+    <>
+      <SEOHead />
+      <StructuredData />
+      <Header />
 
- <div className="space-y-6">
- <div className="bg-white p-6 rounded-xl shadow-lg border border-amber-100">
- <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-3">
- <span className="text-amber-600">🌳</span>
- Instalações para Agricultura e Olivais
- </h3>
- <p className="text-gray-600">
- Mirandela é conhecida pela sua produção de azeite. Especializamo-nos em:
- sistemas elétricos para lagares de azeite, iluminação para armazéns agrícolas,
- e infraestrutura para irrigação automatizada nos olivais da região.
- </p>
- </div>
+      <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+        <section className="bg-gradient-to-r from-amber-600 to-amber-800 text-white py-16">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl">
+              <Breadcrumbs items={[
+                { label: 'Eletricista', href: '/' },
+                { label: 'Trás-os-Montes', href: '/tras-os-montes' },
+                { label: 'Mirandela', href: '/eletricista-mirandela' },
+              ]} />
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                Eletricista em <span className="text-blue-900">Mirandela</span>
+              </h1>
+              <p className="text-xl mb-8">
+                A nossa equipa avalia avarias, tomadas, interruptores, iluminação, quadros elétricos e trabalhos planeados de instalação ou remodelação.
+              </p>
+              <p className="text-lg mb-8 font-semibold">
+                Eletricista credenciado pela DGEG — Técnico Responsável de Instalações Elétricas, TRIESP n.º 90062. Execução em Baixa Tensão até 41,4 kVA.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a
+                  href={`tel:${businessInfo.phone}`}
+                  className="bg-white text-amber-700 hover:bg-gray-100 font-bold px-8 py-4 rounded-lg text-lg transition-colors"
+                >
+                  📞 Eletricista Mirandela: {businessInfo.phoneFormatted}
+                </a>
+                <a
+                  href={`https://wa.me/${businessInfo.whatsapp}?text=Olá, preciso de um eletricista em Mirandela`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-blue-900 hover:bg-blue-800 text-white font-bold px-8 py-4 rounded-lg text-lg transition-colors"
+                >
+                  💬 WhatsApp para Mirandela
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
 
- <div className="bg-white p-6 rounded-xl shadow-lg border border-amber-100">
- <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-3">
- <span className="text-amber-600">🏭</span>
- Soluções para Indústria Alimentar
- </h3>
- <p className="text-gray-600">
- Trabalhamos com empresas de transformação alimentar da região.
- Instalações elétricas para matadouros, fábricas de enchidos,
- e unidades de processamento de produtos locais,
- sempre cumprindo normas de higiene e segurança alimentar.
- </p>
- </div>
- </div>
- </div>
+        <section className="py-16">
+          <div className="container mx-auto px-4 max-w-5xl">
+            <div className="bg-white p-8 rounded-2xl shadow-xl border border-amber-100 mb-10">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Como pedir ajuda elétrica em Mirandela</h2>
+              <p className="text-gray-600 text-lg">
+                Ligue ou envie WhatsApp e indique a localidade, o sintoma e o que já verificou. Uma fotografia do quadro, tomada ou equipamento pode ajudar quando for pertinente. A linha telefónica está disponível 24 horas por dia, 7 dias por semana; a janela de chegada é confirmada ao telefone conforme a situação operacional.
+              </p>
+              <p className="text-gray-600 text-lg mt-4">
+                Quando houver elementos suficientes, podemos dar uma estimativa à distância, sempre indicativa. A deslocação é faturada quando ocorre e a estimativa não corresponde a um valor fixo assumido.
+              </p>
+            </div>
 
- <div>
- <div className="bg-gradient-to-br from-amber-50 to-white rounded-2xl p-8 shadow-xl border border-amber-200">
- <h3 className="text-2xl font-bold text-gray-900 mb-6">
- Cobertura em <span className="text-amber-600">Mirandela</span>
- </h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <article className="bg-white p-6 rounded-xl shadow-lg border border-amber-100">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Avarias e diagnóstico</h3>
+                <p className="text-gray-600">Avaliação de disjuntores, falhas, tomadas, interruptores e circuitos. Quando o diagnóstico o justificar, podemos utilizar câmara térmica ou equipamento Fluke.</p>
+              </article>
+              <article className="bg-white p-6 rounded-xl shadow-lg border border-amber-100">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Instalação e remodelação</h3>
+                <p className="text-gray-600">Planeamento e execução de linhas, tomadas, iluminação e alterações elétricas adequadas ao local e ao trabalho pretendido.</p>
+              </article>
+              <article className="bg-white p-6 rounded-xl shadow-lg border border-amber-100">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Quadros e iluminação</h3>
+                <p className="text-gray-600">Análise de quadros elétricos e soluções para iluminação, substituição ou melhoria, após avaliação da situação.</p>
+              </article>
+            </div>
+          </div>
+        </section>
 
- <div className="grid grid-cols-2 gap-4 mb-8">
- {[
- 'Centro Histórico', 'Zona Industrial', 'Bairro da Estação',
- 'Urbanização do Pinheiro', 'Bairro São Sebastião',
- 'Av. Nossa Senhora do Amparo', 'Zona de Lagares',
- 'Área Agrícola Norte', 'Bairro da Ponte', 'Av. 25 de Abril'
- ].map((area) => (
- <div key={area} className="flex items-center gap-2 text-gray-700">
- <span className="text-amber-600">📍</span>
- <span>{area}</span>
- </div>
- ))}
- </div>
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4 max-w-5xl">
+            <h2 className="text-3xl font-bold text-center text-gray-900 mb-10">Preços claros antes da intervenção</h2>
+            <div className="overflow-x-auto bg-white rounded-xl shadow-md">
+              <table className="w-full text-left">
+                <thead className="bg-amber-50">
+                  <tr>
+                    <th className="p-4 font-bold text-gray-900">Período</th>
+                    <th className="p-4 font-bold text-gray-900">Mão de obra</th>
+                    <th className="p-4 font-bold text-gray-900">Deslocação</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-t">
+                    <td className="p-4">Dias úteis, 09:00–18:00</td>
+                    <td className="p-4">70 €/hora</td>
+                    <td className="p-4">30 €</td>
+                  </tr>
+                  <tr className="border-t">
+                    <td className="p-4">Noite, fins de semana, feriados e fora desse horário</td>
+                    <td className="p-4">100 €/hora</td>
+                    <td className="p-4">50 €</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-gray-600 text-center mt-5">
+              Todos os valores incluem IVA. Toda a hora iniciada é devida. Materiais e âmbito são explicados antes de avançar.
+            </p>
+          </div>
+        </section>
 
- <div className="bg-blue-50 p-6 rounded-xl border border-blue-200">
- <h4 className="text-lg font-bold text-gray-900 mb-3">
- 🏭 Serviços para Setores Locais
- </h4>
- <ul className="space-y-2 text-gray-600">
- <li className="flex items-center justify-between">
- <span>Lagares de azeite</span>
- <span className="font-bold text-amber-600">Especialidade</span>
- </li>
- <li className="flex items-center justify-between">
- <span>Indústria alimentar</span>
- <span className="font-bold text-amber-600">Experiência</span>
- </li>
- <li className="flex items-center justify-between">
- <span>Propriedades rurais</span>
- <span className="font-bold text-amber-600">Frequentemente</span>
- </li>
- </ul>
- </div>
- </div>
- </div>
- </div>
- </div>
- </section>
- {/* FAQ específica de Mirandela */}
- <section className="py-16 bg-gray-50">
- <div className="container mx-auto px-4">
- <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
- Perguntas sobre <span className="text-amber-600">Eletricista em Mirandela</span>
- </h2>
+        <section className="py-16">
+          <div className="container mx-auto px-4 max-w-5xl">
+            <div className="bg-blue-50 p-8 rounded-2xl border border-blue-200">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Responsabilidade técnica quando aplicável</h2>
+              <p className="text-gray-600">
+                Para trabalhos dentro do âmbito aplicável, contamos com eletricista credenciado pela DGEG — Técnico Responsável de Instalações Elétricas, TRIESP n.º 90062, com execução em Baixa Tensão até 41,4 kVA.
+              </p>
+            </div>
+          </div>
+        </section>
 
- <div className="max-w-3xl mx-auto space-y-6">
- <div className="bg-white p-6 rounded-xl shadow-md">
- <h3 className="text-xl font-bold text-gray-900 mb-3">
- Quais as especificidades para lagares de azeite?
- </h3>
- <p className="text-gray-600">
- Utilizamos motores de alta eficiência para prensas, sistemas de
- controlo de temperatura para armazenamento, e iluminação específica
- para áreas de processamento. Todos os materiais são resistentes
- a ambientes com óleos e humidade elevada.
- </p>
- </div>
+        <section className="py-16 bg-gray-50">
+          <div className="container max-w-4xl mx-auto px-4">
+            <h2 className="text-3xl font-black text-center mb-12">Perguntas frequentes sobre eletricidade em Mirandela</h2>
+            <FAQSection faqs={faqs} />
+          </div>
+        </section>
 
- <div className="bg-white p-6 rounded-xl shadow-md">
- <h3 className="text-xl font-bold text-gray-900 mb-3">
- Trabalham em propriedades rurais da região de Mirandela?
- </h3>
- <p className="text-gray-600">
- Sim, atendemos quintas, herdades e explorações agrícolas em todo
- o concelho. Especializamo-nos em sistemas de bombeamento para
- irrigação, iluminação de estradas rurais, e infraestrutura
- elétrica para armazéns agrícolas e estábulos.
- </p>
- </div>
+        <section className="py-16 bg-gradient-to-r from-blue-900 to-amber-700 text-white">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl font-bold mb-6">Precisa de um eletricista em Mirandela?</h2>
+            <p className="text-xl mb-8 max-w-2xl mx-auto">Fale diretamente com a nossa equipa e explique a situação para podermos orientar o próximo passo.</p>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+              <a
+                href={`tel:${businessInfo.phone}`}
+                className="bg-white text-amber-700 hover:bg-gray-100 font-bold px-8 py-4 rounded-lg text-lg transition-colors"
+              >
+                📞 {businessInfo.phoneFormatted}
+              </a>
+              <a
+                href={`https://wa.me/${businessInfo.whatsapp}?text=Olá, preciso de um eletricista em Mirandela`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-amber-600 hover:bg-amber-500 text-white font-bold px-8 py-4 rounded-lg text-lg transition-colors"
+              >
+                💬 WhatsApp para Mirandela
+              </a>
+            </div>
+          </div>
+        </section>
 
- <div className="bg-white p-6 rounded-xl shadow-md">
- <h3 className="text-xl font-bold text-gray-900 mb-3">
- Como lidam com a sazonalidade da produção de azeite?
- </h3>
- <p className="text-gray-600">
- Realizamos manutenção preventiva antes da campanha de azeitona,
- intervenções de urgência 24h durante o período de laboração dos
- lagares, e projetos de renovação durante os meses de menor atividade.
- Trabalhamos em coordenação com os calendários agrícolas.
- </p>
- </div>
- </div>
- </div>
- </section>
- {/* CTA final */}
- <section className="py-16 bg-gradient-to-r from-blue-900 to-amber-700 text-white">
- <div className="container mx-auto px-4 text-center">
- <h2 className="text-3xl font-bold mb-6">
- Eletricista em <span className="text-amber-300">Mirandela</span> - Conhecemos a Região
- </h2>
- <p className="text-xl mb-8 max-w-2xl mx-auto">
- Conhecemos as necessidades elétricas da economia local de Mirandela.
- Desde a agricultura tradicional até à indústria moderna.
- </p>
+        <CidadesProximas
+          currentCity="Mirandela"
+          cidades={cidadesProximas}
+          serviceType="eletricista"
+        />
+        <RelatedCities
+          currentCity="Mirandela"
+          currentCitySlug="eletricista-mirandela"
+        />
+      </main>
 
- <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
- <a
- href={`tel:${businessInfo.phone}`}
- className="bg-white text-amber-700 hover:bg-gray-100 font-bold px-8 py-4 rounded-lg text-lg transition-colors"
- >
- 📞 {businessInfo.phoneFormatted} (Mirandela)
- </a>
- <a
- href={`https://wa.me/${businessInfo.whatsapp}?text=Olá, preciso de um eletricista em Mirandela`}
- target="_blank"
- rel="noopener noreferrer"
- className="bg-amber-600 hover:bg-amber-500 text-white font-bold px-8 py-4 rounded-lg text-lg transition-colors"
- >
- 💬 WhatsApp para Mirandela
- </a>
- </div>
-
- <p className="text-amber-200">
- 🌳 <strong>Especialistas em agricultura</strong> • 🏭 <strong>Indústria alimentar</strong> • ⏱️ <strong>Calendário agrícola</strong>
- </p>
-
- {/* Cross-link subtil */}
- <div className="mt-12 p-4 bg-white/20 rounded-xl max-w-md mx-auto">
- <p className="text-lg">
- 💧 <strong>Precisa de um canalizador em Mirandela?</strong> Recomendamos:{' '}
- <a href="https://canalizador-norte-reparos.pt/canalizador-mirandela" className="underline font-bold">
- canalizador-norte-reparos.pt
- </a>
- </p>
- </div>
- </div>
- </section>
- {/* Related Cities - Maillage interno SEO */}
-
- <section className="py-16">
- <div className="container max-w-4xl">
- <h2 className="text-3xl font-black text-center mb-12">Perguntas Frequentes - Mirandela</h2>
- <FAQSection faqs={faqs} />
- </div>
- </section>
- {/* Cidades Próximas - Internal Linking */}
- <CidadesProximas
- currentCity="Mirandela"
- cidades={cidadesProximas}
- serviceType="eletricista"
- />
-
- <RelatedCities
- currentCity="Mirandela"
- currentCitySlug="eletricista-mirandela"
- />
- </main>
-
- <Footer />
-</>
- );
+      <Footer />
+    </>
+  );
 }
