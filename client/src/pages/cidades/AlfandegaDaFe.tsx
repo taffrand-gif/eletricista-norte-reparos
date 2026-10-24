@@ -4,141 +4,38 @@ import CidadesProximas from '@/components/CidadesProximas';
 import Footer from '@/components/Footer';
 import RelatedCities from '@/components/RelatedCities';
 import FAQSection from '@/components/FAQSection';
-import { businessInfo, getCityAddress } from '@/../../shared/napConfig';
 import { getCidadesProximas } from '@/data/cidadesProximas';
 import { useEffect } from 'react';
-import { Phone, Clock, MapPin, Shield, Zap, CheckCircle } from 'lucide-react';
+
+const phone = '+351 932 321 892';
+const faqs = [
+  { question: 'Como pedir uma estimativa elétrica em Alfândega da Fé?', answer: 'Descreva o trabalho, envie fotografias seguras e indique a potência ou o equipamento previsto, se souber. Com elementos suficientes, a nossa equipa pode dar uma estimativa distante indicativa.' },
+  { question: 'Quanto custa um eletricista?', answer: 'Dias úteis das 09h às 18h: 70 €/h de mão de obra e 30 € de deslocação se tiver lugar. Fora desse horário, à noite, fins de semana e feriados: 100 €/h e 50 € de deslocação se tiver lugar. IVA incluído e cada hora iniciada é devida.' },
+  { question: 'A Ficha eletrotécnica e os Termos são automáticos?', answer: 'Não. São avaliados caso a caso; quando aplicáveis, a Ficha eletrotécnica e os Termos de responsabilidade são a partir de 350 € com IVA incluído.' },
+];
+
 export default function AlfandegaDaFe() {
- useEffect(() => {
- document.title = "Eletricista Alfândega da Fé ⚡ 24h | 932 321 892";
-
- let metaDescription = document.querySelector('meta[name="description"]');
- if (!metaDescription) {
- metaDescription = document.createElement('meta');
- metaDescription.setAttribute('name', 'description');
- document.head.appendChild(metaDescription);
- }
- metaDescription.setAttribute('content', 'Problema elétrico em Alfândega da Fé? A 30km de Macedo, Confirmamos a deslocação por telefone. Orçamento sem compromisso. Ligue: 932 321 892');
- let canonical = document.querySelector('link[rel="canonical"]');
- if (!canonical) {
- canonical = document.createElement('link');
- canonical.setAttribute('rel', 'canonical');
- document.head.appendChild(canonical);
- }
- canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/eletricista-alfandega-da-fe');
- const schemaScript = document.createElement('script');
- schemaScript.type = 'application/ld+json';
- schemaScript.id = 'schema-alfandega';
- schemaScript.text = JSON.stringify({
- "@context": "https://schema.org",
- "@type": "Electrician",
- "name": "Eletricista Profissional Alfândega da Fé",
- "description": "Eletricista profissional em Alfândega da Fé. Especialista em instalações para amendoais e olivicultura.",
- "address": getCityAddress('alfandega-da-fe'),
- "geo": { "@type": "GeoCoordinates", "latitude": "41.3500", "longitude": "-6.9667" },
- "telephone": businessInfo.phone,
- "openingHours": "Mo-Su 00:00-23:59",
- "priceRange":"€€"
- });
- document.head.appendChild(schemaScript);
- // FAQ Schema
- const faqSchema = document.createElement('script');
- faqSchema.type = 'application/ld+json';
- faqSchema.setAttribute('data-faq-schema', 'true');
- faqSchema.text = JSON.stringify({
- "@context": "https://schema.org",
- "@type": "FAQPage",
- "mainEntity": faqs.map(faq => ({
- "@type": "Question",
- "name": faq.question,
- "acceptedAnswer": {
- "@type": "Answer",
- "text": faq.answer
- }
- }))
- });
- document.head.appendChild(faqSchema);
- return () => {
- const existingSchema = document.getElementById('schema-alfandega');
- if (existingSchema) existingSchema.remove();
- };
- }, []);
- const cidadesProximas = getCidadesProximas('alfandega-da-fe');
- const faqs = [
-{
- question: "Quanto tempo demora a chegar a Alfândega da Fé?",
- answer: "Chegamos a Alfândega da Fé a partir de Trás-os-Montes. Cobrimos todo o conselho.",
- },
-{
- question: "Qual o custo de deslocação a Alfândega da Fé?",
- answer: "A deslocação é de 30€. Cobrimos todo o conselho incluindo as freguesias.",
- },
- ];
- return (
- <div className="min-h-screen flex flex-col">
- <Header />
- <main className="flex-grow">
- <section className="relative py-20 bg-cover bg-center" style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images-optimized/hero/hero-electrician-portugal.jpg')` }}>
- <div className="container text-center text-white">
- <span className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-bold mb-4">⚡ ALFÂNDEGA DA FÉ - TERRA DAS AMÊNDOAS</span>
- <h1 className="text-4xl md:text-6xl font-black mb-6">Eletricista em Alfândega da Fé</h1>
- <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">A apenas 30km de Trás-os-Montes, servimos todo o concelho de Alfândega da Fé. Especialistas em instalações para amendoais e lagares de azeite.</p>
- <div className="flex flex-col sm:flex-row gap-4 justify-center">
- <a href={`tel:${businessInfo.phone}`} className="inline-flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg text-xl font-bold transition-all shadow-lg">
- <Phone className="w-6 h-6" />{businessInfo.phoneFormatted}
- </a>
- <a href={`https://wa.me/${businessInfo.whatsapp}?text=Olá,%20preciso%20de%20um%20eletricista%20em%20AlfandegaDaFe`} className="inline-flex items-center justify-center gap-2 bg-green-700 hover:bg-green-800 text-white px-8 py-4 rounded-lg text-xl font-bold transition-all shadow-lg">💬 WhatsApp</a>
- </div>
- </div>
- </section>
- <section className="py-16 bg-gray-50">
- <div className="container">
- <h2 className="text-3xl font-black text-center mb-12">Serviços Elétricos em Alfândega da Fé</h2>
- <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
- {[
- { icon: Zap, title: "Instalações para Amendoais", desc: "Sistemas de rega elétricos, iluminação de armazéns e processamento" },
- { icon: Shield, title: "Quadros Elétricos Agrícolas", desc: "Quadros trifásicos para lagares de azeite e maquinaria" },
- { icon: CheckCircle, title: "Remodelação Habitacional", desc: "Atualização de instalações elétricas em casas antigas do concelho" },
- { icon: Zap, title: "Urgências 24h", desc: "Resposta mediante contacto a 30 minutos de Trás-os-Montes" },
- ].map((service, index) => (
- <div key={index} className="flex items-start gap-4 p-6 bg-white rounded-xl shadow">
- <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
- <service.icon className="w-6 h-6 text-white" />
- </div>
- <div>
- <h3 className="text-lg font-bold mb-1">{service.title}</h3>
- <p className="text-gray-600">{service.desc}</p>
- </div>
- </div>
- ))}
- </div>
- </div>
- </section>
- <section className="py-16">
- <div className="container max-w-4xl">
- <h2 className="text-3xl font-black text-center mb-12">Perguntas Frequentes - Alfândega da Fé</h2>
- <FAQSection faqs={faqs} />
- </div>
- </section>
- <section className="py-16 bg-orange-500 text-white">
- <div className="container text-center">
- <h2 className="text-3xl font-black mb-4">Precisa de Eletricista em Alfândega da Fé?</h2>
- <p className="text-xl mb-8 opacity-90">Ligue agora. Estamos a apenas 30 minutos de distância.</p>
- <a href={`tel:${businessInfo.phone}`} className="inline-flex items-center gap-2 bg-white text-orange-500 px-8 py-4 rounded-lg text-xl font-bold hover:bg-gray-100 transition-all shadow-lg">
- <Phone className="w-6 h-6" />932 321 892
- </a>
- </div>
- </section>
- {/* Cidades Próximas - Internal Linking */}
- <CidadesProximas
- currentCity="Alfândega da Fé"
- cidades={cidadesProximas}
- serviceType="eletricista"
- />
-
- <RelatedCities currentCity="Alfândega da Fé" currentCitySlug="eletricista-alfandega-da-fe" />
- </main>
- <Footer />
- </div>
- );
+  const cidadesProximas = getCidadesProximas('alfandega-da-fe');
+  useEffect(() => {
+    document.title = 'Eletricista em Alfândega da Fé | Diagnóstico, reparações e instalações';
+    const description = document.querySelector('meta[name="description"]') || document.head.appendChild(document.createElement('meta'));
+    description.setAttribute('name', 'description');
+    description.setAttribute('content', 'Eletricista em Alfândega da Fé para diagnóstico, reparações e instalações. Contacte a nossa equipa pelo +351 932 321 892.');
+    const canonical = document.querySelector('link[rel="canonical"]') || document.head.appendChild(document.createElement('link'));
+    canonical.setAttribute('rel', 'canonical'); canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/eletricista-alfandega-da-fe');
+    const schema = document.createElement('script'); schema.id = 'schema-alfandega-da-fe'; schema.type = 'application/ld+json';
+    schema.text = JSON.stringify({ '@context': 'https://schema.org', '@graph': [
+      { '@type': 'LocalBusiness', name: 'Norte Reparos — Eletricista em Alfândega da Fé', url: 'https://eletricista-norte-reparos.pt/eletricista-alfandega-da-fe', telephone: phone, areaServed: { '@type': 'AdministrativeArea', name: 'Concelho de Alfândega da Fé' } },
+      { '@type': 'Service', name: 'Instalações, reparações e diagnóstico elétrico em Alfândega da Fé', provider: { '@type': 'Organization', name: 'Norte Reparos', telephone: phone }, areaServed: { '@type': 'AdministrativeArea', name: 'Concelho de Alfândega da Fé' } },
+      { '@type': 'FAQPage', mainEntity: faqs.map(({ question, answer }) => ({ '@type': 'Question', name: question, acceptedAnswer: { '@type': 'Answer', text: answer } })) },
+    ] }); document.head.appendChild(schema); return () => schema.remove();
+  }, []);
+  return <><Header /><main className="min-h-screen bg-slate-50">
+    <section className="bg-slate-900 text-white py-16"><div className="container mx-auto px-4 max-w-5xl"><Breadcrumbs items={[{ label: 'Eletricista', href: '/' }, { label: 'Alfândega da Fé', href: '/eletricista-alfandega-da-fe' }]} /><h1 className="text-4xl md:text-5xl font-bold mt-6">Eletricista em Alfândega da Fé</h1><p className="text-xl mt-4 max-w-3xl">Diagnóstico, reparações e instalações elétricas avaliados com cuidado. Partilhe os sintomas e fotografias seguras para uma primeira orientação.</p><div className="flex flex-col sm:flex-row gap-4 mt-7"><a href="tel:+351932321892" className="bg-orange-500 text-white font-bold px-6 py-3 rounded-lg">Ligar: {phone}</a><a href="https://wa.me/351932321892" className="bg-green-700 text-white font-bold px-6 py-3 rounded-lg">Enviar por WhatsApp</a></div></div></section>
+    <section className="py-12"><div className="container mx-auto px-4 max-w-5xl"><h2 className="text-3xl font-bold">Serviços e diagnóstico</h2><div className="grid md:grid-cols-3 gap-5 mt-7"><article className="bg-white p-6 rounded-xl shadow"><h3 className="font-bold text-lg">Quadros e disjuntores</h3><p className="mt-2 text-slate-700">Avaliamos disjuntores que disparam, falhas de alimentação e circuitos sem energia antes de definir a intervenção.</p></article><article className="bg-white p-6 rounded-xl shadow"><h3 className="font-bold text-lg">Circuitos e pontos de utilização</h3><p className="mt-2 text-slate-700">Reparações em tomadas, interruptores, iluminação e circuitos dentro do âmbito confirmado.</p></article><article className="bg-white p-6 rounded-xl shadow"><h3 className="font-bold text-lg">Instalações e alterações</h3><p className="mt-2 text-slate-700">Para alterações planeadas, a potência prevista e fotografias seguras ajudam a avaliar o trabalho e os documentos aplicáveis.</p></article></div></div></section>
+    <section className="py-12 bg-white"><div className="container mx-auto px-4 max-w-5xl"><h2 className="text-3xl font-bold">Credenciação e condições</h2><p className="mt-4 font-semibold text-slate-800">Eletricista credenciado pela DGEG — Técnico Responsável de Instalações Elétricas, TRIESP n.º 90062. Execução em Baixa Tensão até 41,4 kVA.</p><p className="mt-3 text-slate-700">A câmara térmica e instrumentos Fluke podem apoiar o diagnóstico quando adequados. Não são uma certificação automática. Ficha eletrotécnica e Termos de responsabilidade são avaliados caso a caso e, quando aplicáveis, são a partir de 350 € com IVA incluído.</p><ul className="list-disc pl-6 mt-4 space-y-2 text-slate-700"><li>Dias úteis, 09h–18h: 70 €/h + 30 € de deslocação se tiver lugar.</li><li>Fora desse horário, noite, fins de semana e feriados: 100 €/h + 50 € de deslocação se tiver lugar.</li><li>IVA incluído. Cada hora iniciada é devida; a deslocação é faturada quando ocorre.</li></ul></div></section>
+    <section className="py-12"><div className="container mx-auto px-4 max-w-4xl"><h2 className="text-3xl font-bold text-center">Perguntas frequentes</h2><FAQSection faqs={faqs} /></div></section>
+    <section className="py-12 bg-orange-500 text-white"><div className="container mx-auto px-4 max-w-4xl text-center"><h2 className="text-3xl font-bold">Fale com a nossa equipa</h2><p className="mt-3">Atendimento telefónico 24/7. A disponibilidade e a janela de chegada são confirmadas consigo ao telefone.</p><a href="tel:+351932321892" className="inline-block bg-white text-orange-600 font-bold px-7 py-4 rounded-lg mt-6">{phone}</a><p className="mt-5 text-sm">Mais de 20 anos de experiência profissional · Seguro de responsabilidade civil profissional até 50.000 €</p></div></section>
+    <CidadesProximas currentCity="Alfândega da Fé" cidades={cidadesProximas} serviceType="eletricista" /><RelatedCities currentCity="Alfândega da Fé" currentCitySlug="eletricista-alfandega-da-fe" />
+  </main><Footer /></>;
 }
