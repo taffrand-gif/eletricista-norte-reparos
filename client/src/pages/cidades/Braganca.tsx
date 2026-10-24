@@ -1,5 +1,4 @@
-// SEO optimized page for "Eletricista Bragança"
-// 100% unique content, conforme aux politiques Google
+// SEO page for "Eletricista Bragança"
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import RelatedCities from '@/components/RelatedCities';
@@ -12,350 +11,268 @@ import { useSite } from '@/contexts/SiteContext';
 import { businessInfo, getCityAddress } from '@/../../shared/napConfig';
 import { useEffect } from 'react';
 import { getCidadesProximas } from '@/data/cidadesProximas';
+
 export default function Braganca() {
- const { config } = useSite();
- // FAQ Bragança (déclaré hors useEffect pour éviter TS2448/TS2454)
- const faqs = [
- {
- question: "Qual o custo de deslocação a Bragança?",
- answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
- },
- {
- question: "Fazem urgências Atendimento 24h/7d em Bragança?",
- answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
- },
- {
- question: "Fornecem diagnóstico elétrico em Bragança?",
- answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
- },
- ];
- useEffect(() => {
- document.title = "⚡ Eletricista Bragança — Orçamento por Escrito | Garantia Escrita";
+  const { config } = useSite();
+  const faqs = [
+    {
+      question: 'Que informação devo enviar antes da deslocação?',
+      answer: 'Indique a localidade, o que acontece e desde quando. Para quadro, tomada ou instalação, uma fotografia nítida pode ajudar a enquadrar a situação. Confirmamos por telefone os dados necessários e a possibilidade de deslocação.',
+    },
+    {
+      question: 'Quanto custa a intervenção de um eletricista em Bragança?',
+      answer: 'Em dias úteis, das 09:00 às 18:00, a tarifa é 70 €/hora mais 30 € de deslocação. Fora desse horário, à noite, aos fins de semana e feriados, é 100 €/hora mais 50 € de deslocação. Os valores incluem IVA, toda a hora iniciada é devida e a deslocação é faturada quando se realiza.',
+    },
+    {
+      question: 'É possível dar uma estimativa sem visita?',
+      answer: 'Com uma descrição detalhada e, quando útil, fotografias, podemos dar uma estimativa indicativa à distância. Não é um compromisso de preço fechado: o trabalho e a deslocação são confirmados de acordo com o caso.',
+    },
+    {
+      question: 'Tratam de quadro elétrico, tomadas e remodelação?',
+      answer: 'Sim. Orientamos intervenções em quadros elétricos, tomadas, interruptores e remodelações de instalações. Para documentação eletrotécnica ou Termo de Responsabilidade, avaliamos primeiro o âmbito aplicável.',
+    },
+    {
+      question: 'Podem atender fora do horário 09:00–18:00?',
+      answer: 'A linha telefónica está disponível 24 horas por dia, 7 dias por semana. A possibilidade de intervenção e a janela de chegada são confirmadas por telefone conforme a situação operacional; a disponibilidade telefónica não garante intervenção imediata.',
+    },
+  ];
 
- // Optimized meta description
- let metaDescription = document.querySelector('meta[name="description"]');
- if (!metaDescription) {
- metaDescription = document.createElement('meta');
- metaDescription.setAttribute('name', 'description');
- document.head.appendChild(metaDescription);
- }
- metaDescription.setAttribute('content', 'Eletricista em Bragança e arredores. Técnicos com experiência e equipamento profissional. Orçamento por escrito. Ligue 932 321 892.');
- // SEO meta keywords
- let metaKeywords = document.querySelector('meta[name="keywords"]');
- if (!metaKeywords) {
- metaKeywords = document.createElement('meta');
- metaKeywords.setAttribute('name', 'keywords');
- document.head.appendChild(metaKeywords);
- }
- metaKeywords.setAttribute('content', 'eletricista 24h bragança, eletricista Atendimento 24h/7d bragança, eletricista bragança, eletricista profissional bragança, instalação elétrica bragança, quadro elétrico bragança, diagnóstico elétrico bragança, arranjo elétrica bragança, eletricista trás-os-montes');
+  useEffect(() => {
+    document.title = 'Eletricista em Bragança — Instalação e remodelação | Norte Reparos';
 
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (!metaDescription) {
+      metaDescription = document.createElement('meta');
+      metaDescription.setAttribute('name', 'description');
+      document.head.appendChild(metaDescription);
+    }
+    metaDescription.setAttribute('content', 'Eletricista em Bragança para quadros elétricos, tomadas e remodelação. Diga-nos a localidade, o sintoma e envie foto se ajudar. Ligue 932 321 892.');
 
- // Canonical URL
- let canonical = document.querySelector('link[rel="canonical"]');
- if (!canonical) {
- canonical = document.createElement('link');
- canonical.setAttribute('rel', 'canonical');
- document.head.appendChild(canonical);
- }
- canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/eletricista-braganca');
+    let metaKeywords = document.querySelector('meta[name="keywords"]');
+    if (!metaKeywords) {
+      metaKeywords = document.createElement('meta');
+      metaKeywords.setAttribute('name', 'keywords');
+      document.head.appendChild(metaKeywords);
+    }
+    metaKeywords.setAttribute('content', 'eletricista bragança, quadro elétrico bragança, tomadas bragança, remodelação elétrica bragança, instalação elétrica bragança');
 
- // Schema.org LocalBusiness for Bragança
- const schemaScript = document.createElement('script');
- schemaScript.type = 'application/ld+json';
- schemaScript.text = JSON.stringify({
- "@context": "https://schema.org",
- "@type": "LocalBusiness",
- "name": "Eletricista Profissional — Eletricista em Bragança",
- "image": "/images-optimized/hero/hero-electrician-portugal.jpg",
- "description": "Eletricista profissional em Bragança, Trás-os-Montes. Instalação, arranjo e reparação elétrica.",
- "address": getCityAddress('braganca'),
- "geo": {
- "@type": "GeoCoordinates",
- "latitude": "41.8058",
- "longitude": "-6.7570"
- },
- "telephone": businessInfo.phone,
- "openingHours": "Mo-Su 00:00-23:59",
- "priceRange":"€€",
- "areaServed": {
- "@type": "City",
- "name": "Bragança"
- },
- "sameAs": [
- `https://wa.me/${businessInfo.whatsapp}?text=${encodeURIComponent("Olá, preciso de um eletricista em Trás-os-Montes. Podem dar-me um orçamento?")}`
- ]
- });
- document.head.appendChild(schemaScript);
- // FAQ Schema
- const faqSchema = document.createElement('script');
- faqSchema.type = 'application/ld+json';
- faqSchema.setAttribute('data-faq-schema', 'true');
- faqSchema.text = JSON.stringify({
- "@context": "https://schema.org",
- "@type": "FAQPage",
- "mainEntity": faqs.map(faq => ({
- "@type": "Question",
- "name": faq.question,
- "acceptedAnswer": {
- "@type": "Answer",
- "text": faq.answer
- }
- }))
- });
- document.head.appendChild(faqSchema);
- return () => {
- document.head.removeChild(schemaScript);
- document.head.removeChild(faqSchema);
- };
- }, [config]);
- const cidadesProximas = getCidadesProximas('braganca');
- return (
- <>
- <SEOHead />
- <StructuredData />
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', 'https://eletricista-norte-reparos.pt/eletricista-braganca');
 
- <Header />
+    const schemaScript = document.createElement('script');
+    schemaScript.type = 'application/ld+json';
+    schemaScript.text = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'LocalBusiness',
+      name: 'Eletricista Profissional — Eletricista em Bragança',
+      image: '/images-optimized/hero/hero-electrician-portugal.jpg',
+      description: 'Eletricista profissional em Bragança, Trás-os-Montes. Instalação, arranjo e reparação elétrica.',
+      address: getCityAddress('braganca'),
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: '41.8058',
+        longitude: '-6.7570',
+      },
+      telephone: businessInfo.phone,
+      openingHours: 'Mo-Fr 09:00-18:00',
+      priceRange: '€€',
+      areaServed: {
+        '@type': 'City',
+        name: 'Bragança',
+      },
+      sameAs: [
+        `https://wa.me/${businessInfo.whatsapp}?text=${encodeURIComponent('Olá, preciso de um eletricista em Trás-os-Montes. Podem dar-me um orçamento?')}`,
+      ],
+    });
+    document.head.appendChild(schemaScript);
 
- <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
- {/* Hero section spécifique à Bragança */}
- <section className="bg-gradient-to-r from-amber-600 to-amber-800 text-white py-16">
- <div className="container mx-auto px-4">
- <div className="max-w-4xl">
- <Breadcrumbs items={[
- { label: 'Eletricista', href: '/' },
- { label: 'Trás-os-Montes', href: '/tras-os-montes' },
- { label: 'Bragança', href: '/eletricista-braganca' }
- ]} />
+    const faqSchema = document.createElement('script');
+    faqSchema.type = 'application/ld+json';
+    faqSchema.setAttribute('data-faq-schema', 'true');
+    faqSchema.text = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faqs.map((faq) => ({
+        '@type': 'Question',
+        name: faq.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.answer,
+        },
+      })),
+    });
+    document.head.appendChild(faqSchema);
 
- <h1 className="text-4xl md:text-5xl font-bold mb-6">
- Eletricista Profissional em <span className="text-blue-900">Bragança</span>
- </h1>
+    return () => {
+      document.head.removeChild(schemaScript);
+      document.head.removeChild(faqSchema);
+    };
+  }, [config]);
 
- <p className="text-xl mb-8">
- Serviços de eletricista em Bragança e arredores.
- Especialistas em instalações elétricas para o clima frio da região.
- </p>
+  const cidadesProximas = getCidadesProximas('braganca');
 
- <div className="flex flex-col sm:flex-row gap-4">
- <a
- href={`tel:${businessInfo.phone}`}
- className="bg-white text-amber-700 hover:bg-gray-100 font-bold px-8 py-4 rounded-lg text-lg transition-colors"
- >
- 📞 Eletricista Bragança: {businessInfo.phoneFormatted}
- </a>
- <a
- href={`https://wa.me/${businessInfo.whatsapp}?text=Olá, preciso de um eletricista em Bragança`}
- target="_blank"
- rel="noopener noreferrer"
- className="bg-blue-900 hover:bg-blue-800 text-white font-bold px-8 py-4 rounded-lg text-lg transition-colors"
- >
- 💬 WhatsApp para Bragança
- </a>
- </div>
- </div>
- </div>
- </section>
- {/* Contenu spécifique à Bragança */}
- <section className="py-16">
- <div className="container mx-auto px-4">
- <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
- <div>
- <h2 className="text-3xl font-bold text-gray-900 mb-6">
- Especialistas em Eletricidade para o Clima de Bragança
- </h2>
+  return (
+    <>
+      <SEOHead />
+      <StructuredData />
+      <Header />
 
- <div className="space-y-6">
- <div className="bg-white p-6 rounded-xl shadow-lg border border-amber-100">
- <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-3">
- <span className="text-amber-600">❄️</span>
- Soluções para Invernos Frios
- </h3>
- <p className="text-gray-600">
- Bragança é conhecida pelos seus invernos rigorosos. Especializamo-nos em:
- sistemas de aquecimento elétrico, proteção contra geada em instalações externas,
- e soluções energéticas eficientes para o clima local.
- </p>
- </div>
+      <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+        <section className="bg-gradient-to-r from-amber-600 to-amber-800 py-16 text-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl">
+              <Breadcrumbs items={[
+                { label: 'Eletricista', href: '/' },
+                { label: 'Trás-os-Montes', href: '/tras-os-montes' },
+                { label: 'Bragança', href: '/eletricista-braganca' },
+              ]} />
 
- <div className="bg-white p-6 rounded-xl shadow-lg border border-amber-100">
- <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-3">
- <span className="text-amber-600">🏰</span>
- Experiência em Património Histórico
- </h3>
- <p className="text-gray-600">
- Trabalhamos no centro histórico de Bragança, incluindo zonas próximas ao Castelo,
- Sé Catedral e edifícios classificados. Conhecemos as restrições e exigências
- para intervenções em património histórico.
- </p>
- </div>
- </div>
- </div>
+              <h1 className="mb-6 text-4xl font-bold md:text-5xl">
+                Eletricista em <span className="text-blue-900">Bragança</span> — Instalação e remodelação
+              </h1>
 
- <div>
- <div className="bg-gradient-to-br from-amber-50 to-white rounded-2xl p-8 shadow-xl border border-amber-200">
- <h3 className="text-2xl font-bold text-gray-900 mb-6">
- Cobertura em <span className="text-amber-600">Bragança</span>
- </h3>
+              <p className="mb-8 text-xl">
+                Apoio para quadros elétricos, tomadas, interruptores e remodelações de instalações em Bragança.
+              </p>
 
- <div className="grid grid-cols-2 gap-4 mb-8">
- {[
- 'Centro Histórico', 'Santa Maria', 'São Vicente', 'Sé',
- 'Bairro da Estação', 'Bairro da Mãe d\'Água', 'Zona Industrial',
- 'Urbanização do Pinheiro', 'Bairro da Rainha', 'Bairro da Fonte'
- ].map((area) => (
- <div key={area} className="flex items-center gap-2 text-gray-700">
- <span className="text-amber-600">📍</span>
- <span>{area}</span>
- </div>
- ))}
- </div>
+              <div className="flex flex-col gap-4 sm:flex-row">
+                <a
+                  href={`tel:${businessInfo.phone}`}
+                  className="rounded-lg bg-white px-8 py-4 text-lg font-bold text-amber-700 transition-colors hover:bg-gray-100"
+                >
+                  📞 Eletricista Bragança: {businessInfo.phoneFormatted}
+                </a>
+                <a
+                  href={`https://wa.me/${businessInfo.whatsapp}?text=Olá, preciso de um eletricista em Bragança`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-lg bg-blue-900 px-8 py-4 text-lg font-bold text-white transition-colors hover:bg-blue-800"
+                >
+                  💬 WhatsApp para Bragança
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
 
- <div className="bg-blue-50 p-6 rounded-xl border border-blue-200">
- <h4 className="text-lg font-bold text-gray-900 mb-3">
- 🏘️ Tipos de Imóveis em Bragança
- </h4>
- <ul className="space-y-2 text-gray-600">
- <li className="flex items-center justify-between">
- <span>Casas de granito tradicionais</span>
- <span className="font-bold text-amber-600">Especialidade</span>
- </li>
- <li className="flex items-center justify-between">
- <span>Prédios no centro histórico</span>
- <span className="font-bold text-amber-600">Experiência</span>
- </li>
- <li className="flex items-center justify-between">
- <span>Propriedades rurais</span>
- <span className="font-bold text-amber-600">Frequentemente</span>
- </li>
- </ul>
- </div>
- </div>
- </div>
- </div>
- </div>
- </section>
- {/* FAQ spécifique à Bragança */}
- <section className="py-16 bg-gray-50">
- <div className="container mx-auto px-4">
- <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
- Perguntas sobre <span className="text-amber-600">Eletricista em Bragança</span>
- </h2>
+        <section className="py-12">
+          <div className="container mx-auto px-4">
+            <div className="mx-auto max-w-4xl rounded-2xl border border-amber-200 bg-white p-8 shadow-lg">
+              <h2 className="mb-4 text-3xl font-bold text-gray-900">Eletricista em Bragança: como avançar</h2>
+              <p className="mb-4 text-gray-700">
+                Para um quadro elétrico, uma tomada, um interruptor ou uma remodelação, contacte-nos por telefone ou WhatsApp.
+                Indique a localidade, o sintoma ou o trabalho pretendido e, se for útil, envie uma fotografia do quadro ou do ponto elétrico.
+              </p>
+              <p className="mb-4 text-gray-700">
+                Em dias úteis, das <strong>09:00 às 18:00</strong>, a tarifa é <strong>70 €/hora + 30 € de deslocação</strong>.
+                Fora desse horário, à noite, aos fins de semana e feriados, é <strong>100 €/hora + 50 € de deslocação</strong>.
+                Os valores incluem IVA, toda a hora iniciada é devida e a deslocação é faturada quando se realiza.
+              </p>
+              <p className="text-gray-700">
+                Uma estimativa à distância pode ser indicativa quando há informação suficiente; não substitui a confirmação do âmbito
+                nem constitui um preço fechado. A linha telefónica está disponível 24 horas por dia, 7 dias por semana, e a janela de
+                chegada é confirmada por telefone conforme a situação operacional.
+              </p>
+            </div>
+          </div>
+        </section>
 
- <div className="max-w-3xl mx-auto space-y-6">
- <div className="bg-white p-6 rounded-xl shadow-md">
- <h3 className="text-xl font-bold text-gray-900 mb-3">
- Como lidam com as baixas temperaturas de Bragança nas instalações?
- </h3>
- <p className="text-gray-600">
- Utilizamos materiais específicos para baixas temperaturas, como cabos com isolamento
- reforçado e componentes resistentes à geada. Todas as instalações externas são
- projetadas para suportar as condições climáticas únicas de Bragança.
- </p>
- </div>
+        <section className="py-12">
+          <div className="container mx-auto grid grid-cols-1 gap-10 px-4 lg:grid-cols-2">
+            <div className="rounded-2xl border border-amber-100 bg-white p-8 shadow-lg">
+              <h2 className="mb-6 text-3xl font-bold text-gray-900">Trabalhos elétricos planeados</h2>
+              <ul className="space-y-4 text-gray-700">
+                <li>
+                  <a className="font-semibold text-amber-700 hover:underline" href="/eletricista-quadro-eletrico-braganca">
+                    Quadros elétricos
+                  </a>{' '}
+                  — avaliação, substituição ou modernização conforme o caso.
+                </li>
+                <li>
+                  <a className="font-semibold text-amber-700 hover:underline" href="/eletricista-tomada-interruptor-braganca">
+                    Tomadas e interruptores
+                  </a>{' '}
+                  — instalação, substituição ou verificação de pontos elétricos.
+                </li>
+                <li>
+                  <a className="font-semibold text-amber-700 hover:underline" href="/instalacao-eletrica-braganca">
+                    Instalações e remodelações elétricas
+                  </a>{' '}
+                  — preparação e execução para a alteração prevista.
+                </li>
+                <li>Iluminação e pontos de luz integrados numa intervenção planeada.</li>
+              </ul>
+              <p className="mt-6 text-gray-700">
+                Esta página orienta pedidos gerais de eletricista em Bragança. Para cada necessidade, confirmamos por telefone o que é
+                necessário avaliar antes de marcar uma deslocação.
+              </p>
+            </div>
 
- <div className="bg-white p-6 rounded-xl shadow-md">
- <h3 className="text-xl font-bold text-gray-900 mb-3">
- Atendem propriedades rurais nos arredores de Bragança?
- </h3>
- <p className="text-gray-600">
- Sim, atendemos quintas, herdades e propriedades rurais em todo o concelho.
- Especializamo-nos em instalações elétricas para agricultura e pecuária,
- incluindo sistemas de bombeamento, iluminação de estradas rurais e
- infraestrutura para turismo rural.
- </p>
- </div>
+            <div className="rounded-2xl border border-blue-100 bg-blue-50 p-8 shadow-lg">
+              <h2 className="mb-6 text-3xl font-bold text-gray-900">Avaliação e documentação técnica</h2>
+              <p className="mb-4 text-gray-700">
+                <strong>Eletricista credenciado pela DGEG — Técnico Responsável de Instalações Elétricas, TRIESP n.º 90062. Execução em Baixa Tensão até 41,4 kVA.</strong>
+                Para Ficha Eletrotécnica e Termo de Responsabilidade, o valor é desde <strong>350 € com IVA incluído</strong>,
+                consoante o caso e o âmbito aplicável.
+              </p>
+              <p className="mb-4 text-gray-700">
+                Temos mais de 20 anos de experiência profissional e seguro de responsabilidade civil profissional até 50.000 €.
+                Os materiais, a solução técnica e a documentação necessária são esclarecidos para o trabalho concreto, sem assumir
+                um resultado antes da avaliação.
+              </p>
+              <p className="text-gray-700">
+                A deslocação é faturada quando se realiza e não é deduzida automaticamente do trabalho.
+              </p>
+            </div>
+          </div>
+        </section>
 
- <div className="bg-white p-6 rounded-xl shadow-md">
- <h3 className="text-xl font-bold text-gray-900 mb-3">
- Qual a disponibilidade durante o inverno rigoroso de Bragança?
- </h3>
- <p className="text-gray-600">
- Mantemos serviço Atendimento 24h/7d durante todo o ano, incluindo os meses mais frios.
- Temos equipamento especializado para condições de neve e gelo, garantindo
- que possamos chegar a qualquer localidade do concelho em qualquer condição.
- </p>
- </div>
- </div>
- </div>
- </section>
- {/* FAQ Section with Schema.org - Bragança Specific */}
- <section className="py-16 bg-gray-50">
- <FAQSection
- title="Perguntas Frequentes sobre Eletricista em Bragança"
- faqs={[
- {
- question: "Atendem zonas rurais e aldeias remotas do concelho de Bragança?",
- answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
- },
- {
- question: "Como lidam com o clima frio de Bragança nos sistemas de aquecimento elétrico?",
- answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
- },
- {
- question: "Trabalham em edifícios históricos do centro de Bragança?",
- answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
- },
- {
- question: "Qual o tempo de resposta para urgências em Bragança?",
- answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
- },
- ]}
- />
- </section>
- {/* CTA final */}
- <section className="py-16 bg-gradient-to-r from-blue-900 to-amber-700 text-white">
- <div className="container mx-auto px-4 text-center">
- <h2 className="text-3xl font-bold mb-6">
- Eletricista em <span className="text-amber-300">Bragança</span> - Serviço Confiável
- </h2>
- <p className="text-xl mb-8 max-w-2xl mx-auto">
- Conhecemos as particularidades elétricas de Bragança.
- Desde o centro histórico até às propriedades rurais mais remotas.
- </p>
+        <section className="bg-gray-50 py-16">
+          <div className="container mx-auto px-4">
+            <FAQSection title="Perguntas frequentes sobre eletricista em Bragança" faqs={faqs} />
+          </div>
+        </section>
 
- <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
- <a
- href={`tel:${businessInfo.phone}`}
- className="bg-white text-amber-700 hover:bg-gray-100 font-bold px-8 py-4 rounded-lg text-lg transition-colors"
- >
- 📞 {businessInfo.phoneFormatted} (Bragança)
- </a>
- <a
- href={`https://wa.me/${businessInfo.whatsapp}?text=Olá, preciso de um eletricista em Bragança`}
- target="_blank"
- rel="noopener noreferrer"
- className="bg-amber-600 hover:bg-amber-500 text-white font-bold px-8 py-4 rounded-lg text-lg transition-colors"
- >
- 💬 WhatsApp para Bragança
- </a>
- </div>
+        <section className="bg-gradient-to-r from-blue-900 to-amber-700 py-16 text-white">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="mb-6 text-3xl font-bold">
+              Precisa de um eletricista em <span className="text-amber-300">Bragança</span>?
+            </h2>
+            <p className="mx-auto mb-8 max-w-2xl text-xl">
+              Diga-nos a localidade, o que acontece ou o trabalho que pretende. Confirmamos por telefone a informação útil para o
+              diagnóstico e a possibilidade de deslocação.
+            </p>
 
- <p className="text-amber-200">
- ❄️ <strong>Especialistas em clima frio</strong> • 🏰 <strong>Património histórico</strong> • 🚜 <strong>Propriedades rurais</strong>
- </p>
- </div>
- </section>
- {/* FAQ Schema Section */}
- <section className="py-16">
- <div className="container max-w-4xl">
- <h2 className="text-3xl font-black text-center mb-12">Perguntas Frequentes - Bragança</h2>
- <FAQSection faqs={faqs} />
- </div>
- </section>
- {/* Cidades Próximas - Internal Linking */}
- <CidadesProximas
- currentCity="Bragança"
- cidades={cidadesProximas}
- serviceType="eletricista"
- />
- {/* Related Cities - Maillage interno SEO */}
- <RelatedCities
- currentCity="Braganca"
- currentCitySlug="eletricista-braganca"
- />
- </main>
+            <div className="mb-8 flex flex-col items-center justify-center gap-6 sm:flex-row">
+              <a
+                href={`tel:${businessInfo.phone}`}
+                className="rounded-lg bg-white px-8 py-4 text-lg font-bold text-amber-700 transition-colors hover:bg-gray-100"
+              >
+                📞 {businessInfo.phoneFormatted} (Bragança)
+              </a>
+              <a
+                href={`https://wa.me/${businessInfo.whatsapp}?text=Olá, preciso de um eletricista em Bragança`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-lg bg-amber-600 px-8 py-4 text-lg font-bold text-white transition-colors hover:bg-amber-500"
+              >
+                💬 WhatsApp para Bragança
+              </a>
+            </div>
+            <p className="text-amber-100">Linha telefónica 24h/7d · intervenção e janela de chegada confirmadas por telefone</p>
+          </div>
+        </section>
 
- <Footer />
-</>
- );
+        <CidadesProximas currentCity="Bragança" cidades={cidadesProximas} serviceType="eletricista" />
+        <RelatedCities currentCity="Braganca" currentCitySlug="eletricista-braganca" />
+      </main>
+
+      <Footer />
+    </>
+  );
 }
