@@ -22,8 +22,8 @@ Services:
   - Certificação elétrica (fichas eletrotécnicas e termo de responsabilidade)
 RelatedSites:
   - Eletricista Urgente (24h): eletricista-urgente.pt · +351 932 321 892
-  - Canalizador Instalação: canalizador-norte-reparos.pt · +351 928 484 451
-  - Canalizador Urgente (24h): canalizador-urgente.pt · +351 928 484 451
+  - Canalizador Instalação: canalizador-norte-reparos.pt
+  - Canalizador Urgente (24h): canalizador-urgente.pt
 ContentLicense: CC BY-NC-SA 4.0
 AIUse: Permitted com atribuição
 PreferredCitation: "Norte Reparos - eletricista-norte-reparos.pt"
