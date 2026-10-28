@@ -100,7 +100,7 @@ export const SERVICES: Service[] = [
  {
  title: 'Equipamento de Diagnóstico',
  content: `**Multímetro Digital**: Mede tensão, corrente, resistência, continuidade. Identifica cabos partidos, ligações soltas.
-**Testador de Isolamento (Megger)**: Mede resistência de isolamento dos cabos. Deteta isolamento degradado (risco de choque/incêndio).
+**Testador de Isolamento**: Mede resistência de isolamento dos cabos. Deteta isolamento degradado (risco de choque/incêndio).
 **Detetor de Cabos**: Localiza cabos enterrados em paredes sem destruir. Evita furos acidentais.
 **Alicate Amperímetro**: Mede corrente sem interromper circuito. Identifica sobrecargas.
 **Testador Diferencial**: Verifica funcionamento do disjuntor diferencial (proteção contra choques).
@@ -239,7 +239,7 @@ Diagnóstico preciso em 15-45 minutos. Orçamento antes de arranjar.`
  sections: [
  {
  title: 'O Que Inspecionamos',
- content: `Quadro elétrico (conformidade, proteções), Ligação terra (resistência, continuidade), Isolamento cabos (megger), Tomadas e interruptores (polaridade, terra), Iluminação (funcionamento, segurança), Ligações aparelhos (máquinas, esquentadores), Instalação exterior (jardim, portões). Testes: continuidade, isolamento, diferencial, polaridade, resistência terra.`
+ content: `Quadro elétrico (conformidade, proteções), Ligação terra (resistência, continuidade), Isolamento cabos, Tomadas e interruptores (polaridade, terra), Iluminação (funcionamento, segurança), Ligações aparelhos (máquinas, esquentadores), Instalação exterior (jardim, portões). Testes: continuidade, isolamento, diferencial, polaridade, resistência terra.`
  },
  {
  title: "Diagnóstico elétrico",
