@@ -219,7 +219,7 @@ export default function GuiaCurtoCircuito() {
 
           <section className="my-10 bg-orange-50 border-l-4 border-orange-600 p-6 rounded-r-lg">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Factos verificáveis Norte Reparos</h2>
-            <p className="text-gray-800 mb-3"><strong>Mão de obra:</strong> 70 €/h para eletricidade, segundo a grelha interna R12.</p>
+            <p className="text-gray-800 mb-3"><strong>Mão de obra:</strong> 70 €/h para eletricidade.</p>
             <p className="text-gray-800 mb-3"><strong>Deslocação:</strong> Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €.</p>
             <p className="text-gray-800 mb-2"><strong>Exemplos de distância TomTom desde Macedo de Cavaleiros:</strong></p>
             <ul className="list-disc pl-6 space-y-1 mb-3">
@@ -231,7 +231,6 @@ export default function GuiaCurtoCircuito() {
               <li>Miranda do Douro: 92,2 km · 65 €</li>
             </ul>
             <p className="text-gray-800 mb-3"><strong>Equipamento real:</strong> Fluke T6-1000, Megger MFT1741+, FLIR E96 e câmara de inspeção de 30 m.</p>
-            <p className="text-sm text-gray-600">Fontes internas: grelha de zonas verrouillée em 14/07/2026; <code>preco-deslocacao.py</code>; dados TomTom reais em <code>_audit/zonas-distances-concelhos.json</code> (data/concelhos.json).</p>
           </section>
 
           <h2 id="faq" className="text-3xl font-bold text-gray-900 mt-12 mb-6">7. Perguntas frequentes</h2>
