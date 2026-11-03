@@ -102,7 +102,7 @@ export default function TransparencePrix() {
  },
  {
  question: "A deslocação está incluída no preço?",
- answer: "Não. Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. É cobrado uma única vez por intervenção, mesmo que demore vários dias."
+ answer: "Não. Dias úteis (9h–18h): mão de obra 70 €/hora e deslocação 30 €. Noite (18h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. É cobrado uma única vez por intervenção, mesmo que demore vários dias."
  },
  {
  question: "Oferecem desconto para clientes regulares?",
@@ -239,7 +239,7 @@ export default function TransparencePrix() {
  </div>
  </div>
  <p className="text-sm text-gray-600">
- À noite (17h–9h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €. Mínimo 30 minutos.
+ À noite (18h–9h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €. Mínimo 30 minutos.
  </p>
  </div>
  <div className="bg-white p-8 rounded-xl border-4 border-gray-200">

@@ -238,7 +238,7 @@ export default function StructuredData() {
  "@type": "PriceSpecification",
  "priceCurrency": "EUR",
  "price": "70",
- "description": "70 €/hora + deslocação 30 € em dias úteis (9h–17h); 100 €/hora + deslocação 50 € à noite (17h–9h), fins de semana e feriados. Cada hora começada é devida."
+ "description": "70 €/hora + deslocação 30 € em dias úteis (9h–18h); 100 €/hora + deslocação 50 € à noite (18h–9h), fins de semana e feriados. Cada hora começada é devida."
  }
  },
  "availableChannel": {
