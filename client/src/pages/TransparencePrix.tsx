@@ -12,85 +12,87 @@ import {
 export default function TransparencePrix() {
  const { config } = useSite();
  // Preços detalhados por serviço
- const forfaits = [
- {
- title: "Pequena Arranjo",
- price: "30€ + 70€/hora (dia); 50€ + 100€/hora (noite/fim de semana/feriado)",
- duration: "30 min",
- includes: [
- "Troca de tomadas ou interruptores",
+	const forfaits = [
+	{
+	 title: "Pequena Arranjo",
+	 price: "Dias úteis 09h–18h: 70 €/h + 30 € de deslocação; noite 18h–09h, fins de semana e feriados: 100 €/h + 50 €. Valores TTC.",
+	 duration: "30 min",
+	 includes: [
+	 "Troca de tomadas ou interruptores",
  "Instalação de pontos de luz",
  "Pequenos ajustes elétricos",
  "Material básico incluído"
  ]
- },
- {
- title: "Intervenção Standard",
- price: "30€ + 70€/hora (dia); 50€ + 100€/hora (noite/fim de semana/feriado)",
- duration: "1h",
- includes: [
- "Diagnóstico completo com multímetro",
+	},
+	{
+	 title: "Intervenção Standard",
+	 price: "Dias úteis 09h–18h: 70 €/h + 30 € de deslocação; noite 18h–09h, fins de semana e feriados: 100 €/h + 50 €. Valores TTC.",
+	 duration: "1h",
+	 includes: [
+	 "Diagnóstico completo com multímetro",
  "Resolução de avarias elétricas",
  "Arranjo de curto-circuitos",
  "Garantia 12 meses"
  ]
- },
- {
- title: "Quadro Elétrico Básico",
- price: "30€ + 70€/hora (dia); 50€ + 100€/hora (noite/fim de semana/feriado)",
- duration: "2-3h",
- includes: [
- "Quadro 4-6 circuitos",
+	},
+	{
+	 title: "Quadro Elétrico Básico",
+	 price: "Dias úteis 09h–18h: 70 €/h + 30 € de deslocação; noite 18h–09h, fins de semana e feriados: 100 €/h + 50 €. Valores TTC.",
+	 duration: "2-3h",
+	 includes: [
+	 "Quadro 4-6 circuitos",
  "Disjuntores de qualidade",
  "Instalação completa",
  "garantia 12 meses incluída"
  ]
- },
- {
- title: "Quadro Elétrico Completo",
- price: "30€ + 70€/hora (dia); 50€ + 100€/hora (noite/fim de semana/feriado)",
- duration: "3-5h",
- includes: [
- "Quadro 8-12 circuitos",
+	},
+	{
+	 title: "Quadro Elétrico Completo",
+	 price: "Dias úteis 09h–18h: 70 €/h + 30 € de deslocação; noite 18h–09h, fins de semana e feriados: 100 €/h + 50 €. Valores TTC.",
+	 duration: "3-5h",
+	 includes: [
+	 "Quadro 8-12 circuitos",
  "Disjuntores diferencial + magnetotérmicos",
  "Instalação e ligação",
  "garantia 12 meses"
  ]
- },
- {
- title: "Vistoria de Segurança Elétrica",
- price: "30€ + 70€/hora (dia); 50€ + 100€/hora (noite/fim de semana/feriado)",
- duration: "1-2h",
- includes: [
- "Vistoria técnica completa",
+	},
+	{
+	 title: "Vistoria de Segurança Elétrica",
+	 price: "Dias úteis 09h–18h: 70 €/h + 30 € de deslocação; noite 18h–09h, fins de semana e feriados: 100 €/h + 50 €. Valores TTC.",
+	 duration: "1-2h",
+	 includes: [
+	 "Vistoria técnica completa",
  "Testes de segurança",
  "Trabalho detalhado",
  "Diagnóstico elétrico completo"
  ]
- },
- {
- title: "Intervenção Urgente",
- price: "30 € + 70 €/hora (dia); 50 € + 100 €/hora (noite, fim de semana e feriado)",
- duration: "Imediato",
- includes: [
- "Chegada Atendimento mediante confirmação",
- "Disponível Atendimento 24h/7d",
+	},
+	{
+	 title: "Intervenção Urgente",
+	 price: "Dias úteis 09h–18h: 70 €/h + 30 € de deslocação; noite 18h–09h, fins de semana e feriados: 100 €/h + 50 €. Valores TTC.",
+	 duration: "A confirmar por telefone",
+	 includes: [
+	 "Disponibilidade da intervenção e janela da deslocação confirmadas por telefone",
+	 "Atendimento telefónico humano 24 horas por dia, 7 dias por semana",
  "Fins de semana e feriados",
  "Resolução no local"
  ]
  }
  ];
  // Taux horaire et majorations (RÈGLE OFFICIELLE Philippe)
- const tauxHoraire = {
- base: "70€/hora",
- majoracao: "Noite, fim de semana e feriado: 100 €/hora + deslocação 50 €",
- deplacement: "30 € (dia) / 50 € (noite, fim de semana e feriado)"
+	const tauxHoraire = {
+	 base: "70 €/hora (dias úteis, 09h–18h)",
+	 weekend: "100 €/hora + deslocação 50 €",
+	 majoracao: "Noite (18h–09h), fins de semana e feriados: 100 €/hora + deslocação 50 €",
+	 urgent: "100 €/hora + deslocação 50 €",
+	 deplacement: "30 € (dias úteis, 09h–18h) / 50 € (noite, 18h–09h, fins de semana e feriados)"
  };
  // FAQ Prix
  const faqPrix = [
  {
  question: "Porque os vossos preços são 15-20% mais elevados que a concorrência?",
- answer: "Os nossos preços refletem a qualidade superior do serviço: eletricistas com vasta experiência em Trás-os-Montes, materiais de marcas profissionais reconhecidas, garantia sobre os trabalhos realizados, chegada garantida Atendimento mediante confirmação, e trabalho conforme legislação portuguesa. Não fazemos trabalhos 'baratos' que falham em 6 meses. Investimos em formação contínua e equipamento profissional. O barato sai caro em eletricidade - um trabalho mal feito pode causar incêndios."
+	 answer: "Os nossos preços refletem a qualidade do serviço: eletricistas com experiência em Trás-os-Montes, materiais de marcas profissionais reconhecidas, garantia sobre os trabalhos realizados e trabalho conforme a legislação portuguesa. A disponibilidade da intervenção e a janela da deslocação são confirmadas por telefone."
  },
  {
  question: "O preço final pode ser diferente do orçamento?",
@@ -102,7 +104,7 @@ export default function TransparencePrix() {
  },
  {
  question: "A deslocação está incluída no preço?",
- answer: "Não. Dias úteis (9h–18h): mão de obra 70 €/hora e deslocação 30 €. Noite (18h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. É cobrado uma única vez por intervenção, mesmo que demore vários dias."
+	 answer: "Não. Valores TTC: em dias úteis (09h–18h), mão de obra 70 €/hora e deslocação 30 €; à noite (18h–09h), aos fins de semana e feriados, 100 €/hora e deslocação 50 €. Cada hora começada é devida. A deslocação é cobrada uma única vez por deslocação."
  },
  {
  question: "Oferecem desconto para clientes regulares?",
@@ -173,11 +175,11 @@ export default function TransparencePrix() {
  <section className="py-20 bg-white">
  <div className="container">
  <div className="text-center mb-16">
- <h2 className="text-4xl md:text-5xl font-black mb-4">
- Todos os Nossos <span className="text-[var(--site-primary)]">Preços</span>
- </h2>
- <p className="text-xl text-gray-600 max-w-3xl mx-auto">
- Valores TTC, IVA incluído. Orçamento por escrito antes de qualquer intervenção.
+	 <h2 className="text-4xl md:text-5xl font-black mb-4">
+	 Todos os Nossos <span className="text-[var(--site-primary)]">Preços</span>
+	 </h2>
+	 <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+	 Valores TTC, IVA incluído. Dias úteis: 09h–18h. Noite: 18h–09h; fins de semana e feriados aplicam a tarifa de noite. Cada hora começada é devida. Orçamento por escrito antes de qualquer intervenção.
  </p>
  </div>
  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
@@ -226,8 +228,8 @@ export default function TransparencePrix() {
  <div className="text-3xl font-black text-gray-900">{tauxHoraire.base}</div>
  </div>
  </div>
- <p className="text-sm text-gray-600">
- Para trabalhos que não se enquadram nos forfaits acima. Mínimo 1 hora.
+	 <p className="text-sm text-gray-600">
+	 Deslocação: 30 € em dias úteis, 09h–18h. Cada hora começada é devida.
  </p>
  </div>
  <div className="bg-white p-8 rounded-xl border-4 border-gray-200">
@@ -238,8 +240,8 @@ export default function TransparencePrix() {
  <div className="text-2xl font-black text-gray-900">{tauxHoraire.weekend}</div>
  </div>
  </div>
- <p className="text-sm text-gray-600">
- À noite (18h–9h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €. Mínimo 30 minutos.
+	 <p className="text-sm text-gray-600">
+	 À noite (18h–09h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €. Cada hora começada é devida.
  </p>
  </div>
  <div className="bg-white p-8 rounded-xl border-4 border-gray-200">
@@ -250,8 +252,8 @@ export default function TransparencePrix() {
  <div className="text-3xl font-black text-gray-900">{tauxHoraire.urgent}</div>
  </div>
  </div>
- <p className="text-sm text-gray-600">
- Noite, fim de semana e feriado: 100 €/hora + deslocação 50 € Fração mínima 1h.
+	 <p className="text-sm text-gray-600">
+	 Noite (18h–09h), fins de semana e feriados: 100 €/hora + deslocação 50 €. Cada hora começada é devida.
  </p>
  </div>
  <div className="bg-white p-8 rounded-xl border-4 border-gray-200">
@@ -262,8 +264,8 @@ export default function TransparencePrix() {
  <div className="text-3xl font-black text-gray-900">{tauxHoraire.deplacement}</div>
  </div>
  </div>
- <p className="text-sm text-gray-600">
- Cobrado uma vez por intervenção. Cobre gasóleo e desgaste.
+	 <p className="text-sm text-gray-600">
+	 Valores TTC. Cobrado uma vez por deslocação: 30 € em dias úteis, 09h–18h; 50 € à noite, fins de semana e feriados.
  </p>
  </div>
  </div>

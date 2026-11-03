@@ -20,7 +20,7 @@ export default function Servicos() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Serviços completos de eletricista em Trás-os-Montes: instalação elétrica, arranjo de avarias, quadros elétricos, iluminação, urgências 24h. Profissionais experientes, orçamento sem compromisso.');
+	 metaDescription.setAttribute('content', 'Serviços de eletricista em Trás-os-Montes: instalação, avarias, quadros e iluminação. Atendimento telefónico humano 24/7; disponibilidade da intervenção e janela da deslocação confirmadas por telefone.');
  }, [config]);
  const servicesDetails = [
  {
@@ -34,7 +34,7 @@ export default function Servicos() {
  'Garantia no material e mão de obra'
  ],
  image: '/images-optimized/services/service-quadro-eletrico.jpg',
- priceRange: 'A partir de €200'
+	 priceRange: 'Tarifa horária publicada'
  },
  {
  title: 'Arranjo de Avarias Elétricas',
@@ -44,10 +44,10 @@ export default function Servicos() {
  'Arranjo de curtos-circuitos',
  'Substituição de disjuntores defeituosos',
  'Correção de falhas de aterramento',
- 'Serviço de urgência 24h'
+	 'Atendimento telefónico humano 24/7; intervenção mediante confirmação por telefone'
  ],
  image: '/images-optimized/services/service-urgencia.jpg',
- priceRange: 'A partir de €80'
+	 priceRange: 'Tarifa horária publicada'
  },
  {
  title: 'Diagnóstico Elétrico ',
@@ -60,7 +60,7 @@ export default function Servicos() {
  'Documentação para seguro, venda ou arrendamento'
  ],
  image: '/images-optimized/services/service-certificacao.jpg',
- priceRange: 'A partir de €150'
+	 priceRange: 'Tarifa horária publicada'
  },
  {
  title: 'Iluminação Interior e Exterior',
@@ -73,7 +73,7 @@ export default function Servicos() {
  'Automatização e controlo remoto'
  ],
  image: '/images-optimized/services/service-iluminacao.jpg',
- priceRange: 'A partir de €120'
+	 priceRange: 'Tarifa horária publicada'
  }
  ];
  return (
@@ -190,16 +190,20 @@ export default function Servicos() {
  answer: "Sim, oferecemos garantia escrita em todos os serviços de mão de obra e garantia do fabricante nos materiais fornecidos por nós."
  },
  {
- question: "Trabalham com urgências Atendimento 24h/7d?",
- answer: "Sim, temos serviço de urgência Atendimento 24h/7d para situações críticas como falta total de energia, curtos-circuitos ou perigo iminente."
- },
+	 question: "O atendimento telefónico está disponível 24 horas por dia?",
+	 answer: "Atendimento telefónico humano 24 horas por dia, 7 dias por semana. A disponibilidade da intervenção e a janela da deslocação são confirmadas por telefone."
+	 },
+	 {
+	 question: "Quais são as tarifas de mão de obra e deslocação?",
+	 answer: "Valores TTC, IVA incluído: em dias úteis, das 09h às 18h, 70 €/hora + 30 € de deslocação; à noite (18h–09h), aos fins de semana e feriados, 100 €/hora + 50 € de deslocação. Cada hora começada é devida."
+	 },
  {
  question: "Quais são os documentos necessários para diagnóstico elétrico?",
  answer: "Necessita do projeto elétrico aprovado, boletins de ensaio dos materiais utilizados e memorial descritivo da instalação. Nós tratamos de toda a burocracia."
  },
  {
  question: "O orçamento tem custo?",
- answer: "Por telefone ou WhatsApp, com fotos ou vídeo, a estimativa não tem custo. A deslocação tem preço único em qualquer localidade servida: 30 € em dias úteis (9h–18h) e 50 € à noite, fins de semana e feriados. Orçamento por escrito antes de qualquer intervenção."
+ answer: "Por telefone ou WhatsApp, com fotos ou vídeo, a estimativa não tem custo. A deslocação tem preço único em qualquer localidade servida: 30 € em dias úteis (09h–18h) e 50 € à noite, fins de semana e feriados. Orçamento por escrito antes de qualquer intervenção."
  }
  ]}
  />
@@ -212,7 +216,7 @@ export default function Servicos() {
  </h2>
  <p className="text-xl mb-8 max-w-2xl mx-auto">
  Contacte-nos agora para um sem compromisso e sem compromisso.
- Atendemos urgências Atendimento 24h/7d.
+	 Atendimento telefónico humano 24 horas por dia, 7 dias por semana. A disponibilidade da intervenção e a janela da deslocação são confirmadas por telefone.
  </p>
  <div className="flex flex-col sm:flex-row gap-6 justify-center">
  <a
