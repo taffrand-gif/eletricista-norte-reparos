@@ -12,12 +12,12 @@ const InnovativeHero: React.FC = () => {
  { icon: '🛡️', value: 'Profissional', label: 'Service documenté' },
  { icon: '📞', value: 'A confirmar', label: 'Janela de chegada' },
  ]
- : [
- { icon: '✅', value: 'Fluke', label: 'Diagnóstico Pro' },
- { icon: '🔬', value: 'FLIR', label: 'Câmara Térmica' },
-     { icon: '⚡', value: 'Profissional', label: 'Diagnóstico elétrico' },
-     { icon: '📞', value: 'A confirmar', label: 'Janela de chegada' },
- ];
+	 : [
+	 { icon: '✅', value: 'Fluke', label: 'Diagnóstico Pro' },
+	 { icon: '🔬', value: 'FLIR', label: 'Câmara Térmica' },
+	     { icon: '⚡', value: 'Profissional', label: 'Diagnóstico elétrico' },
+	     { icon: '📞', value: '24h/7d', label: 'Telefone humano' },
+	 ];
  const badgeText = isPlumber
  ? 'CANALIZADOR — DISPONÍVEL 24H/7D'
  : 'eletricista com experiência — ORÇAMENTO POR ESCRITO EM 48H';

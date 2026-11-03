@@ -1,7 +1,7 @@
 // Configuração para Norte-Reparos - Eletricista
 // Site eletricista-norte-reparos.pt
-// Preços sem IVA - NOVA GRELHA TARIFÁRIA 2026
-// Grelha única: 70€/h + 30€ (dias úteis 9h–17h) · 100€/h + 50€ (noite, fins de semana, feriados)
+// Valores TTC, IVA incluído — grelha tarifária 2026
+// Grelha única: 70€/h + 30€ (dias úteis 09h–18h) · 100€/h + 50€ (noite, fins de semana e feriados)
 
 export type SiteId = 'norte-reparos' | 'eletricista-norte-reparos';
 
@@ -90,9 +90,9 @@ export interface SiteConfig {
  serviceSlug: string;
 }
 
-// GRELHA TARIFÁRIA 2026
-// Grelha única 2026-09-23: dias úteis 9h–17h = 70€/h + deslocação 30€ ;
-// noite (17h–9h), fins de semana, feriados = 100€/h + deslocação 50€. Cada hora começada é devida.
+// GRELHA TARIFÁRIA 2026 — valores TTC, IVA incluído.
+// Dias úteis 09h–18h = 70€/h + deslocação 30€; noite (18h–09h), fins de semana e feriados = 100€/h + deslocação 50€.
+// Cada hora começada é devida; disponibilidade da intervenção e janela da deslocação confirmadas por telefone.
 
 export const siteConfig: SiteConfig = {
  id: 'eletricista-norte-reparos',
@@ -128,9 +128,9 @@ export const siteConfig: SiteConfig = {
 
  // Pricing Zones - NOVA GRELHA 2026
  pricingZones: [
- // Grelha única 2026-09-23 — deslocação independente da localidade
- { zone: 'DIA', name: 'Dias úteis 9h–17h', cities: 'Todas as localidades servidas', price: '30€', time: 'Mão de obra 70€/h' },
- { zone: 'NOITE', name: 'Noite (17h–9h), fins de semana e feriados', cities: 'Todas as localidades servidas', price: '50€', time: 'Mão de obra 100€/h' },
+ // Grelha única — deslocação independente da localidade
+ { zone: 'DIA', name: 'Dias úteis 09h–18h', cities: 'Todas as localidades servidas', price: '30€ TTC', time: 'Mão de obra 70€/h TTC' },
+ { zone: 'NOITE', name: 'Noite (18h–09h), fins de semana e feriados', cities: 'Todas as localidades servidas', price: '50€ TTC', time: 'Mão de obra 100€/h TTC' },
  ],
 
  // NOVO: Urgência + Taxa Horária

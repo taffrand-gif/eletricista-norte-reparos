@@ -6,12 +6,11 @@ import { useSite } from '@/contexts/SiteContext';
 // memo removed from 'react';
 import { Phone, MessageCircle } from 'lucide-react';
 import { useAnalytics } from '@/hooks/useAnalytics';
-import { useLocationContent, usePersonalizedWhatsAppMessage } from '@/hooks/useLocationContent';
+import { usePersonalizedWhatsAppMessage } from '@/hooks/useLocationContent';
 function MobileStickyBar() {
- const { config } = useSite();
- const { trackPhoneClick, trackWhatsAppClick } = useAnalytics();
- const { arrivalTime } = useLocationContent();
- const whatsappMessage = usePersonalizedWhatsAppMessage(config.whatsappMessage);
+	 const { config } = useSite();
+	 const { trackPhoneClick, trackWhatsAppClick } = useAnalytics();
+	 const whatsappMessage = usePersonalizedWhatsAppMessage(config.whatsappMessage);
  const whatsappUrl = `https://wa.me/${config.whatsapp}?text=${encodeURIComponent(whatsappMessage)}`;
  return (
  <div
@@ -33,7 +32,7 @@ function MobileStickyBar() {
  <Phone className="w-5 h-5" />
  <span className="text-base">LIGAR</span>
  </div>
- <span className="text-xs font-normal opacity-100 mt-0.5">{arrivalTime}</span>
+	 <span className="text-xs font-normal opacity-100 mt-0.5">Confirmar por telefone</span>
  </a>
  {/* Botão WhatsApp — 50% direita */}
  <a

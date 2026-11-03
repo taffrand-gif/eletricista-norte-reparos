@@ -2,9 +2,9 @@
 import { useSite } from '@/contexts/SiteContext';
 import { useEffect, useRef, useState } from 'react';
 const trustItems = [
- { icon: '🕐', label: 'Disponível Atendimento 24h/7d' },
- { icon: '💰', label: 'Orçamento por Escrito' },
- { icon: '✅', label: 'Garantia de Serviço' },
+	{ icon: '🕐', label: 'Telefone humano 24h/7d' },
+	{ icon: '💰', label: 'Orçamento por Escrito' },
+	{ icon: '✅', label: 'Garantia de Serviço' },
  { icon: '📍', label: 'Toda Trás-os-Montes' },
 ];
 function useCountUp(target: number, duration: number = 2000, start: boolean = false) {

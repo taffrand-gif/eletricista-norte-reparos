@@ -6,12 +6,11 @@ import { Phone, MessageCircle, X } from 'lucide-react';
 import { useSite } from '@/contexts/SiteContext';
 import CalendlyCTA from '@/components/CalendlyCTA';
 import { useAnalytics } from '@/hooks/useAnalytics';
-import { useLocationContent, usePersonalizedWhatsAppMessage } from '@/hooks/useLocationContent';
+import { usePersonalizedWhatsAppMessage } from '@/hooks/useLocationContent';
 function FloatingCTA() {
- const { config } = useSite();
- const { trackPhoneClick, trackWhatsAppClick } = useAnalytics();
- const { city, arrivalTime } = useLocationContent();
- const [isVisible, setIsVisible] = useState(true);
+	 const { config } = useSite();
+	 const { trackPhoneClick, trackWhatsAppClick } = useAnalytics();
+	 const [isVisible, setIsVisible] = useState(true);
  const [isMinimized, setIsMinimized] = useState(false);
  // Mensagem WhatsApp pré-preenchida com localização
  const whatsappMessage = usePersonalizedWhatsAppMessage(config.whatsappMessage);
@@ -36,7 +35,7 @@ function FloatingCTA() {
  <div className="flex items-center justify-between p-3 bg-gray-50">
  <div className="flex items-center gap-2">
  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
- <span className="text-sm font-bold text-gray-800">Atendimento 24h</span>
+					<span className="text-sm font-bold text-gray-800">Atendimento telefónico humano 24h/7d</span>
  </div>
  <div className="flex items-center gap-2">
  <button

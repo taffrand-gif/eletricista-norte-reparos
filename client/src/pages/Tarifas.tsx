@@ -73,10 +73,10 @@ function Tarifas() {
  Já sabe quanto custa. Agora só precisa de confirmar a nossa disponibilidade.
  </p>
  <div className="grid md:grid-cols-3 gap-6 mb-8">
- <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
- <div className="text-4xl mb-3">⚡</div>
- <h3 className="font-bold mb-2">Resposta mediante contacto</h3>
- <p className="text-sm text-gray-300">Atendemos Resposta mediante contacto garantida</p>
+	 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+	 <div className="text-4xl mb-3">⚡</div>
+	 <h3 className="font-bold mb-2">Atendimento telefónico humano 24/7</h3>
+	 <p className="text-sm text-gray-300">A disponibilidade da intervenção e a janela da deslocação são confirmadas por telefone.</p>
  </div>
  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
  <div className="text-4xl mb-3">✅</div>

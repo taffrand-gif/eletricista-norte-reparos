@@ -14,10 +14,13 @@ function TauxHoraireDisplay({ className = '' }: TauxHoraireDisplayProps) {
  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
  Tarifas Transparentes
  </h2>
- <p className="text-lg text-gray-600 max-w-2xl mx-auto">
- Sem surpresas. Preços claros comunicados antes de começar qualquer trabalho.
- </p>
- </div>
+	 <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+	 Sem surpresas. Preços claros comunicados antes de começar qualquer trabalho.
+	 </p>
+	 <p className="text-sm text-gray-600 max-w-3xl mx-auto mt-3">
+	 Valores TTC, IVA incluído. Cada hora começada é devida. Atendimento telefónico humano 24 horas por dia, 7 dias por semana. A disponibilidade e a janela da deslocação são confirmadas por telefone.
+	 </p>
+	 </div>
  {/* Taxa Horária Principal */}
  <div className="bg-white rounded-2xl shadow-xl p-8 mb-8 border-2" style={{ borderColor: accentColor }}>
  <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
@@ -28,7 +31,7 @@ function TauxHoraireDisplay({ className = '' }: TauxHoraireDisplayProps) {
  <div className="bg-gray-50 rounded-xl p-6 text-center">
  <div className="text-4xl mb-3">🕐</div>
  <h4 className="font-bold text-gray-900 mb-2">Dias úteis</h4>
- <p className="text-sm text-gray-600 mb-3">Seg-Sex 9h–18h</p>
+ <p className="text-sm text-gray-600 mb-3">Seg-Sex 09h–18h</p>
  <div className="text-4xl font-black" style={{ color: accentColor }}>
  70€<span className="text-xl text-gray-600">/h</span>
  </div>
@@ -38,7 +41,7 @@ function TauxHoraireDisplay({ className = '' }: TauxHoraireDisplayProps) {
  <div className="bg-red-50 rounded-xl p-6 text-center border-2 border-red-200">
  <div className="text-4xl mb-3">🌙</div>
  <h4 className="font-bold text-gray-900 mb-2">Noite, fins de semana e feriados</h4>
- <p className="text-sm text-gray-600 mb-3">18h–9h, sábado, domingo, feriados</p>
+ <p className="text-sm text-gray-600 mb-3">18h–09h, sábado, domingo, feriados</p>
  <div className="text-4xl font-black text-red-600">
  100€<span className="text-xl text-gray-600">/h</span>
  </div>
@@ -55,7 +58,7 @@ function TauxHoraireDisplay({ className = '' }: TauxHoraireDisplayProps) {
  <div className="grid md:grid-cols-2 gap-4">
  <div className="bg-green-50 rounded-xl p-5 border-2 border-green-200">
  <div className="flex justify-between items-center mb-2">
- <span className="font-bold text-gray-900">Dias úteis 9h–18h</span>
+ <span className="font-bold text-gray-900">Dias úteis 09h–18h</span>
  <span className="text-2xl font-black text-green-600">30€</span>
  </div>
  </div>

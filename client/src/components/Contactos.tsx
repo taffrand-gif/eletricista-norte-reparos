@@ -163,10 +163,10 @@ export default function Contactos() {
  style={{ color: config.colors.primary }}
  >
  {config.phone}
- </a>
- <p className="text-sm text-gray-600 mt-1">
- Disponível Atendimento 24h/7d
- </p>
+						</a>
+						<p className="text-sm text-gray-600 mt-1">
+						Atendimento telefónico humano 24 horas por dia, 7 dias por semana.
+						</p>
  </div>
  </div>
  </div>
@@ -227,12 +227,12 @@ export default function Contactos() {
  <Clock className="w-6 h-6" />
  </div>
  <div>
- <h4 className="font-black text-lg mb-2">Horário</h4>
- <p className="text-lg font-bold">
- Atendimento 24h/7d
- </p>
- <p className="text-sm text-gray-600 mt-1">
- 7 dias por semana, incluindo feriados
+						<h4 className="font-black text-lg mb-2">Horário</h4>
+						<p className="text-lg font-bold">
+						Disponibilidade da intervenção
+						</p>
+						<p className="text-sm text-gray-600 mt-1">
+						A disponibilidade e a janela da deslocação são confirmadas por telefone.
  </p>
  </div>
  </div>
