@@ -94,7 +94,7 @@ question: "têm experiência ?",
  },
  {
  question: "Dão fatura?",
- answer: "Sim, emitimos fatura com ou sem IVA conforme necessário. Somos empresa registada e certificada ."
+ answer: "Sim, emitimos fatura com NIF. Valores TTC, IVA incluído."
  },
  {
  question: "Fazem inspeção elétrica completa?",

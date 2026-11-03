@@ -65,7 +65,7 @@ export default function PriceTable() {
  </tbody>
  </table>
  </div>
- <p className="text-xs text-gray-500 mt-2">* Valores sem IVA. O valor da deslocação é cobrado apenas uma vez por intervenção.</p>
+ <p className="text-xs text-gray-500 mt-2">* Valores TTC, IVA incluído. A deslocação é cobrada uma vez por intervenção.</p>
  </div>
  )}
  <div className="grid md:grid-cols-2 gap-12">
