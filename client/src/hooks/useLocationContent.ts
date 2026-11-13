@@ -1,5 +1,4 @@
 import { useMemo } from 'react';
-import { useLocation } from '@/contexts/LocationContext';
 import { CITIES } from '@/../../shared/serviceConfig';
 interface LocationContentConfig {
  city: string;
@@ -8,6 +7,8 @@ interface LocationContentConfig {
  priceAdjustment: number;
  region: string;
 }
+// Ville affichée par défaut : plus de détection IP ni de sélecteur de localisation
+export const DEFAULT_CITY = 'Bragança';
 // Base location (Trás-os-Montes)
 const BASE_LAT = 41.5382;
 const BASE_LON = -6.9667;
@@ -64,9 +65,8 @@ function getRegion(cityName: string): string {
  return city.district;
 }
 export function useLocationContent(): LocationContentConfig {
- const { getCurrentCity } = useLocation();
  return useMemo(() => {
- const city = getCurrentCity();
+ const city = DEFAULT_CITY;
  const distance = getDistanceToCity(city);
  const arrivalTime = getArrivalTime();
  const priceAdjustment = 0;
@@ -77,7 +77,7 @@ export function useLocationContent(): LocationContentConfig {
  arrivalTime,
  priceAdjustment,
  region};
- }, [getCurrentCity]);
+ }, []);
 }
 // Hook for personalized WhatsApp message
 export function usePersonalizedWhatsAppMessage(baseMessage: string): string {

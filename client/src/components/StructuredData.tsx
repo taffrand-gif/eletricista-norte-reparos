@@ -3,12 +3,11 @@
 import { useEffect } from 'react';
 import { useSite } from '@/contexts/SiteContext';
 import { useLocation as useWouterLocation } from 'wouter';
-import { useLocation } from '@/contexts/LocationContext';
+import { DEFAULT_CITY } from '@/hooks/useLocationContent';
 import { businessInfo, getCityAddress } from '@/../../shared/napConfig';
 export default function StructuredData() {
  const { config } = useSite();
  const [location] = useWouterLocation();
- const { getCurrentCity } = useLocation();
  useEffect(() => {
  // Remover scripts existentes — EXCETO o bloco de credencial DGEG
  // (data-dgeg-cert), injetado no HTML estático para ser legível SEM
@@ -18,7 +17,7 @@ export default function StructuredData() {
  existingScripts.forEach(script => script.remove());
  const businessType = 'Electrician';
  const serviceName = 'Eletricista';
- const detectedCity = getCurrentCity();
+ const detectedCity = DEFAULT_CITY;
  // Não adicionar FAQPage nas páginas cidade (CityServicePage já tem seu próprio FAQPage)
  // Pattern: /:service-:city (ex: /eletricista-lamego, /instalacao-eletrica-braganca)
  const isCityServicePage = location.match(/\/[a-z-]+-[a-z-]+$/);
@@ -473,6 +472,6 @@ export default function StructuredData() {
  script.text = JSON.stringify(schema);
  document.head.appendChild(script);
  });
- }, [config, location, getCurrentCity]);
+ }, [config, location]);
  return null;
 }
