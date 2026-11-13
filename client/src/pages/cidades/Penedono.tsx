@@ -67,15 +67,15 @@ export default function Penedono() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Penedono?",
- answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ answer: "Confirmamos a deslocação por telefone. A disponibilidade é confirmada conforme a localização e a situação operacional.",
  },
  {
  question: "Fazem instalações em casas de granito antigas?",
- answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ answer: "Confirmamos a deslocação por telefone. A disponibilidade é confirmada conforme a localização e a situação operacional.",
  },
  {
  question: "Qual o custo de deslocação a Penedono?",
- answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ answer: "Confirmamos a deslocação por telefone. A disponibilidade é confirmada conforme a localização e a situação operacional.",
  },
 ];
 

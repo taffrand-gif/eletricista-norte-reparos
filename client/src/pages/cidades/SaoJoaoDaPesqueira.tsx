@@ -67,15 +67,15 @@ export default function SaoJoaoDaPesqueira() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a São João da Pesqueira?",
- answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ answer: "Confirmamos a deslocação por telefone. A disponibilidade é confirmada conforme a localização e a situação operacional.",
  },
  {
  question: "Fazem instalações para quintas vinícolas no Douro?",
- answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ answer: "Confirmamos a deslocação por telefone. A disponibilidade é confirmada conforme a localização e a situação operacional.",
  },
  {
  question: "Qual o custo de deslocação a São João da Pesqueira?",
- answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ answer: "Confirmamos a deslocação por telefone. A disponibilidade é confirmada conforme a localização e a situação operacional.",
  },
 ];
 

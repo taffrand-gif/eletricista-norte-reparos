@@ -67,15 +67,15 @@ export default function Sernancelhe() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Sernancelhe?",
- answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ answer: "Confirmamos a deslocação por telefone. A disponibilidade é confirmada conforme a localização e a situação operacional.",
  },
  {
  question: "Fazem instalações para secadores de castanha?",
- answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ answer: "Confirmamos a deslocação por telefone. A disponibilidade é confirmada conforme a localização e a situação operacional.",
  },
  {
  question: "Qual o custo de deslocação a Sernancelhe?",
- answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ answer: "Confirmamos a deslocação por telefone. A disponibilidade é confirmada conforme a localização e a situação operacional.",
  },
 ];
 

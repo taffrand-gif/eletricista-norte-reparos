@@ -67,15 +67,15 @@ export default function RibeiraDePena() {
  const faqs = [
  {
  question: "Quanto tempo demora a chegar a Ribeira de Pena?",
- answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ answer: "Confirmamos a deslocação por telefone. A disponibilidade é confirmada conforme a localização e a situação operacional.",
  },
  {
  question: "Fazem instalações para casas junto à barragem?",
- answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ answer: "Confirmamos a deslocação por telefone. A disponibilidade é confirmada conforme a localização e a situação operacional.",
  },
  {
  question: "Qual o custo de deslocação a Ribeira de Pena?",
- answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ answer: "Confirmamos a deslocação por telefone. A disponibilidade é confirmada conforme a localização e a situação operacional.",
  },
 ];
 
