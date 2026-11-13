@@ -54,7 +54,7 @@
  } else {
  widget.style.background = 'linear-gradient(90deg,#e65100,#f57c00)';
  widget.style.color = 'white';
- widget.innerHTML = '🟡 Urgência noturna — Taxa +50% aplicada | <a href="tel:+351' + PHONE + '" style="color:white;text-decoration:underline">Ligar: ' + PHONE.replace(/(\d{3})(\d{3})(\d{3})/, '$1 $2 $3') + '</a>';
+ widget.innerHTML = '🟡 Noite, fins de semana e feriados: 100 €/h + 50 € de deslocação | <a href="tel:+351' + PHONE + '" style="color:white;text-decoration:underline">Ligar: ' + PHONE.replace(/(\d{3})(\d{3})(\d{3})/, '$1 $2 $3') + '</a>';
  }
 
  widget.addEventListener('click', function() {
@@ -235,7 +235,7 @@
  createAvailabilityWidget();
  // createWhatsAppButtons() removed — inline .whatsapp-float + .phone-float buttons
  // in HTML pages are sufficient. This eliminates duplicate floating buttons.
- createLastWorkBadge();
+ // createLastWorkBadge() desativado (RETOUR 269): intervenção pseudo-aleatória, não verificável.
  createExitIntent();
  }
 })();
