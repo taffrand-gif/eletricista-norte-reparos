@@ -277,7 +277,7 @@ export default function IluminacaoExteriorJardim() {
  <div className="bg-red-50 p-6 rounded-xl shadow-lg border-2 border-red-300">
  <div className="flex items-center gap-2 mb-4">
  <Moon className="w-8 h-8 text-red-600" />
- <h3 className="text-xl font-bold text-red-700">Halogéneo/Incandescente</h3>
+ <h3 className="text-xl font-bold text-red-700 max-[381px]:min-w-0 max-[381px]:wrap-anywhere">Halogéneo/Incandescente</h3>
  </div>
  <ul className="space-y-2 text-sm text-gray-600">
  <li>❌ Consumo elevado</li>
