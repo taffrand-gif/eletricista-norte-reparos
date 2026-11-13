@@ -390,7 +390,7 @@ export default function PoupancaEnergiaInverno() {
  <section className="py-12 bg-gray-50">
  <div className="container max-w-3xl">
  <h2 className="text-3xl font-black mb-6">Investimento vs Poupança Anual</h2>
- <div className="bg-white p-6 rounded-xl shadow-lg">
+ <div className="bg-white p-6 rounded-xl shadow-lg max-[402px]:overflow-x-auto">
  <table className="w-full text-sm">
  <thead>
  <tr className="border-b-2 border-gray-200">
