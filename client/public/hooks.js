@@ -54,7 +54,7 @@
  } else {
  widget.style.background = 'linear-gradient(90deg,#e65100,#f57c00)';
  widget.style.color = 'white';
- widget.innerHTML = '🟡 Urgência noturna — Taxa +50% aplicada | <a href="tel:+351' + PHONE + '" style="color:white;text-decoration:underline">Ligar: ' + PHONE.replace(/(\d{3})(\d{3})(\d{3})/, '$1 $2 $3') + '</a>';
+ widget.innerHTML = '🟡 Horário noturno: 100 €/h + deslocação 50 €, IVA incluído | <a href="tel:+351' + PHONE + '" style="color:white;text-decoration:underline">Ligar: ' + PHONE.replace(/(\d{3})(\d{3})(\d{3})/, '$1 $2 $3') + '</a>';
  }
 
  widget.addEventListener('click', function() {
