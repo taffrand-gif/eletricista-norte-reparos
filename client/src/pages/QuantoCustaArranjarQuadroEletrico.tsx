@@ -234,7 +234,7 @@ export default function QuantoCustaArranjarQuadroEletrico() {
  <item.icon className="w-6 h-6 text-white" />
  </div>
  <div className="flex-1">
- <div className="flex items-center gap-3 mb-2">
+ <div className="flex max-[369px]:flex-wrap items-center gap-3 mb-2">
  <h3 className="text-xl font-bold text-gray-900">{item.sinal}</h3>
  <span className={`px-3 py-1 rounded-full text-xs font-bold ${
  item.urgencia === 'CRÍTICA' ? 'bg-red-600 text-white' :
