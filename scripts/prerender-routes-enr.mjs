@@ -267,6 +267,12 @@ async function fetchRenderedHtml(browser, url) {
       // log warning plus tard, ne bloque pas la capture
     });
 
+    // Le bandeau cookies canonique est le bandeau STATIQUE (#rgpd-banner-enr, injecté ensuite) :
+    // ne pas sérialiser l'instantané du composant React CookieConsent (double bandeau, CTA masquées).
+    await page.evaluate(() => {
+      document.querySelectorAll('[role="region"][aria-label="Consentimento de cookies"]').forEach((n) => n.remove());
+    });
+
     // Récupérer le DOM sérialisé complet (avec toutes les meta JSON-LD
     // injectées en runtime dans <head>).
     const html = await page.content();
