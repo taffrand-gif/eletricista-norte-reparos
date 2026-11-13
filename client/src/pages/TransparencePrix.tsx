@@ -180,7 +180,7 @@ export default function TransparencePrix() {
  Valores TTC, IVA incluído. Orçamento por escrito antes de qualquer intervenção.
  </p>
  </div>
- <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+ <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
  {forfaits.map((forfait, idx) => (
  <div
  key={idx}
