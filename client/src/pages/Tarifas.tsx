@@ -4,8 +4,6 @@ import { useSite } from '@/contexts/SiteContext';
 import CalendlyCTA from '@/components/CalendlyCTA';
 import TauxHoraireDisplay from '@/components/TauxHoraireDisplay';
 import WhyWePublishPrices from '@/components/WhyWePublishPrices';
-import FloatingCTA from '@/components/FloatingCTA';
-import MobileStickyBar from '@/components/MobileStickyBar';
 function Tarifas() {
  const { config } = useSite();
  const accentColor = config.id === 'norte-reparos' ? '#0e7490' : '#FF6B35';
@@ -109,8 +107,6 @@ function Tarifas() {
  <div className="text-center mt-4"><CalendlyCTA /></div>
  </div>
  </section>
- <FloatingCTA />
- <MobileStickyBar />
  </>
 );
 }

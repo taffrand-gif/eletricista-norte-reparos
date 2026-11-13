@@ -64,10 +64,11 @@ function syncPrerenderAssetRefs() {
     const next = html.replace(/((?:src|href)=")\/assets\/([^"]+\.(?:js|css))"/g,
       (tag, prefix, oldAsset) => {
         if (fs.existsSync(path.join(assetsDir, oldAsset))) return tag;
-        // ExitIntentPopup was intentionally removed from App.tsx for mobile UX.
-        // Older prerendered HTML can retain its hashed script reference; remove
-        // only that known obsolete asset instead of failing the whole build.
-        if (/^ExitIntentPopup-[A-Za-z0-9_-]+\.js$/.test(oldAsset)) {
+        // ExitIntentPopup (mobile UX) and LocationDetector (fixed top banner
+        // covering the header phone CTA) were intentionally removed from App.tsx.
+        // Older prerendered HTML can retain their hashed script references; remove
+        // only those known obsolete assets instead of failing the whole build.
+        if (/^(?:ExitIntentPopup|LocationDetector)-[A-Za-z0-9_-]+\.js$/.test(oldAsset)) {
           replacements++;
           return '';
         }

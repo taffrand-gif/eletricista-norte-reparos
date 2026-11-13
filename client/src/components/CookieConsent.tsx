@@ -53,6 +53,7 @@ export default function CookieConsent() {
   return (
     <div
       role="region"
+      data-rgpd-banner
       aria-label="Consentimento de cookies"
       style={{
         position: 'fixed',
