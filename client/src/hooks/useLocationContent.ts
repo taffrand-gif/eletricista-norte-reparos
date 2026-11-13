@@ -79,12 +79,9 @@ export function useLocationContent(): LocationContentConfig {
  region};
  }, [getCurrentCity]);
 }
-// Hook for personalized WhatsApp message
+// Hook for WhatsApp message: no location prefix (the visitor may be anywhere in the service area)
 export function usePersonalizedWhatsAppMessage(baseMessage: string): string {
- const { city } = useLocationContent();
- return useMemo(() => {
- return `Olá! Estou em ${city}. ${baseMessage}`;
- }, [city, baseMessage]);
+ return /^Olá/.test(baseMessage) ? baseMessage : `Olá! ${baseMessage}`;
 }
 // Hook for filtering testimonials by location
 export function useLocalTestimonials<T extends { location: string }>(
