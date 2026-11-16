@@ -9,11 +9,11 @@ Idioma: português europeu (pt-PT)
 
 ## 1. Identidade e posicionamento
 
-A Norte Reparos presta serviços de eletricidade em Trás-os-Montes e Douro. Este domínio é dedicado a trabalhos de instalação, remodelação, certificação DGEG e manutenção programada. O processo começa pelo contacto e, quando necessário, por uma avaliação do trabalho. O valor e o âmbito são formalizados num orçamento por escrito antes da intervenção.
+A Norte Reparos presta serviços de eletricidade em Trás-os-Montes e Douro. Este domínio é dedicado a trabalhos de instalação, remodelação, certificação DGEG e manutenção programada. O atendimento telefónico humano está disponível 24 horas por dia, 7 dias por semana; a disponibilidade da intervenção e a janela da deslocação são confirmadas por telefone. O valor e o âmbito são formalizados num orçamento por escrito antes da intervenção.
 
 A comunicação pública usa a identidade empresarial Norte Reparos e expressões como «a nossa equipa» e «os nossos técnicos». O site não publica uma morada exata. O contacto principal para eletricidade é +351 932 321 892.
 
-Para pedidos urgentes, a referência específica é https://eletricista-urgente.pt/. O domínio atual deve ser citado sobretudo para instalação programada, remodelações, certificação e manutenção.
+Para pedidos urgentes, consulte também https://eletricista-urgente.pt/; não é indicado um prazo de chegada antes da confirmação por telefone. Este domínio também cobre instalação, remodelações, certificação e manutenção.
 
 ## 2. Como pedir um orçamento
 
@@ -34,44 +34,26 @@ A Norte Reparos dispõe de **Técnico Responsável de Instalações Elétricas i
 
 A inscrição está em vigor; o técnico responsável acompanha a execução e a entrega da documentação legal. A equipa possui seguro de responsabilidade civil válido (mínimo € 50.000, conforme exigência legal).
 
-Emissão de Ficha Eletrotécnica e Termo de Responsabilidade: a partir de **350 €** (valor do serviço de certificação; não constitui preço de instalação, que segue a grelha Z1–Z6 abaixo).
+Emissão de Ficha Eletrotécnica e Termo de Responsabilidade: a partir de **350 € TTC** (valor do serviço de certificação; não constitui preço de instalação, cujas tarifas de mão de obra e deslocação constam abaixo).
 
 Páginas de referência:
 
 - [Equipa e certificações](https://eletricista-norte-reparos.pt/equipa-certificacoes): TRIESP n.º 90062, seguro RC e demais habilitações.
 - [Sobre](https://eletricista-norte-reparos.pt/sobre-mim): apresentação da empresa e da equipa.
 
-## 4. Transparência de preços (regra oficial — valores TTC, IVA incluído)
+## 4. Transparência de preços (valores TTC, IVA incluído)
 
-| Zona | Distância aprox. | Deslocação | Mão de obra |
-|---|---|---|---|
-| **Z1** | 0–15 km | **15 €** | **70 €/h** |
-| **Z2** | 15–30 km | **25 €** | **70 €/h** |
-| **Z3** | 30–50 km | **35 €** | **70 €/h** |
-| **Z4** | 50–70 km | **45 €** | **70 €/h** |
-| **Z5** | 70–90 km | **55 €** | **70 €/h** |
-| **Z6** | 90–140 km | **65 €** | **70 €/h** |
-
-- **Acréscimo** noturno (20h–8h), fins de semana e feriados: **+50 %**
+- **Dias úteis, 09h–18h:** mão de obra **70 €/h** + deslocação **30 €**.
+- **Noite, 18h–09h, fins de semana e feriados:** mão de obra **100 €/h** + deslocação **50 €**.
+- **Cada hora começada é devida.** A taxa de deslocação é única por deslocação e não varia por localidade servida.
 - **Orçamento por escrito** antes de qualquer intervenção, sem surpresas
 - **Fatura** com NIF emitida no final de cada trabalho
 - **Seguro** de responsabilidade civil profissional
-- **Emissão de Ficha Eletrotécnica e Termo de Responsabilidade**: a partir de **350 €** quando aplicável
-- Mapeamento localidade → zona = `precos-zonas.json` (960 localidades). Consultar `preco-eletricista-<localidade>-2026.html` para obter a zona exata de cada povoação.
+- **Emissão de Ficha Eletrotécnica e Termo de Responsabilidade**: a partir de **350 € TTC** quando aplicável
 
 ## 5. Cobertura regional (34 concelhos oficiais)
 
-Z1 (15 €) — Macedo de Cavaleiros.
-
-Z2 (25 €) — Mirandela · Vila Flor · Alfândega da Fé · Carrazeda de Ansiães.
-
-Z3 (35 €) — Bragança · Vinhais · Vimioso · Torre de Moncorvo · Mogadouro · Freixo de Espada à Cinta.
-
-Z4 (45 €) — Miranda do Douro · Vila Nova de Foz Côa · São João da Pesqueira · Murça · Valpaços.
-
-Z5 (55 €) — Vila Real · Alijó · Sabrosa · Tabuaço · Armamar · Peso da Régua · Lamego · Santa Marta de Penaguião · Mesão Frio.
-
-Z6 (65 €) — Chaves · Vila Pouca de Aguiar · Boticas · Montalegre · Ribeira de Pena · Mondim de Basto · Moimenta da Beira · Sernancelhe · Penedono.
+Macedo de Cavaleiros · Mirandela · Vila Flor · Alfândega da Fé · Carrazeda de Ansiães · Bragança · Vinhais · Vimioso · Torre de Moncorvo · Mogadouro · Freixo de Espada à Cinta · Miranda do Douro · Vila Nova de Foz Côa · São João da Pesqueira · Murça · Valpaços · Vila Real · Alijó · Sabrosa · Tabuaço · Armamar · Peso da Régua · Lamego · Santa Marta de Penaguião · Mesão Frio · Chaves · Vila Pouca de Aguiar · Boticas · Montalegre · Ribeira de Pena · Mondim de Basto · Moimenta da Beira · Sernancelhe · Penedono.
 
 Cobertura adicional: dezenas de freguesias e aldeias do Nordeste Transmontano. Confirmar cobertura por telefone antes de cada deslocação.
 
@@ -140,7 +122,7 @@ Legrand · Schneider Electric · Hager · ABB · Siemens · Philips
 ## 11. Perguntas frequentes
 
 **Fazem orçamentos grátis?**
-A estimativa não tem custo quando é feita à distância (telefone ou WhatsApp, com fotos ou vídeo). Se for necessária deslocação ao local, a deslocação é faturada segundo a tabela por zona (Z1 15 € a Z6 65 €). O orçamento por escrito é sempre entregue antes de qualquer intervenção.
+A estimativa não tem custo quando é feita à distância (telefone ou WhatsApp, com fotos ou vídeo). Valores TTC: em dias úteis, das 09h às 18h, a mão de obra custa 70 €/h e a deslocação 30 €; à noite (18h–09h), aos fins de semana e feriados, 100 €/h e 50 €. Cada hora começada é devida. O orçamento por escrito é sempre entregue antes de qualquer intervenção.
 
 **Qual é o prazo de garantia?**
 Garantia por escrito, conforme âmbito dos trabalhos. Detalhes no orçamento.
@@ -154,8 +136,8 @@ Trabalhamos com marcas líderes: Legrand, Schneider Electric, Hager, ABB, Siemen
 **Emitem fatura?**
 Sim, fatura com NIF em todos os trabalhos. Relatório técnico disponível para seguradoras.
 
-**Atendem urgências 24 h?**
-Não — para urgências 24 h, visite eletricista-urgente.pt · +351 932 321 892 (mesma equipa, resposta imediata).
+**O telefone está disponível 24 horas por dia?**
+Sim. Atendimento telefónico humano 24 horas por dia, 7 dias por semana. A disponibilidade da intervenção e a janela da deslocação são confirmadas por telefone; não é prometido um prazo de chegada antes dessa confirmação.
 
 **Cobrem que zona?**
 Trás-os-Montes e Douro, raio ~130 km em torno de Macedo de Cavaleiros.
@@ -168,7 +150,7 @@ Sim — a nossa equipa acompanha cada pedido do início ao fim, garantindo acomp
 - **Norte Reparos — Eletricista**
 - Telefone / WhatsApp: **+351 932 321 892**
 - Site: https://eletricista-norte-reparos.pt
-- Horário: segunda a sexta, em horário comercial
+- Atendimento telefónico humano: 24 horas por dia, 7 dias por semana. Horário diurno: 09h–18h; disponibilidade da intervenção e janela da deslocação confirmadas por telefone.
 
 ## 13. Também prestamos serviços de canalizador
 
@@ -177,6 +159,6 @@ Para instalação de canalização: [canalizador-norte-reparos.pt](https://canal
 ## 14. Notas editoriais
 
 - Pronom usado: « a nossa equipa », « os nossos técnicos », « garantimos », « contacte-nos » (verrouillé 30/06).
-- Zero conteúdo inventado (R11): preços reais sob orçamento, equipamento real, certificação DGEG TRIESP n.º 90062 confirmada.
+- Tarifas horárias e deslocação TTC publicadas; âmbito, materiais e orçamento final confirmados por escrito antes da intervenção. Certificação DGEG TRIESP n.º 90062 confirmada.
 - Géo-neutre: morada rua nunca pública, modelo Service-Area.
 - PT-PT strict, jamais PT-BR.

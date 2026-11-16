@@ -8,7 +8,8 @@ Languages: pt-PT
 PrimaryPhone: +351-932-321-892
 Email: geral@eletricista-norte-reparos.pt
 Website: https://eletricista-norte-reparos.pt
-Hours: Horário comercial (segunda a sexta)
+Hours: Atendimento telefónico humano 24 horas por dia, 7 dias por semana; disponibilidade da intervenção e janela da deslocação confirmadas por telefone. Horário diurno: 09h–18h.
+Tariffs (values TTC, IVA incluído): dias úteis 09h–18h, 70 €/h + 30 € de deslocação; noite 18h–09h, fins de semana e feriados, 100 €/h + 50 € de deslocação. Cada hora começada é devida.
 Pronoun: "nós" / "nossa equipa" (nunca "eu")
 Certifications: DGEG TRIESP n.º 90062 (Técnico Responsável de Instalações Elétricas, Execução em Baixa Tensão, até 41,4 kVA) — Lei n.º 14/2015
 Services:
@@ -21,7 +22,7 @@ Services:
   - Instalação de carregadores para veículos elétricos
   - Certificação elétrica (fichas eletrotécnicas e termo de responsabilidade)
 RelatedSites:
-  - Eletricista Urgente (24h): eletricista-urgente.pt · +351 932 321 892
+  - Eletricista Urgente: eletricista-urgente.pt · +351 932 321 892
   - Canalizador Instalação: canalizador-norte-reparos.pt · +351 928 484 451
   - Canalizador Urgente (24h): canalizador-urgente.pt · +351 928 484 451
 ContentLicense: CC BY-NC-SA 4.0

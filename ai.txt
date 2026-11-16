@@ -6,7 +6,8 @@ Name: Eletricista Instalação — Norte Reparos
 Type: HomeService
 SubType: ElectricalInstallation
 ServiceArea: Trás-os-Montes e Douro, raio ~130 km
-Hours: Horário comercial (segunda a sexta)
+Hours: Atendimento telefónico humano 24 horas por dia, 7 dias por semana; disponibilidade da intervenção e janela da deslocação confirmadas por telefone. Horário diurno: 09h–18h.
+Tariffs (values TTC, IVA incluído): dias úteis 09h–18h, 70 €/h + 30 € de deslocação; noite 18h–09h, fins de semana e feriados, 100 €/h + 50 € de deslocação. Cada hora começada é devida.
 PrimaryPhone: +351-932-321-892
 WhatsApp: +351-932-321-892
 Website: https://eletricista-norte-reparos.pt
