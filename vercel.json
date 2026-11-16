@@ -2957,18 +2957,8 @@
       "statusCode": 301
     },
     {
-      "source": "/eletricista-a-gudia",
-      "destination": "/eletricista-a-gudina",
-      "statusCode": 301
-    },
-    {
       "source": "/eletricista-campo-de-vboras",
       "destination": "/eletricista-campo-de-viboras",
-      "statusCode": 301
-    },
-    {
-      "source": "/eletricista-cerezal-de-peahorcada",
-      "destination": "/eletricista-cerezal-de-penahorcada",
       "statusCode": 301
     },
     {
@@ -2984,36 +2974,6 @@
     {
       "source": "/eletricista-gradssimo",
       "destination": "/eletricista-gradissimo",
-      "statusCode": 301
-    },
-    {
-      "source": "/eletricista-la-pea",
-      "destination": "/eletricista-la-pena",
-      "statusCode": 301
-    },
-    {
-      "source": "/eletricista-la-vdola",
-      "destination": "/eletricista-la-vidola",
-      "statusCode": 301
-    },
-    {
-      "source": "/eletricista-pedralba-de-la-pradera",
-      "destination": "/eletricista-pedralba-de-la-praderia",
-      "statusCode": 301
-    },
-    {
-      "source": "/eletricista-perea-de-la-ribera",
-      "destination": "/eletricista-perena-de-la-ribera",
-      "statusCode": 301
-    },
-    {
-      "source": "/eletricista-samir-de-los-caos",
-      "destination": "/eletricista-samir-de-los-canos",
-      "statusCode": 301
-    },
-    {
-      "source": "/eletricista-vilario-de-conso",
-      "destination": "/eletricista-vilarino-de-conso",
       "statusCode": 301
     },
     {
@@ -3075,11 +3035,6 @@
       "source": "/eletricista-t%C3%B3",
       "destination": "/eletricista-to",
       "statusCode": 301
-    },
-    {
-      "source": "/eletricista-gallegos-del-ro",
-      "destination": "/eletricista-gallegos-del-ro",
-      "statusCode": 410
     },
     {
       "source": "/melhores-quadros-eletricos-residenciais",
@@ -4602,11 +4557,6 @@
       "statusCode": 301
     },
     {
-      "source": "/eletricista-carregador-veiculo-eletrico-vern",
-      "destination": "/eletricista-vern",
-      "statusCode": 301
-    },
-    {
       "source": "/eletricista-carregador-veiculo-eletrico-vidago",
       "destination": "/eletricista-vidago",
       "statusCode": 301
@@ -4654,11 +4604,6 @@
     {
       "source": "/eletricista-carregador-veiculo-eletrico-vinhais",
       "destination": "/eletricista-vinhais",
-      "statusCode": 301
-    },
-    {
-      "source": "/eletricista-carregador-veiculo-eletrico-xinzo-de-limia",
-      "destination": "/eletricista-xinzo-de-limia",
       "statusCode": 301
     },
     {
@@ -5917,11 +5862,6 @@
       "statusCode": 301
     },
     {
-      "source": "/eletricista-o-ri%C3%B3s",
-      "destination": "/eletricista-o-rios",
-      "statusCode": 301
-    },
-    {
       "source": "/eletricista-p%C3%B3voa-de-lila",
       "destination": "/eletricista-povoa-de-lila",
       "statusCode": 301
@@ -6104,11 +6044,6 @@
     {
       "source": "/eletricista-s%C3%A3o-pedro-de-veiga-de-lila",
       "destination": "/eletricista-sao-pedro-de-veiga-de-lila",
-      "statusCode": 301
-    },
-    {
-      "source": "/eletricista-vilari%C3%B1o-de-conso",
-      "destination": "/eletricista-vilarino-de-conso",
       "statusCode": 301
     },
     {
@@ -6342,11 +6277,6 @@
       "statusCode": 301
     },
     {
-      "source": "/eletricista-p%C3%ADas",
-      "destination": "/eletricista-pias",
-      "statusCode": 301
-    },
-    {
       "source": "/eletricista-ferment%C3%A3os",
       "destination": "/eletricista-fermentaos",
       "statusCode": 301
@@ -6477,11 +6407,6 @@
       "statusCode": 301
     },
     {
-      "source": "/eletricista-vilardev%C3%B3s",
-      "destination": "/eletricista-vilardevos",
-      "statusCode": 301
-    },
-    {
       "source": "/eletricista-s%C3%A3o-jo%C3%A3o-da-pesqueira",
       "destination": "/eletricista-sao-joao-da-pesqueira",
       "statusCode": 301
@@ -6494,11 +6419,6 @@
     {
       "source": "/eletricista-gouv%C3%A3es-do-douro",
       "destination": "/eletricista-gouvaes-do-douro",
-      "statusCode": 301
-    },
-    {
-      "source": "/eletricista-ferreruela-de-t%C3%A1bara",
-      "destination": "/eletricista-ferreruela-de-tabara",
       "statusCode": 301
     },
     {
