@@ -4,7 +4,7 @@ import { Euro, Clock, Shield, Check, MapPin, AlertCircle } from 'lucide-react';
 export default function PriceTable() {
  const { config } = useSite();
  
- // Tabela de preços para eletricidade (sem IVA)
+ // Tabela de preços para eletricidade (IVA incluído)
  const electricPrices = [
  {
  service: "Pequena Arranjo",

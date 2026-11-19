@@ -61,7 +61,7 @@ export const SERVICES: Service[] = [
  },
  {
  title: 'Preços Indicativos',
- content: `**Instalação Completa Casa Nova**: T1 desde 2.500€, T2 desde 3.500€, T3 desde 4.500€, T4+ desde 6.000€ (inclui materiais + mão de obra).
+ content: `**Instalação Completa Casa Nova**: T1 sob orçamento, T2 sob orçamento, T3 sob orçamento, T4+ sob orçamento (inclui materiais + mão de obra).
 **Remodelação Parcial**: Quarto 400€, Cozinha 600€, Casa de banho 500€, Sala 500€.
 **Serviços Avulsos**: Quadro elétrico 370-650€ (12 módulos), Tomada nova 138-182€, Tomada substituição 66-90€, Interruptor 58-78€, Ponto de luz 60-85€, Ligação máquina lavar 110-145€, Portão automático 280-420€.
 **Todos os preços incluem**: Materiais certificados, mão de obra, diagnóstico elétrico, garantia do fabricante nos equipamentos e peças. Deslocação gratuita em Bragança e arredores.`
@@ -83,7 +83,7 @@ export const SERVICES: Service[] = [
  subtitle: 'Diagnóstico Rápido e Arranjo Profissional',
  description: 'Arranjo de curto-circuitos, disjuntores que saltam, tomadas que não funcionam, quadros elétricos com problemas. Diagnóstico com equipamento profissional.',
  icon: '🔧',
- price: 'Desde 80€',
+ price: 'Sob orçamento',
  priceDetails: 'Diagnóstico incluído',
  image: '/images-optimized/services/service-urgencia.jpg',
  content: {
@@ -117,7 +117,7 @@ Diagnóstico preciso em 15-45 minutos. Orçamento antes de arranjar.`
  },
  seo: {
  metaTitle: 'Arranjo Avarias Elétricas Bragança | Urgências 24h | Eletricista Profissional',
- metaDescription: 'Arranjo avarias elétricas em Bragança. Disjuntores, tomadas, curto-circuitos. Diagnóstico profissional. Urgências 24h. Desde 80€. Ligue 932 321 892!',
+ metaDescription: 'Arranjo avarias elétricas em Bragança. Disjuntores, tomadas, curto-circuitos. Diagnóstico profissional. Urgências 24h. Sob orçamento. Ligue 932 321 892!',
  keywords: ['arranjo avaria elétrica', 'eletricista urgência bragança', 'disjuntor salta', 'curto-circuito']
  }
  },
@@ -129,7 +129,7 @@ Diagnóstico preciso em 15-45 minutos. Orçamento antes de arranjar.`
  subtitle: 'Instalação e Modernização de Quadros Elétricos',
  description: 'Quadros elétricos novos, substituição de quadros antigos, ampliação, disjuntores, diferencial. Conformes RTIEBT.',
  icon: '📊',
- price: 'Desde 370€',
+ price: 'Sob orçamento',
  priceDetails: 'Inclui materiais certificados',
  image: '/images-optimized/services/service-quadro-eletrico.jpg',
  content: {
@@ -152,7 +152,7 @@ Diagnóstico preciso em 15-45 minutos. Orçamento antes de arranjar.`
  },
  seo: {
  metaTitle: 'Quadros Elétricos Bragança | Modernização | Eletricista Profissional',
- metaDescription: 'Quadros elétricos novos e modernização em Bragança. Monofásicos, trifásicos. diagnóstico elétrico. Desde 370€. Ligue 932 321 892!',
+ metaDescription: 'Quadros elétricos novos e modernização em Bragança. Monofásicos, trifásicos. diagnóstico elétrico. Sob orçamento. Ligue 932 321 892!',
  keywords: ['quadro elétrico bragança', 'modernização quadro', 'disjuntores', 'diferencial']
  }
  },
@@ -163,7 +163,7 @@ Diagnóstico preciso em 15-45 minutos. Orçamento antes de arranjar.`
  subtitle: 'Economize até 80% na Fatura de Eletricidade',
  description: 'Substituição de lâmpadas incandescentes/halógenas por LED. Iluminação interior, exterior, comercial. Poupança garantida.',
  icon: '💡',
- price: 'Desde 25€',
+ price: 'Sob orçamento',
  priceDetails: 'Por ponto de luz',
  image: '/images-optimized/services/service-iluminacao.jpg',
  content: {
@@ -186,7 +186,7 @@ Diagnóstico preciso em 15-45 minutos. Orçamento antes de arranjar.`
  },
  seo: {
  metaTitle: 'Iluminação LED Bragança | Poupança 80% | Eletricista Profissional',
- metaDescription: 'Iluminação LED em Bragança. Substituição lâmpadas, spots, fitas LED. Poupança 80% energia. Desde 25€. Ligue 932 321 892!',
+ metaDescription: 'Iluminação LED em Bragança. Substituição lâmpadas, spots, fitas LED. Poupança 80% energia. Sob orçamento. Ligue 932 321 892!',
  keywords: ['iluminação led bragança', 'poupar eletricidade', 'lâmpadas led', 'spots led']
  }
  },

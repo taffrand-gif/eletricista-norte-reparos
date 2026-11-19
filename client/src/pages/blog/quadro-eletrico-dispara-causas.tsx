@@ -286,27 +286,27 @@ export default function QuadroEletricoDisparaCausas() {
  <tbody className="bg-white divide-y divide-gray-200">
  <tr>
  <td className="px-6 py-4 text-sm text-gray-900">Diagnóstico completo</td>
- <td className="px-6 py-4 text-sm text-gray-900">40-60€</td>
- <td className="px-6 py-4 text-sm text-gray-900">80-100€</td>
+ <td className="px-6 py-4 text-sm text-gray-900">sob orçamento</td>
+ <td className="px-6 py-4 text-sm text-gray-900">sob orçamento</td>
  </tr>
  <tr>
  <td className="px-6 py-4 text-sm text-gray-900">Substituição disjuntor simples</td>
  <td className="px-6 py-4 text-sm text-gray-900"></td>
- <td className="px-6 py-4 text-sm text-gray-900">150-200€</td>
+ <td className="px-6 py-4 text-sm text-gray-900">sob orçamento</td>
  </tr>
  <tr>
  <td className="px-6 py-4 text-sm text-gray-900">Substituição diferencial</td>
- <td className="px-6 py-4 text-sm text-gray-900">120-180€</td>
- <td className="px-6 py-4 text-sm text-gray-900">200-280€</td>
+ <td className="px-6 py-4 text-sm text-gray-900">sob orçamento</td>
+ <td className="px-6 py-4 text-sm text-gray-900">sob orçamento</td>
  </tr>
  <tr>
  <td className="px-6 py-4 text-sm text-gray-900">Arranjo curto-circuito</td>
- <td className="px-6 py-4 text-sm text-gray-900">100-250€</td>
- <td className="px-6 py-4 text-sm text-gray-900">180-350€</td>
+ <td className="px-6 py-4 text-sm text-gray-900">sob orçamento</td>
+ <td className="px-6 py-4 text-sm text-gray-900">sob orçamento</td>
  </tr>
  <tr>
  <td className="px-6 py-4 text-sm text-gray-900">Atualização quadro completo</td>
- <td className="px-6 py-4 text-sm text-gray-900">400-800€</td>
+ <td className="px-6 py-4 text-sm text-gray-900">sob orçamento</td>
  <td className="px-6 py-4 text-sm text-gray-900">-</td>
  </tr>
  </tbody>

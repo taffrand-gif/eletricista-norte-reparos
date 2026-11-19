@@ -554,19 +554,19 @@ const CustoEletricistaTrasOsMontesPrecos: React.FC = () => {
  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
  <a href="/eletricista-vila-real" className="bg-white p-4 rounded-xl text-center hover:shadow-md transition-shadow">
  <span className="font-semibold text-amber-700">Vila Real</span>
- <p className="text-sm text-gray-600 mt-1">Desde 35€/hora</p>
+ <p className="text-sm text-gray-600 mt-1">Sob orçamento</p>
  </a>
  <a href="/eletricista-braganca" className="bg-white p-4 rounded-xl text-center hover:shadow-md transition-shadow">
  <span className="font-semibold text-amber-700">Bragança</span>
- <p className="text-sm text-gray-600 mt-1">Desde 40€/hora</p>
+ <p className="text-sm text-gray-600 mt-1">Sob orçamento</p>
  </a>
  <a href="/eletricista-chaves" className="bg-white p-4 rounded-xl text-center hover:shadow-md transition-shadow">
  <span className="font-semibold text-amber-700">Chaves</span>
- <p className="text-sm text-gray-600 mt-1">Desde 45€/hora</p>
+ <p className="text-sm text-gray-600 mt-1">Sob orçamento</p>
  </a>
  <a href="/eletricista-macedo-cavaleiros" className="bg-white p-4 rounded-xl text-center hover:shadow-md transition-shadow">
  <span className="font-semibold text-amber-700">Trás-os-Montes</span>
- <p className="text-sm text-gray-600 mt-1">Desde 42€/hora</p>
+ <p className="text-sm text-gray-600 mt-1">Sob orçamento</p>
  </a>
  </div>
  </div>

@@ -16,7 +16,7 @@ export default function ComoInstalarTomadaSozinho() {
  },
  {
  question: "Quanto custa eletricista para instalar tomada?",
- answer: "Instalar tomada simples: 40-80€ (inclui deslocação, instalação, material). Instalar tomada com cablagem nova: 80-150€. Preço inclui segurança, legalidade e garantia. Orçamento por escrito: 932 321 892"
+ answer: "Sob orçamento. Mão de obra 70 €/h e deslocação 30 € em dias úteis (100 €/h e 50 € à noite, fins de semana e feriados); o material é indicado no orçamento. Orçamento por escrito: 932 321 892"
  },
  {
  question: "É perigoso instalar tomada sem ser eletricista?",

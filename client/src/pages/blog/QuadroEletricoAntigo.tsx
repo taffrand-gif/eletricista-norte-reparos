@@ -222,7 +222,7 @@ export default function QuadroEletricoAntigo() {
  Quer Modernizar o Seu Quadro Elétrico?
  </h2>
  <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
- Inspeção gratuita. Orçamento sem compromisso. Instalação em 1 dia.
+ Orçamento por escrito antes de qualquer intervenção. Instalação em 1 dia.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a href="tel:+351932321892" className="inline-flex items-center justify-center gap-2 bg-white text-orange-500 px-8 py-4 rounded-lg text-xl font-bold hover:bg-gray-100 transition-all shadow-lg">
