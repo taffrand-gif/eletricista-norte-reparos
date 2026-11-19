@@ -90,13 +90,13 @@ function PriceCalculator() {
  <div className="flex items-center space-x-2 mb-2">
  <RadioGroupItem value="normal" id="normal" />
  <Label htmlFor="normal" className="font-medium cursor-pointer">
- Dias úteis 9h–17h (70 €/h + deslocação 30 €)
+ Dias úteis 9h–18h (70 €/h + deslocação 30 €)
  </Label>
  </div>
  <div className="flex items-center space-x-2">
  <RadioGroupItem value="urgent" id="urgent" />
  <Label htmlFor="urgent" className="font-medium cursor-pointer">
- Noite (17h–9h), fim de semana ou feriado (100 €/h + deslocação 50 €)
+ Noite (18h–9h), fim de semana ou feriado (100 €/h + deslocação 50 €)
  </Label>
  </div>
  </RadioGroup>

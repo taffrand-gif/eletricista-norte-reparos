@@ -2798,13 +2798,13 @@
     },
     {
       "source": "/blog/contratar-canalizador-2026",
-      "destination": "/top-10-razoes-contratar-canalizador",
-      "statusCode": 301
+      "destination": "/blog/contratar-canalizador-2026",
+      "statusCode": 410
     },
     {
       "source": "/blog/guia-completo-canalizacao-casa-antiga",
-      "destination": "/guia-completo-canalizacao-casa-antiga-portugal",
-      "statusCode": 301
+      "destination": "/blog/guia-completo-canalizacao-casa-antiga",
+      "statusCode": 410
     },
     {
       "source": "/amazon",
@@ -2818,13 +2818,13 @@
     },
     {
       "source": "/fugas-agua",
-      "destination": "/fuga-agua",
-      "statusCode": 301
+      "destination": "/fugas-agua",
+      "statusCode": 410
     },
     {
       "source": "/desentupimentos",
-      "destination": "/desentupimento",
-      "statusCode": 301
+      "destination": "/desentupimentos",
+      "statusCode": 410
     },
     {
       "source": "/tuto",
@@ -2843,123 +2843,123 @@
     },
     {
       "source": "/blog/certificacao--obrigatoria",
-      "destination": "/blog/certificacao-obrigatoria",
+      "destination": "/certiel-dgeg",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--tudo-saber",
-      "destination": "/blog/certificacao-tudo-saber",
+      "destination": "/certiel-dgeg",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao-eletrica--guia",
-      "destination": "/blog/certificacao-eletrica-guia",
+      "destination": "/certiel-dgeg",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--vila-flor",
-      "destination": "/blog/certificacao-vila-flor",
+      "destination": "/certificacao-certiel-vila-flor",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--miranda-douro",
-      "destination": "/blog/certificacao-miranda-douro",
+      "destination": "/certificacao-certiel-miranda-douro",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--moimenta-beira",
-      "destination": "/blog/certificacao-moimenta-beira",
+      "destination": "/certificacao-certiel-moimenta-beira",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--chaves-guia",
-      "destination": "/blog/certificacao-chaves-guia",
+      "destination": "/certificacao-certiel-chaves",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--carrazeda-ansiaes-guia",
-      "destination": "/blog/certificacao-carrazeda-ansiaes-guia",
+      "destination": "/certificacao-certiel-carrazeda-ansiaes",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--vila-flor-guia",
-      "destination": "/blog/certificacao-vila-flor-guia",
+      "destination": "/certificacao-certiel-vila-flor",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--importancia",
-      "destination": "/blog/certificacao-importancia",
+      "destination": "/certiel-dgeg",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--regua-guia",
-      "destination": "/blog/certificacao-regua-guia",
+      "destination": "/certificacao-certiel-regua",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--freixo-espada-cinta-guia",
-      "destination": "/blog/certificacao-freixo-espada-cinta-guia",
+      "destination": "/certificacao-certiel-freixo-espada-cinta",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--mogadouro",
-      "destination": "/blog/certificacao-mogadouro",
+      "destination": "/certificacao-certiel-mogadouro",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--vila-real",
-      "destination": "/blog/certificacao-vila-real",
+      "destination": "/certificacao-certiel-vila-real",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--torre-moncorvo",
-      "destination": "/blog/certificacao-torre-moncorvo",
+      "destination": "/certificacao-certiel-torre-moncorvo",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--torre-moncorvo-guia",
-      "destination": "/blog/certificacao-torre-moncorvo-guia",
+      "destination": "/certificacao-certiel-torre-moncorvo",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--rebordelo",
-      "destination": "/blog/certificacao-rebordelo",
+      "destination": "/certificacao-certiel-rebordelo",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--lamego-guia",
-      "destination": "/blog/certificacao-lamego-guia",
+      "destination": "/certificacao-certiel-lamego",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--alijo",
-      "destination": "/blog/certificacao-alijo",
+      "destination": "/certificacao-certiel-alijo",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--monforte-rio-livre",
-      "destination": "/blog/certificacao-monforte-rio-livre",
+      "destination": "/certificacao-certiel-monforte-rio-livre",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--moncorvo",
-      "destination": "/blog/certificacao-moncorvo",
+      "destination": "/certificacao-certiel-moncorvo",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--ribeira-pena",
-      "destination": "/blog/certificacao-ribeira-pena",
+      "destination": "/certificacao-certiel-ribeira-pena",
       "statusCode": 301
     },
     {
       "source": "/blog/certificacao--vimioso-guia",
-      "destination": "/blog/certificacao-vimioso-guia",
+      "destination": "/certificacao-certiel-vimioso",
       "statusCode": 301
     },
     {
       "source": "/eletricista-a-gudia",
-      "destination": "/eletricista-a-gudina",
-      "statusCode": 301
+      "destination": "/eletricista-a-gudia",
+      "statusCode": 410
     },
     {
       "source": "/eletricista-campo-de-vboras",
@@ -3028,7 +3028,7 @@
     },
     {
       "source": "/melhor-certificacao--tavira",
-      "destination": "/melhor-certificacao--tavora",
+      "destination": "/eletricista-tavora",
       "statusCode": 301
     },
     {
@@ -3088,7 +3088,7 @@
     },
     {
       "source": "/quadros-eletricos-aguiar-da-beira",
-      "destination": "/quadro-eletrico-aguiar-da-beira",
+      "destination": "/eletricista-aguiar-da-beira",
       "statusCode": 301
     },
     {
@@ -3153,8 +3153,8 @@
     },
     {
       "source": "/quadros-eletricos-meda",
-      "destination": "/quadro-eletrico-meda",
-      "statusCode": 301
+      "destination": "/quadros-eletricos-meda",
+      "statusCode": 410
     },
     {
       "source": "/quadros-eletricos-mesao-frio",
@@ -3548,7 +3548,7 @@
     },
     {
       "source": "/ar-condicionado-moncorvo",
-      "destination": "/eletricista-moncorvo",
+      "destination": "/eletricista-torre-de-moncorvo",
       "statusCode": 301
     },
     {
@@ -3558,8 +3558,8 @@
     },
     {
       "source": "/ar-condicionado-monforte-de-rio-livre",
-      "destination": "/eletricista-monforte-de-rio-livre",
-      "statusCode": 301
+      "destination": "/ar-condicionado-monforte-de-rio-livre",
+      "statusCode": 410
     },
     {
       "source": "/ar-condicionado-montalegre",
@@ -3588,7 +3588,7 @@
     },
     {
       "source": "/ar-condicionado-santa-marta-penaguiao",
-      "destination": "/eletricista-santa-marta-penaguiao",
+      "destination": "/eletricista-santa-marta-de-penaguiao",
       "statusCode": 301
     },
     {
@@ -4703,8 +4703,8 @@
     },
     {
       "source": "/melhor-carregador-ve-moimenta-da-beira",
-      "destination": "/eletricista-moimenta-da-beira",
-      "statusCode": 301
+      "destination": "/melhor-carregador-ve-moimenta-da-beira",
+      "statusCode": 410
     },
     {
       "source": "/melhor-carregador-ve-tavora",
@@ -4753,8 +4753,8 @@
     },
     {
       "source": "/melhor-painel-solar-moimenta-da-beira",
-      "destination": "/eletricista-moimenta-da-beira",
-      "statusCode": 301
+      "destination": "/melhor-painel-solar-moimenta-da-beira",
+      "statusCode": 410
     },
     {
       "source": "/melhor-painel-solar-tavora",
@@ -4898,7 +4898,7 @@
     },
     {
       "source": "/paineis-fotovoltaicos-moncorvo",
-      "destination": "/eletricista-moncorvo",
+      "destination": "/eletricista-torre-de-moncorvo",
       "statusCode": 301
     },
     {
@@ -4908,8 +4908,8 @@
     },
     {
       "source": "/paineis-fotovoltaicos-monforte-de-rio-livre",
-      "destination": "/eletricista-monforte-de-rio-livre",
-      "statusCode": 301
+      "destination": "/paineis-fotovoltaicos-monforte-de-rio-livre",
+      "statusCode": 410
     },
     {
       "source": "/paineis-fotovoltaicos-montalegre",
@@ -4938,7 +4938,7 @@
     },
     {
       "source": "/paineis-fotovoltaicos-santa-marta-penaguiao",
-      "destination": "/eletricista-santa-marta-penaguiao",
+      "destination": "/eletricista-santa-marta-de-penaguiao",
       "statusCode": 301
     },
     {
@@ -5363,8 +5363,8 @@
     },
     {
       "source": "/painel-solar-vale-pena",
-      "destination": "/eletricista-vale-pena",
-      "statusCode": 301
+      "destination": "/painel-solar-vale-pena",
+      "statusCode": 410
     },
     {
       "source": "/painel-solar-vila-real",

@@ -65,7 +65,7 @@ export default function PriceTable() {
  </tbody>
  </table>
  </div>
- <p className="text-xs text-gray-500 mt-2">* Valores sem IVA. O valor da deslocação é cobrado apenas uma vez por intervenção.</p>
+ <p className="text-xs text-gray-500 mt-2">* Valores TTC, IVA incluído. A deslocação é cobrada uma vez por intervenção.</p>
  </div>
  )}
  <div className="grid md:grid-cols-2 gap-12">
@@ -105,7 +105,7 @@ export default function PriceTable() {
  <div className="bg-blue-50 p-6 rounded-lg border border-blue-100">
  <h4 className="font-bold text-blue-900 mb-2">"Moro em Macedo e preciso trocar um disjuntor."</h4>
  <ul className="space-y-1 text-blue-800 text-sm">
- <li className="flex justify-between"><span>Deslocação (dias úteis 9h–17h):</span> <span>30€</span></li>
+ <li className="flex justify-between"><span>Deslocação (dias úteis 9h–18h):</span> <span>30€</span></li>
  <li className="flex justify-between"><span>Mão de Obra (mín. 1h a 70€/h):</span> <span>70€</span></li>
  <li className="border-t border-blue-200 mt-2 pt-2 font-bold flex justify-between text-lg"><span>Total:</span> <span>100€</span></li>
  </ul>

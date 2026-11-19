@@ -102,7 +102,7 @@ export default function TransparencePrix() {
  },
  {
  question: "A deslocação está incluída no preço?",
- answer: "Não. Dias úteis (9h–17h): mão de obra 70 €/hora e deslocação 30 €. Noite (17h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. É cobrado uma única vez por intervenção, mesmo que demore vários dias."
+ answer: "Não. Dias úteis (9h–18h): mão de obra 70 €/hora e deslocação 30 €. Noite (18h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. É cobrado uma única vez por intervenção, mesmo que demore vários dias."
  },
  {
  question: "Oferecem desconto para clientes regulares?",
@@ -156,7 +156,7 @@ export default function TransparencePrix() {
  </div>
  <div className="flex items-center gap-2 bg-white/10 px-6 py-3 rounded-lg backdrop-blur-sm">
  <Check className="w-5 h-5 text-green-400" />
- <span className="font-semibold">Garantia Escrita</span>
+ <span className="font-semibold">Fatura com NIF</span>
  </div>
  </div>
  <a
@@ -177,7 +177,7 @@ export default function TransparencePrix() {
  Todos os Nossos <span className="text-[var(--site-primary)]">Preços</span>
  </h2>
  <p className="text-xl text-gray-600 max-w-3xl mx-auto">
- Valores sem IVA (Art. 53º CIVA). O que vê é o que paga. Sempre.
+ Valores TTC, IVA incluído. Orçamento por escrito antes de qualquer intervenção.
  </p>
  </div>
  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
@@ -239,7 +239,7 @@ export default function TransparencePrix() {
  </div>
  </div>
  <p className="text-sm text-gray-600">
- À noite (17h–9h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €. Mínimo 30 minutos.
+ À noite (18h–9h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €. Mínimo 30 minutos.
  </p>
  </div>
  <div className="bg-white p-8 rounded-xl border-4 border-gray-200">

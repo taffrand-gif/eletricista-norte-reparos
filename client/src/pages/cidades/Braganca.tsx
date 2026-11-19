@@ -30,7 +30,7 @@ export default function Braganca() {
  },
  ];
  useEffect(() => {
- document.title = "⚡ Eletricista Bragança — Orçamento por Escrito | Garantia Escrita";
+ document.title = "⚡ Eletricista Bragança — Orçamento por Escrito | Fatura com NIF";
 
  // Optimized meta description
  let metaDescription = document.querySelector('meta[name="description"]');

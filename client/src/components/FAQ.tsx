@@ -16,7 +16,7 @@ function FAQ() {
  const faqs = useMemo(() => [
  {
  question: 'Quanto custa um eletricista em Bragança?',
- answer: 'A mão de obra é 70 €/hora em dias úteis (9h–17h) e 100 €/hora à noite (17h–9h), fins de semana e feriados. A deslocação é um forfait único de 30 € em dias úteis ou 50 € fora desse horário. Cada hora começada é devida. Orçamento por escrito pelo 932 321 892.'},
+ answer: 'A mão de obra é 70 €/hora em dias úteis (9h–18h) e 100 €/hora à noite (18h–9h), fins de semana e feriados. A deslocação é um forfait único de 30 € em dias úteis ou 50 € fora desse horário. Cada hora começada é devida. Orçamento por escrito pelo 932 321 892.'},
  {
  question: 'O que fazer em caso de curto-circuito perigoso?',
  answer: 'Em caso de curto-circuito: 1) Desligue o disjuntor geral, 2) Não toque em fios expostos ou tomadas, 3) Afaste-se de cheiro a queimado, 4) Ligue para 932 321 892. Nunca tente arranjar sozinho - risco de eletrocussão.'},
@@ -34,7 +34,7 @@ function FAQ() {
  answer: 'O serviço inclui: diagnóstico com multímetro profissional, mão de obra especializada, materiais básicos (disjuntores, cabos, tomadas), certificação elétrica quando aplicável, limpeza após intervenção, garantia. Não incluído: quadros elétricos completos, obras de alvenaria. Orçamento detalhado antes de iniciar.'},
  {
  question: 'Aceitam pagamento com cartão e MB WAY?',
- answer: 'Sim, aceitamos pagamento por multibanco, MB WAY, transferência bancária, e dinheiro. Pagamento apenas após conclusão do serviço e sua total satisfação. Fatura fornecida. Sem IVA (Art. 53º CIVA).'},
+ answer: 'Sim, aceitamos pagamento por multibanco, MB WAY, transferência bancária, e dinheiro. Pagamento apenas após conclusão do serviço e sua total satisfação. Fatura fornecida. Valores TTC, IVA incluído.'},
  ], []);
  // Inject FAQPage Schema
  useEffect(() => {
