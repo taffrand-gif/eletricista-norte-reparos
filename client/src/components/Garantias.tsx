@@ -24,8 +24,8 @@ export default function Garantias() {
  pain: 'Nunca mais perca prazos do seguro por falta de documentos.'},
  {
  icon: '🔄',
- title: 'Garantia de Retorno',
- desc: 'Se o problema voltar dentro de 12 meses, voltamos sem cobrar deslocação. Garantia escrita.',
+ title: 'Garantia do Fabricante',
+ desc: 'Nos equipamentos e peças aplica-se a garantia do fabricante.',
  pain: 'Está farto de pagar caro e ficar com a fuga por resolver?'},
  {
  icon: '🤝',
@@ -51,8 +51,8 @@ export default function Garantias() {
  pain: 'Sem taxas escondidas, sem "surpresas" depois de abrir parede.'},
  {
  icon: '🔄',
- title: 'Garantia de Retorno',
- desc: 'Se a avaria voltar dentro de 12 meses, voltamos sem cobrar deslocação. Garantia escrita.',
+ title: 'Garantia do Fabricante',
+ desc: 'Nos equipamentos e peças aplica-se a garantia do fabricante.',
  pain: 'Instalações seguras, dentro das normas — sem jeitos que ardem daqui a 6 meses.'},
  {
  icon: '📄',

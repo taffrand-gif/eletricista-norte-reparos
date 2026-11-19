@@ -32,7 +32,7 @@ export default function TransparencePrix() {
  "Diagnóstico completo com multímetro",
  "Resolução de avarias elétricas",
  "Arranjo de curto-circuitos",
- "Garantia 12 meses"
+ "Garantia do fabricante nas peças"
  ]
  },
  {
@@ -43,7 +43,7 @@ export default function TransparencePrix() {
  "Quadro 4-6 circuitos",
  "Disjuntores de qualidade",
  "Instalação completa",
- "garantia 12 meses incluída"
+ "Garantia do fabricante nas peças"
  ]
  },
  {
@@ -54,7 +54,7 @@ export default function TransparencePrix() {
  "Quadro 8-12 circuitos",
  "Disjuntores diferencial + magnetotérmicos",
  "Instalação e ligação",
- "garantia 12 meses"
+ "Garantia do fabricante nas peças"
  ]
  },
  {
@@ -110,7 +110,7 @@ export default function TransparencePrix() {
  },
  {
  question: "O que acontece se não ficar satisfeito?",
- answer: "% satisfeito. Se não ficar completamente satisfeito com o trabalho, voltamos gratuitamente para corrigir. Se mesmo assim não resolver, devolvemos o valor pago. Sem perguntas, sem letra pequena. Em 20 anos, isto aconteceu 2 vezes."
+ answer: "Explicamos a causa observada e o trabalho feito. Orçamento por escrito antes de qualquer intervenção, sem surpresas na fatura."
  },
  {
  question: "Porque devo escolher-vos em vez de um eletricista mais barato?",
@@ -302,10 +302,9 @@ export default function TransparencePrix() {
  </div>
  <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-xl border-2 border-purple-200">
  <TrendingUp className="w-12 h-12 text-purple-600 mb-4" />
- <h3 className="text-xl font-bold mb-3 text-gray-900">Garantia Alargada</h3>
+ <h3 className="text-xl font-bold mb-3 text-gray-900">Garantia do Fabricante</h3>
  <p className="text-gray-700 leading-relaxed">
- 12 meses em instalações, 6 meses em arranjos. A concorrência dá 3 meses (quando dá).
- Voltamos gratuitamente se houver problemas.
+ Nos equipamentos e peças aplica-se a garantia do fabricante.
  </p>
  </div>
  <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-8 rounded-xl border-2 border-orange-200">
@@ -335,11 +334,10 @@ export default function TransparencePrix() {
  <div className="max-w-4xl mx-auto text-center">
  <Shield className="w-16 h-16 mx-auto mb-6" />
  <h2 className="text-4xl md:text-5xl font-black mb-6">
- % Satisfeito<br />
+ Sem surpresas na fatura<br />
  </h2>
  <p className="text-xl text-white/90 mb-12 leading-relaxed">
- Se não ficar completamente satisfeito com o nosso trabalho, voltamos gratuitamente para corrigir.
- Se mesmo assim não resolver, devolvemos o valor pago. Sem perguntas, sem letra pequena.
+ Orçamento por escrito antes de qualquer intervenção. A fatura descreve o trabalho feito.
  </p>
  <div className="grid md:grid-cols-3 gap-6 mb-12">
  <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl">

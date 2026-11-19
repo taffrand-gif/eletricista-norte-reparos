@@ -218,7 +218,7 @@ function Urgencia() {
  <div className="space-y-2">
  <p className="flex items-center gap-2 text-gray-700">
  <span className="text-green-500 font-bold">✓</span>
- Trabalho com garantia por escrito
+ Trabalho com garantia do fabricante nos equipamentos e peças
  </p>
  <p className="flex items-center gap-2 text-gray-700">
  <span className="text-green-500 font-bold">✓</span>
@@ -296,10 +296,10 @@ function Urgencia() {
  <div className="text-5xl">🛡️</div>
  <div>
  <h3 className="text-2xl font-bold text-gray-900 mb-3">
- Garantia Mesmo em Urgência
+ Garantia do Fabricante
  </h3>
  <p className="text-gray-700 mb-4">
- 6 meses mão de obra por escrito
+ Nos equipamentos e peças aplica-se a garantia do fabricante.
  </p>
  <div className="space-y-2">
  <p className="flex items-center gap-2 text-gray-700">

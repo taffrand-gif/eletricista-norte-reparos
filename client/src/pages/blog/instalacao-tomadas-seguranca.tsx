@@ -348,7 +348,7 @@ export default function InstalacaoTomadasSeguranca() {
  </a>
  </div>
  <p className="text-blue-100 text-sm mt-4">
- ✓ Orçamento por Escrito ✓ certificação elétrica Incluída ✓ Garantia 2 Anos
+ ✓ Orçamento por Escrito ✓ certificação elétrica Incluída ✓ Garantia do fabricante nos equipamentos e peças
  </p>
  </div>
  {/* Related Articles */}

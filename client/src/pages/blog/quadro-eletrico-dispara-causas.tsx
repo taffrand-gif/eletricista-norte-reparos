@@ -383,7 +383,7 @@ export default function QuadroEletricoDisparaCausas() {
  Quadro Elétrico a Disparar? Resolvemos Hoje!
  </h3>
  <p className="text-gray-800 mb-6">
- Eletricistas com experiência em Bragança e Trás-os-Montes. Diagnóstico rápido, arranjo profissional, garantia escrita. Intervenção urgente em 2-4 horas.
+ Eletricistas com experiência em Bragança e Trás-os-Montes. Diagnóstico rápido, arranjo profissional, garantia do fabricante nos equipamentos e peças. Intervenção urgente em 2-4 horas.
  </p>
  <ul className="space-y-2 mb-6 text-gray-800">
  <li className="flex items-start">

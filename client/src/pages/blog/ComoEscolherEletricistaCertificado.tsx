@@ -344,7 +344,7 @@ const ComoEscolherEletricistaCertificado: React.FC = () => {
  <div>
  <h3 className="text-xl font-bold text-gray-900 mb-3">8. "Que garantia oferece pelo trabalho?"</h3>
  <p className="text-gray-700">
- <strong>Resposta esperada:</strong> Garantia de 2 anos para mão-de-obra, mais garantia dos materiais.
+ <strong>Resposta esperada:</strong> Garantia do fabricante nos equipamentos e peças para mão-de-obra, mais garantia dos materiais.
  <br/>
  <strong>Sinal de alerta:</strong> "Não dou garantia" ou "O trabalho é garantido enquanto estiver aqui."
  </p>
