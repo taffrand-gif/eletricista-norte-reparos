@@ -24,7 +24,7 @@ function ForfaitsGrid({ className = '' }: ForfaitsGridProps) {
  'Deslocação incluída (30€, dias úteis)',
  'Instalação completa',
  'Teste de funcionamento',
- 'Garantia 12 meses'
+ 'Garantia do fabricante nas peças'
  ]
  },
  {
@@ -110,7 +110,7 @@ function ForfaitsGrid({ className = '' }: ForfaitsGridProps) {
  'Estudo personalizado',
  'Plano elétrico',
  'Material de qualidade',
- 'Garantia 12 meses'
+ 'Garantia do fabricante nas peças'
  ]
  }
  ];

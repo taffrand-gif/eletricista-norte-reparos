@@ -161,7 +161,7 @@ function ExitIntentPopup() {
                     </li>
                     <li className="flex items-center gap-2 text-sm font-semibold">
                       <span className="text-green-600 text-lg flex-shrink-0" aria-hidden="true">✓</span>
-                      <span>Serviço com garantia de 12 meses por escrito</span>
+                      <span>Serviço com garantia do fabricante nos equipamentos e peças por escrito</span>
                     </li>
                   </>
                 )}
