@@ -335,3 +335,26 @@ html {
 .hero-title-shadow {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+/* CTA flottants (2026-11-20) : aucun widget ne recouvre l'appel ni WhatsApp.
+   Mobile : barre d'appel fixe en bas (64 px) ; le bandeau RGPD se place au-dessus.
+   md+ : bloc d'appel en bas à droite ; bandeau RGPD en bas à gauche, à côté.
+   Tant que le bandeau est affiché, calculateur et badge de localisation sont masqués. */
+#rgpd-banner-enr,
+#rgpd-banner-enr-react {
+  bottom: 64px !important;
+}
+@media (min-width: 768px) {
+  #rgpd-banner-enr,
+  #rgpd-banner-enr-react {
+    bottom: 16px !important;
+    left: 16px !important;
+    right: auto !important;
+    max-width: calc(100% - 375px) !important;
+    border-radius: 12px;
+  }
+}
+body:has(#rgpd-banner-enr) .nr-float-secondary,
+body:has(#rgpd-banner-enr-react) .nr-float-secondary {
+  display: none !important;
+}

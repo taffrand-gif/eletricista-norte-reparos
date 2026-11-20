@@ -52,6 +52,7 @@ export default function CookieConsent() {
   if (!isVisible) return null;
   return (
     <div
+      id="rgpd-banner-enr-react"
       role="region"
       aria-label="Consentimento de cookies"
       style={{
