@@ -42,7 +42,7 @@ function WhyDifferent() {
  icon: '🔧',
  title: 'Problema Volta Após 1 Mês',
  others: 'Remendo temporário, volta logo',
- us: 'Garantia 12 meses instalações',
+ us: 'Garantia do fabricante nas peças',
  value: 'Economiza €250 (tranquilidade)'},
  {
  icon: '⏰',
@@ -140,11 +140,10 @@ function WhyDifferent() {
  style={{ borderColor: config.colors.primary }}
  >
  <h3 className="text-2xl font-black mb-4">
- ✅ Garantia 12 Meses + diagnóstico elétrico
+ ✅ Garantia do fabricante nos equipamentos e peças + diagnóstico elétrico
  </h3>
  <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
- Se o problema voltar em 12 meses, voltamos GRATUITAMENTE.
- garantia incluída. Conforme legislação portuguesa.
+ Orçamento por escrito antes de qualquer intervenção, sem surpresas na fatura.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a

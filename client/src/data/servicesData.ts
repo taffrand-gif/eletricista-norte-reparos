@@ -49,7 +49,7 @@ export const SERVICES: Service[] = [
  content: `**Marcas Premium**: Legrand (tomadas, interruptores), Schneider Electric (quadros, disjuntores), Siemens (automação), Hager (proteções), ABB (industrial).
 **Cabos Certificados**: H07V-U/R (instalações fixas), H05VV-F (flexível), XV (enterrado), todos com marcação CE.
 **Diagnóstico e Reparação**: Fazemos a instalação elétrica completa, com identificação do instalador, características técnicas e testes realizados.
-**Garantia 5 Anos**: Todas as instalações têm garantia de 5 anos (material + mão de obra), conforme legislação portuguesa.`
+**Garantia**: Nos equipamentos e peças aplica-se a garantia do fabricante.`
  },
  {
  title: 'Processo Profissional',
@@ -64,14 +64,14 @@ export const SERVICES: Service[] = [
  content: `**Instalação Completa Casa Nova**: T1 desde 2.500€, T2 desde 3.500€, T3 desde 4.500€, T4+ desde 6.000€ (inclui materiais + mão de obra).
 **Remodelação Parcial**: Quarto 400€, Cozinha 600€, Casa de banho 500€, Sala 500€.
 **Serviços Avulsos**: Quadro elétrico 370-650€ (12 módulos), Tomada nova 138-182€, Tomada substituição 66-90€, Interruptor 58-78€, Ponto de luz 60-85€, Ligação máquina lavar 110-145€, Portão automático 280-420€.
-**Todos os preços incluem**: Materiais certificados, mão de obra, diagnóstico elétrico, garantia 5 anos. Deslocação gratuita em Bragança e arredores.`
+**Todos os preços incluem**: Materiais certificados, mão de obra, diagnóstico elétrico, garantia do fabricante nos equipamentos e peças. Deslocação gratuita em Bragança e arredores.`
  }
  ],
  cta: 'Precisa de instalação elétrica? **Ligue já 932 321 892** para sem compromisso!'
  },
  seo: {
  metaTitle: 'Instalação Elétrica Bragança | Profissional | Eletricista Profissional',
- metaDescription: 'Instalação elétrica completa em Bragança. Quadros, tomadas, iluminação. Garantia 5 anos. Desde 150€. Ligue 932 321 892!',
+ metaDescription: 'Instalação elétrica completa em Bragança. Quadros, tomadas, iluminação. Garantia do fabricante nos equipamentos e peças. Desde 150€. Ligue 932 321 892!',
  keywords: ['instalação elétrica bragança', 'eletricista bragança', 'diagnóstico elétrico', 'quadro elétrico']
  }
  },
@@ -110,7 +110,7 @@ Diagnóstico preciso em 15-45 minutos. Orçamento antes de arranjar.`
  title: 'Arranjos Típicas',
  content: `**Substituição disjuntor**: 75-95€ (inclui disjuntor). **Arranjo tomada queimada**: 58-78€. **Substituição cabo danificado**: 110-160€ (até 10m). **Arranjo curto-circuito**: 150-210€. **Substituição quadro elétrico**: 370-650€ (12 módulos). **Ligação terra**: 180-250€.
 **Urgências 24h**: Acréscimo 50€ (noturno/fins de semana). Mensagem direta-90 minutos conforme localização.
-**Garantia**: 12 meses em todas as arranjos. Se o problema voltar, arranjamos gratuitamente.`
+**Garantia**: Nos equipamentos e peças aplica-se a garantia do fabricante.`
  }
  ],
  cta: 'Avaria elétrica? **Ligue já 932 321 892** - Diagnóstico rápido!'
@@ -145,7 +145,7 @@ Diagnóstico preciso em 15-45 minutos. Orçamento antes de arranjar.`
  },
  {
  title: 'Preços',
- content: `Monofásico básico 370€, Monofásico completo 12 módulos 370-650€, Trifásico 800-1200€, Ampliação (adicionar circuitos) 110-160€. Inclui materiais, instalação, garantia 5 anos.`
+ content: `Monofásico básico 370€, Monofásico completo 12 módulos 370-650€, Trifásico 800-1200€, Ampliação (adicionar circuitos) 110-160€. Inclui materiais, instalação, garantia do fabricante nos equipamentos e peças.`
  }
  ],
  cta: 'Quadro elétrico antigo? **Ligue 932 321 892** para modernizar!'

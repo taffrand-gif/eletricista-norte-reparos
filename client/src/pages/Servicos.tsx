@@ -187,7 +187,7 @@ export default function Servicos() {
  },
  {
  question: "Oferecem garantia nos serviços?",
- answer: "Sim, oferecemos garantia escrita em todos os serviços de mão de obra e garantia do fabricante nos materiais fornecidos por nós."
+ answer: "Sim, oferecemos garantia do fabricante nos equipamentos e peças de mão de obra e garantia do fabricante nos materiais fornecidos por nós."
  },
  {
  question: "Trabalham com urgências Atendimento 24h/7d?",

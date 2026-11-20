@@ -23,7 +23,7 @@ function PriceTransparency() {
  items: [
  'Preço só no final',
  'Taxas escondidas',
- 'Sem garantia escrita',
+ 'Sem garantia do fabricante nos equipamentos e peças',
  '"Depois vemos o preço"',
  'Surpresas na fatura'
  ],

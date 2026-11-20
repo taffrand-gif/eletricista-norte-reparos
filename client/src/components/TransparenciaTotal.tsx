@@ -56,8 +56,8 @@ function TransparenciaTotal({ className = '' }: TransparenciaTotalProps) {
  <li className="flex items-start gap-3">
  <span className="text-green-500 text-xl mt-1">✓</span>
  <div>
- <p className="font-bold text-gray-900">Garantias Por Escrito</p>
- <p className="text-sm text-gray-600">3-6 meses mão de obra documentado</p>
+ <p className="font-bold text-gray-900">Garantia do Fabricante</p>
+ <p className="text-sm text-gray-600">Nos equipamentos e peças</p>
  </div>
  </li>
  </ul>

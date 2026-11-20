@@ -288,7 +288,7 @@ export default function ComoInstalarTomadaSozinho() {
  Precisa Instalar Tomada? Chame eletricista com experiência
  </h2>
  <p className="text-xl mb-8 max-w-2xl mx-auto">
-40-80€ por tomada. Inclui garantia escrita. Legal, seguro e rápido (1-2h).
+40-80€ por tomada. Inclui garantia do fabricante nos equipamentos e peças. Legal, seguro e rápido (1-2h).
  </p>
  <a
  href={`tel:${config.phone.replace(/\s/g, "")}`}
