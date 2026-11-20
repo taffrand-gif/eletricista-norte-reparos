@@ -1,29 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useLocation } from '@/contexts/LocationContext';
 import { CITIES } from '@/../../shared/serviceConfig';
 import { MapPin, X, Check } from 'lucide-react';
 export default function LocationDetector() {
- const { detectedCity, selectedCity, isLoading, setSelectedCity, getCurrentCity } = useLocation();
+ const { isLoading, setSelectedCity, getCurrentCity } = useLocation();
  const [isOpen, setIsOpen] = useState(false);
- const [showBanner, setShowBanner] = useState(false);
  const [searchQuery, setSearchQuery] = useState('');
  const currentCity = getCurrentCity();
- // Show banner on first visit if location detected
- useEffect(() => {
- const hasSeenBanner = sessionStorage.getItem('location_banner_seen');
- if (!hasSeenBanner && detectedCity && !selectedCity) {
- setShowBanner(true);
- }
- }, [detectedCity, selectedCity]);
- const handleConfirmLocation = () => {
- setSelectedCity(detectedCity!);
- setShowBanner(false);
- sessionStorage.setItem('location_banner_seen', 'true');
- };
- const handleDismissBanner = () => {
- setShowBanner(false);
- sessionStorage.setItem('location_banner_seen', 'true');
- };
  const handleSelectCity = (cityName: string) => {
  setSelectedCity(cityName);
  setIsOpen(false);
@@ -38,43 +21,6 @@ export default function LocationDetector() {
  : mainCities;
  return (
  <>
- {/* Location Banner - shown on first visit */}
- {showBanner && detectedCity && (
- <div className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg">
- <div className="container mx-auto px-4 py-3">
- <div className="flex items-center justify-between gap-4">
- <div className="flex items-center gap-3">
- <MapPin className="w-5 h-5 flex-shrink-0" />
- <p className="text-sm md:text-base">
- Está em <strong>{detectedCity}</strong>?
- </p>
- </div>
- <div className="flex items-center gap-2">
- <button
- onClick={handleConfirmLocation}
- className="px-4 py-1.5 bg-white text-blue-600 rounded-lg text-sm font-medium hover:bg-blue-50 transition-colors flex items-center gap-1"
- >
- <Check className="w-4 h-4" />
- Sim
- </button>
- <button
- onClick={() => setIsOpen(true)}
- className="px-4 py-1.5 bg-blue-700 text-white rounded-lg text-sm font-medium hover:bg-blue-600 transition-colors"
- >
- Alterar
- </button>
- <button
- onClick={handleDismissBanner}
- className="p-1.5 hover:bg-blue-600 rounded transition-colors"
- aria-label="Fechar"
- >
- <X className="w-4 h-4" />
- </button>
- </div>
- </div>
- </div>
- </div>
- )}
  {/* Location Badge - always visible */}
  <button
  onClick={() => setIsOpen(true)}
