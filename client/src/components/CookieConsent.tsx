@@ -19,6 +19,14 @@ function applyConsent(value: 'granted' | 'denied') {
   const payload: Record<string, string> = {};
   for (const k of STORAGES) payload[k] = value;
   window.gtag('consent', 'update', payload);
+  // GA4 basic mode: gtag.js is only loaded after explicit consent.
+  if (value === 'granted' && !(window as any).__ga4Loaded) {
+    (window as any).__ga4Loaded = 1;
+    const g = document.createElement('script');
+    g.async = true;
+    g.src = 'https://www.googletagmanager.com/gtag/js?id=G-P0521CSGHY';
+    document.head.appendChild(g);
+  }
 }
 
 export default function CookieConsent() {
