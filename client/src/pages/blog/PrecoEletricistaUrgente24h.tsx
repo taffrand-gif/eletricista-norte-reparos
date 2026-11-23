@@ -106,7 +106,7 @@ export default function PrecoEletricistaUrgente24h() {
 
           <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">1. O que conta como 'urgência'?</h2>
           <p>
-            'Urgência' aplica-se ao <strong>período noturno</strong> (entre as 17h e as 9h do dia seguinte), aos <strong>sábados, domingos e feriados nacionais</strong>. Dias úteis (9h–18h): mão de obra 70 €/hora e deslocação 30 €. Noite (18h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. Não cobramos uma 'taxa de urgência' separada — é o mesmo serviço com a majoração aplicada nas horas e no custo de viagem.
+            'Urgência' aplica-se ao <strong>período noturno</strong> (entre as 18h e as 9h do dia seguinte), aos <strong>sábados, domingos e feriados nacionais</strong>. Dias úteis (9h–18h): mão de obra 70 €/hora e deslocação 30 €. Noite (18h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. Não cobramos uma 'taxa de urgência' separada — é o mesmo serviço com a majoração aplicada nas horas e no custo de viagem.
           </p>
 
           <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">2. Tabela urgência 24h — Trás-os-Montes</h2>
