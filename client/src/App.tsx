@@ -86,7 +86,7 @@ const TomadaFaisca = lazy(() => import("@/pages/TomadaFaisca"));
 // Commercial Intent Pages (SEO Premium) - Eletricista
 const ComoInstalarTomadaSozinho = lazy(() => import("@/pages/ComoInstalarTomadaSozinho"));
 const QuantoCustaArranjarQuadroEletrico = lazy(() => import("@/pages/QuantoCustaArranjarQuadroEletrico"));
-const QuantoTempoQuadro = lazy(() => import("@/pages/QuantoTempoDemoraT rocarQuadroEletrico"));
+const QuantoTempoQuadro = lazy(() => import("@/pages/QuantoTempoDemoraTrocarQuadroEletrico"));
 const QuantoTempoDemoraInstalarTomada = lazy(() => import("@/pages/QuantoTempoDemoraInstalarTomada"));
 const QuantoTempoSemLuzCasa = lazy(() => import("@/pages/QuantoTempoSemLuzCasa"));
 // Simple loading fallback component
