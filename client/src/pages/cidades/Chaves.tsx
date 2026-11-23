@@ -39,7 +39,7 @@ export default function Chaves() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Eletricista credenciado pela DGEG em Chaves: avarias, quadros elétricos e instalações. Dias úteis 70 €/h + 30 € de deslocação, IVA incluído. Orçamento por escrito antes de qualquer intervenção. Atendimento telefónico 24h/24: 932 321 892.');
+ metaDescription.setAttribute('content', 'Eletricista credenciado pela DGEG em Chaves: avarias, quadros elétricos e instalações. Dias úteis (9h–18h): 70 €/h + 30 € de deslocação, IVA incluído. Orçamento por escrito antes de qualquer intervenção. Atendimento telefónico 24h/24: 932 321 892.');
  // SEO meta keywords
  let metaKeywords = document.querySelector('meta[name="keywords"]');
  if (!metaKeywords) {
