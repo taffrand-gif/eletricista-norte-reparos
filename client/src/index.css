@@ -318,9 +318,13 @@ html {
 }
 
 /* Padding bottom pour le bouton mobile fixe */
+/* + hauteur du bandeau de consentement tant qu'il est affiché (useRgpdBannerOffset) */
+body {
+ padding-bottom: var(--rgpd-banner-h, 0px);
+}
 @media (max-width: 767px) {
  body {
- padding-bottom: 60px;
+ padding-bottom: calc(60px + var(--rgpd-banner-h, 0px));
  }
 }
 

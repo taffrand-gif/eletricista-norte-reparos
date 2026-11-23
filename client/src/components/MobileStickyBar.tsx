@@ -16,7 +16,7 @@ function MobileStickyBar() {
  return (
  <div
  className="fixed bottom-0 left-0 right-0 z-[60] md:hidden flex shadow-[0_-4px_12px_rgba(0,0,0,0.15)]"
- style={{ minHeight: '64px' }}
+ style={{ minHeight: '64px', bottom: 'var(--rgpd-banner-h, 0px)' }}
  role="navigation"
  aria-label="Contacto rápido"
  >
