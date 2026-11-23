@@ -68,7 +68,7 @@ export default function QuantoCustaEletricistaHoraPortugal() {
   })}
   </script>
       </Helmet>
-      <article className="max-w-4xl mx-auto px-4 py-12">
+      <article className="max-w-4xl mx-auto px-4 py-12 w-full">
         <div className="mb-8">
           <Link href="/blog" className="text-orange-600 hover:text-orange-700 text-sm font-medium">
             ← Voltar ao Blog
