@@ -56,27 +56,21 @@ export default function InstalacaoEletrica() {
  "itemOffered": {
  "@type": "Service",
  "name": "Instalação Elétrica Residencial Completa"
- },
- "price": "1500",
- "priceCurrency": "EUR"
+ }
  },
  {
  "@type": "Offer",
  "itemOffered": {
  "@type": "Service",
  "name": "Remodelação Elétrica"
- },
- "price": "800",
- "priceCurrency": "EUR"
+ }
  },
  {
  "@type": "Offer",
  "itemOffered": {
  "@type": "Service",
  "name": "Instalação Elétrica Comercial"
- },
- "price": "2500",
- "priceCurrency": "EUR"
+ }
  }
  ]
  }
