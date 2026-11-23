@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet-async';
 import { useSite } from '@/contexts/SiteContext';
 import CalendlyCTA from '@/components/CalendlyCTA';
 import TauxHoraireDisplay from '@/components/TauxHoraireDisplay';
-import WhyWePublishPrices from '@/components/WhyWePublishPrices';
 function Tarifas() {
  const { config } = useSite();
  const accentColor = config.id === 'norte-reparos' ? '#0e7490' : '#FF6B35';
@@ -60,7 +59,6 @@ function Tarifas() {
  </section>
  {/* Main Content */}
  <TauxHoraireDisplay />
- <WhyWePublishPrices />
  {/* Final Trust Section */}
  <section className="py-16 bg-gray-900 text-white">
  <div className="container mx-auto px-4 max-w-4xl text-center">
