@@ -96,10 +96,10 @@ Páginas de referência:
 
 ## 7. Equipamento profissional (verídico, efetivamente utilizado)
 
-- **Fluke T6-1000** — testador de tensão e corrente sem contacto.
+- **Instrumentos de medição Fluke** — medições elétricas durante o diagnóstico.
 - **Megger MFT1741+** — testador multifunções de instalação.
 - **FLIR E96** — câmara térmica 43 200 px.
-- **Câmara de inspeção 30 m** — observação interior de condutas e espaços confinados.
+- **Câmara de inspeção** — observação interior de condutas e espaços confinados, quando o diagnóstico o justifica.
 
 Páginas de referência:
 
