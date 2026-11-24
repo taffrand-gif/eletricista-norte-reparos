@@ -19,6 +19,22 @@ function applyConsent(value: 'granted' | 'denied') {
   const payload: Record<string, string> = {};
   for (const k of STORAGES) payload[k] = value;
   window.gtag('consent', 'update', payload);
+  // GA4 basic mode: loader and js/config are only executed after explicit consent.
+  if (value === 'granted' && !(window as any).__ga4Loaded) {
+    (window as any).__ga4Loaded = 1;
+    const g = document.createElement('script');
+    g.async = true;
+    g.onload = () => {
+      window.gtag('js', new Date());
+      window.gtag('config', 'G-P0521CSGHY', {
+        send_page_view: true,
+        anonymize_ip: true,
+        cookie_flags: 'SameSite=None;Secure',
+      });
+    };
+    g.src = 'https://www.googletagmanager.com/gtag/js?id=G-P0521CSGHY';
+    document.head.appendChild(g);
+  }
 }
 
 export default function CookieConsent() {

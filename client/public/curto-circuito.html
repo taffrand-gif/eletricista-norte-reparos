@@ -18,12 +18,10 @@ gtag('consent', 'default', {
 });
 </script>
 <!-- /RGPD Consent Mode v2 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P0521CSGHY"></script>
+<!-- GA4 gtag.js : chargé seulement après consentement explicite (bandeau RGPD, applyChoice) -->
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-P0521CSGHY', {'send_page_view': true, 'anonymize_ip': true, 'cookie_flags': 'SameSite=None;Secure'});
 window.trackTelClick = function(phone) { gtag('event', 'click_tel', {'event_category': 'conversion', 'event_label': phone, 'value': 1}); };
 window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {'event_category': 'conversion', 'event_label': source, 'value': 1}); };
 </script>
@@ -96,7 +94,7 @@ window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {
 </ul>
 
 <h2>Deslocação 30 € (50 € noite/fim de semana) — OSRM Macedo de Cavaleiros)</h2>
-<p>Preços tabelados e orçamento por telefone antes de qualquer intervenção. Fonte: <code>PRICING.md</code>.</p>
+<p>Preços tabelados e orçamento por telefone antes de qualquer intervenção.</p>
 <table style="width:100%;border-collapse:collapse;margin:1rem 0">
 <thead><tr style="background:#1a1a2e;color:#fff"><th style="padding:.6rem;text-align:left">Zona</th><th style="padding:.6rem;text-align:left">Distância (aprox.)</th><th style="padding:.6rem;text-align:left">Deslocação</th><th style="padding:.6rem;text-align:left">Mão-de-obra</th></tr></thead>
 <tbody>
@@ -188,14 +186,14 @@ window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {
 <a href="/curto-circuito-macedo-de-cavaleiros" style="color:#FF6B35;text-decoration:none">Macedo de Cavaleiros</a>
 </p>
 </div>
-<p style="margin-top:1rem;font-size:.85rem;color:#666">Última atualização: agosto 2026 · Preços conforme <code>PRICING.md</code> · Orçamento por telefone antes de qualquer intervenção.</p>
+<p style="margin-top:1rem;font-size:.85rem;color:#666">Última atualização: agosto 2026 · Orçamento por telefone antes de qualquer intervenção.</p>
 </footer>
 <!-- RGPD — Bandeau UI (t_639f45fd, ENR G-P0521CSGHY) -->
 <script data-rgpd-marker="RGPD-t_639f45fd-BANNER-enr-v1">
 (function(){
   var KEY="rgpd-consent-enr-v1";
   var STORAGES=["ad_storage","analytics_storage","ad_user_data","ad_personalization","functionality_storage","personalization_storage"];
-  function applyChoice(v){localStorage.setItem(KEY,v);var p={};for(var i=0;i<STORAGES.length;i++)p[STORAGES[i]]=v;if(window.gtag)window.gtag("consent","update",p);}
+  function applyChoice(v){localStorage.setItem(KEY,v);var p={};for(var i=0;i<STORAGES.length;i++)p[STORAGES[i]]=v;if(window.gtag)window.gtag("consent","update",p);if(v==="granted"&&!window.__ga4Loaded){window.__ga4Loaded=1;var g=document.createElement("script");g.async=true;g.onload=function(){gtag("js",new Date());gtag("config","G-P0521CSGHY",{send_page_view:true,anonymize_ip:true,cookie_flags:"SameSite=None;Secure"});};document.head.appendChild(g);}}
   if(document.getElementById("rgpd-banner-enr"))return;
   var saved=localStorage.getItem(KEY);
   if(saved==="granted"||saved==="denied"){applyChoice(saved);return;}
