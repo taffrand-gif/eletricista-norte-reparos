@@ -47,7 +47,7 @@ Bragança, Mirandela, Chaves, Macedo de Cavaleiros, Vila Real, Mogadouro, Vinhai
 - Megger MFT1741+ (testador de instalação multifunção)
 - ROLeak Aqua 3Plus (deteção acústica)
 - FLIR E96 (câmara térmica 43 200 px)
-- Câmara de inspeção 30 m
+- Câmara de inspeção
 
 ## Marcas de materiais (verídicas)
 Legrand, Schneider Electric, Hager, ABB, Siemens, Philips
