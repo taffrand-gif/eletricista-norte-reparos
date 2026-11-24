@@ -58,12 +58,6 @@ gtag('consent', 'default', {
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date);
-gtag('config', 'G-P0521CSGHY', {
-'send_page_view': true,
-'anonymize_ip': true,
-'cookie_flags': 'SameSite=None;Secure'
-});
 window.trackPhoneClick = function(phone) {
 gtag('event', 'phone_click', {'event_category': 'conversion', 'event_label': phone, 'value': 1});
 };
@@ -150,29 +144,7 @@ body { margin: 0; font-family: 'Poppins', system-ui, -apple-system, sans-serif; 
     at Ec (http://127.0.0.1:4183/assets/index-kkxWxeCE.js:9:115646)
     at mm (http://127.0.0.1:4183/assets/index-kkxWxeCE.js:9:112446)
     at Om (http://127.0.0.1:4183/assets/index-kkxWxeCE.js:9:124226)</pre></div><button data-loc="client/src/components/ErrorBoundary.tsx:34" class="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-primary-foreground hover:opacity-90 cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rotate-ccw" data-loc="client/src/components/ErrorBoundary.tsx:42"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path></svg>Reload Page</button></div></div></div>
-<script>
-let gtmLoaded = false;
-function loadGTM(){
-if (gtmLoaded) return;
-if (localStorage.getItem('rgpd-consent-enr-v1') !== 'granted' || window.__ga4Loaded) return;
-gtmLoaded = true;
-window.__ga4Loaded = 1;
-const script = document.createElement('script');
-script.async = true;
-script.src = 'https://www.googletagmanager.com/gtag/js?id=G-P0521CSGHY';
-document.head.appendChild(script);
-script.onload = function(){
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date);
-gtag('config', 'G-P0521CSGHY');
-};
-}
-['scroll', 'click', 'touchstart', 'mousemove'].forEach(event => {
-window.addEventListener(event, loadGTM, { once: true, passive: true });
-});
-setTimeout(loadGTM, 5000);
-</script>
+
 <script>
 window.addEventListener('error', function(event) {
 console.error('Global error caught:', event.error);
@@ -193,7 +165,7 @@ window.addEventListener('unhandledrejection', function(event) { console.error('U
 (function(){
   var KEY="rgpd-consent-enr-v1";
   var STORAGES=["ad_storage","analytics_storage","ad_user_data","ad_personalization","functionality_storage","personalization_storage"];
-  function applyChoice(v){localStorage.setItem(KEY,v);var p={};for(var i=0;i<STORAGES.length;i++)p[STORAGES[i]]=v;if(window.gtag)window.gtag("consent","update",p);if(v==="granted"&&!window.__ga4Loaded){window.__ga4Loaded=1;var g=document.createElement("script");g.async=true;g.src="https://www.googletagmanager.com/gtag/js?id=G-P0521CSGHY";document.head.appendChild(g);}}
+  function applyChoice(v){localStorage.setItem(KEY,v);var p={};for(var i=0;i<STORAGES.length;i++)p[STORAGES[i]]=v;if(window.gtag)window.gtag("consent","update",p);if(v==="granted"&&!window.__ga4Loaded){window.__ga4Loaded=1;var g=document.createElement("script");g.async=true;g.onload=function(){gtag("js",new Date());gtag("config","G-P0521CSGHY",{send_page_view:true,anonymize_ip:true,cookie_flags:"SameSite=None;Secure"});};document.head.appendChild(g);}}
   if(document.getElementById("rgpd-banner-enr"))return;
   var saved=localStorage.getItem(KEY);
   if(saved==="granted"||saved==="denied"){applyChoice(saved);return;}
