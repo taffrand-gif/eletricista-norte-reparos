@@ -30,7 +30,7 @@ export default function Braganca() {
  },
  ];
  useEffect(() => {
- document.title = "⚡ Eletricista Bragança — Orçamento por Escrito | Fatura com NIF";
+ document.title = "Eletricista em Bragança · credenciado DGEG | Norte Reparos";
 
  // Optimized meta description
  let metaDescription = document.querySelector('meta[name="description"]');
@@ -39,7 +39,7 @@ export default function Braganca() {
  metaDescription.setAttribute('name', 'description');
  document.head.appendChild(metaDescription);
  }
- metaDescription.setAttribute('content', 'Eletricista em Bragança e arredores. Técnicos com experiência e equipamento profissional. Orçamento por escrito. Ligue 932 321 892.');
+ metaDescription.setAttribute('content', 'Eletricista credenciado pela DGEG em Bragança: avarias, quadros elétricos e instalações. Dias úteis (9h–18h): 70 €/h + 30 € de deslocação, IVA incluído. Orçamento por escrito antes de qualquer intervenção. Atendimento telefónico 24h/24: 932 321 892.');
  // SEO meta keywords
  let metaKeywords = document.querySelector('meta[name="keywords"]');
  if (!metaKeywords) {
