@@ -24,5 +24,16 @@
     "client/public/eletricista-xinzo-de-limia.html",
     "client/public/distritos/viseu.html"
   ],
-  "scope_note": "Vila Verde da Raia is Chaves and covered; Vila Nova da Rainha is the Macedo de Cavaleiros locality (~25 km) and covered; both excluded from deletion."
+  "scope_note": "Vila Verde da Raia is Chaves and covered; Vila Nova da Rainha is the Macedo de Cavaleiros locality (~25 km) and covered; both excluded from deletion.",
+  "sitemap_only_paths": [
+    "client/public/melhor-avaria-moimenta-da-beira.html",
+    "client/public/melhor-certificacao-dgeg-moimenta-da-beira.html",
+    "client/public/melhor-iluminacao-led-moimenta-da-beira.html",
+    "client/public/melhor-quadro-eletrico-moimenta-da-beira.html",
+    "client/public/perguntas-frequentes-eletricista-moimenta-da-beira.html"
+  ],
+  "sitemap_only_note": "Files kept (noindex since a090af8bc6) and removed from sitemaps and IndexNow by this PR, except in the files listed in sitemap_only_kept_in (current PR state, Moimenta not treated here). Declared for scripts/check-sitemap-drift.mjs; no change of scope.",
+  "sitemap_only_kept_in": [
+    "client/public/sitemap.xml"
+  ]
 }

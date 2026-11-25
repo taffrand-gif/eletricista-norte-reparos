@@ -12,6 +12,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
 
     - name: Setup Node.js
       uses: actions/setup-node@v4
@@ -24,3 +26,9 @@ jobs:
 
     - name: Build
       run: npm run build
+
+    - name: Sitemap and IndexNow drift guard
+      run: |
+        git fetch --no-tags origin main:refs/remotes/origin/main
+        node --test scripts/check-sitemap-drift.test.mjs
+        node scripts/check-sitemap-drift.mjs --base origin/main
