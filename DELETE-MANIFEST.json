@@ -11,7 +11,6 @@
     "client/public/eletricista-albarellos.html",
     "client/public/eletricista-alcaices.html",
     "client/public/eletricista-argan.html",
-    "client/public/eletricista-argana.html",
     "client/public/eletricista-avaria-eletrica-xinzo-de-limia.html",
     "client/public/eletricista-castrelo-do-val.html",
     "client/public/eletricista-certificacao-eletrica-xinzo-de-limia.html",
@@ -32,8 +31,5 @@
     "client/public/melhor-quadro-eletrico-moimenta-da-beira.html",
     "client/public/perguntas-frequentes-eletricista-moimenta-da-beira.html"
   ],
-  "sitemap_only_note": "Files kept (noindex since a090af8bc6) and removed from sitemaps and IndexNow by this PR, except in the files listed in sitemap_only_kept_in (current PR state, Moimenta not treated here). Declared for scripts/check-sitemap-drift.mjs; no change of scope.",
-  "sitemap_only_kept_in": [
-    "client/public/sitemap.xml"
-  ]
+  "sitemap_only_note": "Files kept (noindex since a090af8bc6) and removed from every sitemap and from IndexNow by this PR. Declared for scripts/check-sitemap-drift.mjs; no change of scope."
 }
