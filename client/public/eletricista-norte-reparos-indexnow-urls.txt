@@ -1273,7 +1273,6 @@ https://eletricista-norte-reparos.pt/distritos/douro
 https://eletricista-norte-reparos.pt/distritos/guarda
 https://eletricista-norte-reparos.pt/distritos/tras-os-montes
 https://eletricista-norte-reparos.pt/distritos/vila-real
-https://eletricista-norte-reparos.pt/distritos/viseu
 https://eletricista-norte-reparos.pt/domotica-alfandega-da-fe
 https://eletricista-norte-reparos.pt/domotica-alfandega-fe
 https://eletricista-norte-reparos.pt/domotica-algoso
@@ -1314,7 +1313,6 @@ https://eletricista-norte-reparos.pt/domotica-vila-real
 https://eletricista-norte-reparos.pt/domotica-vimioso
 https://eletricista-norte-reparos.pt/domotica-vinhais
 https://eletricista-norte-reparos.pt/eficiencia-energetica-poupanca
-https://eletricista-norte-reparos.pt/eletricista-a-mezquita
 https://eletricista-norte-reparos.pt/eletricista-abacas
 https://eletricista-norte-reparos.pt/eletricista-abambres
 https://eletricista-norte-reparos.pt/eletricista-abreiro
@@ -1331,8 +1329,6 @@ https://eletricista-norte-reparos.pt/eletricista-aguas-vivas
 https://eletricista-norte-reparos.pt/eletricista-aguieira
 https://eletricista-norte-reparos.pt/eletricista-aguieiras
 https://eletricista-norte-reparos.pt/eletricista-ala
-https://eletricista-norte-reparos.pt/eletricista-albarellos
-https://eletricista-norte-reparos.pt/eletricista-alcaices
 https://eletricista-norte-reparos.pt/eletricista-alcarva
 https://eletricista-norte-reparos.pt/eletricista-aldeia-vicosa
 https://eletricista-norte-reparos.pt/eletricista-aldeias
@@ -1367,7 +1363,6 @@ https://eletricista-norte-reparos.pt/eletricista-antas
 https://eletricista-norte-reparos.pt/eletricista-arcas
 https://eletricista-norte-reparos.pt/eletricista-arcosso
 https://eletricista-norte-reparos.pt/eletricista-ardaos
-https://eletricista-norte-reparos.pt/eletricista-argan
 https://eletricista-norte-reparos.pt/eletricista-argana
 https://eletricista-norte-reparos.pt/eletricista-argozelo
 https://eletricista-norte-reparos.pt/eletricista-aricera
@@ -1458,7 +1453,6 @@ https://eletricista-norte-reparos.pt/eletricista-avaria-eletrica-vilar-de-macada
 https://eletricista-norte-reparos.pt/eletricista-avaria-eletrica-vilarandelo
 https://eletricista-norte-reparos.pt/eletricista-avaria-eletrica-vimioso
 https://eletricista-norte-reparos.pt/eletricista-avaria-eletrica-vinhais
-https://eletricista-norte-reparos.pt/eletricista-avaria-eletrica-xinzo-de-limia
 https://eletricista-norte-reparos.pt/eletricista-avelanoso
 https://eletricista-norte-reparos.pt/eletricista-avelas-da-ribeira
 https://eletricista-norte-reparos.pt/eletricista-avelas-de-ambom
@@ -1573,7 +1567,6 @@ https://eletricista-norte-reparos.pt/eletricista-castelo-branco
 https://eletricista-norte-reparos.pt/eletricista-castelo-de-balsamao
 https://eletricista-norte-reparos.pt/eletricista-castelo-melhor
 https://eletricista-norte-reparos.pt/eletricista-castelo-rodrigo
-https://eletricista-norte-reparos.pt/eletricista-castrelo-do-val
 https://eletricista-norte-reparos.pt/eletricista-castrelos
 https://eletricista-norte-reparos.pt/eletricista-castro-de-avelas
 https://eletricista-norte-reparos.pt/eletricista-castro-roupal
@@ -1666,7 +1659,6 @@ https://eletricista-norte-reparos.pt/eletricista-certificacao-eletrica-vilar-de-
 https://eletricista-norte-reparos.pt/eletricista-certificacao-eletrica-vilarandelo
 https://eletricista-norte-reparos.pt/eletricista-certificacao-eletrica-vimioso
 https://eletricista-norte-reparos.pt/eletricista-certificacao-eletrica-vinhais
-https://eletricista-norte-reparos.pt/eletricista-certificacao-eletrica-xinzo-de-limia
 https://eletricista-norte-reparos.pt/eletricista-cerva
 https://eletricista-norte-reparos.pt/eletricista-cervos
 https://eletricista-norte-reparos.pt/eletricista-chacim
@@ -1875,7 +1867,6 @@ https://eletricista-norte-reparos.pt/eletricista-fuga-corrente-vilar-de-macada
 https://eletricista-norte-reparos.pt/eletricista-fuga-corrente-vilarandelo
 https://eletricista-norte-reparos.pt/eletricista-fuga-corrente-vimioso
 https://eletricista-norte-reparos.pt/eletricista-fuga-corrente-vinhais
-https://eletricista-norte-reparos.pt/eletricista-fuga-corrente-xinzo-de-limia
 https://eletricista-norte-reparos.pt/eletricista-fuinhas
 https://eletricista-norte-reparos.pt/eletricista-galafura
 https://eletricista-norte-reparos.pt/eletricista-gallegos-del-ro
@@ -1985,7 +1976,6 @@ https://eletricista-norte-reparos.pt/eletricista-iluminacao-exterior-vilar-de-ma
 https://eletricista-norte-reparos.pt/eletricista-iluminacao-exterior-vilarandelo
 https://eletricista-norte-reparos.pt/eletricista-iluminacao-exterior-vimioso
 https://eletricista-norte-reparos.pt/eletricista-iluminacao-exterior-vinhais
-https://eletricista-norte-reparos.pt/eletricista-iluminacao-exterior-xinzo-de-limia
 https://eletricista-norte-reparos.pt/eletricista-iluminacao-led-alfandega-da-fe
 https://eletricista-norte-reparos.pt/eletricista-iluminacao-led-alijo
 https://eletricista-norte-reparos.pt/eletricista-iluminacao-led-almendra
@@ -2062,7 +2052,6 @@ https://eletricista-norte-reparos.pt/eletricista-iluminacao-led-vilar-de-macada
 https://eletricista-norte-reparos.pt/eletricista-iluminacao-led-vilarandelo
 https://eletricista-norte-reparos.pt/eletricista-iluminacao-led-vimioso
 https://eletricista-norte-reparos.pt/eletricista-iluminacao-led-vinhais
-https://eletricista-norte-reparos.pt/eletricista-iluminacao-led-xinzo-de-limia
 https://eletricista-norte-reparos.pt/eletricista-izeda
 https://eletricista-norte-reparos.pt/eletricista-jazente
 https://eletricista-norte-reparos.pt/eletricista-jerusalem-do-romeu
@@ -2367,7 +2356,6 @@ https://eletricista-norte-reparos.pt/eletricista-quadro-eletrico-vilar-de-macada
 https://eletricista-norte-reparos.pt/eletricista-quadro-eletrico-vilarandelo
 https://eletricista-norte-reparos.pt/eletricista-quadro-eletrico-vimioso
 https://eletricista-norte-reparos.pt/eletricista-quadro-eletrico-vinhais
-https://eletricista-norte-reparos.pt/eletricista-quadro-eletrico-xinzo-de-limia
 https://eletricista-norte-reparos.pt/eletricista-queimadela
 https://eletricista-norte-reparos.pt/eletricista-queiriz
 https://eletricista-norte-reparos.pt/eletricista-quinta-da-roca
@@ -2628,7 +2616,6 @@ https://eletricista-norte-reparos.pt/eletricista-tomada-interruptor-vilar-de-mac
 https://eletricista-norte-reparos.pt/eletricista-tomada-interruptor-vilarandelo
 https://eletricista-norte-reparos.pt/eletricista-tomada-interruptor-vimioso
 https://eletricista-norte-reparos.pt/eletricista-tomada-interruptor-vinhais
-https://eletricista-norte-reparos.pt/eletricista-tomada-interruptor-xinzo-de-limia
 https://eletricista-norte-reparos.pt/eletricista-torre-de-dona-chama
 https://eletricista-norte-reparos.pt/eletricista-torre-de-moncorvo
 https://eletricista-norte-reparos.pt/eletricista-torre-do-pinhao
@@ -2720,7 +2707,6 @@ https://eletricista-norte-reparos.pt/eletricista-urgente-vilar-de-macada
 https://eletricista-norte-reparos.pt/eletricista-urgente-vilarandelo
 https://eletricista-norte-reparos.pt/eletricista-urgente-vimioso
 https://eletricista-norte-reparos.pt/eletricista-urgente-vinhais
-https://eletricista-norte-reparos.pt/eletricista-urgente-xinzo-de-limia
 https://eletricista-norte-reparos.pt/eletricista-urros
 https://eletricista-norte-reparos.pt/eletricista-uva
 https://eletricista-norte-reparos.pt/eletricista-vacalar
@@ -2869,7 +2855,6 @@ https://eletricista-norte-reparos.pt/eletricista-vinhas
 https://eletricista-norte-reparos.pt/eletricista-vinhos
 https://eletricista-norte-reparos.pt/eletricista-vreia-de-bornes
 https://eletricista-norte-reparos.pt/eletricista-vreia-de-jales
-https://eletricista-norte-reparos.pt/eletricista-xinzo-de-limia
 https://eletricista-norte-reparos.pt/eletricista-zedes
 https://eletricista-norte-reparos.pt/eletricista-zoio
 https://eletricista-norte-reparos.pt/emergencia-eletrica
@@ -3093,7 +3078,6 @@ https://eletricista-norte-reparos.pt/melhor-avaria-meda
 https://eletricista-norte-reparos.pt/melhor-avaria-miranda-do-douro
 https://eletricista-norte-reparos.pt/melhor-avaria-mirandela
 https://eletricista-norte-reparos.pt/melhor-avaria-mogadouro
-https://eletricista-norte-reparos.pt/melhor-avaria-moimenta-da-beira
 https://eletricista-norte-reparos.pt/melhor-avaria-peso-da-regua
 https://eletricista-norte-reparos.pt/melhor-avaria-tavora
 https://eletricista-norte-reparos.pt/melhor-avaria-valpacos
@@ -3108,7 +3092,6 @@ https://eletricista-norte-reparos.pt/melhor-certificacao-dgeg-meda
 https://eletricista-norte-reparos.pt/melhor-certificacao-dgeg-miranda-do-douro
 https://eletricista-norte-reparos.pt/melhor-certificacao-dgeg-mirandela
 https://eletricista-norte-reparos.pt/melhor-certificacao-dgeg-mogadouro
-https://eletricista-norte-reparos.pt/melhor-certificacao-dgeg-moimenta-da-beira
 https://eletricista-norte-reparos.pt/melhor-certificacao-dgeg-peso-da-regua
 https://eletricista-norte-reparos.pt/melhor-certificacao-dgeg-tavora
 https://eletricista-norte-reparos.pt/melhor-certificacao-dgeg-valpacos
@@ -3123,7 +3106,6 @@ https://eletricista-norte-reparos.pt/melhor-iluminacao-led-meda
 https://eletricista-norte-reparos.pt/melhor-iluminacao-led-miranda-do-douro
 https://eletricista-norte-reparos.pt/melhor-iluminacao-led-mirandela
 https://eletricista-norte-reparos.pt/melhor-iluminacao-led-mogadouro
-https://eletricista-norte-reparos.pt/melhor-iluminacao-led-moimenta-da-beira
 https://eletricista-norte-reparos.pt/melhor-iluminacao-led-peso-da-regua
 https://eletricista-norte-reparos.pt/melhor-iluminacao-led-tavora
 https://eletricista-norte-reparos.pt/melhor-iluminacao-led-valpacos
@@ -3138,7 +3120,6 @@ https://eletricista-norte-reparos.pt/melhor-quadro-eletrico-meda
 https://eletricista-norte-reparos.pt/melhor-quadro-eletrico-miranda-do-douro
 https://eletricista-norte-reparos.pt/melhor-quadro-eletrico-mirandela
 https://eletricista-norte-reparos.pt/melhor-quadro-eletrico-mogadouro
-https://eletricista-norte-reparos.pt/melhor-quadro-eletrico-moimenta-da-beira
 https://eletricista-norte-reparos.pt/melhor-quadro-eletrico-peso-da-regua
 https://eletricista-norte-reparos.pt/melhor-quadro-eletrico-tavora
 https://eletricista-norte-reparos.pt/melhor-quadro-eletrico-valpacos
@@ -3207,7 +3188,6 @@ https://eletricista-norte-reparos.pt/perguntas-frequentes-eletricista-mesao-frio
 https://eletricista-norte-reparos.pt/perguntas-frequentes-eletricista-miranda-do-douro
 https://eletricista-norte-reparos.pt/perguntas-frequentes-eletricista-mirandela
 https://eletricista-norte-reparos.pt/perguntas-frequentes-eletricista-mogadouro
-https://eletricista-norte-reparos.pt/perguntas-frequentes-eletricista-moimenta-da-beira
 https://eletricista-norte-reparos.pt/perguntas-frequentes-eletricista-mondim-de-basto
 https://eletricista-norte-reparos.pt/perguntas-frequentes-eletricista-montalegre
 https://eletricista-norte-reparos.pt/perguntas-frequentes-eletricista-murca
