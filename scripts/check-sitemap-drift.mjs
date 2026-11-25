@@ -1,9 +1,13 @@
 #!/usr/bin/env node
 // Sitemap/IndexNow drift guard: for every sitemap*.xml and *indexnow*.txt in
 // client/public/ and public/, the head URL set must equal exactly
-//   base URL set - URLs declared in DELETE-MANIFEST.json (paths + sitemap_only_paths).
+//   base URL set - URLs declared in DELETE-MANIFEST.json (paths + sitemap_only_paths)
+//                + added URLs whose HTML file is tracked in the head tree.
+// The manifest is read only when the PR adds or modifies it (content differs from
+// the base); a manifest inherited unchanged from the base is ignored.
 // sitemap_only_paths are not removed from the files listed in sitemap_only_kept_in.
-// Any missing URL, extra URL, deleted file or new file fails with exit 1.
+// Any missing URL, unexplained extra URL, deleted file or new file fails with exit 1.
+// In CI on pull_request the base is HEAD^1, the tested merge parent.
 // Usage: node scripts/check-sitemap-drift.mjs [--base origin/main] [--root .] [--manifest DELETE-MANIFEST.json]
 import { execFileSync } from 'node:child_process';
 import fs from 'node:fs';
@@ -14,7 +18,8 @@ const args = Object.fromEntries(
 );
 const BASE = args.base || 'origin/main';
 const ROOT = path.resolve(args.root || process.cwd());
-const MANIFEST = path.join(ROOT, args.manifest || 'DELETE-MANIFEST.json');
+const MANIFEST_REL = args.manifest || 'DELETE-MANIFEST.json';
+const MANIFEST = path.join(ROOT, MANIFEST_REL);
 const DIRS = ['client/public', 'public'];
 const SURFACE = /^(client\/public|public)\/(sitemap[^/]*\.xml|[^/]*indexnow[^/]*\.txt)$/;
 
@@ -27,6 +32,11 @@ const key = (p) => {
   return s.startsWith('/') ? s || '/' : '/' + s;
 };
 
+const gitOr = (fallback, ...a) => {
+  try { return execFileSync('git', a, { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 28, stdio: ['ignore', 'pipe', 'ignore'] }); }
+  catch { return fallback; }
+};
+
 const urls = (file, text) =>
   file.endsWith('.txt')
     ? new Set(text.split('\n').map((l) => l.trim()).filter((l) => /^https?:\/\//.test(l)))
@@ -36,7 +46,10 @@ let deleted = new Set();
 let sitemapOnly = new Set();
 let keptIn = new Set();
 if (fs.existsSync(MANIFEST)) {
-  const m = JSON.parse(fs.readFileSync(MANIFEST, 'utf8'));
+  const text = fs.readFileSync(MANIFEST, 'utf8');
+  const inherited = text === gitOr(null, 'show', `${BASE}:${MANIFEST_REL}`);
+  if (inherited) console.log(`check-sitemap-drift ${MANIFEST_REL} unchanged from base: ignored`);
+  const m = inherited ? {} : JSON.parse(text);
   deleted = new Set((m.paths || []).map(key));
   sitemapOnly = new Set((m.sitemap_only_paths || []).map(key));
   keptIn = new Set(m.sitemap_only_kept_in || []);
@@ -46,6 +59,13 @@ const baseFiles = git('ls-tree', '-r', '--name-only', BASE).split('\n').filter((
 const headFiles = DIRS.flatMap((d) =>
   fs.existsSync(path.join(ROOT, d)) ? fs.readdirSync(path.join(ROOT, d)).map((n) => `${d}/${n}`) : [],
 ).filter((f) => SURFACE.test(f));
+
+// Added URL is accepted only if its HTML file is tracked in the head tree and on disk.
+const tracked = new Set(git('ls-files', '--', ...DIRS).split('\n').filter((f) => f.endsWith('.html')));
+const htmlFor = (k) => DIRS.flatMap((d) => (k === '/' ? [`${d}/index.html`] : [`${d}${k}.html`, `${d}${k}/index.html`]));
+const hasHtml = (u) => htmlFor(key(u)).some((f) => tracked.has(f) && fs.existsSync(path.join(ROOT, f)));
+const originOf = (u) => (u.match(/^https?:\/\/[^/]+/) || [''])[0];
+let addedWithHtml = 0;
 
 const errors = [];
 const show = (list) => list.slice(0, 5).join(', ') + (list.length > 5 ? ', …' : '');
@@ -60,13 +80,16 @@ for (const f of [...new Set([...baseFiles, ...headFiles])].sort()) {
   const expected = new Set([...base].filter((u) => !removed(u)));
   [...base].filter(removed).forEach((u) => removedSeen.add(key(u)));
   const missing = [...expected].filter((u) => !head.has(u));
-  const extra = [...head].filter((u) => !expected.has(u));
+  const origins = new Set([...base].map(originOf));
+  const added = (u) => !base.has(u) && origins.has(originOf(u)) && hasHtml(u);
+  const extra = [...head].filter((u) => !expected.has(u) && !added(u));
+  addedWithHtml += [...head].filter((u) => !expected.has(u) && added(u)).length;
   console.log(`check-sitemap-drift ${f} base=${base.size} expected=${expected.size} head=${head.size} missing=${missing.length} unexpected=${extra.length}`);
   if (missing.length) errors.push(`${f}: ${missing.length} expected URL(s) missing: ${show(missing)}`);
   if (extra.length) errors.push(`${f}: ${extra.length} unexpected URL(s): ${show(extra)}`);
 }
 
-console.log(`check-sitemap-drift manifest_keys=${deleted.size + sitemapOnly.size} found_in_base=${removedSeen.size}`);
+console.log(`check-sitemap-drift manifest_keys=${deleted.size + sitemapOnly.size} found_in_base=${removedSeen.size} added_with_html=${addedWithHtml}`);
 if (errors.length) {
   console.error('check-sitemap-drift FAIL\n' + errors.map((e) => '  - ' + e).join('\n'));
   process.exit(1);
