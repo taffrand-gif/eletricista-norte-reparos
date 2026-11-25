@@ -1,8 +1,8 @@
 # GATES.md — ENR coverage cleanup 2026-11-25
 
 BASE: ae587907fc85695fb1dc8a5b33afc2a01a799911
-HEAD: ca0b437456afe5dfd9df3bce788c5396543fe045
-FILES_SHA256: 606fad2a17eadc06b48cc50cb4a28d9ddebfae61342f9ebe5d4b1db9870436fd
+HEAD: 02eeefa2a9080d1163b8c4ccc984e1603e366183
+FILES_SHA256: 2b92920025ff798780bbeb3ad8425a8cffa72800151d2bb640ba1fbf81c46d74
 POPULATION: 20 commercial HTML pages currently indexable or without a noindex directive (14 Spain, 5 Moimenta da Beira, 1 Viseu)
 BRANCH: cleanup/enr-coverage-cleanup-20261125
 
@@ -10,7 +10,7 @@ BRANCH: cleanup/enr-coverage-cleanup-20261125
 Neutraliser uniquement les 20 pages ENR prouvées hors périmètre ou interdites par la source métier, sans toucher à Vila Nova da Rainha ambiguë ni aux pages Chaves/Valpaços.
 
 ## Source active (preuve chemin:ligne — sinon « À REVOIR — SOURCE ACTIVE NON PROUVÉE »)
-Pages HTML statiques servies depuis `client/public/`; source métier `/Users/admin/work/Sites/_governance/20-BUSINESS-FACTS.json:134-173`.
+Pages HTML statiques servies depuis `client/public/`; gnrateur sitemap actif `scripts/generate-sitemap.ts:143-247` crit `public/sitemap-dynamic.xml` mais ne gnre pas les sitemaps statiques `client/public/sitemap-*.xml` modifis ici ; source mtier
 
 ## Gate
 - Motif exact : pages commerciales locales ENR ciblées avec `index,follow`, robots absent, ou directive non conforme pour Espagne, Viseu ou Moimenta da Beira.
