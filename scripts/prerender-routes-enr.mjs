@@ -478,26 +478,36 @@ async function main() {
     // disjuntores-disparar") — bug pré-existant de la nav (visible aussi
     // sur le site en prod). On strip ces liens pour ne pas FAIL le hook
     // et pour ne pas figer un 404 dans le HTML statique.
+    const brokenInternalHrefReplacements = {
+      '/arranjacao-avarias-eletricas': '/reparacao-avarias-eletricas',
+    };
     const brokenInternalHrefs = [
       '/arranjacao-avarias-eletricas',
       '/blog/certificacao-obrigatoria',
       '/blog/quadro-eletrico-disjuntores-disparar',
     ];
     let brokenStripped = 0;
+    let brokenRepaired = 0;
     for (const bad of brokenInternalHrefs) {
+      const replacement = brokenInternalHrefReplacements[bad];
       // Stratégie : remplacer le <a href=...> par un <span> (neutralise
       // le lien, garde le texte du lien). Évite de toucher au wording
       // (zéro invention, R11-safe).
       const re = new RegExp(`<a([^>]*?)href="${bad.replace(/\//g, '\\/')}"([^>]*?)>`, 'g');
       const before = cleanHtml;
-      cleanHtml = cleanHtml.replace(re, (full, attrs1, attrs2) => {
-        return `<span${attrs1}${attrs2}>`;
-      });
+      if (replacement) {
+        cleanHtml = cleanHtml.replace(re, (full) => full.replace(`href="${bad}"`, `href="${replacement}"`));
+        brokenRepaired += (before.match(re) || []).length;
+      } else {
+        cleanHtml = cleanHtml.replace(re, (full, attrs1, attrs2) => {
+          return `<span${attrs1}${attrs2}>`;
+        });
+      }
       // Fermer le </a> correspondant en </span> après le contenu
       // Approximation : si on a remplacé au moins un <a>, on cherche le
       // premier </a> suivant et on remplace par </span>. Pour rester
       // chirurgical, on ne touche qu'aux <a> simples, pas imbriqués.
-      if (cleanHtml !== before) {
+      if (!replacement && cleanHtml !== before) {
         // Compter les diffs
         const matches = before.match(re) || [];
         brokenStripped += matches.length;
@@ -506,8 +516,8 @@ async function main() {
         }
       }
     }
-    if (brokenStripped > 0) {
-      console.log(`     🔧 maillage: ${brokenStripped} lien(s) cassé(s) neutralisé(s) en <span>`);
+    if (brokenRepaired > 0 || brokenStripped > 0) {
+      console.log(`     🔧 maillage: ${brokenRepaired} lien(s) réparé(s), ${brokenStripped} lien(s) cassé(s) neutralisé(s) en <span>`);
     }
 
     fs.writeFileSync(outPath, cleanHtml, 'utf8');

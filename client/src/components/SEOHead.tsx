@@ -75,6 +75,7 @@ export default function SEOHead() {
  }
  // Diferir carregamento GTM por 3s após carregamento da página para melhor desempenho
  const loadGTM = () => {
+ if (localStorage.getItem('rgpd-consent-enr-v1') !== 'granted') return; // RGPD: Google Ads tag only after consent
  if (document.querySelector('script[src*="googletagmanager.com/gtag"]')) return;
  setTimeout(() => {
  const script = document.createElement('script');

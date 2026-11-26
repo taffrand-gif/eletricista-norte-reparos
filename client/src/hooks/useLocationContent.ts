@@ -81,10 +81,11 @@ export function useLocationContent(): LocationContentConfig {
 }
 // Hook for personalized WhatsApp message
 export function usePersonalizedWhatsAppMessage(baseMessage: string): string {
- const { city } = useLocationContent();
+ const { selectedCity, detectedCity } = useLocation();
+ const knownCity = selectedCity || detectedCity;
  return useMemo(() => {
- return `Olá! Estou em ${city}. ${baseMessage}`;
- }, [city, baseMessage]);
+ return knownCity ? `Olá! Estou em ${knownCity}. ${baseMessage}` : `Olá! ${baseMessage}`;
+ }, [knownCity, baseMessage]);
 }
 // Hook for filtering testimonials by location
 export function useLocalTestimonials<T extends { location: string }>(

@@ -76,12 +76,10 @@
 
 <!-- Google Analytics 4 -->
 <!-- RGPD Consent Mode v2 — default denied avant tout chargement GA4 (Volet 1 React ENR, mission t_639f45fd) -->
-<!-- Doit être injecté AVANT gtag.js pour que la queue dataLayer contienne déjà le refus par défaut -->
 <script data-rgpd-marker="RGPD-t_639f45fd-2026-08-29-consent-default-denied-enr">
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   window.gtag = gtag;
-  gtag('js', new Date());
   gtag('consent', 'default', {
     'ad_storage': 'denied',
     'analytics_storage': 'denied',
@@ -94,16 +92,10 @@
   });
 </script>
 <!-- /RGPD Consent Mode v2 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P0521CSGHY"></script>
+<!-- GA4 : gtag.js, js/config et événements chargés après consentement explicite par CookieConsent -->
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-P0521CSGHY', {
-'send_page_view': true,
-'anonymize_ip': true,
-'cookie_flags': 'SameSite=None;Secure'
-});
 window.trackPhoneClick = function(phone) {
 gtag('event', 'phone_click', {'event_category': 'conversion', 'event_label': phone, 'value': 1});
 };

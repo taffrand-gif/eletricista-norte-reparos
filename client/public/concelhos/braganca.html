@@ -23,12 +23,10 @@ gtag('consent', 'default', {
 });
 </script>
 <!-- /RGPD Consent Mode v2 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P0521CSGHY"></script>
+<!-- GA4 gtag.js : chargé seulement après consentement explicite (bandeau RGPD, applyChoice) -->
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-P0521CSGHY', {'send_page_view': true, 'anonymize_ip': true, 'cookie_flags': 'SameSite=None;Secure'});
 window.trackTelClick = function(phone) { gtag('event', 'click_tel', {'event_category': 'conversion', 'event_label': phone, 'value': 1}); };
 window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {'event_category': 'conversion', 'event_label': source, 'value': 1}); };
 </script>
@@ -159,7 +157,7 @@ window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {
  <h2 style="color:#0a4d68;margin-bottom:1rem">Bragança e arredores - localidades servidas</h2>
  <p>A nossa equipa cobre todas as localidades deste concelho. Para um orçamento detalhado, contacte-nos:</p>
  <ul style="columns:3;column-gap:1.5rem;list-style:none;padding:0">
-  <li style="padding:.25rem 0;break-inside:avoid"><a href="/eletricista-a-mezquita.html" style="color:#0a4d68">a-mezquita</a></li>
+  <li style="padding:.25rem 0;break-inside:avoid">a-mezquita</li>
   <li style="padding:.25rem 0;break-inside:avoid"><a href="/eletricista-abacas.html" style="color:#0a4d68">abacas</a></li>
   <li style="padding:.25rem 0;break-inside:avoid"><a href="/eletricista-abreiro.html" style="color:#0a4d68">abreiro</a></li>
   <li style="padding:.25rem 0;break-inside:avoid"><a href="/eletricista-adeganha.html" style="color:#0a4d68">adeganha</a></li>
@@ -174,8 +172,8 @@ window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {
   <li style="padding:.25rem 0;break-inside:avoid"><a href="/eletricista-aguieira.html" style="color:#0a4d68">aguieira</a></li>
   <li style="padding:.25rem 0;break-inside:avoid"><a href="/eletricista-aguieiras.html" style="color:#0a4d68">aguieiras</a></li>
   <li style="padding:.25rem 0;break-inside:avoid"><a href="/eletricista-ala.html" style="color:#0a4d68">ala</a></li>
-  <li style="padding:.25rem 0;break-inside:avoid"><a href="/eletricista-albarellos.html" style="color:#0a4d68">albarellos</a></li>
-  <li style="padding:.25rem 0;break-inside:avoid"><a href="/eletricista-alcaices.html" style="color:#0a4d68">alcaices</a></li>
+  <li style="padding:.25rem 0;break-inside:avoid">albarellos</li>
+  <li style="padding:.25rem 0;break-inside:avoid">alcaices</li>
   <li style="padding:.25rem 0;break-inside:avoid"><a href="/eletricista-alcarva.html" style="color:#0a4d68">alcarva</a></li>
   <li style="padding:.25rem 0;break-inside:avoid"><a href="/eletricista-aldeia-vicosa.html" style="color:#0a4d68">aldeia-vicosa</a></li>
   <li style="padding:.25rem 0;break-inside:avoid"><a href="/eletricista-aldeias.html" style="color:#0a4d68">aldeias</a></li>
@@ -205,8 +203,8 @@ window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {
   <li style="padding:.25rem 0;break-inside:avoid"><a href="/eletricista-arcas.html" style="color:#0a4d68">arcas</a></li>
   <li style="padding:.25rem 0;break-inside:avoid"><a href="/eletricista-arcosso.html" style="color:#0a4d68">arcosso</a></li>
   <li style="padding:.25rem 0;break-inside:avoid"><a href="/eletricista-ardaos.html" style="color:#0a4d68">ardaos</a></li>
-  <li style="padding:.25rem 0;break-inside:avoid"><a href="/eletricista-argan.html" style="color:#0a4d68">argan</a></li>
-  <li style="padding:.25rem 0;break-inside:avoid"><a href="/eletricista-argana.html" style="color:#0a4d68">argana</a></li>
+  <li style="padding:.25rem 0;break-inside:avoid">argan</li>
+  <li style="padding:.25rem 0;break-inside:avoid"><a href="/eletricista-argana" style="color:#0a4d68">argana</a></li>
   <li style="padding:.25rem 0;break-inside:avoid"><a href="/eletricista-aricera.html" style="color:#0a4d68">aricera</a></li>
   <li style="padding:.25rem 0;break-inside:avoid"><a href="/eletricista-armoniz.html" style="color:#0a4d68">armoniz</a></li>
  </ul>
@@ -220,7 +218,7 @@ window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {
  <p>Trabalhamos com instalações programadas em horário normal (8h-20h, dias úteis). Fora deste horário, incluindo noites, fins de semana e feriados, aplicamos a majoração prevista no tarifário. O pedido é sempre confirmado por telefone antes da deslocação.</p>
 
  <h3>Como é feito o orçamento para Bragança?</h3>
- <p>Pedido por telefone ou WhatsApp com descrição do trabalho. Para casos simples, orçamento por telefone em poucos minutos. Para instalações completas, fazemos uma visita técnica gratuita ao local, seguida de orçamento detalhado por escrito. Sem compromisso.</p>
+ <p>Pedido por telefone ou WhatsApp com descrição do trabalho. Para casos simples, orçamento por telefone em poucos minutos. Para instalações completas, fazemos uma visita técnica ao local (deslocação 30 € em dias úteis), seguida de orçamento detalhado por escrito.</p>
 
  <h3>Posso pagar com cartão ou MB Way?</h3>
  <p>Sim, aceitamos pagamento em numerário, multibanco, MB Way, transferência bancária e cartão de débito ou crédito. A fatura é sempre emitida com o seu NIF.</p>
@@ -245,7 +243,7 @@ window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {
 (function(){
   var KEY="rgpd-consent-enr-v1";
   var STORAGES=["ad_storage","analytics_storage","ad_user_data","ad_personalization","functionality_storage","personalization_storage"];
-  function applyChoice(v){localStorage.setItem(KEY,v);var p={};for(var i=0;i<STORAGES.length;i++)p[STORAGES[i]]=v;if(window.gtag)window.gtag("consent","update",p);}
+  function applyChoice(v){localStorage.setItem(KEY,v);var p={};for(var i=0;i<STORAGES.length;i++)p[STORAGES[i]]=v;if(window.gtag)window.gtag("consent","update",p);if(v==="granted"&&!window.__ga4Loaded){window.__ga4Loaded=1;var g=document.createElement("script");g.async=true;g.onload=function(){gtag("js",new Date());gtag("config","G-P0521CSGHY",{send_page_view:true,anonymize_ip:true,cookie_flags:"SameSite=None;Secure"});};document.head.appendChild(g);}}
   if(document.getElementById("rgpd-banner-enr"))return;
   var saved=localStorage.getItem(KEY);
   if(saved==="granted"||saved==="denied"){applyChoice(saved);return;}

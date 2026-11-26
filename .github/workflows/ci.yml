@@ -12,6 +12,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
 
     - name: Setup Node.js
       uses: actions/setup-node@v4
@@ -24,3 +26,12 @@ jobs:
 
     - name: Build
       run: npm run build
+
+    - name: Sitemap and IndexNow drift guard
+      # pull_request: HEAD is the tested merge ref, HEAD^1 its main parent (stable
+      # even if main moves during the run). push: HEAD, as before (no-op).
+      env:
+        DRIFT_BASE: ${{ github.event_name == 'pull_request' && 'HEAD^1' || 'HEAD' }}
+      run: |
+        node --test scripts/check-sitemap-drift.test.mjs
+        node scripts/check-sitemap-drift.mjs --base "$DRIFT_BASE"

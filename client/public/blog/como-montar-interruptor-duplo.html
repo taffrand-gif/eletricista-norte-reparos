@@ -18,12 +18,10 @@ gtag('consent', 'default', {
 });
 </script>
 <!-- /RGPD Consent Mode v2 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P0521CSGHY"></script>
+<!-- GA4 gtag.js : chargé seulement après consentement explicite (bandeau RGPD, applyChoice) -->
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-P0521CSGHY', {'send_page_view': true, 'anonymize_ip': true, 'cookie_flags': 'SameSite=None;Secure'});
 window.trackTelClick = function(phone) { gtag('event', 'click_tel', {'event_category': 'conversion', 'event_label': phone, 'value': 1}); };
 window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {'event_category': 'conversion', 'event_label': source, 'value': 1}); };
 </script>
@@ -281,7 +279,7 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#1f2937;line-height:1
 <details><summary><strong>Quanto custa montar um interruptor duplo em Trás-os-Montes?</strong></summary><p>Dias úteis (9h–18h): mão de obra 70 €/hora e deslocação 30 €. Noite (18h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. Para montar um interruptor duplo em caixa existente (caso mais comum), a duração é curta — a deslocação é muitas vezes a componente principal do preço. Quando é necessário substituir a caixa de encastrar, abrir roço, puxar cabo novo ou emitir Ficha Eletrotécnica + Termo de Responsabilidade (DGEG TRIESP 90062), o orçamento é sempre por escrito antes da intervenção. Estimativa sem custo por telefone ou WhatsApp quando as fotos permitem orçamentar.</p></details>
 </section>
 
-<div class="cta"><h2>Vai montar um interruptor duplo em Trás-os-Montes?</h2><p>A nossa equipa faz a montagem, a substituição e a resolução de erros de cablagem existente, com identificação segura dos condutores (detetor de tensão + multímetro). Orçamento por escrito antes de qualquer intervenção, sem surpresas. Dias úteis (9h–18h): mão de obra 70 €/hora e deslocação 30 €. Noite (18h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. À noite (18h–9h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €.</p><a href="tel:+351932321892">📞 Ligar +351 932 321 892</a><a href="https://wa.me/351932321892">💬 WhatsApp</a></div>
+<div class="cta"><h2>Vai montar um interruptor duplo em Trás-os-Montes?</h2><p>A nossa equipa faz a montagem, a substituição e a resolução de erros de cablagem existente, com identificação segura dos condutores (detetor de tensão + multímetro). Orçamento por escrito antes de qualquer intervenção, sem surpresas. Dias úteis (9h–18h): mão de obra 70 €/hora e deslocação 30 €. Noite (18h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €.</p><a href="tel:+351932321892">📞 Ligar +351 932 321 892</a><a href="https://wa.me/351932321892">💬 WhatsApp</a></div>
 
 <section class="related"><h2>Artigos relacionados</h2>
 <ul>
@@ -308,7 +306,7 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#1f2937;line-height:1
 (function(){
   var KEY="rgpd-consent-enr-v1";
   var STORAGES=["ad_storage","analytics_storage","ad_user_data","ad_personalization","functionality_storage","personalization_storage"];
-  function applyChoice(v){localStorage.setItem(KEY,v);var p={};for(var i=0;i<STORAGES.length;i++)p[STORAGES[i]]=v;if(window.gtag)window.gtag("consent","update",p);}
+  function applyChoice(v){localStorage.setItem(KEY,v);var p={};for(var i=0;i<STORAGES.length;i++)p[STORAGES[i]]=v;if(window.gtag)window.gtag("consent","update",p);if(v==="granted"&&!window.__ga4Loaded){window.__ga4Loaded=1;var g=document.createElement("script");g.async=true;g.onload=function(){gtag("js",new Date());gtag("config","G-P0521CSGHY",{send_page_view:true,anonymize_ip:true,cookie_flags:"SameSite=None;Secure"});};document.head.appendChild(g);}}
   if(document.getElementById("rgpd-banner-enr"))return;
   var saved=localStorage.getItem(KEY);
   if(saved==="granted"||saved==="denied"){applyChoice(saved);return;}

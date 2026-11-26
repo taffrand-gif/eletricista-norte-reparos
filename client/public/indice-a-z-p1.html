@@ -18,12 +18,10 @@ gtag('consent', 'default', {
 });
 </script>
 <!-- /RGPD Consent Mode v2 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P0521CSGHY"></script>
+<!-- GA4 gtag.js : chargé seulement après consentement explicite (bandeau RGPD, applyChoice) -->
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-P0521CSGHY', {'send_page_view': true, 'anonymize_ip': true, 'cookie_flags': 'SameSite=None;Secure'});
 window.trackTelClick = function(phone) { gtag('event', 'click_tel', {'event_category': 'conversion', 'event_label': phone, 'value': 1}); };
 window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {'event_category': 'conversion', 'event_label': source, 'value': 1}); };
 </script>
@@ -203,7 +201,7 @@ window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {
 <a href="/avaria-eletrica-vimioso">Avaria Eletrica Vimioso</a>
 <a href="/avaria-eletrica-vinhais">Avaria Eletrica Vinhais</a></div></div><div class="letter-section" id="letter-E"><h2>E (232)</h2><div class="links-grid"><a href="/eletricista-a-gudina">Eletricista A Gudina</a>
 <a href="/eletricista-a-gudiña">Eletricista A Gudiña</a>
-<a href="/eletricista-a-mezquita">Eletricista A Mezquita</a>
+Eletricista A Mezquita
 <a href="/eletricista-abacas">Eletricista Abacas</a>
 <a href="/eletricista-abambres">Eletricista Abambres</a>
 <a href="/eletricista-abaças">Eletricista Abaças</a>
@@ -223,8 +221,8 @@ window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {
 <a href="/eletricista-aguieira">Eletricista Aguieira</a>
 <a href="/eletricista-aguieiras">Eletricista Aguieiras</a>
 <a href="/eletricista-ala">Eletricista Ala</a>
-<a href="/eletricista-albarellos">Eletricista Albarellos</a>
-<a href="/eletricista-alcaices">Eletricista Alcaices</a>
+Eletricista Albarellos
+Eletricista Alcaices
 <a href="/eletricista-alcarva">Eletricista Alcarva</a>
 <a href="/eletricista-aldeia-vicosa">Eletricista Aldeia Vicosa</a>
 <a href="/eletricista-aldeias">Eletricista Aldeias</a>
@@ -267,7 +265,7 @@ window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {
 <a href="/eletricista-arcossó">Eletricista Arcossó</a>
 <a href="/eletricista-ardaos">Eletricista Ardaos</a>
 <a href="/eletricista-ardãos">Eletricista Ardãos</a>
-<a href="/eletricista-argan">Eletricista Argan</a>
+Eletricista Argan
 <a href="/eletricista-argana">Eletricista Argana</a>
 <a href="/eletricista-argozelo">Eletricista Argozelo</a>
 <a href="/eletricista-aricera">Eletricista Aricera</a>
@@ -363,7 +361,7 @@ window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {
 <a href="/eletricista-avaria-eletrica-vilarandelo">Eletricista Avaria Eletrica Vilarandelo</a>
 <a href="/eletricista-avaria-eletrica-vimioso">Eletricista Avaria Eletrica Vimioso</a>
 <a href="/eletricista-avaria-eletrica-vinhais">Eletricista Avaria Eletrica Vinhais</a>
-<a href="/eletricista-avaria-eletrica-xinzo-de-limia">Eletricista Avaria Eletrica Xinzo De Limia</a>
+Eletricista Avaria Eletrica Xinzo De Limia
 <a href="/eletricista-avelanoso">Eletricista Avelanoso</a>
 <a href="/eletricista-avelas-da-ribeira">Eletricista Avelas Da Ribeira</a>
 <a href="/eletricista-avelas-de-ambom">Eletricista Avelas De Ambom</a>
@@ -438,7 +436,7 @@ window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {
 (function(){
   var KEY="rgpd-consent-enr-v1";
   var STORAGES=["ad_storage","analytics_storage","ad_user_data","ad_personalization","functionality_storage","personalization_storage"];
-  function applyChoice(v){localStorage.setItem(KEY,v);var p={};for(var i=0;i<STORAGES.length;i++)p[STORAGES[i]]=v;if(window.gtag)window.gtag("consent","update",p);}
+  function applyChoice(v){localStorage.setItem(KEY,v);var p={};for(var i=0;i<STORAGES.length;i++)p[STORAGES[i]]=v;if(window.gtag)window.gtag("consent","update",p);if(v==="granted"&&!window.__ga4Loaded){window.__ga4Loaded=1;var g=document.createElement("script");g.async=true;g.onload=function(){gtag("js",new Date());gtag("config","G-P0521CSGHY",{send_page_view:true,anonymize_ip:true,cookie_flags:"SameSite=None;Secure"});};document.head.appendChild(g);}}
   if(document.getElementById("rgpd-banner-enr"))return;
   var saved=localStorage.getItem(KEY);
   if(saved==="granted"||saved==="denied"){applyChoice(saved);return;}
