@@ -64,7 +64,8 @@
     "client/public/eletricista-loivos-da-ribeira.html",
     "client/public/eletricista-santa-cruz-do-douro.html",
     "client/public/eletricista-sao-tome-de-covelas.html",
-    "client/public/eletricista-valadares.html"
+    "client/public/eletricista-valadares.html",
+    "client/public/aquecimento-eletrico-braganca.html"
   ],
   "sitemap_only_note": "Files kept with noindex. The declared URLs are removed from the targeted client/public sitemaps; IndexNow and public/sitemap.xml are explicit kept surfaces. Declared for scripts/check-sitemap-drift.mjs; no change of scope.",
   "sitemap_only_kept_in": [
