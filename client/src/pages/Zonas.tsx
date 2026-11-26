@@ -47,7 +47,6 @@ const districts = {
  name: 'Distrito de Viseu / Guarda',
  cities: [
  { name: 'Lamego', distance: '90 km', slug: 'lamego' },
- { name: 'Moimenta da Beira', distance: '85 km', slug: 'moimenta-da-beira' },
  { name: 'São João da Pesqueira', distance: '55 km', slug: 'sao-joao-da-pesqueira' },
  { name: 'Tabuaço', distance: '65 km', slug: 'tabuaco' },
  { name: 'Armamar', distance: '75 km', slug: 'armamar' },

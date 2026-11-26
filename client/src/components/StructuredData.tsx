@@ -34,7 +34,7 @@ export default function StructuredData() {
  // Raio 60-90km
  "Chaves", "Vila Real", "Montalegre", "Boticas", "Alijó", "Sabrosa", "Ribeira de Pena", "Vila Pouca de Aguiar",
  // Raio 90-130km
- "Lamego", "Peso da Régua", "Mesão Frio", "Tabuaço", "Armamar", "Moimenta da Beira",
+ "Lamego", "Peso da Régua", "Mesão Frio", "Tabuaço", "Armamar",
  "Vila Nova de Foz Côa", "Sernancelhe", "Penedono", "São João da Pesqueira", "Mondim de Basto"
  ];
  // LocalBusiness Schema enriquecido
