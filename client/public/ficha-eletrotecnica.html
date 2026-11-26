@@ -18,12 +18,10 @@ gtag('consent', 'default', {
 });
 </script>
 <!-- /RGPD Consent Mode v2 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P0521CSGHY"></script>
+<!-- GA4 gtag.js : chargé seulement après consentement explicite (bandeau RGPD, applyChoice) -->
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-P0521CSGHY', {'send_page_view': true, 'anonymize_ip': true, 'cookie_flags': 'SameSite=None;Secure'});
 window.trackTelClick = function(phone) { gtag('event', 'click_tel', {'event_category': 'conversion', 'event_label': phone, 'value': 1}); };
 window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {'event_category': 'conversion', 'event_label': source, 'value': 1}); };
 </script>
@@ -388,7 +386,7 @@ footer { margin-top: 40px; padding-top: 22px; border-top: 1px solid #e5e7eb; tex
 <div class="price-box">
 <h3>💶 Quanto custa o serviço certificado</h3>
 <p class="price-big">A partir de 350€</p>
-<p>Este é o <strong>preço de partida</strong> do serviço com emissão de Ficha Eletrotécnica e Termo de Responsabilidade, prestado pela nossa equipa com TRIESP inscrito na DGEG. Inclui a deslocação em Trás-os-Montes, a avaliação técnica, os ensaios e a entrega dos dois documentos oficiais assinados.</p>
+<p>Este é o <strong>preço de partida</strong> do serviço com emissão de Ficha Eletrotécnica e Termo de Responsabilidade, prestado pela nossa equipa com TRIESP inscrito na DGEG. Inclui a avaliação técnica, os ensaios e a entrega dos dois documentos oficiais assinados.</p>
 <p><strong>O que pode fazer o valor subir:</strong> a complexidade da instalação, o tipo de obra (nova vs remodelação), a distância ao quadro, a potência envolvida, e eventuais trabalhos adicionais detetados durante a avaliação.</p>
 <p><strong>O princípio que seguimos:</strong> orçamento por escrito antes de qualquer intervenção, sem surpresas depois. Se o orçamento não for aprovado, não há trabalho e não há cobrança.</p>
 </div>
@@ -535,7 +533,7 @@ footer { margin-top: 40px; padding-top: 22px; border-top: 1px solid #e5e7eb; tex
 (function(){
   var KEY="rgpd-consent-enr-v1";
   var STORAGES=["ad_storage","analytics_storage","ad_user_data","ad_personalization","functionality_storage","personalization_storage"];
-  function applyChoice(v){localStorage.setItem(KEY,v);var p={};for(var i=0;i<STORAGES.length;i++)p[STORAGES[i]]=v;if(window.gtag)window.gtag("consent","update",p);}
+  function applyChoice(v){localStorage.setItem(KEY,v);var p={};for(var i=0;i<STORAGES.length;i++)p[STORAGES[i]]=v;if(window.gtag)window.gtag("consent","update",p);if(v==="granted"&&!window.__ga4Loaded){window.__ga4Loaded=1;var g=document.createElement("script");g.async=true;g.onload=function(){gtag("js",new Date());gtag("config","G-P0521CSGHY",{send_page_view:true,anonymize_ip:true,cookie_flags:"SameSite=None;Secure"});};document.head.appendChild(g);}}
   if(document.getElementById("rgpd-banner-enr"))return;
   var saved=localStorage.getItem(KEY);
   if(saved==="granted"||saved==="denied"){applyChoice(saved);return;}

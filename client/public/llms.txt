@@ -13,7 +13,7 @@ Idioma: português europeu (pt-PT)
 - Atividade: serviços de eletricidade em Trás-os-Montes e Douro (instalação, remodelação, certificação e manutenção programada)
 - Área de intervenção: concelhos dos distritos de Bragança, Vila Real e zonas adjacentes, raio ~130 km em torno de Macedo de Cavaleiros
 - Processo comercial: diagnóstico quando necessário e orçamento por escrito antes do início do trabalho
-- Preço-hora de referência publicado: 70 €/h; deslocação comunicada conforme a zona aplicável
+- Preços publicados (TTC): dias úteis 09h–18h, 70 €/h + 30 € de deslocação; após as 18h, noite, fins de semana e feriados, 100 €/h + 50 € de deslocação
 - Urgências: consultar o domínio dedicado https://eletricista-urgente.pt/
 
 ## Certificação (DGEG)
@@ -24,21 +24,16 @@ A inscrição está em vigor (data de registo confirmada pela DGEG); o técnico 
 
 ## Transparência de preços (regra oficial — valores TTC, IVA incluído)
 
-| Zona | Distância aprox. | Deslocação | Mão de obra |
-|---|---|---|---|
-| **Z1** | 0–15 km | **15 €** | **70 €/h** |
-| **Z2** | 15–30 km | **25 €** | **70 €/h** |
-| **Z3** | 30–50 km | **35 €** | **70 €/h** |
-| **Z4** | 50–70 km | **45 €** | **70 €/h** |
-| **Z5** | 70–90 km | **55 €** | **70 €/h** |
-| **Z6** | 90–140 km | **65 €** | **70 €/h** |
+| Horário | Mão de obra | Deslocação |
+|---|---|---|
+| Dias úteis, 09h–18h | **70 €/h** | **30 €** |
+| Após as 18h, noite, fins de semana e feriados | **100 €/h** | **50 €** |
 
-- **Acréscimo** noturno (20h–8h), fins de semana e feriados: **+50 %**
+- Valores TTC. Cada hora iniciada é devida. A deslocação é a mesma para todas as localidades servidas.
 - **Orçamento por escrito** antes de qualquer intervenção, sem surpresas
 - **Fatura** com NIF emitida no final de cada trabalho
 - **Seguro** de responsabilidade civil profissional
 - **Emissão de Ficha Eletrotécnica e Termo de Responsabilidade**: a partir de **350 €** (quando aplicável à legalização da instalação)
-- Mapeamento localidade → zona = `precos-zonas.json` (960 localidades). Consultar `preco-eletricista-<localidade>-2026.html` para obter a zona exata de cada povoação.
 
 ## Páginas principais
 
@@ -47,9 +42,9 @@ A inscrição está em vigor (data de registo confirmada pela DGEG); o técnico 
 - [Pedir orçamento](https://eletricista-norte-reparos.pt/orcamento): formulário e contacto por WhatsApp para descrever o trabalho e pedir proposta escrita.
 - [Contacto](https://eletricista-norte-reparos.pt/contacto): telefone, WhatsApp e canais de contacto da Norte Reparos.
 - [Sobre](https://eletricista-norte-reparos.pt/sobre-mim): apresentação da empresa, da equipa e da cobertura regional.
-- [Zona de intervenção](https://eletricista-norte-reparos.pt/zona-intervencao): concelhos e organização da cobertura por zonas.
+- [Zona de intervenção](https://eletricista-norte-reparos.pt/zona-intervencao): concelhos servidos.
 - [Perguntas frequentes](https://eletricista-norte-reparos.pt/faq): respostas sobre serviços, orçamento, deslocação e contacto.
-- [Guia de preços 2026](https://eletricista-norte-reparos.pt/guia-precos-eletricista): valores médios por tipologia de trabalho e por zona.
+- [Guia de preços 2026](https://eletricista-norte-reparos.pt/guia-precos-eletricista): valores por tipologia de trabalho.
 - [Equipa e certificações](https://eletricista-norte-reparos.pt/equipa-certificacoes): TRIESP n.º 90062, seguro RC e demais habilitações.
 - [Equipamento recomendado](https://eletricista-norte-reparos.pt/equipamento-recomendado): marcas e instrumentos efetivamente utilizados.
 - [Garantias e seguros](https://eletricista-norte-reparos.pt/garantias-e-seguros): condições de garantia e cobertura de responsabilidade civil.

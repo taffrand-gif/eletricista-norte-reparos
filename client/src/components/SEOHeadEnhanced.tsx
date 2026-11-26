@@ -173,6 +173,7 @@ export default function SEOHeadEnhanced({
  }
  // Defer GTM loading by 3s after page load for better performance
  const loadGTM = () => {
+ if (localStorage.getItem('rgpd-consent-enr-v1') !== 'granted') return; // RGPD: Google Ads tag only after consent
  if (document.querySelector('script[src*="googletagmanager.com/gtag"]')) return;
  setTimeout(() => {
  const script = document.createElement('script');

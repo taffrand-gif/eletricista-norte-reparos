@@ -20,12 +20,10 @@ gtag('consent', 'default', {
 });
 </script>
 <!-- /RGPD Consent Mode v2 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P0521CSGHY"></script>
+<!-- GA4 gtag.js : chargé seulement après consentement explicite (bandeau RGPD, applyChoice) -->
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-P0521CSGHY', {'send_page_view': true, 'anonymize_ip': true, 'cookie_flags': 'SameSite=None;Secure'});
 window.trackTelClick = function(phone) { gtag('event', 'click_tel', {'event_category': 'conversion', 'event_label': phone, 'value': 1}); };
 window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {'event_category': 'conversion', 'event_label': source, 'value': 1}); };
 </script>
@@ -92,7 +90,7 @@ window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {
       "name": "Quanto tempo demora a instalação de um alarme residencial?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Para uma moradia T3 típica com 6 a 8 zonas (4 PIR + 4 magnéticos + central + sirene interior + sirene exterior), a nossa equipa conta 1 dia de trabalho (6 a 8 horas) com cabo passado em calha técnica. Em moradia em construção com cablagem preparada (tubo VD e caixas de derivação), 3 a 4 horas. Em apartamento, depende do número de zonas — A deslocação tem preço único em qualquer localidade servida: 30 € em dias úteis (9h–18h) e 50 € à noite, fins de semana e feriados. Para um diagnóstico sem compromisso: envie-nos planta da casa com pontos a proteger e marcamos uma visita de avaliação gratuita (com foto ou vídeo, sem deslocação quando possível)."
+        "text": "Para uma moradia T3 típica com 6 a 8 zonas (4 PIR + 4 magnéticos + central + sirene interior + sirene exterior), a nossa equipa conta 1 dia de trabalho (6 a 8 horas) com cabo passado em calha técnica. Em moradia em construção com cablagem preparada (tubo VD e caixas de derivação), 3 a 4 horas. Em apartamento, depende do número de zonas — A deslocação tem preço único em qualquer localidade servida: 30 € em dias úteis (9h–18h) e 50 € à noite, fins de semana e feriados. Para um diagnóstico sem compromisso: envie-nos planta da casa com pontos a proteger e damos uma estimativa indicativa à distância (foto ou vídeo); se for preciso ir ao local, aplica-se a deslocação."
       }
     }
   ]
@@ -237,7 +235,7 @@ window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {
 <li><strong>Sistema médio 8 zonas</strong> (3 PIR + 5 magnéticos + central + sirene interior + sirene exterior) → 4 a 8 horas conforme a facilidade de passar cabo.</li>
 <li><strong>Sistema completo 12+ zonas</strong> (moradia T3+) → 1 a 2 dias de trabalho, com cabo passado em calha técnica.</li>
 </ul>
-<p>Para evitar surpresas na fatura, a nossa empresa segue 4 compromissos (PRICING.md, 2026):</p>
+<p>Para evitar surpresas na fatura, a nossa empresa segue 4 compromissos:</p>
 <ol style="font-size:16px">
 <li>Estimativa sem custo por telefone ou WhatsApp, sempre que fotos ou vídeo permitam ver os pontos a proteger.</li>
 <li>Orçamento por escrito antes de qualquer intervenção — sem surpresas.</li>
@@ -331,7 +329,7 @@ window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {
 (function(){
   var KEY="rgpd-consent-enr-v1";
   var STORAGES=["ad_storage","analytics_storage","ad_user_data","ad_personalization","functionality_storage","personalization_storage"];
-  function applyChoice(v){localStorage.setItem(KEY,v);var p={};for(var i=0;i<STORAGES.length;i++)p[STORAGES[i]]=v;if(window.gtag)window.gtag("consent","update",p);}
+  function applyChoice(v){localStorage.setItem(KEY,v);var p={};for(var i=0;i<STORAGES.length;i++)p[STORAGES[i]]=v;if(window.gtag)window.gtag("consent","update",p);if(v==="granted"&&!window.__ga4Loaded){window.__ga4Loaded=1;var g=document.createElement("script");g.async=true;g.onload=function(){gtag("js",new Date());gtag("config","G-P0521CSGHY",{send_page_view:true,anonymize_ip:true,cookie_flags:"SameSite=None;Secure"});};document.head.appendChild(g);}}
   if(document.getElementById("rgpd-banner-enr"))return;
   var saved=localStorage.getItem(KEY);
   if(saved==="granted"||saved==="denied"){applyChoice(saved);return;}

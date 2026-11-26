@@ -23,12 +23,10 @@ gtag('consent', 'default', {
 });
 </script>
 <!-- /RGPD Consent Mode v2 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P0521CSGHY"></script>
+<!-- GA4 gtag.js : chargé seulement après consentement explicite (bandeau RGPD, applyChoice) -->
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-P0521CSGHY', {'send_page_view': true, 'anonymize_ip': true, 'cookie_flags': 'SameSite=None;Secure'});
 window.trackTelClick = function(phone) { gtag('event', 'click_tel', {'event_category': 'conversion', 'event_label': phone, 'value': 1}); };
 window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {'event_category': 'conversion', 'event_label': source, 'value': 1}); };
 </script>
@@ -95,7 +93,7 @@ window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {
 <tr><td style="padding:10px;border:1px solid #ddd"><strong>Mínimo faturado</strong></td><td style="padding:10px;border:1px solid #ddd">deslocação + 1 h</td><td style="padding:10px;border:1px solid #ddd">Cada hora começada é devida.</td></tr>
 <tr style="background:#f9f9f9"><td style="padding:10px;border:1px solid #ddd"><strong>Ficha Eletrotécnica + Termo</strong></td><td style="padding:10px;border:1px solid #ddd">a partir de 350 €</td><td style="padding:10px;border:1px solid #ddd">Serviço certificado DGEG (TRIESP n.º 90062).</td></tr>
 </tbody></table>
-<p>Dias úteis (9h–18h): mão de obra 70 €/hora e deslocação 30 €. Noite (18h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. À noite (18h–9h), aos fins de semana e feriados: 100 €/hora e deslocação 50 €. Este é o tipo de transparência que publicamos em todas as páginas de preço.</p>
+<p>Dias úteis (9h–18h): mão de obra 70 €/hora e deslocação 30 €. Noite (18h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. Este é o tipo de transparência que publicamos em todas as páginas de preço.</p>
 </section>
 
 <section id="mao-de-obra">
@@ -109,7 +107,7 @@ window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {
 </ul>
 <h3>Deslocação 30 € (50 € noite/fim de semana)</h3>
 <ul>
-<li><strong>Definição:</strong> distância rodoviária real (km/tempo de condução via OSRM) entre Macedo de Cavaleiros (sede operacional) e a localidade do cliente. <strong>Não é a distância em linha reta.</strong></li>
+<li><strong>Definição:</strong> a deslocação tem preço único em qualquer localidade servida.</li>
 <li><strong>Cobertura:</strong> raio de ~130 km, abrange todo o distrito de Bragança, parte de Vila Real e zonas adjacentes.</li>
 <li><strong>Tabela:</strong> deslocação 30 € em dias úteis e 50 € à noite, fins de semana e feriados</li>
 <li><strong>Mínimo faturado:</strong> deslocação + 1 hora de mão de obra.</li>
@@ -154,7 +152,7 @@ window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {
 <li><strong>Ficha Eletrotécnica</strong> — documento que descreve tecnicamente a instalação (composição, proteções, secções de cabo, terra).</li>
 <li><strong>Termo de Responsabilidade</strong> — declaração do técnico habilitado que assume a responsabilidade técnica pela conformidade da instalação com as normas aplicáveis.</li>
 </ul>
-<p>A Norte Reparos tem <strong>credencial DGEG TRIESP n.º 90062</strong> para Baixa Tensão até 41,4 kVA, e emite estes documentos em conjunto como uma única prestação documental certificada, <strong>a partir de 350 €</strong>. Este valor é o <strong>preço plancher</strong> e cobre os dois documentos — não publicamos duas linhas separadas para evitar leituras erróneas (não são 250 € cada, são 350 € no total).</p>
+<p>A Norte Reparos tem <strong>credencial DGEG TRIESP n.º 90062</strong> para Baixa Tensão até 41,4 kVA, e emite estes documentos em conjunto como uma única prestação documental certificada, <strong>a partir de 350 €</strong>. Este valor é o <strong>preço plancher</strong> e cobre os dois documentos — não publicamos duas linhas separadas para evitar leituras erróneas (os dois documentos têm um total de 350 €).</p>
 <p>A certificação é tipicamente necessária para:</p>
 <ul>
 <li><strong>Venda de imóvel</strong> — o comprador pede a Ficha e o Termo para confirmar que a instalação está em conformidade.</li>
@@ -282,7 +280,7 @@ window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {
 (function(){
   var KEY="rgpd-consent-enr-v1";
   var STORAGES=["ad_storage","analytics_storage","ad_user_data","ad_personalization","functionality_storage","personalization_storage"];
-  function applyChoice(v){localStorage.setItem(KEY,v);var p={};for(var i=0;i<STORAGES.length;i++)p[STORAGES[i]]=v;if(window.gtag)window.gtag("consent","update",p);}
+  function applyChoice(v){localStorage.setItem(KEY,v);var p={};for(var i=0;i<STORAGES.length;i++)p[STORAGES[i]]=v;if(window.gtag)window.gtag("consent","update",p);if(v==="granted"&&!window.__ga4Loaded){window.__ga4Loaded=1;var g=document.createElement("script");g.async=true;g.onload=function(){gtag("js",new Date());gtag("config","G-P0521CSGHY",{send_page_view:true,anonymize_ip:true,cookie_flags:"SameSite=None;Secure"});};document.head.appendChild(g);}}
   if(document.getElementById("rgpd-banner-enr"))return;
   var saved=localStorage.getItem(KEY);
   if(saved==="granted"||saved==="denied"){applyChoice(saved);return;}

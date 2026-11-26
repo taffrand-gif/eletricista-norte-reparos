@@ -18,12 +18,10 @@ gtag('consent', 'default', {
 });
 </script>
 <!-- /RGPD Consent Mode v2 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P0521CSGHY"></script>
+<!-- GA4 gtag.js : chargé seulement après consentement explicite (bandeau RGPD, applyChoice) -->
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-P0521CSGHY', {'send_page_view': true, 'anonymize_ip': true, 'cookie_flags': 'SameSite=None;Secure'});
 window.trackTelClick = function(phone) { gtag('event', 'click_tel', {'event_category': 'conversion', 'event_label': phone, 'value': 1}); };
 window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {'event_category': 'conversion', 'event_label': source, 'value': 1}); };
 </script>
@@ -122,7 +120,7 @@ window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {
 <a href="/eletricista-fuga-corrente-vilarandelo">Eletricista Fuga Corrente Vilarandelo</a>
 <a href="/eletricista-fuga-corrente-vimioso">Eletricista Fuga Corrente Vimioso</a>
 <a href="/eletricista-fuga-corrente-vinhais">Eletricista Fuga Corrente Vinhais</a>
-<a href="/eletricista-fuga-corrente-xinzo-de-limia">Eletricista Fuga Corrente Xinzo De Limia</a>
+Eletricista Fuga Corrente Xinzo De Limia
 <a href="/eletricista-fuinhas">Eletricista Fuinhas</a>
 <a href="/eletricista-galafura">Eletricista Galafura</a>
 <a href="/eletricista-gallegos-del-ro">Eletricista Gallegos Del Ro</a>
@@ -250,7 +248,7 @@ window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {
 <a href="/eletricista-iluminacao-exterior-vilarandelo">Eletricista Iluminacao Exterior Vilarandelo</a>
 <a href="/eletricista-iluminacao-exterior-vimioso">Eletricista Iluminacao Exterior Vimioso</a>
 <a href="/eletricista-iluminacao-exterior-vinhais">Eletricista Iluminacao Exterior Vinhais</a>
-<a href="/eletricista-iluminacao-exterior-xinzo-de-limia">Eletricista Iluminacao Exterior Xinzo De Limia</a>
+Eletricista Iluminacao Exterior Xinzo De Limia
 <a href="/eletricista-iluminacao-led-aguiar-da-beira">Eletricista Iluminacao Led Aguiar Da Beira</a>
 <a href="/eletricista-iluminacao-led-alfandega-da-fe">Eletricista Iluminacao Led Alfandega Da Fe</a>
 <a href="/eletricista-iluminacao-led-alijo">Eletricista Iluminacao Led Alijo</a>
@@ -332,7 +330,7 @@ window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {
 <a href="/eletricista-iluminacao-led-vilarandelo">Eletricista Iluminacao Led Vilarandelo</a>
 <a href="/eletricista-iluminacao-led-vimioso">Eletricista Iluminacao Led Vimioso</a>
 <a href="/eletricista-iluminacao-led-vinhais">Eletricista Iluminacao Led Vinhais</a>
-<a href="/eletricista-iluminacao-led-xinzo-de-limia">Eletricista Iluminacao Led Xinzo De Limia</a></div></div><div class="letter-section" id="letter-G"><h2>G (11)</h2><div class="links-grid"><a href="/galeria">Galeria</a>
+Eletricista Iluminacao Led Xinzo De Limia</div></div><div class="letter-section" id="letter-G"><h2>G (11)</h2><div class="links-grid"><a href="/galeria">Galeria</a>
 <a href="/garantia">Garantia</a>
 <a href="/garantias-e-seguros">Garantias E Seguros</a>
 <a href="/garantias">Garantias</a>
@@ -417,7 +415,7 @@ window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {
 (function(){
   var KEY="rgpd-consent-enr-v1";
   var STORAGES=["ad_storage","analytics_storage","ad_user_data","ad_personalization","functionality_storage","personalization_storage"];
-  function applyChoice(v){localStorage.setItem(KEY,v);var p={};for(var i=0;i<STORAGES.length;i++)p[STORAGES[i]]=v;if(window.gtag)window.gtag("consent","update",p);}
+  function applyChoice(v){localStorage.setItem(KEY,v);var p={};for(var i=0;i<STORAGES.length;i++)p[STORAGES[i]]=v;if(window.gtag)window.gtag("consent","update",p);if(v==="granted"&&!window.__ga4Loaded){window.__ga4Loaded=1;var g=document.createElement("script");g.async=true;g.onload=function(){gtag("js",new Date());gtag("config","G-P0521CSGHY",{send_page_view:true,anonymize_ip:true,cookie_flags:"SameSite=None;Secure"});};document.head.appendChild(g);}}
   if(document.getElementById("rgpd-banner-enr"))return;
   var saved=localStorage.getItem(KEY);
   if(saved==="granted"||saved==="denied"){applyChoice(saved);return;}

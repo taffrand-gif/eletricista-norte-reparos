@@ -16,16 +16,14 @@ gtag('consent', 'default', {
 });
 </script>
 <!-- /RGPD Consent Mode v2 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P0521CSGHY"></script>
+<!-- GA4 gtag.js : chargé seulement après consentement explicite (bandeau RGPD, applyChoice) -->
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-P0521CSGHY', {'send_page_view': true, 'anonymize_ip': true, 'cookie_flags': 'SameSite=None;Secure'});
 window.trackTelClick = function(phone) { gtag('event', 'click_tel', {'event_category': 'conversion', 'event_label': phone, 'value': 1}); };
 window.trackWhatsAppClick = function(source) { gtag('event', 'click_whatsapp', {'event_category': 'conversion', 'event_label': source, 'value': 1}); };
 </script>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,follow">
 <title>Eletricista em Loivos da Ribeira (Mesao Frio) — 24h/7d | Norte Reparos</title><meta name="description" content="Dias úteis (9h–18h): mão de obra 70 €/hora e deslocação 30 €. Noite (18h–9h), fins de semana e feriados: 100 €/hora e deslocação 50 €. Dados oficiais: 210 m, 2 geadas/ano, Tmin -1.3 °C."><meta property="og:image" content="https://eletricista-norte-reparos.pt/og-image.png">
 
 <link rel="canonical" href="https://eletricista-norte-reparos.pt/eletricista-loivos-da-ribeira"><meta property="og:title" content="Eletricista em Loivos da Ribeira (Mesao Frio) — 24h/7d | Norte Reparos"><meta property="og:type" content="website">
@@ -68,7 +66,7 @@ h2{color:#0a4d68;font-size:1.2rem;margin-bottom:.6rem}
 (function(){
   var KEY="rgpd-consent-enr-v1";
   var STORAGES=["ad_storage","analytics_storage","ad_user_data","ad_personalization","functionality_storage","personalization_storage"];
-  function applyChoice(v){localStorage.setItem(KEY,v);var p={};for(var i=0;i<STORAGES.length;i++)p[STORAGES[i]]=v;if(window.gtag)window.gtag("consent","update",p);}
+  function applyChoice(v){localStorage.setItem(KEY,v);var p={};for(var i=0;i<STORAGES.length;i++)p[STORAGES[i]]=v;if(window.gtag)window.gtag("consent","update",p);if(v==="granted"&&!window.__ga4Loaded){window.__ga4Loaded=1;var g=document.createElement("script");g.async=true;g.onload=function(){gtag("js",new Date());gtag("config","G-P0521CSGHY",{send_page_view:true,anonymize_ip:true,cookie_flags:"SameSite=None;Secure"});};document.head.appendChild(g);}}
   if(document.getElementById("rgpd-banner-enr"))return;
   var saved=localStorage.getItem(KEY);
   if(saved==="granted"||saved==="denied"){applyChoice(saved);return;}

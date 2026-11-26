@@ -35,8 +35,8 @@ function findMatchingCity(detectedCity: string): string | null {
  normalized.includes(normalizeCityName(c.name))
  );
  if (partialMatch) return partialMatch.name;
- // Default to Bragança (main city)
- return 'Bragança';
+ // No match: no default city (decision 2026-11-23)
+ return null;
 }
 export function LocationProvider({ children }: { children: ReactNode }) {
  const [detectedCity, setDetectedCity] = useState<string | null>(null);
@@ -84,9 +84,7 @@ export function LocationProvider({ children }: { children: ReactNode }) {
  }
  }
  } catch (err) {
- // Silent fail - default to Bragança
- setDetectedCity('Bragança');
- cacheLocation('Bragança');
+ // Silent fail - no default city (decision 2026-11-23)
  setError('Não foi possível detectar a sua localização');
  } finally {
  setIsLoading(false);
@@ -104,7 +102,7 @@ export function LocationProvider({ children }: { children: ReactNode }) {
  cacheLocation(city);
  };
  const getCurrentCity = (): string => {
- return selectedCity || detectedCity || 'Bragança';
+ return selectedCity || detectedCity || 'Trás-os-Montes';
  };
  return (
  <LocationContext.Provider
