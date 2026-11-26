@@ -93,7 +93,6 @@ export const cityNAPData: Record<string, CityNAP> = {
  'jou': { name: 'Jou', slug: 'jou', postalCode: '5430-201', district: 'Vila Real', addressRegion: 'Vila Real' },
 
  // Viseu District
- 'moimenta-beira': { name: 'Moimenta da Beira', slug: 'moimenta-beira', postalCode: '3620-001', district: 'Viseu', addressRegion: 'Viseu' },
  'sernancelhe': { name: 'Sernancelhe', slug: 'sernancelhe', postalCode: '3640-001', district: 'Viseu', addressRegion: 'Viseu' },
  'possacos': { name: 'Possacos', slug: 'possacos', postalCode: '5430-301', district: 'Viseu', addressRegion: 'Viseu' },
  'santa-valha': { name: 'Santa Valha', slug: 'santa-valha', postalCode: '5430-401', district: 'Viseu', addressRegion: 'Viseu' },

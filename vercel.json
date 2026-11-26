@@ -2013,15 +2013,6 @@
       ]
     },
     {
-      "source": "/melhor-avaria-moimenta-da-beira",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        }
-      ]
-    },
-    {
       "source": "/melhor-carregador-ve-moimenta-da-beira",
       "headers": [
         {
@@ -2031,34 +2022,7 @@
       ]
     },
     {
-      "source": "/melhor-certificacao-dgeg-moimenta-da-beira",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        }
-      ]
-    },
-    {
-      "source": "/melhor-iluminacao-led-moimenta-da-beira",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        }
-      ]
-    },
-    {
       "source": "/melhor-painel-solar-moimenta-da-beira",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        }
-      ]
-    },
-    {
-      "source": "/melhor-quadro-eletrico-moimenta-da-beira",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -2167,15 +2131,6 @@
     },
     {
       "source": "/perguntas-frequentes-eletricista-armamar",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        }
-      ]
-    },
-    {
-      "source": "/perguntas-frequentes-eletricista-moimenta-da-beira",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -2864,11 +2819,6 @@
     {
       "source": "/blog/certificacao--miranda-douro",
       "destination": "/certificacao-certiel-miranda-douro",
-      "statusCode": 301
-    },
-    {
-      "source": "/blog/certificacao--moimenta-beira",
-      "destination": "/certificacao-certiel-moimenta-beira",
       "statusCode": 301
     },
     {
@@ -3817,11 +3767,6 @@
       "statusCode": 301
     },
     {
-      "source": "/blog/instalacao-ar-condicionado-moimenta-beira",
-      "destination": "/",
-      "statusCode": 301
-    },
-    {
       "source": "/blog/instalacao-ar-condicionado-moncorvo",
       "destination": "/",
       "statusCode": 301
@@ -4033,11 +3978,6 @@
     },
     {
       "source": "/blog/instalacao-painel-solar-mogadouro",
-      "destination": "/",
-      "statusCode": 301
-    },
-    {
-      "source": "/blog/instalacao-painel-solar-moimenta-beira",
       "destination": "/",
       "statusCode": 301
     },

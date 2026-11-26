@@ -237,24 +237,14 @@ export const cidadesProximasSernancelhe = [
  { name: 'Tabuaço', slug: 'tabuaco', distance: '35km', zona: 3 },
  { name: 'Armamar', slug: 'armamar', distance: '40km', zona: 3 },
  { name: 'Penedono', slug: 'penedono', distance: '30km', zona: 3 },
- { name: 'Moimenta da Beira', slug: 'moimenta-beira', distance: '25km', zona: 2 },
  { name: 'Vila Nova de Foz Côa', slug: 'vila-nova-foz-coa', distance: '50km', zona: 4 }
 ];
 export const cidadesProximasPenedono = [
  { name: 'Sernancelhe', slug: 'sernancelhe', distance: '30km', zona: 3 },
- { name: 'Moimenta da Beira', slug: 'moimenta-beira', distance: '20km', zona: 2 },
  { name: 'Tabuaço', slug: 'tabuaco', distance: '40km', zona: 3 },
  { name: 'Vila Nova de Foz Côa', slug: 'vila-nova-foz-coa', distance: '45km', zona: 3 },
  { name: 'Lamego', slug: 'lamego', distance: '50km', zona: 4 },
  { name: 'São João da Pesqueira', slug: 'sao-joao-pesqueira', distance: '45km', zona: 3 }
-];
-export const cidadesProximasMoimentaBeira = [
- { name: 'Penedono', slug: 'penedono', distance: '20km', zona: 2 },
- { name: 'Sernancelhe', slug: 'sernancelhe', distance: '25km', zona: 2 },
- { name: 'Tabuaço', slug: 'tabuaco', distance: '45km', zona: 3 },
- { name: 'Lamego', slug: 'lamego', distance: '55km', zona: 4 },
- { name: 'Vila Nova de Foz Côa', slug: 'vila-nova-foz-coa', distance: '60km', zona: 4 },
- { name: 'São João da Pesqueira', slug: 'sao-joao-pesqueira', distance: '50km', zona: 4 }
 ];
 export const cidadesProximasVilaNovaFozCoa = [
  { name: 'Freixo de Espada à Cinta', slug: 'freixo-espada-cinta', distance: '35km', zona: 3 },
@@ -262,7 +252,6 @@ export const cidadesProximasVilaNovaFozCoa = [
  { name: 'São João da Pesqueira', slug: 'sao-joao-pesqueira', distance: '35km', zona: 3 },
  { name: 'Penedono', slug: 'penedono', distance: '45km', zona: 3 },
  { name: 'Sernancelhe', slug: 'sernancelhe', distance: '50km', zona: 4 },
- { name: 'Moimenta da Beira', slug: 'moimenta-beira', distance: '60km', zona: 4 }
 ];
 // Fonction helper pour obtenir les cidades próximas
 export function getCidadesProximas(citySlug: string) {
@@ -298,7 +287,6 @@ export function getCidadesProximas(citySlug: string) {
  'armamar': cidadesProximasArmamar,
  'sernancelhe': cidadesProximasSernancelhe,
  'penedono': cidadesProximasPenedono,
- 'moimenta-beira': cidadesProximasMoimentaBeira,
  'vila-nova-foz-coa': cidadesProximasVilaNovaFozCoa
  };
  return mapping[citySlug] || [];
