@@ -56,7 +56,6 @@ function Header() {
  name: 'Distrito de Viseu / Guarda',
  cities: [
  { name: 'Lamego', href: '/eletricista-lamego' },
- { name: 'Moimenta da Beira', href: '/eletricista-moimenta-da-beira' },
  { name: 'São João da Pesqueira', href: '/eletricista-sao-joao-da-pesqueira' },
  { name: 'Tabuaço', href: '/eletricista-tabuaco' },
  { name: 'Armamar', href: '/eletricista-armamar' },
