@@ -29,7 +29,16 @@
     "client/public/melhor-certificacao-dgeg-moimenta-da-beira.html",
     "client/public/melhor-iluminacao-led-moimenta-da-beira.html",
     "client/public/melhor-quadro-eletrico-moimenta-da-beira.html",
-    "client/public/perguntas-frequentes-eletricista-moimenta-da-beira.html"
+    "client/public/perguntas-frequentes-eletricista-moimenta-da-beira.html",
+    "client/public/eletricista-frende.html",
+    "client/public/eletricista-loivos-da-ribeira.html",
+    "client/public/eletricista-santa-cruz-do-douro.html",
+    "client/public/eletricista-sao-tome-de-covelas.html",
+    "client/public/eletricista-valadares.html"
   ],
-  "sitemap_only_note": "Files kept (noindex since a090af8bc6) and removed from every sitemap and from IndexNow by this PR. Declared for scripts/check-sitemap-drift.mjs; no change of scope."
+  "sitemap_only_note": "Files kept with noindex. The declared URLs are removed from the targeted client/public sitemaps; IndexNow and public/sitemap.xml are explicit kept surfaces. Declared for scripts/check-sitemap-drift.mjs; no change of scope.",
+  "sitemap_only_kept_in": [
+    "client/public/eletricista-norte-reparos-indexnow-urls.txt",
+    "public/sitemap.xml"
+  ]
 }
