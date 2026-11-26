@@ -1,0 +1,35 @@
+{
+  "site": "ENR",
+  "reason": "confirmed out-of-coverage or Spain; Vila Nova da Rainha explicitly authorized for deletion",
+  "excluded": [
+    "Chaves",
+    "Valpaos",
+    "CNR PAA reserved pages"
+  ],
+  "paths": [
+    "client/public/eletricista-a-mezquita.html",
+    "client/public/eletricista-albarellos.html",
+    "client/public/eletricista-alcaices.html",
+    "client/public/eletricista-argan.html",
+    "client/public/eletricista-avaria-eletrica-xinzo-de-limia.html",
+    "client/public/eletricista-castrelo-do-val.html",
+    "client/public/eletricista-certificacao-eletrica-xinzo-de-limia.html",
+    "client/public/eletricista-fuga-corrente-xinzo-de-limia.html",
+    "client/public/eletricista-iluminacao-exterior-xinzo-de-limia.html",
+    "client/public/eletricista-iluminacao-led-xinzo-de-limia.html",
+    "client/public/eletricista-quadro-eletrico-xinzo-de-limia.html",
+    "client/public/eletricista-tomada-interruptor-xinzo-de-limia.html",
+    "client/public/eletricista-urgente-xinzo-de-limia.html",
+    "client/public/eletricista-xinzo-de-limia.html",
+    "client/public/distritos/viseu.html"
+  ],
+  "scope_note": "Vila Verde da Raia is Chaves and covered; Vila Nova da Rainha is the Macedo de Cavaleiros locality (~25 km) and covered; both excluded from deletion.",
+  "sitemap_only_paths": [
+    "client/public/melhor-avaria-moimenta-da-beira.html",
+    "client/public/melhor-certificacao-dgeg-moimenta-da-beira.html",
+    "client/public/melhor-iluminacao-led-moimenta-da-beira.html",
+    "client/public/melhor-quadro-eletrico-moimenta-da-beira.html",
+    "client/public/perguntas-frequentes-eletricista-moimenta-da-beira.html"
+  ],
+  "sitemap_only_note": "Files kept (noindex since a090af8bc6) and removed from every sitemap and from IndexNow by this PR. Declared for scripts/check-sitemap-drift.mjs; no change of scope."
+}
