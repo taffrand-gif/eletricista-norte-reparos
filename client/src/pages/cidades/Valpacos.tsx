@@ -71,11 +71,11 @@ export default function Valpacos() {
  },
  {
  question: "Fazem instalações elétricas para explorações agrícolas em Valpaços?",
- answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+ answer: "Confirmamos a deslocação por telefone. A disponibilidade é confirmada conforme a localização e a situação operacional.",
  },
  {
  question: "Qual o custo de deslocação a Valpaços?",
-answer: "Confirmamos a deslocação por telefone. Cobrimos todo o conselho.",
+answer: "Confirmamos a deslocação por telefone. A disponibilidade é confirmada conforme a localização e a situação operacional.",
  },
 ];
 
