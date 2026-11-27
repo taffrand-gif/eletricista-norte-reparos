@@ -23,3 +23,10 @@ STATUT: PARTIEL — intégration rejouée ; aucun merge, Ready ou Production.
 - XML des sitemaps `client/public`: valides ; `git diff --check`: PASS ; worktree propre après build et contrôles.
 - `npm run check` (`tsc --noEmit`): FAIL — 82 erreurs TypeScript préexistantes, principalement `SiteConfig`, icônes/pages locales, routes, imports serveur absents et tRPC ; hors périmètre SEO de ce lot.
 - HTTP, DOM, Preview, Production et contrôle Jev : NON VÉRIFIÉS.
+
+## Preuves Preview  2026-11-27
+- Preview READY : `https://eletricista-norte-reparos-28fh7c8qz-filipes-projects-4b992c3d.vercel.app/`.
+- DOM contrVercelllll  : racine et page Chaves ; tlphone/WhatsApp et signaux DGEG/TRIESP visibles.
+- Build local russi ; `check-sitemap.mjs` russi ; sitemap principal 3 559 URLs ; IndexNow 3 870 URLs.
+- Les signaux DGEG/TRIESP restent limits  ENR/EU selon la source mtier.
+- Statut :  Preview contrPartielllll e, pas de merge ni Production.
