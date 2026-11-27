@@ -61,7 +61,7 @@ const electricFeatures: Record<string, string[]> = {
  'Lista de anomalias e recomendações'
  ],
  'Urgências 24h': [
- 'Orçamento por escrito em 48h',
+ 'Orçamento por escrito antes da intervenção',
  'A nossa equipa com equipamento profissional de diagnóstico',
  'Orçamento no local'
  ]

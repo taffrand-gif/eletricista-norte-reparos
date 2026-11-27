@@ -102,23 +102,10 @@ export function generateSEOTitle(ville?: string): string {
  const config = ACTIVE_CONFIG;
  
  if (ville) {
- // Main cities list
- const villesPrincipales = ["Macedo", "Mirandela", "Bragança"];
- 
- // Avoid duplicates
- const villeNormalisee = ville.replace(/[^a-zA-Zàáâãçéêíóôõú]/g, '');
- const villesAInclure = villesPrincipales.filter(v => 
- !v.toLowerCase().includes(villeNormalisee.toLowerCase()) && 
- !villeNormalisee.toLowerCase().includes(v.toLowerCase())
- );
- 
- // Format: [Service] em [City], [other cities] - [Phone]
- const autresVilles = villesAInclure.length > 0 ? `, ${villesAInclure.join(', ')}` : '';
- return `${config.name} em ${ville}${autresVilles} - ${config.phone}`;
+ return `${config.name} em ${ville} — orçamento por escrito | ${config.phone}`;
  }
  
- // Homepage: [Service] 24h em Macedo, Mirandela, Bragança - [Phone]
- return `${config.name} 24h em Macedo, Mirandela, Bragança - ${config.phone}`;
+ return `${config.name} em Trás-os-Montes — orçamento por escrito | ${config.phone}`;
 }
 // Fonction helper pour générer la meta description
 export function generateMetaDescription(ville?: string): string {
@@ -126,7 +113,7 @@ export function generateMetaDescription(ville?: string): string {
  
  if (ville) {
  // Meta descriptions optimisées par ville (<160 chars, mots-clés locaux, CTA, )
- return `Eletricista Orçamento por escrito em ${ville} 24h/7d. Avarias, disjuntores, quadros elétricos. Chegamos assim que possível. ☎️ ${config.phone}`;
+ return `Eletricista em ${ville}: avarias, disjuntores e quadros elétricos. Orçamento por escrito antes da intervenção. ${config.phone}`;
  }
  
  // Page d'accueil
@@ -155,17 +142,6 @@ export function generateLocalBusinessSchema(ville?: string) {
  "image": `https://${config.domain}/logo.png`,
  "telephone": `+${config.whatsappNumber}`,
  "priceRange":"€€",
- "address": {
- "@type": "PostalAddress",
- "addressLocality": ville || "Trás-os-Montes",
- "addressRegion": "Bragança",
- "addressCountry": "PT"
- },
- "geo": {
- "@type": "GeoCoordinates",
- "latitude": ville ? getCityCoordinates(ville).lat : 41.5382,
- "longitude": ville ? getCityCoordinates(ville).lng : -6.9667
- },
  "url": `https://${config.domain}${ville ? `/servicos/${getCitySlug(ville)}` : ''}`,
  "openingHoursSpecification": {
  "@type": "OpeningHoursSpecification",
@@ -181,10 +157,7 @@ export function generateLocalBusinessSchema(ville?: string) {
  "opens": "00:00",
  "closes": "23:59"
  },
- "areaServed": {
- "@type": "City",
- "name": ville || "Bragança"
- }
+ "areaServed": ville ? { "@type": "City", "name": ville } : { "@type": "AdministrativeArea", "name": "Trás-os-Montes" }
  };
 }
 // Fonction pour générer le schema Organization
