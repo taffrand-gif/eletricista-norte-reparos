@@ -21,5 +21,5 @@ STATUT: PARTIEL — intégration rejouée ; aucun merge, Ready ou Production.
 - `npm run build`: exit 0.
 - `node scripts/check-sitemap.mjs`: PASS ; sitemap principal 3559 URLs et IndexNow 3870 URLs, seuils respectés.
 - XML des sitemaps `client/public`: valides ; `git diff --check`: PASS ; worktree propre après build et contrôles.
-- Typecheck : NON VÉRIFIÉ / échec sur dette technique préexistante hors périmètre SEO (types `SiteConfig`, tRPC, routes/composants/imports).
+- `npm run check` (`tsc --noEmit`): FAIL — 82 erreurs TypeScript préexistantes, principalement `SiteConfig`, icônes/pages locales, routes, imports serveur absents et tRPC ; hors périmètre SEO de ce lot.
 - HTTP, DOM, Preview, Production et contrôle Jev : NON VÉRIFIÉS.
